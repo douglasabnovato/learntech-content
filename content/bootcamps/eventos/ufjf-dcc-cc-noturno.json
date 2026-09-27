@@ -1,0 +1,24 @@
+{
+  "id": "12",
+  "slug": "ufjf-dcc-cc-noturno",
+  "title": "Ciência da Computação (Noturno)",
+  "institution": "UFJF",
+  "description": "Bacharelado em Ciência da Computação, período noturno, na Universidade Federal de Juiz de Fora (UFJF-DCC).",
+  "coverImage": "/media/bootcamps/instituicoes/ufjf-dcc.webp",
+  "altText": "Identidade visual da UFJF",
+  "category": "outros",
+  "status": "concluido",
+  "content": {
+    "longDescription": "Graduação em Ciência da Computação pela UFJF, no Departamento de Ciência da Computação (DCC), cursada no período noturno — formação de base teórica e prática em algoritmos, estruturas de dados, engenharia de software e fundamentos de computação.",
+    "videoUrl": "",
+    "gallery": [],
+    "curriculum": [
+      "Algoritmos e Estruturas de Dados",
+      "Engenharia de Software",
+      "Banco de Dados",
+      "Redes de Computadores",
+      "Linguagens de Programação"
+    ],
+    "officialLink": "https://www2.ufjf.br/cursocomputacao/"
+  }
+}

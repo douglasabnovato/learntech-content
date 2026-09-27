@@ -1,0 +1,22 @@
+{
+  "id": "13",
+  "slug": "startse-techacademy",
+  "title": "StartSe TechAcademy",
+  "institution": "StartSe",
+  "description": "Programa gratuito da StartSe para formação de programadores, dentro do ecossistema de bootcamps e imersões em tecnologia e inovação.",
+  "coverImage": "/media/bootcamps/instituicoes/startse-tech-academy.webp",
+  "altText": "Identidade visual da StartSe TechAcademy",
+  "category": "fullstack",
+  "status": "concluido",
+  "content": {
+    "longDescription": "A StartSe conecta profissionais a tendências e ecossistemas globais de inovação, com bootcamps e imersões voltados à Nova Economia. A TechAcademy é o programa gratuito da StartSe para formação de programadores, parte de uma linha de iniciativas abertas ao público que inclui também cursos rápidos como o Data For Leaders e movimentos como o IA para Todos, em parceria com a IBM.",
+    "videoUrl": "",
+    "gallery": [],
+    "curriculum": [
+      "Fundamentos de programação",
+      "Tendências de tecnologia e inovação",
+      "Conexão com o ecossistema de startups"
+    ],
+    "officialLink": "https://www.startse.com/techacademy"
+  }
+}

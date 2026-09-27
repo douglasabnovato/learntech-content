@@ -1,0 +1,758 @@
+{
+  "id": 101,
+  "image": "https://cdn.pixabay.com/photo/2015/09/06/00/17/macbook-926558_960_720.jpg",
+  "category": "Frontend",
+  "categoryFilter": "frontend",
+  "title": "React: Componentes, Estado e a Primeira Aplicação",
+  "lessons": "13 passos",
+  "duration": "8h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Intermediário",
+  "description": "A ponte entre saber HTML, CSS e JavaScript e construir uma aplicação de verdade. Você aprende a pensar em componentes, controlar estado e montar uma interface que reage aos dados — sem framework mágico, entendendo o que cada peça faz.",
+  "letslearn": [
+    "Quebrar uma interface em componentes reutilizáveis",
+    "Controlar estado com useState e entender quando o React re-renderiza",
+    "Renderizar listas, controlar formulários e lidar com efeitos colaterais",
+    "Organizar uma aplicação em pastas que continuam fazendo sentido depois de crescer"
+  ],
+  "curriculum": "Do JavaScript ao React",
+  "about": "O programa parte de onde a landing page parou. Você já sabe manipular o DOM na mão; aqui aprende por que o React existe, o que ele resolve e o custo que cobra em troca. A progressão vai do componente isolado ao estado compartilhado, da lista estática ao formulário controlado, e termina com a aplicação organizada. Nenhum módulo introduz biblioteca nova sem antes mostrar o problema que ela resolve.",
+  "materials": [
+    "Repositório com o projeto por módulo",
+    "Checklist de revisão de componente",
+    "Lista de erros comuns e como identificá-los"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Do HTML ao Componente",
+      "lessonsCount": 3,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Estado e Eventos",
+      "lessonsCount": 3,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Listas, Formulários e Efeitos",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Organizando a Aplicação",
+      "lessonsCount": 3,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Frontend",
+    "mainTitle": "Pense em componentes: da página escrita à mão para a interface que reage aos dados.",
+    "introductionParagraphs": [
+      {
+        "title": "Por que o React existe",
+        "text": "Manipular o DOM na mão funciona até a página ter dois lugares que mostram o mesmo dado. A partir daí, você passa a gastar tempo sincronizando tela e variável — e é exatamente aí que os bugs aparecem. O **React** inverte a ordem: você descreve como a tela deve ser para um determinado estado, e ele se encarrega de atualizar o que mudou. Você para de dar ordens ao DOM e passa a declarar o resultado."
+      },
+      {
+        "title": "Componente é a unidade de raciocínio",
+        "text": "Um componente é uma função que recebe dados e devolve interface. Essa definição simples é o que permite montar telas complexas sem perder o controle: cada peça tem entrada declarada, saída previsível e pode ser lida isoladamente. Quando um botão quebra, você sabe onde olhar — e quando ele funciona, funciona em qualquer lugar onde for usado."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não instala biblioteca de estado global, não usa framework por cima do React e não esconde o JavaScript. A ideia é que ao final você entenda o React o suficiente para decidir sozinho quando precisa de mais ferramenta — e para perceber que, na maior parte dos casos, não precisa."
+      }
+    ],
+    "courseAboutTitle": "O passo seguinte a HTML, CSS e JavaScript",
+    "courseAboutDescription": "Este é o programa que transforma quem constrói páginas em quem constrói aplicações. A diferença não está na quantidade de código, e sim no modelo mental: parar de pensar em elementos que você atualiza e começar a pensar em estado que se desenha na tela. É a mudança de cabeça que separa o desenvolvedor que copia trecho de tutorial daquele que resolve um problema novo.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Do HTML ao Componente",
+        "items": [
+          {
+            "label": "JSX sem mistério",
+            "description": "O que o JSX vira depois de compilado e por que ele não é HTML."
+          },
+          {
+            "label": "Props",
+            "description": "Como um componente recebe dados de quem o usa."
+          },
+          {
+            "label": "Composição",
+            "description": "Montar telas combinando componentes pequenos em vez de um grande."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Estado e Eventos",
+        "items": [
+          {
+            "label": "useState",
+            "description": "O que é estado, e por que variável comum não serve."
+          },
+          {
+            "label": "Re-renderização",
+            "description": "Quando o React redesenha e o que isso custa."
+          },
+          {
+            "label": "Estado onde ele pertence",
+            "description": "Onde declarar o estado para não ter que sincronizar duas cópias."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Listas, Formulários e Efeitos",
+        "items": [
+          {
+            "label": "Listas e a prop key",
+            "description": "Renderizar coleções e por que o índice do array é uma escolha ruim."
+          },
+          {
+            "label": "Formulário controlado",
+            "description": "O input cujo valor vive no estado, e a validação que vem de graça."
+          },
+          {
+            "label": "useEffect com critério",
+            "description": "Quando existe efeito colateral de verdade — e quando você não precisa dele."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Organizando a Aplicação",
+        "items": [
+          {
+            "label": "Estrutura de pastas",
+            "description": "Uma organização que sobrevive ao crescimento do projeto."
+          },
+          {
+            "label": "Hook próprio",
+            "description": "Extrair lógica repetida para uma função reutilizável."
+          },
+          {
+            "label": "Quando parar",
+            "description": "Reconhecer o ponto em que o projeto pede biblioteca de estado — e o ponto em que não pede."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para executar no seu próprio projeto. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "laptop",
+      "title": "Do HTML ao Componente",
+      "shortDescription": "JSX, props e composição: a menor unidade de interface",
+      "introductionText": "Antes de escrever qualquer coisa em React, vale entender o que ele é: uma biblioteca que transforma uma descrição de interface em atualizações no DOM. Você escreve como a tela deve ser, e o React calcula o que precisa mudar. Neste módulo você constrói os primeiros componentes e descobre que JSX não é HTML — é JavaScript disfarçado, e entender isso evita metade dos erros de iniciante.",
+      "sections": [
+        {
+          "title": "🧩 Sua primeira interface em componentes",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "JSX é JavaScript",
+              "code": "className, não class",
+              "guidance": "Crie um componente que devolva um bloco de JSX. Repare que atributos mudam de nome: class vira className, for vira htmlFor. Isso acontece porque JSX vira chamada de função JavaScript, e essas palavras já são reservadas na linguagem.",
+              "tips": [
+                "Todo componente devolve um único elemento raiz. Quando precisar de dois irmãos, envolva em um fragmento vazio."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Props: a entrada do componente",
+              "code": "function Card({ titulo })",
+              "guidance": "Transforme um bloco fixo em um componente que recebe props. Passe um título e um texto de fora e veja o mesmo componente renderizar conteúdos diferentes. Props são somente leitura: quem recebe nunca altera.",
+              "tips": [
+                "Se você sentir vontade de alterar uma prop dentro do componente, o dado provavelmente devia ser estado de quem chama."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Composição no lugar de configuração",
+              "guidance": "Em vez de criar um componente com dez props para cobrir todas as variações, componha: monte telas combinando componentes menores. Um Card que aceita conteúdo livre por children é mais flexível que um Card com props para cada pedaço.",
+              "tips": [
+                "Regra prática: quando um componente passa de cinco props de aparência, ele provavelmente deveria ser dois componentes."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que componentes importam",
+      "highlights": [
+        {
+          "icon": "grid",
+          "title": "Um lugar para consertar",
+          "text": "O botão existe em um arquivo só. Corrigir ali conserta todas as telas que o usam, em vez de caçar a mesma marcação copiada em cinco lugares."
+        },
+        {
+          "icon": "list",
+          "title": "Leitura por fora",
+          "text": "Um componente bem feito se entende pela assinatura: o que entra e o que sai. Você revisa a tela sem precisar ler a implementação inteira."
+        },
+        {
+          "icon": "sync",
+          "title": "Interface como função do dado",
+          "text": "Você descreve o resultado em vez de dar o passo a passo da atualização. Some a classe inteira de bug em que a tela e a variável discordam."
+        }
+      ],
+      "closingText": "Você já tem componentes que recebem dados e desenham interface. Até aqui, tudo é estático: os dados vêm de fora e nada muda depois que a tela aparece. No próximo módulo entra a peça que torna a aplicação viva — o estado.",
+      "ctaTitle": "🧩 Primeiros componentes de pé!",
+      "ctaText": "Sua interface já está quebrada em peças reutilizáveis. Agora vamos fazer essas peças reagirem ao usuário.",
+      "nextButtonText": "Ir para Módulo 1: Estado e Eventos"
+    },
+    {
+      "id": 1,
+      "icon": "bolt",
+      "title": "Estado e Eventos",
+      "shortDescription": "useState, re-renderização e onde o dado deve morar",
+      "introductionText": "Estado é o dado que muda com o tempo e que, ao mudar, precisa aparecer na tela. Uma variável comum não serve: alterá-la não avisa ninguém. O useState resolve isso guardando o valor e sinalizando ao React que a tela precisa ser redesenhada. Este módulo é onde a maioria dos erros de React nasce, então vale ir devagar: entender quando o componente re-renderiza é mais importante do que decorar a sintaxe.",
+      "sections": [
+        {
+          "title": "⚡ Fazendo a tela reagir",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "useState e o par valor + atualizador",
+              "code": "const [valor, setValor] = useState(0)",
+              "guidance": "Declare um estado e ligue um botão que o altere. Observe que você nunca atribui direto ao valor: sempre chama o atualizador. É essa chamada que avisa o React.",
+              "tips": [
+                "Quando o novo valor depende do anterior, passe uma função ao atualizador em vez do valor pronto. Isso evita erro em atualizações seguidas."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "O que dispara uma re-renderização",
+              "guidance": "Coloque uma marcação temporária no corpo do componente para ver quantas vezes ele executa. Mude o estado e observe. Entender esse ciclo é o que explica comportamentos que parecem mágicos ou quebrados.",
+              "tips": [
+                "Re-renderizar não é redesenhar a página inteira. O React compara o resultado e toca só no que mudou no DOM."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Elevar o estado",
+              "guidance": "Quando dois componentes irmãos precisam do mesmo dado, o estado sobe para o pai comum e desce como prop. Faça esse movimento uma vez à mão: é o padrão que resolve a maioria dos casos sem nenhuma biblioteca.",
+              "tips": [
+                "Antes de procurar solução de estado global, pergunte se o dado não pertence a um componente acima dos dois que o usam."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que estado é o assunto central",
+      "highlights": [
+        {
+          "icon": "sync",
+          "title": "Uma verdade, não duas",
+          "text": "O dado vive em um lugar e a tela é consequência dele. Acaba o bug clássico em que o texto na tela e o valor na memória contam histórias diferentes."
+        },
+        {
+          "icon": "gauge",
+          "title": "Re-render previsível",
+          "text": "Entender quando o componente executa de novo é o que separa quem conserta o problema de quem espalha soluções aleatórias até parar de quebrar."
+        },
+        {
+          "icon": "sitemap",
+          "title": "O dado no lugar certo",
+          "text": "Estado em componente fundo demais obriga a passar prop por camadas; estado alto demais re-renderiza a árvore inteira. O meio-termo é decisão de projeto."
+        }
+      ],
+      "closingText": "Sua aplicação já responde ao usuário e mantém dados que mudam. O próximo passo é lidar com o que aparece em quase toda tela real: coleções de itens, formulários e interações com o mundo fora do React.",
+      "ctaTitle": "⚡ A tela reage!",
+      "ctaText": "Estado e eventos funcionando. Agora vamos para os três padrões que aparecem em praticamente toda aplicação.",
+      "nextButtonText": "Ir para Módulo 2: Listas, Formulários e Efeitos"
+    },
+    {
+      "id": 2,
+      "icon": "list",
+      "title": "Listas, Formulários e Efeitos",
+      "shortDescription": "Os três padrões que aparecem em toda aplicação real",
+      "introductionText": "Toda aplicação mostra uma lista, coleta um dado e conversa com algo externo. Este módulo cobre os três. São também os três lugares onde iniciante mais escorrega: usar o índice do array como chave, deixar o input fora do estado e transformar o useEffect em depósito de código que não sabia onde colocar. Cada passo aqui mostra o erro comum antes de mostrar a forma correta.",
+      "sections": [
+        {
+          "title": "📋 Padrões do dia a dia",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Renderizar uma lista",
+              "code": "itens.map((item) => ...)",
+              "guidance": "Transforme um array de dados em elementos na tela com map. Cada item precisa de uma prop key com um identificador estável — normalmente o id que vem do dado.",
+              "tips": [
+                "Usar o índice do array como key funciona até a lista reordenar ou perder um item no meio. Aí o React reaproveita o elemento errado e o estado vai junto para o item errado."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Formulário controlado",
+              "code": "value={texto} onChange={...}",
+              "guidance": "Ligue o valor do input ao estado e o onChange ao atualizador. O estado passa a ser a única fonte do que está escrito, o que torna validação e limpeza do formulário triviais.",
+              "tips": [
+                "Com o valor no estado, validar em tempo real é só uma condição sobre esse valor — não precisa ler o DOM."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Buscar dados de uma API",
+              "guidance": "Use useEffect para disparar a busca quando o componente aparece, e guarde em estado os três casos: carregando, sucesso e erro. Renderize algo diferente para cada um.",
+              "tips": [
+                "Tela que só trata o caso de sucesso parece pronta no seu computador e quebra na primeira conexão lenta."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Quando você não precisa de useEffect",
+              "guidance": "Se um valor pode ser calculado a partir do estado que você já tem, calcule direto durante a renderização. Não crie um estado extra sincronizado por efeito — é a origem de renderizações duplicadas e dados desencontrados.",
+              "tips": [
+                "Teste rápido: o valor deriva de algo que já está no estado? Então é cálculo, não efeito."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que estes três padrões",
+      "highlights": [
+        {
+          "icon": "list",
+          "title": "Chave estável, lista correta",
+          "text": "A prop key é como o React identifica cada item entre uma renderização e outra. Chave errada produz bug que só aparece quando a lista muda de ordem."
+        },
+        {
+          "icon": "shield",
+          "title": "Formulário que se explica",
+          "text": "Com o valor no estado, validação, limpeza e preenchimento automático saem do mesmo lugar. Ler o DOM para saber o que o usuário digitou deixa de ser necessário."
+        },
+        {
+          "icon": "globe",
+          "title": "Os três estados de uma requisição",
+          "text": "Carregando, deu certo e deu errado são três telas, não uma. Tratar os três é o que faz a aplicação parecer profissional em conexão ruim."
+        }
+      ],
+      "closingText": "Com listas, formulários e dados externos, você já cobre o que a maioria das telas precisa. Falta a parte que raramente aparece em tutorial e sempre aparece em projeto real: manter isso organizado quando o número de arquivos cresce.",
+      "ctaTitle": "📋 Padrões dominados!",
+      "ctaText": "Sua aplicação lista, coleta e busca dados. Vamos organizar tudo isso para que continue legível daqui a três meses.",
+      "nextButtonText": "Ir para Módulo 3: Organizando a Aplicação"
+    },
+    {
+      "id": 3,
+      "icon": "sitemap",
+      "title": "Organizando a Aplicação",
+      "shortDescription": "Estrutura, hooks próprios e o momento de parar de adicionar",
+      "introductionText": "Projeto pequeno funciona com qualquer organização. O problema aparece no terceiro mês, quando ninguém lembra onde está o quê. Este módulo trata da parte que nenhum tutorial mostra porque só dói depois: como agrupar arquivos, como extrair lógica repetida e — o mais importante — como reconhecer quando o projeto realmente precisa de mais ferramenta, em vez de instalar por hábito.",
+      "sections": [
+        {
+          "title": "🗂️ Estrutura que sobrevive ao crescimento",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Agrupar por assunto, não por tipo",
+              "guidance": "Em vez de uma pasta components com trinta arquivos soltos, agrupe pelo assunto do produto. Tudo que diz respeito a um mesmo domínio fica junto, mesmo que sejam tipos diferentes de arquivo.",
+              "tips": [
+                "Teste: para mexer em uma funcionalidade, quantas pastas você precisa abrir? Se for mais de duas, a organização está por tipo e não por assunto."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Extrair um hook próprio",
+              "code": "function useAlgumaCoisa()",
+              "guidance": "Quando a mesma combinação de estado e efeito aparece em dois componentes, mova para uma função que começa com use. O componente fica com a interface e o hook com a lógica.",
+              "tips": [
+                "Hook próprio é função comum que pode chamar outros hooks. Não há mágica: o prefixo use é convenção que as ferramentas de lint reconhecem."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Reconhecer quando parar",
+              "guidance": "Antes de instalar biblioteca de estado global, verifique: o dado é realmente usado em partes distantes da árvore? Se for só passar por dois níveis, prop resolve. Se for dado que vem do servidor, o problema provavelmente é de cache, não de estado global.",
+              "tips": [
+                "Na pesquisa State of React 2025, 34% dos respondentes não usam biblioteca de estado nenhuma. Não usar também é uma escolha de arquitetura."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que organização é decisão técnica",
+      "highlights": [
+        {
+          "icon": "folder",
+          "title": "Achar antes de consertar",
+          "text": "A maior parte do tempo de manutenção é gasta procurando onde mexer. Agrupar por assunto reduz essa busca a uma pasta."
+        },
+        {
+          "icon": "tools",
+          "title": "Lógica em um lugar só",
+          "text": "Um hook próprio evita que a mesma regra exista em dois componentes e envelheça em direções diferentes."
+        },
+        {
+          "icon": "search",
+          "title": "A ferramenta que você não instalou",
+          "text": "Cada dependência é código que você passa a manter e atualizar. Adiar a instalação até o problema existir é uma decisão de engenharia, não preguiça."
+        }
+      ],
+      "closingText": "Você saiu de componentes isolados para uma aplicação organizada, com estado no lugar certo, dados vindos de fora e lógica reaproveitada. Esse é o conjunto que permite ler um projeto React de outra pessoa e entender o que está acontecendo — que é, na prática, o que se espera de quem trabalha com isso.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você agora pensa em componentes, controla estado e organiza um projeto React. O próximo passo natural é um framework por cima disso, como o Next.js.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Por que em JSX escrevemos className em vez de class?",
+      "explanation": "JSX é transformado em chamadas de função JavaScript, e class é palavra reservada da linguagem. Por isso o atributo recebe o nome className, o mesmo usado pela API do DOM. Não tem relação com CSS, nem com React estar depreciando algo, nem com desempenho.",
+      "options": [
+        {
+          "text": "Porque class é palavra reservada do JavaScript",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque o CSS do React funciona de forma diferente",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque class foi descontinuado no HTML5",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque className é mais rápido de processar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "O que são props em React?",
+      "explanation": "Props são os dados que um componente recebe de quem o utiliza, e são somente leitura: o componente que recebe nunca as altera. Estado é outra coisa — é o dado interno que muda. Props não são um arquivo de configuração nem têm relação com estilo.",
+      "options": [
+        {
+          "text": "Dados que o componente recebe de fora, somente leitura",
+          "isCorrect": true
+        },
+        {
+          "text": "Variáveis internas que o componente pode alterar livremente",
+          "isCorrect": false
+        },
+        {
+          "text": "Um arquivo de configuração do projeto React",
+          "isCorrect": false
+        },
+        {
+          "text": "As classes CSS aplicadas ao componente",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Um componente precisa exibir dois elementos lado a lado na raiz. Qual é a saída correta?",
+      "explanation": "Um componente devolve um único elemento raiz. Quando você precisa de irmãos sem acrescentar marcação, usa um fragmento — o par de tags vazias. Envolver em div funciona, mas polui o HTML final; devolver dois elementos soltos é erro de sintaxe; e array exigiria chave em cada item.",
+      "options": [
+        {
+          "text": "Envolver os dois em um fragmento vazio",
+          "isCorrect": true
+        },
+        {
+          "text": "Devolver os dois elementos soltos, um após o outro",
+          "isCorrect": false
+        },
+        {
+          "text": "Criar dois componentes separados obrigatoriamente",
+          "isCorrect": false
+        },
+        {
+          "text": "Não é possível: React aceita apenas um elemento por tela",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Por que uma variável comum não serve para guardar dado que muda na tela?",
+      "explanation": "Alterar uma variável comum não avisa o React de nada, então a tela continua mostrando o valor antigo. O useState guarda o valor e, ao ser atualizado, sinaliza que aquele componente precisa ser renderizado de novo. Não é questão de velocidade nem de tipo de dado.",
+      "options": [
+        {
+          "text": "Porque alterá-la não sinaliza ao React que a tela deve ser atualizada",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque variáveis comuns são mais lentas que useState",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o React proíbe declarar variáveis dentro de componentes",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque variáveis comuns não aceitam objetos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Quando o novo valor do estado depende do valor anterior, qual é a forma segura de atualizar?",
+      "explanation": "Passar uma função ao atualizador garante que ela receba o valor mais recente, mesmo que várias atualizações aconteçam em sequência. Usar o valor direto pode trabalhar sobre uma leitura antiga. Atribuir direto à variável não funciona, e não existe necessidade de recarregar a página.",
+      "options": [
+        {
+          "text": "Passar uma função ao atualizador, que recebe o valor anterior",
+          "isCorrect": true
+        },
+        {
+          "text": "Ler a variável de estado e passar o resultado já calculado",
+          "isCorrect": false
+        },
+        {
+          "text": "Atribuir o novo valor diretamente à variável de estado",
+          "isCorrect": false
+        },
+        {
+          "text": "Recarregar o componente manualmente após a mudança",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Dois componentes irmãos precisam ler e alterar o mesmo dado. Qual é a solução mais simples?",
+      "explanation": "Mover o estado para o pai comum e passá-lo como prop resolve o caso sem nenhuma biblioteca — é o padrão conhecido como elevar o estado. Duplicar em cada irmão cria duas verdades que vão divergir. Biblioteca global e armazenamento do navegador são soluções desproporcionais para o problema.",
+      "options": [
+        {
+          "text": "Mover o estado para o componente pai comum aos dois",
+          "isCorrect": true
+        },
+        {
+          "text": "Declarar o mesmo estado nos dois componentes",
+          "isCorrect": false
+        },
+        {
+          "text": "Instalar uma biblioteca de estado global",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardar o valor no armazenamento local do navegador",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Por que usar o índice do array como prop key é problemático?",
+      "explanation": "A key identifica cada item entre uma renderização e outra. Se a lista reordena ou perde um item do meio, o índice passa a apontar para outro dado, e o React reaproveita o elemento errado — levando junto o estado interno dele. Com lista imutável o índice até funciona, mas é hábito que cobra caro depois.",
+      "options": [
+        {
+          "text": "Porque ao reordenar ou remover itens o índice passa a apontar para outro dado",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque o React não aceita número como key",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque deixa a renderização mais lenta em qualquer caso",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque impede o uso de map para renderizar listas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "O que caracteriza um formulário controlado?",
+      "explanation": "Em um formulário controlado o valor do campo vem do estado e toda digitação passa pelo atualizador. Isso torna o estado a única fonte da verdade e simplifica validação e limpeza. Não tem relação com envio ao servidor, com biblioteca externa nem com o atributo required.",
+      "options": [
+        {
+          "text": "O valor do campo vem do estado e toda alteração passa pelo atualizador",
+          "isCorrect": true
+        },
+        {
+          "text": "O formulário envia os dados automaticamente ao servidor",
+          "isCorrect": false
+        },
+        {
+          "text": "O formulário usa uma biblioteca externa de validação",
+          "isCorrect": false
+        },
+        {
+          "text": "Todos os campos têm o atributo required",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Um valor pode ser calculado a partir do estado que já existe. Onde ele deve ficar?",
+      "explanation": "Se o valor deriva de algo que já está no estado, ele deve ser calculado durante a renderização. Criar um estado extra sincronizado por efeito gera renderização dupla e abre espaço para os dois valores discordarem. Efeito existe para conversar com o mundo fora do React, não para derivar dados.",
+      "options": [
+        {
+          "text": "Calculado direto na renderização, sem estado nem efeito",
+          "isCorrect": true
+        },
+        {
+          "text": "Em um estado próprio, atualizado por um efeito",
+          "isCorrect": false
+        },
+        {
+          "text": "Em uma variável global fora do componente",
+          "isCorrect": false
+        },
+        {
+          "text": "No armazenamento local do navegador",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Qual é a vantagem de agrupar arquivos por assunto do produto em vez de por tipo?",
+      "explanation": "Agrupando por assunto, tudo que diz respeito a uma funcionalidade fica na mesma pasta, e mexer nela exige abrir um lugar só. Agrupando por tipo, uma única mudança espalha o trabalho por várias pastas. Não muda desempenho, não é exigência do React e não altera o tamanho do pacote final.",
+      "options": [
+        {
+          "text": "Mexer em uma funcionalidade passa a exigir abrir uma pasta só",
+          "isCorrect": true
+        },
+        {
+          "text": "A aplicação carrega mais rápido no navegador",
+          "isCorrect": false
+        },
+        {
+          "text": "É exigência da própria biblioteca React",
+          "isCorrect": false
+        },
+        {
+          "text": "Reduz automaticamente o tamanho do pacote final",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "O que é um hook próprio?",
+      "explanation": "Hook próprio é uma função comum, por convenção iniciada com use, que pode chamar outros hooks e existe para reunir lógica repetida fora dos componentes. Não é recurso especial da biblioteca, não substitui componente e não tem relação com desempenho por si só.",
+      "options": [
+        {
+          "text": "Uma função que reúne lógica reutilizável e pode chamar outros hooks",
+          "isCorrect": true
+        },
+        {
+          "text": "Um componente que não renderiza nada na tela",
+          "isCorrect": false
+        },
+        {
+          "text": "Um recurso exclusivo de bibliotecas de estado global",
+          "isCorrect": false
+        },
+        {
+          "text": "Uma técnica para acelerar a renderização",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Segundo a pesquisa State of React 2025, qual proporção dos respondentes não usa nenhuma biblioteca de estado?",
+      "explanation": "34% dos respondentes não usam biblioteca de estado alguma, o que mostra que os recursos nativos do React resolvem boa parte dos casos. Isso não significa que bibliotecas sejam desnecessárias — significa que instalar antes de ter o problema é decisão precipitada.",
+      "options": [
+        {
+          "text": "34%",
+          "isCorrect": true
+        },
+        {
+          "text": "5%",
+          "isCorrect": false
+        },
+        {
+          "text": "60%",
+          "isCorrect": false
+        },
+        {
+          "text": "Menos de 1%",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "Uma aplicação React funcionando: componentes reutilizáveis, estado controlado, lista renderizada a partir de dados, formulário validado e busca a uma API com os três estados tratados. Organizada em pastas que continuam fazendo sentido depois que o projeto cresce.",
+    "highlights": [
+      "Uma aplicação React organizada e funcional",
+      "Formulário controlado com validação",
+      "Consumo de API com estados de carregamento e erro"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "React é, com folga, a escolha dominante do mercado: cerca de 162,5 milhões de downloads anuais no npm, contra 14,1 milhões do Vue — mais de onze vezes. Na pesquisa State of JavaScript 2025, aproximadamente 85% dos respondentes declararam usá-lo.",
+      "Essa concentração importa para quem está entrando: é onde estão as vagas, a documentação, as respostas em fórum e a maior parte do código que você vai encontrar ao entrar em uma equipe. Aprender React não é seguir moda — é escolher a base com maior chance de ser a que você vai usar no primeiro emprego."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Painéis e sistemas internos",
+        "description": "Telas com muitos dados que mudam e precisam refletir o estado na hora."
+      },
+      {
+        "label": "Produtos web",
+        "description": "Aplicações que o usuário abre e usa por um tempo, em vez de só ler."
+      },
+      {
+        "label": "Base para frameworks",
+        "description": "Next.js e Remix são construídos sobre React — este é o pré-requisito."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem já entregou uma página",
+        "description": "Conhece HTML, CSS e JavaScript e quer dar o passo para aplicação."
+      },
+      {
+        "label": "Quem tentou React e travou",
+        "description": "Já viu tutorial mas não entendeu quando o componente renderiza de novo."
+      },
+      {
+        "label": "Quem vai entrar numa equipe",
+        "description": "Precisa ler e entender código React de outras pessoas."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "React sustenta desde painéis internos de empresas pequenas até produtos usados por centenas de milhões de pessoas. É a biblioteca de interface com maior base instalada da web, o que significa que a habilidade é transferível entre setores, tamanhos de empresa e países.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "SVAR — React, Vue or Svelte in 2026: comparativo com downloads npm e dados do State of JavaScript 2025",
+      "url": "https://svar.dev/blog/react-vs-vue-vs-svelte-for-modern-web-apps/"
+    },
+    {
+      "label": "React State Management in 2026: A Data-Driven Comparison — dados do State of React 2025",
+      "url": "https://saschb2b.com/blog/react-state-management-2026"
+    }
+  ]
+}

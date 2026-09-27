@@ -1,0 +1,175 @@
+{
+  "itens": [
+    {
+      "id": "javascript-fundamentos",
+      "blogURL": "/blog/javascript-fundamentos",
+      "img": "https://cdn.pixabay.com/photo/2020/01/26/20/14/computer-4795762_1280.jpg",
+      "illustrationImg": "https://cdn.pixabay.com/photo/2016/11/23/15/48/code-1853305_1280.jpg",
+      "title": "Domine o JavaScript e aprenda os fundamentos para criar projetos web incríveis.",
+      "tag": "Javascript",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-07-10",
+      "readingTime": "6 min",
+      "lead": "JavaScript é a única linguagem que roda nativamente em praticamente todo navegador do planeta — e é ela que transforma uma página estática em algo que responde ao que você faz. Antes de qualquer framework, existe um punhado de conceitos que decide se você vai entender o que está acontecendo, ou só copiar código sem saber por quê.",
+      "highlights": [
+        {
+          "label": "Variáveis e tipos",
+          "description": "Como o JavaScript guarda e diferencia informação — texto, número, verdadeiro/falso."
+        },
+        {
+          "label": "Funções",
+          "description": "O bloco reutilizável que recebe entrada, processa, e devolve resultado."
+        },
+        {
+          "label": "DOM e eventos",
+          "description": "Como o código enxerga a página e reage ao clique, ao digitar, ao rolar."
+        }
+      ],
+      "body": [
+        "Todo iniciante em JavaScript passa pelo mesmo momento de confusão: a sintaxe parece simples, mas o raciocínio por trás dela não é intuitivo até que alguns conceitos se encaixem. O primeiro deles é entender que JavaScript é uma linguagem que executa instrução por instrução, de cima para baixo — e que cada variável é uma caixa com nome, guardando um valor que pode mudar ao longo do tempo.",
+        "O segundo salto de entendimento vem com funções. Uma função é, na prática, uma receita: você define os ingredientes que ela espera receber (os parâmetros), o que ela faz com eles, e o que ela devolve no final. Uma vez que isso fica claro, código deixa de ser uma sequência solta de comandos e passa a ser um conjunto de blocos organizados, cada um com uma responsabilidade."
+      ],
+      "quote": "Você não aprende JavaScript decorando sintaxe. Aprende quando entende o que cada linha está pedindo para o navegador fazer.",
+      "bodyContinued": [
+        "É só depois desses dois fundamentos que a manipulação do DOM (Document Object Model) faz sentido de verdade. O DOM é a representação da sua página que o JavaScript consegue enxergar e alterar — é por isso que um clique num botão consegue mudar o texto de um parágrafo, sem a página inteira recarregar. Sem entender variável e função antes, o DOM parece mágica. Com esses dois fundamentos, ele é só mais uma ferramenta com um propósito claro.",
+        "O caminho mais eficiente não é tentar aprender tudo de uma vez — é praticar cada conceito isoladamente, num arquivo pequeno, antes de juntar tudo num projeto real. É exatamente essa progressão que o nosso módulo de JavaScript segue: primeiro a lógica, depois o DOM, só então a interatividade completa."
+      ],
+      "sources": [
+        {
+          "label": "MDN Web Docs — JavaScript",
+          "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+        }
+      ]
+    },
+    {
+      "id": "react-interfaces-modernas",
+      "blogURL": "/blog/react-interfaces-modernas",
+      "img": "https://cdn.pixabay.com/photo/2020/03/05/16/44/engineer-4904884_1280.jpg",
+      "illustrationImg": "https://cdn.pixabay.com/photo/2016/09/15/16/28/tree-1671079_1280.jpg",
+      "title": "Construa interfaces modernas e escaláveis dominando os conceitos do React JS",
+      "tag": "React JS",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-07-15",
+      "readingTime": "6 min",
+      "lead": "React é a biblioteca JavaScript mais usada do mundo para construir interfaces — mantida pela Meta e adotada por empresas de todos os portes. Mas o que faz ela valer a pena não é popularidade: é uma forma diferente de pensar a tela, dividida em pedaços pequenos e reutilizáveis, em vez de um documento único e monolítico.",
+      "highlights": [
+        {
+          "label": "Componentes",
+          "description": "Cada pedaço da interface — um botão, um card, um formulário — vira uma peça independente e reutilizável."
+        },
+        {
+          "label": "Estado (state)",
+          "description": "A memória de um componente. Quando o estado muda, o React redesenha a tela sozinho."
+        },
+        {
+          "label": "Props",
+          "description": "Como um componente recebe dado de fora, sem decidir por conta própria o que exibir."
+        }
+      ],
+      "body": [
+        "A ideia central do React é simples de enunciar e difícil de internalizar de primeira: em vez de escrever uma página inteira como um bloco só, você a divide em componentes — pequenas peças de interface, cada uma responsável por uma parte específica da tela. Um botão de curtir, um card de produto, um menu de navegação — cada um vira uma função que retorna o que deve aparecer.",
+        "O que torna essa divisão poderosa é a reutilização: o mesmo componente `Button` pode aparecer dez vezes na mesma página, cada instância com seu próprio texto e comportamento, sem você reescrever a lógica do botão dez vezes. Isso é o oposto de HTML puro, onde cada botão é código solto, repetido manualmente sempre que precisa de outro."
+      ],
+      "quote": "Pensar em componentes é a virada de chave: você para de perguntar 'como faço essa página' e passa a perguntar 'quais peças essa página é feita'.",
+      "bodyContinued": [
+        "A segunda peça central é o estado — a memória que cada componente carrega. Um contador de curtidas, um campo de formulário sendo digitado, um menu aberto ou fechado: tudo isso é estado. A regra de ouro do React é que, quando o estado muda, a tela se atualiza sozinha — você nunca escreve 'atualize esse número na tela', você só muda o valor guardado, e o React cuida do resto.",
+        "Por fim, componentes conversam entre si através de props — dados que um componente pai passa para um componente filho. Isso cria uma direção clara de informação (de cima para baixo), o que torna mais fácil entender de onde vem cada dado exibido, mesmo em telas com dezenas de componentes encaixados uns nos outros."
+      ],
+      "sources": [
+        {
+          "label": "React — Documentação oficial (react.dev)",
+          "url": "https://react.dev/"
+        }
+      ]
+    },
+    {
+      "id": "nodejs-backend-rapido",
+      "blogURL": "/blog/nodejs-backend-rapido",
+      "img": "https://cdn.pixabay.com/photo/2020/12/03/23/35/work-5801876_1280.jpg",
+      "illustrationImg": "https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg",
+      "title": "Aprenda Node JS e desenvolva aplicações rápidas e poderosas para o backend web",
+      "tag": "Node JS",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-07-16",
+      "readingTime": "6 min",
+      "lead": "JavaScript nasceu para rodar dentro do navegador. O Node.js quebrou essa regra: é um ambiente que executa JavaScript fora do navegador, no servidor — o que permite usar a mesma linguagem do frontend para construir o backend inteiro de uma aplicação.",
+      "highlights": [
+        {
+          "label": "Event loop",
+          "description": "O mecanismo que permite ao Node lidar com muitas conexões ao mesmo tempo, sem travar esperando uma terminar."
+        },
+        {
+          "label": "NPM",
+          "description": "O maior repositório de pacotes de código do mundo, prontos para instalar e usar no seu projeto."
+        },
+        {
+          "label": "APIs",
+          "description": "O uso mais comum do Node: construir o servidor que recebe pedido do frontend e devolve dado."
+        }
+      ],
+      "body": [
+        "O que diferencia o Node.js de outros ambientes de backend é o modelo de execução: em vez de abrir uma nova linha de processamento para cada pedido que chega (o que consome muita memória), o Node usa um único processo, organizado em torno de um event loop — uma fila que vai tratando cada tarefa assim que ela fica pronta, sem ficar parado esperando uma operação lenta (como uma consulta ao banco de dados) terminar antes de atender o próximo pedido.",
+        "Isso torna o Node especialmente eficiente para aplicações que lidam com muitas conexões simultâneas fazendo operações de entrada e saída — ler arquivo, consultar banco, chamar outra API — mais do que para tarefas de cálculo pesado, que bloqueiam essa fila única."
+      ],
+      "quote": "Node não é rápido porque faz uma coisa de cada vez rapidamente. É rápido porque nunca fica parado esperando.",
+      "bodyContinued": [
+        "Na prática, o uso mais comum de Node.js é construir APIs — o servidor que recebe uma requisição do frontend (\"me dá a lista de produtos\"), busca a informação (geralmente num banco de dados), e devolve a resposta em um formato que o frontend consegue exibir. Frameworks como o Express simplificam esse trabalho, cuidando de rotas e requisições para você focar na lógica do negócio.",
+        "Outra vantagem prática, além da performance: como o Node roda JavaScript, o mesmo desenvolvedor que escreve a interface pode escrever o backend, sem trocar de linguagem — o que reduz a curva de aprendizado de quem já vem do frontend e quer entender o outro lado da aplicação."
+      ],
+      "sources": [
+        {
+          "label": "Node.js — Documentação oficial",
+          "url": "https://nodejs.org/en/docs"
+        }
+      ]
+    },
+    {
+      "id": "scrum-projetos-ageis",
+      "blogURL": "/blog/scrum-projetos-ageis",
+      "img": "https://cdn.pixabay.com/photo/2019/09/23/12/02/rugby-4498375_1280.jpg",
+      "illustrationImg": "https://cdn.pixabay.com/photo/2016/02/19/10/00/office-1207746_1280.jpg",
+      "title": "Descubra como aplicar Scrum para organizar projetos ágeis com eficiência e foco",
+      "tag": "Scrum",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-07-17",
+      "readingTime": "5 min",
+      "lead": "Scrum não é sobre reunião diária nem sobre post-it colorido — isso é só a superfície. Na essência, é um framework para lidar com trabalho complexo dividindo-o em ciclos curtos, entregando algo utilizável no fim de cada um, e ajustando o rumo com base no que foi aprendido, em vez de tentar planejar tudo perfeitamente antes de começar.",
+      "highlights": [
+        {
+          "label": "Sprints",
+          "description": "Ciclos curtos e fixos (geralmente 1 a 4 semanas) que terminam com algo pronto para usar ou avaliar."
+        },
+        {
+          "label": "Papéis",
+          "description": "Product Owner (prioriza o quê fazer), Scrum Master (remove obstáculo), Time de Desenvolvimento (faz o trabalho)."
+        },
+        {
+          "label": "Cerimônias",
+          "description": "Reuniões com propósito específico: planejar o sprint, alinhar diariamente, revisar o resultado, e refletir sobre o processo."
+        }
+      ],
+      "body": [
+        "O coração do Scrum é o sprint: um período curto e de duração fixa em que o time se compromete a entregar um conjunto definido de trabalho. Ao final de cada sprint, existe algo concreto — não uma promessa de progresso, mas um incremento realmente utilizável. Isso resolve um problema clássico de projetos longos: descobrir, só no final, que o que foi construído não é o que era necessário.",
+        "Para isso funcionar, o Scrum define três papéis com responsabilidades distintas. O Product Owner decide o que é prioridade — qual problema resolver primeiro. O Scrum Master não gerencia pessoas, cuida do processo: remove obstáculo, protege o time de interrupção, garante que o framework seja seguido. E o Time de Desenvolvimento é quem efetivamente constrói, decidindo como fazer o que foi priorizado."
+      ],
+      "quote": "Scrum não elimina a incerteza de um projeto. Ele cria ciclos curtos o suficiente para você errar rápido, perceber, e corrigir — antes que o erro custe caro.",
+      "bodyContinued": [
+        "As cerimônias do Scrum existem para sustentar esse ciclo: o Sprint Planning define o que entra no próximo ciclo; a Daily Scrum (reunião diária, curta) alinha o time sobre o progresso e os obstáculos; a Sprint Review mostra o que foi entregue para quem importa; e a Retrospectiva — talvez a mais subestimada — pergunta ao time o que funcionou e o que precisa mudar no próprio processo de trabalho.",
+        "O framework foi desenhado originalmente para desenvolvimento de software, mas hoje é usado em times de marketing, produto e operações — sempre que o trabalho é complexo demais para planejar com precisão total do início ao fim, e se beneficia de ciclos curtos de entrega e ajuste."
+      ],
+      "sources": [
+        {
+          "label": "The Scrum Guide — Ken Schwaber e Jeff Sutherland",
+          "url": "https://scrumguides.org/"
+        }
+      ]
+    },
+    {
+      "id": "rotina-desenvolvedor",
+      "blogURL": "/blog/rotina-desenvolvedor",
+      "img": "https://cdn.pixabay.com/photo/2019/10/03/12/12/hacker-4523097_1280.jpg",
+      "title": "Rotina de um Desenvolvedor: foco, desafios e práticas para evoluir no código",
+      "tag": "Hack"
+    }
+  ]
+}

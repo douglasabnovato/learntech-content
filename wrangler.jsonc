@@ -1,0 +1,33 @@
+// wrangler.jsonc — configuração do Worker learntech-content (plano gratuito da Cloudflare).
+// Leitura: arquivos estáticos em ./dist (gerados por `npm run build`).
+// Escrita: só /v1/acessos, que passa pelo Worker e grava no D1.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "learntech-content",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-09-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "none",
+    "run_worker_first": ["/v1/acessos", "/v1/acessos/*", "/v1/saude"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "learntech-acessos",
+      "database_id": "COLE_AQUI_O_ID_GERADO_PELO_WRANGLER_D1_CREATE",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "triggers": { "crons": ["0 3 * * *"] },
+  "vars": {
+    "ALLOWED_ORIGINS": "https://learn-tech-pied.vercel.app,https://bootcamps-dun.vercel.app,https://douglasabnovato.github.io,http://localhost:*,http://127.0.0.1:*",
+    "RETENCAO_DIAS": "365",
+    "JANELA_DEDUPE_MIN": "30"
+  },
+  "observability": { "enabled": true }
+}
+// Segredos (nunca neste arquivo): `wrangler secret put ADMIN_TOKEN` e, se usar Turnstile, `wrangler secret put TURNSTILE_SECRET`.

@@ -1,0 +1,10 @@
+{
+  "id": 303,
+  "image": "https://cdn.pixabay.com/photo/2015/09/05/20/02/coding-924920_1280.jpg",
+  "category": "Backend",
+  "categoryFilter": "backend",
+  "title": "Arquitetura de Microsserviços com Docker e Kubernetes",
+  "lessons": "20+ Lições",
+  "duration": "18hr 30min",
+  "access": "Acesso Livre"
+}

@@ -1,0 +1,74 @@
+{
+  "lastUpdated": "19 de julho de 2026",
+  "sections": [
+    {
+      "id": "sobre",
+      "title": "1. Sobre a plataforma",
+      "content": [
+        "A learnTECH é uma plataforma de conteúdo técnico educacional. Seu funcionamento se divide em duas frentes: a curadoria de conteúdo público já existente, organizada, comentada e transformada em prática (Acesso Livre); e, quando disponível, conteúdo autoral produzido diretamente pela equipe da learnTECH (área de Membros).",
+        "Ao usar a plataforma, você concorda com os termos descritos nesta página. Se você não concorda com algum ponto, pedimos que não utilize os serviços da learnTECH."
+      ]
+    },
+    {
+      "id": "acesso-livre",
+      "title": "2. Conteúdo em Acesso Livre",
+      "content": [
+        "O conteúdo classificado como Acesso Livre é gratuito, não exige cadastro, e é composto por curadoria de material técnico público já existente na internet — sempre com a fonte original creditada.",
+        "A learnTECH não reivindica autoria sobre o conteúdo teórico de terceiros citado ou referenciado. O que a learnTECH desenvolve e disponibiliza como produção própria é a organização desse conteúdo, os comentários explicativos, e o projeto prático construído a partir dele."
+      ]
+    },
+    {
+      "id": "membros",
+      "title": "3. Conteúdo para Membros",
+      "content": [
+        "A área de Membros, quando disponível, reúne conteúdo autoral — produzido diretamente pela learnTECH — e pode exigir cadastro e, futuramente, outras condições de acesso a serem informadas com clareza antes de qualquer cobrança.",
+        "Esta funcionalidade está em desenvolvimento. Referências a ela nesta plataforma descrevem uma direção futura, não um recurso já disponível."
+      ]
+    },
+    {
+      "id": "propriedade-intelectual",
+      "title": "4. Propriedade intelectual",
+      "content": [
+        "O conteúdo teórico de terceiros, quando citado ou referenciado nas trilhas de Acesso Livre, permanece de propriedade de seus respectivos autores e fontes originais — a learnTECH apenas credita e referencia.",
+        "Os projetos práticos desenvolvidos pela learnTECH, os textos autorais, a identidade visual da plataforma e o conteúdo produzido para a área de Membros são de propriedade da learnTECH, e sua reprodução ou redistribuição sem autorização não é permitida."
+      ]
+    },
+    {
+      "id": "uso-responsavel",
+      "title": "5. Uso responsável da plataforma",
+      "content": [
+        "Você concorda em não utilizar a learnTECH para fins ilícitos, para reproduzir conteúdo autoral sem autorização, ou para qualquer atividade que prejudique o funcionamento da plataforma ou de outros usuários.",
+        "O formulário de contato ('Fala aê') deve ser usado para dúvida, sugestão ou reporte de problema técnico — mensagens com outro propósito podem não receber resposta."
+      ]
+    },
+    {
+      "id": "isencao",
+      "title": "6. Isenção de responsabilidade",
+      "content": [
+        "O conteúdo da learnTECH tem finalidade educacional. Ele não substitui aconselhamento profissional (jurídico, financeiro, de carreira ou de qualquer outra natureza) e deve ser interpretado como material de estudo, não como garantia de resultado.",
+        "Trilhas que envolvem instalação de programas, configuração de ambiente, ou publicação de projeto em serviço de terceiros (como GitHub, Vercel ou Netlify) são executadas por conta e risco do próprio usuário. A learnTECH descreve o processo com o maior cuidado possível, mas não controla o funcionamento desses serviços externos."
+      ]
+    },
+    {
+      "id": "recursos-futuros",
+      "title": "7. Recursos em desenvolvimento",
+      "content": [
+        "Funcionalidades mencionadas como parte do roadmap da plataforma — como certificado de conclusão, comunidade, ou novas trilhas — ainda não estão disponíveis no momento desta publicação, e sua disponibilização futura não constitui garantia contratual de prazo."
+      ]
+    },
+    {
+      "id": "alteracoes",
+      "title": "8. Alterações nestes termos",
+      "content": [
+        "Estes termos podem ser atualizados conforme a plataforma evolui. A data da última atualização é sempre exibida no topo desta página. O uso continuado da plataforma após uma atualização representa a concordância com a nova versão."
+      ]
+    },
+    {
+      "id": "legislacao",
+      "title": "9. Legislação aplicável",
+      "content": [
+        "Estes termos são regidos pela legislação brasileira, incluindo, quando aplicável, o Código de Defesa do Consumidor. Eventuais controvérsias serão submetidas ao foro da comarca de domicílio do usuário, salvo disposição legal em contrário."
+      ]
+    }
+  ]
+}

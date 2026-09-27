@@ -1,0 +1,48 @@
+{
+  "id": "19",
+  "slug": "hackathon-inovacao-social-jf",
+  "title": "Hackathon de Inovação Social JF 2023",
+  "institution": "Prefeitura de Juiz de Fora e Moinho",
+  "description": "Maratona de 2 dias para criar soluções tecnológicas para desafios de saúde e educação da rede municipal.",
+  "coverImage": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/2.webp",
+  "altText": "Participantes do hackathon na arquibancada do Moinho durante a abertura",
+  "category": "outros",
+  "status": "concluido",
+  "content": {
+    "longDescription": "Em 21 e 22 de janeiro de 2023, a Prefeitura de Juiz de Fora e o Moinho realizaram o Hackathon de Inovação Social. Equipes de estudantes, profissionais e empreendedores desenvolveram soluções tecnológicas para desafios de saúde e educação levantados com alunos da rede municipal, com mentorias e conversas com empreendedores. As melhores equipes receberam seis meses de acesso ao hub de inovação do Moinho. Douglas participou da maratona.",
+    "videoUrl": "",
+    "gallery": [
+      {
+        "id": "hackathon-inovacao-social-jf-1",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/1.webp",
+        "type": "image",
+        "alt": "Arte oficial de divulgação do hackathon"
+      },
+      {
+        "id": "hackathon-inovacao-social-jf-2",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/2.webp",
+        "type": "image",
+        "alt": "Abertura com participantes na arquibancada"
+      },
+      {
+        "id": "hackathon-inovacao-social-jf-3",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/3.webp",
+        "type": "image",
+        "alt": "Vista panorâmica do espaço do Moinho durante a maratona"
+      },
+      {
+        "id": "hackathon-inovacao-social-jf-4",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/4.webp",
+        "type": "image",
+        "alt": "Selfie no espaço do evento"
+      }
+    ],
+    "curriculum": [
+      "Desafios reais de saúde e educação",
+      "Mentorias com empreendedores",
+      "Prototipação em equipe",
+      "Apresentação das soluções"
+    ],
+    "officialLink": "https://tribunademinas.com.br/noticias/cidade/18-01-2023/pjf-e-moinho-realizam-hackathon-para-projetos-de-tecnologia-nas-areas-de-saude-e-educacao.html"
+  }
+}

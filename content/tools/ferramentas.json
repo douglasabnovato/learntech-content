@@ -1,0 +1,464 @@
+[
+  {
+    "title": "Figma",
+    "description": "Design de interface e protótipo navegável, com edição simultânea no navegador.",
+    "category": "Design",
+    "pricing": "Freemium",
+    "thumb": "./assets/thumb_tools/figma.jpg",
+    "site_url": "https://www.figma.com/"
+  },
+  {
+    "title": "Balsamiq",
+    "description": "Wireframes com cara de rascunho, para discutir estrutura sem discutir estilo.",
+    "category": "Design",
+    "pricing": "Pago",
+    "thumb": "./assets/thumb_tools/balsamiq.jpg",
+    "site_url": "https://balsamiq.cloud/"
+  },
+  {
+    "title": "Mockingbird",
+    "description": "Wireframes de baixa fidelidade para validar telas antes de escrever código.",
+    "category": "Design",
+    "pricing": "Freemium",
+    "thumb": "./assets/thumb_tools/mockingbird.jpg",
+    "site_url": "https://gomockingbird.com/home"
+  },
+  {
+    "title": "Whimsical",
+    "description": "Fluxogramas, mapas mentais e wireframes convivendo no mesmo quadro.",
+    "category": "Design",
+    "pricing": "Freemium",
+    "thumb": "./assets/thumb_tools/whimsical.jpg",
+    "site_url": "https://whimsical.com/"
+  },
+  {
+    "title": "Diagrams",
+    "description": "Diagramas de arquitetura, fluxo e rede direto no navegador, sem criar conta.",
+    "category": "Design",
+    "pricing": "Gratuito",
+    "thumb": "./assets/thumb_tools/diagrams.jpg",
+    "site_url": "https://app.diagrams.net/"
+  },
+  {
+    "title": "brModelo Web",
+    "description": "Modelagem entidade-relacionamento de banco de dados no navegador.",
+    "category": "Design",
+    "pricing": "Gratuito",
+    "thumb": "./assets/thumb_tools/brmodeloweb.jpg",
+    "site_url": "https://docs.brmodeloweb.com/"
+  },
+  {
+    "title": "CodePen",
+    "description": "Editor de HTML, CSS e JS com resultado ao vivo e galeria pública de exemplos.",
+    "category": "Código",
+    "pricing": "Freemium",
+    "thumb": "./assets/thumb_tools/codepen.jpg",
+    "site_url": "https://codepen.io/your-work"
+  },
+  {
+    "title": "CodeSandbox",
+    "description": "Ambiente de desenvolvimento completo no navegador, com npm e preview.",
+    "category": "Código",
+    "pricing": "Freemium",
+    "thumb": "./assets/thumb_tools/codesandbox.jpg",
+    "site_url": "https://codesandbox.io/s/vanilla-vanilla"
+  },
+  {
+    "title": "StackBlitz",
+    "description": "Projetos Node e front-end rodando no navegador, sem instalar nada na máquina.",
+    "category": "Código",
+    "pricing": "Freemium",
+    "thumb": "./assets/thumb_tools/stackblitz.jpg",
+    "site_url": "https://stackblitz.com/"
+  },
+  {
+    "title": "Fronteditor",
+    "description": "Editor de HTML, CSS e JS em tela dividida, com preview instantâneo.",
+    "category": "Código",
+    "pricing": "Gratuito",
+    "thumb": "./assets/thumb_tools/fronteditor.jpg",
+    "site_url": "https://www.fronteditor.dev/"
+  },
+  {
+    "title": "GitHub",
+    "description": "Repositórios Git com Actions, Pages e Projects — a base do trabalho em código.",
+    "category": "Versionamento",
+    "pricing": "Freemium",
+    "thumb": "./assets/thumb_tools/github.jpg",
+    "site_url": "https://github.com/"
+  },
+  {
+    "title": "GitLab",
+    "description": "Repositório Git com CI/CD, issues e registro de container no mesmo lugar.",
+    "category": "Versionamento",
+    "pricing": "Freemium",
+    "thumb": "./assets/thumb_tools/gitlab.jpg",
+    "site_url": "https://about.gitlab.com/"
+  },
+  {
+    "title": "Bitbucket",
+    "description": "Repositórios Git com pipelines integrados ao ecossistema Atlassian.",
+    "category": "Versionamento",
+    "pricing": "Freemium",
+    "thumb": "./assets/thumb_tools/bitbucket.jpg",
+    "site_url": "https://bitbucket.org/"
+  },
+  {
+    "title": "Postman",
+    "description": "Testa, documenta e versiona requisições de API organizadas em coleções.",
+    "category": "Back-end",
+    "pricing": "Freemium",
+    "thumb": "./assets/thumb_tools/postman.jpg",
+    "site_url": "https://www.postman.com/"
+  },
+  {
+    "title": "Mailtrap",
+    "description": "Caixa de e-mail falsa para testar envios sem entregar na caixa real de ninguém.",
+    "category": "Back-end",
+    "pricing": "Freemium",
+    "thumb": "./assets/thumb_tools/mailtrap.jpg",
+    "site_url": "https://mailtrap.io/"
+  },
+  {
+    "title": "PageSpeed Insights",
+    "description": "Mede as Core Web Vitals de uma página e lista as correções por ordem de impacto.",
+    "category": "Performance",
+    "pricing": "Gratuito",
+    "thumb": "https://www.google.com/s2/favicons?domain=pagespeed.web.dev&sz=256",
+    "thumbFit": "contain",
+    "site_url": "https://pagespeed.web.dev/"
+  },
+  {
+    "title": "Squoosh",
+    "description": "Comprime e converte imagem para WebP e AVIF dentro do próprio navegador.",
+    "category": "Performance",
+    "pricing": "Gratuito",
+    "thumb": "https://www.google.com/s2/favicons?domain=squoosh.app&sz=256",
+    "thumbFit": "contain",
+    "site_url": "https://squoosh.app/"
+  },
+  {
+    "title": "Data Studio",
+    "description": "Dashboards conectados a planilhas, bancos e Analytics, compartilháveis por link.",
+    "category": "Dados",
+    "pricing": "Gratuito",
+    "thumb": "https://www.google.com/s2/favicons?domain=datastudio.google.com&sz=256",
+    "thumbFit": "contain",
+    "site_url": "https://datastudio.google.com/"
+  },
+  {
+    "title": "Notion",
+    "description": "Documentos, bases de dados e wikis reunidos num espaço único de trabalho.",
+    "category": "Produtividade",
+    "pricing": "Freemium",
+    "thumb": "./assets/thumb_tools/notion.jpg",
+    "site_url": "https://www.notion.so/"
+  },
+  {
+    "title": "Trello",
+    "description": "Quadros kanban para organizar tarefas por coluna, prazo e responsável.",
+    "category": "Produtividade",
+    "pricing": "Freemium",
+    "thumb": "./assets/thumb_tools/trello.jpg",
+    "site_url": "https://trello.com/home"
+  },
+  {
+    "title": "Dontpad",
+    "description": "Bloco de notas compartilhado por URL, sem cadastro e sem instalação.",
+    "category": "Produtividade",
+    "pricing": "Gratuito",
+    "thumb": "./assets/thumb_tools/dontpad.jpg",
+    "site_url": "https://dontpad.com/"
+  },
+  {
+    "title": "Pomofocus",
+    "description": "Timer Pomodoro no navegador para alternar blocos de foco e pausas.",
+    "category": "Produtividade",
+    "pricing": "Gratuito",
+    "thumb": "./assets/thumb_tools/pomodoro.jpg",
+    "site_url": "https://pomofocus.io/"
+  },
+  {
+    "title": "Stack Overflow",
+    "description": "A maior base de perguntas e respostas de programação da internet.",
+    "category": "Comunidade",
+    "pricing": "Gratuito",
+    "thumb": "./assets/thumb_tools/stackoverflow.jpg",
+    "site_url": "https://stackoverflow.com/"
+  },
+  {
+    "title": "Discord",
+    "description": "Servidores de comunidade para tirar dúvida e acompanhar projeto em tempo real.",
+    "category": "Comunidade",
+    "pricing": "Freemium",
+    "thumb": "./assets/thumb_tools/discord.jpg",
+    "site_url": "https://discord.com/"
+  },
+  {
+    "title": "Slack",
+    "description": "Comunicação por canais, com integrações e histórico pesquisável.",
+    "category": "Comunidade",
+    "pricing": "Freemium",
+    "thumb": "./assets/thumb_tools/slack.jpg",
+    "site_url": "https://slack.com/intl/pt-br"
+  },
+  {
+    "title": "Hashnode",
+    "description": "Blog técnico com domínio próprio, sem anúncio e com publicação a partir do Git.",
+    "category": "Comunidade",
+    "pricing": "Gratuito",
+    "thumb": "./assets/thumb_tools/hashnode.jpg",
+    "site_url": "https://hashnode.com/"
+  },
+  {
+    "title": "Behance",
+    "description": "Portfólios de design publicados — bons para estudar composição e processo.",
+    "category": "Comunidade",
+    "pricing": "Gratuito",
+    "thumb": "./assets/thumb_tools/behance.jpg",
+    "site_url": "https://www.behance.net/"
+  },
+  {
+    "title": "Dribbble",
+    "description": "Recortes de interface postados por designers, para referência visual rápida.",
+    "category": "Comunidade",
+    "pricing": "Freemium",
+    "thumb": "./assets/thumb_tools/dribbble.jpg",
+    "site_url": "https://dribbble.com/"
+  },
+  {
+    "title": "Pinterest",
+    "description": "Painéis de referência para montar e organizar direção de arte.",
+    "category": "Comunidade",
+    "pricing": "Gratuito",
+    "thumb": "./assets/thumb_tools/pinterest.jpg",
+    "site_url": "https://br.pinterest.com/"
+  },
+  {
+    "title": "Unsplash",
+    "description": "Fotografia em alta resolução, de uso livre e sem atribuição obrigatória.",
+    "category": "Imagens",
+    "pricing": "Gratuito",
+    "thumb": "./assets/thumb_tools/unsplash.jpg",
+    "site_url": "https://unsplash.com/"
+  },
+  {
+    "title": "illlustrations",
+    "description": "Ilustrações vetoriais de código aberto, liberadas para uso comercial.",
+    "category": "Imagens",
+    "pricing": "Gratuito",
+    "thumb": "./assets/thumb_tools/illlustrations.jpg",
+    "site_url": "https://illlustrations.co/"
+  },
+  {
+    "title": "Freepik",
+    "description": "Vetores, fotos e modelos editáveis para montar peça gráfica rápido.",
+    "category": "Imagens",
+    "pricing": "Freemium",
+    "thumb": "./assets/thumb_tools/freepik.jpg",
+    "site_url": "https://br.freepik.com/"
+  },
+  {
+    "title": "Photopea",
+    "description": "Editor de imagem no navegador que abre arquivos PSD, XCF e Sketch.",
+    "category": "Imagens",
+    "pricing": "Gratuito",
+    "thumb": "./assets/thumb_tools/photopea.jpg",
+    "site_url": "https://www.photopea.com/"
+  },
+  {
+    "title": "Imagens Gratuitas",
+    "description": "Lista comentada de bancos de imagem e recursos livres para projeto web.",
+    "category": "Imagens",
+    "pricing": "Gratuito",
+    "thumb": "./assets/thumb_tools/imgsgratis.jpg",
+    "site_url": "https://blog.rocketseat.com.br/melhores-sites-para-baixar-imagens-gratuitas-e-outros-recursos/"
+  },
+  {
+    "title": "Phosphor Icons",
+    "description": "Família de ícones de código aberto em seis pesos, com SVG e componentes prontos.",
+    "category": "Ícones",
+    "pricing": "Gratuito",
+    "thumb": "./assets/thumb_tools/phosphoricons.jpg",
+    "site_url": "https://phosphoricons.com/"
+  },
+  {
+    "title": "Flaticon",
+    "description": "Banco de ícones em SVG e PNG; o plano gratuito exige atribuição.",
+    "category": "Ícones",
+    "pricing": "Freemium",
+    "thumb": "./assets/thumb_tools/flaticon.jpg",
+    "site_url": "https://www.flaticon.com/"
+  },
+  {
+    "title": "Icons8",
+    "description": "Ícones, ilustrações e fotos desenhados em estilos consistentes entre si.",
+    "category": "Ícones",
+    "pricing": "Freemium",
+    "thumb": "./assets/thumb_tools/icons8.jpg",
+    "site_url": "https://icons8.com/"
+  },
+  {
+    "title": "Google Fonts",
+    "description": "Catálogo de fontes livres, com preview e o código de incorporação pronto.",
+    "category": "Ícones",
+    "pricing": "Gratuito",
+    "thumb": "./assets/thumb_tools/fonts-google.jpg",
+    "site_url": "https://fonts.google.com/"
+  },
+  {
+    "title": "HTML Color Codes",
+    "description": "Seletor de cor com conversão imediata entre HEX, RGB e HSL.",
+    "category": "Cores",
+    "pricing": "Gratuito",
+    "thumb": "./assets/thumb_tools/htmlcolorcodes.jpg",
+    "site_url": "https://htmlcolorcodes.com/"
+  },
+  {
+    "title": "uiGradients",
+    "description": "Gradientes prontos com o CSS copiável ao lado de cada um.",
+    "category": "Cores",
+    "pricing": "Gratuito",
+    "thumb": "./assets/thumb_tools/uigradients.jpg",
+    "site_url": "https://uigradients.com/"
+  },
+  {
+    "title": "Converting Colors",
+    "description": "Converte uma cor entre todos os formatos e sugere harmonias a partir dela.",
+    "category": "Cores",
+    "pricing": "Gratuito",
+    "thumb": "./assets/thumb_tools/convertingcolors.jpg",
+    "site_url": "https://convertingcolors.com/"
+  },
+  {
+    "title": "Canva",
+    "description": "Peças gráficas, apresentações e logo a partir de modelo, direto no navegador.",
+    "category": "Marca e Site",
+    "pricing": "Freemium",
+    "thumb": "./assets/thumb_tools/canva.jpg",
+    "site_url": "https://www.canva.com/"
+  },
+  {
+    "title": "Tailor Brands",
+    "description": "Gera identidade de marca a partir do nome e do segmento do negócio.",
+    "category": "Marca e Site",
+    "pricing": "Pago",
+    "thumb": "./assets/thumb_tools/tailorbrands.jpg",
+    "site_url": "https://studio.tailorbrands.com/"
+  },
+  {
+    "title": "Nicepage",
+    "description": "Construtor de página com exportação para HTML, WordPress e Joomla.",
+    "category": "Marca e Site",
+    "pricing": "Freemium",
+    "thumb": "./assets/thumb_tools/nicepage.jpg",
+    "site_url": "https://nicepage.com/"
+  },
+  {
+    "title": "WordPress",
+    "description": "Publicação de site e blog com tema e plugin, sem precisar escrever código.",
+    "category": "Marca e Site",
+    "pricing": "Freemium",
+    "thumb": "./assets/thumb_tools/wordpress.jpg",
+    "site_url": "https://wordpress.com/"
+  },
+  {
+    "title": "Git",
+    "description": "Controle de versão distribuído: histórico, branches e colaboração em qualquer projeto de código.",
+    "category": "Versionamento",
+    "pricing": "Gratuito",
+    "thumb": "https://www.google.com/s2/favicons?domain=git-scm.com&sz=128",
+    "site_url": "https://git-scm.com/",
+    "thumbFit": "contain"
+  },
+  {
+    "title": "VS Code",
+    "description": "Editor de código leve e extensível, com terminal, depurador e integração com Git.",
+    "category": "Código",
+    "pricing": "Gratuito",
+    "thumb": "https://www.google.com/s2/favicons?domain=code.visualstudio.com&sz=128",
+    "site_url": "https://code.visualstudio.com/",
+    "thumbFit": "contain"
+  },
+  {
+    "title": "Vite",
+    "description": "Ferramenta de build e servidor de desenvolvimento rápido para projetos front-end.",
+    "category": "Código",
+    "pricing": "Gratuito",
+    "thumb": "https://www.google.com/s2/favicons?domain=vite.dev&sz=128",
+    "site_url": "https://vite.dev/",
+    "thumbFit": "contain"
+  },
+  {
+    "title": "Vitest",
+    "description": "Framework de testes integrado ao Vite, com API compatível com Jest.",
+    "category": "Código",
+    "pricing": "Gratuito",
+    "thumb": "https://www.google.com/s2/favicons?domain=vitest.dev&sz=128",
+    "site_url": "https://vitest.dev/",
+    "thumbFit": "contain"
+  },
+  {
+    "title": "Tailwind CSS",
+    "description": "Framework CSS utilitário para montar interfaces direto no HTML ou JSX.",
+    "category": "Código",
+    "pricing": "Gratuito",
+    "thumb": "https://www.google.com/s2/favicons?domain=tailwindcss.com&sz=128",
+    "site_url": "https://tailwindcss.com/",
+    "thumbFit": "contain"
+  },
+  {
+    "title": "VisuAlg",
+    "description": "Interpretador de pseudocódigo em português, usado para aprender lógica de programação.",
+    "category": "Código",
+    "pricing": "Gratuito",
+    "thumb": "https://www.google.com/s2/favicons?domain=sourceforge.net&sz=128",
+    "site_url": "https://sourceforge.net/projects/visualg30/",
+    "thumbFit": "contain"
+  },
+  {
+    "title": "Prisma",
+    "description": "ORM para Node.js e TypeScript, com schema declarativo e migrações de banco.",
+    "category": "Back-end",
+    "pricing": "Freemium",
+    "thumb": "https://www.google.com/s2/favicons?domain=prisma.io&sz=128",
+    "site_url": "https://www.prisma.io/",
+    "thumbFit": "contain"
+  },
+  {
+    "title": "Logisim Evolution",
+    "description": "Simulador de circuitos digitais para estudar portas lógicas e arquitetura de computadores.",
+    "category": "Design",
+    "pricing": "Gratuito",
+    "thumb": "https://www.google.com/s2/favicons?domain=github.com&sz=128",
+    "site_url": "https://github.com/logisim-evolution/logisim-evolution",
+    "thumbFit": "contain"
+  },
+  {
+    "title": "StarUML",
+    "description": "Modelagem UML: diagramas de classes, casos de uso e sequência.",
+    "category": "Design",
+    "pricing": "Freemium",
+    "thumb": "https://www.google.com/s2/favicons?domain=staruml.io&sz=128",
+    "site_url": "https://staruml.io/",
+    "thumbFit": "contain"
+  },
+  {
+    "title": "Power BI",
+    "description": "Painéis e relatórios interativos a partir de planilhas e bancos de dados.",
+    "category": "Dados",
+    "pricing": "Freemium",
+    "thumb": "https://www.google.com/s2/favicons?domain=powerbi.microsoft.com&sz=128",
+    "site_url": "https://www.microsoft.com/pt-br/power-platform/products/power-bi",
+    "thumbFit": "contain"
+  },
+  {
+    "title": "Salesforce Marketing Cloud",
+    "description": "Plataforma de automação de marketing: jornadas, e-mail, SMS e segmentação de dados.",
+    "category": "Dados",
+    "pricing": "Pago",
+    "thumb": "https://www.google.com/s2/favicons?domain=salesforce.com&sz=128",
+    "site_url": "https://www.salesforce.com/br/marketing/",
+    "thumbFit": "contain"
+  }
+]

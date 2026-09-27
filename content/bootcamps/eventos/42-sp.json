@@ -1,0 +1,21 @@
+{
+  "id": "1",
+  "slug": "42-sp",
+  "title": "Piscine 42SP",
+  "institution": "42 São Paulo",
+  "description": "Avancei na seleção da 42 em 2026 até ser aprovado para a Piscina, mas cedi a vaga por não conseguir estar presente.",
+  "coverImage": "/media/bootcamps/instituicoes/42sp.webp",
+  "altText": "Ambiente de imersão da 42 São Paulo",
+  "category": "fullstack",
+  "status": "desejado",
+  "content": {
+    "longDescription": "Fiz o processo seletivo da 42 São Paulo: primeiro uma etapa online, depois uma missão presencial de 7 dias em abril de 2026, na sede de uma empresa parceira, resolvendo desafios em Python. Avancei pelas duas fases e fui aprovado para a Piscina — a etapa final e mais intensa do processo seletivo. Precisei ceder minha vaga por não conseguir estar presencialmente disponível no período. Fica como uma jornada recente que pretendo retomar.",
+    "videoUrl": "https://www.youtube.com/embed/1-fUC6_yntE",
+    "gallery": [],
+    "curriculum": [
+      "Jogo de Lógica e Memória (seleção online)",
+      "Missão presencial de 7 dias — desafios em Python (abril/2026)"
+    ],
+    "officialLink": "https://www.42sp.org.br"
+  }
+}

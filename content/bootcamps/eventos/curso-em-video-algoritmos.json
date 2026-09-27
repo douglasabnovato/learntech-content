@@ -1,0 +1,23 @@
+{
+  "id": "9",
+  "slug": "curso-em-video-algoritmos",
+  "title": "Curso de Algoritmos e Lógica de Programação",
+  "institution": "Curso em Vídeo",
+  "description": "Curso gratuito e icônico de lógica de programação do professor Gustavo Guanabara.",
+  "coverImage": "/media/bootcamps/instituicoes/curso-em-video.webp",
+  "altText": "Identidade visual do Curso em Vídeo",
+  "category": "outros",
+  "status": "concluido",
+  "content": {
+    "longDescription": "Referência para quem está começando a programar no Brasil: aulas descontraídas do professor Gustavo Guanabara cobrindo algoritmos e lógica de programação com pseudocódigo (Portugol), base para aprender qualquer linguagem depois.",
+    "videoUrl": "",
+    "gallery": [],
+    "curriculum": [
+      "Algoritmos",
+      "Lógica de Programação",
+      "Pseudocódigo (Portugol)",
+      "Estruturas de Decisão e Repetição"
+    ],
+    "officialLink": "https://www.cursoemvideo.com/curso/curso-de-algoritmo/"
+  }
+}

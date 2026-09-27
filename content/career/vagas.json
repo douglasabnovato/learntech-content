@@ -1,0 +1,114 @@
+[
+  {
+    "title": "Coodesh",
+    "duration": "Atualizado",
+    "thumb": "./assets/thumb_jobs/coodesh.jpg",
+    "site_url": "https://coodesh.com/",
+    "category": "Tech Jobs"
+  },
+  {
+    "title": "GeekHunter",
+    "duration": "Atualizado",
+    "thumb": "./assets/thumb_jobs/geekhunter.jpg",
+    "site_url": "https://www.geekhunter.com.br/vagas",
+    "category": "Tech Jobs"
+  },
+  {
+    "title": "LinkedIn",
+    "duration": "Global",
+    "thumb": "./assets/thumb_jobs/linkedin.jpg",
+    "site_url": "https://www.linkedin.com/jobs/",
+    "category": "General Jobs"
+  },
+  {
+    "title": "Polywork",
+    "duration": "Professional",
+    "thumb": "./assets/thumb_jobs/polywork.jpg",
+    "site_url": "https://www.polywork.com/",
+    "category": "Networking"
+  },
+  {
+    "title": "Programadores JF",
+    "duration": "Local",
+    "thumb": "./assets/thumb_jobs/programadoresjuizdefora.jpg",
+    "site_url": "https://programador.emjuizdefora.com/oportunidades",
+    "category": "Community"
+  },
+  {
+    "title": "Programathor",
+    "duration": "Específico",
+    "thumb": "./assets/thumb_jobs/programathor.jpg",
+    "site_url": "https://programathor.com.br/",
+    "category": "Tech Jobs"
+  },
+  {
+    "title": "Bossabox",
+    "duration": "Freelance/Projetos",
+    "thumb": "./assets/thumb_jobs/bossabox.jpg",
+    "site_url": "https://app.bossabox.com/profile/jobs/active-products",
+    "category": "Freelance"
+  },
+  {
+    "title": "Impulso",
+    "duration": "Comunidade",
+    "thumb": "./assets/thumb_jobs/impulso.jpg",
+    "site_url": "https://app.impulso.team/painel",
+    "category": "Squads"
+  },
+  {
+    "title": "Trampos",
+    "duration": "Geral",
+    "thumb": "./assets/thumb_jobs/trampos.jpg",
+    "site_url": "https://trampos.co/oportunidades/?tr=desenvolvedor",
+    "category": "General Jobs"
+  },
+  {
+    "title": "Revelo",
+    "duration": "International",
+    "thumb": "./assets/thumb_jobs/revelo.jpg",
+    "site_url": "https://app.careers.revelo.com/#/international/positions/list",
+    "category": "Global Jobs"
+  },
+  {
+    "title": "Movile",
+    "duration": "Ecossistema",
+    "thumb": "./assets/thumb_jobs/movile.jpg",
+    "site_url": "https://www.movile.com.br/carreiras-movile",
+    "category": "Ecosystem"
+  },
+  {
+    "title": "Glassdoor",
+    "duration": "Reviews/Jobs",
+    "thumb": "./assets/thumb_jobs/glassdoor.jpg",
+    "site_url": "https://www.glassdoor.com.br/",
+    "category": "Reviews"
+  },
+  {
+    "title": "Abler",
+    "duration": "Plataforma",
+    "thumb": "./assets/thumb_jobs/abler.jpg",
+    "site_url": "https://candidatos.abler.com.br/app/vagas",
+    "category": "ATS"
+  },
+  {
+    "title": "99freelas",
+    "duration": "Freelance",
+    "thumb": "./assets/thumb_jobs/99freelas.jpg",
+    "site_url": "https://www.99freelas.com.br/projects",
+    "category": "Freelance"
+  },
+  {
+    "title": "Superprof",
+    "duration": "Aulas",
+    "thumb": "./assets/thumb_jobs/superprof.jpg",
+    "site_url": "https://www.superprof.com.br/",
+    "category": "Mentoring"
+  },
+  {
+    "title": "Workana",
+    "duration": "Freelance",
+    "thumb": "./assets/thumb_jobs/workana.jpg",
+    "site_url": "https://www.workana.com/jobs",
+    "category": "Freelance"
+  }
+]

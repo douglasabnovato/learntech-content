@@ -1,0 +1,24 @@
+{
+  "id": "3",
+  "slug": "caelum-java",
+  "title": "Formação Java",
+  "institution": "Caelum (Alura)",
+  "description": "Fundamentos sólidos de Programação Orientada a Objetos com Java, da Caelum, hoje parte da Alura.",
+  "coverImage": "/media/bootcamps/instituicoes/caelum.webp",
+  "altText": "Identidade visual da Formação Java da Caelum",
+  "category": "backend",
+  "status": "concluido",
+  "content": {
+    "longDescription": "A Formação Java da Caelum (incorporada à Alura) guia o aluno desde a sintaxe da linguagem e boas práticas até modelagem orientada a objetos consistente, preparando a base para frameworks como Spring e persistência com JPA/Hibernate.",
+    "videoUrl": "",
+    "gallery": [],
+    "curriculum": [
+      "Java SE",
+      "Programação Orientada a Objetos",
+      "Tratamento de Exceções",
+      "Spring Boot",
+      "Hibernate/JPA"
+    ],
+    "officialLink": "https://www.alura.com.br"
+  }
+}

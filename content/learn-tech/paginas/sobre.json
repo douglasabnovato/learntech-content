@@ -1,0 +1,52 @@
+{
+  "differentiators": [
+    {
+      "title": "Fonte sempre creditada",
+      "description": "Toda curadoria aponta de volta para quem criou o conteúdo original. Curar não é apagar autoria."
+    },
+    {
+      "title": "Projeto de verdade, não exemplo solto",
+      "description": "O que é construído aqui é publicável, testável, e pode entrar no seu portfólio — não é exercício de gaveta."
+    },
+    {
+      "title": "Problema real, não fictício",
+      "description": "Quando aplicamos o conteúdo a um cliente real, o resultado é medido pelo problema que resolveu — não por nota de exercício."
+    }
+  ],
+  "heroContent": {
+    "eyebrow": "O que é a learnTECH",
+    "title": "Organizamos o que já existe. Ensinamos a aplicar de verdade.",
+    "subtitle": "A internet já tem o conteúdo técnico que você precisa — espalhado, sem ordem, sem prática. A learnTECH existe para resolver essa desorganização: curadoria, comentário e, quando faz sentido, o projeto construído do zero até resolver um problema real."
+  },
+  "philosophyQuote": "Conteúdo gratuito não falta na internet. O que falta é alguém organizar, comentar e mostrar funcionando num caso real. É esse o trabalho que fazemos.",
+  "processSteps": [
+    {
+      "number": "01",
+      "icon": "FaMagnifyingGlass",
+      "title": "Curadoria",
+      "gradient": "from-indigo-500 via-sky-600 to-sky-700",
+      "description": "Buscamos o melhor conteúdo técnico gratuito que já existe na internet — não reinventamos o que já foi bem explicado por quem entende."
+    },
+    {
+      "number": "02",
+      "icon": "FaListCheck",
+      "title": "Organização",
+      "gradient": "from-sky-500 via-blue-600 to-indigo-600",
+      "description": "Colocamos esse conteúdo em ordem lógica, comentamos o que precisa de contexto, e creditamos sempre a fonte original — sem isso, não é curadoria, é cópia."
+    },
+    {
+      "number": "03",
+      "icon": "FaHammer",
+      "title": "Prática",
+      "gradient": "from-purple-500 via-pink-600 to-rose-600",
+      "description": "Quando o conteúdo pede, desenvolvemos o projeto que ele ensina — do zero, até funcionar de verdade. Teoria sem prática não vira habilidade."
+    },
+    {
+      "number": "04",
+      "icon": "FaHandshake",
+      "title": "Aplicação real",
+      "gradient": "from-emerald-500 via-teal-600 to-cyan-600",
+      "description": "Personalizamos o projeto e resolvemos um problema real, de um cliente real, com esse mesmo conteúdo — o teste que prova que o aprendizado funciona fora do tutorial."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "10",
+  "slug": "gdg-jf",
+  "title": "Encontros GDG Juiz de Fora",
+  "institution": "GDG Juiz de Fora",
+  "description": "Participação recorrente nos encontros da comunidade Google Developer Group de Juiz de Fora.",
+  "coverImage": "/media/bootcamps/instituicoes/gdg-jf.webp",
+  "altText": "Identidade visual do GDG Juiz de Fora",
+  "category": "outros",
+  "status": "concluido",
+  "content": {
+    "longDescription": "O GDG Juiz de Fora é uma comunidade local ativa desde 2014, com mais de 130 eventos técnicos gratuitos e abertos, cobrindo desde web e mobile até cloud e IA. Participação frequente nos encontros presenciais, que acontecem a cada duas semanas em locais variados da cidade.",
+    "videoUrl": "",
+    "gallery": [
+      {
+        "id": "gdg-jf-1",
+        "url": "/media/bootcamps/eventos/gdg-jf/1.webp",
+        "type": "image",
+        "alt": "Participantes reunidos em um encontro do GDG Juiz de Fora (2022)"
+      },
+      {
+        "id": "gdg-jf-2",
+        "url": "/media/bootcamps/eventos/gdg-jf/2.webp",
+        "type": "image",
+        "alt": "Confraternização da comunidade após um encontro (2023)"
+      }
+    ],
+    "curriculum": [
+      "Networking técnico local",
+      "Palestras sobre tecnologias Google e do mercado",
+      "Comunidade de desenvolvedores de Juiz de Fora"
+    ],
+    "officialLink": "https://gdg.community.dev/gdg-juiz-de-fora/"
+  }
+}

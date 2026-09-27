@@ -1,0 +1,54 @@
+{
+  "itens": [
+    {
+      "id": 1,
+      "question": "O que é a learnTECH?",
+      "answer": "Uma plataforma que faz curadoria de conteúdo técnico gratuito espalhado pela internet, organiza esse material, e — quando faz sentido — desenvolve o projeto que ele ensina até funcionar de verdade, aplicado a um problema real."
+    },
+    {
+      "id": 2,
+      "question": "O conteúdo é realmente gratuito?",
+      "answer": "Sim. Os conteúdos em Acesso Livre são abertos, sem custo e sem necessidade de cadastro. Estamos construindo também uma área de conteúdo autoral, exclusiva para membros — isso ainda está a caminho."
+    },
+    {
+      "id": 3,
+      "question": "Preciso me cadastrar para acessar os programas?",
+      "answer": "Não, para o conteúdo em Acesso Livre. O cadastro será necessário quando a área de membros (conteúdo autoral, produzido por nós) estiver disponível."
+    },
+    {
+      "id": 4,
+      "question": "Como funciona a curadoria de conteúdo?",
+      "answer": "Buscamos o melhor material técnico gratuito já existente, organizamos em ordem lógica, comentamos o que precisa de contexto, e sempre creditamos a fonte original. Curadoria sem crédito é cópia — não é o que fazemos."
+    },
+    {
+      "id": 5,
+      "question": "Vocês produzem conteúdo próprio, ou é tudo de terceiros?",
+      "answer": "As duas coisas, em camadas diferentes: curamos o que já existe (com fonte creditada) e desenvolvemos, com as próprias mãos, o projeto prático que aquele conteúdo ensina — isso sim é produção nossa, do zero."
+    },
+    {
+      "id": 6,
+      "question": "Quantos programas existem hoje?",
+      "answer": "Preferimos entregar poucas trilhas completas e aprofundadas a muitas trilhas rasas. Novas trilhas são publicadas conforme ficam prontas com esse padrão de profundidade."
+    },
+    {
+      "id": 7,
+      "question": "Existe certificado de conclusão?",
+      "answer": "Ainda não — está no nosso roteiro de próximos recursos. Quando lançarmos, vai representar a conclusão real de uma trilha, não só o acesso a ela."
+    },
+    {
+      "id": 8,
+      "question": "O que fazer se eu travar num módulo ou numa questão do quiz?",
+      "answer": "Cada questão do quiz já vem com uma explicação de por que a resposta certa é certa — comece por ali. Se ainda tiver dúvida, use o formulário desta página para falar com a equipe."
+    },
+    {
+      "id": 9,
+      "question": "Posso sugerir um tema ou trilha que eu gostaria de ver aqui?",
+      "answer": "Sim — é exatamente para isso que existe esta página. Conta pra gente o que você gostaria de aprender."
+    },
+    {
+      "id": 10,
+      "question": "Como falo com a equipe por trás da learnTECH?",
+      "answer": "Pelo formulário logo abaixo. Ele foi pensado para chegar direto a quem toma as decisões da plataforma, não a um robô de atendimento."
+    }
+  ]
+}

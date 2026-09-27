@@ -1,0 +1,24 @@
+{
+  "id": "2",
+  "slug": "rocketseat-ignite",
+  "title": "Ignite ReactJS",
+  "institution": "Rocketseat",
+  "description": "Programa de aceleração da Rocketseat focado em React, TypeScript e arquitetura de aplicações modernas.",
+  "coverImage": "/media/bootcamps/instituicoes/rocketseat.webp",
+  "altText": "Identidade visual do programa Ignite da Rocketseat",
+  "category": "frontend",
+  "status": "concluido",
+  "content": {
+    "longDescription": "O Ignite é o programa de especialização da Rocketseat voltado para quem já programa há mais de um ano e quer se aprofundar no ecossistema React. A trilha cobre componentização, hooks, Context API, consumo de APIs e boas práticas de arquitetura front-end, com desafios práticos entregues a cada módulo.",
+    "videoUrl": "",
+    "gallery": [],
+    "curriculum": [
+      "ReactJS",
+      "TypeScript",
+      "Context API e Hooks",
+      "Consumo de APIs (Axios/React Query)",
+      "Testes automatizados (Jest)"
+    ],
+    "officialLink": "https://www.rocketseat.com.br/ignite"
+  }
+}

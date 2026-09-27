@@ -1,0 +1,55 @@
+{
+  "id": "18",
+  "slug": "fator-s-challenge",
+  "title": "Fator S Challenge 2023",
+  "institution": "Sebrae Minas",
+  "description": "Ideathon sobre o futuro do transporte ferroviário de carga, realizado no Moinho, em Juiz de Fora.",
+  "coverImage": "/media/bootcamps/eventos/fator-s-challenge/3.webp",
+  "altText": "Equipes reunidas no espaço do Fator S Challenge, no Moinho",
+  "category": "outros",
+  "status": "concluido",
+  "content": {
+    "longDescription": "De 19 a 21 de maio de 2023, o Moinho, em Juiz de Fora, recebeu o Fator S Challenge, ideathon do Sebrae Minas com a Wabtec Corporation e a Mhark. O desafio foi pensar o futuro do transporte ferroviário de carga no Brasil. Equipes com perfis complementares passaram por formação de times, workshops de definição do problema e de prototipação, mentorias e pitch final. Entre os projetos apresentados estava o Fuser, proposta de aplicativo para reduzir o custo de caminhões que rodam vazios no trecho Itaguaí–São Paulo.",
+    "videoUrl": "",
+    "gallery": [
+      {
+        "id": "fator-s-challenge-1",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/1.webp",
+        "type": "image",
+        "alt": "Backdrop do Fator S e kit de boas-vindas"
+      },
+      {
+        "id": "fator-s-challenge-2",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/2.webp",
+        "type": "image",
+        "alt": "Mentoria sobre tipos de pitch"
+      },
+      {
+        "id": "fator-s-challenge-3",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/3.webp",
+        "type": "image",
+        "alt": "Equipes trabalhando no espaço do Moinho"
+      },
+      {
+        "id": "fator-s-challenge-4",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/4.webp",
+        "type": "image",
+        "alt": "Pitch do projeto Fuser no palco"
+      },
+      {
+        "id": "fator-s-challenge-5",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/5.webp",
+        "type": "image",
+        "alt": "Canvas de modelo de negócio preenchido com post-its"
+      }
+    ],
+    "curriculum": [
+      "Formação de equipes multidisciplinares",
+      "Workshop de definição do problema",
+      "Workshop de prototipação",
+      "Mentorias de negócio e de pitch",
+      "Pitch final para banca"
+    ],
+    "officialLink": "https://mg.agenciasebrae.com.br/cultura-empreendedora/inscricoes-abertas-para-desafio-de-empreendedorismo-em-juiz-de-fora/"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": 104,
+  "image": "https://cdn.pixabay.com/photo/2014/09/24/14/29/macbook-459196_1280.jpg",
+  "category": "Frontend",
+  "categoryFilter": "frontend",
+  "title": "Estado Global com Redux e Context API em Aplicações Reais",
+  "lessons": "12+ Lições",
+  "duration": "10hr 15min",
+  "access": "Acesso Livre"
+}

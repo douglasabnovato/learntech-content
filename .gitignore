@@ -1,0 +1,9 @@
+# .gitignore — dependências, build, estado local do Wrangler e segredos ficam fora do repositório.
+node_modules/
+dist/
+.wrangler/
+.dev.vars
+.env
+.env.*
+*.log
+.DS_Store

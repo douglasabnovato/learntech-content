@@ -1,0 +1,24 @@
+{
+  "id": "5",
+  "slug": "freecodecamp-js-algorithms",
+  "title": "JavaScript Algorithms and Data Structures",
+  "institution": "freeCodeCamp",
+  "description": "Certificação gratuita do freeCodeCamp em algoritmos e estruturas de dados com JavaScript.",
+  "coverImage": "/media/bootcamps/instituicoes/freecodecamp.webp",
+  "altText": "Identidade visual da certificação do freeCodeCamp",
+  "category": "fullstack",
+  "status": "concluido",
+  "content": {
+    "longDescription": "Currículo open-source e gratuito do freeCodeCamp, com centenas de horas de exercícios interativos cobrindo variáveis, arrays, objetos, funções, programação orientada a objetos e funcional em JavaScript, finalizado com projetos certificáveis.",
+    "videoUrl": "",
+    "gallery": [],
+    "curriculum": [
+      "JavaScript (fundamentos e ES6)",
+      "Estruturas de Dados",
+      "Algoritmos",
+      "Programação Orientada a Objetos",
+      "Programação Funcional"
+    ],
+    "officialLink": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/"
+  }
+}

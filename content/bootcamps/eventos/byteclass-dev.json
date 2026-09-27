@@ -1,0 +1,24 @@
+{
+  "id": "14",
+  "slug": "byteclass-dev",
+  "title": "ByteClass",
+  "institution": "ByteClass",
+  "description": "Escola de tecnologia em Juiz de Fora (MG), com formação Full-Stack presencial/híbrida e mentoria direta de quem vive o mercado.",
+  "coverImage": "/media/bootcamps/instituicoes/byteclass-dev.webp",
+  "altText": "Identidade visual da ByteClass — estética Cyber-Retro em pixel art e glassmorphism",
+  "category": "fullstack",
+  "status": "concluido",
+  "content": {
+    "longDescription": "A ByteClass é uma escola de tecnologia focada em transformar iniciantes em desenvolvedores seniores, com sede física no Edifício Stella Central (Sala 902), em Juiz de Fora - MG. A formação percorre 5 níveis — de Lógica e Algoritmos (M1) até um Bootcamp de projetos reais ponta a ponta (M5) — cobrindo 3 trilhas técnicas (Frontend, Backend e Fullstack) e 27 tecnologias do mercado. A mentoria é conduzida por quem atua no mercado como CTO, dentro de um hub de tecnologia que facilita networking real entre alunos. Além da formação contínua, a ByteClass organiza um evento de tecnologia com data anunciada e agendada diretamente pelo Discord da comunidade — fique de olho nos canais para não perder a próxima edição.",
+    "videoUrl": "",
+    "gallery": [],
+    "curriculum": [
+      "M1 — Básico: lógica, algoritmos e ambiente de desenvolvimento",
+      "M2 — Fundamental: bases sólidas de Web (HTML/CSS) e linguagens estruturadas",
+      "M3 — Intermediário: frameworks, integração de APIs e banco de dados",
+      "M4 — Avançado: arquitetura de sistemas, performance e segurança",
+      "M5 — Bootcamp: projetos reais de ponta a ponta (Full-Stack), focados em portfólio"
+    ],
+    "officialLink": "/eventos-vivos/byteclass.dev/index.html"
+  }
+}

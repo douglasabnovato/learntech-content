@@ -1,0 +1,36 @@
+{
+  "id": "20",
+  "slug": "tdc-innovation",
+  "title": "TDC Innovation 2023",
+  "institution": "The Developer's Conference",
+  "description": "Conferência híbrida com trilhas de cloud, DevOps, arquitetura, dados, IA, UX e testes, acompanhada online.",
+  "coverImage": "/media/bootcamps/eventos/tdc-innovation-2023/2.webp",
+  "altText": "Grade de trilhas do TDC Innovation 2023",
+  "category": "fullstack",
+  "status": "concluido",
+  "content": {
+    "longDescription": "The Developer's Conference Innovation 2023 aconteceu de 14 a 16 de junho no CentroSul, em Florianópolis, em formato híbrido, com trilhas de cloud, DevOps, arquitetura, dados, inteligência artificial, UX e testes. Douglas acompanhou o evento online, incluindo as trilhas de Diversidade e Acessibilidade e de Carreira e Mentoria, transmitidas com interpretação em Libras.",
+    "videoUrl": "",
+    "gallery": [
+      {
+        "id": "tdc-innovation-2023-1",
+        "url": "/media/bootcamps/eventos/tdc-innovation-2023/1.webp",
+        "type": "image",
+        "alt": "Transmissão online de uma trilha com intérprete de Libras"
+      },
+      {
+        "id": "tdc-innovation-2023-2",
+        "url": "/media/bootcamps/eventos/tdc-innovation-2023/2.webp",
+        "type": "image",
+        "alt": "Grade de trilhas presenciais e digitais da edição"
+      }
+    ],
+    "curriculum": [
+      "Cloud, DevOps e arquitetura",
+      "Dados e inteligência artificial",
+      "UX e testes",
+      "Diversidade, acessibilidade e carreira"
+    ],
+    "officialLink": "https://thedevconf.com/tdc/2023/innovation/"
+  }
+}

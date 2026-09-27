@@ -1,0 +1,32 @@
+{
+  "name": "learntech-content",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API de conteúdo do ecossistema LearnTECH: catálogo em JSON versionado e registro de acessos.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "tsx scripts/build.ts",
+    "validar": "tsx scripts/build.ts --somente-validar",
+    "dev": "npm run build && wrangler dev",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "verificar": "npm run typecheck && npm test && npm run build",
+    "db:migrar:local": "wrangler d1 migrations apply learntech-acessos --local",
+    "db:migrar:remoto": "wrangler d1 migrations apply learntech-acessos --remote",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "dependencies": {
+    "hono": "^4.13.9",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260927.1",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.23.0",
+    "typescript": "~5.9.3",
+    "vitest": "~4.1.11",
+    "wrangler": "^4.42.0"
+  }
+}

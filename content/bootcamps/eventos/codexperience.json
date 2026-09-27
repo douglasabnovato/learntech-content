@@ -1,0 +1,110 @@
+{
+  "id": "17",
+  "slug": "codexperience",
+  "title": "CodeXperience",
+  "institution": "CodeXperience Zona da Mata",
+  "description": "Evento anual, gratuito e comunitário de tecnologia da Zona da Mata mineira, realizado em Juiz de Fora desde 2023.",
+  "coverImage": "/media/bootcamps/instituicoes/codexperience.webp",
+  "altText": "Identidade visual do CodeXperience Zona da Mata",
+  "category": "fullstack",
+  "status": "concluido",
+  "content": {
+    "longDescription": "O CodeXperience Zona da Mata é um evento sem fins lucrativos criado para ser ponto de encontro de profissionais e estudantes de tecnologia da região. A primeira edição aconteceu em 21 e 22 de outubro de 2023, na UniAcademia, com 14 palestras e 4 workshops sobre back-end, front-end com React, inteligência artificial, segurança da informação, carreira, agilidade, startups e representatividade feminina na tecnologia. Em 9 de novembro de 2024, a segunda edição voltou à UniAcademia com três trilhas temáticas, ignite talks e open spaces; nessa edição Douglas integrou a organização, conduziu em dupla a abertura oficial e desenvolveu a landing page do evento em React, Vite, TypeScript e Tailwind. A edição de 2025, em 29 de novembro, manteve o formato gratuito com palestras simultâneas, workshops, ignite talks e roda de conversa, viabilizada por quatro cotas de apoio.",
+    "videoUrl": "",
+    "gallery": [
+      {
+        "id": "codexperience-2023-1",
+        "url": "/media/bootcamps/eventos/codexperience-2023/1.webp",
+        "type": "image",
+        "alt": "Abertura da primeira edição no auditório da UniAcademia"
+      },
+      {
+        "id": "codexperience-2023-2",
+        "url": "/media/bootcamps/eventos/codexperience-2023/2.webp",
+        "type": "image",
+        "alt": "Auditório lotado durante uma palestra"
+      },
+      {
+        "id": "codexperience-2023-3",
+        "url": "/media/bootcamps/eventos/codexperience-2023/3.webp",
+        "type": "image",
+        "alt": "Sessão técnica com código projetado no telão"
+      },
+      {
+        "id": "codexperience-2023-4",
+        "url": "/media/bootcamps/eventos/codexperience-2023/4.webp",
+        "type": "image",
+        "alt": "Plateia acompanhando a programação"
+      },
+      {
+        "id": "codexperience-2023-5",
+        "url": "/media/bootcamps/eventos/codexperience-2023/5.webp",
+        "type": "image",
+        "alt": "Participante faz pergunta ao microfone"
+      },
+      {
+        "id": "codexperience-2023-6",
+        "url": "/media/bootcamps/eventos/codexperience-2023/6.webp",
+        "type": "image",
+        "alt": "Roda de conversa entre palestrantes e público"
+      }
+    ],
+    "curriculum": [
+      "Palestras técnicas: back-end, front-end, IA, dados, DevOps e segurança",
+      "Workshops práticos",
+      "Ignite talks, open spaces e roda de conversa",
+      "Networking da comunidade tech da Zona da Mata"
+    ],
+    "officialLink": "https://www.sympla.com.br/evento/codexperience-zona-da-mata-2025/3113294",
+    "links": [
+      {
+        "label": "Ingressos",
+        "url": "https://www.sympla.com.br/evento/codexperience-zona-da-mata-2025/3113294"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/codexperiencezonadamata/"
+      },
+      {
+        "label": "Matéria",
+        "url": "https://zinenegocios.com.br/code-xperience-zona-da-mata/"
+      },
+      {
+        "label": "Edição 2023",
+        "url": "https://www.sympla.com.br/evento/codexperience-zona-da-mata-2023/2056505"
+      },
+      {
+        "label": "Edição 2024",
+        "url": "https://www.sympla.com.br/evento/codexperience-zona-da-mata-2024/2600648"
+      },
+      {
+        "label": "Matéria 2024",
+        "url": "https://jornalpanoramaminas.com.br/codexperience-zona-da-mata-2024/"
+      },
+      {
+        "label": "Site oficial",
+        "url": "https://codexperience.com.br/"
+      }
+    ],
+    "editions": [
+      {
+        "year": "2023",
+        "image": "/media/bootcamps/eventos/codexperience-2023/1.webp",
+        "highlight": "Primeira edição, 21 e 22 de outubro, na UniAcademia: 14 palestras e 4 workshops. Participação com certificado.",
+        "status": "realizado"
+      },
+      {
+        "year": "2024",
+        "image": "/media/bootcamps/instituicoes/codexperience.webp",
+        "highlight": "Segunda edição, 9 de novembro: três trilhas, ignite talks e open spaces. Organização, abertura em dupla e landing page em React.",
+        "status": "realizado"
+      },
+      {
+        "year": "2025",
+        "image": "/media/bootcamps/eventos/codexperience-2025.webp",
+        "highlight": "Terceira edição, 29 de novembro: palestras simultâneas, workshops e roda de conversa, com quatro cotas de apoio.",
+        "status": "realizado"
+      }
+    ]
+  }
+}

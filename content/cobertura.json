@@ -1,0 +1,339 @@
+{
+  "atualizadoEm": "2026-09-27",
+  "referencias": [
+    {
+      "nome": "ACM/IEEE-CS/AAAI Computer Science Curricula 2023",
+      "url": "https://csed.acm.org/"
+    },
+    {
+      "nome": "SWEBOK Guide v4.0",
+      "url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering"
+    }
+  ],
+  "itens": [
+    {
+      "pasta": "personal-project/5-expertise/disciplinas-bacharel-ciencia-da-computacao-ufjf (PDA/VisuAlg)",
+      "descricao": "58 algoritmos VisuAlg e apostila de pseudolinguagem da disciplina de algoritmos (2008)",
+      "status": "publicado",
+      "destinos": [
+        {
+          "projeto": "learn-tech",
+          "recurso": "programas",
+          "ids": [
+            "901"
+          ]
+        },
+        {
+          "projeto": "tools",
+          "recurso": "ferramentas",
+          "ids": [
+            "VisuAlg"
+          ]
+        }
+      ]
+    },
+    {
+      "pasta": "personal-project/5-expertise/disciplinas-bacharel-ciencia-da-computacao-ufjf (DCC013, DCC119, DCC120, DCC121)",
+      "descricao": "Estruturas de dados e algoritmos em C/C++",
+      "status": "planejado",
+      "destinos": [
+        {
+          "projeto": "learn-tech",
+          "recurso": "programas"
+        }
+      ],
+      "observacao": "Trilha 4 — Algoritmos e estruturas de dados, a portar para JavaScript/Python."
+    },
+    {
+      "pasta": "personal-project/5-expertise/disciplinas-bacharel-ciencia-da-computacao-ufjf (demais disciplinas)",
+      "descricao": "Apostilas e listas de Ciência da Computação",
+      "status": "referencia",
+      "destinos": [
+        {
+          "projeto": "learn-tech",
+          "recurso": "programas"
+        }
+      ],
+      "observacao": "Bibliografia das trilhas 1 e 13; trabalhos entregues não são publicados."
+    },
+    {
+      "pasta": "personal-project/2-hard_skills/0-technology_contents",
+      "descricao": "Ementa e aulas de HTML, CSS, JS, Git, POO, Node, SQL, React (base StartSe Tech Academy)",
+      "status": "referencia",
+      "destinos": [
+        {
+          "projeto": "learn-tech",
+          "recurso": "programas",
+          "ids": [
+            "2",
+            "3",
+            "4",
+            "101",
+            "302",
+            "604"
+          ]
+        },
+        {
+          "projeto": "bootcamps",
+          "recurso": "eventos",
+          "ids": [
+            "startse-techacademy"
+          ]
+        }
+      ],
+      "observacao": "Material de terceiros: entra como referência; as aulas são escritas do zero."
+    },
+    {
+      "pasta": "personal-project/2-hard_skills/5-digital_library",
+      "descricao": "Livros técnicos (Cormen, Clean Code, Stallings, Sebesta, Deitel)",
+      "status": "referencia",
+      "destinos": [
+        {
+          "projeto": "learn-tech",
+          "recurso": "programas",
+          "ids": [
+            "901"
+          ]
+        }
+      ],
+      "observacao": "Só bibliografia citada; nenhum PDF é publicado."
+    },
+    {
+      "pasta": "personal-project/2-hard_skills/1-training_programs",
+      "descricao": "Programas de formação (StartSe, 42 SP, ONE, DIO, XP, UDESC, R)",
+      "status": "publicado",
+      "destinos": [
+        {
+          "projeto": "bootcamps",
+          "recurso": "eventos",
+          "ids": [
+            "42-sp",
+            "startse-techacademy",
+            "dio-santander-python",
+            "xpeducacao-minicamp",
+            "ufjf-dcc-cc-noturno",
+            "if-sudeste-mg-informatica"
+          ]
+        }
+      ]
+    },
+    {
+      "pasta": "personal-project/2-hard_skills/1-training_programs/18. dcc_ufjf/SMC 2012",
+      "descricao": "Inscrição e material do Simpósio Mineiro de Computação 2012",
+      "status": "publicado",
+      "destinos": [
+        {
+          "projeto": "bootcamps",
+          "recurso": "eventos",
+          "ids": [
+            "smc-2012"
+          ]
+        }
+      ]
+    },
+    {
+      "pasta": "personal-project/2-hard_skills/3-code_challenge e 4-project_challenge",
+      "descricao": "Desafios de código e de projeto",
+      "status": "planejado",
+      "destinos": [
+        {
+          "projeto": "learn-tech",
+          "recurso": "programas"
+        }
+      ],
+      "observacao": "Exercícios das trilhas 6 e 11."
+    },
+    {
+      "pasta": "personal-project/6-tech_community",
+      "descricao": "Fotos de GDG JF, Hackathon Inovação Social, Fator S Challenge, TDC Innovation e Ferrex",
+      "status": "publicado",
+      "destinos": [
+        {
+          "projeto": "bootcamps",
+          "recurso": "eventos",
+          "ids": [
+            "gdg-jf",
+            "hackathon-inovacao-social-jf",
+            "fator-s-challenge",
+            "tdc-innovation"
+          ]
+        }
+      ],
+      "observacao": "Ferrex aguarda confirmação do papel e do que foi o evento."
+    },
+    {
+      "pasta": "eventos/codexperience-21-22-10-2023",
+      "descricao": "Fotos da 1ª edição do CodeXperience Zona da Mata",
+      "status": "publicado",
+      "destinos": [
+        {
+          "projeto": "bootcamps",
+          "recurso": "eventos",
+          "ids": [
+            "codexperience"
+          ]
+        }
+      ]
+    },
+    {
+      "pasta": "conteudos-writer/eventos-codexperience",
+      "descricao": "Arte e apresentações das edições 2024 e 2025",
+      "status": "publicado",
+      "destinos": [
+        {
+          "projeto": "bootcamps",
+          "recurso": "eventos",
+          "ids": [
+            "codexperience"
+          ]
+        }
+      ],
+      "observacao": "Proposta de apoio e lista de staff não são publicadas (valores e nomes)."
+    },
+    {
+      "pasta": "conteudos-writer/event-minassummit",
+      "descricao": "Material do Minas Summit",
+      "status": "publicado",
+      "destinos": [
+        {
+          "projeto": "bootcamps",
+          "recurso": "eventos",
+          "ids": [
+            "minas-summit"
+          ]
+        }
+      ],
+      "observacao": "A planilha de viagem tem documentos de terceiros e fica fora."
+    },
+    {
+      "pasta": "conteudos-writer/startup-way-challenge",
+      "descricao": "Cronograma e regulamento do Startup Way Challenge 2023",
+      "status": "planejado",
+      "destinos": [
+        {
+          "projeto": "bootcamps",
+          "recurso": "eventos"
+        }
+      ],
+      "observacao": "Aguardando confirmação da participação e uma imagem de capa."
+    },
+    {
+      "pasta": "personal-project/1-selection_process (vagas, processos, entrevistas)",
+      "descricao": "Processos seletivos: Trybe, Niky, TecnoSpeed, Cadastra, BairesDev, XP, Itaú, Serasa, SERPRO",
+      "status": "publicado",
+      "destinos": [
+        {
+          "projeto": "career",
+          "recurso": "empresas",
+          "ids": [
+            "Trybe",
+            "TecnoSpeed",
+            "Cadastra",
+            "BairesDev",
+            "XP Inc.",
+            "Itaú Unibanco",
+            "Serasa Experian",
+            "SERPRO",
+            "App Masters"
+          ]
+        },
+        {
+          "projeto": "career",
+          "recurso": "vagas",
+          "ids": [
+            "GeekHunter"
+          ]
+        }
+      ],
+      "observacao": "Etapas do processo seletivo viram trilha em learn-tech (planejado). Niky, Levty e Ascendion aguardam dados públicos confirmados."
+    },
+    {
+      "pasta": "personal-project/3-soft_skills",
+      "descricao": "Carreira, produtividade e autoconhecimento (Na Prática, Endeavor, DNC)",
+      "status": "planejado",
+      "destinos": [
+        {
+          "projeto": "learn-tech",
+          "recurso": "paginas",
+          "ids": [
+            "mentorias",
+            "carreira"
+          ]
+        }
+      ],
+      "observacao": "Trilha Soft skills do dev (6 cursos)."
+    },
+    {
+      "pasta": "conteudos-projetos/conteudo-gestao-de-projetos",
+      "descricao": "Formação em gestão de projetos",
+      "status": "planejado",
+      "destinos": [
+        {
+          "projeto": "learn-tech",
+          "recurso": "programas",
+          "ids": [
+            "601",
+            "602",
+            "603"
+          ]
+        }
+      ]
+    },
+    {
+      "pasta": "conteudos-writer/certificate-souforce_abc",
+      "descricao": "Salesforce Marketing Cloud Essentials",
+      "status": "publicado",
+      "destinos": [
+        {
+          "projeto": "tools",
+          "recurso": "ferramentas",
+          "ids": [
+            "Salesforce Marketing Cloud"
+          ]
+        }
+      ]
+    },
+    {
+      "pasta": "abc-da-construcao",
+      "descricao": "Processos de CRM, e-commerce e comunicação (vira case de empresa fictícia)",
+      "status": "planejado",
+      "destinos": [
+        {
+          "projeto": "learn-tech",
+          "recurso": "programas"
+        },
+        {
+          "projeto": "tools",
+          "recurso": "ferramentas",
+          "ids": [
+            "Salesforce Marketing Cloud",
+            "Power BI"
+          ]
+        }
+      ],
+      "observacao": "Aguarda nome fictício e validação de confidencialidade. Bases de clientes e leads nunca entram."
+    },
+    {
+      "pasta": "digital_library",
+      "descricao": "Livros de desenvolvimento pessoal e finanças",
+      "status": "referencia",
+      "destinos": [
+        {
+          "projeto": "learn-tech",
+          "recurso": "paginas",
+          "ids": [
+            "aprender"
+          ]
+        }
+      ],
+      "observacao": "Ficção e autoajuda sem relação com tecnologia ficam fora."
+    },
+    {
+      "pasta": "personal-project/4-experiences, testes de perfil, planilhas pessoais, CVs de terceiros",
+      "descricao": "Documentos pessoais e dados de terceiros",
+      "status": "fora-do-escopo",
+      "destinos": [],
+      "observacao": "Não publicar (LGPD e privacidade)."
+    }
+  ]
+}

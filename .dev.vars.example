@@ -1,0 +1,3 @@
+# .dev.vars.example — copie para .dev.vars (ignorado pelo Git) para rodar `npm run dev` com as rotas de administração.
+ADMIN_TOKEN=troque-por-um-token-local-com-24-caracteres-ou-mais
+# TURNSTILE_SECRET=1x0000000000000000000000000000000AA

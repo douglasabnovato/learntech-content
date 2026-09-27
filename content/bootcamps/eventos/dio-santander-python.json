@@ -1,0 +1,24 @@
+{
+  "id": "4",
+  "slug": "dio-santander-python",
+  "title": "Santander Bootcamp — Ciência de Dados com Python",
+  "institution": "DIO",
+  "description": "Capacitação gratuita da DIO em parceria com o Santander, com foco em Python e ciência de dados.",
+  "coverImage": "/media/bootcamps/instituicoes/dio.webp",
+  "altText": "Identidade visual do Santander Bootcamp na plataforma DIO",
+  "category": "outros",
+  "status": "concluido",
+  "content": {
+    "longDescription": "Bootcamp gratuito oferecido pela DIO em parceria com o Santander, cobrindo Python, análise de dados, bancos de dados SQL e NoSQL, produtividade com Excel e IA, e computação em nuvem com AWS — com projetos práticos para portfólio.",
+    "videoUrl": "",
+    "gallery": [],
+    "curriculum": [
+      "Python",
+      "Análise de Dados",
+      "SQL e NoSQL",
+      "AWS (fundamentos)",
+      "Projetos práticos com dados"
+    ],
+    "officialLink": "https://www.dio.me"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "closingText": "Nenhuma plataforma sozinha resolve a busca por oportunidade. O que funciona é ter plano, prova de trabalho, e presença em mais de um lugar ao mesmo tempo.",
+  "heroContent": {
+    "eyebrow": "Carreiras",
+    "title": "Conteúdo técnico sem plano de carreira só adia a pergunta certa.",
+    "subtitle": "Saber programar é a base. Mas sem direção — sem saber para onde você quer ir e como vai chegar — cada nova habilidade vira mais uma peça solta, sem lugar para encaixar."
+  },
+  "planningPoints": [
+    {
+      "title": "Por que planejar, e não só estudar",
+      "description": "Estudar sem direção é acumular conteúdo. Planejar é decidir qual conteúdo importa agora, para qual objetivo — o que evita meses estudando algo que não te aproxima de onde você quer chegar."
+    },
+    {
+      "title": "PDI: o mapa entre onde você está e onde quer chegar",
+      "description": "Um Plano de Desenvolvimento Individual usa metas claras (metodologia SMART) e distribui o tempo entre prática, mentoria e curso formal (modelo 70/20/10) — já exploramos isso a fundo na página de Mentorias."
+    },
+    {
+      "title": "Portfólio como prova, não como formalidade",
+      "description": "Um projeto publicado, com código real e histórico de commits, vale mais do que qualquer lista de tecnologias no currículo — é a diferença entre dizer que sabe e mostrar que sabe."
+    },
+    {
+      "title": "Rede de contato como parte do processo, não acessório",
+      "description": "Boa parte das oportunidades reais chega por indicação ou visibilidade, não só por candidatura fria. Presença ativa em comunidade e rede profissional é parte do plano, não um extra."
+    }
+  ],
+  "platforms": [
+    {
+      "name": "GeekHunter",
+      "icon": "FaUserCheck",
+      "description": "Marketplace brasileiro exclusivo para tecnologia. Inverte a lógica tradicional: você cria o perfil, passa por uma pré-avaliação, e são as empresas que entram em contato.",
+      "tag": "Brasil · Tecnologia"
+    },
+    {
+      "name": "LinkedIn",
+      "icon": "FaGlobe",
+      "description": "A rede profissional mais usada do mundo, e um dos canais mais recomendados para vaga de tecnologia no Brasil — tanto para candidatura direta quanto para construir visibilidade.",
+      "tag": "Global · Rede profissional"
+    },
+    {
+      "name": "Programathor",
+      "icon": "FaCode",
+      "description": "Site brasileiro de nicho, focado especificamente em vagas para desenvolvedores e programadores — sem a diluição de vagas de outras áreas.",
+      "tag": "Brasil · Dev"
+    },
+    {
+      "name": "Gupy",
+      "icon": "FaBuilding",
+      "description": "Uma das maiores plataformas de recrutamento do Brasil, usada por grandes empresas para gerenciar todo o processo seletivo, da triagem à entrevista.",
+      "tag": "Brasil · Processo seletivo"
+    },
+    {
+      "name": "Vagas.com",
+      "icon": "FaBriefcase",
+      "description": "Uma das plataformas de emprego mais antigas e completas do Brasil, com milhares de vagas de diversas áreas, incluindo tecnologia.",
+      "tag": "Brasil · Geral"
+    },
+    {
+      "name": "We Work Remotely",
+      "icon": "FaLaptopCode",
+      "description": "Um dos maiores job boards do mundo especializado em vagas remotas — inclui muitas oportunidades internacionais de tecnologia.",
+      "tag": "Global · Remoto"
+    }
+  ]
+}

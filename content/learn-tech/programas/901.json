@@ -1,0 +1,700 @@
+{
+  "id": 901,
+  "image": "https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg",
+  "category": "Fundamentos",
+  "categoryFilter": "fundamentos",
+  "title": "Lógica de Programação e Algoritmos",
+  "lessons": "14 passos",
+  "duration": "8h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Iniciante",
+  "description": "A base de toda linguagem: sequência, decisão, repetição, vetores e sub-rotinas, praticados sobre exercícios reais de VisuAlg da graduação em Ciência da Computação e reescritos em JavaScript.",
+  "letslearn": [
+    "Descrever um problema em entrada, processamento e saída antes de programar",
+    "Usar variáveis, tipos, decisões e laços com segurança",
+    "Trabalhar com vetores, matrizes, funções e procedimentos",
+    "Encontrar erros de lógica com teste de mesa em código real"
+  ],
+  "curriculum": "Fundamentos de algoritmos (CS2023: SDF e AL)",
+  "about": "O programa usa como material os algoritmos escritos em 2008 na disciplina de algoritmos do bacharelado em Ciência da Computação da UFJF, em VisuAlg. Cada exercício é lido, executado no papel, corrigido quando tem defeito e reescrito em JavaScript. Os tópicos seguem a área de Fundamentos de Desenvolvimento de Software do currículo de referência ACM/IEEE CS2023.",
+  "materials": [
+    "Exercícios originais em VisuAlg (pseudocódigo em português)",
+    "Versões em JavaScript para rodar no navegador",
+    "Roteiro de teste de mesa"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Algoritmo, Variável e Sequência",
+      "lessonsCount": 3,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Decisão com Se e Senão",
+      "lessonsCount": 3,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Repetição com Enquanto e Para",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Vetores, Matrizes e Sub-rotinas",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Fundamentos da Computação",
+    "mainTitle": "Antes da linguagem, a lógica. Antes da lógica, o problema.",
+    "introductionParagraphs": [
+      {
+        "title": "Por que começar aqui",
+        "text": "Frameworks mudam a cada poucos anos; **sequência, decisão, repetição e estruturas de dados** estão em todas as linguagens desde a década de 1960. Quem domina essa base aprende a próxima linguagem em semanas, não em meses."
+      },
+      {
+        "title": "Material real, com defeitos reais",
+        "text": "Os exercícios vêm do acervo pessoal da graduação: são algoritmos escritos por um estudante, com os erros que estudantes cometem. **Achar e corrigir esses erros** é o melhor treino para depurar código, seu ou gerado por uma ferramenta."
+      },
+      {
+        "title": "Do pseudocódigo ao JavaScript",
+        "text": "Cada módulo mostra a solução em VisuAlg, com comandos em português, e a mesma ideia em **JavaScript**, que roda direto no navegador. Você vê que a lógica é a mesma e que só a sintaxe muda."
+      }
+    ],
+    "courseAboutTitle": "Pensar como a máquina executa",
+    "courseAboutDescription": "O objetivo não é decorar comandos, e sim conseguir prever o que um programa faz lendo o código. Por isso todo módulo tem teste de mesa: executar à mão, anotar cada variável e comparar com o que a máquina faz.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Algoritmo, Variável e Sequência",
+        "items": [
+          {
+            "label": "Entrada, processamento e saída",
+            "description": "Pegue um problema do dia a dia, como calcular o troco de uma compra, e escreva em português os três blocos: o que entra (valor da compra, valor pago), o que se faz (subtrair) e o que sai (o troco)."
+          },
+          {
+            "label": "Variável é uma caixa com nome e tipo",
+            "description": "Declare as variáveis antes de usar, dizendo o tipo de cada uma: inteiro, real, caractere ou lógico."
+          },
+          {
+            "label": "Trocar dois valores exige uma terceira variável",
+            "description": "Tente trocar os valores de A e B fazendo a <- b e depois b <- a."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Decisão com Se e Senão",
+        "items": [
+          {
+            "label": "Condição é uma pergunta de sim ou não",
+            "description": "Escreva condições com operadores relacionais (=, <>, <, >, <=, >=) e combine com e, ou e nao."
+          },
+          {
+            "label": "A calculadora com se encadeados",
+            "description": "Reescreva em JavaScript a calculadora do acervo: ler n1, n2 e o sinal, e aplicar *, /, + ou -, com mensagem de operação inválida no caso final."
+          },
+          {
+            "label": "Trate o caso que quebra",
+            "description": "Rode a calculadora com n2 = 0 e sinal /."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Repetição com Enquanto e Para",
+        "items": [
+          {
+            "label": "Para: quando se sabe quantas vezes",
+            "description": "No exercício lernotas, o programa pergunta quantos alunos há na turma e repete a leitura das notas com para i de 1 ate n."
+          },
+          {
+            "label": "Enquanto: quando se para por um sinal",
+            "description": "O exercício notass repete enquanto o nome digitado for diferente de \"fim\"."
+          },
+          {
+            "label": "Ache o bug do algoritmo original",
+            "description": "No notass, a variável total é usada em total <- total + (...) sem receber valor inicial, e a média divide a soma de três notas por aluno pela quantidade de alunos, o que dá três vezes o valor esperado."
+          },
+          {
+            "label": "Divisão por zero no laço vazio",
+            "description": "Execute o notass digitando fim logo na primeira pergunta."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Vetores, Matrizes e Sub-rotinas",
+        "items": [
+          {
+            "label": "Menor valor e sua posição",
+            "description": "O exercício do acervo lê dez valores num vetor, assume o primeiro como menor e percorre do segundo ao décimo trocando o menor e guardando o índice quando encontra um valor abaixo."
+          },
+          {
+            "label": "Matriz transposta",
+            "description": "A transposta troca linhas por colunas: o elemento da linha i e coluna j vai para a linha j e coluna i."
+          },
+          {
+            "label": "Função devolve valor",
+            "description": "O exercício mediasdenotas cria duas funções, media e mediap."
+          },
+          {
+            "label": "Depure o procedimento de fatorial",
+            "description": "O procedimento fatoriais deveria gerar um vetor B com o fatorial de cada elemento de A."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Cada passo tem um exercício do acervo para ler, executar no papel e reescrever. Ao final, o quiz revisa os pontos em que os erros mais aparecem."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "laptop",
+      "title": "Algoritmo, Variável e Sequência",
+      "shortDescription": "Entrada, processamento e saída, com o clássico da troca de valores",
+      "introductionText": "Todo programa, do mais simples ao maior sistema, é uma sequência de instruções que recebe dados, transforma e devolve um resultado. Este módulo usa um exercício real de 2008, escrito em VisuAlg na disciplina de algoritmos da Ciência da Computação da UFJF, para mostrar esse ciclo e o primeiro problema que obriga a pensar como a máquina: trocar o valor de duas variáveis.",
+      "sections": [
+        {
+          "title": "🧩 Do problema ao algoritmo",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Entrada, processamento e saída",
+              "guidance": "Pegue um problema do dia a dia, como calcular o troco de uma compra, e escreva em português os três blocos: o que entra (valor da compra, valor pago), o que se faz (subtrair) e o que sai (o troco). Só depois pense em código. Essa separação é o que o pseudocódigo do VisuAlg formaliza com leia, atribuição e escreva.",
+              "code": "leia(pago)  →  troco <- pago - compra  →  escreva(troco)",
+              "tips": [
+                "Se você não consegue descrever o problema em três blocos, ainda não entendeu o problema; programar agora só esconde a dúvida."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Variável é uma caixa com nome e tipo",
+              "guidance": "Declare as variáveis antes de usar, dizendo o tipo de cada uma: inteiro, real, caractere ou lógico. No VisuAlg isso fica na seção var; em JavaScript, com let e const. Escreva as duas versões para o problema do troco e compare: a ideia é a mesma, muda só a sintaxe.",
+              "code": "var compra, pago, troco: real   ⇄   let compra = 0, pago = 0, troco = 0;",
+              "tips": [
+                "O tipo evita erros de raciocínio: somar um nome com um número não faz sentido, e declarar o tipo obriga a perceber isso antes."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Trocar dois valores exige uma terceira variável",
+              "guidance": "Tente trocar os valores de A e B fazendo a <- b e depois b <- a. Simule no papel com A = 3 e B = 7: os dois terminam valendo 7, porque o primeiro comando apagou o valor original de A. A solução do exercício troca_troca, de 2008, guarda A numa variável auxiliar antes. Refaça em JavaScript e depois conheça a forma moderna com desestruturação.",
+              "code": "aux <- a; a <- b; b <- aux      // JS: [a, b] = [b, a];",
+              "tips": [
+                "Simular à mão com valores concretos (teste de mesa) é a ferramenta mais barata para achar erro de lógica.",
+                "A desestruturação do JavaScript faz a troca em uma linha, mas por baixo ainda existe um valor temporário."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔎 O que este módulo fixa",
+      "highlights": [
+        {
+          "icon": "list",
+          "title": "Três blocos",
+          "text": "Entrada, processamento e saída descrevem qualquer programa antes de qualquer linguagem."
+        },
+        {
+          "icon": "tags",
+          "title": "Tipos",
+          "text": "Declarar o tipo é declarar a intenção: que valores cabem na caixa e que operações fazem sentido."
+        },
+        {
+          "icon": "search",
+          "title": "Teste de mesa",
+          "text": "Executar o algoritmo no papel, linha a linha, mostra o erro que a leitura rápida não vê."
+        }
+      ],
+      "closingText": "Você viu que um algoritmo é uma receita precisa e que a ordem das instruções muda o resultado. A troca de valores é pequena, mas treina a habilidade central: acompanhar o estado de cada variável a cada linha.",
+      "ctaTitle": "🧠 Sequência dominada",
+      "ctaText": "Programas de verdade precisam escolher caminhos. O próximo módulo trata de decisão.",
+      "nextButtonText": "Ir para Módulo 1: Decisão com Se e Senão",
+      "lessonsCount": 3
+    },
+    {
+      "id": 1,
+      "icon": "sitemap",
+      "title": "Decisão com Se e Senão",
+      "shortDescription": "Condições, operadores lógicos e a calculadora de quatro operações",
+      "introductionText": "Decidir é comparar e escolher um caminho. Este módulo parte do exercício da calculadora em VisuAlg, que lê dois números e um sinal e escolhe a operação com se encadeados, e mostra como deixar a mesma lógica mais legível e mais segura.",
+      "sections": [
+        {
+          "title": "🔀 Caminhos alternativos",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Condição é uma pergunta de sim ou não",
+              "guidance": "Escreva condições com operadores relacionais (=, <>, <, >, <=, >=) e combine com e, ou e nao. Monte uma tabela-verdade de duas variáveis para e e para ou e confira seu entendimento antes de usar em código.",
+              "code": "se (nota >= 6) e (frequencia >= 0.75) entao ... fimse",
+              "tips": [
+                "Em JavaScript, compare com === e !==, que não convertem tipos por baixo dos panos."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "A calculadora com se encadeados",
+              "guidance": "Reescreva em JavaScript a calculadora do acervo: ler n1, n2 e o sinal, e aplicar *, /, + ou -, com mensagem de operação inválida no caso final. O original encadeia quatro se dentro de senão; na sua versão, use else if ou switch e compare a legibilidade das duas formas.",
+              "code": "switch (sinal) { case \"+\": r = n1 + n2; break; /* ... */ default: r = null; }",
+              "tips": [
+                "Quando todas as condições testam a mesma variável contra valores fixos, o switch (escolha, no VisuAlg) costuma ser mais legível."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Trate o caso que quebra",
+              "guidance": "Rode a calculadora com n2 = 0 e sinal /. O algoritmo original divide sem conferir. Acrescente a condição que impede a divisão por zero e devolva uma mensagem clara. Liste também o que acontece quando o sinal digitado é inválido: o resultado continua 0 e é exibido como se fosse uma resposta.",
+              "code": "if (sinal === \"/\" && n2 === 0) return \"Não é possível dividir por zero\";",
+              "tips": [
+                "Todo se tem um caso de borda escondido. Procurar o valor que quebra a condição é o hábito que separa código que funciona de código que parece funcionar."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔀 Por que decisão importa",
+      "highlights": [
+        {
+          "icon": "sitemap",
+          "title": "Fluxo",
+          "text": "Com decisão, o mesmo programa se comporta de formas diferentes conforme a entrada."
+        },
+        {
+          "icon": "shield",
+          "title": "Casos de borda",
+          "text": "Divisão por zero e entrada inválida são os primeiros exemplos de validação que todo sistema precisa."
+        },
+        {
+          "icon": "grid",
+          "title": "Legibilidade",
+          "text": "Escolher entre se encadeado e escolha é decidir como outra pessoa vai ler o seu código."
+        }
+      ],
+      "closingText": "Decisão é onde os primeiros erros de lógica aparecem: condição invertida, caso esquecido, valor de borda. Você agora testa a condição com valores que tentam quebrá-la.",
+      "ctaTitle": "🔀 Caminhos sob controle",
+      "ctaText": "O próximo passo é repetir instruções sem copiar código: laços de repetição.",
+      "nextButtonText": "Ir para Módulo 2: Repetição com Enquanto e Para",
+      "lessonsCount": 3
+    },
+    {
+      "id": 2,
+      "icon": "sync",
+      "title": "Repetição com Enquanto e Para",
+      "shortDescription": "Laços, contadores, acumuladores e o bug da variável não inicializada",
+      "introductionText": "Calcular a média de uma turma exige repetir a mesma leitura para cada aluno. Este módulo compara dois exercícios reais do acervo: um usa enquanto com um valor de parada, outro usa para com a quantidade informada. Um deles tem um erro clássico de iniciante, e encontrá-lo faz parte do exercício.",
+      "sections": [
+        {
+          "title": "🔁 Laços que terminam",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Para: quando se sabe quantas vezes",
+              "guidance": "No exercício lernotas, o programa pergunta quantos alunos há na turma e repete a leitura das notas com para i de 1 ate n. Reescreva em JavaScript com for, somando as notas num acumulador iniciado em zero e dividindo pelo total no final.",
+              "code": "let soma = 0; for (let i = 1; i <= n; i++) { soma += nota(i); } const media = soma / n;",
+              "tips": [
+                "Acumulador começa em zero para soma e em um para produto. Esquecer isso é o erro mais comum em laços."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Enquanto: quando se para por um sinal",
+              "guidance": "O exercício notass repete enquanto o nome digitado for diferente de \"fim\". Esse valor de parada se chama sentinela. Reescreva com while e perceba que a primeira leitura acontece antes do laço e a próxima, no fim de cada volta.",
+              "code": "let aluno = ler(); while (aluno !== \"fim\") { /* notas */ aluno = ler(); }",
+              "tips": [
+                "Em todo while, identifique qual linha muda a condição. Se nenhuma muda, o laço nunca termina."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Ache o bug do algoritmo original",
+              "guidance": "No notass, a variável total é usada em total <- total + (...) sem receber valor inicial, e a média divide a soma de três notas por aluno pela quantidade de alunos, o que dá três vezes o valor esperado. Faça o teste de mesa com dois alunos e notas 6, 7 e 8, anote o resultado errado e corrija as duas linhas.",
+              "code": "total <- 0 ... med <- total / (qntA * 3)",
+              "tips": [
+                "O VisuAlg zera variáveis numéricas por padrão, então o programa parecia funcionar. Em outras linguagens, o mesmo código quebra ou dá lixo."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Divisão por zero no laço vazio",
+              "guidance": "Execute o notass digitando fim logo na primeira pergunta. A quantidade de alunos fica 0 e a média divide por zero. Proteja a divisão e exiba uma mensagem quando nenhum aluno for informado.",
+              "code": "if (qtd === 0) return \"Nenhum aluno informado\";",
+              "tips": [
+                "Laço que pode não executar nenhuma vez sempre pede a pergunta: e se a lista vier vazia?"
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔁 O que muda com laços",
+      "highlights": [
+        {
+          "icon": "sync",
+          "title": "Repetir sem copiar",
+          "text": "Um laço bem escrito vale para 3 ou 3 mil alunos, sem mudar o código."
+        },
+        {
+          "icon": "gauge",
+          "title": "Contador e acumulador",
+          "text": "São as duas variáveis que quase todo laço usa: uma conta, a outra soma."
+        },
+        {
+          "icon": "search",
+          "title": "Depuração",
+          "text": "Ler código antigo com teste de mesa é o treino mais direto de encontrar erro."
+        }
+      ],
+      "closingText": "Você corrigiu um algoritmo real, não um exemplo de livro. Inicialização, condição de parada e lista vazia são as três perguntas que valem para qualquer laço, em qualquer linguagem.",
+      "ctaTitle": "🔁 Laços sob controle",
+      "ctaText": "Falta guardar muitos valores de uma vez e organizar o código em partes: vetores, matrizes e sub-rotinas.",
+      "nextButtonText": "Ir para Módulo 3: Vetores, Matrizes e Sub-rotinas",
+      "lessonsCount": 4
+    },
+    {
+      "id": 3,
+      "icon": "grid",
+      "title": "Vetores, Matrizes e Sub-rotinas",
+      "shortDescription": "Menor valor e posição, matriz transposta, funções e o fatorial com defeito",
+      "introductionText": "Com vetores, uma variável guarda uma lista; com matrizes, uma tabela. Com funções e procedimentos, um trecho de código ganha nome e pode ser reutilizado. Este módulo fecha o programa com quatro exercícios do acervo, incluindo um procedimento de fatorial que não calcula o fatorial.",
+      "sections": [
+        {
+          "title": "📦 Vetores e matrizes",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Menor valor e sua posição",
+              "guidance": "O exercício do acervo lê dez valores num vetor, assume o primeiro como menor e percorre do segundo ao décimo trocando o menor e guardando o índice quando encontra um valor abaixo. Reescreva em JavaScript com um array e confira: em JavaScript o índice começa em 0, no VisuAlg o vetor foi declarado de 1 a 10.",
+              "code": "let menor = v[0], indice = 0; for (let i = 1; i < v.length; i++) if (v[i] < menor) { menor = v[i]; indice = i; }",
+              "tips": [
+                "Começar pelo primeiro elemento como candidato evita inventar um valor inicial como 9999, que falha quando todos os números são maiores."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Matriz transposta",
+              "guidance": "A transposta troca linhas por colunas: o elemento da linha i e coluna j vai para a linha j e coluna i. O exercício lê uma matriz 3x2 e monta a 2x3 com dois para aninhados. Implemente em JavaScript com arrays de arrays e imprima as duas.",
+              "code": "t[j][i] = m[i][j]",
+              "tips": [
+                "Laço aninhado: o de fora percorre as linhas, o de dentro as colunas. Troque a ordem e veja o que muda na impressão."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "🧰 Sub-rotinas",
+          "subsections": [
+            {
+              "number": 3,
+              "title": "Função devolve valor",
+              "guidance": "O exercício mediasdenotas cria duas funções, media e mediap. A média ponderada do original calcula ((n1 + n2) * 2) / 3, que não é ponderada. Reescreva com pesos explícitos, por exemplo 1 e 2, e confira com n1 = 6 e n2 = 9: o resultado deve ser 8.",
+              "code": "const mediaPonderada = (n1, n2, p1 = 1, p2 = 2) => (n1 * p1 + n2 * p2) / (p1 + p2);",
+              "tips": [
+                "Parâmetros com nome e valor padrão deixam a regra de negócio visível em vez de escondida num número mágico."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Depure o procedimento de fatorial",
+              "guidance": "O procedimento fatoriais deveria gerar um vetor B com o fatorial de cada elemento de A. Leia o código original e encontre três problemas: a condição testa A[1] em vez de A[i]; o laço interno vai sempre de 1 a 10 em vez de 1 até A[i]; e B[i] não recebe 1 antes de multiplicar. Escreva a função fatorial em JavaScript, teste com 0, 1, 5 e 10, e use map para gerar B.",
+              "code": "const fatorial = (n) => { let r = 1; for (let j = 2; j <= n; j++) r *= j; return r; };  const B = A.map(fatorial);",
+              "tips": [
+                "Separar o cálculo de um item (fatorial) do percurso da lista (map) deixa cada parte testável sozinha."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🧰 O que você leva",
+      "highlights": [
+        {
+          "icon": "grid",
+          "title": "Estruturas",
+          "text": "Vetor e matriz são a base de listas, tabelas, imagens e planilhas."
+        },
+        {
+          "icon": "tools",
+          "title": "Sub-rotinas",
+          "text": "Dar nome a um trecho de código é o primeiro passo para organizar programas grandes."
+        },
+        {
+          "icon": "shield",
+          "title": "Revisão",
+          "text": "Ler código antigo e achar o erro é a mesma habilidade de revisar código gerado por uma IA."
+        }
+      ],
+      "closingText": "Com sequência, decisão, repetição, vetores e sub-rotinas você tem as estruturas que aparecem em qualquer linguagem. O quiz a seguir revisa os pontos em que os erros mais aparecem.",
+      "ctaTitle": "🏁 Fundamentos completos",
+      "ctaText": "Faça o quiz e depois siga para JavaScript para Iniciantes, onde a mesma lógica vira código para a web.",
+      "nextButtonText": "Ir para o Quiz",
+      "lessonsCount": 4
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "No VisuAlg, depois de a <- b e em seguida b <- a, com a = 3 e b = 7, quanto valem a e b?",
+      "explanation": "A primeira atribuição copia 7 para a e perde o 3. A segunda copia o novo valor de a (7) para b. Por isso a troca precisa de uma variável auxiliar.",
+      "options": [
+        {
+          "text": "a = 7 e b = 7",
+          "isCorrect": true
+        },
+        {
+          "text": "a = 7 e b = 3",
+          "isCorrect": false
+        },
+        {
+          "text": "a = 3 e b = 7",
+          "isCorrect": false
+        },
+        {
+          "text": "a = 3 e b = 3",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "O que é um teste de mesa?",
+      "explanation": "Teste de mesa é executar o algoritmo à mão, linha por linha, anotando o valor de cada variável. É a forma mais barata de encontrar erro de lógica.",
+      "options": [
+        {
+          "text": "Executar o algoritmo à mão, anotando o valor das variáveis a cada linha",
+          "isCorrect": true
+        },
+        {
+          "text": "Rodar o programa no computador do laboratório",
+          "isCorrect": false
+        },
+        {
+          "text": "Escrever testes automatizados com Vitest",
+          "isCorrect": false
+        },
+        {
+          "text": "Pedir para outra pessoa ler o código",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 1,
+      "question": "Na calculadora do acervo, o que acontece quando o usuário escolhe / e digita 0 como segundo número?",
+      "explanation": "O algoritmo original divide sem conferir o divisor. É um caso de borda que a condição precisa tratar antes da operação.",
+      "options": [
+        {
+          "text": "O programa tenta dividir por zero, porque não há verificação",
+          "isCorrect": true
+        },
+        {
+          "text": "Aparece a mensagem de operação inválida",
+          "isCorrect": false
+        },
+        {
+          "text": "O resultado é 0",
+          "isCorrect": false
+        },
+        {
+          "text": "O VisuAlg pede outro número",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Quando todas as condições comparam a mesma variável com valores fixos, qual estrutura costuma ser mais legível?",
+      "explanation": "escolha (VisuAlg) e switch (JavaScript) deixam explícito que o teste é sempre sobre a mesma variável, evitando a escada de se dentro de senão.",
+      "options": [
+        {
+          "text": "escolha/switch",
+          "isCorrect": true
+        },
+        {
+          "text": "enquanto/while",
+          "isCorrect": false
+        },
+        {
+          "text": "para/for",
+          "isCorrect": false
+        },
+        {
+          "text": "procedimento",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 2,
+      "question": "Qual laço é mais adequado quando a quantidade de repetições é conhecida antes de começar?",
+      "explanation": "O para (for) já traz início, fim e passo. O enquanto (while) serve melhor quando a parada depende de um valor lido durante a execução, como uma sentinela.",
+      "options": [
+        {
+          "text": "para/for",
+          "isCorrect": true
+        },
+        {
+          "text": "enquanto/while com sentinela",
+          "isCorrect": false
+        },
+        {
+          "text": "se/senão",
+          "isCorrect": false
+        },
+        {
+          "text": "Nenhum; é preciso copiar o código",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 2,
+      "question": "No exercício notass, por que a média calculada sai três vezes maior que a esperada?",
+      "explanation": "O total soma as três notas de cada aluno, mas a divisão é só pela quantidade de alunos. O certo é dividir por qntA * 3, além de iniciar total em zero.",
+      "options": [
+        {
+          "text": "Soma três notas por aluno e divide só pelo número de alunos",
+          "isCorrect": true
+        },
+        {
+          "text": "O laço repete três vezes para cada aluno",
+          "isCorrect": false
+        },
+        {
+          "text": "A variável med é do tipo inteiro",
+          "isCorrect": false
+        },
+        {
+          "text": "A sentinela \"fim\" é contada como aluno",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 3,
+      "question": "Na matriz transposta, para onde vai o elemento da linha i e coluna j?",
+      "explanation": "Transpor é trocar linhas por colunas: t[j][i] recebe m[i][j]. Uma matriz 3x2 vira 2x3.",
+      "options": [
+        {
+          "text": "Para a linha j e coluna i",
+          "isCorrect": true
+        },
+        {
+          "text": "Para a linha i e coluna j",
+          "isCorrect": false
+        },
+        {
+          "text": "Para a última linha",
+          "isCorrect": false
+        },
+        {
+          "text": "Para a diagonal principal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 3,
+      "question": "Qual destes é um defeito do procedimento fatoriais do acervo?",
+      "explanation": "O laço interno multiplica de 1 a 10 para qualquer elemento e B[i] não começa em 1 (no VisuAlg, começa em 0). O resultado nunca é o fatorial de A[i]: o certo é iniciar B[i] em 1 e multiplicar de 2 até A[i].",
+      "options": [
+        {
+          "text": "O laço interno sempre vai de 1 a 10, em vez de ir até A[i]",
+          "isCorrect": true
+        },
+        {
+          "text": "O procedimento usa vetores como parâmetro",
+          "isCorrect": false
+        },
+        {
+          "text": "O vetor B é exibido no programa principal",
+          "isCorrect": false
+        },
+        {
+          "text": "O fatorial de 0 é definido como 1",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "Uma coleção de pequenos programas em JavaScript, cada um reescrito a partir de um algoritmo VisuAlg original, com os defeitos corrigidos e casos de borda tratados.",
+    "highlights": [
+      "Calculadora com tratamento de divisão por zero",
+      "Média da turma com laço e sentinela",
+      "Funções de média ponderada, fatorial e matriz transposta"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "Com assistentes de IA gerando código, a habilidade que diferencia quem está começando é ler código e saber se ele está certo. Essa leitura depende dos fundamentos de lógica.",
+      "Processos seletivos para estágio e vagas júnior continuam aplicando testes de lógica e raciocínio. A base deste programa é a mesma que esses testes cobram."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Primeira linguagem",
+        "description": "Base para JavaScript, Python, C ou qualquer outra linguagem."
+      },
+      {
+        "label": "Testes de lógica",
+        "description": "Etapa comum em processos seletivos de estágio e júnior."
+      },
+      {
+        "label": "Revisão de código",
+        "description": "Ler e depurar código, inclusive o gerado por IA."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem nunca programou",
+        "description": "Começa do zero, com pseudocódigo em português."
+      },
+      {
+        "label": "Estudantes de computação",
+        "description": "Revisam a disciplina de algoritmos com exercícios comentados."
+      },
+      {
+        "label": "Quem já programa por tentativa e erro",
+        "description": "Ganha método para prever o que o código faz."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Toda vaga de desenvolvimento pressupõe lógica de programação. Os fundamentos deste programa correspondem à área de Fundamentos de Desenvolvimento de Software do currículo ACM/IEEE CS2023 e à área de Construção de Software do SWEBOK.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "ACM/IEEE-CS/AAAI — Computer Science Curricula 2023 (CS2023)",
+      "url": "https://csed.acm.org/"
+    },
+    {
+      "label": "IEEE Computer Society — SWEBOK Guide v4.0",
+      "url": "https://www.computer.org/education/bodies-of-knowledge/software-engineering"
+    },
+    {
+      "label": "VisuAlg 3.0 — interpretador de pseudocódigo em português",
+      "url": "https://sourceforge.net/projects/visualg30/"
+    }
+  ]
+}

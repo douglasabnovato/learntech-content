@@ -1,0 +1,211 @@
+{
+  "itens": [
+    {
+      "icon": "FaJs",
+      "bgColor": "bg-sky-100/30",
+      "borderColor": "border-sky-300/60",
+      "count": "3+",
+      "iconColor": "text-sky-600",
+      "description": "Javascript",
+      "category": "frontend"
+    },
+    {
+      "icon": "FaHtml5",
+      "bgColor": "bg-sky-100/30",
+      "borderColor": "border-sky-300/60",
+      "count": "2+",
+      "iconColor": "text-sky-600",
+      "description": "HTML",
+      "category": "frontend"
+    },
+    {
+      "icon": "FaCss3Alt",
+      "bgColor": "bg-sky-100/30",
+      "borderColor": "border-sky-300/60",
+      "count": "4+",
+      "iconColor": "text-sky-600",
+      "description": "CSS",
+      "category": "frontend"
+    },
+    {
+      "icon": "FaReact",
+      "bgColor": "bg-purple-100/30",
+      "borderColor": "border-purple-300/60",
+      "count": "3+",
+      "iconColor": "text-purple-600",
+      "description": "ReactJS",
+      "category": "frontend"
+    },
+    {
+      "icon": "FaGitAlt",
+      "bgColor": "bg-indigo-100/30",
+      "borderColor": "border-indigo-300/60",
+      "count": "2+",
+      "iconColor": "text-indigo-600",
+      "description": "Git",
+      "category": "projetos"
+    },
+    {
+      "icon": "FaGithub",
+      "bgColor": "bg-indigo-100/30",
+      "borderColor": "border-indigo-300/60",
+      "count": "2+",
+      "iconColor": "text-indigo-600",
+      "description": "Github",
+      "category": "projetos"
+    },
+    {
+      "icon": "FaNodeJs",
+      "bgColor": "bg-orange-100/30",
+      "borderColor": "border-orange-300/60",
+      "count": "1+",
+      "iconColor": "text-orange-600",
+      "description": "NodeJS",
+      "category": "backend"
+    },
+    {
+      "icon": "FaDiscord",
+      "bgColor": "bg-violet-100/30",
+      "borderColor": "border-violet-300/60",
+      "count": "2+",
+      "iconColor": "text-violet-600",
+      "description": "Discord",
+      "category": "comunicação"
+    },
+    {
+      "icon": "FaTrello",
+      "bgColor": "bg-blue-100/30",
+      "borderColor": "border-blue-300/60",
+      "count": "1+",
+      "iconColor": "text-blue-600",
+      "description": "Trello",
+      "category": "gestao"
+    },
+    {
+      "icon": "SiJira",
+      "bgColor": "bg-blue-100/30",
+      "borderColor": "border-blue-300/60",
+      "count": "3+",
+      "iconColor": "text-blue-600",
+      "description": "Jira",
+      "category": "gestao"
+    },
+    {
+      "icon": "FaMicrosoft",
+      "bgColor": "bg-teal-100/30",
+      "borderColor": "border-teal-300/60",
+      "count": "2+",
+      "iconColor": "text-teal-600",
+      "description": "Microsoft",
+      "category": "tecnologia"
+    },
+    {
+      "icon": "FaGoogle",
+      "bgColor": "bg-teal-100/30",
+      "borderColor": "border-teal-300/60",
+      "count": "1+",
+      "iconColor": "text-teal-600",
+      "description": "Google",
+      "category": "tecnologia"
+    },
+    {
+      "icon": "GrResources",
+      "bgColor": "bg-emerald-100/30",
+      "borderColor": "border-emerald-300/60",
+      "count": "3+",
+      "iconColor": "text-emerald-600",
+      "description": "Projetos",
+      "category": "projetos"
+    },
+    {
+      "icon": "FaGlobe",
+      "bgColor": "bg-sky-100/30",
+      "borderColor": "border-sky-300/60",
+      "count": "2+",
+      "iconColor": "text-sky-600",
+      "description": "Internet",
+      "category": "web"
+    },
+    {
+      "icon": "FaLink",
+      "bgColor": "bg-sky-100/30",
+      "borderColor": "border-sky-300/60",
+      "count": "1+",
+      "iconColor": "text-sky-600",
+      "description": "Http",
+      "category": "web"
+    },
+    {
+      "icon": "FaFigma",
+      "bgColor": "bg-pink-100/30",
+      "borderColor": "border-pink-300/60",
+      "count": "2+",
+      "iconColor": "text-pink-600",
+      "description": "Figma",
+      "category": "ux-ui"
+    },
+    {
+      "icon": "FaLightbulb",
+      "bgColor": "bg-pink-100/30",
+      "borderColor": "border-pink-300/60",
+      "count": "1+",
+      "iconColor": "text-pink-600",
+      "description": "Heurísticas",
+      "category": "ux-ui"
+    },
+    {
+      "icon": "SiMongodb",
+      "bgColor": "bg-green-100/30",
+      "borderColor": "border-green-300/60",
+      "count": "2+",
+      "iconColor": "text-green-600",
+      "description": "MongoDB",
+      "category": "database"
+    },
+    {
+      "icon": "SiMysql",
+      "bgColor": "bg-green-100/30",
+      "borderColor": "border-green-300/60",
+      "count": "1+",
+      "iconColor": "text-green-600",
+      "description": "MySQL",
+      "category": "database"
+    },
+    {
+      "icon": "FaUserTie",
+      "bgColor": "bg-rose-100/30",
+      "borderColor": "border-rose-300/60",
+      "count": "1+",
+      "iconColor": "text-rose-600",
+      "description": "Product Manager",
+      "category": "produtos-digitais"
+    },
+    {
+      "icon": "FaMagnifyingGlass",
+      "bgColor": "bg-rose-100/30",
+      "borderColor": "border-rose-300/60",
+      "count": "2+",
+      "iconColor": "text-rose-600",
+      "description": "Discovery",
+      "category": "produtos-digitais"
+    },
+    {
+      "icon": "FaMobileScreen",
+      "bgColor": "bg-amber-100/30",
+      "borderColor": "border-amber-300/60",
+      "count": "3+",
+      "iconColor": "text-amber-600",
+      "description": "Aplicativos",
+      "category": "english"
+    },
+    {
+      "icon": "FaChalkboardUser",
+      "bgColor": "bg-amber-100/30",
+      "borderColor": "border-amber-300/60",
+      "count": "1+",
+      "iconColor": "text-amber-600",
+      "description": "Professores",
+      "category": "english"
+    }
+  ]
+}

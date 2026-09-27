@@ -1,0 +1,23 @@
+{
+  "id": "7",
+  "slug": "w3schools-referencia",
+  "title": "Plataforma de Referência W3Schools",
+  "institution": "W3Schools",
+  "description": "Plataforma de referência e tutoriais usada como consulta contínua para HTML, CSS, JavaScript e mais.",
+  "coverImage": "/media/bootcamps/instituicoes/w3schools.webp",
+  "altText": "Identidade visual do W3Schools",
+  "category": "fullstack",
+  "status": "concluido",
+  "content": {
+    "longDescription": "W3Schools é uma referência de uso contínuo — tutoriais interativos e documentação prática de HTML, CSS, JavaScript e diversas outras tecnologias web, com exemplos executáveis direto no navegador.",
+    "videoUrl": "",
+    "gallery": [],
+    "curriculum": [
+      "HTML/CSS",
+      "JavaScript",
+      "SQL",
+      "Referência contínua de sintaxe e boas práticas"
+    ],
+    "officialLink": "https://www.w3schools.com"
+  }
+}

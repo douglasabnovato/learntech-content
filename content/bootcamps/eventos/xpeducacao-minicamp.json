@@ -1,0 +1,22 @@
+{
+  "id": "8",
+  "slug": "xpeducacao-minicamp",
+  "title": "Minicamp XP Educação",
+  "institution": "XP Educação",
+  "description": "Minicamp gratuito de duas semanas da Faculdade XP, porta de entrada para as graduações gratuitas em tecnologia.",
+  "coverImage": "/media/bootcamps/instituicoes/xpeducacao.webp",
+  "altText": "Identidade visual do Minicamp da XP Educação",
+  "category": "fullstack",
+  "status": "desejado",
+  "content": {
+    "longDescription": "O Minicamp é a primeira etapa do processo seletivo da Faculdade XP: duas semanas de aulas ao vivo e gravadas com testes práticos sobre fundamentos de programação, com certificado de conclusão garantido a todos os participantes, aprovados ou não na etapa seguinte.",
+    "videoUrl": "",
+    "gallery": [],
+    "curriculum": [
+      "Fundamentos de Lógica de Programação",
+      "Testes práticos",
+      "Introdução à metodologia da XP Educação"
+    ],
+    "officialLink": "https://www.xpeducacao.com.br"
+  }
+}

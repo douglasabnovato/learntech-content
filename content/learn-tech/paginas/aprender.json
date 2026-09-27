@@ -1,0 +1,48 @@
+{
+  "closingQuote": "Nenhuma dessas técnicas é sobre estudar mais horas. É sobre estudar de um jeito que o cérebro realmente retém.",
+  "heroContent": {
+    "eyebrow": "Resolvemos Juntos",
+    "title": "Aprender a aprender é a habilidade que sustenta todas as outras.",
+    "subtitle": "Não é sobre força de vontade ou motivação — é sobre método. Estas quatro técnicas têm respaldo real em pesquisa de psicologia cognitiva, e qualquer uma delas rende mais que reler o mesmo material dez vezes."
+  },
+  "sources": [
+    {
+      "label": "Dunlosky, Rawson, Marsh, Nathan & Willingham (2013) — Improving Students' Learning With Effective Learning Techniques, Psychological Science in the Public Interest",
+      "url": "https://journals.sagepub.com/doi/10.1177/1529100612453266"
+    },
+    {
+      "label": "Karpicke & Blunt (2011) — Retrieval Practice Produces More Learning Than Elaborative Studying, Science",
+      "url": "https://www.science.org/doi/10.1126/science.1199327"
+    }
+  ],
+  "techniques": [
+    {
+      "number": "01",
+      "icon": "FaBrain",
+      "title": "Recuperação ativa",
+      "gradient": "from-indigo-500 via-sky-600 to-sky-700",
+      "description": "Em vez de reler o material, teste-se sobre ele — feche o livro e tente lembrar sem consultar. O esforço de puxar a informação da memória, mesmo errando, fortalece a retenção mais do que qualquer releitura."
+    },
+    {
+      "number": "02",
+      "icon": "FaCalendarDays",
+      "title": "Repetição espaçada",
+      "gradient": "from-sky-500 via-blue-600 to-indigo-600",
+      "description": "Revisar o mesmo conteúdo em intervalos crescentes (um dia, depois uma semana, depois um mês) gera retenção muito mais duradoura do que estudar tudo de uma vez, na véspera."
+    },
+    {
+      "number": "03",
+      "icon": "FaCommentDots",
+      "title": "Técnica de Feynman",
+      "gradient": "from-purple-500 via-pink-600 to-rose-600",
+      "description": "Explique o que você aprendeu com palavras simples, como se estivesse ensinando alguém que nunca ouviu falar do assunto. Cada lugar onde você trava ou complica é exatamente o que você ainda não entendeu de verdade."
+    },
+    {
+      "number": "04",
+      "icon": "FaDumbbell",
+      "title": "Prática deliberada",
+      "gradient": "from-emerald-500 via-teal-600 to-cyan-600",
+      "description": "Repetir o que você já sabe fazer não gera evolução. Prática deliberada é buscar desafios um degrau acima da sua capacidade atual, com atenção total — é isso que separa quem estagna de quem melhora de verdade."
+    }
+  ]
+}

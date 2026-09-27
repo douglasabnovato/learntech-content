@@ -1,0 +1,24 @@
+{
+  "id": "11",
+  "slug": "if-sudeste-mg-informatica",
+  "title": "Técnico em Informática",
+  "institution": "IF Sudeste MG",
+  "description": "Curso técnico em Informática, período noturno, no Instituto Federal do Sudeste de Minas Gerais — Campus Juiz de Fora.",
+  "coverImage": "/media/bootcamps/instituicoes/ifsudeste-mg-jf.webp",
+  "altText": "Identidade visual do IF Sudeste MG",
+  "category": "outros",
+  "status": "concluido",
+  "content": {
+    "longDescription": "Formação técnica de nível médio em Informática no IF Sudeste MG, campus Juiz de Fora, cursada no período noturno — base formal que antecedeu a entrada na graduação em Ciência da Computação.",
+    "videoUrl": "",
+    "gallery": [],
+    "curriculum": [
+      "Lógica de Programação",
+      "Redes de Computadores",
+      "Banco de Dados",
+      "Manutenção e Suporte",
+      "Desenvolvimento de Sistemas"
+    ],
+    "officialLink": "https://www.ifsudestemg.edu.br/juizdefora"
+  }
+}

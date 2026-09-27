@@ -1,0 +1,22 @@
+{
+  "id": "21",
+  "slug": "smc-2012",
+  "title": "SMC 2012 — Simpósio Mineiro de Computação",
+  "institution": "UFJF e IF Sudeste MG",
+  "description": "Simpósio acadêmico que reuniu o WMSI e a VII Escola Regional de Informática de Minas Gerais em Juiz de Fora.",
+  "coverImage": "/media/bootcamps/instituicoes/ufjf-dcc.webp",
+  "altText": "Identidade visual do DCC/UFJF, uma das sedes do simpósio",
+  "category": "outros",
+  "status": "concluido",
+  "content": {
+    "longDescription": "De 21 a 24 de novembro de 2012, Juiz de Fora sediou o Simpósio Mineiro de Computação, que reuniu o Workshop Mineiro de Sistemas de Informação (WMSI), no IF Sudeste MG, e a VII Escola Regional de Informática de Minas Gerais (ERI-MG), no ICE/UFJF, com artigos, minicursos e palestras. Douglas participou como inscrito durante a graduação em Ciência da Computação.",
+    "videoUrl": "",
+    "gallery": [],
+    "curriculum": [
+      "Apresentação de artigos",
+      "Minicursos",
+      "Palestras acadêmicas e de mercado"
+    ],
+    "officialLink": ""
+  }
+}

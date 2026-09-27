@@ -1,0 +1,754 @@
+{
+  "id": 801,
+  "image": "https://cdn.pixabay.com/photo/2015/09/05/20/02/coding-924920_1280.jpg",
+  "category": "IA",
+  "categoryFilter": "ia",
+  "title": "Programar com IA sem Perder o Aprendizado",
+  "lessons": "13 passos",
+  "duration": "6h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Iniciante",
+  "description": "Assistente de IA acelera a entrega e pode atrapalhar a formação — há pesquisa medindo os dois efeitos. Este programa ensina a usar a ferramenta de um jeito que mantém o código saindo e a habilidade crescendo.",
+  "letslearn": [
+    "O que a pesquisa mostra sobre IA e formação de habilidade em programação",
+    "Os três modos de interagir com o assistente, e quando cada um serve",
+    "Revisar código gerado por IA com critério, em vez de aceitar por parecer certo",
+    "Montar uma rotina de estudo em que a IA ensina em vez de substituir"
+  ],
+  "curriculum": "IA no aprendizado de programação",
+  "about": "O programa não é contra nem a favor da ferramenta: parte de evidência. Um ensaio controlado com 52 desenvolvedores júnior mediu a diferença de compreensão entre quem programou com e sem assistente, e os resultados desenham com precisão onde está o risco e onde está o ganho. A partir daí, cada módulo constrói um hábito concreto — o que perguntar, quando não perguntar, e como verificar o que voltou.",
+  "materials": [
+    "Roteiro de perguntas para usar com o assistente",
+    "Checklist de revisão de código gerado",
+    "Modelo de registro de estudo semanal"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "O Que a Pesquisa Mostra",
+      "lessonsCount": 3,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Os Três Modos de Perguntar",
+      "lessonsCount": 3,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Revisar o Que a IA Escreveu",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Uma Rotina que Ensina",
+      "lessonsCount": 3,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Inteligência Artificial",
+    "mainTitle": "A ferramenta entrega mais rápido. A pergunta é o que fica com você depois.",
+    "introductionParagraphs": [
+      {
+        "title": "O dado que dá início a tudo",
+        "text": "Pesquisadores da Anthropic conduziram um **ensaio controlado randomizado** com 52 desenvolvedores júnior aprendendo uma biblioteca nova. Metade usou assistente de IA, metade programou à mão. Logo depois, os dois grupos fizeram o mesmo teste de compreensão. O grupo com IA tirou **50%**; o grupo sem IA, **67%** — quase dois conceitos de diferença, com significância estatística. O grupo com IA terminou cerca de dois minutos mais rápido, diferença que não foi estatisticamente significativa."
+      },
+      {
+        "title": "O detalhe que muda a conclusão",
+        "text": "O resultado não foi uniforme. Entre os participantes que usaram IA, o desempenho variou muito — e variou conforme **como** usaram. Quem pontuou acima de 65% tinha usado o assistente para obter explicação, não para delegar a tarefa. Ou seja: o problema não é a ferramenta estar presente, é o tipo de interação. É isso que dá para treinar, e é o que este programa treina."
+      },
+      {
+        "title": "Onde a perda foi maior",
+        "text": "A maior diferença entre os dois grupos apareceu nas questões de **depuração** — encontrar e corrigir erro. Faz sentido: depurar exige ter construído um modelo mental de como o código funciona, e é exatamente esse modelo que não se forma quando o código chega pronto. Por isso o módulo mais longo deste programa é o de revisão."
+      }
+    ],
+    "courseAboutTitle": "Nem proibir, nem delegar",
+    "courseAboutDescription": "A discussão pública sobre IA e programação costuma ficar entre dois extremos inúteis: quem diz para não usar e quem diz para deixar a IA fazer tudo. Nenhum dos dois descreve a prática de quem trabalha bem. Este programa fica no meio, que é onde está a evidência: usar bastante, perguntando certo, verificando sempre, e reservando de propósito os momentos em que você trava sozinho — porque travar é parte de como a habilidade se forma.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: O Que a Pesquisa Mostra",
+        "items": [
+          {
+            "label": "O experimento",
+            "description": "Como foi montado o ensaio com 52 júniores e o que ele mede de fato."
+          },
+          {
+            "label": "Os números",
+            "description": "50% contra 67%, e o que essa diferença significa na prática."
+          },
+          {
+            "label": "O limite do estudo",
+            "description": "O que o experimento não mediu, e por que isso importa na leitura."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Os Três Modos de Perguntar",
+        "items": [
+          {
+            "label": "Gerar e depois investigar",
+            "description": "Pedir o código e, na sequência, perguntar por que ele é assim."
+          },
+          {
+            "label": "Pedir código com explicação",
+            "description": "Solicitar os dois juntos na mesma resposta."
+          },
+          {
+            "label": "Só conceito",
+            "description": "Perguntar a ideia e escrever o código você mesmo."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Revisar o Que a IA Escreveu",
+        "items": [
+          {
+            "label": "Ler antes de rodar",
+            "description": "O hábito que separa revisão de aposta."
+          },
+          {
+            "label": "Checklist de revisão",
+            "description": "Cinco perguntas objetivas para qualquer trecho gerado."
+          },
+          {
+            "label": "Quebrar de propósito",
+            "description": "Testar o entendimento alterando o código e prevendo o resultado."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Uma Rotina que Ensina",
+        "items": [
+          {
+            "label": "Sessão sem assistente",
+            "description": "Reservar tempo para trabalhar travado, de propósito."
+          },
+          {
+            "label": "Registro do que não sabia",
+            "description": "Anotar a lacuna no momento em que ela aparece."
+          },
+          {
+            "label": "Revisão semanal",
+            "description": "Voltar ao que foi gerado e reescrever sem ajuda."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Cada módulo abaixo tem passos para praticar durante a sua própria semana de trabalho ou estudo — não são exercícios artificiais. Ao final, o quiz revisa o que ficou."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "search",
+      "title": "O Que a Pesquisa Mostra",
+      "shortDescription": "O ensaio com 52 júniores, os números e o que eles não dizem",
+      "introductionText": "Quase tudo que se lê sobre IA e programação é opinião. Este módulo começa por um dado: um ensaio controlado randomizado, com grupo de comparação, publicado com método aberto. Entender como o estudo foi feito importa tanto quanto o resultado, porque é o que permite saber até onde a conclusão vale — e onde ela para.",
+      "sections": [
+        {
+          "title": "📊 Lendo o experimento",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Como o estudo foi montado",
+              "guidance": "Leia o desenho do experimento: 52 desenvolvedores júnior, divididos aleatoriamente entre usar assistente de IA e programar sem ele, todos aprendendo a mesma biblioteca de programação assíncrona em Python. Logo após a tarefa, os dois grupos responderam ao mesmo teste, com quatro tipos de questão: depuração, leitura de código, escrita de código e compreensão conceitual.",
+              "tips": [
+                "Divisão aleatória entre os grupos é o que permite atribuir a diferença ao uso da IA, e não a quem era mais experiente."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "O resultado numérico",
+              "code": "50% × 67%",
+              "guidance": "O grupo que usou IA acertou em média 50% do teste; o grupo sem IA, 67%. A diferença foi estatisticamente significativa. O grupo com IA terminou cerca de dois minutos mais rápido, mas essa vantagem de tempo não foi significativa — ou seja, pagou-se compreensão sem ganhar velocidade de forma confiável.",
+              "tips": [
+                "Guarde a ordem de grandeza, não o número exato: a perda de compreensão foi grande e o ganho de tempo foi pequeno."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "O que o estudo não mede",
+              "guidance": "O teste foi aplicado logo depois da tarefa, com desenvolvedores júnior aprendendo algo novo. Não mede retenção em meses, não mede desempenho de quem já é experiente, e não mede produtividade em um projeto longo. Registre esses limites: usar o dado além do que ele suporta é o mesmo erro de quem ignora o dado.",
+              "tips": [
+                "Um estudo forte responde uma pergunta específica muito bem. A honestidade está em não esticar a resposta para perguntas que ele não fez."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que começar pela evidência",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Opinião não resolve",
+          "text": "O debate sobre IA na programação está saturado de posição pessoal. Um ensaio com grupo de comparação é um chão diferente para pisar."
+        },
+        {
+          "icon": "gauge",
+          "title": "O ganho de tempo era pequeno",
+          "text": "Dois minutos, sem significância estatística. A troca que parecia óbvia — menos aprendizado, mais velocidade — não se confirmou nem no lado da velocidade."
+        },
+        {
+          "icon": "shield",
+          "title": "Depurar foi o que mais caiu",
+          "text": "A maior diferença apareceu nas questões de encontrar erro. Depuração exige modelo mental do código, e é ele que não se forma quando o código chega pronto."
+        }
+      ],
+      "closingText": "O dado sozinho poderia levar à conclusão errada — a de largar a ferramenta. Mas o próprio estudo mostra que, entre quem usou IA, o desempenho variou bastante conforme o modo de usar. É esse achado que o próximo módulo transforma em prática.",
+      "ctaTitle": "📊 Você já tem o dado",
+      "ctaText": "Agora a parte acionável: o estudo identificou como se comportava quem usou IA e mesmo assim aprendeu.",
+      "nextButtonText": "Ir para Módulo 1: Os Três Modos de Perguntar"
+    },
+    {
+      "id": 1,
+      "icon": "comment",
+      "title": "Os Três Modos de Perguntar",
+      "shortDescription": "O que fazia quem usou IA e ainda assim entendeu",
+      "introductionText": "Entre os participantes que usaram assistente, os que pontuaram acima de 65% no teste — ou seja, acima até da média do grupo sem IA — tinham três padrões de interação em comum. Nenhum deles é complicado, e nenhum exige abrir mão da ferramenta. A diferença está em o que se pede e em que ordem.",
+      "sections": [
+        {
+          "title": "💬 Três formas de conduzir a conversa",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Gerar primeiro, investigar depois",
+              "guidance": "Peça o código, mas não encerre ali. Na sequência, pergunte por que aquela abordagem foi escolhida, o que aconteceria com uma entrada diferente e qual alternativa existiria. Pratique hoje: pegue o último trecho que você pediu pronto e faça três perguntas de acompanhamento sobre ele.",
+              "tips": [
+                "A pergunta mais produtiva costuma ser: o que quebraria esse código?"
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Pedir código e explicação juntos",
+              "code": "explique cada decisão",
+              "guidance": "Inclua no próprio pedido que a resposta venha com a justificativa de cada decisão. Você recebe o código e o raciocínio de uma vez, e a leitura já vem acompanhada do porquê — em vez de um bloco pronto que você aceita sem processar.",
+              "tips": [
+                "Peça também o que a solução não resolve. Limitação declarada é mais útil que elogio à própria resposta."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Perguntar só o conceito",
+              "guidance": "Para o que você está tentando aprender de verdade, pergunte apenas a ideia — como funciona, quando se usa, qual o problema que resolve — e escreva o código você mesmo. É o modo mais lento e o que mais forma habilidade. Escolha deliberadamente um assunto por semana para tratar assim.",
+              "tips": [
+                "Este modo não é para tudo. É para aquilo que você quer conseguir fazer sozinho daqui a seis meses."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que o modo de perguntar decide",
+      "highlights": [
+        {
+          "icon": "comment",
+          "title": "Explicação em vez de delegação",
+          "text": "Quem foi bem no teste pedia para entender, não para entregar. A mesma ferramenta, usada com outra intenção, produziu outro resultado."
+        },
+        {
+          "icon": "tasks",
+          "title": "Escolher o modo antes de perguntar",
+          "text": "Decidir de antemão se aquele trecho é para aprender ou para despachar evita o piloto automático de aceitar tudo que vem pronto."
+        },
+        {
+          "icon": "laptop",
+          "title": "Nem tudo precisa ser aprendido",
+          "text": "Configuração que você usa uma vez por ano pode vir pronta sem culpa. Reserve o modo lento para o que é do seu ofício."
+        }
+      ],
+      "closingText": "Saber perguntar melhora o que entra. Falta a outra metade: o que fazer com o código depois que ele chega. É onde estava a maior perda medida no estudo, e é o módulo mais longo deste programa.",
+      "ctaTitle": "💬 Você já sabe o que pedir",
+      "ctaText": "Agora a metade que protege contra o erro mais caro: revisar antes de confiar.",
+      "nextButtonText": "Ir para Módulo 2: Revisar o Que a IA Escreveu"
+    },
+    {
+      "id": 2,
+      "icon": "shield",
+      "title": "Revisar o Que a IA Escreveu",
+      "shortDescription": "Ler antes de rodar, e um checklist que cabe em qualquer trecho",
+      "introductionText": "Código gerado por IA tem uma característica perigosa: ele parece certo. A formatação é boa, os nomes fazem sentido, a estrutura é plausível. Essa aparência de qualidade desarma a desconfiança que você teria com código de origem desconhecida. Este módulo constrói o hábito oposto — tratar o que voltou como um pull request de alguém que você não conhece.",
+      "sections": [
+        {
+          "title": "🔎 Do aceite automático à revisão real",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Ler o código inteiro antes de executar",
+              "guidance": "Estabeleça a regra: nenhum trecho gerado vai para o projeto sem ser lido linha a linha antes de rodar. Rodar primeiro cria um atalho — se funcionou, você não lê. E é justamente aí que o erro silencioso entra.",
+              "tips": [
+                "Se o trecho é grande demais para ler com atenção, ele é grande demais para pedir de uma vez. Peça em pedaços."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "O checklist de cinco perguntas",
+              "guidance": "Para qualquer trecho gerado, responda: o que acontece se a entrada vier vazia? Existe caso de erro sem tratamento? Alguma dependência nova foi introduzida? Há valor fixo no código que deveria ser configurável? Eu saberia reescrever isso sem ajuda? A última é a mais reveladora.",
+              "tips": [
+                "Se a resposta da quinta pergunta for não, você tem uma lacuna de estudo identificada — anote em vez de seguir adiante."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Quebrar de propósito",
+              "guidance": "Altere uma linha do código gerado e preveja o que vai acontecer antes de rodar. Depois rode e compare com a sua previsão. Acertar a previsão é a evidência de que você entendeu; errar aponta exatamente onde o modelo mental está furado.",
+              "tips": [
+                "Esta é a única verificação de entendimento que não dá para enganar a si mesmo."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Depurar sem pedir a resposta",
+              "guidance": "Quando aparecer um erro, resista ao impulso de colar a mensagem no assistente. Passe dez minutos lendo o erro, localizando a linha e formulando uma hipótese. Só depois, se necessário, peça ajuda — e peça para conferirem sua hipótese, não para entregarem a correção.",
+              "tips": [
+                "Depuração foi onde a pesquisa mediu a maior perda de compreensão. Não é coincidência: é a habilidade que mais depende de prática direta."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que revisão é a defesa central",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Parecer certo não é estar certo",
+          "text": "Código gerado vem bem formatado e com nomes plausíveis. Essa aparência desarma a desconfiança que você teria com qualquer outra origem."
+        },
+        {
+          "icon": "shield",
+          "title": "A pergunta que revela a lacuna",
+          "text": "Eu saberia reescrever isso sem ajuda? Responder honestamente transforma cada trecho aceito num diagnóstico do que você ainda não sabe."
+        },
+        {
+          "icon": "gauge",
+          "title": "Depurar é o músculo que mais atrofia",
+          "text": "Foi onde o estudo mediu a maior diferença. Ler o erro antes de pedir a resposta é o exercício direto para essa habilidade."
+        }
+      ],
+      "closingText": "Perguntar bem e revisar bem resolvem o trabalho do dia. Falta o que age no prazo longo: uma rotina que garanta que, ao final de cada semana, você saiba algo que não sabia — e não apenas tenha entregue mais.",
+      "ctaTitle": "🔎 Revisão virou hábito",
+      "ctaText": "Você já não aceita código por parecer certo. O último módulo monta a rotina que faz isso durar.",
+      "nextButtonText": "Ir para Módulo 3: Uma Rotina que Ensina"
+    },
+    {
+      "id": 3,
+      "icon": "tasks",
+      "title": "Uma Rotina que Ensina",
+      "shortDescription": "Travar de propósito, registrar a lacuna e revisar o que foi gerado",
+      "introductionText": "Os pesquisadores concluíram que o esforço cognitivo — inclusive o desconforto de ficar travado — é provavelmente importante para a formação de domínio. Isso não acontece por acaso: precisa estar na agenda. Este módulo monta três hábitos pequenos que cabem em qualquer semana de trabalho e garantem que a habilidade continue crescendo enquanto a entrega continua saindo.",
+      "sections": [
+        {
+          "title": "🗓️ Três hábitos semanais",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Bloco sem assistente",
+              "guidance": "Reserve um período fixo por semana — uma hora já serve — para programar com o assistente fechado. Escolha uma tarefa que você conseguiria despachar em cinco minutos com ajuda. O objetivo não é produtividade: é passar pelo processo inteiro de ficar travado e sair sozinho.",
+              "tips": [
+                "Bloco curto e recorrente funciona melhor que um dia inteiro ocasional."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Caderno de lacunas",
+              "guidance": "Toda vez que a resposta da quinta pergunta do checklist for não, anote o assunto em uma lista. Não estude na hora — apenas registre. Ao final da semana você tem um mapa das suas lacunas reais, tiradas do trabalho de verdade, não de um plano de estudo genérico.",
+              "tips": [
+                "Lacuna anotada no momento em que aparece é específica. Lembrada depois vira uma vaga sensação de que você precisa estudar mais."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Reescrever sem ajuda",
+              "guidance": "Uma vez por semana, escolha um trecho que a IA gerou nos últimos dias e reescreva do zero, sem consultar. Compare as duas versões. As diferenças mostram o que você absorveu e o que passou direto.",
+              "tips": [
+                "Sua versão não precisa ficar melhor. Ela precisa existir — é a prova de que o conhecimento ficou com você."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que rotina e não força de vontade",
+      "highlights": [
+        {
+          "icon": "clipboard",
+          "title": "O esforço precisa de agenda",
+          "text": "Se travar de propósito depender de disposição no momento, não vai acontecer. Bloco marcado é o que transforma intenção em prática."
+        },
+        {
+          "icon": "folder",
+          "title": "Lacuna registrada é lacuna estudável",
+          "text": "Anotar no instante em que aparece produz uma lista específica e sua, em vez de um plano de estudo copiado da internet."
+        },
+        {
+          "icon": "sync",
+          "title": "Reescrever é o teste honesto",
+          "text": "Você pode achar que entendeu ao ler. Só descobre de verdade quando tenta produzir de novo, sem consulta."
+        }
+      ],
+      "closingText": "Você termina este programa com três coisas: um dado real sobre o efeito da ferramenta, um jeito de conversar com ela que preserva o aprendizado, e uma rotina que mantém isso de pé. A ferramenta continua na sua mesa, usada o dia inteiro — a diferença é que agora ela trabalha a favor da sua formação, e não no lugar dela.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você sai com evidência, método de conversa e rotina. A ferramenta segue com você — a habilidade também.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "No ensaio controlado com 52 desenvolvedores júnior, qual foi a diferença de desempenho no teste de compreensão?",
+      "explanation": "O grupo que usou assistente de IA acertou em média 50%, contra 67% do grupo que programou sem assistente — quase dois conceitos de diferença, com significância estatística. Os grupos não empataram, e o grupo com IA não foi melhor.",
+      "options": [
+        {
+          "text": "50% com IA contra 67% sem IA",
+          "isCorrect": true
+        },
+        {
+          "text": "Os dois grupos empataram",
+          "isCorrect": false
+        },
+        {
+          "text": "67% com IA contra 50% sem IA",
+          "isCorrect": false
+        },
+        {
+          "text": "O estudo não aplicou teste de compreensão",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Sobre o tempo de execução da tarefa, o que o estudo encontrou?",
+      "explanation": "O grupo com IA terminou cerca de dois minutos mais rápido, mas essa diferença não foi estatisticamente significativa. Ou seja, o ganho de velocidade que normalmente justifica a troca não se confirmou de forma confiável naquele experimento.",
+      "options": [
+        {
+          "text": "Cerca de dois minutos mais rápido, sem significância estatística",
+          "isCorrect": true
+        },
+        {
+          "text": "Redução de metade do tempo, com significância estatística",
+          "isCorrect": false
+        },
+        {
+          "text": "O grupo com IA demorou significativamente mais",
+          "isCorrect": false
+        },
+        {
+          "text": "O tempo não foi medido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Em qual tipo de questão apareceu a maior diferença entre os dois grupos?",
+      "explanation": "A maior diferença apareceu nas questões de depuração. Encontrar erro exige um modelo mental de como o código funciona, e é esse modelo que não se forma quando o código chega pronto. As demais categorias também foram avaliadas, mas com diferença menor.",
+      "options": [
+        {
+          "text": "Depuração",
+          "isCorrect": true
+        },
+        {
+          "text": "Leitura de código",
+          "isCorrect": false
+        },
+        {
+          "text": "Compreensão conceitual",
+          "isCorrect": false
+        },
+        {
+          "text": "Não houve diferença por categoria",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "O que caracterizava os participantes que usaram IA e mesmo assim pontuaram acima de 65%?",
+      "explanation": "Eles usaram o assistente de forma estratégica, buscando explicação em vez de delegar a tarefa. O fator não foi usar menos a ferramenta nem ter mais experiência — foi o tipo de interação estabelecida com ela.",
+      "options": [
+        {
+          "text": "Usaram o assistente para obter explicação, não para delegar",
+          "isCorrect": true
+        },
+        {
+          "text": "Usaram o assistente pouquíssimas vezes",
+          "isCorrect": false
+        },
+        {
+          "text": "Eram os participantes com mais anos de experiência",
+          "isCorrect": false
+        },
+        {
+          "text": "Trabalharam mais devagar que os demais",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Qual dos três modos de interação forma mais habilidade, e por isso é o mais lento?",
+      "explanation": "Perguntar apenas o conceito e escrever o código você mesmo é o modo que mais exige esforço cognitivo e, por isso, o que mais forma habilidade. Gerar e investigar depois, ou pedir código com explicação, são intermediários. Aceitar o código sem nenhuma pergunta é o padrão que o estudo associa à perda de compreensão.",
+      "options": [
+        {
+          "text": "Perguntar só o conceito e escrever o código por conta própria",
+          "isCorrect": true
+        },
+        {
+          "text": "Pedir o código pronto e aceitar sem perguntas",
+          "isCorrect": false
+        },
+        {
+          "text": "Pedir o código junto com a explicação",
+          "isCorrect": false
+        },
+        {
+          "text": "Pedir o código e investigar depois",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Por que não faz sentido aplicar o modo mais lento a tudo?",
+      "explanation": "O modo de só conceito custa tempo, e nem tudo compensa esse custo — configuração usada uma vez por ano, por exemplo, pode vir pronta. A escolha deliberada é reservá-lo para aquilo que você quer dominar. Não se trata de o modo ser ineficaz nem de uma recomendação do estudo contra ele.",
+      "options": [
+        {
+          "text": "Porque nem todo assunto compensa o tempo; reserve-o para o que é do seu ofício",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque o modo conceitual produz código de pior qualidade",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o estudo desaconselha escrever código à mão",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque assistentes modernos não respondem só conceito",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Por que código gerado por IA exige atenção especial na revisão?",
+      "explanation": "Ele chega bem formatado, com nomes plausíveis e estrutura convincente — e essa aparência de qualidade desarma a desconfiança que você teria com código de origem desconhecida. O problema não é a linguagem usada nem a quantidade de comentários.",
+      "options": [
+        {
+          "text": "Porque parece correto, e essa aparência desarma a desconfiança",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque costuma vir mal formatado e difícil de ler",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque sempre usa bibliotecas obsoletas",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque nunca inclui tratamento de erro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Qual das cinco perguntas do checklist revela melhor uma lacuna de estudo sua?",
+      "explanation": "Eu saberia reescrever isso sem ajuda? é a pergunta que mede o seu entendimento, e não a qualidade do código. Responder não transforma aquele trecho num item de estudo identificado. As outras quatro avaliam o código; esta avalia você.",
+      "options": [
+        {
+          "text": "Eu saberia reescrever isso sem ajuda?",
+          "isCorrect": true
+        },
+        {
+          "text": "Alguma dependência nova foi introduzida?",
+          "isCorrect": false
+        },
+        {
+          "text": "Há valor fixo que deveria ser configurável?",
+          "isCorrect": false
+        },
+        {
+          "text": "O que acontece se a entrada vier vazia?",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Qual é a verificação de entendimento que não dá para enganar a si mesmo?",
+      "explanation": "Alterar uma linha e prever o resultado antes de rodar expõe o modelo mental: acertar a previsão comprova entendimento, errar aponta exatamente onde ele está furado. Reler, rodar os testes ou pedir confirmação ao assistente não exigem que você tenha construído esse modelo.",
+      "options": [
+        {
+          "text": "Alterar o código e prever o resultado antes de executar",
+          "isCorrect": true
+        },
+        {
+          "text": "Ler o trecho uma segunda vez com atenção",
+          "isCorrect": false
+        },
+        {
+          "text": "Rodar e ver se os testes passam",
+          "isCorrect": false
+        },
+        {
+          "text": "Pedir ao assistente que confirme se você entendeu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Qual é o objetivo do bloco semanal sem assistente?",
+      "explanation": "O objetivo é passar pelo processo completo de ficar travado e sair sozinho — os pesquisadores apontam o esforço cognitivo, inclusive o desconforto de travar, como provavelmente importante para formar domínio. Não é medir velocidade, nem provar independência, nem economizar uso da ferramenta.",
+      "options": [
+        {
+          "text": "Passar pelo esforço de travar e destravar sozinho",
+          "isCorrect": true
+        },
+        {
+          "text": "Medir quanto tempo você perde sem a ferramenta",
+          "isCorrect": false
+        },
+        {
+          "text": "Reduzir o custo de uso do assistente",
+          "isCorrect": false
+        },
+        {
+          "text": "Provar que você não depende de IA",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Por que anotar a lacuna no momento em que ela aparece, em vez de estudar na hora?",
+      "explanation": "Registrar no instante produz uma lista específica, tirada do trabalho real, sem interromper a entrega. Estudar na hora quebra o fluxo, e lembrar depois transforma a lacuna numa sensação vaga de que falta estudar. A lista não serve para provar nada a ninguém.",
+      "options": [
+        {
+          "text": "Porque preserva o fluxo e gera uma lista específica e sua",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque estudar no mesmo dia não funciona",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque a lista serve como comprovação para o gestor",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque lacunas somem sozinhas com o tempo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Ao reescrever do zero um trecho que a IA gerou, o que indica sucesso?",
+      "explanation": "O sucesso é a sua versão existir e funcionar — é a prova de que o conhecimento ficou com você. Ela não precisa ser melhor, nem idêntica, nem mais curta. A comparação entre as duas mostra o que foi absorvido e o que passou direto.",
+      "options": [
+        {
+          "text": "Sua versão existir e funcionar, mesmo sem ser melhor",
+          "isCorrect": true
+        },
+        {
+          "text": "Sua versão ficar idêntica à gerada pela IA",
+          "isCorrect": false
+        },
+        {
+          "text": "Sua versão ter menos linhas que a original",
+          "isCorrect": false
+        },
+        {
+          "text": "Você conseguir reescrever sem consultar nem a documentação",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "Não é um projeto de código — é um método de trabalho. Você sai com um roteiro de perguntas para usar com o assistente, um checklist de revisão aplicável a qualquer trecho gerado, e uma rotina semanal com três hábitos que mantêm a habilidade crescendo enquanto a entrega continua saindo.",
+    "highlights": [
+      "Roteiro de perguntas por tipo de situação",
+      "Checklist de cinco pontos para revisar código gerado",
+      "Rotina semanal com bloco sem assistente e caderno de lacunas"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "Programação assistida por IA deixou de ser novidade e virou padrão de mercado: ferramentas desse tipo já fazem parte do dia a dia da maioria das equipes. Ao mesmo tempo, a competição por vagas júnior aumentou — e o que diferencia um candidato é justamente a compreensão que o assistente não entrega pronta.",
+      "O ensaio controlado da Anthropic com 52 desenvolvedores júnior mostra o tamanho do efeito: 50% contra 67% de acerto em teste de compreensão, com a maior perda em depuração. A conclusão dos pesquisadores não é abandonar a ferramenta — é desenhar de propósito como ela é usada, para que apoie o desenvolvimento contínuo da habilidade em vez de apenas concluir tarefas."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Quem está aprendendo a programar",
+        "description": "Fase em que o risco de atrofia é maior, porque a base ainda está se formando."
+      },
+      {
+        "label": "Primeiro emprego em tecnologia",
+        "description": "Entregar com ajuda e ainda assim construir repertório próprio."
+      },
+      {
+        "label": "Quem ensina ou coordena",
+        "description": "Definir como a turma ou a equipe usa assistente sem perder formação."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Iniciantes que já usam IA",
+        "description": "Usam todo dia e desconfiam que estão aprendendo menos do que deveriam."
+      },
+      {
+        "label": "Quem evita a ferramenta por receio",
+        "description": "Prefere não usar por medo de não aprender, e perde produtividade por isso."
+      },
+      {
+        "label": "Instrutores e líderes técnicos",
+        "description": "Precisam de uma política de uso baseada em evidência, não em opinião."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Assistentes de código estão presentes na rotina de equipes de todos os portes, de estúdios pequenos a grandes produtos. A questão prática deixou de ser se a ferramenta será usada e passou a ser como — e é aí que empresas e escolas ainda não têm política definida. Saber conduzir esse uso é uma habilidade de carreira, não só de ferramenta.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Anthropic — How AI assistance impacts the formation of coding skills (ensaio controlado randomizado com 52 desenvolvedores júnior)",
+      "url": "https://www.anthropic.com/research/AI-assistance-coding-skills"
+    },
+    {
+      "label": "Alura — Mercado de programação 2026: programação assistida por IA como tendência e competição maior em vagas júnior",
+      "url": "https://www.alura.com.br/artigos/mercado-de-programacao-2025"
+    }
+  ]
+}
