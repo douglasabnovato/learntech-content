@@ -18,7 +18,7 @@
     {
       "binding": "DB",
       "database_name": "learntech-acessos",
-      "database_id": "COLE_AQUI_O_ID_GERADO_PELO_WRANGLER_D1_CREATE",
+      "database_id": "e6b6e8f4-a8f7-4503-b520-b798db3739e7",
       "migrations_dir": "migrations"
     }
   ],
