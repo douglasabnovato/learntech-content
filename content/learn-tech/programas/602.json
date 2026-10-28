@@ -4,7 +4,977 @@
   "category": "Projetos",
   "categoryFilter": "projetos",
   "title": "Scrum e Kanban: Agilidade na Gestão de Projetos Tech",
-  "lessons": "20+ Lições",
-  "duration": "15hr 00min",
-  "access": "Acesso Livre"
+  "lessons": "20 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Iniciante",
+  "description": "Organize várias frentes de trabalho em um quadro kanban, conduza ciclos curtos no estilo Scrum, planeje a semana em blocos de tempo e use IA para priorizar sem abrir mão do seu julgamento.",
+  "letslearn": [
+    "Os papéis, eventos e artefatos do Scrum, e como adaptar o ritmo de sprint para quem trabalha sozinho",
+    "Montar um quadro kanban com colunas por ciclo de vida, limite de WIP e uma coluna Ideias",
+    "Escrever cartões que funcionam como contrato de entrega e fechá-los contando a história",
+    "Dividir a semana em blocos de tempo para várias frentes sem abandonar nenhuma",
+    "Usar IA para planejar sprint, quebrar épicos e revisar prioridades, mantendo a decisão com você"
+  ],
+  "curriculum": "Gestão ágil de projetos e rotina",
+  "about": "Ao final, a pessoa consegue organizar várias frentes de trabalho em um quadro kanban, conduzir ciclos curtos no estilo Scrum, planejar a semana em blocos de tempo e usar IA para priorizar sem perder o próprio julgamento. O programa nasce da prática de quem conduz ao mesmo tempo trabalho principal, projetos paralelos e estudo, e parte das referências oficiais: o Scrum Guide para o ritmo, o Kanban Guide para o fluxo e a documentação do GitHub Projects para a ferramenta. Cada módulo termina em algo que você usa na semana seguinte: um quadro, um modelo de cartão, uma grade semanal, três prompts e uma retrospectiva.",
+  "materials": [
+    "Configuração de colunas e campos para GitHub Projects ou Trello",
+    "Modelo de cartão em Markdown com definição de sucesso e checklist de pronto",
+    "Modelo de storytelling de fechamento de cartão",
+    "Grade semanal em blocos de tempo",
+    "Três prompts de IA para planejar, quebrar e revisar",
+    "Modelo de retrospectiva semanal com métricas de fluxo"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Scrum em Uma Página",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Kanban na Prática",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Várias Frentes ao Mesmo Tempo",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "IA como Mentora de Projeto",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 4,
+      "title": "Métricas Simples e Retrospectiva",
+      "lessonsCount": 3,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Gestão de Projetos",
+    "mainTitle": "Muitas frentes, pouco tempo: o problema não é esforço, é fluxo.",
+    "introductionParagraphs": [
+      {
+        "title": "O cenário de partida",
+        "text": "Trabalho principal, um projeto paralelo, um curso e uma rotina para um cliente. Cada frente tem sua lista, suas mensagens e sua urgência. O resultado costuma ser o mesmo: **muita coisa começada, pouca coisa terminada**, e a sensação de que uma frente sempre fica para trás. Este programa trata esse cenário como um problema de fluxo, que tem solução conhecida."
+      },
+      {
+        "title": "Dois frameworks, um sistema",
+        "text": "O **Scrum** dá o ritmo: ciclos curtos com meta, planejamento e retrospectiva. O **Kanban** dá a visão: um quadro em que o trabalho anda da ideia à entrega, com limite de itens em andamento. Juntos, e adaptados para quem conduz várias frentes, formam uma rotina em que cada semana tem começo, meio e fim."
+      },
+      {
+        "title": "A IA no lugar certo",
+        "text": "Assistentes de IA ajudam a planejar, quebrar tarefas grandes e revisar prioridades, mas não conhecem seus clientes, seus acordos nem sua estratégia. O programa ensina a usar a ferramenta como **mentora**, com prompts que exigem perguntas no lugar de certezas, e a manter a decisão com você."
+      }
+    ],
+    "courseAboutTitle": "Método antes de ferramenta",
+    "courseAboutDescription": "GitHub Projects, Trello ou qualquer outro quadro servem igualmente bem quando o método está claro: colunas que mostram o fluxo, poucos itens em andamento, cartões que dizem o que é terminar, uma semana dividida em blocos e uma retrospectiva que gera um ajuste por vez. O programa ensina o método com exemplos genéricos, para você aplicar sobre os seus próprios projetos desde a primeira semana.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Scrum em Uma Página",
+        "items": [
+          {
+            "label": "Responsabilidades",
+            "description": "Product Owner, Developers e Scrum Master, e o risco de acumular as três."
+          },
+          {
+            "label": "Sprint e eventos",
+            "description": "Planning, Daily, Review e Retrospective dentro de um ciclo fixo."
+          },
+          {
+            "label": "Artefatos",
+            "description": "Backlogs e incremento, cada um amarrado ao seu compromisso."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Kanban na Prática",
+        "items": [
+          {
+            "label": "Colunas e WIP",
+            "description": "Quadro por ciclo de vida, áreas como etiqueta e poucos itens em andamento."
+          },
+          {
+            "label": "Coluna Ideias",
+            "description": "Um lugar para esvaziar a cabeça sem interromper o trabalho."
+          },
+          {
+            "label": "Cartão e storytelling",
+            "description": "Contrato de entrega na abertura e história no fechamento."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Várias Frentes ao Mesmo Tempo",
+        "items": [
+          {
+            "label": "Rotina e projeto",
+            "description": "Entrega fixa para o que se repete, meta semanal para o que termina."
+          },
+          {
+            "label": "Prioridade com critério",
+            "description": "Impacto, confiança e facilidade em cinco minutos."
+          },
+          {
+            "label": "Grade em blocos",
+            "description": "Cada frente com horário próprio e um ritual para trocar de contexto."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: IA como Mentora de Projeto",
+        "items": [
+          {
+            "label": "Contexto anonimizado",
+            "description": "O que a IA precisa saber e o que nunca colar no chat."
+          },
+          {
+            "label": "Três prompts",
+            "description": "Planejar a sprint, quebrar épicos e revisar prioridades."
+          },
+          {
+            "label": "Limites",
+            "description": "Onde a mentora ajuda e onde o julgamento continua sendo seu."
+          }
+        ]
+      },
+      {
+        "moduleId": 4,
+        "title": "Módulo 4: Métricas Simples e Retrospectiva",
+        "items": [
+          {
+            "label": "WIP e throughput",
+            "description": "O que está aberto e o que terminou na semana."
+          },
+          {
+            "label": "Ciclo e idade",
+            "description": "Quanto um item leva e quando um cartão parado pede atenção."
+          },
+          {
+            "label": "Retrospectiva",
+            "description": "Um ajuste por semana, checado na semana seguinte."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Cada módulo tem passos para aplicar na sua própria semana de trabalho, com modelos prontos para copiar. Ao final, o quiz revisa o que ficou."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "sync",
+      "title": "Scrum em Uma Página",
+      "shortDescription": "Responsabilidades, eventos, artefatos e o que muda quando o time é você",
+      "introductionText": "Scrum é um framework leve: poucas regras, todas com um motivo. Antes de montar quadro ou planejar semana, vale entender o desenho completo em uma página, porque é ele que dá ritmo ao resto do programa. A referência aqui é o Scrum Guide, o documento oficial e gratuito escrito pelos criadores do framework. Tudo o que vier depois, inclusive as adaptações para quem trabalha sozinho em várias frentes, parte dele.",
+      "sections": [
+        {
+          "title": "O framework inteiro, sem enfeite",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Três responsabilidades, não três cargos",
+              "guidance": "O Scrum Guide fala em responsabilidades. O Product Owner maximiza o valor do produto e cuida do Product Backlog: o que entra, em que ordem e com que clareza. Os Developers transformam itens do backlog em incremento utilizável e respondem pela qualidade. O Scrum Master ajuda o time e a organização a entender e aplicar o Scrum. Em equipe pequena ou em trabalho individual, a mesma pessoa pode acumular as três, e é justamente aí que o risco aparece: quem decide o que fazer também executa e também avalia o processo. Saber qual chapéu você está usando em cada momento já evita metade da confusão.",
+              "tips": [
+                "Ao abrir o quadro, pergunte em voz alta: agora estou decidindo prioridade (PO), executando (Developer) ou ajustando o processo (Scrum Master)?",
+                "Responsabilidade não é hierarquia. O Scrum Master não manda no time, e o PO não define como o trabalho técnico é feito."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "A sprint e seus quatro eventos",
+              "code": "Sprint de 1 semana (sugestão de proporção)\n├── Sprint Planning ........ até ~2h  (guia: até 8h para sprint de 1 mês)\n├── Daily Scrum ............ 15 min, todo dia, mesmo horário\n├── Sprint Review .......... até ~1h  (guia: até 4h para sprint de 1 mês)\n└── Sprint Retrospective ... até ~45min (guia: até 3h para sprint de 1 mês)",
+              "guidance": "A sprint é um ciclo de duração fixa de até um mês, e uma começa assim que a anterior termina. Dentro dela acontecem a Sprint Planning (definir a meta e o que será feito), a Daily Scrum (15 minutos para inspecionar o progresso rumo à meta e ajustar o plano), a Sprint Review (mostrar o incremento e decidir o que vem depois) e a Sprint Retrospective (melhorar a forma de trabalhar). Os limites de tempo do guia valem para sprints de um mês; sprints mais curtas usam eventos proporcionalmente menores. Para quem está começando ou tem várias frentes, uma sprint de uma semana costuma funcionar bem: o ciclo é curto o bastante para corrigir rota sem perder muito.",
+              "tips": [
+                "Eventos têm limite máximo, não duração obrigatória. Uma planning de semana que termina em 40 minutos com meta clara está ótima.",
+                "A Daily não é relatório para chefe: é o momento de perguntar se a meta da sprint continua de pé e o que muda hoje."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Três artefatos e seus compromissos",
+              "code": "| Artefato        | Compromisso          | Pergunta que responde               |\n|-----------------|----------------------|-------------------------------------|\n| Product Backlog | Meta do Produto      | Para onde o produto está indo?      |\n| Sprint Backlog  | Meta da Sprint       | O que esta sprint precisa entregar? |\n| Incremento      | Definição de Pronto  | O que está terminado de verdade?    |",
+              "guidance": "Cada artefato do Scrum vem amarrado a um compromisso que dá direção a ele. O Product Backlog tem a Meta do Produto; o Sprint Backlog tem a Meta da Sprint; o Incremento tem a Definição de Pronto. Sem o compromisso, o artefato vira lista solta: um backlog sem meta de produto cresce sem critério, uma sprint sem meta vira um amontoado de tarefas, e um incremento sem definição de pronto vira discussão sobre o que é estar terminado.",
+              "tips": [
+                "Escreva a Meta da Sprint em uma frase que um colega entenda sem contexto. Se não couber em uma frase, a sprint está grande demais.",
+                "A Definição de Pronto é a mesma para todos os itens. Critério específico de um item vai no próprio cartão, como critério de aceite."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Scrum quando o time é você",
+              "guidance": "O Scrum Guide foi escrito para times, mas os princípios servem para quem conduz sozinho várias frentes. Ciclo fixo, meta por ciclo, inspeção curta e frequente e retrospectiva honesta continuam valendo. O que muda é a forma: a Daily vira cinco minutos lendo o quadro antes de começar o primeiro bloco do dia; a Review vira o momento em que você mostra a entrega para quem pediu (cliente, gestor ou colega); a Retrospective vira uma nota curta no fim da semana. Chame isso de adaptação inspirada em Scrum, e não de Scrum, porque o guia é explícito: aplicar só parte dele não é Scrum. A honestidade com o nome ajuda a não esperar do método o que ele não promete.",
+              "tips": [
+                "Marque no calendário a planning e a retrospectiva da semana como compromissos fixos. São os primeiros eventos a serem sacrificados quando a semana aperta, e os que mais fazem falta.",
+                "Se houver um gestor ou cliente, convide para a review. Mostrar o incremento vale mais do que qualquer relatório de status."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "Por que começar pelo Scrum",
+      "highlights": [
+        {
+          "icon": "sync",
+          "title": "Ritmo antes de ferramenta",
+          "text": "Um ciclo fixo com início, meio e fim cria o hábito de terminar. Quadro e métrica só funcionam em cima desse ritmo."
+        },
+        {
+          "icon": "clipboard",
+          "title": "Meta dá critério",
+          "text": "Com uma Meta da Sprint escrita, decidir o que entra e o que fica de fora deixa de ser opinião do dia."
+        },
+        {
+          "icon": "search",
+          "title": "Inspeção frequente",
+          "text": "Daily, review e retrospectiva existem para encontrar problema cedo, quando ainda é barato corrigir."
+        }
+      ],
+      "closingText": "Você tem agora o mapa completo: três responsabilidades, uma sprint com quatro eventos e três artefatos com seus compromissos. O Scrum diz quando parar para planejar e inspecionar, mas não diz como visualizar o trabalho que corre no meio da sprint. Para isso entra o Kanban.",
+      "ctaTitle": "O ritmo está definido",
+      "ctaText": "No próximo módulo, o trabalho da sprint ganha um quadro: colunas, limite de WIP, coluna Ideias e cartões bem escritos.",
+      "nextButtonText": "Ir para Módulo 1: Kanban na Prática"
+    },
+    {
+      "id": 1,
+      "icon": "grid",
+      "title": "Kanban na Prática",
+      "shortDescription": "Colunas por ciclo de vida, limite de WIP, coluna Ideias e cartão como contrato de entrega",
+      "introductionText": "O Kanban Guide define Kanban como uma estratégia para otimizar o fluxo de valor, apoiada em três práticas: definir e visualizar o fluxo, gerenciar ativamente os itens em andamento e melhorar o fluxo continuamente. Na prática, tudo começa por um quadro. Este módulo monta esse quadro do zero, em GitHub Projects ou Trello, com as decisões que mais fazem diferença para quem toca várias frentes: que colunas usar, quantos cartões aceitar em andamento, onde guardar ideias e como escrever um cartão que dá para executar sem pensar duas vezes.",
+      "sections": [
+        {
+          "title": "Montando o quadro",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Colunas por ciclo de vida, áreas por etiqueta",
+              "code": "quadro: \"Minhas frentes\"\ncolunas:\n  - nome: Ideias\n    regra: \"entra qualquer coisa, com data de criação; sem prazo\"\n  - nome: Backlog\n    regra: \"aceito para fazer algum dia, ainda não refinado\"\n  - nome: Pronto para começar\n    regra: \"tem definição de sucesso e primeiro passo escritos\"\n  - nome: Fazendo\n    limite_wip: 2\n  - nome: Aguardando terceiros\n    regra: \"registrar de quem depende e desde quando\"\n  - nome: Feito\ncampos:\n  projeto: [projeto-a, projeto-b, estudo, rotina]\n  tipo: [dev, escrita, gestao, aula]",
+              "guidance": "Um erro comum é criar colunas por área ou função, como \"Dev\", \"Escrita\" e \"Projeto A\", misturadas com colunas de status como \"A fazer\" e \"Feito\". O quadro perde a leitura de fluxo: não dá mais para ver o que está parado nem onde está o gargalo. A regra é simples: colunas representam o estado do trabalho, da entrada à entrega; área, projeto e tipo de tarefa viram etiquetas ou campos. No GitHub Projects, use a visualização Board com o campo Status como colunas e crie um campo de seleção única para o projeto. No Trello, as listas são as colunas e as etiquetas coloridas fazem o papel de projeto.",
+              "tips": [
+                "Comece com poucas colunas. É mais fácil criar uma coluna quando a falta dela incomoda do que conviver com cinco colunas que ninguém usa.",
+                "Crie uma visualização filtrada por projeto. Assim você enxerga cada frente isolada sem desmontar o quadro único."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Limite de WIP: menos começado, mais terminado",
+              "guidance": "WIP, de work in progress, é o número de itens começados e ainda não terminados. Limitar o WIP é a prática que mais muda o resultado de quem sente que trabalha muito e entrega pouco. Com dez cartões em \"Fazendo\", cada um avança um pouco por dia e nenhum termina; com dois, a atenção se concentra e os cartões chegam ao fim. Para uma pessoa só, um limite de um ou dois itens em \"Fazendo\" é um bom ponto de partida. Quando o limite está cheio, a pergunta deixa de ser \"o que mais posso começar?\" e passa a ser \"o que preciso terminar ou desbloquear para liberar espaço?\".",
+              "tips": [
+                "O Trello não tem limite de WIP nativo na versão gratuita; escreva o limite no nome da lista, como \"Fazendo (máx. 2)\", e respeite como regra.",
+                "Cartão bloqueado não fica em \"Fazendo\" ocupando vaga. Mova para \"Aguardando terceiros\" e registre o motivo."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "A coluna Ideias, para esvaziar a cabeça",
+              "guidance": "No meio de uma tarefa surge uma ideia boa para outro projeto. Se você para e vai atrás dela, perde o foco; se tenta guardar na memória, ela fica ocupando espaço e gera ansiedade. A solução é uma coluna à esquerda de tudo, chamada Ideias, onde entra qualquer coisa: título curto e data de criação, e só. Não precisa de prazo, de descrição técnica nem de prioridade. Detalhar fica para o fim do bloco de trabalho, se levar mais de dois minutos. Uma vez por semana, na planning, você passa pela coluna e decide cada cartão: vai para o Backlog, fica mais uma semana ou é arquivado.",
+              "tips": [
+                "A data de criação é o que torna a coluna útil. Uma ideia parada há mais de um mês sem que você sentisse falta dela provavelmente não é prioridade, e arquivar é uma decisão legítima.",
+                "Use três etiquetas rápidas para facilitar a triagem: ganho rápido (pouco esforço, resultado visível), estrutural (muda o rumo de um projeto) e grande aposta (exige muito recurso)."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "O cartão como contrato de entrega",
+              "code": "## [Projeto A] Publicar página de apresentação de uma loja\n\n**Criado em:** 2026-03-02\n**Sucesso é:** página no ar, com link publicado e print anexados a este cartão\n**Primeiro passo:** montar o cabeçalho com nome, endereço e contato da loja\n**Depende de alguém?** Sim: fotos do cliente (etiqueta aguardando-terceiros)\n**Estimativa:** 1 bloco de trabalho\n\n### Checklist de pronto\n- [ ] Link do repositório\n- [ ] Link publicado\n- [ ] Print do antes e do depois",
+              "guidance": "Cartão com título vago, como \"Projeto A\" ou \"ver o site\", vira lembrete, e lembrete não se executa. Um cartão bom responde três perguntas antes de sair de \"Pronto para começar\": como é o sucesso desta tarefa, de forma verificável; qual é o primeiro passo concreto; e se a tarefa depende de alguém. Com isso escrito, quem abre o cartão sabe por onde começar, inclusive você mesmo daqui a uma semana. O modelo abaixo funciona como corpo de uma issue no GitHub ou descrição de cartão no Trello.",
+              "tips": [
+                "Títulos no formato verbo mais objeto, como \"Publicar página da loja\", deixam claro o que é terminar. Evite substantivos soltos.",
+                "Se a resposta para \"qual é o primeiro passo?\" não sai em uma frase, o cartão é grande demais. Quebre antes de puxar."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Storytelling de card: fechar contando a história",
+              "code": "**Situação:** um cliente do varejo só tinha um cartão de visita impresso, sem presença online.\n**Tarefa:** criar uma página simples que apresentasse a loja e levasse ao contato.\n**Ação:** extraí do cartão a proposta da loja, montei a página responsiva e publiquei.\n**Resultado:** página no ar; o cliente passou a divulgar o link e o caso virou exemplo de portfólio.",
+              "guidance": "Mover o cartão para \"Feito\" registra que acabou; um comentário de fechamento conta o que aconteceu. Use quatro linhas no formato Situação, Tarefa, Ação e Resultado: qual era o problema, o que precisava ser feito, o que você fez para mover a tarefa e qual valor foi gerado ou qual próximo passo foi desbloqueado. Esse hábito tem três usos. Na review ou na conversa com o gestor, você relata entregas em vez de dizer que \"está andando\". No portfólio, cada cartão fechado vira um caso pronto para contar. E quando a tarefa trava por causa de outra pessoa, a história também se fecha: registrar o bloqueio, quem foi acionado e quando é a sua entrega daquele dia.",
+              "tips": [
+                "Escreva o fechamento no mesmo dia em que move o cartão. Uma semana depois, os detalhes que dão valor à história já se perderam.",
+                "Bloqueio bem contado não é desculpa: \"acionei a equipe X na terça, sem retorno; escalei na quinta\" mostra condução, e não espera."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "O que faz o quadro funcionar",
+      "highlights": [
+        {
+          "icon": "grid",
+          "title": "Fluxo visível",
+          "text": "Colunas por estado mostram onde o trabalho para. Colunas por área escondem isso."
+        },
+        {
+          "icon": "gauge",
+          "title": "WIP baixo",
+          "text": "Poucos itens em andamento significam mais itens terminados, e não menos trabalho feito."
+        },
+        {
+          "icon": "tags",
+          "title": "Etiquetas no lugar de colunas",
+          "text": "Projeto, área e tipo viram filtros, e o quadro continua legível com várias frentes."
+        }
+      ],
+      "closingText": "Com colunas por ciclo de vida, limite de WIP, a coluna Ideias e cartões escritos como contrato, o quadro passa a mostrar a verdade sobre o trabalho. Falta resolver o que acontece quando várias frentes disputam o mesmo tempo, que é o tema do próximo módulo.",
+      "ctaTitle": "O quadro está de pé",
+      "ctaText": "Agora o desafio é dividir a semana entre projetos diferentes sem deixar nenhum para trás.",
+      "nextButtonText": "Ir para Módulo 2: Várias Frentes ao Mesmo Tempo"
+    },
+    {
+      "id": 2,
+      "icon": "tasks",
+      "title": "Várias Frentes ao Mesmo Tempo",
+      "shortDescription": "Rotina e projeto, priorização simples, grade semanal em blocos e troca de contexto",
+      "introductionText": "Quem conduz várias frentes costuma ter o mesmo problema: olhar demais para uma e abandonar as outras sem perceber. O culpado raramente é falta de esforço; é a troca de contexto sem método, em que cada interrupção puxa a atenção para um lugar diferente. Este módulo organiza a semana em três movimentos: separar o que é rotina do que é projeto, escolher prioridades com um critério que caiba em cinco minutos e distribuir as frentes em blocos de tempo fixos.",
+      "sections": [
+        {
+          "title": "Da lista infinita à semana planejada",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Mapear frentes e separar rotina de projeto",
+              "guidance": "Liste todas as frentes que dependem de você nesta fase: trabalho principal, um projeto paralelo, estudo, uma atividade recorrente para um cliente. Em seguida, classifique cada uma. Rotina é o que se repete e não termina, como um relatório semanal ou o atendimento de um canal. Projeto é o que tem começo e fim, como publicar um MVP. As duas pedem tratamentos diferentes: a rotina ganha uma entrega pequena e fixa por semana, para virar algo mensurável; o projeto ganha uma meta semanal clara, para não virar um eterno \"em andamento\".",
+              "tips": [
+                "Para cada rotina, escreva a entrega da semana em uma linha: \"relatório enviado na segunda\" é mensurável; \"cuidar do relatório\" não é.",
+                "Se a lista tiver mais de cinco frentes ativas, desconfie. Algumas provavelmente podem ser pausadas de forma explícita, com data para reavaliar."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Priorizar com um critério que caiba em cinco minutos",
+              "code": "| Item                          | Impacto | Confiança | Facilidade | Total |\n|-------------------------------|---------|-----------|------------|-------|\n| Publicar página da loja       |    4    |     4     |     4      |  12   |\n| Refatorar módulo de login     |    3    |     3     |     2      |   8   |\n| Escrever artigo sobre o caso  |    3    |     2     |     4      |   9   |",
+              "guidance": "Prioridade definida pela vontade do dia muda a cada mensagem que chega. Um critério simples resolve: para cada candidato da semana, dê uma nota de 1 a 5 para impacto (quanto valor gera para alguém), confiança (quão certo você está desse impacto) e facilidade (quão barato é fazer). Some ou multiplique as notas e ordene. É a lógica da pontuação ICE, comum em gestão de produto. O número não decide sozinho; ele serve para tornar visível a conversa e para você perceber quando está escolhendo o que é confortável em vez do que é importante.",
+              "tips": [
+                "Prazo externo real, como compromisso com cliente, entra antes da pontuação. Não deixe um bom número esconder um compromisso firmado.",
+                "Revise as notas na planning seguinte. Uma confiança que continua baixa semana após semana pede uma conversa ou um teste, e não mais pontuação."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Grade semanal em blocos de tempo",
+              "code": "| Bloco             | Seg        | Ter        | Qua        | Qui        | Sex            |\n|-------------------|------------|------------|------------|------------|----------------|\n| Manhã (longo)     | Projeto A  | Projeto A  | Projeto B  | Projeto A  | Projeto B      |\n| Fim da manhã      | Gestão     | Gestão     | Gestão     | Gestão     | Planning       |\n| Tarde (longo)     | Projeto B  | Rotina C   | Projeto A  | Estudo     | Folga planejada|\n| Fim da tarde      | Ideias + inbox (15 min, todos os dias)                    | Retrospectiva  |",
+              "guidance": "Time-blocking é reservar blocos fixos da semana para cada frente, em vez de decidir a cada hora o que fazer. Divida o dia por contexto, não por tarefa solta: um bloco longo para o trabalho que exige mais concentração, um bloco curto para gestão e mensagens, outro para produção de conteúdo ou estudo. Dentro do bloco, você puxa do quadro o próximo cartão daquela frente. A grade abaixo é um ponto de partida genérico; ajuste quantidade e tamanho dos blocos à sua realidade, mas mantenha a regra de que cada frente ativa aparece pelo menos uma vez na semana.",
+              "tips": [
+                "Coloque o trabalho mais difícil no horário em que você rende melhor. Para muita gente é o primeiro bloco do dia, antes de abrir mensagens.",
+                "Deixe pelo menos um bloco por semana livre de propósito. Imprevisto sempre aparece, e sem folga ele come o bloco de outra frente."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Trocar de contexto sem perder o fio",
+              "guidance": "A troca de contexto é inevitável; o que dá para controlar é como ela acontece. Ao terminar um bloco, faça um ritual curto: mova os cartões que andaram, escreva no cartão que ficou aberto onde você parou e qual é o próximo passo (\"parei no formulário; retomar pela validação\") e feche as abas daquele projeto. Ao começar o bloco seguinte, abra só o quadro filtrado pela nova frente. Esse registro tira a tarefa da memória e permite retomar em minutos, em vez de gastar o início de cada bloco tentando lembrar onde estava.",
+              "tips": [
+                "Se bater a sensação de paralisia, pergunte: a tarefa está parada comigo ou com outra pessoa? Se for com outra, a ação é cobrar e registrar. Se for com você, quebre em algo de cinco minutos.",
+                "No fim do dia, passe tudo o que chegou por mensagem e e-mail para a coluna Ideias. Encerrar com a cabeça vazia faz o dia seguinte começar mais rápido."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "O que muda na semana",
+      "highlights": [
+        {
+          "icon": "list",
+          "title": "Rotina mensurável",
+          "text": "Uma entrega pequena e fixa por semana transforma tarefa recorrente em algo que dá para acompanhar."
+        },
+        {
+          "icon": "clipboard",
+          "title": "Prioridade com critério",
+          "text": "Impacto, confiança e facilidade tornam a escolha discutível e revisável."
+        },
+        {
+          "icon": "shield",
+          "title": "Bloco protegido",
+          "text": "Cada frente tem seu horário, e nenhuma depende de sobrar tempo das outras."
+        }
+      ],
+      "closingText": "Frentes mapeadas, prioridades com critério e uma grade semanal que protege cada projeto. Planejar tudo isso toda semana dá trabalho, e é aí que a IA pode ajudar, desde que você saiba o que pedir e o que não delegar.",
+      "ctaTitle": "A semana tem forma",
+      "ctaText": "No próximo módulo, a IA entra como mentora: ajuda a planejar a sprint, quebrar épicos e revisar prioridades, sem decidir por você.",
+      "nextButtonText": "Ir para Módulo 3: IA como Mentora de Projeto"
+    },
+    {
+      "id": 3,
+      "icon": "comment",
+      "title": "IA como Mentora de Projeto",
+      "shortDescription": "Contexto sem dados sensíveis, prompts para planejar, quebrar e revisar, e os limites da ferramenta",
+      "introductionText": "Um assistente de IA pode funcionar como um mentor disponível a qualquer hora: alguém que lê sua lista, aponta excesso, sugere ordem e faz perguntas que você não fez. O risco é o inverso disso: aceitar o plano que veio pronto e deixar de exercer o julgamento que só você tem sobre clientes, prazos e prioridades. Este módulo mostra como dar contexto suficiente sem expor informação sensível e traz três prompts reutilizáveis, cada um com regras que mantêm a decisão com você.",
+      "sections": [
+        {
+          "title": "Conversando com a IA sobre o projeto",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Dar contexto sem expor quem não deveria aparecer",
+              "guidance": "A qualidade da resposta depende do contexto, mas contexto não precisa de nome. Antes de colar sua lista no chat, troque nomes de empresas, clientes e colegas por rótulos (\"projeto A\", \"um cliente do varejo\", \"a pessoa responsável pelo financeiro\") e retire valores, contratos e qualquer dado pessoal. Descreva o que importa para planejar: quantas frentes existem, qual é a capacidade da semana em blocos, quais compromissos têm prazo firme e quais itens estão candidatos. Verifique também a política da sua empresa sobre uso de assistentes externos antes de colar qualquer coisa de trabalho.",
+              "tips": [
+                "Monte um texto de contexto fixo, já anonimizado, e reutilize a cada semana. Você ganha tempo e evita escorregar um nome real por pressa.",
+                "Capacidade em blocos é mais útil para a IA do que horas soltas. \"10 blocos de 3 horas\" é um limite claro para respeitar."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Prompt para planejar a sprint",
+              "code": "Atue como mentor de gestão de projetos.\nContexto (anonimizado):\n- Frentes: projeto A (entrega de MVP para um cliente do varejo),\n  projeto B (estudo), rotina C (relatório semanal).\n- Capacidade desta semana: 10 blocos de 3 horas.\n- Compromisso com prazo firme: relatório da rotina C na segunda.\n- Itens candidatos, com estimativa em blocos: [cole a lista]\n\nTarefa: proponha uma meta de sprint por frente e os itens que cabem.\nRegras:\n1. Não ultrapasse a capacidade.\n2. Liste o que ficou de fora e por quê.\n3. Termine com 3 perguntas que eu devo responder antes de aceitar.",
+              "guidance": "Peça um plano, mas com regras que o tornem verificável: respeitar a capacidade informada, dizer o que ficou de fora e por quê e terminar com perguntas para você responder antes de aceitar. As perguntas são a parte mais valiosa, porque obrigam a revisar suposições que o plano esconde. Leia o resultado como sugestão de um colega, não como decisão: confira se as metas propostas são as que você assumiria diante de quem depende de você.",
+              "tips": [
+                "Se a resposta ignorar a capacidade, não ajuste o plano à mão. Aponte o erro e peça de novo. Isso treina você a ler criticamente o que voltou.",
+                "Copie para o quadro só a meta de cada frente e os itens aceitos. O texto da conversa não precisa virar documentação."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Prompt para quebrar um épico",
+              "code": "Tenho este épico: \"Permitir que o cliente agende uma visita pelo site\".\nQuebre em itens que caibam em no máximo um bloco de 3 horas cada.\nPara cada item, informe:\n- título no formato verbo + objeto;\n- definição de pronto verificável;\n- dependências de outros itens ou pessoas.\nNão invente requisitos. Quando faltar informação, liste como pergunta\nem uma seção separada no final, em vez de supor.",
+              "guidance": "Épico é um item grande demais para caber em uma sprint, como \"permitir que o cliente agende uma visita pelo site\". A IA ajuda bem a sugerir a quebra em itens menores, desde que você limite o tamanho de cada pedaço e peça uma definição de pronto verificável. A regra mais importante é proibir que ela invente requisito: quando faltar informação, ela deve devolver uma pergunta, e não uma suposição. Os requisitos inventados são o erro mais caro, porque parecem razoáveis e entram no quadro sem ninguém ter pedido.",
+              "tips": [
+                "Desconfie de quebra perfeita demais. Se todos os itens têm o mesmo tamanho e nenhuma pergunta apareceu, provavelmente há suposição escondida.",
+                "Leve as perguntas que a IA devolveu para quem pediu o épico. Muitas vezes elas são a pauta da próxima conversa com o cliente."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Prompt para revisar prioridades, e os limites da mentora",
+              "code": "Abaixo estão as colunas Fazendo, Aguardando terceiros e Backlog,\ncom a data em que cada cartão entrou na coluna atual.\nNão reordene por mim. Aponte apenas:\n1. cartões parados há mais de 7 dias;\n2. cartões que parecem duplicados;\n3. cartões sem definição de pronto.\nPara cada ponto, faça uma pergunta que me ajude a decidir.\n[cole as colunas]",
+              "guidance": "Na revisão do meio da semana, cole as colunas \"Fazendo\", \"Aguardando terceiros\" e \"Backlog\" com as datas e peça uma leitura crítica, não uma nova ordem. A IA é boa em perceber padrões numa lista: cartões parados há dias, itens duplicados, cartões sem definição de pronto. Ela não sabe o que só você sabe: a conversa de ontem com o cliente, o humor do gestor, a ideia que parece fraca no papel mas é estratégica. Por isso a regra do prompt é que ela aponte e pergunte, e você decida. Se a resposta vier com tom de certeza sobre algo que ela não tem como saber, trate como sinal de alerta.",
+              "tips": [
+                "Nunca cole conversas privadas, dados de clientes ou documentos internos para \"dar mais contexto\". Rótulos genéricos bastam para a análise de fluxo.",
+                "Guarde as perguntas boas que a IA fez. Com o tempo, elas viram o seu próprio roteiro de revisão, e a ferramenta passa a ser opcional."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "IA como mentora, não como gerente",
+      "highlights": [
+        {
+          "icon": "shield",
+          "title": "Contexto anonimizado",
+          "text": "Rótulos genéricos dão à IA tudo o que ela precisa para analisar o fluxo, sem expor ninguém."
+        },
+        {
+          "icon": "comment",
+          "title": "Perguntas valem mais que respostas",
+          "text": "Pedir que a IA termine com perguntas obriga você a revisar as suposições do plano."
+        },
+        {
+          "icon": "search",
+          "title": "Julgamento é seu",
+          "text": "A ferramenta vê padrões na lista; o que está fora dela, como relação com cliente e estratégia, só você enxerga."
+        }
+      ],
+      "closingText": "Com contexto anonimizado e prompts que exigem capacidade respeitada, requisito não inventado e perguntas no final, a IA vira uma segunda leitura do seu planejamento. Para saber se tudo isso está funcionando, falta medir, e com poucos números.",
+      "ctaTitle": "A mentora está configurada",
+      "ctaText": "O último módulo mostra como medir o fluxo com quatro números simples e fechar a semana com uma retrospectiva curta.",
+      "nextButtonText": "Ir para Módulo 4: Métricas Simples e Retrospectiva"
+    },
+    {
+      "id": 4,
+      "icon": "gauge",
+      "title": "Métricas Simples e Retrospectiva",
+      "shortDescription": "WIP, throughput, tempo de ciclo, idade do item e uma retrospectiva que gera um ajuste",
+      "introductionText": "Sem medição, toda semana parece corrida e nenhuma parece produtiva. O Kanban Guide lista quatro métricas de fluxo que qualquer quadro permite acompanhar, sem ferramenta especial: WIP, throughput, idade do item e tempo de ciclo. Este módulo mostra como colher esses números do próprio quadro e como usá-los na retrospectiva semanal para escolher um ajuste por vez, no espírito do ciclo planejar, executar, checar e agir.",
+      "sections": [
+        {
+          "title": "Medir o fluxo e ajustar",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "WIP e throughput: o que está aberto e o que terminou",
+              "guidance": "WIP é a contagem de itens começados e não terminados; basta contar os cartões entre \"Fazendo\" e \"Aguardando terceiros\". Throughput é quantos itens terminaram por unidade de tempo; conte os cartões que chegaram a \"Feito\" na semana. Os dois juntos contam uma história: WIP alto com throughput baixo indica muita coisa começada e pouca terminada, sinal de que o limite de WIP está frouxo ou de que os cartões estão grandes demais. Anote os dois números toda sexta-feira, numa linha simples, e em poucas semanas você terá uma tendência.",
+              "tips": [
+                "Compare você com você mesmo. Throughput não serve para comparar pessoas nem projetos de natureza diferente.",
+                "No GitHub Projects, a área de Insights permite montar um gráfico de itens por status ao longo do tempo, útil para enxergar a tendência sem planilha."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Tempo de ciclo e idade do item",
+              "guidance": "Tempo de ciclo é o tempo entre o início e o fim de um item: do dia em que o cartão entrou em \"Fazendo\" ao dia em que chegou a \"Feito\". Idade do item é o mesmo relógio para quem ainda não terminou: há quantos dias aquele cartão está em andamento. O tempo de ciclo olha para trás e ajuda a estimar (\"meus cartões costumam levar dois a três dias\"); a idade olha para o presente e ajuda a agir (\"este cartão está há nove dias aberto, o dobro do normal\"). Algumas equipes também medem o lead time, contado desde o pedido ou a entrada no backlog, que mostra quanto quem pediu esperou.",
+              "tips": [
+                "Registre a data de início no cartão ao movê-lo para \"Fazendo\". Sem essa data, as duas métricas viram chute.",
+                "Cartão com idade muito acima do seu tempo de ciclo habitual merece atenção na Daily do dia seguinte: quebrar, pedir ajuda ou mover para bloqueado."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Retrospectiva semanal: um ajuste por vez",
+              "code": "## Retrospectiva: semana 10\n\n**Throughput:** 6 cartões terminados\n**WIP no fechamento:** 2 (idades: 3 e 9 dias)\n**Tempo de ciclo médio:** 2,5 dias\n**Ajuste da semana passada aplicado?** Sim: WIP reduzido de 3 para 2\n\n### O que funcionou\n- \n\n### O que travou\n- \n\n### Um ajuste para a próxima semana\n- ",
+              "guidance": "No fim da semana, reserve um bloco curto e preencha o modelo abaixo com os números e com três perguntas: o que funcionou, o que travou e qual único ajuste você vai testar na próxima semana. Um ajuste só, porque mudar cinco coisas ao mesmo tempo impede saber qual delas fez diferença. Na retrospectiva seguinte, a primeira pergunta é se o ajuste foi aplicado e se os números mudaram. Esse é o ciclo planejar, executar, checar e agir aplicado ao próprio processo: a semana é o experimento, a retrospectiva é a checagem.",
+              "tips": [
+                "Bons ajustes são pequenos e verificáveis: \"limite de WIP de 3 para 2\" ou \"triar a coluna Ideias às segundas\". \"Ser mais focado\" não é ajuste.",
+                "Guarde as retrospectivas em um único arquivo ou issue. Relidas a cada mês, elas mostram quais problemas voltam sempre."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "Quatro números bastam",
+      "highlights": [
+        {
+          "icon": "gauge",
+          "title": "Medir sem ferramenta especial",
+          "text": "Datas nos cartões e uma contagem semanal já entregam as quatro métricas de fluxo do Kanban Guide."
+        },
+        {
+          "icon": "sync",
+          "title": "Um ajuste por ciclo",
+          "text": "Mudar uma coisa por semana permite saber o que melhorou o fluxo e o que não fez diferença."
+        },
+        {
+          "icon": "rocket",
+          "title": "Tendência, não nota",
+          "text": "Os números servem para você enxergar a própria evolução, não para comparar pessoas."
+        }
+      ],
+      "closingText": "Você fecha o programa com o sistema completo: ciclos curtos inspirados em Scrum, um quadro kanban com WIP limitado e coluna Ideias, uma semana dividida em blocos, a IA como segunda leitura do planejamento e quatro números para saber se tudo isso está funcionando. O quiz a seguir revisa os pontos principais de cada módulo.",
+      "ctaTitle": "Programa concluído",
+      "ctaText": "Faça o quiz para revisar os conceitos e, depois, rode a sua primeira sprint de uma semana com o quadro montado.",
+      "nextButtonText": "Ir para o Quiz"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Segundo o Scrum Guide, qual é a duração máxima de uma sprint?",
+      "explanation": "O Scrum Guide define a sprint como um evento de duração fixa de um mês ou menos. Duas semanas é uma escolha comum, mas não uma regra; três meses ultrapassa o limite; e a sprint não se estende até o trabalho acabar, porque a duração fixa é o que cria o ritmo de inspeção e adaptação.",
+      "options": [
+        {
+          "text": "Um mês ou menos",
+          "isCorrect": true
+        },
+        {
+          "text": "Exatamente duas semanas",
+          "isCorrect": false
+        },
+        {
+          "text": "Três meses",
+          "isCorrect": false
+        },
+        {
+          "text": "Não há limite; a sprint dura até o trabalho acabar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Qual compromisso está associado ao Incremento no Scrum?",
+      "explanation": "Cada artefato tem um compromisso: o Product Backlog tem a Meta do Produto, o Sprint Backlog tem a Meta da Sprint e o Incremento tem a Definição de Pronto. O limite de WIP é uma prática do Kanban, não um compromisso de artefato do Scrum.",
+      "options": [
+        {
+          "text": "A Definição de Pronto",
+          "isCorrect": true
+        },
+        {
+          "text": "A Meta do Produto",
+          "isCorrect": false
+        },
+        {
+          "text": "A Meta da Sprint",
+          "isCorrect": false
+        },
+        {
+          "text": "O limite de WIP",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Quem trabalha sozinho e adota sprint semanal, planning e retrospectiva, mas não tem Scrum Master nem Daily formal, está fazendo o quê?",
+      "explanation": "O Scrum Guide diz que aplicar só parte do framework não é Scrum, então chamar de Scrum completo seria impreciso. Também não é Kanban puro, já que há sprints com duração fixa. E dizer que nada se aproveita ignora que ciclo fixo, meta e retrospectiva funcionam bem para uma pessoa. O nome honesto é adaptação inspirada em Scrum.",
+      "options": [
+        {
+          "text": "Uma adaptação inspirada em Scrum, que vale chamar assim",
+          "isCorrect": true
+        },
+        {
+          "text": "Scrum completo, porque tem sprint",
+          "isCorrect": false
+        },
+        {
+          "text": "Kanban puro, porque não há time",
+          "isCorrect": false
+        },
+        {
+          "text": "Nada aproveitável, porque Scrum só serve para times",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "No quadro kanban, como tratar áreas como \"dev\", \"escrita\" e os diferentes projetos?",
+      "explanation": "Colunas devem representar o ciclo de vida do trabalho; misturar colunas de área com colunas de status impede ver onde o fluxo para. Quadros totalmente separados perdem a visão da semana inteira, e descartar a informação de área impede filtrar por frente. Etiquetas ou campos mantêm o fluxo legível e ainda permitem filtrar.",
+      "options": [
+        {
+          "text": "Como etiquetas ou campos, deixando as colunas para os estados do trabalho",
+          "isCorrect": true
+        },
+        {
+          "text": "Como colunas próprias, ao lado de \"A fazer\" e \"Feito\"",
+          "isCorrect": false
+        },
+        {
+          "text": "Como quadros separados, sem nenhuma visão única",
+          "isCorrect": false
+        },
+        {
+          "text": "Ignorando essa informação, porque só o status importa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Qual é a regra da coluna Ideias proposta no módulo?",
+      "explanation": "A coluna Ideias serve para esvaziar a cabeça sem interromper o trabalho atual, por isso basta título e data, e a decisão fica para a planning. Exigir descrição completa na hora rouba o foco; mover direto para \"Fazendo\" estoura o limite de WIP; guardar na memória é justamente o que gera ansiedade e esquecimento.",
+      "options": [
+        {
+          "text": "Entra qualquer ideia com título e data, sem prazo, e ela é triada uma vez por semana na planning",
+          "isCorrect": true
+        },
+        {
+          "text": "Toda ideia precisa de descrição técnica completa antes de entrar",
+          "isCorrect": false
+        },
+        {
+          "text": "Ideias entram direto em \"Fazendo\" para não esfriar",
+          "isCorrect": false
+        },
+        {
+          "text": "Ideias ficam fora do quadro, só na memória, para não poluir",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Quais três perguntas um cartão deve responder antes de sair de \"Pronto para começar\"?",
+      "explanation": "Sucesso verificável, primeiro passo concreto e dependências são o que transformam um lembrete em contrato de entrega executável. As outras combinações trazem informações que podem ser úteis em algum caso, mas não garantem que alguém consiga começar e saber quando terminou.",
+      "options": [
+        {
+          "text": "Como é o sucesso, qual é o primeiro passo e se depende de alguém",
+          "isCorrect": true
+        },
+        {
+          "text": "Quem pediu, quanto custa e qual é a cor da etiqueta",
+          "isCorrect": false
+        },
+        {
+          "text": "Qual tecnologia usar, quantas horas e quem aprova",
+          "isCorrect": false
+        },
+        {
+          "text": "Por que existe, quando surgiu e quem mais tem a mesma ideia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Qual é a diferença de tratamento entre rotina e projeto no planejamento semanal?",
+      "explanation": "Rotina não termina, então precisa de uma entrega semanal para se tornar mensurável; projeto termina, então precisa de meta semanal para não ficar eternamente em andamento. Deixar a rotina fora do plano faz ela engolir o tempo dos projetos; esperar a rotina acabar significa nunca começar o projeto; e uma lista única esconde essa diferença.",
+      "options": [
+        {
+          "text": "Rotina ganha uma entrega pequena e fixa por semana; projeto ganha uma meta semanal clara",
+          "isCorrect": true
+        },
+        {
+          "text": "Rotina não entra no planejamento, porque se repete sozinha",
+          "isCorrect": false
+        },
+        {
+          "text": "Projeto só é planejado quando a rotina acaba",
+          "isCorrect": false
+        },
+        {
+          "text": "Os dois são tratados igual, como uma lista única sem distinção",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Na pontuação de impacto, confiança e facilidade, qual é o papel do número final?",
+      "explanation": "O número serve para tornar a priorização explícita e revisável. Ele não decide sozinho, porque compromissos com prazo firme entram antes; não mede produtividade, porque avalia itens e não pessoas; e não substitui a planning, que é justamente onde a pontuação é discutida e revista.",
+      "options": [
+        {
+          "text": "Tornar a escolha visível e discutível, sem substituir prazos firmes nem o julgamento",
+          "isCorrect": true
+        },
+        {
+          "text": "Decidir sozinho a ordem, sem exceção",
+          "isCorrect": false
+        },
+        {
+          "text": "Medir a produtividade da pessoa",
+          "isCorrect": false
+        },
+        {
+          "text": "Substituir a planning semanal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Ao terminar um bloco de tempo com um cartão ainda aberto, o que o ritual de troca de contexto recomenda?",
+      "explanation": "Registrar o ponto de parada tira a tarefa da memória e permite retomar em minutos. Deixar tudo aberto mistura contextos; invadir o bloco seguinte desmonta a grade e prejudica outra frente; e apagar o cartão perde o histórico e a data de início, que alimenta as métricas.",
+      "options": [
+        {
+          "text": "Escrever no cartão onde parou e o próximo passo, mover o que andou e fechar as abas daquela frente",
+          "isCorrect": true
+        },
+        {
+          "text": "Deixar tudo aberto para retomar mais rápido",
+          "isCorrect": false
+        },
+        {
+          "text": "Continuar no mesmo cartão até terminar, invadindo o próximo bloco",
+          "isCorrect": false
+        },
+        {
+          "text": "Apagar o cartão e criar um novo quando voltar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Antes de colar a lista de tarefas em um assistente de IA, o que fazer?",
+      "explanation": "Rótulos genéricos dão à IA o contexto necessário para analisar fluxo e prioridade sem expor ninguém. Nomes reais, valores e conversas privadas não melhoram a análise de fluxo e criam risco de exposição; e presumir que nada é guardado ignora que cada ferramenta e cada empresa têm sua própria política de uso.",
+      "options": [
+        {
+          "text": "Trocar nomes de empresas, clientes e colegas por rótulos genéricos e retirar dados sensíveis",
+          "isCorrect": true
+        },
+        {
+          "text": "Incluir o máximo de detalhes reais, nomes e valores, para a resposta ser melhor",
+          "isCorrect": false
+        },
+        {
+          "text": "Colar conversas privadas para dar mais contexto",
+          "isCorrect": false
+        },
+        {
+          "text": "Nada, porque assistentes de IA não guardam o que recebem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Por que o prompt de quebra de épico proíbe a IA de inventar requisitos?",
+      "explanation": "O risco de requisito inventado é justamente parecer plausível e passar despercebido; por isso a regra pede que a falta de informação volte como pergunta. A IA consegue escrever requisitos, épicos têm requisitos e o idioma não tem relação com o problema.",
+      "options": [
+        {
+          "text": "Porque requisito inventado parece razoável e entra no quadro sem ninguém ter pedido",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque a IA não consegue escrever requisitos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque épicos não têm requisitos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque requisitos só podem ser escritos em inglês",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "No prompt de revisão de prioridades, por que pedir que a IA aponte e pergunte, mas não reordene?",
+      "explanation": "A IA é boa em detectar padrões, como cartões parados ou duplicados, mas a decisão de prioridade depende de informação fora da lista. Ela consegue reordenar e nem sempre erra; o ponto é que reordenar exige um julgamento que deve ficar com você. E a ordem do backlog importa muito, por isso a decisão não deve ser delegada.",
+      "options": [
+        {
+          "text": "Porque ela vê padrões na lista, mas não conhece o contexto que só você tem, como acordos com cliente e estratégia",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque reordenar listas é uma tarefa impossível para IA",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque a ordem do backlog não importa",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque a IA sempre erra a ordem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "moduleId": 4,
+      "question": "Segundo o Kanban Guide, o que é throughput?",
+      "explanation": "Throughput conta itens terminados por período, como cartões que chegaram a \"Feito\" na semana. Itens começados e não terminados são o WIP; o tempo entre início e fim é o tempo de ciclo; e o tempo decorrido de um item ainda aberto é a idade do item.",
+      "options": [
+        {
+          "text": "A quantidade de itens terminados por unidade de tempo",
+          "isCorrect": true
+        },
+        {
+          "text": "O número de itens começados e não terminados",
+          "isCorrect": false
+        },
+        {
+          "text": "O tempo entre o início e o fim de um item",
+          "isCorrect": false
+        },
+        {
+          "text": "O tempo desde que um item em andamento começou",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "moduleId": 4,
+      "question": "Um cartão está há nove dias em andamento, e seu tempo de ciclo habitual é de dois a três dias. Qual métrica revela isso e o que fazer?",
+      "explanation": "A idade do item mede há quanto tempo um item aberto está em andamento e serve para agir no presente. Esperar a semana adia um problema já visível; aumentar o WIP piora o fluxo; e apagar o cartão esconde o problema e distorce os dados em vez de corrigi-lo.",
+      "options": [
+        {
+          "text": "A idade do item; levar o cartão para a Daily e decidir entre quebrar, pedir ajuda ou mover para bloqueado",
+          "isCorrect": true
+        },
+        {
+          "text": "O throughput; esperar o fim da semana para ver",
+          "isCorrect": false
+        },
+        {
+          "text": "O WIP; aumentar o limite para caber mais cartões",
+          "isCorrect": false
+        },
+        {
+          "text": "O tempo de ciclo; apagar o cartão para não distorcer a média",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "moduleId": 4,
+      "question": "Por que a retrospectiva semanal deve escolher um único ajuste?",
+      "explanation": "Um ajuste por ciclo transforma a semana em um experimento legível: na retrospectiva seguinte, dá para checar se ele foi aplicado e se os números mudaram. O Scrum Guide não fixa o número de ajustes; a retrospectiva existe justamente para gerar melhoria; e não há regra de um ajuste por mês.",
+      "options": [
+        {
+          "text": "Porque mudar várias coisas ao mesmo tempo impede saber qual delas fez diferença",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque o Scrum Guide proíbe mais de um ajuste",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque retrospectiva não deve gerar mudanças",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque ajustes só podem ser feitos uma vez por mês",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "Um sistema de trabalho pessoal, pronto para a próxima segunda-feira: um quadro kanban configurado para várias frentes, um modelo de cartão que vira contrato de entrega, uma grade semanal em blocos, três prompts de IA com regras de uso e um modelo de retrospectiva com quatro métricas de fluxo.",
+    "highlights": [
+      "Quadro com colunas por ciclo de vida, limite de WIP e coluna Ideias",
+      "Modelo de cartão e de storytelling de fechamento",
+      "Grade semanal em blocos e ritual de troca de contexto",
+      "Prompts para planejar sprint, quebrar épicos e revisar prioridades"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "Cada vez mais profissionais de tecnologia acumulam frentes: trabalho principal, freelas, projetos de portfólio e estudo contínuo. Sem método, a troca constante de contexto consome a semana e deixa a impressão de esforço sem resultado.",
+      "Ao mesmo tempo, assistentes de IA ficaram acessíveis o bastante para entrar no planejamento do dia a dia. Usados sem critério, eles produzem planos bonitos e irreais; usados com regras claras, viram uma segunda leitura valiosa. Saber conduzir esse uso é parte da habilidade de gerir projetos hoje."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Quem concilia trabalho e projetos paralelos",
+        "description": "Dar a cada frente seu espaço na semana sem depender de sobrar tempo."
+      },
+      {
+        "label": "Times pequenos sem gestor de projetos",
+        "description": "Montar um quadro e um ritmo de sprint sem processo pesado."
+      },
+      {
+        "label": "Estudo com entrega",
+        "description": "Tratar o curso ou o portfólio como projeto, com meta semanal e retrospectiva."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Desenvolvedores e analistas",
+        "description": "Que recebem demandas de várias fontes e querem mostrar entrega, não só esforço."
+      },
+      {
+        "label": "Quem começa a coordenar projetos",
+        "description": "E precisa de um método simples para acompanhar tarefas, bloqueios e prazos."
+      },
+      {
+        "label": "Estudantes e profissionais em transição",
+        "description": "Que conciliam estudo, portfólio e trabalho e sentem que algo sempre fica para trás."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Scrum e Kanban estão entre as abordagens ágeis mais difundidas em equipes de tecnologia, de startups a grandes empresas, e ferramentas como GitHub Projects, Trello e Jira trazem quadros kanban e iterações como recurso padrão. Saber montar um fluxo, limitar o trabalho em andamento e conduzir ciclos curtos é uma habilidade esperada de quem trabalha em produto e desenvolvimento.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Scrum Guide 2020 — Ken Schwaber e Jeff Sutherland (guia oficial do Scrum)",
+      "url": "https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf"
+    },
+    {
+      "label": "The Kanban Guide — práticas e métricas de fluxo (WIP, throughput, idade do item, tempo de ciclo)",
+      "url": "https://kanbanguides.org/the-kanban-guide"
+    },
+    {
+      "label": "GitHub Docs — Planejamento e acompanhamento com Projects",
+      "url": "https://docs.github.com/pt/issues/planning-and-tracking-with-projects"
+    }
+  ]
 }

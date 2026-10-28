@@ -23,6 +23,11 @@
     return;
   }
 
+  /* Escapa texto usado dentro de atributo HTML (o link da política vem de data-privacidade). */
+  function escaparAtributo(t) {
+    return String(t).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
+
   /* Leitura e escrita protegidas: navegação privada ou armazenamento bloqueado não podem quebrar o site. */
   function ler(area, chave) {
     try { return window[area].getItem(chave); } catch (e) { return null; }
@@ -122,7 +127,7 @@
       '<div class="erro" role="alert"></div>' +
       '<div class="acoes"><button type="submit" class="enviar">Continuar</button>' +
       (obrigatorio ? "" : '<button type="button" class="depois">Agora não</button>') + "</div>" +
-      '<p class="nota">Guardamos nome, e-mail, site, página e horário do acesso por até 12 meses. Não enviamos propaganda nem compartilhamos com terceiros. <a target="_blank" rel="noopener" href="' + privacidade + '">Política de privacidade</a>.</p>' +
+      '<p class="nota">Guardamos nome, e-mail, site, página e horário do acesso por até 12 meses. Não enviamos propaganda nem compartilhamos com terceiros. <a target="_blank" rel="noopener" href="' + escaparAtributo(privacidade) + '">Política de privacidade</a>.</p>' +
       "</form></div>";
 
     var form = raiz.querySelector("form");

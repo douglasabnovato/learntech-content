@@ -3,6 +3,7 @@ import path from "node:path";
 import { describe, it, expect } from "vitest";
 import { carregarConteudo, verificarIntegridade, montarRecursos } from "../scripts/lib/conteudo";
 import { gerarOpenApi } from "../scripts/lib/openapi";
+import { detalheSchema } from "../src/schemas/career-tools";
 
 const RAIZ = path.resolve(__dirname, "..");
 const { conteudo, erros } = carregarConteudo(path.join(RAIZ, "content"));
@@ -56,6 +57,25 @@ describe("regras de integridade", () => {
     const c = copia();
     c.eventos[0]!.coverImage = "/media/bootcamps/nao-existe.webp";
     expect(verificarIntegridade(c, path.join(RAIZ, "media")).join()).toMatch(/mídia ausente/);
+  });
+
+  it("acusa slug repetido numa lista", () => {
+    const c = copia();
+    c.ferramentas[0]!.slug = "mesmo-slug";
+    c.ferramentas[1]!.slug = "mesmo-slug";
+    expect(verificarIntegridade(c, path.join(RAIZ, "media")).join()).toMatch(/slug "mesmo-slug" repetido/);
+  });
+
+  it("acusa detalhe sem slug", () => {
+    const c = copia();
+    delete c.empresas[0]!.slug;
+    c.empresas[0]!.detalhe = { resumo: "r", paragrafos: ["p"], atualizadoEm: "2026-10-28" };
+    expect(verificarIntegridade(c, path.join(RAIZ, "media")).join()).toMatch(/tem detalhe mas não tem slug/);
+  });
+
+  it("o schema recusa vídeo que não é embed do YouTube", () => {
+    const r = detalheSchema.safeParse({ resumo: "r", paragrafos: ["p"], video: "https://vimeo.com/123", atualizadoEm: "2026-10-28" });
+    expect(r.success).toBe(false);
   });
 
   it("acusa destaque que saiu do catálogo", () => {

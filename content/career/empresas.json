@@ -145,5 +145,286 @@
     "thumb": "https://www.google.com/s2/favicons?domain=serpro.gov.br&sz=128",
     "site_url": "https://www.serpro.gov.br/",
     "category": "Public Sector Tech"
+  },
+  {
+    "title": "Pitang",
+    "location": "Recife",
+    "thumb": "/media/career/pitang.webp",
+    "site_url": "https://www.pitang.com/home",
+    "category": "Software House",
+    "slug": "pitang",
+    "detalhe": {
+      "resumo": "Empresa de tecnologia com sede no Porto Digital, no Recife, e escritório em São Paulo, que há mais de 20 anos desenvolve software sob medida, soluções digitais e projetos de inteligência artificial para empresas de médio e grande porte. Mantém um programa de estágio próprio, o Pitang Transforma.",
+      "paragrafos": [
+        "A Pitang se apresenta como uma empresa que ajuda organizações a modernizar sistemas, ganhar eficiência e acelerar resultados com tecnologia. São mais de 350 especialistas entre o Porto Digital, no Recife Antigo, e o escritório no Itaim Bibi, em São Paulo. A empresa completou 21 anos em abril de 2025, o que situa sua fundação em 2004.",
+        "O trabalho se divide em algumas frentes. Em Desenvolvimento e Inovação estão os projetos de software sob medida. Em Soluções Pitang ficam produtos próprios, como o Pita.IA e o Integra.ai, este último apresentado a gestores da saúde pública. Há ainda uma frente que cria, acelera e investe em novos negócios e o Pitang Labs, unidade que pesquisa e testa tendências como IA, aprendizado de máquina, OCR e ferramentas no-code.",
+        "Para quem está começando, a porta de entrada mais conhecida é o Pitang Transforma, programa de estágio com edições anuais e inscrições divulgadas pela própria empresa. As demais vagas ficam na página de carreiras e no portal de vagas da empresa. A Pitang aparece nos rankings do Great Place to Work: em 2026, ficou em 32º lugar no ranking nacional e em 2º no de Pernambuco.",
+        "Para acompanhar, siga a página da empresa no LinkedIn, o Instagram e o canal no YouTube, onde são publicados os vídeos do programa de estágio. Como as inscrições do Pitang Transforma abrem em períodos específicos, vale ativar alertas e ler o edital de cada edição com atenção: requisitos de curso, período e disponibilidade mudam de um ano para outro.",
+        "Ao se candidatar, leia a descrição de cada vaga separando o que é obrigatório do que é desejável e prepare exemplos concretos de projetos. Em uma empresa que atende clientes de setores diferentes, saber explicar como você organizou um trabalho, lidou com um prazo ou aprendeu uma tecnologia nova costuma pesar tanto quanto a lista de linguagens."
+      ],
+      "imagens": [
+        {
+          "url": "/media/career/detalhe/pitang.webp",
+          "alt": "Capa ilustrada com o título Pitang: software sob medida a partir do Recife",
+          "legenda": "Ilustração própria do LearnTECH."
+        }
+      ],
+      "video": "https://www.youtube.com/embed/0JHK1HTJD1U",
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.pitang.com/"
+        },
+        {
+          "label": "Carreiras na Pitang",
+          "url": "https://www.pitang.com/carreiras"
+        },
+        {
+          "label": "Portal de vagas",
+          "url": "https://pitang.inhire.app/vagas"
+        },
+        {
+          "label": "Pitang Labs",
+          "url": "https://www.pitang.com/labs"
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/company/pitang/"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/pitang_agileit/"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@Pitang"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Pitang: página inicial",
+          "url": "https://www.pitang.com/"
+        },
+        {
+          "label": "Pitang: Pitang comemora 21 anos com premiação Pitanga de Ouro",
+          "url": "https://www.pitang.com/conteudos/noticias/pitang-comemora-21-anos-com-premiacao-pitanga-de-ouro"
+        },
+        {
+          "label": "YouTube (canal Pitang): Programa de Estágio Pitang Transforma 2025",
+          "url": "https://www.youtube.com/watch?v=0JHK1HTJD1U"
+        }
+      ],
+      "atualizadoEm": "2026-10-28"
+    }
+  },
+  {
+    "title": "Le Wagon",
+    "location": "São Paulo / Global",
+    "thumb": "/media/career/le-wagon.webp",
+    "site_url": "https://lewagon.com/sao-paulo",
+    "category": "Education",
+    "slug": "le-wagon",
+    "detalhe": {
+      "resumo": "Escola internacional de bootcamps de tecnologia, fundada em 2013, com campus em São Paulo e turmas online. Oferece formações intensivas em desenvolvimento web, ciência de dados, análise de dados e engenharia de dados, com apoio de carreira.",
+      "paragrafos": [
+        "O Le Wagon nasceu em 2013 e hoje forma turmas em dezenas de cidades pelo mundo, com uma comunidade grande de ex-alunos. O modelo é o do bootcamp: um período curto e intenso, com aulas ao vivo, muito exercício prático e um projeto final apresentado em um Demo Day. Em São Paulo, há aulas presenciais no campus e também a opção online.",
+        "No catálogo de São Paulo estão os bootcamps de Web Development (apresentado como AI Software), Data Science & AI, Data Analytics e Data Engineering, este último online, além de cursos menores de cerca de 40 horas, como Python & Machine Learning e Web Design com Webflow. O formato integral dura 9 semanas, de segunda a sexta em horário comercial; o meio período dura 24 semanas, com cerca de 8 horas de estudo por semana.",
+        "A admissão começa por um formulário no site, seguido de entrevista com a equipe. Para Data Science, a entrevista também verifica conhecimentos prévios de programação e matemática, e há um teste online. Depois de aceita, a pessoa faz um pré-trabalho obrigatório, de cerca de 60 horas no caso de Web Development, antes do início das aulas. As inscrições costumam abrir de quatro a cinco meses antes de cada turma.",
+        "Além do curso, a escola oferece serviços de carreira para quem quer mudar de área e mantém acesso aos materiais e à rede de ex-alunos depois da formação. Há também cursos curtos gratuitos, como Intro to Python, e eventos abertos divulgados no Meetup, que são uma forma de conhecer o método antes de decidir.",
+        "Antes de escolher um bootcamp, compare custo, carga horária e formato com a sua rotina: o integral exige dedicação exclusiva por dois meses, e o meio período pede constância por quase seis. Converse com ex-alunos, veja projetos de turmas anteriores e pense no que você quer ter ao final, seja um portfólio, uma transição de carreira ou uma base para continuar estudando. O artigo do LearnTECH sobre como escolher uma formação ajuda nessa comparação."
+      ],
+      "imagens": [
+        {
+          "url": "/media/career/detalhe/le-wagon.webp",
+          "alt": "Capa ilustrada com o título Le Wagon: bootcamps de programação e dados",
+          "legenda": "Ilustração própria do LearnTECH."
+        }
+      ],
+      "links": [
+        {
+          "label": "Le Wagon São Paulo",
+          "url": "https://www.lewagon.com/sao-paulo"
+        },
+        {
+          "label": "Perguntas frequentes",
+          "url": "https://www.lewagon.com/faq"
+        },
+        {
+          "label": "Cursos gratuitos",
+          "url": "https://start.lewagon.com/"
+        },
+        {
+          "label": "Serviços de carreira",
+          "url": "https://www.lewagon.com/career-services"
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/school/le-wagon/"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/c/lewagon"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://www.github.com/lewagon"
+        },
+        {
+          "label": "LearnTECH: como escolher uma formação para começar em desenvolvimento",
+          "url": "https://learn-tech-pied.vercel.app/blog/escolher-formacao-dev"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Le Wagon: Coding Bootcamp in São Paulo",
+          "url": "https://www.lewagon.com/sao-paulo"
+        },
+        {
+          "label": "Le Wagon: FAQ",
+          "url": "https://www.lewagon.com/faq"
+        }
+      ],
+      "atualizadoEm": "2026-10-28"
+    }
+  },
+  {
+    "title": "Digital House",
+    "location": "São Paulo",
+    "thumb": "/media/career/digital-house.webp",
+    "site_url": "https://landing.digitalhouse.com/rocketseat-digitalhouse",
+    "category": "Education",
+    "slug": "digital-house",
+    "detalhe": {
+      "resumo": "Escola de educação digital nascida na Argentina, que abriu operação no Brasil em São Paulo e ofereceu cursos de programação, dados, marketing e UX. Em 2021 anunciou a fusão com a Rocketseat, e hoje a página oficial informa que a Digital House Brasil agora é Rocketseat.",
+      "paragrafos": [
+        "A Digital House é uma edtech voltada à formação de talentos digitais na América Latina. Começou na Argentina e trouxe para o Brasil, a partir de São Paulo, cursos de programação, ciência de dados, marketing digital e experiência do usuário, com turmas ao vivo e duração de alguns meses.",
+        "Em 2021 a empresa recebeu um aporte de US$ 50 milhões de Kaszek, Riverwood Capital, Mercado Livre e Globant e lançou com essas duas empresas o Certified Tech Developer, uma formação longa em programação com aulas remotas ao vivo e certificado com o selo das três. Em outubro do mesmo ano, anunciou a fusão com a Rocketseat, plataforma brasileira de ensino de programação, em um negócio avaliado em R$ 150 milhões.",
+        "Hoje o cenário no Brasil mudou. Uma página oficial da Digital House informa que a Digital House Brasil agora é Rocketseat, e algumas páginas em português ainda no ar, como a do Certified Tech Developer, levam a navegação para o site da Rocketseat. O site global, em digitalhouse.com, segue no ar, em espanhol.",
+        "Para quem procura uma formação em português, o caminho atual é acompanhar a Rocketseat, que tem trilhas gratuitas para iniciantes e cursos pagos. Para conhecer a oferta da Digital House em outros países, o site global reúne o catálogo de cursos, a assinatura e os programas para empresas e escolas.",
+        "Se você encontrar uma vaga, bolsa ou curso com a marca Digital House Brasil, confira na página oficial se a oferta ainda está ativa e quem é o responsável por ela antes de se inscrever ou pagar. Para quem fez cursos na escola, vale guardar os certificados e o histórico em um lugar seguro, já que páginas antigas podem mudar ou sair do ar."
+      ],
+      "imagens": [
+        {
+          "url": "/media/career/detalhe/digital-house.webp",
+          "alt": "Capa ilustrada com o título Digital House: da escola digital à Rocketseat",
+          "legenda": "Ilustração própria do LearnTECH."
+        }
+      ],
+      "links": [
+        {
+          "label": "Comunicado: Digital House Brasil agora é Rocketseat",
+          "url": "https://landing.digitalhouse.com/rocketseat-digitalhouse"
+        },
+        {
+          "label": "Rocketseat",
+          "url": "https://www.rocketseat.com.br/"
+        },
+        {
+          "label": "Certified Tech Developer",
+          "url": "https://www.digitalhouse.com/br/produtos/programacao/certified-tech-developer"
+        },
+        {
+          "label": "Digital House (site global, em espanhol)",
+          "url": "https://www.digitalhouse.com/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Digital House Blog: Digital House y la brasileña Rocketseat se fusionan",
+          "url": "https://www.digitalhouse.com/blog/digital-house-y-la-brasilena-rocketseat-se-fusionan-para-crear-la-comunidad-mas-grande-de-programadores-de-latinoamerica/"
+        },
+        {
+          "label": "Canaltech: Startups se unem para se tornar potência em educação de tecnologia no Brasil",
+          "url": "https://canaltech.com.br/startup/startups-se-unem-para-se-tornar-potencia-em-educacao-de-tecnologia-no-brasil-198731/"
+        },
+        {
+          "label": "Digital House: Digital House Brasil agora é Rocketseat",
+          "url": "https://landing.digitalhouse.com/rocketseat-digitalhouse"
+        }
+      ],
+      "atualizadoEm": "2026-10-28"
+    }
+  },
+  {
+    "title": "Netuno",
+    "location": "Portugal / Remote",
+    "thumb": "/media/career/netuno.webp",
+    "site_url": "https://dev.netuno.org/",
+    "category": "Education",
+    "slug": "netuno",
+    "detalhe": {
+      "resumo": "Plataforma portuguesa de código aberto, low-code e poliglota, para criar aplicações web e APIs com menos código, mantida pela empresa Sitana. Tem documentação com tutoriais, a Netuno Academy, e uma comunidade aberta no GitHub e no Discord.",
+      "paragrafos": [
+        "O Netuno é uma plataforma open source, sob a licença Apache-2.0, escrita em Java e executada sobre a GraalVM. A proposta é acelerar o desenvolvimento de aplicações: ao modelar os dados, a plataforma estrutura o banco automaticamente e gera um backoffice administrativo, com diagrama de dados, console de consultas e recarregamento automático do código durante o desenvolvimento.",
+        "Ela é poliglota: a lógica do servidor pode ser escrita em JavaScript, TypeScript, Python, Ruby, Kotlin ou Groovy, segundo a documentação. Os recursos cobrem o que um backend costuma precisar, como serviços REST, especificação OpenAPI, tarefas agendadas e monitoramento com alertas, o que faz do Netuno um bom laboratório para entender como esses blocos se encaixam.",
+        "A plataforma é mantida pela Sitana, empresa portuguesa de desenvolvimento de software, que aparece como detentora dos direitos na documentação oficial. Além do site principal, em netuno.org, o projeto mantém o endereço Netuno DEV, em dev.netuno.org, a documentação em doc.netuno.org e o código no GitHub, na organização netuno-org.",
+        "Para participar, o caminho sugerido pela própria documentação é instalar a plataforma pelo guia de instalação, seguir os tutoriais da Netuno Academy para criar a primeira aplicação, acompanhar o projeto no GitHub e abrir issues para relatar erros ou sugerir melhorias. A comunidade conversa no Discord e o projeto publica conteúdo no YouTube, no LinkedIn e no Instagram.",
+        "A maior parte da documentação está em inglês, e a comunidade é menor do que a de frameworks mais populares, então espere procurar respostas no Discord e no próprio código. Em troca, contribuir com um projeto aberto e de porte menor costuma dar mais espaço para participar de verdade, e essa experiência com issues, pull requests e revisão de código conta pontos em qualquer vaga de desenvolvimento."
+      ],
+      "imagens": [
+        {
+          "url": "/media/career/detalhe/netuno.webp",
+          "alt": "Capa ilustrada com o título Netuno: plataforma low-code e poliglota de código aberto",
+          "legenda": "Ilustração própria do LearnTECH."
+        }
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.netuno.org/"
+        },
+        {
+          "label": "Netuno DEV",
+          "url": "https://dev.netuno.org/"
+        },
+        {
+          "label": "Documentação",
+          "url": "https://doc.netuno.org/"
+        },
+        {
+          "label": "Netuno Academy: visão geral",
+          "url": "https://doc.netuno.org/docs/academy/overview/"
+        },
+        {
+          "label": "GitHub: netuno-org/platform",
+          "url": "https://github.com/netuno-org/platform"
+        },
+        {
+          "label": "Discord da comunidade",
+          "url": "https://discord.gg/4sfXG6YWFu"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/channel/UCYY1Nz6T2NJtP29vba2fqkg"
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/company/netuno-org/"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/netuno_org/"
+        },
+        {
+          "label": "Sitana",
+          "url": "https://www.sitana.pt/en/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "GitHub: netuno-org/platform (README)",
+          "url": "https://github.com/netuno-org/platform"
+        },
+        {
+          "label": "Netuno Documentation: Academy Overview",
+          "url": "https://doc.netuno.org/docs/academy/overview/"
+        },
+        {
+          "label": "Netuno Documentation: página inicial",
+          "url": "https://doc.netuno.org/"
+        }
+      ],
+      "atualizadoEm": "2026-10-28"
+    }
   }
 ]

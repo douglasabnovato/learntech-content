@@ -11,7 +11,7 @@ npx wrangler login                         # abre o navegador para autorizar
 npx wrangler d1 create learntech-acessos   # imprime um database_id
 ```
 
-Copie o `database_id` impresso para `wrangler.jsonc`, no lugar de `COLE_AQUI_O_ID_GERADO_PELO_WRANGLER_D1_CREATE`. Esse id não é segredo e pode ir para o Git.
+Copie o `database_id` impresso para `wrangler.jsonc`, no campo `d1_databases[0].database_id`. Esse id não é segredo e pode ir para o Git. (Neste repositório o campo já está preenchido; só refaça este passo se for criar um banco novo.)
 
 ```bash
 npm run db:migrar:remoto                   # cria a tabela acessos no D1

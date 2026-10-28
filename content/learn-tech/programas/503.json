@@ -3,8 +3,1043 @@
   "image": "https://cdn.pixabay.com/photo/2015/05/31/15/14/woman-792162_1280.jpg",
   "category": "Produtos Digitais",
   "categoryFilter": "produtos-digitais",
-  "title": "MVP na Prática: Como Validar seu Produto com Baixo Custo",
-  "lessons": "12+ Lições",
-  "duration": "10hr 30min",
-  "access": "Acesso Livre"
+  "title": "MVP na Prática: Do Briefing à Validação com Baixo Custo",
+  "lessons": "22 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Intermediário",
+  "description": "Um programa construído sobre um projeto real de site institucional, com o cliente anonimizado como Instituto Aurora de Educação em Saúde. Você conduz o levantamento de requisitos, transforma o briefing em mapa de seções e mockup no Figma, recorta o MVP com hipóteses e métricas de baixo custo e escreve a proposta de escopo que o cliente aprova.",
+  "letslearn": [
+    "Conduzir uma entrevista com o stakeholder e transformar o pedido em uma declaração de problema",
+    "Separar requisitos funcionais e não funcionais e escrever histórias de usuário com critérios de aceitação",
+    "Organizar um mapa de seções e desenhar wireframe e mockup navegável no Figma",
+    "Delimitar um MVP com MoSCoW, hipóteses e métricas de validação de baixo custo",
+    "Escrever uma proposta de escopo com entregáveis, prazos relativos, riscos e controle de mudanças"
+  ],
+  "curriculum": "Levantamento de requisitos e produto mínimo viável",
+  "about": "O programa acompanha, do primeiro contato à proposta, um projeto real de site para uma escola técnica da área da saúde, com nome fictício e sem dados do cliente. Cada módulo pega um artefato do projeto (roteiro de entrevista, lista de requisitos, mapa de seções, matriz de prioridade, proposta) e mostra como produzi-lo, incluindo os pontos em que o projeto real mudou de rumo. O objetivo é que, ao final, você consiga conduzir um levantamento de requisitos, transformar o briefing em mapa de seções e mockup, delimitar um MVP e escrever uma proposta de escopo.",
+  "materials": [
+    "Roteiro de entrevista com o stakeholder",
+    "Modelo de história de usuário com critérios de aceitação",
+    "Mapa de seções em JSON",
+    "Matriz MoSCoW e cartão de hipótese",
+    "Estrutura de proposta de escopo com tabela de riscos"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Do Briefing ao Problema",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Requisitos, Histórias e Critérios de Aceitação",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Mapa de Seções e Mockup no Figma",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "O Recorte do MVP",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 4,
+      "title": "Proposta de Escopo e Próximos Passos",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Produtos Digitais",
+    "mainTitle": "Antes de construir, descubra o que precisa existir. Depois, construa o mínimo e meça.",
+    "introductionParagraphs": [
+      {
+        "title": "Um caso real, do começo ao fim",
+        "text": "O fio condutor é o projeto de site de uma escola técnica da área da saúde, aqui chamada de **Instituto Aurora de Educação em Saúde**. Você vê o briefing, as reuniões, o escopo crescendo a cada conversa e as decisões que precisaram ser tomadas, sem nenhum dado que identifique o cliente."
+      },
+      {
+        "title": "Do pedido vago ao documento aprovado",
+        "text": "Cada módulo produz um artefato que alimenta o próximo: **problema, requisitos, mapa de seções, mockup, recorte do MVP e proposta**. No fim, você tem o conjunto completo que um projeto de cliente pede."
+      },
+      {
+        "title": "Validar sem gastar muito",
+        "text": "MVP não é uma versão malfeita do produto, e sim o menor recorte que permite aprender. O programa mostra como testar hipóteses com **protótipo, página de um curso e atendimento manual** antes de investir em desenvolvimento."
+      }
+    ],
+    "courseAboutTitle": "Levantamento, recorte e proposta",
+    "courseAboutDescription": "O foco não é uma ferramenta, e sim o raciocínio de quem transforma a conversa com um cliente em um escopo que cabe no prazo e pode ser validado. Figma e React aparecem como meios, nos pontos em que ajudam a tornar o escopo visível e testável.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Do Briefing ao Problema",
+        "items": [
+          {
+            "label": "Leia o pedido como hipótese",
+            "description": "Quando o cliente aponta um site de referência, ele está dizendo o que acha que resolve o problema dele."
+          },
+          {
+            "label": "Prepare o roteiro de entrevista",
+            "description": "Chegue com perguntas agrupadas por tema e deixe espaço para seguir o que surgir."
+          },
+          {
+            "label": "Conduza a entrevista e registre decisões",
+            "description": "Fale pouco, faça perguntas abertas e repita com suas palavras o que entendeu."
+          },
+          {
+            "label": "Escreva personas e a declaração do problema",
+            "description": "Com as anotações em mãos, descreva de duas a quatro proto-personas: retratos baseados no que o cliente contou, ainda não validados com pesquisa."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Requisitos, Histórias e Critérios de Aceitação",
+        "items": [
+          {
+            "label": "Liste os requisitos funcionais",
+            "description": "Requisito funcional é uma capacidade que alguém usa: listar, filtrar, enviar, acessar."
+          },
+          {
+            "label": "Liste os requisitos não funcionais",
+            "description": "Requisito não funcional descreve qualidade: desempenho, compatibilidade, segurança, privacidade, acessibilidade."
+          },
+          {
+            "label": "Escreva histórias de usuário",
+            "description": "A história de usuário descreve uma necessidade do ponto de vista de quem usa: quem é a pessoa, o que ela quer fazer e por quê."
+          },
+          {
+            "label": "Defina critérios de aceitação",
+            "description": "Critério de aceitação é a condição que transforma \"acho que está pronto\" em \"está pronto\"."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Mapa de Seções e Mockup no Figma",
+        "items": [
+          {
+            "label": "Monte o mapa de seções",
+            "description": "Para uma página única, o mapa de seções é a ordem dos blocos, com o objetivo de cada um e os requisitos que ele atende."
+          },
+          {
+            "label": "Adapte um template sem herdar o conteúdo dele",
+            "description": "Começar de um template economiza tempo, mas traz um risco silencioso."
+          },
+          {
+            "label": "Crie o arquivo e os frames",
+            "description": "Crie um arquivo de design novo e duas páginas no painel à esquerda: Wireframe e Mockup."
+          },
+          {
+            "label": "Desenhe o wireframe em baixa fidelidade",
+            "description": "Use apenas tons de cinza, uma fonte e textos reais, sem lorem ipsum."
+          },
+          {
+            "label": "Transforme em mockup navegável e colete feedback",
+            "description": "Na página Mockup, duplique os frames e aplique estilos de cor e de texto criados a partir da identidade do instituto."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: O Recorte do MVP",
+        "items": [
+          {
+            "label": "Aplique MoSCoW ao backlog",
+            "description": "MoSCoW classifica cada item em quatro grupos: Must (sem isso a entrega fracassa), Should (importante, mas existe alternativa temporária), Could (desejável se sobrar tempo) e Won't (combinado que não entra desta vez)."
+          },
+          {
+            "label": "Escreva as hipóteses do MVP",
+            "description": "Cada item Must existe porque alguém acredita que ele causa um resultado."
+          },
+          {
+            "label": "Escolha o teste mais barato que responde à hipótese",
+            "description": "Nem toda hipótese precisa do site pronto."
+          },
+          {
+            "label": "Defina métricas e o critério de sucesso",
+            "description": "Escolha poucas métricas ligadas às hipóteses: visitas por seção de curso, taxa de conversão de visita em manifestação de interesse, manifestações por curso e tempo de retorno da secretaria."
+          },
+          {
+            "label": "Construa a landing mínima do MVP",
+            "description": "Com o recorte definido, o código da primeira versão pode ser pequeno."
+          }
+        ]
+      },
+      {
+        "moduleId": 4,
+        "title": "Módulo 4: Proposta de Escopo e Próximos Passos",
+        "items": [
+          {
+            "label": "Descreva entregáveis e o que fica fora",
+            "description": "Use a estrutura abaixo."
+          },
+          {
+            "label": "Estime e monte um cronograma relativo",
+            "description": "Quebre o trabalho nas fases que o próprio briefing listava como próximos passos: feedback da especificação, recebimento do conteúdo, protótipo visual, desenvolvimento, testes em navegadores e dispositivos, e publicação."
+          },
+          {
+            "label": "Mapeie os riscos e a resposta para cada um",
+            "description": "Liste o que pode atrasar ou encarecer o projeto, a probabilidade, o impacto e o que você fará se acontecer."
+          },
+          {
+            "label": "Feche com aceite, controle de mudanças e as próximas versões",
+            "description": "Termine a proposta dizendo como cada entrega será aceita (os critérios de aceitação das histórias), como pedidos novos serão tratados (registrar, estimar, aprovar antes de fazer) e o que vem depois do MVP: uma segunda versão com os itens Should e uma terceira com os Could, sempre decididas a partir das métricas do módulo anterior."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Cada passo traz um artefato do caso para ler, adaptar e refazer. Ao final, o quiz revisa os pontos em que o levantamento costuma dar errado."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "comment",
+      "title": "Do Briefing ao Problema",
+      "shortDescription": "Entrevista com o stakeholder, roteiro de perguntas, personas e a declaração do problema",
+      "introductionText": "O caso que acompanha todo o programa é baseado em um projeto real, com nome fictício: o Instituto Aurora de Educação em Saúde, uma escola técnica que oferece cursos técnicos e profissionalizantes nas modalidades presencial, semipresencial e a distância. O pedido chegou do jeito que quase todo pedido chega: \"queremos um site institucional, parecido com o de outra escola\". Isso é uma solução, não um problema. Este módulo mostra como sair da primeira conversa sabendo para quem o site existe, o que ele precisa fazer acontecer e como vai saber se deu certo.",
+      "sections": [
+        {
+          "title": "Antes da primeira reunião",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Leia o pedido como hipótese",
+              "guidance": "Quando o cliente aponta um site de referência, ele está dizendo o que acha que resolve o problema dele. Sua tarefa é descobrir qual é esse problema. No caso do Instituto Aurora, o site de referência tinha listagem de cursos com formulário de interesse em cada um. A pergunta útil não é \"qual cor você quer?\", e sim \"o que acontece hoje quando alguém quer se inscrever num curso?\". A resposta revelou o objetivo real: transformar visita em contato de interessado, curso a curso.",
+              "tips": [
+                "Anote o pedido literal do cliente e, ao lado, a pergunta que ele responde. Se você não consegue escrever a pergunta, ainda não entendeu o pedido."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Prepare o roteiro de entrevista",
+              "code": "## Roteiro de entrevista - Instituto Aurora\n\n### Negócio\n- O que o instituto oferece hoje e em quais modalidades?\n- De onde vêm os alunos atuais? Como eles chegam até vocês?\n\n### Público\n- Quem procura um curso técnico? E um profissionalizante?\n- Que dúvida esse interessado tem antes de se inscrever?\n\n### Objetivo\n- O que precisa acontecer depois que alguém visita o site?\n- O que acontece hoje com um interessado? Quem responde, e por qual canal?\n\n### Restrições\n- Quem aprova o projeto? Há sócios ou outras pessoas na decisão?\n- Quem vai fornecer textos e imagens? Até quando?\n\n### Sucesso\n- Daqui a três meses, o que faria vocês dizerem que o site valeu a pena?",
+              "guidance": "Chegue com perguntas agrupadas por tema e deixe espaço para seguir o que surgir. O roteiro serve para você não esquecer de nada importante, e não para ser lido em voz alta. Os cinco blocos abaixo cobrem o que você vai precisar nos módulos seguintes: negócio, público, objetivo, restrições e critério de sucesso.",
+              "tips": [
+                "Pergunte sempre por um exemplo concreto: \"me conta a última vez que um aluno desistiu de se inscrever\". Exemplo real vale mais do que opinião sobre o futuro."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Durante e depois da conversa",
+          "subsections": [
+            {
+              "number": 3,
+              "title": "Conduza a entrevista e registre decisões",
+              "guidance": "Fale pouco, faça perguntas abertas e repita com suas palavras o que entendeu. No projeto real foram três reuniões: a primeira para levantar requisitos, a segunda para apresentar uma primeira versão e coletar ajustes, e a terceira para apresentar a proposta aos sócios. Cada reunião mudou o escopo. Por isso, termine toda conversa com uma ata curta, com o que foi decidido, o que ficou pendente e quem é responsável por cada pendência.",
+              "tips": [
+                "Envie a ata no mesmo dia e peça um \"de acordo\". Ela vira a sua referência quando, semanas depois, alguém lembrar a conversa de outro jeito.",
+                "Quando a decisão depende de mais de uma pessoa, descubra isso na primeira reunião, não na última."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Escreva personas e a declaração do problema",
+              "code": "## Declaração do problema\n\nPessoas interessadas em cursos de saúde [quem]\nnão encontram, em um só lugar, quais cursos existem,\nem que modalidade e como se inscrever [o quê],\ne por isso procuram outra escola ou desistem [impacto].\nSaberemos que resolvemos quando cada curso receber\nmanifestações de interesse pelo site [evidência].",
+              "guidance": "Com as anotações em mãos, descreva de duas a quatro proto-personas: retratos baseados no que o cliente contou, ainda não validados com pesquisa. No caso: a pessoa que busca a primeira formação técnica em saúde; o profissional que quer uma qualificação curta para mudar de função; o aluno já matriculado no ensino a distância, que só precisa entrar no ambiente virtual; e a equipe do instituto, que recebe e responde os interessados. Feche com uma declaração do problema em uma frase.",
+              "tips": [
+                "Chame de proto-persona o que veio só da conversa com o cliente. Isso deixa claro o que ainda precisa ser confirmado com o público real."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "O que este módulo deixa pronto",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Problema antes da solução",
+          "text": "O site de referência mostra o que o cliente imagina. A declaração do problema mostra o que ele precisa."
+        },
+        {
+          "icon": "comment",
+          "title": "Conversa com roteiro",
+          "text": "Perguntas agrupadas por tema garantem que negócio, público, restrições e sucesso sejam cobertos."
+        },
+        {
+          "icon": "clipboard",
+          "title": "Ata como contrato informal",
+          "text": "Decisões registradas evitam retrabalho quando o escopo muda de uma reunião para a outra."
+        }
+      ],
+      "closingText": "Você saiu da conversa com um problema escrito, personas provisórias e uma ata. Agora é preciso transformar isso em uma lista de requisitos que qualquer pessoa da equipe consiga ler e testar.",
+      "ctaTitle": "Problema definido",
+      "ctaText": "Com o problema claro, vamos escrever o que o site precisa fazer e como ele deve se comportar.",
+      "nextButtonText": "Ir para Módulo 1: Requisitos, Histórias e Critérios de Aceitação",
+      "lessonsCount": 4
+    },
+    {
+      "id": 1,
+      "icon": "clipboard",
+      "title": "Requisitos, Histórias e Critérios de Aceitação",
+      "shortDescription": "Requisitos funcionais e não funcionais, histórias de usuário e critérios que dá para testar",
+      "introductionText": "O briefing do Instituto Aurora descrevia seções, campos de formulário, botões e comportamentos, tudo misturado. Este módulo separa essa lista em duas: o que o sistema faz (requisitos funcionais) e como ele deve se comportar (requisitos não funcionais). Em seguida, reescreve os itens mais importantes como histórias de usuário com critérios de aceitação, o formato que permite dizer, sem discussão, se uma entrega está pronta.",
+      "sections": [
+        {
+          "title": "O que o site faz e como ele se comporta",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Liste os requisitos funcionais",
+              "code": "## Requisitos funcionais\n\n- RF-01 Exibir a lista de cursos técnicos em cards (título, subtítulo, descrição, carga horária, modalidade, imagem).\n- RF-02 Exibir a lista de cursos profissionalizantes no mesmo padrão de card.\n- RF-03 Mostrar os detalhes de um curso a partir do botão \"Saiba mais\".\n- RF-04 Receber manifestação de interesse: nome e e-mail obrigatórios; telefone, curso, escolaridade e mensagem opcionais.\n- RF-05 Enviar cada manifestação para o e-mail da secretaria por um serviço de formulário.\n- RF-06 Exibir botão de acesso ao ambiente virtual no topo e nos cursos com modalidade a distância.\n- RF-07 Exibir botão fixo de WhatsApp e uma seção de perguntas frequentes.\n- RF-08 Exibir no rodapé contato, link para o mapa do endereço e redes sociais.",
+              "guidance": "Requisito funcional é uma capacidade que alguém usa: listar, filtrar, enviar, acessar. Percorra o briefing e as atas e extraia cada capacidade em uma linha numerada, começando por um verbo. No caso, eles cobrem a listagem dos cinco cursos técnicos e dos oito profissionalizantes, o detalhe de cada curso, o formulário de interesse, o acesso ao ambiente virtual dos alunos a distância e os canais de contato.",
+              "tips": [
+                "Um requisito por linha, com identificador. Assim cada história, tela e teste pode apontar para ele."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Liste os requisitos não funcionais",
+              "code": "## Requisitos não funcionais\n\n- RNF-01 Layout adaptado a celular, tablet e desktop, sem rolagem horizontal.\n- RNF-02 Maior elemento visível da home carregado em até 2,5 s numa conexão móvel (LCP).\n- RNF-03 Conteúdo indexável por buscadores (página pré-renderizada, títulos e descrições por seção).\n- RNF-04 Formulário com consentimento explícito e link para a política de privacidade (LGPD).\n- RNF-05 Funcionamento nas versões atuais dos navegadores mais usados.\n- RNF-06 Campos com rótulo visível e navegação completa por teclado.",
+              "guidance": "Requisito não funcional descreve qualidade: desempenho, compatibilidade, segurança, privacidade, acessibilidade. O briefing original pedia responsividade, imagens otimizadas, cuidado com SEO numa página única e link para a política de privacidade por causa da LGPD. O erro comum é deixar esses itens vagos, como \"o site deve ser rápido\". Escreva cada um com um número ou uma condição que possa ser verificada.",
+              "tips": [
+                "Acessibilidade raramente aparece no briefing do cliente. Inclua mesmo assim: contraste, navegação por teclado e rótulos nos campos do formulário custam pouco se previstos desde o início.",
+                "Se você não consegue descrever como testar um requisito não funcional, ele ainda não está escrito."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Histórias que dá para testar",
+          "subsections": [
+            {
+              "number": 3,
+              "title": "Escreva histórias de usuário",
+              "code": "## HU-01 Manifestar interesse em um curso\nComo pessoa que busca a primeira formação técnica em saúde,\nquero deixar meus dados no curso que me interessa,\npara que o instituto me procure com datas e condições de matrícula.\nRequisitos: RF-04, RF-05, RNF-04\n\n## HU-02 Comparar cursos antes de decidir\nComo profissional que quer uma qualificação curta,\nquero ver carga horária e modalidade de cada curso lado a lado,\npara escolher um que caiba na minha rotina.\nRequisitos: RF-01, RF-02, RF-03\n\n## HU-03 Entrar no ambiente virtual\nComo aluno matriculado no ensino a distância,\nquero um acesso direto à plataforma de aulas a partir do site,\npara não depender de procurar o endereço toda vez.\nRequisitos: RF-06",
+              "guidance": "A história de usuário descreve uma necessidade do ponto de vista de quem usa: quem é a pessoa, o que ela quer fazer e por quê. O \"por quê\" é a parte mais importante, porque é ela que permite discutir alternativas. Use as personas do módulo anterior e ligue cada história aos requisitos que ela cobre.",
+              "tips": [
+                "Se o \"para que\" repete o \"eu quero\", a história não diz nada. \"Quero me inscrever para me inscrever\" não ajuda ninguém a decidir."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Defina critérios de aceitação",
+              "code": "## Critérios de aceitação - HU-01\n\nCenário 1: envio válido\nDado que estou na seção do curso de Farmácia\nQuando preencho nome e e-mail válidos, marco o consentimento e envio\nEntão vejo uma mensagem de sucesso\nE a secretaria recebe um e-mail com meus dados e o curso escolhido\n\nCenário 2: e-mail inválido\nDado que digitei \"maria@\" no campo de e-mail\nQuando saio do campo\nEntão vejo a mensagem \"Informe um e-mail válido\" junto ao campo\nE o botão de envio continua desabilitado",
+              "guidance": "Critério de aceitação é a condição que transforma \"acho que está pronto\" em \"está pronto\". O formato Dado, Quando, Então descreve o contexto, a ação e o resultado esperado, e funciona tanto para quem desenvolve quanto para o cliente que vai validar. Escreva o caminho feliz e pelo menos um caminho de erro.",
+              "tips": [
+                "Cada critério deve poder virar um teste manual de um minuto. Se precisa de uma reunião para interpretar, reescreva.",
+                "Combine com o cliente quem valida cada história. No caso, as inscrições chegam a uma secretaria: é ela quem confirma que o e-mail chegou completo."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "Por que separar assim",
+      "highlights": [
+        {
+          "icon": "list",
+          "title": "Funcional é o que se usa",
+          "text": "Cada capacidade em uma linha, com identificador, para ser rastreada até a tela e o teste."
+        },
+        {
+          "icon": "gauge",
+          "title": "Não funcional é o que se mede",
+          "text": "Desempenho, privacidade e acessibilidade só existem no projeto se tiverem um critério verificável."
+        },
+        {
+          "icon": "tasks",
+          "title": "Pronto é um acordo",
+          "text": "Critérios de aceitação dizem ao cliente e à equipe, com as mesmas palavras, quando uma história terminou."
+        }
+      ],
+      "closingText": "Agora existe uma lista de requisitos numerada e um conjunto de histórias testáveis. O próximo passo é dar forma a isso: organizar as seções da página e desenhar a primeira versão para o cliente reagir.",
+      "ctaTitle": "Requisitos escritos",
+      "ctaText": "Vamos transformar a lista em um mapa de seções e em um mockup no Figma.",
+      "nextButtonText": "Ir para Módulo 2: Mapa de Seções e Mockup no Figma",
+      "lessonsCount": 4
+    },
+    {
+      "id": 2,
+      "icon": "sitemap",
+      "title": "Mapa de Seções e Mockup no Figma",
+      "shortDescription": "Do requisito à estrutura da página, do template adaptado ao protótipo navegável",
+      "introductionText": "O cliente não aprova lista de requisitos: ele aprova o que consegue ver. Este módulo organiza os requisitos num mapa de seções, mostra como adaptar um template sem levar junto o conteúdo dele e descreve, passo a passo, a construção do wireframe e do mockup no Figma. No caso do Instituto Aurora, foi a primeira versão visual, apresentada na segunda reunião, que provocou as mudanças mais importantes de estrutura.",
+      "sections": [
+        {
+          "title": "Do requisito à estrutura",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Monte o mapa de seções",
+              "code": "{\n  \"pagina\": \"Instituto Aurora de Educação em Saúde\",\n  \"secoes\": [\n    { \"id\": \"topo\", \"objetivo\": \"Navegar e acessar o ambiente virtual\", \"requisitos\": [\"RF-06\"] },\n    { \"id\": \"instituto\", \"objetivo\": \"Apresentar história, missão, visão e valores\", \"requisitos\": [] },\n    { \"id\": \"cursos-tecnicos\", \"objetivo\": \"Listar os 5 cursos técnicos\", \"requisitos\": [\"RF-01\", \"RF-03\"] },\n    { \"id\": \"cursos-profissionalizantes\", \"objetivo\": \"Listar os 8 cursos profissionalizantes\", \"requisitos\": [\"RF-02\", \"RF-03\"] },\n    { \"id\": \"interesse\", \"objetivo\": \"Registrar manifestação de interesse\", \"requisitos\": [\"RF-04\", \"RF-05\", \"RNF-04\"] },\n    { \"id\": \"perguntas-frequentes\", \"objetivo\": \"Responder dúvidas recorrentes\", \"requisitos\": [\"RF-07\"] },\n    { \"id\": \"rodape\", \"objetivo\": \"Contato, mapa e redes sociais\", \"requisitos\": [\"RF-08\"] }\n  ]\n}",
+              "guidance": "Para uma página única, o mapa de seções é a ordem dos blocos, com o objetivo de cada um e os requisitos que ele atende. Escrever em JSON obriga a ser explícito e já serve de base para o código. Note a decisão que veio do cliente: as informações institucionais aparecem primeiro, e a home e o \"sobre\" viraram uma seção só.",
+              "tips": [
+                "Toda seção precisa de um objetivo. Se você não consegue escrever o objetivo, a seção provavelmente não precisa existir."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Adapte um template sem herdar o conteúdo dele",
+              "code": "| Seção do template      | Seção no Instituto Aurora   | Texto a produzir                 |\n|------------------------|-----------------------------|----------------------------------|\n| Home + About           | O Instituto                 | História, missão, visão, valores |\n| Our Services           | Cursos Técnicos             | 5 cards com carga e modalidade   |\n| Our Projects           | Cursos Profissionalizantes  | 8 cards no mesmo padrão          |\n| Contact                | Manifeste seu interesse     | Instruções e mensagem de sucesso |\n| Footer                 | Rodapé                      | Contato, redes, direitos         |",
+              "guidance": "Começar de um template economiza tempo, mas traz um risco silencioso. No projeto real, o ponto de partida foi o template de uma empresa de construção civil, com textos em inglês sobre obras e reformas. A equipe fez um de-para de cada seção e uma lista de textos e imagens a produzir, com as dimensões de cada imagem. Sem essa lista, é comum um texto de exemplo do template chegar à versão publicada.",
+              "tips": [
+                "Antes de publicar, procure no código por palavras do template original. Um único \"Our Services\" esquecido custa a credibilidade do site."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "No Figma",
+          "subsections": [
+            {
+              "number": 3,
+              "title": "Crie o arquivo e os frames",
+              "guidance": "Crie um arquivo de design novo e duas páginas no painel à esquerda: Wireframe e Mockup. Com a ferramenta Frame (tecla F), escolha no painel da direita os tamanhos prontos de desktop e de celular. Em cada frame, adicione um layout grid de colunas (no desktop, 12 colunas com margem lateral) para alinhar os blocos. Crie um retângulo por seção do mapa e nomeie as camadas com o mesmo id do JSON.",
+              "tips": [
+                "Comece pelo celular. É nele que a maior parte do público de um site como este vai chegar, e uma estrutura que funciona na tela pequena se expande com facilidade."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Desenhe o wireframe em baixa fidelidade",
+              "guidance": "Use apenas tons de cinza, uma fonte e textos reais, sem lorem ipsum. Monte o card de curso uma vez, com Auto Layout (Shift+A) para que ele cresça com o conteúdo, e transforme em componente (Ctrl+Alt+K no Windows, Cmd+Option+K no Mac). Na segunda reunião, o cliente pediu que os cards dos cursos técnicos seguissem o mesmo desenho dos profissionalizantes: com um componente só e uma propriedade de variante para o tipo de curso, a mudança é feita em um lugar.",
+              "tips": [
+                "Wireframe em cinza faz o cliente comentar estrutura e ordem. Wireframe colorido faz ele comentar cor."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Transforme em mockup navegável e colete feedback",
+              "guidance": "Na página Mockup, duplique os frames e aplique estilos de cor e de texto criados a partir da identidade do instituto. Na aba Prototype, ligue os itens do menu e o botão de interesse às seções correspondentes. Compartilhe o link em modo de visualização e peça comentários direto no arquivo. No caso, a primeira versão gerou uma lista de ajustes: renomear itens do menu, unir home e sobre, trocar o botão de inscrição por um \"fale conosco\" e colocar o acesso ao ambiente virtual ao lado dele.",
+              "tips": [
+                "Peça ao cliente que comente no próprio Figma, sobre o elemento. Comentário por mensagem solta perde o contexto de onde estava o problema.",
+                "Registre cada ajuste como alteração em um requisito ou em uma história. O mockup muda, e a documentação precisa mudar junto."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "O que faz o mockup funcionar",
+      "highlights": [
+        {
+          "icon": "sitemap",
+          "title": "Estrutura antes do visual",
+          "text": "O mapa de seções decide a ordem e o propósito; o desenho só dá forma ao que já foi decidido."
+        },
+        {
+          "icon": "grid",
+          "title": "Componente reaproveitado",
+          "text": "Um card de curso com variantes absorve mudanças de design sem refazer treze telas."
+        },
+        {
+          "icon": "palette",
+          "title": "Feedback no lugar certo",
+          "text": "Comentários no arquivo do Figma ficam presos ao elemento e viram itens de requisito."
+        }
+      ],
+      "closingText": "Com o mockup aprovado, fica visível algo que a lista escondia: há muita coisa para uma primeira entrega. O próximo módulo decide o que entra agora, o que espera e como saber, com pouco gasto, se a escolha foi certa.",
+      "ctaTitle": "Estrutura desenhada",
+      "ctaText": "Hora de cortar: vamos definir o MVP, as hipóteses e as métricas de validação.",
+      "nextButtonText": "Ir para Módulo 3: O Recorte do MVP",
+      "lessonsCount": 5
+    },
+    {
+      "id": 3,
+      "icon": "tasks",
+      "title": "O Recorte do MVP",
+      "shortDescription": "MoSCoW, hipóteses, testes baratos, métricas e uma landing mínima em React",
+      "introductionText": "Entre a primeira e a terceira reunião, o escopo do Instituto Aurora cresceu: perguntas frequentes, botão de WhatsApp, ambiente virtual embutido na página, seção de pagamentos, produção de textos, identidade visual, hospedagem e criação de redes sociais. Tudo isso faz sentido, mas não precisa estar na primeira versão. O MVP é o menor recorte que entrega valor e permite aprender. Este módulo mostra como fazer esse recorte, quais hipóteses ele testa e como validá-las sem gastar muito.",
+      "sections": [
+        {
+          "title": "Decidir o que entra agora",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Aplique MoSCoW ao backlog",
+              "code": "| Grupo  | Itens                                                                 | Alternativa enquanto não entra        |\n|--------|-----------------------------------------------------------------------|---------------------------------------|\n| Must   | Seção do instituto, listas de cursos, formulário de interesse por e-mail, rodapé com contato, responsivo, consentimento LGPD | -              |\n| Should | Botão de WhatsApp, perguntas frequentes, botão do ambiente virtual, mapa | Telefone no rodapé, link enviado ao aluno |\n| Could  | Página de detalhe por curso, animações, seção de equipe e infraestrutura | Detalhe expandido no próprio card     |\n| Won't  | Ambiente virtual embutido, seção de pagamentos, criação de redes sociais | Acesso pelo endereço da plataforma    |",
+              "guidance": "MoSCoW classifica cada item em quatro grupos: Must (sem isso a entrega fracassa), Should (importante, mas existe alternativa temporária), Could (desejável se sobrar tempo) e Won't (combinado que não entra desta vez). A classificação abaixo é uma proposta didática de recorte para o caso, não o escopo que foi contratado. O critério para Must é rigoroso: pergunte se o site falha no seu objetivo principal sem aquele item.",
+              "tips": [
+                "O grupo Won't é o mais importante para o cliente ler. Dizer o que fica de fora, por escrito, evita a expectativa de que vai entrar.",
+                "Se quase tudo virou Must, a classificação não está fazendo seu trabalho. Deixe folga no Must para absorver imprevistos."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Escreva as hipóteses do MVP",
+              "code": "## Cartão de hipótese H1\n\nAcreditamos que exibir os cursos com um formulário curto de interesse\npara pessoas que buscam formação em saúde\nvai gerar contatos qualificados para a secretaria.\n\nSaberemos que é verdade quando, em quatro semanas,\npelo menos [X]% das visitas às seções de cursos\nvirarem manifestações de interesse\ne a secretaria conseguir retornar todas em até um dia útil.\n\nSe for falsa: revisar a oferta dos cards antes de construir mais seções.",
+              "guidance": "Cada item Must existe porque alguém acredita que ele causa um resultado. Escreva essa crença como hipótese, com o resultado esperado e o sinal que vai confirmar ou derrubar a ideia. A hipótese principal do caso é que interessados deixam seus dados mesmo sem conseguir se matricular online, e que isso basta para a secretaria fechar matrículas por telefone ou mensagem.",
+              "tips": [
+                "Defina o número que derruba a hipótese antes de lançar. Decidido depois, qualquer resultado parece bom."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Validar com pouco gasto",
+          "subsections": [
+            {
+              "number": 3,
+              "title": "Escolha o teste mais barato que responde à hipótese",
+              "guidance": "Nem toda hipótese precisa do site pronto. O protótipo navegável do Figma, mostrado a cinco pessoas do público, já revela se elas entendem a diferença entre curso técnico e profissionalizante e se encontram onde deixar os dados. Uma página com um único curso e o formulário de interesse, divulgada nas redes que o instituto já tem, testa a demanda. Atender os primeiros interessados à mão, por mensagem, antes de automatizar qualquer coisa, testa se o retorno da secretaria funciona.",
+              "tips": [
+                "Ordene os testes do mais barato para o mais caro e só avance quando o anterior não responder mais nada de novo."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Defina métricas e o critério de sucesso",
+              "guidance": "Escolha poucas métricas ligadas às hipóteses: visitas por seção de curso, taxa de conversão de visita em manifestação de interesse, manifestações por curso e tempo de retorno da secretaria. Compare as manifestações com a capacidade da turma, que no caso é de até 40 alunos: um curso com interesse muito acima disso indica onde abrir turma nova. Ferramentas gratuitas de análise de tráfego, parâmetros UTM nos links divulgados e um campo opcional \"como conheceu o instituto\" cobrem quase tudo.",
+              "tips": [
+                "Métrica que não muda nenhuma decisão é só curiosidade. Para cada número, escreva o que você faria se ele subisse ou caísse."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Construa a landing mínima do MVP",
+              "code": "import { useState } from \"react\";\n\nconst cursos = [\n  { id: \"farmacia\", tipo: \"Técnico\", nome: \"Técnico em Farmácia\" },\n  { id: \"cuidador\", tipo: \"Profissionalizante\", nome: \"Cuidador de Idosos\" },\n];\n\nexport default function LandingMvp() {\n  const [dados, setDados] = useState({ nome: \"\", email: \"\", curso: cursos[0].id, aceite: false });\n  const [status, setStatus] = useState(\"idle\");\n  const emailValido = /^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$/.test(dados.email);\n  const podeEnviar = dados.nome.trim() && emailValido && dados.aceite;\n\n  async function enviar(e) {\n    e.preventDefault();\n    setStatus(\"enviando\");\n    const r = await fetch(\"https://exemplo-servico-de-formulario.com/f/SEU_ID\", {\n      method: \"POST\",\n      headers: { \"Content-Type\": \"application/json\" },\n      body: JSON.stringify(dados),\n    });\n    setStatus(r.ok ? \"ok\" : \"erro\");\n  }\n\n  if (status === \"ok\") return <p>Recebemos seu interesse. Entraremos em contato.</p>;\n\n  return (\n    <main>\n      <h1>Instituto Aurora de Educação em Saúde</h1>\n      <ul>{cursos.map((c) => <li key={c.id}>{c.tipo}: {c.nome}</li>)}</ul>\n      <form onSubmit={enviar}>\n        <label>Nome <input value={dados.nome} onChange={(e) => setDados({ ...dados, nome: e.target.value })} /></label>\n        <label>E-mail <input type=\"email\" value={dados.email} onChange={(e) => setDados({ ...dados, email: e.target.value })} /></label>\n        {dados.email && !emailValido && <span role=\"alert\">Informe um e-mail válido</span>}\n        <label>Curso\n          <select value={dados.curso} onChange={(e) => setDados({ ...dados, curso: e.target.value })}>\n            {cursos.map((c) => <option key={c.id} value={c.id}>{c.nome}</option>)}\n          </select>\n        </label>\n        <label><input type=\"checkbox\" checked={dados.aceite} onChange={(e) => setDados({ ...dados, aceite: e.target.checked })} /> Li e aceito a política de privacidade</label>\n        <button disabled={!podeEnviar || status === \"enviando\"}>Quero ser avisado</button>\n        {status === \"erro\" && <p role=\"alert\">Não foi possível enviar. Tente pelo telefone do rodapé.</p>}\n      </form>\n    </main>\n  );\n}",
+              "guidance": "Com o recorte definido, o código da primeira versão pode ser pequeno. O componente abaixo mostra a lista de cursos e um formulário de interesse com validação de e-mail e consentimento, enviando para um serviço de formulário que repassa os dados por e-mail. O endereço do serviço é um exemplo: troque pelo endpoint do serviço que você escolher.",
+              "tips": [
+                "Comece com os cursos em um array no próprio arquivo. Um painel administrativo só se justifica quando a lista mudar com frequência.",
+                "Teste o envio com um e-mail real da secretaria antes de divulgar. Formulário que não chega é pior do que formulário nenhum."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "O que torna o MVP útil",
+      "highlights": [
+        {
+          "icon": "tasks",
+          "title": "Corte escrito",
+          "text": "O grupo Won't, registrado e aceito, protege a primeira entrega do crescimento de escopo."
+        },
+        {
+          "icon": "search",
+          "title": "Hipótese com critério",
+          "text": "Cada item Must está ligado a uma crença que pode ser confirmada ou derrubada com números."
+        },
+        {
+          "icon": "bolt",
+          "title": "Teste antes do código",
+          "text": "Protótipo, página de um curso e atendimento manual respondem perguntas antes de qualquer investimento maior."
+        }
+      ],
+      "closingText": "O MVP está recortado, as hipóteses têm critério e existe uma landing mínima. Falta transformar tudo isso no documento que o cliente vai aprovar: a proposta de escopo, com entregáveis, prazos, riscos e o caminho para as próximas versões.",
+      "ctaTitle": "MVP recortado",
+      "ctaText": "Vamos escrever a proposta de escopo que fecha o projeto.",
+      "nextButtonText": "Ir para Módulo 4: Proposta de Escopo e Próximos Passos",
+      "lessonsCount": 5
+    },
+    {
+      "id": 4,
+      "icon": "rocket",
+      "title": "Proposta de Escopo e Próximos Passos",
+      "shortDescription": "Entregáveis, o que fica fora, cronograma relativo, riscos, aceite e evolução",
+      "introductionText": "A proposta é onde o levantamento vira compromisso. No caso do Instituto Aurora, ela foi apresentada na terceira reunião, para o responsável e os sócios, e a decisão ficou para depois da reunião. Uma proposta bem escrita precisa funcionar sem você na sala: deixa claro o que será entregue, o que não será, em quanto tempo, o que depende do cliente e o que acontece quando surgir um pedido novo.",
+      "sections": [
+        {
+          "title": "A proposta",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Descreva entregáveis e o que fica fora",
+              "code": "# Proposta de escopo - Site institucional do Instituto Aurora\n\n## 1. Contexto e problema\n## 2. Objetivo e como vamos medir\n## 3. Escopo incluído (MVP)\n- Página única responsiva com: instituto, cursos técnicos, cursos profissionalizantes,\n  formulário de interesse com envio por e-mail e rodapé com contato.\n## 4. Fora do escopo desta fase\n- Ambiente virtual embutido, seção de pagamentos, criação de redes sociais.\n## 5. Entregáveis\n- Mapa de seções, mockup no Figma, site publicado, guia rápido de atualização.\n## 6. Premissas\n- Textos e imagens fornecidos pelo instituto até o fim da semana 2.\n## 7. Cronograma\n## 8. Investimento e forma de pagamento\n## 9. Riscos\n## 10. Critérios de aceite e controle de mudanças",
+              "guidance": "Use a estrutura abaixo. O escopo incluído vem do grupo Must do módulo anterior, e o fora do escopo vem do Won't. As premissas são o que você assume que o cliente fará: no caso, fornecer textos e imagens de cada curso. Quando a produção de textos e imagens passa a ser sua, como aconteceu em uma versão posterior do projeto, isso é escopo novo e precisa aparecer como entregável, com prazo e custo.",
+              "tips": [
+                "\"Fora do escopo\" não é desconfiança: é a parte da proposta que mais evita conflito no fim do projeto."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Estime e monte um cronograma relativo",
+              "code": "| Fase                          | Início          | Duração   | Depende de            |\n|-------------------------------|-----------------|-----------|-----------------------|\n| Ajustes na especificação      | Aprovação + 0   | 3 dias    | Aprovação             |\n| Recebimento de textos/imagens | Aprovação + 0   | 2 semanas | Instituto             |\n| Mockup e aprovação            | Semana 1        | 1 semana  | Especificação         |\n| Desenvolvimento               | Semana 2        | 2 semanas | Mockup aprovado       |\n| Testes e ajustes              | Semana 4        | 1 semana  | Conteúdo final        |\n| Publicação                    | Fim da semana 4 | 1 dia     | Domínio e hospedagem  |\nExemplo didático: ajuste as durações à sua estimativa em horas.",
+              "guidance": "Quebre o trabalho nas fases que o próprio briefing listava como próximos passos: feedback da especificação, recebimento do conteúdo, protótipo visual, desenvolvimento, testes em navegadores e dispositivos, e publicação. Estime cada fase em horas, some e converta em semanas de acordo com a sua disponibilidade. O investimento sai da multiplicação das horas pelo valor da hora técnica, que é o método usado no caso. Use prazos relativos à data de aprovação, nunca datas fixas: se a aprovação atrasa, o cronograma continua válido.",
+              "tips": [
+                "Coloque uma margem explícita para revisões do cliente. Ela existe de qualquer jeito; escrita, deixa de ser atraso."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Riscos e continuidade",
+          "subsections": [
+            {
+              "number": 3,
+              "title": "Mapeie os riscos e a resposta para cada um",
+              "code": "| Risco                                   | Prob. | Impacto | Resposta                                           |\n|-----------------------------------------|-------|---------|----------------------------------------------------|\n| Escopo cresce entre reuniões            | Alta  | Alto    | Controle de mudanças: estimar e aprovar cada pedido |\n| Textos e imagens chegam atrasados       | Alta  | Médio   | Premissa com data; textos provisórios marcados     |\n| Aprovação depende de vários sócios      | Média | Alto    | Apresentar a todos juntos; resumo de uma página    |\n| Plataforma de aulas bloqueia iframe     | Média | Médio   | Testar antes; plano B com botão de acesso direto   |\n| Dados do formulário sem base legal      | Baixa | Alto    | Consentimento, política de privacidade, mínimo de campos |",
+              "guidance": "Liste o que pode atrasar ou encarecer o projeto, a probabilidade, o impacto e o que você fará se acontecer. Os riscos abaixo vêm do que de fato apareceu no caso: escopo que cresceu a cada reunião, conteúdo dependente do cliente, decisão compartilhada entre sócios e uma dependência técnica de terceiros.",
+              "tips": [
+                "Embutir uma plataforma externa em iframe pode simplesmente não funcionar: muitos sistemas bloqueiam ser exibidos dentro de outro site por segurança. Verifique isso antes de prometer."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Feche com aceite, controle de mudanças e as próximas versões",
+              "guidance": "Termine a proposta dizendo como cada entrega será aceita (os critérios de aceitação das histórias), como pedidos novos serão tratados (registrar, estimar, aprovar antes de fazer) e o que vem depois do MVP: uma segunda versão com os itens Should e uma terceira com os Could, sempre decididas a partir das métricas do módulo anterior. Como exercício, refaça todo o levantamento para um caso parecido, como o site de uma clínica, de uma escola de idiomas ou de um curso preparatório: roteiro, requisitos, histórias, mapa de seções, MoSCoW, hipótese e proposta.",
+              "tips": [
+                "A melhor proposta de próxima versão é a que cita um número medido no MVP. \"As manifestações no curso X passaram da capacidade da turma\" convence mais do que \"seria legal ter\"."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "O que a proposta garante",
+      "highlights": [
+        {
+          "icon": "folder",
+          "title": "Escopo com bordas",
+          "text": "Incluído, fora do escopo e premissas escritos lado a lado evitam a disputa do fim do projeto."
+        },
+        {
+          "icon": "shield",
+          "title": "Riscos com resposta",
+          "text": "Cada risco conhecido já tem um plano, o que transforma imprevisto em decisão."
+        },
+        {
+          "icon": "sync",
+          "title": "Evolução guiada por dados",
+          "text": "As próximas versões saem das métricas do MVP, e não da lista de desejos."
+        }
+      ],
+      "closingText": "Você percorreu o caminho completo de um projeto real: do pedido vago ao problema, do problema aos requisitos, dos requisitos ao mockup, do mockup ao recorte do MVP e do recorte à proposta. O quiz a seguir revisa os pontos em que esse caminho costuma dar errado.",
+      "ctaTitle": "Do briefing à proposta",
+      "ctaText": "Faça o quiz e depois aplique o mesmo roteiro em um caso seu.",
+      "nextButtonText": "Ir para o Quiz",
+      "lessonsCount": 4
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "O cliente diz: \"quero um site igual ao daquela outra escola\". Qual é a melhor primeira reação?",
+      "explanation": "O site de referência é a solução que o cliente imagina; o trabalho de levantamento é descobrir o problema por trás dela. Copiar a estrutura pula essa etapa, cor e fonte são decisões visuais que só fazem sentido depois do problema definido, e orçar antes de entender o objetivo leva a estimar a coisa errada.",
+      "options": [
+        {
+          "text": "Tratar o pedido como hipótese e perguntar o que acontece hoje quando alguém quer se inscrever",
+          "isCorrect": true
+        },
+        {
+          "text": "Pedir o arquivo do site de referência para copiar a estrutura",
+          "isCorrect": false
+        },
+        {
+          "text": "Perguntar quais cores e fontes o cliente prefere",
+          "isCorrect": false
+        },
+        {
+          "text": "Enviar logo um orçamento com base no site de referência",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Por que chamar de proto-persona o perfil montado só a partir da conversa com o cliente?",
+      "explanation": "O prefixo deixa explícito que o perfil é uma suposição baseada no que o cliente contou. Proto-persona não é mais detalhada (costuma ser menos), não é sinônimo genérico de persona e não descreve o cliente: descreve o usuário como o cliente o enxerga.",
+      "options": [
+        {
+          "text": "Porque representa o próprio cliente, e não o usuário",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque ele ainda não foi validado com o público real e precisa ser confirmado",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque proto-personas são mais detalhadas que personas",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque é o nome técnico de qualquer persona em projetos de site",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Qual é a função principal da ata enviada no mesmo dia da reunião?",
+      "explanation": "A ata curta fixa o que foi decidido e quem cuida de cada pendência, o que importa num caso em que cada reunião mudou o escopo. Ela não substitui a proposta, que formaliza escopo e prazo; não é relatório de horas; e transcrição completa é longa demais para alguém confirmar com um \"de acordo\".",
+      "options": [
+        {
+          "text": "Mostrar ao cliente quantas horas a reunião levou",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardar a transcrição completa da conversa",
+          "isCorrect": false
+        },
+        {
+          "text": "Registrar decisões, pendências e responsáveis para servir de referência quando o escopo mudar",
+          "isCorrect": true
+        },
+        {
+          "text": "Substituir a necessidade de uma proposta formal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Qual destes é um requisito não funcional?",
+      "explanation": "Requisito não funcional descreve uma qualidade mensurável, como desempenho. As outras três opções são capacidades que alguém usa (listar, enviar, acessar), portanto requisitos funcionais.",
+      "options": [
+        {
+          "text": "Exibir a lista de cursos técnicos em cards",
+          "isCorrect": false
+        },
+        {
+          "text": "Enviar a manifestação de interesse para o e-mail da secretaria",
+          "isCorrect": false
+        },
+        {
+          "text": "Mostrar um botão de acesso ao ambiente virtual",
+          "isCorrect": false
+        },
+        {
+          "text": "O maior elemento visível da home deve carregar em até 2,5 s numa conexão móvel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Na história \"Como pessoa que busca formação, quero deixar meus dados, para que o instituto me procure\", qual parte mais ajuda a discutir alternativas?",
+      "explanation": "É o benefício que permite perguntar se existe outro jeito de chegar ao mesmo resultado. O \"como\" identifica a persona, não a tela; o \"quero\" descreve a intenção sem detalhar a implementação; e discutir alternativas é justamente uma das razões de usar histórias.",
+      "options": [
+        {
+          "text": "O \"para que\", porque expressa o benefício que a pessoa busca",
+          "isCorrect": true
+        },
+        {
+          "text": "O \"como\", porque define a tela onde a história acontece",
+          "isCorrect": false
+        },
+        {
+          "text": "O \"quero\", porque já descreve a implementação",
+          "isCorrect": false
+        },
+        {
+          "text": "Nenhuma: histórias de usuário não servem para discutir alternativas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "O que caracteriza um bom critério de aceitação?",
+      "explanation": "Dado, Quando, Então torna o pronto verificável por qualquer pessoa. Tecnologia é decisão de implementação, não de aceite; \"intuitiva e agradável\" não pode ser testado; e escrever o critério depois da entrega tira dele a função de guiar o desenvolvimento.",
+      "options": [
+        {
+          "text": "É escrito só depois que a funcionalidade foi entregue",
+          "isCorrect": false
+        },
+        {
+          "text": "Descreve contexto, ação e resultado esperado de forma que possa virar um teste rápido",
+          "isCorrect": true
+        },
+        {
+          "text": "Lista as tecnologias que serão usadas na implementação",
+          "isCorrect": false
+        },
+        {
+          "text": "Diz que a funcionalidade deve ser intuitiva e agradável",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Qual é o maior risco de partir de um template de outro segmento?",
+      "explanation": "No caso, o template era de uma empresa de construção, com textos em inglês; sem um de-para e uma lista de conteúdo a produzir, é fácil sobrar um texto do original. O Figma não tem essa restrição, templates costumam ser responsivos, e o conteúdo do cliente continua sendo dele.",
+      "options": [
+        {
+          "text": "Templates impedirem o site de ser responsivo",
+          "isCorrect": false
+        },
+        {
+          "text": "O cliente ter de pagar direitos sobre o próprio conteúdo",
+          "isCorrect": false
+        },
+        {
+          "text": "Textos e imagens de exemplo do template chegarem à versão publicada",
+          "isCorrect": true
+        },
+        {
+          "text": "O Figma não aceitar arquivos baseados em template",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Por que desenhar o wireframe em tons de cinza e com texto real?",
+      "explanation": "A baixa fidelidade direciona o feedback para ordem, hierarquia e conteúdo, que é o que importa nessa fase; texto real mostra se o conteúdo cabe. O Figma permite cor a qualquer momento, desempenho de carregamento não se aplica a um wireframe, e não há restrição de compartilhamento por cor.",
+      "options": [
+        {
+          "text": "Porque o Figma só permite cor depois de criar componentes",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque texto real carrega mais rápido que lorem ipsum",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque wireframe colorido não pode ser compartilhado",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que o cliente comente estrutura e conteúdo, e não cores",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "O cliente pediu que os cards dos cursos técnicos seguissem o desenho dos profissionalizantes. Qual prática no Figma torna isso uma mudança em um só lugar?",
+      "explanation": "Com um componente principal, alterar o desenho propaga para todas as instâncias, e a variante cobre a diferença entre os tipos. Duplicar e ajustar à mão multiplica o trabalho; agrupar só junta camadas, sem reaproveitamento; e imagem exportada perde a edição.",
+      "options": [
+        {
+          "text": "Ter um componente de card com variante para o tipo de curso",
+          "isCorrect": true
+        },
+        {
+          "text": "Duplicar os frames e ajustar cada card manualmente",
+          "isCorrect": false
+        },
+        {
+          "text": "Agrupar os cards com Ctrl+G",
+          "isCorrect": false
+        },
+        {
+          "text": "Exportar os cards como imagem e reimportar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "No MoSCoW, o que define um item como Must?",
+      "explanation": "Must é o que torna a entrega inviável se faltar. Ênfase do cliente não é critério (pode ser um Should importante), facilidade de implementação não mede valor, e caber no prazo é consequência da priorização, não a sua regra.",
+      "options": [
+        {
+          "text": "É qualquer item que caiba no prazo",
+          "isCorrect": false
+        },
+        {
+          "text": "Sem ele, a entrega falha no seu objetivo principal",
+          "isCorrect": true
+        },
+        {
+          "text": "É o item que o cliente pediu com mais ênfase",
+          "isCorrect": false
+        },
+        {
+          "text": "É o item mais fácil de implementar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Por que definir antes do lançamento o número que derruba uma hipótese?",
+      "explanation": "Fixar o critério antes evita interpretar os dados conforme a conveniência. Ferramentas de análise funcionam sem meta, o pagamento não depende disso no caso, e o objetivo do critério é justamente permitir que a hipótese seja derrubada.",
+      "options": [
+        {
+          "text": "Porque o cliente só paga se a meta for atingida",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque assim a hipótese nunca é derrubada",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque, decidido depois, qualquer resultado tende a parecer bom",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque ferramentas de análise exigem a meta configurada",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Qual destes é o teste de menor custo para saber se o público entende a diferença entre curso técnico e profissionalizante?",
+      "explanation": "O protótipo já existe e revela problemas de entendimento em poucas sessões. Construir o site inteiro é a opção mais cara; uma pesquisa nacional é desproporcional para a pergunta; e o acesso ao ambiente virtual mede outra coisa, o uso por alunos já matriculados.",
+      "options": [
+        {
+          "text": "Desenvolver o site completo e acompanhar o tráfego por três meses",
+          "isCorrect": false
+        },
+        {
+          "text": "Contratar uma pesquisa nacional de mercado",
+          "isCorrect": false
+        },
+        {
+          "text": "Embutir o ambiente virtual no site e medir os acessos",
+          "isCorrect": false
+        },
+        {
+          "text": "Mostrar o protótipo navegável do Figma para cinco pessoas do público",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "moduleId": 4,
+      "question": "Para que serve a seção \"fora do escopo\" na proposta?",
+      "explanation": "Ela vem do grupo Won't e protege as duas partes. Não é lista de incapacidades, não serve para ocultar custos (o oposto: torna explícito o que custaria a mais) e não tem relação com o cronograma.",
+      "options": [
+        {
+          "text": "Deixar escrito o que não será entregue nesta fase, evitando expectativas e conflito no fim",
+          "isCorrect": true
+        },
+        {
+          "text": "Listar os itens que o fornecedor não sabe fazer",
+          "isCorrect": false
+        },
+        {
+          "text": "Esconder custos que serão cobrados depois",
+          "isCorrect": false
+        },
+        {
+          "text": "Substituir o cronograma",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "moduleId": 4,
+      "question": "Por que usar prazos relativos à data de aprovação em vez de datas fixas?",
+      "explanation": "Num caso em que a decisão dependia de vários sócios, a data de início era incerta, e o prazo relativo absorve isso. Datas fixas não são proibidas, a estimativa em horas continua necessária para calcular as durações, e prazo relativo não autoriza atrasar sem comunicar.",
+      "options": [
+        {
+          "text": "Porque assim o prazo pode ser estendido sem aviso",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o cronograma continua válido mesmo que a aprovação atrase",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque datas fixas são proibidas em propostas",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque prazos relativos dispensam estimar horas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "moduleId": 4,
+      "question": "Qual é a forma adequada de tratar um pedido novo do cliente depois da proposta aprovada?",
+      "explanation": "O controle de mudanças torna o impacto em prazo e custo visível antes da decisão. Incluir sem custo alimenta o crescimento de escopo que apareceu no caso; recusar tudo ignora que o projeto aprende; e cobrar depois gera exatamente o conflito que a proposta queria evitar.",
+      "options": [
+        {
+          "text": "Recusar qualquer mudança até o fim do projeto",
+          "isCorrect": false
+        },
+        {
+          "text": "Fazer primeiro e cobrar no fim",
+          "isCorrect": false
+        },
+        {
+          "text": "Registrar, estimar e aprovar o pedido antes de começar a fazer",
+          "isCorrect": true
+        },
+        {
+          "text": "Incluir sem custo para manter a boa relação",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "O pacote completo de levantamento de um projeto de cliente: roteiro de entrevista, declaração do problema, personas, requisitos numerados, histórias com critérios de aceitação, mapa de seções, wireframe e mockup navegável no Figma, matriz MoSCoW, cartões de hipótese, uma landing mínima em React e a proposta de escopo com riscos.",
+    "highlights": [
+      "Requisitos e histórias testáveis",
+      "Mockup navegável no Figma",
+      "Proposta de escopo com MVP recortado"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "Ferramentas de design e de código ficaram mais rápidas, inclusive com ajuda de IA. Isso deixa mais barato construir e, por consequência, mais caro construir a coisa errada. A habilidade que se valoriza é decidir o que construir e provar que valeu a pena.",
+      "Para quem atende clientes como freelancer, agência ou equipe interna, o levantamento é o que separa um projeto que termina de um projeto que se arrasta. Escopo claro, MVP recortado e proposta com bordas definidas protegem o prazo, a margem e a relação com o cliente."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Sites institucionais e landing pages",
+        "description": "Projetos de cliente em que o escopo costuma crescer a cada reunião."
+      },
+      {
+        "label": "Produtos digitais em fase inicial",
+        "description": "Quando é preciso decidir o primeiro recorte e como validá-lo."
+      },
+      {
+        "label": "Propostas comerciais de software",
+        "description": "Escopo, prazos relativos, riscos e controle de mudanças."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem começa a atender clientes",
+        "description": "Desenvolvedores e designers que precisam conduzir a conversa antes de abrir o editor."
+      },
+      {
+        "label": "Quem quer migrar para produto",
+        "description": "Pessoas que querem praticar descoberta, priorização e validação num caso concreto."
+      },
+      {
+        "label": "Quem já perdeu prazo por escopo",
+        "description": "Quem viveu um projeto que não terminava e quer um método para evitar a repetição."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Histórias de usuário, critérios de aceitação, MoSCoW e protótipos navegáveis são práticas correntes em agências, consultorias, times de produto e profissionais autônomos. Elas aparecem com nomes diferentes, mas resolvem o mesmo problema: chegar a um acordo sobre o que será entregue antes de entregar.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Atlassian — Histórias dos usuários com exemplos e um template",
+      "url": "https://www.atlassian.com/br/agile/project-management/user-stories"
+    },
+    {
+      "label": "Agile Business Consortium — MoSCoW Prioritization Template and Poster",
+      "url": "https://www.agilebusiness.org/resource/moscow-prioritization-template/"
+    },
+    {
+      "label": "Wikipedia — MoSCoW method",
+      "url": "https://en.wikipedia.org/wiki/MoSCoW_method"
+    },
+    {
+      "label": "Figma — Figma for wireframing",
+      "url": "https://www.figma.com/wireframe-tool/"
+    }
+  ]
 }
