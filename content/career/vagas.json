@@ -110,5 +110,67 @@
     "thumb": "./assets/thumb_jobs/workana.jpg",
     "site_url": "https://www.workana.com/jobs",
     "category": "Freelance"
+  },
+  {
+    "title": "Santander Open Academy",
+    "duration": "Bolsas",
+    "thumb": "/media/career/santander-open-academy.webp",
+    "site_url": "https://www.santanderopenacademy.com/pt_br",
+    "category": "Scholarships",
+    "slug": "santander-open-academy",
+    "detalhe": {
+      "resumo": "Plataforma global de aprendizagem e bolsas do Banco Santander, com cursos online gratuitos e programas com vagas limitadas em temas como tecnologia, dados, IA, idiomas e habilidades profissionais. Não é preciso ser cliente do banco para participar.",
+      "paragrafos": [
+        "A Santander Open Academy reúne cursos, bolsas e conteúdos financiados pelo Banco Santander. Segundo a própria plataforma, todos os cursos são gratuitos para quem participa, e o cadastro não exige ser cliente. O conteúdo é oferecido principalmente em espanhol, português e inglês, e parte dos programas é feita com parceiros, como o curso de inteligência artificial lançado com o Google.",
+        "Há dois tipos principais de oferta. Os cursos de acesso direto são de autoformação, sem horário fixo e sem limite de vagas, geralmente para maiores de 16 ou 18 anos. Já as bolsas e programas com vagas limitadas passam por seleção: cada um tem termos legais próprios, com requisitos de idade, país ou vínculo com universidade, e algumas convocatórias incluem um teste online que só pode ser feito uma vez.",
+        "Para participar, crie uma conta com um e-mail ainda não cadastrado, confirme o endereço pelo e-mail de verificação e escolha os programas. O resultado das candidaturas aparece na área Minha aprendizagem e também chega por e-mail; quem é selecionado precisa aceitar a vaga para garantir o lugar. É possível se candidatar a mais de um programa.",
+        "Ao concluir um curso, a pessoa recebe um certificado de conclusão, desde que termine todos os módulos e acerte pelo menos 70% da autoavaliação. A plataforma deixa claro que esse certificado não dá créditos acadêmicos nem é uma certificação oficial. Ele vale como registro de estudo no currículo e no LinkedIn, e fica mais forte quando vem acompanhado de um projeto prático que mostre o que você aprendeu.",
+        "Leia sempre os termos legais de cada bolsa antes de se inscrever, principalmente prazos, requisitos e compromissos de dedicação. Desconfie de mensagens que peçam pagamento ou dados bancários em nome da plataforma: as inscrições acontecem no site oficial. E, como as convocatórias abrem e fecham ao longo do ano, vale visitar a página de bolsas com frequência."
+      ],
+      "imagens": [
+        {
+          "url": "/media/career/detalhe/santander-open-academy.webp",
+          "alt": "Capa ilustrada com o título Santander Open Academy: cursos gratuitos e bolsas",
+          "legenda": "Ilustração própria do LearnTECH."
+        }
+      ],
+      "links": [
+        {
+          "label": "Santander Open Academy (português)",
+          "url": "https://www.santanderopenacademy.com/pt_br/user/index.html"
+        },
+        {
+          "label": "Cursos de dados, IA e tecnologia",
+          "url": "https://www.santanderopenacademy.com/en/sites/courses/tech.html"
+        },
+        {
+          "label": "Bolsas e programas",
+          "url": "https://www.santanderopenacademy.com/en/sites/scholarships.html"
+        },
+        {
+          "label": "Perguntas frequentes",
+          "url": "https://www.santanderopenacademy.com/en/faq.html"
+        },
+        {
+          "label": "Educação no Santander Brasil",
+          "url": "https://www.santander.com.br/educacao"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Santander Open Academy: Frequently asked questions",
+          "url": "https://www.santanderopenacademy.com/en/faq.html"
+        },
+        {
+          "label": "Santander Brasil: Educação",
+          "url": "https://www.santander.com.br/educacao"
+        },
+        {
+          "label": "Blog Santander: Santander e Google lançam curso gratuito de Inteligência Artificial",
+          "url": "https://www.santander.com.br/blog/educacao-financeira/santander-open-academy/"
+        }
+      ],
+      "atualizadoEm": "2026-10-28"
+    }
   }
 ]

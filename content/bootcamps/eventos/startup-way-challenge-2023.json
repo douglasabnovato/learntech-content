@@ -1,0 +1,29 @@
+{
+  "id": "22",
+  "slug": "startup-way-challenge-2023",
+  "title": "Startup Way Challenge 2023",
+  "institution": "Estácio e Sebrae",
+  "description": "Desafio online de empreendedorismo para alunos da Estácio, com palestras, mentorias, entregas de modelagem de negócio e banca de pitch.",
+  "coverImage": "/media/bootcamps/eventos/startup-way-challenge-2023/capa.webp",
+  "altText": "Capa com o título Startup Way Challenge 2023 sobre fundo azul em gradiente",
+  "category": "outros",
+  "status": "concluido",
+  "content": {
+    "longDescription": "O Startup Way Challenge é um desafio acadêmico de empreendedorismo da Estácio com o Sebrae, aberto a alunos de graduação e pós-graduação, com a proposta de gerar negócios inovadores com impacto. A edição do segundo semestre de 2023 foi online e gratuita: inscrições de 12 de setembro a 10 de outubro, em equipes de 3 a 5 alunos, e entregas feitas na plataforma do Sebrae. De 16 a 20 de outubro, palestras ao vivo das 17h às 19h conduziram cada etapa — abertura, escolha do problema, geração de ideias e pitch —, com mentorias agendadas entre equipes e mentores. As equipes entregaram Matriz CSD e mapa de stakeholders (18/10), Lean Canvas e mapa conceitual (19/10) e o pitch gravado (22/10). Uma banca avaliou os pitches por criatividade, aplicabilidade, validação do problema, viabilidade e modelo de monetização; as cinco melhores equipes foram anunciadas em 30 de outubro e se apresentaram ao vivo na banca final de 31 de outubro. Douglas participou como aluno na equipe StartInterns, na mesma semana do CodeXperience 2023.",
+    "curriculum": [
+      "Matriz CSD (certezas, suposições e dúvidas)",
+      "Mapa de stakeholders",
+      "Lean Canvas",
+      "Validação de problema",
+      "Modelo de monetização",
+      "Pitch gravado"
+    ],
+    "officialLink": "",
+    "links": [
+      {
+        "label": "Startup Way Challenge Estácio no Sympla (edição 2021)",
+        "url": "https://www.sympla.com.br/startup-way-challenge---estacio__1289837"
+      }
+    ]
+  }
+}

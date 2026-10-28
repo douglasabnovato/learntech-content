@@ -5,7 +5,63 @@
     "category": "Design",
     "pricing": "Freemium",
     "thumb": "./assets/thumb_tools/figma.jpg",
-    "site_url": "https://www.figma.com/"
+    "site_url": "https://www.figma.com/",
+    "slug": "figma",
+    "detalhe": {
+      "resumo": "Ferramenta de design de interface que roda no navegador e no aplicativo de computador, com edição simultânea, componentes e protótipos navegáveis. É a referência de mercado para desenhar telas e passar o design para o desenvolvimento.",
+      "paragrafos": [
+        "No Figma, as telas são montadas em frames com formas, textos e imagens. Recursos como componentes, variantes e auto layout permitem criar elementos reutilizáveis que se ajustam ao conteúdo, e o modo de protótipo liga as telas entre si para simular a navegação. Como tudo fica na nuvem, várias pessoas podem editar e comentar o mesmo arquivo ao mesmo tempo, e o link do arquivo substitui o envio de imagens soltas.",
+        "O Figma aparece em vagas de UI, UX e produto como ferramenta principal, mas também em vagas de front-end, porque quem desenvolve recebe o design por ele: consulta medidas, cores, fontes e espaçamentos, exporta ícones e entende o comportamento das telas pelo protótipo. Saber ler um arquivo bem organizado e conversar com a pessoa designer sobre ele é uma habilidade valorizada mesmo para quem não vai desenhar.",
+        "No programa MVP na Prática do LearnTECH, o Figma entra no momento em que o briefing do cliente vira mapa de seções e depois mockup. É um uso típico de projeto real: antes de escrever código, a equipe valida com o cliente uma versão visual simples, barata de mudar, e só depois parte para a construção.",
+        "O plano Starter é gratuito e já cobre os recursos usados no curso oficial Figma Design for beginners, publicado em 2025 na central de ajuda, em que se desenha um site de portfólio do zero até um layout responsivo e interativo. Estudantes e educadores de instituições elegíveis, incluindo bootcamps aprovados, podem pedir o Figma for Education, que libera planos pagos sem custo por um período e pode ser renovado.",
+        "Alguns hábitos tornam o arquivo útil para os outros: nomear camadas e páginas, usar componentes em vez de copiar elementos, manter um padrão de cores e textos. Lembre que um protótipo não é o produto, então combine com o time o que está decidido e o que ainda é ideia. Arquivos de cliente costumam ser confidenciais, e imagens e fontes usadas precisam ter licença de uso."
+      ],
+      "imagens": [
+        {
+          "url": "/media/tools/detalhe/figma.webp",
+          "alt": "Capa ilustrada com o título Figma: do mapa de seções ao protótipo navegável",
+          "legenda": "Ilustração própria do LearnTECH."
+        }
+      ],
+      "video": "https://www.youtube.com/embed/TxvFTg1jpI0",
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.figma.com/"
+        },
+        {
+          "label": "Curso oficial Figma Design for beginners (2025)",
+          "url": "https://help.figma.com/hc/en-us/articles/30848209492887-Course-overview-Figma-Design-for-beginners-2025"
+        },
+        {
+          "label": "Cursos, tutoriais e projetos na central de ajuda",
+          "url": "https://help.figma.com/hc/en-us/categories/23557013073047-Courses-tutorials-projects"
+        },
+        {
+          "label": "Figma for Education",
+          "url": "https://www.figma.com/education/"
+        },
+        {
+          "label": "Planos e recursos do Figma",
+          "url": "https://help.figma.com/hc/en-us/articles/360040328273-Figma-plans-and-features"
+        },
+        {
+          "label": "LearnTECH: programa MVP na Prática",
+          "url": "https://learn-tech-pied.vercel.app/program/produtos-digitais/503"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Figma Help Center: Course overview, Figma Design for beginners (2025)",
+          "url": "https://help.figma.com/hc/en-us/articles/30848209492887-Course-overview-Figma-Design-for-beginners-2025"
+        },
+        {
+          "label": "Figma Help Center: Figma for Education",
+          "url": "https://help.figma.com/hc/en-us/articles/360041061214-Figma-for-Education"
+        }
+      ],
+      "atualizadoEm": "2026-10-28"
+    }
   },
   {
     "title": "Balsamiq",
@@ -81,11 +137,67 @@
   },
   {
     "title": "GitHub",
-    "description": "Repositórios Git com Actions, Pages e Projects — a base do trabalho em código.",
+    "description": "Repositórios Git com Actions, Pages e GitHub Projects, que organiza issues e tarefas em quadros kanban — a base do trabalho em código.",
     "category": "Versionamento",
     "pricing": "Freemium",
     "thumb": "./assets/thumb_tools/github.jpg",
-    "site_url": "https://github.com/"
+    "site_url": "https://github.com/",
+    "slug": "github",
+    "detalhe": {
+      "resumo": "Plataforma para hospedar repositórios Git e colaborar em código com pull requests, issues, Actions, Pages e GitHub Projects. Para quem desenvolve, é ao mesmo tempo ferramenta de trabalho e vitrine de portfólio.",
+      "paragrafos": [
+        "O GitHub hospeda repositórios Git e acrescenta em volta deles tudo o que um time precisa para colaborar: pull requests para propor e revisar mudanças, issues para registrar tarefas e bugs, GitHub Actions para automatizar testes e publicação, GitHub Pages para hospedar sites estáticos e GitHub Projects para planejar o trabalho. O plano gratuito já permite repositórios públicos e privados.",
+        "\"Git e GitHub\" aparece em praticamente toda vaga de desenvolvimento, e em muitas de dados, QA e DevOps. Na prática, isso significa saber clonar, criar branches, fazer commits com mensagens claras, abrir um pull request, responder a uma revisão de código e resolver conflitos. Para quem está começando, o perfil no GitHub também funciona como portfólio: recrutadores e pessoas técnicas olham os repositórios fixados e a qualidade dos READMEs.",
+        "O GitHub Projects transforma issues e pull requests em um quadro de planejamento, com visualização em tabela, em quadro kanban e em linha do tempo. Dá para criar campos próprios, como prioridade, estimativa ou iteração, filtrar e salvar visões, e automatizar mudanças de status. Como o quadro está ligado às issues, mudar algo em um lado atualiza o outro. É a ferramenta usada no programa Scrum e Kanban do LearnTECH para montar o quadro de trabalho.",
+        "Para começar, o curso gratuito Introduction to GitHub, do GitHub Skills, leva menos de uma hora e acontece dentro de um repositório de verdade. A documentação oficial tem uma página com recursos de aprendizado de Git e GitHub e um guia rápido de Projects. A série em vídeo GitHub for Beginners, do canal oficial, mostra o fluxo completo de issue, quadro e pull request.",
+        "Alguns cuidados evitam problemas sérios. Nunca envie senhas, tokens ou arquivos .env para um repositório, mesmo privado; use o .gitignore e os segredos do GitHub Actions. Antes de reaproveitar código de outro projeto, veja a licença. E prefira poucos projetos bem documentados a muitos repositórios abandonados: um README que explica o problema, como rodar e o que você aprendeu vale mais que quantidade."
+      ],
+      "imagens": [
+        {
+          "url": "/media/tools/detalhe/github.webp",
+          "alt": "Capa ilustrada com o título GitHub: repositórios, pull requests e GitHub Projects",
+          "legenda": "Ilustração própria do LearnTECH."
+        }
+      ],
+      "video": "https://www.youtube.com/embed/c67GaAkf1BE",
+      "links": [
+        {
+          "label": "Documentação: começar com o GitHub",
+          "url": "https://docs.github.com/en/get-started"
+        },
+        {
+          "label": "Recursos de aprendizado de Git e GitHub",
+          "url": "https://docs.github.com/en/get-started/start-your-journey/git-and-github-learning-resources"
+        },
+        {
+          "label": "Curso Introduction to GitHub (GitHub Skills)",
+          "url": "https://github.com/skills/introduction-to-github"
+        },
+        {
+          "label": "Sobre o GitHub Projects",
+          "url": "https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects"
+        },
+        {
+          "label": "Guia rápido do GitHub Projects",
+          "url": "https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects"
+        },
+        {
+          "label": "LearnTECH: programa Scrum e Kanban",
+          "url": "https://learn-tech-pied.vercel.app/program/projetos/602"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "GitHub Docs: About Projects",
+          "url": "https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects"
+        },
+        {
+          "label": "GitHub Blog: GitHub for Beginners, Issues and Projects",
+          "url": "https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-github-issues-and-projects/"
+        }
+      ],
+      "atualizadoEm": "2026-10-28"
+    }
   },
   {
     "title": "GitLab",
@@ -454,11 +566,310 @@
   },
   {
     "title": "Salesforce Marketing Cloud",
-    "description": "Plataforma de automação de marketing: jornadas, e-mail, SMS e segmentação de dados.",
+    "description": "Automação de marketing com studios de e-mail, mobile e web, jornadas no Journey Builder e personalização em AMPscript e SSJS — pedida em vagas de CRM.",
     "category": "Dados",
     "pricing": "Pago",
     "thumb": "https://www.google.com/s2/favicons?domain=salesforce.com&sz=128",
     "site_url": "https://www.salesforce.com/br/marketing/",
-    "thumbFit": "contain"
+    "thumbFit": "contain",
+    "slug": "salesforce-marketing-cloud",
+    "detalhe": {
+      "resumo": "Plataforma de automação de marketing da Salesforce para e-mail, SMS, push e páginas, com jornadas no Journey Builder e personalização em AMPscript e Server-Side JavaScript. É a ferramenta por trás de muitas vagas de CRM e de CRM Developer.",
+      "paragrafos": [
+        "O Marketing Cloud, que a Salesforce passou a apresentar também como Marketing Cloud Engagement e, no site brasileiro, como Agentforce Marketing, é um conjunto de ferramentas para conversar com clientes em escala. Os nomes mudam com o tempo, mas as peças que aparecem nas vagas continuam as mesmas: estúdios de e-mail, mobile e web (incluindo as CloudPages), o Automation Studio para tarefas agendadas, o Contact Builder para os dados de contato e o Journey Builder para montar jornadas.",
+        "A parte técnica gira em torno de três linguagens. O AMPscript é embutido em e-mails, landing pages, SMS e notificações push e resolve personalização e condições simples no momento do envio. O Server-Side JavaScript (SSJS) roda no servidor, sem acesso ao DOM, e é usado em landing pages e aplicações. E consultas SQL alimentam segmentações e automações sobre as tabelas de dados da conta.",
+        "O artigo do blog do LearnTECH sobre como ler uma vaga analisa justamente um anúncio de CRM Developer Jr de uma agência de CRM: as responsabilidades citavam cloud pages no Marketing Cloud, automações com SQL e SSJS e integrações, mas os requisitos pediam apenas noções de lógica e de JavaScript, AMPscript ou SQL. É um bom exemplo de vaga em que a ferramenta específica se aprende no cargo, desde que a base de programação esteja lá.",
+        "Como o Marketing Cloud é pago e voltado a empresas, o aprendizado inicial costuma acontecer pelo Trailhead, a plataforma gratuita de cursos da Salesforce. A trilha Code with AMPscript, por exemplo, tem quatro módulos e cerca de duas horas, indo da introdução às linguagens até decisões em jornadas. A documentação para desenvolvedores explica a sintaxe do AMPscript e do SSJS com exemplos.",
+        "Quem trabalha com a ferramenta lida com dados pessoais o tempo todo, então a LGPD faz parte da rotina: base legal ou consentimento para o envio, descadastro funcionando e cuidado com listas importadas. Teste cada e-mail e cada jornada com contatos de teste antes de ativar, porque um erro de segmentação chega a milhares de pessoas de uma vez."
+      ],
+      "imagens": [
+        {
+          "url": "/media/tools/detalhe/salesforce-marketing-cloud.webp",
+          "alt": "Capa ilustrada com o título Salesforce Marketing Cloud: CRM, jornadas e AMPscript",
+          "legenda": "Ilustração própria do LearnTECH."
+        }
+      ],
+      "links": [
+        {
+          "label": "Site oficial (Salesforce Brasil)",
+          "url": "https://www.salesforce.com/br/marketing/"
+        },
+        {
+          "label": "Documentação: linguagens programáticas",
+          "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/programmatic-content-overview.html"
+        },
+        {
+          "label": "Documentação: Server-Side JavaScript",
+          "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/ssjs_serverSideJavaScript.html"
+        },
+        {
+          "label": "Trailhead: trilha Code with AMPscript",
+          "url": "https://trailhead.salesforce.com/content/learn/trails/code-with-ampscript"
+        },
+        {
+          "label": "Trailhead: Journey Builder",
+          "url": "https://trailhead.salesforce.com/content/learn/modules/journey-builder-basics/get-started-with-journey-builder"
+        },
+        {
+          "label": "LearnTECH: como ler uma vaga e reconhecer uma boa empresa",
+          "url": "https://learn-tech-pied.vercel.app/blog/como-ler-uma-vaga"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Salesforce Developers: Programmatic Languages",
+          "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/programmatic-content-overview.html"
+        },
+        {
+          "label": "Trailhead: Code with AMPscript",
+          "url": "https://trailhead.salesforce.com/content/learn/trails/code-with-ampscript"
+        }
+      ],
+      "atualizadoEm": "2026-10-28"
+    }
+  },
+  {
+    "title": "Microsoft Excel",
+    "description": "Planilhas com fórmulas, PROCV, tabela dinâmica e gráficos — ainda etapa comum de prova prática em processos seletivos.",
+    "category": "Dados",
+    "pricing": "Freemium",
+    "thumb": "/media/tools/microsoft-excel.webp",
+    "site_url": "https://www.microsoft.com/pt-br/microsoft-365/excel",
+    "slug": "microsoft-excel",
+    "detalhe": {
+      "resumo": "Planilha da Microsoft para organizar, calcular e analisar dados com fórmulas, tabelas dinâmicas e gráficos. Continua entre os requisitos mais comuns em vagas de escritório, dados e suporte, e aparece com frequência em provas práticas de seleção.",
+      "paragrafos": [
+        "O Excel faz parte do Microsoft 365 e existe em versão para computador, para a web e para celular. A versão web pode ser usada sem custo com uma conta Microsoft, enquanto os recursos completos da versão de computador dependem de assinatura. A lógica é a mesma em todas: dados em células, fórmulas que relacionam essas células e funções prontas para somar, buscar, comparar e resumir informação.",
+        "Quando uma vaga pede Excel intermediário ou avançado, normalmente está falando de um conjunto bem definido de habilidades: funções de busca como PROCV e PROCX, funções condicionais como SE, CONT.SES e SOMASES, filtros, formatação condicional, tabelas dinâmicas e gráficos. Esse pedido aparece em vagas administrativas, financeiras, de CRM, de suporte e de análise de dados, inclusive em empresas de tecnologia.",
+        "Em muitos processos seletivos o Excel deixa de ser só uma linha no currículo e vira prova prática: a pessoa recebe uma base de dados e precisa responder perguntas com fórmulas ou montar um resumo em tabela dinâmica dentro de um tempo limitado. Seleções internas também fazem isso. O artigo do blog do LearnTECH sobre processo seletivo traz o exemplo de um comunicado de promoção que incluía prova de Excel ao lado de redação e entrevista com banca.",
+        "Para começar, a central de aprendizagem do Excel da Microsoft tem tutoriais curtos em português sobre tarefas básicas, fórmulas e tabelas dinâmicas. Um bom exercício é montar uma planilha real, como o controle das suas candidaturas com empresa, vaga, etapa e próxima ação, e depois resumi-la com uma tabela dinâmica e um gráfico. Treinar com dados próprios fixa mais do que repetir exemplos prontos.",
+        "Alguns cuidados valem para o trabalho e para as provas. A função PROCX só existe nas versões mais recentes, então vale saber resolver o mesmo problema com PROCV ou ÍNDICE e CORRESP. Evite números digitados dentro das fórmulas, prefira referências a células. E lembre que planilhas com nome, CPF ou contato de pessoas são dados pessoais protegidos pela LGPD: compartilhe só o necessário e com quem precisa."
+      ],
+      "imagens": [
+        {
+          "url": "/media/tools/detalhe/microsoft-excel.webp",
+          "alt": "Capa ilustrada com o título Microsoft Excel: fórmulas, tabelas dinâmicas e provas práticas",
+          "legenda": "Ilustração própria do LearnTECH."
+        }
+      ],
+      "links": [
+        {
+          "label": "Auxílio e aprendizado do Excel (Microsoft)",
+          "url": "https://support.microsoft.com/pt-br/excel/"
+        },
+        {
+          "label": "Tarefas básicas no Excel",
+          "url": "https://support.microsoft.com/pt-br/excel/basic-tasks-in-excel"
+        },
+        {
+          "label": "Função PROCX",
+          "url": "https://support.microsoft.com/pt-br/office/fun%C3%A7%C3%A3o-procx-b7fd680e-6d10-43e6-84f9-88eae8bf5929"
+        },
+        {
+          "label": "Criar uma Tabela Dinâmica",
+          "url": "https://support.microsoft.com/pt-br/office/inserir-uma-tabela-din%C3%A2mica-18fb0032-b01a-4c99-9a5f-7ab09edde05a"
+        },
+        {
+          "label": "Microsoft 365 online grátis (Excel para a web)",
+          "url": "https://www.microsoft.com/en-us/microsoft-365/free-office-online-for-the-web"
+        },
+        {
+          "label": "LearnTECH: como é um processo seletivo e como se preparar",
+          "url": "https://learn-tech-pied.vercel.app/blog/processo-seletivo-como-se-preparar"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Suporte da Microsoft: Auxílio e aprendizado do Excel",
+          "url": "https://support.microsoft.com/pt-br/excel/"
+        },
+        {
+          "label": "Suporte da Microsoft: Função PROCX",
+          "url": "https://support.microsoft.com/pt-br/office/fun%C3%A7%C3%A3o-procx-b7fd680e-6d10-43e6-84f9-88eae8bf5929"
+        }
+      ],
+      "atualizadoEm": "2026-10-28"
+    }
+  },
+  {
+    "title": "Google Planilhas",
+    "description": "Planilhas no navegador com edição simultânea, histórico de versões e conexão direta com o Data Studio.",
+    "category": "Dados",
+    "pricing": "Gratuito",
+    "thumb": "/media/tools/google-planilhas.webp",
+    "site_url": "https://workspace.google.com/intl/pt-BR/products/sheets/for-work/",
+    "slug": "google-planilhas",
+    "detalhe": {
+      "resumo": "Editor de planilhas do Google que funciona no navegador, salva sozinho no Drive e permite que várias pessoas editem o mesmo arquivo ao mesmo tempo. É gratuito com uma conta Google e comum em startups, times de operação e provas práticas enviadas por link.",
+      "paragrafos": [
+        "O Google Planilhas faz parte do Google Workspace e roda no navegador e em aplicativos para celular. Cada alteração é salva automaticamente no Google Drive, e o arquivo pode ser compartilhado com permissões de leitura, comentário ou edição. Ele abre e exporta arquivos do Excel, o que facilita trabalhar com quem usa a ferramenta da Microsoft.",
+        "O diferencial está na colaboração: várias pessoas editam ao mesmo tempo, deixam comentários, recebem notificações de mudanças e podem voltar a uma versão anterior pelo histórico de versões. Por isso ele é muito usado para controles do dia a dia, como planos de projeto, listas de tarefas, acompanhamento de métricas e bases pequenas de dados que precisam ficar acessíveis a todo o time.",
+        "Nas vagas, o Planilhas costuma aparecer junto com o Excel, como \"Excel ou Google Planilhas\". Os conceitos são os mesmos: fórmulas, funções de busca, filtros, tabelas dinâmicas e gráficos. Em processos seletivos, é comum a prova prática chegar como uma planilha compartilhada, e quem já está acostumado a trabalhar com permissões e histórico de versões entrega com mais segurança.",
+        "Para começar, o Centro de aprendizagem do Google Workspace tem guias de primeiros passos, uma folha de referência para imprimir e um guia específico para quem está migrando do Excel. Há também guias de produtividade para importar, limpar e analisar dados. Uma forma prática de treinar é refazer no Planilhas uma planilha que você já usa e compartilhar com alguém para editar junto.",
+        "Cuidado com o compartilhamento. A opção \"qualquer pessoa com o link\" é prática, mas expõe o conteúdo a quem receber o endereço, então não use para planilhas com dados pessoais. Ao entregar uma prova, confira se a pessoa avaliadora tem acesso e se o arquivo não depende de dados de outra planilha que ela não consegue abrir. Recursos de IA para preencher ou analisar dados ajudam, mas o resultado precisa ser conferido."
+      ],
+      "imagens": [
+        {
+          "url": "/media/tools/detalhe/google-planilhas.webp",
+          "alt": "Capa ilustrada com o título Google Planilhas: planilha colaborativa no navegador",
+          "legenda": "Ilustração própria do LearnTECH."
+        }
+      ],
+      "links": [
+        {
+          "label": "Treinamento e ajuda do Planilhas Google",
+          "url": "https://support.google.com/a/users/answer/9282959?hl=pt-BR"
+        },
+        {
+          "label": "Migrar do Microsoft Excel para o Planilhas",
+          "url": "https://support.google.com/a/users/answer/13189180?hl=pt-BR"
+        },
+        {
+          "label": "Ajuda dos Editores de Documentos Google",
+          "url": "https://support.google.com/docs/?hl=pt-BR"
+        },
+        {
+          "label": "LearnTECH: como é um processo seletivo e como se preparar",
+          "url": "https://learn-tech-pied.vercel.app/blog/processo-seletivo-como-se-preparar"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Centro de aprendizagem do Google Workspace: Treinamento e ajuda do Planilhas Google",
+          "url": "https://support.google.com/a/users/answer/9282959?hl=pt-BR"
+        }
+      ],
+      "atualizadoEm": "2026-10-28"
+    }
+  },
+  {
+    "title": "GLPI",
+    "description": "Software livre de service desk e inventário de TI: chamados, ativos e base de conhecimento num só sistema.",
+    "category": "Produtividade",
+    "pricing": "Freemium",
+    "thumb": "/media/tools/glpi.webp",
+    "site_url": "https://www.glpi-project.org/",
+    "slug": "glpi",
+    "detalhe": {
+      "resumo": "Software livre de gestão de serviços de TI que reúne chamados, inventário de equipamentos, licenças e base de conhecimento. É um sistema que muita gente encontra no primeiro emprego em suporte técnico ou service desk.",
+      "paragrafos": [
+        "O GLPI é um sistema web, escrito em PHP e distribuído sob a licença GPL-3.0, para organizar o trabalho de uma área de TI. Ele cobre o service desk no estilo ITIL (abertura, categorização, atendimento e solução de chamados), o inventário de computadores e outros ativos, o controle de licenças de software e contratos, a gestão de data center e uma base de conhecimento com soluções documentadas.",
+        "O projeto nasceu em 2003, criado pela associação INDEPNET. Desde 2015 é editado pela empresa francesa Teclib, que mantém o desenvolvimento, oferece uma versão em nuvem chamada GLPI Network Cloud, treinamentos e uma rede de parceiros. O inventário automático dos equipamentos é feito pelo GLPI Agent, outro projeto da mesma organização no GitHub.",
+        "Para quem está entrando em suporte técnico, help desk ou infraestrutura, conhecer um sistema de chamados é tão importante quanto saber resolver o problema em si. No GLPI aparecem conceitos que se repetem em qualquer ferramenta do tipo: fila de atendimento, prioridade, prazo de atendimento (SLA), escalonamento, registro do que foi feito e transformação de soluções recorrentes em artigos da base de conhecimento.",
+        "Dá para aprender montando um ambiente de teste: o GLPI roda em um servidor com PHP e banco MySQL ou MariaDB, e a página de downloads e a central de ajuda oficial trazem instruções de instalação. Depois, simule um fluxo completo: cadastre alguns equipamentos, abra um chamado como usuário, atenda como técnico, registre a solução e crie um artigo na base de conhecimento. Esse exercício rende uma boa história para entrevistas.",
+        "Em produção, alguns cuidados são essenciais. Mantenha o sistema atualizado, porque correções de segurança saem nas novas versões. Avalie bem os plugins de terceiros antes de instalar. Configure os perfis de acesso para que cada pessoa veja só o que precisa, e lembre que chamados costumam conter nomes, e-mails e telefones, ou seja, dados pessoais que a LGPD protege."
+      ],
+      "imagens": [
+        {
+          "url": "/media/tools/detalhe/glpi.webp",
+          "alt": "Capa ilustrada com o título GLPI: chamados e inventário de TI em software livre",
+          "legenda": "Ilustração própria do LearnTECH."
+        }
+      ],
+      "links": [
+        {
+          "label": "GLPI Help Center (documentação)",
+          "url": "https://help.glpi-project.org/"
+        },
+        {
+          "label": "Downloads do GLPI",
+          "url": "https://www.glpi-project.org/en/downloads/"
+        },
+        {
+          "label": "Treinamentos oficiais",
+          "url": "https://www.glpi-project.org/en/trainings/"
+        },
+        {
+          "label": "Comunidade GLPI",
+          "url": "https://www.glpi-project.org/en/community/"
+        },
+        {
+          "label": "Código-fonte no GitHub",
+          "url": "https://github.com/glpi-project/glpi"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "GLPI Project: About Teclib",
+          "url": "https://www.glpi-project.org/en/about-us/"
+        },
+        {
+          "label": "GitHub: organização glpi-project",
+          "url": "https://github.com/glpi-project"
+        },
+        {
+          "label": "GLPI Project: New GLPI Help Center",
+          "url": "https://www.glpi-project.org/en/discover-the-new-glpi-help-center/"
+        }
+      ],
+      "atualizadoEm": "2026-10-28"
+    }
+  },
+  {
+    "title": "CryptoJS",
+    "description": "Biblioteca JavaScript de hashes e cifras como AES e SHA-256, hoje descontinuada em favor da Web Crypto nativa.",
+    "category": "Código",
+    "pricing": "Gratuito",
+    "thumb": "/media/tools/cryptojs.webp",
+    "site_url": "https://github.com/brix/crypto-js",
+    "slug": "cryptojs",
+    "detalhe": {
+      "resumo": "Biblioteca JavaScript de hashes e cifras, como SHA-256, HMAC, PBKDF2 e AES, que foi muito usada em projetos web e Node.js. Hoje está descontinuada, e o próprio projeto recomenda usar o módulo de criptografia nativo da plataforma.",
+      "paragrafos": [
+        "O CryptoJS reúne em uma biblioteca só implementações de funções de hash (como MD5, SHA-1, SHA-256 e SHA-3), HMAC, derivação de chave com PBKDF2 e cifras simétricas como AES. Por ter uma interface simples, virou presença comum em tutoriais, projetos de front-end, aplicativos React Native e integrações em Node.js escritas nos últimos dez anos.",
+        "O repositório oficial avisa: \"Active development of CryptoJS has been discontinued. This library is no longer maintained.\" A última versão é a 4.2.0, que corrigiu um problema sério: versões anteriores usavam por padrão parâmetros fracos no PBKDF2, registrado no alerta de segurança CVE-2023-46233. Se você encontrar o CryptoJS em um projeto, o primeiro passo é conferir a versão.",
+        "Na prática de mercado, o CryptoJS quase nunca aparece como requisito de vaga, mas aparece muito em código legado. Saber reconhecer o que ele está fazendo e planejar a troca é uma habilidade valorizada. Esse é o tipo de decisão trabalhado no programa Segurança de Dados e LGPD do LearnTECH, que mostra quando usar hash, quando usar criptografia e como proteger senhas e campos sigilosos no banco e no app.",
+        "Para código novo, use o que a plataforma já oferece. No navegador, a Web Crypto API, pelo objeto crypto.subtle, faz hash, assinatura e cifra com AES-GCM. No Node.js, o módulo crypto cumpre o mesmo papel. Para senhas, nem CryptoJS nem um SHA-256 simples: o recomendado é um algoritmo próprio para senhas, como Argon2id, scrypt, bcrypt ou PBKDF2 com muitas iterações, aplicado no servidor, como orienta a OWASP.",
+        "Um cuidado que vale para qualquer biblioteca: criptografar no front-end não protege um segredo se a chave estiver no próprio código enviado ao navegador ou ao aplicativo, porque qualquer pessoa pode extraí-la. MD5 e SHA-1 não devem ser usados para segurança. E chaves, senhas e tokens não devem ficar no repositório; guarde-os em variáveis de ambiente ou em um cofre de segredos."
+      ],
+      "imagens": [
+        {
+          "url": "/media/tools/detalhe/cryptojs.webp",
+          "alt": "Capa ilustrada com o título CryptoJS: o que fazer com uma biblioteca descontinuada",
+          "legenda": "Ilustração própria do LearnTECH."
+        }
+      ],
+      "links": [
+        {
+          "label": "Repositório oficial no GitHub",
+          "url": "https://github.com/brix/crypto-js"
+        },
+        {
+          "label": "Pacote no npm",
+          "url": "https://www.npmjs.com/package/crypto-js"
+        },
+        {
+          "label": "Web Crypto API (MDN)",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API"
+        },
+        {
+          "label": "Módulo crypto do Node.js",
+          "url": "https://nodejs.org/docs/latest-v24.x/api/crypto.html"
+        },
+        {
+          "label": "LearnTECH: programa Segurança de Dados e LGPD",
+          "url": "https://learn-tech-pied.vercel.app/program/data-base/404"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "GitHub: brix/crypto-js (README)",
+          "url": "https://github.com/brix/crypto-js"
+        },
+        {
+          "label": "GitHub Advisory Database: CVE-2023-46233 (crypto-js PBKDF2)",
+          "url": "https://github.com/advisories/GHSA-xwcq-pm8m-c4vf"
+        },
+        {
+          "label": "OWASP Cheat Sheet Series: Password Storage",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html"
+        },
+        {
+          "label": "MDN: SubtleCrypto",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto"
+        }
+      ],
+      "atualizadoEm": "2026-10-28"
+    }
   }
 ]

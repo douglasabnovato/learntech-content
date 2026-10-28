@@ -166,6 +166,8 @@ export function verificarIntegridade(c: Conteudo, pastaMidia: string): string[] 
   const listas = { empresas: c.empresas, vagas: c.vagas, perfis: c.perfis, ferramentas: c.ferramentas, hospedagens: c.hospedagens };
   for (const [nome, itens] of Object.entries(listas)) {
     repetidos(itens.map((i) => i.title.toLowerCase())).forEach((t) => erros.push(`${nome}: título "${t}" repetido`));
+    repetidos(itens.flatMap((i) => (i.slug ? [i.slug] : []))).forEach((s) => erros.push(`${nome}: slug "${s}" repetido`));
+    for (const i of itens) if (i.detalhe && !i.slug) erros.push(`${nome}: "${i.title}" tem detalhe mas não tem slug`);
   }
   if (!c.vagas.some((v) => v.title === c.destaques.vaga)) erros.push(`destaques: vaga "${c.destaques.vaga}" não existe em vagas.json`);
   if (!c.empresas.some((v) => v.title === c.destaques.empresa)) erros.push(`destaques: empresa "${c.destaques.empresa}" não existe em empresas.json`);

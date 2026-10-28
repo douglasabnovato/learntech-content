@@ -1,5 +1,5 @@
 {
-  "atualizadoEm": "2026-09-27",
+  "atualizadoEm": "2026-10-28",
   "referencias": [
     {
       "nome": "ACM/IEEE-CS/AAAI Computer Science Curricula 2023",
@@ -162,7 +162,7 @@
       "observacao": "Ferrex aguarda confirmação do papel e do que foi o evento."
     },
     {
-      "pasta": "eventos/codexperience-21-22-10-2023",
+      "pasta": "hd/eventos/codexperience-21-22-10-2023 (EV-001)",
       "descricao": "Fotos da 1ª edição do CodeXperience Zona da Mata",
       "status": "publicado",
       "destinos": [
@@ -172,11 +172,19 @@
           "ids": [
             "codexperience"
           ]
+        },
+        {
+          "projeto": "learn-tech",
+          "recurso": "paginas",
+          "ids": [
+            "blog"
+          ]
         }
-      ]
+      ],
+      "observacao": "Piloto do processo em 27/10/2026: 10 fotos novas na galeria (7 a 16.webp, tratadas por scripts/tratar-fotos.py), reaproveitadas no artigo eventos-de-comunidade-tech do blog do learn-tech. Vídeo provisório público até o MVI_5108.MP4 ir para o YouTube do autor. Inventário em docs/ecossistema/01-inventario-eventos.md."
     },
     {
-      "pasta": "conteudos-writer/eventos-codexperience",
+      "pasta": "hd/eventos/eventos-codexperience (EV-003)",
       "descricao": "Arte e apresentações das edições 2024 e 2025",
       "status": "publicado",
       "destinos": [
@@ -206,16 +214,19 @@
       "observacao": "A planilha de viagem tem documentos de terceiros e fica fora."
     },
     {
-      "pasta": "conteudos-writer/startup-way-challenge",
+      "pasta": "hd/eventos/startup-way-challenge (EV-007)",
       "descricao": "Cronograma e regulamento do Startup Way Challenge 2023",
-      "status": "planejado",
+      "status": "publicado",
       "destinos": [
         {
           "projeto": "bootcamps",
-          "recurso": "eventos"
+          "recurso": "eventos",
+          "ids": [
+            "startup-way-challenge-2023"
+          ]
         }
       ],
-      "observacao": "Aguardando confirmação da participação e uma imagem de capa."
+      "observacao": "Página criada em 28/10/2026 só com regulamento e cronograma; sem galeria, sem nomes de mentores. Fase alcançada e material da equipe pendentes."
     },
     {
       "pasta": "personal-project/1-selection_process (vagas, processos, entrevistas)",
@@ -334,6 +345,181 @@
       "status": "fora-do-escopo",
       "destinos": [],
       "observacao": "Não publicar (LGPD e privacidade)."
+    },
+    {
+      "pasta": "hd/blogs-pdf-docs (DOC-004, DOC-006)",
+      "descricao": "Projeto de site institucional de um cliente, anonimizado como Instituto Aurora de Educação em Saúde",
+      "status": "publicado",
+      "destinos": [
+        {
+          "projeto": "learn-tech",
+          "recurso": "programas",
+          "ids": [
+            "503"
+          ]
+        },
+        {
+          "projeto": "learn-tech",
+          "recurso": "paginas",
+          "ids": [
+            "blog"
+          ]
+        }
+      ],
+      "observacao": "Programa 503 e artigo proposta-freelancer-escopo-prazo-preco."
+    },
+    {
+      "pasta": "hd/blogs-pdf-docs (DOC-003, DOC-022)",
+      "descricao": "Método de rotina, kanban e IA como mentora do autor, sem nomes de projetos",
+      "status": "publicado",
+      "destinos": [
+        {
+          "projeto": "learn-tech",
+          "recurso": "programas",
+          "ids": [
+            "602"
+          ]
+        },
+        {
+          "projeto": "learn-tech",
+          "recurso": "paginas",
+          "ids": [
+            "blog"
+          ]
+        }
+      ],
+      "observacao": "Programa 602 e artigo rotina-desenvolvedor."
+    },
+    {
+      "pasta": "hd/blogs-pdf-docs (DOC-010, DOC-011, DOC-028)",
+      "descricao": "LGPD, aviso de privacidade de recrutamento e persistência segura em apps",
+      "status": "publicado",
+      "destinos": [
+        {
+          "projeto": "learn-tech",
+          "recurso": "programas",
+          "ids": [
+            "404"
+          ]
+        },
+        {
+          "projeto": "learn-tech",
+          "recurso": "paginas",
+          "ids": [
+            "blog"
+          ]
+        },
+        {
+          "projeto": "tools",
+          "recurso": "ferramentas",
+          "ids": [
+            "CryptoJS"
+          ]
+        }
+      ],
+      "observacao": "Programa 404 e artigo lgpd-seus-dados-ao-se-candidatar."
+    },
+    {
+      "pasta": "hd/blogs-pdf-docs (DOC-005, DOC-008, DOC-012, DOC-025, DOC-026, DOC-027, DOC-051, DOC-057)",
+      "descricao": "Processos seletivos, vagas, testes técnicos, perfil e networking, anonimizados (um banco digital, uma agência de CRM)",
+      "status": "publicado",
+      "destinos": [
+        {
+          "projeto": "learn-tech",
+          "recurso": "paginas",
+          "ids": [
+            "blog"
+          ]
+        }
+      ],
+      "observacao": "Artigos processo-seletivo-como-se-preparar, como-ler-uma-vaga, testes-tecnicos-online, perfil-encontravel-linkedin e networking-pitch-60-segundos."
+    },
+    {
+      "pasta": "hd/blogs-pdf-docs (DOC-014, DOC-015, DOC-017, DOC-019, DOC-020, DOC-024, DOC-029, DOC-060)",
+      "descricao": "Editais de treinamento profissional e programas de formação",
+      "status": "publicado",
+      "destinos": [
+        {
+          "projeto": "learn-tech",
+          "recurso": "paginas",
+          "ids": [
+            "blog"
+          ]
+        },
+        {
+          "projeto": "tools",
+          "recurso": "ferramentas",
+          "ids": [
+            "GLPI"
+          ]
+        }
+      ],
+      "observacao": "Artigos bolsas-universidade-como-ler-edital e escolher-formacao-dev."
+    },
+    {
+      "pasta": "hd/blogs-pdf-docs/digital_library (DOC-033, DOC-034, DOC-037, DOC-038, DOC-042, DOC-043)",
+      "descricao": "Livros usados só como referência, com citações curtas",
+      "status": "publicado",
+      "destinos": [
+        {
+          "projeto": "learn-tech",
+          "recurso": "paginas",
+          "ids": [
+            "blog"
+          ]
+        }
+      ],
+      "observacao": "Artigos financas-primeiro-salario-tech, comunicacao-nao-verbal-entrevistas, cultura-de-empresa-tech e rotina-desenvolvedor."
+    },
+    {
+      "pasta": "hd/blogs-pdf-docs (DOC-027, DOC-030, DOC-050, DOC-052)",
+      "descricao": "Ferramentas de dados e CRM citadas em vagas e provas práticas",
+      "status": "publicado",
+      "destinos": [
+        {
+          "projeto": "tools",
+          "recurso": "ferramentas",
+          "ids": [
+            "Microsoft Excel",
+            "Google Planilhas",
+            "Salesforce Marketing Cloud"
+          ]
+        }
+      ],
+      "observacao": "Fichas novas de Excel e Google Planilhas; descrição ampliada do Salesforce Marketing Cloud."
+    },
+    {
+      "pasta": "hd/eventos/eventos-oportunidades-2 (EV-005)",
+      "descricao": "Capturas de oportunidades de 2024; nenhuma publicada",
+      "status": "publicado",
+      "destinos": [
+        {
+          "projeto": "career",
+          "recurso": "vagas",
+          "ids": [
+            "Santander Open Academy"
+          ]
+        }
+      ],
+      "observacao": "Só a Santander Open Academy virou item da lista de vagas."
+    },
+    {
+      "pasta": "hd/blogs-pdf-docs (DOC-014, DOC-015, DOC-019, DOC-029, DOC-059)",
+      "descricao": "Programas de formação de empresas e escolas citados no acervo, sem afirmar participação",
+      "status": "publicado",
+      "destinos": [
+        {
+          "projeto": "career",
+          "recurso": "empresas",
+          "ids": [
+            "Pitang",
+            "Le Wagon",
+            "Digital House",
+            "Netuno"
+          ]
+        }
+      ],
+      "observacao": "Decisão do Douglas em 28/10/2026: sem prova de participação, entram como empresas no career, não como páginas no bootcamps."
     }
   ]
 }

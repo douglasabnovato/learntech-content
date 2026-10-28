@@ -3,8 +3,1018 @@
   "image": "https://cdn.pixabay.com/photo/2014/09/24/14/29/macbook-459196_1280.jpg",
   "category": "Data Base",
   "categoryFilter": "data-base",
-  "title": "Segurança de Dados: Protegendo Bancos contra Invasões",
-  "lessons": "20+ Lições",
-  "duration": "14hr 30min",
-  "access": "Acesso Livre"
+  "title": "Segurança de Dados e LGPD: Protegendo Informações em Aplicações Reais",
+  "lessons": "20 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Intermediário",
+  "description": "A LGPD vista de dentro do código: os princípios da lei aplicados a uma funcionalidade, consentimento e direitos do titular como telas e endpoints, e as proteções técnicas que mais fazem diferença no banco e no app, de consultas parametrizadas a hash de senha, criptografia e menor privilégio.",
+  "letslearn": [
+    "Aplicar os dez princípios do art. 6º da LGPD aos requisitos de uma funcionalidade",
+    "Escolher a base legal, registrar consentimento e implementar os direitos do titular",
+    "Evitar injeção de SQL com consultas parametrizadas e limitar o estrago com menor privilégio",
+    "Guardar senhas com hash lento, cifrar campos sensíveis e manter as chaves fora do banco",
+    "Proteger tokens no aparelho e saber como agir diante de um incidente"
+  ],
+  "curriculum": "Privacidade e segurança de dados no desenvolvimento",
+  "about": "O programa parte de um resumo dos dez princípios da LGPD do acervo e da própria Lei 13.709/2018, e trata cada princípio como requisito de software. Depois desce para o que a lei chama de medidas técnicas de segurança: o banco, onde os dados se acumulam; as senhas e os campos sigilosos, onde a escolha entre hash e criptografia decide tudo; e o aparelho da pessoa, onde tokens e caches também são dados pessoais. Os exemplos de código são em Node.js com PostgreSQL e em React Native com Expo, e todos mostram a forma segura: quando uma falha é explicada, a correção vem junto. Ao final, a pessoa consegue aplicar os princípios da LGPD a uma funcionalidade, proteger dados sensíveis no banco e no app (hash de senha, criptografia, menor privilégio) e evitar falhas comuns como injeção de SQL.",
+  "materials": [
+    "Modelo de registro de tratamento em JSON",
+    "Exemplos em Node.js com pg, bcrypt, argon2 e node:crypto",
+    "Exemplo de persistência segura com expo-secure-store",
+    "Checklist de privacidade por design para pull requests"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "LGPD para Quem Desenvolve",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Bases Legais, Consentimento e Direitos",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Protegendo o Banco de Dados",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Senhas, Criptografia e Chaves",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 4,
+      "title": "App Seguro e Resposta a Incidentes",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Banco de Dados e Segurança",
+    "mainTitle": "A LGPD acontece no código: em cada campo, cada consulta e cada log.",
+    "introductionParagraphs": [
+      {
+        "title": "Lei que vira requisito",
+        "text": "A Lei 13.709/2018 lista **dez princípios** para qualquer tratamento de dados pessoais. Finalidade, necessidade, transparência e segurança parecem conceitos jurídicos, mas viram decisões concretas: que campo o formulário pede, por quanto tempo a tabela guarda e quem consegue ler a coluna."
+      },
+      {
+        "title": "As falhas mais comuns são antigas",
+        "text": "Injeção de SQL, senha guardada de forma reversível, chave de criptografia ao lado do dado e token em armazenamento sem proteção continuam aparecendo em sistemas novos. Todas têm **correção conhecida e barata** quando aplicada desde o início."
+      },
+      {
+        "title": "Do servidor ao aparelho",
+        "text": "O programa percorre o caminho do dado: a decisão de coletar, o banco, a criptografia, o **app no celular da pessoa** e o plano para quando algo dá errado."
+      }
+    ],
+    "courseAboutTitle": "Privacidade como decisão de engenharia",
+    "courseAboutDescription": "O objetivo não é transformar quem desenvolve em especialista jurídico, e sim dar repertório para conversar com o jurídico e tomar as decisões técnicas certas. Cada módulo termina com uma prática que pode ser aplicada no próximo pull request.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: LGPD para Quem Desenvolve",
+        "items": [
+          {
+            "label": "Dado pessoal, dado sensível e tratamento",
+            "description": "Classifique cada coluna de uma tabela real como dado pessoal, sensível ou metadado, a partir das definições do art. 5º."
+          },
+          {
+            "label": "Finalidade, adequação e necessidade definem o formulário",
+            "description": "Use finalidade, adequação e necessidade para decidir quais campos o formulário realmente pede."
+          },
+          {
+            "label": "Livre acesso, qualidade e transparência viram telas",
+            "description": "Transforme livre acesso, qualidade e transparência em uma área \"Meus dados\" e em um aviso que se consegue ler."
+          },
+          {
+            "label": "Segurança, prevenção, não discriminação e responsabilização",
+            "description": "Feche os princípios com segurança, prevenção, não discriminação e um registro de tratamento versionado."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Bases Legais, Consentimento e Direitos",
+        "items": [
+          {
+            "label": "Escolha a base legal antes de escrever o código",
+            "description": "Conheça as bases legais do art. 7º e veja como cada uma muda o comportamento do sistema."
+          },
+          {
+            "label": "Consentimento separado, específico e revogável",
+            "description": "Modele consentimentos separados por finalidade, com versão do texto e revogação tão fácil quanto aceitar."
+          },
+          {
+            "label": "Direitos do titular viram endpoints",
+            "description": "Implemente acesso, correção, portabilidade e eliminação como rotas que usam o id da sessão."
+          },
+          {
+            "label": "Retenção e eliminação programadas",
+            "description": "Defina prazos de retenção e implemente a limpeza ou anonimização como tarefa agendada."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Protegendo o Banco de Dados",
+        "items": [
+          {
+            "label": "Consulta parametrizada em vez de concatenação",
+            "description": "Entenda por que concatenar SQL abre espaço para injeção e corrija com consultas parametrizadas no pg."
+          },
+          {
+            "label": "Lista permitida para o que não pode ser parâmetro",
+            "description": "Use lista permitida para colunas e direção de ordenação, que não podem ser parâmetro."
+          },
+          {
+            "label": "Conta da aplicação com o menor privilégio",
+            "description": "Crie uma conta de banco com o menor privilégio e visões sem identificadores para relatórios."
+          },
+          {
+            "label": "Backups protegidos e logs sem dado pessoal",
+            "description": "Proteja backups e configure o logger para não registrar senha, token, CPF ou e-mail."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Senhas, Criptografia e Chaves",
+        "items": [
+          {
+            "label": "Senha se guarda como hash lento com sal",
+            "description": "Guarde senhas com bcrypt, sal automático e custo adequado, respeitando o limite de 72 bytes."
+          },
+          {
+            "label": "Argon2id para sistemas novos",
+            "description": "Adote Argon2id com os parâmetros mínimos da OWASP e migre hashes antigos no login."
+          },
+          {
+            "label": "AES-256-GCM com node:crypto para dados que precisam voltar",
+            "description": "Cifre campos que precisam ser lidos de volta com AES-256-GCM e IV novo a cada cifragem."
+          },
+          {
+            "label": "A chave fica fora do banco, e a busca usa um índice",
+            "description": "Mantenha a chave em um cofre de segredos e use HMAC como índice para buscar campos cifrados."
+          }
+        ]
+      },
+      {
+        "moduleId": 4,
+        "title": "Módulo 4: App Seguro e Resposta a Incidentes",
+        "items": [
+          {
+            "label": "Token no Keychain e no Keystore, não no AsyncStorage",
+            "description": "Guarde tokens no Keychain e no Keystore com o expo-secure-store, nunca em texto claro."
+          },
+          {
+            "label": "Guardar menos no aparelho e limpar ao sair",
+            "description": "Reduza o que fica no aparelho e apague tudo ao encerrar a sessão, também no servidor."
+          },
+          {
+            "label": "Incidente: conter, avaliar, comunicar e registrar",
+            "description": "Saiba conter, registrar e apoiar a comunicação de um incidente no prazo de três dias úteis."
+          },
+          {
+            "label": "Checklist de privacidade por design",
+            "description": "Leve as perguntas de privacidade para um checklist preenchido em cada pull request."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo de cada módulo, com exemplos de código seguros para adaptar ao seu projeto. Ao final, o quiz revisa os pontos em que os erros mais aparecem."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "clipboard",
+      "title": "LGPD para Quem Desenvolve",
+      "shortDescription": "Os 10 princípios do art. 6º traduzidos em requisitos de software",
+      "introductionText": "A Lei 13.709/2018, a LGPD, costuma ser apresentada como assunto do jurídico. Na prática, quase tudo o que ela exige acontece dentro do código: que campo o formulário pede, por quanto tempo a tabela guarda, quem consegue ler a coluna, o que vai parar no log. Este módulo lê os dez princípios do art. 6º com olhos de quem escreve a funcionalidade e transforma cada um em uma pergunta que cabe na revisão de uma tarefa.",
+      "sections": [
+        {
+          "title": "Do texto da lei ao requisito",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Dado pessoal, dado sensível e tratamento",
+              "guidance": "Comece pelas definições do art. 5º. Dado pessoal é \"informação relacionada a pessoa natural identificada ou identificável\": nome e CPF, mas também e-mail, IP, geolocalização e o id interno que liga tudo isso a alguém. Dado sensível é uma categoria com proteção maior (origem racial ou étnica, convicção religiosa, opinião política, saúde, vida sexual, dados genéticos e biométricos, entre outros). E tratamento é \"toda operação realizada com dados pessoais\": coletar, armazenar, consultar, exportar e apagar contam. Pegue uma tabela real do seu projeto e classifique coluna por coluna.",
+              "code": "-- Classificação das colunas de uma tabela de clientes\n-- id            -> pessoal (identifica a pessoa dentro do sistema)\n-- nome, email   -> pessoal\n-- cpf           -> pessoal, identificador forte: proteger com cuidado extra\n-- data_nasc     -> pessoal\n-- alergias      -> SENSÍVEL (saúde): exige base legal específica do art. 11\n-- cidade        -> pessoal quando combinada com outras colunas\n-- criado_em     -> metadado do tratamento",
+              "tips": [
+                "Dado que parece inofensivo sozinho pode identificar alguém quando combinado com outros. Cidade, data de nascimento e cargo juntos já reduzem muito o número de pessoas possíveis.",
+                "Se a coluna é sensível, anote isso no próprio esquema (comentário na migration ou no modelo) para que ninguém descubra só na auditoria."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Finalidade, adequação e necessidade definem o formulário",
+              "guidance": "Os três primeiros princípios andam juntos. Finalidade: o tratamento precisa de \"propósitos legítimos, específicos, explícitos e informados ao titular\". Adequação: o que se faz com o dado tem de ser compatível com essa finalidade. Necessidade: \"limitação do tratamento ao mínimo necessário\". Para quem desenvolve, isso vira uma regra simples: cada campo do formulário tem de responder para que serve. Se a resposta for \"pode ser útil um dia\", o campo sai.",
+              "code": "// Cadastro para receber um boletim por e-mail\n// Finalidade informada: enviar o boletim semanal\nconst camposDoCadastro = {\n  email: { obrigatorio: true, motivo: \"endereço de envio do boletim\" },\n  nome: { obrigatorio: false, motivo: \"personalizar a saudação\" },\n  // cpf: removido, não é necessário para enviar e-mail\n  // dataNascimento: removido, nenhuma regra do boletim depende da idade\n};",
+              "tips": [
+                "Campo opcional também é coleta. Se ninguém usa o dado, ele só aumenta o tamanho do vazamento possível.",
+                "Mudou a finalidade (usar o e-mail do boletim para anúncios de terceiros, por exemplo)? Isso é um tratamento novo e precisa ser avaliado de novo."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Livre acesso, qualidade e transparência viram telas",
+              "guidance": "Livre acesso garante ao titular \"consulta facilitada e gratuita sobre a forma e a duração do tratamento\". Qualidade dos dados pede exatidão e atualização. Transparência exige \"informações claras, precisas e facilmente acessíveis\". Em produto, isso costuma virar três coisas: uma área \"Meus dados\" onde a pessoa vê o que está guardado, um caminho simples para corrigir o que estiver errado e um aviso de privacidade escrito para ser lido, não para ser aceito sem ler.",
+              "code": "Área \"Meus dados\" (rascunho de tela)\n- O que guardamos: nome, e-mail, endereço de entrega, histórico de pedidos\n- Para quê: entregar pedidos e emitir nota fiscal\n- Por quanto tempo: enquanto a conta existir e pelo prazo fiscal depois disso\n- Com quem compartilhamos: transportadora (endereço) e meio de pagamento\n- [Corrigir meus dados]  [Baixar meus dados]  [Excluir minha conta]",
+              "tips": [
+                "Um bom teste de transparência: uma pessoa sem formação técnica consegue dizer, depois de ler o aviso, quais dados são guardados e para quê?"
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Segurança, prevenção, não discriminação e responsabilização",
+              "guidance": "Os quatro últimos princípios fecham o ciclo. Segurança é a \"utilização de medidas técnicas e administrativas aptas a proteger os dados pessoais\", e é o assunto dos módulos 2 a 4. Prevenção pede agir antes do dano, e não depois do vazamento. Não discriminação proíbe usar o dado para fins discriminatórios ilícitos ou abusivos, o que inclui regras automáticas de crédito, preço ou triagem. Responsabilização e prestação de contas exige demonstrar o que foi feito. Para demonstrar, é preciso registrar: o art. 37 pede que controlador e operador mantenham registro das operações de tratamento. Um arquivo versionado junto do código já é um bom começo.",
+              "code": "// docs/tratamentos/cadastro-cliente.json, versionado junto do código\n{\n  \"funcionalidade\": \"Cadastro de cliente da loja\",\n  \"dados\": [\"nome\", \"email\", \"cpf\", \"endereco\"],\n  \"finalidade\": \"Entregar pedidos e emitir nota fiscal\",\n  \"baseLegal\": \"execução de contrato (art. 7º, V)\",\n  \"retencao\": \"enquanto a conta existir; dados fiscais pelo prazo legal\",\n  \"compartilhamento\": [\"transportadora\", \"meio de pagamento\"],\n  \"medidas\": [\"cpf cifrado\", \"acesso por papel\", \"logs sem dado pessoal\"]\n}",
+              "tips": [
+                "Registro desatualizado não demonstra nada. Inclua \"atualizar o registro de tratamento\" na definição de pronto das tarefas que mexem com dado pessoal."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "O que este módulo fixa",
+      "highlights": [
+        {
+          "icon": "tags",
+          "title": "Classificar antes de guardar",
+          "text": "Saber o que é pessoal e o que é sensível orienta todas as decisões de proteção que vêm depois."
+        },
+        {
+          "icon": "list",
+          "title": "Cada campo com motivo",
+          "text": "Finalidade e necessidade aplicadas ao formulário reduzem coleta e, com ela, o risco."
+        },
+        {
+          "icon": "clipboard",
+          "title": "Registro versionado",
+          "text": "Responsabilização exige demonstrar. Um registro de tratamento junto do código acompanha cada mudança."
+        }
+      ],
+      "closingText": "Você viu que os dez princípios não são uma lista para decorar: cada um vira uma pergunta concreta sobre uma funcionalidade. Para que serve este campo? A pessoa consegue ver e corrigir? Quem consegue ler? Como provamos o que fizemos?",
+      "ctaTitle": "Princípios no requisito",
+      "ctaText": "Saber o que proteger é o primeiro passo. O próximo é saber com que fundamento tratar o dado e como a pessoa exerce os seus direitos.",
+      "nextButtonText": "Ir para Módulo 1: Bases Legais, Consentimento e Direitos"
+    },
+    {
+      "id": 1,
+      "icon": "tasks",
+      "title": "Bases Legais, Consentimento e Direitos",
+      "shortDescription": "Escolher a base legal, registrar consentimento e transformar direitos do titular em endpoints",
+      "introductionText": "Todo tratamento precisa de uma base legal, e consentimento é apenas uma delas. Escolher a base errada gera problemas reais: um consentimento pedido para algo que é obrigação legal pode ser revogado, e aí o sistema fica sem saída. Este módulo mostra como a base legal, o consentimento e os direitos do art. 18 viram tabela, tela e rota da API.",
+      "sections": [
+        {
+          "title": "Fundamento, registro e direitos",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Escolha a base legal antes de escrever o código",
+              "guidance": "O art. 7º lista as hipóteses em que o tratamento é permitido. A primeira é \"mediante o fornecimento de consentimento pelo titular\". As outras incluem cumprimento de obrigação legal ou regulatória, execução de contrato, exercício regular de direitos em processo, proteção da vida, tutela da saúde, legítimo interesse e proteção do crédito. Para dados sensíveis, as hipóteses estão no art. 11 e são mais restritas. A escolha da base é uma decisão de produto e jurídico, mas quem desenvolve precisa conhecê-la, porque ela muda o comportamento do sistema: dado tratado por consentimento precisa de botão de revogação; dado fiscal, não pode ser apagado a pedido antes do prazo legal.",
+              "code": "// Mapa finalidade -> base legal, revisado com o jurídico\nexport const BASES = {\n  entregarPedido:   { base: \"execução de contrato\", revogavel: false },\n  emitirNotaFiscal: { base: \"obrigação legal\", revogavel: false },\n  boletimPorEmail:  { base: \"consentimento\", revogavel: true },\n  prevenirFraude:   { base: \"legítimo interesse\", revogavel: false, permiteOposicao: true },\n};",
+              "tips": [
+                "Consentimento não é a base \"mais segura\" por padrão. Use quando a pessoa realmente pode escolher e o serviço funciona sem aquele tratamento.",
+                "Legítimo interesse exige avaliar se o interesse da empresa não se sobrepõe aos direitos do titular, e a pessoa pode se opor."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Consentimento separado, específico e revogável",
+              "guidance": "Um aviso de privacidade de recrutamento de uma grande consultoria, usado aqui como exemplo genérico, mostra um bom padrão: entrar no banco de talentos e receber e-mails de vagas são dois consentimentos diferentes, cada um com sua caixa, e recusar um não afeta o outro nem o processo seletivo. No banco de dados, isso significa uma linha por finalidade, com a versão do texto que a pessoa viu e as datas de concessão e revogação. O art. 8º, § 5º, diz que o consentimento \"pode ser revogado a qualquer momento mediante manifestação expressa do titular\", e revogar tem de ser tão fácil quanto concordar.",
+              "code": "CREATE TABLE consentimentos (\n  id            bigserial PRIMARY KEY,\n  titular_id    bigint NOT NULL REFERENCES titulares(id),\n  finalidade    text   NOT NULL,  -- 'banco_de_talentos', 'emails_de_vagas'\n  versao_texto  text   NOT NULL,  -- qual versão do aviso a pessoa leu\n  concedido_em  timestamptz NOT NULL DEFAULT now(),\n  revogado_em   timestamptz\n);\n\n-- Revogar: registra a data, não apaga o histórico\nUPDATE consentimentos\n   SET revogado_em = now()\n WHERE titular_id = $1 AND finalidade = $2 AND revogado_em IS NULL;",
+              "tips": [
+                "Caixa já marcada não é consentimento livre. O padrão da tela é desmarcado.",
+                "Guardar a versão do texto permite provar com o que a pessoa concordou, mesmo depois que o aviso mudar."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Direitos do titular viram endpoints",
+              "guidance": "O art. 18 garante, entre outros, confirmação da existência de tratamento, acesso aos dados, correção de dados incompletos ou desatualizados, portabilidade, eliminação dos dados tratados com consentimento e revogação do consentimento. Cada direito vira uma rota autenticada. O detalhe que mais causa falha é de onde vem o identificador: ele sai da sessão autenticada, nunca de um parâmetro que a pessoa possa trocar na URL.",
+              "code": "import { Router } from \"express\";\nexport const titular = Router();\n\n// Acesso e portabilidade: exporta em formato legível por máquina\ntitular.get(\"/me/dados\", autenticar, async (req, res) => {\n  const dados = await exportarDadosDoTitular(req.usuario.id);\n  res.attachment(\"meus-dados.json\").json(dados);\n});\n\n// Correção\ntitular.patch(\"/me/dados\", autenticar, async (req, res) => {\n  const correcao = schemaCorrecao.parse(req.body); // só campos permitidos\n  await corrigirDados(req.usuario.id, correcao);\n  res.sendStatus(204);\n});\n\n// Eliminação: apaga ou anonimiza o que não tem obrigação de guarda\ntitular.delete(\"/me/conta\", autenticar, async (req, res) => {\n  const protocolo = await solicitarEliminacao(req.usuario.id);\n  res.status(202).json({ protocolo });\n});",
+              "tips": [
+                "Uma rota como GET /clientes/:id/dados, sem conferir se o id é da pessoa logada, deixa qualquer usuário ler dados de outro. Use sempre o id da sessão.",
+                "Registre cada pedido de titular com data e protocolo: é assim que se demonstra que o direito foi atendido."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Retenção e eliminação programadas",
+              "guidance": "Guardar para sempre contraria a necessidade e aumenta o estrago de um vazamento. Defina com o negócio e o jurídico um prazo para cada finalidade e implemente a limpeza como tarefa agendada, não como promessa no aviso de privacidade. Quando parte do registro precisa ficar (para estatística, por exemplo), remova o que identifica a pessoa. Cuidado: retirar só o nome nem sempre basta; se as colunas que sobram permitem reidentificar alguém, o dado continua sendo pessoal.",
+              "code": "-- Tarefa diária: candidaturas encerradas há mais de 24 meses\n-- (prazo de exemplo, definido pelo negócio com o jurídico)\nUPDATE candidaturas\n   SET nome = NULL, email = NULL, telefone = NULL,\n       curriculo_url = NULL, anonimizado_em = now()\n WHERE encerrada_em < now() - interval '24 months'\n   AND anonimizado_em IS NULL;\n-- Lembre de apagar também os arquivos de currículo no storage",
+              "tips": [
+                "A limpeza precisa alcançar todas as cópias: réplicas, buckets de arquivos, planilhas exportadas e o índice de busca.",
+                "Backups seguem o próprio ciclo de retenção; documente esse prazo também."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "O que este módulo fixa",
+      "highlights": [
+        {
+          "icon": "sitemap",
+          "title": "Base legal muda o sistema",
+          "text": "Ela define se existe botão de revogar, se o dado pode ser apagado a pedido e por quanto tempo fica."
+        },
+        {
+          "icon": "list",
+          "title": "Uma linha por finalidade",
+          "text": "Consentimentos separados, com versão do texto e datas, permitem provar e revogar."
+        },
+        {
+          "icon": "shield",
+          "title": "Id vem da sessão",
+          "text": "Rotas de direitos do titular só operam sobre a pessoa autenticada."
+        }
+      ],
+      "closingText": "Base legal, consentimento e direitos deixaram de ser texto de política e passaram a ser estrutura: uma tabela, um mapa de finalidades, quatro rotas e uma tarefa agendada. Isso é o que permite cumprir e demonstrar.",
+      "ctaTitle": "Direitos implementados",
+      "ctaText": "Agora que o sistema sabe por que trata cada dado, falta proteger onde ele mora: o banco.",
+      "nextButtonText": "Ir para Módulo 2: Protegendo o Banco de Dados"
+    },
+    {
+      "id": 2,
+      "icon": "shield",
+      "title": "Protegendo o Banco de Dados",
+      "shortDescription": "Consultas parametrizadas, menor privilégio, backups e logs sem dado pessoal",
+      "introductionText": "O banco é onde os dados pessoais se acumulam, e por isso é o alvo preferido. A falha mais antiga e ainda comum é a injeção de SQL: a aplicação monta a consulta juntando texto com o que o usuário digitou, e esse texto passa a fazer parte do comando. Este módulo mostra por que isso acontece, como as consultas parametrizadas resolvem e quais camadas extras limitam o estrago quando algo escapa: conta com menor privilégio, visões, backups protegidos e logs que não viram um segundo banco de dados pessoais.",
+      "sections": [
+        {
+          "title": "Defesa em camadas no banco",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Consulta parametrizada em vez de concatenação",
+              "guidance": "Quando o código monta o SQL juntando strings, o banco não tem como distinguir o que é comando do que é dado: um apóstrofo digitado no campo de e-mail fecha o texto e o que vem depois é interpretado como SQL. A correção é separar as duas coisas. Na consulta parametrizada, o texto do comando vai com marcadores ($1, $2) e os valores vão em uma lista à parte; o driver envia os dois separadamente e o valor nunca é interpretado como comando. Com o pg, do Node, basta usar o segundo argumento de query. O padrão DAO, de concentrar o acesso a dados em poucas funções, ajuda: fica fácil revisar e garantir que todas usam parâmetros.",
+              "code": "import pg from \"pg\";\nconst pool = new pg.Pool(); // lê PGHOST, PGUSER, PGPASSWORD... do ambiente\n\n// Vulnerável: a entrada vira parte do comando\n// const sql = \"SELECT id, nome FROM clientes WHERE email = '\" + email + \"'\";\n\n// Seguro: o comando e o valor viajam separados\nexport async function buscarClientePorEmail(email) {\n  const { rows } = await pool.query(\n    \"SELECT id, nome FROM clientes WHERE email = $1\",\n    [email]\n  );\n  return rows[0] ?? null;\n}",
+              "tips": [
+                "Template string não é parametrização: `WHERE email = '${email}'` continua sendo concatenação.",
+                "ORMs e query builders parametrizam por padrão, mas quase todos têm uma saída para SQL cru. Revise cada uso dela.",
+                "Escapar caracteres manualmente não substitui parâmetros: depende do dialeto e da configuração do banco, e é fácil esquecer um caso."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Lista permitida para o que não pode ser parâmetro",
+              "guidance": "Nome de coluna, nome de tabela e direção de ordenação não podem ir como parâmetro, porque fazem parte da estrutura do comando. É comum a tela mandar \"ordenar por\" na URL e o código colar esse valor no ORDER BY. A defesa é uma lista permitida: o usuário escolhe uma chave, o código traduz para um valor fixo definido pela aplicação, e qualquer coisa fora da lista cai no padrão. O valor que chega ao SQL nunca é o que o usuário digitou.",
+              "code": "const COLUNAS = new Map([[\"nome\", \"nome\"], [\"cadastro\", \"criado_em\"]]);\nconst DIRECOES = new Map([[\"asc\", \"ASC\"], [\"desc\", \"DESC\"]]);\n\nexport async function listarClientes({ ordem, direcao, limite = 50 }) {\n  const coluna = COLUNAS.get(ordem) ?? \"nome\";\n  const sentido = DIRECOES.get(direcao) ?? \"ASC\";\n  const { rows } = await pool.query(\n    `SELECT id, nome FROM clientes ORDER BY ${coluna} ${sentido} LIMIT $1`,\n    [Math.min(Number(limite) || 50, 100)]\n  );\n  return rows;\n}",
+              "tips": [
+                "Use Map ou Object.hasOwn para a lista. Um objeto comum responde a chaves herdadas como \"constructor\", e isso já foi porta de entrada para falhas."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Conta da aplicação com o menor privilégio",
+              "guidance": "Se uma falha passar, o estrago é limitado pelo que a conta do banco consegue fazer. Aplicação não deve se conectar como administrador. Crie uma conta por aplicação, conceda só as operações que ela usa nas tabelas que ela usa e deixe de fora CREATE, DROP e acesso a esquemas que não são dela. Para relatórios e análises, ofereça uma visão (view) que expõe só as colunas necessárias, sem CPF, e-mail ou telefone. O mesmo raciocínio aparece em avisos de privacidade bem feitos, que descrevem quem acessa o quê por papel: recrutador vê candidaturas das vagas dele, suporte vê o necessário para o atendimento.",
+              "code": "-- PostgreSQL: conta da aplicação só com o que ela usa\nCREATE ROLE app_loja LOGIN;  -- senha definida pelo cofre de segredos, fora do script\nGRANT CONNECT ON DATABASE loja TO app_loja;\nGRANT USAGE ON SCHEMA public TO app_loja;\nGRANT SELECT, INSERT, UPDATE ON clientes, pedidos TO app_loja;\nGRANT USAGE ON SEQUENCE clientes_id_seq, pedidos_id_seq TO app_loja;\n\n-- Relatórios enxergam uma visão sem identificadores diretos\nCREATE VIEW vw_pedidos_relatorio AS\n  SELECT p.id, p.total, p.criado_em, c.cidade\n    FROM pedidos p JOIN clientes c ON c.id = p.cliente_id;\nCREATE ROLE relatorios LOGIN;\nGRANT SELECT ON vw_pedidos_relatorio TO relatorios;",
+              "tips": [
+                "Note que app_loja não recebeu DELETE. Se a regra de negócio for exclusão lógica ou anonimização, a aplicação não precisa apagar linhas.",
+                "Revise as permissões quando uma funcionalidade sai do ar: privilégio esquecido é privilégio sobrando."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Backups protegidos e logs sem dado pessoal",
+              "guidance": "Backup é uma cópia completa do banco e merece a mesma proteção que ele: cifrado em repouso, guardado com acesso restrito, com prazo de retenção definido e restauração testada de tempos em tempos (backup que nunca foi restaurado é uma hipótese). Logs são o outro vazamento silencioso: é comum registrar o corpo inteiro da requisição para depurar, e o log passa a guardar senhas, tokens e CPFs em texto claro, por anos, em uma ferramenta que muita gente acessa. Registre o evento e o id interno, e configure o logger para remover campos sensíveis mesmo quando alguém esquecer.",
+              "code": "import pino from \"pino\";\n\nexport const logger = pino({\n  redact: {\n    paths: [\"req.headers.authorization\", \"req.headers.cookie\", \"*.senha\", \"*.cpf\", \"*.email\", \"*.token\"],\n    censor: \"[removido]\",\n  },\n});\n\n// Registre o que aconteceu e com qual id, não quem é a pessoa\nlogger.info({ evento: \"cadastro_concluido\", clienteId: cliente.id });\nlogger.warn({ evento: \"login_falhou\", motivo: \"senha_incorreta\", contaId: conta?.id ?? null });",
+              "tips": [
+                "Mensagens de erro do banco às vezes trazem o valor que falhou. Não devolva o erro cru para o cliente e não o registre sem filtro.",
+                "Logs também têm prazo de retenção. Guardar logs para sempre é guardar dado pessoal para sempre."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "O que este módulo fixa",
+      "highlights": [
+        {
+          "icon": "shield",
+          "title": "Comando e dado separados",
+          "text": "Parâmetros impedem que a entrada do usuário seja interpretada como SQL."
+        },
+        {
+          "icon": "list",
+          "title": "Lista permitida",
+          "text": "Para colunas e ordenação, o usuário escolhe uma chave e o código decide o valor."
+        },
+        {
+          "icon": "gauge",
+          "title": "Estrago limitado",
+          "text": "Menor privilégio, visões, backup protegido e log filtrado reduzem o impacto de qualquer falha."
+        }
+      ],
+      "closingText": "A injeção de SQL se resolve no ponto em que o comando é montado, e as camadas extras existem porque nenhuma defesa é perfeita. Uma aplicação com consulta parametrizada, conta restrita e log limpo transforma uma falha possível em um incidente pequeno.",
+      "ctaTitle": "Banco protegido",
+      "ctaText": "Mesmo com acesso controlado, algumas colunas não devem ser legíveis por quem consegue ler a tabela. O próximo módulo trata de senhas e criptografia.",
+      "nextButtonText": "Ir para Módulo 3: Senhas, Criptografia e Chaves"
+    },
+    {
+      "id": 3,
+      "icon": "tools",
+      "title": "Senhas, Criptografia e Chaves",
+      "shortDescription": "Hash lento para senhas, AES-GCM para campos que precisam voltar e chaves fora do banco",
+      "introductionText": "Hash e criptografia são confundidos o tempo todo, e a confusão custa caro. Senha não precisa ser lida de volta, só conferida, então se guarda um hash lento com sal. Já um CPF ou endereço que o sistema precisa mostrar depois exige criptografia simétrica, que é reversível com a chave certa. Este módulo mostra as duas coisas em Node, com bcrypt, argon2 e a biblioteca nativa node:crypto, e trata da parte que mais falha na prática: onde fica a chave.",
+      "sections": [
+        {
+          "title": "Senhas",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Senha se guarda como hash lento com sal",
+              "guidance": "Se o banco vazar, a senha não pode estar ali. O que se guarda é o resultado de uma função de hash própria para senhas: lenta de propósito, para que testar bilhões de tentativas fique caro, e com um sal aleatório por usuário, para que duas senhas iguais gerem resultados diferentes. Funções rápidas como MD5 ou SHA-256 puro não servem para isso. Com o bcrypt, o sal é gerado sozinho e fica embutido no próprio resultado, e o fator de custo controla a lentidão. A guia de armazenamento de senhas da OWASP recomenda custo mínimo de 10 e lembra que a maioria das implementações só considera os primeiros 72 bytes.",
+              "code": "import bcrypt from \"bcrypt\";\n\nconst CUSTO = 12; // ajuste ao que o seu servidor aguenta, nunca abaixo de 10\n\nexport async function gerarHashSenha(senha) {\n  if (Buffer.byteLength(senha, \"utf8\") > 72) {\n    throw new Error(\"A senha pode ter no máximo 72 bytes\");\n  }\n  return bcrypt.hash(senha, CUSTO); // o sal é gerado e embutido no resultado\n}\n\nexport async function conferirSenha(senha, hashSalvo) {\n  return bcrypt.compare(senha, hashSalvo); // compara em tempo constante\n}",
+              "tips": [
+                "Na tela de login, a mensagem de erro é a mesma para e-mail inexistente e senha errada. Mensagens diferentes contam quem tem conta.",
+                "Limite tentativas por conta e por IP. Hash lento protege o banco vazado; limite de tentativas protege a tela de login."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Argon2id para sistemas novos",
+              "guidance": "Para sistemas novos, a OWASP coloca o Argon2id como primeira escolha, com mínimo de 19 MiB de memória, 2 iterações e paralelismo 1. Ele é caro em memória, não só em processamento, o que dificulta ataques com placas de vídeo. Se o sistema já usa bcrypt, não é preciso forçar troca de senha de todos: no próximo login bem-sucedido, a senha digitada está disponível em memória, e o sistema pode gerar o hash novo e substituir o antigo.",
+              "code": "import argon2 from \"argon2\";\nimport bcrypt from \"bcrypt\";\n\nconst PARAMS = { type: argon2.argon2id, memoryCost: 19456, timeCost: 2, parallelism: 1 };\n\nexport const gerarHash = (senha) => argon2.hash(senha, PARAMS);\n\nexport async function entrar(conta, senha) {\n  const ehBcrypt = conta.hashSenha.startsWith(\"$2\");\n  const ok = ehBcrypt\n    ? await bcrypt.compare(senha, conta.hashSenha)\n    : await argon2.verify(conta.hashSenha, senha);\n  if (ok && ehBcrypt) {\n    await salvarHash(conta.id, await gerarHash(senha)); // migra sem pedir nada\n  }\n  return ok;\n}",
+              "tips": [
+                "Meça o tempo de um hash no servidor de produção. Algo entre algumas dezenas e poucas centenas de milissegundos costuma ser um bom equilíbrio."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Criptografia de campos",
+          "subsections": [
+            {
+              "number": 3,
+              "title": "AES-256-GCM com node:crypto para dados que precisam voltar",
+              "guidance": "Quando o dado precisa ser lido de novo, como um CPF exibido na nota ou um telefone usado na entrega, use criptografia simétrica. O AES é o padrão de mercado, inclusive nas plataformas móveis, e precisa sempre de duas coisas: a chave e um vetor de inicialização (IV). No modo GCM, o IV tem 12 bytes, deve ser novo a cada cifragem e pode ser guardado junto do resultado; a etiqueta de autenticação gerada no final permite detectar se o valor guardado foi adulterado. O resultado é binário, então se converte para texto com Base64 antes de gravar.",
+              "code": "import { createCipheriv, createDecipheriv, randomBytes } from \"node:crypto\";\n\nconst chave = Buffer.from(process.env.CHAVE_DADOS_B64 ?? \"\", \"base64\");\nif (chave.length !== 32) throw new Error(\"CHAVE_DADOS_B64 precisa ter 32 bytes\");\n\nexport function cifrar(texto) {\n  const iv = randomBytes(12); // nunca reutilize um IV com a mesma chave\n  const cifra = createCipheriv(\"aes-256-gcm\", chave, iv);\n  const dados = Buffer.concat([cifra.update(texto, \"utf8\"), cifra.final()]);\n  const tag = cifra.getAuthTag();\n  return [iv, tag, dados].map((b) => b.toString(\"base64\")).join(\".\");\n}\n\nexport function decifrar(guardado) {\n  const [iv, tag, dados] = guardado.split(\".\").map((p) => Buffer.from(p, \"base64\"));\n  const decifra = createDecipheriv(\"aes-256-gcm\", chave, iv);\n  decifra.setAuthTag(tag); // se o valor foi alterado, final() lança erro\n  return Buffer.concat([decifra.update(dados), decifra.final()]).toString(\"utf8\");\n}",
+              "tips": [
+                "Base64 não é criptografia: é só uma forma de escrever bytes como texto, e qualquer pessoa desfaz sem chave.",
+                "Evite o modo ECB e IV fixo. Os dois deixam padrões visíveis no texto cifrado."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "A chave fica fora do banco, e a busca usa um índice",
+              "guidance": "Criptografar o campo e guardar a chave na mesma base, ou no repositório de código, é trancar a porta e deixar a chave na fechadura. A chave vem de um cofre de segredos ou de um serviço de gerenciamento de chaves do provedor de nuvem, é injetada no processo em tempo de execução e só a aplicação tem acesso a ela. Planeje também a troca: guarde junto do valor cifrado um identificador da versão da chave, para poder recifrar aos poucos. Um efeito colateral da criptografia com IV aleatório é que não dá para buscar por igualdade. Se o sistema precisa encontrar um cliente pelo CPF, guarde também um HMAC do CPF normalizado, feito com outra chave, e busque por ele.",
+              "code": "import { createHmac } from \"node:crypto\";\n\nconst chaveIndice = Buffer.from(process.env.CHAVE_INDICE_B64 ?? \"\", \"base64\");\n\nexport function indiceCpf(cpf) {\n  const normalizado = cpf.replace(/\\D/g, \"\");\n  return createHmac(\"sha256\", chaveIndice).update(normalizado).digest(\"hex\");\n}\n\n// Gravação: cpf_cifrado = cifrar(cpf), cpf_indice = indiceCpf(cpf), chave_versao = 'v1'\n// Busca:    SELECT id FROM clientes WHERE cpf_indice = $1   -- [indiceCpf(cpfDigitado)]",
+              "tips": [
+                ".env serve para desenvolvimento local e precisa estar no .gitignore. Em produção, prefira o cofre de segredos da plataforma.",
+                "Hash simples de CPF, sem chave, não protege: são poucos bilhões de combinações, fáceis de testar todas."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "O que este módulo fixa",
+      "highlights": [
+        {
+          "icon": "shield",
+          "title": "Hash para senha",
+          "text": "Lento, com sal, conferido e nunca lido de volta: bcrypt com custo adequado ou Argon2id."
+        },
+        {
+          "icon": "tools",
+          "title": "AES-GCM para campos",
+          "text": "Reversível com a chave, com IV novo a cada cifragem e verificação de integridade."
+        },
+        {
+          "icon": "folder",
+          "title": "Chave em outro lugar",
+          "text": "Cofre de segredos, versão da chave junto do dado e índice com HMAC para buscar."
+        }
+      ],
+      "closingText": "A pergunta que decide entre hash e criptografia é simples: o sistema precisa ler o valor de volta? Se não, hash lento. Se sim, criptografia com chave guardada longe do dado. Errar essa escolha, ou guardar a chave ao lado do cadeado, anula o resto.",
+      "ctaTitle": "Dados cifrados",
+      "ctaText": "O servidor está protegido. Falta o aparelho da pessoa, onde tokens e caches também são dados pessoais, e o plano para quando algo der errado.",
+      "nextButtonText": "Ir para Módulo 4: App Seguro e Resposta a Incidentes"
+    },
+    {
+      "id": 4,
+      "icon": "mobile",
+      "title": "App Seguro e Resposta a Incidentes",
+      "shortDescription": "Persistência segura no aparelho, plano de incidente e checklist de privacidade por design",
+      "introductionText": "Dado pessoal não vive só no servidor. O aplicativo guarda tokens de sessão, rascunhos, caches de tela e às vezes documentos inteiros, num aparelho que pode ser perdido, emprestado ou comprometido. Este módulo mostra onde guardar o que precisa ficar no aparelho, o que não deve ficar lá, como agir quando acontece um incidente e fecha com um checklist de privacidade por design para usar em toda funcionalidade nova.",
+      "sections": [
+        {
+          "title": "Dados no aparelho",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Token no Keychain e no Keystore, não no AsyncStorage",
+              "guidance": "O AsyncStorage do React Native e o localStorage do navegador guardam texto sem proteção: qualquer código que rode no contexto do app, ou quem tiver acesso aos arquivos do aparelho, lê o conteúdo. Para tokens de sessão e outros segredos, use o armazenamento seguro do sistema operacional: Keychain no iOS e Keystore no Android. No Expo, a biblioteca expo-secure-store faz essa ponte com uma interface simples. A opção de acessibilidade define quando o item pode ser lido; \"só quando desbloqueado e só neste aparelho\" impede que o token vá para backups e outros dispositivos.",
+              "code": "import * as SecureStore from \"expo-secure-store\";\n\nconst CHAVE_TOKEN = \"sessao.refreshToken\";\n\nexport async function salvarToken(token) {\n  await SecureStore.setItemAsync(CHAVE_TOKEN, token, {\n    keychainAccessible: SecureStore.WHEN_UNLOCKED_THIS_DEVICE_ONLY,\n  });\n}\n\nexport const lerToken = () => SecureStore.getItemAsync(CHAVE_TOKEN);\nexport const apagarToken = () => SecureStore.deleteItemAsync(CHAVE_TOKEN);",
+              "tips": [
+                "O armazenamento seguro é feito para valores pequenos, como tokens e chaves. Para volumes maiores, guarde no aparelho uma chave no SecureStore e cifre os dados com ela.",
+                "Chave de API secreta não deve ir no código do app. Tudo o que está no pacote instalado pode ser extraído; segredos ficam no servidor."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Guardar menos no aparelho e limpar ao sair",
+              "guidance": "O princípio da necessidade vale também para o cache local. Pergunte, para cada coisa salva no aparelho, se a tela realmente precisa dela sem conexão. Documentos, dados de saúde e informações financeiras raramente precisam. Ao sair da conta, apague tudo o que é da pessoa: token, cache de respostas e arquivos baixados. E cuide do que vaza sem querer: logs de depuração com o corpo da resposta, capturas de tela no alternador de apps e notificações com conteúdo sensível na tela bloqueada.",
+              "code": "import AsyncStorage from \"@react-native-async-storage/async-storage\";\n\nexport async function sair() {\n  await api.post(\"/sessao/encerrar\");       // invalida o token também no servidor\n  await apagarToken();                      // SecureStore\n  await AsyncStorage.clear();               // preferências e caches do app\n  await apagarArquivosBaixados();           // documentos salvos pelo app\n}",
+              "tips": [
+                "Encerrar a sessão só no aparelho não basta: se o token vazou antes, ele continua válido até o servidor revogá-lo."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Quando algo dá errado",
+          "subsections": [
+            {
+              "number": 3,
+              "title": "Incidente: conter, avaliar, comunicar e registrar",
+              "guidance": "O art. 48 diz que \"o controlador deverá comunicar à autoridade nacional e ao titular a ocorrência de incidente de segurança\" que possa acarretar risco ou dano relevante. O regulamento da ANPD (Resolução CD/ANPD nº 15/2024) fixa o prazo de três dias úteis, contados do conhecimento do incidente, com possibilidade de complementar as informações depois. Para quem desenvolve, o papel é agir rápido e com método: conter (revogar credenciais, fechar a falha), preservar evidências, levantar quais dados e quantas pessoas foram afetados e entregar isso a quem decide a comunicação. Tudo fica registrado, inclusive os incidentes que não precisaram ser comunicados.",
+              "code": "// Registro de incidente, preenchido desde a primeira hora\n{\n  \"detectadoEm\": \"2026-03-10T14:20:00-03:00\",\n  \"descricao\": \"Bucket de exportações acessível sem autenticação\",\n  \"dadosAfetados\": [\"nome\", \"email\", \"cidade\"],\n  \"titularesAfetados\": \"cerca de 1.200\",\n  \"haDadoSensivel\": false,\n  \"contencao\": [\"acesso público removido 14:35\", \"links assinados revogados\"],\n  \"evidencias\": \"logs de acesso do bucket preservados em local separado\",\n  \"riscoAvaliado\": \"pendente com o encarregado\",\n  \"comunicacao\": { \"anpd\": null, \"titulares\": null }\n}",
+              "tips": [
+                "Tenha antes do incidente uma lista de quem acionar: encarregado de dados, jurídico, responsável técnico. Descobrir isso no dia custa horas do prazo.",
+                "Não apague logs nem recrie servidores antes de preservar as evidências."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Checklist de privacidade por design",
+              "guidance": "Privacidade por design significa fazer as perguntas dos módulos anteriores antes do código existir, e não depois do vazamento. O jeito mais prático é transformar essas perguntas em um checklist que acompanha toda tarefa ou pull request que mexe com dado pessoal. Ele não substitui a análise do jurídico, mas garante que ninguém esqueça o básico e deixa registro do que foi decidido, o que atende ao princípio de responsabilização.",
+              "code": "## Privacidade (preencher se a tarefa toca em dado pessoal)\n- [ ] Cada campo novo tem finalidade escrita e é necessário\n- [ ] Base legal definida e registrada no mapa de finalidades\n- [ ] Dado sensível identificado e tratado com a base do art. 11\n- [ ] Consultas parametrizadas; ordenação e filtros por lista permitida\n- [ ] Conta do banco com o menor privilégio necessário\n- [ ] Senhas com hash lento; campos sigilosos cifrados; chave fora do banco\n- [ ] Logs sem senha, token, CPF ou e-mail\n- [ ] Prazo de retenção definido e limpeza implementada\n- [ ] Direitos do titular (acesso, correção, eliminação) cobrem o dado novo\n- [ ] Registro de tratamento atualizado",
+              "tips": [
+                "Comece pequeno. Um checklist curto que todo mundo preenche vale mais do que um longo que ninguém lê."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "O que este módulo fixa",
+      "highlights": [
+        {
+          "icon": "mobile",
+          "title": "Segredo no cofre do sistema",
+          "text": "Tokens vão para Keychain e Keystore, nunca para armazenamento em texto claro."
+        },
+        {
+          "icon": "bolt",
+          "title": "Prazo curto",
+          "text": "Incidente com risco relevante se comunica em três dias úteis, então o plano existe antes."
+        },
+        {
+          "icon": "tasks",
+          "title": "Checklist em toda tarefa",
+          "text": "Privacidade por design vira rotina quando as perguntas estão no pull request."
+        }
+      ],
+      "closingText": "Você percorreu o caminho completo do dado: da decisão de coletar, passando pelo banco e pela criptografia, até o aparelho da pessoa e o dia em que algo sai errado. Proteger dados não é uma etapa no fim do projeto; é um conjunto de decisões pequenas tomadas em cada funcionalidade.",
+      "ctaTitle": "Programa concluído",
+      "ctaText": "Revise os pontos principais no quiz e aplique o checklist na próxima funcionalidade que você entregar.",
+      "nextButtonText": "Ir para o Quiz"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Pela definição do art. 5º da LGPD, qual destes é um dado pessoal sensível?",
+      "explanation": "Saúde está na lista de dados sensíveis do art. 5º, II, ao lado de origem racial ou étnica, convicção religiosa, opinião política, vida sexual e dados genéticos ou biométricos. E-mail, CPF e IP são dados pessoais, porque identificam ou permitem identificar a pessoa, mas não estão nessa categoria especial.",
+      "options": [
+        {
+          "text": "O e-mail de contato do cliente",
+          "isCorrect": false
+        },
+        {
+          "text": "O CPF do cliente",
+          "isCorrect": false
+        },
+        {
+          "text": "Informação sobre a saúde da pessoa, como uma alergia registrada no cadastro",
+          "isCorrect": true
+        },
+        {
+          "text": "O endereço IP de acesso",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Um formulário de inscrição em boletim por e-mail pede CPF e data de nascimento, embora nenhuma regra do boletim use esses dados. Que princípio do art. 6º está sendo desrespeitado de forma mais direta?",
+      "explanation": "Coletar o que a finalidade não exige fere a necessidade. Qualidade dos dados seria o problema se os dados estivessem errados ou desatualizados; livre acesso, se a pessoa não conseguisse consultar o que é guardado; não discriminação, se o dado fosse usado para tratar pessoas de forma ilícita ou abusiva. Nenhum desses é o caso descrito.",
+      "options": [
+        {
+          "text": "Necessidade, que limita o tratamento ao mínimo necessário para a finalidade",
+          "isCorrect": true
+        },
+        {
+          "text": "Qualidade dos dados, que trata de exatidão e atualização",
+          "isCorrect": false
+        },
+        {
+          "text": "Livre acesso, que garante consulta facilitada ao titular",
+          "isCorrect": false
+        },
+        {
+          "text": "Não discriminação, que proíbe fins discriminatórios ilícitos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Qual prática ajuda a atender ao princípio de responsabilização e prestação de contas?",
+      "explanation": "Responsabilização exige demonstrar as medidas adotadas, e o art. 37 pede registro das operações de tratamento. Consentimento para tudo é um erro de base legal, não uma prova de conformidade; guardar indefinidamente contraria a necessidade; e deixar a documentação só com o jurídico faz o registro se descolar do que o sistema realmente faz.",
+      "options": [
+        {
+          "text": "Pedir consentimento para todos os tratamentos, sem exceção",
+          "isCorrect": false
+        },
+        {
+          "text": "Manter um registro de tratamento versionado junto do código, atualizado a cada funcionalidade",
+          "isCorrect": true
+        },
+        {
+          "text": "Guardar todos os dados indefinidamente para poder responder a auditorias",
+          "isCorrect": false
+        },
+        {
+          "text": "Deixar a documentação de privacidade exclusivamente com o jurídico",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Um e-commerce precisa guardar dados fiscais da venda pelo prazo exigido em lei. Por que pedir consentimento para esse tratamento é uma má escolha?",
+      "explanation": "O art. 8º, § 5º, garante a revogação do consentimento a qualquer momento. Se a base fosse consentimento, a revogação deixaria o sistema sem fundamento para cumprir a obrigação fiscal; a base adequada é o cumprimento de obrigação legal. A lei não proíbe consentimento em compras, não o restringe a dados sensíveis, e os dados fiscais de uma venda a pessoa física identificam essa pessoa, logo são pessoais.",
+      "options": [
+        {
+          "text": "Porque a LGPD proíbe consentimento em compras pela internet",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque consentimento só pode ser usado para dados sensíveis",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque dados fiscais não são dados pessoais",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o consentimento pode ser revogado a qualquer momento, e a empresa continuaria obrigada a guardar os dados",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Qual modelagem de consentimento atende melhor ao que a LGPD pede?",
+      "explanation": "Consentimento precisa ser específico por finalidade, provável e revogável; a linha por finalidade com versão e datas cobre os três. Um booleano único não diz para o quê nem quando; caixa já marcada não é manifestação livre; e consentimento genérico para finalidades futuras não é específico nem informado.",
+      "options": [
+        {
+          "text": "Uma linha por finalidade, com a versão do texto exibido e as datas de concessão e de revogação",
+          "isCorrect": true
+        },
+        {
+          "text": "Uma coluna booleana aceitou_termos na tabela de usuários",
+          "isCorrect": false
+        },
+        {
+          "text": "Uma caixa já marcada no cadastro, que a pessoa pode desmarcar",
+          "isCorrect": false
+        },
+        {
+          "text": "Um único consentimento que cobre todas as finalidades atuais e futuras",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "A rota GET /clientes/:id/dados devolve os dados do id informado na URL, desde que a pessoa esteja logada. Qual é o problema?",
+      "explanation": "Exigir login autentica a pessoa, mas não autoriza o acesso aos dados de outra. A rota precisa usar o id da sessão ou conferir a propriedade. Trocar GET por POST não muda a autorização, e a portabilidade pede formato estruturado e interoperável, o que JSON atende; o formato não resolve a falha.",
+      "options": [
+        {
+          "text": "Nenhum, porque a rota já exige login",
+          "isCorrect": false
+        },
+        {
+          "text": "Qualquer pessoa logada pode trocar o id e ler os dados de outro cliente; o id deve vir da sessão",
+          "isCorrect": true
+        },
+        {
+          "text": "O método deveria ser POST para os dados não aparecerem na URL",
+          "isCorrect": false
+        },
+        {
+          "text": "A resposta deveria ser em XML para atender à portabilidade",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Por que a consulta parametrizada impede a injeção de SQL?",
+      "explanation": "Na parametrização, o texto do comando tem marcadores e os valores seguem à parte, então o banco os trata sempre como dado. Ela não depende de remover caracteres, o que seria escape, uma defesa frágil; não criptografa nada; e funciona com qualquer comando, assim como a injeção pode ocorrer em qualquer um.",
+      "options": [
+        {
+          "text": "Porque o driver remove todos os apóstrofos digitados pelo usuário",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque criptografa a consulta antes de enviá-la ao banco",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o comando e os valores são enviados separados, e o valor nunca é interpretado como parte do comando",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque só funciona com SELECT, e a injeção só ocorre em UPDATE",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "A tela envia ?ordem=nome para ordenar a lista. Qual é a forma segura de usar esse valor no ORDER BY?",
+      "explanation": "Nome de coluna faz parte da estrutura do comando e não pode ser parâmetro: $1 no ORDER BY seria tratado como um valor constante e não ordenaria pela coluna. Remover espaços não impede a injeção, e template string continua sendo concatenação. A lista permitida garante que só valores definidos pela aplicação cheguem ao SQL.",
+      "options": [
+        {
+          "text": "Passar o valor como parâmetro $1 no ORDER BY",
+          "isCorrect": false
+        },
+        {
+          "text": "Colar o valor no SQL depois de remover espaços",
+          "isCorrect": false
+        },
+        {
+          "text": "Colar o valor no SQL usando template string do JavaScript",
+          "isCorrect": false
+        },
+        {
+          "text": "Traduzir a chave recebida por uma lista permitida para um nome de coluna fixo e usar um valor padrão para o resto",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Qual configuração segue o princípio do menor privilégio para a conta que a aplicação usa no banco?",
+      "explanation": "Menor privilégio limita o que uma falha consegue fazer. Conta de administrador e conta com todas as permissões ampliam o estrago de qualquer injeção, e senha forte não muda o que a conta pode fazer depois de usada. Conta compartilhada mistura permissões de sistemas diferentes e impede saber qual aplicação fez o quê.",
+      "options": [
+        {
+          "text": "Uma conta só da aplicação, com SELECT, INSERT e UPDATE nas tabelas que ela usa e sem permissão de criar ou apagar estruturas",
+          "isCorrect": true
+        },
+        {
+          "text": "A conta de administrador, para evitar erros de permissão em produção",
+          "isCorrect": false
+        },
+        {
+          "text": "Uma conta compartilhada por todas as aplicações da empresa",
+          "isCorrect": false
+        },
+        {
+          "text": "Uma conta com todas as permissões, mas com senha forte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Qual é a forma correta de guardar a senha de um usuário?",
+      "explanation": "Senha só precisa ser conferida, nunca lida de volta, e o hash lento com sal torna caro testar tentativas se o banco vazar. AES é reversível, então quem obtiver a chave tem todas as senhas; SHA-256 puro é rápido demais e sem sal permite tabelas pré-calculadas; Base64 é só codificação e se desfaz sem chave.",
+      "options": [
+        {
+          "text": "Criptografia AES com uma chave guardada no servidor",
+          "isCorrect": false
+        },
+        {
+          "text": "Um hash lento com sal, como bcrypt ou Argon2id",
+          "isCorrect": true
+        },
+        {
+          "text": "Um hash SHA-256 simples da senha",
+          "isCorrect": false
+        },
+        {
+          "text": "A senha codificada em Base64",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Ao cifrar campos com AES-256-GCM, como deve ser o vetor de inicialização (IV)?",
+      "explanation": "No GCM, reutilizar o IV com a mesma chave compromete a confidencialidade e a autenticação. Por isso ele é novo a cada cifragem. Ele não é secreto, então pode ficar junto do dado; o que precisa de sigilo é a chave. Usar a chave como IV é um erro clássico que enfraquece a cifra.",
+      "options": [
+        {
+          "text": "Fixo e igual para todos os registros, para simplificar a leitura",
+          "isCorrect": false
+        },
+        {
+          "text": "Igual à chave, para não precisar guardar outro valor",
+          "isCorrect": false
+        },
+        {
+          "text": "Aleatório e novo a cada cifragem, podendo ser guardado junto do valor cifrado",
+          "isCorrect": true
+        },
+        {
+          "text": "Secreto e guardado no cofre, como a chave",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "O sistema guarda o CPF cifrado com IV aleatório e precisa encontrar clientes pelo CPF. Qual solução mantém a proteção?",
+      "explanation": "O HMAC com chave separada gera um valor estável para busca, que não pode ser recalculado sem a chave. Texto claro anula a criptografia; IV fixo enfraquece a cifra e deixa padrões visíveis; e um hash sem chave de CPF se quebra testando todas as combinações possíveis, que são relativamente poucas.",
+      "options": [
+        {
+          "text": "Guardar também um HMAC do CPF normalizado, feito com outra chave, e buscar por ele",
+          "isCorrect": true
+        },
+        {
+          "text": "Guardar o CPF também em texto claro em outra coluna",
+          "isCorrect": false
+        },
+        {
+          "text": "Usar um IV fixo para que o mesmo CPF gere sempre o mesmo resultado",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardar um SHA-256 do CPF, sem chave",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "moduleId": 4,
+      "question": "Onde guardar o token de sessão em um app React Native com Expo?",
+      "explanation": "Keychain e Keystore são os armazenamentos seguros do sistema, e o expo-secure-store dá acesso a eles. AsyncStorage e arquivos na pasta do app guardam texto sem proteção; e constante no código não serve para token de sessão, que muda por usuário, além de tudo o que está no pacote poder ser extraído.",
+      "options": [
+        {
+          "text": "No AsyncStorage, que já é privado do app",
+          "isCorrect": false
+        },
+        {
+          "text": "Em uma constante no código do app",
+          "isCorrect": false
+        },
+        {
+          "text": "Em um arquivo JSON na pasta de documentos do app",
+          "isCorrect": false
+        },
+        {
+          "text": "No expo-secure-store, que usa o Keychain no iOS e o Keystore no Android",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "moduleId": 4,
+      "question": "Segundo o regulamento da ANPD, qual é o prazo para comunicar à autoridade um incidente de segurança que possa causar risco ou dano relevante aos titulares?",
+      "explanation": "A Resolução CD/ANPD nº 15/2024 fixa três dias úteis e permite comunicação preliminar com complementação posterior. Esperar o fim da investigação estoura o prazo; a comunicação depende do risco ou dano relevante, não só da presença de dado sensível; e não existe essa opção de relatório anual.",
+      "options": [
+        {
+          "text": "Trinta dias corridos, após a conclusão da investigação",
+          "isCorrect": false
+        },
+        {
+          "text": "Três dias úteis a partir do conhecimento do incidente, podendo complementar as informações depois",
+          "isCorrect": true
+        },
+        {
+          "text": "Só é preciso comunicar se houver dado sensível envolvido",
+          "isCorrect": false
+        },
+        {
+          "text": "Não há prazo; basta comunicar no relatório anual",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "moduleId": 4,
+      "question": "Qual é a melhor forma de colocar privacidade por design na rotina de uma equipe?",
+      "explanation": "Privacidade por design significa decidir antes de o código existir, e o checklist no pull request leva as perguntas para o momento da decisão, deixando registro. Revisão só antes do lançamento chega tarde para mudar o modelo de dados; deixar para depois da entrega é o oposto de por design; e treinamento sem mudança no fluxo não garante que as perguntas sejam feitas.",
+      "options": [
+        {
+          "text": "Um checklist curto de privacidade preenchido em toda tarefa ou pull request que toca em dado pessoal",
+          "isCorrect": true
+        },
+        {
+          "text": "Uma revisão completa de privacidade só antes de cada lançamento grande",
+          "isCorrect": false
+        },
+        {
+          "text": "Deixar a privacidade para a equipe de segurança, depois da entrega",
+          "isCorrect": false
+        },
+        {
+          "text": "Um treinamento anual obrigatório, sem mudança no fluxo de trabalho",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "Uma camada de proteção de dados para uma aplicação real: registro de tratamento, tabela de consentimentos, rotas de direitos do titular, acesso ao banco parametrizado e com menor privilégio, senhas com hash lento, campos cifrados com chave fora do banco e um app que guarda o token no armazenamento seguro do sistema.",
+    "highlights": [
+      "Registro de tratamento e mapa de bases legais versionados com o código",
+      "Acesso a dados com consultas parametrizadas, lista permitida e conta restrita",
+      "Hash de senha com bcrypt ou Argon2id e cifragem de campos com AES-256-GCM",
+      "Checklist de privacidade por design para pull requests"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "A LGPD está em vigor desde 2020, e as sanções administrativas, desde agosto de 2021. A multa simples pode chegar a 2% do faturamento no Brasil, limitada a R$ 50 milhões por infração, e a publicização da infração costuma pesar tanto quanto a multa.",
+      "Ao mesmo tempo, as falhas que mais expõem dados são conhecidas há décadas e têm correção simples. Quem sabe aplicar essas correções desde o primeiro commit se torna a pessoa que a equipe consulta antes de cada funcionalidade que toca em dado pessoal."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Cadastros e áreas logadas",
+        "description": "Qualquer sistema que guarda nome, e-mail, documento ou endereço de clientes."
+      },
+      {
+        "label": "Recrutamento e RH",
+        "description": "Currículos, candidaturas e dados de funcionários, com prazos de retenção e consentimentos separados."
+      },
+      {
+        "label": "Aplicativos móveis",
+        "description": "Tokens de sessão, caches e documentos guardados no aparelho."
+      },
+      {
+        "label": "Revisão de código",
+        "description": "Identificar concatenação de SQL, logs com dados pessoais e chaves no repositório."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem já desenvolve com banco de dados",
+        "description": "Escreve consultas e APIs e quer garantir que estão protegidas."
+      },
+      {
+        "label": "Quem desenvolve apps",
+        "description": "Precisa decidir o que guardar no aparelho e como."
+      },
+      {
+        "label": "Quem lidera tarefas com dado pessoal",
+        "description": "Precisa transformar a LGPD em critérios de aceite e revisão."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Toda empresa que trata dados pessoais de pessoas no Brasil está sujeita à LGPD, do pequeno comércio on-line ao banco. As práticas deste programa seguem as recomendações das guias de prevenção de injeção de SQL e de armazenamento de senhas da OWASP, referência usada por equipes de segurança em todo o mundo.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Planalto — Lei nº 13.709, de 14 de agosto de 2018 (Lei Geral de Proteção de Dados Pessoais)",
+      "url": "https://planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+    },
+    {
+      "label": "ANPD — Comunicação de incidente de segurança (Resolução CD/ANPD nº 15/2024)",
+      "url": "https://www.gov.br/anpd/pt-br/assuntos/incidente-de-seguranca"
+    },
+    {
+      "label": "OWASP Cheat Sheet Series — SQL Injection Prevention Cheat Sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html"
+    },
+    {
+      "label": "OWASP Cheat Sheet Series — Password Storage Cheat Sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html"
+    }
+  ]
 }

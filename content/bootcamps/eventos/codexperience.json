@@ -9,9 +9,69 @@
   "category": "fullstack",
   "status": "concluido",
   "content": {
-    "longDescription": "O CodeXperience Zona da Mata é um evento sem fins lucrativos criado para ser ponto de encontro de profissionais e estudantes de tecnologia da região. A primeira edição aconteceu em 21 e 22 de outubro de 2023, na UniAcademia, com 14 palestras e 4 workshops sobre back-end, front-end com React, inteligência artificial, segurança da informação, carreira, agilidade, startups e representatividade feminina na tecnologia. Em 9 de novembro de 2024, a segunda edição voltou à UniAcademia com três trilhas temáticas, ignite talks e open spaces; nessa edição Douglas integrou a organização, conduziu em dupla a abertura oficial e desenvolveu a landing page do evento em React, Vite, TypeScript e Tailwind. A edição de 2025, em 29 de novembro, manteve o formato gratuito com palestras simultâneas, workshops, ignite talks e roda de conversa, viabilizada por quatro cotas de apoio.",
-    "videoUrl": "",
+    "longDescription": "O CodeXperience Zona da Mata é um evento sem fins lucrativos criado para ser ponto de encontro de profissionais e estudantes de tecnologia da região. A primeira edição aconteceu em 21 e 22 de outubro de 2023, na UniAcademia, com 14 palestras e 4 workshops sobre back-end, front-end com React, inteligência artificial, segurança da informação, carreira, agilidade, startups e representatividade feminina na tecnologia. Os registros fotográficos da primeira edição mostram o auditório lotado desde a abertura, workshops práticos no laboratório de informática, perguntas da plateia ao microfone, o coffee break no hall e rodas de conversa em formato open space no fim da tarde, encerrada com a foto oficial de participantes, palestrantes e equipe. Em 9 de novembro de 2024, a segunda edição voltou à UniAcademia com três trilhas temáticas, ignite talks e open spaces; nessa edição Douglas integrou a organização, conduziu em dupla a abertura oficial e desenvolveu a landing page do evento em React, Vite, TypeScript e Tailwind. A edição de 2025, em 29 de novembro, manteve o formato gratuito com palestras simultâneas, workshops, ignite talks e roda de conversa, viabilizada por quatro cotas de apoio.",
+    "videoUrl": "https://www.youtube.com/embed/WW8qL1QAhOE",
     "gallery": [
+      {
+        "id": "codexperience-2023-7",
+        "url": "/media/bootcamps/eventos/codexperience-2023/7.webp",
+        "type": "image",
+        "alt": "Foto oficial com participantes, palestrantes e equipe reunidos à frente do auditório"
+      },
+      {
+        "id": "codexperience-2023-8",
+        "url": "/media/bootcamps/eventos/codexperience-2023/8.webp",
+        "type": "image",
+        "alt": "Auditório da UniAcademia lotado durante a programação da manhã"
+      },
+      {
+        "id": "codexperience-2023-9",
+        "url": "/media/bootcamps/eventos/codexperience-2023/9.webp",
+        "type": "image",
+        "alt": "Plateia atenta nas primeiras fileiras do auditório"
+      },
+      {
+        "id": "codexperience-2023-10",
+        "url": "/media/bootcamps/eventos/codexperience-2023/10.webp",
+        "type": "image",
+        "alt": "Palestrante no palco diante do auditório cheio"
+      },
+      {
+        "id": "codexperience-2023-11",
+        "url": "/media/bootcamps/eventos/codexperience-2023/11.webp",
+        "type": "image",
+        "alt": "Participante faz uma pergunta ao palestrante no meio da plateia"
+      },
+      {
+        "id": "codexperience-2023-12",
+        "url": "/media/bootcamps/eventos/codexperience-2023/12.webp",
+        "type": "image",
+        "alt": "Coffee break com o hall tomado por participantes"
+      },
+      {
+        "id": "codexperience-2023-13",
+        "url": "/media/bootcamps/eventos/codexperience-2023/13.webp",
+        "type": "image",
+        "alt": "Equipe organizadora no palco com a identidade do CodeXperience no telão"
+      },
+      {
+        "id": "codexperience-2023-14",
+        "url": "/media/bootcamps/eventos/codexperience-2023/14.webp",
+        "type": "image",
+        "alt": "Workshop prático no laboratório de informática"
+      },
+      {
+        "id": "codexperience-2023-15",
+        "url": "/media/bootcamps/eventos/codexperience-2023/15.webp",
+        "type": "image",
+        "alt": "Participantes reunidos e sorridentes no hall do evento"
+      },
+      {
+        "id": "codexperience-2023-16",
+        "url": "/media/bootcamps/eventos/codexperience-2023/16.webp",
+        "type": "image",
+        "alt": "Roda de conversa em formato open space no hall"
+      },
       {
         "id": "codexperience-2023-1",
         "url": "/media/bootcamps/eventos/codexperience-2023/1.webp",
@@ -84,6 +144,10 @@
       {
         "label": "Site oficial",
         "url": "https://codexperience.com.br/"
+      },
+      {
+        "label": "Artigo no LearnTECH",
+        "url": "https://learn-tech-pied.vercel.app/blog/eventos-de-comunidade-tech"
       }
     ],
     "editions": [
