@@ -13,8 +13,8 @@ flowchart LR
   D -->|wrangler deploy| CF
   subgraph CF["Cloudflare (plano gratuito)"]
     SA[Static Assets<br/>GET /v1/**.json, /media, /sdk]
-    W[Worker Hono<br/>/v1/saude, /v1/acessos]
-    DB[(D1 SQLite<br/>acessos)]
+    W[Worker Hono<br/>/v1/saude, /v1/acessos, /v1/mensagens]
+    DB[(D1 SQLite<br/>acessos, mensagens)]
     CR[Cron diário 03:00 UTC<br/>retenção 365 dias]
     W --> DB
     CR --> DB
@@ -24,6 +24,7 @@ flowchart LR
   CA[career<br/>GitHub Pages] -->|GET| SA
   TO[tools<br/>GitHub Pages] -->|GET| SA
   LT & BC & CA & TO -->|identificacao.js<br/>POST /v1/acessos| W
+  LT -->|Fala aê<br/>POST /v1/mensagens| W
 ```
 
 ## Camadas
@@ -34,8 +35,8 @@ flowchart LR
 | Schemas | `src/schemas/` | Formato de cada recurso (Zod). É o contrato com os frontends |
 | Build | `scripts/` | Valida schema e integridade, gera `dist/`, `index.json` e `openapi.json` |
 | Borda | Static Assets | Serve a leitura com cache (`public/_headers`) |
-| API dinâmica | `src/app.ts`, `src/worker.ts` | Saúde, registro de acesso, administração e retenção |
-| Persistência | `src/acessos/` | Porta `RepositorioAcessos`, com adaptador D1 e adaptador em memória para testes |
+| API dinâmica | `src/app.ts`, `src/worker.ts` | Saúde, registro de acesso, mensagens do "Fala aê", administração e retenção |
+| Persistência | `src/acessos/`, `src/mensagens/` | Portas `RepositorioAcessos` e `RepositorioMensagens`, cada uma com adaptador D1 e adaptador em memória para testes |
 | SDK | `public/sdk/identificacao.js` | Formulário de identificação em Shadow DOM, usado pelos 4 sites |
 
 ## Fluxo de leitura
@@ -51,6 +52,12 @@ flowchart LR
 3. Com identificação, faz um `POST /v1/acessos` por sessão do navegador.
 4. O Worker valida origem (lista `ALLOWED_ORIGINS`), corpo (Zod) e, se configurado, o Turnstile. Ignora repetição do mesmo e-mail no mesmo projeto em 30 minutos e grava no D1.
 5. Um cron diário apaga registros com mais de `RETENCAO_DIAS`.
+
+## Fluxo do "Fala aê"
+
+1. O formulário do learn-tech faz `POST /v1/mensagens` com nome completo, e-mail, motivo, mensagem, projeto e página.
+2. O Worker aplica as mesmas proteções do registro de acesso (origem, limite de corpo, Zod e Turnstile quando configurado). Ignora a mesma mensagem do mesmo e-mail repetida em 10 minutos e grava na tabela `mensagens`.
+3. A equipe lê por `GET /v1/mensagens` (token) e responde por e-mail. O cron diário aplica a mesma retenção.
 
 ## Limites do plano gratuito (setembro de 2026)
 

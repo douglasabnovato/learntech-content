@@ -1,0 +1,539 @@
+[
+  {
+    "slug": "estagio-desenvolvimento-web",
+    "nivel": "estagio",
+    "paraQuem": "Para quem está na faculdade ou em um curso técnico, ainda sem emprego na área, e quer o primeiro estágio em desenvolvimento web. Mostra como trocar a falta de experiência formal por projetos, estudo e atividades acadêmicas.",
+    "ficticio": true,
+    "nome": "Ana Exemplo da Silva",
+    "titulo": "Estudante de Análise e Desenvolvimento de Sistemas | Estágio em Desenvolvimento Web",
+    "localizacao": "Juiz de Fora – MG",
+    "contato": {
+      "telefone": "(00) 00000-0000",
+      "email": "ana.exemplo@example.com",
+      "linkedin": "https://www.example.com/linkedin/ana-exemplo",
+      "github": "https://www.example.com/github/ana-exemplo",
+      "portfolio": "https://www.example.com/portfolio/ana-exemplo"
+    },
+    "objetivo": "Estágio em desenvolvimento web front-end, com disponibilidade de 6 horas diárias no período da tarde.",
+    "resumo": "Estudante do 4º período de Análise e Desenvolvimento de Sistemas, com projetos pessoais e acadêmicos publicados em HTML, CSS, JavaScript e React. Experiência com versionamento em Git, trabalho em equipe em projetos da faculdade e atendimento ao público em emprego de meio período.",
+    "competencias": [
+      {
+        "categoria": "Tecnologias",
+        "itens": [
+          "HTML (intermediário)",
+          "CSS (intermediário)",
+          "JavaScript (intermediário)",
+          "React (básico)",
+          "SQL (básico)"
+        ]
+      },
+      {
+        "categoria": "Ferramentas",
+        "itens": [
+          "Git e GitHub",
+          "VS Code",
+          "npm",
+          "Figma (básico)"
+        ]
+      },
+      {
+        "categoria": "Competências comportamentais",
+        "itens": [
+          "Comunicação com o público",
+          "Trabalho em equipe",
+          "Organização de tarefas",
+          "Aprendizado contínuo"
+        ]
+      }
+    ],
+    "experiencias": [],
+    "experienciaAnterior": [
+      {
+        "empresa": "Loja Exemplo de Utilidades",
+        "cargo": "Atendente (meio período)",
+        "periodo": "2023 – 2024"
+      }
+    ],
+    "projetos": [
+      {
+        "nome": "Lista de tarefas com filtros",
+        "descricao": "Aplicação em React para criar, filtrar e concluir tarefas, com dados salvos no navegador. Código e instruções de uso publicados no GitHub.",
+        "tecnologias": [
+          "React",
+          "JavaScript",
+          "CSS",
+          "Git"
+        ]
+      },
+      {
+        "nome": "Site responsivo para projeto de extensão",
+        "descricao": "Página institucional de um projeto de extensão da faculdade, feita em grupo de quatro pessoas. Fiquei responsável pelo layout responsivo e pela revisão de acessibilidade das imagens e dos formulários.",
+        "tecnologias": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      },
+      {
+        "nome": "Consulta de dados públicos",
+        "descricao": "Página que consome uma API pública e exibe os resultados em tabela com busca. Tratamento de carregamento e de erro na interface.",
+        "tecnologias": [
+          "JavaScript",
+          "Fetch API",
+          "HTML",
+          "CSS"
+        ]
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Tecnologia em Análise e Desenvolvimento de Sistemas",
+        "instituicao": "Faculdade Exemplo de Tecnologia",
+        "periodo": "Fev/2025 – Dez/2027 (previsão)",
+        "status": "Em andamento – 4º período"
+      }
+    ],
+    "certificados": [
+      "Lógica de Programação (40 h) – Escola Exemplo Online, 2025",
+      "JavaScript Moderno (30 h) – Escola Exemplo Online, 2026"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário — leitura de documentação técnica"
+      }
+    ],
+    "comunidade": [
+      "Participação em hackathon universitário da Faculdade Exemplo de Tecnologia (2025).",
+      "Monitoria voluntária de Algoritmos para turmas do 1º período (2026)."
+    ],
+    "dicas": [
+      {
+        "secao": "Geral",
+        "texto": "Para estágio, uma página costuma bastar. Escolha o que tem relação com a vaga em vez de listar tudo o que você já fez."
+      },
+      {
+        "secao": "Objetivo",
+        "texto": "Seja direto: diga o tipo de vaga e, no estágio, a disponibilidade de horário. Um objetivo genérico não ajuda quem está fazendo a triagem."
+      },
+      {
+        "secao": "Contato",
+        "texto": "Coloque links para LinkedIn, GitHub e portfólio no topo, para que quem recruta possa ver seu código. Não inclua RG, CPF nem foto, a menos que a empresa peça."
+      },
+      {
+        "secao": "Competências",
+        "texto": "Indique o seu nível em cada tecnologia e liste só o que você realmente sabe usar: na entrevista, qualquer item pode virar pergunta."
+      },
+      {
+        "secao": "Experiência profissional",
+        "texto": "Se você ainda não teve emprego na área, deixe essa seção vazia em vez de forçar. Um trabalho de outra área entra em Experiência anterior, de forma resumida, porque mostra responsabilidade e contato com o público."
+      },
+      {
+        "secao": "Projetos",
+        "texto": "Sem experiência formal, os projetos são a parte mais importante. Para cada um, diga o que ele faz, qual foi a sua parte e quais tecnologias usou. Projetos de aula, de extensão e pessoais contam."
+      },
+      {
+        "secao": "Formação",
+        "texto": "Informe curso, instituição, período e previsão de conclusão. Cursos livres entram só quando têm relação com a vaga."
+      },
+      {
+        "secao": "Revisão",
+        "texto": "Revise mais de uma vez e peça para outra pessoa ler. Erro de digitação em um currículo de tecnologia passa a impressão de pouca atenção aos detalhes."
+      }
+    ],
+    "fontes": [
+      {
+        "label": "Governo de Minas Gerais (Estágio): Sobre currículo",
+        "url": "https://www.mg.gov.br/estagio/pagina/sobre-curriculo"
+      },
+      {
+        "label": "Prefeitura de São Paulo (Secretaria de Desenvolvimento Econômico e Trabalho): Como preparar um currículo",
+        "url": "https://prefeitura.sp.gov.br/web/desenvolvimento/w/dicas/preparar_um_curriculo/619"
+      },
+      {
+        "label": "UNC Computer Science: Writing a Technical Resume",
+        "url": "https://cs.unc.edu/student-life/career/technical-resumes/"
+      },
+      {
+        "label": "University of Richmond Career Services: Entry-Level Software Engineer Resume: What Recruiters Want to See",
+        "url": "https://careerservices.richmond.edu/blog/2025/08/05/entry-level-software-engineer-resume-what-recruiters-want-to-see/"
+      }
+    ],
+    "atualizadoEm": "2026-10-28"
+  },
+  {
+    "slug": "transicao-de-carreira-para-dados",
+    "nivel": "transicao",
+    "paraQuem": "Para quem já tem anos de trabalho em outra área e está migrando para tecnologia, aqui do financeiro para análise de dados. Mostra como dar destaque às habilidades que se transferem e aos projetos da nova área sem esconder a trajetória anterior.",
+    "ficticio": true,
+    "nome": "Bruno Modelo Costa",
+    "titulo": "Analista de Dados Júnior | Transição do Financeiro para Dados",
+    "localizacao": "Belo Horizonte – MG",
+    "contato": {
+      "telefone": "(00) 00000-0000",
+      "email": "bruno.modelo@example.com",
+      "linkedin": "https://www.example.com/linkedin/bruno-modelo",
+      "github": "https://www.example.com/github/bruno-modelo",
+      "portfolio": "https://www.example.com/portfolio/bruno-modelo"
+    },
+    "objetivo": "Atuar como Analista de Dados Júnior, aplicando SQL, Python e visualização de dados a problemas de negócio, especialmente na área financeira.",
+    "resumo": "Profissional com sete anos de experiência na área financeira, dos quais os últimos três dedicados a relatórios gerenciais e automação de planilhas. Concluiu em 2026 uma formação de 240 horas em análise de dados e mantém projetos publicados com SQL, Python e Power BI. Traz para a nova área o conhecimento do negócio, a familiaridade com indicadores e a experiência de apresentar números para gestores.",
+    "competencias": [
+      {
+        "categoria": "Dados",
+        "itens": [
+          "SQL (intermediário)",
+          "Python com pandas (básico a intermediário)",
+          "Power BI (intermediário)",
+          "Excel avançado",
+          "Limpeza e validação de dados"
+        ]
+      },
+      {
+        "categoria": "Negócio",
+        "itens": [
+          "Indicadores financeiros",
+          "Fluxo de caixa",
+          "Conciliação",
+          "Relatórios gerenciais"
+        ]
+      },
+      {
+        "categoria": "Habilidades transferíveis",
+        "itens": [
+          "Apresentação de resultados para gestores",
+          "Atenção a detalhes",
+          "Resolução de problemas",
+          "Trabalho com prazos de fechamento"
+        ]
+      }
+    ],
+    "experiencias": [
+      {
+        "cargo": "Analista Financeiro",
+        "empresa": "Empresa Exemplo Distribuidora",
+        "descricaoEmpresa": "Distribuidora fictícia de produtos de limpeza, usada apenas como exemplo.",
+        "periodo": "Jul/2022 – atual",
+        "local": "Belo Horizonte – MG",
+        "modelo": "Híbrido",
+        "atividades": [
+          "Automatizei o relatório mensal de inadimplência com consultas SQL e Power BI, reduzindo de dois dias para meio dia o tempo de preparação.",
+          "Criei um painel de fluxo de caixa usado nas reuniões semanais da diretoria.",
+          "Padronizei a conferência de dados entre o sistema de gestão e as planilhas da equipe, diminuindo retrabalho no fechamento.",
+          "Apresentei mensalmente os principais indicadores financeiros para gestores de outras áreas."
+        ],
+        "tecnologias": [
+          "SQL",
+          "Power BI",
+          "Excel"
+        ]
+      },
+      {
+        "cargo": "Assistente Financeiro",
+        "empresa": "Empresa Exemplo Distribuidora",
+        "periodo": "Mar/2019 – Jun/2022",
+        "local": "Belo Horizonte – MG",
+        "modelo": "Presencial",
+        "atividades": [
+          "Realizei conciliações bancárias diárias e lançamentos de contas a pagar e a receber.",
+          "Montei planilhas de controle que depois serviram de base para os relatórios automatizados."
+        ],
+        "tecnologias": [
+          "Excel"
+        ]
+      }
+    ],
+    "experienciaAnterior": [
+      {
+        "empresa": "Escritório Exemplo de Contabilidade",
+        "cargo": "Auxiliar Administrativo",
+        "periodo": "2017 – 2019"
+      }
+    ],
+    "projetos": [
+      {
+        "nome": "Análise de vendas com dados públicos",
+        "descricao": "Limpeza e análise de uma base pública de vendas com Python, com notebook comentado e conclusões escritas para um leitor não técnico.",
+        "tecnologias": [
+          "Python",
+          "pandas",
+          "Jupyter"
+        ]
+      },
+      {
+        "nome": "Painel de indicadores financeiros",
+        "descricao": "Painel em Power BI com dados fictícios de uma empresa, com receita, despesas e margem por mês. Modelo de dados e medidas documentados no repositório.",
+        "tecnologias": [
+          "Power BI",
+          "SQL"
+        ]
+      },
+      {
+        "nome": "Consultas SQL comentadas",
+        "descricao": "Repositório com exercícios de SQL resolvidos e explicados, de filtros simples a funções de janela.",
+        "tecnologias": [
+          "SQL",
+          "PostgreSQL",
+          "Git"
+        ]
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Formação em Análise de Dados (240 h)",
+        "instituicao": "Escola Exemplo de Tecnologia",
+        "periodo": "Mar/2025 – Mar/2026",
+        "status": "Concluído"
+      },
+      {
+        "curso": "Bacharelado em Administração",
+        "instituicao": "Faculdade Exemplo",
+        "periodo": "2014 – 2018",
+        "status": "Concluído"
+      }
+    ],
+    "certificados": [
+      "SQL para Análise de Dados (20 h) – Escola Exemplo Online, 2025",
+      "Introdução ao Power BI (16 h) – Escola Exemplo Online, 2024"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário — leitura técnica"
+      }
+    ],
+    "comunidade": [
+      "Participação em grupo de estudos de SQL e Python (encontros quinzenais, desde 2025)."
+    ],
+    "dicas": [
+      {
+        "secao": "Resumo profissional",
+        "texto": "Na transição, o resumo é o lugar para contar a mudança em duas ou três frases: de onde você vem, o que estudou e o que leva para a nova área."
+      },
+      {
+        "secao": "Competências",
+        "texto": "Inclua as habilidades transferíveis que a vaga pede, como comunicação, resolução de problemas e atenção a detalhes, e prove cada uma com uma realização nas atividades."
+      },
+      {
+        "secao": "Experiência profissional",
+        "texto": "Mantenha a trajetória anterior, mas reescreva as atividades pensando em quem vai ler: destaque o que se aproxima da nova área, como relatórios, automação e uso de dados. Quando possível, mostre o resultado."
+      },
+      {
+        "secao": "Formação",
+        "texto": "Coloque a formação na nova área antes da graduação antiga. A ordem das seções e dos itens sinaliza o que é mais importante."
+      },
+      {
+        "secao": "Projetos",
+        "texto": "Projetos pessoais, cursos e trabalho voluntário contam como prova de qualificação, mesmo sem salário. Na transição, eles mostram que você já pratica o novo trabalho."
+      },
+      {
+        "secao": "Palavras-chave",
+        "texto": "Use os termos técnicos da descrição da vaga, mas só quando eles descrevem de verdade o que você fez. Muitas empresas usam sistemas de triagem que buscam essas palavras."
+      }
+    ],
+    "fontes": [
+      {
+        "label": "University of Northwestern – St. Paul: Career Change: A Guide to Resume Writing",
+        "url": "https://www.unwsp.edu/blog/career-change-a-guide-to-resume-writing/"
+      },
+      {
+        "label": "USC Career Center: Transferable Skills",
+        "url": "https://careers.usc.edu/resources/transferable-skills/"
+      },
+      {
+        "label": "MIT Career Advising & Professional Development: Career toolkit: Crafting an effective resume",
+        "url": "https://capd.mit.edu/resources/career-toolkit-crafting-an-effective-resume/"
+      },
+      {
+        "label": "Prefeitura de São Paulo (Secretaria de Desenvolvimento Econômico e Trabalho): Como preparar um currículo",
+        "url": "https://prefeitura.sp.gov.br/web/desenvolvimento/w/dicas/preparar_um_curriculo/619"
+      }
+    ],
+    "atualizadoEm": "2026-10-28"
+  },
+  {
+    "slug": "desenvolvedora-front-end-junior",
+    "nivel": "junior",
+    "paraQuem": "Para quem já tem o primeiro emprego ou estágio em desenvolvimento e quer uma vaga de pessoa desenvolvedora júnior ou o passo para pleno. Mostra como escrever atividades com verbo de ação e resultado e como separar experiência, projetos e formação.",
+    "ficticio": true,
+    "nome": "Carla Fictícia Rocha",
+    "titulo": "Desenvolvedora Front-end Júnior | React e TypeScript",
+    "localizacao": "Juiz de Fora – MG",
+    "contato": {
+      "telefone": "(00) 00000-0000",
+      "email": "carla.ficticia@example.com",
+      "linkedin": "https://www.example.com/linkedin/carla-ficticia",
+      "github": "https://www.example.com/github/carla-ficticia",
+      "portfolio": "https://www.example.com/portfolio/carla-ficticia"
+    },
+    "objetivo": "Atuar como Desenvolvedora Front-end, com foco em React, TypeScript, acessibilidade e qualidade de interface.",
+    "resumo": "Desenvolvedora front-end com quase três anos de experiência entre estágio e emprego efetivo, construindo interfaces em React e TypeScript para produtos web. Experiência com testes automatizados, revisão de código e trabalho em equipes ágeis, junto com produto e design.",
+    "competencias": [
+      {
+        "categoria": "Front-end",
+        "itens": [
+          "React",
+          "TypeScript",
+          "JavaScript",
+          "HTML semântico",
+          "CSS e Tailwind CSS",
+          "Acessibilidade web"
+        ]
+      },
+      {
+        "categoria": "Qualidade e ferramentas",
+        "itens": [
+          "Jest",
+          "Testing Library",
+          "Git e GitHub",
+          "Revisão de código",
+          "Integração contínua"
+        ]
+      },
+      {
+        "categoria": "Integração",
+        "itens": [
+          "APIs REST",
+          "Node.js (básico)"
+        ]
+      },
+      {
+        "categoria": "Colaboração",
+        "itens": [
+          "Scrum",
+          "Documentação técnica",
+          "Trabalho com design e produto"
+        ]
+      }
+    ],
+    "experiencias": [
+      {
+        "cargo": "Desenvolvedora Front-end Júnior",
+        "empresa": "Empresa Exemplo Software",
+        "descricaoEmpresa": "Empresa fictícia de software para gestão de clínicas, usada apenas como exemplo.",
+        "periodo": "Mar/2025 – atual",
+        "local": "Juiz de Fora – MG",
+        "modelo": "Híbrido",
+        "atividades": [
+          "Desenvolvi as telas de agendamento do produto web em React e TypeScript, junto com a equipe de design.",
+          "Criei testes automatizados com Jest e Testing Library para os componentes principais, aumentando a cobertura do módulo de agenda de 20% para 70%.",
+          "Corrigi problemas de acessibilidade apontados em auditoria, como contraste, rótulos de formulário e navegação por teclado.",
+          "Participei das revisões de código da equipe e documentei o padrão de componentes reutilizáveis."
+        ],
+        "tecnologias": [
+          "React",
+          "TypeScript",
+          "Jest",
+          "Testing Library",
+          "Git"
+        ]
+      },
+      {
+        "cargo": "Estagiária de Desenvolvimento Web",
+        "empresa": "Agência Exemplo Digital",
+        "periodo": "Jan/2024 – Fev/2025",
+        "local": "Remoto",
+        "modelo": "Remoto",
+        "atividades": [
+          "Construí páginas responsivas para sites de clientes a partir de protótipos no Figma.",
+          "Integrei formulários de contato a uma API REST interna, com validação no navegador.",
+          "Melhorei o tempo de carregamento de páginas otimizando imagens e removendo scripts sem uso."
+        ],
+        "tecnologias": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React"
+        ]
+      }
+    ],
+    "experienciaAnterior": [],
+    "projetos": [
+      {
+        "nome": "Biblioteca de componentes acessíveis",
+        "descricao": "Conjunto de componentes React (botão, modal, abas) com testes e documentação de uso, publicado como projeto de estudo.",
+        "tecnologias": [
+          "React",
+          "TypeScript",
+          "Storybook",
+          "Testing Library"
+        ]
+      },
+      {
+        "nome": "Painel de finanças pessoais",
+        "descricao": "Aplicação para registrar gastos por categoria e visualizar gráficos mensais, com dados salvos no navegador.",
+        "tecnologias": [
+          "React",
+          "TypeScript",
+          "Tailwind CSS"
+        ]
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Tecnologia em Análise e Desenvolvimento de Sistemas",
+        "instituicao": "Faculdade Exemplo de Tecnologia",
+        "periodo": "Fev/2022 – Dez/2024",
+        "status": "Concluído"
+      }
+    ],
+    "certificados": [
+      "TypeScript para Aplicações Web (24 h) – Escola Exemplo Online, 2025",
+      "Acessibilidade na Web (12 h) – Escola Exemplo Online, 2025"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário — leitura técnica e reuniões"
+      },
+      {
+        "idioma": "Espanhol",
+        "nivel": "Básico"
+      }
+    ],
+    "comunidade": [
+      "Palestra sobre acessibilidade em formulários em encontro da comunidade local de desenvolvimento (2026)."
+    ],
+    "dicas": [
+      {
+        "secao": "Experiência profissional",
+        "texto": "Liste os empregos do mais recente para o mais antigo. O estágio feito durante a faculdade entra como experiência, com período claro, para não parecer sobreposição sem explicação."
+      },
+      {
+        "secao": "Atividades",
+        "texto": "Comece cada atividade com um verbo de ação, diga o que você fez e termine com o resultado. Números ajudam quando existem, mas não são obrigatórios: descreva o efeito do seu trabalho."
+      },
+      {
+        "secao": "Competências",
+        "texto": "Agrupe as tecnologias por tipo, como linguagens, frameworks e ferramentas. Isso facilita a leitura rápida de quem faz a triagem."
+      },
+      {
+        "secao": "Projetos",
+        "texto": "Mesmo com experiência, mantenha um ou dois projetos com link para o código. Eles mostram o que você estuda além do trabalho e ajudam a sustentar o pedido de uma vaga mais sênior."
+      },
+      {
+        "secao": "Adaptação para a vaga",
+        "texto": "Ajuste o currículo para cada vaga: traga para cima o que a descrição pede e use os mesmos termos quando forem verdadeiros. Nunca copie o anúncio nem invente experiência."
+      },
+      {
+        "secao": "Formato",
+        "texto": "Prefira um layout simples, sem excesso de enfeites, em uma ou no máximo duas páginas. Não reduza a fonte para caber mais texto: corte o que é menos relevante."
+      }
+    ],
+    "fontes": [
+      {
+        "label": "MIT Career Advising & Professional Development: Career toolkit: Crafting an effective resume",
+        "url": "https://capd.mit.edu/resources/career-toolkit-crafting-an-effective-resume/"
+      },
+      {
+        "label": "UNC Computer Science: Writing a Technical Resume",
+        "url": "https://cs.unc.edu/student-life/career/technical-resumes/"
+      },
+      {
+        "label": "Prefeitura de São Paulo (Secretaria de Desenvolvimento Econômico e Trabalho): Como preparar um currículo",
+        "url": "https://prefeitura.sp.gov.br/web/desenvolvimento/w/dicas/preparar_um_curriculo/619"
+      }
+    ],
+    "atualizadoEm": "2026-10-28"
+  }
+]

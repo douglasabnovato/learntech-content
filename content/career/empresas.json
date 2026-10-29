@@ -426,5 +426,79 @@
       ],
       "atualizadoEm": "2026-10-28"
     }
+  },
+  {
+    "title": "BRQ Digital Solutions",
+    "location": "São Paulo / Anywhere Office",
+    "thumb": "./assets/thumb_good-companies/brq.jpg",
+    "site_url": "https://www.brq.com/carreiras",
+    "category": "Consultancy",
+    "slug": "brq",
+    "detalhe": {
+      "resumo": "Empresa brasileira de tecnologia fundada em 1993, com sede em São Paulo, que atende grandes empresas em projetos de engenharia de software, dados, nuvem e inteligência artificial. Segundo o próprio site, reúne mais de 2.000 profissionais e tem operação em mais de 12 países, com o modelo de trabalho Anywhere Office.",
+      "paragrafos": [
+        "A BRQ Digital Solutions foi criada em 1993 por Antonio Rodrigues e Benjamin Quadros, que saíram da IBM para abrir a empresa. A sede fica na Avenida Brigadeiro Faria Lima, em São Paulo. No site institucional, a BRQ informa mais de 33 anos de experiência, mais de 2.000 profissionais, que ela chama de \"feras\", e operação em mais de 12 países. A maior parte dos clientes é formada por grandes empresas, com destaque para o setor financeiro; entre os casos publicados estão projetos para Itaú, Santander, B3, Globoplay e iFood.",
+        "O trabalho é organizado em frentes de serviço com nomes em inglês, como a própria empresa apresenta: Squads by AI (equipes de entrega apoiadas por agentes de IA), Generative AI, Product & Experience, Mobile, Data & Analytics, Architecture & Engineering, Salesforce, Business Applications (SAP e Oracle) e modernização de sistemas legados para a nuvem. A BRQ mantém parcerias com AWS, Microsoft, Google Cloud, Salesforce e Databricks, o que dá uma boa pista das tecnologias que aparecem nas vagas.",
+        "O modelo de trabalho se chama Anywhere Office. Na página de carreiras, a empresa resume assim: \"De casa, do escritório, de um café. Você decide onde trabalhar.\" Na prática, cada vaga informa o formato combinado com o projeto e o cliente, então vale ler esse ponto com atenção antes de se candidatar. A BRQ aparece como empresa certificada pelo Great Place to Work (selo 2025/2026) e mantém um programa de diversidade e inclusão, com vagas afirmativas e três grupos de afinidade.",
+        "Para o desenvolvimento das pessoas, a página de carreiras cita a BRQ Academy, plataforma de aprendizado com gamificação, um programa de mentoria, reembolso de exames de certificação em tecnologia, estudo de idiomas com a GoFluent e parceria com a Udemy. A empresa descreve quatro caminhos de carreira: liderança, técnico (especialista), internacional, com projetos na América do Norte, na América do Sul e na Europa, e empreendedor, ligado ao seu braço de investimento em startups. Para estagiários e trainees, a porta de entrada citada é o programa Entry Point.",
+        "As vagas ficam no portal oficial da BRQ, e a página de carreiras traz um alerta importante: a empresa não pede pagamento em nenhuma etapa do processo seletivo e seus contatos oficiais usam endereços @brq.com. Desconfie de qualquer mensagem diferente disso. Para acompanhar novas oportunidades, siga a empresa no LinkedIn e no Instagram e, ao se candidatar, relacione sua experiência com as tecnologias e o setor do cliente citados na vaga."
+      ],
+      "imagens": [
+        {
+          "url": "/media/career/detalhe/brq.webp",
+          "alt": "Capa ilustrada com o título BRQ Digital Solutions: tecnologia, dados e IA desde 1993",
+          "legenda": "Ilustração própria do LearnTECH."
+        }
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.brq.com/"
+        },
+        {
+          "label": "Carreiras na BRQ",
+          "url": "https://www.brq.com/carreiras"
+        },
+        {
+          "label": "Portal de vagas",
+          "url": "https://brq.inhire.app/vagas"
+        },
+        {
+          "label": "O que a BRQ faz",
+          "url": "https://www.brq.com/o-que-fazemos"
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/company/brq"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/brqdigital"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@brqdigital"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "BRQ: Sobre",
+          "url": "https://www.brq.com/sobre"
+        },
+        {
+          "label": "BRQ: Carreiras",
+          "url": "https://www.brq.com/carreiras"
+        },
+        {
+          "label": "BRQ: O que fazemos",
+          "url": "https://www.brq.com/o-que-fazemos"
+        },
+        {
+          "label": "Portal Tela: Empresa criada na era da internet discada fatura R$ 594 milhões e aposta em IA",
+          "url": "https://www.portaltela.com/noticias/economia/2026/06/09/empresa-criada-na-era-da-internet-discada-fatura-r-594-milhoes-e-aposta-em-ia/"
+        }
+      ],
+      "atualizadoEm": "2026-10-28"
+    }
   }
 ]

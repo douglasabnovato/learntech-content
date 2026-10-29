@@ -33,14 +33,17 @@ Mais detalhes em [docs/ARQUITETURA.md](docs/ARQUITETURA.md) e [docs/DECISOES.md]
 | GET | `/v1/saude` | Verificação de funcionamento |
 | POST | `/v1/acessos` | Registro de acesso (só a partir dos 4 domínios) |
 | GET | `/v1/acessos`, `/v1/acessos/resumo` | Administração (token) |
-| DELETE | `/v1/acessos?email=` | Apaga os registros de um e-mail (token) |
+| DELETE | `/v1/acessos?email=` | Apaga os acessos e as mensagens de um e-mail (token) |
+| POST | `/v1/mensagens` | Mensagem do formulário "Fala aê" (só a partir dos 4 domínios) |
+| GET | `/v1/mensagens` | Administração (token) |
+| DELETE | `/v1/mensagens?email=` | Apaga só as mensagens de um e-mail (token) |
 
 ## Rodando localmente
 
 ```bash
 npm install
 cp .dev.vars.example .dev.vars        # defina um ADMIN_TOKEN local
-npm run db:migrar:local               # cria a tabela no D1 local
+npm run db:migrar:local               # cria as tabelas acessos e mensagens no D1 local
 npm run dev                           # build + wrangler dev em http://localhost:8787
 ```
 

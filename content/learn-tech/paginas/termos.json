@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "19 de julho de 2026",
+  "lastUpdated": "28 de outubro de 2026",
   "sections": [
     {
       "id": "sobre",
       "title": "1. Sobre a plataforma",
       "content": [
-        "A learnTECH é uma plataforma de conteúdo técnico educacional. Seu funcionamento se divide em duas frentes: a curadoria de conteúdo público já existente, organizada, comentada e transformada em prática (Acesso Livre); e, quando disponível, conteúdo autoral produzido diretamente pela equipe da learnTECH (área de Membros).",
+        "A learnTECH é uma plataforma de conteúdo técnico educacional e gratuita. Ela reúne a curadoria de conteúdo público já existente, organizada, comentada e transformada em prática, e conteúdo autoral produzido pela própria equipe, como programas e artigos.",
         "Ao usar a plataforma, você concorda com os termos descritos nesta página. Se você não concorda com algum ponto, pedimos que não utilize os serviços da learnTECH."
       ]
     },
@@ -19,10 +19,10 @@
     },
     {
       "id": "membros",
-      "title": "3. Conteúdo para Membros",
+      "title": "3. Acesso e identificação",
       "content": [
-        "A área de Membros, quando disponível, reúne conteúdo autoral — produzido diretamente pela learnTECH — e pode exigir cadastro e, futuramente, outras condições de acesso a serem informadas com clareza antes de qualquer cobrança.",
-        "Esta funcionalidade está em desenvolvimento. Referências a ela nesta plataforma descrevem uma direção futura, não um recurso já disponível."
+        "Todo o conteúdo da learnTECH é gratuito, e não há área de membros, login ou cadastro com senha.",
+        "Na primeira visita, o site pede nome e e-mail para medir o alcance do projeto. A finalidade, o prazo de guarda e como pedir a exclusão desses dados estão na política de privacidade."
       ]
     },
     {
@@ -30,7 +30,7 @@
       "title": "4. Propriedade intelectual",
       "content": [
         "O conteúdo teórico de terceiros, quando citado ou referenciado nas trilhas de Acesso Livre, permanece de propriedade de seus respectivos autores e fontes originais — a learnTECH apenas credita e referencia.",
-        "Os projetos práticos desenvolvidos pela learnTECH, os textos autorais, a identidade visual da plataforma e o conteúdo produzido para a área de Membros são de propriedade da learnTECH, e sua reprodução ou redistribuição sem autorização não é permitida."
+        "Os projetos práticos desenvolvidos pela learnTECH, os textos autorais, a identidade visual da plataforma são de propriedade da learnTECH, e sua reprodução ou redistribuição sem autorização não é permitida."
       ]
     },
     {

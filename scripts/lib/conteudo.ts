@@ -2,19 +2,21 @@
 import fs from "node:fs";
 import path from "node:path";
 import type { z } from "zod";
-import { programaSchema, paginaSchema, PAGINAS, CAMPOS_RESUMO, type Programa } from "../../src/schemas/learn-tech";
+import { programaSchema, paginaSchema, PAGINAS, CAMPOS_RESUMO, areaSchema, type Programa, type Area } from "../../src/schemas/learn-tech";
 import { eventoSchema, type Evento } from "../../src/schemas/bootcamps";
-import { empresaSchema, vagaOuPerfilSchema, destaquesSchema, ferramentaSchema } from "../../src/schemas/career-tools";
+import { empresaSchema, vagaOuPerfilSchema, destaquesSchema, ferramentaSchema, modeloCurriculoSchema } from "../../src/schemas/career-tools";
 import { coberturaSchema, type Cobertura } from "../../src/schemas/cobertura";
 
 export interface Conteudo {
   programas: Programa[];
   paginas: Record<string, Record<string, unknown>>;
+  areas: Area[];
   eventos: Evento[];
   empresas: z.infer<typeof empresaSchema>[];
   vagas: z.infer<typeof vagaOuPerfilSchema>[];
   perfis: z.infer<typeof vagaOuPerfilSchema>[];
   destaques: z.infer<typeof destaquesSchema>;
+  modelosCurriculo: z.infer<typeof modeloCurriculoSchema>[];
   ferramentas: z.infer<typeof ferramentaSchema>[];
   hospedagens: z.infer<typeof ferramentaSchema>[];
   cobertura: Cobertura;
@@ -92,11 +94,13 @@ export function carregarConteudo(raiz: string): { conteudo: Conteudo; erros: str
   const conteudo: Conteudo = {
     programas,
     paginas,
+    areas: lista("learn-tech/areas.json", areaSchema),
     eventos,
     empresas: lista("career/empresas.json", empresaSchema),
     vagas: lista("career/vagas.json", vagaOuPerfilSchema),
     perfis: lista("career/perfis.json", vagaOuPerfilSchema),
     destaques: conferir(destaquesSchema, lerJson(c("career/destaques.json"), erros), "career/destaques.json", erros) ?? { vaga: "", empresa: "", perfil: "" },
+    modelosCurriculo: lista("career/modelos-curriculo.json", modeloCurriculoSchema),
     ferramentas: lista("tools/ferramentas.json", ferramentaSchema),
     hospedagens: lista("tools/hospedagens.json", ferramentaSchema),
     cobertura: conferir(coberturaSchema, lerJson(c("cobertura.json"), erros), "cobertura.json", erros) ?? { atualizadoEm: "", referencias: [], itens: [] },
@@ -160,6 +164,16 @@ export function verificarIntegridade(c: Conteudo, pastaMidia: string): string[] 
     }
   }
 
+  repetidos(c.areas.map((a) => a.id)).forEach((id) => erros.push(`área ${id}: id repetido`));
+  repetidos(c.modelosCurriculo.map((m) => m.slug)).forEach((s) => erros.push(`modelo de currículo ${s}: slug repetido`));
+  const filtros = new Set(c.programas.map((p) => p.categoryFilter));
+  const itensCategorias = (c.paginas.categorias as { itens?: { slug?: string }[] } | undefined)?.itens ?? [];
+  const slugsCategorias = new Set(itensCategorias.map((i) => i.slug).filter((s): s is string => typeof s === "string"));
+  for (const a of c.areas) {
+    for (const f of a.categorias) if (!filtros.has(f)) erros.push(`área ${a.id}: categoria "${f}" não é categoryFilter de nenhum programa`);
+    for (const card of a.cards) if (card.categoria && !slugsCategorias.has(card.categoria)) erros.push(`área ${a.id}: card "${card.title}" aponta para a categoria "${card.categoria}", que não existe em paginas/categorias.json`);
+  }
+
   repetidos(c.eventos.map((e) => e.id)).forEach((id) => erros.push(`evento id ${id}: repetido`));
   repetidos(c.eventos.map((e) => e.slug)).forEach((s) => erros.push(`evento ${s}: slug repetido`));
 
@@ -214,12 +228,14 @@ export function montarRecursos(c: Conteudo): Recurso[] {
     { caminho: "learn-tech/programas.json", descricao: "Catálogo de programas (campos de card)", dados: c.programas.map(resumoPrograma) },
     ...c.programas.map((p) => ({ caminho: `learn-tech/programas/${p.id}.json`, descricao: `Programa ${p.id} completo (módulos e quiz)`, dados: p })),
     ...Object.entries(c.paginas).map(([nome, dados]) => ({ caminho: `learn-tech/paginas/${nome}.json`, descricao: `Página ${nome}`, dados })),
+    { caminho: "learn-tech/areas.json", descricao: "Áreas de atuação em tecnologia (com fontes)", dados: c.areas },
     { caminho: "bootcamps/eventos.json", descricao: "Eventos, bootcamps e formações", dados: c.eventos },
     ...c.eventos.map((e) => ({ caminho: `bootcamps/eventos/${e.slug}.json`, descricao: `Evento ${e.slug}`, dados: e })),
     { caminho: "career/empresas.json", descricao: "Empresas para acompanhar", dados: c.empresas },
     { caminho: "career/vagas.json", descricao: "Plataformas de vagas", dados: c.vagas },
     { caminho: "career/perfis.json", descricao: "Perfis de devs para seguir", dados: c.perfis },
     { caminho: "career/destaques.json", descricao: "Seleção do carrossel de destaques", dados: c.destaques },
+    { caminho: "career/modelos-curriculo.json", descricao: "Modelos de currículo fictícios, com dicas e fontes", dados: c.modelosCurriculo },
     { caminho: "tools/ferramentas.json", descricao: "Ferramentas", dados: c.ferramentas },
     { caminho: "tools/hospedagens.json", descricao: "Hospedagens", dados: c.hospedagens },
     { caminho: "cobertura.json", descricao: "Matriz de cobertura do acervo", dados: c.cobertura },

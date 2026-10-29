@@ -29,7 +29,7 @@ Ou seja, **40 de 67 itens (60%) já viraram conteúdo**, e só 6 deles em parte.
 | Item | Conteúdo possível | Site |
 |---|---|---|
 | EV-003, material do CodeXperience 2024 e 2025 (deck, roteiro da abertura, proposta de apoio) | Seções 2024 e 2025 da cobertura, com imagens de slides; artigo "Como organizar um evento de comunidade", a partir da sua experiência na organização | bootcamps, learn-tech |
-| EV-002, Minas Summit (certificado de 2024) | Corrigir a edição e o certificado (o JSON aponta para 2025) e completar o texto | bootcamps |
+| EV-002, Minas Summit (certificado de 2024) | Publicar o certificado de 2024 como link (o de 2025 já publicado está correto) e completar o texto | bootcamps |
 | EV-004, oportunidades de 2022 (capturas) | Pistas para novas vagas e perfis | career |
 | DOC-001, catálogo de livros infantis em JSON | Exercício "Vitrine a partir de JSON" no programa 4 (JavaScript, hoje capa) | learn-tech |
 | DOC-002, dicionário de tags HTML | Glossário comentado no programa 2 (HTML e CSS, hoje capa) | learn-tech |

@@ -14,7 +14,7 @@ npx wrangler d1 create learntech-acessos   # imprime um database_id
 Copie o `database_id` impresso para `wrangler.jsonc`, no campo `d1_databases[0].database_id`. Esse id não é segredo e pode ir para o Git. (Neste repositório o campo já está preenchido; só refaça este passo se for criar um banco novo.)
 
 ```bash
-npm run db:migrar:remoto                   # cria a tabela acessos no D1
+npm run db:migrar:remoto                   # cria as tabelas acessos e mensagens no D1
 npx wrangler secret put ADMIN_TOKEN        # cole um token longo (24+ caracteres)
 npm run deploy                             # build + wrangler deploy
 ```
@@ -72,3 +72,33 @@ curl -X DELETE -H "Authorization: Bearer $TOKEN" "$API/v1/acessos?email=pessoa@e
 ```
 
 Também dá para ver a tabela no painel: Cloudflare → Storage & Databases → D1 → learntech-acessos → Console.
+
+O `DELETE /v1/acessos?email=` apaga **também as mensagens** do "Fala aê" desse e-mail e responde `{ "apagados": <acessos>, "mensagens": <mensagens> }`. Use-o para pedidos de exclusão (LGPD).
+
+## 7. Mensagens do "Fala aê"
+
+O formulário "Fala aê" do learn-tech grava em `POST /v1/mensagens`, na tabela `mensagens` do mesmo banco D1 (migração `migrations/0002_mensagens.sql`).
+
+**Antes do primeiro deploy com esta rota**, crie a tabela no D1 remoto; sem ela, o envio responde 500:
+
+```bash
+npm run db:migrar:remoto                   # aplica 0002_mensagens.sql (as já aplicadas são puladas)
+npm run deploy
+```
+
+Consultar e apagar:
+
+```bash
+TOKEN=...  API=https://learntech-content.<sub>.workers.dev
+curl -H "Authorization: Bearer $TOKEN" "$API/v1/mensagens"                                  # 200 mais recentes
+curl -H "Authorization: Bearer $TOKEN" "$API/v1/mensagens?motivo=privacidade&desde=2026-10-01"
+curl -H "Authorization: Bearer $TOKEN" "$API/v1/mensagens?email=pessoa@exemplo.com"
+curl -H "Authorization: Bearer $TOKEN" "$API/v1/mensagens?formato=csv&limite=1000" -o mensagens.csv
+curl -X DELETE -H "Authorization: Bearer $TOKEN" "$API/v1/mensagens?email=pessoa@exemplo.com"   # só as mensagens
+```
+
+Filtros: `projeto`, `motivo` (`duvida-programa`, `sugestao-conteudo`, `problema-tecnico`, `privacidade`, `outro`), `email`, `desde` (AAAA-MM-DD), `limite` (até 1000) e `formato=csv`.
+
+Não há aviso automático de mensagem nova: consulte a rota (ou o Console do D1) periodicamente. As respostas são enviadas pelo seu e-mail, para o endereço informado.
+
+**Turnstile:** com `TURNSTILE_SECRET` configurado, `POST /v1/mensagens` também exige token válido. O formulário do learn-tech ainda **não envia** token, então, se ativar o Turnstile, integre o widget no `FalaAe.jsx` antes (ou o envio passará a responder 403).

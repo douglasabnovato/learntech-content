@@ -1,6 +1,6 @@
 /* learn-tech.ts — schemas dos programas, quizzes e páginas do site learn-tech (mesmo formato que o frontend consome). */
 import { z } from "zod";
-import { textoObrigatorio, urlOuMidia, urlAbsoluta } from "./comum";
+import { textoObrigatorio, urlOuMidia, urlAbsoluta, slug } from "./comum";
 
 export const ICONES_MODULO = [
   "bolt", "clipboard", "comment", "folder", "gauge", "github", "globe",
@@ -76,6 +76,32 @@ export const CAMPOS_RESUMO = [
 ] as const;
 
 export const paginaSchema = z.record(z.string(), z.unknown());
+
+/* Área de atuação (tela /category): orientação de carreira com fontes. Ícones são nomes do react-icons (icones.js do site). */
+export const areaSchema = z.object({
+  id: slug,
+  title: textoObrigatorio,
+  subtitle: textoObrigatorio,
+  icon: textoObrigatorio,
+  paragraphs: z.array(textoObrigatorio).min(1),
+  diaADia: z.array(textoObrigatorio).optional(),
+  competencias: z.array(textoObrigatorio).optional(),
+  ferramentas: z.array(textoObrigatorio).optional(),
+  comoComecar: z.array(textoObrigatorio).optional(),
+  cards: z.array(z.object({
+    categoria: slug.nullable(),
+    icon: textoObrigatorio,
+    title: textoObrigatorio,
+    description: textoObrigatorio,
+    color: textoObrigatorio,
+  })),
+  categorias: z.array(z.string().regex(/^[a-z0-9-]+$/)),
+  closing: z.string().nullable(),
+  sources: z.array(z.object({ label: textoObrigatorio, url: urlAbsoluta })).min(1),
+  updatedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+});
+
+export type Area = z.infer<typeof areaSchema>;
 
 export const PAGINAS = [
   "sobre", "aprender", "carreira", "categorias", "blog", "faq",

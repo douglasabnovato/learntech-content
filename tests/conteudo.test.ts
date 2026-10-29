@@ -3,7 +3,7 @@ import path from "node:path";
 import { describe, it, expect } from "vitest";
 import { carregarConteudo, verificarIntegridade, montarRecursos } from "../scripts/lib/conteudo";
 import { gerarOpenApi } from "../scripts/lib/openapi";
-import { detalheSchema } from "../src/schemas/career-tools";
+import { detalheSchema, modeloCurriculoSchema } from "../src/schemas/career-tools";
 
 const RAIZ = path.resolve(__dirname, "..");
 const { conteudo, erros } = carregarConteudo(path.join(RAIZ, "content"));
@@ -29,6 +29,16 @@ describe("conteúdo publicado", () => {
     expect(p).toBeDefined();
     expect(p!.modules!.length).toBe(4);
     expect(p!.quiz!.length).toBeGreaterThanOrEqual(8);
+  });
+
+  it("publica modelos de currículo fictícios", () => {
+    expect(conteudo.modelosCurriculo.length).toBeGreaterThanOrEqual(3);
+    for (const m of conteudo.modelosCurriculo) expect(m.ficticio).toBe(true);
+  });
+
+  it("publica as áreas de atuação com fontes", () => {
+    expect(conteudo.areas.length).toBeGreaterThanOrEqual(5);
+    for (const a of conteudo.areas) expect(a.sources.length).toBeGreaterThan(0);
   });
 
   it("a matriz de cobertura só aponta para itens existentes", () => {
@@ -73,9 +83,24 @@ describe("regras de integridade", () => {
     expect(verificarIntegridade(c, path.join(RAIZ, "media")).join()).toMatch(/tem detalhe mas não tem slug/);
   });
 
+  it("modelo de currículo recusa contato real", () => {
+    const m = structuredClone(conteudo.modelosCurriculo[0]!);
+    m.contato.email = "pessoa@gmail.com";
+    expect(modeloCurriculoSchema.safeParse(m).success).toBe(false);
+    const n = structuredClone(conteudo.modelosCurriculo[0]!) as Record<string, unknown> & { contato: Record<string, string> };
+    n.contato.telefone = "(32) 99999-1234";
+    expect(modeloCurriculoSchema.safeParse(n).success).toBe(false);
+  });
+
   it("o schema recusa vídeo que não é embed do YouTube", () => {
     const r = detalheSchema.safeParse({ resumo: "r", paragrafos: ["p"], video: "https://vimeo.com/123", atualizadoEm: "2026-10-28" });
     expect(r.success).toBe(false);
+  });
+
+  it("acusa área com categoria que não é de nenhum programa", () => {
+    const c = copia();
+    c.areas[0]!.categorias = ["categoria-inexistente"];
+    expect(verificarIntegridade(c, path.join(RAIZ, "media")).join()).toMatch(/categoria "categoria-inexistente" não é categoryFilter/);
   });
 
   it("acusa destaque que saiu do catálogo", () => {

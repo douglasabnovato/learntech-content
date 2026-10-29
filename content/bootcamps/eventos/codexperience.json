@@ -148,6 +148,10 @@
       {
         "label": "Artigo no LearnTECH",
         "url": "https://learn-tech-pied.vercel.app/blog/eventos-de-comunidade-tech"
+      },
+      {
+        "label": "Artigo: como organizar um evento de comunidade",
+        "url": "https://learn-tech-pied.vercel.app/blog/como-organizar-evento-de-comunidade-tech"
       }
     ],
     "editions": [

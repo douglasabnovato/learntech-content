@@ -41,6 +41,47 @@ export const vagaOuPerfilSchema = z.object({
   ...comDetalhe,
 });
 
+/* Modelo de currículo FICTÍCIO e didático. O schema obriga contatos falsos para que nenhum dado real entre por engano. */
+const linkExemplo = z.string().regex(/^https:\/\/www\.example\.com\//, "link de modelo deve apontar para https://www.example.com/");
+export const modeloCurriculoSchema = z.object({
+  slug,
+  nivel: z.enum(["estagio", "junior", "pleno", "senior", "transicao"]),
+  paraQuem: textoObrigatorio,
+  ficticio: z.literal(true),
+  nome: textoObrigatorio,
+  titulo: textoObrigatorio,
+  localizacao: textoObrigatorio,
+  objetivo: textoObrigatorio,
+  resumo: textoObrigatorio,
+  contato: z.object({
+    telefone: z.literal("(00) 00000-0000"),
+    email: z.string().regex(/^[a-z0-9._-]+@example\.com$/, "e-mail de modelo deve terminar em @example.com"),
+    linkedin: linkExemplo,
+    github: linkExemplo,
+    portfolio: linkExemplo,
+  }),
+  competencias: z.array(z.object({ categoria: textoObrigatorio, itens: z.array(textoObrigatorio) })),
+  experiencias: z.array(z.object({
+    cargo: textoObrigatorio,
+    empresa: textoObrigatorio,
+    descricaoEmpresa: z.string().optional(),
+    periodo: textoObrigatorio,
+    local: textoObrigatorio,
+    modelo: textoObrigatorio,
+    atividades: z.array(textoObrigatorio),
+    tecnologias: z.array(textoObrigatorio),
+  })),
+  experienciaAnterior: z.array(z.object({ empresa: textoObrigatorio, cargo: textoObrigatorio, periodo: textoObrigatorio })),
+  projetos: z.array(z.object({ nome: textoObrigatorio, descricao: textoObrigatorio, tecnologias: z.array(textoObrigatorio) })),
+  formacao: z.array(z.object({ curso: textoObrigatorio, instituicao: textoObrigatorio, periodo: textoObrigatorio, status: textoObrigatorio })),
+  certificados: z.array(textoObrigatorio),
+  idiomas: z.array(z.object({ idioma: textoObrigatorio, nivel: textoObrigatorio })),
+  comunidade: z.array(textoObrigatorio),
+  dicas: z.array(z.object({ secao: textoObrigatorio, texto: textoObrigatorio })).min(1),
+  fontes: z.array(z.object({ label: textoObrigatorio, url: urlAbsoluta })).min(1),
+  atualizadoEm: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+});
+
 export const destaquesSchema = z.object({
   vaga: textoObrigatorio,
   empresa: textoObrigatorio,

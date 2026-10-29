@@ -9,7 +9,7 @@
   "category": "fullstack",
   "status": "concluido",
   "content": {
-    "longDescription": "A ByteClass é uma escola de tecnologia focada em transformar iniciantes em desenvolvedores seniores, com sede física no Edifício Stella Central (Sala 902), em Juiz de Fora - MG. A formação percorre 5 níveis — de Lógica e Algoritmos (M1) até um Bootcamp de projetos reais ponta a ponta (M5) — cobrindo 3 trilhas técnicas (Frontend, Backend e Fullstack) e 27 tecnologias do mercado. A mentoria é conduzida por quem atua no mercado como CTO, dentro de um hub de tecnologia que facilita networking real entre alunos. Além da formação contínua, a ByteClass organiza um evento de tecnologia com data anunciada e agendada diretamente pelo Discord da comunidade — fique de olho nos canais para não perder a próxima edição.",
+    "longDescription": "A ByteClass é uma escola de tecnologia focada em transformar iniciantes em desenvolvedores seniores, com sede física no Edifício Stella Central (Sala 902), em Juiz de Fora - MG. A formação percorre 5 níveis — de Lógica e Algoritmos (M1) até um Bootcamp de projetos reais ponta a ponta (M5) — cobrindo 3 trilhas técnicas (Frontend, Backend e Fullstack) e 25 tecnologias do mercado. A mentoria é conduzida por quem atua no mercado como CTO, dentro de um hub de tecnologia que facilita networking real entre alunos. Além da formação contínua, a ByteClass organiza um evento de tecnologia com data anunciada e agendada diretamente pelo Discord da comunidade — fique de olho nos canais para não perder a próxima edição. O slogan da escola é \"A cada Byte construindo seu futuro\", e a proposta é uma formação prática, com mentoria presencial ou híbrida, que acompanha o aluno da lógica de programação ao deploy. Na grade planejada, os níveis avançam em sequência: M1 trabalha lógica, algoritmos e preparação do ambiente; M2 dá as bases de Web e de linguagens estruturadas; M3 entra em frameworks, integração de APIs e banco de dados; M4 trata de arquitetura, performance e segurança; e M5 fecha com projetos reais de ponta a ponta para o portfólio. As trilhas definem o foco técnico: Frontend concentra-se em interface, interatividade e experiência do usuário, com React, Vue e Tailwind CSS; Backend concentra-se em servidores, lógica de negócio e persistência de dados, com Node.js, PHP com Laravel e Python; e Fullstack reúne as duas pontas. O stack previsto inclui ainda Next.js, Sass, Express, Django, React Native e Expo, bancos MySQL e PostgreSQL, Supabase, Docker, Vercel, Git e GitHub, além do Figma para design de interfaces.",
     "videoUrl": "",
     "gallery": [],
     "curriculum": [
@@ -17,8 +17,17 @@
       "M2 — Fundamental: bases sólidas de Web (HTML/CSS) e linguagens estruturadas",
       "M3 — Intermediário: frameworks, integração de APIs e banco de dados",
       "M4 — Avançado: arquitetura de sistemas, performance e segurança",
-      "M5 — Bootcamp: projetos reais de ponta a ponta (Full-Stack), focados em portfólio"
+      "M5 — Bootcamp: projetos reais de ponta a ponta (Full-Stack), focados em portfólio",
+      "Trilha Frontend: interface, interatividade e experiência do usuário (React, Vue, Tailwind CSS)",
+      "Trilha Backend: servidores, lógica de negócio e persistência de dados (Node.js, PHP/Laravel, Python)",
+      "Trilha Fullstack: domínio das duas pontas, do frontend ao backend",
+      "Linguagens e runtimes: JavaScript, Node.js, PHP, Python e SQL",
+      "Frontend: HTML5, CSS3, ReactJS, Vue 3, Next.js, Tailwind CSS e Sass",
+      "Backend: Express, Laravel e Django",
+      "Mobile: React Native e Expo",
+      "Banco de dados e infraestrutura: MySQL, PostgreSQL, Supabase, Docker e Vercel",
+      "Versionamento e design: Git, GitHub e Figma"
     ],
-    "officialLink": "/eventos-vivos/byteclass.dev/index.html"
+    "officialLink": ""
   }
 }

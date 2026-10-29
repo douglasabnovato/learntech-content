@@ -41,7 +41,7 @@ Nada desta lista foi executado. Cada item aponta o documento com o detalhe. As d
 | E2 | Quem fez as fotos da Canon, para o crédito? | dúvida 2 |
 | E3 | **Resolvido em 27/10:** Claude escolheu 10 fotos (`08-piloto-codexperience.md`); o Douglas ajusta se quiser. Pergunta original: escolher cerca de 14 fotos novas entre as 178 candidatas (apêndice) e confirmar as 6 já publicadas | dúvida 3 |
 | E4 | Seu papel no CodeXperience 2023 (staff ou participante) e em 2025 (organização?) | dúvidas 6 e 10 |
-| E5 | Minas Summit: 2024, 2025 ou os dois? O JSON aponta para o certificado de 2025 | dúvida 7 |
+| E5 | **Corrigido em 28/10:** o certificado publicado é mesmo o de 2025 (05 e 06/06/2025, no nome do Douglas), então não há erro. Falta decidir se o de 2024, que está no hd, também entra (como link), já que o schema aceita um só `certificate` | `revisao/bootcamps.md` |
 | E6 | Startup Way 2023: ideia da equipe, fase alcançada e material para publicar | dúvida 9 |
 | E7 | Formações confirmadas: Pitang, Netuno, Le Wagon, Digital House, Experience Summit, UFJF/NuRC, BNI, Santander/Ada | `01-inventario-documentos.md`, dúvida 9; eventos, dúvida 11 |
 | E8 | **Resolvido em 27/10:** vídeo público provisório até subir o MVI_5108.MP4 (`08-piloto-codexperience.md`, seção 3). Pergunta original: o vídeo da Pitang e o do CodeXperience podem ir para o seu YouTube? Público ou não listado? | documentos, dúvida 10 |

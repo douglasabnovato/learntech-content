@@ -20,6 +20,9 @@ Gerado em 27/10/2026. Os documentos 01 a 07 são análise e proposta. O 08 regis
 | `10-uso-do-hd.md` | O que foi usado do hd e o que ainda rende | Concluído |
 | `11-mapa-editorial.md` | Cada item do hd classificado nos 7 tipos de conteúdo, com a fila de prioridade | Concluído |
 | `12-paginas-de-detalhe.md` | Páginas de detalhe no career, no tools e no bootcamps, com verificação e decisões | Concluído |
+| `13-revisao-conteudo-existente.md` | Revisão do conteúdo que já existia nos 4 sites, com plano e decisões (detalhe em `revisao/`) | Concluído |
+| `14-conteudo-estatico.md` | Inventário do conteúdo estático dos 4 sites e decisões (detalhe em `inventario-estatico/`) | Concluído |
+| `15-relatorio-conteudo-estatico.md` | Conteúdo estático levado à API, cópias geradas, verificação e decisões | Concluído |
 | `09-relatorio-2026-10-28.md` | Primeiro lote: 3 programas, 13 artigos, tools, career, Startup Way, decisões a revisar | Concluído |
 
 ## Fluxo

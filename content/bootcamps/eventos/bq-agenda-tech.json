@@ -9,15 +9,18 @@
   "category": "fullstack",
   "status": "desejado",
   "content": {
-    "longDescription": "O BQ Agenda Tech é um evento de café e tecnologia pensado para fomentar o ecossistema local e acelerar negócios, reunindo palestrantes, apoiadores e parceiros num encontro presencial. Realização de BQ Spazio em conjunto com Douglas Novato, com apoio da Volta Express Brasil e parceria de produção audiovisual (MovieMaker) de Marlon. A primeira edição ainda está em fase de organização — data, confirmação de palestrantes e divulgação em andamento.",
+    "longDescription": "O BQ Agenda Tech é um evento de café e tecnologia pensado para fomentar o ecossistema local e acelerar negócios, reunindo palestrantes, apoiadores e parceiros num encontro presencial. Nos materiais de divulgação ele também aparece como BQ Café e Tecnologia, e a ideia cabe numa frase: é tomar café e entender de tecnologia. A proposta é integrar o setor de serviços e produtos com o universo tech para criar, validar e acelerar negócios, aproximando o setor de serviços tradicional das soluções tecnológicas e abrindo espaço para networking real e parcerias em Juiz de Fora. O evento se apoia em três pilares: Integração, com autônomos e desenvolvedores no mesmo ecossistema; Negócios, com foco em gerar valor e contratos; e Comunidade, para fortalecer o cenário tech local. O formato planejado é presencial, com inscrições gratuitas, vagas limitadas e palestrantes convidados. O local previsto é a BQ Spazio Coworking, no Shopping Spazio Design (Ladeira Alexandre Leonel, 113, São Mateus, Juiz de Fora - MG). A realização é da BQ Spazio, que oferece a infraestrutura, em conjunto com Douglas Abnovato na curadoria técnica e de conteúdo, com apoio de parceiros de mídia e de coffee break. A primeira edição ainda está em fase de organização: data, palestrantes, temas e divulgação estão em andamento e serão publicados quando forem confirmados.",
     "videoUrl": "",
     "gallery": [],
     "curriculum": [
       "Localização e estrutura do evento",
       "Palestras com convidados do ecossistema local",
       "Rodada de apoiadores e parceiros",
-      "Networking entre participantes"
+      "Networking entre participantes",
+      "Pilar Integração: autônomos e desenvolvedores no mesmo ecossistema",
+      "Pilar Negócios: foco em gerar valor e contratos",
+      "Pilar Comunidade: fortalecimento do cenário tech local"
     ],
-    "officialLink": "/eventos-vivos/bq-agenda-tech/index.html"
+    "officialLink": ""
   }
 }

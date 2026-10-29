@@ -15,7 +15,9 @@
     "verificar": "npm run typecheck && npm test && npm run build",
     "db:migrar:local": "wrangler d1 migrations apply learntech-acessos --local",
     "db:migrar:remoto": "wrangler d1 migrations apply learntech-acessos --remote",
-    "deploy": "npm run build && wrangler deploy"
+    "deploy": "npm run build && wrangler deploy",
+    "copias": "node scripts/exportar-copias.mjs",
+    "copias:conferir": "node scripts/exportar-copias.mjs --conferir"
   },
   "dependencies": {
     "hono": "^4.13.9",

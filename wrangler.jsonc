@@ -1,6 +1,6 @@
 // wrangler.jsonc — configuração do Worker learntech-content (plano gratuito da Cloudflare).
 // Leitura: arquivos estáticos em ./dist (gerados por `npm run build`).
-// Escrita: só /v1/acessos, que passa pelo Worker e grava no D1.
+// Escrita: só /v1/acessos e /v1/mensagens (formulário "Fala aê"), que passam pelo Worker e gravam no D1.
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "learntech-content",
@@ -12,7 +12,7 @@
     "directory": "./dist",
     "binding": "ASSETS",
     "not_found_handling": "none",
-    "run_worker_first": ["/v1/acessos", "/v1/acessos/*", "/v1/saude"]
+    "run_worker_first": ["/v1/acessos", "/v1/acessos/*", "/v1/mensagens", "/v1/saude"]
   },
   "d1_databases": [
     {

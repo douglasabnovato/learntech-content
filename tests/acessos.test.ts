@@ -160,7 +160,7 @@ describe("administração", () => {
 
   it("apaga todos os registros de um e-mail (pedido do titular)", async () => {
     const r = await admin("/v1/acessos?email=MARIA@exemplo.com", "DELETE");
-    expect(await r.json()).toEqual({ apagados: 2 });
+    expect(await r.json()).toEqual({ apagados: 2, mensagens: 0 });
     expect(repo.linhas.map((l) => l.email)).toEqual(["joao@exemplo.com"]);
   });
 });

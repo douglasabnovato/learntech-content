@@ -41,3 +41,19 @@ im.thumbnail((1600, 1600)); im.save("media/bootcamps/eventos/evento/1.webp", "WE
 - Nada de dados pessoais de terceiros: CPF, telefones, listas de e-mails, bases de clientes.
 - Livros, apostilas e cursos pagos entram só como referência citada.
 - O case da empresa do varejo de construção usa nome fictício e números em proporção.
+
+## Cópias locais dos sites
+
+Cada site guarda uma cópia de reserva para quando a API não responde. Essa cópia é **gerada** a partir de `content/` e não deve ser editada à mão:
+
+- tools: `data/tools.js`, `data/host.js`;
+- career: `js/good-companies.js`, `js/jobs.js`, `js/perfis-dev.js`, `js/destaques.js`, `js/curriculos.js`;
+- bootcamps: `src/entities/event/api/events.data.ts`;
+- learn-tech: `src/constants/blogData.js`, `src/constants/areasData.js`.
+
+Depois de mudar `content/`, rode `npm run copias` (com os sites como pastas irmãs em `mundo-learn-tech/`) e faça o commit dos arquivos gerados em cada site. `npm run copias:conferir` acusa cópia desatualizada.
+
+## Tipos de conteúdo novos (28/10/2026)
+
+- `learn-tech/areas.json`: áreas de atuação, com fontes obrigatórias. O build confere se `categorias` existe como `categoryFilter` de algum programa e se `cards[].categoria` existe em `paginas/categorias.json`.
+- `career/modelos-curriculo.json`: modelos de currículo **fictícios**. O build exige `ficticio: true`, telefone `(00) 00000-0000`, e-mail `@example.com` e links `https://www.example.com/`, para nenhum dado real entrar por engano.

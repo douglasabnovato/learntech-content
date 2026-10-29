@@ -520,6 +520,28 @@
         }
       ],
       "observacao": "Decisão do Douglas em 28/10/2026: sem prova de participação, entram como empresas no career, não como páginas no bootcamps."
+    },
+    {
+      "pasta": "hd/eventos/eventos-codexperience (EV-003) e convites do BQ (removidos do bootcamps)",
+      "descricao": "Roteiro e deck da abertura de 2024, proposta de apoio 2025 e convites para palestrante, apoiador e parceiro, transformados em guia de organização de eventos",
+      "status": "publicado",
+      "destinos": [
+        {
+          "projeto": "learn-tech",
+          "recurso": "paginas",
+          "ids": [
+            "blog"
+          ]
+        },
+        {
+          "projeto": "bootcamps",
+          "recurso": "eventos",
+          "ids": [
+            "codexperience"
+          ]
+        }
+      ],
+      "observacao": "Virou o artigo como-organizar-evento-de-comunidade-tech, com link no codexperience. Usadas só a estrutura e as lições: sem valores de cotas, nomes de pessoas, empresas apoiadoras, local do BQ ou contatos."
     }
   ]
 }

@@ -172,5 +172,19 @@
       ],
       "atualizadoEm": "2026-10-28"
     }
+  },
+  {
+    "title": "Vagas.com",
+    "duration": "Brasil",
+    "thumb": "/media/career/vagas-com.webp",
+    "site_url": "https://www.vagas.com.br/vagas-de-tecnologia",
+    "category": "General Jobs"
+  },
+  {
+    "title": "We Work Remotely",
+    "duration": "Remoto",
+    "thumb": "/media/career/we-work-remotely.webp",
+    "site_url": "https://weworkremotely.com/categories/remote-programming-jobs",
+    "category": "Global Jobs"
   }
 ]
