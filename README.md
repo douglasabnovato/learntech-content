@@ -1,4 +1,4 @@
-# learntech-content
+# Learntech Content
 
 API de conteúdo do ecossistema **LearnTECH**: um só lugar para os programas, eventos, empresas, vagas, perfis e ferramentas que alimentam os quatro sites. O projeto é gratuito e sem fins comerciais.
 
