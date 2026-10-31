@@ -3,19 +3,56 @@
   "slug": "42-sp",
   "title": "Piscine 42SP",
   "institution": "42 São Paulo",
-  "description": "Avancei na seleção da 42 em 2026 até ser aprovado para a Piscina, mas cedi a vaga por não conseguir estar presente.",
+  "description": "Formação gratuita e presencial em engenharia de software da rede 42, com seleção pela Piscina, uma imersão intensiva no campus de São Paulo.",
   "coverImage": "/media/bootcamps/instituicoes/42sp.webp",
   "altText": "Ambiente de imersão da 42 São Paulo",
   "category": "fullstack",
   "status": "desejado",
   "content": {
-    "longDescription": "Fiz o processo seletivo da 42 São Paulo: primeiro uma etapa online, depois uma missão presencial de 7 dias em abril de 2026, na sede de uma empresa parceira, resolvendo desafios em Python. Avancei pelas duas fases e fui aprovado para a Piscina — a etapa final e mais intensa do processo seletivo. Precisei ceder minha vaga por não conseguir estar presencialmente disponível no período. Fica como uma jornada recente que pretendo retomar.",
+    "longDescription": "A 42 São Paulo é a unidade paulistana da rede 42, escola de programação criada na França em 2013 que ensina sem professores nem salas de aula, por projetos e aprendizagem entre pares. A formação é gratuita, presencial e aberta a maiores de 18 anos, sem exigência de experiência prévia. O ingresso passa pela Piscina, uma imersão presencial e intensiva que funciona ao mesmo tempo como etapa final de seleção e como primeira experiência com o método da escola.",
     "videoUrl": "https://www.youtube.com/embed/1-fUC6_yntE",
     "gallery": [],
     "curriculum": [
       "Jogo de Lógica e Memória (seleção online)",
-      "Missão presencial de 7 dias — desafios em Python (abril/2026)"
+      "Missão presencial de 7 dias — desafios em Python (abril/2026)",
+      "Piscina: imersão presencial com exercícios em C e Shell",
+      "Common Core: linguagem C e C++",
+      "Redes e administração de sistemas",
+      "Estruturas de dados e algoritmos",
+      "Computação gráfica e programação concorrente",
+      "Especializações: IA, cibersegurança, dados, web e mobile, sistemas operacionais"
     ],
-    "officialLink": "https://www.42sp.org.br"
+    "officialLink": "https://www.42sp.org.br",
+    "paragraphs": [
+      "A 42 nasceu em Paris em 2013, fundada por Xavier Niel, Nicolas Sadirac, Kwame Yamgnane e Florian Bucher, e hoje forma uma rede de campi em dezenas de países. A unidade de São Paulo, no bairro da Vila Madalena, foi a primeira da América Latina e recebeu sua primeira turma em janeiro de 2020. A escola é mantida por empresas, fundações e pessoas físicas, entre elas a Fundação Telefônica Vivo, e não cobra nada dos estudantes antes, durante ou depois do curso; há ainda bolsas-auxílio para ajudar com transporte e alimentação.",
+      "O processo seletivo começa com um teste online de cerca de duas horas, baseado em jogos de lógica e memória, seguido de um check-in em que o candidato conhece o funcionamento da escola. Depois vem a Piscina: segundo o site da 42 São Paulo (consulta em 30/10/2026), uma imersão 100% presencial de 26 dias seguidos, incluindo fins de semana, em que os candidatos resolvem listas de exercícios em C e Shell, trabalham em grupo e avaliam o código uns dos outros. O desempenho técnico e a interação com os colegas definem quem entra no curso.",
+      "Aprovado na Piscina, o estudante segue para o Common Core, que começa pela linguagem C e passa por C++, redes, administração de sistemas, estruturas de dados e algoritmos, computação gráfica e programação concorrente. Depois vêm as especializações, com mais de uma dezena de trilhas, como inteligência artificial, cibersegurança, dados, desenvolvimento web e mobile e sistemas operacionais. A dedicação esperada é de cerca de 40 horas por semana, e o site indica uma duração média em torno de 18 meses. O campus funciona 24 horas por dia, 7 dias por semana, e cada aluno monta o próprio horário.",
+      "A formação não é reconhecida pelo MEC e não emite diploma de graduação; a 42 se apresenta como uma rede de ensino independente, com certificado próprio. O que ela oferece é a prática intensa de programação de baixo nível, a autonomia para buscar respostas sem um professor e o hábito de revisar e explicar código para colegas. Essas habilidades são valorizadas no mercado e servem de base para qualquer especialização em tecnologia.",
+      "O autor do learnTECH participou do processo seletivo da 42 São Paulo em 2026. Passou pela etapa online, com o jogo de lógica e memória, e por uma missão presencial de 7 dias em abril de 2026, realizada na sede de uma empresa parceira, resolvendo desafios em Python. Avançou pelas duas fases e foi aprovado para a Piscina, mas precisou ceder a vaga por não conseguir estar presencialmente disponível no período. A 42 segue na lista de desejos do autor, que pretende retomar essa jornada."
+    ],
+    "links": [
+      {
+        "label": "42 São Paulo: formação em engenharia de software",
+        "url": "https://www.42sp.org.br/formacao-engenharia-software"
+      }
+    ],
+    "sources": [
+      {
+        "label": "42 São Paulo: Formação em Engenharia de Software",
+        "url": "https://www.42sp.org.br/formacao-engenharia-software"
+      },
+      {
+        "label": "Fundação Telefônica Vivo: Como funciona a 42 São Paulo na prática?",
+        "url": "https://www.fundacaotelefonicavivo.org.br/noticias/como-funciona-a-42-sao-paulo-na-pratica/"
+      },
+      {
+        "label": "Wikipédia (espelho Kiwix, 2026): 42 (school)",
+        "url": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/42_(school)"
+      },
+      {
+        "label": "TabNews: Experiência no processo seletivo e formação da 42 SP",
+        "url": "https://www.tabnews.com.br/iaurg/experiencia-no-processo-seletivo-e-formacao-da-42-sp"
+      }
+    ]
   }
 }

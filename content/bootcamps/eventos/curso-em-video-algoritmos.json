@@ -9,15 +9,44 @@
   "category": "outros",
   "status": "concluido",
   "content": {
-    "longDescription": "Referência para quem está começando a programar no Brasil: aulas descontraídas do professor Gustavo Guanabara cobrindo algoritmos e lógica de programação com pseudocódigo (Portugol), base para aprender qualquer linguagem depois.",
+    "longDescription": "Curso gratuito de algoritmos e lógica de programação do Curso em Vídeo, projeto do professor Gustavo Guanabara. Em 15 aulas em vídeo, ele parte do conceito de algoritmo e chega a procedimentos, funções, vetores e matrizes, escrevendo e executando os algoritmos no VisualG, em português estruturado (Portugol).",
     "videoUrl": "",
     "gallery": [],
     "curriculum": [
-      "Algoritmos",
-      "Lógica de Programação",
-      "Pseudocódigo (Portugol)",
-      "Estruturas de Decisão e Repetição"
+      "Introdução a algoritmos e primeiro algoritmo no VisualG",
+      "Variáveis, tipos primitivos, entrada e saída de dados",
+      "Operadores aritméticos, lógicos e relacionais",
+      "Introdução ao Scratch",
+      "Estruturas condicionais",
+      "Estruturas de repetição",
+      "Procedimentos e funções",
+      "Vetores e matrizes"
     ],
-    "officialLink": "https://www.cursoemvideo.com/curso/curso-de-algoritmo/"
+    "officialLink": "https://www.cursoemvideo.com/curso/curso-de-algoritmo/",
+    "paragraphs": [
+      "O Curso em Vídeo é um projeto de ensino gratuito criado pelo professor Gustavo Guanabara, com aulas publicadas no YouTube e no site do projeto. O Curso de Algoritmos é um dos mais conhecidos do canal e costuma ser indicado como primeiro passo para quem nunca programou.",
+      "O curso tem 15 aulas numeradas em vídeo, mais materiais extras. As aulas são expositivas e descontraídas, com exemplos do cotidiano e exercícios resolvidos. A partir da segunda aula, o aluno escreve e executa os algoritmos no VisualG, um interpretador gratuito de pseudocódigo em português (o Portugol, ou português estruturado), criado para ensinar lógica sem a barreira do inglês. Uma das aulas também apresenta o Scratch, de programação visual por blocos.",
+      "A sequência começa com o que é um algoritmo e o primeiro programa (variáveis, tipos primitivos, atribuição e saída de dados). Depois vêm comandos de entrada e operadores aritméticos, lógicos e relacionais, e em seguida estruturas condicionais e de repetição. O curso termina com procedimentos, funções, vetores e matrizes, conceitos que reaparecem em qualquer linguagem.",
+      "É indicado para iniciantes absolutos, estudantes de cursos técnicos e de graduação e para quem quer revisar a base antes de aprender uma linguagem como Python ou JavaScript. Basta acessar as aulas pelo site ou pelo YouTube e acompanhar no próprio ritmo.",
+      "Uma boa base de lógica facilita aprender qualquer linguagem depois, porque o aluno chega à sintaxe já sabendo decompor problemas, controlar o fluxo do programa e organizar dados. Por isso cursos introdutórios como esse continuam sendo indicados mesmo para quem já começou a programar."
+    ],
+    "sources": [
+      {
+        "label": "VideoHighlight: playlist Curso de Lógica de Programação (Gustavo Guanabara)",
+        "url": "https://videohighlight.com/playlist/PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV"
+      },
+      {
+        "label": "Chaindesk: resumo da aula 'Primeiro Algoritmo – Curso de Algoritmos #02'",
+        "url": "https://chaindesk.ai/tools/youtube-summarizer/primeiro-algoritmo-curso-de-algoritmos-02-gustavo-guanabara-M2Af7gkbbro"
+      },
+      {
+        "label": "InfoEscola: Professor brasileiro desenvolve método e aplicativo que facilitam o aprendizado de programação (Portugol e VisualG)",
+        "url": "https://www.infoescola.com/noticias/professor-brasileiro-desenvolve-metodo-e-aplicativo-que-facilitam-o-aprendizado-de-programacao/"
+      },
+      {
+        "label": "DIO: Canais de vídeo-aulas voltados para TI (Curso em Vídeo)",
+        "url": "https://www.dio.me/articles/canais-de-video-aulas-voltado-para-tecnologia-da-informacao"
+      }
+    ]
   }
 }

@@ -4,147 +4,1399 @@
     "location": "Juiz de Fora",
     "thumb": "./assets/thumb_good-companies/guiando.jpg",
     "site_url": "https://www.guiando.com.br/",
-    "category": "Telecom Tech"
+    "category": "Telecom Tech",
+    "slug": "guiando",
+    "detalhe": {
+      "resumo": "Empresa de tecnologia de Juiz de Fora (MG), fundada em 2005, que desenvolve soluções de gestão de telecomunicações para empresas. Seus serviços ajudam organizações a controlar contas e contratos de telefonia e dados, reduzir custos e integrar essas informações aos sistemas de gestão.",
+      "paragrafos": [
+        "A Guiando atua no segmento conhecido como gestão de despesas de telecomunicações, ou TEM (telecom expense management). Na prática, isso significa ajudar empresas que têm muitas linhas, contratos e faturas de telefonia e internet a organizar esses dados, conferir cobranças e enxergar onde estão os gastos. A razão social é Guiando Sistemas de Telecomunicações Ltda., registrada em Juiz de Fora em dezembro de 2005 e com situação ativa na Receita Federal.",
+        "Entre os serviços descritos estão gestão de telecom, extração e tratamento de dados fiscais das faturas, gestão e auditoria de contratos, relatórios em tempo real e integração com os sistemas ERP dos clientes. Bases de dados de empresas estimam o quadro entre 51 e 200 funcionários. O cadastro da empresa também inclui atividades secundárias de desenvolvimento de software, suporte técnico em TI e hospedagem de dados.",
+        "Pelo tipo de produto, quem trabalha em uma empresa de TEM lida com grandes volumes de dados de faturas e contratos, integrações entre sistemas e relatórios para os clientes. Isso abre espaço para perfis de desenvolvimento de software, análise de dados, banco de dados, suporte e atendimento a clientes corporativos. Para se preparar, vale dominar SQL, entender o básico de integração entre sistemas, como APIs e arquivos de importação, e praticar a leitura e a conferência de dados em planilhas.",
+        "Para acompanhar vagas, consulte o site oficial e as páginas da empresa em redes profissionais e plataformas de emprego. Em Juiz de Fora, eventos e comunidades locais, como os encontros do GDG, também são um bom lugar para conhecer pessoas das empresas de tecnologia da cidade. Ao receber uma proposta, leia a descrição da vaga com atenção para entender se o trabalho é mais de desenvolvimento, de dados ou de atendimento ao cliente."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.guiando.com.br/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "CB Insights: Asignet vs Guiando",
+          "url": "https://www.cbinsights.com/compare/asignet-vs-guiando"
+        },
+        {
+          "label": "ZoomInfo: Guiando Telecom",
+          "url": "https://www.zoominfo.com/c/guiando/465445688"
+        },
+        {
+          "label": "Monitor CNPJ: Guiando Sistemas de Telecomunicações Ltda.",
+          "url": "https://monitorcnpj.com.br/cnpj/07779536000104/"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "eventos",
+          "id": "gdg-jf"
+        },
+        {
+          "tipo": "programas",
+          "id": "401"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "microsoft-excel"
+        },
+        {
+          "tipo": "blog",
+          "id": "como-ler-uma-vaga"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Viva Eventos",
     "location": "Juiz de Fora",
     "thumb": "./assets/thumb_good-companies/vivaeventos.jpg",
     "site_url": "https://vivaeventos.com.br/",
-    "category": "Events Tech"
+    "category": "Event Services",
+    "slug": "viva-eventos",
+    "detalhe": {
+      "resumo": "A Viva Eventos é uma empresa de formaturas que nasceu em Juiz de Fora (MG) em 2007 e cresceu por meio de franquias. Ela produz festas de formatura e ajuda as turmas na gestão e na contratação dos serviços, do início do curso até a colação.",
+      "paragrafos": [
+        "A Viva Eventos atua no mercado de formaturas: organiza as festas e apoia as comissões de formatura na gestão do dinheiro arrecadado e na contratação de fornecedores. Segundo a ficha da empresa no Portal do Franchising, a marca foi fundada em 2007 em Juiz de Fora, começou a franquear em 2012 e se associou à Associação Brasileira de Franchising (ABF) em 2013. Na mesma ficha, atualizada pela própria franquia em 27 de agosto de 2026, constam 40 unidades. No perfil do Reclame Aqui, a empresa diz atender mais de 50 mil estudantes em todo o Brasil.",
+        "Em 2019, uma matéria da Tribuna de Minas contou que a Viva chegou à liderança do mercado local com pouco mais de dois anos de atividade e que expandiu por um modelo de franquias. Na época, eram 23 unidades no Sudeste, incluindo as quatro capitais da região, e uma recém-aberta em Porto Alegre. A empresa foi citada por 45,1% dos entrevistados na categoria empresa de eventos do Top of Mind 2019 do jornal. A comparação entre os números de 2019 e de 2026 mostra que a rede continuou crescendo.",
+        "A Viva é antes de tudo uma empresa de serviços de eventos, e não uma empresa de software; a tecnologia aparece como apoio à operação. Para quem estuda tecnologia, isso significa que as oportunidades mais prováveis estão em áreas de apoio, como marketing digital, atendimento, dados e sistemas internos, e não em desenvolvimento de produto. Não encontramos uma página pública de carreiras nem informações oficiais sobre as tecnologias que a empresa usa.",
+        "Para se candidatar, o caminho é acompanhar os canais oficiais da marca e as unidades franqueadas da sua cidade, já que em uma rede de franquias cada unidade costuma contratar a própria equipe. Antes de enviar o currículo, vale entender como funciona uma formatura por dentro: comissão, contrato, cronograma de pagamentos e fornecedores. Se a vaga for de marketing ou de dados, um pequeno projeto mostrando como você analisaria o engajamento de uma turma nas redes ajuda a conversar com o recrutador.",
+        "No ecossistema learnTECH, a Viva Eventos aparece no career como exemplo de empresa de Juiz de Fora que cresceu e saiu da cidade. Para se preparar para qualquer processo seletivo, os artigos do blog sobre como ler uma vaga e sobre como é um processo seletivo em tecnologia são um bom ponto de partida."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://vivaeventos.com.br/"
+        },
+        {
+          "label": "Ficha da franquia no Portal do Franchising",
+          "url": "https://franquias.portaldofranchising.com.br/franquia-viva-eventos-entretenimento-e-lazer/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Portal do Franchising: Franquia Viva Eventos",
+          "url": "https://franquias.portaldofranchising.com.br/franquia-viva-eventos-entretenimento-e-lazer/"
+        },
+        {
+          "label": "Tribuna de Minas: Viva se destaca pela ousadia, criatividade e relações com os clientes (22/09/2019)",
+          "url": "https://tribunademinas.com.br/?p=345799"
+        },
+        {
+          "label": "Reclame Aqui: Sobre VIVA Eventos",
+          "url": "https://www.reclameaqui.com.br/empresa/viva-eventos/sobre/"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "como-ler-uma-vaga"
+        },
+        {
+          "tipo": "blog",
+          "id": "processo-seletivo-como-se-preparar"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Nova Tendência",
     "location": "Juiz de Fora",
     "thumb": "./assets/thumb_good-companies/ntendencia.jpg",
     "site_url": "https://www.ntendencia.com.br/",
-    "category": "Consultancy"
+    "category": "Consultancy",
+    "slug": "nova-tendencia",
+    "detalhe": {
+      "resumo": "Empresa de desenvolvimento de software sob encomenda com matriz no Rio de Janeiro, aberta em 2006, e filial em Juiz de Fora (MG). Trabalha com projetos de software para clientes corporativos e já recrutou desenvolvedores Java na cidade.",
+      "paragrafos": [
+        "A Nova Tendência Informática Ltda. foi aberta em outubro de 2006 no Rio de Janeiro e tem como atividade principal o desenvolvimento de programas de computador sob encomenda. A empresa se descreve como uma desenvolvedora de software baseado em projetos, ou seja, constrói sistemas sob medida para clientes, em vez de vender um produto pronto. Além da matriz, mantém uma filial em Juiz de Fora, de onde partiram vagas divulgadas para estudantes e profissionais da região.",
+        "Os projetos são voltados a clientes corporativos, e o Java aparece como tecnologia central nas oportunidades que a empresa divulgou. Em 2016, ela abriu vagas para desenvolvedores Java pleno e sênior na filial de Juiz de Fora. Em 2017, anunciou uma vaga permanente de desenvolvedor Java para criar novas aplicações para clientes corporativos, com contratação CLT, benefícios e plano de carreira até gerente de projetos.",
+        "Essas vagas foram divulgadas no site do curso de Ciência da Computação da Universidade Federal de Juiz de Fora (UFJF), um canal comum para empresas da cidade que procuram profissionais formados ou em formação. Para quem estuda na região, acompanhar os murais e sites dos cursos de computação é uma forma simples de conhecer empresas locais. Também vale acompanhar o site oficial da empresa e suas páginas em redes profissionais.",
+        "Para se preparar para uma consultoria que trabalha com Java em projetos corporativos, estude orientação a objetos, um framework web do ecossistema Java, banco de dados relacional com SQL e versionamento com Git. Um bom primeiro exercício é construir uma API simples com cadastro e consulta de dados e publicá-la no GitHub. Em empresas que trabalham por projeto, saber estimar tarefas, comunicar prazos e lidar com mudanças de escopo pesa tanto quanto o código.",
+        "No ecossistema do learnTECH, a Formação Java e o curso de Ciência da Computação da UFJF são caminhos ligados a esse perfil de vaga. O artigo sobre como ler uma vaga ajuda a entender o que significam níveis como pleno e sênior e quais requisitos são realmente obrigatórios."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.ntendencia.com.br/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "CNPJá: Nova Tendência Informática Ltda.",
+          "url": "https://cnpja.com/office/08380367000190"
+        },
+        {
+          "label": "UFJF, Ciência da Computação: Oportunidade na Nova Tendência para Contratação (2017)",
+          "url": "https://www2.ufjf.br/cursocomputacao/?p=2781"
+        },
+        {
+          "label": "UFJF, Ciência da Computação: Nova Tendência, vagas desenvolvedor Java (2016)",
+          "url": "https://www2.ufjf.br/cursocomputacao/?p=2270"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "eventos",
+          "id": "caelum-java"
+        },
+        {
+          "tipo": "eventos",
+          "id": "ufjf-dcc-cc-noturno"
+        },
+        {
+          "tipo": "blog",
+          "id": "como-ler-uma-vaga"
+        },
+        {
+          "tipo": "programas",
+          "id": "401"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Handcom",
     "location": "Juiz de Fora",
     "thumb": "./assets/thumb_good-companies/handcom.jpg",
-    "site_url": "http://v2.handcom.com.br/",
-    "category": "Software House"
+    "site_url": "https://handcom.com.br/",
+    "category": "Software House",
+    "slug": "handcom",
+    "detalhe": {
+      "resumo": "A Handcom é uma empresa de software de Juiz de Fora (MG) especializada em gestão de armazéns, centros de distribuição e fluxo de mercadorias. Seus produtos da linha Mobilize combinam WMS, mobilidade e RFID para controlar estoques e ativos.",
+      "paragrafos": [
+        "A Handcom desenvolve software para logística. Segundo os perfis da empresa em bases de dados de empresas (village.ai e GetLatka), o foco é a gestão do fluxo de mercadorias para varejistas, armazéns e indústrias, com uma visão completa da operação e ênfase em mobilidade. O principal produto é o Mobilize WMS, um sistema de gestão de armazém (Warehouse Management System). Há também o Mobilize IoT, voltado à gestão de ativos e estoques com etiquetas RFID.",
+        "É uma empresa de pequeno porte: o GetLatka registrava 11 funcionários em outubro de 2024, com base no LinkedIn, e o village.ai indica mais de 10. A sede fica em Juiz de Fora. O ano de fundação diverge entre as fontes: o GetLatka informa 2000 e o village.ai informa 2007. O village.ai também cita um reconhecimento ligado à Fundação Nacional da Qualidade.",
+        "Não encontramos uma página pública de carreiras nem descrições de vagas recentes, então não há informação confirmada sobre a stack usada. Pelo tipo de produto, quem se interessa por esse mercado deve conhecer bem os conceitos de logística: recebimento, armazenagem, separação de pedidos, inventário e integração com ERPs. Coletores de dados, leitura de código de barras e RFID fazem parte do dia a dia de sistemas WMS.",
+        "Para se candidatar, procure a página da empresa no LinkedIn e o site oficial, e envie o currículo de forma direta, porque empresas pequenas muitas vezes contratam sem anúncio público. Um bom exercício de preparação é modelar um mini sistema de estoque, com entradas, saídas, endereços de armazenagem e um relatório de inventário. Isso mostra que você entende o domínio do negócio, algo que costuma pesar em empresas de software de nicho.",
+        "No ecossistema learnTECH, a Handcom aparece no career como uma das software houses de Juiz de Fora. Para chegar bem preparado a uma conversa com uma empresa pequena, vale ler os artigos do blog sobre como ler uma vaga e sobre como deixar o perfil do LinkedIn encontrável para recrutadores."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://handcom.com.br/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "village.ai: Handcom",
+          "url": "https://village.ai/company/handcom"
+        },
+        {
+          "label": "GetLatka: Handcom",
+          "url": "https://getlatka.com/companies/handcom/customers"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "como-ler-uma-vaga"
+        },
+        {
+          "tipo": "blog",
+          "id": "perfil-encontravel-linkedin"
+        },
+        {
+          "tipo": "eventos",
+          "id": "gdg-jf"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "App Masters",
     "location": "Juiz de Fora / Remote",
     "thumb": "./assets/thumb_good-companies/appmasters.jpg",
     "site_url": "https://www.appmasters.io/en",
-    "category": "Development"
+    "category": "Development",
+    "slug": "app-masters",
+    "detalhe": {
+      "resumo": "Empresa de desenvolvimento de software de Juiz de Fora (MG) que cria aplicações web e mobile sob medida para clientes. É uma equipe pequena, fundada em 2017, que também oferece serviços de DevOps e trabalha em português e inglês.",
+      "paragrafos": [
+        "A App Masters é uma software house de Juiz de Fora especializada em aplicações web e mobile desenvolvidas sob encomenda. Diretórios de empresas de tecnologia registram a fundação em 2017 e uma equipe na faixa de 1 a 10 pessoas, o que a coloca entre as empresas de pequeno porte do setor. Os serviços listados incluem desenvolvimento mobile, desenvolvimento web, desenvolvimento de software em geral e DevOps.",
+        "A empresa se apresenta como um time dedicado que acompanha tecnologias web recentes e boas práticas, com foco em parceria com o cliente, entregas no prazo e métodos ágeis. O atendimento em inglês e português e a presença em uma plataforma internacional de contratação de agências indicam que ela também atende clientes de fora do Brasil. Por isso o site oficial tem uma versão em inglês.",
+        "Em uma empresa desse porte, quem entra costuma participar de várias etapas do projeto, da conversa com o cliente à publicação do aplicativo. Para se preparar, vale estudar o básico de uma stack web e mobile, como JavaScript, uma biblioteca de interface e a publicação de apps nas lojas, além de noções de DevOps, como deploy e integração contínua. Um bom exercício é publicar no GitHub um aplicativo pequeno e completo, com README explicando o que ele faz e como rodar.",
+        "Para acompanhar a empresa e possíveis vagas, use o site oficial e as páginas da App Masters no LinkedIn e no GitHub, que a própria empresa indica em seus perfis. Atenção ao nome: existem outras empresas parecidas, como a App Masters de Danville, nos Estados Unidos (appmasters.com), que é uma agência de marketing de aplicativos, e a plataforma no-code AppMaster.io. Confira sempre o domínio appmasters.io e a localização em Juiz de Fora antes de enviar currículo.",
+        "Como a empresa trabalha com clientes de outros países, o inglês técnico faz diferença no dia a dia, em reuniões, tarefas e documentação. Os programas English for Tech e Job Interview Prep do learnTECH ajudam nessa parte, e o artigo sobre como ler uma vaga ajuda a separar requisitos obrigatórios de desejáveis quando surgir uma oportunidade."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.appmasters.io/en"
+        },
+        {
+          "label": "Perfil no Hubstaff Talent",
+          "url": "https://hubstafftalent.net/agencies/app-masters"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Hubstaff Talent: App Masters",
+          "url": "https://hubstafftalent.net/agencies/app-masters"
+        },
+        {
+          "label": "ensun: Mobile app development companies in Brazil",
+          "url": "https://ensun.io/search/mobile-app-development/brazil"
+        },
+        {
+          "label": "DesignRush: App Masters (Danville, EUA, empresa homônima)",
+          "url": "https://www.designrush.com/agency/profile/app-masters"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "701"
+        },
+        {
+          "tipo": "programas",
+          "id": "703"
+        },
+        {
+          "tipo": "blog",
+          "id": "como-ler-uma-vaga"
+        },
+        {
+          "tipo": "eventos",
+          "id": "gdg-jf"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "github"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "ProDoctor",
     "location": "Juiz de Fora",
     "thumb": "./assets/thumb_good-companies/prodoctor.jpg",
     "site_url": "https://prodoctor.net/",
-    "category": "Health Tech"
+    "category": "Health Tech",
+    "slug": "prodoctor",
+    "detalhe": {
+      "resumo": "Empresa de software para saúde com sede em Juiz de Fora (MG) que desenvolve sistemas de gestão para consultórios e clínicas, com agenda, prontuário eletrônico, prescrição e telemedicina. Atua há cerca de três décadas no setor e tem dezenas de milhares de usuários no Brasil.",
+      "paragrafos": [
+        "A ProDoctor Software S/A desenvolve programas que ajudam médicos e clínicas a organizar o atendimento. Os sistemas cobrem agendamento de consultas, prontuário eletrônico do paciente, prescrições e atestados com assinatura digital, finanças e relatórios. A empresa tem sede em Juiz de Fora, e bases de dados empresariais estimam o quadro entre 51 e 200 funcionários. Em 2021, ela informava mais de 40 mil usuários, número que chegou a cerca de 50 mil no fim daquele ano, segundo a imprensa especializada.",
+        "Os produtos existem em versão instalada no computador e em nuvem. O ProDoctor Cloud tem aplicativo para iPhone e iPad, integrado às versões para Mac e Windows, com agenda, prontuário, digitalização de documentos pela câmera, comandos de voz e bloqueio por Face ID ou Touch ID. A empresa também oferece telemedicina integrada ao próprio sistema, confirmação de consultas por WhatsApp e SMS e aplicativos de consulta, como o ProDoctor Medicamentos e o ProDoctor CID. Em dezembro de 2021, lançou o ProDoctor Cursos, plataforma de ensino online para o mercado de saúde.",
+        "Uma empresa de software médico reúne perfis variados: desenvolvimento para desktop, web e mobile, inclusive para o ecossistema Apple, infraestrutura em nuvem, suporte técnico, implantação e atendimento a clientes. Como os sistemas guardam informações de saúde, segurança da informação, assinatura digital e proteção de dados pessoais são temas centrais. Para acompanhar vagas, consulte o site oficial e as páginas da empresa em redes profissionais.",
+        "Para se preparar, vale entender como funciona a rotina de um consultório, como agenda, prontuário e faturamento de convênios, porque isso ajuda a conversar com os clientes e a entender os requisitos. Um exercício concreto é criar um pequeno sistema de agendamento com cadastro de pacientes e horários, cuidando de quem pode ver cada dado. Estudar a LGPD é especialmente útil, já que dados de saúde são considerados dados sensíveis pela lei.",
+        "Em Juiz de Fora, os encontros do GDG e o curso de Ciência da Computação da UFJF aproximam estudantes das empresas de tecnologia da cidade. No learnTECH, o programa Segurança de Dados e LGPD e o programa Banco de Dados na prática conversam diretamente com os desafios de um software de saúde."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://prodoctor.net/"
+        },
+        {
+          "label": "ProDoctor Cloud na App Store",
+          "url": "https://apps.apple.com/br/app/prodoctor-cloud/id1324995902"
+        },
+        {
+          "label": "E-book ProDoctor: telemedicina",
+          "url": "https://prodoctor.net/ebooks/ebook-telemedicina.pdf"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "ProDoctor: e-book sobre telemedicina",
+          "url": "https://prodoctor.net/ebooks/ebook-telemedicina.pdf"
+        },
+        {
+          "label": "App Store: ProDoctor Cloud",
+          "url": "https://apps.apple.com/br/app/prodoctor-cloud/id1324995902"
+        },
+        {
+          "label": "Medicina S/A: ProDoctor anuncia entrada no mercado de ensino digital",
+          "url": "https://medicinasa.com.br/?p=60675"
+        },
+        {
+          "label": "Medicina S/A: Jomar Nascimento é o novo CEO da ProDoctor",
+          "url": "https://medicinasa.com.br/?p=52361"
+        },
+        {
+          "label": "ZoomInfo: ProDoctor Software S/A",
+          "url": "https://www.zoominfo.com/c/prodoctor-software-sa/372459674"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "404"
+        },
+        {
+          "tipo": "programas",
+          "id": "401"
+        },
+        {
+          "tipo": "eventos",
+          "id": "gdg-jf"
+        },
+        {
+          "tipo": "eventos",
+          "id": "ufjf-dcc-cc-noturno"
+        },
+        {
+          "tipo": "blog",
+          "id": "lgpd-seus-dados-ao-se-candidatar"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Promobit",
     "location": "Remote",
     "thumb": "./assets/thumb_good-companies/promobit.jpg",
     "site_url": "https://www.promobit.com.br/",
-    "category": "E-commerce"
+    "category": "E-commerce",
+    "slug": "promobit",
+    "detalhe": {
+      "resumo": "O Promobit é uma comunidade brasileira de ofertas e cupons de desconto, em que usuários compartilham promoções de lojas on-line e uma equipe de moderação filtra o que é publicado. Fundado em 2013, foi comprado pelo Méliuz em 2021 e hoje também vende soluções de retail media para marcas.",
+      "paragrafos": [
+        "O Promobit se descreve como uma rede social de pessoas que gostam de encontrar boas ofertas, trocar dicas e usar cupons. Os próprios usuários enviam promoções, e a equipe de moderação confere cada uma pelo histórico de preço, pela relevância do produto e pela frequência com que a oferta se repete. Ofertas de lojas com reclamações no Procon ou no Reclame Aqui não são aprovadas. Além das ofertas, a plataforma tem cupons, fórum de discussão sobre produtos e lojas, blog, lista de desejos com alertas de preço, aplicativo para Android e iOS e extensão para o Chrome.",
+        "A empresa foi fundada em 2013 e, segundo a razão social publicada no site, está registrada em São Bernardo do Campo (SP). Em maio de 2021, o Méliuz comprou 100% do capital do Promobit por um pagamento inicial de R$ 13 milhões, com possibilidade de pagamento adicional atrelado a metas. Na época da compra, o Promobit tinha cerca de 40 funcionários, aproximadamente 40% deles em tecnologia, e registrava em média 10,4 milhões de visitas por mês. O próprio Promobit informou que continuaria operando de forma independente dentro do grupo, com a mesma equipe.",
+        "Além do site para consumidores, o Promobit oferece a marcas e lojas soluções de retail media, ou seja, espaços de divulgação dentro da própria comunidade. Em sua página comercial, a empresa declara 4 milhões de usuários cadastrados, 5 milhões de visualizações por mês e cerca de 700 ofertas por dia (números autodeclarados, consultados em outubro de 2026). Para quem trabalha com tecnologia, isso significa um produto web e mobile com alto volume de acesso, picos fortes em datas como a Black Friday, sistemas de moderação e integrações com lojas e programas de afiliados.",
+        "Como o time é pequeno em comparação com grandes varejistas, as vagas costumam aparecer em menor número. Vale acompanhar a página da empresa no LinkedIn e as vagas do grupo Méliuz, ao qual o Promobit pertence desde 2021. Antes de se candidatar, use o produto: crie uma conta, siga a moderação de algumas ofertas e observe como o site se comporta em datas de pico. Essa experiência de usuário ajuda a fazer perguntas melhores e a mostrar interesse real na entrevista.",
+        "Para se preparar, leia a descrição de cada vaga separando o que é obrigatório do que é desejável e monte exemplos concretos de projetos que você já fez. Em uma empresa de produto digital voltada ao consumidor, saber explicar decisões sobre desempenho, experiência de uso e métricas de engajamento costuma contar tanto quanto a lista de linguagens. Os artigos do blog do learnTECH sobre como ler uma vaga e sobre processo seletivo em tecnologia ajudam a organizar essa preparação."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.promobit.com.br/"
+        },
+        {
+          "label": "O que é o Promobit",
+          "url": "https://www.promobit.com.br/o-que-e-promobit/"
+        },
+        {
+          "label": "Sobre nós (marcas e retail media)",
+          "url": "https://www.promobit.com.br/sobre-nos/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Promobit: Afinal, o que é o Promobit?",
+          "url": "https://www.promobit.com.br/o-que-e-promobit/"
+        },
+        {
+          "label": "Promobit: Sobre nós",
+          "url": "https://www.promobit.com.br/sobre-nos/"
+        },
+        {
+          "label": "Promobit (blog): Promobit agora faz parte do Grupo CASH3 do Méliuz",
+          "url": "https://www.promobit.com.br/blog/promobit-agora-faz-parte-do-grupo-cash3-do-meliuz/"
+        },
+        {
+          "label": "Seu Crédito Digital: Méliuz compra site Promobit",
+          "url": "https://seucreditodigital.com.br/meliuz-compra-site-promobit/"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "como-ler-uma-vaga"
+        },
+        {
+          "tipo": "blog",
+          "id": "processo-seletivo-como-se-preparar"
+        },
+        {
+          "tipo": "blog",
+          "id": "perfil-encontravel-linkedin"
+        }
+      ],
+      "atualizadoEm": "2026-10-30"
+    }
   },
   {
     "title": "SenseData",
     "location": "Remote",
     "thumb": "./assets/thumb_good-companies/sensedata.jpg",
     "site_url": "https://sensedata.com.br/",
-    "category": "Customer Success"
+    "category": "Customer Success",
+    "slug": "sensedata",
+    "detalhe": {
+      "resumo": "A SenseData é uma empresa paulistana criada em 2016 que desenvolve uma plataforma de gestão de customer success, área que acompanha os clientes depois da venda para reduzir cancelamentos e aumentar o uso do produto. Desde 2021 pertence à Zenvia, empresa brasileira de software de comunicação com clientes.",
+      "paragrafos": [
+        "Customer success é a área que acompanha os clientes de uma empresa depois da venda, para garantir que eles alcancem resultados com o produto e não cancelem o contrato. A SenseData se apresenta como a primeira plataforma de gestão de customer success da América Latina. O sistema reúne dados de uso e de relacionamento dos clientes, conecta-se a mais de 70 ferramentas, como bancos de dados, ERPs e plataformas de e-commerce, e usa algoritmos para indicar em qual cliente agir e em que momento. Usuários citam recursos como gatilhos automáticos para analistas de customer success e categorização dos motivos de cancelamento (churn).",
+        "A empresa nasceu em São Paulo, fez parte da primeira turma de residentes do Google Campus São Paulo e cresceu sem investimento externo. Em novembro de 2021, foi comprada pela Zenvia, que tinha acabado de abrir capital na Nasdaq. Na época, a SenseData tinha cerca de 100 pessoas, e entre os clientes citados na imprensa estavam Unilever, Porto Seguro, Ambev e Afya. A empresa também organiza, desde 2018, o CS Day, evento sobre customer success.",
+        "Por ser uma empresa de software como serviço (SaaS) focada em dados, a SenseData contrata perfis como desenvolvimento back-end, dados e produto, além de áreas de negócio. Um relato público de processo seletivo para desenvolvedor back-end pleno, de outubro de 2023, descreve um processo de cerca de duas semanas com teste técnico de três exercícios simples em Python. As vagas costumam ser divulgadas na página da empresa no LinkedIn e no Glassdoor, onde ela aparece como parte da Zenvia.",
+        "Para se preparar, vale entender o vocabulário da área: churn, retenção, health score e jornada do cliente aparecem tanto no produto quanto nas entrevistas. Um bom exercício é montar uma pequena análise de retenção com uma planilha ou com Python, a partir de dados públicos de assinaturas, e explicar quais sinais indicariam risco de cancelamento. Isso mostra que você entende o problema que a plataforma resolve, além da parte técnica.",
+        "Antes de se candidatar, confirme no LinkedIn e nos canais da Zenvia como a SenseData está organizada no momento, porque empresas compradas por grupos maiores podem ter vagas publicadas com o nome da empresa controladora. Leia a descrição da vaga separando requisitos obrigatórios dos desejáveis e treine exercícios curtos de programação com tempo marcado. No learnTECH, o programa Métricas de Produto e o artigo sobre testes técnicos online ajudam nessa preparação."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://sensedata.com.br/"
+        },
+        {
+          "label": "Zenvia: anúncio da aquisição",
+          "url": "https://zenvia.com/blog/aquisicao-sensedata-zenviasensedata/"
+        },
+        {
+          "label": "SenseData no B2B Stack",
+          "url": "https://www.b2bstack.com.br/product/sensedata"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Zenvia (blog): Zenvia faz a primeira aquisição após o IPO",
+          "url": "https://zenvia.com/blog/aquisicao-sensedata-zenviasensedata/"
+        },
+        {
+          "label": "Baguete: Zenvia compra SenseData",
+          "url": "https://www.baguete.com.br/noticias/zenvia-compra-sensedata"
+        },
+        {
+          "label": "B2B Stack: Sensedata",
+          "url": "https://www.b2bstack.com.br/product/sensedata"
+        },
+        {
+          "label": "Glassdoor: SenseData, entrevista para Desenvolvedor BackEnd Pleno",
+          "url": "https://www.glassdoor.sg/Interview/SenseData-Interview-E2837480-RVW81512284.htm"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "504"
+        },
+        {
+          "tipo": "programas",
+          "id": "304"
+        },
+        {
+          "tipo": "blog",
+          "id": "testes-tecnicos-online"
+        },
+        {
+          "tipo": "blog",
+          "id": "como-ler-uma-vaga"
+        }
+      ],
+      "atualizadoEm": "2026-10-30"
+    }
   },
   {
     "title": "TecnoSpeed",
     "location": "Remote",
     "thumb": "./assets/thumb_good-companies/tecnospeed.jpg",
     "site_url": "https://tecnospeed.com.br/",
-    "category": "Dev Tools"
+    "category": "Dev Tools",
+    "slug": "tecnospeed",
+    "detalhe": {
+      "resumo": "A TecnoSpeed é uma empresa de Maringá (PR), fundada em 2006, que cria componentes e APIs para que software houses e desenvolvedores de ERP integrem em seus sistemas a emissão de documentos fiscais, boletos, Pix, certificados digitais e assinatura eletrônica. Aparece com frequência nos rankings do Great Place to Work.",
+      "paragrafos": [
+        "A TecnoSpeed resolve um problema típico de quem desenvolve sistemas de gestão no Brasil: integrar o software às regras fiscais e bancárias do país. Em vez de cada software house programar do zero a comunicação com as Secretarias da Fazenda ou com os bancos, ela usa os componentes e APIs da TecnoSpeed. O portfólio inclui emissão de documentos fiscais eletrônicos, como NF-e, NFS-e e CT-e, APIs financeiras para boleto, Pix, Open Finance e pagamentos, certificado digital e ferramentas gratuitas como o Monitor SEFAZ e o Validador NF-e.",
+        "Fundada em 2006, a empresa tem sede no Parque de TI de Maringá e se apresenta com o lema de simplificar o desenvolvimento de software no Brasil. Segundo reportagem do Baguete, atende cerca de 2 mil empresas de software no país. Mantém um laboratório de inovação, o SpeedLab, de onde saíram produtos como PlugSign (assinatura eletrônica), PlugMessage e PlugDash. Ao comprar a startup Assinadoc, de Macapá, que oferece assinatura digital e análise de contratos com IA, criou a Assinadoc S/A, que reúne a Assinadoc e o PlugSign.",
+        "A TecnoSpeed tem certificação do Great Place to Work desde 2013 e aparece no ranking desde 2015. Em 2022, ficou em 3º lugar entre as melhores médias empresas para trabalhar no Brasil, categoria de 100 a 999 colaboradores. A empresa chama seus colaboradores de Speeders. Como o produto são APIs e componentes para outros desenvolvedores, o trabalho envolve integração de sistemas, back-end, documentação técnica e suporte a desenvolvedores, além de áreas comerciais e de atendimento.",
+        "As vagas são publicadas no portal Trabalhe Conosco do grupo, hospedado na Gupy. Para se preparar, um bom primeiro exercício é estudar como funciona uma API REST e consumir uma API pública de exemplo, tratando erros e respostas. Também ajuda entender o básico dos documentos fiscais eletrônicos brasileiros, como a NF-e, e por que a comunicação com a SEFAZ exige certificado digital.",
+        "Na candidatura, mostre projetos que envolvam integração entre sistemas e explique como você lidou com documentação, autenticação e falhas de comunicação. Leia a descrição de cada vaga separando o que é obrigatório do que é desejável. No learnTECH, o programa Back-end descomplicado, sobre APIs e integração, e o GitHub, para publicar seus projetos, são bons pontos de partida."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://tecnospeed.com.br/"
+        },
+        {
+          "label": "Blog da TecnoSpeed",
+          "url": "https://blog.tecnospeed.com.br/"
+        },
+        {
+          "label": "Trabalhe conosco (Gupy)",
+          "url": "https://grupotecnospeed.gupy.io/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Blog TecnoSpeed: GPTW 2022",
+          "url": "https://blog.tecnospeed.com.br/gptw-2022/"
+        },
+        {
+          "label": "Baguete: TecnoSpeed compra Assinadoc",
+          "url": "https://www.baguete.com.br/noticias/tecnospeed-compra-assinadoc"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "301"
+        },
+        {
+          "tipo": "programas",
+          "id": "302"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "github"
+        },
+        {
+          "tipo": "blog",
+          "id": "processo-seletivo-como-se-preparar"
+        }
+      ],
+      "atualizadoEm": "2026-10-30"
+    }
   },
   {
     "title": "Revelo",
     "location": "Remote",
     "thumb": "./assets/thumb_good-companies/revelo.jpg",
-    "site_url": "https://www.revelo.com.br/",
-    "category": "HR Tech"
+    "site_url": "https://www.revelo.com/",
+    "category": "HR Tech",
+    "slug": "revelo",
+    "detalhe": {
+      "resumo": "A Revelo é uma empresa de recrutamento de tecnologia fundada em 2015 no Brasil que hoje conecta empresas dos Estados Unidos a desenvolvedores da América Latina para trabalho remoto. Também oferece serviços de dados de código para treinar e avaliar modelos de inteligência artificial.",
+      "paragrafos": [
+        "A Revelo foi fundada em 2015 a partir da percepção de que a demanda por profissionais de tecnologia nos Estados Unidos crescia mais rápido que a oferta, enquanto talentos da América Latina, especialmente do Brasil, tinham poucas oportunidades fora do mercado local. A empresa começou como plataforma de recrutamento para empresas brasileiras e, em 2023, passou a se dedicar totalmente a clientes dos Estados Unidos. Segundo o site oficial, a sede fica em Miami e o time tem mais de 250 pessoas trabalhando de forma remota nos Estados Unidos e na América Latina.",
+        "O modelo funciona assim: empresas americanas contratam pela Revelo desenvolvedores pré-avaliados de países como Brasil, Argentina, Colômbia, México e Peru, que trabalham de forma remota. O site oficial informa mais de 2.500 empresas atendidas. Entre 2023 e 2025, a Revelo comprou cinco empresas, entre elas Alto, Paretisa, Listopro e CeroUno, e passou a declarar uma base de mais de 400 mil talentos verificados, segundo reportagem de maio de 2025. A última rodada de investimento divulgada foi em 2021, de US$ 28 milhões.",
+        "Nos últimos anos a empresa ganhou uma segunda frente, o Revelo AI Labs, que fornece dados de código para treinar e avaliar modelos de IA, como demonstrações feitas por especialistas, dados de preferência e benchmarks. Em 2024, contratos ligados ao treinamento de grandes modelos de linguagem responderam por 22% da receita, de acordo com a mesma reportagem. Para desenvolvedores, isso abriu oportunidades além das vagas tradicionais de engenharia, incluindo projetos de avaliação de código para empresas de IA.",
+        "Para quem procura trabalho, o cadastro de candidato na plataforma é gratuito. Como os clientes são empresas americanas, o inglês faz parte da rotina, e entre as áreas de contratação divulgadas está o desenvolvimento full stack. Antes de se cadastrar, deixe o perfil do LinkedIn e o GitHub atualizados, com projetos que mostrem código real, e treine entrevistas técnicas em inglês.",
+        "Como em qualquer contratação internacional, leia com atenção o tipo de contrato oferecido, a moeda de pagamento, a carga horária e quem é o empregador formal. Vagas remotas para o exterior costumam ter processos com testes técnicos e conversas em inglês, por isso vale treinar com antecedência. No learnTECH, os programas English for Tech e Job Interview Prep e o artigo sobre testes técnicos online ajudam nessa preparação."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.revelo.com/"
+        },
+        {
+          "label": "Sobre a Revelo",
+          "url": "https://revelo.com/about-us"
+        },
+        {
+          "label": "Perfil da Revelo para candidatos (Brasil)",
+          "url": "https://home.revelo.com.br/empresas/revelo"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Revelo: About us",
+          "url": "https://revelo.com/about-us"
+        },
+        {
+          "label": "Startups: No embalo da IA, Revelo empilha M&As e quer consolidar na América Latina",
+          "url": "https://startups.com.br/negocios/ma/no-embalo-da-ia-revelo-empilha-mas-e-quer-consolidar-na-america-latina/"
+        },
+        {
+          "label": "Revelo Brasil: perfil da empresa Revelo",
+          "url": "https://home.revelo.com.br/empresas/revelo"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "perfil-encontravel-linkedin"
+        },
+        {
+          "tipo": "blog",
+          "id": "testes-tecnicos-online"
+        },
+        {
+          "tipo": "programas",
+          "id": "701"
+        },
+        {
+          "tipo": "programas",
+          "id": "703"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "github"
+        }
+      ],
+      "atualizadoEm": "2026-10-30"
+    }
   },
   {
     "title": "Google Careers",
     "location": "Global / Remote",
     "thumb": "./assets/thumb_good-companies/google.jpg",
-    "site_url": "https://careers.google.com/",
-    "category": "Big Tech"
+    "site_url": "https://www.google.com/about/careers/applications/",
+    "category": "Big Tech",
+    "slug": "google-careers",
+    "detalhe": {
+      "resumo": "Google Careers é o portal oficial de vagas do Google, onde a empresa publica oportunidades no mundo todo, inclusive no Brasil, e explica como funciona seu processo seletivo. No país, o Google mantém centros de engenharia em Belo Horizonte e em São Paulo.",
+      "paragrafos": [
+        "O portal de carreiras do Google reúne as vagas da empresa em todos os países, com filtros por área, local e nível de experiência. A candidatura é feita sempre online, pelo próprio portal. O Google recomenda enviar um currículo diferente para cada vaga, curto e ligado às qualificações pedidas, com resultados mensuráveis; a carta de apresentação é opcional. O sistema permite se candidatar a até três vagas a cada 30 dias, então vale escolher bem.",
+        "O processo seletivo descrito pela empresa tem algumas etapas. Depois do currículo, parte dos candidatos faz uma avaliação online, como um teste de programação. Em seguida vêm uma ou duas conversas curtas por telefone ou vídeo com recrutadores e pessoas do time, às vezes um pequeno projeto, como um estudo de caso ou uma amostra de código, e por fim entrevistas aprofundadas, normalmente de três a quatro no mesmo dia. As entrevistas usam roteiros estruturados e critérios definidos, e a decisão considera a opinião de várias pessoas.",
+        "No Brasil, a história de engenharia do Google começou em 2005, com a compra da Akwan, startup de busca criada em Belo Horizonte por professores e alunos da UFMG. A cidade ganhou o primeiro centro de engenharia do Google na América Latina, de onde saíram contribuições para a Busca, para a plataforma de segurança contra spam e phishing do Gmail e do YouTube e para o Family Link. Em maio de 2026, a empresa inaugurou um segundo centro de engenharia, no campus do IPT, na Cidade Universitária da USP, em São Paulo, com cerca de 400 engenheiros e foco em IA, engenharia de software, gestão de produto, UX, cibersegurança e dados.",
+        "As funções mais comuns nas vagas de tecnologia são engenharia de software, gestão de produto e pesquisa, mas há também vagas em marketing, vendas e áreas administrativas. Para as entrevistas, o método STAR (situação, tarefa, ação e resultado) ajuda a organizar respostas sobre experiências passadas. Nas entrevistas técnicas, estruturas de dados, algoritmos e a capacidade de explicar o raciocínio em voz alta pesam bastante, e boa parte do processo pode acontecer em inglês.",
+        "Para quem está começando, um caminho é praticar algoritmos com regularidade e participar de comunidades como o GDG, os grupos de desenvolvedores ligados ao Google, que em Juiz de Fora promovem encontros abertos. No learnTECH, o artigo sobre o que a história do Google ensina sobre cultura de empresa tech, o programa de Lógica de Programação e Algoritmos e o Job Interview Prep complementam essa preparação."
+      ],
+      "links": [
+        {
+          "label": "Google Careers (portal de vagas)",
+          "url": "https://www.google.com/about/careers/applications/"
+        },
+        {
+          "label": "Blog do Google Brasil: 20 anos de engenharia no país",
+          "url": "https://blog.google/intl/pt-br/produtos/20-anos-do-google-no-brasil-inovacoes-da-engenharia-brasileira-para-o-mundo/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Blog do Google Brasil: 20 anos do Google no Brasil, inovações da engenharia brasileira para o mundo",
+          "url": "https://blog.google/intl/pt-br/produtos/20-anos-do-google-no-brasil-inovacoes-da-engenharia-brasileira-para-o-mundo/"
+        },
+        {
+          "label": "Bright Network: Google, how we hire",
+          "url": "https://www.brightnetwork.co.uk/employer-advice/google/google-how-we-hire/"
+        },
+        {
+          "label": "Coursera: How to Work at Google",
+          "url": "https://www.coursera.org/articles/how-to-work-at-google"
+        },
+        {
+          "label": "Forbes Brasil: Google inaugura centro de engenharia na USP com foco em IA e startups",
+          "url": "https://forbes.com.br/forbes-tech/2026/05/google-inaugura-centro-de-engenharia-na-usp-com-foco-em-ia-e-startups/"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "cultura-de-empresa-tech"
+        },
+        {
+          "tipo": "eventos",
+          "id": "gdg-jf"
+        },
+        {
+          "tipo": "programas",
+          "id": "901"
+        },
+        {
+          "tipo": "programas",
+          "id": "703"
+        },
+        {
+          "tipo": "blog",
+          "id": "processo-seletivo-como-se-preparar"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Trybe",
     "location": "Remote",
     "thumb": "./assets/thumb_good-companies/trybe.jpg",
     "site_url": "https://www.betrybe.com/trabalhe-conosco",
-    "category": "Education"
+    "category": "Education",
+    "slug": "trybe",
+    "detalhe": {
+      "resumo": "A Trybe é uma escola brasileira de tecnologia e inteligência artificial fundada em agosto de 2019, com origem em Minas Gerais. Ficou conhecida pela formação em desenvolvimento web com pagamento depois da contratação e, em outubro de 2026, se apresenta sobretudo como escola de IA, com cursos para profissionais e treinamentos para empresas.",
+      "paragrafos": [
+        "A Trybe foi fundada em agosto de 2019 e, segundo o Diário do Comércio, é uma empresa mineira que já atuou em Belo Horizonte, São Paulo, Itajubá e Florianópolis, além do ensino 100% online. Em 2020 comprou a catarinense Codenation e, em outubro de 2021, captou R$ 145 milhões em uma rodada Série B, segundo o InfoMoney. Em outubro de 2026, o site oficial informa que mais de 150 mil pessoas aprenderam IA e tecnologia com a escola e que mais de mil empresas desenvolveram seus times com ela.",
+        "O catálogo atual inclui formações em programação (Back-End com .NET e C#, Node.js ou Java, Front-End, Python para web e Android), cursos de produto, como SQL para Product Managers, e trilhas de IA para profissionais do Direito feitas em parceria com 16 seccionais da OAB. Para empresas, a Trybe vende treinamentos de IA sob medida e cita clientes como AWS, XP Inc., Mercado Livre e Grupo QuintoAndar, além de instituições públicas como USP, Embrapa e BNDES. A formação que deu fama à escola usava o Modelo de Sucesso Compartilhado: em 2021, o aluno só começava a pagar ao ganhar pelo menos R$ 3.000 na área, com 17% da renda bruta, num curso de 12 meses e 1.500 horas. O site consultado em outubro de 2026 não menciona mais esse modelo.",
+        "Sobre trabalhar na Trybe, há pouca informação pública atual. O portal Startups noticiou um corte de cerca de 10% da equipe em agosto de 2022 (47 de quase 500 pessoas) e, depois, uma segunda rodada de demissões de cerca de 35%. Em 2023, a empresa disse estar concentrada no seu negócio principal, a formação de pessoas desenvolvedoras. Em outubro de 2026, o site oficial não traz link de vagas; acompanhe a página da empresa no LinkedIn para saber quais perfis ela busca.",
+        "Para quem está começando, o caminho mais útil é a Trybe como escola. O site oferece cursos gratuitos de Lógica de Programação e JavaScript do Zero, além de aulas no YouTube, que servem como um primeiro teste antes de pagar por uma formação. Um bom primeiro exercício é concluir o curso de lógica e publicar no GitHub os exercícios resolvidos. Antes de assinar qualquer formação paga, leia o contrato com atenção, compare preço e carga horária e consulte o artigo do LearnTECH sobre como escolher uma formação para começar em desenvolvimento."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://betrybe.com/"
+        },
+        {
+          "label": "Trybe para Empresas",
+          "url": "https://www.betrybe.com/empresas"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Trybe: página inicial",
+          "url": "https://betrybe.com/"
+        },
+        {
+          "label": "Trybe: Trybe para Empresas",
+          "url": "https://www.betrybe.com/empresas"
+        },
+        {
+          "label": "InfoMoney: Na corrida por desenvolvedores, escola de tecnologia Trybe capta R$ 145 milhões",
+          "url": "https://www.infomoney.com.br/negocios/na-corrida-por-desenvolvedores-escola-de-tecnologia-trybe-capta-r-145-milhoes/"
+        },
+        {
+          "label": "Diário do Comércio: Trybe compra empresa catarinense",
+          "url": "https://diariodocomercio.com.br/economia/trybe-compra-empresa-catarinense/"
+        },
+        {
+          "label": "Startups: Como a Trybe está formando talentos em tempos de layoff?",
+          "url": "https://startups.com.br/negocios/como-a-trybe-esta-formando-talentos-em-tempos-de-layoff/"
+        },
+        {
+          "label": "Startups: notícias com a tag Trybe",
+          "url": "https://startups.com.br/tag/trybe"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "escolher-formacao-dev"
+        },
+        {
+          "tipo": "empresas",
+          "id": "rocketseat"
+        },
+        {
+          "tipo": "empresas",
+          "id": "digital-house"
+        },
+        {
+          "tipo": "empresas",
+          "id": "le-wagon"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Rocketseat",
     "location": "Remote",
     "thumb": "./assets/thumb_good-companies/rocketseat.jpg",
     "site_url": "https://rocketseat.gupy.io/",
-    "category": "Education"
+    "category": "Education",
+    "slug": "rocketseat",
+    "detalhe": {
+      "resumo": "A Rocketseat é uma empresa brasileira de educação em tecnologia, fundada em 2017 em Santa Catarina, que oferece cursos e formações em programação, IA, dados e produto. Desde 2021 faz parte do mesmo grupo da Digital House e mantém também uma faculdade e soluções para empresas e escolas.",
+      "paragrafos": [
+        "Segundo a CB Insights, a Rocketseat foi fundada em 2017 e tem endereço em Santa Catarina. Em outubro de 2021, a Digital House comprou a empresa em um negócio de R$ 150 milhões; na época, a Rocketseat tinha 400 mil usuários e as duas marcas seguiriam independentes, compartilhando recursos, segundo o Olhar Digital. Em outubro de 2026, o site oficial se apresenta como um ecossistema de educação para talentos digitais nascido dessa união e informa cerca de 725 mil pessoas na comunidade e cerca de 240 mil pessoas capacitadas.",
+        "Os produtos principais são o Rocketseat ONE, plataforma de aprendizado contínuo com cursos e formações em tecnologia e IA, a Faculdade Rocketseat, com graduações e pós-graduações reconhecidas pelo MEC, e programas para empresas e escolas. A página para empresas lista 19 formações e 30 cursos, com temas como React, Node.js, Python, Java, Go, DevOps, IA e inglês para devs, além de um tutor de IA chamado Houston. Entre as empresas exibidas como clientes estão Mercado Livre, iFood, VTEX, Totvs e Banco do Brasil.",
+        "Como empresa de educação, a Rocketseat contrata não só pessoas desenvolvedoras, mas também quem produz e organiza conteúdo. Um relato público no Glassdoor, de uma vaga de Designer Instrucional em São Paulo em 2022, descreve um processo com entrevistas e apresentação de um case, concluído em cerca de duas semanas. As vagas abertas e os requisitos de cada uma ficam no portal da empresa na Gupy.",
+        "Para se preparar, vale começar pelo Discover, curso gratuito com certificado e cerca de 6 horas de aulas gravadas, que cobre HTML, CSS, JavaScript, Git e GitHub e termina com um site para agrupar links. Publicar esse projeto no GitHub é um bom primeiro exercício concreto e também serve de portfólio. Em processos que pedem case, mostre como você pensou a solução e o que aprendeu, não só o resultado final.",
+        "No ecossistema LearnTECH, a Rocketseat aparece no evento Ignite ReactJS, a trilha de especialização em React da empresa. O site oficial consultado em outubro de 2026 não menciona mais o nome Ignite e destaca o Rocketseat ONE, então confira na plataforma o formato atual antes de se inscrever. Para quem quer chegar preparado, o programa React: Componentes, Estado e a Primeira Aplicação cobre a base que uma trilha de React costuma exigir."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.rocketseat.com.br/"
+        },
+        {
+          "label": "Rocketseat para Empresas",
+          "url": "https://www.rocketseat.com.br/para-empresas"
+        },
+        {
+          "label": "Discover (curso gratuito)",
+          "url": "https://www.rocketseat.com.br/discover"
+        },
+        {
+          "label": "Faculdade Rocketseat",
+          "url": "https://www.rocketseat.com.br/faculdade"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Rocketseat: Ecossistema completo para desenvolver talentos digitais",
+          "url": "https://www.rocketseat.com.br/"
+        },
+        {
+          "label": "Rocketseat: Rocketseat para Empresas",
+          "url": "https://www.rocketseat.com.br/para-empresas"
+        },
+        {
+          "label": "Rocketseat: Discover, curso gratuito",
+          "url": "https://www.rocketseat.com.br/discover"
+        },
+        {
+          "label": "CB Insights: Rocketseat",
+          "url": "https://www.cbinsights.com/company/rocketseat"
+        },
+        {
+          "label": "Olhar Digital: Edtechs se unem para impulsionar educação em tecnologia",
+          "url": "https://olhardigital.com.br/2021/10/15/pro/edtechs-se-unem-para-impulsionar-educacao-em-tecnologia/"
+        },
+        {
+          "label": "Glassdoor: entrevista na Rocketseat (Designer Instrucional)",
+          "url": "https://www.glassdoor.ie/Interview/Rocketseat-Interview-E3432708-RVW86685693.htm"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "eventos",
+          "id": "rocketseat-ignite"
+        },
+        {
+          "tipo": "empresas",
+          "id": "digital-house"
+        },
+        {
+          "tipo": "programas",
+          "id": "101"
+        },
+        {
+          "tipo": "empresas",
+          "id": "trybe"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "GeekHunter",
     "location": "Remote",
     "thumb": "./assets/thumb_good-companies/geekhunter.jpg",
     "site_url": "https://geekhunter.gupy.io/",
-    "category": "Recruitment"
+    "category": "Recruitment",
+    "slug": "geekhunter",
+    "detalhe": {
+      "resumo": "A GeekHunter é uma plataforma brasileira de recrutamento em tecnologia, criada em 2015 em Florianópolis. O modelo é invertido: o profissional monta um perfil gratuito e são as empresas que convidam os candidatos para os processos seletivos.",
+      "paragrafos": [
+        "Na GeekHunter, o candidato cria o perfil e, depois que ele é aprovado pela plataforma, pode navegar pelo mural de vagas e clicar em \"Tenho interesse nessa vaga\". A central de ajuda deixa claro que demonstrar interesse não é o mesmo que se candidatar: a decisão de convidar para o processo é da empresa que publicou a vaga. Para as empresas, a GeekHunter vende um software de recrutamento, acesso à base de talentos e um serviço de recrutadores dedicados. Em agosto de 2023, a empresa foi comprada pela americana Howdy.com, segundo a Forbes Brasil e o Baguete.",
+        "Em outubro de 2026, a página de vagas mostrava 755 vagas, com foco no Brasil e na América Latina. Há vagas remotas, híbridas e presenciais, de júnior a liderança, em áreas como desenvolvimento, dados, cloud, segurança e ERP/SAP, além de algumas funções não técnicas. Os filtros incluem local, tipo de vaga, faixa salarial, data de publicação e nível de experiência. Algumas vagas mostram faixa salarial, mas muitas não informam.",
+        "Para começar, crie o perfil gratuito e preencha com cuidado as tecnologias que você domina, as experiências e o que procura, porque é com base nele que a plataforma cruza seu perfil com as vagas. Sem a aprovação do perfil, o botão de interesse não aparece. Um primeiro exercício útil é reescrever o resumo do perfil citando projetos concretos e as tecnologias usadas em cada um, do jeito que um recrutador buscaria.",
+        "Como quem convida é a empresa, a GeekHunter funciona melhor como um canal a mais, junto com candidaturas diretas e outras plataformas. Revise o perfil de tempos em tempos e mantenha a pretensão e a disponibilidade atualizadas para não receber convites que não fazem sentido. Leia os termos de uso para entender quais dados ficam visíveis para as empresas cadastradas.",
+        "No blog do learnTECH, os artigos \"Como ler uma vaga e reconhecer uma boa empresa\" e \"Seus dados quando você se candidata: LGPD para quem procura emprego\" ajudam a avaliar os convites e a cuidar das informações que você coloca no perfil."
+      ],
+      "links": [
+        {
+          "label": "Vagas",
+          "url": "https://www.geekhunter.com/en/jobs"
+        },
+        {
+          "label": "Sobre a GeekHunter",
+          "url": "https://www.geekhunter.com/pt/empresas/sobre-a-geekhunter"
+        },
+        {
+          "label": "Central de ajuda: como me candidatar a uma vaga",
+          "url": "https://suporte.geekhunter.com.br/support/solutions/articles/9000146331-como-faco-para-me-candidatar-a-uma-vaga-"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "GeekHunter: Conheça a GeekHunter, quem somos",
+          "url": "https://www.geekhunter.com/pt/empresas/sobre-a-geekhunter"
+        },
+        {
+          "label": "GeekHunter: Remote Tech Jobs in Brazil & LATAM",
+          "url": "https://www.geekhunter.com/en/jobs"
+        },
+        {
+          "label": "Central de Ajuda GeekHunter: Como faço para me candidatar a uma vaga?",
+          "url": "https://suporte.geekhunter.com.br/support/solutions/articles/9000146331-como-faco-para-me-candidatar-a-uma-vaga-"
+        },
+        {
+          "label": "Forbes Brasil: Howdy.com compra GeekHunter e mira R$ 175 milhões em receita até 2024",
+          "url": "https://forbes.com.br/forbes-money/2023/08/howdy-com-compra-geekhunter-e-mira-r-175-milhoes-em-receita-ate-2024/"
+        },
+        {
+          "label": "Baguete: Howdy.com adquire GeekHunter",
+          "url": "https://www.baguete.com.br/noticias/howdy-com-adquire-geekhunter"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "como-ler-uma-vaga"
+        },
+        {
+          "tipo": "blog",
+          "id": "lgpd-seus-dados-ao-se-candidatar"
+        },
+        {
+          "tipo": "vagas",
+          "id": "coodesh"
+        },
+        {
+          "tipo": "vagas",
+          "id": "programathor"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Gupy",
     "location": "Remote",
     "thumb": "./assets/thumb_good-companies/gupy.jpg",
     "site_url": "https://tech-career.gupy.io/",
-    "category": "HR Tech"
+    "category": "HR Tech",
+    "slug": "gupy",
+    "detalhe": {
+      "resumo": "A Gupy é uma empresa brasileira de tecnologia para RH, fundada em 2015 em São Paulo, conhecida pela plataforma de recrutamento usada por milhares de empresas. Para quem procura emprego, é o lugar onde ficam muitos processos seletivos; para quem quer trabalhar nela, é uma HR Tech com time de tecnologia próprio.",
+      "paragrafos": [
+        "A Gupy foi fundada em 2015, em São Paulo, por quatro sócios, e começou como uma ferramenta de recrutamento e seleção baseada em inteligência artificial. Em janeiro de 2022 recebeu um aporte de R$ 500 milhões liderado por SoftBank e Riverwood, descrito pela Forbes Brasil como o maior já recebido por uma plataforma de RH na América Latina. Em outubro de 2026, o site oficial informa mais de 750 pessoas na equipe, cerca de 4 mil clientes ativos, 36 milhões de usuários registrados e 5 milhões de pessoas contratadas pela plataforma.",
+        "Hoje a empresa vende cinco soluções: Recrutamento e Seleção, Admissão, Treinamento, Engajamento e Performance e Desenvolvimento. Parte delas veio de aquisições, como a Niduu (educação corporativa, 2021), a Kenoby (recrutamento, 2022) e a Pulses (clima e engajamento, 2023). Para candidatos, o cadastro é gratuito; o portal permite buscar vagas sem login, filtrar por cidade, tipo de vaga (efetivo, home office, freelancer) e vagas para pessoas com deficiência, e muitos processos incluem testes online.",
+        "A página de carreiras do time de tecnologia, a Gupy Tech, descreve uma equipe com mais de 200 pessoas e cita Node, React, Python e Kubernetes entre as tecnologias usadas. A empresa se declara remote first, com um escritório em São Paulo, e destaca a cultura de testes e o selo GPTW por quatro anos seguidos. Na consulta feita em outubro de 2026 havia uma vaga aberta nessa página, de Lead Engineer em segurança de aplicações, efetiva e remota.",
+        "Para se candidatar, acompanhe a página Gupy Tech e crie seu cadastro no próprio sistema da Gupy, o mesmo usado por outras empresas. Um primeiro exercício útil é montar um pequeno projeto com React no front-end e Node no back-end, publicado no GitHub, já que são tecnologias citadas pela empresa. Como as vagas abertas mudam com frequência e podem ser poucas, vale ler a descrição separando o que é obrigatório do que é desejável.",
+        "Como a Gupy é usada por muitas empresas, conhecer a plataforma ajuda em qualquer busca de emprego. Preencha o perfil com cuidado, porque a triagem usa informações do currículo, e treine os testes online com calma e em ambiente tranquilo. Os artigos do LearnTECH sobre testes técnicos online e sobre LGPD para quem procura emprego ajudam a se preparar e a entender o que acontece com os dados enviados."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.gupy.io/"
+        },
+        {
+          "label": "Sobre a Gupy",
+          "url": "https://www.gupy.io/sobre-a-gupy"
+        },
+        {
+          "label": "Gupy Tech (carreiras em tecnologia)",
+          "url": "https://tech-career.gupy.io/"
+        },
+        {
+          "label": "Portal de privacidade",
+          "url": "https://www.gupy.io/portal-de-privacidade"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Gupy: Sobre a Gupy, líder em tecnologia para RH no Brasil",
+          "url": "https://www.gupy.io/sobre-a-gupy"
+        },
+        {
+          "label": "Gupy: Vem pra Gupy! (Gupy Tech)",
+          "url": "https://tech-career.gupy.io/"
+        },
+        {
+          "label": "Forbes Brasil: Os próximos passos da Gupy após meio bilhão em aporte",
+          "url": "https://forbes.com.br/forbes-tech/2022/01/os-proximos-passos-da-gupy-apos-meio-bilhao-em-aporte/"
+        },
+        {
+          "label": "Olhar Digital: O que é e como encontrar vagas na Gupy",
+          "url": "https://olhardigital.com.br/2023/06/08/dicas-e-tutoriais/o-que-e-e-como-encontrar-vagas-na-gupy/"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "testes-tecnicos-online"
+        },
+        {
+          "tipo": "blog",
+          "id": "lgpd-seus-dados-ao-se-candidatar"
+        },
+        {
+          "tipo": "blog",
+          "id": "processo-seletivo-como-se-preparar"
+        },
+        {
+          "tipo": "empresas",
+          "id": "geekhunter"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Cadastra",
-    "location": "São Paulo",
+    "location": "Porto Alegre / São Paulo",
     "thumb": "https://www.google.com/s2/favicons?domain=cadastra.com&sz=128",
     "site_url": "https://pt.cadastra.com/carreiras",
-    "category": "Marketing Tech"
+    "category": "Marketing Tech",
+    "slug": "cadastra",
+    "detalhe": {
+      "resumo": "A Cadastra é uma empresa de serviços de tecnologia, estratégia, marketing e dados, fundada em 2000 em Porto Alegre e com escritórios em São Paulo e Londres. Atende grandes marcas em projetos de mídia, e-commerce, CRM, dados e nuvem.",
+      "paragrafos": [
+        "A Cadastra nasceu em fevereiro de 2000 como a primeira agência de marketing para buscadores do Brasil e, a partir de 2008, virou uma agência digital focada em performance, segundo o Meio & Mensagem. A sede histórica fica em Porto Alegre, com escritórios em São Paulo e Londres. Em outubro de 2026, a página de carreiras informa mais de 900 colaboradores e mais de 400 marcas atendidas em mais de 15 segmentos, como Kopenhagen, Mitsubishi, Unilever e Uber.",
+        "O trabalho é organizado em centros de excelência: Business & Strategy, Search Experience & Conversion Optimisation, Media Services, CRM & Customer Experience, Transformative Engineering, Commerce, Data Analytics & AI, Cloud Services e Creative. A empresa atua com plataformas como AWS, Google Cloud, Google Marketing Platform, Microsoft Ads, Salesforce, VTEX e Meta. Também cresceu por aquisições, como a britânica Digital Ethos, em 2022, e a Qexpert, de Curitiba, em 2023.",
+        "A página de carreiras descreve valores como coragem, eficiência, impacto, aprendizado e parceria, e lista benefícios para contratados em regime CLT, como vale-refeição, auxílio home office, plano de saúde e participação nos lucros. Os locais de trabalho indicados são São Paulo, Porto Alegre, Londres e remoto. Na listagem de vagas consultada em outubro de 2026, a maioria das oportunidades era de mídia, contas, redação e SEO, todas em regime CLT, além de uma vaga de Jovem Aprendiz; não havia vagas de desenvolvimento naquele momento.",
+        "Para se candidatar, use o botão de vagas da página de carreiras, que leva ao portal da empresa na Gupy, ou o portal de vagas próprio, que também tem um banco de talentos para quem não encontrar uma vaga aberta. Quem mira as áreas de dados, engenharia ou e-commerce pode se preparar com projetos que juntem tecnologia e marketing, como um painel de métricas de uma campanha ou uma loja de teste. Leia com atenção a descrição de cada vaga, porque muitas usam títulos em inglês e pedem familiaridade com ferramentas de mídia e CRM.",
+        "Como a Cadastra trabalha com Salesforce, Google Cloud e VTEX, vale conhecer o ecossistema dessas plataformas. A página de ferramentas do LearnTECH sobre o Salesforce Marketing Cloud é um bom ponto de partida para entender automação de marketing. Para chegar bem preparado à entrevista, o artigo sobre como é um processo seletivo em tecnologia ajuda a organizar cada etapa."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://pt.cadastra.com/"
+        },
+        {
+          "label": "Carreiras na Cadastra",
+          "url": "https://pt.cadastra.com/carreiras"
+        },
+        {
+          "label": "Portal de vagas (Gupy)",
+          "url": "https://cadastra.gupy.io/"
+        },
+        {
+          "label": "Portal de vagas (Joby)",
+          "url": "https://joby.cadastra.com/cadastra/vagas"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Cadastra: Carreiras",
+          "url": "https://pt.cadastra.com/carreiras"
+        },
+        {
+          "label": "Cadastra: Sobre Nosotros",
+          "url": "https://es.cadastra.com/sobre-nosotros"
+        },
+        {
+          "label": "Cadastra: Vagas",
+          "url": "https://joby.cadastra.com/cadastra/vagas"
+        },
+        {
+          "label": "Meio & Mensagem: Cadastra 20 anos integra consultoria e tecnologia para transformação exponencial dos clientes",
+          "url": "https://www.meioemensagem.com.br/proxxima/arquivo/noticias/cadastra-20-anos-integra-consultoria-e-tecnologia-para-transformacao-exponencial-dos-clientes"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "ferramentas",
+          "id": "salesforce-marketing-cloud"
+        },
+        {
+          "tipo": "blog",
+          "id": "processo-seletivo-como-se-preparar"
+        },
+        {
+          "tipo": "blog",
+          "id": "como-ler-uma-vaga"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "BairesDev",
     "location": "Remoto",
     "thumb": "https://www.google.com/s2/favicons?domain=bairesdev.com&sz=128",
     "site_url": "https://www.bairesdev.com/",
-    "category": "Software Outsourcing"
+    "category": "Software Outsourcing",
+    "slug": "bairesdev",
+    "detalhe": {
+      "resumo": "Empresa de terceirização de software e nearshore fundada em 2009, com sede em São Francisco (EUA) e mais de 4.000 engenheiros, a maioria na América Latina. Monta equipes remotas de desenvolvimento para empresas, principalmente dos Estados Unidos.",
+      "paragrafos": [
+        "A BairesDev desenvolve software para outras empresas desde 2009 e se define como uma empresa de staff augmentation e desenvolvimento nearshore. Nearshore significa trabalhar para clientes de países próximos, no mesmo fuso horário ou em fusos parecidos, que no caso são sobretudo empresas americanas. A empresa informa ter mais de 4.000 engenheiros, espalhados por mais de 50 países, com cerca de 90% deles na América Latina. Ela tem sede em São Francisco e escritórios em Bogotá e Buenos Aires, mas o trabalho do time técnico é remoto.",
+        "Os serviços se dividem em três modelos: profissionais alocados na equipe do cliente, equipes dedicadas e projetos terceirizados de ponta a ponta. A empresa diz cobrir mais de 100 tecnologias e mais de 100 setores, com especialidades como IA e aprendizado de máquina, desenvolvimento web e mobile, nuvem, DevOps, testes de qualidade, cibersegurança e ERP. Na prática, o engenheiro da BairesDev trabalha como uma extensão do time do cliente, participando das reuniões e rotinas daquela empresa.",
+        "O processo seletivo é conhecido por ser concorrido. Segundo a própria empresa, ela avalia mais de 2,5 milhões de candidaturas por ano e contrata cerca de 1% delas, em um processo de vários meses com testes e entrevistas. Os critérios citados incluem profundidade técnica, experiência sênior, comunicação, encaixe cultural e domínio de ferramentas de programação com IA. Por isso, as vagas tendem a favorecer quem já tem alguns anos de experiência, e não quem está no primeiro emprego.",
+        "Para se preparar, o inglês é tão importante quanto o código, porque o dia a dia envolve clientes americanos, reuniões e documentação em inglês. Treine entrevistas técnicas em inglês, revise fundamentos da sua stack principal e prepare exemplos de projetos em que você entregou algo de ponta a ponta. Antes de aceitar uma proposta, leia com atenção o tipo de contrato oferecido, já que em empresas remotas e internacionais o vínculo pode ser diferente de um emprego CLT.",
+        "Como acontece com empresas grandes e conhecidas por recrutar remotamente, vale conferir se o contato veio de um endereço oficial e se a vaga aparece no site da BairesDev. Desconfie de qualquer pedido de pagamento para participar de um processo seletivo. No learnTECH, os programas Job Interview Prep e Daily Scrum English e o artigo sobre testes técnicos online ajudam a treinar as etapas que esse tipo de empresa costuma usar."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.bairesdev.com/"
+        },
+        {
+          "label": "Perguntas frequentes",
+          "url": "https://www.bairesdev.com/faq/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "BairesDev: FAQ",
+          "url": "https://www.bairesdev.com/faq/"
+        },
+        {
+          "label": "Built In: BairesDev",
+          "url": "https://builtin.com/company/bairesdev"
+        },
+        {
+          "label": "Pulse 2.0: BairesDev, entrevista com o CEO e cofundador Nacho De Marco",
+          "url": "https://pulse2.com/bairesdev-nacho-de-marco-profile/amp/"
+        },
+        {
+          "label": "BairesDev Press: Joining This Company Is Harder Than Getting Into Harvard",
+          "url": "https://www.bairesdev.com/press/harder-than-getting-into-harvard/"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "703"
+        },
+        {
+          "tipo": "programas",
+          "id": "704"
+        },
+        {
+          "tipo": "blog",
+          "id": "testes-tecnicos-online"
+        },
+        {
+          "tipo": "blog",
+          "id": "processo-seletivo-como-se-preparar"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Itaú Unibanco",
     "location": "São Paulo",
     "thumb": "https://www.google.com/s2/favicons?domain=itau.com.br&sz=128",
     "site_url": "https://carreiras.itau.com.br/",
-    "category": "Banking"
+    "category": "Banking",
+    "slug": "itau-unibanco",
+    "detalhe": {
+      "resumo": "Banco brasileiro com sede em São Paulo, formado em 2008 pela fusão do Itaú com o Unibanco, que se tornou a maior instituição financeira da América Latina. É também um grande contratante de profissionais de tecnologia, com vagas em engenharia de software, dados e produtos digitais.",
+      "paragrafos": [
+        "O Itaú Unibanco surgiu em novembro de 2008, da fusão de dois bancos tradicionais: o Itaú, fundado em São Paulo em 1945, e o Unibanco, cuja origem remonta a 1924. Com a fusão, tornou-se a maior instituição financeira da América Latina. Além do Brasil, o grupo tem operações em outros países da América Latina e unidades na Europa e na Ásia.",
+        "Boa parte da transformação recente do banco é digital. A partir de julho de 2024, o Itaú começou a unificar os aplicativos do banco, do Itaú Cartões e do iti em um único super app. Em 2025 lançou recursos como controle de gastos no aplicativo, Pix pelo WhatsApp e assistentes com inteligência artificial para investimentos, para pequenos empreendedores e para atendimento. Tudo isso depende de times grandes de engenharia, dados, segurança e produto.",
+        "O banco contrata tecnologia com frequência. Em maio de 2026, anunciou mais de 240 vagas em tecnologia, dados, produtos digitais e inovação, buscando perfis que unem desenvolvimento de software, dados e produto, com metodologias ágeis, pensamento analítico e foco no cliente. Em 2021, contratou mais de 2.500 profissionais de tecnologia e realizou 11 edições do Bootcamp Itaú Devs, que formaram e contrataram mais de 400 pessoas, algumas delas voltadas a mulheres, pessoas negras, pessoas trans e pessoas com deficiência. Em 2022, um desses bootcamps teve foco em Java e AWS.",
+        "As vagas ficam no portal de carreiras, com uma área específica de tecnologia e uma busca de vagas por cargo e local. O banco também recruta ativamente pelo LinkedIn para posições estratégicas, então manter o perfil atualizado, com palavras-chave da sua área, aumenta a chance de ser encontrado. Programas como bootcamps e estágios abrem em períodos específicos, por isso vale acompanhar o portal e as redes oficiais do banco.",
+        "Para se preparar, estude a stack pedida em cada vaga, que em bancos costuma incluir linguagens como Java, nuvem e bancos de dados, e treine testes técnicos e entrevistas comportamentais. Por ser uma instituição financeira, segurança da informação e proteção de dados são temas que aparecem no dia a dia. No learnTECH, o artigo sobre perfil encontrável no LinkedIn, o artigo sobre processo seletivo e o programa de Segurança de Dados e LGPD ajudam nessa preparação."
+      ],
+      "links": [
+        {
+          "label": "Carreiras Itaú",
+          "url": "https://carreiras.itau.com.br/"
+        },
+        {
+          "label": "Carreiras em tecnologia",
+          "url": "https://carreiras.itau.com.br/tecnologia"
+        },
+        {
+          "label": "Busca de vagas",
+          "url": "https://carreiras.itau.com.br/busca-de-vagas"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Itaú Unibanco: Itaú Unibanco abre mais de 240 vagas com foco na região (maio de 2026)",
+          "url": "https://www.itau.com.br/media/dam/m/36e47fd13d82e942/original/15-05-2026-itau-unibanco-abre-mais-de-duzentos-quarenta-vagas-com-foco-na-regiao.pdf"
+        },
+        {
+          "label": "Tecnoblog: Itaú",
+          "url": "https://tecnoblog.net/sobre/itau/"
+        },
+        {
+          "label": "Convergência Digital: Itaú abre mais de 400 vagas em tecnologia",
+          "url": "https://convergenciadigital.com.br/carreira/ita-abre-mais-de-400-vagas-em-tecnologia/"
+        },
+        {
+          "label": "Wikipédia (cópia IPFS): Itaú Unibanco",
+          "url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/Ita%C3%BA_Unibanco"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "perfil-encontravel-linkedin"
+        },
+        {
+          "tipo": "blog",
+          "id": "processo-seletivo-como-se-preparar"
+        },
+        {
+          "tipo": "programas",
+          "id": "404"
+        },
+        {
+          "tipo": "blog",
+          "id": "testes-tecnicos-online"
+        },
+        {
+          "tipo": "eventos",
+          "id": "caelum-java"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "XP Inc.",
     "location": "São Paulo",
     "thumb": "https://www.google.com/s2/favicons?domain=xpinc.com&sz=128",
     "site_url": "https://www.xpinc.com/",
-    "category": "Fintech"
+    "category": "Fintech",
+    "slug": "xp-inc",
+    "detalhe": {
+      "resumo": "A XP Inc. é o grupo de serviços financeiros e de investimentos fundado em Porto Alegre em 2001, dono de marcas como XP Investimentos, Rico, Clear, InfoMoney e XP Educação. Tem ações listadas na Nasdaq desde dezembro de 2019 e contrata muitos profissionais de tecnologia, inclusive pelo programa de estágio.",
+      "paragrafos": [
+        "A XP começou em 2001, em Porto Alegre, como escritório de assessoria de investimentos, e cresceu até se tornar uma das maiores plataformas de investimentos do Brasil. A XP Inc. é a holding do grupo, constituída nas Ilhas Cayman em 2019 para a abertura de capital. O IPO foi concluído em 13 de dezembro de 2019, e as ações são negociadas na Nasdaq com o código XP. O Itaú Unibanco foi acionista desde antes do IPO, por meio de uma holding própria.",
+        "O grupo reúne marcas como XP Investimentos, Rico e Clear (corretoras), XP Asset Management, InfoMoney (portal de notícias financeiras), XP Educação, XP Seguros e Banco XP. Oferece renda fixa, ações, fundos, previdência, cartão de crédito e outros serviços financeiros. Em novembro de 2021, a XP comprou o IGTI, faculdade mineira de ensino a distância focada em tecnologia, o que levou a XP Educação ao ensino superior em cursos como desenvolvimento, nuvem, segurança, IA e ciência de dados.",
+        "Por ser uma empresa financeira com produtos digitais, a XP contrata em engenharia de software, arquitetura e engenharia de dados, segurança da informação, infraestrutura e produtos digitais. O programa de estágio é a principal porta de entrada para quem está começando. Na edição divulgada em novembro de 2024, para início em fevereiro de 2025, eram 90 vagas, com áreas de tecnologia entre elas, modelo híbrido em São Paulo, seis horas por dia e bolsa de R$ 2.000, com exigência de morar a até 160 km da capital paulista.",
+        "As inscrições do estágio abrem em períodos específicos e começam com cadastro e testes on-line, seguidos de entrevistas. Por isso, vale acompanhar os canais oficiais e ler com atenção os requisitos de cada edição, como período de formatura e localização, que mudam de um ano para outro. Em entrevistas, ajuda saber explicar de forma simples conceitos financeiros básicos ligados ao produto, como renda fixa e variável, além de mostrar projetos técnicos.",
+        "No ecossistema learnTECH, a XP aparece também pela XP Educação, braço educacional do grupo, que organiza o Minicamp XP Educação listado nos eventos. Participar de eventos e cursos curtos da própria empresa é uma forma de conhecer a cultura e a linguagem do setor antes de se candidatar. Como o setor financeiro é regulado e lida com dados sensíveis, conhecimento de segurança e proteção de dados também conta pontos."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.xpinc.com/"
+        },
+        {
+          "label": "Programa de estágio (página da edição 2025)",
+          "url": "https://lp.xpi.com.br/programa_de_estagio"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "SEC: XP Inc. Form 20-F (exercício de 2022)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1787425/000162828023013297/xp-20221231.htm"
+        },
+        {
+          "label": "Forbes Brasil: De Porto Alegre para a Nasdaq, o desempenho das ações da XP Inc. após um ano do IPO",
+          "url": "https://forbes.com.br/forbes-money/2020/12/de-porto-alegre-para-a-nasdaq-o-desempenho-das-acoes-da-xp-inc-apos-um-ano-do-ipo/"
+        },
+        {
+          "label": "Startupi: XP Inc. adquire startup mineira de educação a distância focada em tecnologia e inovação",
+          "url": "https://startupi.com.br/xp-inc-adquire-startup-mineira-de-educacao-a-distancia-focada-em-tecnologia-e-inovacao/"
+        },
+        {
+          "label": "Canaltech: XP abre inscrições para programa de estágio de 2025 com vagas em tecnologia",
+          "url": "https://canaltech.com.br/empregos/xp-abre-inscricoes-para-programa-de-estagio-de-2025-com-vagas-em-tecnologia/"
+        },
+        {
+          "label": "Wikipedia: XP Inc.",
+          "url": "https://ipfs.ssi.eecc.de/ipns/en.wikipedia-on-ipfs.org/wiki/XP_Inc."
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "eventos",
+          "id": "xpeducacao-minicamp"
+        },
+        {
+          "tipo": "programas",
+          "id": "404"
+        },
+        {
+          "tipo": "blog",
+          "id": "processo-seletivo-como-se-preparar"
+        },
+        {
+          "tipo": "blog",
+          "id": "financas-primeiro-salario-tech"
+        }
+      ],
+      "atualizadoEm": "2026-10-30"
+    }
   },
   {
     "title": "Serasa Experian",
     "location": "São Paulo",
     "thumb": "https://www.google.com/s2/favicons?domain=serasaexperian.com.br&sz=128",
     "site_url": "https://www.serasaexperian.com.br/",
-    "category": "Data & Credit"
+    "category": "Data & Credit",
+    "slug": "serasa-experian",
+    "detalhe": {
+      "resumo": "A Serasa Experian é uma empresa brasileira de dados e tecnologia, criada em 1968 e parte do grupo britânico-irlandês Experian desde 2007, que oferece análise de crédito e de risco, autenticação e prevenção à fraude. Com mais de 4 mil funcionários no Brasil, mantém programa de estágio com vagas em tecnologia.",
+      "paragrafos": [
+        "A Serasa foi criada em 1968 e, por décadas, teve como acionistas grandes bancos brasileiros. Em 2007, a Experian, grupo de serviços de informação sediado em Dublin, comprou o controle da empresa, que passou a se chamar Serasa Experian. Em outubro de 2012, a Experian adquiriu a parte restante dos bancos e chegou a 99,6% das ações. A Experian emprega cerca de 20.600 pessoas em 43 países e tem ações negociadas na Bolsa de Londres.",
+        "A empresa se define como uma datatech: usa grandes bases de dados para apoiar decisões de crédito, análise de risco, autenticação de identidade e prevenção à fraude. Segundo a própria empresa, responde a cerca de 6 milhões de consultas por dia e atende 500 mil clientes diretos e indiretos. Esse volume faz da empresa um lugar com muito trabalho em engenharia de dados, ciência de dados, segurança e desenvolvimento de software.",
+        "A Serasa Experian aparece com frequência em rankings de empregadores. Foi reconhecida pelo Great Place to Work entre as melhores empresas de TI para trabalhar em 2022 e, em outubro de 2024, informou ter certificação GPTW pelo quarto ano seguido. A empresa tem escritórios em São Paulo (SP), São Carlos (SP) e Florianópolis (SC). O programa de estágio de 2024 aceitou estudantes de Tecnologia da Informação, Engenharias, Economia, Administração e outros cursos, com vagas remotas, híbridas e presenciais, seis horas diárias e bolsa de R$ 2.150, com processo seletivo todo digital.",
+        "Para se candidatar, acompanhe a página de carreiras da empresa e a página específica do programa de estágio, que costuma abrir inscrições no segundo semestre. Prepare-se para etapas on-line, com testes e entrevistas por vídeo. Como o negócio é baseado em dados, um bom exercício é montar um pequeno projeto de análise de dados em SQL ou Python e saber explicar como você trataria informações sensíveis.",
+        "Trabalhar com dados de crédito exige atenção redobrada à privacidade e à Lei Geral de Proteção de Dados (LGPD). Mostrar que você conhece princípios como finalidade, minimização e segurança no tratamento de dados pessoais é um diferencial em entrevistas. No learnTECH, o programa Segurança de Dados e LGPD e o artigo sobre seus dados ao se candidatar ajudam a construir essa base, e o artigo sobre finanças no primeiro salário explica, do lado do consumidor, por que o histórico de crédito importa."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.serasaexperian.com.br/"
+        },
+        {
+          "label": "Carreiras",
+          "url": "https://www.serasaexperian.com.br/carreiras/"
+        },
+        {
+          "label": "Programa de estágio",
+          "url": "https://www.serasaexperian.com.br/carreiras/estagio-serasa-experian/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Serasa Experian: Serasa Experian é uma das melhores empresas de TI para se trabalhar, segundo GPTW",
+          "url": "https://www.serasaexperian.com.br/sala-de-imprensa/rh/serasa-experian-e-uma-das-melhores-empresas-de-ti-para-se-trabalhar-segundo-gptw/"
+        },
+        {
+          "label": "Serasa Experian: Serasa Experian estende prazo de inscrições para programa de estágio até 10 de novembro",
+          "url": "https://www.serasaexperian.com.br/sala-de-imprensa/rh/serasa-experian-estende-prazo-de-inscricoes-para-programa-de-estagio-ate-10-de-novembro/"
+        },
+        {
+          "label": "Baguete: Experian compra ações da Serasa e agora tem 99,6%",
+          "url": "https://www.baguete.com.br/noticias/23/10/2012/experian-compra-acoes-da-serasa-e-agora-tem-996"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "404"
+        },
+        {
+          "tipo": "blog",
+          "id": "lgpd-seus-dados-ao-se-candidatar"
+        },
+        {
+          "tipo": "blog",
+          "id": "financas-primeiro-salario-tech"
+        },
+        {
+          "tipo": "programas",
+          "id": "401"
+        }
+      ],
+      "atualizadoEm": "2026-10-30"
+    }
   },
   {
     "title": "SERPRO",
     "location": "Brasília",
     "thumb": "https://www.google.com/s2/favicons?domain=serpro.gov.br&sz=128",
     "site_url": "https://www.serpro.gov.br/",
-    "category": "Public Sector Tech"
+    "category": "Public Sector Tech",
+    "slug": "serpro",
+    "detalhe": {
+      "resumo": "O Serpro (Serviço Federal de Processamento de Dados) é a empresa pública de tecnologia da informação do governo federal brasileiro, criada em 1964 e com sede em Brasília. Desenvolve e opera sistemas e serviços digitais para órgãos públicos e também vende serviços baseados em informações de governo para o setor privado.",
+      "paragrafos": [
+        "O Serpro foi criado pela Lei nº 4.516, de 1º de dezembro de 1964, para modernizar setores estratégicos da administração pública. É considerado a maior empresa estatal de serviços de TI do país e, segundo o rodapé do site oficial, está ligado ao Ministério da Fazenda. A sede fica em Brasília (DF), e a empresa mantém regionais em outras cidades. O propósito declarado é prover soluções inteligentes para transformação e inclusão digital.",
+        "Os principais clientes são órgãos da Administração Pública Federal, para os quais o Serpro desenvolve e mantém grandes sistemas ligados ao controle e à transparência de receitas e gastos do governo. A empresa também atende organizações privadas com serviços baseados em dados de governo, oferecidos na Loja Serpro, além de produtos como assinador digital e certificado digital. Entre os valores que a empresa publica estão soberania dos dados e segurança da informação, o que dá ideia do tipo de cuidado exigido no trabalho.",
+        "Por ser empresa pública, o Serpro contrata por concurso público. O último concurso nacional para analista na especialização Tecnologia foi aberto em 2023, organizado pelo Cebraspe, com 602 vagas mais cadastro de reserva, jornada de 40 horas e salário inicial de R$ 9.025,73. O requisito era graduação em Tecnologia ou graduação em qualquer área com pós-graduação de pelo menos 360 horas em Tecnologia. Em julho de 2026, esse concurso seguia válido, prorrogado por dois anos a partir de 17 de novembro de 2025, e não havia novo edital anunciado.",
+        "Para se preparar para um próximo concurso, acompanhe os comunicados oficiais do Serpro e o portal de transparência da empresa, onde ficam informações sobre empregados e convocações. Estude pelo edital anterior: ele mostra o formato das provas, com prova objetiva e prova de conhecimentos aplicados. Leia cada edital por inteiro, prestando atenção a requisitos de formação, datas e taxa de inscrição, e desconfie de sites que cobram para garantir vaga ou inscrição.",
+        "Quem quer trabalhar com tecnologia no setor público encontra no Serpro sistemas de grande escala, com exigências altas de segurança, disponibilidade e proteção de dados. Por isso, conhecimentos de banco de dados, segurança da informação e da Lei Geral de Proteção de Dados (LGPD) são úteis tanto na prova quanto no dia a dia. O programa Segurança de Dados e LGPD e o artigo sobre como ler uma vaga, do learnTECH, ajudam a construir essa base."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.serpro.gov.br/"
+        },
+        {
+          "label": "Quem somos",
+          "url": "https://www.serpro.gov.br/menu/institucional/quem-somos"
+        },
+        {
+          "label": "Transparência: empregados",
+          "url": "https://www.transparencia.serpro.gov.br/acesso-a-informacao/empregados"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Serpro: Quem somos",
+          "url": "https://www.serpro.gov.br/menu/institucional/quem-somos"
+        },
+        {
+          "label": "Wikipedia: Serpro",
+          "url": "https://en.wikipedia.org/wiki/Serpro"
+        },
+        {
+          "label": "Cebraspe: Serviço Federal de Processamento de Dados inicia inscrições para Analista",
+          "url": "https://www.cebraspe.org.br/servico-federal-de-processamento-de-dados-inicia-inscricoes-para-analista/"
+        },
+        {
+          "label": "Estudo Certeiro: Concurso SERPRO 2026",
+          "url": "https://estudocerteiro.com.br/concurso-serpro/"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "404"
+        },
+        {
+          "tipo": "programas",
+          "id": "401"
+        },
+        {
+          "tipo": "blog",
+          "id": "como-ler-uma-vaga"
+        },
+        {
+          "tipo": "blog",
+          "id": "processo-seletivo-como-se-preparar"
+        }
+      ],
+      "atualizadoEm": "2026-10-30"
+    }
   },
   {
     "title": "Pitang",
@@ -282,6 +1534,10 @@
         {
           "label": "Le Wagon: FAQ",
           "url": "https://www.lewagon.com/faq"
+        },
+        {
+          "label": "Course Report: coding bootcamps em São Paulo (ficha da Le Wagon)",
+          "url": "https://www.coursereport.com/cities/sao-paulo"
         }
       ],
       "atualizadoEm": "2026-10-28"
@@ -499,6 +1755,139 @@
         }
       ],
       "atualizadoEm": "2026-10-28"
+    }
+  },
+  {
+    "title": "ABC da Construção",
+    "location": "Juiz de Fora, MG",
+    "thumb": "./assets/logo/logo-career.png",
+    "site_url": "https://www.abcdaconstrucao.com.br/",
+    "category": "Retail Franchise",
+    "slug": "abc-da-construcao",
+    "detalhe": {
+      "resumo": "Rede mineira de franquias de materiais de acabamento para construção e reforma, com origem em Juiz de Fora e fundação em 1958. Opera lojas-showroom franqueadas (guide shops) apoiadas por logística, estoque e plataforma digital da franqueadora e, a partir de 2025, passou a ter suas áreas de tecnologia e growth organizadas numa holding, o Grupo MYSA. É um bom retrato de como CRM, growth e marketing tech funcionam no varejo de franquias: muitos públicos, muitos canais, rituais semanais e uma stack que mistura Salesforce Marketing Cloud, WhatsApp, e-commerce e planilhas.",
+      "paragrafos": [
+        "A ABC da Construção vende louças, metais, pisos, revestimentos e outros acabamentos para obra e reforma. A empresa tem sede em Juiz de Fora, na Zona da Mata mineira, e informa fundação em 1958. No Portal do Franchising, mantido pela Associação Brasileira de Franchising (ABF), a rede declarou 295 unidades e investimento inicial a partir de R$ 180 mil, em dados informados pela franqueadora em 24 de outubro de 2024. A Dexco (antiga Duratex) comprou uma participação minoritária de 10% por R$ 103 milhões, negócio anunciado em julho de 2021, segundo o Brazil Journal, e aprovado pelo Cade em dezembro de 2021, segundo o Diário do Comércio (janeiro de 2022). Em conteúdo de marca publicado na Gazeta do Povo em fevereiro de 2023, a rede citava presença em Minas Gerais, Espírito Santo, Rio de Janeiro e São Paulo e um mix de mais de 25 mil produtos.",
+        "O modelo de negócio se apoia em guide shops: lojas com showroom, em que o franqueado cuida do atendimento e da venda, enquanto a franqueadora concentra logística, estoque e capital de giro numa plataforma digital própria, como descreveu o Brazil Journal em julho de 2021. A operação é apresentada como omnichannel, com e-commerce, entrega programada direto na obra e um programa de relacionamento que liga franqueados a especificadores, como arquitetos e profissionais de obra. Em janeiro de 2022, o Diário do Comércio registrava cerca de 50 pessoas trabalhando em TI. A partir de 2025, a estrutura passou a ser organizada numa holding formada a partir da ABC, o Grupo MYSA, com um time de tecnologia e growth compartilhado. Na prática, quem trabalha com CRM numa holding pode atender mais de uma marca ao mesmo tempo, e a boa prática é dar a cada uma a sua unidade de negócio (BU) na plataforma de automação e o seu número oficial de WhatsApp.",
+        "O trabalho de growth e CRM fica no meio de muitas áreas: marketing e marca, e-commerce, performance (mídia paga), dados e BI, expansão (venda de novas franquias), operações e consultores de campo que atendem as lojas, compliance e jurídico, agências parceiras e as marcas da indústria que pedem comunicações próprias. Para não virar um balcão de pedidos, o time trabalha em ciclos semanais com rituais curtos: planning na segunda-feira, daily com as três perguntas clássicas (o que foi concluído ontem, no que estou trabalhando hoje, há algum impedimento), refinamento e apresentação das histórias durante a semana e revisão na sexta. Cada ciclo é numerado e cada tarefa recebe projeto, responsável, prazo, esforço estimado em minutos e uma nota de valor de 1 a 4 (de 'não agrega e não é necessário' a 'agrega e é necessário'). A capacidade do ciclo é o tempo útil da semana menos as rotinas fixas e as reuniões, o que deixa visível quando a pessoa está sobrecarregada. Ao lado disso roda um to-do semanal por frente de trabalho, com status por cor e um relatório (report) para cada projeto.",
+        "A rotina real de um analista de growth ou CRM começa antes de qualquer jornada: abrir e-mail, Teams e a fila de chamados do sistema de atendimento ao franqueado, montar o planejamento do dia, validar as peças de cada disparo com quem pediu e levar o andamento para a daily. O trabalho do dia é cumprir esse planejamento. Uma parte grande é manutenção de base: quando uma franquia abre, troca de dono, é repassada ou encerra, ou quando um franqueado pede para mudar o telefone que recebe leads, alguém precisa atualizar a base padrão de contatos das lojas, conferir o identificador da unidade e responder o chamado. Outra parte são os disparos recorrentes por público: para o franqueado, avisos de orçamentos a vencer, novos leads e aniversários de especificadores; para o cliente final, novos orçamentos, recuperação de orçamentos e boas-vindas; no pós-venda, a confirmação de pedido entregue por canal (loja física, e-commerce e marketplace).",
+        "A stack conta a história da evolução da área. Numa primeira fase, o growth trabalhava com Constant Contact para e-mail marketing, Zenvia para disparos de WhatsApp e SMS e a Wake Commerce como plataforma do e-commerce, onde entram tarefas como recategorizar o catálogo e montar o menu de categorias com imagem. Depois, a operação de CRM migrou para o Salesforce Marketing Cloud: Journey Builder para as jornadas, Automation Studio para importar bases e rodar consultas SQL agendadas sobre as data extensions, CloudPages para landing pages e central de preferências, AMPscript (e um pouco de Server-Side JavaScript) para personalizar e-mails e páginas, e o WhatsApp da API oficial da Meta conectado às jornadas. Excel continua no centro do controle (bases padrão, cronograma de construção de jornadas, dicionário de variáveis, planilha de usuários), e o Looker Studio serve para os painéis de acompanhamento. Quem chega achando que vai só 'mexer no Salesforce' descobre que metade do valor está em organizar o que entra e o que sai dele.",
+        "As entregas típicas são concretas e aparecem bem num portfólio. Jornadas transacionais de pedido, em e-mail e WhatsApp, com um modelo para cada etapa (pedido aprovado, nota fiscal emitida, pedido expedido por transportadora ou disponível para retirada, pedido entregue), testes manuais, ajustes de status e um período de observação antes de declarar a jornada terminada. Réguas de relacionamento: boas-vindas, primeira compra, nutrição de leads de topo de funil, reengajamento e alertas por WhatsApp para o vendedor da loja quando chega um lead novo ou um orçamento fica sem acompanhamento. Landing pages de captação e de expansão, incluindo a migração de páginas de uma plataforma de automação anterior para o ecossistema Salesforce, com dicionário de variáveis para não perder campos no caminho. Relatórios de OKR para a diretoria, com objetivos e resultados-chave como receita especificada, orçamentos gerados, conversão e usuários ativos do programa de relacionamento. E o próprio programa de relacionamento com arquitetos e especificadores, com boas-vindas, aniversário, pontuação, campanhas, newsletter e encontros presenciais, como o Experience Summit realizado em São Paulo no Cubo Itaú, que pedem convite, inscrição e comunicação antes e depois.",
+        "Os desafios são os típicos de uma rede grande e distribuída. As bases nascem em muitos lugares (site, lojas, formulários, eventos, chatbot) e precisam ser unificadas e limpas antes de qualquer disparo. Cada unidade tem a sua região, o seu público e as suas ofertas, então uma mesma campanha costuma virar várias versões por estado, como acontece com os encartes e tabloides regionais. O calendário é puxado por datas sazonais, como a Black Friday, e por ciclos quinzenais ou mensais de ofertas. O WhatsApp virou canal principal de conversa com cliente e franqueado, o que exige números oficiais verificados, modelos de mensagem aprovados pela Meta e opt-in coletado. E a LGPD está em toda decisão: base legal para cada comunicação, lista de exclusão respeitada, revisão de compliance antes de ativar jornadas para outra marca, cuidado com dados de leads compartilhados com franqueados e controle de quem acessa cada ferramenta.",
+        "Na visão de quem recruta, empresas desse tipo procuram perfis híbridos: alguém que configure uma jornada no Journey Builder, escreva uma consulta SQL de segmentação, ajuste um template de e-mail em HTML com AMPscript e, no mesmo dia, explique o resultado para a diretoria e alinhe uma campanha com um franqueado. Um headhunter costuma investigar três coisas. Primeiro, profundidade na plataforma: a pessoa sabe o que é uma data extension, uma BU, uma entry source, uma automação agendada, ou só operou disparos prontos? Segundo, visão de negócio: consegue ligar uma régua a uma meta (orçamento convertido, cliente reativado, franqueado atendido) em vez de contar envios? Terceiro, organização e responsabilidade: documenta, testa antes de publicar e sabe dizer não a um disparo sem base legal. A certificação Salesforce Certified Marketing Cloud Engagement Specialist (antiga Email Specialist) ajuda a comprovar a parte técnica. O mercado ainda é pouco maduro, o que valoriza quem sabe estruturar: no Panoramas RD Station 2026, divulgado em junho de 2026, 54% das empresas ouvidas diziam operar sem CRM e 62% não acompanhavam as taxas de conversão do funil.",
+        "Para se preparar, vale montar um portfólio com dados fictícios que imite essa rotina: uma jornada transacional de pedido em e-mail e WhatsApp, uma régua completa (gatilho, público, intervalo, mensagem e métrica), uma landing page com formulário e central de preferências, uma consulta SQL de segmentação comentada e um relatório semanal de uma página. Na entrevista, conte um ciclo real: o que você planejou na segunda, o que travou, como resolveu e o que mediu. Sinais de uma boa vaga: escopo descrito com ferramentas reais, clareza sobre quem aprova as comunicações, área de dados ou TI para apoiar e metas de relacionamento além do número de envios. O autor do learnTECH trabalhou nessa rotina, primeiro como growth hacker da rede e depois como desenvolvedor de CRM na holding."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.abcdaconstrucao.com.br/"
+        },
+        {
+          "label": "Página da franquia no Portal do Franchising (ABF)",
+          "url": "https://franquias.portaldofranchising.com.br/franquia-abc-da-construcao-casa-e-construcao/"
+        },
+        {
+          "label": "Brazil Journal: o modelo de negócios da ABC da Construção (2021)",
+          "url": "https://braziljournal.com/o-modelo-de-negocios-do-abc-da-construcao-que-acaba-de-atrair-a-duratex/"
+        },
+        {
+          "label": "Credencial Marketing Cloud Engagement Specialist (Trailhead)",
+          "url": "https://trailhead.salesforce.com/es-MX/credentials/marketingcloudemailspecialist"
+        },
+        {
+          "label": "Trailhead: primeiros passos no Journey Builder",
+          "url": "https://trailhead.salesforce.com/content/learn/modules/journey-builder-basics/get-started-with-journey-builder"
+        },
+        {
+          "label": "Trailhead: trilha Code with AMPscript",
+          "url": "https://trailhead.salesforce.com/content/learn/trails/code-with-ampscript"
+        },
+        {
+          "label": "LearnTECH: como é trabalhar com CRM e growth no varejo de franquias",
+          "url": "https://learn-tech-pied.vercel.app/blog/como-e-trabalhar-com-crm-no-varejo-de-franquias"
+        },
+        {
+          "label": "LearnTECH: como ler uma vaga e reconhecer uma boa empresa",
+          "url": "https://learn-tech-pied.vercel.app/blog/como-ler-uma-vaga"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Portal do Franchising (ABF): franquia ABC da Construção, dados de 24/10/2024",
+          "url": "https://franquias.portaldofranchising.com.br/franquia-abc-da-construcao-casa-e-construcao/"
+        },
+        {
+          "label": "Brazil Journal: O modelo de negócios do ABC da Construção que acaba de atrair a Duratex (15/07/2021)",
+          "url": "https://braziljournal.com/o-modelo-de-negocios-do-abc-da-construcao-que-acaba-de-atrair-a-duratex/"
+        },
+        {
+          "label": "Diário do Comércio: ABC da Construção ampliará distribuição (04/01/2022)",
+          "url": "https://diariodocomercio.com.br/negocios/abc-da-construcao-ampliara-distribuicao/"
+        },
+        {
+          "label": "Diário do Comércio: ABC da Construção expande atuação para o Espírito Santo (19/05/2022)",
+          "url": "https://diariodocomercio.com.br/negocios/abc-da-construcao-expande-atuacao-para-o-espirito-santo/"
+        },
+        {
+          "label": "Gazeta do Povo (conteúdo de marca): Franquia ABC da Construção (07/02/2023)",
+          "url": "https://www.gazetadopovo.com.br/conteudo-publicitario/abc-da-construcao/franquia-abc-da-construcao/"
+        },
+        {
+          "label": "Portal Tela: Panoramas RD Station 2026 indicam gestão marcada pelo improviso (01/06/2026)",
+          "url": "https://www.portaltela.com/noticias/economia/2026/06/01/panoramas-rd-station-2026-indicam-gestao-marcada-pelo-improviso/"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "1101"
+        },
+        {
+          "tipo": "programas",
+          "id": "1102"
+        },
+        {
+          "tipo": "programas",
+          "id": "1103"
+        },
+        {
+          "tipo": "programas",
+          "id": "1104"
+        },
+        {
+          "tipo": "programas",
+          "id": "1105"
+        },
+        {
+          "tipo": "programas",
+          "id": "1106"
+        },
+        {
+          "tipo": "programas",
+          "id": "1107"
+        },
+        {
+          "tipo": "programas",
+          "id": "105"
+        },
+        {
+          "tipo": "programas",
+          "id": "106"
+        },
+        {
+          "tipo": "programas",
+          "id": "1003"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "salesforce-marketing-cloud"
+        },
+        {
+          "tipo": "blog",
+          "id": "como-e-trabalhar-com-crm-no-varejo-de-franquias"
+        }
+      ],
+      "atualizadoEm": "2026-10-31"
     }
   }
 ]

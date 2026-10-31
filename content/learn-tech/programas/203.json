@@ -3,8 +3,807 @@
   "image": "https://cdn.pixabay.com/photo/2015/02/02/11/09/office-620822_1280.jpg",
   "category": "UX/UI",
   "categoryFilter": "ux-ui",
-  "title": "Psicologia das Cores e Tipografia aplicada ao Produto Digital",
-  "lessons": "08+ Lições",
-  "duration": "06hr 30min",
-  "access": "Acesso Livre"
+  "title": "Cor e Tipografia em Produtos Digitais",
+  "lessons": "17 passos",
+  "duration": "8h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Iniciante",
+  "description": "Cor e tipografia tratadas como decisão de projeto, não como gosto pessoal nem como “psicologia” de almanaque. Você aprende a usar cor para criar hierarquia e comunicar estado, a medir contraste pelas regras da WCAG, a organizar a paleta em tokens e a montar uma escala tipográfica que se lê bem em qualquer tela.",
+  "letslearn": [
+    "Separar o que é evidência do que é mito quando se fala em significado das cores",
+    "Medir contraste e aplicar os mínimos da WCAG para texto, ícones e componentes",
+    "Organizar uma paleta em escalas tonais e tokens com papéis semânticos",
+    "Montar uma escala tipográfica com altura de linha, comprimento de linha e pareamento de fontes bem resolvidos",
+    "Escolher fontes considerando fontes variáveis, desempenho e licença de uso"
+  ],
+  "curriculum": "Da intuição à especificação: cor e tipo com critério",
+  "about": "O programa parte de uma constatação incômoda: a maior parte do que circula sobre “psicologia das cores” é generalização sem base — azul que transmite confiança, laranja que aumenta conversão. O efeito de uma cor depende do contexto, da cultura e, principalmente, de como ela é usada na interface. Por isso a progressão aqui vai do papel da cor na hierarquia visual ao contraste mensurável, da paleta solta ao sistema de tokens e, por fim, à tipografia, que carrega quase todo o conteúdo de um produto digital. Se você já passou por Figma para Iniciantes: Do Protótipo ao Design System, este programa fornece os valores que alimentam aquelas variáveis e estilos.",
+  "materials": [
+    "Planilha de auditoria de pares de contraste (texto, ícone e componente)",
+    "Modelo de arquivo de tokens de cor e tipografia em CSS custom properties",
+    "Checklist de legibilidade para revisão de telas",
+    "Guia rápido de licenças de fontes"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Cor sem Mitos: Contexto e Hierarquia",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Contraste e Acessibilidade",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Paletas e Tokens de Cor",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Tipografia que se Lê",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "UX/UI",
+    "mainTitle": "Pare de escolher cor e fonte no gosto: decida com contexto, contraste e escala.",
+    "introductionParagraphs": [
+      {
+        "title": "O problema da “psicologia das cores”",
+        "text": "Listas que associam cada cor a uma emoção fixa são populares e pouco confiáveis. O significado de uma cor muda com a cultura (o branco é cor de luto em partes da Ásia; em bolsas de valores da China, vermelho indica alta), com o setor e com o que está ao redor dela na tela. O que a evidência sustenta é mais modesto e mais útil: **cor chama atenção por contraste**, cria agrupamento e, quando usada com consistência, vira convenção que o usuário aprende. É isso que este programa ensina a usar."
+      },
+      {
+        "title": "Contraste é número, não opinião",
+        "text": "Se uma pessoa consegue ou não ler um texto não depende de preferência estética. A WCAG define uma razão de contraste calculada a partir da luminância das duas cores e exige pelo menos **4,5:1** para texto comum. Mesmo assim, texto com contraste insuficiente é o problema de acessibilidade mais encontrado na web. Aprender a medir e a corrigir isso é uma das habilidades mais concretas de quem desenha interfaces."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não promete paleta que “converte mais” nem fonte que “transmite autoridade”. Também não ensina uma ferramenta específica: as decisões valem para Figma, para código ou para qualquer outro meio. A ideia é que ao final você consiga justificar cada cor e cada tamanho de fonte de uma tela com um critério que outra pessoa possa verificar."
+      }
+    ],
+    "courseAboutTitle": "A base visual que sustenta qualquer interface",
+    "courseAboutDescription": "Cor e tipografia aparecem em todas as telas de um produto, e por isso erros nelas se multiplicam: um cinza claro demais vira centenas de textos ilegíveis; uma escala de tamanhos improvisada vira vinte variações quase iguais. Este programa troca o improviso por um pequeno sistema — paleta em tokens, pares de contraste auditados e escala tipográfica — que qualquer pessoa da equipe consegue aplicar e revisar.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Cor sem Mitos: Contexto e Hierarquia",
+        "items": [
+          {
+            "label": "Evidência e contexto",
+            "description": "O que se sabe de fato sobre cor e por que o significado depende da cultura e do setor."
+          },
+          {
+            "label": "Cor como hierarquia",
+            "description": "Usar cor para dirigir a atenção e agrupar, em vez de decorar."
+          },
+          {
+            "label": "Cores semânticas",
+            "description": "Sucesso, erro e aviso como convenções que precisam ser consistentes."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Contraste e Acessibilidade",
+        "items": [
+          {
+            "label": "Razão de contraste",
+            "description": "Os mínimos da WCAG para texto comum, texto grande e componentes."
+          },
+          {
+            "label": "Cor nunca sozinha",
+            "description": "Por que estado e significado precisam de um segundo sinal além da cor."
+          },
+          {
+            "label": "Daltonismo",
+            "description": "Como as deficiências de visão de cores afetam a leitura de uma interface e como testar."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Paletas e Tokens de Cor",
+        "items": [
+          {
+            "label": "Escalas tonais",
+            "description": "De uma cor de marca a uma escala completa de tons utilizáveis."
+          },
+          {
+            "label": "Tokens primitivos e semânticos",
+            "description": "Separar o valor da cor do papel que ela cumpre na interface."
+          },
+          {
+            "label": "Tema escuro",
+            "description": "Trocar valores sem reescrever componentes."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Tipografia que se Lê",
+        "items": [
+          {
+            "label": "Escala tipográfica",
+            "description": "Poucos tamanhos com relação clara entre si."
+          },
+          {
+            "label": "Legibilidade",
+            "description": "Altura de linha, comprimento de linha e espaçamento."
+          },
+          {
+            "label": "Escolha de fontes",
+            "description": "Pareamento, fontes variáveis e licenças de uso."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para aplicar no guia visual do seu projeto. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "search",
+      "title": "Cor sem Mitos: Contexto e Hierarquia",
+      "shortDescription": "O que a cor realmente faz numa interface — e o que ela não faz",
+      "introductionText": "Antes de escolher qualquer cor, vale limpar o terreno. Afirmações como “vermelho dá fome” ou “azul transmite confiança” aparecem em todo lugar, mas não se sustentam como regra universal: associações de cor variam entre culturas, setores e pessoas, e estudos que mostram efeito em um contexto raramente se repetem em outro. O que se aplica com segurança a interfaces é a função da cor — chamar atenção, agrupar, indicar estado. Neste módulo você usa esses papéis para analisar e reorganizar a tela de um aplicativo fictício de controle de gastos.",
+      "sections": [
+        {
+          "title": "🎨 Do significado à função",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Separar evidência de mito",
+              "guidance": "Pegue três afirmações populares sobre significado de cores e, para cada uma, pergunte: em qual cultura? Em qual setor? Comparada com o quê? Anote contraexemplos — o branco associado ao luto em partes da Ásia, o vermelho que indica alta nas bolsas da China e queda nas do Brasil. O exercício mostra que a associação vem do contexto, não da cor em si.",
+              "tips": [
+                "Quando alguém disser que uma cor “converte mais”, pergunte qual era a cor ao redor. O botão que se destaca venceu por contraste com a página, não pelo matiz."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Cor como hierarquia visual",
+              "guidance": "Na tela de resumo do app fictício, reserve uma única cor de destaque para a ação principal (registrar gasto). Todo o resto fica em neutros. Compare com a versão anterior, em que títulos, ícones e botões disputavam a mesma cor: o olho agora sabe para onde ir.",
+              "tips": [
+                "Se tudo é destaque, nada é destaque. Uma cor de ação usada também em decoração perde a função de sinalizar o que é clicável."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Cores semânticas consistentes",
+              "code": "sucesso · erro · aviso · informação",
+              "guidance": "Defina quatro cores de estado e uma regra para cada: erro só aparece quando algo deu errado ou exige correção; sucesso só confirma uma ação concluída. Revise a tela e remova usos “decorativos” dessas cores, como um gráfico pintado de vermelho só porque combinava.",
+              "tips": [
+                "Em produto financeiro, vermelho para despesa e verde para receita é convenção forte no Brasil. Antes de reaproveitar essas cores para outra coisa, confirme que o usuário não vai ler isso como saldo negativo."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "O teste da escala de cinza",
+              "guidance": "Converta a tela para tons de cinza e verifique se a hierarquia continua clara. Se a ação principal some no meio do resto, ela dependia só do matiz e não de contraste de luminosidade — e vai falhar para parte dos usuários e em telas ruins.",
+              "tips": [
+                "Hierarquia sólida se sustenta em tamanho, peso, espaço e luminosidade. A cor reforça; não deve ser o único apoio."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que começar pela função da cor",
+      "highlights": [
+        {
+          "icon": "globe",
+          "title": "Significado é local",
+          "text": "A mesma cor pode indicar perigo, luto, festa ou alta de preço dependendo de onde e para quem. Projetar para um público é conhecer as convenções dele, não seguir uma tabela universal."
+        },
+        {
+          "icon": "gauge",
+          "title": "Atenção é recurso escasso",
+          "text": "Cor de destaque funciona por contraste com o entorno. Quanto mais lugares ela ocupa, menos ela chama atenção onde importa."
+        },
+        {
+          "icon": "list",
+          "title": "Convenção que se aprende",
+          "text": "Usada sempre do mesmo jeito, uma cor vira linguagem: o usuário reconhece erro ou sucesso antes de ler a mensagem."
+        }
+      ],
+      "closingText": "Você já usa cor por função: uma cor de ação, cores de estado com regras claras e uma hierarquia que sobrevive ao teste de cinza. Falta garantir que todas essas cores possam ser lidas por todo mundo — e isso se mede.",
+      "ctaTitle": "🎨 Cor com propósito!",
+      "ctaText": "Sua tela já usa cor para orientar, não para enfeitar. Agora vamos medir se ela é legível.",
+      "nextButtonText": "Ir para Módulo 1: Contraste e Acessibilidade"
+    },
+    {
+      "id": 1,
+      "icon": "shield",
+      "title": "Contraste e Acessibilidade",
+      "shortDescription": "Razão de contraste, cor nunca sozinha e daltonismo",
+      "introductionText": "A WCAG (Web Content Accessibility Guidelines), publicada pelo W3C, transforma legibilidade em critério verificável. A razão de contraste vai de 1:1 (mesma cor) a 21:1 (preto no branco) e é calculada a partir da luminância relativa das duas cores. Neste módulo você aprende os limites que importam no nível AA — o exigido na maioria das leis e políticas de acessibilidade —, audita os pares de cor do app fictício e corrige o que falha.",
+      "sections": [
+        {
+          "title": "🛡️ Medindo o que se lê",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Os mínimos para texto",
+              "code": "4,5:1 texto comum · 3:1 texto grande",
+              "guidance": "Pelo critério 1.4.3 da WCAG, texto comum precisa de contraste mínimo de 4,5:1 com o fundo; texto grande, de 3:1. Texto grande é 18 pt (cerca de 24 px) ou 14 pt em negrito (cerca de 18,5 px). Meça com um verificador de contraste os textos do app fictício e anote cada par em uma planilha: cor do texto, cor do fundo, razão, passa ou falha.",
+              "tips": [
+                "A razão não é arredondada: 4,499:1 reprova. O cinza #777777 sobre branco dá cerca de 4,48:1 e falha; #767676 dá cerca de 4,54:1 e passa.",
+                "Placeholder de formulário também é texto. Cinza bem claro dentro do campo é uma das falhas mais comuns."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Contraste de componentes e ícones",
+              "code": "3:1 para elementos não textuais",
+              "guidance": "O critério 1.4.11 exige 3:1 para as partes visuais necessárias para identificar componentes e seus estados — borda de campo de formulário, ícone que funciona sozinho como botão, indicador de foco — e para elementos gráficos essenciais à compreensão. Audite os campos e ícones do app e escureça o que não atinge o mínimo.",
+              "tips": [
+                "Campo de texto com borda cinza-clara sobre fundo branco costuma falhar aqui. Se a borda é o que mostra onde clicar, ela precisa de contraste."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Cor nunca como único sinal",
+              "guidance": "O critério 1.4.1 diz que cor não pode ser o único meio de transmitir informação. Revise o app: o campo com erro está só com a borda vermelha? Acrescente ícone e mensagem de texto. O link no meio do parágrafo se distingue só pela cor? Sublinhe. O gráfico de categorias depende só da legenda colorida? Rotule as fatias.",
+              "tips": [
+                "Um teste rápido é o mesmo da escala de cinza: se a informação some sem cor, falta um segundo sinal."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Testar para daltonismo",
+              "guidance": "Deficiências de visão de cores afetam cerca de 8% dos homens e 0,5% das mulheres de ascendência norte-europeia, e a forma mais comum dificulta distinguir vermelho de verde. Use um simulador (os navegadores baseados em Chromium têm um nas ferramentas de desenvolvedor, na aba de renderização) e revise as telas em que receita e despesa se diferenciam por verde e vermelho.",
+              "tips": [
+                "A correção raramente é trocar a paleta inteira. Sinal de mais e menos, ícone e diferença de luminosidade entre as duas cores já resolvem a maior parte dos casos."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que contraste é o primeiro item da revisão",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "O problema mais frequente",
+          "text": "No levantamento WebAIM Million 2026, 83,9% das páginas iniciais analisadas tinham texto com contraste baixo, em média 34 ocorrências por página."
+        },
+        {
+          "icon": "shield",
+          "title": "Critério verificável",
+          "text": "Contraste tem fórmula e limite. A discussão sai do “eu acho legível” para um número que qualquer pessoa da equipe pode conferir."
+        },
+        {
+          "icon": "globe",
+          "title": "Leitura em condições reais",
+          "text": "Sol na tela, brilho baixo para economizar bateria e visão que muda com a idade afetam todo mundo. Contraste suficiente ajuda além do público com deficiência."
+        }
+      ],
+      "closingText": "Você tem uma auditoria dos pares de cor do app, sabe corrigir o que falha e garante que nenhuma informação dependa só de cor. O próximo passo é impedir que os problemas voltem: organizar a paleta para que só pares aprovados cheguem às telas.",
+      "ctaTitle": "🛡️ Contraste auditado!",
+      "ctaText": "Seus pares de cor passam nos mínimos da WCAG. Agora vamos transformar a paleta em um sistema.",
+      "nextButtonText": "Ir para Módulo 2: Paletas e Tokens de Cor"
+    },
+    {
+      "id": 2,
+      "icon": "grid",
+      "title": "Paletas e Tokens de Cor",
+      "shortDescription": "Escalas tonais, papéis semânticos e tema escuro",
+      "introductionText": "Uma paleta de cinco amostras bonitas não é suficiente para construir um produto: faltam tons para fundo, borda, estado desabilitado, hover e tema escuro. E se cada tela usar o código hexadecimal direto, qualquer ajuste vira caça ao tesouro. A solução usada pelos sistemas de design é organizar a cor em duas camadas de tokens — valores e papéis — e definir de antemão quais combinações são permitidas. Neste módulo você monta essa estrutura para o app fictício.",
+      "sections": [
+        {
+          "title": "🧱 Da amostra ao sistema",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Gerar escalas tonais",
+              "code": "azul-50 … azul-900",
+              "guidance": "A partir da cor de marca do app, crie uma escala de cerca de dez tons, do mais claro ao mais escuro, e faça o mesmo para um neutro e para cada cor de estado. Para cada tom, anote a razão de contraste contra branco e contra o tom mais escuro do neutro: isso mostra de cara quais tons servem para texto e quais só servem para fundo.",
+              "tips": [
+                "Escalas montadas em um espaço de cor perceptual, como OKLCH, dão passos de luminosidade mais regulares do que ajustar o hexadecimal no olho."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Tokens primitivos e semânticos",
+              "code": "--cor-acao: var(--azul-600);",
+              "guidance": "Separe duas camadas. Os primitivos guardam valores (azul-600). Os semânticos dizem para que a cor serve (cor-acao, cor-texto-secundario, cor-fundo-erro) e apontam para um primitivo. Componentes só usam tokens semânticos. Assim, trocar o tom da ação é mudar uma linha, e ninguém usa “azul-600” num lugar onde deveria haver um texto.",
+              "tips": [
+                "Nomeie pelo papel, nunca pela aparência. Um token chamado “vermelho-botao” fica errado no dia em que o botão mudar de cor."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Pares “sobre” aprovados",
+              "code": "primary · on-primary",
+              "guidance": "No Material Design 3, cada papel de cor tem um par “on-” para o conteúdo que fica por cima: primary com on-primary, surface com on-surface, error com on-error. Adote a mesma ideia: para cada fundo semântico, defina o token de texto e ícone que pode ir sobre ele, e verifique o contraste de cada par uma única vez, no próprio arquivo de tokens.",
+              "tips": [
+                "Quando o par é decidido no sistema, quem monta a tela não precisa medir contraste de novo — só precisa usar o par certo."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Tema escuro trocando valores",
+              "guidance": "Crie o tema escuro redefinindo apenas os tokens semânticos: cor-fundo passa a apontar para um neutro escuro, cor-texto para um neutro claro, cor-acao para um tom mais claro da escala. Os componentes não mudam. Refaça a auditoria de contraste para os pares do tema escuro, que precisam passar nos mesmos mínimos.",
+              "tips": [
+                "Tema escuro não é inverter as cores. Saturação alta sobre fundo escuro cansa a vista; costuma funcionar melhor usar tons mais claros e menos saturados da mesma escala."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que tokens em vez de códigos de cor",
+      "highlights": [
+        {
+          "icon": "sitemap",
+          "title": "Papel separado do valor",
+          "text": "O componente pede “cor de ação” e o sistema decide qual azul é. Mudanças de marca ou de tema acontecem em um arquivo, não em cem telas."
+        },
+        {
+          "icon": "shield",
+          "title": "Acessibilidade embutida",
+          "text": "Pares de fundo e conteúdo auditados no sistema impedem que uma combinação sem contraste chegue à tela por descuido."
+        },
+        {
+          "icon": "sync",
+          "title": "Design e código falando igual",
+          "text": "O mesmo nome de token aparece no arquivo de design e no CSS. A conversa entre quem desenha e quem implementa deixa de depender de código hexadecimal."
+        }
+      ],
+      "closingText": "A paleta do app agora é um sistema: escalas tonais, tokens com papéis claros, pares aprovados e um tema escuro que funciona sem reescrever componentes. Resta o elemento que carrega quase todo o conteúdo da interface — o texto.",
+      "ctaTitle": "🧱 Paleta em tokens!",
+      "ctaText": "Sua cor está organizada e protegida contra combinações ruins. Vamos para a tipografia.",
+      "nextButtonText": "Ir para Módulo 3: Tipografia que se Lê"
+    },
+    {
+      "id": 3,
+      "icon": "list",
+      "title": "Tipografia que se Lê",
+      "shortDescription": "Escala, legibilidade, pareamento, fontes variáveis e licenças",
+      "introductionText": "Em um produto digital, quase toda informação chega ao usuário como texto: rótulos, valores, mensagens de erro, botões. Tipografia boa aqui não é a mais original, é a que se lê sem esforço e deixa claro o que é título, o que é conteúdo e o que é detalhe. Este módulo cobre as decisões que fazem isso acontecer — escala de tamanhos, espaçamento, escolha e combinação de fontes — e termina com dois pontos que costumam ser esquecidos: desempenho e licença.",
+      "sections": [
+        {
+          "title": "🔤 Texto como interface",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Montar uma escala tipográfica",
+              "code": "16 · 20 · 25 · 31 · 39 px (razão 1,25)",
+              "guidance": "Escolha um tamanho base para o texto corrido (16 px é o padrão dos navegadores) e uma razão para gerar os demais, como 1,25. Defina cada passo como um papel — corpo, legenda, subtítulo, título — e transforme em tokens. Revise as telas do app e substitua os tamanhos avulsos pelos da escala.",
+              "tips": [
+                "No código, declare os tamanhos em rem em vez de px. Assim, quem aumenta o tamanho de fonte padrão no navegador vê o texto crescer junto.",
+                "O Material Design organiza a escala por papéis (display, headline, title, body, label). Nomear por função ajuda a escolher o estilo certo sem decorar números."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Altura e comprimento de linha",
+              "code": "line-height: 1.5; max-width: 70ch;",
+              "guidance": "Para texto corrido, use altura de linha em torno de 1,5 e limite a largura do bloco a algo entre 45 e 75 caracteres por linha. Títulos grandes pedem altura de linha menor, perto de 1,1 a 1,3. Aplique ao texto de ajuda do app e compare a leitura com a versão em que o parágrafo ocupava a largura inteira da tela.",
+              "tips": [
+                "O critério 1.4.12 da WCAG exige que o conteúdo continue funcionando quando o usuário aumenta o espaçamento (altura de linha 1,5, espaço entre parágrafos de 2 vezes o tamanho da fonte, entre letras de 0,12 e entre palavras de 0,16). Evite caixas de altura fixa que cortam o texto."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Hierarquia com peso e espaço",
+              "guidance": "Antes de aumentar um tamanho, tente resolver a hierarquia com peso (regular e semibold costumam bastar), cor de texto secundária e espaçamento entre blocos. Na tela de extrato do app, diferencie data, descrição e valor sem criar nenhum tamanho novo.",
+              "tips": [
+                "Para números que se comparam em coluna, como valores de um extrato, use algarismos tabulares (font-variant-numeric: tabular-nums), que têm todos a mesma largura e ficam alinhados."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Escolher e parear fontes",
+              "guidance": "Para interface, uma família bem desenhada com vários pesos geralmente resolve tudo. Se quiser uma segunda fonte para títulos, escolha uma que contraste em estrutura (por exemplo, serifada com sem serifa) e combine em proporções parecidas, como a altura das minúsculas. Teste as candidatas com o conteúdo real do app: números, acentos, Il1 e O0 lado a lado.",
+              "tips": [
+                "Duas fontes sem serifa parecidas, mas não iguais, costumam parecer erro e não escolha. Ou o contraste é claro, ou é melhor usar uma família só."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Fontes variáveis e licenças",
+              "code": "font-weight: 100 900;",
+              "guidance": "Uma fonte variável guarda em um único arquivo uma família inteira, com eixos como peso, largura e tamanho óptico, controlados por font-weight, font-stretch e font-variation-settings no CSS. Compare o peso dos arquivos estáticos que o app carrega com a versão variável. Antes de adotar qualquer fonte, leia a licença: fontes sob a SIL Open Font License, como as do Google Fonts, permitem uso comercial e embutir em sites e apps; fontes comerciais costumam ter licenças separadas para desktop, web e aplicativo.",
+              "tips": [
+                "Carregue só os eixos e caracteres que usa. Um arquivo variável completo com todos os idiomas pode ficar maior que os dois pesos estáticos que você realmente precisava."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que tipografia é a maior parte da interface",
+      "highlights": [
+        {
+          "icon": "list",
+          "title": "Poucos tamanhos, papéis claros",
+          "text": "Uma escala curta faz cada tamanho significar algo. Quando há vinte tamanhos, o usuário deixa de perceber o que é título e o que é detalhe."
+        },
+        {
+          "icon": "laptop",
+          "title": "Texto que respeita o usuário",
+          "text": "Unidades relativas e espaçamento flexível permitem que cada pessoa ajuste o texto ao que precisa, sem quebrar a tela."
+        },
+        {
+          "icon": "folder",
+          "title": "Fonte também é contrato",
+          "text": "Licença e peso do arquivo fazem parte da escolha. Descobrir depois do lançamento que a fonte não podia ser embutida no app é um retrabalho evitável."
+        }
+      ],
+      "closingText": "O guia visual do app está completo: cor usada por função, contraste auditado, paleta em tokens com tema escuro e uma escala tipográfica com regras de leitura. Você consegue justificar cada decisão com um critério verificável. O passo natural agora é testar essas escolhas com usuários reais — assunto de UX Research: Métodos de Pesquisa para Validar Ideias.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você agora decide cor e tipografia com contexto, contraste e escala. Próximo passo: validar suas telas com pessoas de verdade.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "O que a evidência permite afirmar sobre o significado das cores em interfaces?",
+      "explanation": "As associações de cor variam com cultura, setor e contexto — o branco é ligado ao luto em partes da Ásia, e o vermelho indica alta nas bolsas da China. Não existe tabela universal de emoções por cor, e nenhuma cor aumenta conversão por si só. O que se aplica com segurança é a função da cor: atenção por contraste, agrupamento e convenção.",
+      "options": [
+        {
+          "text": "O significado depende do contexto cultural e de uso; a função da cor na tela é mais confiável",
+          "isCorrect": true
+        },
+        {
+          "text": "Cada cor provoca a mesma emoção em qualquer pessoa",
+          "isCorrect": false
+        },
+        {
+          "text": "Azul sempre transmite confiança e deve ser usado em produtos financeiros",
+          "isCorrect": false
+        },
+        {
+          "text": "Botões laranja convertem mais em qualquer página",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Por que reservar uma única cor de destaque para a ação principal?",
+      "explanation": "Cor de destaque chama atenção por contraste com o entorno. Se ela aparece também em títulos, ícones e decoração, deixa de indicar o que é clicável e a hierarquia se perde. Não tem relação com desempenho, com exigência da WCAG ou com reduzir o tamanho do arquivo.",
+      "options": [
+        {
+          "text": "Porque cor usada em todo lugar perde a capacidade de dirigir a atenção",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque a WCAG proíbe usar mais de uma cor por tela",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque menos cores deixam a página mais rápida",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o navegador só renderiza uma cor de destaque",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "O que indica uma tela que perde a hierarquia quando convertida para escala de cinza?",
+      "explanation": "Se a ação principal some em cinza, ela se destacava só pelo matiz, sem diferença de luminosidade, tamanho ou peso. Isso falha para parte das pessoas com deficiência de visão de cores e em telas de baixa qualidade. Não significa que a paleta tenha poucas cores nem que o tema escuro esteja errado.",
+      "options": [
+        {
+          "text": "Que a hierarquia dependia só do matiz, sem contraste de luminosidade",
+          "isCorrect": true
+        },
+        {
+          "text": "Que a paleta precisa de mais cores",
+          "isCorrect": false
+        },
+        {
+          "text": "Que a tela foi feita para tema escuro",
+          "isCorrect": false
+        },
+        {
+          "text": "Que a escala tipográfica está errada",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Qual é o contraste mínimo exigido pela WCAG (nível AA) para texto em tamanho comum?",
+      "explanation": "O critério 1.4.3 exige 4,5:1 para texto comum e 3:1 para texto grande (18 pt, ou 14 pt em negrito). 7:1 é o mínimo do nível AAA, e 21:1 é o contraste máximo possível, entre preto e branco.",
+      "options": [
+        {
+          "text": "4,5:1",
+          "isCorrect": true
+        },
+        {
+          "text": "3:1",
+          "isCorrect": false
+        },
+        {
+          "text": "7:1",
+          "isCorrect": false
+        },
+        {
+          "text": "21:1",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Um campo de formulário mostra erro apenas com a borda vermelha. Qual é o problema?",
+      "explanation": "Pelo critério 1.4.1 da WCAG, cor não pode ser o único meio de transmitir informação. Quem não distingue vermelho ou usa leitor de tela não percebe o erro. A correção é acrescentar ícone e mensagem de texto. Trocar o tom de vermelho ou engrossar a borda não resolve a dependência exclusiva da cor.",
+      "options": [
+        {
+          "text": "A informação depende só da cor; falta ícone e mensagem em texto",
+          "isCorrect": true
+        },
+        {
+          "text": "O vermelho deveria ser substituído por laranja",
+          "isCorrect": false
+        },
+        {
+          "text": "A borda precisa ser mais grossa para passar na WCAG",
+          "isCorrect": false
+        },
+        {
+          "text": "Não há problema, pois vermelho é a convenção para erro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Segundo o WebAIM Million 2026, qual é o problema de acessibilidade mais encontrado nas páginas iniciais analisadas?",
+      "explanation": "Texto com contraste baixo foi o problema mais frequente, presente em 83,9% das páginas iniciais analisadas, com média de 34 ocorrências por página. É também um dos mais fáceis de evitar quando os pares de cor são auditados no sistema de design.",
+      "options": [
+        {
+          "text": "Texto com contraste baixo",
+          "isCorrect": true
+        },
+        {
+          "text": "Fontes sem licença",
+          "isCorrect": false
+        },
+        {
+          "text": "Uso de tema escuro",
+          "isCorrect": false
+        },
+        {
+          "text": "Excesso de tamanhos de fonte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Qual é a diferença entre um token primitivo e um token semântico?",
+      "explanation": "O primitivo guarda um valor (azul-600); o semântico descreve o papel (cor-acao) e aponta para um primitivo. Componentes usam os semânticos, então trocar o tom ou criar um tema exige mudar só a referência. Não é questão de formato de arquivo nem de ferramenta.",
+      "options": [
+        {
+          "text": "O primitivo guarda o valor; o semântico descreve o papel e aponta para um primitivo",
+          "isCorrect": true
+        },
+        {
+          "text": "O primitivo é usado no design e o semântico só no código",
+          "isCorrect": false
+        },
+        {
+          "text": "O semântico é sempre uma cor mais escura que o primitivo",
+          "isCorrect": false
+        },
+        {
+          "text": "Não há diferença; são dois nomes para a mesma coisa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "No Material Design 3, para que serve um papel como on-primary?",
+      "explanation": "Os papéis “on-” definem a cor do texto e dos ícones que ficam sobre o papel correspondente — on-primary vai sobre primary, on-surface sobre surface. Definir o par no sistema garante contraste sem que cada tela precise medir de novo. Não é estado de hover nem cor de borda.",
+      "options": [
+        {
+          "text": "Define a cor do conteúdo (texto e ícones) colocado sobre a cor primary",
+          "isCorrect": true
+        },
+        {
+          "text": "Define a cor do botão quando o mouse passa por cima",
+          "isCorrect": false
+        },
+        {
+          "text": "Indica que o tema primário está ativado",
+          "isCorrect": false
+        },
+        {
+          "text": "Define a cor da borda dos componentes primários",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Com tokens semânticos, como se cria um tema escuro?",
+      "explanation": "Os componentes continuam pedindo os mesmos papéis (fundo, texto, ação); o tema escuro só redefine para quais primitivos esses papéis apontam. Inverter cores automaticamente costuma gerar contraste e saturação ruins, e duplicar componentes multiplica a manutenção. Os pares do tema escuro precisam passar nos mesmos mínimos de contraste.",
+      "options": [
+        {
+          "text": "Redefinindo os valores dos tokens semânticos, sem alterar os componentes",
+          "isCorrect": true
+        },
+        {
+          "text": "Invertendo automaticamente todas as cores da interface",
+          "isCorrect": false
+        },
+        {
+          "text": "Criando uma cópia de cada componente com cores escuras",
+          "isCorrect": false
+        },
+        {
+          "text": "Aplicando um filtro de escurecimento sobre a página",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Por que declarar tamanhos de fonte em rem em vez de px?",
+      "explanation": "rem é relativo ao tamanho de fonte da raiz, que acompanha a preferência do usuário no navegador. Quem aumenta o tamanho padrão vê o texto crescer. Não muda desempenho nem é exigência de fontes variáveis.",
+      "options": [
+        {
+          "text": "Para que o texto acompanhe o tamanho de fonte que o usuário configurou no navegador",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque rem carrega mais rápido que px",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque fontes variáveis só funcionam com rem",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque px foi descontinuado no CSS",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Qual combinação favorece a leitura de texto corrido?",
+      "explanation": "Altura de linha por volta de 1,5 e linhas de 45 a 75 caracteres facilitam acompanhar o texto e voltar ao início da próxima linha. Linhas muito longas cansam e altura de linha 1,0 junta as linhas demais. Texto todo em maiúsculas é mais lento de ler em blocos longos.",
+      "options": [
+        {
+          "text": "Altura de linha em torno de 1,5 e linhas de 45 a 75 caracteres",
+          "isCorrect": true
+        },
+        {
+          "text": "Altura de linha 1,0 e parágrafo ocupando toda a largura da tela",
+          "isCorrect": false
+        },
+        {
+          "text": "Texto todo em maiúsculas para dar destaque",
+          "isCorrect": false
+        },
+        {
+          "text": "Linhas de 150 caracteres para reduzir a rolagem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "O que caracteriza uma fonte variável?",
+      "explanation": "Uma fonte variável reúne em um único arquivo uma família inteira, com eixos como peso, largura e tamanho óptico, ajustáveis por CSS. Ela não dispensa a leitura da licença, não é exclusiva de um sistema operacional e tem suporte em todos os navegadores principais.",
+      "options": [
+        {
+          "text": "Um único arquivo com eixos de variação, como peso e largura",
+          "isCorrect": true
+        },
+        {
+          "text": "Uma fonte que muda sozinha conforme o idioma da página",
+          "isCorrect": false
+        },
+        {
+          "text": "Uma fonte sem licença, livre para qualquer uso",
+          "isCorrect": false
+        },
+        {
+          "text": "Um formato que só funciona em aplicativos nativos",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "O guia visual de um aplicativo fictício de controle de gastos: regras de uso de cor por função, auditoria de contraste de todos os pares de texto, ícone e componente, paleta em escalas tonais organizada em tokens primitivos e semânticos com tema claro e escuro, e uma escala tipográfica documentada com regras de altura de linha, comprimento de linha, pareamento e licença das fontes escolhidas.",
+    "highlights": [
+      "Arquivo de tokens de cor e tipografia com tema claro e escuro",
+      "Planilha de pares de contraste auditados pela WCAG",
+      "Escala tipográfica documentada por papéis"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "Contraste insuficiente segue sendo a falha de acessibilidade mais comum da web. No levantamento WebAIM Million de 2026, que analisa as páginas iniciais de um milhão de sites, 83,9% tinham texto com contraste baixo — eram 79,1% no ano anterior —, com média de 34 ocorrências por página. E 95,9% das páginas apresentavam ao menos uma falha detectável da WCAG.",
+      "Ao mesmo tempo, as ferramentas para fazer certo ficaram acessíveis: sistemas como o Material Design publicam papéis de cor com pares de contraste definidos, e fontes variáveis são suportadas por todos os navegadores principais. Quem domina essas bases entrega telas legíveis desde o primeiro rascunho, em vez de corrigir depois de uma auditoria."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Design systems",
+        "description": "Definir tokens de cor e tipografia que toda a equipe usa."
+      },
+      {
+        "label": "Revisão de acessibilidade",
+        "description": "Auditar contraste e uso de cor antes de a tela chegar ao desenvolvimento."
+      },
+      {
+        "label": "Produtos com muito dado",
+        "description": "Painéis, extratos e formulários, em que hierarquia e legibilidade decidem se a informação é entendida."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem está começando em UX/UI",
+        "description": "Quer bases sólidas de cor e tipografia sem depender de gosto pessoal."
+      },
+      {
+        "label": "Quem desenvolve front-end",
+        "description": "Implementa telas e quer entender as decisões por trás dos tokens que recebe."
+      },
+      {
+        "label": "Quem cuida de um produto pequeno",
+        "description": "Não tem designer na equipe e precisa de critérios simples para manter as telas legíveis."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Tokens de cor e tipografia, pares de contraste auditados e escalas tipográficas são a base de praticamente todo design system publicado, do Material Design aos sistemas internos de empresas de qualquer porte. Conformidade com a WCAG é referência em legislações e políticas de acessibilidade de vários países, o que torna a habilidade útil em produto, agência e setor público.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "W3C WAI — Understanding SC 1.4.3 Contrast (Minimum), WCAG 2.2",
+      "url": "https://w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+    },
+    {
+      "label": "WebAIM — The WebAIM Million: relatório 2026 sobre acessibilidade de 1 milhão de páginas iniciais",
+      "url": "https://webaim.org/projects/million/"
+    },
+    {
+      "label": "Android Developers — Material 3: Color roles and tokens",
+      "url": "https://developer.android.com/design/ui/wear/guides/styles/color/roles-tokens"
+    },
+    {
+      "label": "Google Design — Variable fonts are here to stay",
+      "url": "https://design.google/library/variable-fonts-are-here-to-stay"
+    },
+    {
+      "label": "Google Fonts Knowledge — Variable fonts (glossário)",
+      "url": "https://fonts.google.com/knowledge/glossary/variable_fonts"
+    }
+  ]
 }

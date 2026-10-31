@@ -1,0 +1,846 @@
+{
+  "id": 1107,
+  "image": "/media/learn-tech/programas/1107.webp",
+  "category": "Marketing e CRM",
+  "categoryFilter": "marketing-crm",
+  "title": "QA de Comunicações: E-mail, WhatsApp e Landing Pages Antes do Disparo",
+  "lessons": "18 passos",
+  "duration": "6h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Iniciante",
+  "description": "O que conferir antes de apertar o botão de enviar. Checklists de e-mail, WhatsApp e landing page, envio de teste e seed list, evidências com capturas nomeadas e aprovação registrada com quem pediu, a partir da rotina real de revisão de uma operação de CRM no varejo.",
+  "letslearn": [
+    "Organizar a revisão com ficha da peça, ambientes de teste e registro de versões",
+    "Revisar e-mails: remetente, render em clientes, dark mode, links e UTMs, variáveis com fallback e rodapé",
+    "Liberar mensagens de WhatsApp com template aprovado, variáveis na ordem e botões testados",
+    "Testar landing pages e formulários até o campo gravado no CRM",
+    "Guardar evidências que se encontram depois e obter o aceite de quem pediu"
+  ],
+  "curriculum": "Da peça pronta ao disparo seguro",
+  "about": "O programa reproduz a rotina de QA de uma operação de CRM no varejo, reescrita com a Rede Construir+, uma rede fictícia de lojas de material de construção e acabamento. A sequência acompanha o caminho de uma comunicação: primeiro a organização da revisão, depois o checklist de cada canal, por fim a página de destino, o envio de teste, as evidências e a aprovação. Cada passo traz o que conferir, com que ferramenta e qual é o erro típico que aquela verificação pega.",
+  "materials": [
+    "Modelo de ficha da peça (canal, público, data, remetente, links, cupom, layout, aprovador)",
+    "Checklist de e-mail, de WhatsApp e de landing page",
+    "Tabela de QA de formulário: campo da página → campo do CRM",
+    "Padrão de nome para capturas de evidência"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Por que QA e Como Organizar a Revisão",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Checklist de E-mail",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Checklist de WhatsApp",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Landing Pages, Envio de Teste, Evidências e Aprovação",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Marketing e CRM",
+    "mainTitle": "Revise antes, dispare uma vez: o processo de QA que evita a errata.",
+    "introductionParagraphs": [
+      {
+        "title": "O erro que sai não volta",
+        "text": "Uma comunicação de CRM chega a milhares de pessoas no mesmo minuto. Um link quebrado, um nome vazio ou um remetente de outra marca não ficam num rascunho: viram reclamação, chamado e, no pior caso, um segundo envio pedindo desculpas. **QA** é a etapa em que esse erro ainda custa pouco."
+      },
+      {
+        "title": "Checklist, não intuição",
+        "text": "Revisar bem não depende de olho treinado, e sim de saber o que conferir. Este programa transforma a revisão em listas objetivas por canal (e-mail, WhatsApp, landing page) e em um processo com envio de teste, evidência e aceite. Qualquer pessoa da equipe consegue repetir."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não ensina a construir o e-mail HTML nem a landing page, nem a desenhar jornadas: isso está nos programas de e-mail HTML e landing pages integradas ao CRM e de CRM na prática. Aqui o foco é a peça já pronta e tudo o que precisa ser verificado antes de ela sair."
+      }
+    ],
+    "courseAboutTitle": "A etapa entre a peça pronta e o disparo",
+    "courseAboutDescription": "Na maior parte das equipes de CRM, o QA é feito às pressas, por quem produziu a peça, minutos antes do horário marcado. O resultado aparece no relatório de erros. Este programa propõe outra ordem: ficha clara, checklist por canal, teste em destinos controlados, evidência guardada e aprovação registrada. É o processo que permite disparar com tranquilidade e, quando algo der errado, mostrar o que foi verificado.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Por que QA e Como Organizar a Revisão",
+        "items": [
+          {
+            "label": "O custo do erro",
+            "description": "Por que uma errata custa duas vezes e o que o QA evita."
+          },
+          {
+            "label": "Ficha da peça",
+            "description": "Canal, público, data, remetente, links, cupom, layout e aprovador em um só lugar."
+          },
+          {
+            "label": "Ambientes e versões",
+            "description": "Revisar em rascunho, prévia e produção e registrar cada ajuste com data."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Checklist de E-mail",
+        "items": [
+          {
+            "label": "Caixa de entrada",
+            "description": "Remetente, reply-to, assunto e pré-header conferidos contra a ficha."
+          },
+          {
+            "label": "Render e dark mode",
+            "description": "Pré-visualização em clientes e dispositivos com Litmus ou Email on Acid."
+          },
+          {
+            "label": "Links, variáveis e rodapé",
+            "description": "UTMs, fallback de personalização, texto alternativo e descadastro."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Checklist de WhatsApp",
+        "items": [
+          {
+            "label": "Template aprovado",
+            "description": "Status, categoria e qualidade no WhatsApp Business Platform."
+          },
+          {
+            "label": "Variáveis e botões",
+            "description": "Ordem das variáveis, botão com URL dinâmica e teste no celular."
+          },
+          {
+            "label": "Horário e base",
+            "description": "Hora do disparo, telefones de teste, formato do número e consentimento."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Landing Pages, Envio de Teste, Evidências e Aprovação",
+        "items": [
+          {
+            "label": "Página e formulário",
+            "description": "DevTools, PageSpeed Insights e tabela campo da página → campo do CRM."
+          },
+          {
+            "label": "Envio de teste",
+            "description": "Sandbox do Mailtrap, listas [TESTE] e seed list antes da base real."
+          },
+          {
+            "label": "Evidência e aceite",
+            "description": "Capturas nomeadas, pasta por peça e aprovação registrada de quem pediu."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos para aplicar na próxima peça que passar pela sua mesa. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "shield",
+      "title": "Por que QA e Como Organizar a Revisão",
+      "shortDescription": "O custo do erro, a ficha da peça, ambientes e versionamento",
+      "introductionText": "QA é a etapa entre a peça pronta e o disparo, e é a única em que um erro ainda custa pouco. Este módulo organiza a revisão antes de entrar nos checklists: por que ela existe, contra o que você compara a peça, em quais ambientes revisa e como registra cada ajuste para saber depois o que foi testado e qual versão está valendo. Os exemplos usam a Rede Construir+, uma rede fictícia de lojas de material de construção e acabamento com franquias, e-commerce e atendimento por WhatsApp.",
+      "sections": [
+        {
+          "title": "🧭 Antes do checklist",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "O custo de um erro que já saiu",
+              "code": "errata = o QA que faltou",
+              "guidance": "Comece pelo motivo. Um e-mail ou uma mensagem de WhatsApp disparados não voltam: o erro chega a milhares de pessoas ao mesmo tempo e a correção vira uma segunda comunicação, a errata. Na Rede Construir+, um teste interno de jornada transacional acabou enviando 15 e-mails de nota fiscal de uma bandeira parceira com o remetente e o layout da rede principal. A solução foi disparar um pedido de desculpas explicando o erro. QA (quality assurance, garantia de qualidade) é o conjunto de verificações feitas antes do disparo para que esse segundo envio não precise existir.",
+              "tips": [
+                "Toda errata custa duas vezes: o envio errado já consumiu a atenção do cliente, e o pedido de desculpas consome de novo. Prevenir sai mais barato que corrigir.",
+                "QA não é desconfiança de quem produziu a peça. É uma etapa do processo, como a revisão de um texto antes de ir para a gráfica."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "A ficha da peça: o que exatamente foi pedido",
+              "code": "canal · público · data · remetente · links · cupom · layout · aprovador",
+              "guidance": "Antes de abrir o e-mail, abra o pedido. Monte uma ficha curta para cada peça com: canal (e-mail, WhatsApp, landing page), público e base, data e hora do disparo, remetente ou número de envio, links de destino, cupons e validade, referência de layout (o arquivo de design aprovado ou a planilha de conteúdo) e quem aprova. Toda verificação dos próximos módulos compara a peça com essa ficha. Sem ela, o QA vira opinião.",
+              "tips": [
+                "Se a ficha tem um campo vazio, o QA já encontrou o primeiro problema: falta informação para disparar. Pergunte antes de supor.",
+                "Guarde a referência visual ao lado da peça durante a revisão. Comparar lado a lado com o layout aprovado revela diferenças que a memória não pega."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Três ambientes: rascunho, prévia e produção",
+              "code": "local → prévia → produção",
+              "guidance": "Uma mesma peça passa por versões diferentes: o rascunho no editor ou no ambiente local, a prévia publicada para revisão e a versão em produção. Revise a peça em cada um deles e compare com o layout aprovado. Um padrão comum de QA de site e landing page é capturar a mesma área (um menu, um banner, um bloco de categorias) no ambiente local, na prévia e no ar, e conferir item a item contra a planilha de conteúdo. É assim que aparecem blocos repetidos, imagens de exemplo esquecidas e textos que mudaram entre uma versão e outra.",
+              "tips": [
+                "Imagem de exemplo duplicada é um dos erros mais frequentes em vitrines e menus: o desenvolvedor repete o mesmo bloco para preencher o layout e a troca pelas imagens reais fica para depois.",
+                "Depois da publicação, revise de novo em produção. O que estava certo na prévia pode quebrar por cache, por caminho de imagem ou por configuração do ambiente."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Versionamento e registro de ajustes",
+              "code": "Versão: 21-01 – E-mail: ajuste de links em botões\nVersão: 12-01 – E-mail e WhatsApp: ativação da jornada\npedido_coletado_v2_2101 (substitui pedido_coletado_v1_2611)",
+              "guidance": "Cada rodada de QA gera ajustes, e cada ajuste gera uma versão. Mantenha no documento da peça um registro em ordem cronológica, com data, canal e o que mudou. Nomeie os templates com sufixo de versão e data, para saber qual está ativo na jornada. Quando um template é corrigido, a versão nova recebe outro nome e a antiga fica registrada como substituída, nunca sobrescrita sem rastro.",
+              "tips": [
+                "Marque no próprio checklist o status de cada etapa (feito, pendente, ajuste necessário) e a data. Na reunião seguinte, ninguém precisa perguntar o que já foi testado.",
+                "Separe no documento a versão final das versões anteriores. Quem chega depois precisa saber qual texto vale sem ler o histórico inteiro."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que organizar antes de revisar",
+      "highlights": [
+        {
+          "icon": "shield",
+          "title": "Erro barato",
+          "text": "Corrigir na prévia leva minutos. Corrigir depois do disparo exige errata, explicação e, às vezes, atendimento a clientes confusos."
+        },
+        {
+          "icon": "folder",
+          "title": "Uma fonte de verdade",
+          "text": "A ficha da peça e o layout aprovado encerram a discussão sobre o que está certo. O QA compara, não opina."
+        },
+        {
+          "icon": "sync",
+          "title": "Histórico que responde",
+          "text": "O registro de versões diz o que mudou, quando e por quê. Ninguém precisa reconstruir a história pela memória ou pelo chat."
+        }
+      ],
+      "closingText": "Você já sabe por que revisar, contra o que comparar e como registrar cada rodada. Falta o que conferir peça a peça. O próximo módulo abre o canal com mais pontos de falha: o e-mail.",
+      "ctaTitle": "🛡️ Revisão organizada!",
+      "ctaText": "Ficha, ambientes e registro de versões no lugar. Agora vamos ao checklist do e-mail.",
+      "nextButtonText": "Ir para Módulo 1: Checklist de E-mail"
+    },
+    {
+      "id": 1,
+      "icon": "list",
+      "title": "Checklist de E-mail",
+      "shortDescription": "Remetente, render, dark mode, links, variáveis e rodapé",
+      "introductionText": "O e-mail é o canal com mais pontos de falha por peça: remetente, assunto, HTML que cada cliente interpreta de um jeito, modo escuro, dezenas de links, campos personalizados e um rodapé com obrigações legais. Este módulo percorre a peça na ordem em que o cliente a encontra, da caixa de entrada ao rodapé, e diz o que conferir em cada ponto, com que ferramenta e qual é o erro típico.",
+      "sections": [
+        {
+          "title": "📧 Da caixa de entrada ao rodapé",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Remetente, assunto e pré-header",
+              "code": "De · Responder para · Assunto · Pré-header",
+              "guidance": "Comece pelo que o cliente vê antes de abrir. Confira o nome e o endereço do remetente, o endereço de resposta (reply-to), o assunto e o pré-header, o texto curto que aparece ao lado ou abaixo do assunto na caixa de entrada. O remetente precisa ser o da marca ou unidade de negócio certa: em empresas com mais de uma bandeira, enviar com o remetente errado é exatamente o tipo de erro que vira errata. Leia o assunto em voz alta, confira acentos e caracteres especiais e veja se o pré-header complementa o assunto em vez de repeti-lo.",
+              "tips": [
+                "Sem pré-header definido, o cliente de e-mail puxa a primeira linha do corpo, que muitas vezes é \"Visualize no navegador\" ou o texto alternativo do logo.",
+                "Emoji no assunto aparece diferente em cada sistema. Se usar, confira no envio de teste em pelo menos um iPhone e um Android."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Render em clientes de e-mail e dark mode",
+              "code": "@media (prefers-color-scheme: dark) { ... }",
+              "guidance": "O mesmo HTML aparece de jeitos diferentes em cada cliente de e-mail. Use uma ferramenta de pré-visualização como Litmus ou Email on Acid para ver a peça em vários clientes e dispositivos de uma vez, e priorize os que a sua base mais usa: no relatório de setembro de 2026 da Litmus, Apple Mail e iPhone somavam 76,56% das aberturas medidas e o Gmail 16,10%. Confira também o modo escuro. Há clientes que não mudam as cores, clientes que invertem só os fundos claros e clientes que invertem tudo, como o aplicativo do Gmail no iOS e o Outlook no Windows. Logo com fundo branco chapado vira um retângulo claro no meio do fundo escuro, e texto escuro sobre imagem transparente desaparece.",
+              "tips": [
+                "Prefira logos em PNG transparente com um contorno leve. Se a versão escura ficar ilegível, prepare duas imagens e alterne com a media query prefers-color-scheme onde ela é suportada.",
+                "O mercado da sua base pode ser diferente da média global. Antes de definir a lista de clientes testados, olhe o relatório de aberturas por dispositivo da sua própria plataforma."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Links, botões e UTMs",
+              "code": "https://loja.construirmais.com.br/rastreio?pedido=%%CodigoRastreio%%\n&utm_source=email&utm_medium=crm&utm_campaign=transacional_pedido_coletado",
+              "guidance": "Clique em todos os links: logo, banners, botões, produtos, rodapé e redes sociais. Confirme que cada um leva à página certa, que a página está no ar e que os parâmetros de campanha (UTMs) estão presentes e padronizados, porque é deles que sai o relatório de resultado. Em comunicações transacionais, muitos links são dinâmicos: uma parte fixa, igual para todos, e uma parte variável, como o código de rastreio do pedido. Teste com um registro real de teste e veja se a parte variável foi preenchida.",
+              "tips": [
+                "Mantenha uma convenção única de UTM e escreva-a na ficha da peça. utm_campaign com nomes diferentes para a mesma ação divide o resultado em duas linhas no relatório.",
+                "Link que funciona no computador e falha no celular costuma ser link para área logada ou para aplicativo. Teste os dois."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Personalização com fallback",
+              "code": "%%[ SET @nome = AttributeValue(\"PrimeiroNome\")\nIF Empty(@nome) THEN SET @nome = \"cliente\" ENDIF ]%%\nOlá, %%=ProperCase(@nome)=%%!",
+              "guidance": "Toda variável pode chegar vazia. Para cada campo personalizado (primeiro nome, número do pedido, loja, valor), pergunte: o que aparece se o dado não existir? Defina um texto de reserva (fallback) e teste a peça com dois registros, um com o dado preenchido e outro sem. No Salesforce Marketing Cloud isso se resolve com AMPscript; em outras plataformas, com o recurso de valor padrão do editor. Confira também o tratamento do dado: nome todo em maiúsculas, nome completo onde deveria ir só o primeiro nome e data no formato errado são erros de personalização tão visíveis quanto o campo vazio.",
+              "tips": [
+                "\"Olá, ,\" com a vírgula sobrando é o sinal clássico de variável sem fallback. Procure por ele em todo envio de teste.",
+                "Teste com um nome acentuado e um nome composto. Problemas de codificação e de corte aparecem exatamente nesses casos."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Imagens, texto alternativo, rodapé e descadastro",
+              "code": "alt · endereço · política de privacidade · descadastro",
+              "guidance": "Desligue as imagens no cliente de e-mail e leia a peça de novo: o texto alternativo (alt) de cada imagem deve dizer o que ela comunica, e a oferta principal não pode existir só dentro de uma imagem. Depois, desça até o rodapé: endereço da empresa, link da política de privacidade, canais oficiais e o link de descadastro funcionando. Desde 2024, Gmail e Yahoo exigem de quem envia em grande volume autenticação SPF, DKIM e DMARC, descadastro em um clique no cabeçalho para mensagens de marketing, atendimento do pedido em até dois dias e taxa de reclamação de spam abaixo de 0,3%. Por fim, revise o conteúdo à luz da política da empresa: menção a parceiros, patrocínios ou marcas de terceiros só entra com autorização.",
+              "tips": [
+                "Clique no descadastro do envio de teste e veja se o contato de teste foi de fato marcado como descadastrado na plataforma. Link que abre uma página bonita e não grava nada é descumprimento silencioso.",
+                "Em e-mail transacional, o link para a política de privacidade também precisa estar presente. Ser mensagem de serviço não dispensa a transparência sobre o uso dos dados."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que o e-mail pede checklist",
+      "highlights": [
+        {
+          "icon": "globe",
+          "title": "Um HTML, muitas telas",
+          "text": "Cada cliente de e-mail interpreta o código de um jeito e o modo escuro muda as cores. Só a pré-visualização mostra o que o cliente vai ver."
+        },
+        {
+          "icon": "bolt",
+          "title": "Variável vazia é visível",
+          "text": "Um campo sem fallback aparece para cada registro sem dado. Em uma base grande, isso é muita gente lendo \"Olá, ,\"."
+        },
+        {
+          "icon": "shield",
+          "title": "Rodapé é obrigação",
+          "text": "Descadastro funcionando, política de privacidade e autenticação são exigências dos provedores e da lei, não detalhe de layout."
+        }
+      ],
+      "closingText": "Seu e-mail passou pelo checklist completo: da caixa de entrada ao rodapé. O próximo canal tem menos texto e mais regras. Vamos ao WhatsApp.",
+      "ctaTitle": "📧 E-mail revisado!",
+      "ctaText": "Remetente, render, links, variáveis e rodapé conferidos. Próxima parada: WhatsApp.",
+      "nextButtonText": "Ir para Módulo 2: Checklist de WhatsApp"
+    },
+    {
+      "id": 2,
+      "icon": "sync",
+      "title": "Checklist de WhatsApp",
+      "shortDescription": "Template aprovado, variáveis, botões, horário e base de teste",
+      "introductionText": "No WhatsApp a mensagem é curta, mas as regras são mais rígidas: só sai template aprovado, as variáveis seguem a ordem exata do texto e um disparo mal recebido derruba a qualidade do número. Este módulo cobre o que verificar antes de liberar uma mensagem de template, do status na Meta ao toque no botão em um celular de verdade.",
+      "sections": [
+        {
+          "title": "💬 Antes de liberar o template",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Template aprovado e na categoria certa",
+              "code": "status: APROVADO · categoria: UTILIDADE · qualidade: alta",
+              "guidance": "No WhatsApp Business Platform, mensagens iniciadas pela empresa usam templates aprovados pela Meta. Antes de qualquer disparo, confira no WhatsApp Manager ou na plataforma parceira (Blip, Zenvia, Marketing Cloud) se o template está com status aprovado e ativo. Templates em revisão, rejeitados, pausados ou desativados não podem ser enviados. Confira também a categoria: marketing, utilidade ou autenticação. Ela afeta o preço, e uma mensagem de acompanhamento de pedido que mistura oferta deixa de ser utilidade. Verifique ainda o indicador de qualidade, porque templates com qualidade média ou baixa correm risco de pausa.",
+              "tips": [
+                "Mantenha um padrão de nome que diga etapa, versão e data, por exemplo pedido_coletado_v2_2101. Na hora de configurar a jornada, o nome evita escolher o template antigo.",
+                "Ajustar o texto de um template aprovado gera nova revisão. Planeje o prazo: a análise pode levar até 24 horas."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Variáveis na ordem certa e com valor de exemplo",
+              "code": "Olá {{1}}, temos novidades!\nSeu pedido {{2}} foi coletado pela transportadora.\n{{1}} = PrimeiroNome · {{2}} = NumeroPedido",
+              "guidance": "Templates usam variáveis entre chaves duplas, numeradas ({{1}}, {{2}}) ou nomeadas ({{primeiro_nome}}). Na numeração posicional, os valores enviados precisam seguir exatamente a ordem do texto: trocar nome e número do pedido produz uma mensagem absurda que ainda assim é entregue. Para cada variável, confira de onde vem o dado (campo da base, retorno de API, coluna da planilha), qual é o exemplo cadastrado e o que acontece se vier vazio. Na Rede Construir+, a mensagem de pedido coletado tinha três variáveis: nome, número do pedido e link de rastreio.",
+              "tips": [
+                "Monte uma tabela com três colunas: variável, campo de origem, valor do registro de teste. Ela vira evidência de QA e manual para quem mantiver a jornada depois.",
+                "Quando o envio sai de uma planilha, confira a coluna que monta o texto final, não só as colunas de dado. É na concatenação que a data inverte e o produto perde o código."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Botões e links no celular de verdade",
+              "code": "Botão: Acompanhar entrega\nURL base: https://loja.construirmais.com.br/rastreio?pedido=\nSufixo variável: {{1}}",
+              "guidance": "Um link solto no meio do texto funciona, mas é feio e às vezes não fica clicável. A correção feita na jornada transacional da Rede Construir+ foi transformar o link de rastreio em botão de URL com sufixo dinâmico: a parte fixa do endereço fica cadastrada no template e só o código do pedido entra como variável. No QA, envie para um número de teste, abra no celular, toque em cada botão e confira o destino. Botões de resposta rápida devem disparar o fluxo esperado no atendimento ou no bot.",
+              "tips": [
+                "Teste em Android e iPhone. A pré-visualização da plataforma mostra o texto, mas não mostra o comportamento do toque nem a abertura do link no navegador do aparelho.",
+                "Depois de mudar um link para botão, verifique se a variável da API continua chegando no formato esperado. O nome do parâmetro costuma mudar junto."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Horário, base de teste e consentimento",
+              "code": "55 + DDD + número · sem duplicados · lista de bloqueio aplicada",
+              "guidance": "Antes de liberar o disparo, confira três coisas fora do texto. Horário: mensagem promocional de madrugada ou no domingo cedo gera bloqueio e denúncia, o que derruba a qualidade do número. Base: mantenha uma lista fixa de telefones de teste da equipe e dispare primeiro para ela. Na base real, confira o formato do número (55 + DDD + número), remova duplicados e inválidos e aplique a lista de bloqueio. Consentimento: só recebe mensagem de marketing quem aceitou receber, e quem pediu para sair não pode voltar a receber por outra campanha.",
+              "tips": [
+                "Valide o formato do telefone na própria planilha com uma coluna de checagem (quantidade de dígitos e terceiro dígito do celular) antes de subir a base.",
+                "Registre o horário programado na ficha da peça. Disparo agendado para 8h que sai às 20h por fuso errado é falha de configuração, não de texto."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que o WhatsApp é mais rígido",
+      "highlights": [
+        {
+          "icon": "list",
+          "title": "Só template aprovado",
+          "text": "A Meta revisa cada template. Status, categoria e qualidade decidem se a mensagem pode sair e quanto custa."
+        },
+        {
+          "icon": "grid",
+          "title": "Ordem importa",
+          "text": "Variáveis posicionais seguem a ordem do texto. Trocar duas delas gera uma mensagem entregue e sem sentido."
+        },
+        {
+          "icon": "gauge",
+          "title": "Qualidade do número",
+          "text": "Disparos fora de hora ou para quem não pediu geram bloqueios, que pausam templates e prejudicam todos os envios seguintes."
+        }
+      ],
+      "closingText": "A mensagem de WhatsApp está aprovada, com variáveis na ordem e botões testados no aparelho. Falta o destino do clique e o fechamento do processo: a página, o formulário, o envio de teste e a aprovação.",
+      "ctaTitle": "💬 Mensagem pronta!",
+      "ctaText": "Template aprovado e testado no celular. Vamos fechar o ciclo com página, evidência e aprovação.",
+      "nextButtonText": "Ir para Módulo 3: Landing Pages, Envio de Teste, Evidências e Aprovação"
+    },
+    {
+      "id": 3,
+      "icon": "search",
+      "title": "Landing Pages, Envio de Teste, Evidências e Aprovação",
+      "shortDescription": "Página, formulário, envio de teste, evidência e aceite",
+      "introductionText": "A peça leva a uma página, a página tem um formulário e o formulário grava no CRM. Este módulo fecha o ciclo: revisar a landing page nas duas larguras, testar o formulário até o campo gravado, enviar para destinos controlados, guardar evidências que se encontrem depois e obter o aceite de quem pediu antes do disparo real.",
+      "sections": [
+        {
+          "title": "✅ Fechando o ciclo",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Landing page no celular e no computador",
+              "code": "DevTools → Device Mode · PageSpeed Insights",
+              "guidance": "Abra a página nas duas larguras. O modo de dispositivo do Chrome DevTools simula telas de 320 a 2560 pixels e conexões lentas, mas é uma aproximação: confirme no celular real antes de aprovar. Confira título, imagens (nada de imagem de exemplo esquecida ou bloco repetido), botões, preços e informações de loja, como endereço, telefone e foto da fachada. Rode o PageSpeed Insights para ver se a página carrega bem no celular. Confira também o título da aba e a descrição da página, que aparecem no compartilhamento e na busca.",
+              "tips": [
+                "Dado de loja errado em página pública gera chamado do franqueado e reclamação do cliente. Confira endereço, telefone e opção de retirada contra a base oficial de lojas, não contra a página antiga.",
+                "Use a captura de página inteira do DevTools para registrar a página toda de uma vez, inclusive o que fica abaixo da dobra."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Formulário: do campo da página ao campo do CRM",
+              "code": "campo LP | chave | campo CRM | esperado | gravado | status\nCanal de entrada | canalDeEntrada | CanalDeEntrada__c | LP Catálogo | LP Catálogo | OK",
+              "guidance": "Um formulário certo na tela pode gravar errado no CRM. Envie um lead de teste com dados fictícios identificáveis (sobrenome Teste-0001, por exemplo) e monte uma tabela com: campo da página, chave enviada, campo do CRM, valor esperado, valor gravado e status (OK, AJUSTAR, AJUSTADO). Confira com atenção os campos ocultos: canal de entrada, origem da campanha, dono do lead e tipo de registro. São eles que distribuem o lead para a equipe certa. Teste também as validações (campo obrigatório vazio, e-mail inválido, telefone com menos dígitos), a mensagem de sucesso e o que acontece no segundo envio com o mesmo e-mail.",
+              "tips": [
+                "Canal de entrada errado não aparece na tela e quebra o relatório de origem de leads. Ele precisa estar na tabela de QA como qualquer campo visível.",
+                "Se a página usa cupom, confira na plataforma de e-commerce as datas de início e fim, o status ativo e a regra de uso. Cupom que expira antes da campanha é erro de configuração que só aparece no carrinho."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Envio de teste, sandbox e seed list",
+              "code": "1. [TESTE] equipe → 2. seed list → 3. aprovação → 4. base real (com exclusão)",
+              "guidance": "Envie a peça para destinos controlados antes da base real. Em desenvolvimento, uma sandbox como a do Mailtrap captura os e-mails sem entregá-los a ninguém e mostra o HTML, o texto, os cabeçalhos e uma análise de spam. Na plataforma de disparo, use listas de teste nomeadas com o prefixo [TESTE] e uma seed list: um conjunto fixo de caixas reais da equipe em Gmail, Outlook e iPhone, mais os números de WhatsApp de teste. O disparo para valer só acontece depois que o teste foi recebido, conferido e aprovado, e com a lista de exclusão marcada.",
+              "tips": [
+                "Confira, na tela de envio, se a lista selecionada é a de teste. Muitos erros de disparo acontecem com a peça certa e a lista errada.",
+                "Depois do disparo real, a seed list continua útil: ela confirma que a mensagem chegou e em qual pasta caiu."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Evidência: capturar, nomear e guardar",
+              "code": "2026-10-31_email_pedido-coletado_v2_gmail-ios-dark_ERRO.png\n2026-10-31_email_pedido-coletado_v3_gmail-ios-dark_OK.png",
+              "guidance": "QA sem evidência é só uma lembrança. Para cada item verificado, guarde uma captura de tela e nomeie de forma que se encontre depois. Uma pasta com centenas de arquivos chamados \"Screenshot\" seguidos de data e hora prova que o trabalho foi feito, mas não diz qual peça, versão ou dispositivo cada imagem mostra. Use um padrão com data, canal, peça, versão, cliente ou dispositivo e resultado, e guarde em uma pasta por peça, ligada à ficha e ao registro de ajustes. Capture o problema e, depois da correção, a mesma tela corrigida.",
+              "tips": [
+                "Antes e depois na mesma pasta, com o mesmo nome e status diferente, é a evidência mais clara para quem aprova e para quem audita depois.",
+                "Capturas podem conter dados de clientes. Use registros de teste fictícios e não guarde imagens com dados pessoais reais em pastas compartilhadas."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Aprovação com quem pediu",
+              "code": "Aprovado por: <área solicitante> · em: 31/10 14h · versão: v3",
+              "guidance": "O QA termina com uma aprovação registrada. Envie para quem pediu a peça um pacote único: link da prévia, envio de teste na caixa da pessoa, capturas dos clientes e dispositivos principais e a lista de ajustes feitos. Peça um aceite explícito, por escrito, e registre no checklist quem aprovou e quando. Combine antes quem aprova texto, quem aprova layout e quem aprova a base. Se surgir um ajuste depois do aceite, ele gera nova versão e nova rodada de verificação, ainda que curta.",
+              "tips": [
+                "Sem aceite, sem disparo. A regra protege quem executa e evita a conversa de quem autorizou depois que algo saiu errado.",
+                "Separe esclarecimento de ajuste no planejamento da semana. Responder dúvidas de QA leva minutos; implementar ajustes pode levar dias e precisa estar no prazo."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que fechar o ciclo",
+      "highlights": [
+        {
+          "icon": "sitemap",
+          "title": "Da página ao CRM",
+          "text": "O formulário só está certo quando o lead chega com origem, canal e dono corretos. A tela não mostra isso."
+        },
+        {
+          "icon": "tools",
+          "title": "Teste controlado",
+          "text": "Sandbox, listas [TESTE] e seed list mostram a peça real em caixas reais sem expor nenhum cliente."
+        },
+        {
+          "icon": "folder",
+          "title": "Evidência que se encontra",
+          "text": "Capturas nomeadas e um aceite registrado provam o que foi verificado e por quem foi aprovado."
+        }
+      ],
+      "closingText": "Você percorreu o QA completo de uma comunicação: organizou a revisão, conferiu e-mail e WhatsApp, testou página e formulário, enviou para destinos controlados, guardou evidências e obteve o aceite. É esse conjunto que permite disparar com tranquilidade e, quando algo der errado, saber exatamente o que foi verificado.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você tem um processo de QA completo para e-mail, WhatsApp e landing pages. Para aprofundar a construção das peças, siga para o programa de e-mail HTML e landing pages integradas ao CRM.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Qual é o principal motivo para fazer QA antes do disparo, e não depois?",
+      "explanation": "Depois do disparo o erro já chegou a toda a base e a correção vira uma segunda comunicação, a errata, que consome de novo a atenção do cliente. Antes do disparo, o mesmo erro se corrige em minutos. QA não substitui o relatório, não é exigência de plataforma e não serve para avaliar quem produziu a peça.",
+      "options": [
+        {
+          "text": "Porque um erro disparado não volta e a correção vira uma errata",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque as plataformas só liberam o envio depois de um QA formal",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o QA substitui o relatório de resultados da campanha",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque serve para avaliar o desempenho de quem produziu a peça",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Contra o que o revisor deve comparar a peça durante o QA?",
+      "explanation": "O QA compara a peça com a ficha do pedido e com o layout aprovado, que são a fonte de verdade. Gosto pessoal transforma revisão em opinião, a versão anterior pode estar desatualizada e a campanha de um concorrente não diz nada sobre o que foi pedido.",
+      "options": [
+        {
+          "text": "Com a ficha da peça e o layout aprovado",
+          "isCorrect": true
+        },
+        {
+          "text": "Com o gosto pessoal de quem revisa",
+          "isCorrect": false
+        },
+        {
+          "text": "Com a versão da campanha anterior",
+          "isCorrect": false
+        },
+        {
+          "text": "Com campanhas semelhantes de concorrentes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Um template de WhatsApp foi corrigido. Qual é a prática recomendada de versionamento?",
+      "explanation": "A versão corrigida recebe um nome novo com sufixo de versão e data, e o registro de ajustes anota a mudança. Assim, quem configura a jornada sabe qual template está ativo. Sobrescrever sem rastro apaga o histórico, e manter o mesmo nome confunde a configuração.",
+      "options": [
+        {
+          "text": "Criar a versão nova com sufixo de versão e data e registrar o ajuste no documento",
+          "isCorrect": true
+        },
+        {
+          "text": "Sobrescrever o template antigo sem registrar a mudança",
+          "isCorrect": false
+        },
+        {
+          "text": "Manter o mesmo nome para não confundir a equipe",
+          "isCorrect": false
+        },
+        {
+          "text": "Excluir o histórico para deixar só a versão final",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "O que acontece quando um e-mail não tem pré-header definido?",
+      "explanation": "Sem pré-header, o cliente de e-mail usa a primeira linha de texto do corpo, que costuma ser \"Visualize no navegador\" ou o texto alternativo do logo. O e-mail não é bloqueado por isso, o assunto não é repetido automaticamente e o remetente não muda.",
+      "options": [
+        {
+          "text": "O cliente de e-mail exibe a primeira linha de texto do corpo",
+          "isCorrect": true
+        },
+        {
+          "text": "O e-mail é bloqueado pelo provedor",
+          "isCorrect": false
+        },
+        {
+          "text": "O assunto é repetido no lugar do pré-header",
+          "isCorrect": false
+        },
+        {
+          "text": "O nome do remetente é substituído pelo endereço",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "No relatório de setembro de 2026 da Litmus, qual participação Apple Mail e iPhone somavam nas aberturas medidas?",
+      "explanation": "Apple Mail e iPhone somavam 76,56% das aberturas medidas, seguidos do Gmail com 16,10%. Isso não dispensa testar outros clientes: a base de cada empresa tem uma distribuição própria, que deve ser conferida no relatório da plataforma.",
+      "options": [
+        {
+          "text": "76,56%",
+          "isCorrect": true
+        },
+        {
+          "text": "16,10%",
+          "isCorrect": false
+        },
+        {
+          "text": "3,48%",
+          "isCorrect": false
+        },
+        {
+          "text": "Cerca de 50%",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Qual é a função do fallback em uma variável de personalização?",
+      "explanation": "O fallback define o texto que aparece quando o dado não existe, evitando \"Olá, ,\" e frases quebradas. Ele não criptografa o dado, não acelera o envio e não substitui o descadastro.",
+      "options": [
+        {
+          "text": "Definir o que aparece quando o dado do registro está vazio",
+          "isCorrect": true
+        },
+        {
+          "text": "Criptografar o dado pessoal antes do envio",
+          "isCorrect": false
+        },
+        {
+          "text": "Acelerar o processamento do envio em massa",
+          "isCorrect": false
+        },
+        {
+          "text": "Substituir o link de descadastro no rodapé",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Um template de WhatsApp está com status em revisão. Ele pode ser disparado?",
+      "explanation": "Só templates aprovados e ativos podem ser enviados. Em revisão, rejeitado, pausado ou desativado, o envio não acontece. A análise pode levar até 24 horas, por isso o prazo de aprovação precisa estar no planejamento.",
+      "options": [
+        {
+          "text": "Não, apenas templates aprovados podem ser enviados",
+          "isCorrect": true
+        },
+        {
+          "text": "Sim, desde que o envio seja para poucos contatos",
+          "isCorrect": false
+        },
+        {
+          "text": "Sim, se a categoria for utilidade",
+          "isCorrect": false
+        },
+        {
+          "text": "Sim, a revisão só bloqueia mensagens de marketing",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "No template \"Olá {{1}}, seu pedido {{2}} foi coletado\", o que acontece se os valores forem enviados na ordem número do pedido, nome?",
+      "explanation": "Com variáveis posicionais, cada valor ocupa o lugar do número correspondente. Invertidos, o número do pedido aparece no lugar do nome e vice-versa, e a mensagem é entregue assim mesmo. A Meta não corrige a ordem nem recusa o envio por isso.",
+      "options": [
+        {
+          "text": "A mensagem é entregue com o número no lugar do nome e o nome no lugar do pedido",
+          "isCorrect": true
+        },
+        {
+          "text": "A Meta corrige a ordem automaticamente",
+          "isCorrect": false
+        },
+        {
+          "text": "A mensagem é recusada e não é entregue",
+          "isCorrect": false
+        },
+        {
+          "text": "O template é pausado na hora",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Por que testar os botões do template em um celular real, e não só na pré-visualização da plataforma?",
+      "explanation": "A pré-visualização mostra o texto, mas não o comportamento do toque, a abertura do link no navegador do aparelho nem o fluxo disparado por uma resposta rápida. Celular real não muda a categoria do template, não é exigência da Meta e não aumenta a qualidade.",
+      "options": [
+        {
+          "text": "Porque a pré-visualização não mostra o toque nem a abertura do link no aparelho",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque a Meta exige um teste em aparelho para aprovar",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o teste no celular muda a categoria para utilidade",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o teste em aparelho aumenta o indicador de qualidade",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "No teste de formulário de landing page, por que conferir campos ocultos como o canal de entrada?",
+      "explanation": "Campos ocultos não aparecem na tela, mas definem origem, campanha e dono do lead no CRM. Se gravarem errado, o lead vai para a equipe errada e o relatório de origem quebra. Eles não mudam a velocidade da página nem o layout.",
+      "options": [
+        {
+          "text": "Porque definem origem e distribuição do lead e não aparecem na tela",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque deixam a página mais lenta quando estão vazios",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque mudam o layout do formulário no celular",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque são obrigatórios para o PageSpeed Insights",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "O que é uma seed list no QA de comunicações?",
+      "explanation": "Seed list é um conjunto fixo de caixas e números reais da equipe, em provedores e aparelhos diferentes, que recebe a peça antes e durante o disparo para conferir entrega e exibição. Não é a base de clientes, não é a lista de descadastro e não é uma ferramenta de pré-visualização.",
+      "options": [
+        {
+          "text": "Um conjunto fixo de caixas e números da equipe que recebe a peça para conferência",
+          "isCorrect": true
+        },
+        {
+          "text": "A base de clientes que recebe a campanha primeiro",
+          "isCorrect": false
+        },
+        {
+          "text": "A lista de contatos descadastrados",
+          "isCorrect": false
+        },
+        {
+          "text": "Uma ferramenta que gera prévias em vários clientes de e-mail",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Qual nome de arquivo é a melhor evidência de QA?",
+      "explanation": "Um nome com data, canal, peça, versão, cliente ou dispositivo e resultado permite achar a evidência depois e entender o que ela mostra sem abrir a imagem. O nome padrão do sistema só traz data e hora; nomes genéricos não dizem nada.",
+      "options": [
+        {
+          "text": "2026-10-31_email_pedido-coletado_v3_gmail-ios-dark_OK.png",
+          "isCorrect": true
+        },
+        {
+          "text": "Screenshot 2026-10-31 162018.png",
+          "isCorrect": false
+        },
+        {
+          "text": "print-final-certo.png",
+          "isCorrect": false
+        },
+        {
+          "text": "imagem1.png",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "Um kit de QA para a Rede Construir+: a ficha da peça, os checklists de e-mail, WhatsApp e landing page, a tabela de teste de formulário, o roteiro de envio de teste com seed list, o padrão de nome e pasta das evidências e o modelo de aceite. Tudo pronto para ser usado na próxima campanha ou jornada transacional.",
+    "highlights": [
+      "Checklists de e-mail, WhatsApp e landing page",
+      "Roteiro de envio de teste e seed list",
+      "Padrão de evidência e registro de aprovação"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "Desde 2024, Gmail e Yahoo exigem de quem envia em grande volume autenticação SPF, DKIM e DMARC, descadastro em um clique para mensagens de marketing atendido em até dois dias e taxa de reclamação de spam abaixo de 0,3%, cerca de três reclamações a cada mil mensagens entregues. Um rodapé sem descadastro funcionando deixou de ser descuido e passou a afetar a entrega de todos os envios seguintes.",
+      "A exibição também ficou mais variada. No relatório de setembro de 2026 da Litmus, com mais de 1,5 bilhão de aberturas, Apple Mail e iPhone somavam 76,56% e o Gmail 16,10%, cada um com seu jeito de tratar o modo escuro. No WhatsApp, só templates aprovados pela Meta podem ser enviados, e templates com feedback negativo podem ser pausados. Mais regras e mais telas tornam o QA uma etapa fixa do processo."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Campanhas promocionais",
+        "description": "E-mails e mensagens de oferta com cupom, data de validade e página de destino."
+      },
+      {
+        "label": "Jornadas transacionais",
+        "description": "Confirmação de pedido, nota fiscal e rastreio, com variáveis e links dinâmicos."
+      },
+      {
+        "label": "Captação de leads",
+        "description": "Landing pages com formulário que precisa gravar origem e dono certos no CRM."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem começa em CRM",
+        "description": "Recebeu a tarefa de revisar peças e quer um método em vez de um palpite."
+      },
+      {
+        "label": "Quem produz e dispara",
+        "description": "Monta e envia as próprias comunicações e precisa de um checklist para não depender da memória."
+      },
+      {
+        "label": "Quem pede as peças",
+        "description": "Marketing, e-commerce ou expansão, que aprova comunicações e quer saber o que foi verificado."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Equipes de CRM, e-commerce e marketing de varejo, bancos, educação e serviços mantêm alguma forma de QA antes do disparo, com ferramentas de pré-visualização como Litmus e Email on Acid, sandboxes como o Mailtrap e as próprias listas de teste das plataformas de envio. A habilidade é transferível entre ferramentas: o checklist muda pouco do Salesforce Marketing Cloud para outra plataforma de disparo.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Litmus — Email Client Market Share (dados de setembro de 2026)",
+      "url": "https://www.litmus.com/email-client-market-share"
+    },
+    {
+      "label": "Litmus — Ultimate Guide to Dark Mode for Email Marketers",
+      "url": "https://www.litmus.com/blog/the-ultimate-guide-to-dark-mode-for-email-marketers"
+    },
+    {
+      "label": "Bird — Gmail and Yahoo sender requirements",
+      "url": "https://bird.com/docs/knowledge-base/deliverability/gmail-yahoo-requirements"
+    },
+    {
+      "label": "Meta for Developers — WhatsApp Business Platform: visão geral de templates",
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/templates/overview"
+    },
+    {
+      "label": "Mailtrap — Email Sandbox: overview",
+      "url": "https://docs.mailtrap.io/email-sandbox/overview"
+    },
+    {
+      "label": "Chrome for Developers — Simulate mobile devices with device mode",
+      "url": "https://developer.chrome.com/docs/devtools/device-mode"
+    }
+  ]
+}

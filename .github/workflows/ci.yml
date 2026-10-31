@@ -1,7 +1,8 @@
 name: CI
+# Roda em toda branch e em todo pull request: é a garantia de que schema, integridade,
+# regras editoriais e testes passaram antes do merge (docs/processo/README.md, etapa 6).
 on:
   push:
-    branches: [main]
   pull_request:
 jobs:
   verificar:

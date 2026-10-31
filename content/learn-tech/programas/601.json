@@ -3,8 +3,810 @@
   "image": "https://cdn.pixabay.com/photo/2015/07/17/22/42/whiteboard-849803_960_720.jpg",
   "category": "Projetos",
   "categoryFilter": "projetos",
-  "title": "Projetos Tech: desenvolva habilidades práticas com cases reais e colaborativos.",
-  "lessons": "15+ Lições",
-  "duration": "12hr 45min",
-  "access": "Acesso Livre"
+  "title": "Fundamentos de Projetos Tech: do Escopo à Entrega",
+  "lessons": "18 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Iniciante",
+  "description": "A porta de entrada da trilha de projetos. Você aprende o que é um projeto, como ele nasce, se planeja e termina, e aplica tudo em um projeto pequeno e fictício — um cardápio digital para uma lanchonete de bairro — levado do termo de abertura à entrega, com retrospectiva no final.",
+  "letslearn": [
+    "Distinguir projeto de operação e escolher um ciclo de vida preditivo, adaptativo ou híbrido",
+    "Escrever escopo com o que está dentro e o que está fora, quebrar o trabalho em entregas e estimar prazo e custo",
+    "Mapear stakeholders e montar um plano de comunicação que as pessoas realmente leem",
+    "Registrar riscos, acompanhar o planejado contra o realizado, entregar com aceite formal e conduzir uma retrospectiva"
+  ],
+  "curriculum": "Do termo de abertura à retrospectiva",
+  "about": "O programa segue a vida de um projeto na ordem em que ela acontece: primeiro o que faz algo ser um projeto e qual ciclo de vida combina com ele; depois escopo, prazo e custo; em seguida as pessoas — quem é afetado e como fica sabendo do andamento; por fim riscos, entrega e o aprendizado que fica. Cada módulo produz um documento curto do projeto prático, e no final você tem o pacote completo de um projeto pequeno, do começo ao fim. A base conceitual são os princípios do PMBOK 7, sem decorar processos: a ideia é entender o porquê de cada artefato e usar só o que o tamanho do projeto pede.",
+  "materials": [
+    "Modelo de termo de abertura em uma página",
+    "Planilha de EAP, cronograma e orçamento do projeto prático",
+    "Matriz de stakeholders, matriz RACI e plano de comunicação",
+    "Registro de riscos e roteiro de retrospectiva 4Ls"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "O Que Faz um Projeto Ser um Projeto",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Escopo, Prazo e Custo",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Stakeholders e Comunicação",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Riscos, Entrega e Retrospectiva",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Projetos",
+    "mainTitle": "Projeto não é só código: é combinar o que entregar, até quando, por quanto e com quem — e cumprir.",
+    "introductionParagraphs": [
+      {
+        "title": "Por que projetos tech atrasam",
+        "text": "Raramente um projeto atrasa porque a equipe não sabia programar. Atrasa porque ninguém escreveu o que estava fora do escopo, porque a estimativa ignorou testes e revisão, porque a pessoa que aprova descobriu o resultado no último dia, ou porque o risco óbvio não tinha dono. Gestão de projetos é o conjunto de hábitos que torna esses problemas visíveis **cedo**, quando ainda são baratos de resolver."
+      },
+      {
+        "title": "Princípios antes de processos",
+        "text": "A sétima edição do **PMBOK**, do PMI, trocou a lista de processos por 12 princípios e 8 domínios de desempenho, e passou a tratar abordagens preditivas, adaptativas e híbridas lado a lado. Este programa segue essa linha: em vez de decorar formulários, você entende o que cada artefato resolve e aprende a adaptar o tamanho dele ao tamanho do projeto."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não prepara para certificação, não ensina ferramenta específica e não aprofunda Scrum ou Kanban — isso é assunto do programa seguinte da trilha, Scrum e Kanban: Agilidade na Gestão de Projetos Tech. Aqui o foco é a base que vale para qualquer método: escopo, prazo, custo, pessoas, riscos e aprendizado."
+      }
+    ],
+    "courseAboutTitle": "A base de toda a trilha de projetos",
+    "courseAboutDescription": "Este é o primeiro programa da categoria Projetos. Depois dele vêm Scrum e Kanban: Agilidade na Gestão de Projetos Tech, para o dia a dia de times ágeis; Liderança Técnica: Como Gerir Equipes de Desenvolvedores, para quem passa a cuidar de pessoas; e Git e GitHub Workflow: Colaboração em Projetos de Código Aberto, para a colaboração no código. Todos pressupõem o vocabulário que você constrói aqui: ciclo de vida, escopo, stakeholder, risco e retrospectiva.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: O Que Faz um Projeto Ser um Projeto",
+        "items": [
+          {
+            "label": "Projeto ou operação",
+            "description": "Temporário e com resultado único versus trabalho contínuo e repetitivo."
+          },
+          {
+            "label": "Ciclo de vida",
+            "description": "Fases de um projeto e as abordagens preditiva, adaptativa e híbrida."
+          },
+          {
+            "label": "Termo de abertura",
+            "description": "A página que autoriza o projeto e diz por que ele existe."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Escopo, Prazo e Custo",
+        "items": [
+          {
+            "label": "Escopo com fronteira",
+            "description": "O que entra, o que fica de fora e como saber que terminou."
+          },
+          {
+            "label": "EAP e cronograma",
+            "description": "Quebrar o trabalho em entregas, estimar e sequenciar."
+          },
+          {
+            "label": "Orçamento e mudanças",
+            "description": "Custo com reserva e um caminho claro para pedidos novos."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Stakeholders e Comunicação",
+        "items": [
+          {
+            "label": "Mapa de stakeholders",
+            "description": "Quem é afetado, quem decide e quanto cada um precisa acompanhar."
+          },
+          {
+            "label": "Papéis claros",
+            "description": "Matriz RACI para que cada entrega tenha um responsável."
+          },
+          {
+            "label": "Plano de comunicação",
+            "description": "Quem recebe o quê, por qual canal e com que frequência."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Riscos, Entrega e Retrospectiva",
+        "items": [
+          {
+            "label": "Registro de riscos",
+            "description": "Identificar, priorizar e dar dono e resposta a cada risco."
+          },
+          {
+            "label": "Acompanhamento e entrega",
+            "description": "Planejado contra realizado, critérios de aceite e encerramento."
+          },
+          {
+            "label": "Retrospectiva",
+            "description": "Transformar o que aconteceu em ações para o próximo projeto."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos para aplicar no projeto prático. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "laptop",
+      "title": "O Que Faz um Projeto Ser um Projeto",
+      "shortDescription": "Definição, ciclo de vida, abordagens e o termo de abertura",
+      "introductionText": "Nem todo trabalho é projeto. Manter o site no ar, responder chamados e publicar o post da semana são operação: contínuos e repetitivos. Projeto é um esforço temporário para criar um resultado único — tem começo, fim e um motivo para existir. Neste módulo você aprende a reconhecer um projeto, escolhe o ciclo de vida que combina com ele e escreve o primeiro documento do projeto prático: o cardápio digital da Lanchonete Bom Bocado, uma lanchonete fictícia que hoje recebe pedidos só por mensagem de telefone.",
+      "sections": [
+        {
+          "title": "🧭 Reconhecendo e abrindo um projeto",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Projeto versus operação",
+              "guidance": "Liste cinco atividades de uma equipe de tecnologia e classifique cada uma: tem data para terminar e produz algo que ainda não existe? É projeto. Repete-se indefinidamente? É operação. Faça o exercício com o caso da lanchonete: criar o cardápio digital é projeto; atualizar preços toda semana depois da entrega é operação.",
+              "tips": [
+                "Projetos costumam gerar operação ao terminar. Prever quem vai cuidar do resultado depois da entrega faz parte do projeto, não é problema de outra pessoa."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "As fases do ciclo de vida",
+              "code": "Início → Planejamento → Execução → Encerramento",
+              "guidance": "Todo projeto passa por início (por que e para quê), planejamento (como e quando), execução com monitoramento (fazer e comparar com o plano) e encerramento (entregar, obter aceite e registrar o aprendizado). Desenhe essas fases em uma linha do tempo do projeto da lanchonete e anote o que precisa estar decidido ao fim de cada uma.",
+              "tips": [
+                "Monitoramento não é uma fase depois da execução: acontece durante ela, o tempo todo."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Preditivo, adaptativo ou híbrido",
+              "guidance": "No preditivo, escopo, prazo e custo são definidos no início e o resultado chega no fim. No adaptativo, o produto é entregue em incrementos curtos e o escopo se ajusta a cada ciclo, como no Scrum. No híbrido, você combina os dois. Escolha a abordagem do projeto prático justificando: requisitos estáveis favorecem o preditivo; muita incerteza sobre o que o cliente quer favorece o adaptativo.",
+              "tips": [
+                "O PMBOK 7 chama isso de tailoring: adaptar o método ao contexto. Um projeto de seis semanas não precisa da papelada de um projeto de dois anos."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Escrever o termo de abertura",
+              "code": "Objetivo · Justificativa · Patrocinador · Prazo · Orçamento · Critério de sucesso",
+              "guidance": "Escreva em uma página o termo de abertura do cardápio digital: objetivo (clientes consultam o cardápio e enviam o pedido pelo celular), justificativa (pedidos por mensagem geram erros e demora), patrocinador (a dona da lanchonete), prazo de seis semanas, orçamento de R$ 18.000 e um critério de sucesso mensurável, como reduzir pela metade os pedidos com erro no primeiro mês.",
+              "tips": [
+                "Critério de sucesso que não pode ser medido não é critério. Vale melhorar a experiência não serve; reduzir de 20 para 10 pedidos com erro por semana serve."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que começar pelo porquê",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Valor antes de tarefa",
+          "text": "Um dos princípios do PMBOK 7 é focar no valor. O termo de abertura deixa escrito o resultado esperado, e toda decisão posterior pode ser comparada com ele."
+        },
+        {
+          "icon": "sync",
+          "title": "Método que cabe no projeto",
+          "text": "Escolher entre preditivo, adaptativo e híbrido é decisão de contexto, não de moda. A escolha certa reduz retrabalho e papelada inútil."
+        },
+        {
+          "icon": "shield",
+          "title": "Autorização explícita",
+          "text": "Com um patrocinador nomeado, o projeto tem alguém que decide quando surgir conflito de prioridade — e não depende de boa vontade."
+        }
+      ],
+      "closingText": "Você já sabe por que o projeto existe, quem o patrocina e como ele vai avançar. O termo de abertura diz o objetivo, mas ainda não diz exatamente o que será entregue. No próximo módulo você transforma esse objetivo em escopo, cronograma e orçamento.",
+      "ctaTitle": "🧭 Projeto aberto!",
+      "ctaText": "O termo de abertura está escrito. Agora vamos definir o que entra, quanto tempo leva e quanto custa.",
+      "nextButtonText": "Ir para Módulo 1: Escopo, Prazo e Custo"
+    },
+    {
+      "id": 1,
+      "icon": "list",
+      "title": "Escopo, Prazo e Custo",
+      "shortDescription": "Declaração de escopo, EAP, cronograma, orçamento e controle de mudanças",
+      "introductionText": "Escopo, prazo e custo estão amarrados: mexer em um sempre afeta os outros, e a qualidade sente o efeito. Por isso esse conjunto é conhecido como restrição tripla. Neste módulo você define a fronteira do que será entregue, quebra o trabalho em pedaços que dá para estimar, monta o cronograma e o orçamento e cria a regra que evita o problema mais comum dos projetos tech: o escopo que cresce aos poucos sem ninguém decidir que ele cresceria.",
+      "sections": [
+        {
+          "title": "📐 Do objetivo ao plano",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Declaração de escopo com fronteira",
+              "code": "Dentro do escopo · Fora do escopo · Critérios de aceite",
+              "guidance": "Escreva o que o cardápio digital vai ter (lista de produtos com foto e preço, carrinho, envio do pedido para o celular da lanchonete, painel para editar preços) e, com o mesmo cuidado, o que não vai ter (pagamento online, programa de fidelidade, aplicativo nas lojas). Para cada entrega, escreva como se verifica que ela está pronta.",
+              "tips": [
+                "A lista do que fica de fora é a que mais protege o projeto. Pedido que já está nela vira conversa curta, não discussão."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Estrutura analítica do projeto (EAP)",
+              "guidance": "Quebre o projeto em entregas e as entregas em pacotes de trabalho pequenos o bastante para estimar com confiança — algo entre meio dia e poucos dias de esforço. No caso da lanchonete: levantamento de produtos e fotos, layout, catálogo, carrinho, envio do pedido, painel de preços, testes com clientes, publicação e treinamento da equipe.",
+              "tips": [
+                "Se um pacote de trabalho não tem um resultado que dá para mostrar, ele ainda é uma atividade vaga. Continue quebrando."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Estimativas e cronograma",
+              "code": "Otimista · Mais provável · Pessimista",
+              "guidance": "Estime cada pacote com três números e use a média ponderada (otimista + 4 × mais provável + pessimista, dividido por 6). Depois ordene as dependências: o carrinho depende do catálogo, a publicação depende dos testes. A sequência mais longa de tarefas dependentes é o caminho crítico — atraso nele atrasa o projeto inteiro. Marque marcos claros, como layout aprovado e versão de testes no ar.",
+              "tips": [
+                "Estimativa de quem vai fazer o trabalho é mais confiável que a de quem vai cobrar. E inclua revisão, testes e correções: são as tarefas que todo mundo esquece."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Orçamento com reserva",
+              "guidance": "Multiplique as horas estimadas pelo custo por hora, some hospedagem, domínio e fotos, e acrescente uma reserva de contingência para os riscos conhecidos — algo entre 10% e 15% em um projeto pequeno. No exemplo: R$ 15.600 de trabalho e custos diretos mais R$ 2.000 de reserva, dentro dos R$ 18.000 do termo de abertura.",
+              "tips": [
+                "Reserva não é gordura escondida. Ela aparece no orçamento, tem regra de uso e quem a libera é o patrocinador."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Controle de mudanças contra o scope creep",
+              "guidance": "Scope creep é o escopo que cresce durante o projeto sem que prazo e custo sejam revistos. Crie uma regra simples: todo pedido novo é registrado, tem o impacto em prazo e custo avaliado e só entra com decisão do patrocinador — que escolhe entre estender o prazo, acrescentar recursos, trocar por algo do escopo ou deixar para uma segunda versão.",
+              "tips": [
+                "Mudança não é inimiga do projeto. O problema é mudança sem decisão. Dizer sim com o custo explícito é tão legítimo quanto dizer não."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que planejar mesmo em projeto pequeno",
+      "highlights": [
+        {
+          "icon": "grid",
+          "title": "Trabalho visível",
+          "text": "A EAP mostra o tamanho real do projeto. Tarefas que ninguém tinha lembrado aparecem no papel, e não na última semana."
+        },
+        {
+          "icon": "gauge",
+          "title": "Prazo com base",
+          "text": "Estimativa em três pontos e caminho crítico transformam o vai ficar pronto logo em uma data que dá para defender — e revisar quando algo muda."
+        },
+        {
+          "icon": "tools",
+          "title": "Mudança com custo explícito",
+          "text": "Com um caminho formal para pedidos novos, o escopo pode crescer quando vale a pena, mas nunca às escondidas."
+        }
+      ],
+      "closingText": "O projeto agora tem fronteira, pacotes de trabalho, datas e orçamento. Falta a parte que costuma decidir se ele dá certo: as pessoas. No próximo módulo você descobre quem é afetado pelo cardápio digital e como manter cada um informado na medida certa.",
+      "ctaTitle": "📐 Plano de pé!",
+      "ctaText": "Escopo, cronograma e orçamento definidos. Vamos para quem vai usar, aprovar e sentir o efeito do projeto.",
+      "nextButtonText": "Ir para Módulo 2: Stakeholders e Comunicação"
+    },
+    {
+      "id": 2,
+      "icon": "globe",
+      "title": "Stakeholders e Comunicação",
+      "shortDescription": "Quem é afetado, quem decide e como todos ficam sabendo",
+      "introductionText": "Stakeholder, ou parte interessada, é qualquer pessoa ou grupo que afeta o projeto ou é afetado por ele. Em um projeto pequeno a lista parece óbvia, até o dia em que alguém esquecido aparece com uma exigência na véspera da entrega. Neste módulo você mapeia os stakeholders do cardápio digital, define papéis para que nenhuma entrega fique sem dono e monta um plano de comunicação enxuto o bastante para ser seguido.",
+      "sections": [
+        {
+          "title": "🤝 Pessoas no centro do projeto",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Identificar e classificar stakeholders",
+              "code": "Poder × Interesse",
+              "guidance": "Liste todos os afetados pelo cardápio digital: a dona da lanchonete, os atendentes, o entregador, os clientes, a equipe de desenvolvimento, quem fornece as fotos. Posicione cada um em uma matriz de poder e interesse: alto poder e alto interesse, gerenciar de perto; alto poder e baixo interesse, manter satisfeito; baixo poder e alto interesse, manter informado; baixo nos dois, monitorar.",
+              "tips": [
+                "Os atendentes têm pouco poder formal, mas são eles que vão receber os pedidos. Ignorar quem usa o resultado no dia a dia é a forma mais rápida de entregar algo que ninguém adota."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Papéis claros com a matriz RACI",
+              "code": "Responsável · Aprovador · Consultado · Informado",
+              "guidance": "Para cada entrega da EAP, marque quem executa (R), quem aprova e responde pelo resultado (A), quem precisa ser ouvido antes (C) e quem só precisa saber depois (I). Cada linha deve ter exatamente um A. No layout, por exemplo: designer é R, dona da lanchonete é A, atendentes são C, entregador é I.",
+              "tips": [
+                "Linha com dois aprovadores é conflito esperando para acontecer. Linha sem nenhum é entrega que ninguém vai aceitar."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Plano de comunicação",
+              "guidance": "Monte uma tabela com quatro colunas: quem recebe, que informação, por qual canal e com que frequência. A patrocinadora recebe um status semanal de cinco linhas; a equipe faz uma conversa rápida diária; os atendentes participam de uma demonstração na semana 4 e do treinamento antes da publicação.",
+              "tips": [
+                "Comunicação demais também é falha: relatório que ninguém lê dá a impressão de que todos foram avisados quando ninguém foi."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Relatório de status honesto",
+              "code": "Verde · Amarelo · Vermelho",
+              "guidance": "Escreva o primeiro status do projeto: situação geral em cor, o que foi entregue na semana, o que vem na próxima, riscos e impedimentos e decisões pedidas ao patrocinador. Amarelo significa que há risco ao prazo, custo ou escopo e que existe um plano; vermelho significa que é preciso uma decisão de quem está acima.",
+              "tips": [
+                "Status que fica verde até a véspera e vira vermelho de uma vez é o pior cenário. Amarelo cedo é sinal de projeto bem acompanhado, não de fracasso."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que pessoas decidem o resultado",
+      "highlights": [
+        {
+          "icon": "sitemap",
+          "title": "Ninguém esquecido",
+          "text": "O mapa de stakeholders traz para o começo do projeto as pessoas que, de outro modo, só apareceriam com objeções no final."
+        },
+        {
+          "icon": "list",
+          "title": "Uma entrega, um dono",
+          "text": "A RACI elimina a frase eu achei que era com você. Cada entrega tem quem faz e quem aprova, por escrito."
+        },
+        {
+          "icon": "bolt",
+          "title": "Problema cedo é problema barato",
+          "text": "Um status honesto e frequente dá ao patrocinador tempo de decidir enquanto ainda existem opções."
+        }
+      ],
+      "closingText": "Você sabe quem importa no projeto e como cada pessoa acompanha o andamento. A última peça é lidar com o que pode dar errado, entregar com aceite formal e fechar o ciclo com aprendizado. É o que vem no último módulo.",
+      "ctaTitle": "🤝 Pessoas mapeadas!",
+      "ctaText": "Stakeholders, papéis e comunicação definidos. Agora vamos aos riscos, à entrega e à retrospectiva.",
+      "nextButtonText": "Ir para Módulo 3: Riscos, Entrega e Retrospectiva"
+    },
+    {
+      "id": 3,
+      "icon": "shield",
+      "title": "Riscos, Entrega e Retrospectiva",
+      "shortDescription": "Registro de riscos, acompanhamento, aceite e lições aprendidas",
+      "introductionText": "Risco é um evento incerto que, se acontecer, afeta o projeto — para o mal ou, às vezes, para o bem. Projeto sem risco registrado não é projeto sem risco: é projeto em que os riscos ainda não foram percebidos. Neste módulo você monta o registro de riscos do cardápio digital, acompanha o planejado contra o realizado, conduz a entrega com aceite formal e termina com uma retrospectiva que gera ações concretas para o próximo projeto.",
+      "sections": [
+        {
+          "title": "🛡️ Do imprevisto ao aprendizado",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Identificar riscos com causa, evento e efeito",
+              "code": "Por causa de… pode acontecer… o que resultaria em…",
+              "guidance": "Escreva cada risco em uma frase de três partes. Exemplo: por causa da agenda cheia da lanchonete no fim do ano, as fotos dos produtos podem atrasar, o que atrasaria o catálogo em uma semana. Liste pelo menos seis riscos do projeto, incluindo técnicos (hospedagem, integração com o celular), de pessoas (disponibilidade da patrocinadora) e de adoção (atendentes não usarem o painel).",
+              "tips": [
+                "Falta tempo não é um risco, é uma reclamação. A frase com causa e efeito obriga a chegar a algo sobre o que dá para agir."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Priorizar e responder",
+              "code": "Evitar · Mitigar · Transferir · Aceitar",
+              "guidance": "Dê notas de 1 a 5 para probabilidade e impacto e multiplique para priorizar. Para os riscos mais altos, escolha uma resposta: evitar (mudar o plano para o risco não existir), mitigar (reduzir probabilidade ou impacto), transferir (passar para terceiro, como contratar hospedagem gerenciada) ou aceitar (com reserva de contingência). Cada risco ganha um dono e uma data de revisão.",
+              "tips": [
+                "Risco sem dono é só uma lista de preocupações. O dono não precisa resolver sozinho, mas precisa acompanhar e avisar."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Acompanhar o planejado contra o realizado",
+              "guidance": "Toda semana, compare as entregas previstas com as concluídas e o custo previsto com o gasto. Na semana 3, o projeto prático tem o catálogo pronto mas o carrinho atrasado dois dias, e gastou 52% do orçamento com 45% do trabalho entregue. Registre a diferença, a causa e a ação no status semanal — e atualize o registro de riscos.",
+              "tips": [
+                "Porcentagem de conclusão chutada mente. Conte só o que está pronto segundo o critério de aceite: entrega 90% pronta é entrega não pronta."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Entregar com aceite e encerrar",
+              "guidance": "Verifique cada critério de aceite escrito no Módulo 1 junto com a patrocinadora e registre o aceite formal. Depois feche o projeto: treine os atendentes, passe acessos e documentação para quem vai cuidar da operação, encerre contratos e registre o custo e o prazo finais em comparação com o planejado.",
+              "tips": [
+                "Encerramento sem passagem para a operação deixa o projeto entregue e o problema aberto: na primeira dúvida, alguém liga para quem já foi embora."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Retrospectiva e lições aprendidas",
+              "code": "Gostei · Aprendi · Faltou · Detestei",
+              "guidance": "Conduza uma retrospectiva no formato 4Ls com todas as pessoas do projeto: o que gostaram, o que aprenderam, o que faltou e o que detestaram. Comece relembrando os marcos para refrescar a memória, agrupe os pontos parecidos e termine com no máximo três ações, cada uma com dono. Registre no documento de lições aprendidas do projeto.",
+              "tips": [
+                "Retrospectiva que termina sem ação com dono vira desabafo. E a regra é falar de processos, não de culpados: o objetivo é o próximo projeto sair melhor."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que fechar o ciclo",
+      "highlights": [
+        {
+          "icon": "shield",
+          "title": "Incerteza com nome",
+          "text": "Um registro de riscos curto e revisado toda semana transforma surpresas em decisões tomadas com antecedência."
+        },
+        {
+          "icon": "folder",
+          "title": "Entrega que fica",
+          "text": "Aceite formal e passagem para a operação garantem que o resultado continue funcionando depois que o projeto acaba."
+        },
+        {
+          "icon": "sync",
+          "title": "Melhoria contínua",
+          "text": "A retrospectiva é o que faz o segundo projeto ser melhor que o primeiro. Sem ela, a equipe repete os mesmos erros com nomes diferentes."
+        }
+      ],
+      "closingText": "Você levou um projeto do termo de abertura à retrospectiva: objetivo, escopo, cronograma, orçamento, stakeholders, comunicação, riscos, entrega e lições aprendidas. Esse é o esqueleto de qualquer projeto, pequeno ou grande. O próximo passo da trilha é Scrum e Kanban: Agilidade na Gestão de Projetos Tech, que mostra como trabalhar em ciclos curtos quando a incerteza é alta.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você tem o pacote completo de um projeto, do escopo à entrega. Siga para Scrum e Kanban para aprofundar a abordagem adaptativa.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Qual das atividades abaixo é um projeto, e não operação?",
+      "explanation": "Projeto é um esforço temporário para criar um resultado único: lançar um cardápio digital que ainda não existe tem começo, fim e entrega própria. Atualizar preços, responder chamados e fazer backup são trabalhos contínuos e repetitivos — operação, mesmo que importantes.",
+      "options": [
+        {
+          "text": "Criar o cardápio digital de uma lanchonete em seis semanas",
+          "isCorrect": true
+        },
+        {
+          "text": "Atualizar os preços do cardápio toda segunda-feira",
+          "isCorrect": false
+        },
+        {
+          "text": "Responder aos chamados de suporte dos clientes",
+          "isCorrect": false
+        },
+        {
+          "text": "Fazer o backup diário do banco de dados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Um projeto tem muita incerteza sobre o que o cliente realmente quer. Qual abordagem tende a funcionar melhor?",
+      "explanation": "Quando os requisitos são incertos, a abordagem adaptativa entrega em incrementos curtos e ajusta o escopo a cada ciclo com base no retorno do cliente. A preditiva funciona melhor com requisitos estáveis. Não existe abordagem obrigatória para software, e adiar o projeto não resolve a incerteza.",
+      "options": [
+        {
+          "text": "Adaptativa, entregando em incrementos curtos e ajustando o escopo",
+          "isCorrect": true
+        },
+        {
+          "text": "Preditiva, fixando todo o escopo antes de começar",
+          "isCorrect": false
+        },
+        {
+          "text": "Qualquer uma, porque software sempre exige a mesma abordagem",
+          "isCorrect": false
+        },
+        {
+          "text": "Nenhuma: o projeto deve esperar até os requisitos ficarem claros",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Qual destes é um critério de sucesso adequado para o termo de abertura?",
+      "explanation": "Critério de sucesso precisa ser mensurável para que, no fim, dê para dizer se o projeto cumpriu o objetivo. Reduzir pedidos com erro de 20 para 10 por semana pode ser verificado. Melhorar a experiência, ter um site bonito ou deixar a dona satisfeita são desejos legítimos, mas não podem ser medidos como estão escritos.",
+      "options": [
+        {
+          "text": "Reduzir de 20 para 10 os pedidos com erro por semana no primeiro mês",
+          "isCorrect": true
+        },
+        {
+          "text": "Melhorar a experiência dos clientes",
+          "isCorrect": false
+        },
+        {
+          "text": "Ter um site moderno e bonito",
+          "isCorrect": false
+        },
+        {
+          "text": "Deixar a dona da lanchonete satisfeita",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Por que a declaração de escopo deve listar também o que está fora do projeto?",
+      "explanation": "Registrar o que fica de fora deixa a fronteira explícita: quando surgir um pedido que já está na lista, a conversa é curta e não vira disputa. Isso não proíbe mudanças — elas continuam possíveis pelo controle de mudanças — e não tem relação com reduzir o orçamento ou cumprir formalidade.",
+      "options": [
+        {
+          "text": "Para deixar a fronteira explícita e evitar discussões sobre pedidos já excluídos",
+          "isCorrect": true
+        },
+        {
+          "text": "Para proibir qualquer mudança durante o projeto",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque isso reduz automaticamente o orçamento",
+          "isCorrect": false
+        },
+        {
+          "text": "Apenas para cumprir uma exigência formal do PMBOK",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Uma tarefa tem estimativa otimista de 2 dias, mais provável de 4 e pessimista de 12. Qual é a estimativa pela média ponderada de três pontos?",
+      "explanation": "A fórmula é (otimista + 4 × mais provável + pessimista) ÷ 6. Aqui: (2 + 16 + 12) ÷ 6 = 30 ÷ 6 = 5 dias. A média simples daria 6, e usar só o mais provável ignoraria o risco de a tarefa se complicar.",
+      "options": [
+        {
+          "text": "5 dias",
+          "isCorrect": true
+        },
+        {
+          "text": "4 dias",
+          "isCorrect": false
+        },
+        {
+          "text": "6 dias",
+          "isCorrect": false
+        },
+        {
+          "text": "12 dias",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "O que caracteriza o scope creep?",
+      "explanation": "Scope creep é o crescimento do escopo durante o projeto sem que prazo, custo e recursos sejam revistos — trabalho que entra sem decisão. Uma mudança aprovada pelo patrocinador com impacto avaliado é controle de mudanças funcionando. Reduzir escopo ou atrasar por doença são outros problemas.",
+      "options": [
+        {
+          "text": "O escopo cresce durante o projeto sem que prazo e custo sejam revistos",
+          "isCorrect": true
+        },
+        {
+          "text": "Uma mudança aprovada pelo patrocinador com novo prazo",
+          "isCorrect": false
+        },
+        {
+          "text": "A equipe decide entregar menos do que o combinado",
+          "isCorrect": false
+        },
+        {
+          "text": "O projeto atrasa porque alguém da equipe ficou doente",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Na matriz de poder e interesse, como tratar um stakeholder com alto poder e baixo interesse?",
+      "explanation": "Quem tem alto poder mas pouco interesse deve ser mantido satisfeito: recebe o essencial sem ser sobrecarregado, porque pode interferir no projeto se for ignorado. Gerenciar de perto é para alto poder e alto interesse; manter informado é para baixo poder e alto interesse; monitorar é para baixo nos dois.",
+      "options": [
+        {
+          "text": "Manter satisfeito",
+          "isCorrect": true
+        },
+        {
+          "text": "Gerenciar de perto",
+          "isCorrect": false
+        },
+        {
+          "text": "Manter informado com todos os detalhes",
+          "isCorrect": false
+        },
+        {
+          "text": "Apenas monitorar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Em uma matriz RACI bem montada, quantos aprovadores (A) cada entrega deve ter?",
+      "explanation": "Cada entrega deve ter exatamente um A, a pessoa que aprova e responde pelo resultado. Dois aprovadores geram conflito sobre quem decide; nenhum aprovador deixa a entrega sem quem a aceite. Responsáveis pela execução (R) podem ser vários.",
+      "options": [
+        {
+          "text": "Exatamente um",
+          "isCorrect": true
+        },
+        {
+          "text": "Pelo menos dois, para garantir revisão",
+          "isCorrect": false
+        },
+        {
+          "text": "Um para cada pessoa que executa",
+          "isCorrect": false
+        },
+        {
+          "text": "Nenhum: a aprovação é sempre do gerente do projeto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "O projeto tem risco de atrasar uma semana, mas a equipe já tem um plano para recuperar. Qual cor o status deve mostrar?",
+      "explanation": "Amarelo indica que há risco ao prazo, custo ou escopo e que existe um plano para tratá-lo. Manter verde esconde a informação do patrocinador; vermelho é para quando é preciso uma decisão de quem está acima. Deixar de enviar o status é a pior opção.",
+      "options": [
+        {
+          "text": "Amarelo, com o risco e o plano descritos",
+          "isCorrect": true
+        },
+        {
+          "text": "Verde, porque o atraso ainda não aconteceu",
+          "isCorrect": false
+        },
+        {
+          "text": "Vermelho, porque qualquer risco é grave",
+          "isCorrect": false
+        },
+        {
+          "text": "Nenhuma: melhor não enviar status até resolver",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "A equipe decide contratar hospedagem gerenciada para que o fornecedor cuide de quedas do servidor. Que resposta ao risco é essa?",
+      "explanation": "Passar a responsabilidade pelo impacto do risco a um terceiro, como um fornecedor ou seguro, é transferir. Evitar seria mudar o plano para o risco deixar de existir; mitigar seria reduzir probabilidade ou impacto pelo próprio esforço; aceitar seria conviver com o risco, eventualmente com reserva.",
+      "options": [
+        {
+          "text": "Transferir",
+          "isCorrect": true
+        },
+        {
+          "text": "Evitar",
+          "isCorrect": false
+        },
+        {
+          "text": "Aceitar",
+          "isCorrect": false
+        },
+        {
+          "text": "Ignorar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Uma entrega está 90% pronta segundo a desenvolvedora, mas ainda não passou nos critérios de aceite. Como ela entra no acompanhamento?",
+      "explanation": "No acompanhamento conta só o que está pronto segundo o critério de aceite. Porcentagens estimadas de conclusão costumam ser otimistas e escondem atrasos — os últimos 10% frequentemente levam mais tempo do que se imagina. A entrega fica como não concluída até passar no aceite.",
+      "options": [
+        {
+          "text": "Como não concluída, até passar nos critérios de aceite",
+          "isCorrect": true
+        },
+        {
+          "text": "Como 90% concluída",
+          "isCorrect": false
+        },
+        {
+          "text": "Como concluída, porque falta pouco",
+          "isCorrect": false
+        },
+        {
+          "text": "Fora do acompanhamento até a próxima semana",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "O que torna uma retrospectiva útil para o próximo projeto?",
+      "explanation": "Uma retrospectiva útil termina com poucas ações concretas, cada uma com dono, e foca em processos, não em culpados. Apontar responsáveis por erros inibe a franqueza; listar tudo sem priorizar não gera mudança; e fazer só se o projeto deu errado desperdiça o aprendizado dos projetos que deram certo.",
+      "options": [
+        {
+          "text": "Terminar com poucas ações concretas, cada uma com dono",
+          "isCorrect": true
+        },
+        {
+          "text": "Identificar quem foi o culpado por cada problema",
+          "isCorrect": false
+        },
+        {
+          "text": "Registrar todos os comentários sem priorizar nenhum",
+          "isCorrect": false
+        },
+        {
+          "text": "Ser feita apenas quando o projeto dá errado",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "O pacote completo de gestão de um projeto pequeno e fictício — o cardápio digital da Lanchonete Bom Bocado — do início ao fim: termo de abertura, declaração de escopo, EAP, cronograma com caminho crítico, orçamento com reserva, matriz de stakeholders, RACI, plano de comunicação, status semanal, registro de riscos, aceite da entrega e retrospectiva com lições aprendidas.",
+    "highlights": [
+      "Termo de abertura e declaração de escopo com o que fica de fora",
+      "EAP, cronograma e orçamento com reserva de contingência",
+      "Mapa de stakeholders, RACI, plano de comunicação e registro de riscos",
+      "Aceite formal, encerramento e retrospectiva 4Ls"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "Segundo o relatório Talent Gap do PMI, a economia global precisa de 25 milhões de novos profissionais de projetos até 2030, o que significa cerca de 2,3 milhões de pessoas entrando por ano em funções orientadas a projetos só para acompanhar a demanda.",
+      "Essa demanda não é só por gerentes de projeto com cargo e certificado. Desenvolvedores, analistas e designers que sabem escrever um escopo, estimar com critério, avisar cedo sobre um risco e conduzir uma retrospectiva são os que ganham autonomia mais rápido — porque deixam de depender de alguém para organizar o próprio trabalho."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Projetos para clientes",
+        "description": "Sites, sistemas e integrações com prazo, orçamento e alguém que precisa aprovar a entrega."
+      },
+      {
+        "label": "Iniciativas internas",
+        "description": "Migrações, novas ferramentas e melhorias que competem com o trabalho do dia a dia."
+      },
+      {
+        "label": "Trabalho autônomo",
+        "description": "Quem trabalha por conta própria precisa ser, ao mesmo tempo, quem executa e quem gerencia."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem está começando em tecnologia",
+        "description": "Quer entender como o trabalho é organizado além do código."
+      },
+      {
+        "label": "Quem já executa tarefas em projetos",
+        "description": "Quer passar a planejar, estimar e comunicar o próprio trabalho."
+      },
+      {
+        "label": "Quem vai seguir a trilha de projetos",
+        "description": "Precisa da base antes de Scrum e Kanban, liderança técnica e Git workflow."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Os fundamentos de projeto aparecem em qualquer organização que entrega algo novo com prazo e recursos limitados — de agências e consultorias a times internos de produto, órgãos públicos e profissionais autônomos. O vocabulário de escopo, stakeholders, riscos e lições aprendidas é comum às abordagens preditiva, adaptativa e híbrida, por isso a habilidade se transfere entre métodos, empresas e setores.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "PMI — The Standard for Project Management and A Guide to the Project Management Body of Knowledge (PMBOK Guide), 7ª edição: 12 princípios e 8 domínios de desempenho",
+      "url": "https://oreilly.com/library/view/a-guide-to/9781628256642"
+    },
+    {
+      "label": "PMI — Talent Gap: Ten-Year Employment Trends, Costs, and Global Implications",
+      "url": "https://www.pmi.org/learning/careers/talent-gap-2021"
+    },
+    {
+      "label": "Atlassian — 4 how-tos for dealing with scope creep",
+      "url": "https://www.atlassian.com/blog/development/4-how-tos-dealing-with-scope-creep"
+    },
+    {
+      "label": "Atlassian — modelo de retrospectiva 4Ls (Loved, Longed for, Loathed, Learned)",
+      "url": "https://www.atlassian.com/software/confluence/templates/4-ls-retrospective"
+    }
+  ]
 }

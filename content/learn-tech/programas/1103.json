@@ -1,0 +1,859 @@
+{
+  "id": 1103,
+  "image": "https://cdn.pixabay.com/photo/2015/09/05/22/33/office-925806_1280.jpg",
+  "category": "Marketing e CRM",
+  "categoryFilter": "marketing-crm",
+  "title": "Campanhas Promocionais no Varejo: Ofertas, Encartes por Praça, Segmentação e Relatório",
+  "lessons": "21 passos",
+  "duration": "12h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Intermediário",
+  "description": "O dia a dia de quem opera campanhas numa rede de lojas: planejar a semana de disparos, montar a oferta e o encarte de cada estado, escolher o público certo no WhatsApp e no e-mail, recuperar orçamentos parados e fechar tudo num relatório que leva a uma decisão. Todos os exemplos usam a Rede Construir+, uma rede fictícia de lojas de material de construção.",
+  "letslearn": [
+    "Organizar um roadmap semanal de campanhas por público, canal e ciclo, com esforço e atraso medidos",
+    "Montar oferta semanal, encarte mensal por estado e copy de lançamento de produto",
+    "Segmentar por público e praça e escrever réguas de WhatsApp de recuperação e reativação dentro das regras da Meta",
+    "Rastrear campanhas com UTM e entregar um relatório com leitura, leads e próximos passos"
+  ],
+  "curriculum": "Da planilha de ofertas ao relatório de campanha",
+  "about": "O programa vem depois de CRM na Prática e de E-mail HTML e Landing Pages. Lá você aprendeu a organizar a base e a construir as peças; aqui aprende a operar o calendário que usa essas peças toda semana. A sequência segue a rotina real de uma equipe de growth numa rede de franquias de varejo: primeiro o planejamento e a gestão em ciclos, depois a oferta e o encarte regionalizado, em seguida a segmentação e as réguas de mensagem, e por fim a medição e o relatório. Cada passo traz um artefato concreto (planilha, template, copy ou relatório) feito com dados fictícios da Rede Construir+.",
+  "materials": [
+    "Modelo de agenda semanal de envios por público e canal",
+    "Planilha de ciclos semanais com esforço, prazo e atraso",
+    "Planilha de oferta semanal e de encarte por estado",
+    "Banco de copies de recuperação de orçamento e de reativação de leads",
+    "Modelo de relatório de campanha com colunas de leads e métricas de leitura"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Roadmap Semanal de Campanhas",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Ofertas, Encartes por Praça e Copy",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Segmentação, WhatsApp e Réguas",
+      "lessonsCount": 6,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Medição e Relatório de Campanha",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Marketing e CRM",
+    "mainTitle": "Campanha de varejo é rotina: oferta certa, para a praça certa, no canal certo, medida toda semana.",
+    "introductionParagraphs": [
+      {
+        "title": "Uma rede de lojas fala com muitos públicos ao mesmo tempo",
+        "text": "Numa rede de franquias, a mesma equipe de CRM conversa com o **consumidor** que pediu orçamento, o **especificador** que indica produtos, o **franqueado** que precisa agir sobre os leads da loja e o **candidato a franquia** que parou no meio do funil. Cada público tem um número de envio, um tom e uma frequência. Sem planejamento, a semana vira uma fila de pedidos urgentes e os disparos se atropelam."
+      },
+      {
+        "title": "O preço muda de estado para estado",
+        "text": "Frete, tributação e concorrência local fazem com que a mesma oferta não sirva para todas as praças. Por isso o encarte mensal é produzido em versões por estado, e a segmentação por UF, cidade e CEP decide qual versão cada contato recebe. Errar a praça é anunciar um preço que a loja do cliente não pratica."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não ensina a configurar uma ferramenta específica de automação nem a comprar mídia paga. O foco é o trabalho que existe em qualquer ferramenta: planejar, montar a oferta, escrever a mensagem, escolher o público, testar, disparar, medir e decidir o que muda no ciclo seguinte."
+      }
+    ],
+    "courseAboutTitle": "O terceiro passo da trilha de Marketing e CRM",
+    "courseAboutDescription": "Depois de organizar a base de contatos (CRM na Prática) e de construir e-mails e landing pages (E-mail HTML e Landing Pages), falta a parte que dá ritmo a tudo isso: o calendário de campanhas. Este programa reproduz a rotina de growth numa rede de varejo com dezenas de lojas, onde a semana tem oferta de ocasião, encarte regional, réguas automáticas e campanhas com marcas parceiras rodando em paralelo.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Roadmap Semanal de Campanhas",
+        "items": [
+          {
+            "label": "Calendário sazonal",
+            "description": "As datas do ano que puxam o planejamento da semana."
+          },
+          {
+            "label": "Agenda de envios",
+            "description": "Uma linha por disparo, com público, canal, base e responsável."
+          },
+          {
+            "label": "Ciclos com esforço e atraso",
+            "description": "Gestão em ciclos semanais e um checklist de QA antes de cada envio."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Ofertas, Encartes por Praça e Copy",
+        "items": [
+          {
+            "label": "Oferta semanal",
+            "description": "SKU, preço de e por, desconto, limite e validade numa planilha só."
+          },
+          {
+            "label": "Encarte por estado",
+            "description": "Uma base, várias versões, e a página que entrega a versão certa."
+          },
+          {
+            "label": "Marca parceira e lançamento",
+            "description": "Campanha em conjunto com fornecedor e copy que traduz a ficha técnica."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Segmentação, WhatsApp e Réguas",
+        "items": [
+          {
+            "label": "Público e praça",
+            "description": "Cruzar tipo de contato com UF, cidade e CEP."
+          },
+          {
+            "label": "Regras dos templates",
+            "description": "Categoria de marketing, opt-out com botão e limites de entrega."
+          },
+          {
+            "label": "Recuperação e reativação",
+            "description": "Réguas para orçamento parado, carrinho abandonado e lead sem retorno."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Medição e Relatório de Campanha",
+        "items": [
+          {
+            "label": "UTM padronizada",
+            "description": "Nomes consistentes para saber de onde veio cada visita."
+          },
+          {
+            "label": "Leitura e leads",
+            "description": "Do enviado ao orçamento, e as colunas de um report de campanha."
+          },
+          {
+            "label": "Relatório que decide",
+            "description": "O que a liderança precisa ver e o que muda no ciclo seguinte."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para montar as campanhas da Rede Construir+. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "list",
+      "title": "Roadmap Semanal de Campanhas",
+      "shortDescription": "Calendário, agenda de envios, ciclos e QA",
+      "introductionText": "Uma equipe de CRM de varejo raramente faz uma campanha por vez. Na mesma semana convivem a oferta de ocasião, o encarte do mês, as réguas automáticas de orçamento e pós-venda, um comunicado para os franqueados e talvez uma ação com marca parceira. Somando os públicos, passa facilmente de uma dezena de disparos por dia. Este módulo monta a estrutura que impede esse volume de virar improviso: um calendário anual, uma agenda semanal de envios, um quadro com etiquetas claras, a gestão em ciclos e um checklist de qualidade.",
+      "sections": [
+        {
+          "title": "🗓️ Planejar antes de disparar",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Calendário sazonal antes do semanal",
+              "code": "fev: Festival de Acabamentos | set: Dia do Cliente | nov: Black Friday",
+              "guidance": "Comece pelo ano. Liste as datas que movem o varejo de construção e as datas próprias da rede (na Rede Construir+: Festival de Acabamentos em fevereiro, Dia do Cliente em setembro, Black Friday em novembro, além de aniversário de lojas e inaugurações). Para cada data, anote quando a oferta precisa estar negociada, quando a arte precisa estar aprovada e quando começa o aquecimento. Só depois a semana é planejada, encaixando a rotina em volta das sazonais.",
+              "tips": [
+                "Campanha sazonal depende de negociação com fornecedor: preço, verba e limite de estoque. Marque essa conversa no calendário semanas antes da data, não na semana da campanha."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Agenda semanal de envios",
+              "code": "data | hora | público | canal | número de envio | template | base | responsável | status",
+              "guidance": "Monte uma planilha com uma linha por disparo. Separe os públicos (consumidor, especificador, franqueado, expansão, pós-venda), porque cada um costuma ter seu próprio número de WhatsApp e sua própria lista de e-mail. Preencha o template usado, o arquivo de base, quem dispara e o status (planejado, em teste, enviado). Na Rede Construir+, terça e quinta concentram ofertas para consumidor, e segunda é o dia de comunicados para a rede.",
+              "tips": [
+                "Evite dois disparos promocionais para o mesmo público no mesmo dia. Além de cansar o contato, o WhatsApp pode limitar quantas mensagens de marketing uma pessoa recebe de empresas."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Etiquetas que organizam o quadro",
+              "code": "[W] automação | [P] programa | [C] canal | [Ú] público",
+              "guidance": "Num quadro Kanban com as colunas Backlog, Refinamento, Rotina, Campanhas e Produto, cada cartão recebe quatro etiquetas: onde o trabalho acontece (automação já rodando, dependência de fornecedor da ferramenta, melhoria de processo), qual programa atende (relacionamento com a rede, programa de especificadores, varejo, e-commerce), qual canal (WhatsApp, e-mail) e qual público (franqueado, especificador, consumidor). Com isso, um filtro mostra tudo o que está pendente para um público ou um canal.",
+              "tips": [
+                "Separe Rotina de Campanhas. A régua automática que roda todo dia não pode parar porque uma campanha pontual tomou a semana."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Ciclos semanais com esforço e atraso",
+              "code": "Ciclo 27: 30/06 – 04/07 | Esforço: 90 | Prazo: 30/06 | Finalizado: 18/07 | Atraso: 18",
+              "guidance": "Gerencie o trabalho em ciclos de uma semana. A planilha tem as colunas Projeto, Status, Ciclo, Previsão de conclusão, Responsável, Tarefa, Esforço, Prazo inicial, Data de finalização, Atraso e Observação. O esforço é uma estimativa em minutos ou pontos; o atraso é a diferença em dias entre a finalização e o prazo. Agrupe por projeto (geral, leads, e-commerce) e revise no fim de cada ciclo o que ficou para trás e por quê.",
+              "tips": [
+                "Atraso que se repete sempre na mesma etapa, como o QA ou a aprovação de arte, é gargalo de processo. A solução é reservar esforço para essa etapa no planejamento, e não cobrar pressa de quem faz."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Checklist de QA antes do disparo",
+              "code": "base ✓ variáveis ✓ links + UTM ✓ peso da imagem ✓ envio para a equipe ✓",
+              "guidance": "Antes de cada envio, dispare para uma base de testes com pessoas da equipe. Confira se as variáveis foram preenchidas (nome, loja, número do orçamento), se os links abrem e carregam a UTM correta, se a imagem tem peso aceitável e se o horário está certo. Registre o teste na agenda de envios. Só então o status muda para liberado.",
+              "tips": [
+                "Os erros mais comuns são pequenos: variável vazia que deixa \"Olá ,\" no início da mensagem, espaço faltando entre o nome da loja e a cidade, link de uma campanha antiga copiado por engano."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que o planejamento vem primeiro",
+      "highlights": [
+        {
+          "icon": "list",
+          "title": "Uma linha por disparo",
+          "text": "Quando todo envio está na agenda, fica visível o dia em que um público recebe três mensagens e o dia em que ninguém recebe nada."
+        },
+        {
+          "icon": "gauge",
+          "title": "Atraso medido, gargalo encontrado",
+          "text": "Esforço e atraso registrados por ciclo mostram onde o trabalho realmente trava, em vez de depender da impressão de quem está mais cansado."
+        },
+        {
+          "icon": "shield",
+          "title": "Erro pego no teste",
+          "text": "Mensagem enviada não volta. Dois minutos de teste com a equipe evitam pedir desculpas para milhares de contatos."
+        }
+      ],
+      "closingText": "Com o calendário, a agenda e os ciclos de pé, a equipe sabe o que sai em cada dia e quem é responsável. Falta o conteúdo que ocupa essa agenda: a oferta, o encarte e o texto que apresenta o produto.",
+      "ctaTitle": "🗓️ Semana planejada!",
+      "ctaText": "Seu roadmap já tem datas, públicos e responsáveis. Agora vamos montar as ofertas que vão preencher cada disparo.",
+      "nextButtonText": "Ir para Módulo 1: Ofertas, Encartes por Praça e Copy"
+    },
+    {
+      "id": 1,
+      "icon": "bolt",
+      "title": "Ofertas, Encartes por Praça e Copy",
+      "shortDescription": "Oferta semanal, encarte por estado, marca parceira e lançamento",
+      "introductionText": "Toda campanha promocional começa numa planilha de produtos. Dela saem a oferta de ocasião da semana, o encarte do mês (em uma versão por estado) e as peças das ações com marcas parceiras. Neste módulo você monta essa planilha, transforma em encarte regionalizado, cria a página que entrega a versão certa para cada praça e aprende a reescrever o texto técnico de um fornecedor para quem vai comprar.",
+      "sections": [
+        {
+          "title": "🏷️ Da planilha à peça",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "A planilha da oferta semanal",
+              "code": "SKU | produto | de | por | % off | limite | praça | validade",
+              "guidance": "A oferta de ocasião da Rede Construir+ (chamada \"Só Esta Semana\") tem poucos itens, preço forte e prazo curto. Monte a planilha com uma linha por produto: código, nome, preço de, preço por, desconto, limite de quantidade, estados em que vale e período. Exemplo fictício: Porcelanato 60x60 Areia Clara, de R$ 89,90 por R$ 59,90, 33% de desconto, limite de 1.200 m², válido de segunda a domingo. Calcule o desconto como 1 − (por ÷ de) e arredonde para baixo.",
+              "tips": [
+                "Anunciar um desconto maior do que o real, mesmo por arredondamento, é o tipo de erro que o cliente percebe na loja e que derruba a confiança na próxima oferta.",
+                "Mantenha uma versão da planilha por semana com a data no nome do arquivo. Quando a loja perguntar qual preço valia, a resposta está ali."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Encarte mensal por estado",
+              "code": "encarte-fev-MG.pdf | encarte-fev-SP.pdf | encarte-fev-BA.pdf ...",
+              "guidance": "O encarte do mês nasce de uma base única e sai em uma versão por estado em que a rede atua. A estrutura se repete: capa com o tema do mês, seções por categoria (pisos, metais, louças) e por ambiente (cozinha, banheiro, área externa), cada produto com código, preço de e por, desconto e limite, e o rodapé com \"imagens ilustrativas\" e o convite para visitar a loja mais próxima. O que muda entre as versões é o preço e, às vezes, o mix, porque frete, tributação e concorrência variam de praça para praça.",
+              "tips": [
+                "Defina um limite de tamanho para o PDF (por exemplo, 5 MB) e controle a resolução das imagens e o número de páginas. Encarte pesado demais não abre no celular de quem está na obra.",
+                "Confira cada versão contra a planilha da sua praça. O erro clássico é a versão de um estado sair com o preço de outro."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Página do encarte com versões regionais",
+              "code": "/encarte → formulário (nome, e-mail, WhatsApp, UF, cidade) → envio da versão da UF",
+              "guidance": "Publique uma landing page do encarte, como no programa de E-mail HTML e Landing Pages. O visitante informa nome, contato, estado e cidade e recebe por e-mail ou WhatsApp a versão do encarte da sua UF. Assim o encarte deixa de ser só uma peça e vira captação: cada download é um lead com praça conhecida, que entra na jornada de nutrição.",
+              "tips": [
+                "Quem baixou o encarte mas não tem orçamento aberto é um público pronto para ativação: já mostrou interesse e já informou onde mora."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Campanha com marca parceira",
+              "code": "briefing: marca | produtos | condição | período | peças | quem aprova | prazo de aprovação",
+              "guidance": "Nas ações com fornecedores, a marca parceira entra com condição especial ou verba, e a rede entra com a base de contatos e os canais. Escreva um briefing curto antes de produzir: quais produtos, qual condição, período, peças (e-mail, WhatsApp, encarte da marca) e quem aprova a arte do lado do parceiro. Exemplo fictício: \"Semana Metais Vértice\", com 15% em misturadores e torneiras, por dez dias, e-mail para consumidores e especificadores e um encarte só da marca.",
+              "tips": [
+                "Coloque o prazo de aprovação do parceiro no ciclo semanal. Arte aprovada um dia antes do disparo é a causa mais comum de campanha com marca sair atrasada."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Copy de lançamento de produto",
+              "code": "série → inspiração → onde usar → ficha técnica em linguagem simples",
+              "guidance": "O fornecedor envia o texto de lançamento com a ficha técnica: tipo de peça, estilo, acabamento, variação de tonalidade, formato e se é retificado. Reescreva em quatro blocos: o nome da série, a inspiração em uma frase, onde usar e o que a ficha técnica significa para quem vai comprar. Exemplo fictício: \"Série Brisa, da Cerâmica Aurora: revestimento 30x90 acetinado com relevo suave inspirado no mar. Ideal para banheiros e lavabos. Bordas retificadas permitem junta de 1 mm, e a variação leve de tom (V2) deixa a parede com aspecto natural.\"",
+              "tips": [
+                "Traduza o termo técnico em vez de apagá-lo. O especificador procura \"retificado\" e \"V2\"; o consumidor precisa entender o que isso muda na obra."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que a oferta precisa ser regional",
+      "highlights": [
+        {
+          "icon": "globe",
+          "title": "Preço que existe na loja",
+          "text": "A versão por estado garante que o cliente encontre na loja dele o preço que viu na mensagem. Encarte nacional com preço único erra para alguém."
+        },
+        {
+          "icon": "grid",
+          "title": "Uma base, muitas versões",
+          "text": "Planilha única alimentando todas as versões reduz o retrabalho e concentra a conferência num lugar só."
+        },
+        {
+          "icon": "search",
+          "title": "Encarte que capta",
+          "text": "Com página e formulário, cada download vira um lead com praça conhecida, e não apenas uma visualização perdida."
+        }
+      ],
+      "closingText": "A Rede Construir+ já tem oferta semanal, encarte por estado, campanha com marca parceira e copy de lançamento. O próximo passo é decidir quem recebe cada peça e por qual canal, respeitando as regras do WhatsApp.",
+      "ctaTitle": "🏷️ Ofertas prontas!",
+      "ctaText": "As peças estão montadas e regionalizadas. Agora vamos escolher o público e escrever as réguas que levam essas ofertas até ele.",
+      "nextButtonText": "Ir para Módulo 2: Segmentação, WhatsApp e Réguas"
+    },
+    {
+      "id": 2,
+      "icon": "globe",
+      "title": "Segmentação, WhatsApp e Réguas",
+      "shortDescription": "Público e praça, templates, opt-out, recuperação e reativação",
+      "introductionText": "Oferta boa para o público errado é ruído, e mensagem certa fora das regras do canal nem chega. Este módulo cruza os dois lados: a segmentação por tipo de contato e por praça, e as regras dos templates de WhatsApp definidas pela Meta. Depois disso, você escreve as réguas que fazem a maior parte do trabalho silencioso do CRM: recuperar orçamentos e carrinhos parados, reativar leads que sumiram e manter a própria rede de lojas informada.",
+      "sections": [
+        {
+          "title": "🎯 Quem recebe, por onde e com qual regra",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Segmentar por público e por praça",
+              "code": "público × UF × cidade × faixa de CEP",
+              "guidance": "Combine duas dimensões. O público diz o tom e o número de envio: consumidor, especificador, franqueado ou candidato a franquia. A praça diz qual oferta vale: a UF escolhe a versão do encarte, a cidade aponta a loja que vai atender e a faixa de CEP indica condições de entrega. Na Rede Construir+, um consumidor de Juiz de Fora (MG) recebe o encarte de MG, com o contato da loja da cidade.",
+              "tips": [
+                "Antes de anunciar entrega numa campanha de e-commerce, teste o frete em CEPs de amostra de cada região e registre numa planilha: produto, código, UF, região, cidade, CEP, transportadora e valor. Frete caro numa praça derruba a oferta dessa praça."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Template de marketing ou de utilidade",
+              "code": "categoria: MARKETING | UTILITY | AUTHENTICATION",
+              "guidance": "No WhatsApp Business, toda mensagem iniciada pela empresa usa um template aprovado, e cada template tem uma categoria. A Meta classifica como marketing qualquer conteúdo promocional, inclusive o lembrete de carrinho abandonado, mesmo quando o usuário pediu para ser lembrado. Utilidade é o que acompanha uma ação do cliente sem promover nada, como a confirmação do pedido ou o aviso de entrega. Template que mistura aviso de pedido com oferta é classificado como marketing.",
+              "tips": [
+                "Desde 9 de abril de 2025, um template enviado como utilidade que a Meta entenda ser de marketing é aprovado já como marketing. Escreva a categoria certa desde o início para não ter surpresa no custo e no alcance."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Opt-out com botão",
+              "code": "[Saiba mais] [Não tenho interesse]",
+              "guidance": "Substitua o antigo \"digite SAIR para não receber\" por um botão de resposta rápida. O clique em \"Não tenho interesse\" ou \"Cancelar notificações\" alimenta a lista de bloqueio daquele público automaticamente. Além disso, o próprio WhatsApp permite que a pessoa pare de receber ofertas de uma empresa; nesse caso a API não entrega a mensagem e devolve um status de falha.",
+              "tips": [
+                "Limpe a base antes de cada disparo: tire quem pediu para sair, quem tem telefone inválido e quem falhou nos últimos envios. Insistir com esses contatos só gera custo e piora a leitura."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Régua de recuperação de orçamento e carrinho",
+              "code": "D+1 → D+3 → D+7 | cliente especial ≠ demais | acima de R$ 8 mil → vendedor",
+              "guidance": "Orçamento aberto na loja e carrinho abandonado no site são o mesmo problema: alguém quase comprou. Monte a régua em dias depois do abandono. Para o cliente de maior potencial, a mensagem convida a falar com um especialista; para os demais, destaca a condição de um produto do próprio orçamento; acima de um valor de corte (na Rede Construir+, R$ 8 mil), o caso sai da régua e vai para um vendedor. Para a loja, uma mensagem diária lista os orçamentos que vão vencer em até dois dias.",
+              "tips": [
+                "Inclua um botão \"Já fiz minha compra\". Ele tira o cliente da régua na hora e evita a mensagem mais irritante de todas: a cobrança de quem já pagou."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Reativação de leads parados",
+              "code": "msg 1 reaquecimento | msg 2 provocativa | msg 3 autoridade | msg 4 inspiradora",
+              "guidance": "Na expansão da rede, leads de candidatos a franquia param por falta de contato ou falta de retorno. Exporte a base com identificador do lead, status, data de criação e celular, gere uma chave única por contato e dispare uma sequência de quatro tentativas, cada uma com um argumento diferente: lembrar o interesse anterior, provocar com o crescimento do setor, mostrar a solidez da rede, inspirar com a decisão de empreender. Todas terminam com os botões \"Saiba mais\" e \"Não tenho interesse\", e cada clique grava um status no CRM (tem interesse, não quer contato).",
+              "tips": [
+                "Copy de expansão é promessa de negócio. Só use número de lojas abertas, benefício ou condição de entrada que o time comercial tenha confirmado por escrito."
+              ]
+            },
+            {
+              "number": 6,
+              "title": "Comunicação com a própria rede",
+              "code": "novos leads da loja | orçamentos a vencer | convite para encontro regional",
+              "guidance": "O franqueado também é público. Use um canal próprio para a rede (na Rede Construir+, o \"Assistente da Rede\") com três tipos de mensagem: avisos operacionais para a loja (novos leads aguardando atendimento, orçamentos a vencer), conteúdo estratégico para o franqueado (margem, comitês) e convites. Para um encontro regional, liste as lojas da regional, escreva uma copy para a imagem (data, cidade, horário) e outra para a mensagem, e peça confirmação por formulário.",
+              "tips": [
+                "Separe o que é para o franqueado do que é para a equipe da loja, e deixe cada um escolher onde quer receber. Aviso estratégico no WhatsApp do balcão se perde."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que segmentação e regra andam juntas",
+      "highlights": [
+        {
+          "icon": "sitemap",
+          "title": "Público decide o tom",
+          "text": "O mesmo encarte vira convite para o consumidor, argumento técnico para o especificador e meta de venda para o franqueado."
+        },
+        {
+          "icon": "shield",
+          "title": "Regra do canal é parte da copy",
+          "text": "Categoria do template, botão de saída e limite de entrega definem se a mensagem chega. Escrever sem conhecer a regra é escrever para ninguém."
+        },
+        {
+          "icon": "sync",
+          "title": "Réguas trabalham todo dia",
+          "text": "Recuperação e reativação rodam em segundo plano e devolvem vendas que nenhuma campanha pontual alcançaria."
+        }
+      ],
+      "closingText": "Agora cada peça tem destino: público, praça, canal e régua. Falta saber o que funcionou. No último módulo você rastreia as visitas, mede a leitura e transforma os números num relatório que muda o próximo ciclo.",
+      "ctaTitle": "🎯 Públicos e réguas no ar!",
+      "ctaText": "Suas mensagens chegam à pessoa certa e respeitam as regras do canal. Agora vamos medir o resultado.",
+      "nextButtonText": "Ir para Módulo 3: Medição e Relatório de Campanha"
+    },
+    {
+      "id": 3,
+      "icon": "gauge",
+      "title": "Medição e Relatório de Campanha",
+      "shortDescription": "UTM, leitura, leads, regras de ativação e relatório",
+      "introductionText": "Campanha sem medição é opinião. Este módulo fecha o ciclo: você padroniza as UTMs para saber de onde vem cada visita, lê as métricas de disparo do enviado até o orçamento, monta o relatório de leads de uma campanha com landing page e organiza o controle de uma ativação com brindes. Por fim, transforma tudo num relatório curto para a liderança, que termina com a decisão do próximo ciclo.",
+      "sections": [
+        {
+          "title": "📊 Do disparo à decisão",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "UTM padronizada",
+              "code": "?utm_source=whatsapp&utm_medium=crm&utm_campaign=festival-acabamentos-fev&utm_content=botao-encarte",
+              "guidance": "Todo link de campanha leva parâmetros de rastreamento. O Google orienta usar sempre utm_source, utm_medium e utm_campaign, e utm_content para diferenciar dois links da mesma peça. Os valores diferenciam maiúsculas de minúsculas, então Whatsapp e whatsapp viram duas origens no relatório. Crie uma tabela de nomes permitidos (origens, meios e o padrão de nome de campanha) e use só minúsculas e hífen.",
+              "tips": [
+                "Parâmetro faltando aparece como \"(not set)\" no relatório. Se metade das visitas da campanha está assim, o problema está nos links, não no público."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Métricas de disparo",
+              "code": "enviados → entregues → lidos → cliques → orçamentos",
+              "guidance": "Registre cada disparo com enviados, entregues, lidos e cliques, e calcule a taxa de leitura por público. Distinga soma de contagem: quantas pessoas receberam e quantas mensagens foram enviadas não são o mesmo número quando uma régua manda várias mensagens para a mesma pessoa. Compare mês a mês e com o mesmo mês do ano anterior, sempre separando por público.",
+              "tips": [
+                "Leitura caindo num público é sinal de cansaço. Segundo a Meta, o WhatsApp pode entregar menos mensagens de marketing para quem lê pouco, então insistir piora o próprio alcance."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Relatório de leads da campanha",
+              "code": "nome | canal de entrada | UF | cidade da loja | CEP | aceite de privacidade | aceite de marketing",
+              "guidance": "Na campanha fictícia \"Dia do Torcedor\", feita com um clube de futebol parceiro (o Serrano FC), os leads chegam por uma landing page. Exporte do CRM um relatório com uma linha por lead e as colunas acima, mais o período no nome do arquivo. Remova duplicados, distribua os leads pela cidade da loja e conte quantos viraram orçamento. A versão em colunas, com totais por estado e por loja, é a que vai para o relatório final.",
+              "tips": [
+                "Lead sem aceite de marketing registrado não entra em régua promocional. Deixe essa coluna sempre visível no relatório para que ninguém dispare para quem não autorizou."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Controle de brindes e ativações",
+              "code": "loja | pedido | justificativa | regra atendida? | estoque | envio | rastreio",
+              "guidance": "Ativações com brinde, como camisas autografadas do clube parceiro para premiar lojas e clientes, precisam de regra escrita antes de começar. Na Rede Construir+, a loja solicita por chamado, informa a justificativa (uma venda acima de R$ 15 mil ou um evento de relacionamento) e recebe uma resposta padrão: pedido recebido, pedido aprovado com data de envio, ou estoque esgotado com alternativa. Uma planilha de controle registra estoque por tamanho e cada envio com rastreio.",
+              "tips": [
+                "Tenha as respostas padrão prontas, inclusive a de estoque esgotado. Regra e resposta definidas antes evitam negociação caso a caso e tratamento diferente entre lojas."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Relatório para a liderança e o próximo ciclo",
+              "code": "resultado | comparação | o que aprendemos | o que muda no próximo ciclo",
+              "guidance": "Feche cada campanha (e, quinzenalmente, a rotina) num relatório de uma página: indicadores combinados com a liderança (orçamentos gerados, orçamentos atendidos com apoio do CRM, conversões, taxa de leitura), comparação com o período anterior, o que funcionou e o que não funcionou, e a decisão para o próximo ciclo. Um painel com os mesmos números evita refazer a conta a cada reunião.",
+              "tips": [
+                "Termine o relatório com uma decisão, não com um gráfico. \"Na próxima semana, a oferta de pisos vai só para MG e SP, onde a leitura foi maior\" é o tipo de frase que faz o relatório valer a leitura."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que medir fecha o ciclo",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Origem clara",
+          "text": "Com UTM padronizada, a pergunta \"essa venda veio da campanha?\" passa a ter resposta no relatório, e não na memória de alguém."
+        },
+        {
+          "icon": "folder",
+          "title": "Lead com contexto",
+          "text": "Canal de entrada, praça e consentimento no mesmo relatório permitem distribuir o lead para a loja certa e com autorização para o contato."
+        },
+        {
+          "icon": "tools",
+          "title": "Relatório que muda a semana",
+          "text": "Quando o relatório termina numa decisão, o ciclo seguinte já começa melhor do que o anterior."
+        }
+      ],
+      "closingText": "Você percorreu a rotina completa de campanhas de uma rede de varejo: planejou a semana, montou ofertas e encartes regionalizados, escolheu públicos e réguas dentro das regras do WhatsApp e mediu o resultado até a decisão. É o conjunto de tarefas que uma equipe de CRM e growth executa toda semana, em qualquer ferramenta.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você agora planeja, executa e mede campanhas promocionais de varejo. O próximo passo natural é automatizar essas jornadas numa plataforma de marketing.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Por que o calendário sazonal deve ser montado antes da agenda semanal?",
+      "explanation": "As datas sazonais exigem negociação com fornecedor, aprovação de arte e aquecimento com semanas de antecedência. Planejando o ano primeiro, a semana encaixa a rotina em volta dessas datas. Não tem relação com regra de ferramenta, nem significa que a rotina deve parar nas sazonais.",
+      "options": [
+        {
+          "text": "Porque as sazonais dependem de negociação e aprovação feitas com semanas de antecedência",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque as ferramentas de disparo só aceitam campanhas cadastradas no início do ano",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque nas semanas de campanha sazonal as réguas automáticas devem ser desligadas",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque a agenda semanal só serve para comunicados internos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Na planilha de ciclos, uma tarefa tinha prazo inicial em 30/06 e foi finalizada em 18/07. O que a coluna Atraso registra?",
+      "explanation": "Atraso é a diferença em dias entre a data de finalização e o prazo inicial, aqui 18 dias. Esforço é outra coluna, que estima o trabalho. O atraso não é o número do ciclo nem uma nota de qualidade.",
+      "options": [
+        {
+          "text": "18 dias, a diferença entre a finalização e o prazo inicial",
+          "isCorrect": true
+        },
+        {
+          "text": "O esforço estimado da tarefa",
+          "isCorrect": false
+        },
+        {
+          "text": "O número do ciclo em que a tarefa foi aberta",
+          "isCorrect": false
+        },
+        {
+          "text": "Uma nota de qualidade dada no QA",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Por que separar as colunas Rotina e Campanhas no quadro de trabalho?",
+      "explanation": "A rotina (réguas automáticas de orçamento, pós-venda, novos leads) roda todo dia e não pode parar porque uma campanha pontual tomou a semana. Separar as colunas deixa visível o que é contínuo e o que é pontual. Não é questão de estética, de ferramenta ou de cobrança.",
+      "options": [
+        {
+          "text": "Para que as réguas contínuas não parem quando uma campanha pontual ocupa a equipe",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque campanhas só podem ser disparadas por e-mail",
+          "isCorrect": false
+        },
+        {
+          "text": "Para cobrar a rotina de outra equipe",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o Kanban exige no mínimo cinco colunas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Um produto sai de R$ 89,90 por R$ 59,90. Qual desconto deve ser anunciado?",
+      "explanation": "O desconto é 1 − (59,90 ÷ 89,90), aproximadamente 33,4%, que arredondado para baixo dá 33%. Anunciar 34% ou mais seria prometer um desconto maior que o real. R$ 30,00 é a diferença em reais, não o percentual.",
+      "options": [
+        {
+          "text": "33%",
+          "isCorrect": true
+        },
+        {
+          "text": "34%",
+          "isCorrect": false
+        },
+        {
+          "text": "50%",
+          "isCorrect": false
+        },
+        {
+          "text": "30%",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Por que o encarte mensal é produzido em uma versão por estado?",
+      "explanation": "Frete, tributação e concorrência variam entre praças, então preço e mix também variam. A versão por estado garante que o cliente encontre na loja dele o preço anunciado. O tamanho do arquivo é outro cuidado, e não existe exigência legal de encarte por estado citada no programa.",
+      "options": [
+        {
+          "text": "Porque preço e mix mudam com frete, tributação e concorrência de cada praça",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque um único PDF nacional ultrapassaria qualquer limite de tamanho",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque cada estado exige um layout visual diferente",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o WhatsApp bloqueia arquivos enviados para mais de um estado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Ao reescrever o texto de lançamento de um fornecedor, o que fazer com termos como \"retificado\" e \"V2\"?",
+      "explanation": "O especificador procura esses termos, e o consumidor precisa entender o que eles mudam na obra. Por isso o termo fica e ganha tradução: bordas precisas que permitem junta fina, variação leve de tom. Apagar perde o público técnico; copiar a ficha sem explicar perde o consumidor.",
+      "options": [
+        {
+          "text": "Manter o termo e explicar em linguagem simples o que ele muda na obra",
+          "isCorrect": true
+        },
+        {
+          "text": "Apagar, porque termo técnico afasta o cliente",
+          "isCorrect": false
+        },
+        {
+          "text": "Copiar a ficha técnica exatamente como veio do fornecedor",
+          "isCorrect": false
+        },
+        {
+          "text": "Substituir por adjetivos como \"premium\" e \"exclusivo\"",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Segundo as regras da Meta, em qual categoria se encaixa um lembrete de carrinho abandonado no WhatsApp?",
+      "explanation": "A Meta classifica o lembrete de carrinho abandonado como marketing (retargeting), mesmo quando o usuário pediu o lembrete. Utilidade é o que acompanha uma ação sem promover nada, como confirmação de pedido. Autenticação é para códigos de verificação.",
+      "options": [
+        {
+          "text": "Marketing",
+          "isCorrect": true
+        },
+        {
+          "text": "Utilidade, porque o cliente iniciou a compra",
+          "isCorrect": false
+        },
+        {
+          "text": "Autenticação",
+          "isCorrect": false
+        },
+        {
+          "text": "Depende do horário do envio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Qual é a vantagem de trocar o texto \"digite SAIR\" por um botão de \"Não tenho interesse\"?",
+      "explanation": "O clique no botão é registrado de forma estruturada e alimenta a lista de bloqueio do público automaticamente, sem depender de alguém ler as respostas. Isso não aumenta o desconto, não muda a categoria do template e não dispensa a limpeza da base antes do disparo.",
+      "options": [
+        {
+          "text": "O clique alimenta a lista de bloqueio automaticamente",
+          "isCorrect": true
+        },
+        {
+          "text": "Transforma o template de marketing em utilidade",
+          "isCorrect": false
+        },
+        {
+          "text": "Dispensa a limpeza da base antes do próximo disparo",
+          "isCorrect": false
+        },
+        {
+          "text": "Impede que o usuário bloqueie a empresa pelo próprio WhatsApp",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Na régua de recuperação de orçamento, para que serve o botão \"Já fiz minha compra\"?",
+      "explanation": "O botão tira o cliente da régua imediatamente, evitando cobrar quem já comprou. Ele não oferece desconto, não encaminha para vendedor (isso é a regra do valor de corte) e não muda a categoria do template.",
+      "options": [
+        {
+          "text": "Tirar o cliente da régua e evitar mensagens para quem já comprou",
+          "isCorrect": true
+        },
+        {
+          "text": "Liberar um cupom extra para o cliente",
+          "isCorrect": false
+        },
+        {
+          "text": "Encaminhar o orçamento para um vendedor",
+          "isCorrect": false
+        },
+        {
+          "text": "Converter a mensagem em template de utilidade",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Uma campanha usou utm_source=Whatsapp em metade dos links e utm_source=whatsapp na outra metade. O que acontece no relatório?",
+      "explanation": "Os valores de UTM diferenciam maiúsculas de minúsculas, então o relatório mostra duas origens diferentes e a campanha aparece dividida. Por isso o padrão recomendado é usar só minúsculas. Não há correção automática nem perda total dos dados.",
+      "options": [
+        {
+          "text": "Aparecem duas origens diferentes, porque os valores diferenciam maiúsculas de minúsculas",
+          "isCorrect": true
+        },
+        {
+          "text": "O Analytics unifica automaticamente as duas grafias",
+          "isCorrect": false
+        },
+        {
+          "text": "As visitas com maiúscula são descartadas",
+          "isCorrect": false
+        },
+        {
+          "text": "Nada muda, porque só utm_campaign é considerado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Ao medir disparos, qual é a diferença entre soma de pessoas e contagem de disparos?",
+      "explanation": "Uma régua pode mandar várias mensagens para a mesma pessoa. Contar disparos mede o volume de mensagens; somar pessoas mede o alcance. Confundir os dois infla o alcance ou distorce a taxa de leitura. Não é diferença de canal nem de período.",
+      "options": [
+        {
+          "text": "Uma mede quantas pessoas foram alcançadas, a outra quantas mensagens foram enviadas",
+          "isCorrect": true
+        },
+        {
+          "text": "Uma vale para WhatsApp e a outra para e-mail",
+          "isCorrect": false
+        },
+        {
+          "text": "Uma é mensal e a outra é anual",
+          "isCorrect": false
+        },
+        {
+          "text": "São dois nomes para o mesmo número",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Segundo a ABF, quanto o franchising brasileiro faturou em 2025?",
+      "explanation": "A Associação Brasileira de Franchising divulgou faturamento de R$ 301,7 bilhões em 2025, alta de 10,5% sobre 2024, com 202.444 unidades e 3.297 redes. É o tamanho do mercado em que campanhas de redes franqueadas acontecem.",
+      "options": [
+        {
+          "text": "R$ 301,7 bilhões",
+          "isCorrect": true
+        },
+        {
+          "text": "R$ 30,1 bilhões",
+          "isCorrect": false
+        },
+        {
+          "text": "R$ 1,2 trilhão",
+          "isCorrect": false
+        },
+        {
+          "text": "R$ 105 bilhões",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "O kit de campanhas de um mês da Rede Construir+: agenda semanal de envios e planilha de ciclos, oferta semanal e encarte por estado com página de captação, briefing de campanha com marca parceira, réguas de WhatsApp de recuperação e reativação dentro das regras da Meta, e um relatório de campanha com UTMs, leitura, leads e a decisão do próximo ciclo.",
+    "highlights": [
+      "Roadmap semanal com agenda de envios e ciclos medidos",
+      "Oferta semanal e encarte regionalizado por estado",
+      "Réguas de recuperação e reativação com opt-out por botão",
+      "Relatório de campanha que termina em decisão"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "O franchising brasileiro faturou R$ 301,7 bilhões em 2025, alta de 10,5% sobre 2024, com 202.444 unidades e 3.297 redes, segundo a ABF (balanço divulgado em abril de 2026). Cada uma dessas redes precisa coordenar ofertas e comunicação entre a marca e lojas espalhadas por praças diferentes.",
+      "O WhatsApp é o canal em que boa parte dessa conversa acontece: em pesquisa da Nodus apresentada pela Meta (janeiro de 2025, publicada pelo Meio & Mensagem em abril de 2025), 89% dos compradores online entrevistados usam o app para falar com comércios, 45% para ver catálogos e 40% compram por ele. E a regionalização pesa: 76% dos consumidores esperam que os preços reflitam o contexto local, segundo relatório da Deloitte citado pelo E-Commerce Brasil em junho de 2025.",
+      "Ao mesmo tempo, as regras do canal ficaram mais rígidas: desde abril de 2025 a Meta reclassifica como marketing os templates promocionais enviados como utilidade, e o WhatsApp pode limitar quantas mensagens de marketing cada pessoa recebe. Operar campanhas com público, praça e frequência sob controle deixou de ser refinamento e virou condição para a mensagem chegar."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Redes de franquias",
+        "description": "Marca que coordena ofertas, encartes e comunicação com dezenas de lojas em praças diferentes."
+      },
+      {
+        "label": "Varejo com loja física e e-commerce",
+        "description": "Recuperação de orçamento na loja e de carrinho no site com a mesma lógica de régua."
+      },
+      {
+        "label": "Indústria com rede de revenda",
+        "description": "Campanhas com marcas parceiras e lançamentos que precisam chegar ao balcão e ao especificador."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem opera CRM ou growth no varejo",
+        "description": "Já dispara mensagens e quer transformar a rotina em calendário, réguas e relatório."
+      },
+      {
+        "label": "Quem fez CRM na Prática e E-mail HTML",
+        "description": "Tem a base e as peças prontas e quer aprender a operar campanhas com elas."
+      },
+      {
+        "label": "Quem atende uma rede de lojas",
+        "description": "Trabalha na marca ou na agência e precisa falar com franqueados, lojas e consumidores ao mesmo tempo."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Calendário de ofertas, encarte regionalizado, réguas de WhatsApp e relatório de campanha fazem parte da rotina de redes de franquias, varejistas de material de construção, supermercados, farmácias e lojas de departamento. Num setor com mais de três mil redes franqueadas no país, segundo a ABF, a habilidade de coordenar campanhas entre marca e lojas se transfere entre segmentos e tamanhos de empresa.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Propmark — Franchising supera R$ 300 bi em 2025 e cresce 10,5% no Brasil, aponta ABF (abril de 2026)",
+      "url": "https://propmark.com.br/mercado/franchising-supera-r-300-bi-em-2025-e-cresce-10-5-no-brasil-aponta-abf/"
+    },
+    {
+      "label": "Meta for Developers — WhatsApp Business Platform: categorização de templates",
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/templates/template-categorization"
+    },
+    {
+      "label": "Meta for Developers — WhatsApp Business Platform: templates de marketing e limites por usuário",
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/templates/marketing-templates/"
+    },
+    {
+      "label": "Google Analytics Help — URL builders: coletar dados de campanha com URLs personalizados",
+      "url": "https://support.google.com/analytics/answer/10917952"
+    },
+    {
+      "label": "Meio & Mensagem — O impacto do WhatsApp na jornada de compra, segundo a Meta (abril de 2025)",
+      "url": "https://www.meioemensagem.com.br/midia/o-impacto-do-whatsapp-na-jornada-de-compra-segundo-a-meta"
+    },
+    {
+      "label": "E-Commerce Brasil — Regionalização de preços no e-commerce avança como estratégia para ampliar competitividade (junho de 2025)",
+      "url": "https://www.ecommercebrasil.com.br/noticias/regionalizacao-de-precos-no-e-commerce-avanca-como-estrategia-para-ampliar-competitividade"
+    }
+  ]
+}

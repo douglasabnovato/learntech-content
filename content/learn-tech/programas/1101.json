@@ -1,0 +1,877 @@
+{
+  "id": 1101,
+  "image": "https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557396_1280.jpg",
+  "category": "Marketing e CRM",
+  "categoryFilter": "marketing-crm",
+  "title": "CRM na Prática: Jornadas, Réguas de Relacionamento, Transacionais e LGPD",
+  "lessons": "22 passos",
+  "duration": "14h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Intermediário",
+  "description": "O trabalho de CRM em uma rede de franquias de varejo, do jeito que ele acontece: mapear as jornadas de cada unidade de negócio, construir réguas de relacionamento e reengajamento, desenhar as comunicações transacionais em e-mail e WhatsApp e sustentar tudo com plataformas organizadas, acessos controlados e LGPD aplicada.",
+  "letslearn": [
+    "Inventariar e mapear jornadas por unidade de negócio, com nomenclatura e cronograma de construção",
+    "Construir réguas de nutrição e reengajamento no Journey Builder, com divisões, esperas e conteúdo dinâmico",
+    "Desenhar a jornada transacional de pós-venda em e-mail e WhatsApp e escrever as 10 copies",
+    "Organizar BUs, contas de WhatsApp Business e acessos, e aplicar base legal, opt-out e lista de bloqueio"
+  ],
+  "curriculum": "Do mapa de jornadas à governança de CRM",
+  "about": "O programa reproduz o trabalho de um profissional de CRM em uma rede de franquias de material de construção, aqui representada pela fictícia Rede Construir+. A sequência é a de quem assume a área: primeiro descobrir e mapear o que existe, depois construir as réguas de relacionamento, em seguida a jornada transacional que acompanha cada pedido e, por fim, a estrutura de plataformas, acessos e privacidade que permite crescer para outras marcas. As ferramentas são o Salesforce Marketing Cloud (Journey Builder e Email Studio) e a WhatsApp Business Platform; todos os dados, nomes e números dos exercícios são fictícios.",
+  "materials": [
+    "Modelo de planilha-mestra de jornadas por unidade de negócio",
+    "Modelo de cronograma de construção de jornadas",
+    "Tabela de copies de reengajamento por motivo de perda",
+    "As 10 copies transacionais (e-mail e WhatsApp) da Rede Construir+",
+    "Checklist de LGPD para e-mail e WhatsApp"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Mapa de Jornadas por Unidade de Negócio",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Réguas de Relacionamento e Reengajamento",
+      "lessonsCount": 6,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Comunicações Transacionais em E-mail e WhatsApp",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Plataformas, Acessos e LGPD",
+      "lessonsCount": 6,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Marketing e CRM",
+    "mainTitle": "Do emaranhado de disparos à operação de CRM que sabe o que manda, para quem e com qual base legal.",
+    "introductionParagraphs": [
+      {
+        "title": "CRM é processo antes de ser ferramenta",
+        "text": "Uma plataforma como o **Salesforce Marketing Cloud** permite montar qualquer jornada, e é justamente por isso que contas de varejo acumulam dezenas delas sem dono, sem nome claro e sem regra de prioridade. O resultado aparece para o cliente: mensagens repetidas, horários ruins e descadastro. Este programa começa pelo método — inventário, mapa e cronograma — e só depois abre o Journey Builder."
+      },
+      {
+        "title": "Rede de franquias tem vários públicos",
+        "text": "Na Rede Construir+, o mesmo CRM fala com o cliente final da loja e do e-commerce, com o franqueado que precisa atender um lead em minutos, com o arquiteto que especifica produtos e com o candidato a abrir uma nova unidade. Cada público é uma unidade de negócio com réguas, canais e linguagem próprios, e o programa trata cada um separadamente."
+      },
+      {
+        "title": "E-mail e WhatsApp, dentro das regras",
+        "text": "O **WhatsApp** virou o canal da notícia rápida, e o e-mail, o do documento e do registro. Os dois têm regras: a Meta classifica templates em marketing, utilidade e autenticação, e a **LGPD** exige base legal, identificação e um jeito fácil de parar de receber. O programa trata essas regras como parte do desenho da jornada, não como revisão no fim."
+      }
+    ],
+    "courseAboutTitle": "O primeiro programa da trilha Marketing e CRM",
+    "courseAboutDescription": "Este programa abre a trilha com a visão de operação: como uma área de CRM organiza, constrói e governa suas comunicações. O programa seguinte da trilha aprofunda a peça que aparece em quase todo passo daqui: o e-mail HTML e as landing pages integradas ao CRM.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Mapa de Jornadas por Unidade de Negócio",
+        "items": [
+          {
+            "label": "Inventário por BU",
+            "description": "O que roda, o que parou e o que ninguém lembra por que existe."
+          },
+          {
+            "label": "Nomenclatura e planilha-mestra",
+            "description": "Uma linha por jornada, com público, gatilho, canal e status."
+          },
+          {
+            "label": "Cronograma de construção",
+            "description": "Discovery, construção, demanda ao CRM, teste e deploy."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Réguas de Relacionamento e Reengajamento",
+        "items": [
+          {
+            "label": "Nutrição no Journey Builder",
+            "description": "Entrada por data extension, esperas, divisões e meta."
+          },
+          {
+            "label": "Reengajamento por motivo de perda",
+            "description": "Uma mensagem para cada razão de o lead não ter avançado."
+          },
+          {
+            "label": "Alertas, campanhas e métricas",
+            "description": "WhatsApp para o franqueado, réguas de lançamento e janela de envio."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Comunicações Transacionais em E-mail e WhatsApp",
+        "items": [
+          {
+            "label": "Etapas e canais",
+            "description": "As cinco notícias que o cliente quer e o papel de e-mail e WhatsApp."
+          },
+          {
+            "label": "As 10 copies",
+            "description": "E-mail e WhatsApp para cada etapa, com variáveis e botão de rastreio."
+          },
+          {
+            "label": "Categoria e casos de borda",
+            "description": "Regras de template utilidade, entrega parcial, teste e ativação."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Plataformas, Acessos e LGPD",
+        "items": [
+          {
+            "label": "Modularização multimarca",
+            "description": "Uma BU e uma WABA por marca, domínio próprio e aquecimento."
+          },
+          {
+            "label": "Acessos e contas",
+            "description": "Inventário de WABAs e controle de usuários por papel."
+          },
+          {
+            "label": "LGPD na prática",
+            "description": "Base legal, opt-out, política de privacidade e lista de bloqueio."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para executar no exemplo da Rede Construir+ ou na sua própria operação. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "sitemap",
+      "title": "Mapa de Jornadas por Unidade de Negócio",
+      "shortDescription": "Inventário, nomenclatura, mapa por funil e cronograma",
+      "introductionText": "CRM em uma rede de franquias raramente começa do zero. Começa de uma conta com dezenas de jornadas criadas por pessoas diferentes, em momentos diferentes, para unidades de negócio diferentes. Este módulo ensina a primeira tarefa de quem assume a área: descobrir o que existe, dar nome às coisas e transformar o caos em um mapa de jornadas por unidade de negócio e por etapa do funil, com um cronograma realista para construir o que falta.",
+      "sections": [
+        {
+          "title": "🗺️ Do caos ao mapa de jornadas",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Inventariar o que já está rodando",
+              "code": "BU | Jornada | Versão | Data extension | Status | Entradas",
+              "guidance": "Antes de desenhar qualquer jornada nova, levante tudo o que existe na conta de Salesforce Marketing Cloud, unidade de negócio (BU) por unidade. Para cada jornada do Journey Builder registre nome, versão, data extension de entrada, status (rascunho, rodando, parada) e volume de entradas. Na Rede Construir+, o exercício revela o problema típico: dezenas de jornadas com nome de data (\"jornada 12 de março\"), testes esquecidos rodando e envios pontuais que ninguém sabe se ainda servem. Monte também um resumo por BU com total de jornadas e quantas estão de fato rodando.",
+              "tips": [
+                "Jornada parada com volume alto de entradas é histórico importante: não apague antes de anotar o que ela fazia e para quem.",
+                "Separe já na planilha o que é automação contínua do que foi disparo único. As duas coisas pedem tratamento diferente na hora de reorganizar."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Padronizar a nomenclatura",
+              "code": "JB_<Tipo>_<Etapa>  →  DE_<Tipo>_<Etapa>",
+              "guidance": "Defina uma convenção que diga, só pelo nome, a qual público e a qual tipo de comunicação a peça pertence. Um prefixo de público ([B2C] cliente final, [FRA] franqueado, [ARQ] especificador, [EXP] expansão, [POS] pós-venda) e um padrão para jornadas e tabelas resolvem a maior parte da bagunça: JB_Transacional_SaiuParaEntrega usa como entrada DE_Transacional_SaiuParaEntrega. Aplique a mesma convenção a templates de e-mail, templates de WhatsApp e campanhas no CRM.",
+              "tips": [
+                "Nome com data só faz sentido em disparo pontual. Em jornada contínua ele envelhece no primeiro mês.",
+                "Escreva a convenção em uma página e cole o link no topo da planilha de jornadas: convenção que ninguém encontra não é seguida."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Mapear cada jornada em uma linha",
+              "guidance": "Crie a planilha-mestra de jornadas com as colunas que permitem decidir: jornada, BU, público, canal, gatilho (o evento que coloca a pessoa na jornada), quantidade de conteúdos, duração, tipo (nova, migração ou reestruturação), status (construção, validação, rodando, descontinuada), um ID curto (1-B2C, 2-FRA) e observações. No exemplo fictício, \"Orçamento aberto sem atendimento\" tem gatilho \"orçamento com status sem gestão há 2 dias\", canal WhatsApp, um conteúdo, tipo migração.",
+              "tips": [
+                "Gatilho mal descrito é a causa número um de jornada que dispara para a pessoa errada. Escreva-o como uma condição verificável nos dados, não como intenção.",
+                "Quando duas mensagens têm o mesmo público e gatilhos vizinhos, avalie unificá-las em uma jornada só com divisão por decisão."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Organizar as réguas pelo funil",
+              "guidance": "Agrupe as jornadas pela etapa do relacionamento, e não pelo canal: leads em nutrição (topo, meio e fundo de funil), clientes com orçamento em andamento, orçamentos vencidos, orçamentos perdidos, clientes para venda cruzada, inativos, especificadores e candidatos a franquia. Para cada régua, liste as perguntas de saída que mudam o caminho da pessoa: tem lead score alto? Baixou o catálogo? Pediu orçamento? Comprou? É isso que vira critério de saída e de divisão no Journey Builder.",
+              "tips": [
+                "Se um lead pode estar em duas réguas ao mesmo tempo, decida a prioridade agora. Sem regra, ele recebe as duas e descadastra.",
+                "Inativos merecem régua própria e prazo claro, por exemplo: no 11º dia sem movimento o franqueado é avisado; no 13º, o cliente recebe a mensagem."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Montar o cronograma de construção",
+              "code": "Discovery → Construção → Demanda CRM → Teste → Deploy",
+              "guidance": "Transforme o mapa em plano de trabalho. Cada jornada passa pelas mesmas fases: Discovery (entender o processo de negócio e os dados disponíveis), Construção no Marketing Cloud (template, data extension e jornada), Demanda para o CRM principal (campos, integrações e gatilhos que ainda não existem), Teste e Deploy. Uma tabela jornada × fase, com status em cada célula, mostra onde o trabalho está travado — quase sempre em dados que ainda não chegam ao Marketing Cloud.",
+              "tips": [
+                "A fase de demanda ao CRM principal é a que mais atrasa. Abra essas solicitações no Discovery, não depois de construir o template.",
+                "Agrupe a construção por família (por exemplo, todas as etapas transacionais de uma BU): o template base é feito uma vez e reaproveitado."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que mapear antes de construir",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Ver o que já fala com o cliente",
+          "text": "Sem inventário, uma jornada nova se soma a três antigas que ninguém desligou, e o cliente recebe quatro mensagens sobre o mesmo orçamento."
+        },
+        {
+          "icon": "list",
+          "title": "Nome que explica",
+          "text": "Uma convenção de nomes permite saber público, tipo e etapa sem abrir a jornada. Isso vale para você e para quem herdar a conta."
+        },
+        {
+          "icon": "gauge",
+          "title": "Gargalo visível",
+          "text": "O cronograma por fase mostra que o atraso raramente está no template: quase sempre está no dado que ainda não chega à plataforma."
+        }
+      ],
+      "closingText": "Você tem o mapa: o que existe, o que falta e em que ordem construir. O próximo passo é preencher esse mapa com réguas que de fato conversam com cada público, do lead que acabou de chegar ao candidato a franquia que não avançou.",
+      "ctaTitle": "🗺️ Mapa de jornadas pronto!",
+      "ctaText": "As jornadas da Rede Construir+ estão inventariadas, nomeadas e organizadas por funil. Agora vamos construir as réguas.",
+      "nextButtonText": "Ir para Módulo 1: Réguas de Relacionamento e Reengajamento"
+    },
+    {
+      "id": 1,
+      "icon": "sync",
+      "title": "Réguas de Relacionamento e Reengajamento",
+      "shortDescription": "Nutrição, reengajamento, alertas e janela de envio",
+      "introductionText": "Régua de relacionamento é a sequência de comunicações que acompanha uma pessoa ao longo de uma etapa: o lead que pediu uma visita técnica, o candidato a franquia que foi recusado, o franqueado que precisa atender um lead em minutos. Neste módulo você constrói essas réguas no Journey Builder, personaliza pelo que a pessoa declarou, escreve o reengajamento por motivo de perda e termina medindo em que dia e período cada público presta mais atenção.",
+      "sections": [
+        {
+          "title": "🔁 Réguas que acompanham cada público",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Régua de nutrição a partir de formulário",
+              "code": "Entrada (DE) → E-mail 1 → Espera 3d → E-mail 2 → Espera 3d → E-mail 3",
+              "guidance": "Monte no Journey Builder a régua de quem preencheu o formulário \"Agende uma visita técnica\" da Rede Construir+. A entrada é uma data extension alimentada pelo formulário; no CRM o lead recebe a tag de origem e o campo de unidade de negócio = B2C. A sequência: e-mail 1 de agradecimento, espera de 3 dias, e-mail 2 com os diferenciais da rede, espera de 3 dias, e-mail 3 com a variedade de acabamentos. Configure a meta da jornada (pediu orçamento) para que quem converte saia antes de receber o resto.",
+              "tips": [
+                "A Salesforce recomenda evitar esperas menores que uma hora. Em régua de nutrição, dias fazem mais sentido que horas.",
+                "Defina o modo de reentrada antes de ativar: sem reentrada, reentrada só depois de sair ou a qualquer momento. A escolha errada faz a mesma pessoa receber a régua duas vezes."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Personalizar pelo interesse declarado",
+              "code": "Decision Split: cozinha+banheiro → cozinha → banheiro → padrão",
+              "guidance": "No formulário, o lead marca os ambientes da obra: cozinha, banheiro, área externa. Cada marcação vira uma tag. Use uma divisão por decisão (Decision Split) para mandar cada combinação para o conteúdo certo, lembrando que os caminhos são avaliados de cima para baixo: coloque primeiro as combinações mais específicas (cozinha + banheiro) e por último o caminho genérico. Quando as variações são muitas, troque os caminhos por conteúdo dinâmico dentro de um único e-mail.",
+              "tips": [
+                "Uma divisão por decisão aceita até 20 caminhos, mas régua com 20 caminhos é régua que ninguém consegue manter. Acima de quatro ou cinco, prefira conteúdo dinâmico.",
+                "Garanta sempre um caminho padrão para quem não marcou nada: lead sem tag não pode cair fora da régua."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Reengajamento por motivo de perda",
+              "code": "Assunto: Vamos falar sobre a sua candidatura, %%FirstName%%?",
+              "guidance": "Para candidatos a franquia que não avançaram, escreva uma mensagem por motivo de perda registrado no CRM: praça sem potencial, candidato sem perfil, expansão futura, praça fora da área de expansão, praça já ocupada, falta de retorno, desistência e falta de capital. Cada motivo tem uma descrição interna (por que ele existe e o que a jornada pretende) e um e-mail com tom respeitoso que explica a situação e deixa a porta aberta com um botão de contato. Use a personalização %%FirstName%% e um único e-mail com conteúdo dinâmico pelo campo de motivo.",
+              "tips": [
+                "Motivo de perda vazio ou preenchido como texto livre inviabiliza a régua. Combine com o time comercial uma lista fechada de motivos antes de escrever as mensagens.",
+                "Reengajar não é insistir: para \"desistência\", agradeça e encerre; para \"falta de retorno\", pergunte se ainda há interesse."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Alertas de oportunidade para o franqueado",
+              "code": "{{1}} = link da conversa com o lead",
+              "guidance": "Nem toda régua fala com o cliente. Na rede de franquias, uma parte importante avisa o franqueado no WhatsApp: novo lead que acabou de chegar à loja (em tempo real), orçamento em aberto sem atendimento, cliente de alto valor cujo orçamento está com um especificador. Escreva cada alerta com gatilho, frequência, público e copy curta com variáveis: \"Você tem um lead novo aguardando contato: {{1}}. Responda agora e convide para uma visita à loja.\" O link leva direto à conversa com o lead.",
+              "tips": [
+                "Defina critério objetivo para \"cliente de alto valor\" (no exemplo fictício, orçamento acima de R$ 20 mil) e registre-o na planilha: critério de cabeça muda a cada reunião.",
+                "Alerta que chega toda hora vira ruído. Agrupe em resumo diário o que não exige ação imediata."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Comunicações especiais e réguas de lançamento",
+              "guidance": "Campanhas pontuais, como a ação de uma marca fornecedora parceira, também seguem método. Antes de disparar, confirme os quatro requisitos: copy aprovada, imagem no tamanho de cada canal, canal definido e base selecionada. Para lançamentos internos, como um encarte de ofertas para os franqueados, monte uma régua semanal com objetivo e gatilho mental em cada semana: lançamento (novidade), vantagens (significância), provocação (\"sua equipe já está usando?\"), apresentação ao vivo e, no segundo mês, urgência.",
+              "tips": [
+                "Mesmo a campanha pontual precisa de registro na planilha-mestra: sem isso, a frequência real de contato com o cliente fica invisível.",
+                "Use as mesmas peças em e-mail e WhatsApp, mas reescreva o texto: o que cabe em um e-mail é longo demais para uma mensagem."
+              ]
+            },
+            {
+              "number": 6,
+              "title": "Medir e escolher a janela de envio",
+              "code": "segmento × canal × dia × período",
+              "guidance": "Monte uma matriz de taxa de abertura por segmento (expansão, varejo, e-commerce, especificadores), canal (e-mail e WhatsApp), dia da semana e período (manhã, tarde, noite). Preencha com os relatórios de envio de pelo menos algumas semanas e use a matriz para decidir horários de disparo dos envios pontuais e as janelas de envio das jornadas. No exercício com dados fictícios, a manhã de quarta-feira lidera em todos os segmentos e o domingo à noite fica por último.",
+              "tips": [
+                "Compare segmento com ele mesmo ao longo do tempo. Comparar a abertura de e-mail com a leitura de WhatsApp mistura métricas de natureza diferente.",
+                "Abertura indica atenção, não resultado. Para cada régua, defina também a métrica de negócio: orçamento criado, venda, retorno do candidato."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que réguas e não disparos soltos",
+      "highlights": [
+        {
+          "icon": "sync",
+          "title": "Contexto acumulado",
+          "text": "Cada mensagem da régua sabe o que veio antes. O segundo e-mail pode pressupor o primeiro, coisa que um disparo avulso não consegue."
+        },
+        {
+          "icon": "bolt",
+          "title": "Velocidade onde ela vende",
+          "text": "Alerta em tempo real para o franqueado transforma o lead que acabou de chegar em conversa enquanto o interesse ainda está quente."
+        },
+        {
+          "icon": "gauge",
+          "title": "Decisão por dado",
+          "text": "A matriz de abertura por segmento, dia e período tira a escolha de horário do achismo e vira regra para todas as jornadas."
+        }
+      ],
+      "closingText": "Suas réguas de relacionamento estão desenhadas e medidas. Falta o tipo de comunicação que o cliente mais espera e menos perdoa quando falha: a transacional, que conta o que está acontecendo com o pedido dele.",
+      "ctaTitle": "🔁 Réguas no ar!",
+      "ctaText": "Nutrição, reengajamento, alertas e campanhas estão organizados. Vamos para as mensagens que acompanham cada pedido.",
+      "nextButtonText": "Ir para Módulo 2: Comunicações Transacionais em E-mail e WhatsApp"
+    },
+    {
+      "id": 2,
+      "icon": "list",
+      "title": "Comunicações Transacionais em E-mail e WhatsApp",
+      "shortDescription": "Etapas do pedido, 10 copies e regras de template",
+      "introductionText": "Comunicação transacional é a que o cliente pediu sem perceber: ao comprar, ele quer saber quando o pedido foi confirmado, onde está a nota fiscal e quando a entrega chega. Aqui não cabe criatividade promocional, e sim clareza, prazo certo e o canal certo. Este módulo reproduz o trabalho de desenhar a jornada transacional de pós-venda em e-mail e WhatsApp, escrever as 10 copies e respeitar as regras da Meta para templates de utilidade.",
+      "sections": [
+        {
+          "title": "📦 A jornada do pedido em dois canais",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Escolher as etapas que importam ao cliente",
+              "code": "Confirmado → NF-e → Previsão → Saiu para entrega → Entregue",
+              "guidance": "Liste todos os status que o pedido percorre no sistema e marque quais o cliente realmente quer saber. Separação, coleta e transferência entre centros de distribuição são operacionais; o cliente quer cinco notícias: pedido confirmado, nota fiscal emitida, previsão de entrega, saiu para entrega e pedido entregue. Começar pelo pós-venda, a partir da confirmação, reduz o projeto e acelera a primeira entrega. A pesquisa de satisfação fica com o time que já é dono dela, para o cliente não receber duas.",
+              "tips": [
+                "Cada etapa a mais é um template a manter em dois canais. Corte primeiro, acrescente depois se o atendimento mostrar necessidade.",
+                "Pergunte ao pós-venda quais dúvidas mais chegam ao SAC: elas indicam a etapa que está faltando."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Definir o papel de cada canal",
+              "guidance": "Na Rede Construir+, WhatsApp e e-mail trabalham juntos, cada um com sua função. O WhatsApp leva a notícia curta e crítica, com mensagem objetiva de categoria utilidade e custo baixo. O e-mail tem liberdade de tom, carrega documentos (link da nota fiscal, resumo do pedido, lista de itens) e serve de registro do que foi comunicado. Defina também o repique: se a mensagem de WhatsApp não for entregue, o e-mail da mesma etapa sai automaticamente.",
+              "tips": [
+                "Nota fiscal vai como link, não como anexo: anexo pesa, cai em filtro e envelhece.",
+                "Decida se o WhatsApp é obrigatório no cadastro ou complementar. Isso muda quantos clientes dependem só do e-mail."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Escrever as 10 copies",
+              "code": "https://rastreio.construirmais.exemplo/pedido?codigo={{1}}",
+              "guidance": "Para cada uma das cinco etapas, escreva a versão de e-mail (assunto, pré-header, corpo e botão) e a de WhatsApp (mensagem curta com variáveis e botão). Exemplo fictício, etapa 1 por e-mail: assunto \"Seu pedido {{número}} foi confirmado!\", pré-header \"A Construir+ agradece a preferência\", corpo com endereço, valor, forma de pagamento e itens. No WhatsApp: \"Olá, {{1}}. Seu pedido {{2}} foi confirmado! Em breve enviaremos as informações de entrega.\" O botão de rastreio usa URL com parte fixa e um sufixo variável com o código do pedido.",
+              "tips": [
+                "Nos templates de WhatsApp as variáveis são numeradas ({{1}}, {{2}}). Documente o que cada número recebe; é o mapa que a integração vai seguir.",
+                "Mantenha o mesmo tom nos dois canais: o cliente lê as duas mensagens no mesmo dia."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Respeitar a categoria do template na Meta",
+              "guidance": "Na WhatsApp Business Platform, a mensagem que a empresa inicia precisa de um template aprovado em uma de três categorias: marketing, utilidade ou autenticação. Utilidade exige mensagem não promocional, ligada a uma ação ou pedido do usuário (um pedido, uma conta, uma transação). Por isso a mensagem de \"saiu para entrega\" não pode trazer cupom nem oferta de recompra. Se a Meta entender que o conteúdo é promocional, ela recategoriza o template como marketing, e repetir o erro leva a restrições progressivas na conta.",
+              "tips": [
+                "Template que mistura informação do pedido com promoção é classificado como marketing. Mande a oferta em outra comunicação, com a base legal adequada.",
+                "Pesquisa genérica de satisfação não é aceita como utilidade."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Casos de borda, teste e ativação",
+              "code": "Dúvida | Resposta | Status | Responsável",
+              "guidance": "Antes de ativar, responda por escrito a lista de dúvidas que sempre aparece: qual o prazo entre a mudança de status e o disparo? Como comunicar entrega parcial, em mais de um pacote? Entrega adiantada ou atrasada gera mensagem? Até quando o cliente pode cancelar? Mantenha cada dúvida com status (pendente ou definida). Depois, teste cada jornada com uma data extension de contatos internos, confira links e variáveis nos dois canais e registre a versão do documento a cada ajuste (\"ajuste de links em botões\", \"ativação da jornada\").",
+              "tips": [
+                "Lista de produtos por pacote evita a ligação \"chegou só metade do pedido\".",
+                "Nunca teste com a base real. Uma lista de contatos internos com os dois canais cadastrados resolve e não gera custo de envio indevido."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que a transacional merece método próprio",
+      "highlights": [
+        {
+          "icon": "shield",
+          "title": "Confiança no pós-venda",
+          "text": "Cliente informado não liga para o SAC. Cada etapa bem comunicada é uma ligação a menos e uma avaliação melhor."
+        },
+        {
+          "icon": "tools",
+          "title": "Canais complementares",
+          "text": "WhatsApp para a notícia rápida, e-mail para o documento e o registro, com repique automático quando um falha."
+        },
+        {
+          "icon": "list",
+          "title": "Regra da plataforma",
+          "text": "Template de utilidade sem promoção. Misturar oferta com status do pedido faz a Meta reclassificar a mensagem e pode restringir a conta."
+        }
+      ],
+      "closingText": "A jornada transacional está definida, escrita e testada. Para ela funcionar em mais de uma marca e dentro da lei, falta a camada que sustenta tudo: plataformas organizadas, acessos controlados e LGPD aplicada em cada mensagem.",
+      "ctaTitle": "📦 Transacionais prontas!",
+      "ctaText": "Cinco etapas, dois canais, dez copies e os casos de borda respondidos. Agora vamos à governança.",
+      "nextButtonText": "Ir para Módulo 3: Plataformas, Acessos e LGPD"
+    },
+    {
+      "id": 3,
+      "icon": "shield",
+      "title": "Plataformas, Acessos e LGPD",
+      "shortDescription": "Multimarca, domínio, WABAs, acessos e LGPD",
+      "introductionText": "As réguas e as transacionais só são sustentáveis se a base embaixo delas estiver em ordem. Este módulo cobre o trabalho que não aparece para o cliente, mas que decide se a operação escala ou quebra: modularizar a estrutura para várias marcas, configurar domínio e aquecer o envio, organizar as contas de WhatsApp Business, controlar quem acessa o quê e aplicar a LGPD em cada comunicação, do rodapé do e-mail ao pedido de exclusão que chega do jurídico.",
+      "sections": [
+        {
+          "title": "🛡️ A estrutura que sustenta a operação",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Modularizar para várias marcas",
+              "code": "Marca → BU + WABA + domínio + templates",
+              "guidance": "Quando o grupo passa a ter mais de uma marca (no exemplo, a Rede Construir+ e o e-commerce fictício Revestir Online), tudo que foi feito para uma precisa existir para a outra. Em vez de improvisar, modularize: uma BU no Marketing Cloud e uma conta de WhatsApp Business (WABA) com número próprio por marca, todas sob a mesma estrutura. Para cada marca, um checklist mínimo antes de iniciar as comunicações: número oficial e verificado, templates transacionais aprovados, leads da marca configurados no CRM e domínio de envio de e-mail configurado.",
+              "tips": [
+                "Copiar a BU modelo e trocar nome e identidade visual é mais rápido e mais seguro do que criar do zero.",
+                "Compartilhar a base de uma marca com a outra exige base legal própria. A mesma pessoa pode ser cliente de uma e desconhecer a outra."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Domínio de envio e aquecimento",
+              "guidance": "Para a nova marca enviar e-mail, a TI cria um subdomínio dedicado (por exemplo, email.revestironline.exemplo) e o delega para a Salesforce com os registros indicados por ela, o que permite à plataforma gerenciar a autenticação do envio. Com o domínio pronto, vem o aquecimento: começar com volumes pequenos para uma base que interage muito e crescer aos poucos. A melhor base para isso é a de clientes fiéis; a segunda melhor é o próprio transacional, porque o cliente espera aquela mensagem.",
+              "tips": [
+                "Antes de importar uma base antiga, pergunte: de onde ela veio, quando foi coletada e se essas pessoas aceitaram receber comunicação.",
+                "Disparar para base fria logo após configurar o domínio é o jeito mais rápido de arruinar a reputação de envio."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Organizar as contas de WhatsApp Business",
+              "code": "Conta | ID | Proprietário | Números | Finalidade",
+              "guidance": "Faça o inventário das WABAs e números no gerenciador de negócios da Meta: nome da conta, identificação, a quem pertence, números vinculados e a finalidade de cada um (atendimento, franqueados, especificadores, testes). Corrija nome e foto de exibição de cada canal, separe a conta de testes da de produção e acompanhe os avisos que a Meta envia, como alertas de qualidade ou de parâmetros de dados bloqueados na conta de anúncios, verificando no próprio painel o que precisa ser ajustado.",
+              "tips": [
+                "Número sem dono registrado é número que ninguém sabe desligar. Toda linha do inventário precisa de um responsável.",
+                "Mantenha o inventário fora de conversas e e-mails: é dado de configuração e deve ficar em um documento controlado."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Controlar acessos às plataformas",
+              "code": "Usuário | Área | BUs | Papel | Última revisão",
+              "guidance": "Mantenha uma planilha de usuários com nome, área, BUs a que tem acesso, papel e data da última revisão. No Marketing Cloud, papéis agrupam permissões: Administrator, Viewer, Channel Manager, Security Administrator e Content Editor/Publisher são os padrões, e papéis personalizados cobrem o resto. Uma negação explícita prevalece sobre qualquer permissão, e o que não foi concedido fica negado. Dê a cada pessoa só o acesso que a tarefa exige e revise a lista quando alguém muda de função ou sai.",
+              "tips": [
+                "Quem só precisa disparar para uma base pronta não precisa de permissão de importar contatos. Importação é a porta de entrada de base sem consentimento.",
+                "Teste o acesso novo com a própria pessoa antes de encerrar o chamado: perfil criado com erro é comum."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "LGPD nas comunicações",
+              "code": "Rodapé: descadastro + Política de Privacidade",
+              "guidance": "Para cada régua, registre a base legal. Consentimento pede ação clara do titular, como marcar a caixa no formulário; legítimo interesse dispensa essa caixa, mas exige avaliação documentada (a ANPD propõe um teste em três fases: finalidade, necessidade e balanceamento com salvaguardas) e um caminho fácil de oposição. Em todas as comunicações: identificar a marca e o motivo do contato na primeira mensagem, link de descadastro funcionando em 100% dos e-mails, link para a política de privacidade no rodapé e, no WhatsApp, instrução clara de como parar de receber, como um botão ou \"Digite SAIR\".",
+              "tips": [
+                "Você precisa conseguir provar onde e quando o cliente informou o número e se autorizou contato por WhatsApp especificamente.",
+                "Não peça dado que a etapa não precisa: CPF cabe na negociação, não na captura do lead.",
+                "Descadastro pode ser por campanha, por marca ou geral. Um centro de preferências deixa o cliente escolher em vez de sair de tudo."
+              ]
+            },
+            {
+              "number": 6,
+              "title": "Lista de bloqueio por pedido do titular",
+              "code": "Pedido → busca por e-mail, telefone e documento → bloqueio em todas as BUs → confirmação",
+              "guidance": "Quando o jurídico encaminha um pedido de exclusão, o trabalho é localizar todos os registros da pessoa: um mesmo contato pode existir como vários leads, em BUs diferentes e com e-mail e telefone em campos distintos. Bloqueie em todos os canais e marcas, registre data e origem do pedido sem copiar o dado pessoal para o registro e confirme ao jurídico. Comece com um procedimento manual para atender pedidos urgentes e, em paralelo, construa a versão automatizada, com a lista de bloqueio consultada por todas as jornadas antes do envio.",
+              "tips": [
+                "Excluir só o lead que apareceu primeiro na busca deixa a pessoa recebendo pelo outro cadastro, que é exatamente a falha que o pedido quer evitar.",
+                "A lista de bloqueio deve valer também para envios pontuais, não apenas para jornadas automatizadas."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que governança é parte do CRM",
+      "highlights": [
+        {
+          "icon": "grid",
+          "title": "Replicar sem improvisar",
+          "text": "Com uma BU e uma WABA por marca e um checklist mínimo, a próxima marca entra em semanas, não em meses."
+        },
+        {
+          "icon": "folder",
+          "title": "Acesso documentado",
+          "text": "Saber quem acessa cada BU e com qual papel evita importações indevidas e contas órfãs de quem já saiu."
+        },
+        {
+          "icon": "shield",
+          "title": "Privacidade como rotina",
+          "text": "Base legal registrada, descadastro funcionando e lista de bloqueio consultada antes do envio transformam a LGPD em processo, não em susto."
+        }
+      ],
+      "closingText": "Você percorreu o trabalho de CRM de ponta a ponta: mapear jornadas por unidade de negócio, construir réguas de relacionamento e reengajamento, desenhar a jornada transacional em dois canais e sustentar tudo com plataformas organizadas, acessos controlados e LGPD aplicada. É o conjunto que se espera de quem assume a área em uma rede de varejo.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você mapeia, constrói e governa jornadas de CRM. O próximo passo natural é o programa de E-mail HTML e Landing Pages integradas ao CRM.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Qual é a primeira tarefa ao assumir o CRM de uma conta que já tem dezenas de jornadas?",
+      "explanation": "Antes de construir, é preciso saber o que já fala com o cliente: inventariar jornadas por BU, com versão, data extension, status e entradas. Criar jornadas novas sem isso soma mensagens às antigas; apagar tudo perde histórico; trocar de ferramenta não resolve a falta de mapa.",
+      "options": [
+        {
+          "text": "Inventariar as jornadas existentes por unidade de negócio",
+          "isCorrect": true
+        },
+        {
+          "text": "Criar imediatamente as jornadas que faltam",
+          "isCorrect": false
+        },
+        {
+          "text": "Apagar as jornadas paradas para limpar a conta",
+          "isCorrect": false
+        },
+        {
+          "text": "Migrar todas as jornadas para outra ferramenta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Na planilha-mestra de jornadas, como o gatilho deve ser descrito?",
+      "explanation": "O gatilho precisa ser uma condição verificável nos dados (por exemplo, orçamento com status sem gestão há 2 dias), porque é ele que decide quem entra. Descrever intenção, canal ou nome de campanha não permite construir nem auditar a entrada.",
+      "options": [
+        {
+          "text": "Como uma condição verificável nos dados",
+          "isCorrect": true
+        },
+        {
+          "text": "Como a intenção de marketing da campanha",
+          "isCorrect": false
+        },
+        {
+          "text": "Pelo nome do canal de envio",
+          "isCorrect": false
+        },
+        {
+          "text": "Pela data em que a jornada foi criada",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Em qual fase do cronograma de construção os atrasos costumam se concentrar?",
+      "explanation": "A demanda ao CRM principal (campos, integrações e gatilhos que ainda não existem) é a fase que mais trava, porque depende de outros times. Por isso a solicitação deve ser aberta já no Discovery. Template e teste raramente são o gargalo.",
+      "options": [
+        {
+          "text": "Na demanda de dados e integrações ao CRM principal",
+          "isCorrect": true
+        },
+        {
+          "text": "Na escrita do template de e-mail",
+          "isCorrect": false
+        },
+        {
+          "text": "No teste com contatos internos",
+          "isCorrect": false
+        },
+        {
+          "text": "Na escolha do nome da jornada",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Como o Journey Builder avalia os caminhos de uma divisão por decisão (Decision Split)?",
+      "explanation": "Os caminhos são avaliados em sequência, de cima para baixo, e o contato segue o primeiro que satisfaz. Por isso as combinações mais específicas vêm primeiro e o caminho padrão por último. Não há avaliação aleatória nem por engajamento nessa atividade.",
+      "options": [
+        {
+          "text": "Em sequência, de cima para baixo",
+          "isCorrect": true
+        },
+        {
+          "text": "Todos ao mesmo tempo, e o contato entra em vários",
+          "isCorrect": false
+        },
+        {
+          "text": "Em ordem aleatória para equilibrar volumes",
+          "isCorrect": false
+        },
+        {
+          "text": "Pelo engajamento com o último e-mail",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "O que torna possível uma régua de reengajamento por motivo de perda?",
+      "explanation": "A régua usa o motivo registrado no CRM para escolher a mensagem certa. Se o campo é texto livre ou fica vazio, não há como segmentar. Por isso a lista fechada de motivos combinada com o time comercial vem antes das copies.",
+      "options": [
+        {
+          "text": "Uma lista fechada de motivos preenchida no CRM",
+          "isCorrect": true
+        },
+        {
+          "text": "Um e-mail genérico enviado a todos os perdidos",
+          "isCorrect": false
+        },
+        {
+          "text": "Disparos diários até o lead responder",
+          "isCorrect": false
+        },
+        {
+          "text": "Um campo de texto livre para o vendedor explicar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Na matriz de métricas, qual comparação faz sentido para escolher a janela de envio?",
+      "explanation": "A matriz cruza segmento, canal, dia e período para comparar cada segmento com ele mesmo ao longo da semana. Comparar abertura de e-mail com leitura de WhatsApp mistura métricas diferentes, e uma média geral esconde as diferenças entre públicos.",
+      "options": [
+        {
+          "text": "O mesmo segmento e canal em dias e períodos diferentes",
+          "isCorrect": true
+        },
+        {
+          "text": "Abertura de e-mail contra leitura de WhatsApp",
+          "isCorrect": false
+        },
+        {
+          "text": "A média geral de todos os segmentos juntos",
+          "isCorrect": false
+        },
+        {
+          "text": "Apenas o total de envios de cada mês",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Qual conjunto de etapas forma a jornada transacional de pós-venda proposta?",
+      "explanation": "O cliente quer cinco notícias: confirmação, nota fiscal, previsão, saída para entrega e entrega. Separação, coleta e transferência entre centros de distribuição são operacionais. A pesquisa de satisfação fica com o time que já é dono dela.",
+      "options": [
+        {
+          "text": "Pedido confirmado, NF-e emitida, previsão de entrega, saiu para entrega e entregue",
+          "isCorrect": true
+        },
+        {
+          "text": "Separação, coleta, transferência entre CDs e chegada ao CD",
+          "isCorrect": false
+        },
+        {
+          "text": "Apenas pedido entregue e pesquisa de satisfação",
+          "isCorrect": false
+        },
+        {
+          "text": "Todos os status do sistema, sem exceção",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Por que a nota fiscal vai no e-mail como link, e não como anexo?",
+      "explanation": "Link é leve, não cai em filtro de anexo e aponta sempre para o documento válido. O e-mail continua sendo o canal do documento e do registro; a questão é o formato. Não há proibição legal de anexar, nem regra da Meta envolvida.",
+      "options": [
+        {
+          "text": "Porque anexo pesa, pode cair em filtro e o link aponta sempre para o documento válido",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque a lei proíbe anexar nota fiscal em e-mail",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque a Meta exige link em todo envio",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o e-mail não aceita arquivos PDF",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Um template de utilidade de \"saiu para entrega\" ganhou um cupom de recompra. O que a Meta pode fazer?",
+      "explanation": "Utilidade precisa ser não promocional e ligada a uma ação do usuário. Com conteúdo promocional, a Meta recategoriza o template como marketing, e erros repetidos levam a restrições progressivas. O template não vira autenticação nem segue como utilidade.",
+      "options": [
+        {
+          "text": "Recategorizar o template como marketing",
+          "isCorrect": true
+        },
+        {
+          "text": "Aprovar normalmente, já que o pedido é real",
+          "isCorrect": false
+        },
+        {
+          "text": "Reclassificar o template como autenticação",
+          "isCorrect": false
+        },
+        {
+          "text": "Apenas remover o cupom e manter a categoria",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Qual é o checklist mínimo para uma nova marca começar as comunicações?",
+      "explanation": "Cada marca precisa de número oficial e verificado, templates transacionais aprovados, leads configurados no CRM e domínio de envio configurado. Reaproveitar o número de outra marca ou disparar antes do domínio e do aquecimento compromete entrega e reputação.",
+      "options": [
+        {
+          "text": "Número verificado, templates aprovados, leads no CRM e domínio de envio configurado",
+          "isCorrect": true
+        },
+        {
+          "text": "Usar o número e o domínio da marca principal",
+          "isCorrect": false
+        },
+        {
+          "text": "Importar a base antiga e disparar no primeiro dia",
+          "isCorrect": false
+        },
+        {
+          "text": "Criar apenas os e-mails, deixando o WhatsApp para depois",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "No controle de acesso do Marketing Cloud, o que acontece quando um papel nega explicitamente uma permissão que outro concede?",
+      "explanation": "A negação explícita prevalece sobre qualquer concessão, e o que não foi concedido nem negado fica negado por padrão. Por isso papéis personalizados e revisão periódica são a forma de dar só o acesso que a tarefa exige.",
+      "options": [
+        {
+          "text": "A negação explícita prevalece",
+          "isCorrect": true
+        },
+        {
+          "text": "A concessão prevalece",
+          "isCorrect": false
+        },
+        {
+          "text": "Vale o papel atribuído por último",
+          "isCorrect": false
+        },
+        {
+          "text": "O usuário escolhe qual aplicar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Segundo o Panorama Mobile Time/Opinion Box (pesquisa de janeiro de 2025), que parcela dos brasileiros com smartphone manda SMS nunca ou quase nunca?",
+      "explanation": "Na pesquisa, 30% nunca mandam SMS e 42% quase nunca, somando 72%. O dado ajuda a entender por que réguas e transacionais migraram para WhatsApp e e-mail, e por que as regras de opt-in e opt-out desses canais ganharam peso.",
+      "options": [
+        {
+          "text": "72%",
+          "isCorrect": true
+        },
+        {
+          "text": "15%",
+          "isCorrect": false
+        },
+        {
+          "text": "40%",
+          "isCorrect": false
+        },
+        {
+          "text": "95%",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "A documentação de CRM completa de uma rede de franquias fictícia: o mapa de jornadas por unidade de negócio com cronograma de construção, uma régua de nutrição e uma de reengajamento no Journey Builder, a jornada transacional de pós-venda com as 10 copies de e-mail e WhatsApp, e o kit de governança com inventário de contas, controle de acessos e checklist de LGPD.",
+    "highlights": [
+      "Mapa de jornadas e cronograma de construção por unidade de negócio",
+      "Jornada transacional com 10 copies em e-mail e WhatsApp",
+      "Checklist de LGPD, controle de acessos e procedimento de lista de bloqueio"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "O SMS deixou de ser o canal de aviso do brasileiro. No Panorama Mobile Time/Opinion Box, com entrevistas feitas de 15 a 30 de janeiro de 2025 com 2.099 brasileiros que têm smartphone, 30% disseram nunca mandar SMS e 42% quase nunca — 72% no total —, enquanto 77% preferem fazer ligações pelo WhatsApp em vez do plano da operadora. As comunicações de relacionamento e de pedido migraram para WhatsApp e e-mail.",
+      "Os dois canais ficaram mais regulados. A Meta exige que mensagens iniciadas pela empresa usem templates aprovados e recategoriza como marketing o template de utilidade que traz conteúdo promocional, com restrições progressivas para quem insiste no erro. No lado legal, a ANPD publicou em 2 de fevereiro de 2024 o guia orientativo sobre legítimo interesse, com um teste em três fases para quem usa essa base legal. Quem opera CRM hoje precisa desenhar jornadas que funcionem e que se sustentem diante dessas regras."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Redes de franquias e varejo",
+        "description": "Operações com várias unidades de negócio, públicos diferentes e um CRM central."
+      },
+      {
+        "label": "E-commerce e pós-venda",
+        "description": "Jornadas transacionais que acompanham o pedido da confirmação à entrega."
+      },
+      {
+        "label": "Grupos com várias marcas",
+        "description": "Estruturas que precisam replicar canais, domínios e regras de privacidade por marca."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Analista de CRM ou de marketing",
+        "description": "Já dispara e-mails e quer organizar a operação em jornadas com método."
+      },
+      {
+        "label": "Quem vai assumir uma conta existente",
+        "description": "Precisa entender rapidamente o que roda, para quem e por quê."
+      },
+      {
+        "label": "Quem cuida de pós-venda e atendimento",
+        "description": "Quer reduzir contatos no SAC com comunicações transacionais bem desenhadas."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Jornadas automatizadas, comunicações transacionais em e-mail e WhatsApp e gestão de consentimento fazem parte da rotina de varejistas, redes de franquias, e-commerces e grupos com várias marcas. As vagas de CRM costumam pedir exatamente esse conjunto: operar uma plataforma de automação como o Salesforce Marketing Cloud, conhecer as regras da WhatsApp Business Platform e aplicar a LGPD nas comunicações.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Trailhead (Salesforce) — Build a Journey Campaign: entrada, esperas, divisões, metas e reentrada no Journey Builder",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/journey-builder-campaigns/build-a-journey-campaign"
+    },
+    {
+      "label": "Trailhead (Salesforce) — Manage Users and Roles: papéis e permissões no Marketing Cloud",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/marketing-cloud-setup/manage-users-and-roles"
+    },
+    {
+      "label": "Meta for Developers — WhatsApp Business Platform: Template categorization",
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/templates/template-categorization"
+    },
+    {
+      "label": "Legismap — ANPD lança guia orientativo sobre legítimo interesse (02/02/2024)",
+      "url": "https://legismap.com.br/conteudos/artigos-e-noticias/anpd-lanca-guia-orientativo-sobre-legitimo-interesse"
+    },
+    {
+      "label": "TELETIME — 72% dos brasileiros mandam SMS nunca ou quase nunca (Panorama Mobile Time/Opinion Box, março de 2025)",
+      "url": "https://teletime.com.br/07/03/2025/72-dos-brasileiros-mandam-sms-nunca-ou-quase-nunca/"
+    }
+  ]
+}

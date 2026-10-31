@@ -3,8 +3,807 @@
   "image": "https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg",
   "category": "Backend",
   "categoryFilter": "backend",
-  "title": "Back-end descomplicado: APIs, lógica de negócios e integração eficiente",
-  "lessons": "15+ Lições",
-  "duration": "12hr 45min",
-  "access": "Acesso Livre"
+  "title": "Fundamentos de Back-end: HTTP, APIs REST, Regras de Negócio e Integrações",
+  "lessons": "17 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Iniciante",
+  "description": "A porta de entrada da trilha de back-end. Você entende o que acontece do outro lado da tela: como uma requisição HTTP chega ao servidor, como uma API REST organiza recursos em JSON, onde ficam as regras de negócio e a validação, como funciona a autenticação básica e como o back-end conversa com banco de dados e com APIs de terceiros — sem se prender a uma linguagem, com exemplos curtos em JavaScript.",
+  "letslearn": [
+    "Ler e montar requisições e respostas HTTP: método, URL, cabeçalhos, corpo e código de status",
+    "Desenhar uma API REST com recursos, métodos e respostas em JSON coerentes",
+    "Separar validação de formato de regra de negócio e devolver o erro certo para cada caso",
+    "Entender autenticação e autorização, guardar senha do jeito correto e evitar as falhas mais comuns de API",
+    "Persistir dados com consultas seguras e integrar uma API de terceiros sem deixar a sua cair junto"
+  ],
+  "curriculum": "Do protocolo HTTP ao contrato de uma API",
+  "about": "O programa trata o back-end como um conjunto de responsabilidades, não como uma linguagem. Primeiro você aprende a enxergar o HTTP, que é a língua comum entre navegador, aplicativo e servidor. Depois desenha uma API REST para uma oficina de bicicletas fictícia, decide onde cada regra de negócio mora e protege o que precisa ser protegido. Por fim, liga a API a um banco de dados e a um serviço externo, tratando o que pode dar errado. Os exemplos em JavaScript são curtos de propósito: o raciocínio vale para Node.js, Python, Java ou qualquer outra plataforma. A implementação completa com framework fica para o programa seguinte da trilha, Node.js e Express: Criando APIs RESTful Escaláveis.",
+  "materials": [
+    "Contrato da API da oficina fictícia, para preencher módulo a módulo",
+    "Tabela de códigos de status com o caso de uso de cada um",
+    "Coleção de requisições de exemplo para testar com curl ou cliente HTTP",
+    "Checklist de segurança de API baseado no OWASP API Security Top 10"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "O Que um Back-end Faz e Como o HTTP Funciona",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "REST e JSON: Desenhando a API",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Regras de Negócio, Validação e Autenticação",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Banco de Dados e APIs de Terceiros",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Backend",
+    "mainTitle": "Entenda o que acontece depois do clique: da requisição HTTP à regra de negócio que decide a resposta.",
+    "introductionParagraphs": [
+      {
+        "title": "O back-end é quem decide",
+        "text": "A tela mostra, mas quem decide é o servidor. É no **back-end** que fica a regra que diz se o agendamento cabe na agenda, se o usuário pode ver aquele pedido, quanto custa o frete e o que é gravado no banco. O front-end pode ser trocado, refeito ou ignorado por alguém que chama a API direto — a regra no servidor, não. Por isso o primeiro princípio deste programa é simples: tudo o que importa é conferido no back-end."
+      },
+      {
+        "title": "HTTP é a língua comum",
+        "text": "Navegador, aplicativo de celular, outro sistema e até um script de linha de comando falam com o servidor do mesmo jeito: uma **requisição HTTP** com método, endereço, cabeçalhos e, às vezes, um corpo; e uma resposta com código de status, cabeçalhos e corpo. Quem lê essas mensagens com fluência depura mais rápido, desenha APIs mais claras e entende qualquer framework, porque todos eles são uma forma de organizar essa conversa."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não ensina um framework específico, não sobe servidor em nuvem e não aprofunda modelagem de banco. Ele monta a base que esses assuntos pressupõem. Ao final, você tem o contrato completo de uma API e sabe justificar cada escolha nele — que é exatamente o ponto de partida para implementá-la no programa seguinte da trilha."
+      }
+    ],
+    "courseAboutTitle": "A base que todo framework de back-end pressupõe",
+    "courseAboutDescription": "Express, Django, FastAPI, Spring e ASP.NET parecem mundos diferentes, mas resolvem os mesmos problemas: receber uma requisição HTTP, validar o que chegou, aplicar regras, falar com banco e serviços externos e devolver uma resposta coerente. Quem aprende esses problemas antes da ferramenta troca de linguagem sem recomeçar do zero. Este programa abre a trilha de back-end; depois dele vêm Node.js e Express, Docker e Kubernetes e Python para back-end.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: O Que um Back-end Faz e Como o HTTP Funciona",
+        "items": [
+          {
+            "label": "Responsabilidades do back-end",
+            "description": "O que fica no servidor, o que fica na tela e por que essa divisão importa."
+          },
+          {
+            "label": "Anatomia de uma mensagem HTTP",
+            "description": "Método, URL, cabeçalhos, corpo e código de status, lidos na prática."
+          },
+          {
+            "label": "Sem estado entre requisições",
+            "description": "Por que cada requisição precisa trazer tudo o que o servidor precisa saber."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: REST e JSON: Desenhando a API",
+        "items": [
+          {
+            "label": "Recursos e URLs",
+            "description": "Nomear o que a API expõe com substantivos e hierarquia previsível."
+          },
+          {
+            "label": "Métodos com significado",
+            "description": "GET, POST, PUT, PATCH e DELETE, e o que é seguro e idempotente."
+          },
+          {
+            "label": "Respostas coerentes",
+            "description": "JSON bem formado, status certo e um formato único para erros."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Regras de Negócio, Validação e Autenticação",
+        "items": [
+          {
+            "label": "Validação no servidor",
+            "description": "Formato, regra de negócio e o código de erro de cada um."
+          },
+          {
+            "label": "Quem é você e o que pode fazer",
+            "description": "Autenticação, autorização, 401 e 403 sem confusão."
+          },
+          {
+            "label": "Senhas e tokens",
+            "description": "Hash de senha, cabeçalho Authorization e a falha mais comum de API."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Banco de Dados e APIs de Terceiros",
+        "items": [
+          {
+            "label": "Persistência",
+            "description": "Onde o dado mora e como a API conversa com o banco."
+          },
+          {
+            "label": "Consultas seguras",
+            "description": "Parâmetros no lugar de texto concatenado para evitar injeção."
+          },
+          {
+            "label": "Integrações que falham bem",
+            "description": "Tempo limite, tratamento de erro, segredos e desconfiança da resposta externa."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para aplicar no contrato da API da oficina. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "globe",
+      "title": "O Que um Back-end Faz e Como o HTTP Funciona",
+      "shortDescription": "Responsabilidades do servidor e a anatomia de uma conversa HTTP",
+      "introductionText": "Toda vez que uma tela carrega uma lista, envia um formulário ou mostra um erro, houve uma conversa entre um cliente e um servidor. Neste módulo você observa essa conversa de perto: abre a aba Rede do navegador, lê requisições e respostas como texto e entende por que o servidor trata cada requisição como se nunca tivesse visto aquele cliente antes. O exemplo que acompanha o programa inteiro é a oficina de bicicletas fictícia Pedal Firme, que precisa de uma API para clientes agendarem revisões.",
+      "sections": [
+        {
+          "title": "🌐 A conversa entre cliente e servidor",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "O que fica no back-end",
+              "guidance": "Liste as funcionalidades da oficina — cadastrar cliente, agendar revisão, cancelar, consultar o endereço pelo CEP — e marque, para cada uma, o que é exibição (front-end) e o que é decisão (back-end). Conferir se o horário está livre, calcular o preço e gravar no banco são decisões: precisam acontecer no servidor, porque qualquer pessoa pode chamar a API sem passar pela sua tela.",
+              "tips": [
+                "Pergunta de controle: se alguém apagar o JavaScript da página e enviar a requisição na mão, a regra continua valendo? Se não, ela está no lugar errado."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Anatomia de uma requisição",
+              "code": "GET /agendamentos/42 HTTP/1.1",
+              "guidance": "Abra a aba Rede (Network) das ferramentas do desenvolvedor em qualquer site e clique em uma requisição. Identifique as quatro partes: o método (o que se quer fazer), a URL (sobre qual recurso), os cabeçalhos (metadados como Accept e Authorization) e o corpo, que só aparece quando há dado sendo enviado, como num POST.",
+              "tips": [
+                "No terminal, curl -i mostra a resposta com a linha de status e os cabeçalhos. É a forma mais rápida de ver a conversa sem nenhuma interface no meio."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Códigos de status em cinco famílias",
+              "code": "2xx  3xx  4xx  5xx",
+              "guidance": "O primeiro dígito do status já diz quase tudo: 1xx informativo, 2xx sucesso, 3xx redirecionamento, 4xx erro de quem pediu e 5xx erro do servidor. Monte uma tabela para a oficina com os mais usados — 200 OK, 201 Created, 204 No Content, 400 Bad Request, 401, 403, 404 Not Found, 409 Conflict e 500 Internal Server Error — e uma situação concreta para cada um.",
+              "tips": [
+                "A distinção entre 4xx e 5xx orienta quem consome a API: com 4xx, o cliente precisa mudar o pedido; com 5xx, repetir mais tarde pode resolver."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Cabeçalhos e o servidor sem memória",
+              "code": "Content-Type: application/json",
+              "guidance": "O HTTP é sem estado: o servidor não guarda nada da requisição anterior. Por isso cada requisição carrega o que for preciso — o formato do corpo em Content-Type, o formato que o cliente aceita em Accept e a credencial em Authorization. Anote no contrato da oficina quais cabeçalhos toda requisição deve trazer.",
+              "tips": [
+                "Cookies são a forma clássica de dar continuidade entre requisições: o servidor envia Set-Cookie e o navegador devolve o valor no cabeçalho Cookie. O protocolo continua sem estado; quem lembra é o cliente."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que começar pelo HTTP",
+      "highlights": [
+        {
+          "icon": "globe",
+          "title": "Vale para qualquer linguagem",
+          "text": "Framework muda a cada poucos anos; o HTTP é o mesmo para todos eles. Quem lê a mensagem crua entende o que qualquer biblioteca está fazendo por baixo."
+        },
+        {
+          "icon": "search",
+          "title": "Depuração mais rápida",
+          "text": "Metade dos problemas de integração se resolve olhando a requisição: cabeçalho faltando, método trocado, corpo em formato errado. A aba Rede mostra tudo isso em segundos."
+        },
+        {
+          "icon": "shield",
+          "title": "Regra no lugar certo",
+          "text": "Entender que o cliente pode ser qualquer coisa — inclusive alguém digitando no terminal — é o que leva a validar e autorizar no servidor, não na tela."
+        }
+      ],
+      "closingText": "Você já lê uma requisição e uma resposta HTTP e sabe o que cada parte significa. Até aqui, observou APIs dos outros. No próximo módulo começa a desenhar a sua: quais recursos a oficina expõe, com quais métodos e em qual formato.",
+      "ctaTitle": "🌐 Conversa HTTP decifrada!",
+      "ctaText": "Método, URL, cabeçalhos, corpo e status já fazem sentido. Agora vamos organizar essas peças em uma API.",
+      "nextButtonText": "Ir para Módulo 1: REST e JSON: Desenhando a API"
+    },
+    {
+      "id": 1,
+      "icon": "sitemap",
+      "title": "REST e JSON: Desenhando a API",
+      "shortDescription": "Recursos, métodos, JSON e respostas que não surpreendem",
+      "introductionText": "REST é um estilo de arquitetura, não uma biblioteca: a API expõe recursos identificados por URLs e usa os métodos do HTTP com o significado que eles já têm. JSON é o formato de dados mais comum nessas respostas. Neste módulo você escreve o contrato da API da oficina antes de qualquer código — quais endereços existem, o que cada método faz neles, como é o corpo enviado e recebido e como os erros aparecem. Contrato claro primeiro é o que evita retrabalho depois.",
+      "sections": [
+        {
+          "title": "🗺️ O contrato da API da oficina",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Recursos com nomes de substantivo",
+              "code": "/clientes  /bicicletas  /agendamentos",
+              "guidance": "Liste os recursos da oficina e dê a cada um uma URL no plural: a coleção em /agendamentos e um item específico em /agendamentos/42. Quando um recurso pertence a outro, a hierarquia pode aparecer na URL, como /clientes/7/bicicletas. A ação fica no método, não no endereço: evite /criarAgendamento ou /cancelarAgendamento.",
+              "tips": [
+                "Filtros e ordenação vão na query string: /agendamentos?data=2026-11-10&status=confirmado. A URL continua nomeando o recurso."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Métodos com significado",
+              "code": "GET  POST  PUT  PATCH  DELETE",
+              "guidance": "Preencha uma tabela recurso × método: GET lê, POST cria, PUT substitui o recurso inteiro, PATCH altera parte dele e DELETE remove. Marque quais são seguros (não alteram nada no servidor: GET, HEAD, OPTIONS) e quais são idempotentes (repetir dá o mesmo resultado que fazer uma vez: os seguros, mais PUT e DELETE). POST não é idempotente — enviar duas vezes pode criar dois agendamentos.",
+              "tips": [
+                "Idempotência importa quando a rede falha: o cliente pode repetir um PUT ou DELETE sem medo. Repetir um POST exige cuidado extra do back-end para não duplicar."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "JSON de entrada e de saída",
+              "code": "JSON.stringify(obj) / JSON.parse(texto)",
+              "guidance": "Escreva o corpo de um POST /agendamentos e a resposta esperada. Use nomes de campo consistentes, datas no formato ISO 8601 (2026-11-10T09:00:00-03:00) e valores monetários em centavos como número inteiro, para fugir de erro de arredondamento. Em JavaScript, JSON.stringify transforma objeto em texto e JSON.parse faz o caminho inverso.",
+              "tips": [
+                "JSON não aceita comentários, vírgula sobrando no final nem aspas simples. Um validador de JSON pega esses erros antes que virem um 400 misterioso."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Status certo e erro em formato único",
+              "code": "201 Created + Location: /agendamentos/42",
+              "guidance": "Defina a resposta de cada operação: criação devolve 201 com o cabeçalho Location apontando para o novo recurso; remoção bem-sucedida pode devolver 204 sem corpo; item inexistente devolve 404. Para erros, escolha um formato só — por exemplo um objeto com tipo, título, status e detalhe, no estilo do padrão Problem Details (RFC 9457) — e use-o em todas as rotas.",
+              "tips": [
+                "Nunca responda 200 com um corpo dizendo que deu erro. Quem consome a API decide o que fazer olhando primeiro o status."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que desenhar antes de programar",
+      "highlights": [
+        {
+          "icon": "sitemap",
+          "title": "Previsível para quem consome",
+          "text": "Se /agendamentos funciona de um jeito, /clientes funciona do mesmo. Quem integra com a API adivinha o próximo endereço em vez de procurar na documentação."
+        },
+        {
+          "icon": "sync",
+          "title": "Front e back em paralelo",
+          "text": "Com o contrato fechado, a equipe de interface trabalha contra respostas de exemplo enquanto o servidor é construído. Ninguém fica parado esperando o outro."
+        },
+        {
+          "icon": "list",
+          "title": "Erro que se explica",
+          "text": "Um formato único de erro, com status coerente, permite tratar falhas em um lugar só no cliente — e economiza horas de suporte."
+        }
+      ],
+      "closingText": "O contrato da oficina já tem recursos, métodos, exemplos de JSON e respostas de erro. Falta decidir o que a API aceita e o que recusa: quais dados são válidos, quais regras do negócio precisam ser respeitadas e quem tem permissão para cada operação.",
+      "ctaTitle": "🗺️ Contrato desenhado!",
+      "ctaText": "Sua API já tem forma. Agora vamos colocar as regras que impedem que ela aceite qualquer coisa de qualquer pessoa.",
+      "nextButtonText": "Ir para Módulo 2: Regras de Negócio, Validação e Autenticação"
+    },
+    {
+      "id": 2,
+      "icon": "shield",
+      "title": "Regras de Negócio, Validação e Autenticação",
+      "shortDescription": "O que a API aceita, de quem aceita e como recusa",
+      "introductionText": "Regra de negócio é o que torna a sua API diferente de qualquer outra: a oficina só agenda em dia útil, entre 8h e 18h, uma revisão por mecânico por horário, e o cancelamento só vale até duas horas antes. Validação garante que o dado chegou no formato certo; regra de negócio garante que ele faz sentido para a empresa. Este módulo separa as duas coisas, define o erro de cada uma e acrescenta a camada de autenticação e autorização, com base nas falhas que o OWASP aponta como as mais frequentes em APIs.",
+      "sections": [
+        {
+          "title": "🛡️ Regras que o servidor não negocia",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Validar formato no servidor",
+              "code": "if (!Number.isInteger(dados.bicicletaId)) ...",
+              "guidance": "Escreva uma função que receba o corpo de um POST /agendamentos e devolva a lista de problemas: campo obrigatório ausente, data que não é data, identificador que não é número. Se houver problema de formato, a resposta é 400 Bad Request com a lista de campos inválidos. Validação no formulário melhora a experiência, mas não substitui esta: ela pode ser contornada.",
+              "tips": [
+                "Valide também o que não deveria vir. Se o corpo trouxer um campo como precoFinal ou status, ignore ou recuse: quem define esses valores é o servidor."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Regra de negócio separada da rota",
+              "code": "function podeAgendar(agenda, pedido)",
+              "guidance": "Coloque as regras da oficina em funções próprias, sem nada de HTTP dentro: recebem dados e devolvem uma decisão. Horário já ocupado vira 409 Conflict; pedido bem formado mas que viola uma regra, como cancelar com menos de duas horas, pode virar 422 Unprocessable Content. A rota só traduz a decisão em status e JSON.",
+              "tips": [
+                "Função de regra sem HTTP dentro é fácil de testar: basta chamar com dados de exemplo e conferir o resultado, sem subir servidor."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Autenticação e autorização",
+              "code": "401 ≠ 403",
+              "guidance": "Autenticação responde quem está chamando; autorização responde se essa pessoa pode fazer aquilo. Sem credencial válida, a resposta é 401 Unauthorized. Com credencial válida mas sem permissão — um cliente tentando ver a agenda de todos os mecânicos —, a resposta é 403 Forbidden. Marque no contrato quais rotas são públicas, quais exigem login e quais exigem perfil de funcionário.",
+              "tips": [
+                "Apesar do nome, 401 trata de autenticação. O nome histórico confunde até quem já trabalha com isso há anos."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Senha com hash, credencial no cabeçalho",
+              "code": "Authorization: Bearer <token>",
+              "guidance": "Senha nunca é gravada como texto nem com criptografia reversível: guarda-se um hash lento e com sal, gerado por algoritmos como Argon2id ou bcrypt. Depois do login, o cliente recebe um token e o envia em cada requisição no cabeçalho Authorization. No esquema Basic, usuário e senha vão em Base64 — que é só codificação, não criptografia —, então qualquer credencial só trafega sobre HTTPS.",
+              "tips": [
+                "Nunca escreva seu próprio algoritmo de hash ou de token. Use a biblioteca consolidada da sua plataforma e gaste a energia nas regras do negócio."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Conferir o dono de cada objeto",
+              "code": "agendamento.clienteId === usuario.id",
+              "guidance": "A falha número um da lista OWASP API Security Top 10 2023 é a autorização quebrada no nível do objeto: o usuário está logado, troca o 42 da URL por 43 e vê o agendamento de outra pessoa. Em toda rota que recebe um identificador, busque o objeto e confira se ele pertence a quem está pedindo antes de devolvê-lo ou alterá-lo.",
+              "tips": [
+                "Responder 404 em vez de 403 para objetos de outra pessoa evita confirmar que aquele identificador existe."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que regras e permissões vêm antes do banco",
+      "highlights": [
+        {
+          "icon": "shield",
+          "title": "O servidor é a última barreira",
+          "text": "Tudo o que chega pela rede pode ter sido montado à mão. Validação e autorização no back-end são a única garantia real de que a regra vale."
+        },
+        {
+          "icon": "tools",
+          "title": "Regra testável",
+          "text": "Com a regra isolada em funções, mudar o horário de funcionamento da oficina é alterar uma linha e rodar os testes, não caçar condições espalhadas pelas rotas."
+        },
+        {
+          "icon": "gauge",
+          "title": "Erro certo, suporte menor",
+          "text": "400, 401, 403, 409 e 422 dizem coisas diferentes. Quem consome a API sabe se precisa corrigir o dado, fazer login ou escolher outro horário."
+        }
+      ],
+      "closingText": "A API da oficina agora sabe o que aceita, de quem aceita e como recusa. Mas ela ainda esquece tudo quando o servidor reinicia e não sabe nada sobre o mundo lá fora. No último módulo ela ganha memória, com um banco de dados, e vizinhos, com uma API de terceiros.",
+      "ctaTitle": "🛡️ Regras de pé!",
+      "ctaText": "Validação, regra de negócio e permissões definidas. Agora vamos guardar os dados e conversar com outros serviços.",
+      "nextButtonText": "Ir para Módulo 3: Banco de Dados e APIs de Terceiros"
+    },
+    {
+      "id": 3,
+      "icon": "folder",
+      "title": "Banco de Dados e APIs de Terceiros",
+      "shortDescription": "Persistir com segurança e integrar sem herdar a falha dos outros",
+      "introductionText": "Uma API de verdade lembra o que aconteceu e depende de outros sistemas: pagamento, envio de mensagem, consulta de endereço. Este módulo cobre as duas pontas. Do lado do banco, você define onde cada dado mora e escreve consultas que não abrem espaço para injeção. Do lado das integrações, chama um serviço externo de consulta de CEP tratando tempo limite, erro e resposta inesperada, e guarda as chaves de acesso fora do código. A modelagem de banco em profundidade fica para o programa Banco de Dados na prática.",
+      "sections": [
+        {
+          "title": "🗄️ Memória e vizinhos da API",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Do recurso à tabela",
+              "guidance": "Para cada recurso do contrato, escreva a estrutura em que ele será guardado: campos, tipos, qual campo identifica o registro e qual aponta para outro recurso — o agendamento guarda o identificador do cliente e da bicicleta. Note que o JSON da API não precisa ser idêntico à tabela: o hash da senha, por exemplo, existe no banco e nunca aparece na resposta.",
+              "tips": [
+                "Monte a resposta escolhendo os campos que saem, em vez de devolver o registro inteiro. É assim que se evita vazar campo interno sem perceber."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Consultas parametrizadas",
+              "code": "db.query('SELECT * FROM agendamentos WHERE id = $1', [id])",
+              "guidance": "Compare duas formas de buscar um agendamento: montando o SQL com concatenação de texto e passando o valor como parâmetro. Na primeira, um valor malicioso vira parte do comando — é a injeção de SQL. Na segunda, o banco recebe comando e dado separados e nunca executa o dado. Use sempre a forma parametrizada que a biblioteca de acesso ao banco oferece.",
+              "tips": [
+                "O marcador do parâmetro muda de biblioteca para biblioteca ($1, ?, :id), mas a regra é a mesma: valor vindo de fora nunca entra no texto da consulta."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Chamar uma API de terceiros sem travar",
+              "code": "fetch(url, { signal: AbortSignal.timeout(3000) })",
+              "guidance": "Ao cadastrar o endereço de retirada da bicicleta, a API da oficina consulta um serviço de CEP. Faça a chamada com tempo limite, confira o status da resposta antes de ler o corpo e decida o que fazer se falhar: devolver erro claro, aceitar o endereço digitado ou tentar de novo mais tarde. Uma dependência lenta não pode deixar a sua API lenta.",
+              "tips": [
+                "Trate três casos separados: o serviço respondeu com sucesso, respondeu com erro e não respondeu. São três decisões diferentes, não um único catch genérico."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Segredos fora do código e desconfiança da resposta",
+              "code": "process.env.CHAVE_SERVICO_CEP",
+              "guidance": "A chave de acesso ao serviço externo fica em variável de ambiente, nunca no repositório. E o que volta do terceiro é dado de entrada como outro qualquer: valide o formato antes de gravar ou repassar. O OWASP lista o consumo inseguro de APIs como um dos dez riscos de 2023 justamente porque equipes costumam confiar mais no parceiro do que no próprio usuário.",
+              "tips": [
+                "Se uma chave já foi enviada ao repositório, apagar o arquivo não basta: ela fica no histórico. Revogue a chave e gere outra."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que persistência e integração exigem cuidado",
+      "highlights": [
+        {
+          "icon": "folder",
+          "title": "Dado que sobrevive",
+          "text": "O banco é o que faz o agendamento continuar existindo depois que o servidor reinicia. Definir bem o que é guardado evita migração dolorosa mais adiante."
+        },
+        {
+          "icon": "shield",
+          "title": "Injeção fechada na origem",
+          "text": "Consulta parametrizada elimina uma classe inteira de ataque com uma mudança de hábito, sem ferramenta extra."
+        },
+        {
+          "icon": "bolt",
+          "title": "Falha que não se espalha",
+          "text": "Com tempo limite e tratamento de erro, o serviço de CEP fora do ar vira um aviso na tela, não uma API inteira parada."
+        }
+      ],
+      "closingText": "Você percorreu o caminho completo de uma requisição: chega pelo HTTP, passa pela validação, pela regra de negócio e pela autorização, consulta o banco, conversa com um serviço externo e volta com um status coerente. O contrato da oficina está pronto para ser implementado — e é exatamente isso que o próximo programa da trilha faz.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você entende o que um back-end faz e por quê. O próximo passo é implementar este contrato em Node.js e Express: Criando APIs RESTful Escaláveis.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Por que uma regra como \"o horário precisa estar livre\" deve ser conferida no back-end, mesmo que a tela já confira?",
+      "explanation": "Qualquer pessoa pode enviar uma requisição direto à API, sem passar pela interface. A conferência na tela melhora a experiência, mas só a conferência no servidor garante a regra. Não tem relação com velocidade, com o navegador não conseguir executar JavaScript nem com exigência do HTTP.",
+      "options": [
+        {
+          "text": "Porque a API pode ser chamada sem passar pela tela",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque o servidor sempre executa código mais rápido que o navegador",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o navegador não consegue comparar datas",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o protocolo HTTP proíbe validação no cliente",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Uma API responde com status 503. O que o primeiro dígito indica a quem a consome?",
+      "explanation": "Códigos 5xx indicam erro do lado do servidor: o pedido pode estar correto e tentar novamente mais tarde pode resolver. Códigos 4xx indicam problema no pedido do cliente; 2xx, sucesso; 3xx, redirecionamento.",
+      "options": [
+        {
+          "text": "Erro do servidor; o pedido pode estar certo e vale tentar mais tarde",
+          "isCorrect": true
+        },
+        {
+          "text": "Erro no pedido; o cliente precisa corrigir os dados",
+          "isCorrect": false
+        },
+        {
+          "text": "Sucesso parcial da operação",
+          "isCorrect": false
+        },
+        {
+          "text": "O recurso mudou de endereço",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "O que significa dizer que o HTTP é sem estado?",
+      "explanation": "Sem estado significa que o servidor não guarda dados de sessão entre uma requisição e outra; cada requisição precisa trazer o que o servidor precisa saber, como a credencial no cabeçalho Authorization. Cookies permitem continuidade porque o cliente reenvia o valor. Não tem relação com banco de dados nem com o tipo de conteúdo.",
+      "options": [
+        {
+          "text": "O servidor não guarda informação de uma requisição para a seguinte",
+          "isCorrect": true
+        },
+        {
+          "text": "O servidor não pode usar banco de dados",
+          "isCorrect": false
+        },
+        {
+          "text": "As respostas não podem ter código de status",
+          "isCorrect": false
+        },
+        {
+          "text": "Só é possível enviar texto, nunca JSON",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Qual URL segue melhor o estilo REST para cancelar o agendamento 42, se cancelar significa remover o registro?",
+      "explanation": "Em REST a URL nomeia o recurso e o método diz a ação: DELETE /agendamentos/42. Endereços com verbos, como /cancelarAgendamento, colocam a ação na URL e quebram a previsibilidade. Usar GET para alterar algo é ainda pior, porque GET deve ser seguro.",
+      "options": [
+        {
+          "text": "DELETE /agendamentos/42",
+          "isCorrect": true
+        },
+        {
+          "text": "POST /cancelarAgendamento?id=42",
+          "isCorrect": false
+        },
+        {
+          "text": "GET /agendamentos/42/cancelar",
+          "isCorrect": false
+        },
+        {
+          "text": "PUT /cancelar/42/agendamento",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Qual destes métodos NÃO é idempotente segundo a RFC 9110?",
+      "explanation": "POST não é idempotente: enviar duas vezes pode criar dois recursos. GET, PUT e DELETE são idempotentes — repetir a mesma requisição produz o mesmo efeito no servidor que fazê-la uma vez. Por isso repetir um POST após falha de rede exige cuidado extra.",
+      "options": [
+        {
+          "text": "POST",
+          "isCorrect": true
+        },
+        {
+          "text": "GET",
+          "isCorrect": false
+        },
+        {
+          "text": "PUT",
+          "isCorrect": false
+        },
+        {
+          "text": "DELETE",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Uma requisição POST criou um novo agendamento com sucesso. Qual resposta é a mais adequada?",
+      "explanation": "201 Created indica que um recurso foi criado, e o cabeçalho Location informa o endereço dele. 200 com mensagem de texto funciona, mas perde informação. 204 indica sucesso sem corpo e é mais comum em remoções. 302 é redirecionamento e não descreve criação.",
+      "options": [
+        {
+          "text": "201 Created com o cabeçalho Location apontando para o novo recurso",
+          "isCorrect": true
+        },
+        {
+          "text": "200 OK com o texto \"criado com sucesso\"",
+          "isCorrect": false
+        },
+        {
+          "text": "204 No Content sem nenhuma informação",
+          "isCorrect": false
+        },
+        {
+          "text": "302 Found redirecionando para a lista",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Um cliente envia um token válido, mas tenta acessar uma rota exclusiva de funcionários. Qual status é o correto?",
+      "explanation": "O cliente está autenticado — o servidor sabe quem ele é —, mas não tem permissão para aquela ação: isso é 403 Forbidden. 401 Unauthorized é para quando falta credencial válida, apesar do nome. 404 e 400 descrevem outros problemas.",
+      "options": [
+        {
+          "text": "403 Forbidden",
+          "isCorrect": true
+        },
+        {
+          "text": "401 Unauthorized",
+          "isCorrect": false
+        },
+        {
+          "text": "400 Bad Request",
+          "isCorrect": false
+        },
+        {
+          "text": "500 Internal Server Error",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Qual é a forma correta de guardar a senha de um usuário no banco?",
+      "explanation": "Senha deve ser guardada como hash lento e com sal, gerado por algoritmos próprios para isso, como Argon2id ou bcrypt. Texto puro e Base64 expõem a senha a quem ler o banco; criptografia reversível significa que quem obtiver a chave recupera todas as senhas.",
+      "options": [
+        {
+          "text": "Como hash lento e com sal, gerado por Argon2id ou bcrypt",
+          "isCorrect": true
+        },
+        {
+          "text": "Codificada em Base64",
+          "isCorrect": false
+        },
+        {
+          "text": "Criptografada com uma chave guardada no servidor",
+          "isCorrect": false
+        },
+        {
+          "text": "Em texto puro, desde que o banco tenha senha",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Um usuário logado troca o número na URL de /agendamentos/42 para /agendamentos/43 e vê o agendamento de outra pessoa. Que falha é essa?",
+      "explanation": "É a autorização quebrada no nível do objeto, primeira da lista OWASP API Security Top 10 2023. A API autenticou o usuário, mas não conferiu se o objeto pedido pertence a ele. A correção é verificar o dono em toda rota que recebe um identificador. Não é injeção de SQL nem problema de validação de formato.",
+      "options": [
+        {
+          "text": "Autorização quebrada no nível do objeto",
+          "isCorrect": true
+        },
+        {
+          "text": "Injeção de SQL",
+          "isCorrect": false
+        },
+        {
+          "text": "Erro de validação de formato do JSON",
+          "isCorrect": false
+        },
+        {
+          "text": "Falha no tempo limite da requisição",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Por que usar consultas parametrizadas em vez de montar o SQL concatenando texto?",
+      "explanation": "Com parâmetros, o banco recebe o comando e os valores separadamente e nunca executa o valor como parte do comando, o que impede a injeção de SQL. O ganho principal não é velocidade nem legibilidade, e parâmetros não substituem a validação de regras de negócio.",
+      "options": [
+        {
+          "text": "Porque o valor vindo de fora nunca é interpretado como parte do comando",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque consultas parametrizadas dispensam validação de dados",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque concatenar texto é proibido em JavaScript",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque só assim o banco aceita números",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "O serviço externo de CEP às vezes demora mais de um minuto para responder. Qual é a atitude mais adequada no back-end?",
+      "explanation": "Definir um tempo limite e tratar a falha impede que a lentidão de um terceiro deixe a sua API lenta ou parada. Esperar indefinidamente prende recursos do servidor; remover a integração ou chamar o serviço a partir do navegador com a chave exposta trocam um problema por outro.",
+      "options": [
+        {
+          "text": "Definir tempo limite na chamada e decidir o que fazer quando ela falhar",
+          "isCorrect": true
+        },
+        {
+          "text": "Esperar o tempo que for preciso, porque o dado é importante",
+          "isCorrect": false
+        },
+        {
+          "text": "Mover a chamada para o navegador, junto com a chave de acesso",
+          "isCorrect": false
+        },
+        {
+          "text": "Repetir a chamada sem pausa até o serviço responder",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Segundo o relatório State of the API 2025 da Postman, que proporção dos respondentes adotou algum nível de abordagem API-first?",
+      "explanation": "83,2% dos mais de 5.700 respondentes declararam algum nível de abordagem API-first, ou seja, desenham a API como produto antes de construir o resto. É o mesmo hábito praticado neste programa: fechar o contrato antes de escrever a implementação.",
+      "options": [
+        {
+          "text": "83,2%",
+          "isCorrect": true
+        },
+        {
+          "text": "24,3%",
+          "isCorrect": false
+        },
+        {
+          "text": "10%",
+          "isCorrect": false
+        },
+        {
+          "text": "50,8%",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "O contrato completo da API de agendamentos de uma oficina de bicicletas fictícia: recursos e URLs, tabela de métodos com o que é seguro e idempotente, exemplos de JSON de entrada e saída, códigos de status para cada situação, formato único de erro, funções em JavaScript para validação e regras de negócio, mapa de rotas públicas e protegidas, estrutura das tabelas e o plano de integração com um serviço de CEP, com tempo limite e tratamento de falha. É o documento que o programa seguinte da trilha implementa.",
+    "highlights": [
+      "Contrato de API REST com status e erros coerentes",
+      "Regras de negócio e validação em funções testáveis",
+      "Plano de segurança e de integração com serviço externo"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "APIs são a forma como os sistemas conversam hoje, e as equipes estão desenhando-as com mais cuidado. No relatório State of the API 2025 da Postman, que ouviu mais de 5.700 desenvolvedores e profissionais de API, 83,2% declararam algum nível de abordagem API-first, e 24,3% já desenham APIs pensando em agentes de IA como consumidores.",
+      "Mais consumidores automáticos significam mais requisições que ninguém revisa à mão. No mesmo relatório, 50,8% apontaram chamadas não autorizadas ou excessivas como a maior preocupação de segurança. Para quem está começando, isso torna os fundamentos deste programa — status corretos, validação no servidor, autorização por objeto e integrações que falham bem — mais valiosos, não menos."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Aplicativos web e móveis",
+        "description": "Toda tela que lista, salva ou busca dados depende de uma API por trás."
+      },
+      {
+        "label": "Integração entre sistemas",
+        "description": "Pagamentos, envio de mensagens, logística e consulta de dados públicos passam por APIs de terceiros."
+      },
+      {
+        "label": "Base para qualquer framework",
+        "description": "Express, Django, FastAPI e Spring organizam exatamente os conceitos vistos aqui."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem está começando no back-end",
+        "description": "Sabe o básico de programação e quer entender o lado do servidor antes de escolher um framework."
+      },
+      {
+        "label": "Quem vem do front-end",
+        "description": "Já consome APIs com fetch e quer entender o que acontece do outro lado."
+      },
+      {
+        "label": "Quem trabalha perto de desenvolvedores",
+        "description": "Analistas, testadores e pessoas de produto que precisam ler documentação de API e discutir erros com precisão."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Toda empresa com produto digital tem back-end: de bancos e varejistas a pequenas empresas que integram um sistema de pagamento ao site. Os fundamentos de HTTP, REST, validação e autenticação são os mesmos em qualquer linguagem e em qualquer porte de empresa, o que torna esta base transferível entre equipes, setores e tecnologias.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "MDN Web Docs — HTTP: Hypertext Transfer Protocol",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+    },
+    {
+      "label": "IETF — RFC 9110: HTTP Semantics",
+      "url": "https://datatracker.ietf.org/doc/rfc9110/"
+    },
+    {
+      "label": "OWASP Foundation — OWASP API Security Project (API Security Top 10 2023)",
+      "url": "https://owasp.org/projects/api-security-project"
+    },
+    {
+      "label": "Business Wire — Postman 2025 State of the API Report",
+      "url": "https://www.businesswire.com/news/home/20251008162423/en"
+    }
+  ]
 }

@@ -3,8 +3,826 @@
   "image": "https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg",
   "category": "Backend",
   "categoryFilter": "backend",
-  "title": "Python para Backend: Do Django ao FastAPI",
-  "lessons": "18+ Lições",
-  "duration": "16hr 00min",
-  "access": "Acesso Livre"
+  "title": "Python para Back-end: APIs com FastAPI e Noções de Django",
+  "lessons": "17 passos",
+  "duration": "12h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Intermediário",
+  "description": "Construa uma API de reservas de salas em Python, do ambiente virtual aos testes automatizados. Você aprende FastAPI com Pydantic e documentação automática, guarda os dados com SQLAlchemy, testa com pytest e conhece o Django o suficiente para saber quando ele é a escolha melhor.",
+  "letslearn": [
+    "Criar ambiente virtual e registrar dependências de forma reproduzível",
+    "Escrever rotas FastAPI com validação Pydantic, códigos de status e documentação automática",
+    "Usar injeção de dependências para sessão de banco e regras compartilhadas",
+    "Persistir dados com SQLAlchemy 2.0 e testar a API com pytest",
+    "Entender o ORM e o admin do Django e decidir entre Django e FastAPI com critério"
+  ],
+  "curriculum": "Do script Python à API testada",
+  "about": "O programa parte de quem já escreve Python e quer usá-lo no servidor. A progressão segue a ordem de um projeto real: primeiro o ambiente isolado, depois a API em FastAPI com contrato validado, em seguida o banco de dados e os testes que protegem o que foi feito. O último módulo monta a mesma ideia em Django, para que a comparação entre os dois seja feita com código na mão e não por opinião. O projeto é uma API de reservas de salas de reunião de uma empresa fictícia, com dados inventados.",
+  "materials": [
+    "Repositório com o projeto ao final de cada módulo",
+    "Arquivo requirements.txt de referência",
+    "Checklist de revisão de rota (status, validação, erro, teste)",
+    "Tabela comparativa Django x FastAPI para consulta rápida"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Ambiente e Projeto Python",
+      "lessonsCount": 3,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "API com FastAPI",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Banco de Dados e Testes",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Django: ORM, Admin e a Escolha",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Backend",
+    "mainTitle": "Do script solto à API que se valida, se documenta e se testa sozinha.",
+    "introductionParagraphs": [
+      {
+        "title": "Por que Python no servidor",
+        "text": "Python já é a linguagem que muita gente usa para automação, dados e scripts. Levar esse conhecimento para o back-end significa expor regras de negócio por HTTP, com validação de entrada, banco de dados e testes. O **FastAPI** e o **Django** são os dois caminhos mais usados para isso, e cada um resolve um problema diferente."
+      },
+      {
+        "title": "Tipos que viram contrato",
+        "text": "No FastAPI, as anotações de tipo do Python deixam de ser comentário e passam a ser regra: o mesmo modelo **Pydantic** valida o JSON que chega, converte os tipos e gera a documentação interativa da API. Você escreve a definição uma vez e ela é usada em três lugares, o que elimina a documentação que envelhece separada do código."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não cobre autenticação completa com tokens, deploy em nuvem nem filas assíncronas. O foco é a base que todo projeto em Python precisa: ambiente reproduzível, API correta, dados persistidos e testes. Microsserviços e contêineres ficam para o programa Arquitetura de Microsserviços com Docker e Kubernetes."
+      }
+    ],
+    "courseAboutTitle": "O mesmo raciocínio de API, agora em Python",
+    "courseAboutDescription": "Quem fez Node.js e Express: Criando APIs RESTful Escaláveis vai reconhecer os conceitos de rota, status e validação; aqui eles aparecem com a tipagem do Python e a injeção de dependências do FastAPI. Quem chega direto do Python aprende o vocabulário de back-end sem precisar trocar de linguagem. Em ambos os casos, o objetivo é sair capaz de ler e manter uma API Python escrita por outra pessoa.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Ambiente e Projeto Python",
+        "items": [
+          {
+            "label": "Ambiente virtual",
+            "description": "Isolar as bibliotecas do projeto com o módulo venv."
+          },
+          {
+            "label": "Dependências registradas",
+            "description": "Instalar com pip e gravar versões em requirements.txt."
+          },
+          {
+            "label": "Estrutura inicial",
+            "description": "Separar aplicação, modelos e testes desde o primeiro arquivo."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: API com FastAPI",
+        "items": [
+          {
+            "label": "Rotas e parâmetros",
+            "description": "Parâmetros de caminho e de consulta com tipos validados."
+          },
+          {
+            "label": "Modelos Pydantic",
+            "description": "Validar o corpo da requisição e moldar a resposta."
+          },
+          {
+            "label": "Documentação automática",
+            "description": "Swagger UI e ReDoc gerados a partir do código."
+          },
+          {
+            "label": "Dependências",
+            "description": "Reaproveitar lógica com Depends em vez de copiar código."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Banco de Dados e Testes",
+        "items": [
+          {
+            "label": "SQLAlchemy 2.0",
+            "description": "Modelos tipados, sessão e consultas com select."
+          },
+          {
+            "label": "Sessão como dependência",
+            "description": "Abrir e fechar a conexão por requisição com yield."
+          },
+          {
+            "label": "pytest e TestClient",
+            "description": "Testar rotas sem subir servidor e com banco isolado."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Django: ORM, Admin e a Escolha",
+        "items": [
+          {
+            "label": "Projeto e app",
+            "description": "A organização que o Django impõe e por que ela ajuda."
+          },
+          {
+            "label": "ORM e migrações",
+            "description": "Modelos, makemigrations, migrate e QuerySets preguiçosos."
+          },
+          {
+            "label": "Admin",
+            "description": "Um painel de gestão pronto a partir dos modelos."
+          },
+          {
+            "label": "Quando escolher cada um",
+            "description": "Critérios concretos para decidir entre Django e FastAPI."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para executar no seu próprio projeto. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "laptop",
+      "title": "Ambiente e Projeto Python",
+      "shortDescription": "venv, pip e uma estrutura que não precisa ser refeita depois",
+      "introductionText": "Instalar biblioteca no Python do sistema funciona até o segundo projeto pedir outra versão da mesma biblioteca. O ambiente virtual resolve isso: cada projeto tem sua própria pasta de pacotes, e o que funciona na sua máquina pode ser reproduzido na de outra pessoa. Este módulo é curto, mas é o que evita a frase mais cara do back-end: na minha máquina funciona.",
+      "sections": [
+        {
+          "title": "🧰 Preparando o terreno",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Criar e ativar o ambiente virtual",
+              "code": "python -m venv .venv",
+              "guidance": "Na pasta do projeto, crie o ambiente com o módulo venv, que já vem com o Python. Ative com source .venv/bin/activate no Linux e macOS ou .venv\\Scripts\\activate no Windows. Com o ambiente ativo, python e pip passam a apontar para dentro de .venv.",
+              "tips": [
+                "Coloque .venv no .gitignore. O ambiente é recriado a partir da lista de dependências; ele mesmo nunca vai para o repositório."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Instalar e registrar dependências",
+              "code": "pip install 'fastapi[standard]' sqlalchemy pytest",
+              "guidance": "Instale o FastAPI com os extras padrão (que trazem o servidor Uvicorn, o comando fastapi e o httpx usado nos testes), o SQLAlchemy e o pytest. Depois grave as versões exatas com pip freeze > requirements.txt. Quem clonar o projeto recria tudo com pip install -r requirements.txt.",
+              "tips": [
+                "Sem versão fixada, uma atualização de biblioteca no meio da semana pode quebrar o projeto de quem instalou depois de você."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Estrutura inicial do projeto",
+              "guidance": "Crie uma pasta app com main.py (onde nasce a aplicação), schemas.py (modelos Pydantic), models.py (tabelas do banco) e database.py (conexão). Ao lado, uma pasta tests. Separar desde já o contrato da API, o banco e os testes evita o arquivo único de 800 linhas.",
+              "tips": [
+                "Schema e modelo de banco parecem iguais no começo, mas mudam por motivos diferentes: um segue o contrato com o cliente, o outro segue a tabela. Mantê-los separados é o que permite mudar um sem quebrar o outro."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que o ambiente vem primeiro",
+      "highlights": [
+        {
+          "icon": "shield",
+          "title": "Projetos isolados",
+          "text": "Cada projeto tem as suas versões. Atualizar uma biblioteca em um não quebra o outro que dependia da versão antiga."
+        },
+        {
+          "icon": "sync",
+          "title": "Reproduzível em qualquer máquina",
+          "text": "O requirements.txt transforma a sua instalação em uma receita. Colega, servidor de integração e produção instalam exatamente o mesmo."
+        },
+        {
+          "icon": "folder",
+          "title": "Cada coisa no seu arquivo",
+          "text": "Contrato da API, banco e testes em arquivos separados deixam claro onde mexer quando algo muda."
+        }
+      ],
+      "closingText": "O projeto tem ambiente isolado, dependências registradas e uma estrutura pronta para crescer. Ainda não existe nenhuma rota respondendo. No próximo módulo a API ganha vida com o FastAPI.",
+      "ctaTitle": "🧰 Ambiente pronto!",
+      "ctaText": "Seu projeto já é reproduzível. Agora vamos escrever a primeira rota e ver a documentação se gerar sozinha.",
+      "nextButtonText": "Ir para Módulo 1: API com FastAPI"
+    },
+    {
+      "id": 1,
+      "icon": "bolt",
+      "title": "API com FastAPI",
+      "shortDescription": "Rotas, Pydantic, documentação automática e dependências",
+      "introductionText": "O FastAPI lê as anotações de tipo das suas funções e as usa para três coisas ao mesmo tempo: validar a entrada, converter os dados e descrever a API no padrão OpenAPI. Isso muda a forma de trabalhar: em vez de escrever validação à mão e documentação em outro lugar, você declara os tipos uma vez. Neste módulo você constrói as rotas de salas e reservas e conhece a injeção de dependências, o recurso que mais diferencia o FastAPI.",
+      "sections": [
+        {
+          "title": "⚡ As primeiras rotas",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Primeira rota e servidor de desenvolvimento",
+              "code": "fastapi dev app/main.py",
+              "guidance": "Em main.py, crie app = FastAPI() e uma função decorada com @app.get('/salas') que devolve uma lista. Rode o servidor de desenvolvimento, que recarrega a cada alteração, e acesse o endereço local no navegador. O dicionário ou lista que você devolve é convertido em JSON automaticamente.",
+              "tips": [
+                "O comando fastapi dev usa o Uvicorn por baixo. Se preferir chamá-lo direto, o equivalente é uvicorn app.main:app --reload."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Parâmetros de caminho e de consulta",
+              "code": "def buscar_sala(sala_id: int)",
+              "guidance": "Crie @app.get('/salas/{sala_id}') com o parâmetro anotado como int. Teste com um número e depois com um texto: o FastAPI responde 422 com a explicação do erro, sem você escrever validação. Parâmetros da função que não estão no caminho viram parâmetros de consulta, como capacidade_minima: int = 1 para filtrar salas.",
+              "tips": [
+                "Parâmetro com valor padrão é opcional; sem valor padrão, é obrigatório. A regra é a do próprio Python."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "📐 Contrato e documentação",
+          "subsections": [
+            {
+              "number": 3,
+              "title": "Modelos Pydantic para entrada e saída",
+              "code": "class ReservaCriar(BaseModel)",
+              "guidance": "Em schemas.py, declare ReservaCriar com sala_id, responsavel, inicio e fim (datetime) e participantes com Field(gt=0). Use-o como parâmetro de uma rota POST: o JSON é validado e convertido antes de chegar à função. Para a saída, declare ReservaLer e passe response_model=ReservaLer no decorador, assim só os campos previstos saem na resposta.",
+              "tips": [
+                "Separar o modelo de criação do modelo de leitura evita expor campos internos e impede que o cliente envie um id que deveria ser gerado pelo servidor."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Status HTTP e erros",
+              "code": "raise HTTPException(status_code=404)",
+              "guidance": "Defina status_code=201 na rota de criação. Quando a sala não existir, levante HTTPException com 404 e uma mensagem em detail. Quando o horário da reserva conflitar com outra, responda 409. Abra /docs e veja a interface Swagger UI com todas as rotas, os modelos e um botão para testar cada uma; em /redoc está a mesma descrição em outro formato.",
+              "tips": [
+                "Responder 200 com uma mensagem de erro no corpo obriga o cliente a ler o texto para saber se deu certo. O código de status existe para isso."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Injeção de dependências com Depends",
+              "code": "Annotated[Paginacao, Depends(paginacao)]",
+              "guidance": "Várias rotas de listagem repetem os mesmos parâmetros de pular e limitar. Escreva uma função paginacao(pular: int = 0, limite: int = 20) e declare-a com Depends nas rotas. O FastAPI chama a função, valida os parâmetros dela e entrega o resultado. Os parâmetros da dependência também aparecem na documentação.",
+              "tips": [
+                "Passe a função para Depends sem chamá-la: Depends(paginacao), não Depends(paginacao()). Quem chama é o FastAPI, a cada requisição."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que o FastAPI trabalha assim",
+      "highlights": [
+        {
+          "icon": "shield",
+          "title": "Validação sem código extra",
+          "text": "Tipo errado, campo faltando ou número fora da faixa viram resposta 422 detalhada antes de a sua função rodar."
+        },
+        {
+          "icon": "list",
+          "title": "Documentação que não envelhece",
+          "text": "A documentação é gerada do próprio código. Mudou o modelo, mudou a documentação, sem ninguém precisar lembrar de atualizar."
+        },
+        {
+          "icon": "sitemap",
+          "title": "Dependências em árvore",
+          "text": "Uma dependência pode depender de outra. Paginação, usuário atual e sessão de banco são declarados uma vez e reaproveitados em todas as rotas."
+        }
+      ],
+      "closingText": "A API já recebe, valida e responde, com documentação interativa. Mas os dados vivem em uma lista na memória e somem quando o servidor reinicia. No próximo módulo eles vão para o banco, e entram os testes que garantem que nada disso quebre.",
+      "ctaTitle": "⚡ API respondendo!",
+      "ctaText": "Rotas, contrato e documentação funcionando. Agora vamos dar memória à API e proteger o que foi feito com testes.",
+      "nextButtonText": "Ir para Módulo 2: Banco de Dados e Testes"
+    },
+    {
+      "id": 2,
+      "icon": "gauge",
+      "title": "Banco de Dados e Testes",
+      "shortDescription": "SQLAlchemy 2.0, sessão por requisição e pytest",
+      "introductionText": "O FastAPI não traz banco de dados embutido: você escolhe. O SQLAlchemy é a escolha mais comum no ecossistema e, desde a versão 2.0, usa anotações de tipo nos modelos, o que combina com o estilo do FastAPI. Neste módulo os dados passam a ser persistidos e a sessão de banco vira uma dependência. No fim, você escreve testes com pytest que trocam o banco real por um banco de teste sem alterar uma linha da aplicação.",
+      "sections": [
+        {
+          "title": "🗄️ Persistindo os dados",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Modelos com SQLAlchemy 2.0",
+              "code": "id: Mapped[int] = mapped_column(primary_key=True)",
+              "guidance": "Em models.py, crie uma classe Base herdando de DeclarativeBase e os modelos Sala e Reserva com Mapped e mapped_column. Reserva tem uma chave estrangeira para Sala. Em database.py, crie o engine com create_engine apontando para um arquivo SQLite e chame Base.metadata.create_all(engine) para criar as tabelas.",
+              "tips": [
+                "create_all só cria tabelas que não existem; ele não altera tabela já criada. Quando o projeto crescer, mudanças de esquema passam a ser feitas com uma ferramenta de migração como o Alembic."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "A sessão como dependência com yield",
+              "code": "def get_db(): with Session(engine) as db: yield db",
+              "guidance": "Escreva get_db abrindo a sessão em um bloco with e entregando-a com yield. Declare db: Annotated[Session, Depends(get_db)] nas rotas. O código depois do yield roda quando a requisição termina, então a sessão é sempre fechada, mesmo se a rota levantar erro.",
+              "tips": [
+                "Uma sessão por requisição é a regra. Sessão global compartilhada entre requisições mistura transações de usuários diferentes."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Consultas e gravação",
+              "code": "db.scalars(select(Sala).where(Sala.capacidade >= n)).all()",
+              "guidance": "Troque a lista em memória por consultas. Para buscar por chave primária use db.get(Sala, sala_id); para listar com filtro, select com where; para gravar, db.add(reserva) seguido de db.commit() e db.refresh(reserva) para receber o id gerado. Implemente a regra de conflito consultando reservas da mesma sala cujo intervalo se sobrepõe ao novo.",
+              "tips": [
+                "Dois intervalos se sobrepõem quando o início de um é anterior ao fim do outro e vice-versa. Escrever essa condição em uma função isolada facilita testá-la."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "🧪 Testes que protegem a API",
+          "subsections": [
+            {
+              "number": 4,
+              "title": "Primeiro teste com pytest e TestClient",
+              "code": "assert resposta.status_code == 201",
+              "guidance": "Em tests/test_reservas.py, crie client = TestClient(app) e escreva funções começando com test_. Faça um POST de reserva válida e confira o status e o corpo; faça outro com participantes igual a zero e confira o 422. Rode pytest na raiz: ele encontra os arquivos e funções pelo prefixo test.",
+              "tips": [
+                "O pytest usa o assert comum do Python e, quando falha, mostra os valores dos dois lados. Não é preciso aprender métodos especiais de comparação."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Banco de teste com dependency_overrides",
+              "code": "app.dependency_overrides[get_db] = get_db_teste",
+              "guidance": "Crie uma fixture do pytest que monta um banco SQLite em memória, cria as tabelas e registra uma função get_db_teste no dicionário app.dependency_overrides. Todas as rotas passam a usar o banco de teste. Ao final da fixture, limpe com app.dependency_overrides.clear() para que um teste não contamine o outro. Escreva o teste do conflito de horário: duas reservas sobrepostas, a segunda deve receber 409.",
+              "tips": [
+                "Banco SQLite em memória compartilhado entre conexões precisa de poolclass=StaticPool no create_engine; sem isso, cada conexão enxerga um banco vazio diferente."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que banco e teste andam juntos",
+      "highlights": [
+        {
+          "icon": "sync",
+          "title": "Ciclo de vida garantido",
+          "text": "A dependência com yield abre e fecha a sessão em um só lugar. Nenhuma rota precisa lembrar de fechar conexão."
+        },
+        {
+          "icon": "tools",
+          "title": "Trocar sem reescrever",
+          "text": "Como a rota pede a sessão por dependência, o teste substitui o banco inteiro sem tocar no código da aplicação."
+        },
+        {
+          "icon": "search",
+          "title": "Regra de negócio verificada",
+          "text": "O conflito de horário é a regra mais importante do sistema. Um teste automático a confere a cada alteração, não só no dia em que foi escrita."
+        }
+      ],
+      "closingText": "A API de reservas está completa: valida entrada, persiste dados, aplica a regra de conflito e tem testes que provam isso. Antes de encerrar, falta conhecer o outro grande caminho do Python para web, o Django, e entender em que situações ele resolveria este mesmo problema com menos código.",
+      "ctaTitle": "🧪 API testada!",
+      "ctaText": "Dados persistidos e regra de negócio coberta por testes. Agora vamos olhar o mesmo problema pelo lado do Django.",
+      "nextButtonText": "Ir para Módulo 3: Django: ORM, Admin e a Escolha"
+    },
+    {
+      "id": 3,
+      "icon": "grid",
+      "title": "Django: ORM, Admin e a Escolha",
+      "shortDescription": "O framework completo e o critério para escolher",
+      "introductionText": "O Django é um framework de baterias inclusas: ORM, migrações, autenticação, painel administrativo e sistema de templates vêm prontos e integrados. O FastAPI faz menos e deixa você escolher as peças. Nenhum dos dois é melhor em absoluto. Neste módulo você recria o cadastro de salas e reservas em Django, vê o admin funcionar sem escrever tela, e termina com critérios concretos para decidir entre os dois em um projeto novo.",
+      "sections": [
+        {
+          "title": "🏛️ O mesmo problema em Django",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Projeto, app e a organização do Django",
+              "code": "django-admin startproject config .",
+              "guidance": "Em um novo ambiente virtual, instale o Django e crie o projeto. Depois crie um app com python manage.py startapp reservas e registre-o em INSTALLED_APPS no settings.py. O projeto guarda configurações; cada app agrupa modelos, views e admin de um assunto.",
+              "tips": [
+                "Pense no app como uma pasta de domínio. Um projeto de tamanho médio costuma ter vários apps pequenos, não um app com tudo."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Modelos e migrações",
+              "code": "python manage.py makemigrations && python manage.py migrate",
+              "guidance": "Em reservas/models.py, declare Sala e Reserva herdando de models.Model, com models.ForeignKey(Sala, on_delete=models.CASCADE) na reserva. O makemigrations compara os modelos com o estado anterior e gera um arquivo de migração; o migrate aplica no banco. Diferente do create_all, a migração também altera tabelas existentes.",
+              "tips": [
+                "Arquivos de migração vão para o repositório. São eles que levam a mudança de esquema para o banco de cada colega e de produção."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Consultas com o ORM e o admin pronto",
+              "code": "Sala.objects.filter(capacidade__gte=8)",
+              "guidance": "No python manage.py shell, crie salas e consulte com filter, exclude e get. Repare que o QuerySet é preguiçoso: nada vai ao banco até você iterar ou imprimir. Depois registre os modelos em admin.py com @admin.register(Reserva) e uma classe ModelAdmin com list_display, list_filter e search_fields. Crie um usuário com createsuperuser e acesse /admin: há listagem, busca, filtro e formulário de edição sem nenhuma tela escrita.",
+              "tips": [
+                "Ao listar reservas mostrando o nome da sala, use select_related('sala'). Sem ele, cada linha faz uma consulta extra ao banco para buscar a sala."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Quando escolher Django ou FastAPI",
+              "guidance": "Escolha Django quando o projeto precisa de painel administrativo, autenticação de usuários, páginas renderizadas no servidor e um banco relacional central, e quando a equipe se beneficia de convenções fortes. Escolha FastAPI quando o produto é principalmente uma API consumida por front-end ou outros serviços, quando o trabalho é muito de entrada e saída assíncrona, ou quando você quer escolher cada peça. Se o projeto pede Django e também uma API, extensões como Django REST Framework ou Django Ninja cobrem isso sem trocar de framework.",
+              "tips": [
+                "Faça a pergunta pelo que você teria que construir à mão. Se a lista inclui login, permissões e painel de gestão, o Django já entrega isso pronto."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que conhecer os dois",
+      "highlights": [
+        {
+          "icon": "grid",
+          "title": "Admin de graça",
+          "text": "Para equipes internas, o painel do Django substitui semanas de telas de cadastro. É o recurso que mais pesa a favor dele em sistemas de gestão."
+        },
+        {
+          "icon": "bolt",
+          "title": "API enxuta",
+          "text": "O FastAPI entrega validação, documentação e suporte a async com pouco código, o que o torna natural para serviços que só falam JSON."
+        },
+        {
+          "icon": "globe",
+          "title": "Leitura de qualquer projeto",
+          "text": "No mercado você vai encontrar os dois, às vezes na mesma empresa. Saber o modelo mental de cada um é o que permite entrar em qualquer base de código Python."
+        }
+      ],
+      "closingText": "Você construiu uma API Python do ambiente aos testes, com FastAPI, SQLAlchemy e pytest, e viu como o Django resolve o mesmo cadastro com ORM, migrações e admin prontos. Mais importante que a sintaxe, saiu com critério para escolher a ferramenta pelo problema. O caminho natural daqui é empacotar essa API em contêiner, tema do programa Arquitetura de Microsserviços com Docker e Kubernetes.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você escreve, persiste e testa APIs em Python e sabe quando usar FastAPI ou Django. O próximo passo é colocar isso para rodar em contêiner.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Qual é o principal motivo para usar um ambiente virtual em cada projeto Python?",
+      "explanation": "O ambiente virtual isola os pacotes de cada projeto, então versões diferentes de uma mesma biblioteca convivem sem conflito. Ele não deixa o código mais rápido, não substitui o controle de versão e não é exigência do FastAPI.",
+      "options": [
+        {
+          "text": "Isolar as bibliotecas e versões de cada projeto",
+          "isCorrect": true
+        },
+        {
+          "text": "Fazer o código Python executar mais rápido",
+          "isCorrect": false
+        },
+        {
+          "text": "Substituir o Git no controle de versões",
+          "isCorrect": false
+        },
+        {
+          "text": "Permitir que o FastAPI seja importado, o que não é possível sem ele",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Para que serve o arquivo requirements.txt gerado com pip freeze?",
+      "explanation": "Ele registra os pacotes e as versões exatas instaladas, para que qualquer pessoa ou servidor recrie o mesmo ambiente com pip install -r requirements.txt. Ele não contém o código, não é a pasta do ambiente e não é configuração do servidor web.",
+      "options": [
+        {
+          "text": "Registrar pacotes e versões para recriar o mesmo ambiente em outra máquina",
+          "isCorrect": true
+        },
+        {
+          "text": "Guardar uma cópia do código-fonte da aplicação",
+          "isCorrect": false
+        },
+        {
+          "text": "Substituir a pasta .venv no repositório",
+          "isCorrect": false
+        },
+        {
+          "text": "Configurar a porta e o endereço do servidor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 1,
+      "question": "Uma rota declara sala_id: int no caminho e o cliente envia um texto. O que o FastAPI faz?",
+      "explanation": "O FastAPI usa a anotação de tipo para validar o parâmetro e, quando a conversão falha, devolve 422 com a descrição do erro, antes de executar a função. Ele não converte para zero, não ignora o parâmetro e não devolve 500, que indicaria falha do servidor.",
+      "options": [
+        {
+          "text": "Responde 422 com a explicação do erro, sem executar a função",
+          "isCorrect": true
+        },
+        {
+          "text": "Converte o texto para zero e segue normalmente",
+          "isCorrect": false
+        },
+        {
+          "text": "Ignora o parâmetro e chama a função sem ele",
+          "isCorrect": false
+        },
+        {
+          "text": "Responde 500 porque a função quebrou",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Qual é o papel de um modelo Pydantic usado como parâmetro de uma rota POST?",
+      "explanation": "O modelo Pydantic valida e converte o JSON do corpo da requisição e também aparece no esquema OpenAPI, por isso a documentação mostra os campos. Ele não cria tabela no banco (isso é papel do ORM) e não autentica usuário.",
+      "options": [
+        {
+          "text": "Validar e converter o corpo da requisição e descrevê-lo na documentação",
+          "isCorrect": true
+        },
+        {
+          "text": "Criar automaticamente a tabela correspondente no banco",
+          "isCorrect": false
+        },
+        {
+          "text": "Autenticar o usuário que fez a requisição",
+          "isCorrect": false
+        },
+        {
+          "text": "Definir em qual porta o servidor vai rodar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Onde fica a documentação interativa gerada pelo FastAPI por padrão?",
+      "explanation": "Por padrão o FastAPI serve a interface Swagger UI em /docs e o ReDoc em /redoc, ambos gerados a partir do esquema em /openapi.json. Não é preciso escrever arquivo de documentação nem instalar ferramenta separada.",
+      "options": [
+        {
+          "text": "Em /docs (Swagger UI) e /redoc",
+          "isCorrect": true
+        },
+        {
+          "text": "Em um arquivo README gerado na raiz do projeto",
+          "isCorrect": false
+        },
+        {
+          "text": "Só existe se você escrever um arquivo YAML à mão",
+          "isCorrect": false
+        },
+        {
+          "text": "Em /admin, junto do painel de gestão",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Como se declara corretamente uma dependência no FastAPI?",
+      "explanation": "Passa-se a função para Depends sem chamá-la; o FastAPI a executa a cada requisição, validando os parâmetros dela. Chamar a função dentro de Depends entregaria um resultado fixo. Não é preciso herdar de classe especial nem usar variável global.",
+      "options": [
+        {
+          "text": "Passando a função para Depends sem chamá-la, por exemplo Depends(paginacao)",
+          "isCorrect": true
+        },
+        {
+          "text": "Chamando a função dentro de Depends, por exemplo Depends(paginacao())",
+          "isCorrect": false
+        },
+        {
+          "text": "Criando uma classe que herde obrigatoriamente de Dependency",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardando o resultado em uma variável global importada pelas rotas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Por que a sessão de banco é entregue por uma dependência com yield?",
+      "explanation": "O código antes do yield abre a sessão e o código depois roda quando a requisição termina, então a sessão é sempre fechada, inclusive se houver erro. Isso garante uma sessão por requisição. Não tem relação com velocidade de consulta nem com criação de tabelas.",
+      "options": [
+        {
+          "text": "Para abrir uma sessão por requisição e garantir que ela seja fechada ao final",
+          "isCorrect": true
+        },
+        {
+          "text": "Para compartilhar uma única sessão entre todas as requisições",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque yield faz as consultas executarem mais rápido",
+          "isCorrect": false
+        },
+        {
+          "text": "Para criar as tabelas a cada requisição",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Qual é a limitação de Base.metadata.create_all do SQLAlchemy?",
+      "explanation": "create_all cria apenas as tabelas que ainda não existem; não altera colunas de tabelas já criadas. Para evoluir o esquema com segurança usa-se uma ferramenta de migração como o Alembic. Ele funciona com SQLite e com outros bancos, e não apaga dados.",
+      "options": [
+        {
+          "text": "Cria tabelas que não existem, mas não altera tabelas já criadas",
+          "isCorrect": true
+        },
+        {
+          "text": "Apaga e recria todas as tabelas, perdendo os dados",
+          "isCorrect": false
+        },
+        {
+          "text": "Funciona apenas com SQLite",
+          "isCorrect": false
+        },
+        {
+          "text": "Só pode ser chamado dentro de um teste",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Em um teste, para que serve app.dependency_overrides?",
+      "explanation": "O dicionário dependency_overrides troca uma dependência por outra durante o teste, por exemplo get_db por uma versão que usa banco em memória, sem alterar o código da aplicação. Ao final, limpa-se o dicionário para não afetar outros testes.",
+      "options": [
+        {
+          "text": "Substituir uma dependência, como a sessão de banco, por uma versão de teste",
+          "isCorrect": true
+        },
+        {
+          "text": "Desligar a validação do Pydantic durante os testes",
+          "isCorrect": false
+        },
+        {
+          "text": "Fazer o pytest rodar os testes em paralelo",
+          "isCorrect": false
+        },
+        {
+          "text": "Sobrescrever o código das rotas com respostas fixas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "O que significa dizer que um QuerySet do Django é preguiçoso?",
+      "explanation": "Criar e encadear filter, exclude e outros métodos não acessa o banco; a consulta só é executada quando o QuerySet é avaliado, por exemplo ao iterar ou imprimir. Isso permite montar a consulta em partes. Não tem relação com cache permanente nem com limite de resultados.",
+      "options": [
+        {
+          "text": "A consulta só vai ao banco quando o resultado é de fato usado",
+          "isCorrect": true
+        },
+        {
+          "text": "Os resultados ficam em cache para sempre após a primeira consulta",
+          "isCorrect": false
+        },
+        {
+          "text": "Ele devolve no máximo 20 registros por vez",
+          "isCorrect": false
+        },
+        {
+          "text": "Ele é mais lento que SQL escrito à mão em qualquer caso",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Uma equipe precisa de um sistema interno com login, permissões e telas de cadastro para várias tabelas. Qual escolha tende a exigir menos código?",
+      "explanation": "O Django traz autenticação, permissões e o admin, que gera telas de listagem, busca e edição a partir dos modelos. Com FastAPI, essas peças teriam de ser escolhidas e montadas. O FastAPI se destaca em APIs enxutas; não é este o caso.",
+      "options": [
+        {
+          "text": "Django, por trazer autenticação, permissões e admin prontos",
+          "isCorrect": true
+        },
+        {
+          "text": "FastAPI, porque gera telas de cadastro a partir do Pydantic",
+          "isCorrect": false
+        },
+        {
+          "text": "Tanto faz: os dois entregam exatamente os mesmos recursos prontos",
+          "isCorrect": false
+        },
+        {
+          "text": "Nenhum dos dois, pois Python não é usado para sistemas internos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Segundo a pesquisa de desenvolvedores do Stack Overflow de 2025, qual framework web Python teve o maior uso entre todos os respondentes?",
+      "explanation": "Na pesquisa de 2025, o FastAPI aparece com 14,8%, à frente do Flask (14,4%) e do Django (12,6%), após um crescimento de cerca de 5 pontos. Os números são próximos: os três seguem relevantes no mercado.",
+      "options": [
+        {
+          "text": "FastAPI, com 14,8%",
+          "isCorrect": true
+        },
+        {
+          "text": "Django, com 30%",
+          "isCorrect": false
+        },
+        {
+          "text": "Flask, com 25%",
+          "isCorrect": false
+        },
+        {
+          "text": "Nenhum framework Python passou de 1%",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "Uma API de reservas de salas de reunião em FastAPI, com dados fictícios: cadastro e listagem de salas com filtro por capacidade, criação de reservas validadas por Pydantic, bloqueio de horários conflitantes, persistência com SQLAlchemy e uma bateria de testes em pytest com banco isolado. Como complemento, o mesmo cadastro em Django com admin configurado.",
+    "highlights": [
+      "API FastAPI com documentação interativa em /docs",
+      "Persistência com SQLAlchemy e regra de conflito de horário",
+      "Testes automatizados com pytest e banco de teste",
+      "Versão em Django com painel administrativo"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "Na pesquisa de desenvolvedores do Stack Overflow de 2025, Python é usado por 57,9% dos respondentes, um salto de 7 pontos percentuais sobre 2024. Entre os frameworks web, o FastAPI aparece com 14,8% e foi um dos que mais cresceram (cerca de 5 pontos), enquanto o Django segue com 12,6%.",
+      "Isso significa que o back-end em Python não é nicho: é onde a linguagem mais popular para dados e inteligência artificial encontra a web. Equipes que treinam modelos ou automatizam processos em Python precisam expor esse trabalho por APIs, e saber FastAPI e Django permite fazer isso sem trocar de linguagem."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "APIs para front-end e aplicativos",
+        "description": "Serviços que entregam JSON para interfaces web e móveis."
+      },
+      {
+        "label": "Sistemas internos de gestão",
+        "description": "Cadastros e painéis administrativos, onde o admin do Django brilha."
+      },
+      {
+        "label": "Serviços de dados e IA",
+        "description": "Expor modelos e rotinas Python por HTTP com contrato validado."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem já programa em Python",
+        "description": "Escreve scripts ou análises e quer levar a linguagem para o servidor."
+      },
+      {
+        "label": "Quem vem de outra stack de back-end",
+        "description": "Conhece APIs em Node.js ou outra linguagem e quer o equivalente em Python."
+      },
+      {
+        "label": "Quem vai entrar numa equipe Python",
+        "description": "Precisa ler projetos em FastAPI ou Django e entender as escolhas feitas."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Django sustenta há anos sistemas de conteúdo, comércio e gestão que dependem de admin e autenticação prontos. FastAPI se espalhou em serviços de API e na camada que expõe modelos de dados e IA. É comum a mesma empresa usar os dois, cada um onde se encaixa melhor, por isso a habilidade se transfere entre startups, órgãos públicos e grandes empresas.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Stack Overflow Developer Survey 2025 — Technology (linguagens e frameworks web)",
+      "url": "https://survey.stackoverflow.co/2025/technology/"
+    },
+    {
+      "label": "FastAPI — Tutorial: Dependencies",
+      "url": "https://fastapi.tiangolo.com/em/tutorial/dependencies"
+    },
+    {
+      "label": "FastAPI — Reference: Dependencies, Depends() and Security()",
+      "url": "https://fastapi.tiangolo.com/reference/dependencies"
+    },
+    {
+      "label": "Django documentation — Making queries (QuerySets, filter, exclude, get, select_related)",
+      "url": "https://docs.djangoproject.com/en/4.1/topics/db/queries"
+    }
+  ]
 }

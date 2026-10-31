@@ -1,0 +1,817 @@
+{
+  "id": 1003,
+  "image": "https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_1280.jpg",
+  "category": "Carreira e Soft Skills",
+  "categoryFilter": "carreira-soft-skills",
+  "title": "Processo Seletivo na Prática: da Inscrição à Decisão da Proposta",
+  "lessons": "17 passos",
+  "duration": "6h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Iniciante",
+  "description": "Um roteiro de exercícios para atravessar um processo seletivo de tecnologia com método: transformar a sua trajetória em histórias com resultado, levar essas histórias para o currículo e o LinkedIn, se preparar para testes, dinâmicas, entrevistas e case, e decidir entre propostas com uma matriz de decisão em vez de impulso.",
+  "letslearn": [
+    "Escrever experiências no currículo com o método STAR, mostrando ação e resultado",
+    "Montar um banco de histórias a partir da linha da vida e das suas conquistas",
+    "Preparar-se para testes online, dinâmicas de grupo, entrevistas e apresentação de case",
+    "Comparar propostas com uma matriz de decisão com fatores e pesos definidos por você"
+  ],
+  "curriculum": "Da candidatura à proposta",
+  "about": "O programa vem depois de Decisão e Plano de Carreira: lá você escolheu para onde ir; aqui você atravessa a porta. A sequência acompanha um processo seletivo real, etapa por etapa. Primeiro você produz a matéria-prima (as suas histórias, escritas no formato STAR) e a usa no currículo e no LinkedIn. Depois treina as etapas de avaliação em grupo e a distância, chega às entrevistas com uma narrativa construída a partir da linha da vida e termina com o case e a decisão entre propostas. Os exemplos usam vagas de tecnologia e empresas fictícias. O ecossistema learnTECH já tem artigos sobre as etapas do processo, a leitura de vagas e os testes técnicos; aqui eles aparecem como leitura de apoio, e o foco fica nos exercícios.",
+  "materials": [
+    "Modelo de quadro STAR (Situação, Tarefa, Ação, Resultado) para preencher",
+    "Roteiro do exercício Linha da Vida e lista de conquistas",
+    "Planilha de matriz de decisão com fatores e pesos editáveis",
+    "Checklist de véspera para teste online, dinâmica e entrevista"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Sua História em Formato STAR: Currículo e LinkedIn",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Testes Online e Dinâmicas de Grupo",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Entrevistas: da Linha da Vida às Respostas",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Case e Decisão da Proposta",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Carreira e Soft Skills",
+    "mainTitle": "Processo seletivo não é sorteio: cada etapa faz uma pergunta, e dá para preparar a resposta.",
+    "introductionParagraphs": [
+      {
+        "title": "Quem seleciona precisa de evidência",
+        "text": "Recrutador, gestor e banca de dinâmica querem a mesma coisa: evidência de que você resolve o tipo de problema que a vaga tem. Frase genérica como \"sou proativo\" não é evidência; uma história curta com situação, ação e resultado é. Por isso o programa começa pelo **método STAR** e o usa em todas as etapas seguintes, do currículo à entrevista com a liderança."
+      },
+      {
+        "title": "Autoconhecimento antes de técnica",
+        "text": "Não adianta decorar respostas se você não sabe quais são as suas melhores histórias. Os exercícios de **linha da vida** e de **lista de conquistas** fazem você revisitar a trajetória e escolher os momentos que mostram quem você é. É desse material que saem o resumo do currículo, o texto do LinkedIn e a resposta para \"fale sobre você\"."
+      },
+      {
+        "title": "O processo termina na decisão",
+        "text": "Passar em todas as etapas e receber duas propostas também é um problema a resolver. A **matriz de decisão** coloca no papel os fatores que importam para você, dá a cada um um peso de 1 a 5 e transforma uma escolha confusa em uma comparação visível. O programa não promete vaga: entrega um método para chegar a cada etapa sabendo o que ela avalia."
+      }
+    ],
+    "courseAboutTitle": "O passo seguinte a decidir a carreira",
+    "courseAboutDescription": "Quem saiu do programa Decisão e Plano de Carreira sabe que área quer e tem um plano de ação. Este programa é a execução desse plano no ponto em que ele depende de outras pessoas: o processo seletivo. Você produz os próprios materiais (quadros STAR, linha da vida, currículo, roteiro de entrevista e matriz de decisão) aplicados a vagas de tecnologia, como desenvolvimento, dados, suporte e produto.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Sua História em Formato STAR: Currículo e LinkedIn",
+        "items": [
+          {
+            "label": "Exemplos críticos",
+            "description": "Escolher os momentos da sua trajetória em que você se destacou."
+          },
+          {
+            "label": "Quadro STAR",
+            "description": "Situação, tarefa, ação e resultado para cada exemplo."
+          },
+          {
+            "label": "Currículo e LinkedIn",
+            "description": "Levar as histórias para os documentos que a triagem lê."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Testes Online e Dinâmicas de Grupo",
+        "items": [
+          {
+            "label": "Mapa do processo",
+            "description": "Saber em que etapa você está e o que ela avalia."
+          },
+          {
+            "label": "Testes online",
+            "description": "Lógica, inglês, perfil e conhecimento técnico com cronômetro."
+          },
+          {
+            "label": "Dinâmica de grupo",
+            "description": "Contribuir para a solução do grupo sem disputar o microfone."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Entrevistas: da Linha da Vida às Respostas",
+        "items": [
+          {
+            "label": "Linha da vida",
+            "description": "Os marcos positivos e negativos que explicam quem você é hoje."
+          },
+          {
+            "label": "Banco de histórias",
+            "description": "Conquistas transformadas em respostas comportamentais no formato STAR."
+          },
+          {
+            "label": "Entrevista técnica",
+            "description": "Pensar em voz alta e fazer as perguntas certas no fim."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Case e Decisão da Proposta",
+        "items": [
+          {
+            "label": "Case",
+            "description": "Estruturar, priorizar e apresentar uma solução com prazo."
+          },
+          {
+            "label": "Matriz de decisão",
+            "description": "Fatores, pesos de 1 a 5 e a comparação entre propostas."
+          },
+          {
+            "label": "Resposta à proposta",
+            "description": "Tirar dúvidas, negociar com dados e responder por escrito."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os exercícios para fazer com a sua própria trajetória e com uma vaga real que você queira disputar. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "list",
+      "title": "Sua História em Formato STAR: Currículo e LinkedIn",
+      "shortDescription": "Exemplos críticos, quadro STAR e os documentos que a triagem lê",
+      "introductionText": "A maioria das pessoas tem histórias boas para contar e dificuldade de contá-las de forma objetiva. Este módulo resolve isso antes de abrir o editor de currículo: você escolhe os momentos em que mais se destacou (os exemplos críticos da sua trajetória), escreve cada um no formato STAR e só então usa esse material no currículo e no LinkedIn. O exemplo que acompanha os passos é a Marina, estudante fictícia de análise e desenvolvimento de sistemas que se candidata a uma vaga de desenvolvedora júnior.",
+      "sections": [
+        {
+          "title": "⭐ Da trajetória ao currículo",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Listar os exemplos críticos",
+              "code": "3 a 5 momentos em que você se destacou",
+              "guidance": "Anote situações em que você resolveu um problema, entregou algo difícil ou mostrou um ponto forte: um projeto da faculdade, um freela, um trabalho voluntário, uma tarefa no emprego atual mesmo que fora de tecnologia. Para cada uma, escreva uma linha que diga o que estava em jogo. A Marina listou: o sistema de agendamento que fez para o salão da tia, o trabalho em grupo que salvou no último dia e a planilha que automatizou na loja onde trabalha.",
+              "tips": [
+                "Experiência que não é de tecnologia também conta quando mostra resolução de problema, organização ou aprendizado rápido.",
+                "Prefira momentos específicos, com data e contexto, a descrições gerais do tipo \"sempre ajudei a equipe\"."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Escrever cada exemplo no quadro STAR",
+              "code": "Situação → Tarefa → Ação → Resultado",
+              "guidance": "Para cada exemplo, preencha os quatro campos. Situação: quem, o quê, onde e quando. Tarefa: qual era o seu papel e o desafio a superar. Ação: os passos que você deu, em primeira pessoa. Resultado: o que mudou por causa do seu trabalho e o que você aprendeu. Exemplo da Marina: a loja perdia pedidos anotados em papel (S); ela ficou responsável por organizar o controle (T); montou uma planilha com validação de dados e um formulário para o balcão (A); os pedidos esquecidos caíram de cerca de oito para um por mês (R).",
+              "tips": [
+                "A ação é a parte mais difícil e a mais importante: descreva o que você fez, não o que o time fez nem o que você poderia ter feito.",
+                "Resultado com número convence mais. Se não houver métrica, descreva a mudança concreta: quem passou a usar, o que deixou de acontecer."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Transformar STAR em linhas de currículo",
+              "code": "verbo de ação + o que fez + com quê + resultado",
+              "guidance": "No currículo, cada quadro STAR vira uma ou duas linhas. Comece pelo verbo, cite a tecnologia e termine no resultado: \"Desenvolvi sistema de agendamento em JavaScript e Firebase para um salão, usado diariamente por três profissionais\". Antes de escrever, leia a vaga e destaque os termos que se repetem; escolha os exemplos que respondem a esses termos e deixe o restante de fora. Para separar o obrigatório do desejável no anúncio, use o artigo Como ler uma vaga e reconhecer uma boa empresa, no blog do learnTECH.",
+              "tips": [
+                "Uma página basta para quem está começando. Coloque projetos e repositórios logo depois do resumo quando a experiência formal for pequena.",
+                "A triagem lê rápido: o resultado precisa estar visível na própria linha, não escondido no fim de um parágrafo."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Alinhar o LinkedIn ao currículo",
+              "guidance": "Use os mesmos quadros STAR nas experiências do LinkedIn e escreva o campo Sobre com três ou quatro frases que resumam os seus melhores exemplos. O currículo é adaptado a cada vaga; o LinkedIn é a versão permanente e precisa contar a mesma história, com as mesmas datas e cargos. As técnicas de palavras-chave para aparecer nas buscas de recrutadores estão no artigo Perfil encontrável, também no blog; aqui o ponto é coerência entre os dois documentos.",
+              "tips": [
+                "Datas, cargos e nomes de projeto diferentes entre currículo e LinkedIn geram desconfiança na primeira conversa.",
+                "Peça a alguém de fora da área que leia o seu Sobre e diga, em uma frase, o que você faz. Se a pessoa não conseguir, reescreva."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que começar pelas histórias",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Evidência no lugar de adjetivo",
+          "text": "Proativo, comunicativo e dedicado aparecem em quase todo currículo. Uma ação com resultado é o que diferencia o seu do de outra pessoa."
+        },
+        {
+          "icon": "sync",
+          "title": "Um material, várias etapas",
+          "text": "O mesmo quadro STAR alimenta o currículo, o LinkedIn, a conversa com o recrutador e a entrevista comportamental. Você escreve uma vez e reaproveita."
+        },
+        {
+          "icon": "gauge",
+          "title": "Leitura em segundos",
+          "text": "A primeira triagem é rápida. Linhas curtas, com verbo e resultado, sobrevivem a uma leitura de poucos segundos."
+        }
+      ],
+      "closingText": "Você tem agora um conjunto de histórias escritas no formato STAR, um currículo adaptado a uma vaga e um LinkedIn coerente com ele. Com a candidatura enviada, começam as etapas em que a empresa avalia você em ação: testes online e dinâmicas de grupo.",
+      "ctaTitle": "⭐ Histórias prontas!",
+      "ctaText": "Seu currículo agora mostra o que você fez e o que mudou. Vamos para as etapas que avaliam você com cronômetro e em grupo.",
+      "nextButtonText": "Ir para Módulo 1: Testes Online e Dinâmicas de Grupo"
+    },
+    {
+      "id": 1,
+      "icon": "bolt",
+      "title": "Testes Online e Dinâmicas de Grupo",
+      "shortDescription": "O mapa do processo, os testes com cronômetro e a avaliação em grupo",
+      "introductionText": "Depois da triagem do currículo, muitas empresas aplicam testes online e, em programas de estágio e trainee, dinâmicas de grupo. As duas etapas têm algo em comum: avaliam comportamento sob pressão de tempo, e por isso se treinam. Este módulo começa com o mapa do processo, para você saber em que etapa está, e depois prepara cada uma delas com exercícios curtos.",
+      "sections": [
+        {
+          "title": "⏱️ Avaliação com cronômetro e com plateia",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Mapear as etapas da vaga",
+              "code": "inscrição → triagem → testes → dinâmica → entrevistas → case → proposta",
+              "guidance": "Para cada vaga que você disputa, monte uma tabela com as etapas anunciadas, a data de cada uma e o que ela avalia. Estágio e trainee costumam ter mais etapas em grupo; vagas de analista e de desenvolvimento costumam trocar a dinâmica por desafio técnico. A descrição de cada etapa de um processo de tecnologia está no artigo Como é um processo seletivo em tecnologia e como se preparar em cada etapa, no blog; aqui você aplica ao seu caso.",
+              "tips": [
+                "Se o anúncio não descreve as etapas, pergunte na primeira conversa. Saber o caminho é parte da preparação.",
+                "Anote também o canal de contato da empresa para problemas técnicos durante as provas."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Treinar lógica e inglês com tempo marcado",
+              "guidance": "Testes de raciocínio lógico e de inglês são comuns na primeira fase e quase sempre cronometrados. Faça simulados curtos com o celular contando o tempo, anote os tipos de questão em que você mais erra (sequências numéricas, interpretação de texto, vocabulário técnico) e treine só esses. A rotina de treino para testes técnicos de linguagem e framework está no artigo Testes técnicos online, no blog do learnTECH.",
+              "tips": [
+                "Em prova sem volta, decida um tempo máximo por questão e siga em frente quando ele acabar.",
+                "Faça a prova em horário tranquilo, com internet estável e o notebook na tomada."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Responder testes de perfil com consistência",
+              "guidance": "Questionários de perfil e de alinhamento cultural não têm resposta certa, mas comparam as suas respostas entre si. Responda pensando em situações reais, como as do seu banco de histórias, e não no candidato ideal que você imagina. Respostas contraditórias chamam mais atenção do que um perfil diferente do esperado.",
+              "tips": [
+                "Releia os valores da empresa antes, para entender o contexto, mas responda como você age de fato.",
+                "Se uma afirmação não se aplica a você, escolha a opção mais próxima do seu comportamento habitual em vez da mais bonita."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Participar de uma dinâmica de grupo",
+              "code": "entender → propor → ouvir → sintetizar",
+              "guidance": "Na dinâmica, o grupo recebe um problema e pouco tempo, e a banca observa como cada pessoa contribui. Treine com colegas um caso fictício: a Rede Ponto Verde, loja de bairro, quer começar a vender pela internet em três meses com orçamento curto. Em 20 minutos, o grupo precisa propor um plano. Durante o treino, pratique quatro comportamentos: confirmar que todos entenderam o problema, fazer uma proposta concreta, construir sobre a ideia de outra pessoa citando-a e ajudar a fechar uma conclusão dentro do prazo.",
+              "tips": [
+                "Falar mais não é contribuir mais. Uma síntese no momento certo vale mais do que cinco interrupções.",
+                "Controlar o tempo ou registrar as decisões também é contribuição, e é visível para a banca."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que estas etapas se treinam",
+      "highlights": [
+        {
+          "icon": "gauge",
+          "title": "Pressão de tempo",
+          "text": "O conteúdo dos testes de lógica é simples; o que derruba é o relógio. Simulado com cronômetro ensina o ritmo que a leitura sozinha não ensina."
+        },
+        {
+          "icon": "shield",
+          "title": "Consistência no perfil",
+          "text": "Teste de perfil mede coerência, não perfeição. Responder a partir de situações reais é o jeito mais seguro de ser consistente."
+        },
+        {
+          "icon": "sitemap",
+          "title": "Contribuição em grupo",
+          "text": "Na dinâmica, a banca observa como você faz o grupo avançar: entender, propor, ouvir e fechar. São comportamentos, e comportamento se ensaia."
+        }
+      ],
+      "closingText": "Você tem o mapa das etapas da sua vaga, uma rotina de treino para testes e uma dinâmica ensaiada. As próximas etapas são conversas, e nelas a matéria-prima é a sua própria história, contada de forma organizada.",
+      "ctaTitle": "⏱️ Etapas de avaliação treinadas!",
+      "ctaText": "Testes e dinâmica deixaram de ser surpresa. Agora vamos preparar a etapa que mais pesa na decisão: as entrevistas.",
+      "nextButtonText": "Ir para Módulo 2: Entrevistas: da Linha da Vida às Respostas"
+    },
+    {
+      "id": 2,
+      "icon": "search",
+      "title": "Entrevistas: da Linha da Vida às Respostas",
+      "shortDescription": "Autoconhecimento, banco de histórias e a conversa com quem decide",
+      "introductionText": "A preparação para entrevista começa por autoconhecimento. Antes de pensar em perguntas difíceis, você revisita a estrada que percorreu até aqui, pessoal e profissional, e identifica os marcos e as conquistas que explicam quem você é. Desse exercício sai a sua apresentação, e dos quadros STAR saem as respostas comportamentais. O módulo termina com a entrevista técnica e com as perguntas que você faz ao entrevistador.",
+      "sections": [
+        {
+          "title": "🗣️ Preparar a conversa",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Desenhar a linha da vida",
+              "code": "marcos positivos acima da linha, negativos abaixo",
+              "guidance": "Desenhe uma linha horizontal que representa a sua vida em ordem cronológica e anote os principais marcos, positivos acima e negativos abaixo: uma mudança de cidade, o primeiro emprego, uma reprovação, a decisão de estudar tecnologia. Escolha memórias que revelam algo sobre a sua personalidade e ajudam a entender, a partir do passado, como você se tornou quem é hoje.",
+              "tips": [
+                "Marcos negativos também entram. Eles costumam mostrar como você reage a dificuldade, que é tema frequente de entrevista.",
+                "Você não vai contar tudo ao entrevistador. A linha da vida é material de reflexão; a entrevista usa só uma parte."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Listar todas as conquistas e circular as principais",
+              "guidance": "Faça uma lista com todas as conquistas que te dão orgulho: profissionais, pessoais, esportivas, de trabalho voluntário, e também aquilo que trouxe reconhecimento de outras pessoas. Não se limite ao que parece relevante para tecnologia. Depois, circule as três a cinco de que mais se orgulha. São elas que vão sustentar a sua história e, se ainda não estiverem no seu banco STAR, ganham um quadro agora.",
+              "tips": [
+                "Se a lista ficou curta, pergunte a amigos e familiares do que eles lembram. Outras pessoas percebem conquistas que você normalizou.",
+                "Para cada conquista circulada, anote qual competência ela mostra: persistência, aprendizado rápido, organização, liderança."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Montar a apresentação de dois minutos",
+              "code": "de onde venho → o que já fiz → por que esta vaga",
+              "guidance": "Responda a \"fale sobre você\" em três partes: um ou dois marcos da linha da vida que explicam a sua escolha por tecnologia, duas conquistas circuladas com resultado e o motivo concreto para querer aquela vaga e aquela empresa. Grave a resposta no celular, ouça e corte o que não sustenta o fio da história. A versão final deve caber em cerca de dois minutos.",
+              "tips": [
+                "Ensaiar não é decorar. Memorize a sequência dos tópicos, não as frases, para soar natural.",
+                "O motivo para a vaga precisa ser específico daquela empresa. Motivo que serviria para qualquer empresa não convence."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Responder perguntas comportamentais com STAR",
+              "code": "\"Conte sobre uma vez em que...\"",
+              "guidance": "Perguntas comportamentais pedem um exemplo do passado: um conflito no time, um prazo apertado, um erro seu, algo que você aprendeu sozinho. Liste as perguntas mais comuns, associe cada uma a um quadro do seu banco STAR e treine a resposta em voz alta, gastando pouco tempo na situação e mais tempo na ação e no resultado. Quando a pergunta pedir um erro, termine no que você mudou depois dele.",
+              "tips": [
+                "Uma mesma história pode responder a várias perguntas. Cinco ou seis quadros bem treinados cobrem a maior parte das entrevistas.",
+                "Se não tiver um exemplo exato, diga isso e conte o mais próximo que tiver. Inventar desmorona na pergunta seguinte."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Entrevista técnica e perguntas para o entrevistador",
+              "guidance": "Na conversa com a liderança técnica, explique o raciocínio enquanto resolve um problema e diga como descobriria aquilo que não sabe. Para entrevistas por vídeo, cuide de câmera, luz e áudio; as orientações de postura e escuta estão no artigo Comunicação não verbal em entrevistas e reuniões, no blog. No fim, faça duas ou três perguntas preparadas sobre o time, o produto e o que se espera nos primeiros meses: elas mostram interesse e alimentam a sua decisão no último módulo.",
+              "tips": [
+                "Boas perguntas: como é um dia típico do time, como o trabalho de quem entra é acompanhado, quais são as próximas etapas e prazos.",
+                "Anote as respostas logo depois da entrevista. Elas viram dados na matriz de decisão."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que a entrevista começa em você",
+      "highlights": [
+        {
+          "icon": "list",
+          "title": "Repertório pronto",
+          "text": "Com a linha da vida e as conquistas mapeadas, você não precisa inventar exemplos na hora. Escolhe entre histórias que já conhece."
+        },
+        {
+          "icon": "grid",
+          "title": "Estrutura que o entrevistador acompanha",
+          "text": "STAR organiza a resposta na ordem em que quem avalia precisa ouvir: contexto, papel, ação e resultado. A resposta fica curta e completa."
+        },
+        {
+          "icon": "sync",
+          "title": "Entrevista nos dois sentidos",
+          "text": "Você também está avaliando a empresa. As perguntas que faz no fim trazem as informações de que vai precisar para decidir."
+        }
+      ],
+      "closingText": "Você chega às entrevistas com uma apresentação ensaiada, um banco de histórias no formato STAR e perguntas preparadas para quem está do outro lado. Falta a etapa que muitas vagas usam para fechar o processo, o case, e a decisão que vem depois da proposta.",
+      "ctaTitle": "🗣️ Entrevistas preparadas!",
+      "ctaText": "Sua história está organizada e treinada. Vamos para o case e para a parte que quase ninguém prepara: decidir entre propostas.",
+      "nextButtonText": "Ir para Módulo 3: Case e Decisão da Proposta"
+    },
+    {
+      "id": 3,
+      "icon": "grid",
+      "title": "Case e Decisão da Proposta",
+      "shortDescription": "Apresentar uma solução com prazo e escolher entre propostas com método",
+      "introductionText": "Muitas vagas fecham o processo com um case: um problema de negócio ou um desafio técnico para resolver em prazo curto e, às vezes, apresentar ao time. Depois vem a proposta, ou as propostas. Este módulo prepara as duas coisas. Na decisão, você usa a matriz de decisão: uma tabela em que cada fator que importa para você recebe um peso de 1 a 5, para comparar as opções de forma visual em vez de decidir pelo que chegou primeiro ou pelo maior número no salário.",
+      "sections": [
+        {
+          "title": "⚖️ Do case à decisão",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Estruturar e apresentar um case",
+              "code": "problema → hipóteses → prioridade → proposta → próximos passos",
+              "guidance": "Treine com um case fictício: a Fintech Trilho percebeu que 40% dos usuários abandonam o cadastro no aplicativo e quer um plano para a próxima versão. Antes de propor solução, reescreva o problema com as suas palavras e liste as perguntas que faria. Levante hipóteses (etapas demais, validação de documento que falha, falta de retorno de erro), escolha as duas mais prováveis, proponha o que mudaria e como mediria o resultado. Apresente em no máximo cinco slides ou em um README, dentro do prazo.",
+              "tips": [
+                "Deixe explícitas as suposições que você fez. Em case, raciocínio declarado vale mais do que resposta certa.",
+                "Em desafio técnico com prazo, entregar menos funcionalidades com código limpo e instruções de execução é melhor do que entregar tudo pela metade."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Escolher os fatores da matriz de decisão",
+              "code": "salário · ambiente · estilo de vida · desafios · crescimento · autonomia · aprendizado",
+              "guidance": "Monte uma tabela com as propostas nas linhas e os fatores nas colunas. O modelo traz salário, status, ambiente de trabalho, estilo de vida, desafios, potencial de crescimento, grau de autonomia e potencial de aprendizado, mas a tabela é personalizável: troque, retire e acrescente fatores até que reflitam o que é importante para você. Em vagas de tecnologia, costumam entrar modelo de trabalho (remoto, híbrido ou presencial), tipo de contrato, stack e mentoria para quem está começando.",
+              "tips": [
+                "Fator que não muda entre as propostas não ajuda a decidir. Se as duas são remotas, tire o modelo de trabalho da tabela.",
+                "Compare benefícios e contrato pelo valor total, não só pelo salário bruto."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Dar os pesos de 1 a 5 e comparar",
+              "code": "1 = menos atraente · 5 = mais atraente",
+              "guidance": "Para cada proposta, dê a cada fator um peso entre 1 (menos importante ou atraente) e 5 (mais importante ou atraente), de acordo com o que você sabe e pensa daquela opção, e some. Exemplo da Marina: a Consultoria Vértice oferece salário maior e estabilidade (pesos 4 e 5), mas pouca autonomia e projetos repetitivos (2 e 2); a Fintech Trilho paga menos (3), mas dá autonomia e mentoria (5 e 5). O peso é subjetivo de propósito: quem decide o número é você, e a matriz torna essa preferência visível.",
+              "tips": [
+                "Quando um fator importa muito mais que os outros, multiplique a nota dele por dois antes de somar. Isso evita que vários fatores pequenos escondam o que realmente decide.",
+                "Se o resultado da soma te incomodar, investigue o motivo. Muitas vezes falta na tabela o fator que você estava considerando sem perceber."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Buscar o que falta e responder à proposta",
+              "guidance": "Onde você deu peso no chute, pesquise. Veja como é o dia a dia da área e da empresa no LinkedIn e em relatos de quem trabalha lá e, quando tiver dúvida sobre algo como rotina ou estilo de vida, não tente adivinhar: converse com profissionais da área e pergunte. Atualize a matriz, decida e responda por escrito dentro do prazo, agradecendo também à empresa que você recusar.",
+              "tips": [
+                "Peça a proposta por escrito antes de aceitar, com salário, benefícios, contrato e data de início.",
+                "Se for negociar, use os dados que você levantou e peça uma coisa de cada vez. Recusar com educação mantém a porta aberta para um próximo processo."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que decidir com uma matriz",
+      "highlights": [
+        {
+          "icon": "grid",
+          "title": "A escolha fica visível",
+          "text": "Fatores e pesos na mesma tabela mostram onde cada proposta ganha e perde. Fica mais difícil decidir só pelo salário ou pela primeira resposta."
+        },
+        {
+          "icon": "search",
+          "title": "Autoconhecimento de brinde",
+          "text": "Dar pesos obriga você a dizer o que importa agora. Esse registro é útil na próxima decisão de carreira também."
+        },
+        {
+          "icon": "globe",
+          "title": "Dados de fora no lugar de suposição",
+          "text": "Onde o peso é chute, a matriz aponta o que pesquisar e com quem conversar antes de assinar."
+        }
+      ],
+      "closingText": "Você atravessou o processo inteiro: histórias escritas em STAR, currículo e LinkedIn coerentes, testes e dinâmica treinados, entrevistas preparadas a partir da sua linha da vida, um case estruturado e uma matriz para decidir entre propostas. Guarde esses materiais: eles se atualizam a cada novo projeto e servem para o próximo processo seletivo.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você tem um método para cada etapa do processo seletivo e para a decisão final. O próximo passo é aplicar a uma vaga real e atualizar o banco de histórias a cada entrega.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "O que significa a sigla STAR usada para escrever experiências?",
+      "explanation": "STAR organiza uma experiência em Situação vivida, Tarefa realizada, Ação tomada e Resultado alcançado. A ordem leva quem lê do contexto ao resultado. As outras opções trocam letras por palavras que não fazem parte do método.",
+      "options": [
+        {
+          "text": "Situação, Tarefa, Ação e Resultado",
+          "isCorrect": true
+        },
+        {
+          "text": "Sonho, Talento, Ambição e Reconhecimento",
+          "isCorrect": false
+        },
+        {
+          "text": "Status, Trabalho, Atitude e Remuneração",
+          "isCorrect": false
+        },
+        {
+          "text": "Síntese, Teoria, Aplicação e Revisão",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Ao descrever a Ação em um quadro STAR sobre um projeto em grupo, o que você deve fazer?",
+      "explanation": "A ação deve manter o foco em você: o que você fez, em primeira pessoa, mesmo que o projeto tenha sido coletivo. Descrever o esforço do time esconde a sua contribuição, e falar do que poderia ter feito não é evidência. Omitir a ação tira justamente a parte que o avaliador mais quer ouvir.",
+      "options": [
+        {
+          "text": "Descrever o que você fez, mesmo sendo um esforço de grupo",
+          "isCorrect": true
+        },
+        {
+          "text": "Descrever o que o time fez, para mostrar espírito de equipe",
+          "isCorrect": false
+        },
+        {
+          "text": "Descrever o que você faria se tivesse mais tempo",
+          "isCorrect": false
+        },
+        {
+          "text": "Pular a ação e ir direto ao resultado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Qual é a melhor forma de levar um quadro STAR para uma linha de currículo?",
+      "explanation": "No currículo, o quadro STAR vira uma linha curta que começa pelo verbo de ação, cita a ferramenta e termina no resultado. Copiar o quadro inteiro deixa o texto longo demais para a triagem, adjetivos não são evidência e esconder a tecnologia atrapalha quem procura os requisitos da vaga.",
+      "options": [
+        {
+          "text": "Uma linha com verbo de ação, tecnologia usada e resultado",
+          "isCorrect": true
+        },
+        {
+          "text": "Copiar os quatro parágrafos do quadro como estão",
+          "isCorrect": false
+        },
+        {
+          "text": "Substituir a história por uma lista de qualidades pessoais",
+          "isCorrect": false
+        },
+        {
+          "text": "Citar só o resultado, sem mencionar o que foi feito nem com que ferramenta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Como responder a um teste de perfil ou de alinhamento cultural?",
+      "explanation": "Esses testes não têm resposta certa, mas comparam as respostas entre si. Responder a partir de situações reais garante consistência. Tentar acertar o candidato ideal costuma gerar contradições, e responder ao acaso ou sempre pelo meio da escala não descreve você.",
+      "options": [
+        {
+          "text": "Pensando em situações reais, para manter as respostas consistentes",
+          "isCorrect": true
+        },
+        {
+          "text": "Escolhendo sempre a opção que parece mais desejada pela empresa",
+          "isCorrect": false
+        },
+        {
+          "text": "Marcando sempre a opção do meio da escala, para não se comprometer",
+          "isCorrect": false
+        },
+        {
+          "text": "Respondendo o mais rápido possível, sem ler as afirmações",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Em um teste online cronometrado que não permite voltar à questão anterior, qual estratégia ajuda mais?",
+      "explanation": "Definir um tempo máximo por questão e seguir em frente quando ele acaba evita gastar o relógio em um item e perder vários outros. Voltar não é possível nesse formato, e sair no meio costuma fazer a nota contar só o que foi enviado. Treinar com cronômetro antes é o que torna essa estratégia natural.",
+      "options": [
+        {
+          "text": "Definir um tempo máximo por questão e seguir quando ele acabar",
+          "isCorrect": true
+        },
+        {
+          "text": "Pular as difíceis e voltar a elas no final",
+          "isCorrect": false
+        },
+        {
+          "text": "Sair do teste e recomeçar quando travar em uma questão",
+          "isCorrect": false
+        },
+        {
+          "text": "Gastar o tempo que for preciso em cada questão até ter certeza",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Em uma dinâmica de grupo, qual comportamento mostra contribuição para a banca?",
+      "explanation": "A banca observa como você faz o grupo avançar: propor algo concreto, construir sobre a ideia de outra pessoa e ajudar a fechar uma conclusão no prazo. Falar mais ou impor a própria ideia não é sinal de contribuição, e ficar em silêncio para não errar deixa a banca sem nada para avaliar.",
+      "options": [
+        {
+          "text": "Construir sobre a ideia de um colega e ajudar o grupo a fechar uma conclusão no prazo",
+          "isCorrect": true
+        },
+        {
+          "text": "Falar o maior número de vezes possível",
+          "isCorrect": false
+        },
+        {
+          "text": "Defender a própria ideia até o fim, sem ceder",
+          "isCorrect": false
+        },
+        {
+          "text": "Ficar em silêncio para não cometer erros",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Para que serve o exercício da linha da vida na preparação para entrevistas?",
+      "explanation": "A linha da vida faz você revisitar os marcos positivos e negativos da sua trajetória e entender como se tornou quem é hoje. É material de autoconhecimento, de onde saem a apresentação e as histórias. Não é um documento para entregar, não substitui o currículo e não precisa ser contada inteira ao entrevistador.",
+      "options": [
+        {
+          "text": "Refletir sobre os marcos da sua história e identificar seus diferenciais",
+          "isCorrect": true
+        },
+        {
+          "text": "Produzir um documento para anexar à candidatura",
+          "isCorrect": false
+        },
+        {
+          "text": "Substituir o currículo em vagas de tecnologia",
+          "isCorrect": false
+        },
+        {
+          "text": "Decorar a cronologia completa para contar na entrevista",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Na lista de conquistas, quais conquistas devem entrar?",
+      "explanation": "O exercício pede todas as conquistas que dão orgulho: profissionais, pessoais, esportivas, de trabalho voluntário e o que trouxe reconhecimento de outras pessoas. Só depois você circula as principais. Limitar a lista à área de tecnologia ou a resultados com número deixa de fora histórias que mostram competências valiosas.",
+      "options": [
+        {
+          "text": "Todas que dão orgulho, inclusive pessoais, esportivas e de voluntariado",
+          "isCorrect": true
+        },
+        {
+          "text": "Apenas as ligadas a tecnologia",
+          "isCorrect": false
+        },
+        {
+          "text": "Apenas as que têm resultado em número",
+          "isCorrect": false
+        },
+        {
+          "text": "Apenas as que já estão no currículo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "O entrevistador pede: \"Conte sobre uma vez em que você errou\". Qual resposta segue o que o programa recomenda?",
+      "explanation": "É uma pergunta comportamental: pede um exemplo real, contado em STAR, que termina no que você mudou depois do erro. Dizer que não comete erros soa falso, um defeito disfarçado de qualidade é resposta pronta que não convence, e inventar uma história desmorona nas perguntas seguintes.",
+      "options": [
+        {
+          "text": "Um exemplo real em STAR que termina no que você mudou depois",
+          "isCorrect": true
+        },
+        {
+          "text": "Dizer que não se lembra de ter cometido erros relevantes",
+          "isCorrect": false
+        },
+        {
+          "text": "Citar um defeito que na verdade é uma qualidade, como perfeccionismo",
+          "isCorrect": false
+        },
+        {
+          "text": "Inventar um erro pequeno para não se expor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Ao resolver um case com prazo, o que deve vir antes de propor a solução?",
+      "explanation": "Antes da solução, você reescreve o problema, levanta perguntas e hipóteses e escolhe as mais prováveis. Isso mostra o raciocínio, que é o que a banca avalia. Começar pela ferramenta ou pelo visual inverte a ordem, e copiar uma solução de outro caso ignora o problema apresentado.",
+      "options": [
+        {
+          "text": "Reescrever o problema e levantar hipóteses sobre a causa",
+          "isCorrect": true
+        },
+        {
+          "text": "Escolher a tecnologia que será usada",
+          "isCorrect": false
+        },
+        {
+          "text": "Caprichar no visual dos slides",
+          "isCorrect": false
+        },
+        {
+          "text": "Procurar uma solução pronta de um caso parecido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Na matriz de decisão, qual é a escala de peso de cada fator e quem define o número?",
+      "explanation": "Cada fator recebe um peso de 1 (menos importante ou atraente) a 5 (mais importante ou atraente), e o número é definido por você, de acordo com o que pensa e sabe sobre aquela opção. O peso é subjetivo de propósito. Não vem do mercado, nem da empresa, nem de uma escala fixa de 0 a 10.",
+      "options": [
+        {
+          "text": "De 1 a 5, definido por você",
+          "isCorrect": true
+        },
+        {
+          "text": "De 0 a 10, definido por uma pesquisa salarial",
+          "isCorrect": false
+        },
+        {
+          "text": "De 1 a 5, definido pela empresa que faz a proposta",
+          "isCorrect": false
+        },
+        {
+          "text": "Sim ou não, sem escala",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Você não sabe como é o estilo de vida em uma das áreas da sua matriz. O que fazer?",
+      "explanation": "A regra da matriz é não tentar adivinhar: pesquise o dia a dia da área e converse com profissionais que trabalham nela. Dar o peso do meio esconde a dúvida, descartar a opção pode eliminar a melhor escolha e confiar só no anúncio dá a visão da empresa, não a de quem vive a rotina.",
+      "options": [
+        {
+          "text": "Conversar com profissionais da área e pesquisar a rotina antes de dar o peso",
+          "isCorrect": true
+        },
+        {
+          "text": "Dar peso 3 para não distorcer a soma",
+          "isCorrect": false
+        },
+        {
+          "text": "Retirar essa opção da matriz",
+          "isCorrect": false
+        },
+        {
+          "text": "Usar apenas o que diz o anúncio da vaga",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "Um kit pessoal para processos seletivos de tecnologia: um banco de cinco ou seis histórias no formato STAR, um currículo adaptado a uma vaga real e um LinkedIn coerente com ele, a sua linha da vida com as conquistas principais, uma apresentação de dois minutos, um case resolvido e uma matriz de decisão pronta para comparar propostas.",
+    "highlights": [
+      "Banco de histórias no formato STAR",
+      "Currículo e LinkedIn alinhados a uma vaga de tecnologia",
+      "Matriz de decisão com os seus fatores e pesos"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "A demanda por gente de tecnologia continua maior do que a formação. A Brasscom estima uma demanda de cerca de 159 mil profissionais por ano, enquanto em torno de 53 mil pessoas se formam por ano em cursos de perfil tecnológico (dados citados pela ABES em março de 2023). Isso não significa vaga garantida: para quem está começando, a concorrência é com muitos outros iniciantes, e quem se destaca é quem apresenta melhor o que sabe fazer.",
+      "E essa apresentação é julgada rápido. No estudo de rastreamento ocular da Ladders, publicado em 2018, recrutadores olharam cada currículo por 7,4 segundos, em média, na triagem inicial. Em poucos segundos, o que aparece é a linha com ação e resultado, e é exatamente isso que o método STAR ajuda a escrever."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Estágio e trainee em tecnologia",
+        "description": "Processos longos, com testes online, dinâmicas de grupo e case."
+      },
+      {
+        "label": "Vagas júnior de desenvolvimento e dados",
+        "description": "Triagem de currículo, conversa com recrutador, entrevista técnica e desafio com prazo."
+      },
+      {
+        "label": "Transição de carreira",
+        "description": "Transformar experiências de outra área em evidências para uma vaga de tecnologia."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem vai disputar a primeira vaga",
+        "description": "Estudantes e recém-formados que nunca passaram por um processo completo."
+      },
+      {
+        "label": "Quem já decidiu a área",
+        "description": "Concluiu Decisão e Plano de Carreira e quer executar o plano."
+      },
+      {
+        "label": "Quem trava nas entrevistas",
+        "description": "Tem boas experiências e não consegue contá-las de forma objetiva."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Empresas de tecnologia de todos os portes combinam triagem de currículo, testes online, entrevistas comportamentais e técnicas e, em programas de estágio e trainee, dinâmicas de grupo e case. Perguntas comportamentais no formato \"conte sobre uma vez em que\" aparecem em processos de startups, consultorias e grandes empresas, e é para elas que o método STAR foi pensado.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Na Prática (Fundação Estudar) — Conheça o Processo Seletivo Na Prática, curso online e gratuito (março de 2026)",
+      "url": "https://napratica.org.br/noticias/conheca-o-processo-seletivo-na-pratica-novo-curso-online-e-gratuito-para-voce-conquistar-a-vaga-dos-seus-sonhos"
+    },
+    {
+      "label": "HR Dive — Eye-tracking study shows recruiters look at resumes for 7 seconds (Ladders, novembro de 2018)",
+      "url": "https://www.hrdive.com/news/eye-tracking-study-shows-recruiters-look-at-resumes-for-7-seconds/"
+    },
+    {
+      "label": "ABES — Déficit de profissionais de TI, com dados da Brasscom (março de 2023)",
+      "url": "https://abes.org.br/?p=58718"
+    }
+  ]
+}

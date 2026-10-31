@@ -9,14 +9,34 @@
   "category": "fullstack",
   "status": "concluido",
   "content": {
-    "longDescription": "A StartSe conecta profissionais a tendências e ecossistemas globais de inovação, com bootcamps e imersões voltados à Nova Economia. A TechAcademy é o programa gratuito da StartSe para formação de programadores, parte de uma linha de iniciativas abertas ao público que inclui também cursos rápidos como o Data For Leaders e movimentos como o IA para Todos, em parceria com a IBM.",
+    "longDescription": "A TechAcademy é um programa gratuito e online de formação de programadores lançado pela StartSe em 2022. Tinha 12 semanas e cerca de 100 horas de HTML, CSS, JavaScript e SQL, com aulas gravadas, mentorias ao vivo e certificado. Fazia parte da meta da StartSe de formar gratuitamente 500 mil desenvolvedores até 2025.",
     "videoUrl": "",
     "gallery": [],
     "curriculum": [
-      "Fundamentos de programação",
-      "Tendências de tecnologia e inovação",
-      "Conexão com o ecossistema de startups"
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "SQL",
+      "Mentorias ao vivo",
+      "Banco de talentos para empresas parceiras"
     ],
-    "officialLink": "https://www.startse.com/techacademy"
+    "officialLink": "https://www.startse.com/techacademy",
+    "paragraphs": [
+      "A StartSe é uma empresa brasileira de educação voltada a inovação, tecnologia e negócios, conhecida por cursos, imersões e eventos sobre a chamada Nova Economia. Em março de 2022 lançou a TechAcademy, um programa gratuito de formação de programadores. A meta anunciada era formar 500 mil desenvolvedores e programadores até 2025.",
+      "O programa era 100% online e durava 12 semanas, com cerca de 100 horas de carga horária. As aulas eram gravadas e havia sessões de mentoria ao vivo. Quem concluía recebia certificado. Para a primeira turma, as inscrições ficaram abertas de 28 de março a 10 de abril de 2022, sem limite fixo de vagas.",
+      "O conteúdo era de fundamentos do desenvolvimento web e de dados: HTML e CSS para estruturar e estilizar páginas, JavaScript para a lógica e a interatividade e SQL para consultar bancos de dados. Os formados entravam em um banco de talentos que empresas clientes da StartSe podiam consultar para contratar.",
+      "O público-alvo eram jovens adultos de 18 a 35 anos, sem necessidade de conhecimento prévio em tecnologia. O ingresso passava por um processo seletivo com teste de nivelamento. Disponibilidade e formato de novas turmas devem ser verificados no site da StartSe (consulta em 30/10/2026).",
+      "Programas gratuitos e curtos como esse servem de primeiro contato estruturado com a programação. Eles dão base em tecnologias muito usadas no mercado e conectam o aluno a empresas que contratam, o que ajuda quem está mudando de carreira a decidir se quer seguir em formações mais longas."
+    ],
+    "sources": [
+      {
+        "label": "StartSe: StartSe lança TechAcademy para formar gratuitamente 500 mil programadores (2022)",
+        "url": "https://www.startse.com/artigos/startse-lanca-techacademy-para-formar-gratuitamente-500-mil-programadores/"
+      },
+      {
+        "label": "Tribuna do Sertão: Startup abre inscrições para curso gratuito sobre programação (2022)",
+        "url": "https://www.tribunadosertao.com.br/brasil/2022/04/06/430514-startup-abre-inscricoes-para-curso-gratuito-sobre-programacao"
+      }
+    ]
   }
 }

@@ -107,6 +107,24 @@
       "title": "Tecnologia",
       "slug": "tecnologia",
       "description": "Ferramentas e plataformas que ampliam o que é possível construir e entregar."
+    },
+    {
+      "icon": "FaUserTie",
+      "gradientFrom": "from-amber-500/20",
+      "gradientVia": "via-orange-700/20 via-20%",
+      "gradientTo": "to-rose-700/30",
+      "title": "Carreira e Soft Skills",
+      "slug": "carreira-soft-skills",
+      "description": "Autoconhecimento, decisão de carreira, processos seletivos e produtividade para crescer com intenção."
+    },
+    {
+      "icon": "FaHandshake",
+      "gradientFrom": "from-fuchsia-500/20",
+      "gradientVia": "via-purple-700/20 via-20%",
+      "gradientTo": "to-indigo-700/30",
+      "title": "Marketing e CRM",
+      "slug": "marketing-crm",
+      "description": "Jornadas, réguas de relacionamento, e-mail e landing pages que conectam a empresa ao cliente."
     }
   ]
 }

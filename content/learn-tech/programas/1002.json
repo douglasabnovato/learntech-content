@@ -1,0 +1,815 @@
+{
+  "id": 1002,
+  "image": "https://cdn.pixabay.com/photo/2016/02/19/10/00/office-1207746_1280.jpg",
+  "category": "Carreira e Soft Skills",
+  "categoryFilter": "carreira-soft-skills",
+  "title": "Decisão e Plano de Carreira: das Opções ao Plano de Ação",
+  "lessons": "17 passos",
+  "duration": "8h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Iniciante",
+  "description": "Um método para sair do 'não sei qual área de tecnologia seguir' e chegar a uma escolha testada e um plano com datas. Você mapeia interesses e experiências, compara áreas como front-end, back-end, dados, produto, UX e CRM, conversa com quem já trabalha nelas e transforma a decisão em ações semanais.",
+  "letslearn": [
+    "Mapear interesses, momentos de pico e valores que pesam nas suas escolhas",
+    "Comparar áreas de tecnologia pelas atividades do dia a dia, e não pelo nome do cargo",
+    "Usar conversas, três planos de cinco anos e testes baratos para reduzir as opções",
+    "Montar um plano de carreira e uma planilha 5W2H com entregas, datas e prestação de contas"
+  ],
+  "curriculum": "Do autoconhecimento ao plano de ação",
+  "about": "O programa segue a sequência de um treinamento de decisão de carreira: primeiro você olha para dentro (o que te energiza, em que é referência, o que já fez de melhor), depois para fora (como o mercado de tecnologia se organiza em áreas, posições e atividades), em seguida para as pessoas (rede, entrevistas informacionais, testes pequenos) e, por fim, para a ação (um modelo de decisão, o plano de carreira e a planilha de ação). Todos os exemplos usam personagens e empresas fictícias. Ele continua o trabalho do programa de Autoconhecimento e prepara o terreno para o de Processo Seletivo.",
+  "materials": [
+    "Roteiro de journaling e ficha STAHR para os cinco momentos de pico",
+    "Diagrama Área → Posição → Atividades para as áreas de tecnologia",
+    "Ficha dos três planos de cinco anos com os quatro medidores",
+    "Modelo de plano de carreira em seis linhas e planilha 5W2H"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Mapear Interesses, Experiências e Valores",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Entender o Mercado de Tecnologia",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Conversar, Testar e Imaginar Caminhos",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Da Decisão ao Plano de Ação",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Carreira e Soft Skills",
+    "mainTitle": "Escolher uma área de tecnologia não é adivinhação: é um processo de mapear, testar e planejar.",
+    "introductionParagraphs": [
+      {
+        "title": "Opções demais também paralisam",
+        "text": "Front-end, back-end, dados, produto, UX, CRM: quem começa em tecnologia raramente sofre por falta de caminho. Sofre pelo excesso. Pesquisas sobre escolha mostram que, diante de muitas alternativas, a gente se interessa mais e decide menos. Este programa troca a pergunta 'qual é a carreira certa?' por **qual é a próxima boa decisão, e como eu a testo?**"
+      },
+      {
+        "title": "Decisão baseada em evidência sobre você",
+        "text": "Em vez de testes de perfil prontos, você produz o próprio material: momentos de pico descritos com Situação, Tarefa, Aprendizado, Habilidades e Resultado, decisões difíceis que revelam seus valores e conversas reais com quem trabalha na área. A escolha passa a se apoiar no que você já fez e no que ouviu, não em impressão."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não ensina a programar nem a passar em entrevista, e não indica a melhor área de tecnologia. O que ele entrega é um método que você pode repetir sempre que precisar decidir de novo, e ao final um plano com datas e uma pessoa que vai te cobrar."
+      }
+    ],
+    "courseAboutTitle": "Da dúvida à próxima ação concreta",
+    "courseAboutDescription": "Este é o segundo programa da trilha de carreira: depois de se conhecer melhor, você usa esse material para escolher uma direção em tecnologia e colocá-la em movimento. A ênfase está em decisões boas e revisáveis, não em uma decisão perfeita e definitiva.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Mapear Interesses, Experiências e Valores",
+        "items": [
+          {
+            "label": "Lazer x recreação",
+            "description": "Separar o que descansa do que energiza e listar o que você não quer fazer."
+          },
+          {
+            "label": "Journaling e missão",
+            "description": "Descobrir interesses escondidos e em que as pessoas te veem como referência."
+          },
+          {
+            "label": "Momentos de pico",
+            "description": "Descrever cinco experiências com STAHR e as decisões difíceis que revelam seus valores."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Entender o Mercado de Tecnologia",
+        "items": [
+          {
+            "label": "Área, posição, atividades",
+            "description": "Um diagrama para enxergar o mercado pelo trabalho do dia a dia."
+          },
+          {
+            "label": "Seis áreas de tecnologia",
+            "description": "Front-end, back-end, dados, produto, UX e CRM comparados pelas atividades."
+          },
+          {
+            "label": "Carreira gratificante",
+            "description": "Fluxo, liberdade e significado como critérios de avaliação."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Conversar, Testar e Imaginar Caminhos",
+        "items": [
+          {
+            "label": "Rede e entrevista informacional",
+            "description": "Chegar a quem trabalha na área e fazer as perguntas certas."
+          },
+          {
+            "label": "Três planos de cinco anos",
+            "description": "Imaginar caminhos alternativos e medi-los com recursos, gosto, confiança e coerência."
+          },
+          {
+            "label": "Testes de baixo custo",
+            "description": "Experimentar uma área investindo só o que você pode perder."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Da Decisão ao Plano de Ação",
+        "items": [
+          {
+            "label": "Modelo de decisão",
+            "description": "Gerar, limitar, escolher e seguir em frente."
+          },
+          {
+            "label": "Plano de carreira",
+            "description": "Impressão, pessoas, participação, entregas, datas e prestação de contas."
+          },
+          {
+            "label": "Planilha 5W2H",
+            "description": "Transformar a decisão em ações semanais com revisão mensal."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para aplicar à sua própria carreira. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "search",
+      "title": "Mapear Interesses, Experiências e Valores",
+      "shortDescription": "Descarte, missão, journaling e momentos de pico",
+      "introductionText": "Toda decisão de carreira começa com matéria-prima sobre você. Neste módulo você junta essa matéria-prima de quatro ângulos: o que você não quer, o que os outros veem em você, o que aparece quando escreve sem censura e o que já fez de melhor. Se você fez o programa de Autoconhecimento, vai reaproveitar parte do que produziu lá; se não fez, os exercícios funcionam sozinhos.",
+      "sections": [
+        {
+          "title": "🔎 Juntando evidências sobre você",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "O que você não quer fazer",
+              "code": "lazer ≠ recreação",
+              "guidance": "Comece pelo descarte. Separe lazer (o que descansa sem exigir esforço) de recreação (o que exige esforço e ainda assim aumenta sua energia). Liste tudo o que, no estudo ou no trabalho, drena sua energia mesmo quando você faz bem. Essa lista elimina caminhos antes de você gastar meses neles.",
+              "tips": [
+                "Exemplo fictício: Bruno, assistente administrativo, percebe que montar planilhas o energiza, mas atender telefone o dia inteiro o esgota. Isso já afasta funções de atendimento puro e aproxima funções analíticas."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Missão: para que as pessoas procuram você",
+              "guidance": "Escreva em que assuntos você é referência: para que colegas, amigos e família pedem sua opinião ou sua ajuda. Depois pergunte a três pessoas próximas e compare. O que aparece nas respostas dos outros e não na sua costuma ser uma habilidade que você subestima.",
+              "tips": [
+                "Se te procuram para consertar o computador, explicar uma conta ou deixar uma apresentação bonita, cada pedido aponta para uma área diferente de tecnologia: suporte, dados ou design."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Journaling sem censura",
+              "code": "Quando eu me imagino trabalhando 8h por dia, é com...",
+              "guidance": "Reserve 20 minutos e responda por escrito, rápido e sem parar para revisar, a frases como: 'Quando eu era criança, eu gostava de...', 'Sinto que meu tempo é melhor investido quando...', 'Quando eu me imagino trabalhando oito horas por dia, é com...'. Ao final, sublinhe o que surpreendeu e responda: o que mais desperta sua curiosidade e o que disso você consegue projetar em uma carreira?",
+              "tips": [
+                "Não corrija ortografia nem coerência durante a escrita. O valor está justamente nas frases que você não teria escrito com calma."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Momentos de pico e o método STAHR",
+              "code": "S · T · A · H · R",
+              "guidance": "Liste o que aprendeu na escola, em eventos, em casa e no mundo, e escolha os cinco momentos em que mais se sentiu engajado. Descreva cada um com STAHR: Situação, Tarefa, Aprendizado, Habilidades demonstradas e Resultado. Em seguida, registre duas decisões difíceis que já tomou e qual valor pesou em cada uma (família, segurança, dinheiro, autonomia, medo de falhar).",
+              "tips": [
+                "O H de Habilidades é o que transforma uma lembrança boa em evidência: é ele que você vai cruzar com as exigências de cada área no próximo módulo.",
+                "Decisão difícil é aquela em que as duas opções são atraentes; o desempate quase sempre revela um valor."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que começar por você",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Descartar também é decidir",
+          "text": "Saber o que drena sua energia elimina caminhos antes que eles custem meses de estudo."
+        },
+        {
+          "icon": "list",
+          "title": "Evidência, não impressão",
+          "text": "Momentos de pico descritos com STAHR mostram habilidades que você já usou, e não as que acha que tem."
+        },
+        {
+          "icon": "shield",
+          "title": "Valores como desempate",
+          "text": "Quando duas opções são boas, o que decide é o peso que você dá a segurança, autonomia, dinheiro ou propósito."
+        }
+      ],
+      "closingText": "Você tem agora uma lista do que evitar, suas habilidades comprovadas e os valores que pesam nas suas escolhas. Falta o outro lado da equação: entender o que cada área de tecnologia pede no dia a dia.",
+      "ctaTitle": "🔎 Matéria-prima reunida!",
+      "ctaText": "Com interesses, habilidades e valores no papel, vamos olhar para o mercado de tecnologia.",
+      "nextButtonText": "Ir para Módulo 1: Entender o Mercado de Tecnologia"
+    },
+    {
+      "id": 1,
+      "icon": "sitemap",
+      "title": "Entender o Mercado de Tecnologia",
+      "shortDescription": "Áreas, posições e atividades do dia a dia",
+      "introductionText": "Nome de cargo diz pouco. 'Analista' pode significar escrever consultas SQL o dia inteiro ou passar a semana em reuniões com clientes. Neste módulo você organiza o mercado de tecnologia num diagrama de três níveis, compara seis áreas comuns para iniciantes pelas atividades concretas e avalia cada posição pelos critérios de uma carreira gratificante.",
+      "sections": [
+        {
+          "title": "🗺️ Desenhando o mapa do mercado",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Diagrama Área → Posição → Atividades",
+              "code": "Área > Posição > Atividades",
+              "guidance": "Monte um diagrama de três níveis: no topo, três áreas de atuação em tecnologia que te atraem; abaixo de cada uma, posições possíveis; na base, as atividades e desafios do dia a dia de cada posição. Você pode preencher de cima para baixo (sei a área), de baixo para cima (sei o que quero fazer no dia a dia) ou pelo meio. Lacunas são esperadas: você volta ao diagrama ao longo do programa.",
+              "tips": [
+                "Repare que uma mesma posição pode existir em áreas diferentes: um analista de dados trabalha tanto num time de produto quanto num time de CRM."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Seis áreas de tecnologia lado a lado",
+              "guidance": "Preencha o diagrama com as áreas mais comuns para quem começa. Front-end: construir a interface que o usuário vê e usa. Back-end: regras de negócio, APIs e bancos de dados. Dados: coletar, tratar e analisar informação para apoiar decisões. Produto: decidir o que construir e por quê, junto com o time. UX: pesquisar o usuário e desenhar a experiência. CRM: relacionamento com clientes, segmentação e automação de comunicação. Para cada uma, anote as atividades típicas e marque as que conversam com seus momentos de pico.",
+              "tips": [
+                "Cruze com o STAHR do módulo anterior: se seus picos envolvem organizar números, dados e CRM sobem; se envolvem entender pessoas, UX e produto sobem.",
+                "Hard skill é o que se aprende em curso (SQL, JavaScript, Figma); soft skill é como você trabalha (comunicação, organização). Toda área exige as duas, em proporções diferentes."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Como seu repertório te influenciou",
+              "guidance": "Liste quatro escolhas que você já fez (curso, primeiro emprego, cidade, desistência) e, para cada uma, quais pessoas ou ideias pesaram. O objetivo não é rejeitar a influência da família ou do grupo, e sim perceber quando uma opção ficou de fora do diagrama só porque ninguém perto de você trabalhava com aquilo.",
+              "tips": [
+                "Uma área de tecnologia que você 'nunca considerou' muitas vezes é só uma área que ninguém da sua convivência conhecia."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Fluxo, liberdade e significado",
+              "code": "fluxo · liberdade · significado",
+              "guidance": "Avalie cada posição do diagrama pelos três elementos de uma carreira gratificante descritos pelo filósofo Roman Krznaric. Fluxo: quando foi a última vez que você perdeu a noção do tempo trabalhando, e o que a atividade exigia? Liberdade: que tipo de autonomia você não abre mão (horário, local, escolha do método)? Significado: qual contribuição faz o trabalho valer a pena para você?",
+              "tips": [
+                "Dê uma nota de 1 a 5 em cada elemento por posição. Três posições com notas altas já são material suficiente para o próximo módulo."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que olhar para as atividades",
+      "highlights": [
+        {
+          "icon": "grid",
+          "title": "Mesmo cargo, trabalhos diferentes",
+          "text": "Uma posição muda de cara conforme a área e a empresa. Olhar a atividade evita escolher pelo título."
+        },
+        {
+          "icon": "laptop",
+          "title": "Hard e soft skills juntas",
+          "text": "Toda área técnica pede ferramenta e comportamento. Saber a proporção de cada uma ajuda a escolher o que estudar primeiro."
+        },
+        {
+          "icon": "gauge",
+          "title": "Critérios explícitos",
+          "text": "Notas para fluxo, liberdade e significado deixam a comparação menos dependente do humor do dia."
+        }
+      ],
+      "closingText": "Seu diagrama já tem áreas, posições e notas. Mas é um mapa feito de leitura. O próximo passo é confrontá-lo com a realidade: pessoas que trabalham nessas áreas e experiências pequenas que você mesmo pode fazer.",
+      "ctaTitle": "🗺️ Mapa desenhado!",
+      "ctaText": "Você sabe o que cada área faz. Agora vamos descobrir como é viver isso.",
+      "nextButtonText": "Ir para Módulo 2: Conversar, Testar e Imaginar Caminhos"
+    },
+    {
+      "id": 2,
+      "icon": "globe",
+      "title": "Conversar, Testar e Imaginar Caminhos",
+      "shortDescription": "Rede, entrevistas informacionais, três vidas e testes",
+      "introductionText": "Ler sobre uma área não substitui conversar com quem trabalha nela, e conversar não substitui experimentar. Este módulo junta as três coisas: você ativa sua rede, faz entrevistas informacionais, imagina três versões dos próximos cinco anos e desenha um teste barato para a opção mais promissora. O objetivo é chegar ao módulo final com menos opções e mais informação sobre cada uma.",
+      "sections": [
+        {
+          "title": "🤝 Levando o mapa para a realidade",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Cinco alvos, cinco pessoas",
+              "code": "5 alvos × 5 pessoas",
+              "guidance": "Liste cinco empresas, setores ou funções de tecnologia sobre os quais quer saber mais. Para cada um, indique uma pessoa que já está lá ou que pode te apresentar a alguém de lá. Depois responda com honestidade: o que impede você de conversar com cada uma dessas pessoas?",
+              "tips": [
+                "Use as duas formas de networking: outbound, que parte da rede que você já tem ('me apresenta àquela sua colega de UX?'), e inbound, que é abordar alguém de fora da sua rede por evento, mensagem ou comunidade."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "A entrevista informacional",
+              "code": "Como é uma semana típica no seu trabalho?",
+              "guidance": "Marque conversas curtas com quem trabalha nas áreas que você listou. O objetivo é entender o dia a dia, não pedir emprego. Faça o dever de casa antes (leia sobre a pessoa e a empresa), prefira o encontro presencial quando possível, ofereça o café, pergunte no final quem mais ela recomenda que você ouça e envie um agradecimento depois.",
+              "tips": [
+                "Alterne tipos de pergunta: gerais ('como é sua semana?'), de esclarecimento ('então você quer dizer que...?'), que adicionam ('isso valeria numa empresa menor?') e de suposição ('o que mais dá errado num projeto de dados?').",
+                "Converse também com quem saiu da área: é quem conta o que ninguém coloca na descrição da vaga."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Três planos de cinco anos",
+              "code": "Vida 1 · Vida 2 · Vida 3",
+              "guidance": "Escreva três versões da sua vida nos próximos cinco anos. Vida 1: o caminho que você já está seguindo. Vida 2: o que faria se a Vida 1 desaparecesse amanhã. Vida 3: o que faria se dinheiro e opinião alheia não importassem. Para cada uma, dê um título curto, escreva duas ou três perguntas que esse caminho responderia e avalie de 0 a 100 quatro medidores: recursos disponíveis, o quanto você gosta, sua confiança e a coerência com seus valores.",
+              "tips": [
+                "Exemplo fictício de Bruno: Vida 1, analista de dados na distribuidora onde já trabalha; Vida 2, analista de CRM numa loja virtual; Vida 3, designer de UX em uma organização de educação.",
+                "Nenhum plano precisa ser o 'certo'. O exercício existe para provar que há mais de um caminho bom."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Testar com o que você já tem",
+              "code": "perda acessível",
+              "guidance": "Escolha a opção mais promissora e desenhe um teste pequeno usando a lógica do effectuation, de Saras Sarasvathy: comece com o que está na sua mão (quem você é, o que sabe, quem conhece), invista só o que pode perder (algumas noites, não a demissão), junte quem quiser participar e aproveite os imprevistos. Exemplos: um painel de vendas fictício para treinar dados, uma página simples para treinar front-end, um fluxo de e-mails para treinar CRM.",
+              "tips": [
+                "A pergunta do teste não é 'vou ter sucesso?', e sim 'quanto custa descobrir se eu gosto disso?'. Quanto menor o custo, mais testes você pode fazer."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que conversar e testar",
+      "highlights": [
+        {
+          "icon": "globe",
+          "title": "Informação de quem está lá",
+          "text": "Quem trabalha na área conta a rotina, os problemas e o que não aparece na descrição da vaga."
+        },
+        {
+          "icon": "sync",
+          "title": "Mais de uma vida boa",
+          "text": "Três planos de cinco anos tiram o peso de achar a única escolha certa e mostram o que cada caminho custa."
+        },
+        {
+          "icon": "tools",
+          "title": "Teste com perda acessível",
+          "text": "Um projeto pequeno com recursos que você já tem responde mais do que meses de pesquisa."
+        }
+      ],
+      "closingText": "Você conversou, imaginou e testou. Suas opções agora têm rosto, rotina e uma experiência própria por trás. Chegou a hora de escolher e transformar a escolha em plano.",
+      "ctaTitle": "🤝 Opções testadas!",
+      "ctaText": "Com informação real sobre cada caminho, vamos para a decisão e o plano de ação.",
+      "nextButtonText": "Ir para Módulo 3: Da Decisão ao Plano de Ação"
+    },
+    {
+      "id": 3,
+      "icon": "bolt",
+      "title": "Da Decisão ao Plano de Ação",
+      "shortDescription": "Modelo de decisão, plano de carreira e 5W2H",
+      "introductionText": "Decidir é necessário, mas não basta. Muita escolha boa morre por falta de data, de próximo passo ou de alguém que pergunte 'e aí, fez?'. Neste módulo você usa um modelo de decisão em quatro etapas, define uma direção de longo prazo, monta o plano de carreira em seis linhas e quebra tudo numa planilha de ação com revisão mensal.",
+      "sections": [
+        {
+          "title": "⚡ Da escolha à execução",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Gerar, limitar, escolher, seguir",
+              "code": "gerar → limitar → escolher → seguir",
+              "guidance": "Aplique o modelo de decisão de Bill Burnett e Dave Evans. Gerar: mantenha várias opções vivas pelo tempo necessário. Limitar: filtre pelos seus valores e pelo entusiasmo que cada opção desperta depois dos testes. Escolher: use um método ou a intuição, sabendo que nenhuma decisão é para sempre. Seguir: viva a escolha e aprenda com ela, em vez de revisitar os prós e contras toda semana.",
+              "tips": [
+                "Muitas opções paralisam: num experimento de Sheena Iyengar, uma banca com 24 sabores de geleia atraiu mais gente que a de 6, mas vendeu muito menos. Por isso reduza para três a cinco opções antes de escolher."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Sonho grande e protagonismo",
+              "guidance": "Escreva sua direção de longo prazo respondendo a três perguntas: o que te move, o que te incomoda (que problema você gostaria de ajudar a resolver) e quem te inspira (e por quê). Em seguida, revise como você explica seus resultados até aqui: quem assume o controle do que está ao seu alcance tende a agir mais do que quem atribui tudo à sorte, à economia ou ao chefe.",
+              "tips": [
+                "Assumir o controle não é se culpar por tudo. É separar o que você não controla (o mercado) do que controla (o que estudou esta semana, com quem conversou)."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "O plano de carreira em seis linhas",
+              "code": "Impressão · Pessoas · Participação · Entregas · Datas · Contas",
+              "guidance": "Para a opção escolhida, preencha: Impressão (tudo o que você já pesquisou sobre a carreira), Pessoas (com quem vai conversar), Participação (como vai partir para a ação), Entregas (quais ações concretas), Datas (quando cada entrega acontece) e Prestação de contas (com quem vai dividir cada entrega para ser cobrado).",
+              "tips": [
+                "Sem a linha de prestação de contas, o plano vira intenção. Escolha uma pessoa real e marque com ela a primeira revisão."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Planilha de ação 5W2H",
+              "code": "O quê | Quando | Por quê | Como | Onde | Quem | Quanto",
+              "guidance": "Transforme cada entrega numa linha de planilha com sete colunas: O quê, Quando, Por quê, Como, Onde, Quem e Quanto. Escreva o objetivo no topo da planilha e mantenha só ações que caibam numa semana. Exemplo fictício: 'Concluir um curso introdutório de SQL; até 30/11; para testar a área de dados; 40 min por dia útil; em casa; eu; R$ 0'.",
+              "tips": [
+                "Se uma linha não tem data, ela não é ação. Se tem mais de uma semana de trabalho, quebre em duas linhas."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Revisar sem largar no primeiro obstáculo",
+              "code": "revisão mensal",
+              "guidance": "Agende uma revisão mensal do plano. Compare o que foi entregue com o planejado, registre o que aprendeu sobre a área e ajuste as próximas linhas. Lembre dos elementos do planejamento: persevere o suficiente para tirar a prova, e não espere a carreira perfeita, porque ela não existe.",
+              "tips": [
+                "Uma decisão que deu errado não prova que você errou ao decidir; ela te dá dados para a próxima, que agora tem mais informação.",
+                "Use a revisão para olhar também outras áreas da vida (saúde, família, finanças): um plano de carreira que destrói o resto não se sustenta."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que o plano precisa de datas",
+      "highlights": [
+        {
+          "icon": "folder",
+          "title": "Decisão revisável",
+          "text": "Nenhuma escolha é para sempre. Tratar a decisão como ponto de partida reduz o medo de errar e acelera a ação."
+        },
+        {
+          "icon": "list",
+          "title": "Ação do tamanho de uma semana",
+          "text": "Uma linha de 5W2H com data e responsável é algo que se faz. 'Estudar dados' não é."
+        },
+        {
+          "icon": "shield",
+          "title": "Alguém que cobra",
+          "text": "Dividir as entregas com outra pessoa transforma intenção em compromisso."
+        }
+      ],
+      "closingText": "Você saiu de um leque aberto de opções para uma escolha testada, um plano de carreira e uma planilha de ação com datas e revisão. O método fica com você: sempre que precisar decidir de novo, os mesmos passos funcionam.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Sua direção em tecnologia está escolhida e planejada. O próximo passo da trilha é se preparar para o processo seletivo da área que você escolheu.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Qual é a diferença entre lazer e recreação usada para mapear interesses de carreira?",
+      "explanation": "Lazer é o oposto do trabalho: descansa sem exigir esforço. Recreação exige esforço físico ou mental e, mesmo assim, aumenta sua energia. É a recreação que se projeta numa carreira, porque mostra o tipo de esforço que te energiza. A diferença não está em custo, em companhia nem em horário.",
+      "options": [
+        {
+          "text": "Recreação exige esforço e aumenta a energia; lazer descansa sem esforço",
+          "isCorrect": true
+        },
+        {
+          "text": "Lazer é pago e recreação é gratuita",
+          "isCorrect": false
+        },
+        {
+          "text": "Recreação se faz em grupo e lazer se faz sozinho",
+          "isCorrect": false
+        },
+        {
+          "text": "Lazer acontece no fim de semana e recreação durante a semana",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "No método STAHR usado para descrever momentos de pico, o que significa a letra H?",
+      "explanation": "A ferramenta adapta um formato comum em entrevistas, acrescentando o H de Habilidades, para registrar quais capacidades você demonstrou em cada momento. É esse registro que depois se cruza com o que cada área exige.",
+      "options": [
+        {
+          "text": "Habilidades demonstradas no momento",
+          "isCorrect": true
+        },
+        {
+          "text": "Horas dedicadas à atividade",
+          "isCorrect": false
+        },
+        {
+          "text": "Histórico profissional completo",
+          "isCorrect": false
+        },
+        {
+          "text": "Hipótese sobre o futuro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "O que caracteriza uma decisão difícil, segundo o programa?",
+      "explanation": "Decisão difícil é aquela em que as duas opções são igualmente atraentes. Nesses casos, o desempate costuma vir dos valores, como família, segurança, dinheiro ou medo de falhar. Por isso mapear decisões difíceis já tomadas revela o que pesa para você.",
+      "options": [
+        {
+          "text": "As duas opções são igualmente atraentes e o desempate vem dos valores",
+          "isCorrect": true
+        },
+        {
+          "text": "Uma das opções é claramente ruim",
+          "isCorrect": false
+        },
+        {
+          "text": "Envolve muito dinheiro",
+          "isCorrect": false
+        },
+        {
+          "text": "Precisa ser tomada em menos de um dia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Por que o diagrama do mercado desce até o nível de atividades e desafios?",
+      "explanation": "O nome do cargo diz pouco: a mesma posição pode ter rotinas muito diferentes conforme a área e a empresa. Olhar as atividades do dia a dia permite comparar com seus momentos de pico e interesses, que é o que realmente indica afinidade.",
+      "options": [
+        {
+          "text": "Porque o nome do cargo diz pouco sobre a rotina real",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque as empresas exigem esse diagrama nas entrevistas",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque só assim se descobre o salário de cada posição",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque as atividades nunca mudam entre empresas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Uma pessoa gosta de entender o comportamento dos usuários e de desenhar como eles navegam por um serviço. Qual área do programa mais conversa com isso?",
+      "explanation": "UX trata justamente de pesquisar o usuário e desenhar a experiência. Back-end cuida de regras de negócio e bancos de dados; CRM, do relacionamento e da comunicação com clientes; e infraestrutura nem está entre as áreas comparadas.",
+      "options": [
+        {
+          "text": "UX",
+          "isCorrect": true
+        },
+        {
+          "text": "Back-end",
+          "isCorrect": false
+        },
+        {
+          "text": "CRM",
+          "isCorrect": false
+        },
+        {
+          "text": "Infraestrutura de servidores",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Quais são os três elementos de uma carreira gratificante descritos por Roman Krznaric?",
+      "explanation": "Krznaric descreve fluxo (o estado de atenção total numa atividade que te desafia), liberdade e significado. Salário, cargo e estabilidade podem importar, mas não são os três elementos desse modelo.",
+      "options": [
+        {
+          "text": "Fluxo, liberdade e significado",
+          "isCorrect": true
+        },
+        {
+          "text": "Salário, cargo e estabilidade",
+          "isCorrect": false
+        },
+        {
+          "text": "Talento, sorte e rede de contatos",
+          "isCorrect": false
+        },
+        {
+          "text": "Formação, experiência e certificações",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Qual é a diferença entre networking outbound e inbound?",
+      "explanation": "Outbound parte da rede que você já tem e se expande, por indicação. Inbound é abordar diretamente alguém de fora da sua rede, por evento, mensagem ou comunidade. Costuma ser mais rápido, mas exige mais iniciativa. Nenhum dos dois se define por canal online ou por ser pago.",
+      "options": [
+        {
+          "text": "Outbound parte da sua rede atual; inbound aborda alguém de fora dela",
+          "isCorrect": true
+        },
+        {
+          "text": "Outbound é presencial e inbound é online",
+          "isCorrect": false
+        },
+        {
+          "text": "Outbound é com recrutadores e inbound com colegas",
+          "isCorrect": false
+        },
+        {
+          "text": "Inbound é sempre pago e outbound é gratuito",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Qual é o objetivo principal de uma entrevista informacional?",
+      "explanation": "Ela serve para entender o dia a dia de uma área com quem trabalha nela. Pedir vaga transforma a conversa em seleção e fecha portas. Agradecer depois e pedir indicação de outras pessoas fazem parte das boas práticas.",
+      "options": [
+        {
+          "text": "Entender a rotina da área com quem trabalha nela",
+          "isCorrect": true
+        },
+        {
+          "text": "Pedir uma vaga diretamente",
+          "isCorrect": false
+        },
+        {
+          "text": "Testar seus conhecimentos técnicos",
+          "isCorrect": false
+        },
+        {
+          "text": "Negociar salário antes do processo seletivo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "No exercício dos três planos de cinco anos, o que é a Vida 2?",
+      "explanation": "A Vida 1 é o caminho atual; a Vida 2 é o que você faria se a Vida 1 desaparecesse; a Vida 3 é o que faria se dinheiro e opinião alheia não importassem. Cada uma é avaliada por recursos, gosto, confiança e coerência.",
+      "options": [
+        {
+          "text": "O que você faria se o caminho atual desaparecesse",
+          "isCorrect": true
+        },
+        {
+          "text": "O caminho que você já está seguindo",
+          "isCorrect": false
+        },
+        {
+          "text": "O que faria se dinheiro não importasse",
+          "isCorrect": false
+        },
+        {
+          "text": "A carreira que a sua família escolheria",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Qual é a sequência do modelo de decisão de Burnett e Evans?",
+      "explanation": "O modelo tem quatro etapas: gerar muitas opções, limitá-las com seus valores e entusiasmo, escolher (por método ou intuição) e seguir em frente, aprendendo com a escolha em vez de revisitá-la sem parar.",
+      "options": [
+        {
+          "text": "Gerar opções, limitar, escolher e seguir em frente",
+          "isCorrect": true
+        },
+        {
+          "text": "Escolher, testar, desistir e recomeçar",
+          "isCorrect": false
+        },
+        {
+          "text": "Pesquisar salários, escolher e pedir demissão",
+          "isCorrect": false
+        },
+        {
+          "text": "Limitar, gerar, seguir e escolher",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "No plano de carreira em seis linhas, para que serve a linha de prestação de contas?",
+      "explanation": "Ela define com quem você vai dividir cada entrega para ser cobrado depois. Sem isso, o plano tende a ficar na intenção. Não tem relação com orçamento, com o chefe atual ou com o registro de horas.",
+      "options": [
+        {
+          "text": "Definir quem vai te cobrar por cada entrega",
+          "isCorrect": true
+        },
+        {
+          "text": "Registrar quanto dinheiro o plano vai custar",
+          "isCorrect": false
+        },
+        {
+          "text": "Informar o plano ao seu chefe atual",
+          "isCorrect": false
+        },
+        {
+          "text": "Contar as horas estudadas por semana",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Segundo dados da Brasscom divulgados em fevereiro de 2025, como se compararam a demanda do mercado de tecnologia entre 2019 e 2024 e o número de formados entre 2018 e 2023?",
+      "explanation": "A demanda foi de cerca de 665 mil profissionais, contra cerca de 465 mil formados. A oferta de formados ficou abaixo da demanda, o que abre espaço para quem se prepara, mas não garante vaga sem preparo.",
+      "options": [
+        {
+          "text": "A demanda (cerca de 665 mil) superou os formados (cerca de 465 mil)",
+          "isCorrect": true
+        },
+        {
+          "text": "Os formados superaram a demanda em mais de 200 mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Demanda e formados foram praticamente iguais",
+          "isCorrect": false
+        },
+        {
+          "text": "Não houve demanda nova no período",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "Um dossiê da sua decisão de carreira em tecnologia: o mapa de interesses, habilidades e valores, o diagrama comparando áreas como front-end, back-end, dados, produto, UX e CRM, as anotações das entrevistas informacionais, três planos de cinco anos e, por fim, o plano de carreira e a planilha 5W2H com datas e uma pessoa que vai te cobrar.",
+    "highlights": [
+      "Diagrama das áreas de tecnologia com suas notas",
+      "Três planos de cinco anos e um teste de baixo custo",
+      "Plano de carreira e planilha 5W2H prontos para executar"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "Segundo estudo da Brasscom divulgado em fevereiro de 2025, a demanda do mercado de tecnologia no Brasil somou 665.403 profissionais entre 2019 e 2024, enquanto o país formou 464.569 pessoas na área entre 2018 e 2023. Em outubro de 2023, a mesma entidade estimava a necessidade de pouco mais de 540 mil profissionais entre 2023 e 2025, com salários cerca de 2,3 vezes a média nacional.",
+      "Demanda alta não significa que qualquer caminho serve. Tecnologia reúne áreas com rotinas muito diferentes, e escolher pelo nome do cargo ou pelo curso da moda costuma custar meses de estudo na direção errada. Decidir com método e testar cedo é o que transforma um mercado aquecido numa oportunidade real para você."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Primeira escolha em tecnologia",
+        "description": "Para quem vai começar e precisa escolher entre várias áreas."
+      },
+      {
+        "label": "Transição de carreira",
+        "description": "Para quem vem de outra área e quer entrar em tecnologia sem apostar às cegas."
+      },
+      {
+        "label": "Mudança dentro de tecnologia",
+        "description": "Para quem já trabalha na área e pensa em migrar, por exemplo, de suporte para dados ou de front-end para produto."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem terminou o Autoconhecimento",
+        "description": "Já mapeou forças e valores e quer transformar isso numa escolha."
+      },
+      {
+        "label": "Quem está em dúvida entre áreas",
+        "description": "Sente atração por dados, UX e programação ao mesmo tempo e não sabe por onde começar."
+      },
+      {
+        "label": "Quem decide e não executa",
+        "description": "Já escolheu várias vezes, mas o plano nunca saiu do papel."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "As ferramentas deste programa aparecem em contextos diferentes: o formato Situação-Tarefa-Resultado é usado em entrevistas comportamentais; o 5W2H é uma ferramenta comum de gestão de projetos e qualidade; e o exercício dos planos alternativos de cinco anos vêm do livro Designing Your Life, usado por centros de carreira de várias universidades.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Na Prática (Fundação Estudar) — curso Decisão de Carreira Na Prática, base do treinamento",
+      "url": "https://napratica.org.br/curso-decisao-de-carreira-na-pratica"
+    },
+    {
+      "label": "Convergência Digital — Brasscom: TIC pode gerar até 147 mil empregos formais no Brasil em 2025 (fev. 2025)",
+      "url": "https://convergenciadigital.com.br/governo/brasscom-tic-pode-gerar-ate-147-mil-empregos-formais-no-brasil-em-2025/"
+    },
+    {
+      "label": "InfoMoney — Sobram vagas, apesar de salário alto: escassez de profissionais de TI no Brasil (out. 2023)",
+      "url": "https://www.infomoney.com.br/?p=2260681"
+    },
+    {
+      "label": "Colorado State University — Exploring Career Options: Odyssey Plans",
+      "url": "https://bizcareers.colostate.edu/resources/exploring-career-options-odyssey-plans/"
+    },
+    {
+      "label": "Designing Your Life — Odyssey Planning Worksheet",
+      "url": "https://cdn.uconnectlabs.com/wp-content/uploads/sites/253/2023/12/DYL-Odyssey-Planning-Worksheet_CMC-Version-UG-2.pdf"
+    }
+  ]
+}

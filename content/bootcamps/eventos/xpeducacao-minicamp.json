@@ -13,10 +13,32 @@
     "videoUrl": "",
     "gallery": [],
     "curriculum": [
-      "Fundamentos de Lógica de Programação",
+      "Conceitos básicos de programação",
+      "Lógica de programação",
       "Testes práticos",
-      "Introdução à metodologia da XP Educação"
+      "Introdução à metodologia de ensino da Faculdade XP"
     ],
-    "officialLink": "https://www.xpeducacao.com.br"
+    "officialLink": "https://www.xpeducacao.com.br",
+    "paragraphs": [
+      "A Faculdade XP é a instituição de ensino superior da XP Educação, braço educacional do grupo XP que incorporou o IGTI. Em 2022 ela lançou graduações em tecnologia sem mensalidade, financiadas pela receita das pós-graduações pagas. As primeiras turmas tiveram 400 vagas, em cursos como Análise e Desenvolvimento de Sistemas, Ciência de Dados e Sistemas de Informação. O ensino é online, com aulas ao vivo e projetos práticos.",
+      "O Minicamp é uma das etapas do processo seletivo dessas graduações. No edital divulgado em novembro de 2022, durava duas semanas e combinava aulas ao vivo e gravadas com testes práticos. O conteúdo era de conceitos básicos de programação e uma introdução à metodologia de ensino da Faculdade XP. Todos que concluíam recebiam certificado, mesmo sem aprovação para a etapa seguinte.",
+      "No mesmo edital, o processo começava com a escolha da avaliação teórica (prova de conhecimentos gerais da XP Educação ou nota do Enem) e um questionário de motivação. Depois vinha o Minicamp, e os aprovados nele faziam um teste comportamental e cognitivo. Não era preciso saber programar antes. Metade das vagas era de ampla concorrência e metade de ações afirmativas, segundo a cobertura do lançamento.",
+      "O Minicamp interessa a quem quer uma graduação gratuita em tecnologia e também a quem quer testar a área antes de se comprometer: em duas semanas, o candidato experimenta o ritmo de estudo online e os fundamentos de programação. Etapas, datas e cursos ofertados mudam a cada edital, então vale consultar o edital vigente no site da XP Educação (consulta em 30/10/2026).",
+      "Formatos curtos de imersão como esse ajudam a criar o hábito de estudo e a verificar a afinidade com programação. Mesmo sem aprovação, o candidato sai com uma base de lógica e um certificado de participação."
+    ],
+    "sources": [
+      {
+        "label": "InfoMoney: Faculdade XP abre mais 400 vagas em graduações de tecnologia 100% gratuitas (2022)",
+        "url": "https://www.infomoney.com.br/?p=1984355"
+      },
+      {
+        "label": "IT Forum: XP Educação lança graduações gratuitas em TI (2022)",
+        "url": "https://itforum.com.br/xp-educacao-lanca-graduacoes-gratuitas-em-ti-e-quer-competir-com-faculdades-publicas/"
+      },
+      {
+        "label": "InfoMoney: Faculdade XP, graduação EAD em Investimentos e Mercado Financeiro (2025)",
+        "url": "https://www.infomoney.com.br/?p=2981906"
+      }
+    ]
   }
 }

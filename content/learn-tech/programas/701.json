@@ -3,8 +3,784 @@
   "image": "https://cdn.pixabay.com/photo/2016/08/03/21/38/london-1567903_960_720.jpg",
   "category": "English",
   "categoryFilter": "english",
-  "title": "English for Tech: aprimore seu inglês focado em carreira e programação",
-  "lessons": "15+ Lições",
-  "duration": "12hr 45min",
-  "access": "Acesso Livre"
+  "title": "English for Tech: aprenda inglês com o material do seu trabalho em programação",
+  "lessons": "15 passos",
+  "duration": "12h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Iniciante",
+  "description": "A porta de entrada da trilha de inglês para quem trabalha com tecnologia. Em vez de começar pela gramática, você monta uma rotina diária de exposição a inglês compreensível usando o material que já encontra no trabalho — mensagens de erro, documentação, README, issues e vídeos técnicos — e só depois começa a escrever commits, mensagens curtas e a falar na daily.",
+  "letslearn": [
+    "Montar uma rotina diária de estudo baseada em input compreensível",
+    "Ler mensagens de erro, documentação, README e issues sem traduzir palavra por palavra",
+    "Treinar o ouvido com vídeos técnicos usando o ciclo de texto com áudio",
+    "Escrever commits e mensagens curtas e dar uma atualização simples na daily"
+  ],
+  "curriculum": "Do input ao primeiro output",
+  "about": "O programa trata o inglês como habilidade adquirida, não como dom. A base é a ideia de que aprendemos um idioma quando entendemos mensagens nele: por isso a sequência começa pelo método e pelo hábito, passa pela leitura de material técnico real, treina a escuta com vídeos estudados junto da transcrição e termina nos primeiros outputs, em formatos curtos e previsíveis. A gramática aparece como consulta, nunca como pré-requisito. É o primeiro programa da trilha; os seguintes aprofundam vocabulário técnico, entrevista e daily.",
+  "materials": [
+    "Planilha de rotina diária com registro de input e output",
+    "Caderno de frases-modelo para issues, pull requests e chat",
+    "Lista de termos frequentes em mensagens de erro",
+    "Roteiro do ciclo de texto com áudio"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Inglês como Habilidade Adquirida",
+      "lessonsCount": 3,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Lendo como Desenvolvedor",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Ouvindo Conteúdo Técnico",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Primeiros Outputs: Commits, Mensagens e Daily",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "English",
+    "mainTitle": "Aprenda inglês lendo e ouvindo o que você já usa para programar — e só depois fale.",
+    "introductionParagraphs": [
+      {
+        "title": "Inglês é habilidade, não talento",
+        "text": "Quem acha que não leva jeito para inglês geralmente tentou pelo caminho mais difícil: decorar regras antes de entender qualquer coisa. Este programa inverte a ordem. Você aprende o idioma **usando o idioma**, do mesmo jeito que aprendeu a programar escrevendo código, e deixa a gramática como material de consulta."
+      },
+      {
+        "title": "Input antes de output",
+        "text": "A base pedagógica vem da pesquisa sobre aquisição de segunda língua: adquirimos um idioma quando entendemos mensagens nele. Por isso a maior parte do tempo vai para **ler e ouvir material compreensível**, todos os dias. Escrever e falar vêm depois, apoiados nas frases que você já absorveu, e não em tradução mental do português."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não é curso de gramática, não promete fluência em semanas e não usa aplicativo de exercícios de lacuna. Ele monta um método que roda no seu dia de trabalho, com material real, e que você continua aplicando nos próximos programas da trilha."
+      }
+    ],
+    "courseAboutTitle": "A porta de entrada da trilha de inglês",
+    "courseAboutDescription": "Este é o programa que tira o inglês do lugar de matéria pendente e o coloca na rotina. Você não precisa de horário extra nem de material comprado: a mensagem de erro de hoje, a documentação da biblioteca e o vídeo da ferramenta nova viram sessão de estudo. Ao final, você tem um hábito diário, lê material técnico com autonomia, treina o ouvido com método e já escreve e fala nos formatos mais comuns de um time.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Inglês como Habilidade Adquirida",
+        "items": [
+          {
+            "label": "Habilidade adquirida",
+            "description": "Por que inglês não depende de dom e por que a gramática fica como consulta."
+          },
+          {
+            "label": "Input compreensível",
+            "description": "O degrau i + 1: material que você entende quase todo."
+          },
+          {
+            "label": "Rotina diária",
+            "description": "30 minutos por dia, com bem mais input que output."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Lendo como Desenvolvedor",
+        "items": [
+          {
+            "label": "Mensagens de erro",
+            "description": "Ler a estrutura do erro em vez de traduzir palavra por palavra."
+          },
+          {
+            "label": "Documentação e README",
+            "description": "A ordem fixa das páginas técnicas e as frases que se repetem."
+          },
+          {
+            "label": "Issues no GitHub",
+            "description": "Inglês escrito por pessoas reais, com o final da história conhecido."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Ouvindo Conteúdo Técnico",
+        "items": [
+          {
+            "label": "Vídeo no degrau certo",
+            "description": "Como escolher conteúdo técnico que você consegue acompanhar."
+          },
+          {
+            "label": "Texto com áudio",
+            "description": "O ciclo que leva um trecho do incompreensível ao quase todo compreensível."
+          },
+          {
+            "label": "Shadowing",
+            "description": "Repetir em voz alta como ponte entre ouvir e falar."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Primeiros Outputs: Commits, Mensagens e Daily",
+        "items": [
+          {
+            "label": "Commits",
+            "description": "Tipo, escopo e descrição no imperativo."
+          },
+          {
+            "label": "Chat e pull requests",
+            "description": "Frases-modelo para pedir revisão e tirar dúvidas."
+          },
+          {
+            "label": "Daily",
+            "description": "Três frases: o que fiz, o que vou fazer, o que me bloqueia."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para aplicar no seu dia de trabalho. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "laptop",
+      "title": "Inglês como Habilidade Adquirida",
+      "shortDescription": "Por que exposição compreensível e hábito diário vêm antes da gramática",
+      "introductionText": "Inglês não é dom: é uma habilidade que se adquire, do mesmo jeito que você adquiriu a lógica de programação — usando, errando e usando de novo. A base deste programa é uma ideia simples e bem documentada na pesquisa sobre aquisição de segunda língua: a gente aprende um idioma quando entende mensagens nele. Antes de abrir qualquer documentação, este módulo monta o método que você vai repetir em todos os outros: muito input compreensível, todo dia, e output só depois.",
+      "sections": [
+        {
+          "title": "🧠 O método antes do conteúdo",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Estudar o idioma, não sobre o idioma",
+              "guidance": "Pense em como você aprendeu Git: ninguém leu o código-fonte do Git antes de dar o primeiro commit. Com inglês é igual. Regras gramaticais descrevem uma língua que já existe; elas ajudam a refinar, mas não são o caminho de entrada. Neste programa a gramática fica como consulta: quando uma estrutura aparecer repetida, você a aprende como bloco pronto, no contexto em que ela apareceu.",
+              "tips": [
+                "Quando bater o impulso de perguntar 'por que em inglês é assim?', anote a frase inteira e siga em frente. A explicação costuma ficar óbvia depois de ver a mesma estrutura dez vezes."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Input compreensível: o degrau certo",
+              "code": "i + 1",
+              "guidance": "Input é tudo que entra: ler, ouvir, assistir. Para virar aprendizado, ele precisa ser compreensível — você entende a maior parte e tropeça em pouca coisa. Esse é o degrau conhecido como i + 1: o seu nível atual mais um pequeno passo. Ouvir horas de algo que você não entende é ruído; ler algo que você entende inteiro não ensina nada novo. Escolha material em que você pega a ideia geral e esbarra em algumas palavras por parágrafo.",
+              "tips": [
+                "Teste rápido do degrau: se você precisa consultar o dicionário em quase toda linha, o material está alto demais. Troque por algo mais curto ou mais familiar."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Hábito diário de 30 minutos",
+              "guidance": "Constância vence intensidade. Monte uma rotina fixa de cerca de 30 minutos por dia, sempre no mesmo horário, com proporção aproximada de 80% input (ler e ouvir) e 20% output (escrever e falar). Prefira o material do seu trabalho: a mensagem de erro de hoje, a documentação da biblioteca que você está usando, o vídeo sobre a ferramenta da semana. Registre o que fez em uma linha por dia.",
+              "tips": [
+                "Ligue o hábito a algo que você já faz: os primeiros 30 minutos antes de abrir o editor, ou o intervalo depois do almoço. Hábito sem gatilho morre na segunda semana."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que começar pelo método",
+      "highlights": [
+        {
+          "icon": "sync",
+          "title": "Repetição que se acumula",
+          "text": "As mesmas palavras e estruturas voltam em cada texto novo. Cada sessão ensina um pouco e revisa muito, num efeito bola de neve."
+        },
+        {
+          "icon": "gauge",
+          "title": "Nível medido pelo entendimento",
+          "text": "Você não mede progresso por capítulo de gramática concluído, e sim por quanto de uma página técnica real você entende sem ajuda."
+        },
+        {
+          "icon": "shield",
+          "title": "Menos ansiedade, mais absorção",
+          "text": "Começar pelo que você entende reduz o medo de errar — e estudante tenso absorve menos, mesmo com bom material."
+        }
+      ],
+      "closingText": "Você já tem o método: material no degrau certo, todo dia, com input antes de output. Agora vamos aplicá-lo ao tipo de texto que um desenvolvedor mais lê — e que muita gente evita: mensagens de erro, documentação, README e issues.",
+      "ctaTitle": "🧠 Método montado!",
+      "ctaText": "Rotina definida e degrau escolhido. Hora de abrir o terminal e começar a ler em inglês de verdade.",
+      "nextButtonText": "Ir para Módulo 1: Lendo como Desenvolvedor"
+    },
+    {
+      "id": 1,
+      "icon": "search",
+      "title": "Lendo como Desenvolvedor",
+      "shortDescription": "Mensagens de erro, documentação, README e issues como material de estudo",
+      "introductionText": "A leitura é a porta de entrada mais fácil: você controla o ritmo, pode voltar quantas vezes quiser e o vocabulário técnico se repete muito. E o material já está na sua frente todo dia. Este módulo transforma quatro tipos de texto que você encontra trabalhando em sessões de estudo, sempre com o mesmo ciclo: ler para entender a ideia geral, marcar o que travou, reler até ficar claro.",
+      "sections": [
+        {
+          "title": "📖 Leitura com o material do trabalho",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Ler mensagens de erro sem traduzir tudo",
+              "code": "TypeError: Cannot read properties of undefined (reading 'map')",
+              "guidance": "Mensagem de erro tem estrutura fixa: o tipo do erro, o que aconteceu e onde. No exemplo, você não precisa traduzir palavra por palavra: 'cannot read properties of undefined' diz que você tentou acessar algo em uma variável vazia, e 'reading map' diz qual propriedade. Junte cinco mensagens de erro reais do seu projeto e, para cada uma, escreva em português o que ela significa antes de pesquisar.",
+              "tips": [
+                "Palavras como expected, missing, not found, undefined, deprecated e failed to aparecem em praticamente toda ferramenta. Aprendê-las resolve boa parte das mensagens."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Documentação: o mapa antes dos detalhes",
+              "guidance": "Uma página de referência de documentação quase sempre segue a mesma ordem: descrição curta, sintaxe, parâmetros, valor de retorno, exemplos. Escolha uma função que você usa e leia a página dela em inglês. Primeira leitura: só a descrição e os exemplos. Segunda: parâmetros e retorno. Terceira: as observações e avisos, onde está o vocabulário mais rico.",
+              "tips": [
+                "Comece por funções que você já sabe usar. Como a ideia é familiar, a sua atenção fica livre para o idioma — é input compreensível por definição."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "README: o que o projeto faz e como começar",
+              "code": "## Installation · ## Usage · ## Contributing",
+              "guidance": "README de projeto aberto é um texto curto, repetitivo e cheio de imperativo: install, run, clone, configure. Leia o README de um projeto que você usa, identifique as seções e reescreva em português, em três linhas, o que o projeto faz e como rodá-lo. Depois leia o README de um projeto que você não conhece e veja quanto entende.",
+              "tips": [
+                "Anote as frases-padrão inteiras, não palavras soltas: 'make sure you have', 'out of the box', 'pull requests are welcome'. Elas vão reaparecer em dezenas de projetos."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Issues: inglês escrito por pessoas reais",
+              "guidance": "Issues no GitHub são o inglês do dia a dia técnico: relatos de bug, pedidos de recurso e respostas de mantenedores, escritos por gente de vários países. Abra uma issue fechada de um projeto que você usa e identifique as partes de um bom relato — steps to reproduce, expected behavior, actual behavior, environment. Leia a conversa inteira até a solução.",
+              "tips": [
+                "Issues fechadas com solução são material excelente: você sabe o final da história, então consegue usar o contexto para entender o que não entendeu na primeira leitura."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que ler material do trabalho",
+      "highlights": [
+        {
+          "icon": "list",
+          "title": "Vocabulário que se repete",
+          "text": "Documentação técnica usa um conjunto pequeno de palavras muitas vezes. Poucas semanas de leitura já cobrem a maior parte do que você vai encontrar."
+        },
+        {
+          "icon": "tools",
+          "title": "Estudo que resolve problema",
+          "text": "Cada leitura serve duas vezes: você pratica o idioma e destrava a tarefa do dia. Isso mantém a motivação alta sem esforço extra."
+        },
+        {
+          "icon": "folder",
+          "title": "Contexto que segura a palavra",
+          "text": "Palavra aprendida dentro de uma mensagem de erro que você resolveu fica na memória muito mais tempo do que palavra de lista solta."
+        }
+      ],
+      "closingText": "Ler você já consegue, no seu ritmo e com material real. O próximo passo é a habilidade que mais trava quem estuda inglês: entender o idioma falado, em vídeos, palestras e tutoriais técnicos.",
+      "ctaTitle": "📖 Lendo em inglês!",
+      "ctaText": "Erros, documentação, README e issues viraram material de estudo. Agora vamos treinar o ouvido.",
+      "nextButtonText": "Ir para Módulo 2: Ouvindo Conteúdo Técnico"
+    },
+    {
+      "id": 2,
+      "icon": "globe",
+      "title": "Ouvindo Conteúdo Técnico",
+      "shortDescription": "Vídeos técnicos estudados com transcrição, repetição e escuta ativa",
+      "introductionText": "Entender inglês falado é, para a maioria dos brasileiros, a habilidade mais fraca — e a que mais faz falta numa reunião. A técnica central deste módulo é estudar um áudio junto com o texto dele: você pega um trecho de vídeo técnico que não entende, estuda a transcrição, e ouve e lê várias vezes até que o trecho passe de incompreensível para quase todo compreensível. É o estudo mais eficiente porque treina leitura, escuta, vocabulário e pronúncia de uma vez.",
+      "sections": [
+        {
+          "title": "🎧 Treinando o ouvido com vídeos técnicos",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Escolher o vídeo no degrau certo",
+              "guidance": "Prefira vídeos curtos (5 a 10 minutos), sobre um assunto que você já conhece em português, com fala clara e transcrição ou legenda em inglês disponível. Um tutorial de uma ferramenta que você usa é melhor que uma palestra sobre um tema novo: a familiaridade com o conteúdo deixa espaço para o idioma.",
+              "tips": [
+                "Vídeos com o código na tela ajudam muito: quando você perde uma palavra, o que aparece no editor confirma o que foi dito."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "O ciclo texto com áudio",
+              "guidance": "Pegue um trecho de dois a três minutos. Primeiro ouça sem nada, só para ter a ideia geral. Depois leia a transcrição inteira, marcando o que não entendeu e resolvendo as dúvidas. Em seguida ouça lendo junto, várias vezes, ao longo de alguns dias. O ciclo termina quando você entende de 70% a 90% do trecho só ouvindo.",
+              "tips": [
+                "Não troque de trecho cedo demais. A vontade de ir para o próximo vídeo aparece antes do entendimento chegar — é na repetição que o ouvido se acostuma."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Repetir em voz alta: shadowing",
+              "guidance": "Com um trecho já entendido, pause a cada frase e repita imitando ritmo e entonação, ou fale junto com o áudio com um pequeno atraso. É a ponte entre ouvir e falar: você não inventa frase, reproduz uma frase correta que já está na sua cabeça. Grave-se uma vez por semana e compare com o original.",
+              "tips": [
+                "Foque no ritmo e nas palavras que se juntam na fala, como 'gonna' e 'wanna'. A pronúncia de cada palavra isolada melhora junto."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Ampliar a exposição passiva",
+              "guidance": "Além do ciclo, que é estudo concentrado, acrescente escuta leve: podcasts de tecnologia no trajeto, vídeos de conferência com legenda em inglês, tutoriais em inglês no lugar do equivalente em português. Essa exposição só rende se o material estiver no seu degrau; volte ao ciclo sempre que perceber que está ouvindo só ruído.",
+              "tips": [
+                "Troque a legenda em português pela legenda em inglês antes de tirar a legenda de vez. É um degrau intermediário que muita gente pula."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que estudar com texto e áudio",
+      "highlights": [
+        {
+          "icon": "sync",
+          "title": "Várias habilidades de uma vez",
+          "text": "Ler a transcrição, ouvir e repetir treinam leitura, escuta, vocabulário e pronúncia na mesma sessão, na ordem natural de aquisição."
+        },
+        {
+          "icon": "gauge",
+          "title": "Progresso visível",
+          "text": "O mesmo trecho vai de quase nada entendido a quase tudo entendido em poucos dias. Ver isso acontecer sustenta o hábito."
+        },
+        {
+          "icon": "globe",
+          "title": "Preparação para reunião",
+          "text": "Quem treinou o ouvido com conteúdo técnico entende a pergunta na daily antes de precisar respondê-la."
+        }
+      ],
+      "closingText": "Você tem bastante input entrando: leitura diária com material do trabalho e um ciclo de escuta que treina o ouvido. Com essa base, chega a hora de colocar inglês para fora — começando pelos formatos mais curtos e previsíveis do dia a dia técnico.",
+      "ctaTitle": "🎧 Ouvido em treinamento!",
+      "ctaText": "Ciclo de texto com áudio dominado. Agora é hora dos primeiros outputs: commits, mensagens e daily.",
+      "nextButtonText": "Ir para Módulo 3: Primeiros Outputs: Commits, Mensagens e Daily"
+    },
+    {
+      "id": 3,
+      "icon": "bolt",
+      "title": "Primeiros Outputs: Commits, Mensagens e Daily",
+      "shortDescription": "Escrever e falar em formatos curtos, previsíveis e com modelo",
+      "introductionText": "Output vem depois do input, e começa pequeno. A vantagem de quem trabalha com tecnologia é que os primeiros formatos de escrita e fala são curtos e quase sempre seguem um modelo: mensagem de commit, comentário em pull request, mensagem no chat do time, atualização da daily. Neste módulo você usa as frases que já absorveu lendo e ouvindo, sem traduzir do português, e fecha o programa com o plano para continuar.",
+      "sections": [
+        {
+          "title": "✍️ Do input ao output",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Mensagens de commit",
+              "code": "fix(auth): handle expired session token",
+              "guidance": "Muitos projetos seguem a especificação Conventional Commits: um tipo (feat para recurso novo, fix para correção), um escopo opcional entre parênteses e uma descrição curta. A convenção mais comum na comunidade é escrever a descrição no imperativo, como se completasse a frase 'este commit vai...': add, fix, remove, update. Reescreva em inglês os últimos dez commits de um projeto fictício seu.",
+              "tips": [
+                "Leia o histórico de commits de um projeto aberto que você usa: é o melhor banco de modelos. Copie a estrutura, troque o conteúdo."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Mensagens curtas no chat e em pull requests",
+              "guidance": "Mensagens de trabalho em inglês são curtas e diretas. Monte um caderno de frases-modelo retiradas das issues e PRs que você leu: 'Could you take a look at this PR?', 'I'm not sure I understand — could you clarify?', 'LGTM, just one small comment.'. Escreva três mensagens fictícias por dia usando os modelos, por exemplo pedindo revisão do PR 42 do projeto taskflow.",
+              "tips": [
+                "Releia a mensagem uma vez antes de enviar procurando tradução literal do português. Se a frase nunca apareceu em nada que você leu, desconfie dela."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Atualização da daily em três frases",
+              "code": "Yesterday I... Today I'm going to... I'm blocked by...",
+              "guidance": "A daily tem o formato mais previsível do trabalho: o que fiz, o que vou fazer, o que me bloqueia. Escreva sua atualização em três frases usando esse modelo, leia em voz alta e grave. Exemplo fictício: 'Yesterday I fixed the login bug. Today I'm going to write tests for the payment page. I'm blocked by the staging environment, it's down.'",
+              "tips": [
+                "Prepare a atualização por escrito nos primeiros dias. Ler o que você escreveu não é trapaça: é o degrau entre o texto e a fala espontânea."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Seu plano para continuar a trilha",
+              "guidance": "Feche o programa com um plano semanal: leitura diária com material do trabalho, um ciclo de texto com áudio por semana, um caderno de frases-modelo e uma daily gravada por semana. Os próximos programas da trilha aprofundam cada frente: vocabulário técnico, inglês para entrevista e comunicação em daily e reuniões.",
+              "tips": [
+                "Reavalie o degrau a cada mês: se o vídeo da semana ficou fácil, suba o nível com palestras mais longas ou temas que você não conhece."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que começar o output pelo formato curto",
+      "highlights": [
+        {
+          "icon": "grid",
+          "title": "Modelo pronto",
+          "text": "Commit, PR e daily têm estrutura fixa. Você não precisa construir a frase do zero, só encaixar o conteúdo num formato que já viu muitas vezes."
+        },
+        {
+          "icon": "shield",
+          "title": "Erro de baixo custo",
+          "text": "Uma mensagem de commit imperfeita não derruba nada. Formatos curtos permitem errar, corrigir e ganhar confiança sem pressão."
+        },
+        {
+          "icon": "sitemap",
+          "title": "Base para a trilha",
+          "text": "Os formatos curtos são a fundação para o que vem nos próximos programas: vocabulário mais amplo, entrevista e conversas mais longas."
+        }
+      ],
+      "closingText": "Você saiu da ideia de que inglês é dom para uma rotina concreta: input compreensível todo dia, leitura de material técnico real, um ciclo de escuta que treina o ouvido e os primeiros outputs em formatos que todo time usa. É essa rotina, repetida por meses, que leva à fluência — não um curso intensivo.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Seu método está montado e já roda no dia a dia de trabalho. O próximo passo da trilha é ampliar o vocabulário técnico.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Qual é a ideia central da base pedagógica deste programa?",
+      "explanation": "O programa parte da hipótese de que um idioma é adquirido quando você entende mensagens nele, com exposição regular a material compreensível. Gramática ajuda a refinar, mas não é a porta de entrada; e falar desde o início sem input tende a produzir frases inventadas.",
+      "options": [
+        {
+          "text": "Adquirimos um idioma entendendo mensagens nele, com exposição frequente",
+          "isCorrect": true
+        },
+        {
+          "text": "É preciso dominar a gramática antes de ler qualquer texto",
+          "isCorrect": false
+        },
+        {
+          "text": "Fluência depende principalmente de talento natural",
+          "isCorrect": false
+        },
+        {
+          "text": "O melhor começo é falar o máximo possível desde o primeiro dia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "O que significa input compreensível no degrau i + 1?",
+      "explanation": "i + 1 é o seu nível atual mais um pequeno passo: você entende a maior parte e esbarra em pouca coisa. Material totalmente desconhecido vira ruído, e material totalmente fácil não ensina nada novo.",
+      "options": [
+        {
+          "text": "Material que você entende quase todo, com um pouco acima do seu nível",
+          "isCorrect": true
+        },
+        {
+          "text": "Material que você entende 100%, sem nenhuma palavra nova",
+          "isCorrect": false
+        },
+        {
+          "text": "Qualquer material em inglês, mesmo que você não entenda nada",
+          "isCorrect": false
+        },
+        {
+          "text": "Material traduzido para o português antes de ser lido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Qual proporção de prática o programa sugere para a rotina diária?",
+      "explanation": "A rotina sugerida tem cerca de 80% de input (ler e ouvir) e 20% de output (escrever e falar). O input é a fonte das estruturas que você depois vai usar; mesmo em níveis mais altos, ele continua sendo a maior parte.",
+      "options": [
+        {
+          "text": "Cerca de 80% input e 20% output",
+          "isCorrect": true
+        },
+        {
+          "text": "Cerca de 20% input e 80% output",
+          "isCorrect": false
+        },
+        {
+          "text": "Metade de gramática, metade de exercícios de lacuna",
+          "isCorrect": false
+        },
+        {
+          "text": "Apenas output, para perder a timidez",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Diante de 'TypeError: Cannot read properties of undefined (reading 'map')', qual é a leitura correta?",
+      "explanation": "A mensagem diz que o código tentou ler a propriedade map de algo que está undefined, ou seja, de uma variável sem valor. Não indica falta de pacote, erro de sintaxe nem que map deixou de existir.",
+      "options": [
+        {
+          "text": "O código tentou acessar map em uma variável sem valor",
+          "isCorrect": true
+        },
+        {
+          "text": "O pacote map não está instalado no projeto",
+          "isCorrect": false
+        },
+        {
+          "text": "Há um erro de sintaxe na declaração da função map",
+          "isCorrect": false
+        },
+        {
+          "text": "A função map foi removida da linguagem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Por que começar a ler documentação por funções que você já sabe usar?",
+      "explanation": "Como o conceito é familiar, você entende o conteúdo pelo contexto e sua atenção fica livre para o idioma. É input compreensível por definição. Não tem relação com a documentação ser mais curta ou mais simples nesses casos.",
+      "options": [
+        {
+          "text": "Porque o conteúdo familiar deixa a atenção livre para o idioma",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque a documentação dessas funções está sempre em português",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque funções conhecidas não têm parâmetros para ler",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque não é possível entender funções desconhecidas em inglês",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Por que issues fechadas com solução são bom material de leitura?",
+      "explanation": "Sabendo o desfecho, você usa o contexto para deduzir o que não entendeu na primeira leitura. Além disso, são textos escritos por pessoas reais, com o inglês do dia a dia técnico.",
+      "options": [
+        {
+          "text": "Porque o desfecho conhecido ajuda a entender pelo contexto",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque issues fechadas não têm erros de inglês",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque só issues fechadas podem ser lidas sem conta",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque são sempre escritas por falantes nativos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Qual vídeo é a melhor escolha para iniciar o ciclo de texto com áudio?",
+      "explanation": "Vídeo curto, sobre assunto já conhecido e com transcrição disponível coloca o material no degrau certo e permite estudar o texto. Palestra longa sobre tema novo e sem legenda tende a virar ruído.",
+      "options": [
+        {
+          "text": "Um tutorial curto, sobre ferramenta que você conhece, com transcrição",
+          "isCorrect": true
+        },
+        {
+          "text": "Uma palestra de uma hora sobre um tema totalmente novo",
+          "isCorrect": false
+        },
+        {
+          "text": "Qualquer vídeo, desde que não tenha legenda",
+          "isCorrect": false
+        },
+        {
+          "text": "Um vídeo dublado em português",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Quando termina o ciclo de estudo de um trecho com texto e áudio?",
+      "explanation": "O ciclo termina quando o trecho, antes pouco compreensível, passa a ser entendido em grande parte — algo entre 70% e 90% — só ouvindo. Trocar de trecho antes disso desperdiça a repetição, que é onde o ouvido se acostuma.",
+      "options": [
+        {
+          "text": "Quando você entende a maior parte do trecho só ouvindo",
+          "isCorrect": true
+        },
+        {
+          "text": "Depois de ouvir o trecho uma única vez",
+          "isCorrect": false
+        },
+        {
+          "text": "Quando você decorou todas as palavras da transcrição",
+          "isCorrect": false
+        },
+        {
+          "text": "Assim que o trecho começa a ficar cansativo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Qual é a função do shadowing no programa?",
+      "explanation": "Repetir em voz alta um trecho já entendido, imitando ritmo e entonação, é a ponte entre ouvir e falar: você reproduz frases corretas em vez de inventá-las traduzindo do português.",
+      "options": [
+        {
+          "text": "Servir de ponte entre ouvir e falar, reproduzindo frases corretas",
+          "isCorrect": true
+        },
+        {
+          "text": "Substituir a leitura da transcrição",
+          "isCorrect": false
+        },
+        {
+          "text": "Treinar tradução simultânea para o português",
+          "isCorrect": false
+        },
+        {
+          "text": "Memorizar regras gramaticais pela repetição",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Qual mensagem de commit segue o formato do Conventional Commits com descrição no imperativo?",
+      "explanation": "O formato é tipo, escopo opcional entre parênteses, dois-pontos e descrição. fix indica correção, e a descrição no imperativo é a convenção mais comum. As outras opções fogem do formato ou usam passado e linguagem vaga.",
+      "options": [
+        {
+          "text": "fix(auth): handle expired session token",
+          "isCorrect": true
+        },
+        {
+          "text": "Fixed some stuff in auth",
+          "isCorrect": false
+        },
+        {
+          "text": "auth - i have fixed the token",
+          "isCorrect": false
+        },
+        {
+          "text": "FIX: The token was being expired",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Qual é a estrutura da atualização da daily proposta no programa?",
+      "explanation": "O formato previsível da daily é o que fiz, o que vou fazer e o que me bloqueia — em inglês, Yesterday I..., Today I'm going to..., I'm blocked by.... A previsibilidade é o que torna a daily um bom primeiro output falado.",
+      "options": [
+        {
+          "text": "O que fiz, o que vou fazer e o que me bloqueia",
+          "isCorrect": true
+        },
+        {
+          "text": "Um resumo de todas as tarefas da sprint",
+          "isCorrect": false
+        },
+        {
+          "text": "Uma apresentação do projeto para quem chegou",
+          "isCorrect": false
+        },
+        {
+          "text": "Apenas a lista de bugs abertos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Segundo o EF EPI 2025, qual habilidade em inglês tem a menor pontuação média no Brasil?",
+      "explanation": "No relatório de 2025, o Brasil marcou 516 em leitura, 468 em escuta, 464 em fala e 442 em escrita. Leitura é o ponto mais forte, por isso o programa começa por ela, e a escrita é a mais fraca — mais um motivo para começar o output pelos formatos curtos com modelo.",
+      "options": [
+        {
+          "text": "Escrita",
+          "isCorrect": true
+        },
+        {
+          "text": "Leitura",
+          "isCorrect": false
+        },
+        {
+          "text": "Escuta",
+          "isCorrect": false
+        },
+        {
+          "text": "Nenhuma: as quatro têm a mesma pontuação",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "Uma rotina de estudo de inglês que funciona dentro do seu dia de trabalho: registro diário de input e output, um caderno de frases-modelo retiradas de issues e pull requests, um trecho de vídeo técnico estudado até ser quase todo compreendido e uma atualização de daily escrita e gravada em inglês.",
+    "highlights": [
+      "Rotina diária de input compreensível com material técnico",
+      "Caderno de frases-modelo para commits, PRs e chat",
+      "Atualização de daily gravada em inglês"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "No EF English Proficiency Index 2025, o Brasil ficou em 75º lugar entre 123 países e territórios, com 482 pontos — abaixo da média global de 488 e na faixa de proficiência baixa. Por habilidade, o país marcou 516 em leitura, 468 em escuta, 464 em fala e 442 em escrita.",
+      "Os mesmos dados mostram que profissionais de TI marcam 551 pontos, bem acima da média nacional: em tecnologia, o inglês já é parte do trabalho. Documentação, mensagens de erro, issues e boa parte dos vídeos técnicos estão em inglês. Começar pela leitura, que é a habilidade mais forte, e treinar a escuta antes de cobrar a fala é a ordem que aproveita o que você já tem."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Depuração do dia a dia",
+        "description": "Entender a mensagem de erro e a resposta certa no fórum sem depender de tradutor."
+      },
+      {
+        "label": "Projetos de código aberto",
+        "description": "Ler README e issues, relatar um bug e acompanhar a discussão até a solução."
+      },
+      {
+        "label": "Times distribuídos",
+        "description": "Commits, pull requests e daily em inglês com colegas de outros países."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem trava no inglês",
+        "description": "Já tentou estudar algumas vezes e acha que não leva jeito para idiomas."
+      },
+      {
+        "label": "Quem programa com tradutor aberto",
+        "description": "Lê documentação e erros traduzindo tudo e quer ganhar autonomia."
+      },
+      {
+        "label": "Quem mira vaga internacional",
+        "description": "Quer montar a base antes de se preparar para entrevista e reuniões em inglês."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Inglês é o idioma de trabalho da documentação técnica, dos repositórios de código aberto e da maior parte das conferências e tutoriais. Times distribuídos em vários países escrevem commits, pull requests e mensagens em inglês, e entrevistas para vagas internacionais costumam ser feitas no idioma. A habilidade vale em qualquer stack e em qualquer tamanho de empresa.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Mairo Vergara — Como aprender inglês sozinho (material de base: inglês como habilidade adquirida, input compreensível e estudo de textos com áudio)",
+      "url": "https://www.mairovergara.com/tag/input"
+    },
+    {
+      "label": "Clozemaster — Comprehensible Input: What It Actually Means and How to Use It (hipótese do input e i + 1 de Stephen Krashen)",
+      "url": "https://www.clozemaster.com/blog/?p=7418"
+    },
+    {
+      "label": "Conventional Commits 1.0.0 — especificação de mensagens de commit",
+      "url": "https://conventionalcommits.org/en/v1.0.0"
+    },
+    {
+      "label": "EF EPI 2025 — Fact sheet do Brasil (pontuação geral, por habilidade e por função)",
+      "url": "https://www.ef.com/assetscdn/WIBIwq6RdJvcD9bc8RMd/cefcom-epi-site/fact-sheets/2025/ef-epi-fact-sheet-brazil-english.pdf"
+    },
+    {
+      "label": "MosaLingua — O nível do inglês no Brasil e no mundo: EF EPI revela números de 2025",
+      "url": "https://www.mosalingua.com/pt/nivel-de-ingles-no-brasil-2025/"
+    }
+  ]
 }

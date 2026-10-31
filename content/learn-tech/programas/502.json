@@ -3,8 +3,815 @@
   "image": "https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849822_1280.jpg",
   "category": "Produtos Digitais",
   "categoryFilter": "produtos-digitais",
-  "title": "Gestão de Backlog: Priorização para Product Owners",
-  "lessons": "10+ Lições",
-  "duration": "08hr 00min",
-  "access": "Acesso Livre"
+  "title": "Gestão de Backlog: Histórias, Refinamento e Priorização",
+  "lessons": "18 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Intermediário",
+  "description": "Como transformar uma pilha de pedidos em um backlog ordenado, com meta, histórias testáveis e uma ordem que você consegue explicar. Você trabalha épicos, histórias e critérios de aceite, monta a rotina de refinamento com Definition of Done, compara MoSCoW, Kano, RICE e WSJF e comunica as decisões a quem pediu.",
+  "letslearn": [
+    "Ligar o backlog a uma Meta do Produto e ordená-lo com dono explícito",
+    "Quebrar épicos em histórias pequenas, verticais e com critérios de aceite verificáveis",
+    "Manter o topo do backlog refinado e definir uma Definition of Done útil",
+    "Priorizar com MoSCoW, Kano, RICE e WSJF e comunicar a decisão a stakeholders"
+  ],
+  "curriculum": "Do pedido solto ao backlog priorizado",
+  "about": "O programa acompanha um único backlog do começo ao fim: o de um aplicativo fictício de agendamento para clínicas veterinárias. Você começa organizando 47 pedidos sem ordem, define a Meta do Produto, escreve histórias com critérios de aceite, monta o ritmo de refinamento e termina aplicando quatro técnicas de priorização ao mesmo conjunto de itens. O conteúdo segue o Scrum Guide 2020 onde ele é normativo e deixa claro o que é prática da comunidade, como a Definition of Ready. Continua o programa Produtos Digitais: da ideia ao lançamento com metodologias ágeis.",
+  "materials": [
+    "Planilha de backlog do caso VetAgenda com os 47 pedidos",
+    "Checklist INVEST e modelo de critérios em Dado/Quando/Então",
+    "Modelo de Definition of Done",
+    "Planilha comparativa MoSCoW, RICE e WSJF",
+    "Modelo de resposta a stakeholder"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Backlog e Meta do Produto",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Épicos, Histórias e Critérios de Aceite",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Refinamento, Definition of Ready e Definition of Done",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Priorização e Comunicação com Stakeholders",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Produtos Digitais",
+    "mainTitle": "Backlog não é lista de desejos: é a sequência de apostas que leva o produto até a meta.",
+    "introductionParagraphs": [
+      {
+        "title": "O problema de todo Product Owner",
+        "text": "Pedidos chegam de vendas, suporte, diretoria e da própria equipe, todos com urgência. Sem método, o backlog vira depósito: cresce sem parar, o topo muda conforme quem falou por último e a equipe não sabe se está construindo a coisa certa. O **Product Backlog** existe para resolver isso — uma lista emergente e ordenada, presa a uma **Meta do Produto**."
+      },
+      {
+        "title": "Escrever bem antes de priorizar",
+        "text": "Não dá para comparar itens que ninguém entende. Por isso o programa passa por épicos, histórias, critérios de aceite e refinamento antes de chegar às técnicas de priorização. Um item pequeno, com benefício declarado e critério verificável, pode ser estimado, comparado e entregue; um pedido vago, não."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não ensina a operar uma ferramenta específica nem vende uma técnica como resposta definitiva. RICE, MoSCoW, Kano e WSJF são apresentados como lentes diferentes para a mesma decisão, e a palavra final continua sendo do Product Owner — com critério explícito, para que a decisão possa ser discutida."
+      }
+    ],
+    "courseAboutTitle": "O trabalho diário de quem cuida de um produto",
+    "courseAboutDescription": "Gestão de backlog é onde a estratégia de produto vira trabalho concreto. É uma habilidade menos visível que discovery ou métricas, mas é nela que se decide, toda semana, o que a equipe vai construir. Este programa trata o backlog como instrumento de decisão e comunicação, não como lista de tarefas.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Backlog e Meta do Produto",
+        "items": [
+          {
+            "label": "Lista ordenada",
+            "description": "O que o Scrum Guide entende por Product Backlog e por que a ordem é uma decisão."
+          },
+          {
+            "label": "Meta do Produto",
+            "description": "O compromisso que dá sentido à lista e permite dizer não."
+          },
+          {
+            "label": "Tipos de item e dono",
+            "description": "Funcionalidades, bugs, débito e spikes na mesma lista, com um responsável."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Épicos, Histórias e Critérios de Aceite",
+        "items": [
+          {
+            "label": "Hierarquia",
+            "description": "Iniciativa, épico e história, e para que serve cada nível."
+          },
+          {
+            "label": "Histórias e INVEST",
+            "description": "Escrever histórias que provocam conversa e testá-las com o checklist."
+          },
+          {
+            "label": "Fatiamento e critérios",
+            "description": "Dividir na vertical e definir aceite em Dado/Quando/Então."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Refinamento, Definition of Ready e Definition of Done",
+        "items": [
+          {
+            "label": "Refinamento contínuo",
+            "description": "Até onde detalhar e como conduzir a conversa."
+          },
+          {
+            "label": "Estimativa relativa",
+            "description": "Usar a divergência de estimativas para achar riscos."
+          },
+          {
+            "label": "DoR e DoD",
+            "description": "A diferença entre uma prática opcional e um compromisso formal do Scrum."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Priorização e Comunicação com Stakeholders",
+        "items": [
+          {
+            "label": "MoSCoW e Kano",
+            "description": "Negociar escopo em prazo fixo e entender o efeito na satisfação."
+          },
+          {
+            "label": "RICE e WSJF",
+            "description": "Comparar impacto por esforço e colocar o custo do atraso na conta."
+          },
+          {
+            "label": "Comunicação",
+            "description": "Roteiro Agora/Próximo/Depois e como explicar um não."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para aplicar no backlog do caso — ou no seu próprio. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "folder",
+      "title": "Backlog e Meta do Produto",
+      "shortDescription": "O backlog como lista ordenada e emergente, presa a uma meta",
+      "introductionText": "Antes de priorizar qualquer coisa, é preciso saber o que é o backlog e para que ele serve. O Scrum Guide 2020 o define como uma lista emergente e ordenada do que é necessário para melhorar o produto, e amarra essa lista a um compromisso: a Meta do Produto. Neste módulo você monta o cenário do projeto — o backlog de um aplicativo fictício de agendamento para clínicas veterinárias, o VetAgenda — e transforma uma pilha desorganizada de pedidos em uma lista com dono, meta e tipos de item claros.",
+      "sections": [
+        {
+          "title": "📂 Arrumando a casa antes de priorizar",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Backlog é lista ordenada, não depósito",
+              "code": "Product Backlog = lista emergente e ordenada",
+              "guidance": "Leia a planilha inicial do VetAgenda: 47 pedidos vindos de vendas, suporte, diretoria e da própria equipe, sem ordem nenhuma. Marque o que é pedido de solução (\"botão de exportar em PDF\") e o que é problema (\"recepção perde tempo reenviando lembretes\"). O backlog só é útil quando está ordenado: o item do topo é o próximo que a equipe deve fazer, e quanto mais abaixo, menos detalhe ele precisa ter.",
+              "tips": [
+                "Se tudo está marcado como urgente, nada está ordenado. A ordem é uma decisão, não uma etiqueta."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Escreva a Meta do Produto",
+              "code": "Compromisso do Product Backlog: Meta do Produto",
+              "guidance": "Desde 2020, o Scrum Guide define a Meta do Produto como o compromisso do Product Backlog: o objetivo de longo prazo que dá sentido à lista. Escreva uma frase para o VetAgenda, por exemplo: \"reduzir faltas em consultas agendadas, tornando o reagendamento tão fácil quanto confirmar\". Depois, passe pelos 47 itens e separe os que não contribuem para essa meta.",
+              "tips": [
+                "Uma meta boa permite dizer não. Se nenhum item fica de fora depois de aplicá-la, ela está genérica demais.",
+                "A equipe persegue uma Meta do Produto por vez; trocar de meta é decisão explícita, não deriva."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Classifique os tipos de item",
+              "guidance": "Nem todo item do backlog é história de usuário. Separe a lista em funcionalidades, defeitos, débito técnico, investigações (spikes) e requisitos não funcionais. Isso evita o erro comum de deixar bugs e débito em uma lista paralela que nunca entra na conversa de prioridade.",
+              "tips": [
+                "Débito técnico que não aparece no backlog vira trabalho invisível — e trabalho invisível não é priorizado, só acumulado."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Quem decide a ordem",
+              "guidance": "O Scrum Guide atribui ao Product Owner a responsabilidade pela gestão eficaz do Product Backlog: desenvolver e comunicar a Meta do Produto, criar e comunicar os itens, ordená-los e garantir que sejam transparentes e compreendidos. O PO pode delegar trabalho, mas continua responsável. Escreva no topo do backlog do VetAgenda quem é o dono e qual é o canal para pedidos novos.",
+              "tips": [
+                "Qualquer pessoa pode sugerir item; só uma pessoa decide a ordem. Comitê de priorização sem dono costuma produzir média, não decisão."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que começar pela meta",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Critério antes de técnica",
+          "text": "RICE, MoSCoW e WSJF comparam itens entre si. Sem uma meta, você só escolhe o melhor item de uma lista que talvez nem devesse existir."
+        },
+        {
+          "icon": "list",
+          "title": "Lista curta no topo",
+          "text": "Ordenar de verdade obriga a escolher. Um topo enxuto e detalhado vale mais que duzentos itens com o mesmo nível de detalhe."
+        },
+        {
+          "icon": "shield",
+          "title": "Dono explícito",
+          "text": "Com um responsável declarado, pedidos de corredor viram itens na lista, discutidos à vista de todos, em vez de atalhos."
+        }
+      ],
+      "closingText": "O VetAgenda agora tem meta, dono e um backlog limpo, com itens classificados por tipo. Mas os itens ainda são frases soltas como \"melhorar lembretes\". No próximo módulo você aprende a transformá-los em épicos e histórias que a equipe consegue construir e testar.",
+      "ctaTitle": "📂 Backlog com dono e direção!",
+      "ctaText": "A lista tem meta e responsável. Agora vamos escrever itens que a equipe consiga entregar.",
+      "nextButtonText": "Ir para Módulo 1: Épicos, Histórias e Critérios de Aceite"
+    },
+    {
+      "id": 1,
+      "icon": "sitemap",
+      "title": "Épicos, Histórias e Critérios de Aceite",
+      "shortDescription": "Do tema grande à história que cabe em uma Sprint e se testa",
+      "introductionText": "Um item de backlog bem escrito responde a três perguntas: para quem, o quê e como saber que ficou pronto. Neste módulo você quebra o VetAgenda em épicos, escreve histórias de usuário e define critérios de aceite verificáveis. O foco não é o formato bonito do cartão — é a conversa que ele provoca e o acordo que fica registrado.",
+      "sections": [
+        {
+          "title": "🗺️ Da ideia grande ao item que cabe na Sprint",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Iniciativa, épico e história",
+              "guidance": "Monte a hierarquia do VetAgenda. Uma iniciativa reúne épicos com objetivo comum (\"reduzir faltas\"); um épico é um bloco grande de trabalho que se divide em histórias (\"lembretes automáticos\"); uma história é uma necessidade pequena, escrita do ponto de vista do usuário, que a equipe termina dentro de uma Sprint (\"tutor recebe lembrete por mensagem 24 horas antes\").",
+              "tips": [
+                "Épico não é história grande com outro nome: ele existe para agrupar e acompanhar progresso, e só entra em Sprint depois de dividido."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "A história como convite à conversa",
+              "code": "Como recepcionista, quero..., para...",
+              "guidance": "Escreva cinco histórias no formato \"Como [papel], quero [ação], para [benefício]\". Lembre do modelo dos 3 Cs: o Cartão é só o lembrete, a Conversa é onde o entendimento acontece, e a Confirmação são os critérios que dizem se ficou pronto. O \"para\" é a parte mais importante: sem ele, a equipe não consegue propor uma solução melhor que a pedida.",
+              "tips": [
+                "Se o papel de todas as histórias é \"usuário\", você ainda não sabe para quem está construindo. Seja específico: tutor, recepcionista, veterinário."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Teste com INVEST",
+              "code": "I-N-V-E-S-T",
+              "guidance": "Passe cada história pelo checklist INVEST: Independente, Negociável, Valiosa, Estimável, Pequena (Small) e Testável. Anote qual letra cada história falha. Na prática, as falhas mais comuns são \"pequena\" e \"testável\" — e as duas costumam ser resolvidas nos próximos dois passos.",
+              "tips": [
+                "\"Negociável\" quer dizer que o texto da história não é contrato: os detalhes podem mudar na conversa até a equipe começar o trabalho."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Fatie na vertical",
+              "guidance": "Pegue a história grande \"tutor reagenda consulta pelo app\" e divida em fatias que entreguem valor cada uma, atravessando interface, regra e dados: primeiro reagendar para o mesmo profissional, depois escolher outro profissional, depois respeitar a antecedência mínima da clínica. Evite fatiar por camada técnica (\"tela\", \"API\", \"banco\"): nenhuma dessas partes sozinha entrega algo testável pelo usuário.",
+              "tips": [
+                "Padrões úteis de divisão: por etapa do fluxo, por regra de negócio, por variação de dado, pelo caminho feliz primeiro e exceções depois."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Critérios de aceite em Dado/Quando/Então",
+              "code": "Dado... Quando... Então...",
+              "guidance": "Escreva os critérios da primeira fatia no formato de cenário: \"Dado que a consulta está marcada para daqui a 48 horas, quando o tutor escolhe um novo horário livre, então a consulta é movida e a clínica recebe notificação\". Inclua pelo menos um cenário de exceção, como horário já ocupado. Critério de aceite é específico da história; não confunda com a Definition of Done, que vale para todo incremento.",
+              "tips": [
+                "Bom critério é verificável por alguém que não escreveu a história. \"Deve ser rápido\" não é critério; \"carrega em até 2 segundos na rede 4G de referência\" é."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que escrever bem economiza tempo",
+      "highlights": [
+        {
+          "icon": "grid",
+          "title": "Fatias entregáveis",
+          "text": "História pequena e vertical termina dentro da Sprint e gera feedback real, em vez de três quartos de várias coisas."
+        },
+        {
+          "icon": "shield",
+          "title": "Acordo registrado",
+          "text": "Critérios de aceite encerram a discussão sobre o que ficou combinado. Sem eles, \"pronto\" vira questão de opinião na revisão."
+        },
+        {
+          "icon": "sync",
+          "title": "Espaço para a equipe",
+          "text": "Ao declarar o problema e o benefício, a história deixa a equipe propor a solução — que muitas vezes é mais simples que a pedida."
+        }
+      ],
+      "closingText": "O topo do backlog do VetAgenda agora tem histórias pequenas, com benefício declarado e critérios verificáveis. Falta transformar isso em rotina: quando refinar, até onde detalhar e como garantir que o que sai da Sprint está realmente pronto. É o assunto do próximo módulo.",
+      "ctaTitle": "🗺️ Histórias prontas para conversa!",
+      "ctaText": "Os itens do topo já são entregáveis e testáveis. Agora vamos montar o ritmo de refinamento.",
+      "nextButtonText": "Ir para Módulo 2: Refinamento, Definition of Ready e Definition of Done"
+    },
+    {
+      "id": 2,
+      "icon": "sync",
+      "title": "Refinamento, Definition of Ready e Definition of Done",
+      "shortDescription": "O ritmo que mantém o topo do backlog pronto para planejar",
+      "introductionText": "Refinamento não é reunião: o Scrum Guide 2020 o descreve como atividade contínua de dividir e detalhar itens em partes menores e mais precisas, acrescentando descrição, ordem e tamanho. Neste módulo você monta a rotina de refinamento do VetAgenda, escolhe uma forma de estimar, discute se a equipe precisa de uma Definition of Ready e escreve a Definition of Done — esta, sim, um compromisso formal do Scrum.",
+      "sections": [
+        {
+          "title": "🔄 Ritmo de refinamento",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Refine só o horizonte próximo",
+              "guidance": "Defina quanto do backlog precisa estar detalhado: o suficiente para duas ou três Sprints à frente. O resto fica em nível de épico. Detalhar itens que talvez nunca sejam feitos é desperdício, e detalhe envelhece rápido. Monte uma pauta curta para as sessões: o item ainda faz sentido? Precisa ser dividido? Surgiu informação nova? A ordem mudou?",
+              "tips": [
+                "Uma referência comum na comunidade Scrum é reservar até cerca de 10% do tempo da equipe para refinamento. O Scrum Guide 2020 não fixa número; trate como ponto de partida a ajustar."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Estimativa relativa como teste de entendimento",
+              "code": "Planning Poker: 1, 2, 3, 5, 8, 13",
+              "guidance": "Estime as histórias do topo comparando umas com as outras, em pontos ou em tamanhos de camiseta (P, M, G). No Scrum, quem estima são os Developers, que farão o trabalho. Quando duas pessoas dão estimativas muito diferentes, o número importa menos que a conversa: geralmente uma delas sabe de um risco que a outra não sabe.",
+              "tips": [
+                "Se a história ficou maior que o que cabe em uma Sprint, ela volta para o passo de fatiamento do módulo anterior."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Definition of Ready: use com cuidado",
+              "code": "Pronto para seleção ≠ formulário completo",
+              "guidance": "A Definition of Ready não faz parte do Scrum Guide; é uma prática que algumas equipes adotam como checklist do que um item precisa ter antes de entrar em Sprint Planning (critérios escritos, dependências conhecidas, tamanho que cabe na Sprint). O Scrum Guide 2020 diz apenas que itens que podem ser concluídos em uma Sprint são considerados prontos para seleção. Escreva uma DoR leve para o VetAgenda e anote o risco: virar portão burocrático que trava itens por falta de um campo preenchido.",
+              "tips": [
+                "Teste prático: se a DoR já impediu um item urgente e simples de entrar na Sprint, ela está funcionando como portão, não como acordo."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Definition of Done como compromisso",
+              "code": "Compromisso do Incremento: Definition of Done",
+              "guidance": "Desde 2020, a Definition of Done é o compromisso do Incremento: a descrição formal do estado em que o trabalho atende às medidas de qualidade exigidas. Escreva a DoD do VetAgenda (código revisado, testes automatizados passando, critérios de aceite verificados, publicado em homologação, texto de ajuda atualizado). Um item que não atende à DoD não pode ser liberado nem apresentado na Sprint Review; ele volta ao Product Backlog.",
+              "tips": [
+                "Critérios de aceite mudam a cada história; a DoD vale para todas. Se a DoD de vocês cita uma funcionalidade específica, ela está no lugar errado."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que o ritmo importa mais que a cerimônia",
+      "highlights": [
+        {
+          "icon": "bolt",
+          "title": "Planejamento rápido",
+          "text": "Com o topo refinado, a Sprint Planning discute objetivo e plano, em vez de virar sessão de descobrir o que cada item quer dizer."
+        },
+        {
+          "icon": "gauge",
+          "title": "Qualidade declarada",
+          "text": "A DoD deixa explícito o que \"pronto\" significa. Sem ela, cada pessoa usa o próprio critério e o débito aparece meses depois."
+        },
+        {
+          "icon": "search",
+          "title": "Riscos à vista",
+          "text": "Estimativas divergentes revelam incertezas cedo, quando ainda é barato dividir o item ou investigar antes."
+        }
+      ],
+      "closingText": "O VetAgenda tem agora um backlog que se mantém saudável: topo refinado, estimativas relativas, um acordo de entrada opcional e uma DoD clara. Com itens comparáveis em tamanho e entendimento, dá para fazer a pergunta mais difícil do PO — o que vem primeiro — com método. É o último módulo.",
+      "ctaTitle": "🔄 Backlog com ritmo próprio!",
+      "ctaText": "Os itens do topo estão entendidos e estimados. Hora de decidir a ordem com critério e explicar a decisão.",
+      "nextButtonText": "Ir para Módulo 3: Priorização e Comunicação com Stakeholders"
+    },
+    {
+      "id": 3,
+      "icon": "gauge",
+      "title": "Priorização e Comunicação com Stakeholders",
+      "shortDescription": "MoSCoW, Kano, RICE e WSJF — e como explicar a escolha",
+      "introductionText": "Cada técnica de priorização responde a uma pergunta diferente. MoSCoW negocia escopo dentro de um prazo; Kano mostra como cada funcionalidade afeta a satisfação; RICE compara impacto por esforço; custo do atraso e WSJF colocam tempo na conta. Neste módulo você aplica as quatro ao mesmo conjunto de doze itens do VetAgenda, compara os resultados e, por fim, comunica a decisão a quem pediu e não foi atendido.",
+      "sections": [
+        {
+          "title": "⚖️ Decidir a ordem com método",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "MoSCoW para um prazo fixo",
+              "code": "Must · Should · Could · Won't",
+              "guidance": "A clínica-piloto do VetAgenda começa a usar o app em oito semanas. Classifique os doze itens em Must (sem isso o lançamento não acontece), Should (importante, mas há contorno), Could (desejável) e Won't (não neste prazo). A técnica vem do método DSDM, cuja orientação é que os Musts não passem de cerca de 60% do esforço, deixando folga para imprevistos.",
+              "tips": [
+                "O \"Won't\" é a categoria mais valiosa: registra o que ficou de fora e evita que o assunto volte a cada reunião."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Kano para entender a satisfação",
+              "guidance": "Classifique os itens pelas categorias do modelo de Kano: obrigatórios (ausência irrita, presença não encanta — ex.: confirmação do agendamento), de desempenho (quanto melhor, mais satisfação — ex.: velocidade para reagendar), atrativos (não são esperados e encantam — ex.: lembrete de vacina anual) e indiferentes. A classificação real vem de questionário com perguntas em par (\"como se sente se tiver?\" / \"e se não tiver?\"); aqui use hipóteses e marque o que precisa ser validado.",
+              "tips": [
+                "Atrativos de hoje viram obrigatórios amanhã. Revise a classificação de tempos em tempos."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "RICE para comparar impacto por esforço",
+              "code": "RICE = (Alcance × Impacto × Confiança) ÷ Esforço",
+              "guidance": "Calcule a pontuação RICE, criada pela equipe de produto da Intercom: Alcance (pessoas afetadas por período, como tutores por trimestre) × Impacto (escala 3, 2, 1, 0,5 ou 0,25) × Confiança (100%, 80% ou 50%) ÷ Esforço (pessoas-mês). Exemplo: lembrete por mensagem alcança 3.000 tutores por trimestre, impacto 2, confiança 80%, esforço 2 → 3.000 × 2 × 0,8 ÷ 2 = 2.400.",
+              "tips": [
+                "A própria Intercom avisa: RICE não é regra rígida. Dependências e compromissos podem justificar fazer antes um item de pontuação menor — registre o motivo.",
+                "Confiança baixa é sinal de que vale investigar antes de construir, não só de rebaixar o item."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Custo do atraso e WSJF",
+              "code": "WSJF = Custo do Atraso ÷ Duração",
+              "guidance": "Pergunte quanto custa, por semana, não ter cada item. Para o VetAgenda, a integração com a agenda da clínica-piloto perde valor se atrasar além do lançamento. O WSJF (Weighted Shortest Job First), popularizado pelo SAFe, divide o custo do atraso pela duração do trabalho; o custo do atraso é estimado pela soma de valor para o usuário e o negócio, criticidade de tempo e redução de risco ou habilitação de oportunidade, em escala relativa. Calcule para os doze itens e compare com a ordem do RICE.",
+              "tips": [
+                "Itens pequenos com custo de atraso alto sobem rápido no WSJF. É o efeito desejado: entregar primeiro o que libera mais valor por unidade de tempo."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Comunique a decisão",
+              "code": "Agora · Próximo · Depois",
+              "guidance": "Monte o roteiro do VetAgenda em três colunas — Agora, Próximo, Depois — ligadas à Meta do Produto, sem datas para o que está longe. Para cada stakeholder cujo pedido ficou em \"Depois\" ou \"Won't\", escreva uma resposta curta com três partes: o que foi decidido, por qual critério e o que mudaria a decisão. Apresente o raciocínio, não só a planilha.",
+              "tips": [
+                "Dizer não com critério explícito preserva a relação: a pessoa discorda do critério, não de você.",
+                "Roteiro por resultados (\"reduzir faltas\") envelhece melhor que roteiro por funcionalidades com data."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que usar mais de uma técnica",
+      "highlights": [
+        {
+          "icon": "grid",
+          "title": "Perguntas diferentes",
+          "text": "MoSCoW fala de prazo, Kano de satisfação, RICE de eficiência e WSJF de tempo. Quando todas concordam, a decisão é fácil; quando divergem, a divergência é o assunto da conversa."
+        },
+        {
+          "icon": "globe",
+          "title": "Critério compartilhável",
+          "text": "Uma pontuação com premissas escritas pode ser contestada item a item, o que é muito melhor que discutir opinião contra opinião."
+        },
+        {
+          "icon": "tools",
+          "title": "Ferramenta, não oráculo",
+          "text": "Números de priorização são estimativas. Servem para estruturar o julgamento do PO, não para substituí-lo."
+        }
+      ],
+      "closingText": "Você partiu de 47 pedidos soltos e chegou a um backlog com meta, histórias testáveis, rotina de refinamento, DoD e uma ordem justificada por critérios que qualquer stakeholder consegue entender. É esse conjunto — e não uma técnica isolada — que caracteriza um backlog bem gerido.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Seu backlog tem direção, itens entregáveis e uma ordem que se explica. O passo natural seguinte é validar as hipóteses do topo com baixo custo, tema do programa MVP na Prática: Do Briefing à Validação com Baixo Custo.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Segundo o Scrum Guide 2020, qual é o compromisso associado ao Product Backlog?",
+      "explanation": "Em 2020 cada artefato ganhou um compromisso: a Meta do Produto para o Product Backlog, a Meta da Sprint para o Sprint Backlog e a Definition of Done para o Incremento. Definition of Ready e roteiro não são compromissos do Scrum.",
+      "options": [
+        {
+          "text": "A Meta do Produto",
+          "isCorrect": true
+        },
+        {
+          "text": "A Meta da Sprint",
+          "isCorrect": false
+        },
+        {
+          "text": "A Definition of Ready",
+          "isCorrect": false
+        },
+        {
+          "text": "O roteiro trimestral",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Quem é responsável pela ordenação do Product Backlog no Scrum?",
+      "explanation": "O Product Owner é responsável pela gestão eficaz do Product Backlog, incluindo a ordenação. Ele pode delegar trabalho, mas segue responsável. Qualquer pessoa pode sugerir itens, mas a ordem não é decidida por votação nem pelo Scrum Master.",
+      "options": [
+        {
+          "text": "O Product Owner",
+          "isCorrect": true
+        },
+        {
+          "text": "O Scrum Master",
+          "isCorrect": false
+        },
+        {
+          "text": "Os stakeholders, por votação",
+          "isCorrect": false
+        },
+        {
+          "text": "O desenvolvedor mais experiente",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "A equipe mantém bugs e débito técnico em uma planilha separada do backlog. Qual é o principal problema?",
+      "explanation": "Trabalho fora do backlog não entra na conversa de prioridade nem fica transparente: compete por tempo sem ser comparado com o resto. Não há regra que proíba bugs no backlog nem exigência de que tudo seja história de usuário.",
+      "options": [
+        {
+          "text": "Esse trabalho fica invisível e não é priorizado junto com o resto",
+          "isCorrect": true
+        },
+        {
+          "text": "O Scrum proíbe bugs no Product Backlog",
+          "isCorrect": false
+        },
+        {
+          "text": "Bugs só podem ser registrados como histórias de usuário",
+          "isCorrect": false
+        },
+        {
+          "text": "Planilhas não podem ser usadas em equipes ágeis",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Qual é a relação entre épico e história de usuário?",
+      "explanation": "Um épico é um bloco grande de trabalho que se divide em histórias menores; a história é o que a equipe consegue terminar dentro de uma Sprint. Épico não é sinônimo de história urgente nem de tarefa técnica.",
+      "options": [
+        {
+          "text": "O épico é um bloco grande de trabalho dividido em histórias que cabem em uma Sprint",
+          "isCorrect": true
+        },
+        {
+          "text": "O épico é uma história com prioridade máxima",
+          "isCorrect": false
+        },
+        {
+          "text": "A história agrupa vários épicos relacionados",
+          "isCorrect": false
+        },
+        {
+          "text": "O épico é a tarefa técnica de uma história",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Uma história foi dividida em \"criar tela\", \"criar API\" e \"criar tabela\". Por que essa divisão é problemática?",
+      "explanation": "Esse é um fatiamento horizontal, por camada técnica: nenhuma parte sozinha entrega algo que o usuário possa usar ou testar. O fatiamento vertical atravessa as camadas e entrega valor em cada fatia.",
+      "options": [
+        {
+          "text": "Nenhuma das partes entrega valor testável pelo usuário sozinha",
+          "isCorrect": true
+        },
+        {
+          "text": "Histórias nunca devem ser divididas",
+          "isCorrect": false
+        },
+        {
+          "text": "Cada camada precisa de um Product Owner diferente",
+          "isCorrect": false
+        },
+        {
+          "text": "A divisão deixa as histórias pequenas demais para estimar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Qual destes é um critério de aceite bem escrito?",
+      "explanation": "Um critério de aceite precisa ser verificável por quem não o escreveu. O cenário em Dado/Quando/Então define situação, ação e resultado esperado. \"Ser intuitivo\" e \"ser rápido\" não são verificáveis, e \"código revisado\" pertence à Definition of Done, que vale para todos os itens.",
+      "options": [
+        {
+          "text": "Dado um horário ocupado, quando o tutor tenta reagendar para ele, então o app mostra os horários livres mais próximos",
+          "isCorrect": true
+        },
+        {
+          "text": "A tela de reagendamento deve ser intuitiva",
+          "isCorrect": false
+        },
+        {
+          "text": "O reagendamento deve ser rápido",
+          "isCorrect": false
+        },
+        {
+          "text": "O código deve ser revisado por outra pessoa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Como o Scrum Guide 2020 descreve o refinamento do Product Backlog?",
+      "explanation": "O guia descreve o refinamento como atividade contínua de dividir e detalhar itens, acrescentando descrição, ordem e tamanho. Não é evento formal com duração fixa, e não é exclusivo do PO.",
+      "options": [
+        {
+          "text": "Atividade contínua de dividir e detalhar itens, acrescentando descrição, ordem e tamanho",
+          "isCorrect": true
+        },
+        {
+          "text": "Um evento formal com duração fixa no fim de cada Sprint",
+          "isCorrect": false
+        },
+        {
+          "text": "Uma reunião em que só o Product Owner participa",
+          "isCorrect": false
+        },
+        {
+          "text": "Uma etapa realizada uma vez, antes da primeira Sprint",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Sobre a Definition of Ready, qual afirmação é correta?",
+      "explanation": "A Definition of Ready não está no Scrum Guide; é uma prática opcional. O guia diz apenas que itens que podem ser concluídos em uma Sprint são considerados prontos para seleção. Quando usada como portão rígido, a DoR pode travar trabalho importante.",
+      "options": [
+        {
+          "text": "É uma prática opcional, que não faz parte do Scrum Guide e pode virar portão burocrático",
+          "isCorrect": true
+        },
+        {
+          "text": "É um dos três compromissos formais do Scrum",
+          "isCorrect": false
+        },
+        {
+          "text": "Substitui os critérios de aceite das histórias",
+          "isCorrect": false
+        },
+        {
+          "text": "Define o estado do Incremento ao final da Sprint",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Um item terminou a Sprint sem atender à Definition of Done. O que o Scrum Guide prevê?",
+      "explanation": "Se um item não atende à Definition of Done, não pode ser liberado nem apresentado na Sprint Review; ele volta ao Product Backlog para consideração futura. Afrouxar a DoD pontualmente destrói a transparência que ela existe para garantir.",
+      "options": [
+        {
+          "text": "Ele não pode ser liberado nem apresentado na Sprint Review e volta ao Product Backlog",
+          "isCorrect": true
+        },
+        {
+          "text": "É apresentado na Sprint Review como parcialmente pronto",
+          "isCorrect": false
+        },
+        {
+          "text": "A Sprint é estendida até o item ficar pronto",
+          "isCorrect": false
+        },
+        {
+          "text": "A equipe ajusta a DoD para incluir o item",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "No RICE, um item alcança 2.000 pessoas por trimestre, tem impacto 1, confiança 50% e esforço 1 pessoa-mês. Qual é a pontuação?",
+      "explanation": "RICE = Alcance × Impacto × Confiança ÷ Esforço = 2.000 × 1 × 0,5 ÷ 1 = 1.000. As outras opções ignoram a confiança, somam fatores ou multiplicam pelo esforço em vez de dividir.",
+      "options": [
+        {
+          "text": "1.000",
+          "isCorrect": true
+        },
+        {
+          "text": "2.000",
+          "isCorrect": false
+        },
+        {
+          "text": "2.002,5",
+          "isCorrect": false
+        },
+        {
+          "text": "500",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Qual é a fórmula do WSJF?",
+      "explanation": "WSJF (Weighted Shortest Job First) divide o custo do atraso pela duração (ou tamanho) do trabalho. Assim, itens com alto custo de atraso e curta duração sobem na ordem. As demais opções misturam elementos de RICE e MoSCoW.",
+      "options": [
+        {
+          "text": "Custo do atraso dividido pela duração do trabalho",
+          "isCorrect": true
+        },
+        {
+          "text": "Alcance multiplicado pelo impacto",
+          "isCorrect": false
+        },
+        {
+          "text": "Duração do trabalho dividida pelo valor de negócio",
+          "isCorrect": false
+        },
+        {
+          "text": "Número de Musts dividido pelo total de itens",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "No modelo de Kano, como se classifica uma funcionalidade cuja ausência irrita, mas cuja presença não aumenta a satisfação?",
+      "explanation": "Funcionalidades obrigatórias (must-be) são esperadas: faltar causa insatisfação, ter não encanta. Atrativas encantam sem serem esperadas, de desempenho aumentam a satisfação de forma proporcional e indiferentes não afetam a percepção.",
+      "options": [
+        {
+          "text": "Obrigatória",
+          "isCorrect": true
+        },
+        {
+          "text": "Atrativa",
+          "isCorrect": false
+        },
+        {
+          "text": "De desempenho",
+          "isCorrect": false
+        },
+        {
+          "text": "Indiferente",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "O backlog completo de um aplicativo fictício de agendamento veterinário: Meta do Produto, épicos quebrados em histórias com critérios de aceite, Definition of Done, uma comparação de priorização com MoSCoW, Kano, RICE e WSJF sobre os mesmos itens e um roteiro Agora/Próximo/Depois com respostas escritas aos stakeholders.",
+    "highlights": [
+      "Backlog ordenado e ligado a uma Meta do Produto",
+      "Histórias fatiadas na vertical com critérios Dado/Quando/Então",
+      "Planilha comparativa de priorização e roteiro comunicável"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "A revisão de 2020 do Scrum Guide reforçou o papel do backlog: introduziu a Meta do Produto como compromisso do Product Backlog e deu a cada artefato um compromisso explícito, com a Definition of Done ligada ao Incremento. Quem trabalha com Scrum hoje é cobrado por essa versão, e muitas equipes ainda operam com práticas anteriores a ela.",
+      "Ao mesmo tempo, técnicas como RICE, publicada pela Intercom em 2018, viraram vocabulário comum em entrevistas e times de produto. Saber aplicá-las é o mínimo; o diferencial está em saber quando cada uma serve, onde falha e como transformar o resultado em uma decisão que os stakeholders entendam."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Times de produto digital",
+        "description": "Equipes Scrum ou Kanban que precisam decidir toda semana o que construir primeiro."
+      },
+      {
+        "label": "Sistemas internos",
+        "description": "Áreas de TI que recebem demandas de vários departamentos e precisam de critério para ordená-las."
+      },
+      {
+        "label": "Startups em fase inicial",
+        "description": "Produtos com pouca gente e muitas ideias, onde cada semana de trabalho mal priorizada pesa."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Product Owners e PMs iniciantes",
+        "description": "Assumiram um backlog e querem método para ordená-lo e defendê-lo."
+      },
+      {
+        "label": "Analistas de negócio e de requisitos",
+        "description": "Escrevem histórias e critérios e querem que eles ajudem a equipe de verdade."
+      },
+      {
+        "label": "Líderes técnicos e Scrum Masters",
+        "description": "Facilitam refinamento e precisam entender as técnicas que o PO usa."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Backlog ordenado, histórias com critérios de aceite e Definition of Done são práticas padrão em equipes que trabalham com Scrum, de startups a grandes empresas e órgãos públicos. Técnicas de priorização como RICE, MoSCoW e WSJF aparecem em ferramentas de gestão de produto e em frameworks de escala, o que torna a habilidade transferível entre empresas e setores.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Scrum Guides — Revisões do Scrum Guide (mudanças de 2020: Meta do Produto e compromissos dos artefatos)",
+      "url": "https://scrumguides.org/revisions.html"
+    },
+    {
+      "label": "Scrum.org — Product Backlog Refinement: princípios do refinamento",
+      "url": "https://www.scrum.org/resources/blog/product-backlog-refinement-how-succeed-scrum-team"
+    },
+    {
+      "label": "Intercom — RICE: Simple prioritization for product managers",
+      "url": "https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/"
+    },
+    {
+      "label": "Atlassian — Epics, stories e initiatives",
+      "url": "https://www.atlassian.com/fr/agile/project-management/epics-stories-themes"
+    }
+  ]
 }

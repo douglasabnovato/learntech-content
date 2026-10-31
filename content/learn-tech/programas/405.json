@@ -1,0 +1,837 @@
+{
+  "id": 405,
+  "image": "https://cdn.pixabay.com/photo/2015/02/02/11/09/office-620822_1280.jpg",
+  "category": "Data Base",
+  "categoryFilter": "data-base",
+  "title": "Excel para Indicadores Operacionais: fórmulas, painéis e qualidade",
+  "lessons": "17 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Iniciante",
+  "description": "O Excel que se cobra em prova prática de seleção interna de central de atendimento: tabela de produtividade, TMA, percentual de meta, pontuação com SE, contagens por supervisor, lista suspensa, PROCV, formatação condicional, gráfico de colunas com linha e tabela dinâmica. Tudo com dados fictícios, explicando o que cada indicador mede, e com o equivalente no Google Planilhas.",
+  "letslearn": [
+    "Montar uma tabela de produtividade com chamadas atendidas, TMA e percentual de meta",
+    "Trabalhar com tempo (hh:mm:ss) sem errar média, comparação e formatação",
+    "Transformar regras de pontuação em fórmulas com SE, E, OU e SE aninhado",
+    "Resumir a equipe por supervisor com CONT.SE, CONT.SES, SOMASE, MÉDIASE e uma lista suspensa",
+    "Buscar dados e faixas com PROCV, destacar desvios com formatação condicional e montar gráfico e tabela dinâmica",
+    "Repetir cada recurso no Google Planilhas, sabendo onde o menu ou o nome da função muda"
+  ],
+  "curriculum": "Da tabela de produtividade ao painel de indicadores",
+  "about": "O programa segue a sequência das provas práticas de Excel aplicadas em seleções internas de uma central de atendimento — para cargos como assistente de apoio ao processo, representante pleno e supervisor júnior. Primeiro você monta a tabela e entende como o Excel guarda tempo; depois transforma regras de meta em fórmulas; em seguida resume a equipe por supervisor e busca informações em outras tabelas; e termina com o que deixa o número visível: formatação condicional, gráfico combinado e tabela dinâmica. Os indicadores ganham contexto com os conceitos de qualidade de atendimento — monitoria, patamar de conformidade e atendimento não conforme —, porque fórmula certa sobre indicador mal entendido continua levando a decisão errada.",
+  "materials": [
+    "Planilha-base com dados fictícios de seis representantes e três supervisores",
+    "Gabarito das fórmulas de cada passo, em Excel e em Google Planilhas",
+    "Tabela de equivalência de nomes de funções português/inglês",
+    "Lista de conferência no formato das provas práticas (o que vale ponto e o que zera a questão)"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "A Planilha de Produtividade",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Regras de Meta com SE",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Resumo por Supervisor e Busca de Dados",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Destaques, Gráficos e Tabela Dinâmica",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Data Base",
+    "mainTitle": "Do número solto ao indicador que a supervisão consegue ler: Excel aplicado à rotina de uma central de atendimento.",
+    "introductionParagraphs": [
+      {
+        "title": "O Excel que a operação realmente usa",
+        "text": "Em central de atendimento, a planilha é a ferramenta do dia a dia de quem apoia a supervisão: consolidar **chamadas atendidas**, calcular **TMA** (tempo médio de atendimento), conferir quem bateu a meta e preparar o resumo da equipe. Não é por acaso que as provas de seleção interna para cargos de apoio e de supervisão cobram sempre o mesmo conjunto: tabela, tempo, percentual de meta, SE, contagem por supervisor, lista suspensa, formatação condicional e gráfico. Este programa reproduz esse conjunto, na mesma ordem."
+      },
+      {
+        "title": "Indicador sem contexto engana",
+        "text": "Um TMA baixo pode ser eficiência ou pode ser ligação encerrada antes de resolver o problema. Por isso cada módulo liga a fórmula ao que ela mede. Os conceitos vêm da gestão da qualidade de atendimento: **monitoria** de áudio e tela, **patamar de conformidade** (a nota a partir da qual o atendimento é considerado aceitável), **atendimento não conforme** e a decisão baseada em fatos, um dos princípios da gestão da qualidade."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não usa macro, VBA nem suplemento. Tudo é feito com fórmulas e recursos nativos que existem tanto no Excel quanto no Google Planilhas. Os dados são fictícios — representantes numerados e supervisores identificados como Sup 1, Sup 2 e Sup 3 — e os valores de meta são exemplos, não padrões de mercado."
+      }
+    ],
+    "courseAboutTitle": "Para passar no exercício prática e para o primeiro mês no cargo",
+    "courseAboutDescription": "As provas práticas de Excel costumam ter uma regra dura: recurso feito diferente do pedido zera a questão. Isso obriga a entender exatamente o que cada enunciado pede — formato de tempo, critério de maior ou igual, contagem automática em vez de digitada. Ao treinar com os mesmos tipos de exercício, você aprende o Excel que o cargo exige e ganha o hábito de ler a regra de negócio antes de escrever a fórmula.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: A Planilha de Produtividade",
+        "items": [
+          {
+            "label": "Tabela bem estruturada",
+            "description": "Uma linha por representante, um cabeçalho por coluna, sem célula mesclada no meio dos dados."
+          },
+          {
+            "label": "Tempo no Excel",
+            "description": "Por que 0:05:20 é uma fração do dia e como isso afeta média e comparação."
+          },
+          {
+            "label": "Percentual de meta",
+            "description": "Divisão com referência absoluta para a meta e formato de porcentagem."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Regras de Meta com SE",
+        "items": [
+          {
+            "label": "SE simples",
+            "description": "Pontuação 75 ou 100, aprovado ou reprovado."
+          },
+          {
+            "label": "Faixas com E e OU",
+            "description": "TMA dentro de um intervalo vale 100; fora dele, 80."
+          },
+          {
+            "label": "SE aninhado",
+            "description": "Três resultados possíveis, como cupons por faixa de atingimento ou quadrante de monitoria."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Resumo por Supervisor e Busca de Dados",
+        "items": [
+          {
+            "label": "Lista suspensa",
+            "description": "Validação de dados para que a célula só aceite os valores permitidos."
+          },
+          {
+            "label": "Contar e somar com critério",
+            "description": "CONT.SE, CONT.SES, SOMASE e MÉDIASE alimentados pelo supervisor escolhido."
+          },
+          {
+            "label": "PROCV",
+            "description": "Busca exata por nome e busca aproximada por faixa de nota."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Destaques, Gráficos e Tabela Dinâmica",
+        "items": [
+          {
+            "label": "Formatação condicional",
+            "description": "O TMA fora da meta aparece sozinho em vermelho e negrito."
+          },
+          {
+            "label": "Gráfico combinado",
+            "description": "Colunas de chamadas com o TMA em linha no eixo secundário."
+          },
+          {
+            "label": "Tabela dinâmica e painel",
+            "description": "Contagem de ocorrências por motivo e status e uma página de resumo para a supervisão."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos para executar na sua própria planilha. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "grid",
+      "title": "A Planilha de Produtividade",
+      "shortDescription": "Tabela, tempo, TMA e percentual de meta",
+      "introductionText": "Todo exercício prática começa do mesmo jeito: reproduzir uma tabela. Parece a parte fácil, mas é aqui que se decide se as fórmulas dos módulos seguintes vão funcionar. Neste módulo você monta a Tabela 1 — representantes, supervisor, chamadas atendidas, TMA, percentual de meta e pontuação — e entende o ponto que mais derruba iniciante: o Excel não guarda 0:05:20 como texto, e sim como uma fração do dia. Quem entende isso calcula média de TMA, compara com a meta e formata sem surpresa.",
+      "sections": [
+        {
+          "title": "📊 Montando a Tabela 1",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Uma linha por representante, um cabeçalho por coluna",
+              "code": "Rep | Supervisor | Chamadas Atendidas | TMA | % de Meta | Pontuação",
+              "guidance": "Na planilha renomeada como PRODUTIVIDADE, digite o cabeçalho na linha 1 e os dados fictícios a partir da linha 2: Rep 01 (Sup 1, 82 chamadas, 0:04:35), Rep 02 (Sup 1, 64, 0:05:48), Rep 03 (Sup 2, 71, 0:05:05), Rep 04 (Sup 2, 90, 0:04:12), Rep 05 (Sup 3, 58, 0:05:31) e Rep 06 (Sup 3, 77, 0:04:50). Cada coluna guarda um único tipo de dado e nenhuma célula é mesclada dentro da área de dados. É essa disciplina que permite, mais à frente, contar por supervisor e criar tabela dinâmica sem retrabalho.",
+              "tips": [
+                "Escreva o nome do supervisor exatamente igual em todas as linhas. Para o Excel, 'Sup 1' e 'Sup 1 ' (com espaço no fim) são valores diferentes, e a contagem por supervisor vai falhar sem aviso.",
+                "Nas provas, 'cópia fiel' inclui título, ordem das colunas e formatos. Confira antes de seguir para as fórmulas."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Tempo é fração do dia",
+              "code": "=MÉDIA(D2:D7)   formato hh:mm:ss",
+              "guidance": "Digite o TMA como 0:04:35, com dois-pontos, e o Excel reconhece um horário: internamente, 1 é um dia inteiro e 0:04:35 é cerca de 0,0032. Por isso a média funciona: na linha Equipe, =MÉDIA(D2:D7) devolve o TMA médio, desde que a célula esteja formatada como hh:mm:ss (Página Inicial > Número > Personalizado). Faça o mesmo para a média das chamadas atendidas. Em uma tabela de TMA e pós-atendimento, a lógica é idêntica para as duas colunas.",
+              "tips": [
+                "Se o resultado aparecer como 0,003, a conta está certa e só falta o formato. Se aparecer #DIV/0!, as células de tempo provavelmente foram digitadas como texto (com apóstrofo ou com ponto no lugar de dois-pontos).",
+                "Para somas de tempo que passam de 24 horas, como o total de horas logadas no mês, use o formato [h]:mm:ss. Sem os colchetes, o Excel volta a zero a cada 24 horas.",
+                "No Google Planilhas: Formatar > Número > Duração faz o mesmo papel do formato [h]:mm:ss."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Percentual de meta atingida",
+              "code": "=C2/$L$1",
+              "guidance": "Com a meta de 75 chamadas atendidas digitada em uma célula de parâmetro (por exemplo, L1, com o rótulo 'Meta' ao lado), calcule o percentual de meta como chamadas divididas pela meta e formate como porcentagem. O cifrão fixa a referência: ao arrastar a fórmula para baixo, C2 vira C3, C4..., mas $L$1 continua apontando para a meta. O Rep 01 fica com 109%; o Rep 02, com 85%.",
+              "tips": [
+                "Escrever =C2/75 também dá o número certo, mas esconde a regra dentro da fórmula. Quando a meta mudar, você terá de editar todas as linhas. Parâmetro em célula é a forma profissional.",
+                "Percentual de meta acima de 100% não é erro: é superação. Não limite a fórmula a 100% a menos que a regra peça."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Arquivo com cara de entrega",
+              "guidance": "Deixe no arquivo só as planilhas usadas (PRODUTIVIDADE e GRÁFICO, por exemplo), renomeando as guias com duplo clique e excluindo as excedentes com o botão direito > Excluir. Oculte as linhas de grade em Exibir > Linhas de Grade. São itens que as provas pontuam separadamente — e que, no trabalho, fazem diferença quando a planilha é enviada para a gerência.",
+              "tips": [
+                "No Google Planilhas, as linhas de grade ficam em Ver > Mostrar > Linhas de grade."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que a estrutura vem antes da fórmula",
+      "highlights": [
+        {
+          "icon": "list",
+          "title": "Dado tabular, análise fácil",
+          "text": "Uma linha por registro e um cabeçalho por coluna é o formato que contagem com critério, filtro, gráfico e tabela dinâmica esperam. Fora disso, cada análise vira um conserto."
+        },
+        {
+          "icon": "gauge",
+          "title": "TMA é número",
+          "text": "Saber que tempo é fração do dia explica por que a média funciona, por que a comparação com 0:05:20 funciona e por que um resultado estranho quase sempre é só formato."
+        },
+        {
+          "icon": "tools",
+          "title": "Meta em uma célula",
+          "text": "Quando a regra muda — e muda a cada campanha —, você altera um valor e a planilha inteira se recalcula."
+        }
+      ],
+      "closingText": "A Tabela 1 está montada, com TMA médio da equipe e percentual de meta por representante. Ainda falta transformar esses números em decisão: quem pontua 100, quem pontua 75, quem está dentro da faixa de TMA. Isso é trabalho da função SE.",
+      "ctaTitle": "📊 Tabela de produtividade pronta!",
+      "ctaText": "Os dados estão no lugar e o tempo está sendo tratado como número. Agora vamos escrever as regras de meta.",
+      "nextButtonText": "Ir para Módulo 1: Regras de Meta com SE"
+    },
+    {
+      "id": 1,
+      "icon": "bolt",
+      "title": "Regras de Meta com SE",
+      "shortDescription": "Pontuação, faixas de TMA e SE aninhado",
+      "introductionText": "Regra de meta em central de atendimento quase sempre tem a forma 'se o indicador estiver assim, a pontuação é tanto; senão, é outra'. A função SE traduz exatamente isso. Neste módulo você escreve as regras que aparecem nas provas — pontuação por percentual de meta, aprovação em treinamento, TMA dentro de uma faixa, cupons por atingimento — e uma regra da área de qualidade: classificar a nota de monitoria em quadrantes. O cuidado central é o mesmo em todas: ler se o enunciado diz 'menor' ou 'menor ou igual', porque é aí que a questão é ganha ou perdida.",
+      "sections": [
+        {
+          "title": "⚡ Das regras de negócio às fórmulas",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "SE simples: duas saídas",
+              "code": "=SE(E2<=90%;75;100)",
+              "guidance": "A regra do exercício diz: se o percentual de meta for menor ou igual a 90%, a pontuação é 75; senão, 100. A fórmula tem três partes: o teste, o valor se verdadeiro e o valor se falso. Escreva na coluna Pontuação e arraste. Repita a ideia em outra planilha, com uma tabela de treinamentos com quatro notas: o total é =SOMA(C2:F2) e o resultado é =SE(G2>=28;\"APROVADO\";\"REPROVADO\"). Texto vai entre aspas; número, não.",
+              "tips": [
+                "Teste a fronteira: altere uma linha para exatamente 90% e confira se ela recebe 75. Se receber 100, o operador está errado (você usou < em vez de <=).",
+                "No Google Planilhas com o idioma Português (Brasil), a função se chama SE e usa ponto e vírgula, como no Excel. Em planilhas configuradas em inglês, o nome é IF e o separador é vírgula."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Faixa de TMA com E",
+              "code": "=SE(E(D2>=TEMPO(0;4;0);D2<=TEMPO(0;5;0));100;80)",
+              "guidance": "Algumas metas de TMA são faixas: entre 0:04:00 e 0:05:00 a pontuação é 100; fora disso, 80. A função E devolve VERDADEIRO só quando todas as condições são verdadeiras, então ela vira o teste do SE. TEMPO(horas;minutos;segundos) produz o valor de tempo sem ambiguidade. Aplique a mesma fórmula à linha Equipe, sobre o TMA médio, como as provas pedem. Para chamadas, a regra costuma ser de uma ponta só: =SE(C2>=55;100;80).",
+              "tips": [
+                "Comparar com \"0:05:00\" entre aspas compara com um texto, não com um tempo, e o resultado fica errado sem mensagem de erro. Use TEMPO() ou uma célula de parâmetro com o horário.",
+                "Por que a faixa tem piso? TMA curto demais pode indicar atendimento encerrado antes da hora. A meta protege os dois lados."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "SE aninhado: três resultados",
+              "code": "=SE(OU(D2<TEMPO(0;4;0);D2>TEMPO(0;4;30));\"Não Classificado\";SE(E2<=50%;\"Não Classificado\";SE(E2<=100%;\"3 cupons\";\"8 cupons\")))",
+              "guidance": "Na campanha de incentivo do exercício, quem atinge até 50% não se classifica, de 50% a 100% ganha 3 cupons e acima de 100% ganha 8 — mas só se o TMA estiver entre 0:04:00 e 0:04:30. Escreva a fórmula na coluna G (Cupons). Primeiro vem a condição que elimina (TMA fora da faixa, com OU) e depois as faixas, da menor para a maior. Cada SE interno ocupa o lugar do 'senão' do anterior. Leia a fórmula em voz alta: se a frase fizer sentido, a fórmula faz.",
+              "tips": [
+                "Nas versões recentes do Excel e no Google Planilhas existe a função SES, que lista pares teste/resultado sem aninhar. O SE aninhado continua sendo o que funciona em qualquer versão e o que a maioria das provas espera.",
+                "Conte os parênteses: cada SE aberto precisa ser fechado no final. O Excel colore os pares enquanto você digita."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Somar uma coluna que tem texto",
+              "code": "=CONT.SE(G2:G7;\"3 cupons\")*3+CONT.SE(G2:G7;\"8 cupons\")*8",
+              "guidance": "A prova avisa: a coluna de cupons tem letras e números, então SOMA devolve zero. A saída é contar quantas vezes cada texto aparece e multiplicar pelo valor que ele representa. A fórmula acima dá o total de cupons distribuídos. Com isso você fecha a linha 'Total x Quantidade de Cupons'.",
+              "tips": [
+                "Uma alternativa melhor para o dia a dia é guardar o número de cupons em uma coluna numérica e deixar o texto só para exibição. Planilha que mistura número e texto na mesma coluna cobra esse preço em toda análise."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Quadrante de monitoria",
+              "code": "=SE(H2>=85;\"A\";SE(H2>=80;\"B\";SE(H2>=70;\"C\";\"D\")))",
+              "guidance": "Na gestão da qualidade, a nota da monitoria (de 0 a 100) define o quadrante do representante: A de 85 a 100, B de 80 a 84,9, C de 70 a 79,9 e D abaixo de 70. Quanto pior o quadrante, mais monitorias o representante recebe no ciclo seguinte — é a monitoria proporcional ao desempenho, em vez do mesmo número para todos. Acrescente na coluna H uma nota fictícia de monitoria e classifique na coluna I. Comece pela faixa mais alta: como o SE para no primeiro teste verdadeiro, a ordem resolve as fronteiras sozinha.",
+              "tips": [
+                "Nota 85 ou mais costuma ser o patamar de conformidade: abaixo dele, o atendimento é tratado como não conforme e gera feedback e ação de correção.",
+                "Em uma ficha de monitoria, um erro grave pode descontar uma quantidade fixa de pontos e um erro gravíssimo pode zerar a ficha. Isso explica notas muito baixas isoladas: antes de tirar média, veja se não há uma ficha zerada distorcendo o resultado."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que a regra precisa estar na fórmula",
+      "highlights": [
+        {
+          "icon": "shield",
+          "title": "Sem decisão manual",
+          "text": "Pontuação digitada à mão depende de quem preencheu. Pontuação por fórmula aplica a mesma regra a todos e pode ser auditada."
+        },
+        {
+          "icon": "search",
+          "title": "Fronteira é onde se erra",
+          "text": "Menor e menor ou igual mudam o resultado justamente de quem está no limite — e é essa pessoa que vai questionar a pontuação."
+        },
+        {
+          "icon": "sitemap",
+          "title": "Árvore de decisão legível",
+          "text": "Um SE aninhado é uma árvore: elimina primeiro, classifica depois. Escrito nessa ordem, ele se explica para quem vier revisar."
+        }
+      ],
+      "closingText": "Cada representante agora tem pontuação, faixa de TMA, cupons e quadrante calculados por regra. O próximo passo é subir um nível: olhar a equipe de cada supervisor de uma vez, com uma célula onde se escolhe o supervisor e fórmulas que contam, somam e buscam sozinhas.",
+      "ctaTitle": "⚡ Regras de meta automatizadas!",
+      "ctaText": "A pontuação já se calcula sozinha. Agora vamos resumir a operação por supervisor.",
+      "nextButtonText": "Ir para Módulo 2: Resumo por Supervisor e Busca de Dados"
+    },
+    {
+      "id": 2,
+      "icon": "list",
+      "title": "Resumo por Supervisor e Busca de Dados",
+      "shortDescription": "Lista suspensa, contagens com critério e PROCV",
+      "introductionText": "A Tabela 2 das provas é um resumo: escolhe-se o supervisor em uma caixa de listagem e as células ao lado mostram quantos representantes ele tem, quantas chamadas a equipe atendeu e qual é o TMA médio. É o embrião de todo painel operacional. Neste módulo você cria a lista suspensa com validação de dados, escreve as funções que contam e somam com critério e usa o PROCV para trazer informação de outra tabela — por nome exato ou por faixa de nota.",
+      "sections": [
+        {
+          "title": "🗂️ A Tabela 2: resumo que responde à escolha",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Lista suspensa com validação de dados",
+              "code": "Dados > Validação de Dados > Permitir: Lista > Fonte: Sup 1;Sup 2;Sup 3",
+              "guidance": "Ao lado da Tabela 1, monte a Tabela 2 com os rótulos Supervisor, Qtde Reps, Total Chamadas Atendidas e Média do TMA. Selecione a célula do supervisor (por exemplo, L4, com a Tabela 2 a partir da coluna K) e crie a lista: em Permitir escolha Lista e em Fonte digite os valores separados por ponto e vírgula, ou aponte para um intervalo onde eles estão escritos. Marque 'Menu suspenso na célula'. Repita o exercício de outra prova: uma tabela de ordens de serviço em que a coluna Motivo só aceita Procedimento, Cordialidade ou Empresa e a coluna Status só aceita Em andamento, Concluída ou Em espera.",
+              "tips": [
+                "Na guia Alerta de Erro, o estilo Parar impede valores fora da lista; Aviso e Informações deixam passar. Para dados que vão ser contados depois, use Parar.",
+                "No Google Planilhas: selecione a célula, vá em Dados > Validação de dados, adicione uma regra com o critério Menu suspenso e digite cada opção. O efeito é o mesmo."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Contar com um critério: CONT.SE",
+              "code": "=CONT.SE($B$2:$B$7;L4)",
+              "guidance": "Em Qtde Reps, conte quantas vezes o supervisor escolhido aparece na coluna Supervisor da Tabela 1. O critério aponta para a célula da lista: troque Sup 1 por Sup 2 e o número muda sozinho. A mesma função resolve os outros exercícios de contagem das provas: quantas ordens estão Em andamento, quantas reclamações são por Cordialidade, quantos representantes tiraram 100 de pontuação (=CONT.SE(F2:F7;100)) e quantos estão de folga em cada dia da semana.",
+              "tips": [
+                "Critério com operador vai entre aspas: =CONT.SE(C2:C7;\">=75\") conta quem atendeu 75 ou mais. Para comparar com uma célula, junte o operador com &: \">=\"&L1.",
+                "No Google Planilhas em português o nome é o mesmo, CONT.SE. Em inglês, COUNTIF."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Vários critérios, soma e média: CONT.SES, SOMASE e MÉDIASE",
+              "code": "=SOMASE($B$2:$B$7;L4;$C$2:$C$7)",
+              "guidance": "Em Total Chamadas Atendidas, SOMASE soma a coluna de chamadas apenas nas linhas do supervisor escolhido. Em Média do TMA, =MÉDIASE($B$2:$B$7;L4;$D$2:$D$7), formatada como hh:mm:ss. Para quantos representantes do supervisor receberam cupons, são dois critérios ao mesmo tempo, e aí entra CONT.SES: =CONT.SES($B$2:$B$7;L4;$G$2:$G$7;\"<>Não Classificado\"). Cada par é um intervalo e o critério aplicado a ele, e todos os intervalos precisam ter o mesmo tamanho.",
+              "tips": [
+                "O operador <> significa 'diferente de'. \"<>Não Classificado\" conta todas as linhas que receberam algum cupom.",
+                "Equivalentes em inglês, no Google Planilhas configurado nesse idioma: COUNTIFS, SUMIF e AVERAGEIF. Em português, os nomes são os mesmos do Excel."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Buscar em outra tabela: PROCV",
+              "code": "=PROCV(H2;$N$2:$P$5;2;VERDADEIRO)",
+              "guidance": "PROCV procura um valor na primeira coluna de uma tabela e devolve o conteúdo de outra coluna da mesma linha. Uso 1, busca exata: com o nome de um representante escolhido em uma lista, =PROCV(L8;$A$2:$F$7;4;FALSO) traz o TMA dele. Uso 2, busca por faixa: monte em N2:P5 uma tabela de quadrantes com o piso de cada faixa em ordem crescente (0 = D, 70 = C, 80 = B, 85 = A) e o volume de monitorias do próximo ciclo (5, 4, 3, 2). Com o quarto argumento VERDADEIRO, o PROCV encontra a faixa em que a nota cai e devolve quadrante ou volume — sem SE aninhado.",
+              "tips": [
+                "Busca exata é FALSO (ou 0). Esquecer o quarto argumento faz o Excel assumir correspondência aproximada, e com nomes isso devolve o valor de outra pessoa sem dar erro.",
+                "Para a busca por faixa, a primeira coluna precisa estar em ordem crescente.",
+                "O Excel 365 e o Google Planilhas também têm PROCX, que busca em qualquer direção e é exato por padrão. Em inglês: VLOOKUP e XLOOKUP."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que o resumo é automático",
+      "highlights": [
+        {
+          "icon": "sync",
+          "title": "Uma escolha, tudo se recalcula",
+          "text": "Com o supervisor em uma célula de lista, a mesma tabela de resumo serve para toda a operação. Ninguém refaz conta na calculadora."
+        },
+        {
+          "icon": "shield",
+          "title": "Validação protege a contagem",
+          "text": "Se a célula aceitar qualquer texto, alguém vai digitar 'sup1' e o CONT.SE vai devolver zero. A lista suspensa elimina o erro antes que ele aconteça."
+        },
+        {
+          "icon": "search",
+          "title": "Faixa em tabela, não em fórmula",
+          "text": "Quando os quadrantes ou volumes mudarem, você edita a tabela de faixas e o PROCV acompanha. A regra fica visível para quem revisa."
+        }
+      ],
+      "closingText": "O resumo por supervisor está pronto e responde a cada escolha da lista. Os números estão certos, mas ainda não chamam a atenção para o que importa. No último módulo, a planilha passa a mostrar sozinha onde está o desvio: cor, gráfico e tabela dinâmica.",
+      "ctaTitle": "🗂️ Resumo por supervisor funcionando!",
+      "ctaText": "A planilha conta, soma e busca sozinha. Agora vamos fazer o desvio aparecer à primeira vista.",
+      "nextButtonText": "Ir para Módulo 3: Destaques, Gráficos e Tabela Dinâmica"
+    },
+    {
+      "id": 3,
+      "icon": "gauge",
+      "title": "Destaques, Gráficos e Tabela Dinâmica",
+      "shortDescription": "Formatação condicional, gráfico combinado e painel",
+      "introductionText": "Um supervisor olha a planilha por poucos segundos entre uma pausa e outra da equipe. Nesse tempo, ele precisa ver quem está fora da meta, sem ler número por número. Este módulo fecha o programa com os recursos visuais que as provas pontuam com mais peso: formatação condicional, gráfico de colunas com uma série em linha e eixo secundário, e tabela dinâmica. No final, você junta tudo em uma página de resumo — e lê os indicadores com o olhar da gestão da qualidade.",
+      "sections": [
+        {
+          "title": "📈 Tornando o desvio visível",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Formatação condicional no TMA e no resultado",
+              "code": "Página Inicial > Formatação Condicional > Realçar Regras das Células > É Maior do que: 0:05:20",
+              "guidance": "Selecione a coluna TMA e crie a regra: valores acima de 0:05:20 com fonte vermelha e negrito (em Formato Personalizado). Os Reps 02 e 05 devem ficar destacados. Faça duas variações das provas: na tabela de treinamentos, APROVADO em azul e REPROVADO em vermelho (regra 'Texto que Contém' ou 'É igual a'); e em uma tabela de TMA com duas regras, menor que 0:03:30 com preenchimento azul e fonte branca, maior ou igual com preenchimento vermelho e fonte em negrito. Altere um valor e veja a cor mudar sozinha.",
+              "tips": [
+                "A formatação condicional muda só a aparência. A pontuação continua vindo da fórmula SE; a cor é o alarme visual.",
+                "No Google Planilhas: Formatar > Formatação condicional, com a condição 'Maior que' e o valor digitado como horário.",
+                "Para gerenciar várias regras sobre o mesmo intervalo, use Formatação Condicional > Gerenciar Regras e confira a ordem de aplicação."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Gráfico de colunas com série em linha e eixo secundário",
+              "code": "Inserir > Gráfico > Alterar Tipo de Gráfico > Combinação > TMA: Linha, Eixo Secundário",
+              "guidance": "Selecione Rep, Chamadas Atendidas e TMA e insira um gráfico de colunas na planilha GRÁFICO. Chamadas estão na casa das dezenas e TMA é uma fração do dia: no mesmo eixo, a série do TMA fica achatada no chão. Em Alterar Tipo de Gráfico > Combinação, deixe Chamadas como coluna agrupada e coloque TMA como linha, marcando Eixo Secundário. Complete como as provas pedem: título, legenda abaixo, rótulos de dados, sem linhas de grade. Variação clássica: um gráfico trimestral em que só a série Média vira linha vermelha sobre as colunas.",
+              "tips": [
+                "Formate o eixo secundário com o formato de número hh:mm:ss, ou ele mostrará frações como 0,003.",
+                "Gráfico de linha sozinho serve para séries ao longo de uma sequência, como representantes de folga por dia da semana. Para comparar pessoas, coluna é a escolha mais legível.",
+                "No Google Planilhas: Inserir > Gráfico, tipo Gráfico de combinação; em Personalizar > Série, escolha a série TMA e defina o eixo como Eixo direito."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Tabela dinâmica de ocorrências",
+              "code": "Inserir > Tabela Dinâmica > Linhas: Motivo · Colunas: Status · Valores: Contagem de OS",
+              "guidance": "Monte uma base fictícia de ordens de serviço com cabeçalho em uma única linha: Nº OS, Supervisor, Motivo e Status, preenchidos pelas listas suspensas do módulo anterior. Clique dentro da base, vá em Inserir > Tabela Dinâmica e escolha Nova Planilha. Arraste Motivo para Linhas, Status para Colunas e Nº OS para Valores, configurado como Contagem. Em segundos você tem a matriz que, com CONT.SES, exigiria uma fórmula por célula. Acrescente uma linha na base e use o botão direito > Atualizar.",
+              "tips": [
+                "A tabela dinâmica não se atualiza sozinha quando a base muda. Formatar a base como tabela (Ctrl+T) faz linhas novas entrarem no intervalo automaticamente.",
+                "No Google Planilhas: Inserir > Tabela dinâmica e, no editor lateral, adicione os campos em Linhas, Colunas e Valores (resumido por COUNTA ou CONT.VALORES)."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Painel de resumo e leitura com qualidade",
+              "guidance": "Junte numa mesma planilha a Tabela 2 com o seletor de supervisor, o gráfico combinado e a tabela dinâmica, e oculte as linhas de grade. Depois, leia o painel como a supervisão leria: chamadas altas com TMA muito abaixo da faixa pedem monitoria de áudio e tela antes de elogio; um representante no quadrante D recebe mais monitorias e feedback com pontos fortes e oportunidades de melhoria; um padrão repetido de reclamação por Procedimento indica problema de processo ou de treinamento, não de uma pessoa. É a abordagem factual para tomada de decisão: o painel organiza os fatos, a decisão continua sendo de quem gere.",
+              "tips": [
+                "Resultado só vale com registro rastreável: identifique na planilha o período, a fonte dos dados e a data da última atualização.",
+                "Feedback de monitoria tem prazo curto. Um painel que destaca as não conformidades da semana ajuda a supervisão a cumprir esse prazo."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que o visual importa",
+      "highlights": [
+        {
+          "icon": "gauge",
+          "title": "Exceção em destaque",
+          "text": "A formatação condicional responde à pergunta que o supervisor realmente faz: quem está fora? O resto da tabela pode ficar neutro."
+        },
+        {
+          "icon": "grid",
+          "title": "Duas escalas, um gráfico",
+          "text": "Volume e tempo têm grandezas diferentes. O eixo secundário permite ver os dois juntos — e perceber quem atende muito com tempo baixo demais."
+        },
+        {
+          "icon": "folder",
+          "title": "Agrupar sem fórmula",
+          "text": "A tabela dinâmica cruza motivo e status em segundos e se reorganiza arrastando campos. É a ferramenta certa para explorar; as fórmulas ficam para o resumo fixo."
+        }
+      ],
+      "closingText": "Você saiu de uma tabela digitada para um painel que calcula pontuação por regra, resume por supervisor, destaca desvios, combina volume e tempo em um gráfico e agrupa ocorrências com tabela dinâmica. É o conjunto que as provas práticas cobram — e o que se usa todos os dias em apoio à operação e à qualidade.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você domina o Excel dos indicadores operacionais, no Excel e no Google Planilhas. O próximo passo natural é automatizar a importação dos dados e trabalhar com bases maiores.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Você digitou 0:04:35 em uma célula e a média da coluna apareceu como 0,0032. O que está acontecendo?",
+      "explanation": "O Excel guarda tempo como fração do dia: 1 é um dia inteiro, e quatro minutos e meio são cerca de 0,0032. A conta está certa; falta aplicar o formato hh:mm:ss à célula da média. Não há erro de digitação nem limitação da função MÉDIA.",
+      "options": [
+        {
+          "text": "A média está certa e só falta formatar a célula como hh:mm:ss",
+          "isCorrect": true
+        },
+        {
+          "text": "A função MÉDIA não funciona com tempo; é preciso somar e dividir à mão",
+          "isCorrect": false
+        },
+        {
+          "text": "Os tempos foram digitados como texto",
+          "isCorrect": false
+        },
+        {
+          "text": "O Excel arredondou o resultado para quatro casas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "A meta de 75 chamadas está na célula L1. Qual fórmula, escrita em E2 e arrastada para baixo, calcula corretamente o percentual de meta de cada representante?",
+      "explanation": "O cifrão fixa a referência da meta: ao arrastar, C2 vira C3, C4..., mas $L$1 continua apontando para a meta. Sem o cifrão, a fórmula da linha 3 dividiria por L2, que está vazia, e daria erro. Multiplicar por 75 inverte a conta.",
+      "options": [
+        {
+          "text": "=C2/$L$1",
+          "isCorrect": true
+        },
+        {
+          "text": "=C2/L1",
+          "isCorrect": false
+        },
+        {
+          "text": "=C2*75",
+          "isCorrect": false
+        },
+        {
+          "text": "=$C$2/L1",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Uma soma de horas logadas no mês dá 230 horas, mas a célula mostra 14:00:00. Como corrigir?",
+      "explanation": "Sem colchetes, o formato de hora volta a zero a cada 24 horas (230 horas são 9 dias e 14 horas). O formato [h]:mm:ss mostra o total acumulado. No Google Planilhas, o formato Duração faz o mesmo. A soma em si está correta.",
+      "options": [
+        {
+          "text": "Aplicar o formato [h]:mm:ss",
+          "isCorrect": true
+        },
+        {
+          "text": "Trocar SOMA por MÉDIA",
+          "isCorrect": false
+        },
+        {
+          "text": "Multiplicar o resultado por 24",
+          "isCorrect": false
+        },
+        {
+          "text": "Digitar as horas como texto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "A regra diz: se o percentual de meta for menor ou igual a 90%, a pontuação é 75; senão, 100. Qual fórmula está correta?",
+      "explanation": "O teste precisa incluir o próprio 90% no grupo que recebe 75, por isso o operador é <=. Com < apenas, quem tem exatamente 90% receberia 100. As outras opções invertem os resultados ou trocam o percentual por pontuação.",
+      "options": [
+        {
+          "text": "=SE(E2<=90%;75;100)",
+          "isCorrect": true
+        },
+        {
+          "text": "=SE(E2<90%;75;100)",
+          "isCorrect": false
+        },
+        {
+          "text": "=SE(E2<=90%;100;75)",
+          "isCorrect": false
+        },
+        {
+          "text": "=SE(E2>90;75;100)",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "O TMA vale 100 pontos se estiver entre 0:04:00 e 0:05:00, inclusive, e 80 fora disso. Qual teste deve ir dentro do SE?",
+      "explanation": "As duas condições precisam ser verdadeiras ao mesmo tempo, então a função é E, com TEMPO() para gerar valores de tempo. OU aceitaria qualquer TMA. Comparar com \"0:05:00\" entre aspas compara com texto e dá resultado errado sem aviso.",
+      "options": [
+        {
+          "text": "E(D2>=TEMPO(0;4;0);D2<=TEMPO(0;5;0))",
+          "isCorrect": true
+        },
+        {
+          "text": "OU(D2>=TEMPO(0;4;0);D2<=TEMPO(0;5;0))",
+          "isCorrect": false
+        },
+        {
+          "text": "E(D2>=\"0:04:00\";D2<=\"0:05:00\")",
+          "isCorrect": false
+        },
+        {
+          "text": "D2>=TEMPO(0;4;0)",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Para classificar notas de monitoria em A (85 ou mais), B (80 a 84,9), C (70 a 79,9) e D (abaixo de 70) com SE aninhado, qual ordem de testes funciona?",
+      "explanation": "O SE para no primeiro teste verdadeiro. Testando primeiro >=85, depois >=80 e depois >=70, cada nota cai na faixa certa e o que sobra é D. Se você começasse por >=70, uma nota 92 pararia ali e receberia C.",
+      "options": [
+        {
+          "text": "Testar >=85, depois >=80, depois >=70; o restante é D",
+          "isCorrect": true
+        },
+        {
+          "text": "Testar >=70, depois >=80, depois >=85; o restante é D",
+          "isCorrect": false
+        },
+        {
+          "text": "A ordem não importa no SE aninhado",
+          "isCorrect": false
+        },
+        {
+          "text": "Testar <70 primeiro e depois >=85, sem testar as faixas do meio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Qual fórmula conta quantos representantes pertencem ao supervisor escolhido na célula L4?",
+      "explanation": "CONT.SE conta as células do intervalo que atendem ao critério, e o critério pode ser uma célula — no caso, a lista suspensa. SOMASE somaria valores, CONT.VALORES contaria todas as linhas sem filtro e PROCV devolveria apenas um valor.",
+      "options": [
+        {
+          "text": "=CONT.SE($B$2:$B$7;L4)",
+          "isCorrect": true
+        },
+        {
+          "text": "=SOMASE($B$2:$B$7;L4)",
+          "isCorrect": false
+        },
+        {
+          "text": "=CONT.VALORES($B$2:$B$7)",
+          "isCorrect": false
+        },
+        {
+          "text": "=PROCV(L4;$B$2:$B$7;1;FALSO)",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Você precisa contar quantos representantes do Sup 2 receberam algum cupom. Qual é a função adequada?",
+      "explanation": "São dois critérios ao mesmo tempo — supervisor igual a Sup 2 e cupom diferente de 'Não Classificado' —, o que é exatamente o caso de CONT.SES. CONT.SE aceita apenas um critério. SOMASE e MÉDIASE somam ou tiram média, não contam.",
+      "options": [
+        {
+          "text": "CONT.SES, com um par para o supervisor e outro para \"<>Não Classificado\"",
+          "isCorrect": true
+        },
+        {
+          "text": "CONT.SE, com os dois critérios separados por ponto e vírgula",
+          "isCorrect": false
+        },
+        {
+          "text": "SOMASE sobre a coluna de cupons",
+          "isCorrect": false
+        },
+        {
+          "text": "MÉDIASE sobre a coluna de supervisor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Um PROCV que busca o TMA pelo nome do representante está trazendo o valor de outra pessoa, sem mostrar erro. Qual é a causa mais provável?",
+      "explanation": "Sem o quarto argumento, ou com VERDADEIRO, o PROCV faz correspondência aproximada e devolve a linha mais próxima quando não acha o valor exato. Para nomes, use FALSO. Se o nome não estivesse na primeira coluna ou a coluna não existisse, o resultado seria erro, não um valor trocado.",
+      "options": [
+        {
+          "text": "O quarto argumento foi omitido ou é VERDADEIRO, e a busca virou aproximada",
+          "isCorrect": true
+        },
+        {
+          "text": "O PROCV não funciona com texto",
+          "isCorrect": false
+        },
+        {
+          "text": "O número da coluna é maior que o número de colunas da tabela",
+          "isCorrect": false
+        },
+        {
+          "text": "A tabela precisa estar em outra planilha",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Em um gráfico com Chamadas Atendidas e TMA, a série do TMA aparece colada no zero. Como resolver mantendo as duas séries no mesmo gráfico?",
+      "explanation": "As séries têm grandezas muito diferentes: dezenas de chamadas contra frações do dia. Num gráfico de combinação, o TMA vira linha no eixo secundário, com escala própria. Excluir uma série ou multiplicar o TMA distorce a informação, e trocar para pizza não resolve o problema de escala.",
+      "options": [
+        {
+          "text": "Usar gráfico de combinação com o TMA em linha no eixo secundário",
+          "isCorrect": true
+        },
+        {
+          "text": "Multiplicar o TMA por mil antes de fazer o gráfico",
+          "isCorrect": false
+        },
+        {
+          "text": "Trocar o gráfico por um de pizza",
+          "isCorrect": false
+        },
+        {
+          "text": "Fazer o gráfico só com as chamadas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Você acrescentou novas ordens de serviço à base, mas a tabela dinâmica não mudou. O que fazer?",
+      "explanation": "A tabela dinâmica não recalcula sozinha como uma fórmula: é preciso clicar nela com o botão direito e escolher Atualizar. Se a base estiver formatada como tabela, as linhas novas entram automaticamente no intervalo de origem. Não é preciso recriar a tabela dinâmica.",
+      "options": [
+        {
+          "text": "Clicar com o botão direito na tabela dinâmica e escolher Atualizar",
+          "isCorrect": true
+        },
+        {
+          "text": "Recriar a tabela dinâmica do zero",
+          "isCorrect": false
+        },
+        {
+          "text": "Pressionar F9 para recalcular as fórmulas",
+          "isCorrect": false
+        },
+        {
+          "text": "A tabela dinâmica só aceita dados até a primeira atualização",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Um representante tem o maior volume de chamadas da equipe e o TMA bem abaixo da faixa de meta. Qual é a leitura mais adequada?",
+      "explanation": "Indicador isolado não conta a história toda. TMA muito curto pode ser eficiência ou atendimento encerrado antes de resolver a demanda, e a forma de saber é monitorar o atendimento (áudio e tela) antes de concluir. Premiar ou punir só pelo número ignora a qualidade, e a faixa de TMA tem piso justamente por isso.",
+      "options": [
+        {
+          "text": "Verificar a qualidade com monitoria antes de concluir algo",
+          "isCorrect": true
+        },
+        {
+          "text": "É o melhor representante da equipe e deve ser premiado",
+          "isCorrect": false
+        },
+        {
+          "text": "O TMA está errado e deve ser excluído do painel",
+          "isCorrect": false
+        },
+        {
+          "text": "A meta de TMA deve ser reduzida para todos",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "Uma pasta de trabalho de indicadores de uma equipe fictícia de atendimento: tabela de produtividade com TMA e percentual de meta, pontuação e quadrantes calculados por regra, resumo por supervisor controlado por lista suspensa, busca com PROCV, destaques com formatação condicional, gráfico de colunas com TMA em linha no eixo secundário e tabela dinâmica de ocorrências — tudo reproduzível também no Google Planilhas.",
+    "highlights": [
+      "Tabela de produtividade com pontuação automática",
+      "Resumo por supervisor com lista suspensa e contagens com critério",
+      "Painel com gráfico combinado e tabela dinâmica"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "Em operações de atendimento, a planilha continua sendo o lugar onde o dado do sistema vira decisão: é nela que se consolida o resultado do dia, se confere a meta e se prepara o material do feedback. Por isso as seleções internas para cargos de apoio, análise e supervisão aplicam prova prática de Excel — e cobram, com pequenas variações, exatamente os recursos deste programa.",
+      "Dominar esse conjunto também prepara para o que vem depois. Contar com critério, buscar em outra tabela e agrupar com tabela dinâmica são as mesmas operações que você vai fazer em ferramentas de BI e em bancos de dados. E a lógica funciona igual no Excel e no Google Planilhas, então a habilidade vale em qualquer empresa, seja qual for a ferramenta adotada."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Apoio à operação",
+        "description": "Consolidar produtividade, TMA e atingimento de meta da equipe a cada dia ou semana."
+      },
+      {
+        "label": "Supervisão",
+        "description": "Acompanhar quem está fora da meta, planejar pausas e preparar feedbacks com base em dados."
+      },
+      {
+        "label": "Qualidade e monitoria",
+        "description": "Classificar notas em quadrantes, planejar o volume de monitorias e contar não conformidades por motivo."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem vai fazer prova prática de Excel",
+        "description": "Candidatos a vagas de apoio, análise ou supervisão em centrais de atendimento."
+      },
+      {
+        "label": "Representantes que querem crescer",
+        "description": "Quem já conhece os indicadores na prática e quer aprender a calculá-los."
+      },
+      {
+        "label": "Quem usa Google Planilhas",
+        "description": "Profissionais de empresas que trabalham na nuvem e precisam dos mesmos recursos."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Planilhas de indicadores estão em toda operação que mede volume e tempo: centrais de atendimento próprias e terceirizadas, suporte técnico, cobrança, vendas por telefone, backoffice e atendimento por chat. Excel e Google Planilhas são as ferramentas mais comuns para esse trabalho, e as funções vistas aqui existem nos dois, o que torna a habilidade transferível entre empresas e setores.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Suporte Microsoft — Função CONT.SES",
+      "url": "https://support.microsoft.com/pt-br/Excel/functions/countifs-function"
+    },
+    {
+      "label": "Suporte Microsoft — Função PROCV",
+      "url": "https://support.microsoft.com/pt-br/Excel/functions/vlookup-function"
+    },
+    {
+      "label": "Suporte Microsoft — Criar uma lista suspensa",
+      "url": "https://support.microsoft.com/pt-br/Excel/get-started/create-a-drop-down-list"
+    },
+    {
+      "label": "Suporte Microsoft — Criar uma Tabela Dinâmica para analisar dados da planilha",
+      "url": "https://support.microsoft.com/pt-br/Excel/get-started/create-a-pivottable-to-analyze-worksheet-data"
+    },
+    {
+      "label": "Microsoft Support — Create a combination chart",
+      "url": "https://support.microsoft.com/en-au/office/create-a-combination-chart-cf2c969a-b11e-4a62-bb8f-da021177452f"
+    },
+    {
+      "label": "Ajuda do Google Planilhas — COUNTIFS (CONT.SES)",
+      "url": "https://support.google.com/docs/answer/3256550"
+    }
+  ]
+}

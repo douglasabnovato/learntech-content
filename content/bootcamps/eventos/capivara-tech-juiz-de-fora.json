@@ -1,0 +1,163 @@
+{
+  "id": "24",
+  "slug": "capivara-tech-juiz-de-fora",
+  "title": "Encontros Capivara Tech e Pcamp Pocket Juiz de Fora",
+  "institution": "Capivara Tech · Pcamp Pocket JF",
+  "description": "Encontros da comunidade de tecnologia e produto de Juiz de Fora (MG), com as edições locais do Product Camp sobre gestão de produto, empreendedorismo e IA.",
+  "coverImage": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/km/86ff6f8a-24d8-41d1-945f-675065731b16.png",
+  "altText": "Arte de divulgação do Product Camp Pocket Juiz de Fora, 5ª edição de 2026",
+  "category": "outros",
+  "status": "concluido",
+  "content": {
+    "longDescription": "A Capivara Tech é uma comunidade de tecnologia de Juiz de Fora que ajuda a organizar e apoia o Pcamp Pocket JF, a versão local do Product Camp, considerado o maior evento de gestão de produto da América Latina. Os encontros são gratuitos, acontecem em sábados de manhã em espaços de inovação da cidade, como o Moinho e o coworking BQ Spazio, e juntam palestra, coffee break, painel e networking. Estive em todos os encontros da Capivara em Juiz de Fora.",
+    "paragraphs": [
+      "O Product Camp nasceu em 2016 e, desde 2022, é organizado pela PM3, escola de gestão de produto do Grupo Alura. A edição de 2026 está marcada para 8 e 9 de dezembro, no Centro de Convenções Frei Caneca, em São Paulo, com mais de 60 palestras em seis palcos simultâneos para profissionais de produto, design, marketing, growth e tecnologia.",
+      "Os Pcamp Pockets levam esse conteúdo para outras cidades em formato menor, organizados pela comunidade local. Além de Juiz de Fora, há Pockets em Belo Horizonte, Campinas, Brasília e São Paulo. Em Juiz de Fora, a série tem apoio da Capivara Tech, da PM3, da Guiando, do Tech Hub JF, da comunidade Mulheres de Produto e de espaços como o Moinho e o BQ Spazio.",
+      "Uma das edições, também identificada como 3ª, aconteceu no Moinho com o tema \"O ciclo emocional de um projeto de Produto (e como não surtar no meio do caminho)\". A palestra tratou de reconhecer em que fase emocional um projeto está, lidar com o caos sem esgotamento e transformar altos e baixos em aprendizado, com casos reais e ferramentas práticas.",
+      "Em junho de 2026, o tema foi o empreendedor como primeiro \"produteiro\" da empresa: antes de existir uma área de produto, quem funda o negócio já decide sobre cliente, problema, solução, preço, canal e crescimento. O encontro discutiu como o pensamento de produto apoia essas decisões e o que profissionais de produto aprendem com quem empreende em cenário de incerteza.",
+      "A 5ª edição de 2026, em 31 de outubro, tratou de produtos e trabalho na era da inteligência artificial, com duas perguntas para levar para casa: \"Minha IA funciona. Mas meu produto funciona?\" e \"Como a IA pode me ajudar a trabalhar melhor?\". A primeira palestra discutiu quando faz sentido usar IA em um produto, como avaliar se a solução funciona, o impacto dos erros, os riscos com dados e segurança e o equilíbrio entre qualidade, custo, experiência e resultado de negócio. A segunda mostrou usos práticos de IA para pesquisar, organizar informações, preparar reuniões, estruturar ideias e escrever, sem abrir mão do pensamento crítico.",
+      "Para quem está entrando em tecnologia, esses encontros mostram como produto, design, dados e engenharia trabalham juntos fora da sala de aula. Não é preciso conhecimento técnico avançado, e o networking com profissionais da própria cidade abre portas para estágio, primeiro emprego e projetos. O próximo passo natural é participar do Product Camp em São Paulo."
+    ],
+    "videoUrl": "",
+    "gallery": [
+      {
+        "id": "capivara-tech-1",
+        "url": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/km/86ff6f8a-24d8-41d1-945f-675065731b16.png",
+        "type": "image",
+        "alt": "Arte de divulgação do Pcamp Pocket JF, 5ª edição de 2026, sobre produtos e trabalho na era da IA"
+      },
+      {
+        "id": "capivara-tech-2",
+        "url": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=400,height=400/event-covers/4h/b019eb7f-b026-4ffa-8a67-49884bf3ac7d.png",
+        "type": "image",
+        "alt": "Arte de divulgação do Pcamp Pocket JF, 3ª edição de 2026, sobre o empreendedor como primeiro produteiro"
+      },
+      {
+        "id": "capivara-tech-3",
+        "url": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/bm/b77f17cd-e54d-4d39-abb6-3530571e2983.png",
+        "type": "image",
+        "alt": "Arte de divulgação do Pcamp Pocket JF, edição sobre o ciclo emocional de um projeto de produto"
+      }
+    ],
+    "curriculum": [
+      "Produtos com IA: quando faz sentido usar, como avaliar e o custo dos erros",
+      "Riscos de dados e segurança em soluções com IA",
+      "IA no dia a dia para pesquisar, organizar, escrever e preparar reuniões",
+      "Pensamento de produto aplicado ao empreendedorismo",
+      "Decisões sobre cliente, problema, solução, preço, canal e crescimento",
+      "O ciclo emocional de projetos de produto e como lidar com ele",
+      "Networking com a comunidade de produto e tecnologia de Juiz de Fora"
+    ],
+    "officialLink": "https://luma.com/pcamp-pocket-juiz-de-fora-mg",
+    "editions": [
+      {
+        "numero": 3,
+        "year": "2026",
+        "data": "2026-06-27",
+        "horario": "9h–12h",
+        "local": {
+          "nome": "Coworking JF – BQ Spazio",
+          "cidade": "Juiz de Fora (MG)"
+        },
+        "tema": "Empreendedor como primeiro produteiro da empresa",
+        "formato": "Pcamp Pocket",
+        "programacao": [
+          {
+            "tipo": "palestra",
+            "titulo": "O empreendedor como primeiro produteiro da empresa"
+          },
+          {
+            "tipo": "networking",
+            "titulo": "Coffee break"
+          },
+          {
+            "tipo": "painel",
+            "titulo": "Produto, negócios e tomada de decisão"
+          }
+        ],
+        "participacao": "presente",
+        "link": "https://luma.com/1ssyj09s",
+        "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=400,height=400/event-covers/4h/b019eb7f-b026-4ffa-8a67-49884bf3ac7d.png",
+        "highlight": "Pensamento de produto como apoio às decisões de quem empreende, antes de existir uma área de produto.",
+        "status": "realizado"
+      },
+      {
+        "numero": 5,
+        "year": "2026",
+        "data": "2026-10-31",
+        "horario": "9h–13h",
+        "local": {
+          "nome": "Moinho",
+          "cidade": "Juiz de Fora (MG)"
+        },
+        "tema": "Produtos e trabalho na era da Inteligência Artificial",
+        "formato": "Pcamp Pocket",
+        "programacao": [
+          {
+            "tipo": "palestra",
+            "titulo": "Produtos com IA na prática",
+            "descricao": "O que PMs precisam considerar antes de colocar uma solução com IA em produção."
+          },
+          {
+            "tipo": "palestra",
+            "titulo": "IA no dia a dia",
+            "descricao": "Como aumentar a produtividade sem abrir mão do pensamento crítico."
+          },
+          {
+            "tipo": "networking",
+            "titulo": "Coffee break"
+          },
+          {
+            "tipo": "painel",
+            "titulo": "As duas perspectivas: IA no produto e IA no trabalho"
+          },
+          {
+            "tipo": "sorteio",
+            "titulo": "Sorteios para participantes"
+          }
+        ],
+        "participacao": "presente",
+        "link": "https://luma.com/jd5mjs38",
+        "image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=800,height=420/event-social/km/86ff6f8a-24d8-41d1-945f-675065731b16.png",
+        "highlight": "\"Minha IA funciona. Mas meu produto funciona?\": IA em produção e IA na rotina de trabalho.",
+        "status": "realizado"
+      }
+    ],
+    "links": [
+      {
+        "label": "Calendário do Pcamp Pocket Juiz de Fora",
+        "url": "https://luma.com/pcamp-pocket-juiz-de-fora-mg"
+      },
+      {
+        "label": "Product Camp 2026 (São Paulo, 8 e 9 de dezembro)",
+        "url": "https://visitesaopaulo.com/evento/product-camp-2026-2026/"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Luma — Product Camp Pocket JF, 5ª edição 2026",
+        "url": "https://luma.com/jd5mjs38"
+      },
+      {
+        "label": "Luma — Product Camp Pocket JF, 3ª edição 2026",
+        "url": "https://luma.com/1ssyj09s"
+      },
+      {
+        "label": "Luma — Product Camp Pocket JF, 3ª edição",
+        "url": "https://luma.com/skocx9hl"
+      },
+      {
+        "label": "Tribuna de Minas — Tribuna no Ar, 30/10/2026",
+        "url": "https://tribunademinas.com.br/antena-1-jf/30-10-2026/ao-vivo-na-antena-1-juiz-de-fora-3010.html"
+      },
+      {
+        "label": "Startups — PM3 da Alura assume Product Camp Brasil (2022)",
+        "url": "https://startups.com.br/noticias/edtech-pm3-da-alura-assume-product-camp-brasil-e-preve-faturar-r-4-mi/"
+      },
+      {
+        "label": "Visite São Paulo — Product Camp 2026",
+        "url": "https://visitesaopaulo.com/evento/product-camp-2026-2026/"
+      }
+    ]
+  }
+}

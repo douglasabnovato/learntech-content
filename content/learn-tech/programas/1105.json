@@ -1,0 +1,860 @@
+{
+  "id": 1105,
+  "image": "/media/learn-tech/programas/1105.webp",
+  "category": "Marketing e CRM",
+  "categoryFilter": "marketing-crm",
+  "title": "Jornadas Transacionais de Pedido: E-mail e WhatsApp do Pagamento à Entrega",
+  "lessons": "20 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Intermediário",
+  "description": "Desenhe, escreva, configure, teste e versione a jornada de mensagens que acompanha um pedido do pagamento à entrega, por e-mail e WhatsApp. Com base em uma jornada real de 13 etapas, reescrita para a Rede Construir+, uma rede fictícia de material de construção.",
+  "letslearn": [
+    "Separar mensagem transacional de marketing e mapear status do pedido em etapas da jornada",
+    "Escrever e-mails transacionais e templates de utilidade do WhatsApp que a Meta aprova como utilidade",
+    "Configurar dados, gatilhos por status e repique entre canais no Marketing Cloud",
+    "Aplicar a base legal correta, testar com evidência, versionar ajustes e modularizar entre marcas"
+  ],
+  "curriculum": "Da tabela de status à jornada em produção",
+  "about": "O programa reproduz o trabalho de montar uma jornada transacional de pedido em um varejo de material de construção com e-commerce, lojas e franquias: 13 etapas de notificação por e-mail e WhatsApp, ajustes de versão até a ativação, a adaptação para uma segunda marca do grupo e os documentos de LGPD e de modularização que vieram depois. Empresa, marcas, pessoas e dados foram trocados por equivalentes fictícios. A sequência acompanha a ordem real do trabalho: desenhar, escrever, configurar e, por fim, garantir conformidade, qualidade e reaproveitamento. Ele aprofunda a parte transacional do programa de CRM na prática, sem repetir réguas de relacionamento e campanhas.",
+  "materials": [
+    "Modelo de tabela status → etapa → canal com as 13 etapas",
+    "Ficha de mensagem para e-mail e WhatsApp",
+    "Matriz de testes e modelo de histórico de versões",
+    "Checklist de ambiente para uma marca nova"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Desenho da Jornada: Status do Pedido, Públicos e Canais",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Escrita das Mensagens: E-mail Transacional e Template de Utilidade",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Configuração: Dados, Gatilhos e Jornadas no Marketing Cloud",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "LGPD, Testes, Versionamento e Modularização",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Marketing e CRM",
+    "mainTitle": "Cada mudança de status do pedido é uma mensagem: aprenda a fazê-la chegar certa, no canal certo e na hora certa.",
+    "introductionParagraphs": [
+      {
+        "title": "A mensagem que o cliente espera",
+        "text": "Depois de pagar, o cliente quer saber três coisas: se deu certo, quando chega e quem vai receber. A **jornada transacional** responde isso sozinha, a cada mudança de status do pedido. Por ser esperada, é das mensagens mais lidas da empresa, e por isso um erro nela (aviso fora de ordem, link quebrado, promessa sem dado) aparece rápido no atendimento."
+      },
+      {
+        "title": "Dois canais, papéis diferentes",
+        "text": "O **WhatsApp** leva avisos curtos em templates de utilidade, com regras de conteúdo da Meta. O **e-mail** leva documentos, detalhes do pedido e o registro formal, e cobre o WhatsApp quando ele não é entregue. Saber escrever para cada um, e ligar os dois na mesma jornada, é o centro deste programa."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não ensina réguas de relacionamento, campanhas promocionais nem construção de e-mail HTML do zero, que têm programas próprios. Também não depende de uma versão específica de tela: a configuração é tratada de forma conceitual, com Journey Builder, Automation Studio e WhatsApp Business Platform como referência."
+      }
+    ],
+    "courseAboutTitle": "A parte do CRM que roda todo dia",
+    "courseAboutDescription": "Campanha tem começo e fim; jornada transacional fica ligada enquanto houver pedido. Ela junta texto, dados, integração, legislação e operação logística, e por isso é onde quem trabalha com CRM mais aprende sobre o negócio. Aqui você segue o caminho completo de uma jornada real, das decisões de desenho às correções depois da ativação.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Desenho da Jornada: Status do Pedido, Públicos e Canais",
+        "items": [
+          {
+            "label": "13 etapas mapeadas",
+            "description": "Do cadastro ao pedido entregue, na ordem real do sistema de pedidos."
+          },
+          {
+            "label": "Transacional x marketing",
+            "description": "O critério de gatilho e conteúdo que separa as duas categorias."
+          },
+          {
+            "label": "Canais e exceções",
+            "description": "Papel do WhatsApp e do e-mail, repique e cenários como entrega parcial e cancelamento."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Escrita das Mensagens: E-mail Transacional e Template de Utilidade",
+        "items": [
+          {
+            "label": "Ficha da mensagem",
+            "description": "Assunto, pré-header, título, corpo e CTAs validados antes do código."
+          },
+          {
+            "label": "Template de utilidade",
+            "description": "Variáveis, limites e o que faz a Meta recategorizar como marketing."
+          },
+          {
+            "label": "Revisão por dado",
+            "description": "Botão de rastreio dinâmico e o corte de promessas sem dado de origem."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Configuração: Dados, Gatilhos e Jornadas no Marketing Cloud",
+        "items": [
+          {
+            "label": "Data extension de pedidos",
+            "description": "Campos, chave composta e a base única com o rastreio."
+          },
+          {
+            "label": "Gatilho por status",
+            "description": "Evento de API ou automação com SQL, e o SLA de cada etapa."
+          },
+          {
+            "label": "Ambiente da marca",
+            "description": "BU, domínio delegado, aquecimento de IP e número verificado."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: LGPD, Testes, Versionamento e Modularização",
+        "items": [
+          {
+            "label": "LGPD aplicada",
+            "description": "Execução de contrato x consentimento, opt-out e pedido de exclusão."
+          },
+          {
+            "label": "Testes e versões",
+            "description": "Matriz de casos com evidência e histórico de ajustes datado."
+          },
+          {
+            "label": "Modularização",
+            "description": "Blocos comuns e parâmetros por marca para escalar a jornada."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para montar a sua jornada transacional. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "sitemap",
+      "title": "Desenho da Jornada: Status do Pedido, Públicos e Canais",
+      "shortDescription": "Status, etapas, públicos e o papel de cada canal",
+      "introductionText": "Uma jornada transacional começa no sistema de pedidos, não no editor de e-mail. Antes de qualquer texto, você precisa saber quais status existem, em que ordem acontecem, quem recebe cada aviso e por qual canal. Neste módulo você desenha a jornada de pedido da Rede Construir+, rede fictícia de lojas de material de construção e acabamento com e-commerce, franquias e atendimento por WhatsApp: 13 etapas do cadastro à entrega, depois enxugadas para cinco em uma segunda marca do grupo.",
+      "sections": [
+        {
+          "title": "🗺️ Do status do pedido à etapa da jornada",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Separar transacional de marketing antes de escrever",
+              "code": "gatilho + conteúdo = categoria",
+              "guidance": "Comece classificando cada mensagem por dois critérios: o que a dispara e o que ela entrega. Mensagem transacional nasce de uma ação do cliente ou de uma mudança de status do pedido dele (pagamento aprovado, nota fiscal emitida, saiu para entrega) e entrega uma informação de que ele precisa. Mensagem de marketing nasce de uma decisão da empresa (campanha, segmento, data) e tenta gerar uma nova compra. Na Rede Construir+, a jornada de pedido tem 13 etapas; as quatro primeiras (boas-vindas, envio do orçamento, lembrete de orçamento e link de pagamento) ficam na fronteira, porque têm objetivo de conversão. As nove seguintes, do pedido confirmado ao pedido entregue, são utilidade pura.",
+              "tips": [
+                "Teste rápido: se o cliente não tivesse comprado nada, essa mensagem existiria? Se sim, ela é marketing, mesmo que fale de pedido.",
+                "Etapa de fronteira (como o lembrete de orçamento parado) precisa ser tratada com as regras de marketing: base legal de marketing, opt-out e template de categoria marketing no WhatsApp."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Mapear status do pedido em etapas da jornada",
+              "code": "status → evento → etapa → canal",
+              "guidance": "Peça à área de logística a lista real de status do sistema de pedidos e monte uma tabela com quatro colunas: status no sistema, evento que o representa, etapa da jornada e canais. Na Rede Construir+ ela ficou assim: 05 Confirmação do pedido, 06 Separação, 07 NF-e emitida, 08 Coletado pela transportadora, 09 Transferência entre CDs, 10 Chegou no CD regional, 11 Saiu para entrega, 12 Rota de entrega (chegando em minutos), 13 Pedido entregue. Cada etapa vira uma jornada com nome padronizado, como JB_Transacional_SaiuParaEntrega.",
+              "tips": [
+                "A ordem das etapas é a do sistema, não a do papel. No primeiro rascunho, separação vinha antes da nota fiscal; no fluxo real do CD, a nota sai antes. Confirme a sequência com quem opera o CD antes de escrever qualquer texto.",
+                "Numere as jornadas com o número da etapa no início do nome. Em uma lista de 13 itens no Journey Builder, a ordem alfabética passa a ser a ordem do pedido."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Definir públicos e campos de personalização por etapa",
+              "guidance": "Para cada etapa, registre três linhas: público, personalização e objetivo. Na pré-venda, o público se divide entre prospect (cadastrado, sem compra) e cliente (já comprou), e o cliente ainda pode ser recente (até 30 dias), frequente (31 a 90 dias) ou inativo (mais de 90 dias). No pós-compra, a divisão útil é primeira compra x recorrente. A personalização cresce ao longo da jornada: nome e número do orçamento no início; nome, número do pedido e valor total na confirmação; link da NF-e, link de rastreio, previsão de horário e nome de quem recebeu nas etapas finais.",
+              "tips": [
+                "Liste cada campo de personalização junto com o sistema que o fornece. Campo sem dono é campo que chega vazio no dia da ativação.",
+                "Etapas 07 a 12 têm o mesmo público (clientes que aguardam a entrega). Registre isso uma vez e reaproveite a regra."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Dar a cada canal um papel diferente",
+              "code": "WhatsApp = aviso | e-mail = registro",
+              "guidance": "WhatsApp e e-mail não são cópias um do outro. Na jornada da Rede Construir+, o WhatsApp leva mensagens curtas e objetivas em templates de utilidade, de custo baixo e regra rígida de conteúdo, e é o canal principal para o que é urgente. O e-mail carrega o que precisa de espaço e de registro: resumo do pedido, lista de itens por pacote, link da nota fiscal, endereço de entrega e o histórico formal da relação de consumo. Defina também o repique: quando o WhatsApp não for entregue, o e-mail da mesma etapa segue automaticamente.",
+              "tips": [
+                "Marque as etapas críticas. Saiu para entrega tem prioridade máxima para o repique, porque a falha dela custa uma entrega frustrada.",
+                "Se uma informação só existe no e-mail (como a lista de itens), o WhatsApp deve dizer onde encontrá-la, e não tentar repeti-la."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Simplificar a jornada e prever as exceções",
+              "guidance": "Quando a Construir+ Casa, marca de acabamentos do grupo, recebeu a proposta de 13 etapas, a resposta foi enxugar: começar só no pós-venda e manter cinco momentos (pedido confirmado, NF-e emitida, previsão de chegada, saiu para entrega e pedido entregue), deixando a pesquisa de satisfação com o time da marca para não duplicar NPS. Faça o mesmo exercício com sua jornada: corte etapas que são mais operacionais do que relevantes para o cliente e liste as exceções que ainda não têm mensagem, como entrega parcial em vários pacotes, entrega adiantada, entrega atrasada com nova previsão e cancelamento.",
+              "tips": [
+                "Regra de negócio vira texto: se o cancelamento só é possível até 24 horas após a emissão da NF-e e depois vira devolução, a mensagem de NF-e é o lugar de dizer isso.",
+                "Pergunta que trava ativação: qual é o tempo máximo entre a mudança de status e o disparo? Sem esse SLA combinado, \"saiu para entrega\" pode chegar depois do caminhão."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que o desenho vem antes do texto",
+      "highlights": [
+        {
+          "icon": "list",
+          "title": "Uma tabela, três leitores",
+          "text": "A tabela status → etapa → canal é lida pela logística, pelo CRM e pelo atendimento. Quando os três concordam com ela, a jornada para de ter surpresas."
+        },
+        {
+          "icon": "sync",
+          "title": "Canais que se completam",
+          "text": "WhatsApp avisa, e-mail registra. Dar um papel a cada canal evita a mesma mensagem duas vezes e define o repique quando um falha."
+        },
+        {
+          "icon": "search",
+          "title": "Exceções antes da ativação",
+          "text": "Entrega parcial, atraso e cancelamento aparecem na primeira semana. Listá-los no desenho custa uma reunião; descobri-los em produção custa chamados."
+        }
+      ],
+      "closingText": "Você tem a jornada desenhada: etapas na ordem real do sistema, públicos definidos, campos com origem e canais com papéis claros. Agora cada etapa precisa de texto, e o texto de mensagem transacional tem regras próprias, principalmente no WhatsApp.",
+      "ctaTitle": "🗺️ Jornada desenhada!",
+      "ctaText": "O mapa das etapas está pronto. Vamos escrever as mensagens de cada uma.",
+      "nextButtonText": "Ir para Módulo 1: Escrita das Mensagens: E-mail Transacional e Template de Utilidade"
+    },
+    {
+      "id": 1,
+      "icon": "list",
+      "title": "Escrita das Mensagens: E-mail Transacional e Template de Utilidade",
+      "shortDescription": "Fichas, e-mail informativo e template que a Meta aprova",
+      "introductionText": "Mensagem transacional é lida com atenção porque fala do dinheiro e da obra do cliente. Isso dá a ela uma vantagem e uma obrigação: ser exata. Neste módulo você escreve as peças de e-mail e WhatsApp a partir de uma ficha padrão, aprende por que um adjetivo comercial transforma um template de utilidade em marketing e acompanha as correções reais que a jornada da Rede Construir+ sofreu entre a primeira versão e a ativação.",
+      "sections": [
+        {
+          "title": "✍️ Do rascunho à mensagem aprovada",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Montar a ficha de cada mensagem",
+              "code": "Assunto | Pré-header | Título | Corpo | CTA",
+              "guidance": "Antes de escrever o texto, preencha uma ficha fixa por etapa e canal. Para e-mail: público, personalização, objetivo, assunto, pré-header, título principal, corpo, CTA principal e CTAs secundárias. Para WhatsApp: categoria na Meta, mensagem com as variáveis numeradas, botões e nome do template. A ficha é o documento que a marca valida, que o desenvolvedor configura e que o QA confere, então os três leem a mesma coisa.",
+              "tips": [
+                "Escreva o objetivo em uma frase com verbo de ação (confirmar, informar, avisar). Se precisar de \"e também\", a mensagem está fazendo duas coisas.",
+                "Guarde a ficha com a etapa numerada (05.1 e-mail, 05.2 WhatsApp). Fica fácil citar a peça exata em uma revisão."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Escrever o e-mail transacional com a informação primeiro",
+              "guidance": "O e-mail de confirmação da Rede Construir+ abre com o fato (seu pedido RC-458127 foi confirmado), segue com os dados que o cliente vai querer conferir (endereço de entrega, valor, forma de pagamento, itens divididos por pacote) e termina com um CTA único, Ver detalhes do pedido. Inclua as regras que evitam chamados: o prazo de entrega começa a contar a partir da coleta pela transportadora, e a nota fiscal vai por link, não como anexo.",
+              "tips": [
+                "Assunto transacional bom é verificável: número do pedido e status. \"Seu pedido RC-458127 foi confirmado\" funciona melhor que qualquer frase criativa.",
+                "Escolha entre anexo e link e mantenha a escolha em todos os textos. A primeira versão dizia \"PDF anexado\" e o botão levava a um link; o cliente percebe a contradição."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Escrever o template de utilidade do WhatsApp",
+              "code": "Olá, {{1}}. Seu pedido {{2}} foi confirmado!",
+              "guidance": "Template de utilidade é aquele enviado em resposta a uma ação ou pedido do cliente, como confirmação ou atualização de pedido. Use variáveis posicionais entre chaves duplas, começando em 1, e informe um valor de exemplo para cada uma. O corpo aceita até 1.024 caracteres, o rodapé até 60 e cada botão até 25 caracteres no rótulo. Na prática, a versão aprovada da Rede Construir+ para a NF-e ficou com duas variáveis e um botão: \"Olá, {{1}}. A nota fiscal eletrônica do seu pedido {{2}} foi emitida.\" e o botão Acessar NF-e.",
+              "tips": [
+                "Tire do template todo adjetivo comercial. Frases como \"preços imbatíveis\" ou \"a maior loja da região\" são promocionais; com esse tipo de frase, a Meta recategoriza o template como marketing e o custo e as regras mudam.",
+                "Anote ao lado do template a tabela de variáveis: {{1}} nome, {{2}} número do pedido, {{3}} endereço. É ela que o desenvolvedor usa para mapear os campos."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Transformar o link de rastreio em botão dinâmico",
+              "code": "prefixo fixo + {{1}}",
+              "guidance": "Links longos no corpo da mensagem quebram, assustam e não medem clique. Na revisão da etapa 08, o link de rastreio saiu do texto e virou botão Acompanhar entrega. O botão de URL tem uma parte fixa, igual para todos (https://rastreio.construirmais.com.br/pedido?codigo=), e uma variável no final, o código de rastreio daquele pedido. Separe as duas partes na ficha e confirme com o time de integração qual campo da API traz a variável.",
+              "tips": [
+                "Teste o botão com um código real de homologação. Os ajustes de link em botão foram a causa de uma versão inteira da jornada.",
+                "Se a transportadora usa outro domínio de rastreio, o prefixo fixo é dela. Registre isso para não aprovar um template por domínio errado."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Cortar promessas que o dado não sustenta",
+              "guidance": "Releia cada mensagem perguntando: o sistema tem esse dado de verdade? Na Rede Construir+, a etapa 12 prometia \"seu pedido está a 3 paradas de distância\" e \"acompanhe a posição do caminhão\", mas não havia informação em tempo real, e o time decidiu não usar previsão. O texto ficou em espera e depois foi reescrito para \"seu pedido será entregue em poucos minutos\". Na etapa 13, \"recebido por {{3}}\" só entrou depois de confirmar que o aplicativo do entregador grava esse nome.",
+              "tips": [
+                "Remova também menções que não têm relação com o pedido. Uma versão do e-mail citava uma campanha esportiva da empresa; saiu no primeiro ajuste, junto com a inclusão do link de privacidade.",
+                "Toda frase com número (horário, paradas, dias) precisa de um campo de origem. Sem campo, não entra."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que a escrita transacional é diferente",
+      "highlights": [
+        {
+          "icon": "shield",
+          "title": "Categoria protegida pelo texto",
+          "text": "Uma frase promocional basta para o template sair de utilidade e virar marketing. O texto enxuto é o que mantém custo e regras do canal."
+        },
+        {
+          "icon": "bolt",
+          "title": "Botão no lugar de link",
+          "text": "O link de rastreio como botão é mais curto, mais confiável e mede o clique. A parte variável fica no fim da URL e vem da integração."
+        },
+        {
+          "icon": "gauge",
+          "title": "Só promete o que mede",
+          "text": "Horário, paradas e posição do caminhão só entram se existir dado. Promessa sem dado vira reclamação no atendimento."
+        }
+      ],
+      "closingText": "As mensagens estão escritas e revisadas, com variáveis mapeadas e templates prontos para aprovação. O próximo passo é fazer o sistema enviá-las sozinhas, no momento certo, para a pessoa certa.",
+      "ctaTitle": "✍️ Mensagens prontas!",
+      "ctaText": "E-mails e templates de utilidade escritos. Vamos ligar tudo aos dados e aos gatilhos.",
+      "nextButtonText": "Ir para Módulo 2: Configuração: Dados, Gatilhos e Jornadas no Marketing Cloud"
+    },
+    {
+      "id": 2,
+      "icon": "tools",
+      "title": "Configuração: Dados, Gatilhos e Jornadas no Marketing Cloud",
+      "shortDescription": "Data extension, gatilho por status, jornada e ambiente da marca",
+      "introductionText": "Aqui a jornada sai do documento e entra na plataforma. O assunto é conceitual e independe da tela da versão que você usar: como modelar a tabela de pedidos, como o status vira entrada na jornada, como organizar 13 jornadas sem que uma alteração derrube as outras e o que precisa existir antes de uma marca nova enviar a primeira mensagem. Os exemplos usam Salesforce Marketing Cloud (Journey Builder e Automation Studio) e templates do WhatsApp Business Platform.",
+      "sections": [
+        {
+          "title": "⚙️ Da tabela de pedidos à jornada ativa",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Modelar a data extension de pedidos",
+              "code": "PK: NumeroPedido + Status + Pacote",
+              "guidance": "As mensagens transacionais devem ler a mesma base do rastreio de pedidos que o atendimento consulta, assim pós-venda e comunicação dizem a mesma coisa. Crie uma data extension sendável com os campos que as fichas pediram: SubscriberKey, Email, Celular, PrimeiroNome, NumeroPedido, Status, DataStatus, ValorTotal, LinkNFe, LinkRastreio, PrevisaoEntrega, EnderecoEntrega, RecebidoPor, Pacote, TotalPacotes e Marca. Use como chave primária a combinação NumeroPedido + Status + Pacote.",
+              "tips": [
+                "A chave composta impede o envio duplicado quando a integração reenviar o mesmo status, e ainda permite uma mensagem por pacote em entregas parciais.",
+                "Guarde a data do status em fuso de Brasília e em formato de data, não de texto. Filtro de \"últimos 30 minutos\" sobre texto falha em silêncio."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Escolher o gatilho: evento de API ou automação agendada",
+              "code": "SELECT ... WHERE Status = 'SAIU_ENTREGA'",
+              "guidance": "Há dois caminhos para colocar o cliente na jornada certa. No primeiro, o sistema de pedidos dispara um evento de API do Journey Builder a cada mudança de status, usando a chave da definição de evento da jornada; a entrada é quase imediata. No segundo, uma automação no Automation Studio roda uma consulta SQL a cada intervalo fixo sobre a tabela de rastreio e grava em uma data extension de entrada os pedidos que mudaram de status. O primeiro exige integração; o segundo é mais simples de montar, mas o atraso máximo é o intervalo da automação.",
+              "tips": [
+                "Para Saiu para entrega e Rota de entrega, o atraso da automação pode tornar a mensagem inútil. Essas duas etapas justificam o evento de API mesmo que as outras fiquem na automação.",
+                "Escreva o SLA combinado (por exemplo, até 15 minutos entre status e disparo) no documento da jornada e meça nos testes."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Configurar a jornada de cada etapa",
+              "code": "Entrada → split opt-in → WhatsApp → split entregue? → e-mail",
+              "guidance": "Na Rede Construir+ cada etapa é uma jornada própria (JB_Transacional_NotaFiscal, JB_Transacional_SaiuParaEntrega e assim por diante), o que permite ajustar uma etapa sem tocar nas outras. Em cada uma, configure a entrada para permitir reentrada a qualquer momento, porque o mesmo cliente pode ter vários pedidos abertos. Depois da entrada, um split por opt-in de WhatsApp: quem tem consentimento para o canal recebe o template; em seguida, um split pelo status de entrega da mensagem envia o e-mail como repique para quem não recebeu. Quem não tem WhatsApp vai direto para o e-mail.",
+              "tips": [
+                "Jornada única com split por status parece mais elegante, mas uma alteração em qualquer etapa obriga a nova versão de tudo. Etapas separadas isolam o risco.",
+                "O envio de WhatsApp dentro da jornada pode ser nativo da plataforma ou via provedor (como Zenvia ou Blip). Documente qual é, porque o status de entrega que alimenta o repique vem dele."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Nomear templates com etapa, marca e data",
+              "code": "8rc_pedido_coletado_2101",
+              "guidance": "Template de WhatsApp aprovado não deve ser editado no lugar: alterar o conteúdo dispara nova revisão e pode tirar o template do ar no meio da operação. Crie um novo com nome que carrega a história: número da etapa, sigla da marca, nome da etapa e data da versão, como 8rc_pedido_coletado_2101 substituindo 8rc_pedido_coletado_2611. No Marketing Cloud, use o mesmo padrão para os e-mails (07rc_nf_emitida_2101).",
+              "tips": [
+                "Só desative o template antigo depois que a jornada apontar para o novo e um teste real passar.",
+                "O status do template pode mudar depois de aprovado, por qualidade ou denúncias. Quem monitora a jornada precisa receber esse aviso."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Preparar o ambiente para uma marca nova",
+              "guidance": "Para a Construir+ Casa começar a disparar, o checklist foi: número oficial e verificado na Meta, templates aprovados e prontos para disparo, contatos da marca configurados no Salesforce e domínio de envio configurado no Marketing Cloud. O domínio pede uma unidade de negócio (BU) da marca, um subdomínio delegado à plataforma por quatro registros NS (o que deixa SPF, DKIM e MX sob gestão dela), certificado SSL e aquecimento do IP. O aquecimento começa com a base mais engajada, e o transacional é boa escolha porque o cliente abre o que fala do próprio pedido.",
+              "tips": [
+                "Base antiga importada por planilha não serve para aquecer IP nem para primeiro disparo antes de responder: de onde veio, quando, e se essas pessoas aceitaram comunicação.",
+                "Monte o cronograma em semanas com dono por item (o que o time de CRM faz, o que a marca faz). Dependência de DNS costuma ser o item que atrasa."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que a configuração define a experiência",
+      "highlights": [
+        {
+          "icon": "grid",
+          "title": "Chave que evita duplicidade",
+          "text": "A chave primária certa impede que o cliente receba duas vezes o mesmo aviso quando a integração reenvia um status."
+        },
+        {
+          "icon": "bolt",
+          "title": "Gatilho na velocidade da etapa",
+          "text": "Confirmação de pedido tolera alguns minutos; saiu para entrega, não. O tipo de gatilho segue a urgência de cada etapa."
+        },
+        {
+          "icon": "globe",
+          "title": "Domínio e número próprios",
+          "text": "Cada marca precisa de domínio aquecido e número verificado. Sem isso, a melhor mensagem cai no spam ou nem sai."
+        }
+      ],
+      "closingText": "A jornada está configurada: dados modelados, gatilhos definidos, jornadas por etapa com repique e ambiente da marca preparado. Falta o que garante que ela continue certa: conformidade com a LGPD, testes com evidência, versionamento e a estrutura que permite levar tudo para a próxima marca.",
+      "ctaTitle": "⚙️ Jornada configurada!",
+      "ctaText": "Dados, gatilhos e jornadas no lugar. Vamos garantir conformidade, qualidade e reaproveitamento.",
+      "nextButtonText": "Ir para Módulo 3: LGPD, Testes, Versionamento e Modularização"
+    },
+    {
+      "id": 3,
+      "icon": "shield",
+      "title": "LGPD, Testes, Versionamento e Modularização",
+      "shortDescription": "Base legal, blacklist, matriz de testes, histórico de versões e blocos por marca",
+      "introductionText": "Jornada transacional ativa é sistema em produção: dispara sozinha, todos os dias, com dados pessoais. Este módulo trata do que mantém esse sistema confiável. Você aplica a base legal correta a cada tipo de mensagem, atende um pedido de exclusão de dados, monta a matriz de testes, registra cada ajuste em um histórico de versões e organiza as peças para que a próxima marca do grupo herde o trabalho em vez de recomeçá-lo.",
+      "sections": [
+        {
+          "title": "🛡️ Conformidade, qualidade e reaproveitamento",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Aplicar a base legal certa a cada mensagem",
+              "code": "Transacional: execução de contrato",
+              "guidance": "A LGPD lista as hipóteses que autorizam o tratamento de dados. A mensagem transacional se apoia na execução do contrato de compra: informar pagamento, nota, entrega e status faz parte de cumprir o que foi vendido, e por isso ela não depende do consentimento de marketing. A mensagem de marketing usa consentimento (livre, informado e inequívoco) ou legítimo interesse, que exige avaliação documentada e opt-out fácil. Consequência prática: quem pediu para não receber ofertas continua recebendo o aviso de entrega, e o transacional não pode carregar oferta, porque aí deixa de ser só execução do contrato.",
+              "tips": [
+                "No WhatsApp, registre onde e quando o número foi coletado e para qual finalidade. Número captado em uma landing page de campanha não autoriza, por si só, mensagens de outro assunto.",
+                "Todo e-mail, inclusive o transacional, leva link visível para a política de privacidade no rodapé. No marketing, o link de descadastro precisa funcionar em 100% dos envios."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Atender um pedido de exclusão com blacklist",
+              "code": "localizar → suprimir → registrar",
+              "guidance": "Quando o jurídico encaminha um pedido de eliminação de dados, o trabalho tem três partes. Localizar: busque o contato por e-mail, celular e documento em todas as bases; no caso real, um único titular tinha dois leads diferentes. Bloquear: inclua os identificadores em uma lista de supressão que vale para todas as BUs e canais, para que nenhuma jornada volte a falar com ele. Registrar: data do pedido, quem pediu, onde os dados estavam e o que foi feito. Defina também os níveis de descadastro: por campanha, por marca (BU) e geral.",
+              "tips": [
+                "Tenha dois procedimentos: o manual, para cumprir prazo urgente, e o automatizado, para o volume do dia a dia. Começar só pelo automatizado deixa o primeiro pedido parado.",
+                "Próximo passo maduro: uma central de preferências em que o cliente escolhe o que quer receber e conta o motivo do descadastro."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Testar a jornada com uma matriz de casos",
+              "code": "etapa × canal × público",
+              "guidance": "Monte uma planilha com uma linha por etapa, canal e público e as colunas: dado de teste usado, resultado esperado, resultado obtido, evidência e responsável. Teste com contatos de teste e pedidos de homologação, nunca com cliente real. Cubra os casos que quebram: primeiro nome vazio (a saudação precisa de alternativa, como \"Olá!\"), pedido com dois pacotes, cliente sem opt-in de WhatsApp, WhatsApp não entregue (o repique por e-mail chega?), botão com código de rastreio real e link da NF-e de homologação trocado pelo oficial.",
+              "tips": [
+                "Confira o rodapé em todos os e-mails: link de privacidade, telefone de atendimento e horário de atendimento atualizados.",
+                "Um teste só passa com evidência (captura de tela ou registro de envio). \"Testei e funcionou\" sem evidência não vale na revisão."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Versionar a jornada e registrar cada ajuste",
+              "code": "v12/01 ativação | v21/01 links",
+              "guidance": "Mantenha no topo do documento da jornada um histórico com data e descrição: versão final em 09/01, ativação de e-mail e WhatsApp em 12/01, ajuste de links em botões do e-mail em 21/01. Abaixo, a lista das 13 jornadas com uma marca nas que têm ajuste pendente e a descrição do ajuste (por exemplo, \"Ajuste 2: WhatsApp, link de rastreio inserido em botão, verificar variável da API\"). As versões anteriores dos textos ficam no fim do documento, separadas por um aviso de que são só para consulta.",
+              "tips": [
+                "No Journey Builder, editar uma jornada ativa cria uma nova versão; contatos que já estavam dentro seguem a versão antiga até sair. Planeje a troca para não mandar duas versões da mesma etapa ao mesmo cliente.",
+                "Cada ajuste no histórico deve dizer o canal, o que mudou e por quê. \"Ajustes gerais\" não ajuda ninguém três meses depois."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Modularizar as comunicações entre marcas",
+              "code": "bloco comum + parâmetros da marca",
+              "guidance": "Quando tudo o que se faz para uma marca precisa ser refeito para a seguinte, a saída é modularizar. Separe o que é comum do que é da marca. Comum: a estrutura das etapas, as fichas, as data extensions, a lógica das jornadas e os blocos de conteúdo de cada etapa. Da marca: header e footer, número verificado de WhatsApp (não há número único para todas as marcas), domínio de envio, tom de voz e a variável de marca no texto, como [Marca] em \"Obrigado por comprar com [Marca]\". No Content Builder, cada etapa vira um bloco reutilizável que recebe a marca como parâmetro.",
+              "tips": [
+                "Monte uma matriz marca × contexto (cliente, franqueado, arquiteto) com o status de cada item: número verificado, templates aprovados, contatos configurados, domínio pronto.",
+                "Cada marca nova passa pelo mesmo checklist da etapa de ambiente. Modularizar reduz o trabalho de texto e de lógica, não o de infraestrutura."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que isso sustenta a jornada",
+      "highlights": [
+        {
+          "icon": "shield",
+          "title": "Base legal por mensagem",
+          "text": "Separar execução de contrato de marketing explica por que o aviso de entrega continua após o descadastro, e por que ele não pode carregar oferta."
+        },
+        {
+          "icon": "folder",
+          "title": "Histórico que responde",
+          "text": "Data, canal, o que mudou e por quê. Com isso, qualquer pessoa entende a jornada sem depender de quem a montou."
+        },
+        {
+          "icon": "sitemap",
+          "title": "Uma estrutura, várias marcas",
+          "text": "Etapas, dados e lógica são comuns; identidade, número e domínio são da marca. É o que torna a segunda marca mais rápida que a primeira."
+        }
+      ],
+      "closingText": "Você percorreu o ciclo completo de uma jornada transacional: desenho a partir dos status reais, escrita para e-mail e WhatsApp, configuração com gatilhos e repique, base legal, testes, versionamento e modularização entre marcas. É o conjunto que se espera de quem assume a operação de CRM de um varejo com e-commerce.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você desenha, escreve, configura, testa e versiona uma jornada transacional completa. O próximo passo é aplicar o mesmo método às réguas de relacionamento.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Qual critério melhor separa uma mensagem transacional de uma de marketing?",
+      "explanation": "Transacional nasce de uma ação do cliente ou de uma mudança de status do pedido dele e entrega uma informação necessária. Canal, tamanho e horário não definem a categoria: um e-mail de NF-e é transacional e um WhatsApp de oferta é marketing.",
+      "options": [
+        {
+          "text": "O gatilho é uma ação do cliente ou um status do pedido dele, e o conteúdo é informação de que ele precisa",
+          "isCorrect": true
+        },
+        {
+          "text": "O canal: WhatsApp é sempre transacional e e-mail é sempre marketing",
+          "isCorrect": false
+        },
+        {
+          "text": "O tamanho: mensagens curtas são transacionais",
+          "isCorrect": false
+        },
+        {
+          "text": "O horário de envio: transacional sai em horário comercial",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "No desenho da jornada, a separação do pedido aparecia antes da emissão da NF-e, mas no CD a nota sai primeiro. O que fazer?",
+      "explanation": "A jornada é disparada pelos status reais. Se o texto segue uma ordem diferente da do sistema, o cliente recebe avisos fora de sequência. A ordem é validada com a logística antes de escrever.",
+      "options": [
+        {
+          "text": "Seguir a ordem real do sistema de pedidos, confirmada com quem opera o CD",
+          "isCorrect": true
+        },
+        {
+          "text": "Manter a ordem do rascunho, que é mais intuitiva para o cliente",
+          "isCorrect": false
+        },
+        {
+          "text": "Juntar as duas etapas em uma só mensagem",
+          "isCorrect": false
+        },
+        {
+          "text": "Enviar as duas mensagens ao mesmo tempo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Qual é o papel do e-mail em uma jornada que também usa WhatsApp?",
+      "explanation": "WhatsApp avisa de forma curta e rápida; e-mail carrega o que precisa de espaço e registro (resumo, itens por pacote, link da NF-e) e cobre a falha de entrega do WhatsApp. Repetir o mesmo texto desperdiça o canal.",
+      "options": [
+        {
+          "text": "Levar documentos e detalhes do pedido, servir de registro formal e funcionar como repique quando o WhatsApp não é entregue",
+          "isCorrect": true
+        },
+        {
+          "text": "Repetir exatamente o texto do WhatsApp",
+          "isCorrect": false
+        },
+        {
+          "text": "Ser usado apenas para ofertas depois da entrega",
+          "isCorrect": false
+        },
+        {
+          "text": "Substituir o WhatsApp nas etapas urgentes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "O que acontece se um template de utilidade do WhatsApp incluir frases promocionais como \"preços imbatíveis\"?",
+      "explanation": "Segundo a documentação da Meta, criar ou atualizar um template de utilidade com material de marketing faz com que ele seja recategorizado automaticamente como marketing, com outras regras e outro preço.",
+      "options": [
+        {
+          "text": "A Meta recategoriza o template como marketing",
+          "isCorrect": true
+        },
+        {
+          "text": "O template é aprovado normalmente como utilidade",
+          "isCorrect": false
+        },
+        {
+          "text": "A mensagem é enviada sem as frases promocionais",
+          "isCorrect": false
+        },
+        {
+          "text": "O template passa a ser de autenticação",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Como funciona o botão de rastreio dinâmico no template de WhatsApp?",
+      "explanation": "O botão de URL guarda o prefixo comum e recebe o código de rastreio como variável. Assim um único template serve para todos os pedidos, e o código vem do campo informado pela integração.",
+      "options": [
+        {
+          "text": "A URL tem uma parte fixa igual para todos e uma variável no final com o código daquele pedido",
+          "isCorrect": true
+        },
+        {
+          "text": "Cada pedido exige um template aprovado com seu próprio link",
+          "isCorrect": false
+        },
+        {
+          "text": "O link completo é digitado no corpo da mensagem",
+          "isCorrect": false
+        },
+        {
+          "text": "O botão abre sempre a página inicial do site",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "A etapa \"chegando em minutos\" prometia a posição do caminhão em tempo real, mas o sistema não tinha esse dado. Qual a conduta correta?",
+      "explanation": "Toda informação da mensagem precisa de um campo de origem. Sem dado em tempo real, a frase sai; prometer o que não se entrega vira reclamação no atendimento, em qualquer canal.",
+      "options": [
+        {
+          "text": "Retirar a promessa e escrever só o que o dado disponível sustenta",
+          "isCorrect": true
+        },
+        {
+          "text": "Manter o texto, porque o cliente raramente confere",
+          "isCorrect": false
+        },
+        {
+          "text": "Inventar uma previsão média para preencher a variável",
+          "isCorrect": false
+        },
+        {
+          "text": "Mover a promessa para o e-mail",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Por que usar NumeroPedido + Status + Pacote como chave primária da data extension de pedidos?",
+      "explanation": "A chave composta garante um registro por pedido, status e pacote: reenvios da integração não geram segunda mensagem, e entregas parciais têm aviso próprio. Não é exigência fixa da plataforma.",
+      "options": [
+        {
+          "text": "Para evitar envio duplicado quando um status é reenviado e permitir uma mensagem por pacote",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque o Marketing Cloud exige exatamente três campos na chave",
+          "isCorrect": false
+        },
+        {
+          "text": "Para deixar a consulta SQL mais rápida em qualquer caso",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que o cliente possa entrar só uma vez em toda a vida",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Em que situação o evento de API do Journey Builder se justifica mais do que uma automação agendada com SQL?",
+      "explanation": "O evento de API coloca o cliente na jornada logo após a mudança de status; a automação depende do intervalo de execução. Para etapas que toleram minutos de atraso, a automação basta. Sem integração, o evento de API não é possível.",
+      "options": [
+        {
+          "text": "Em etapas urgentes como Saiu para entrega, em que o atraso do intervalo da automação torna o aviso inútil",
+          "isCorrect": true
+        },
+        {
+          "text": "Em todas as etapas, porque automação agendada é proibida para transacionais",
+          "isCorrect": false
+        },
+        {
+          "text": "Apenas na mensagem de boas-vindas",
+          "isCorrect": false
+        },
+        {
+          "text": "Quando não há integração com o sistema de pedidos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Por que criar um novo template com data no nome em vez de editar o template de WhatsApp já aprovado?",
+      "explanation": "Templates são revisados ao serem criados ou editados, e só templates aprovados podem ser enviados. Criar um novo (como 8rc_pedido_coletado_2101) e trocar a jornada depois do teste evita a lacuna.",
+      "options": [
+        {
+          "text": "Porque editar dispara nova revisão e pode deixar a etapa sem template no meio da operação",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque a Meta não permite mais de um template por conta",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o nome do template aparece para o cliente",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque templates editados ficam mais caros",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Um cliente se descadastrou das ofertas por e-mail e depois fez uma compra. Ele deve receber o aviso de \"saiu para entrega\"?",
+      "explanation": "Informar o andamento da entrega faz parte de cumprir o contrato de compra, uma base legal diferente do consentimento de marketing. Incluir oferta mudaria a natureza da mensagem e exigiria a base de marketing que o cliente recusou.",
+      "options": [
+        {
+          "text": "Sim, porque o transacional se apoia na execução do contrato, desde que não carregue oferta",
+          "isCorrect": true
+        },
+        {
+          "text": "Não, o descadastro bloqueia qualquer comunicação",
+          "isCorrect": false
+        },
+        {
+          "text": "Só se ele marcar o consentimento de novo",
+          "isCorrect": false
+        },
+        {
+          "text": "Sim, e é uma boa oportunidade para incluir uma promoção",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Ao atender um pedido de exclusão de dados, qual sequência é a correta?",
+      "explanation": "Um mesmo titular pode ter mais de um registro, como no caso real com dois leads. A supressão deve valer para todas as BUs e canais, e o registro documenta quando e como o pedido foi atendido.",
+      "options": [
+        {
+          "text": "Localizar o titular em todas as bases, incluir na lista de supressão de todas as marcas e canais e registrar o atendimento",
+          "isCorrect": true
+        },
+        {
+          "text": "Apagar o primeiro lead encontrado e encerrar",
+          "isCorrect": false
+        },
+        {
+          "text": "Descadastrar apenas da última campanha enviada",
+          "isCorrect": false
+        },
+        {
+          "text": "Aguardar a automação mensal de limpeza de base",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Na modularização das comunicações entre marcas, o que fica como parâmetro de cada marca?",
+      "explanation": "A estrutura, os dados e a lógica são comuns e reaproveitados. Identidade visual, número de WhatsApp, domínio e a variável de marca mudam por marca, e não existe um número único servindo a todas.",
+      "options": [
+        {
+          "text": "Header e footer, número verificado de WhatsApp, domínio de envio e o nome da marca no texto",
+          "isCorrect": true
+        },
+        {
+          "text": "A lógica das jornadas e a estrutura das etapas",
+          "isCorrect": false
+        },
+        {
+          "text": "As data extensions e as fichas de mensagem",
+          "isCorrect": false
+        },
+        {
+          "text": "Nada: todas as marcas usam o mesmo número e o mesmo domínio",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "A documentação completa de uma jornada transacional de pedido para a Rede Construir+: tabela de status e etapas, fichas de e-mail e WhatsApp com variáveis mapeadas, modelo da data extension e do gatilho, desenho das jornadas com repique, matriz de testes, histórico de versões e checklist para levar a jornada a uma segunda marca.",
+    "highlights": [
+      "Jornada de pedido mapeada da confirmação à entrega",
+      "Templates de utilidade e e-mails prontos para aprovação",
+      "Plano de testes, versionamento e modularização entre marcas"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "O volume de pedidos que precisam ser acompanhados só cresce. Segundo a ABComm, o e-commerce brasileiro somou 414,9 milhões de pedidos em 2024 e projetava 435,6 milhões para 2025 (dados divulgados pela Mercado&Consumo em 14/01/2025). Cada pedido passa por vários status, e cada status é uma oportunidade de informar bem ou de gerar um chamado.",
+      "O custo do canal também mudou. A Meta passou a cobrar o WhatsApp Business Platform por mensagem entregue a partir de 1º de julho de 2025, e as mensagens de utilidade enviadas dentro da janela de atendimento, que estavam sem cobrança, passaram a ser cobradas em 1º de outubro de 2026, segundo a documentação de preços da plataforma. Escrever template que se mantém como utilidade e decidir o que vai por WhatsApp e o que vai por e-mail deixou de ser detalhe e virou decisão de orçamento."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Varejo com e-commerce e lojas",
+        "description": "Pedidos online e de loja física que precisam de aviso de pagamento, nota, entrega e rastreio."
+      },
+      {
+        "label": "Grupos com várias marcas",
+        "description": "Operações em que a mesma jornada precisa servir marcas com número, domínio e identidade próprios."
+      },
+      {
+        "label": "Operação de CRM e atendimento",
+        "description": "Times que querem reduzir chamados de \"onde está meu pedido\" com mensagens certas no momento certo."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Analista de CRM",
+        "description": "Já opera e-mail e jornadas e vai assumir os transacionais da empresa."
+      },
+      {
+        "label": "Quem vai integrar WhatsApp",
+        "description": "Precisa escrever templates de utilidade aprovados e combiná-los com o e-mail."
+      },
+      {
+        "label": "Quem fez o programa de CRM na prática",
+        "description": "Quer aprofundar a parte transacional com o caso completo, do desenho à modularização."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Jornadas transacionais por e-mail e WhatsApp aparecem em qualquer operação que vende com entrega: varejo de material de construção, moda, eletrônicos, farmácias e marketplaces. As vagas de CRM costumam pedir exatamente esse conjunto: Journey Builder e Automation Studio, SQL para segmentação, templates de WhatsApp via Meta ou provedores como Zenvia e Blip, e noção prática de LGPD.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Meta for Developers — WhatsApp Business Platform: visão geral de templates (categorias, variáveis e revisão)",
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/templates/overview"
+    },
+    {
+      "label": "Meta for Developers — Utility templates: uso, componentes, botões e recategorização",
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/templates/utility-templates/utility-templates/"
+    },
+    {
+      "label": "Meta for Developers — Pricing on the WhatsApp Business Platform",
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing"
+    },
+    {
+      "label": "Salesforce Developers — Get Started with the Journey Builder API (eventos de entrada)",
+      "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/get-started-jb.html"
+    },
+    {
+      "label": "Ministério da Cultura (gov.br) — Informativo LGPD: finalidades e hipóteses legais para o tratamento de dados pessoais",
+      "url": "https://www.gov.br/cultura/pt-br/acesso-a-informacao/privacidade-e-protecao-de-dados/informativos-lgpd-1/informativos-defeso/informativo-lgpd-2ed"
+    },
+    {
+      "label": "Mercado&Consumo — E-commerce brasileiro cresce 10,5% e fatura R$ 204,3 bilhões em 2024 (dados ABComm, 14/01/2025)",
+      "url": "https://mercadoeconsumo.com.br/14/01/2025/ecommerce/e-commerce-brasileiro-cresce-105-e-fatura-r-2043-bilhoes-em-2024"
+    }
+  ]
+}

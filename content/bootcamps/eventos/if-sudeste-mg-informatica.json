@@ -9,7 +9,7 @@
   "category": "outros",
   "status": "concluido",
   "content": {
-    "longDescription": "Formação técnica de nível médio em Informática no IF Sudeste MG, campus Juiz de Fora, cursada no período noturno — base formal que antecedeu a entrada na graduação em Ciência da Computação.",
+    "longDescription": "Curso técnico de nível médio em Informática, oferecido no período noturno pelo Instituto Federal do Sudeste de Minas Gerais, campus Juiz de Fora, nas formas concomitante e subsequente. O campus reformulou o curso, que hoje é ofertado como Técnico em Desenvolvimento de Sistemas, com foco maior em programação.",
     "videoUrl": "",
     "gallery": [],
     "curriculum": [
@@ -19,6 +19,34 @@
       "Manutenção e Suporte",
       "Desenvolvimento de Sistemas"
     ],
-    "officialLink": "https://www.ifsudestemg.edu.br/juizdefora"
+    "officialLink": "https://www.ifsudestemg.edu.br/juizdefora",
+    "paragraphs": [
+      "O Instituto Federal de Educação, Ciência e Tecnologia do Sudeste de Minas Gerais (IF Sudeste MG) faz parte da rede federal de educação profissional. O campus Juiz de Fora oferece cursos técnicos, de graduação e de pós-graduação. Os técnicos são gratuitos e têm ingresso por processo seletivo público.",
+      "Os cursos técnicos do campus têm duas formas. A integrada é cursada junto com o ensino médio, em período diurno. A concomitante/subsequente é para quem cursa o 2º ou 3º ano do ensino médio ou já o concluiu, e funciona à noite, em módulos. Esta é a forma do curso noturno de Informática.",
+      "O campus reformulou o antigo curso de Informática, que passou a ser ofertado como Técnico em Desenvolvimento de Sistemas. A nova versão tem mais atividades práticas e disciplinas de programação de software (sistemas desktop, sites e aplicativos móveis), além de laboratórios de manutenção de hardware. No edital do 2º semestre de 2024, a versão noturna concomitante/subsequente tinha 25 vagas e duração de 1,5 ano. O guia de cursos de 2025 indica 2 anos e entrada no 2º semestre (consulta em 30/10/2026).",
+      "O egresso está preparado para desenvolver e manter software, sites, aplicativos e bancos de dados, seja em empresas ou como autônomo. Os alunos têm acesso a biblioteca, laboratórios, restaurante com refeições de baixo custo, auxílios estudantis e bolsas de pesquisa, extensão e monitoria. O campus também oferece graduações para quem quer continuar os estudos na mesma instituição.",
+      "Um curso técnico em instituto federal dá uma base formal e gratuita em computação, com laboratório, estágio e certificação reconhecida pelo MEC. Para muitos estudantes, é a porta de entrada para o mercado de trabalho e para graduações como Ciência da Computação ou Sistemas de Informação.",
+      "Na trajetória do autor do learnTECH, o técnico em Informática cursado à noite no campus Juiz de Fora foi a base formal que antecedeu a graduação em Ciência da Computação na UFJF."
+    ],
+    "links": [
+      {
+        "label": "Guia de cursos 2025 – IF Sudeste MG campus Juiz de Fora (PDF)",
+        "url": "https://www.ifsudestemg.edu.br/documentos-institucionais/unidades/juizdefora/comunicacao/guias-de-orientacao-de-estudantes/guia-de-cursos-2025-oficial.pdf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "IF Sudeste MG: Guia de cursos 2025 do campus Juiz de Fora",
+        "url": "https://www.ifsudestemg.edu.br/documentos-institucionais/unidades/juizdefora/comunicacao/guias-de-orientacao-de-estudantes/guia-de-cursos-2025-oficial.pdf"
+      },
+      {
+        "label": "IF Sudeste MG: Edital nº 13/2024, cursos técnicos 2024/2",
+        "url": "https://www.ifsudestemg.edu.br/editais/reitoria/processo-seletivo/2024-2/cursos-tecnicos/edital-cursos-tecnicos/edital_tecnicos_29_assinado.pdf"
+      },
+      {
+        "label": "IF Sudeste MG: Edital nº 32/2023, cursos técnicos 2024/1",
+        "url": "https://www.ifsudestemg.edu.br/editais/reitoria/processo-seletivo/2024-1/cursos-tecnicos/2023-32-edital-dos-cursos-tecnicos-concomitantes-subsequentes-subsequentes-especializacao-tecnica-e-proeja/edital-cursos-tecnicos-multicampi-2024-1.pdf"
+      }
+    ]
   }
 }

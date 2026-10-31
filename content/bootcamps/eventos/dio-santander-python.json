@@ -9,16 +9,41 @@
   "category": "outros",
   "status": "concluido",
   "content": {
-    "longDescription": "Bootcamp gratuito oferecido pela DIO em parceria com o Santander, cobrindo Python, análise de dados, bancos de dados SQL e NoSQL, produtividade com Excel e IA, e computação em nuvem com AWS — com projetos práticos para portfólio.",
+    "longDescription": "Bootcamp gratuito da DIO em parceria com o Santander Universidades, na trilha de Ciência de Dados com Python, oferecido no Santander Bootcamp 2023. O conteúdo parte do zero em Python e passa por análise exploratória de dados, bancos de dados SQL e NoSQL e uma introdução a machine learning, com desafios e projetos práticos.",
     "videoUrl": "",
     "gallery": [],
     "curriculum": [
-      "Python",
-      "Análise de Dados",
-      "SQL e NoSQL",
-      "AWS (fundamentos)",
-      "Projetos práticos com dados"
+      "Fundamentos de Python",
+      "Análise exploratória de dados",
+      "Bancos de dados SQL e NoSQL",
+      "Visualização de dados",
+      "Introdução a Machine Learning",
+      "Projetos práticos de ciência de dados"
     ],
-    "officialLink": "https://www.dio.me"
+    "officialLink": "https://www.dio.me",
+    "paragraphs": [
+      "O Santander Bootcamp é um programa de bolsas do Santander Universidades executado na plataforma da DIO, edtech brasileira de formação e recrutamento em tecnologia. A terceira edição, de 2023, ofereceu 75 mil bolsas gratuitas em todo o Brasil, divididas em seis trilhas: Backend Java, Full Stack Java + Angular, Ciência de Dados com Python, Mobile Android com Kotlin, Mobile multiplataforma com Flutter e Mobile iOS com Swift. As inscrições foram feitas pela plataforma Bolsas Santander até 31 de julho de 2023, e era preciso ter mais de 18 anos.",
+      "O bootcamp é online, na plataforma da DIO, e combina aulas teóricas e práticas com desafios e atividades de aplicação. Todas as trilhas começam pelo nível básico, então não é preciso experiência prévia em programação. Ao concluir a trilha, o participante recebe certificado e acesso ao Talent Match, a plataforma de vagas da DIO.",
+      "Na trilha de Ciência de Dados com Python, o conteúdo vai dos fundamentos da linguagem à análise exploratória de dados, passando por bancos de dados relacionais (SQL) e não relacionais (NoSQL), visualização de dados e uma introdução a machine learning, com projetos de ciência de dados para portfólio.",
+      "Além do certificado, a edição de 2023 tinha um ranking de desempenho: os três primeiros colocados recebiam prêmio em dinheiro, um notebook e acesso ao DIO Global, programa de carreira com curso de inglês, mentoria e vagas internacionais. Para quem está começando em dados, um bootcamp gratuito como esse ajuda a montar uma base em Python e SQL, a ter os primeiros projetos no GitHub e a ter contato com empresas que recrutam pela plataforma."
+    ],
+    "sources": [
+      {
+        "label": "ABES: Santander Bootcamp 2023, inscrições gratuitas pela plataforma Bolsas Santander",
+        "url": "https://abes.org.br/?p=64270"
+      },
+      {
+        "label": "Movimento Econômico: Santander Universidades oferece 75 mil bolsas de desenvolvimento de software",
+        "url": "https://movimentoeconomico.com.br/tecnologia/2023/07/06/santander-universidades-oferece-75-mil-bolsas-de-desenvolvimento-de-software/"
+      },
+      {
+        "label": "DIO (artigo da comunidade): Santander Bootcamp 2023 – Ciência de Dados com Python",
+        "url": "https://www.dio.me/articles/santander-bootcamp-2023-ciencia-de-dados-com-python-74RBJC"
+      },
+      {
+        "label": "DIO (artigo da comunidade): conclusão do Santander Bootcamp 2023 – Ciência de Dados com Python",
+        "url": "https://www.dio.me/articles/santander-bootcamp-2023-ciencia-de-dados-com-python-pela-dio-ACJTM6"
+      }
+    ]
   }
 }

@@ -3,13 +3,13 @@
   "slug": "gdg-jf",
   "title": "Encontros GDG Juiz de Fora",
   "institution": "GDG Juiz de Fora",
-  "description": "Participação recorrente nos encontros da comunidade Google Developer Group de Juiz de Fora.",
+  "description": "Encontros da comunidade Google Developer Group de Juiz de Fora (MG), abertos a estudantes e profissionais de tecnologia.",
   "coverImage": "/media/bootcamps/instituicoes/gdg-jf.webp",
   "altText": "Identidade visual do GDG Juiz de Fora",
   "category": "outros",
   "status": "concluido",
   "content": {
-    "longDescription": "O GDG Juiz de Fora é uma comunidade local ativa desde 2014, com mais de 130 eventos técnicos gratuitos e abertos, cobrindo desde web e mobile até cloud e IA. Participação frequente nos encontros presenciais, que acontecem a cada duas semanas em locais variados da cidade.",
+    "longDescription": "O GDG Juiz de Fora é o capítulo local dos Google Developer Groups, rede de comunidades de desenvolvedores organizadas por voluntários e apoiadas pelo Google. Em Juiz de Fora ele reúne estudantes, profissionais e entusiastas de tecnologia em palestras, oficinas e hackathons, com atividade registrada pelo menos desde 2014.",
     "videoUrl": "",
     "gallery": [
       {
@@ -23,6 +23,30 @@
         "url": "/media/bootcamps/eventos/gdg-jf/2.webp",
         "type": "image",
         "alt": "Confraternização da comunidade após um encontro (2023)"
+      },
+      {
+        "id": "gdg-jf-3",
+        "url": "/media/bootcamps/eventos/gdg-jf/3.webp",
+        "type": "image",
+        "alt": "Grupo de participantes em um encontro do GDG Juiz de Fora"
+      },
+      {
+        "id": "gdg-jf-4",
+        "url": "/media/bootcamps/eventos/gdg-jf/4.webp",
+        "type": "image",
+        "alt": "Participantes do GDG Juiz de Fora em encontro"
+      },
+      {
+        "id": "gdg-jf-5",
+        "url": "/media/bootcamps/eventos/gdg-jf/5.webp",
+        "type": "image",
+        "alt": "Grupo grande comemorando ao fim de um evento do GDG Juiz de Fora"
+      },
+      {
+        "id": "gdg-jf-6",
+        "url": "/media/bootcamps/eventos/gdg-jf/6.webp",
+        "type": "image",
+        "alt": "Confraternização da comunidade após um encontro do GDG Juiz de Fora"
       }
     ],
     "curriculum": [
@@ -30,6 +54,24 @@
       "Palestras sobre tecnologias Google e do mercado",
       "Comunidade de desenvolvedores de Juiz de Fora"
     ],
-    "officialLink": "https://gdg.community.dev/gdg-juiz-de-fora/"
+    "officialLink": "https://gdg.community.dev/gdg-juiz-de-fora/",
+    "paragraphs": [
+      "Os Google Developer Groups (GDGs) são comunidades locais de desenvolvedores interessados nas tecnologias do Google. Segundo o Google, há mais de mil capítulos em mais de 140 países. São organizados pela própria comunidade, e participar é gratuito. O GDG Juiz de Fora é o capítulo da cidade mineira.",
+      "A comunidade tem atividade registrada pelo menos desde 2014. Naquele ano organizou um hackathon de 24 horas para criar aplicativos Android e Web com ferramentas gratuitas do Google, aberto a estudantes, profissionais e entusiastas, sozinhos ou em equipes de até quatro pessoas. O evento contou com a participação de Alê Borba, então gerente de comunidades do Google Brasil.",
+      "Os encontros costumam ter palestras técnicas, oficinas práticas e momentos de networking. Os temas vão de web e mobile (Android, Flutter, Firebase) a cloud, aprendizado de máquina e inteligência artificial, como é comum na rede de GDGs. Muitos capítulos também organizam todos os anos o DevFest, conferência comunitária com programação definida pelos organizadores locais.",
+      "Qualquer pessoa pode participar: basta seguir o capítulo na plataforma de comunidades do Google (gdg.community.dev) e confirmar presença nos eventos anunciados. Quem quiser também pode se candidatar a palestrar ou ajudar na organização.",
+      "Comunidades locais complementam cursos e formações: aproximam iniciantes de profissionais experientes, mostram como as tecnologias são usadas nas empresas da região e dão espaço para treinar apresentações e contribuir com o ecossistema. Para quem está começando a carreira, a rede de contatos formada nesses encontros costuma abrir portas para estágios e vagas.",
+      "O autor do learnTECH participou com frequência dos encontros presenciais do GDG Juiz de Fora, uma das portas de entrada dele na comunidade de tecnologia da cidade."
+    ],
+    "sources": [
+      {
+        "label": "Oficina da Net: Hackathon Google Developer Groups Juiz de Fora (2014)",
+        "url": "https://www.oficinadanet.com.br/post/12915-hackathon-google-developer-groups-juiz-de-fora"
+      },
+      {
+        "label": "Google for Developers: Perguntas frequentes sobre GDG e DevFest",
+        "url": "https://developers.google.com/community/devfest/faq?hl=pt-br"
+      }
+    ]
   }
 }

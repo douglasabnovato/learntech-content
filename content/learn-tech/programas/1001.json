@@ -1,0 +1,863 @@
+{
+  "id": 1001,
+  "image": "https://cdn.pixabay.com/photo/2016/09/15/16/28/tree-1671079_1280.jpg",
+  "category": "Carreira e Soft Skills",
+  "categoryFilter": "carreira-soft-skills",
+  "title": "Autoconhecimento em Ação: Valores, Forças e Histórias para Decidir Melhor",
+  "lessons": "19 passos",
+  "duration": "12h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Iniciante",
+  "description": "Um percurso guiado de autoconhecimento para quem trabalha ou quer trabalhar com tecnologia. Você conta a própria história, compara a imagem que passa com a que gostaria de passar, garimpa memórias marcantes, transforma padrões em símbolos e termina com metas mensuráveis — material concreto para decisões de carreira menos impulsivas.",
+  "letslearn": [
+    "Escrever a sinopse da sua trajetória e usar a própria história como matéria-prima de reflexão",
+    "Levantar a imagem que você passa no time com feedback estruturado e a Janela de Johari",
+    "Mapear memórias marcantes e extrair delas valores, forças e padrões de comportamento",
+    "Transformar o que descobriu em símbolos, ressignificar uma memória difícil e definir metas SMART com indicador e prazo"
+  ],
+  "curriculum": "Da história pessoal às metas de desenvolvimento",
+  "about": "O programa segue a sequência de um curso de autoconhecimento organizado em missões: primeiro você olha para a sua trajetória, depois para a forma como os outros te enxergam, em seguida para as memórias que te definem e, por fim, para quem você quer ser. Cada missão tem um nível básico e um nível opcional mais desafiador, e cada uma alimenta a seguinte. Os exemplos foram adaptados para a rotina de quem está na carreira de tecnologia — code review, daily, primeira vaga, troca de stack, convite para liderar — com personagens e situações fictícias. É o primeiro programa da trilha Carreira e Soft Skills: o que você produz aqui é a base para os programas de decisão e plano de carreira, processo seletivo e produtividade.",
+  "materials": [
+    "Roteiro da sinopse da trajetória (o filme da sua vida)",
+    "Roteiro de conversa de feedback com quatro perguntas",
+    "Modelo da Janela de Johari para preencher",
+    "Matriz de memórias marcantes por fase da vida (eu e outros)",
+    "Ficha de lapidação de símbolos e roteiro de ressignificação",
+    "Tabela de metas: meta, indicador, importância e prazo"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Sua História e a Imagem que Você Passa",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Objetivo Norteador e Memórias que Definem",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Símbolos, Forças e Ressignificação",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Do Autoconhecimento à Decisão",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Carreira e Soft Skills",
+    "mainTitle": "Antes de escolher a próxima stack, a próxima vaga ou o próximo cargo: entenda quem está escolhendo.",
+    "introductionParagraphs": [
+      {
+        "title": "Decisão de carreira começa por dentro",
+        "text": "Quem trabalha com tecnologia decide o tempo todo: aceitar a proposta ou ficar, migrar de front-end para dados, assumir a liderança técnica ou seguir como especialista. Sem saber o que te move, essas decisões acabam guiadas por salário do mês, moda do mercado ou opinião de quem fala mais alto. O **autoconhecimento** não entrega a resposta pronta, mas entrega os critérios: **valores**, **forças** e **padrões** que você reconhece em si e consegue explicar."
+      },
+      {
+        "title": "Um percurso em missões",
+        "text": "Cada módulo é organizado em missões com dois níveis. O **nível 1** você faz sozinho, com papel e caneta ou um documento em branco. O **nível 2** é opcional e envolve outras pessoas — colegas de time, amigos, família — porque parte do que você é só aparece no olhar de fora. As missões se encadeiam: a sinopse da sua história alimenta o mapa de memórias, que alimenta os símbolos, que alimentam as metas."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não aplica teste de personalidade com resultado em quatro letras e não promete descobrir seu propósito em uma tarde. Também não substitui acompanhamento psicológico: algumas missões mexem com memórias difíceis, e procurar ajuda profissional quando elas pesam é parte do processo, não sinal de fracasso. O que ele faz é dar método para uma reflexão que costuma ficar solta."
+      }
+    ],
+    "courseAboutTitle": "A base da trilha Carreira e Soft Skills",
+    "courseAboutDescription": "Este é o programa que abre a trilha. Decidir a carreira, montar um plano, passar por um processo seletivo e organizar a produtividade dependem da mesma matéria-prima: saber o que importa para você, no que você é bom e quais comportamentos te atrapalham. Aqui você produz esse material de forma estruturada — e ele volta a ser usado em cada programa seguinte.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Sua História e a Imagem que Você Passa",
+        "items": [
+          {
+            "label": "Combinados da jornada",
+            "description": "Curiosidade, calma, coragem e momento: a postura que faz as missões renderem."
+          },
+          {
+            "label": "Missão 1 — Minha história",
+            "description": "A sinopse da sua trajetória, contada como se fosse um filme."
+          },
+          {
+            "label": "Missão 2 — A minha imagem",
+            "description": "A imagem que você passa hoje, a que gostaria de passar e o feedback de três pessoas."
+          },
+          {
+            "label": "Janela de Johari",
+            "description": "Cruzar autoavaliação e percepção alheia para achar pontos cegos."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Objetivo Norteador e Memórias que Definem",
+        "items": [
+          {
+            "label": "Objetivo norteador e cinco porquês",
+            "description": "Para que serve o seu autoconhecimento — até chegar à motivação raiz."
+          },
+          {
+            "label": "Missão 3 — Memórias marcantes",
+            "description": "Duas memórias por fase da vida, com o sentimento de cada uma."
+          },
+          {
+            "label": "O que as memórias dizem",
+            "description": "Valores, necessidades, desejos e padrões escondidos em cada lembrança."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Símbolos, Forças e Ressignificação",
+        "items": [
+          {
+            "label": "Mentalidade de crescimento",
+            "description": "Trocar “não sou capaz” por “ainda não consegui”."
+          },
+          {
+            "label": "Missão 4 — Símbolos",
+            "description": "Dar nome e imagem aos padrões que se repetem, e lapidá-los."
+          },
+          {
+            "label": "Missão 5 — Ressignificar",
+            "description": "Extrair aprendizado de uma memória que incomoda, sem reescrever os fatos."
+          },
+          {
+            "label": "Dissonância cognitiva",
+            "description": "Perceber quando o ego defende uma ideia que você já sabe que está errada."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Do Autoconhecimento à Decisão",
+        "items": [
+          {
+            "label": "Missão final — Construindo metas",
+            "description": "Metas SMART com indicador, importância e prazo."
+          },
+          {
+            "label": "Checagem do objetivo certo",
+            "description": "Os critérios SMART, PURE e CLEAR para testar uma meta antes de começar."
+          },
+          {
+            "label": "Análise de performance pessoal",
+            "description": "Três semanas de registro para saber se o problema é o trabalho ou outra coisa."
+          },
+          {
+            "label": "Modelo da encruzilhada",
+            "description": "Mapear o que te atrapalha, o que te dá medo e as trilhas possíveis."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com as missões e ferramentas para executar no seu próprio caderno. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "search",
+      "title": "Sua História e a Imagem que Você Passa",
+      "shortDescription": "Sinopse da trajetória, feedback de fora e Janela de Johari",
+      "introductionText": "O ponto de partida do autoconhecimento é o caminho que te trouxe até aqui. Neste módulo você conta a sua história em formato de sinopse — com os momentos marcantes, bons e ruins — e depois inverte o ângulo: como os outros te enxergam? Para quem trabalha em time de tecnologia, essa segunda pergunta pesa muito. A imagem que você passa na daily, no code review e nas conversas com produto define que tipo de desafio chega até você, muitas vezes antes de você perceber.",
+      "sections": [
+        {
+          "title": "🎬 A sua história e o olhar dos outros",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Combinados para a jornada",
+              "code": "Curiosidade · Calma · Coragem · Momento",
+              "guidance": "Antes da primeira missão, combine consigo mesmo a postura que vai adotar. Curiosidade: olhar para si com postura investigativa, aberto a conceitos novos. Calma: um passo de cada vez, refletindo sobre cada etapa em vez de pular direto para a conclusão. Coragem: coração aberto, sem julgamento sobre si e sobre os outros, aceitando ficar vulnerável. Momento: se desafiar a sair da zona de conforto ao longo das missões. Escreva os quatro no topo do seu caderno.",
+              "tips": [
+                "Reserve um horário fixo para as missões, como faria com um estudo técnico. Reflexão feita no intervalo entre duas reuniões costuma ficar rasa.",
+                "Ao fim de cada missão, avalie de 1 a 5 o quanto você realmente se desafiou. Esse número ajuda a calibrar a próxima."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Missão 1: a sinopse da sua trajetória",
+              "code": "Se a sua vida fosse um filme, que cenas não poderiam ficar de fora?",
+              "guidance": "Escreva uma sinopse curta da sua vida, como a de um filme, incluindo os momentos mais marcantes — positivos e negativos — e os elementos que fazem parte da sua essência. Use recursos de storytelling: um ponto de partida, viradas, conflitos, pessoas importantes. Exemplo fictício: Rafa cresceu consertando o computador da família, largou o curso de Administração no terceiro semestre, entrou num bootcamp aos 24 anos e hoje é dev front-end júnior numa fintech. O objetivo é gerar identificação, não montar um currículo.",
+              "tips": [
+                "Nível 2 (opcional): grave um vídeo de dois a três minutos contando a mesma história. Falar em voz alta revela o que você omite por escrito.",
+                "Responda depois: como se sentiu ao escrever, que dificuldade apareceu e o que aprendeu sobre si."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Missão 2: a imagem que você passa",
+              "code": "imagem atual × imagem desejada → lacuna",
+              "guidance": "Divida em grupos — time, liderança, comunidade técnica, amigos, família — e anote a imagem que você acredita passar para cada um. Depois, a imagem que gostaria de passar. Compare: existe diferença? Por quê? O objetivo não é se moldar às expectativas alheias, e sim expressar com mais autenticidade quem você já é. Em seguida, liste o que quer mudar: pontos positivos a reforçar, pontos negativos a minimizar, comportamentos a trabalhar.",
+              "tips": [
+                "Nível 2 (opcional): converse com pelo menos três pessoas antes de traçar mudanças. Pergunte: quais as primeiras palavras que vêm à mente quando pensa em mim? O que é característico e único em mim? Quais são meus pontos fortes? No que preciso melhorar?",
+                "Feche com duas perguntas: é possível construir uma imagem mais alinhada à sua essência? Qual o primeiro passo que dá para dar a partir de hoje?"
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Janela de Johari: achando os pontos cegos",
+              "code": "aberta | cega | oculta | desconhecida",
+              "guidance": "Liste adjetivos curtos que te descrevem (curioso, detalhista, impaciente, prestativo) e peça a colegas, amigos e familiares que façam o mesmo sobre você. Unifique sinônimos e distribua nos quadrantes: área aberta (você e os outros citaram), área oculta (só você citou), área cega (só os outros citaram) e área desconhecida (ninguém percebeu ainda). Reflita: por que o que está oculto não aparece para o time? O que está na área cega te surpreendeu?",
+              "tips": [
+                "Um formulário anônimo deixa as pessoas mais à vontade para serem sinceras. Escolha quem convive com você e não tem medo de te criticar.",
+                "Use adjetivos, não frases. “Assume tarefa demais” é útil na conversa, mas atrapalha na hora de cruzar as listas."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que começar pela história e pela imagem",
+      "highlights": [
+        {
+          "icon": "list",
+          "title": "Trajetória é matéria-prima",
+          "text": "As escolhas que você fez até aqui — curso, primeiro emprego, linguagem preferida — já contam o que você valoriza. A sinopse organiza isso em um texto que você pode reler."
+        },
+        {
+          "icon": "globe",
+          "title": "Reputação chega antes de você",
+          "text": "Em time de tecnologia, quem é visto como confiável recebe o problema difícil; quem é visto como desorganizado recebe o ticket de rotina. Conhecer a própria imagem é conhecer o que te oferecem."
+        },
+        {
+          "icon": "search",
+          "title": "Ponto cego só se vê de fora",
+          "text": "Pela definição da Janela de Johari, a área cega é justamente o que você não enxerga sozinho. Feedback é o único caminho para trazê-la para a área aberta."
+        }
+      ],
+      "closingText": "Você tem agora uma sinopse da sua trajetória, uma comparação entre a imagem que passa e a que gostaria de passar e uma primeira Janela de Johari. Já dá para ver uma lacuna entre quem você é hoje e quem quer ser. No próximo módulo, você define para que serve todo esse esforço e mergulha nas memórias que explicam por que você age como age.",
+      "ctaTitle": "🎬 Primeiras missões concluídas!",
+      "ctaText": "Sua história está no papel e você já ouviu o olhar de fora. Agora vamos dar uma direção para a jornada e cavar mais fundo.",
+      "nextButtonText": "Ir para Módulo 1: Objetivo Norteador e Memórias que Definem"
+    },
+    {
+      "id": 1,
+      "icon": "folder",
+      "title": "Objetivo Norteador e Memórias que Definem",
+      "shortDescription": "Para que serve o seu autoconhecimento e o que suas memórias revelam",
+      "introductionText": "Mudar comportamento exige um motivo. Por isso este módulo começa definindo o seu objetivo norteador — para que você quer se conhecer — e cavando até a motivação real com os cinco porquês. Com o objetivo claro, você volta ao ponto de partida: quem você é hoje. A matéria-prima são as memórias marcantes, lembranças bem delimitadas no tempo, quase fotografias de um momento, que carregam emoção. Elas guardam pistas sobre seus valores, necessidades e padrões de pensamento.",
+      "sections": [
+        {
+          "title": "🗂️ O baú de memórias",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Objetivo norteador e os cinco porquês",
+              "code": "Por que isso é importante para mim? (×5)",
+              "guidance": "Escreva em uma frase para que o autoconhecimento vai servir para você. Exemplo fictício: “quero me conhecer para decidir se sigo em desenvolvimento ou migro para produto”. Depois pergunte cinco vezes, sempre sobre a resposta anterior: por que isso é importante para mim? Para quê? O que quero atingir com isso? Pare quando chegar a uma motivação que realmente te mova — o objetivo raiz.",
+              "tips": [
+                "Se o quinto porquê ainda soa como algo que você diria numa entrevista, continue. O objetivo raiz costuma ser mais pessoal do que profissional.",
+                "Guarde essa frase: ela volta na missão final, quando você transforma o objetivo em metas."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Missão 3, nível 1: duas memórias por fase",
+              "code": "infância | adolescência | faculdade e trabalho",
+              "guidance": "Use a sinopse da Missão 1 como base. Separe a vida em fases e anote pelo menos duas memórias marcantes por fase: o que aconteceu, quem estava lá, onde, e como você se sentiu no momento — não como se sente hoje ao lembrar. Priorize momentos de que você se orgulha e que ajudaram a formar quem você é. Exemplo fictício: o dia em que Rafa fez o primeiro site funcionar sozinho, às duas da manhã, e sentiu euforia.",
+              "tips": [
+                "Se poucas memórias vierem, tudo bem. Anote as que vierem sem tentar entender o significado ainda — isso fica para depois.",
+                "Separe memória de sensação: a memória é o fato delimitado; a sensação é o que ele provocou. As duas colunas são úteis."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Missão 3, nível 2: as memórias que os outros têm de você",
+              "guidance": "Para cada fase, identifique quem foi importante — familiares, amigos de escola, colegas da primeira empresa — e converse com essas pessoas sobre as lembranças mais marcantes que elas têm de você naquele período. Registre em uma segunda linha da matriz. Muitas vezes o outro lembra de um episódio que você esqueceu, e esse episódio explica um comportamento que você repete até hoje.",
+              "tips": [
+                "Comece pela pessoa mais acessível. Uma conversa de quinze minutos já rende material.",
+                "Depois de preencher, responda: o que aprendeu sobre si nessa missão e o que pode fazer de diferente para aproveitar mais as próximas?"
+              ]
+            },
+            {
+              "number": 4,
+              "title": "O que as memórias dizem sobre você",
+              "code": "memória → significado (eu | outros)",
+              "guidance": "Para cada memória, escreva o que ela representa: um valor forte, uma necessidade, um desejo, uma característica, um padrão de pensamento ou de comportamento. Faça isso por fase, em duas linhas — a sua leitura e a leitura das memórias que os outros trouxeram. Depois procure a conexão com o presente: por que você se comporta hoje do jeito que se comporta? A euforia do primeiro site funcionando pode apontar para autonomia e para a necessidade de ver resultado concreto.",
+              "tips": [
+                "Memórias são pistas, não sentenças. Uma única lembrança sugere; a mesma ideia em três fases diferentes começa a confirmar.",
+                "Volte à Janela de Johari: algum significado bate com o que está na sua área aberta ou na área cega?"
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Valores: o que sobra quando o resto some",
+              "code": "De onde você vem · O que importa · Quem importa",
+              "guidance": "Use os três primeiros temas do modelo da encruzilhada para consolidar o que as memórias mostraram. De onde você vem: decisões, eventos e influências — positivas e negativas — que te formaram. O que é realmente importante: escreva as três primeiras coisas que vierem à cabeça, sejam valores, crenças ou princípios. Que pessoas importam: de quem é a opinião que pesa nas suas decisões e quem você influencia. Compare essa lista com os significados do passo anterior.",
+              "tips": [
+                "Palavras-chave bastam. Não precisa escrever redação para cada tema.",
+                "Quando duas opções de carreira parecem equivalentes, são esses valores que desempatam — por isso vale tê-los escritos antes de precisar deles."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que olhar para trás antes de decidir para a frente",
+      "highlights": [
+        {
+          "icon": "bolt",
+          "title": "Motivo que sustenta a mudança",
+          "text": "Sem um objetivo raiz, o esforço de autoconhecimento perde força na primeira semana corrida. Os cinco porquês transformam uma intenção genérica em motivo pessoal."
+        },
+        {
+          "icon": "folder",
+          "title": "Memória como evidência",
+          "text": "Dizer “sou colaborativo” é opinião; lembrar três momentos em que você parou o próprio trabalho para destravar alguém é evidência. Memórias dão lastro ao que você afirma sobre si."
+        },
+        {
+          "icon": "sitemap",
+          "title": "Padrões que atravessam fases",
+          "text": "O que aparece na infância, na adolescência e no primeiro emprego tende a aparecer também na próxima decisão. Reconhecer o padrão é poder escolher se repete ou não."
+        }
+      ],
+      "closingText": "Você tem um objetivo norteador com motivação clara, uma matriz de memórias por fase e uma primeira lista de valores e padrões. Ainda é material bruto, espalhado em várias páginas. No próximo módulo você condensa tudo isso em símbolos, olha para as memórias que incomodam e aprende a reconhecer quando o próprio cérebro resiste a mudar.",
+      "ctaTitle": "🗂️ Baú de memórias aberto!",
+      "ctaText": "Seu material bruto está mapeado. Agora vamos lapidar o que ele diz sobre você.",
+      "nextButtonText": "Ir para Módulo 2: Símbolos, Forças e Ressignificação"
+    },
+    {
+      "id": 2,
+      "icon": "grid",
+      "title": "Símbolos, Forças e Ressignificação",
+      "shortDescription": "Condensar padrões em símbolos e dar novo sentido ao que incomoda",
+      "introductionText": "Depois de mapear memórias, é hora de procurar o que as conecta. Este módulo começa pela mentalidade de crescimento — a ideia de que capacidades se desenvolvem —, porque sem ela o resto vira julgamento. Em seguida você dá nome e imagem aos padrões que se repetem, os símbolos, e os lapida até que representem de fato quem você é. Por fim, enfrenta a parte mais delicada: uma memória que incomoda. Os fatos não mudam, mas o significado que você dá a eles pode mudar.",
+      "sections": [
+        {
+          "title": "🧭 Da memória ao símbolo",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Mentalidade de crescimento",
+              "code": "“não sou capaz” → “ainda não consegui”",
+              "guidance": "Existem duas maneiras de encarar um problema: “não sou bom o suficiente para resolver isso” ou “ainda não consegui resolver isso”. A segunda, associada às pesquisas da psicóloga Carol Dweck, parte do princípio de que a capacidade de aprender cresce com prática. Revise as anotações dos módulos anteriores e reescreva cada frase de sentença fixa — “sou péssimo em falar em público” — no formato de algo em desenvolvimento.",
+              "tips": [
+                "Em tecnologia, isso aparece toda semana: a linguagem nova, o sistema legado, a primeira apresentação para a diretoria. O “ainda” muda o que você tenta em seguida.",
+                "Mentalidade de crescimento não é otimismo forçado. É tratar a dificuldade como etapa, não como diagnóstico."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Missão 4: criar seus símbolos",
+              "code": "padrão recorrente → nome + imagem",
+              "guidance": "Releia os significados das memórias, a sinopse e a imagem que você passa. Procure o que se repete e afunile até chegar a uma essência que caiba em um nome e em uma imagem. Exemplo: quem tem a reflexão como padrão pode criar o símbolo “Reflexão”, representado por uma lupa. Exemplo fictício de tecnologia: Rafa percebe que em várias memórias foi quem destrinchou o problema que ninguém entendia e cria o símbolo “Depurar”, desenhado como um inseto sob uma lente.",
+              "tips": [
+                "Defina quantos símbolos conseguir. A primeira versão não precisa ser definitiva.",
+                "O símbolo precisa ter a sua cara: pode ser desenho abstrato, palavra, frase ou ícone."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Lapidar os símbolos e colocar um em prática",
+              "code": "Identificação | Frequência | Significado | Clareza",
+              "guidance": "Passe cada símbolo por quatro critérios. Identificação: você se reconhece nele? Frequência: aparece em várias memórias e fases, ou só em uma? Significado: ele explica algo sobre seus valores, forças ou comportamentos? Clareza: outra pessoa entenderia o que ele quer dizer? Ajuste, funda ou descarte até ficar com os que passam nos quatro. Os símbolos que sobram costumam apontar suas forças — aquilo que você faz bem e com energia.",
+              "tips": [
+                "Nível 2 (opcional): coloque um símbolo em prática nesta semana. Quem tem “Depurar” como símbolo pode se oferecer para investigar o incidente aberto que ninguém pegou. Depois anote: que ação tomei e como me senti?",
+                "Guarde os símbolos lapidados em um lugar visível. Eles servem de filtro rápido quando surgir uma oportunidade nova."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Missão 5: ressignificar uma memória",
+              "code": "o que incomoda → como reverbera hoje → novo significado",
+              "guidance": "Escolha uma memória que incomoda. Pergunte: que parte específica foi o gatilho do que senti? Me comportei de um jeito que não gosto de admitir? Essa dificuldade foi pontual ou se repete? Depois, mapeie como ela reverbera hoje: que característica ou comportamento seu ela ajudou a definir? Por fim, construa outro significado, um que traga aprendizado. Exemplo fictício: a crítica dura recebida no primeiro code review deixou medo de abrir pull request; ressignificada, vira a origem do cuidado que hoje faz Rafa testar antes de pedir revisão.",
+              "tips": [
+                "Nível 2 (opcional): tome uma ação a partir do novo significado. Retomar contato com alguém de quem se afastou ou dar um pequeno passo diante de um medo são exemplos.",
+                "Se a memória pesar demais, procure apoio profissional. Clínicas-escola de universidades e o Centro de Referência de Assistência Social da sua cidade oferecem atendimento gratuito."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Atenção à dissonância cognitiva",
+              "code": "crença ≠ comportamento → desconforto",
+              "guidance": "Quando crença e comportamento estão fora de sincronia, a mente sente desconforto e tenta resolvê-lo da forma mais barata: justificando o comportamento e ignorando o que contradiz a crença. É o mecanismo que faz alguém defender com unhas e dentes uma decisão técnica que já sabe estar errada. Durante a jornada, fique atento aos sinais: irritação desproporcional com um feedback, vontade de descartar uma evidência sem examiná-la, justificativas longas demais.",
+              "tips": [
+                "Não existe cura definitiva; o que funciona é saber que a dissonância existe e reconhecer quando ela entra em ação.",
+                "Releia a área cega da sua Janela de Johari. Se a primeira reação foi “isso não é verdade”, vale examinar por que essa percepção existe."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que símbolos e ressignificação",
+      "highlights": [
+        {
+          "icon": "grid",
+          "title": "Síntese que cabe na cabeça",
+          "text": "Ninguém consulta vinte páginas de anotações antes de responder a uma proposta. Três ou quatro símbolos lapidados você lembra na hora."
+        },
+        {
+          "icon": "sync",
+          "title": "Protagonista da própria história",
+          "text": "Não dá para voltar ao passado e mudar os fatos, mas dá para mudar a perspectiva sobre eles. Quanto mais você processa uma memória, menos ela decide por você."
+        },
+        {
+          "icon": "shield",
+          "title": "Defesa contra o próprio ego",
+          "text": "Reconhecer a dissonância cognitiva protege as decisões de carreira da tendência de confirmar o que você já queria acreditar."
+        }
+      ],
+      "closingText": "Você agora tem símbolos lapidados que resumem seus valores e forças, uma memória difícil com novo significado e um alerta para as armadilhas do próprio raciocínio. Até aqui o trabalho olhou para quem você é. O último módulo vira o jogo para quem você quer ser — e transforma tudo isso em metas e critérios de decisão.",
+      "ctaTitle": "🧭 Símbolos lapidados!",
+      "ctaText": "Você sabe dizer em poucas palavras o que te define. Agora vamos usar isso para decidir e agir.",
+      "nextButtonText": "Ir para Módulo 3: Do Autoconhecimento à Decisão"
+    },
+    {
+      "id": 3,
+      "icon": "gauge",
+      "title": "Do Autoconhecimento à Decisão",
+      "shortDescription": "Metas SMART, o objetivo certo, análise de performance e a encruzilhada",
+      "introductionText": "Autoconhecimento que não vira ação fica na gaveta. Neste módulo você retoma o objetivo norteador e a lacuna entre quem é e quem quer ser, e os quebra em metas específicas e mensuráveis. Depois testa essas metas com critérios mais exigentes, aprende a investigar se uma insatisfação vem do trabalho ou de outra coisa e desenha a encruzilhada em que está. É a ponte para o próximo programa da trilha, sobre decisão e plano de carreira.",
+      "sections": [
+        {
+          "title": "🎯 Metas, critérios e caminhos",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Retomar o objetivo e a lacuna",
+              "guidance": "Releia o objetivo norteador do Módulo 1. Ele ainda faz sentido depois de tudo o que você descobriu? Ajuste se precisar. Em seguida, olhe de dois ângulos: que ações práticas preenchem a lacuna entre a imagem que você passa e a que quer passar? E o que você já deixou de fazer por causa de um comportamento ou característica que te incomoda? Liste tudo o que surgir como candidato a meta.",
+              "tips": [
+                "As metas precisam se conectar ao que você aprendeu sobre si. Meta que não conversa com seus símbolos e valores tende a ser abandonada.",
+                "Exemplo fictício: Rafa deixou de se candidatar a vagas de pleno por medo de entrevista técnica ao vivo. Isso é candidato a meta."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Missão final: metas SMART com indicador",
+              "code": "META | INDICADOR | IMPORTÂNCIA | PRAZO",
+              "guidance": "Transforme os candidatos em metas específicas, mensuráveis, atingíveis, realistas e com prazo. A meta é a ação; o indicador diz quanto dela você já cumpriu. Preencha uma tabela com quatro colunas. Exemplo fictício: meta “praticar entrevista técnica ao vivo”; indicador “6 simulações com colegas”; importância “destravar candidatura para vaga de pleno, ligada ao símbolo Depurar”; prazo “até o fim do trimestre”.",
+              "tips": [
+                "Indicador bom é contável: quando chegar à sexta simulação, você sabe que concluiu.",
+                "Comece com duas ou três metas. Uma lista de dez metas costuma terminar com nenhuma cumprida."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Checar se é o objetivo certo",
+              "code": "SMART + PURE + CLEAR",
+              "guidance": "Passe cada meta por três conjuntos de critérios. SMART: específica, mensurável, atingível, realista e com fases. PURE: declarada de forma positiva, bem compreendida, relevante e ética. CLEAR: desafiadora, legal, que respeite o meio ambiente, acordada com alguém e registrada. São catorze pontos de atenção, não catorze tarefas — servem para revelar se a meta é factível e se está sendo perseguida do jeito mais eficaz.",
+              "tips": [
+                "“Acordada” e “registrada” são os critérios mais ignorados e dos que mais ajudam. Conte a meta para alguém de confiança e anote onde vai ver todo dia.",
+                "Reescreva metas negativas: “parar de travar em entrevista” vira “conduzir uma entrevista técnica completa explicando meu raciocínio”."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Análise de performance pessoal: três semanas de velas",
+              "code": "Preciso fazer · Sou capaz de fazer · Quero/posso fazer",
+              "guidance": "Se a insatisfação é com o trabalho, investigue antes de pedir demissão. Desenhe três eixos saindo do mesmo ponto, cada um com escala de 1 a 10. Toda noite, durante três semanas, marque: até que ponto as tarefas do dia foram impostas? Até que ponto usaram suas habilidades e forças? Até que ponto eram o que você queria e podia fazer? Unir as três marcas forma um triângulo, como uma vela de barco. Use uma folha nova por dia.",
+              "tips": [
+                "Ao final, compare as velas: o formato varia muito? O eixo “sou capaz” fica sempre baixo? Isso mostra se o problema é a função, a empresa ou outra circunstância.",
+                "A ferramenta não responde sozinha se você deve sair. Junte o resultado com informação de mercado e o momento da empresa."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "O modelo da encruzilhada e as trilhas possíveis",
+              "code": "O que te atrapalha? · Do que você tem medo?",
+              "guidance": "Complete os dois últimos temas da encruzilhada. O que te atrapalha: prazos, falta de recursos, sentimentos, obstáculos que te imobilizam. Do que você tem medo: pessoas, circunstâncias e situações que tiram seu sono. Com os cinco temas no papel, desenhe as trilhas possíveis: a que te convoca, a dos sonhos mais ambiciosos, a mais sensata, a desconhecida, a conhecida e a de volta para um lugar seguro. Exemplo fictício para Rafa: seguir no front-end, migrar para engenharia de dados, tentar produto, abrir um estúdio próprio.",
+              "tips": [
+                "A encruzilhada mostra o seu contexto, mas decisão de carreira também exige olhar para fora: dia a dia da função, remuneração e oferta de vagas. É o tema do próximo programa da trilha.",
+                "Volte a esse mapa em momentos diferentes da vida e acrescente trilhas e experiências."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que fechar com metas e critérios",
+      "highlights": [
+        {
+          "icon": "gauge",
+          "title": "Progresso que se mede",
+          "text": "Com indicador e prazo, você sabe se avançou. Sem eles, a sensação de “estou me desenvolvendo” pode durar anos sem mudança real."
+        },
+        {
+          "icon": "tools",
+          "title": "Diagnóstico antes da troca",
+          "text": "Três semanas de registro custam menos que um emprego novo que repete o mesmo incômodo. A análise de performance separa o problema da função do problema da fase."
+        },
+        {
+          "icon": "sitemap",
+          "title": "Opções visíveis",
+          "text": "Desenhar as trilhas tira a decisão do formato “fico ou saio” e mostra caminhos intermediários que você não tinha considerado."
+        }
+      ],
+      "closingText": "Você percorreu a jornada inteira: contou a sua história, ouviu como os outros te veem, garimpou memórias, condensou padrões em símbolos, deu novo sentido a uma lembrança difícil e transformou tudo em metas com indicador e prazo. O processo de autoconhecimento é para a vida toda, e este caderno é para ser relido. Ele é o insumo direto do próximo programa da trilha, em que você compara áreas e decide o rumo da carreira.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você tem valores, forças e metas escritos e explicados. O próximo passo natural da trilha é o programa Decisão e Plano de Carreira.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Qual é o objetivo da sinopse pedida na Missão 1?",
+      "explanation": "A sinopse usa a trajetória como matéria-prima do autoconhecimento: momentos marcantes, positivos e negativos, e os elementos da sua essência, contados como um filme para gerar identificação. Não é um currículo, não é uma lista só de conquistas e não precisa ser aprovada por ninguém.",
+      "options": [
+        {
+          "text": "Usar a própria trajetória, com momentos bons e ruins, como matéria-prima de reflexão",
+          "isCorrect": true
+        },
+        {
+          "text": "Montar um resumo profissional para enviar a recrutadores",
+          "isCorrect": false
+        },
+        {
+          "text": "Listar apenas as conquistas para aumentar a autoestima",
+          "isCorrect": false
+        },
+        {
+          "text": "Descrever a personalidade em um tipo psicológico de quatro letras",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Na Janela de Johari, onde entram as características que outras pessoas citaram sobre você, mas que você não citou?",
+      "explanation": "A área cega reúne o que os outros percebem e você não. A área aberta é o que aparece nas duas listas, a área oculta é o que só você citou e a área desconhecida é o que ninguém percebeu ainda. Feedback é o que traz itens da área cega para a aberta.",
+      "options": [
+        {
+          "text": "Área cega",
+          "isCorrect": true
+        },
+        {
+          "text": "Área aberta",
+          "isCorrect": false
+        },
+        {
+          "text": "Área oculta",
+          "isCorrect": false
+        },
+        {
+          "text": "Área desconhecida",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Ao comparar a imagem que você passa com a que gostaria de passar, qual é a intenção da Missão 2?",
+      "explanation": "A proposta é expressar com mais autenticidade quem você já é, reforçando pontos positivos e trabalhando comportamentos que atrapalham. Não se trata de se moldar às expectativas alheias, nem de esconder características ou de escolher uma imagem só para o trabalho.",
+      "options": [
+        {
+          "text": "Passar uma imagem mais autêntica, alinhada à sua essência",
+          "isCorrect": true
+        },
+        {
+          "text": "Ajustar o comportamento ao que cada grupo espera de você",
+          "isCorrect": false
+        },
+        {
+          "text": "Esconder as características que podem ser mal vistas no trabalho",
+          "isCorrect": false
+        },
+        {
+          "text": "Criar uma persona profissional separada da vida pessoal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Para que serve o exercício dos cinco porquês aplicado ao objetivo norteador?",
+      "explanation": "Perguntar repetidamente por que o objetivo é importante leva da intenção genérica até a motivação raiz, aquela que sustenta o esforço. O exercício não gera metas mensuráveis — isso é a missão final —, nem serve para justificar o objetivo a terceiros ou eliminar objetivos.",
+      "options": [
+        {
+          "text": "Chegar à motivação raiz, que sustenta o esforço de autoconhecimento",
+          "isCorrect": true
+        },
+        {
+          "text": "Transformar o objetivo em cinco metas mensuráveis",
+          "isCorrect": false
+        },
+        {
+          "text": "Preparar respostas para perguntas de entrevista",
+          "isCorrect": false
+        },
+        {
+          "text": "Descartar objetivos até sobrar apenas um",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "O que caracteriza uma memória significativa na Missão 3?",
+      "explanation": "Memória significativa é uma lembrança específica, quase a fotografia de um momento, com início e fim claros, vívida e carregada de emoção. Período longo e genérico, fato contado por terceiros sem que você lembre ou memória escolhida por parecer bonita não cumprem esse papel.",
+      "options": [
+        {
+          "text": "Uma lembrança específica, bem delimitada no tempo, vívida e com emoção",
+          "isCorrect": true
+        },
+        {
+          "text": "Um período longo da vida, como todo o ensino médio",
+          "isCorrect": false
+        },
+        {
+          "text": "Um fato que outras pessoas contam, mesmo que você não lembre",
+          "isCorrect": false
+        },
+        {
+          "text": "Uma lembrança escolhida por causar boa impressão",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Ao registrar o sentimento ligado a cada memória, qual sentimento você deve anotar?",
+      "explanation": "O pedido é resgatar o que você sentiu quando o momento de fato aconteceu. O sentimento de hoje ao lembrar pode ser diferente e é útil depois, na ressignificação, mas não substitui o original. Sentimento esperado ou o que os outros acham que você sentiu não servem.",
+      "options": [
+        {
+          "text": "O que você sentiu no momento em que a memória aconteceu",
+          "isCorrect": true
+        },
+        {
+          "text": "O que você sente hoje ao lembrar dela",
+          "isCorrect": false
+        },
+        {
+          "text": "O que seria esperado sentir naquela situação",
+          "isCorrect": false
+        },
+        {
+          "text": "O que as pessoas próximas acham que você sentiu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Quais são os quatro critérios usados para lapidar os símbolos?",
+      "explanation": "Os símbolos são lapidados por identificação (você se reconhece), frequência (aparece em várias memórias), significado (explica valores, forças ou comportamentos) e clareza (outra pessoa entenderia). As demais opções misturam critérios de metas ou de avaliação de desempenho.",
+      "options": [
+        {
+          "text": "Identificação, frequência, significado e clareza",
+          "isCorrect": true
+        },
+        {
+          "text": "Específico, mensurável, atingível e realista",
+          "isCorrect": false
+        },
+        {
+          "text": "Positivo, compreendido, relevante e ético",
+          "isCorrect": false
+        },
+        {
+          "text": "Originalidade, beleza, tamanho e cor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "O que significa ressignificar uma memória?",
+      "explanation": "Ressignificar é extrair aprendizado de uma memória e construir um novo sentido para ela. Os fatos não mudam; muda a perspectiva sobre eles. Não é esquecer, nem reescrever o que aconteceu, nem atribuir a culpa a outra pessoa.",
+      "options": [
+        {
+          "text": "Construir um novo sentido para a memória, extraindo aprendizado, sem alterar os fatos",
+          "isCorrect": true
+        },
+        {
+          "text": "Reescrever os detalhes da memória até ela deixar de incomodar",
+          "isCorrect": false
+        },
+        {
+          "text": "Evitar pensar na memória até ela ser esquecida",
+          "isCorrect": false
+        },
+        {
+          "text": "Identificar quem foi o responsável pelo que aconteceu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Uma dev defende com irritação uma decisão técnica que, no fundo, já sabe que estava errada. Qual fenômeno isso ilustra?",
+      "explanation": "Quando crença e comportamento entram em conflito, a dissonância cognitiva leva a mente a justificar o comportamento e ignorar evidências contrárias, como mecanismo de defesa do ego. Mentalidade de crescimento seria justamente o oposto; área oculta e ressignificação são outros conceitos do programa.",
+      "options": [
+        {
+          "text": "Dissonância cognitiva",
+          "isCorrect": true
+        },
+        {
+          "text": "Mentalidade de crescimento",
+          "isCorrect": false
+        },
+        {
+          "text": "Área oculta da Janela de Johari",
+          "isCorrect": false
+        },
+        {
+          "text": "Ressignificação",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Na tabela da missão final, qual é a diferença entre meta e indicador?",
+      "explanation": "A meta é a ação específica que você vai realizar; o indicador é a medida que mostra quanto dela já foi cumprido — por exemplo, seis simulações de entrevista. Importância e prazo são colunas separadas da mesma tabela.",
+      "options": [
+        {
+          "text": "A meta é a ação; o indicador mede quanto dela já foi cumprido",
+          "isCorrect": true
+        },
+        {
+          "text": "A meta é o prazo; o indicador é a importância",
+          "isCorrect": false
+        },
+        {
+          "text": "São sinônimos e podem ser usados no mesmo campo",
+          "isCorrect": false
+        },
+        {
+          "text": "O indicador é o objetivo norteador e a meta é o primeiro porquê",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Na análise de performance pessoal, quais são os três eixos marcados a cada noite?",
+      "explanation": "Os eixos medem até que ponto as tarefas do dia foram impostas (preciso fazer), usaram suas habilidades (sou capaz de fazer) e eram o que você queria e podia fazer (quero/posso fazer). O registro dura três semanas, com uma folha nova por dia, e o conjunto de velas mostra de onde vem a insatisfação.",
+      "options": [
+        {
+          "text": "Preciso fazer, sou capaz de fazer e quero/posso fazer",
+          "isCorrect": true
+        },
+        {
+          "text": "Urgente, importante e delegável",
+          "isCorrect": false
+        },
+        {
+          "text": "Salário, cargo e localização",
+          "isCorrect": false
+        },
+        {
+          "text": "Infância, adolescência e trabalho",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "No Future of Jobs Report 2025, do Fórum Econômico Mundial, que posição a habilidade “motivação e autoconsciência” ocupa entre as habilidades essenciais apontadas pelos empregadores?",
+      "explanation": "Motivação e autoconsciência aparece em quinto lugar entre as habilidades essenciais de 2025, atrás de pensamento analítico e de resiliência, flexibilidade e agilidade, entre outras. O mesmo relatório estima que 39% das habilidades essenciais dos trabalhadores devem mudar até 2030.",
+      "options": [
+        {
+          "text": "Quinto lugar",
+          "isCorrect": true
+        },
+        {
+          "text": "Primeiro lugar",
+          "isCorrect": false
+        },
+        {
+          "text": "Fora das vinte primeiras",
+          "isCorrect": false
+        },
+        {
+          "text": "Não é citada no relatório",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "Um caderno de autoconhecimento completo e reutilizável: a sinopse da sua trajetória, a comparação entre a imagem que você passa e a que quer passar, uma Janela de Johari com feedback real, a matriz de memórias marcantes por fase, símbolos lapidados que resumem valores e forças, uma memória ressignificada e uma tabela de metas SMART com indicador, importância e prazo.",
+    "highlights": [
+      "Sinopse da trajetória e Janela de Johari preenchida",
+      "Símbolos lapidados com seus valores e forças",
+      "Tabela de metas com indicador, importância e prazo"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "No Future of Jobs Report 2025, publicado pelo Fórum Econômico Mundial em janeiro de 2025, motivação e autoconsciência aparece em quinto lugar entre as habilidades essenciais apontadas pelos empregadores, e o relatório estima que 39% das habilidades essenciais dos trabalhadores devem mudar até 2030. Com tanta mudança técnica, saber o que te move e no que você é bom vira o ponto fixo para escolher o que aprender em seguida.",
+      "Na tecnologia, satisfação no trabalho está longe de ser regra. Na Stack Overflow Developer Survey 2025, com mais de 49 mil respostas de 177 países, 24,5% dos desenvolvedores se declararam felizes no trabalho, 47,1% acomodados e 28,4% infelizes. Antes de trocar de emprego, de stack ou de área, vale entender se o incômodo vem da função, da fase ou de algo que você ainda não olhou de perto."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Escolhas de carreira",
+        "description": "Aceitar uma proposta, trocar de stack, migrar de área ou seguir como especialista."
+      },
+      {
+        "label": "Feedback e avaliação de desempenho",
+        "description": "Chegar à conversa sabendo seus pontos fortes, pontos cegos e o que quer desenvolver."
+      },
+      {
+        "label": "Processos seletivos",
+        "description": "Responder “fale sobre você” com histórias e valores concretos, não com frases prontas."
+      },
+      {
+        "label": "Plano de desenvolvimento",
+        "description": "Definir metas com indicador e prazo em vez de intenções vagas."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem está entrando em tecnologia",
+        "description": "Estudante, bootcamper ou profissional em transição que quer escolher um caminho com critério."
+      },
+      {
+        "label": "Quem está insatisfeito e não sabe por quê",
+        "description": "Já trabalha na área, sente vontade de mudar e quer entender o motivo antes de decidir."
+      },
+      {
+        "label": "Quem vai começar a trilha de carreira",
+        "description": "Quer produzir a base de valores, forças e metas usada nos programas seguintes."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Ferramentas como a Janela de Johari, os critérios SMART e as conversas estruturadas de feedback são usadas em programas de desenvolvimento, avaliações de desempenho e processos de mentoria em empresas de todos os tamanhos. Em times de tecnologia, aparecem nos planos de desenvolvimento individual, nas conversas de carreira com a liderança e nas trilhas que definem a escolha entre seguir como especialista ou assumir gestão.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "World Economic Forum — The Future of Jobs Report 2025, capítulo 3: Skills outlook (jan. 2025)",
+      "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/in-full/3-skills-outlook/"
+    },
+    {
+      "label": "Stack Overflow — 2025 Developer Survey: satisfação no trabalho",
+      "url": "https://survey.stackoverflow.co/2025/"
+    },
+    {
+      "label": "The Decision Lab — Johari Window (Luft e Ingham, 1955)",
+      "url": "https://thedecisionlab.com/reference-guide/psychology/johari-window"
+    },
+    {
+      "label": "Na Prática (Fundação Estudar) — Autoconhecimento Na Prática Online, curso que serviu de base a este programa",
+      "url": "https://napratica.org.br/curso-autoconhecimento-na-pratica-online-conheca"
+    }
+  ]
+}

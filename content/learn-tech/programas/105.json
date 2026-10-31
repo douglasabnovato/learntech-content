@@ -1,0 +1,853 @@
+{
+  "id": 105,
+  "image": "https://cdn.pixabay.com/photo/2014/03/22/22/17/phone-292994_1280.jpg",
+  "category": "Frontend",
+  "categoryFilter": "frontend",
+  "title": "E-commerce na Prática: Catálogo, Vitrine, Templates de Loja e Landing Pages",
+  "lessons": "18 passos",
+  "duration": "12h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Intermediário",
+  "description": "O dia a dia de quem cuida do front-end de uma loja virtual de verdade: reorganizar um catálogo grande em categorias que fazem sentido, montar um menu com imagem por categoria, editar templates da loja em Scriban num storefront rodando localmente, publicar landing pages parametrizadas e conferir tudo com QA visual e SEO local por unidade.",
+  "letslearn": [
+    "Planejar e executar a recategorização de um catálogo com milhares de SKUs, com planilha de-para e redirecionamentos",
+    "Definir os parâmetros de cada categoria e montar um menu header com imagem por categoria",
+    "Editar templates de loja em Scriban num storefront rodando localmente, com dados vindos de configuração e consultas",
+    "Produzir landing pages a partir de um template e de um dicionário de variáveis, validar o layout com capturas e cuidar do SEO de categoria e do Perfil da Empresa de cada loja"
+  ],
+  "curriculum": "Do catálogo à loja publicada",
+  "about": "O programa segue a ordem em que o trabalho acontece numa rede de lojas com e-commerce: primeiro o catálogo, porque nenhum menu bonito salva uma árvore de categorias confusa; depois a navegação e a vitrine, que é o que o cliente vê; em seguida os templates da loja, onde o front-end mexe de fato no código; e por fim as páginas de campanha, a conferência visual e a presença local no Google. Todos os exercícios usam a Rede Construir+, uma rede fictícia de lojas de material de construção e acabamento, com catálogo, lojas e campanhas inventados. As plataformas citadas são reais e públicas: o storefront da Wake Commerce e a linguagem de template Scriban.",
+  "materials": [
+    "Planilha de-para de categorias da Rede Construir+ (modelo)",
+    "Ficha de parâmetros de categoria com campos de SEO e imagem do menu",
+    "Template de landing page com dicionário de variáveis",
+    "Checklist de QA de layout com convenção de nomes para capturas",
+    "Roteiro de revisão do Perfil da Empresa por loja"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Catálogo e Arquitetura de Categorias",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Menu Header e Vitrine",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Templates da Loja com Scriban",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Landing Pages, QA de Layout e SEO Local",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Frontend",
+    "mainTitle": "O front-end de uma loja virtual vai muito além da página de produto: começa no catálogo e termina na ficha da loja no Google.",
+    "introductionParagraphs": [
+      {
+        "title": "Loja virtual é catálogo antes de ser layout",
+        "text": "Quem entra numa equipe de e-commerce descobre rápido que boa parte do trabalho não é desenhar telas, e sim organizar o que já existe. Um catálogo com milhares de **SKUs** espalhados em categorias que cresceram sem plano gera menu confuso, filtro que não filtra e página de categoria que ninguém encontra na busca. Arrumar isso é trabalho de front-end, porque é o front-end que transforma a árvore de categorias em navegação."
+      },
+      {
+        "title": "Plataforma SaaS não é caixa-preta",
+        "text": "Lojas em plataformas de e-commerce SaaS parecem engessadas até você abrir o repositório do storefront. Na **Wake Commerce**, os templates são arquivos HTML escritos em **Scriban**, uma linguagem de template open-source parecida com o Liquid, e podem ser editados e testados num storefront local antes de ir para produção. Saber ler esse código é o que separa quem pede ajuda ao suporte de quem resolve."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não ensina a montar uma loja do zero nem a escolher plataforma, e não trata de checkout, pagamento ou logística. O foco é o trabalho recorrente de quem mantém uma loja já no ar: catálogo, navegação, templates, páginas de campanha, conferência visual e presença local."
+      }
+    ],
+    "courseAboutTitle": "Um programa montado a partir do trabalho real de manutenção de uma loja",
+    "courseAboutDescription": "A sequência reproduz projetos executados em uma rede de franquias com loja virtual: a recategorização do catálogo com novo menu, a evolução dos templates da loja, a produção em série de landing pages de captação e campanha, a rodada de QA com centenas de capturas de tela e a manutenção do Perfil da Empresa de cada unidade. Empresa, catálogo, lojas e números foram trocados por dados fictícios; o método e as ferramentas são os mesmos.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Catálogo e Arquitetura de Categorias",
+        "items": [
+          {
+            "label": "Inventário e de-para",
+            "description": "Exportar o catálogo e mapear cada SKU da categoria antiga para a nova."
+          },
+          {
+            "label": "Categoria ou filtro",
+            "description": "O critério que evita criar categoria para o que é atributo."
+          },
+          {
+            "label": "Parâmetros de categoria",
+            "description": "Nome, caminho, imagem, ordem, título e descrição de SEO de cada categoria."
+          },
+          {
+            "label": "Migração sem quebrar links",
+            "description": "Carga em lote, redirecionamentos e conferência depois da troca."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Menu Header e Vitrine",
+        "items": [
+          {
+            "label": "Menu com imagem por categoria",
+            "description": "Thumbnails que dizem de relance o tipo de produto."
+          },
+          {
+            "label": "Comportamento do menu",
+            "description": "Cabeçalho clicável, escopo atual destacado e atraso no hover."
+          },
+          {
+            "label": "Navegação por ambiente",
+            "description": "Entradas inspiracionais que levam direto aos produtos mostrados."
+          },
+          {
+            "label": "Vitrine sazonal",
+            "description": "Banners e imagens de campanha em versões para desktop e mobile."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Templates da Loja com Scriban",
+        "items": [
+          {
+            "label": "Storefront local",
+            "description": "Rodar a loja na própria máquina e editar sem mexer em produção."
+          },
+          {
+            "label": "Estrutura de pastas",
+            "description": "Pages, Components, Snippets, Queries, Configs e Assets."
+          },
+          {
+            "label": "Sintaxe Scriban",
+            "description": "Laços, condições, pipes e o objeto store injetado em toda página."
+          },
+          {
+            "label": "Configuração como dado",
+            "description": "Diretório de lojas e parâmetros mantidos em settings.json."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Landing Pages, QA de Layout e SEO Local",
+        "items": [
+          {
+            "label": "Template com dicionário de variáveis",
+            "description": "Uma base de landing page que vira várias páginas sem copiar código."
+          },
+          {
+            "label": "Páginas de captação e campanha",
+            "description": "Seja um franqueado, loja dentro de loja, representantes, indicação e campanha com clube."
+          },
+          {
+            "label": "QA de layout",
+            "description": "Capturas organizadas por data, página e tamanho de tela."
+          },
+          {
+            "label": "Perfil da Empresa por loja",
+            "description": "Ficha de cada unidade correta, com acesso de gerente para o franqueado."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos para executar na loja fictícia da Rede Construir+ ou no projeto em que você trabalha. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "sitemap",
+      "title": "Catálogo e Arquitetura de Categorias",
+      "shortDescription": "Recategorizar milhares de SKUs sem perder venda nem link",
+      "introductionText": "A Rede Construir+ tem cerca de 14 mil SKUs distribuídos em mais de 120 categorias criadas ao longo dos anos, muitas com três produtos, outras com dois mil. O cliente procura porcelanato e encontra o mesmo item em Pisos, em Revestimentos e em Promoções. O objetivo deste módulo é reduzir isso a cerca de 50 categorias bem definidas, cada uma com parâmetros completos, e trocar a árvore antiga pela nova sem quebrar links nem derrubar páginas que já tinham tráfego.",
+      "sections": [
+        {
+          "title": "🗂️ Da árvore que cresceu sozinha à árvore planejada",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Inventário do catálogo e planilha de-para",
+              "code": "SKU | categoria_atual | categoria_nova | observação",
+              "guidance": "Exporte o catálogo da plataforma com SKU, nome, categoria atual e quantidade em estoque. Monte uma planilha de-para em que cada linha diz para onde o produto vai. Comece pelas categorias grandes, porque elas resolvem a maior parte dos SKUs, e trate as pequenas no fim: quase sempre elas viram filtro ou se fundem com uma vizinha.",
+              "tips": [
+                "Ordene a planilha por categoria atual e conte quantos SKUs cada uma tem. Categoria com menos de dez produtos é candidata a fusão.",
+                "Guarde uma coluna com o caminho antigo da categoria: ela vira a lista de redirecionamentos no passo 4."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Decidir o que é categoria e o que é filtro",
+              "guidance": "Categoria responde à pergunta o que é este produto: porcelanato, torneira, tinta. Acabamento polido ou acetinado, cor, tamanho e marca são atributos que se aplicam a vários tipos de produto e devem virar filtro. Quando a mesma característica gera categorias paralelas, o cliente precisa visitar várias listas para comparar itens parecidos.",
+              "tips": [
+                "Segundo o benchmark de navegação da Baymard, 79% dos sites usam categorias onde deveriam usar filtros. Antes de criar uma categoria nova, pergunte se ela não é um filtro disfarçado.",
+                "A mesma pesquisa recomenda dividir em grupos quando uma lista passa de cerca de 10 itens e manter pelo menos 10 produtos nas categorias mais profundas."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Preencher os parâmetros de cada categoria",
+              "code": "nome · caminho · categoria-pai · ordem · imagem do menu · título SEO · descrição",
+              "guidance": "Cada categoria nova ganha uma ficha com os mesmos campos: nome exibido, caminho da URL, categoria-pai, ordem no menu, imagem que aparecerá no menu header, título e meta descrição para a busca e um texto curto de abertura da página. Preencher tudo antes da carga evita a categoria que vai ao ar sem imagem, sem descrição e com título genérico.",
+              "tips": [
+                "Escreva o título de SEO com o termo que o cliente digita, não com o nome interno do setor de compras: Porcelanato para Piso e Parede rende mais que Linha PP-02.",
+                "Padronize os caminhos em minúsculas, sem acento e com hífen. Trocar caminho depois da publicação exige redirecionamento."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Migrar em lote e redirecionar o que mudou",
+              "guidance": "Faça a carga da nova árvore e a reassociação dos SKUs pela importação em lote da plataforma, num horário de baixo movimento. Em seguida, aplique redirecionamentos permanentes de cada caminho antigo para o novo equivalente e rode a conferência: total de SKUs por categoria antes e depois, categorias vazias e produtos sem categoria.",
+              "tips": [
+                "A documentação de e-commerce do Google Search Central lembra que a página de categoria deve ter links para todos os seus produtos; se isso não for possível, use sitemap ou feed para avisar o que o rastreador não encontraria sozinho.",
+                "Produto sem categoria depois da carga não aparece em nenhum menu. A consulta de SKUs órfãos é a primeira coisa a rodar."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que o catálogo vem antes do layout",
+      "highlights": [
+        {
+          "icon": "sitemap",
+          "title": "Navegação herda a árvore",
+          "text": "O menu, os breadcrumbs e as páginas de categoria são desenhados a partir da taxonomia. Árvore confusa gera menu confuso, por melhor que seja o CSS."
+        },
+        {
+          "icon": "search",
+          "title": "Busca entende links",
+          "text": "O Google descobre a estrutura da loja seguindo links do menu para categorias, das categorias para subcategorias e daí para produtos. Uma árvore limpa é também uma estrutura de SEO."
+        },
+        {
+          "icon": "list",
+          "title": "Filtro no lugar certo",
+          "text": "Atributos como cor, acabamento e marca funcionam melhor como filtro. O cliente compara tudo numa lista só em vez de pular entre categorias quase iguais."
+        }
+      ],
+      "closingText": "A Rede Construir+ agora tem uma árvore de categorias enxuta, cada categoria com nome, caminho, imagem e textos definidos, e os caminhos antigos redirecionados. Com a estrutura no lugar, o próximo passo é transformá-la no que o cliente efetivamente vê: o menu e a vitrine.",
+      "ctaTitle": "🗂️ Catálogo reorganizado!",
+      "ctaText": "A árvore nova está no ar e nenhum link antigo quebrou. Vamos mostrar essas categorias no menu header com imagem.",
+      "nextButtonText": "Ir para Módulo 1: Menu Header e Vitrine"
+    },
+    {
+      "id": 1,
+      "icon": "grid",
+      "title": "Menu Header e Vitrine",
+      "shortDescription": "Menu com imagem por categoria, navegação por ambiente e vitrine de campanha",
+      "introductionText": "Com a árvore definida, o menu header deixa de ser uma lista de textos e passa a mostrar uma imagem por categoria, para que o cliente reconheça o tipo de produto sem ler. Este módulo cobre a produção dessas imagens, o comportamento do menu no desktop e no mobile, as entradas por ambiente da casa e a vitrine de campanha, que muda a cada data sazonal e precisa de versões para cada tamanho de tela.",
+      "sections": [
+        {
+          "title": "🧭 O que o cliente vê primeiro",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Uma imagem por categoria no menu",
+              "code": "menu/pisos-e-revestimentos/porcelanatos-polidos.webp",
+              "guidance": "Produza uma imagem para cada categoria do menu com o mesmo enquadramento, fundo e proporção, mostrando o produto de forma reconhecível. Salve com o caminho da categoria no nome do arquivo e em formato leve, como WebP. A imagem passa a ser mais um parâmetro da categoria, preenchido na ficha do módulo anterior.",
+              "tips": [
+                "No benchmark da Baymard, 39% dos sites não têm thumbnails de subcategoria ou usam imagens difíceis de interpretar. Teste a imagem pequena: se alguém não acerta o tipo de produto em dois segundos, troque.",
+                "Nomear o arquivo pelo caminho da categoria facilita achar a imagem certa quando a categoria mudar de lugar."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Comportamento do menu no desktop e no mobile",
+              "guidance": "No desktop, deixe o cabeçalho de cada grupo clicável, levando à categoria-pai, destaque visualmente a seção em que o cliente está e aplique um pequeno atraso antes de abrir o menu por hover, para que ele não abra quando o mouse só está passando. No mobile, coloque as categorias de produto já no primeiro nível do menu, sem esconder atrás de um item genérico.",
+              "tips": [
+                "A Baymard recomenda um atraso de 300 a 500 ms no hover. Na mesma pesquisa, 62% dos sites não aplicam atraso e 31% não deixam os cabeçalhos do menu clicáveis.",
+                "Use links de verdade no menu, com href. O Google Search Central orienta a não depender de eventos JavaScript em outros elementos para navegação."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Navegação por ambiente",
+              "guidance": "Além das categorias, a Rede Construir+ oferece entradas por ambiente: cozinha, banheiro, área externa, varanda, piscina. Cada entrada abre uma seleção de produtos de várias categorias. Garanta que a imagem inspiracional do ambiente leve aos produtos que aparecem nela, e não a uma página genérica.",
+              "tips": [
+                "Segundo a Baymard, 64% dos sites não dão acesso direto aos produtos mostrados nas imagens inspiracionais. Ambiente sem link para os produtos é só decoração.",
+                "Mantenha a lista de ambientes curta. Mais de dez entradas transforma o atalho em um segundo menu para ler."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Vitrine de campanha em todos os tamanhos",
+              "code": "fullbanner-desktop.webp · fullbanner-mobile.webp",
+              "guidance": "Para cada campanha sazonal, como a semana de ofertas de inverno ou a Black Friday, prepare o conjunto completo de peças: banner principal em versão desktop e mobile, destaques por ambiente e o selo da campanha. Organize as peças em uma pasta por campanha e por ano, com nomes que digam onde cada imagem entra.",
+              "tips": [
+                "No mobile, evite carrossel com rotação automática; a Baymard recomenda seções estáticas. No desktop, rotação de 5 a 7 segundos e pausa quando o mouse está sobre o banner.",
+                "Ao fim da campanha, troque os banners e verifique se nenhum link da vitrine aponta para a página de ofertas encerrada."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que o menu merece um projeto próprio",
+      "highlights": [
+        {
+          "icon": "grid",
+          "title": "Reconhecer antes de ler",
+          "text": "Uma imagem clara por categoria reduz o esforço de quem chega sem saber o nome técnico do produto, o que é comum em material de construção."
+        },
+        {
+          "icon": "gauge",
+          "title": "Menu que não atrapalha",
+          "text": "Atraso no hover, cabeçalho clicável e escopo destacado parecem detalhes, mas são justamente os pontos em que a maioria das lojas falha."
+        },
+        {
+          "icon": "sync",
+          "title": "Vitrine que muda sem quebrar",
+          "text": "Com peças nomeadas por campanha e por tamanho de tela, trocar a vitrine vira rotina e não um dia de caça a arquivos."
+        }
+      ],
+      "closingText": "A loja da Rede Construir+ agora tem um menu com imagem por categoria, entradas por ambiente e uma vitrine pronta para cada campanha. Para colocar tudo isso no ar, é preciso mexer nos templates da loja, que é o assunto do próximo módulo.",
+      "ctaTitle": "🧭 Menu e vitrine prontos!",
+      "ctaText": "As peças estão definidas. Agora vamos abrir o código da loja e ver onde elas entram.",
+      "nextButtonText": "Ir para Módulo 2: Templates da Loja com Scriban"
+    },
+    {
+      "id": 2,
+      "icon": "laptop",
+      "title": "Templates da Loja com Scriban",
+      "shortDescription": "Storefront local, estrutura de pastas e templates em Scriban",
+      "introductionText": "Na Wake Commerce, a parte visual da loja fica no storefront: um repositório de arquivos HTML escritos em Scriban, a linguagem de template open-source escolhida pela plataforma por ser parecida com o Liquid. Este módulo mostra como rodar esse storefront na sua máquina, como as pastas se organizam, como ler e escrever Scriban e como usar arquivos de configuração para manter dados, como o diretório de lojas, fora do HTML.",
+      "sections": [
+        {
+          "title": "💻 Mexendo no código da loja",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Rodar o storefront localmente",
+              "guidance": "Siga a documentação da plataforma para configurar o storefront local e a extensão do VS Code. Com a loja rodando na sua máquina, você edita um template, salva e vê o resultado no navegador sem tocar no ambiente de produção. Trabalhe sempre numa cópia do repositório e só publique depois de conferir.",
+              "tips": [
+                "Antes de editar, abra a mesma página no local e em produção, lado a lado. Se já estiverem diferentes, resolva isso primeiro: você precisa partir de uma base igual.",
+                "Anote no início de cada tarefa quais arquivos vai alterar. Isso vira o roteiro do QA depois."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Entender a estrutura de pastas",
+              "code": "Assets · Blocks · Components · Configs · Pages · Queries · Snippets",
+              "guidance": "Percorra as pastas do repositório: Pages guarda as páginas, Components e Snippets guardam pedaços reaproveitados como o header e o card de produto, Queries guarda as consultas GraphQL que trazem dados, Configs reúne arquivos JSON de configuração como settings.json e pages.json, e Assets guarda CSS, scripts e imagens. Localize onde o menu header é montado antes de alterá-lo.",
+              "tips": [
+                "Quando não souber onde algo é desenhado, procure no repositório por um texto fixo que aparece na tela. Em poucos segundos você chega ao arquivo certo.",
+                "Mudança no header ou no rodapé afeta todas as páginas. Trate como alteração de alto impacto e confira mais telas no QA."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Ler e escrever Scriban",
+              "code": "{{ for categoria in categorias }} ... {{ end }}",
+              "guidance": "Em Scriban, tudo que é lógica fica entre chaves duplas. Use for para percorrer as categorias do menu, if para mostrar a imagem só quando ela existe e pipes para formatar valores, como em nome | string.truncate 30. Reescreva o trecho do menu para que cada item mostre a imagem da categoria, o nome e o link.",
+              "tips": [
+                "Scriban fecha blocos com end, não com endfor ou endif como no Liquid. É o erro mais comum de quem vem do Liquid.",
+                "A plataforma documenta uma forma de imprimir valores para depuração. Use para ver o que um objeto contém antes de supor o nome de um campo."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Usar o objeto store e os arquivos de configuração",
+              "code": "Configs/settings.json",
+              "guidance": "A Wake injeta automaticamente em todas as páginas um objeto chamado store, com informações de ambiente, configuração e URLs da loja. Combine isso com dados guardados em arquivos de configuração: o diretório de lojas da Rede Construir+, com cidade, endereço e horário de cada unidade, pode viver num JSON e ser lido pelo template, em vez de ficar escrito à mão no HTML.",
+              "tips": [
+                "Dado que muda com frequência, como horário de loja, deve ficar em configuração. Assim a atualização é editar um valor, não procurar texto em vários templates.",
+                "Ao editar um JSON grande, use a busca do editor pelo nome da cidade e valide o arquivo antes de salvar. Uma vírgula a mais derruba a página."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Publicar com segurança",
+              "guidance": "Antes de publicar, liste os arquivos alterados, rode as páginas afetadas no local em desktop e mobile e compare com produção. Publique em horário de baixo movimento e confira imediatamente as mesmas páginas em produção. Mantenha a versão anterior acessível para voltar rápido se algo quebrar.",
+              "tips": [
+                "Publicar sexta à tarde é pedir para descobrir o erro no sábado com a loja vendendo.",
+                "Uma linha por publicação num registro simples, com data, arquivos e motivo, resolve metade das perguntas do tipo quem mudou isso."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que saber o código da plataforma",
+      "highlights": [
+        {
+          "icon": "tools",
+          "title": "Autonomia na plataforma",
+          "text": "Quem lê Scriban altera menu, vitrine e páginas sem abrir chamado para cada ajuste. A plataforma SaaS deixa de ser limite e vira ferramenta."
+        },
+        {
+          "icon": "folder",
+          "title": "Dado separado do layout",
+          "text": "Diretório de lojas e parâmetros em arquivos de configuração tornam a atualização segura e rápida, sem tocar no HTML."
+        },
+        {
+          "icon": "shield",
+          "title": "Teste antes do cliente",
+          "text": "O storefront local permite errar na sua máquina. O cliente só vê a versão que você já conferiu."
+        }
+      ],
+      "closingText": "O menu com imagem por categoria e o diretório de lojas da Rede Construir+ agora saem dos templates e da configuração, testados localmente antes de publicar. Falta a parte que dá mais volume de trabalho no dia a dia: páginas de campanha e captação, a conferência visual de tudo e a presença de cada loja no Google.",
+      "ctaTitle": "💻 Templates no ar!",
+      "ctaText": "Você já edita a loja com segurança. Vamos produzir landing pages em série e conferir cada tela.",
+      "nextButtonText": "Ir para Módulo 3: Landing Pages, QA de Layout e SEO Local"
+    },
+    {
+      "id": 3,
+      "icon": "globe",
+      "title": "Landing Pages, QA de Layout e SEO Local",
+      "shortDescription": "Páginas parametrizadas, conferência por capturas e presença local de cada loja",
+      "introductionText": "Uma rede de franquias produz landing pages o tempo todo: captação de franqueados, loja dentro de loja, cadastro de representantes, programa de indicação, campanhas com parceiros. Copiar e colar HTML para cada uma gera dezenas de páginas que envelhecem de forma diferente. Este módulo mostra como trabalhar com um template único e um dicionário de variáveis, como conferir o layout com capturas organizadas e como manter a página de categoria e o Perfil da Empresa de cada loja corretos na busca.",
+      "sections": [
+        {
+          "title": "🌐 Páginas em série, conferidas e encontráveis",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Template de landing page com dicionário de variáveis",
+              "code": "{{ lp_titulo }} · {{ lp_cta_texto }} · {{ lp_form_origem }}",
+              "guidance": "Monte uma única base de landing page com marcadores no lugar de tudo que muda entre páginas: título, subtítulo, imagem de destaque, texto do botão, campos do formulário e origem do lead. Em paralelo, mantenha uma planilha de dicionário de variáveis com nome, descrição, tipo, exemplo e em quais páginas cada variável é usada. Cada nova página passa a ser uma linha de valores, não um arquivo copiado.",
+              "tips": [
+                "Padronize os nomes das páginas com número e assunto, como lp-01-seja-um-franqueado. A lista de pastas vira o índice das páginas.",
+                "Variável que aparece em uma página só provavelmente é conteúdo fixo daquela página e não precisa entrar no dicionário."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Páginas de captação e campanha da Rede Construir+",
+              "guidance": "Gere a partir do template as páginas da rede fictícia: Seja um Franqueado, Loja dentro de Loja, Cadastro de Representantes, Programa de Indicação e uma campanha com um clube de futebol fictício, o Atlético Serrano. Para cada uma, defina o objetivo, o formulário mínimo e o valor de origem que identifica de onde veio o contato.",
+              "tips": [
+                "Peça só o que vai ser usado no primeiro contato. Cada campo a mais no formulário é um motivo a mais para desistir.",
+                "Campanha com parceiro tem data para acabar. Decida antes o que a página mostra depois do encerramento, para não deixar uma página de erro no lugar."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "QA de layout com capturas organizadas",
+              "code": "AAAA-MM-DD_pagina_largura_estado.png",
+              "guidance": "Para cada página alterada, capture a tela em pelo menos três larguras, por exemplo 375, 768 e 1440 pixels, e nos estados relevantes: menu aberto, formulário com erro, mensagem de sucesso. Nomeie os arquivos por data, página, largura e estado e registre cada defeito numa planilha com a captura, o que se esperava e o que apareceu. Numa rodada grande, como a troca do menu, isso facilmente passa de cem capturas.",
+              "tips": [
+                "Capture a mesma tela antes e depois da alteração. A comparação lado a lado mostra o que mudou sem querer.",
+                "Inclua no QA a página de erro 404 e a página de ofertas encerrada. São as telas que ninguém lembra de conferir."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "SEO da página de categoria",
+              "guidance": "Revise as páginas das categorias principais: título e meta descrição com o termo que o cliente busca, texto curto de abertura acima da lista de produtos, links rastreáveis para subcategorias e produtos e destaque das categorias mais importantes a partir da página inicial. Use uma ferramenta de pesquisa de palavras-chave para escolher os termos de cada categoria.",
+              "tips": [
+                "O Google Search Central explica que quanto mais links internos apontam para uma página, maior tende a ser a importância relativa dela no site. Ligue as categorias que vendem mais a partir da home e das newsletters.",
+                "Produto que só aparece na busca interna da loja pode não ser encontrado pelo Google, porque o rastreador geralmente não preenche caixas de pesquisa."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Perfil da Empresa no Google de cada loja",
+              "guidance": "Cada unidade da Rede Construir+ tem seu Perfil da Empresa no Google. Revise o nome, que deve ser igual em todas as unidades da rede, o endereço completo no padrão rua, número, bairro, cidade e CEP, a categoria, o horário, o telefone local e o link para a página daquela loja no diretório. Para dar autonomia ao franqueado, adicione-o pela opção Pessoas e acesso com o nível de gerente, que permite editar e responder avaliações, mas não excluir a ficha nem gerenciar usuários.",
+              "tips": [
+                "As diretrizes do Google proíbem acrescentar ao nome slogans, códigos de loja, horários ou localização. Unidade Centro entra no endereço, não no nome.",
+                "Mudança de endereço não deve partir só do franqueado: confirme com a área responsável pela rede antes de editar a ficha e o diretório de lojas. Alterações costumam passar por análise do Google antes de aparecer."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que fechar o ciclo fora da loja",
+      "highlights": [
+        {
+          "icon": "list",
+          "title": "Uma base, muitas páginas",
+          "text": "Template e dicionário de variáveis transformam cada nova landing page em preenchimento de valores e mantêm todas com o mesmo padrão de código e de formulário."
+        },
+        {
+          "icon": "search",
+          "title": "Defeito com evidência",
+          "text": "Captura nomeada por data, página e largura transforma o QA de opinião em registro: qualquer pessoa vê o problema e confere a correção."
+        },
+        {
+          "icon": "globe",
+          "title": "A loja física também é busca",
+          "text": "Para uma rede com lojas de rua, a ficha de cada unidade no Google é tão vitrine quanto a home do site. Dado errado ali manda o cliente para o endereço errado."
+        }
+      ],
+      "closingText": "Você percorreu o ciclo completo de manutenção de uma loja virtual: reorganizou o catálogo, transformou a árvore em menu com imagem, editou os templates da loja em Scriban, produziu landing pages a partir de um template com dicionário de variáveis, conferiu o layout com capturas e cuidou da presença de cada loja na busca. É o conjunto de tarefas que aparece toda semana para quem trabalha com front-end de e-commerce.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "A Rede Construir+ tem catálogo organizado, menu novo, páginas de campanha e lojas corretas no Google. O próximo passo natural é medir: ligar essas páginas a métricas de navegação e conversão.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Na recategorização, acabamento polido ou acetinado de um porcelanato deve virar o quê?",
+      "explanation": "Acabamento é um atributo que se aplica a vários produtos do mesmo tipo, então deve ser filtro dentro da categoria Porcelanatos. Criar categorias paralelas para cada acabamento obriga o cliente a visitar várias listas para comparar itens parecidos, um erro que a Baymard encontrou em 79% dos sites avaliados.",
+      "options": [
+        {
+          "text": "Um filtro dentro da categoria",
+          "isCorrect": true
+        },
+        {
+          "text": "Uma categoria de primeiro nível para cada acabamento",
+          "isCorrect": false
+        },
+        {
+          "text": "Uma página de campanha separada",
+          "isCorrect": false
+        },
+        {
+          "text": "Uma palavra no nome de cada SKU, sem filtro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Para que serve a coluna com o caminho antigo da categoria na planilha de-para?",
+      "explanation": "Os caminhos antigos são a base da lista de redirecionamentos permanentes para os caminhos novos. Sem ela, links salvos, resultados de busca e campanhas antigas passam a cair em página de erro depois da migração.",
+      "options": [
+        {
+          "text": "Montar os redirecionamentos dos caminhos antigos para os novos",
+          "isCorrect": true
+        },
+        {
+          "text": "Calcular o preço dos produtos na nova categoria",
+          "isCorrect": false
+        },
+        {
+          "text": "Definir a cor do menu header",
+          "isCorrect": false
+        },
+        {
+          "text": "Não tem uso depois da migração",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Segundo o Google Search Central, como o Google entende a estrutura de uma loja virtual?",
+      "explanation": "A documentação de e-commerce explica que o Google geralmente não usa a estrutura das URLs para entender o site; ele segue os links entre páginas, do menu para as categorias, das categorias para subcategorias e daí para os produtos.",
+      "options": [
+        {
+          "text": "Pelos links entre as páginas, do menu às categorias e aos produtos",
+          "isCorrect": true
+        },
+        {
+          "text": "Apenas pela estrutura de pastas da URL",
+          "isCorrect": false
+        },
+        {
+          "text": "Pela busca interna da loja, que o rastreador preenche",
+          "isCorrect": false
+        },
+        {
+          "text": "Pela quantidade de imagens em cada página",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Qual atraso a Baymard recomenda antes de abrir um menu suspenso por hover?",
+      "explanation": "A recomendação é de 300 a 500 ms, para que o menu não abra quando o mouse só está passando a caminho de outro ponto da página. Sem atraso, o cliente abre categorias por acidente; com atraso longo demais, o menu parece travado.",
+      "options": [
+        {
+          "text": "De 300 a 500 milissegundos",
+          "isCorrect": true
+        },
+        {
+          "text": "Nenhum atraso: o menu deve abrir instantaneamente",
+          "isCorrect": false
+        },
+        {
+          "text": "De 2 a 3 segundos",
+          "isCorrect": false
+        },
+        {
+          "text": "O menu só deve abrir com clique duplo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "O que torna uma imagem de categoria adequada para o menu header?",
+      "explanation": "A imagem precisa permitir reconhecer o tipo de produto de relance, com enquadramento e proporção padronizados entre as categorias. Imagem decorativa, de campanha ou com texto pequeno não ajuda quem procura um produto; a Baymard aponta que 39% dos sites não têm thumbnails de subcategoria ou usam imagens difíceis de interpretar.",
+      "options": [
+        {
+          "text": "Mostrar o tipo de produto de forma reconhecível de relance, com padrão visual entre categorias",
+          "isCorrect": true
+        },
+        {
+          "text": "Ser a mesma imagem da campanha do mês para todas as categorias",
+          "isCorrect": false
+        },
+        {
+          "text": "Conter o nome da categoria escrito em letras pequenas",
+          "isCorrect": false
+        },
+        {
+          "text": "Ter a maior resolução possível, sem compressão",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Como deve funcionar a imagem inspiracional de um ambiente, como uma cozinha montada?",
+      "explanation": "A imagem de ambiente deve levar aos produtos que aparecem nela, por uma página ou camada própria. A Baymard encontrou que 64% dos sites não fazem isso, e o cliente fica sem caminho entre a inspiração e a compra.",
+      "options": [
+        {
+          "text": "Dar acesso direto aos produtos que aparecem na imagem",
+          "isCorrect": true
+        },
+        {
+          "text": "Levar sempre para a página inicial",
+          "isCorrect": false
+        },
+        {
+          "text": "Ser apenas decorativa, sem link",
+          "isCorrect": false
+        },
+        {
+          "text": "Abrir a busca interna vazia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Em que linguagem são escritos os templates HTML do storefront da Wake Commerce?",
+      "explanation": "O storefront usa Scriban, uma linguagem de template open-source para .NET, escolhida pela plataforma por ter semelhanças com o Liquid. JSX, PHP e Handlebars não são a linguagem de template desse storefront.",
+      "options": [
+        {
+          "text": "Scriban",
+          "isCorrect": true
+        },
+        {
+          "text": "JSX",
+          "isCorrect": false
+        },
+        {
+          "text": "PHP",
+          "isCorrect": false
+        },
+        {
+          "text": "Handlebars",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Como se fecha um bloco for ou if em Scriban?",
+      "explanation": "Em Scriban, todo bloco termina com end, entre chaves duplas. Quem vem do Liquid costuma escrever endfor ou endif, o que gera erro. Fechar com chave simples ou com tag HTML não encerra o bloco.",
+      "options": [
+        {
+          "text": "Com {{ end }}",
+          "isCorrect": true
+        },
+        {
+          "text": "Com {{ endfor }} ou {{ endif }}, como no Liquid",
+          "isCorrect": false
+        },
+        {
+          "text": "Com uma tag HTML de fechamento",
+          "isCorrect": false
+        },
+        {
+          "text": "Não é preciso fechar blocos em Scriban",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Por que manter o diretório de lojas num arquivo de configuração em vez de escrito no HTML?",
+      "explanation": "Dados que mudam com frequência, como endereço e horário das unidades, ficam num lugar só e são lidos pelo template. Atualizar vira editar um valor, sem procurar texto em vários arquivos e sem risco de mexer no layout. Não tem relação com velocidade de carregamento nem com exigência de SEO.",
+      "options": [
+        {
+          "text": "Para atualizar dados que mudam sem mexer no layout nem procurar texto em vários templates",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque arquivos JSON carregam mais rápido que HTML",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o Google só lê endereços em JSON",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o Scriban não permite texto fixo em templates",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "O que é o dicionário de variáveis de um template de landing page?",
+      "explanation": "É a planilha que lista cada marcador do template, com descrição, tipo, exemplo e as páginas que o usam. Com ele, uma nova landing page passa a ser um conjunto de valores, e não um arquivo HTML copiado e editado à mão.",
+      "options": [
+        {
+          "text": "A lista de marcadores do template com descrição, tipo, exemplo e onde cada um é usado",
+          "isCorrect": true
+        },
+        {
+          "text": "Um glossário de termos de marketing para o time comercial",
+          "isCorrect": false
+        },
+        {
+          "text": "O arquivo CSS com as cores da marca",
+          "isCorrect": false
+        },
+        {
+          "text": "A lista de palavras-chave para anúncios pagos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Qual convenção de nomes ajuda mais numa rodada de QA com centenas de capturas?",
+      "explanation": "Nomear por data, página, largura e estado permite achar qualquer captura, comparar antes e depois e ligar cada defeito a uma evidência. Nomes padrão do sistema operacional ou numeração solta tornam impossível saber o que cada imagem mostra sem abri-la.",
+      "options": [
+        {
+          "text": "Data, página, largura de tela e estado no nome do arquivo",
+          "isCorrect": true
+        },
+        {
+          "text": "Manter o nome padrão gerado pelo sistema operacional",
+          "isCorrect": false
+        },
+        {
+          "text": "Numerar as capturas de 1 em diante, sem outra informação",
+          "isCorrect": false
+        },
+        {
+          "text": "Usar o nome de quem tirou a captura",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Uma unidade da Rede Construir+ quer o nome Construir+ Unidade Centro Aberto Domingo no Perfil da Empresa. O que dizem as diretrizes do Google?",
+      "explanation": "As diretrizes pedem que o nome corresponda ao nome real da empresa e proíbem acrescentar slogans, horários, códigos de loja ou localização. Em redes, todas as unidades devem usar o mesmo nome; a localização entra no endereço e o horário no campo próprio.",
+      "options": [
+        {
+          "text": "O nome deve ser só o nome real da rede, com localização e horário nos campos próprios",
+          "isCorrect": true
+        },
+        {
+          "text": "Pode usar, porque ajuda o cliente a achar a loja",
+          "isCorrect": false
+        },
+        {
+          "text": "Pode usar, desde que o franqueado seja gerente da ficha",
+          "isCorrect": false
+        },
+        {
+          "text": "Cada unidade deve ter um nome diferente para não se confundir com as outras",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "A manutenção completa da loja virtual fictícia da Rede Construir+: um catálogo recategorizado com planilha de-para e redirecionamentos, um menu header com imagem por categoria e entradas por ambiente, templates de loja em Scriban testados num storefront local, uma família de landing pages gerada a partir de um template com dicionário de variáveis, um relatório de QA com capturas organizadas e o roteiro de revisão do Perfil da Empresa de cada loja.",
+    "highlights": [
+      "Árvore de categorias com parâmetros completos e migração sem links quebrados",
+      "Menu header com imagem por categoria em templates Scriban",
+      "Landing pages parametrizadas, QA documentado e fichas locais revisadas"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "O e-commerce brasileiro faturou R$ 235,5 bilhões em 2025, alta de 15,3% sobre 2024, com 438,9 milhões de pedidos, e a projeção para 2026 é de R$ 259,8 bilhões, segundo a Abiacom, em dados divulgados em fevereiro de 2026. Cada loja nesse mercado depende de alguém que mantenha catálogo, menu e páginas funcionando toda semana.",
+      "E há espaço para fazer melhor: no benchmark de 2026 da Baymard, 61% dos sites no desktop e 65% no mobile tiveram desempenho medíocre ou ruim em página inicial e navegação por categorias, e a taxonomia de categorias foi o tema com pior resultado. Organizar categorias e menus não é acabamento; é onde a maioria das lojas ainda perde o cliente."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Redes de lojas e franquias",
+        "description": "Loja virtual somada a unidades físicas, cada uma com página local e ficha no Google."
+      },
+      {
+        "label": "Lojas em plataformas SaaS",
+        "description": "Storefronts com templates editáveis, em que o front-end ajusta layout sem depender do suporte."
+      },
+      {
+        "label": "Varejo com catálogo grande",
+        "description": "Material de construção, casa, eletro e moda, em que a árvore de categorias define a navegação."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Dev front-end entrando em e-commerce",
+        "description": "Sabe HTML, CSS e JavaScript e vai cuidar de uma loja já no ar."
+      },
+      {
+        "label": "Quem mantém uma loja em plataforma SaaS",
+        "description": "Precisa entender o storefront e os templates para ganhar autonomia."
+      },
+      {
+        "label": "Analista de e-commerce ou growth",
+        "description": "Cuida de catálogo, campanhas e landing pages e quer método para fazer em escala."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Recategorização de catálogo, menus com imagem, templates de storefront, landing pages parametrizadas e gestão de fichas locais fazem parte da rotina de varejistas de todos os portes que vendem online, de redes de franquias com dezenas de unidades a lojas que operam só no digital. Plataformas SaaS como a Wake Commerce expõem o storefront em templates editáveis justamente para que equipes de front-end façam esse trabalho sem depender do fornecedor.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Wake Commerce — documentação do Storefront: Scriban, estrutura de pastas e variáveis injetadas",
+      "url": "https://wakecommerce.readme.io/docs/scriban"
+    },
+    {
+      "label": "Scriban — repositório oficial da linguagem de template (GitHub)",
+      "url": "https://github.com/scriban/scriban"
+    },
+    {
+      "label": "Baymard Institute — Homepage and Category Navigation UX Best Practices (benchmark 2026)",
+      "url": "https://baymard.com/research-articles/ecommerce-navigation-best-practice"
+    },
+    {
+      "label": "Google Search Central — Help Google understand your ecommerce site structure",
+      "url": "https://developers.google.com/search/docs/advanced/ecommerce/help-google-understand-your-ecommerce-site-structure?hl=en"
+    },
+    {
+      "label": "Ajuda do Perfil da Empresa no Google — Diretrizes para representar sua empresa no Google",
+      "url": "https://support.google.com/business/answer/3038177?hl=pt-BR"
+    },
+    {
+      "label": "Nosso Meio — Vendas online aceleram no Brasil e projeção é de R$ 259,8 bi em 2026 (dados Abiacom, fev/2026)",
+      "url": "https://nossomeio.com.br/vendas-online-aceleram-no-brasil-e-projecao-e-de-r-2598bi-em-2026/"
+    }
+  ]
+}

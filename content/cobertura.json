@@ -1,5 +1,5 @@
 {
-  "atualizadoEm": "2026-10-28",
+  "atualizadoEm": "2026-10-30",
   "referencias": [
     {
       "nome": "ACM/IEEE-CS/AAAI Computer Science Curricula 2023",
@@ -542,6 +542,24 @@
         }
       ],
       "observacao": "Virou o artigo como-organizar-evento-de-comunidade-tech, com link no codexperience. Usadas só a estrutura e as lições: sem valores de cotas, nomes de pessoas, empresas apoiadoras, local do BQ ou contatos."
+    },
+    {
+      "pasta": "hd/blogs-pdf-docs (DOC-001, DOC-002, DOC-035, DOC-050, DOC-052, DOC-053)",
+      "descricao": "Catálogo JSON, dicionário de tags HTML, e-book sobre aprender inglês, provas práticas de Excel e resumos de qualidade de atendimento",
+      "status": "publicado",
+      "destinos": [
+        {
+          "projeto": "learn-tech",
+          "recurso": "programas",
+          "ids": [
+            "2",
+            "4",
+            "701",
+            "405"
+          ]
+        }
+      ],
+      "observacao": "Programas reescritos com dados fictícios em 30/10/2026; as fontes de terceiros aparecem só nas fontes do programa."
     }
   ]
 }

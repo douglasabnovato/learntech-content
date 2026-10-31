@@ -4,7 +4,803 @@
   "category": "English",
   "categoryFilter": "english",
   "title": "Vocabulary for Developers: Termos Técnicos e Documentação",
-  "lessons": "20+ Lições",
-  "duration": "09hr 00min",
-  "access": "Acesso Livre"
+  "lessons": "16 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Iniciante/Intermediário",
+  "description": "O segundo passo da trilha de inglês para quem trabalha com tecnologia. Você aprende vocabulário técnico do jeito que ele aparece no trabalho — dentro de frases de documentação, changelogs e especificações —, desarma os falsos cognatos que mais confundem em TI, domina os verbos frasais do dia a dia de programação e monta um glossário pessoal revisado com repetição espaçada.",
+  "letslearn": [
+    "Coletar vocabulário técnico em frases completas, e não em palavras soltas",
+    "Reconhecer falsos cognatos comuns em TI, como actually, eventually, assume e support",
+    "Usar verbos frasais de programação, como set up, roll back e look up, e distinguir verbo de substantivo",
+    "Ler páginas de referência, changelogs e RFCs sabendo onde está a informação que importa",
+    "Manter um glossário pessoal vivo com revisões em intervalos crescentes"
+  ],
+  "curriculum": "Do termo solto ao vocabulário em contexto",
+  "about": "O programa continua de onde o English for Tech parou: você já tem uma rotina diária de input compreensível e já lê material técnico sem traduzir tudo. Aqui o foco passa a ser o vocabulário que esse material usa. A sequência começa pelo método de coleta — sempre a frase, nunca a palavra isolada —, passa pelos falsos cognatos que levam a erro de interpretação, pelos verbos frasais que aparecem em toda documentação e termina nos três tipos de texto que mais pedem precisão: página de referência, changelog e RFC. Tudo o que você encontra no caminho vai para um glossário pessoal com revisão espaçada. O programa seguinte da trilha, Job Interview Prep, usa esse vocabulário para falar sobre o próprio trabalho.",
+  "materials": [
+    "Modelo de glossário pessoal com campos de termo, frase original, fonte e significado",
+    "Tabela de falsos cognatos de TI com exemplos de documentação",
+    "Lista de verbos frasais de programação, com a forma de verbo e a de substantivo",
+    "Ficha de leitura de changelog e de RFC",
+    "Calendário de revisão espaçada"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Vocabulário em Contexto",
+      "lessonsCount": 3,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Falsos Cognatos em TI",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Verbos Frasais de Programação",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Lendo Docs, Changelogs e RFCs",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "English",
+    "mainTitle": "Aprenda o vocabulário técnico dentro das frases em que ele aparece — e guarde o que aprendeu.",
+    "introductionParagraphs": [
+      {
+        "title": "Palavra solta não fica",
+        "text": "Lista de palavras com tradução ao lado parece produtiva e some da memória em uma semana. O que fica é a palavra **dentro de uma frase que você entendeu**, de preferência uma frase que você vai encontrar de novo. Por isso, neste programa, a unidade de estudo é o trecho de documentação, e não o verbete do dicionário."
+      },
+      {
+        "title": "O inglês técnico tem armadilhas próprias",
+        "text": "Quem fala português lê inglês técnico com uma vantagem enorme — boa parte do vocabulário vem do latim — e com um risco do mesmo tamanho: palavras que parecem conhecidas e significam outra coisa. *Actually* não é atualmente, *eventually* não é eventualmente e *assume* quase nunca é assumir. Um erro desses muda o sentido de uma instrução inteira."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não é curso de gramática nem lista de mil termos para decorar. Ele ensina a coletar, entender e revisar o vocabulário que **o seu próprio material de trabalho** traz, com um glossário que cresce junto com você e continua útil nos programas seguintes da trilha."
+      }
+    ],
+    "courseAboutTitle": "O segundo programa da trilha de inglês",
+    "courseAboutDescription": "Depois de montar o hábito de leitura e escuta no English for Tech, este é o programa que dá precisão a essa leitura. Você passa a reconhecer os termos que se repetem em qualquer documentação, a desconfiar das palavras que parecem fáceis demais e a ler changelogs e especificações com o cuidado que eles pedem. O resultado concreto é um glossário pessoal com frases reais, revisado em intervalos crescentes, que você continua alimentando depois do programa.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Vocabulário em Contexto",
+        "items": [
+          {
+            "label": "A frase como unidade",
+            "description": "Por que coletar o trecho inteiro, com as palavras que andam junto do termo."
+          },
+          {
+            "label": "Famílias de palavras",
+            "description": "Configure, configuration, configurable: aprender uma e reconhecer várias."
+          },
+          {
+            "label": "Glossário pessoal",
+            "description": "Os campos de cada entrada e a regra para decidir o que entra."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Falsos Cognatos em TI",
+        "items": [
+          {
+            "label": "Actually e eventually",
+            "description": "As duas palavras de tempo e certeza que mais confundem leitores brasileiros."
+          },
+          {
+            "label": "Assume, realize, pretend",
+            "description": "Verbos de raciocínio que parecem portugueses e não são."
+          },
+          {
+            "label": "Termos que parecem óbvios",
+            "description": "Deprecated, default, legacy e support no sentido que a documentação usa."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Verbos Frasais de Programação",
+        "items": [
+          {
+            "label": "Verbo ou substantivo",
+            "description": "Set up e setup, log in e login, roll back e rollback."
+          },
+          {
+            "label": "Ciclo de vida e investigação",
+            "description": "Spin up, tear down, look up, figure out, track down."
+          },
+          {
+            "label": "Mudanças e lançamentos",
+            "description": "Roll out, fall back, opt in, phase out."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Lendo Docs, Changelogs e RFCs",
+        "items": [
+          {
+            "label": "Anatomia da página de referência",
+            "description": "Syntax, Parameters, Return value, Exceptions: onde está cada resposta."
+          },
+          {
+            "label": "Changelog e versão",
+            "description": "Added, Deprecated, Removed, breaking change e o número de versão."
+          },
+          {
+            "label": "MUST, SHOULD, MAY",
+            "description": "As palavras de requisito das especificações e a revisão espaçada do glossário."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para aplicar no material que você já lê no trabalho. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "search",
+      "title": "Vocabulário em Contexto",
+      "shortDescription": "A frase como unidade de estudo e o glossário que guarda o que você aprende",
+      "introductionText": "Vocabulário técnico tem uma vantagem sobre o vocabulário geral: ele se repete muito. As mesmas poucas centenas de termos aparecem em quase toda documentação, em qualquer linguagem ou ferramenta. O problema é que estudar esses termos isolados não funciona — você reconhece a palavra na lista e não a reconhece no texto. Neste módulo você monta o método de coleta: sempre a frase inteira, sempre com a fonte, sempre com o significado escrito em palavras simples.",
+      "sections": [
+        {
+          "title": "🔎 Coletando vocabulário do jeito certo",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Colete a frase, não a palavra",
+              "code": "Returns null if no match is found.",
+              "guidance": "Abra a documentação de algo que você usa nesta semana e copie três frases que tenham um termo que você não domina. Copie a frase inteira, não só o termo. Repare nas palavras que andam junto: em inglês técnico se diz throw an exception, return a value, pass an argument — trocar o verbo por um sinônimo deixa a frase estranha. Essas combinações fixas são o que a frase guarda e a palavra solta perde.",
+              "tips": [
+                "Se a frase é longa demais, corte nas bordas, mas mantenha o verbo e o complemento do termo. 'Pass an argument to the function' ensina mais que 'argument'."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Famílias de palavras",
+              "code": "configure → configuration → configurable",
+              "guidance": "Muitos termos técnicos chegam em família: um verbo, um substantivo e um adjetivo com a mesma raiz. Configure, configuration, configurable; deploy, deployment, deployable; require, requirement, required. Ao anotar um termo, escreva ao lado os outros membros da família que você já viu. Os sufixos se repetem: -tion e -ment costumam formar substantivo, -able indica que algo pode sofrer a ação, -ed muitas vezes vira adjetivo em documentação (required, optional, deprecated).",
+              "tips": [
+                "O sufixo -able é um atalho de leitura: iterable é o que pode ser iterado, callable é o que pode ser chamado, serializable é o que pode ser serializado."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Monte o glossário pessoal",
+              "guidance": "Crie o glossário em uma planilha ou em um aplicativo de flashcards com repetição espaçada. Cada entrada tem cinco campos: o termo, a frase original, o link de onde veio, o significado explicado em inglês simples e, só se for necessário, a tradução. Comece com as frases que você coletou no passo 1. A regra para entrar no glossário é simples: o termo apareceu no seu material de trabalho e você não o entendeu de primeira.",
+              "tips": [
+                "Escrever o significado em inglês simples, em vez de traduzir, obriga você a entender o termo. Glossários técnicos como o da MDN são bons modelos de definição curta."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que estudar vocabulário em contexto",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Reconhecer onde importa",
+          "text": "Você vai encontrar o termo dentro de uma frase, não em uma lista. Estudá-lo na frase treina exatamente o reconhecimento que a leitura de documentação exige."
+        },
+        {
+          "icon": "grid",
+          "title": "Uma raiz, várias palavras",
+          "text": "Quem conhece as famílias de palavras e os sufixos mais comuns entende termos novos sem dicionário, porque a raiz já é conhecida."
+        },
+        {
+          "icon": "folder",
+          "title": "O material vem do seu trabalho",
+          "text": "Um glossário feito com as frases da sua própria stack tem uma vantagem que nenhuma lista pronta tem: você vai rever esses termos no trabalho, e cada reencontro reforça a memória."
+        }
+      ],
+      "closingText": "Seu método de coleta está pronto e o glossário já tem as primeiras entradas. Antes de enchê-lo, vale aprender a desconfiar das palavras que parecem fáceis demais — os falsos cognatos que levam o leitor brasileiro a entender o contrário do que está escrito.",
+      "ctaTitle": "🔎 Glossário iniciado!",
+      "ctaText": "Você já coleta vocabulário em frases e com fonte. Agora vamos para as palavras que enganam justamente por parecerem conhecidas.",
+      "nextButtonText": "Ir para Módulo 1: Falsos Cognatos em TI"
+    },
+    {
+      "id": 1,
+      "icon": "shield",
+      "title": "Falsos Cognatos em TI",
+      "shortDescription": "As palavras que parecem português e mudam o sentido da instrução",
+      "introductionText": "Falso cognato é a palavra que se parece com uma palavra do português e tem outro significado. Em conversa, o erro costuma ser só engraçado; em documentação, ele muda a instrução. Ler 'this guide assumes you have Node installed' como 'este guia assume que você tem o Node' parece quase certo, mas o sentido é 'este guia parte do princípio de que o Node já está instalado' — ou seja, ninguém vai ensinar a instalar. Este módulo reúne os falsos cognatos que mais aparecem em texto técnico e mostra cada um em uma frase típica.",
+      "sections": [
+        {
+          "title": "🛡️ Palavras que enganam",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Actually e eventually: tempo e certeza",
+              "code": "The cache is eventually consistent.",
+              "guidance": "Actually significa na verdade, de fato — e costuma introduzir uma correção: 'this function actually returns a copy'. Atualmente, em inglês, é currently. Eventually significa no fim, com o tempo, mais cedo ou mais tarde; eventualmente, no sentido de de vez em quando, é occasionally. Em sistemas distribuídos, eventually consistent descreve dados que podem divergir por um tempo e acabam convergindo — não dados que só às vezes ficam consistentes.",
+              "tips": [
+                "Teste rápido: troque eventually por 'no fim' na frase. Se fizer sentido, você leu certo. Se precisar de 'às vezes', a palavra que o texto deveria usar era occasionally."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Assume, realize, pretend: verbos de raciocínio",
+              "code": "This guide assumes basic knowledge of Git.",
+              "guidance": "Assume, em documentação, quase sempre significa supor, partir do princípio: a frase avisa o que o texto não vai explicar. Assumir uma responsabilidade é take on ou take over. A exceção conhecida é assume a role, em serviços de nuvem, que é de fato assumir um papel de permissão. Realize é perceber, dar-se conta; realizar uma tarefa é perform ou carry out. Pretend é fingir; pretender é intend ou plan to.",
+              "tips": [
+                "Quando ler 'we assume', procure logo depois o pré-requisito. É a frase que diz o que você precisa saber antes de continuar."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Library, support, resume, attend",
+              "code": "Supported browsers: ...",
+              "guidance": "Library é biblioteca — livraria, a loja, é bookstore. Support, em documentação, é ser compatível ou oferecer suporte: supported browsers são os navegadores em que a ferramenta funciona e é testada; suportar no sentido de tolerar é stand ou bear. Resume é retomar, continuar de onde parou — resume a download; resumir é summarize, e résumé, com acento, é currículo. Attend é comparecer, participar; atender o telefone é answer, atender um cliente é serve.",
+              "tips": [
+                "Na sua tabela de falsos cognatos, anote sempre as duas direções: o que a palavra inglesa significa e qual palavra inglesa expressa o sentido que você imaginou."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Deprecated, default, legacy: termos que parecem óbvios",
+              "code": "This method is deprecated and will be removed in v3.",
+              "guidance": "Deprecated não significa removido: o recurso ainda funciona, mas o uso é desaconselhado, normalmente porque vai deixar de existir. O guia de estilo de documentação do Google insiste nessa diferença. Default é o valor padrão, o que vale quando você não informa nada — by default é por padrão, sem relação com defeito. Legacy é o código ou sistema antigo que continua em uso e precisa ser mantido; não é herança no sentido de orientação a objetos, que se chama inheritance.",
+              "tips": [
+                "Ao ler deprecated, procure na mesma frase a alternativa: 'use X instead'. A documentação quase sempre indica o substituto."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que falsos cognatos importam em TI",
+      "highlights": [
+        {
+          "icon": "shield",
+          "title": "Instrução lida errado",
+          "text": "Um falso cognato não deixa a frase incompreensível: deixa a frase com outro sentido que parece fazer sentido. É o tipo de erro que você não percebe que cometeu."
+        },
+        {
+          "icon": "sync",
+          "title": "As duas direções",
+          "text": "Saber que eventually não é eventualmente resolve a leitura. Saber que eventualmente é occasionally resolve a escrita — e evita confundir quem lê sua mensagem."
+        },
+        {
+          "icon": "list",
+          "title": "Lista curta, efeito grande",
+          "text": "Uma dúzia de palavras responde pela maioria das confusões em texto técnico. Vale mais dominar essas a fundo do que conhecer uma lista longa por cima."
+        }
+      ],
+      "closingText": "Você já desconfia das palavras certas e tem uma tabela com as duas direções de cada falso cognato. O próximo obstáculo é de outro tipo: verbos simples que, combinados com uma preposição, ganham um sentido que nenhum dos dois tem sozinho.",
+      "ctaTitle": "🛡️ Armadilhas desarmadas!",
+      "ctaText": "Os falsos cognatos mais comuns já estão no seu glossário. Agora vamos para os verbos frasais que aparecem em toda documentação.",
+      "nextButtonText": "Ir para Módulo 2: Verbos Frasais de Programação"
+    },
+    {
+      "id": 2,
+      "icon": "tools",
+      "title": "Verbos Frasais de Programação",
+      "shortDescription": "Set up, roll back, look up e a diferença entre verbo e substantivo",
+      "introductionText": "Verbo frasal é a combinação de um verbo com uma partícula — up, down, out, back, in — que forma um sentido novo. Set é colocar; set up é configurar, preparar. Documentação técnica usa verbos frasais o tempo todo, e quase sempre com uma particularidade útil: o verbo vem separado e o substantivo vem junto. Você set up o ambiente e segue o setup guide; você roll back o deploy e faz um rollback. Neste módulo você organiza os verbos frasais mais comuns por situação de trabalho.",
+      "sections": [
+        {
+          "title": "🛠️ Verbos que mudam com a partícula",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Verbo separado, substantivo junto",
+              "code": "Set up your environment. / Setup guide",
+              "guidance": "Reúna no glossário os pares mais frequentes: set up e setup, log in e login, back up e backup, roll back e rollback, check out e checkout, sign up e signup. A regra que vale para quase todos: como ação, duas palavras; como coisa ou como adjetivo antes de um substantivo, uma palavra só. 'Back up your data before the upgrade' é a ação; 'restore from a backup' é a coisa.",
+              "tips": [
+                "O guia de estilo do Google recomenda sign in no lugar de log in como verbo, mas manda seguir o termo que a interface do produto usa. Ao ler, trate os dois como sinônimos."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Ciclo de vida de serviços",
+              "code": "spin up · start up · shut down · tear down",
+              "guidance": "Infraestrutura tem um vocabulário próprio para ligar e desligar coisas. Spin up é subir uma instância ou um ambiente rapidamente; start up e boot up são inicializar; shut down é desligar de forma ordenada; tear down é desmontar o que foi montado, como um ambiente de teste. Em testes automatizados, setUp e tearDown nomeiam justamente o que roda antes e depois de cada teste. Escreva uma frase sua para cada verbo, sobre um sistema que você conhece.",
+              "tips": [
+                "Tear down e shut down não são iguais: desligar um servidor é shut down; apagar o ambiente inteiro que você criou para um teste é tear down."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Investigação e busca",
+              "code": "look up · look into · figure out · track down",
+              "guidance": "Para procurar e entender, a partícula faz toda a diferença. Look up é consultar uma informação pontual — look up a word, e daí lookup table. Look into é investigar um problema com calma: 'I'll look into it'. Figure out é descobrir, entender como algo funciona. Find out é ficar sabendo de um fato. Narrow down é estreitar as possibilidades, e track down é rastrear até encontrar a causa. Leia três issues fechadas de um projeto que você usa e marque esses verbos.",
+              "tips": [
+                "'I'll look into it' é a resposta mais comum em issue e em chat de trabalho. Ela promete investigar, não promete resolver."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Mudanças e lançamentos",
+              "code": "roll out · roll back · fall back to · phase out",
+              "guidance": "Lançamentos têm seus próprios verbos frasais. Roll out é liberar aos poucos, para uma parte dos usuários de cada vez; roll back é reverter para a versão anterior. Fall back to é recorrer a uma alternativa quando a principal falha — daí fallback. Opt in e opt out são aderir e sair de algo opcional. Phase out é retirar de forma gradual, o que costuma vir depois de um aviso de deprecated. Monte uma linha do tempo fictícia de um recurso usando todos esses verbos em ordem.",
+              "tips": [
+                "Roll out e roll back são opostos de direção, mas não de tamanho: um rollout pode durar semanas, enquanto um rollback costuma ser feito às pressas."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que verbos frasais são essenciais",
+      "highlights": [
+        {
+          "icon": "tools",
+          "title": "Vocabulário de ação",
+          "text": "Instruções de instalação, configuração e operação são escritas com verbos frasais. Não reconhecê-los é não entender o que fazer."
+        },
+        {
+          "icon": "grid",
+          "title": "Uma regra, muitos pares",
+          "text": "A diferença entre set up e setup vale para dezenas de outros pares. Aprendida uma vez, ela ajuda na leitura e evita erro na escrita."
+        },
+        {
+          "icon": "bolt",
+          "title": "A fala do time",
+          "text": "Spin up, look into, roll back: são as expressões que aparecem em daily, em incidente e em chat. Elas serão a base dos próximos programas da trilha."
+        }
+      ],
+      "closingText": "Com falsos cognatos e verbos frasais no glossário, você já lê instruções com precisão. Falta aplicar isso aos textos que mais exigem atenção: a página de referência de uma API, o changelog de uma versão nova e a especificação escrita com palavras de requisito.",
+      "ctaTitle": "🛠️ Verbos frasais no lugar!",
+      "ctaText": "Você reconhece a ação certa em cada instrução. Agora vamos ler os três tipos de texto técnico que mais pedem precisão.",
+      "nextButtonText": "Ir para Módulo 3: Lendo Docs, Changelogs e RFCs"
+    },
+    {
+      "id": 3,
+      "icon": "list",
+      "title": "Lendo Docs, Changelogs e RFCs",
+      "shortDescription": "Páginas de referência, notas de versão, especificações e a revisão do glossário",
+      "introductionText": "Documentação técnica não é lida de cima para baixo como um artigo. Cada tipo de texto tem uma estrutura fixa, e saber essa estrutura é metade da leitura: na página de referência você vai direto à seção de que precisa, no changelog você procura as categorias que podem quebrar o seu código e na especificação você presta atenção a poucas palavras em maiúsculas que definem o que é obrigatório. O módulo termina com a parte que faz o vocabulário ficar: a revisão espaçada do glossário.",
+      "sections": [
+        {
+          "title": "📋 Lendo com a estrutura a seu favor",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "A voz da documentação",
+              "code": "Note: · Warning: · Prerequisites",
+              "guidance": "Guias de estilo de documentação, como o do Google para desenvolvedores, pedem frases diretas na segunda pessoa e no imperativo: 'Run the command', 'Click Save'. Também desaconselham please em instruções, palavras como easy e simply, e a abreviação e.g., trocada por for example. Saber disso ajuda a ler: o imperativo é o passo que você executa; Note, Caution e Warning sinalizam, em ordem crescente, o quanto ignorar aquele aviso pode custar; Prerequisites e Before you begin dizem o que precisa estar pronto antes.",
+              "tips": [
+                "Em uma página longa, leia primeiro só os títulos, os blocos de aviso e as frases no imperativo. Isso dá o esqueleto da tarefa antes dos detalhes."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Anatomia de uma página de referência",
+              "code": "Syntax · Parameters · Return value · Exceptions",
+              "guidance": "Abra a página de referência de um método na MDN em inglês, como Array.prototype.map(). A estrutura se repete em todas: Syntax mostra a assinatura; Parameters descreve cada argumento e diz se é optional; Return value diz o que volta; Exceptions lista os erros que podem ser lançados; depois vêm Description, Examples, Specifications e Browser compatibility. Responda três perguntas usando só a página: o que entra, o que sai e quando dá erro. Anote no glossário os termos novos que aparecerem.",
+              "tips": [
+                "Colchetes na seção Syntax indicam parâmetro opcional. A palavra optional ao lado do nome do parâmetro diz a mesma coisa por extenso."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Changelog e número de versão",
+              "code": "Added · Changed · Deprecated · Removed · Fixed · Security",
+              "guidance": "Muitos projetos organizam o changelog nessas seis categorias. Para quem atualiza uma dependência, as que mais importam são Removed e Changed, além das seções marcadas como breaking changes — mudanças que quebram compatibilidade. Relacione com o número de versão no formato MAJOR.MINOR.PATCH: pelo versionamento semântico, mudança incompatível sobe o MAJOR, funcionalidade nova compatível sobe o MINOR e correção compatível sobe o PATCH. Leia o changelog da última versão de uma biblioteca que você usa e escreva, em inglês, uma frase dizendo se é seguro atualizar.",
+              "tips": [
+                "Upgrade, bump e migrate aparecem juntos em notas de versão: atualizar, subir o número da versão e adaptar o código para a versão nova."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "MUST, SHOULD e MAY nas especificações",
+              "code": "The client MUST NOT send ...",
+              "guidance": "Especificações publicadas como RFC usam palavras de requisito definidas na RFC 2119, de 1997. MUST, REQUIRED e SHALL indicam obrigação absoluta; MUST NOT e SHALL NOT, proibição absoluta. SHOULD e RECOMMENDED indicam o que deve ser feito, a menos que haja um bom motivo e as consequências tenham sido avaliadas; SHOULD NOT é o inverso. MAY e OPTIONAL indicam algo realmente opcional. Escritas em maiúsculas, essas palavras têm esse sentido técnico. Leia um trecho de uma RFC e classifique cada requisito como obrigatório, recomendado ou opcional.",
+              "tips": [
+                "SHOULD não é sugestão leve. Ignorá-lo é permitido, mas exige justificativa — no código, vale um comentário explicando por que você não seguiu a recomendação."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Revisão espaçada do glossário",
+              "code": "1 dia → 3 dias → 7 dias → 14 dias → 30 dias",
+              "guidance": "Memória de vocabulário depende de revisão, e revisar na hora certa rende mais do que revisar muito. Na repetição espaçada, cada termo é revisto em intervalos crescentes: se você lembrou, o próximo intervalo aumenta; se esqueceu, o termo volta para o começo. Aplicativos de flashcards fazem esse cálculo sozinhos; numa planilha, basta uma coluna com a data da próxima revisão. Transforme as entradas do glossário em cartões com a frase original e o termo em lacuna, e reserve dez minutos da rotina diária para as revisões do dia.",
+              "tips": [
+                "Pode o glossário de vez em quando: termo que você acerta sempre e encontra toda semana no trabalho já não precisa de cartão. O espaço vai para os termos novos."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que ler pela estrutura",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Achar a resposta mais rápido",
+          "text": "Quem conhece a anatomia de uma página de referência vai direto ao parâmetro ou ao valor de retorno, em vez de ler a página inteira procurando."
+        },
+        {
+          "icon": "shield",
+          "title": "Atualizar sem susto",
+          "text": "Ler as categorias Removed, Changed e breaking changes antes de atualizar uma dependência evita descobrir a incompatibilidade em produção."
+        },
+        {
+          "icon": "gauge",
+          "title": "Vocabulário que fica",
+          "text": "Dez minutos de revisão espaçada por dia mantêm o glossário na memória com muito menos esforço do que releituras longas e esporádicas."
+        }
+      ],
+      "closingText": "Você agora coleta vocabulário em contexto, desconfia dos falsos cognatos, reconhece os verbos frasais de programação e lê páginas de referência, changelogs e especificações pela estrutura. O glossário pessoal, com revisão espaçada, é o que garante que esse vocabulário continue disponível — e ele segue com você para os próximos programas da trilha.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Seu vocabulário técnico tem método, contexto e revisão. O próximo passo da trilha é usar esse vocabulário em voz alta no Job Interview Prep.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Ao encontrar um termo técnico novo na documentação, o que deve ir para o glossário pessoal?",
+      "explanation": "A frase original, com a fonte e o significado em inglês simples, preserva as palavras que andam junto do termo e o contexto em que ele aparece. A palavra solta com tradução é fácil de anotar e difícil de reconhecer depois no texto. Copiar a página inteira ou só a tradução não ajuda na revisão.",
+      "options": [
+        {
+          "text": "A frase original em que o termo apareceu, com a fonte e o significado",
+          "isCorrect": true
+        },
+        {
+          "text": "Só a palavra e a tradução para o português",
+          "isCorrect": false
+        },
+        {
+          "text": "A página inteira da documentação, para reler depois",
+          "isCorrect": false
+        },
+        {
+          "text": "Apenas a tradução, sem a palavra em inglês",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "O que o sufixo -able indica em termos como iterable e callable?",
+      "explanation": "O sufixo -able indica que algo pode sofrer a ação do verbo: iterable é o que pode ser iterado e callable é o que pode ser chamado. Não indica tempo verbal, não forma substantivo de ação — papel de sufixos como -tion e -ment — e não tem relação com tipo numérico.",
+      "options": [
+        {
+          "text": "Que algo pode sofrer a ação do verbo",
+          "isCorrect": true
+        },
+        {
+          "text": "Que a ação já aconteceu no passado",
+          "isCorrect": false
+        },
+        {
+          "text": "O nome da ação, como configuration",
+          "isCorrect": false
+        },
+        {
+          "text": "Que o valor é um número",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Por que escrever o significado do termo em inglês simples, em vez de só traduzir?",
+      "explanation": "Explicar o termo com palavras simples obriga você a entender o conceito, e não só a trocar uma etiqueta por outra. A tradução pode ser útil como apoio, mas não substitui a compreensão. Não há exigência de aplicativo nem regra de que tradução esteja errada.",
+      "options": [
+        {
+          "text": "Porque obriga a entender o conceito, e não só trocar uma palavra por outra",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque traduzir termos técnicos é sempre errado",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque os aplicativos de flashcards não aceitam português",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque deixa o glossário mais curto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Em 'the replicas are eventually consistent', o que eventually significa?",
+      "explanation": "Eventually significa no fim, com o tempo: as réplicas podem divergir por um período, mas acabam convergindo. O sentido de eventualmente em português — de vez em quando — seria occasionally em inglês. Actually é que significa na verdade.",
+      "options": [
+        {
+          "text": "Com o tempo, no fim",
+          "isCorrect": true
+        },
+        {
+          "text": "De vez em quando, ocasionalmente",
+          "isCorrect": false
+        },
+        {
+          "text": "Atualmente, neste momento",
+          "isCorrect": false
+        },
+        {
+          "text": "Na verdade, de fato",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "A frase 'This tutorial assumes you have Docker installed' quer dizer que:",
+      "explanation": "Assume, nesse contexto, significa supor, partir do princípio. A frase avisa que o tutorial não vai ensinar a instalar o Docker: isso é pré-requisito. Não há promessa de instalação automática, nem de que o tutorial assume responsabilidade por algo.",
+      "options": [
+        {
+          "text": "O tutorial parte do princípio de que o Docker já está instalado",
+          "isCorrect": true
+        },
+        {
+          "text": "O tutorial vai instalar o Docker para você",
+          "isCorrect": false
+        },
+        {
+          "text": "O tutorial assume a responsabilidade pela instalação do Docker",
+          "isCorrect": false
+        },
+        {
+          "text": "O tutorial não funciona com Docker",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "A documentação diz que um método está deprecated. O que isso significa?",
+      "explanation": "Deprecated indica que o uso é desaconselhado, normalmente porque o recurso vai ser removido no futuro, mas ele ainda funciona. Removido é removed. O guia de estilo do Google para desenvolvedores pede justamente que deprecate não seja usado no sentido de removido. Não tem relação com desempenho nem com defeito.",
+      "options": [
+        {
+          "text": "Ainda funciona, mas o uso é desaconselhado e ele tende a ser removido",
+          "isCorrect": true
+        },
+        {
+          "text": "Já foi removido e não funciona mais",
+          "isCorrect": false
+        },
+        {
+          "text": "Está com defeito e precisa de correção",
+          "isCorrect": false
+        },
+        {
+          "text": "É mais lento que as alternativas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Qual frase usa a forma correta?",
+      "explanation": "Como ação, o verbo frasal vem separado: set up, back up, roll back. Como substantivo ou adjetivo, vem junto: setup guide, backup, rollback. Por isso 'Back up your files before the upgrade' está correta, e as outras trocam a forma de verbo pela de substantivo ou o contrário.",
+      "options": [
+        {
+          "text": "Back up your files before the upgrade.",
+          "isCorrect": true
+        },
+        {
+          "text": "Backup your files before the upgrade.",
+          "isCorrect": false
+        },
+        {
+          "text": "Follow the set up guide.",
+          "isCorrect": false
+        },
+        {
+          "text": "We did a roll back last night.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Em uma issue, alguém responde 'I'll look into it'. O que a pessoa prometeu?",
+      "explanation": "Look into é investigar. A resposta promete analisar o problema, não resolvê-lo nem fechá-lo. Look up seria consultar uma informação pontual, e nenhum dos dois verbos indica que a issue será fechada.",
+      "options": [
+        {
+          "text": "Investigar o problema",
+          "isCorrect": true
+        },
+        {
+          "text": "Corrigir o problema imediatamente",
+          "isCorrect": false
+        },
+        {
+          "text": "Consultar uma palavra no dicionário",
+          "isCorrect": false
+        },
+        {
+          "text": "Fechar a issue sem resposta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Qual é a diferença entre roll out e roll back?",
+      "explanation": "Roll out é liberar uma mudança, muitas vezes de forma gradual, para os usuários. Roll back é reverter para a versão anterior. Os dois têm forma de substantivo — rollout e rollback —, mas não têm relação com backup nem com ambiente local.",
+      "options": [
+        {
+          "text": "Roll out libera uma mudança; roll back reverte para a versão anterior",
+          "isCorrect": true
+        },
+        {
+          "text": "Roll out apaga a versão nova; roll back a instala",
+          "isCorrect": false
+        },
+        {
+          "text": "São sinônimos usados em empresas diferentes",
+          "isCorrect": false
+        },
+        {
+          "text": "Roll out faz backup; roll back restaura o backup",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Na página de referência de um método na MDN, onde você descobre o que o método devolve?",
+      "explanation": "A seção Return value descreve o que o método devolve. Parameters trata do que entra, Exceptions lista os erros que podem ser lançados e Browser compatibility mostra em quais navegadores ele funciona.",
+      "options": [
+        {
+          "text": "Return value",
+          "isCorrect": true
+        },
+        {
+          "text": "Parameters",
+          "isCorrect": false
+        },
+        {
+          "text": "Exceptions",
+          "isCorrect": false
+        },
+        {
+          "text": "Browser compatibility",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Segundo a RFC 2119, o que significa SHOULD em uma especificação?",
+      "explanation": "SHOULD, ou RECOMMENDED, indica o que deve ser feito, a menos que exista um motivo válido para não fazer e as consequências tenham sido avaliadas. Obrigação absoluta é MUST; algo realmente opcional é MAY; e proibição é MUST NOT.",
+      "options": [
+        {
+          "text": "Deve ser feito, salvo um motivo válido e com as consequências avaliadas",
+          "isCorrect": true
+        },
+        {
+          "text": "É uma obrigação absoluta, sem exceções",
+          "isCorrect": false
+        },
+        {
+          "text": "É totalmente opcional",
+          "isCorrect": false
+        },
+        {
+          "text": "É proibido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Segundo a Stack Overflow Developer Survey 2025, qual é o recurso mais usado para aprender a programar?",
+      "explanation": "Documentação técnica foi o recurso mais usado, por cerca de 68% dos respondentes no último ano, à frente de outros recursos online, do próprio Stack Overflow, de vídeos e de ferramentas de IA. Ler documentação em inglês com precisão é, portanto, parte central de aprender e trabalhar com tecnologia.",
+      "options": [
+        {
+          "text": "Documentação técnica",
+          "isCorrect": true
+        },
+        {
+          "text": "Vídeos",
+          "isCorrect": false
+        },
+        {
+          "text": "Ferramentas de IA para gerar código",
+          "isCorrect": false
+        },
+        {
+          "text": "Livros impressos",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "Um glossário técnico pessoal feito com frases reais do seu material de trabalho, organizado com campos de termo, frase original, fonte e significado, e transformado em cartões de revisão espaçada. Junto dele, uma tabela de falsos cognatos com as duas direções, uma lista de verbos frasais com forma de verbo e de substantivo e uma ficha de leitura para changelogs e especificações.",
+    "highlights": [
+      "Glossário pessoal com frases reais e revisão espaçada",
+      "Tabela de falsos cognatos de TI nas duas direções",
+      "Ficha de leitura de changelog e de RFC"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "Na Stack Overflow Developer Survey 2025, a documentação técnica aparece como o recurso mais usado para aprender a programar: cerca de 68% dos respondentes a usaram no último ano, à frente de fóruns e buscas (58,7%), do próprio Stack Overflow (51,4%), de vídeos (50%) e de ferramentas de IA (44%). O uso é alto em todas as faixas de idade.",
+      "A maior parte dessa documentação é escrita primeiro em inglês, e é nela que ficam os detalhes que importam: o parâmetro opcional, o aviso de deprecated, a mudança incompatível na versão nova. Ferramentas de tradução e assistentes ajudam, mas não resolvem a leitura de quem confunde eventually com eventualmente ou SHOULD com sugestão. Vocabulário técnico preciso é o que transforma a leitura rápida em leitura confiável."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Atualização de dependências",
+        "description": "Ler changelogs e notas de versão para decidir se é seguro atualizar."
+      },
+      {
+        "label": "Uso de APIs e bibliotecas",
+        "description": "Entender parâmetros, valores de retorno e avisos direto na página de referência."
+      },
+      {
+        "label": "Implementação de protocolos e padrões",
+        "description": "Separar o obrigatório do recomendado e do opcional em especificações."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem concluiu o English for Tech",
+        "description": "Já tem rotina de leitura e quer dar precisão ao vocabulário."
+      },
+      {
+        "label": "Quem lê documentação traduzindo",
+        "description": "Entende o geral, mas tropeça em termos que parecem conhecidos."
+      },
+      {
+        "label": "Quem esquece o que aprende",
+        "description": "Já anotou listas de palavras e quer um método de revisão que funcione."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Documentação de linguagens, frameworks, serviços de nuvem e APIs públicas é publicada primeiro em inglês, assim como changelogs de projetos de código aberto e as especificações que definem protocolos da internet. Times que trabalham com essas ferramentas leem esse material todos os dias, em qualquer stack e tamanho de empresa, e vocabulário técnico preciso é pré-requisito para escrever e falar sobre o trabalho em inglês.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "MDN Web Docs — Glossary of web terms (definições de termos usados na documentação da web)",
+      "url": "https://developer.mozilla.org/en-US/docs/Glossary"
+    },
+    {
+      "label": "Google developer documentation style guide — Word list (deprecate, e.g., please, just, easy, log in e sign in)",
+      "url": "https://developers.google.com/style/word-list"
+    },
+    {
+      "label": "RFC 2119 — Key words for use in RFCs to Indicate Requirement Levels (MUST, SHOULD, MAY)",
+      "url": "https://rfc-editor.org/rfc/rfc2119"
+    },
+    {
+      "label": "Stack Overflow Developer Survey 2025 — Developers: recursos usados para aprender a programar",
+      "url": "https://survey.stackoverflow.co/2025/developers"
+    },
+    {
+      "label": "VOA Learning English — Finally, Eventually, Ultimately: What's the Difference?",
+      "url": "https://learningenglish.voanews.com/amp/finally-eventually-ultimately-what-s-the-difference-/5922408.html"
+    }
+  ]
 }

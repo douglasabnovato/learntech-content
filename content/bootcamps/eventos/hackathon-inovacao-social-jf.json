@@ -10,7 +10,7 @@
   "status": "concluido",
   "content": {
     "longDescription": "Em 21 e 22 de janeiro de 2023, a Prefeitura de Juiz de Fora e o Moinho realizaram o Hackathon de Inovação Social. Equipes de estudantes, profissionais e empreendedores desenvolveram soluções tecnológicas para desafios de saúde e educação levantados com alunos da rede municipal, com mentorias e conversas com empreendedores. As melhores equipes receberam seis meses de acesso ao hub de inovação do Moinho. Douglas participou da maratona.",
-    "videoUrl": "",
+    "videoUrl": "https://www.youtube.com/embed/WW8qL1QAhOE",
     "gallery": [
       {
         "id": "hackathon-inovacao-social-jf-1",
@@ -35,6 +35,144 @@
         "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/4.webp",
         "type": "image",
         "alt": "Selfie no espaço do evento"
+      },
+      {
+        "id": "hackathon-inovacao-social-jf-5",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/5.webp",
+        "type": "image",
+        "alt": "Auditório cheio na abertura do hackathon no Moinho"
+      },
+      {
+        "id": "hackathon-inovacao-social-jf-6",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/6.webp",
+        "type": "image",
+        "alt": "Equipes trabalhando em mesas durante o hackathon"
+      },
+      {
+        "id": "hackathon-inovacao-social-jf-7",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/7.webp",
+        "type": "image",
+        "alt": "Participantes reunidos em roda durante uma das etapas do hackathon"
+      },
+      {
+        "id": "hackathon-inovacao-social-jf-8",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/8.webp",
+        "type": "image",
+        "alt": "Foto oficial com os participantes do hackathon"
+      },
+      {
+        "id": "hackathon-inovacao-social-jf-9",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/9.webp",
+        "type": "image",
+        "alt": "Crachá do Festival de Inovação Social"
+      },
+      {
+        "id": "hackathon-inovacao-social-jf-10",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/10.webp",
+        "type": "image",
+        "alt": "Chamada para a semana de design thinking que antecedeu o hackathon"
+      },
+      {
+        "id": "hackathon-inovacao-social-jf-11",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/11.webp",
+        "type": "image",
+        "alt": "Foto oficial com todos os participantes no auditório"
+      },
+      {
+        "id": "hackathon-inovacao-social-jf-12",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/12.webp",
+        "type": "image",
+        "alt": "Slide de checkpoint com as entregas esperadas das equipes"
+      },
+      {
+        "id": "hackathon-inovacao-social-jf-13",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/13.webp",
+        "type": "image",
+        "alt": "Kits de boas-vindas dos participantes sobre a mesa"
+      },
+      {
+        "id": "hackathon-inovacao-social-jf-14",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/14.webp",
+        "type": "image",
+        "alt": "Tela com o placar final do hackathon"
+      },
+      {
+        "id": "hackathon-inovacao-social-jf-15",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/15.webp",
+        "type": "image",
+        "alt": "Arte de divulgação com as datas e as inscrições do hackathon"
+      },
+      {
+        "id": "hackathon-inovacao-social-jf-16",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/16.webp",
+        "type": "image",
+        "alt": "Regras de formação das equipes: pelo menos três pessoas por time"
+      },
+      {
+        "id": "hackathon-inovacao-social-jf-17",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/17.webp",
+        "type": "image",
+        "alt": "Kits dos participantes separados antes da abertura"
+      },
+      {
+        "id": "hackathon-inovacao-social-jf-18",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/18.webp",
+        "type": "image",
+        "alt": "Lanches e frutas para a maratona"
+      },
+      {
+        "id": "hackathon-inovacao-social-jf-19",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/19.webp",
+        "type": "image",
+        "alt": "Equipes trabalhando nas mesas durante o primeiro dia"
+      },
+      {
+        "id": "hackathon-inovacao-social-jf-20",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/20.webp",
+        "type": "image",
+        "alt": "Equipe discutindo o protótipo em volta do notebook"
+      },
+      {
+        "id": "hackathon-inovacao-social-jf-21",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/21.webp",
+        "type": "image",
+        "alt": "Código aberto no notebook durante a madrugada da maratona"
+      },
+      {
+        "id": "hackathon-inovacao-social-jf-22",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/22.webp",
+        "type": "image",
+        "alt": "Abertura com a apresentação do desafio no telão"
+      },
+      {
+        "id": "hackathon-inovacao-social-jf-23",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/23.webp",
+        "type": "image",
+        "alt": "Participantes reunidos no auditório do Moinho"
+      },
+      {
+        "id": "hackathon-inovacao-social-jf-24",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/24.webp",
+        "type": "image",
+        "alt": "Pausa para descanso durante a virada da noite"
+      },
+      {
+        "id": "hackathon-inovacao-social-jf-25",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/25.webp",
+        "type": "image",
+        "alt": "Apresentação de uma equipe para a banca"
+      },
+      {
+        "id": "hackathon-inovacao-social-jf-26",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/26.webp",
+        "type": "image",
+        "alt": "Foto oficial com participantes, mentores e organização"
+      },
+      {
+        "id": "hackathon-inovacao-social-jf-27",
+        "url": "/media/bootcamps/eventos/hackathon-inovacao-social-jf/27.webp",
+        "type": "image",
+        "alt": "Anúncio das equipes premiadas no encerramento"
       }
     ],
     "curriculum": [
@@ -43,6 +181,23 @@
       "Prototipação em equipe",
       "Apresentação das soluções"
     ],
-    "officialLink": "https://tribunademinas.com.br/noticias/cidade/18-01-2023/pjf-e-moinho-realizam-hackathon-para-projetos-de-tecnologia-nas-areas-de-saude-e-educacao.html"
+    "officialLink": "https://tribunademinas.com.br/noticias/cidade/18-01-2023/pjf-e-moinho-realizam-hackathon-para-projetos-de-tecnologia-nas-areas-de-saude-e-educacao.html",
+    "paragraphs": [
+      "O Hackathon de Inovação Social foi uma maratona de dois dias realizada em 21 e 22 de janeiro de 2023 pela Prefeitura de Juiz de Fora em parceria com o Moinho, hub de inovação e empreendedorismo instalado num antigo moinho de farinha da zona norte da cidade, retrofitado para receber startups, empresas e atividades de educação.",
+      "O evento deu continuidade a uma agenda de inovação social na cidade: em novembro de 2022, o Moinho havia recebido o I Festival de Inovação Social de Juiz de Fora, com mesas sobre saúde e educação e apoio da Secretaria de Desenvolvimento Sustentável e Inclusivo, da Inovação e Competitividade (Sedic) da prefeitura. No hackathon, os desafios também foram de saúde e educação, levantados com alunos da rede municipal.",
+      "Equipes de estudantes, profissionais e empreendedores trabalharam em soluções tecnológicas para esses desafios, com mentorias, conversas com empreendedores, prototipação em equipe e apresentação final das soluções. As melhores equipes receberam seis meses de acesso ao hub de inovação do Moinho. Douglas participou da maratona.",
+      "Hackathons de inovação social costumam ser abertos a qualquer pessoa interessada, de programadores a profissionais de saúde, educação, design e negócios, porque resolver um problema público exige conhecer o contexto tanto quanto a tecnologia. A participação geralmente é gratuita e as equipes podem ser formadas antes ou durante o evento.",
+      "Para a carreira, a experiência ensina a trabalhar sob prazo curto, priorizar o essencial de um protótipo e explicar uma solução para quem não é técnico. Quando o desafio vem do poder público, há o ganho extra de entender como funcionam escolas e unidades de saúde, e de conhecer gestores e empreendedores interessados em levar as ideias adiante."
+    ],
+    "sources": [
+      {
+        "label": "Forbes Brasil: Juiz de Fora ganha hub de inovação e empreendedorismo (15/04/2021)",
+        "url": "https://forbes.com.br/forbes-tech/2021/04/juiz-de-fora-ganha-hub-de-inovacao-e-empreendedorismo/"
+      },
+      {
+        "label": "Tribuna de Minas: I Festival de Inovação Social de Juiz de Fora acontece nesta quinta e sexta (01/11/2022)",
+        "url": "https://tribunademinas.com.br/?p=500123"
+      }
+    ]
   }
 }

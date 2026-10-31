@@ -57,3 +57,14 @@ Depois de mudar `content/`, rode `npm run copias` (com os sites como pastas irm�
 
 - `learn-tech/areas.json`: áreas de atuação, com fontes obrigatórias. O build confere se `categorias` existe como `categoryFilter` de algum programa e se `cards[].categoria` existe em `paginas/categorias.json`.
 - `career/modelos-curriculo.json`: modelos de currículo **fictícios**. O build exige `ficticio: true`, telefone `(00) 00000-0000`, e-mail `@example.com` e links `https://www.example.com/`, para nenhum dado real entrar por engano.
+
+## Relacionados, tempo de leitura e imagens externas (29/10/2026)
+
+- `detalhe.relacionados`: lista de `{ tipo, id }` que liga o item a programas, artigos, eventos, empresas, vagas, perfis, ferramentas e hospedagens. O build confere se o alvo existe e publica o título e a URL prontos.
+- `readingTime` dos artigos: o build confere o valor (palavras ÷ 200, arredondado para cima) e mostra o valor certo quando estiver diferente.
+- `npm run midia:externa`: baixa para `media/` as imagens que ainda vêm do Pixabay e troca os links. Rode na sua máquina, depois `npm run validar && npm run copias`.
+- As regras editoriais estão em `docs/ecossistema/16-regras-editoriais.md`.
+
+## Processo de levas do hd (30/10/2026)
+
+Material novo no hd segue `docs/processo/README.md`. O registro permanente do acervo está em `content/acervo.json` (só hash e decisão, sem nomes de arquivo); `npm run hd:inventariar` mostra o que é novo.

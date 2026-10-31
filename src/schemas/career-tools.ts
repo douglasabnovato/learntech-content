@@ -8,6 +8,17 @@ export const thumbSchema = z.union([urlOuMidia, z.string().regex(/^\.\/assets\/[
 /* Vídeo incorporável do YouTube (formato /embed/ID ou youtube-nocookie). */
 export const videoYoutube = z.string().regex(/^https:\/\/www\.youtube(-nocookie)?\.com\/embed\/[\w-]{11}$/, "vídeo deve ser https://www.youtube.com/embed/<id>");
 
+/* Ligação de um item a outro conteúdo do ecossistema (programa, artigo, evento, empresa, ferramenta...).
+   No content/ basta { tipo, id }; o build confere se o alvo existe e publica também projeto, título e URL prontos. */
+export const tiposRelacionados = ["programas", "blog", "eventos", "empresas", "vagas", "perfis", "ferramentas", "hospedagens"] as const;
+export const relacionadoSchema = z.object({
+  tipo: z.enum(tiposRelacionados),
+  id: textoObrigatorio,
+  projeto: z.string().optional(),
+  titulo: z.string().optional(),
+  url: z.string().optional(),
+});
+
 /* Página de detalhe opcional de um item das listas: texto, imagens, vídeo e links oficiais.
    Item com detalhe precisa de slug (conferido no build); item sem detalhe continua abrindo o site oficial. */
 export const detalheSchema = z.object({
@@ -17,6 +28,7 @@ export const detalheSchema = z.object({
   video: videoYoutube.optional(),
   links: z.array(z.object({ label: textoObrigatorio, url: urlAbsoluta })).optional(),
   fontes: z.array(z.object({ label: textoObrigatorio, url: urlAbsoluta })).optional(),
+  relacionados: z.array(relacionadoSchema).optional(),
   atualizadoEm: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
 });
 

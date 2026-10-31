@@ -1,0 +1,846 @@
+{
+  "id": 1102,
+  "image": "https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_1280.jpg",
+  "category": "Marketing e CRM",
+  "categoryFilter": "marketing-crm",
+  "title": "E-mail HTML e Landing Pages Integradas ao CRM",
+  "lessons": "20 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Intermediário",
+  "description": "Da régua de e-mails transacionais à landing page cujo formulário grava direto na base do CRM. Você monta e-mails em HTML que aguentam os clientes de e-mail mais teimosos, personaliza com variáveis sem quebrar quando o dado falta, rastreia a origem de cada cadastro com UTM e fecha tudo com um checklist de QA antes do envio.",
+  "letslearn": [
+    "Montar e-mail HTML com tabelas e CSS inline que renderiza bem do Apple Mail ao Outlook",
+    "Personalizar e-mails e páginas com variáveis e AMPscript, com valor padrão para dado ausente",
+    "Construir landing pages com formulário que grava o contato no CRM, com consentimento e UTM",
+    "Aplicar um checklist de QA e acessibilidade antes de qualquer envio, incluindo teste A/B"
+  ],
+  "curriculum": "Do template à página que alimenta a base",
+  "about": "O programa continua de onde o CRM na Prática parou: a base está organizada, agora é hora de conversar com ela. A sequência segue o trabalho real de quem opera comunicação de CRM: primeiro o template de e-mail e suas limitações técnicas, depois a personalização e a régua transacional de pedido (com o par e-mail e WhatsApp), em seguida as landing pages que trazem contatos novos para a base e, por fim, a disciplina de QA que evita o e-mail com nome em branco ou link quebrado. Todos os exercícios usam a Rede Construir+, uma rede fictícia de lojas de material de construção, e dados inventados.",
+  "materials": [
+    "Template base de e-mail transacional em HTML (tabelas e CSS inline)",
+    "Dicionário de variáveis de personalização da Rede Construir+ (fictícia)",
+    "Modelos de landing page: franqueado, store in store, representantes, indicação e campanha com clube",
+    "Checklist de QA de comunicação para imprimir e usar a cada envio"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "HTML de E-mail que Sobrevive aos Clientes",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Personalização e Régua Transacional",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Landing Pages que Alimentam o CRM",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Acessibilidade, QA e Envio de Teste",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Marketing e CRM",
+    "mainTitle": "O e-mail que chega certo e a página que traz o contato para dentro da base.",
+    "introductionParagraphs": [
+      {
+        "title": "E-mail não é página web",
+        "text": "Quem vem do desenvolvimento web estranha na primeira semana: no e-mail, **layout se faz com tabela**, estilo vai **inline** e boa parte do CSS moderno simplesmente some em algum cliente. Não é atraso de quem escreve o código, é limitação de quem lê. Este programa ensina a trabalhar dentro dessas regras em vez de brigar com elas."
+      },
+      {
+        "title": "Personalização só vale se não quebrar",
+        "text": "Colocar o nome do cliente no assunto é fácil. Difícil é garantir que o e-mail continua fazendo sentido quando o nome está vazio, quando o pedido tem três pacotes ou quando a data de entrega ainda não existe. Por isso a personalização aqui começa por um **dicionário de variáveis** e sempre vem com valor padrão."
+      },
+      {
+        "title": "A página que fecha o ciclo",
+        "text": "E-mail leva gente para algum lugar. Quando esse lugar é uma landing page com formulário ligado ao CRM e parâmetros **UTM** na URL, cada cadastro chega à base dizendo de onde veio. É o que permite saber qual campanha trouxe o franqueado, o representante ou a indicação — e parar de decidir no achismo."
+      }
+    ],
+    "courseAboutTitle": "O passo seguinte ao CRM na Prática",
+    "courseAboutDescription": "Com a base organizada, o trabalho passa a ser falar com ela sem errar. Este programa cobre as duas pontas que mais aparecem no dia a dia de CRM: o e-mail em HTML, transacional e de campanha, e a landing page que captura e devolve dados à base. No meio, a personalização com variáveis e o QA que separa o envio confiável do pedido de desculpas no dia seguinte.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: HTML de E-mail que Sobrevive aos Clientes",
+        "items": [
+          {
+            "label": "Tabelas e largura fixa",
+            "description": "Por que o esqueleto do e-mail ainda é uma tabela de 600 pixels."
+          },
+          {
+            "label": "CSS inline",
+            "description": "O que vai no atributo style, o que fica no head e o que nenhum dos dois salva."
+          },
+          {
+            "label": "Assunto e pré-header",
+            "description": "As duas linhas que decidem se o resto do e-mail será lido."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Personalização e Régua Transacional",
+        "items": [
+          {
+            "label": "Dicionário de variáveis",
+            "description": "Cada campo com nome, origem, formato e valor padrão."
+          },
+          {
+            "label": "AMPscript essencial",
+            "description": "Ler, testar e exibir dados no Marketing Cloud sem quebrar o envio."
+          },
+          {
+            "label": "Régua de pedido",
+            "description": "Da confirmação à entrega, em e-mail e WhatsApp, cada um no seu papel."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Landing Pages que Alimentam o CRM",
+        "items": [
+          {
+            "label": "Tipos de página",
+            "description": "Franqueado, store in store, representante, indicação e campanha com parceiro."
+          },
+          {
+            "label": "Formulário que grava na base",
+            "description": "Campos mínimos, consentimento e gravação em data extension."
+          },
+          {
+            "label": "UTM e rastreamento",
+            "description": "Saber de onde veio cada cadastro, do clique ao registro no CRM."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Acessibilidade, QA e Envio de Teste",
+        "items": [
+          {
+            "label": "Acessibilidade",
+            "description": "Texto alternativo, contraste, idioma e conteúdo que não depende de imagem."
+          },
+          {
+            "label": "Checklist de QA",
+            "description": "Renderização, links, variáveis e mobile conferidos antes de cada envio."
+          },
+          {
+            "label": "Teste A/B",
+            "description": "Uma variável por vez, medida por clique e conversão."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para executar com a Rede Construir+, a marca fictícia dos exercícios. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "laptop",
+      "title": "HTML de E-mail que Sobrevive aos Clientes",
+      "shortDescription": "Tabelas, CSS inline, assunto e pré-header",
+      "introductionText": "O mesmo arquivo HTML será aberto no aplicativo de e-mail do celular, no webmail e num Outlook de desktop que usa o Word como motor de renderização. Cada um ignora uma parte diferente do seu código. Neste módulo você monta o template base da Rede Construir+ — o e-mail de pedido confirmado — com a estrutura que funciona em todos eles, e aprende a consultar o suporte de cada recurso antes de usá-lo, em vez de descobrir no envio.",
+      "sections": [
+        {
+          "title": "📧 O template base",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Esqueleto em tabela de 600 pixels",
+              "code": "<table role='presentation' width='600'>",
+              "guidance": "Monte o corpo do e-mail como uma tabela externa de largura total, com fundo, e uma tabela interna de 600 pixels centralizada. Cada bloco — header, título, resumo do pedido, botão, footer — vira uma linha da tabela interna. O atributo role='presentation' avisa aos leitores de tela que aquilo é estrutura visual, não tabela de dados.",
+              "tips": [
+                "Header e footer padrão da marca ficam em blocos reutilizáveis. Quando o telefone de atendimento muda, você altera em um lugar e todos os templates acompanham.",
+                "Evite aninhar tabelas além do necessário: cada nível a mais é mais um lugar para o Outlook inventar espaçamento."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "CSS inline e o que fica no head",
+              "code": "<td style='font-family:Arial,sans-serif;font-size:16px'>",
+              "guidance": "Coloque os estilos de cada célula no atributo style. Vários clientes descartam o bloco style do head ou parte dele, mas respeitam o estilo inline. No head ficam só as media queries de mobile e as regras de modo escuro, que funcionam como melhoria onde há suporte. Escreva em CSS normal e use uma ferramenta de inline antes do envio, em vez de digitar style à mão em cada célula.",
+              "tips": [
+                "Fonte personalizada da marca nem sempre carrega. Declare sempre uma pilha com fonte de sistema no final, e confira se o layout aguenta a troca."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Consultar o suporte antes de usar",
+              "code": "caniemail.com",
+              "guidance": "Antes de usar flexbox, grid, background-image ou border-radius, consulte o recurso no Can I Email. Ele mostra, cliente por cliente, se há suporte total, parcial ou nenhum. A decisão não é usar ou não usar: é saber qual será a aparência no cliente que não suporta e se ela é aceitável.",
+              "tips": [
+                "Botão com cantos arredondados que vira retângulo no Outlook é aceitável. Botão que some porque era imagem de fundo não é.",
+                "Para o Outlook de desktop, comentários condicionais permitem entregar uma tabela só para ele, mantendo o código moderno para os demais."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Botão à prova de cliente",
+              "code": "<a href='...' style='display:inline-block;padding:14px 24px'>",
+              "guidance": "Faça o botão de chamada para ação com texto HTML dentro de uma célula com cor de fundo, nunca como imagem. Assim ele aparece mesmo com imagens bloqueadas, pode ser lido por leitor de tela e mantém área de toque confortável no celular. No e-mail de pedido confirmado, o botão principal é Ver detalhes do pedido; contato com atendimento vira link secundário.",
+              "tips": [
+                "Um botão principal por e-mail. Quando tudo é destaque, nada é."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Assunto e pré-header como par",
+              "code": "<div style='display:none;max-height:0;overflow:hidden'>",
+              "guidance": "O pré-header é o texto que aparece logo depois do assunto na caixa de entrada. Escreva os dois juntos: o assunto diz o que aconteceu, o pré-header completa. Exemplo da régua: assunto Seu pedido 48213 foi confirmado!, pré-header A Rede Construir+ agradece a preferência. Coloque o pré-header como primeiro conteúdo do body, oculto visualmente, para que o cliente não pesque a primeira frase do corpo no lugar dele.",
+              "tips": [
+                "Sem pré-header definido, a caixa de entrada mostra o que encontrar primeiro — muitas vezes o texto Ver no navegador ou o alt do logotipo."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que o e-mail tem regras próprias",
+      "highlights": [
+        {
+          "icon": "grid",
+          "title": "Tabela é contrato",
+          "text": "A tabela é a estrutura que todos os clientes entendem do mesmo jeito. O CSS moderno entra por cima como melhoria, não como fundação."
+        },
+        {
+          "icon": "search",
+          "title": "Consultar antes de descobrir",
+          "text": "Verificar o suporte de um recurso leva um minuto. Descobrir no envio que o botão sumiu para parte da base leva um dia de retrabalho."
+        },
+        {
+          "icon": "folder",
+          "title": "Blocos reaproveitáveis",
+          "text": "Header, footer e botão padronizados fazem os seis ou dez e-mails de uma régua parecerem da mesma marca, e mudam juntos quando algo muda."
+        }
+      ],
+      "closingText": "O template base está de pé e se comporta bem nos clientes que importam. Por enquanto ele diz a mesma coisa para todo mundo. No próximo módulo ele passa a chamar cada cliente pelo nome, mostrar o pedido certo e saber o que fazer quando um dado não existe.",
+      "ctaTitle": "📧 Template base pronto!",
+      "ctaText": "Seu e-mail já renderiza de forma previsível. Agora vamos dar a ele os dados de cada cliente.",
+      "nextButtonText": "Ir para Módulo 1: Personalização e Régua Transacional"
+    },
+    {
+      "id": 1,
+      "icon": "sync",
+      "title": "Personalização e Régua Transacional",
+      "shortDescription": "Variáveis, AMPscript e a jornada do pedido em dois canais",
+      "introductionText": "Um e-mail transacional é aquele que o cliente espera receber: confirmação de pedido, nota fiscal, previsão de chegada, saiu para entrega, pedido entregue. É também onde um erro de personalização mais aparece, porque o cliente sabe exatamente qual é o número do pedido dele. Neste módulo você monta o dicionário de variáveis, escreve a personalização em AMPscript no Marketing Cloud e desenha a régua de pedido da Rede Construir+ em e-mail e WhatsApp.",
+      "sections": [
+        {
+          "title": "🔁 Dados certos em cada mensagem",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Montar o dicionário de variáveis",
+              "code": "PrimeiroNome | NumeroPedido | DataEntrega",
+              "guidance": "Antes de escrever qualquer código, liste cada variável que as mensagens usam numa tabela: nome técnico, de onde vem o dado, formato (texto, data, moeda), exemplo fictício e valor padrão quando estiver vazio. Para a régua de pedido da Rede Construir+, entram nome, número do pedido, valor total, forma de pagamento, endereço de entrega, data prevista, nome de quem recebeu e lista de itens por pacote.",
+              "tips": [
+                "O dicionário é o documento que o time de conteúdo, o de dados e quem configura a plataforma consultam juntos. Variável que não está nele não entra no template.",
+                "Registre o formato de data e moeda: 05/03 pode ser cinco de março ou três de maio dependendo de quem gerou o dado."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "AMPscript: ler e exibir",
+              "code": "%%[ SET @nome = AttributeValue('PrimeiroNome') ]%% Olá, %%=v(@nome)=%%",
+              "guidance": "No Marketing Cloud, o AMPscript roda no servidor no momento do envio e é o que liga a base de dados ao conteúdo. Blocos entre %%[ e ]%% executam lógica; %%= e =%% imprimem um valor no lugar. Leia o atributo do contato numa variável e depois exiba a variável onde precisar: no assunto, no título e no corpo.",
+              "tips": [
+                "Declare todas as variáveis num bloco no topo do e-mail. Quem for revisar encontra a lógica num lugar só, em vez de caçar trechos espalhados pelo HTML."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Valor padrão para dado ausente",
+              "code": "IIF(Empty(@nome), 'cliente', @nome)",
+              "guidance": "Todo campo pode vir vazio. Para cada variável do dicionário, decida o que aparece no lugar: Olá, cliente em vez de Olá, , ou esconder um bloco inteiro quando não há data de entrega. Use condição para trocar o valor ou para omitir a linha. Para dados de outra tabela, como os itens do pedido, a busca por chave (funções de lookup em data extension) também precisa prever o caso de não encontrar nada.",
+              "tips": [
+                "Teste com um contato fictício de nome vazio e outro com nome muito longo. Os dois quebram layouts que pareciam prontos."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Desenhar a régua de pedido",
+              "code": "confirmado → NF-e → previsão → saiu → entregue",
+              "guidance": "Liste as etapas que o cliente realmente precisa saber e corte as que são só operação interna. Uma régua enxuta para a Rede Construir+: pedido confirmado (com resumo e valor), nota fiscal emitida (com link para a NF-e), previsão de chegada (data, endereço e lista do pacote), saiu para entrega (avisar que precisa haver alguém para receber) e pedido entregue (quem recebeu e os itens). Para cada etapa, escreva assunto, pré-header, título, corpo e uma única chamada para ação.",
+              "tips": [
+                "Pedido dividido em vários pacotes muda o texto: Pacote 1 de 3 informa melhor que uma lista única com itens que ainda não chegaram.",
+                "Defina o que dispara cada etapa (mudança de status no sistema de pedidos) e o intervalo aceitável entre o status mudar e a mensagem sair."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "E-mail e WhatsApp, cada um no seu papel",
+              "code": "Olá, {{1}}. Seu pedido {{2}} foi confirmado!",
+              "guidance": "O WhatsApp serve para o aviso curto e rápido: modelos aprovados previamente, com variáveis numeradas e pouca liberdade de texto. O e-mail carrega o que precisa de espaço e registro: resumo do pedido, link da nota fiscal, lista de itens, política de privacidade e descadastramento. Escreva as duas versões de cada etapa lado a lado e defina o reenvio por e-mail quando a mensagem de WhatsApp não for entregue.",
+              "tips": [
+                "Só envie WhatsApp para quem deu consentimento para esse canal. Registre no CRM como e quando o opt-in foi coletado.",
+                "No modelo de WhatsApp, anote ao lado de cada número qual campo do dicionário ele recebe: {{1}} nome, {{2}} número do pedido."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que personalização é engenharia",
+      "highlights": [
+        {
+          "icon": "list",
+          "title": "Dicionário antes do código",
+          "text": "Quando todo mundo usa o mesmo nome para o mesmo dado, some o e-mail que procura NomeCliente numa tabela que só tem PrimeiroNome."
+        },
+        {
+          "icon": "shield",
+          "title": "Falha com elegância",
+          "text": "Valor padrão e bloco condicional fazem o e-mail continuar correto quando o dado falta, em vez de mostrar um buraco no lugar do nome."
+        },
+        {
+          "icon": "sync",
+          "title": "Canais que se completam",
+          "text": "WhatsApp avisa, e-mail documenta. Desenhar os dois juntos evita mensagens duplicadas e lacunas na jornada do pedido."
+        }
+      ],
+      "closingText": "A régua de pedido está escrita e personalizada, com plano para dado ausente e para o canal que falha. Ela conversa com quem já é cliente. No próximo módulo você constrói o caminho inverso: páginas que trazem gente nova para dentro da base.",
+      "ctaTitle": "🔁 Régua no ar!",
+      "ctaText": "Seus e-mails já falam com cada cliente pelo nome e pelo pedido. Agora vamos capturar contatos novos.",
+      "nextButtonText": "Ir para Módulo 2: Landing Pages que Alimentam o CRM"
+    },
+    {
+      "id": 2,
+      "icon": "globe",
+      "title": "Landing Pages que Alimentam o CRM",
+      "shortDescription": "Formulário, consentimento, gravação na base e UTM",
+      "introductionText": "Uma landing page de CRM tem um único trabalho: transformar uma visita em um registro útil na base. Isso vale para a página de quem quer abrir uma franquia, para a de lojistas que querem um espaço da marca dentro da própria loja, para o cadastro de representantes comerciais, para o programa de indicação e para a campanha com um clube de futebol parceiro. Neste módulo você constrói essas páginas para a Rede Construir+ com formulário que grava no CRM e sabe de onde veio cada cadastro.",
+      "sections": [
+        {
+          "title": "🌐 Da visita ao registro",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Escolher o tipo de página e o dado que importa",
+              "code": "franqueado | store in store | representante | indicação | campanha",
+              "guidance": "Cada tipo de página pede campos diferentes. Seja um franqueado: nome, contato, cidade de interesse e faixa de investimento. Store in store: dados da loja do parceiro e metragem disponível. Cadastro de representantes: região de atuação e segmentos que atende. Programa de indicação: dados de quem indica e de quem é indicado. Campanha com o Esporte Clube Vale Verde, um clube fictício: número de sócio-torcedor para liberar o benefício. Escreva o objetivo da página numa frase e corte todo campo que não serve a ele.",
+              "tips": [
+                "Cada campo a mais é um motivo a mais para desistir. Pergunte só o que o time comercial vai usar no primeiro contato."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Formulário com consentimento",
+              "code": "<input type='checkbox' name='OptInEmail'>",
+              "guidance": "Use rótulos visíveis ligados a cada campo, tipos corretos (email, tel) para o teclado certo no celular e mensagens de erro em texto. Separe o consentimento de comunicação de marketing do envio do formulário: uma caixa desmarcada por padrão, com link para a política de privacidade. Grave no CRM não só o sim ou não, mas a data e a página onde o consentimento foi dado.",
+              "tips": [
+                "Caixa de consentimento já marcada não é consentimento. Além do problema legal, ela enche a base de contatos que não queriam receber nada."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Gravar o envio na base com CloudPages",
+              "code": "UpsertData('LP_Franqueado', 1, 'Email', @email, 'Nome', @nome)",
+              "guidance": "No Marketing Cloud, as CloudPages hospedam a página e rodam AMPscript quando ela carrega. Crie primeiro a data extension com colunas iguais aos campos do formulário. Na página, leia cada valor enviado com RequestParameter e grave com UpsertData, que insere o registro novo ou atualiza o existente pela chave. Depois de gravar, redirecione para a página de obrigado.",
+              "tips": [
+                "Escolha a chave com cuidado: com e-mail como chave, o mesmo contato que se cadastra duas vezes atualiza o registro em vez de virar duplicata.",
+                "Valide no servidor também. Validação só no navegador é conveniência para o usuário, não garantia para a base."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "UTM do link ao registro",
+              "code": "?utm_source=email&utm_medium=crm&utm_campaign=franquia_2026",
+              "guidance": "Todo link que leva à landing page carrega parâmetros UTM: origem (email, whatsapp, instagram), meio e nome da campanha. Na página, leia esses parâmetros e grave em campos ocultos do formulário, que vão para a base junto com o cadastro. Assim o CRM sabe que aquele interessado em franquia veio do e-mail de março, e não só que ele existe.",
+              "tips": [
+                "Combine um padrão de nomes em minúsculas e sem acento e registre num documento. Email, e-mail e EMAIL viram três origens diferentes no relatório.",
+                "No programa de indicação, o código de quem indicou funciona como um parâmetro a mais: entra na URL, vai para campo oculto e liga os dois registros."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Página de obrigado e próximo passo",
+              "guidance": "A página de obrigado confirma que o envio deu certo e diz o que acontece agora: um consultor entra em contato em até dois dias úteis, o benefício do sócio-torcedor chega por e-mail, o representante recebe o material de apresentação. Ela também é o ponto de medição: a visita a essa página é a conversão da campanha. Dispare dali o e-mail de boas-vindas da jornada correspondente.",
+              "tips": [
+                "Personalize a página de obrigado com o nome que acabou de ser enviado. É a forma mais simples de o visitante confirmar que digitou certo."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que a página precisa falar com o CRM",
+      "highlights": [
+        {
+          "icon": "sitemap",
+          "title": "Cadastro que chega organizado",
+          "text": "Formulário ligado direto à data extension evita a planilha exportada, o copiar e colar e o contato que se perde no caminho."
+        },
+        {
+          "icon": "gauge",
+          "title": "Origem medida",
+          "text": "Com UTM gravado junto do cadastro, a pergunta qual campanha trouxe franqueados passa a ter resposta em número, não em impressão."
+        },
+        {
+          "icon": "shield",
+          "title": "Consentimento registrado",
+          "text": "Data, página e canal do opt-in guardados no registro protegem a empresa e mantêm a base com quem realmente quer ouvir."
+        }
+      ],
+      "closingText": "As landing pages da Rede Construir+ já capturam contatos, registram consentimento e dizem de onde cada um veio. Falta a etapa que costuma ser espremida no fim do cronograma e que decide se tudo isso chega inteiro ao destino: a revisão antes do envio.",
+      "ctaTitle": "🌐 Páginas capturando!",
+      "ctaText": "Seus formulários já gravam na base com origem rastreada. Vamos garantir que nada saia com erro.",
+      "nextButtonText": "Ir para Módulo 3: Acessibilidade, QA e Envio de Teste"
+    },
+    {
+      "id": 3,
+      "icon": "tools",
+      "title": "Acessibilidade, QA e Envio de Teste",
+      "shortDescription": "Checklist de revisão, evidências e teste A/B",
+      "introductionText": "Uma comunicação de CRM vai para milhares de pessoas de uma vez e não tem botão de desfazer. Por isso o trabalho de quem opera comunicação inclui uma rotina de QA tão importante quanto o código: abrir o e-mail em vários clientes, clicar em todos os links, conferir cada variável com perfis de teste e guardar evidência de que tudo foi visto. Neste módulo você transforma essa rotina num checklist, cuida da acessibilidade e aprende a testar duas versões sem se enganar com a métrica.",
+      "sections": [
+        {
+          "title": "🛠️ Antes de apertar enviar",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Acessibilidade no e-mail e na página",
+              "code": "<html lang='pt-BR'> ... alt='Logotipo Rede Construir+'",
+              "guidance": "Declare o idioma no html para o leitor de tela pronunciar certo. Toda imagem tem texto alternativo: descritivo quando a imagem informa algo, vazio (alt='') quando é só decoração. Informação essencial — número do pedido, data, valor, botão — fica em texto HTML, nunca só dentro de imagem. Confira o contraste entre texto e fundo, use tamanho de fonte legível no celular e, na landing page, garanta que o formulário funciona só com teclado.",
+              "tips": [
+                "Teste com imagens desligadas. Se o e-mail perde o sentido, a informação está no lugar errado.",
+                "Texto de link descreve o destino: Ver nota fiscal diz mais que Clique aqui, para quem lê e para quem ouve."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Renderização: clientes, modo escuro e mobile",
+              "guidance": "Gere pré-visualizações nos clientes que sua base usa com uma ferramenta como Litmus ou Email on Acid, ou enviando para contas de teste em cada um. Confira no mínimo: um aplicativo de celular, um webmail e o Outlook de desktop; a versão mobile empilhando as colunas; o modo escuro sem logotipo sumindo no fundo; imagens com largura e altura declaradas.",
+              "tips": [
+                "Logotipo em PNG com fundo transparente e traço escuro desaparece no modo escuro. Uma borda clara ou uma versão alternativa resolve."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Links, UTM e variáveis",
+              "code": "seed list: nome vazio | nome longo | 3 pacotes",
+              "guidance": "Clique em cada link do e-mail e confira o destino e os parâmetros UTM. Confira o link de descadastramento e o da política de privacidade. Depois, faça a pré-visualização com uma lista de perfis de teste fictícios que cobre os casos difíceis do dicionário: nome vazio, nome com 40 caracteres, pedido com três pacotes, campo de data sem valor. Cada perfil deve gerar um e-mail correto.",
+              "tips": [
+                "Link de ambiente de teste esquecido no template é um dos erros mais comuns. Busque no HTML por endereços de homologação antes de aprovar."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Envio de teste e evidência",
+              "guidance": "Envie o teste para um grupo de revisão fixo, com quem cuida do conteúdo, da marca e da operação. Cada revisor confere sua parte do checklist e registra a aprovação. Guarde capturas de tela do e-mail em cada cliente e de cada etapa da régua, nomeadas com etapa, versão e data. Quando alguém perguntar daqui a dois meses o que foi enviado, a resposta está na pasta, não na memória.",
+              "tips": [
+                "Padronize os nomes dos templates com número da etapa, nome e data. Ordenados no gerenciador de arquivos, eles já contam a sequência da régua."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Teste A/B com a métrica certa",
+              "code": "versão A x versão B → clique e conversão",
+              "guidance": "Mude uma coisa por vez — assunto, texto do botão, imagem de destaque — e divida uma parte da base entre as duas versões antes de enviar a vencedora para o restante. Meça por clique e conversão na landing page. A taxa de abertura deixou de ser confiável desde que o Apple Mail passou a oferecer proteção de privacidade que esconde a abertura real, e o Apple Mail responde pela maior parte das aberturas registradas.",
+              "tips": [
+                "Defina antes do teste qual métrica decide o vencedor e qual o tamanho mínimo da amostra. Escolher depois de ver o resultado é encontrar o que se queria encontrar."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que QA é parte do trabalho, não etapa extra",
+      "highlights": [
+        {
+          "icon": "list",
+          "title": "Checklist vence memória",
+          "text": "No vigésimo envio do mês, ninguém lembra de clicar no link de descadastramento. Uma lista impressa lembra por você."
+        },
+        {
+          "icon": "search",
+          "title": "Perfis de teste revelam o raro",
+          "text": "O erro aparece no cliente sem nome ou com três pacotes. Testar só com o seu próprio cadastro esconde exatamente esses casos."
+        },
+        {
+          "icon": "gauge",
+          "title": "Métrica que mede algo",
+          "text": "Clique e conversão mostram o que a pessoa fez. Abertura, hoje, mostra cada vez mais o que o aplicativo de e-mail fez por ela."
+        }
+      ],
+      "closingText": "Você saiu de um template em tabela para uma operação completa: e-mails que renderizam bem, personalização que não quebra, uma régua transacional em dois canais, landing pages que gravam no CRM com origem rastreada e uma rotina de QA com evidência. É o conjunto de entregas que se espera de quem cuida da comunicação de CRM no dia a dia.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você agora monta, personaliza, testa e mede comunicações de CRM de ponta a ponta. O próximo passo natural é automatizar essas réguas em jornadas.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Por que o layout de e-mail ainda é montado com tabelas?",
+      "explanation": "Vários clientes de e-mail têm suporte limitado a CSS de posicionamento, e o Outlook de desktop usa o Word como motor de renderização desde 2007. Tabelas são a estrutura que todos interpretam de forma consistente. Não tem a ver com SEO, nem com peso do arquivo, nem com exigência legal.",
+      "options": [
+        {
+          "text": "Porque é a estrutura que todos os clientes renderizam de forma consistente",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque tabelas melhoram o posicionamento do e-mail em buscadores",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque deixam o arquivo HTML mais leve",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque a legislação de e-mail marketing exige",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Para que serve o pré-header de um e-mail?",
+      "explanation": "O pré-header é o texto exibido logo após o assunto na caixa de entrada e complementa o assunto. Sem ele definido, o cliente mostra o primeiro texto que encontrar no corpo. Não é o cabeçalho visual com logotipo, nem um campo técnico de autenticação, nem o texto do botão.",
+      "options": [
+        {
+          "text": "Complementar o assunto com o texto exibido na caixa de entrada",
+          "isCorrect": true
+        },
+        {
+          "text": "Exibir o logotipo no topo do e-mail",
+          "isCorrect": false
+        },
+        {
+          "text": "Autenticar o remetente junto ao provedor",
+          "isCorrect": false
+        },
+        {
+          "text": "Definir o texto do botão principal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Qual é a forma mais segura de fazer o botão principal de um e-mail?",
+      "explanation": "Botão em texto HTML dentro de célula com cor de fundo aparece mesmo com imagens bloqueadas, é lido por leitor de tela e mantém boa área de toque. Botão em imagem some quando as imagens não carregam; depender de imagem de fundo ou de flexbox falha em clientes sem suporte.",
+      "options": [
+        {
+          "text": "Texto HTML dentro de uma célula com cor de fundo",
+          "isCorrect": true
+        },
+        {
+          "text": "Uma imagem com o texto do botão desenhado",
+          "isCorrect": false
+        },
+        {
+          "text": "Um link sobre uma imagem de fundo CSS",
+          "isCorrect": false
+        },
+        {
+          "text": "Um contêiner flexbox com o link centralizado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "O que deve constar no dicionário de variáveis de personalização?",
+      "explanation": "O dicionário registra, para cada variável, o nome técnico, a origem do dado, o formato, um exemplo e o valor padrão quando estiver vazio. É o que alinha conteúdo, dados e configuração. Cores, senhas e lista de destinatários não são papel dele.",
+      "options": [
+        {
+          "text": "Nome técnico, origem, formato, exemplo e valor padrão de cada campo",
+          "isCorrect": true
+        },
+        {
+          "text": "As cores e fontes da marca usadas no template",
+          "isCorrect": false
+        },
+        {
+          "text": "As senhas de acesso à plataforma de envio",
+          "isCorrect": false
+        },
+        {
+          "text": "A lista completa de destinatários de cada envio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "No AMPscript, o que faz IIF(Empty(@nome), 'cliente', @nome)?",
+      "explanation": "A expressão testa se a variável está vazia e, nesse caso, devolve o valor padrão cliente; caso contrário, devolve o próprio nome. É assim que se evita a saudação Olá, , com o nome em branco. Não grava nada na base, não bloqueia o envio e não traduz o texto.",
+      "options": [
+        {
+          "text": "Exibe cliente quando o nome está vazio e o nome quando ele existe",
+          "isCorrect": true
+        },
+        {
+          "text": "Grava a palavra cliente no cadastro de quem não tem nome",
+          "isCorrect": false
+        },
+        {
+          "text": "Impede o envio para contatos sem nome",
+          "isCorrect": false
+        },
+        {
+          "text": "Converte o nome para letras minúsculas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Na régua de pedido, qual divisão de papéis entre WhatsApp e e-mail faz mais sentido?",
+      "explanation": "O WhatsApp, com modelos aprovados e pouca liberdade de texto, serve ao aviso curto e rápido. O e-mail carrega o que precisa de espaço e registro: resumo do pedido, nota fiscal, lista de itens e links de privacidade e descadastramento. Ele também funciona como reenvio quando o WhatsApp não é entregue.",
+      "options": [
+        {
+          "text": "WhatsApp para o aviso rápido; e-mail para detalhes, documentos e reenvio",
+          "isCorrect": true
+        },
+        {
+          "text": "Os dois canais com o mesmo texto completo, enviados juntos",
+          "isCorrect": false
+        },
+        {
+          "text": "Só WhatsApp, porque e-mail transacional não é lido",
+          "isCorrect": false
+        },
+        {
+          "text": "WhatsApp para todos, mesmo sem consentimento, por ser transacional",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Numa CloudPage, qual combinação lê o formulário enviado e grava na data extension?",
+      "explanation": "RequestParameter lê cada valor enviado pelo formulário, e UpsertData grava na data extension, inserindo o registro novo ou atualizando o existente pela chave. As demais opções não leem dados de formulário nem gravam na base.",
+      "options": [
+        {
+          "text": "RequestParameter para ler e UpsertData para gravar",
+          "isCorrect": true
+        },
+        {
+          "text": "AttributeValue para ler e IIF para gravar",
+          "isCorrect": false
+        },
+        {
+          "text": "Empty para ler e v() para gravar",
+          "isCorrect": false
+        },
+        {
+          "text": "Um link mailto: que envia os dados ao CRM",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Como registrar corretamente o consentimento de comunicação numa landing page?",
+      "explanation": "Consentimento válido é uma ação do usuário: caixa desmarcada por padrão, com link para a política de privacidade. O registro guarda a resposta, a data e a página de origem. Caixa já marcada, consentimento implícito no envio ou texto escondido no rodapé não comprovam vontade de receber comunicação.",
+      "options": [
+        {
+          "text": "Caixa desmarcada por padrão, gravando resposta, data e página de origem",
+          "isCorrect": true
+        },
+        {
+          "text": "Caixa já marcada, que o usuário pode desmarcar se quiser",
+          "isCorrect": false
+        },
+        {
+          "text": "Considerar que todo envio de formulário é consentimento",
+          "isCorrect": false
+        },
+        {
+          "text": "Informar no rodapé que o cadastro implica receber comunicações",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Para que servem os campos ocultos com parâmetros UTM no formulário?",
+      "explanation": "Os campos ocultos levam a origem, o meio e a campanha que estavam na URL para dentro do registro no CRM. Assim cada cadastro diz de onde veio. Eles não protegem contra robôs, não aceleram a página e não substituem o consentimento.",
+      "options": [
+        {
+          "text": "Gravar no CRM de qual origem e campanha veio cada cadastro",
+          "isCorrect": true
+        },
+        {
+          "text": "Impedir que robôs enviem o formulário",
+          "isCorrect": false
+        },
+        {
+          "text": "Acelerar o carregamento da landing page",
+          "isCorrect": false
+        },
+        {
+          "text": "Registrar o consentimento do usuário",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Qual é o texto alternativo adequado para uma imagem puramente decorativa no e-mail?",
+      "explanation": "Imagem decorativa recebe alt vazio, para que o leitor de tela a ignore. Omitir o atributo faz alguns leitores lerem o nome do arquivo; repetir palavras como imagem ou o nome do arquivo só acrescenta ruído para quem ouve.",
+      "options": [
+        {
+          "text": "Um alt vazio, para o leitor de tela ignorá-la",
+          "isCorrect": true
+        },
+        {
+          "text": "Nenhum atributo alt",
+          "isCorrect": false
+        },
+        {
+          "text": "O nome do arquivo da imagem",
+          "isCorrect": false
+        },
+        {
+          "text": "A palavra imagem",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Por que a pré-visualização deve usar perfis de teste como nome vazio e pedido com três pacotes?",
+      "explanation": "Os erros de personalização aparecem nos casos raros: campo vazio, texto longo, várias entregas. Testar só com o próprio cadastro esconde exatamente esses casos. Não tem relação com velocidade de envio, com reputação do domínio nem com aprovação de modelos de WhatsApp.",
+      "options": [
+        {
+          "text": "Porque os erros de personalização aparecem justamente nesses casos",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque deixam o envio real mais rápido",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque melhoram a reputação do domínio de envio",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque são exigidos para aprovar modelos de WhatsApp",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Segundo o relatório de setembro de 2026 da Litmus, qual cliente concentra a maior parte das aberturas registradas?",
+      "explanation": "O Apple Mail respondia por 76,56% das aberturas medidas pela Litmus em setembro de 2026, seguido pelo Gmail com 16,10% e pelo Outlook de desktop com 3,48%. Como a proteção de privacidade do Apple Mail esconde a abertura real, essa concentração é também o motivo para decidir testes A/B por clique e conversão.",
+      "options": [
+        {
+          "text": "Apple Mail",
+          "isCorrect": true
+        },
+        {
+          "text": "Gmail",
+          "isCorrect": false
+        },
+        {
+          "text": "Outlook de desktop",
+          "isCorrect": false
+        },
+        {
+          "text": "Yahoo Mail",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "Para a Rede Construir+, uma marca fictícia: um template de e-mail transacional em HTML com tabelas e CSS inline, uma régua de pedido em cinco etapas com versões de e-mail e WhatsApp, um dicionário de variáveis, landing pages com formulário que grava no CRM com consentimento e UTM, e um checklist de QA pronto para usar em cada envio.",
+    "highlights": [
+      "Template de e-mail HTML testado em vários clientes",
+      "Régua transacional de pedido personalizada com valor padrão",
+      "Landing pages com formulário ligado à base e origem rastreada"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "No relatório de participação de clientes de e-mail da Litmus referente a setembro de 2026, calculado sobre mais de 1,5 bilhão de aberturas, o Apple Mail aparece com 76,56%, o Gmail com 16,10% e o Outlook de desktop com 3,48%. O Outlook é minoria, mas é justamente o cliente que mais exige tabelas e código específico — e 3% de uma base grande ainda são muitos clientes vendo um e-mail quebrado.",
+      "A mesma fonte lembra que a proteção de privacidade do Apple Mail, em vigor desde setembro de 2021, torna as aberturas pouco confiáveis e recomenda olhar clique e conversão. Isso desloca a medição do e-mail para o que acontece depois dele: a landing page, o formulário e o registro no CRM com a origem anotada. Saber montar as duas pontas deixou de ser divisão entre áreas e virou parte do mesmo trabalho."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "E-commerce e varejo",
+        "description": "Réguas de pedido, nota fiscal e entrega que o cliente espera receber."
+      },
+      {
+        "label": "Expansão e canais",
+        "description": "Páginas de franquia, store in store e representantes que alimentam o time comercial."
+      },
+      {
+        "label": "Campanhas com parceiros",
+        "description": "Ações com clubes e programas de indicação com origem e benefício rastreados."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem concluiu o CRM na Prática",
+        "description": "Já organiza a base e agora precisa se comunicar com ela."
+      },
+      {
+        "label": "Quem opera e-mail marketing",
+        "description": "Edita templates prontos e quer entender por que eles quebram."
+      },
+      {
+        "label": "Quem desenvolve para a web",
+        "description": "Conhece HTML e CSS e vai assumir e-mails e páginas de campanha."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "E-mail HTML personalizado e landing pages ligadas ao CRM aparecem em qualquer empresa que vende para muitos clientes: varejo com régua de pedido, redes de franquia captando novos franqueados, indústrias com representantes comerciais e marcas com programas de indicação ou parcerias esportivas. As plataformas mudam — Marketing Cloud, outras ferramentas de automação ou soluções próprias —, mas tabelas, variáveis, UTM e QA são os mesmos.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Litmus — Email Client Market Share (dados de setembro de 2026)",
+      "url": "https://www.litmus.com/email-client-market-share"
+    },
+    {
+      "label": "Litmus — Email marketing assumptions: Emails have to be designed with tables",
+      "url": "https://www.litmus.com/blog/email-design-with-html-tables"
+    },
+    {
+      "label": "Can I email — proposta e funcionamento do guia de suporte HTML e CSS em clientes de e-mail",
+      "url": "https://caniemail.com/news/2019-03-15-caniemail-a-proposal"
+    },
+    {
+      "label": "Salesforce Developers — AMPscript: Getting Started (Marketing Cloud Engagement)",
+      "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud-ampscript/guide"
+    },
+    {
+      "label": "Webkul — Cloud Page to save input into Data Extension (RequestParameter e UpsertData)",
+      "url": "https://webkul.com/blog/cloud-page-to-save-input-into-data-extension/"
+    }
+  ]
+}
