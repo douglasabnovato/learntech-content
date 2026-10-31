@@ -3,8 +3,815 @@
   "image": "https://cdn.pixabay.com/photo/2015/09/05/22/33/office-925806_1280.jpg",
   "category": "Projetos",
   "categoryFilter": "projetos",
-  "title": "Liderança Técnica: Como Gerir Equipes de Desenvolvedores",
-  "lessons": "12+ Lições",
-  "duration": "10hr 00min",
-  "access": "Acesso Livre"
+  "title": "Liderança Técnica: Decisões, Pessoas e Entrega em Times de Software",
+  "lessons": "19 passos",
+  "duration": "12h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Avançado",
+  "description": "Para quem já é referência técnica e passou a responder também pelo time. Você aprende a separar o papel de tech lead do papel de gestor, registrar decisões técnicas em ADRs, usar code review e 1:1 para desenvolver pessoas, delegar sem abandonar e acompanhar a entrega com as métricas DORA sem transformá-las em vigilância.",
+  "letslearn": [
+    "Distinguir o que é responsabilidade do tech lead, do gestor e do time — e combinar isso por escrito",
+    "Tomar e registrar decisões técnicas em ADRs que sobrevivem à troca de pessoas",
+    "Transformar code review, 1:1 e feedback em ferramentas de desenvolvimento, não de controle",
+    "Delegar problemas inteiros com checkpoints em vez de distribuir tarefas picadas",
+    "Medir entrega com as cinco métricas DORA no nível do time, sem ranquear pessoas",
+    "Acompanhar a saúde do time e criar segurança psicológica com práticas concretas"
+  ],
+  "curriculum": "Da referência técnica à liderança do time",
+  "about": "O programa parte de um ponto comum: a pessoa mais experiente do time vira tech lead e continua trabalhando como antes, só que com mais reuniões. A progressão vai do papel (o que é seu, o que é do gestor, o que é do time) às decisões (como decidir e registrar), às pessoas (review, 1:1, feedback e delegação) e, por fim, aos sinais (métricas de entrega e saúde do time). Todo o trabalho prático é feito sobre um time fictício de seis pessoas que mantém o serviço de pagamentos de uma loja virtual inventada. Ao longo do caminho, as referências são a pesquisa DORA, o estudo Project Aristotle do Google e dois livros que viraram leitura de base da área: The Manager's Path, de Camille Fournier, e Staff Engineer, de Will Larson. Ele vem depois de Scrum e Kanban: Agilidade na Gestão de Projetos Tech, que organiza o fluxo de trabalho, e antes de Git e GitHub Workflow: Colaboração em Projetos de Código Aberto.",
+  "materials": [
+    "Modelo de acordo de papéis entre tech lead e gestor",
+    "Modelo de ADR com exemplo preenchido",
+    "Guia de code review com prefixos de comentário",
+    "Roteiro de 1:1 e modelo de feedback SBI",
+    "Planilha de métricas DORA no nível do time",
+    "Questionário de saúde do time baseado nas cinco dinâmicas do Project Aristotle"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Tech Lead, Gestor e Time: Quem Faz o Quê",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Decisões Técnicas e ADRs",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Review, 1:1, Feedback e Delegação",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Métricas de Entrega e Saúde do Time",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Projetos",
+    "mainTitle": "Liderar um time técnico é multiplicar o trabalho dos outros, não fazer mais do seu.",
+    "introductionParagraphs": [
+      {
+        "title": "A promoção que ninguém explica",
+        "text": "Na maioria das empresas, a pessoa vira tech lead porque é a melhor programadora do time. No dia seguinte, ninguém diz o que mudou. O resultado é previsível: ela continua pegando as tarefas mais difíceis, revisa tudo sozinha, vira gargalo e trabalha à noite para dar conta do código que deixou de escrever durante o dia. O ponto de partida deste programa é tornar o papel **explícito**: o que passa a ser seu, o que continua sendo do gestor e o que precisa voltar para o time."
+      },
+      {
+        "title": "Decisão boa é decisão registrada",
+        "text": "Times perdem semanas rediscutindo escolhas que já foram feitas — porque ninguém lembra por que foram feitas. Um **ADR** (Architecture Decision Record) é um documento curto que guarda contexto, decisão e consequências. Ele não serve para burocratizar: serve para que a pessoa que entrar daqui a um ano entenda a escolha sem precisar perguntar a quem já saiu."
+      },
+      {
+        "title": "Medir sem vigiar",
+        "text": "As métricas de entrega da pesquisa **DORA** são o padrão mais usado para acompanhar como um time entrega software. A própria DORA alerta que, quando viram meta ou ranking, as pessoas passam a otimizar o número em vez do resultado. Aqui você aprende a usá-las como instrumento de conversa do time consigo mesmo — junto com sinais de saúde que nenhum painel mostra."
+      }
+    ],
+    "courseAboutTitle": "Liderança técnica como disciplina, não como talento",
+    "courseAboutDescription": "Liderar bem não depende de carisma. Depende de um conjunto de práticas que se aprendem: combinar papéis, decidir de forma transparente, revisar código ensinando, conversar a sós com regularidade, delegar com clareza e olhar para os números certos do jeito certo. O programa trata cada uma dessas práticas com o mesmo cuidado que se dá a uma decisão de arquitetura — com contexto, alternativas e consequências.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Tech Lead, Gestor e Time: Quem Faz o Quê",
+        "items": [
+          {
+            "label": "Os dois eixos",
+            "description": "Direção técnica e desenvolvimento de pessoas: quem cuida de cada um."
+          },
+          {
+            "label": "Quanto código o tech lead escreve",
+            "description": "Ficar fora do caminho crítico sem perder contato com o sistema."
+          },
+          {
+            "label": "Acordo de papéis",
+            "description": "Um documento de uma página combinado com o gestor e com o time."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Decisões Técnicas e ADRs",
+        "items": [
+          {
+            "label": "Portas de mão única e de mão dupla",
+            "description": "Separar decisões reversíveis das que custam caro desfazer."
+          },
+          {
+            "label": "Anatomia de um ADR",
+            "description": "Contexto, decisão, status e consequências em uma página."
+          },
+          {
+            "label": "Decidir com desacordo",
+            "description": "Ouvir, fechar a discussão e seguir em frente com o time inteiro."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Review, 1:1, Feedback e Delegação",
+        "items": [
+          {
+            "label": "Code review que ensina",
+            "description": "Comentários classificados, perguntas no lugar de ordens e PRs pequenos."
+          },
+          {
+            "label": "1:1 e feedback",
+            "description": "A reunião que pertence à outra pessoa e o feedback específico e frequente."
+          },
+          {
+            "label": "Delegação",
+            "description": "Entregar o problema, não a solução, com pontos de controle combinados."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Métricas de Entrega e Saúde do Time",
+        "items": [
+          {
+            "label": "As cinco métricas DORA",
+            "description": "Vazão e instabilidade da entrega, medidas no nível do serviço."
+          },
+          {
+            "label": "Sem vigilância",
+            "description": "Por que métrica de time não pode virar meta nem ranking individual."
+          },
+          {
+            "label": "Segurança psicológica",
+            "description": "O fator que mais pesou no Project Aristotle e como cultivá-lo."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para aplicar no time fictício do programa — ou no seu próprio. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "sitemap",
+      "title": "Tech Lead, Gestor e Time: Quem Faz o Quê",
+      "shortDescription": "Os dois eixos da liderança e o acordo que evita buracos e sobreposições",
+      "introductionText": "Liderança em times de software tem dois eixos que costumam se misturar: a direção técnica (arquitetura, qualidade, decisões, riscos) e o desenvolvimento de pessoas (carreira, desempenho, contratação, bem-estar). Em algumas empresas uma pessoa só acumula os dois; em outras, há um tech lead e um gestor de engenharia. Os dois arranjos funcionam — o que não funciona é ninguém saber onde termina um papel e começa o outro. Neste módulo você trabalha com o time fictício de pagamentos: seis pessoas, uma gestora recém-chegada e um tech lead promovido há dois meses que ainda pega as tarefas mais difíceis.",
+      "sections": [
+        {
+          "title": "🧭 Definindo o papel",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Separar os dois eixos",
+              "guidance": "Liste em duas colunas tudo o que alguém precisa fazer para o time funcionar: de um lado, direção técnica (padrões de código, revisão de arquitetura, priorização de dívida técnica, resposta a incidentes); do outro, pessoas (1:1, avaliação, promoção, contratação, conflitos). Marque em cada item quem faz hoje no time fictício. Os itens sem dono e os que têm dois donos são os primeiros problemas a resolver.",
+              "tips": [
+                "Em The Manager's Path, Camille Fournier trata tech lead e gestão de pessoas como etapas distintas de carreira, cada uma com responsabilidades próprias. Ler os dois capítulos ajuda a nomear o que está misturado."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "O arquétipo de tech lead",
+              "guidance": "Will Larson, no livro Staff Engineer, descreve quatro arquétipos de liderança técnica sem gestão de pessoas: tech lead, arquiteto, solucionador e braço direito. O tech lead orienta a execução de um ou poucos times próximos, em parceria com o gestor. Compare a descrição com o que o tech lead fictício faz hoje e identifique onde ele está atuando como solucionador individual em vez de guiar o time.",
+              "tips": [
+                "O arquétipo não é cargo: é um jeito de recortar o trabalho. Ele serve para conversar com o gestor sobre expectativas, não para enfeitar o perfil."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Quanto código o tech lead escreve",
+              "guidance": "Calcule quanto do tempo da semana o tech lead fictício passa em reuniões, revisões e interrupções. Com o que sobra, ele não deve pegar a tarefa crítica da sprint: se ela atrasar, o time inteiro atrasa junto. Reserve para ele trabalho fora do caminho crítico — protótipos, ferramentas internas, correções de dívida técnica, pareamento — que mantém o contato com o código sem virar gargalo.",
+              "tips": [
+                "Sinal de alerta: se o time espera o tech lead terminar algo para continuar, ele está no caminho crítico e o time está com capacidade ociosa."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Escrever o acordo de papéis",
+              "code": "Decide | Consultado | Informado",
+              "guidance": "Transforme as duas colunas em um documento de uma página com três marcações por item: quem decide, quem é consultado e quem é informado. Revise com a gestora fictícia e depois apresente ao time. O documento fica no repositório de documentação e é revisto a cada trimestre ou quando alguém muda de função.",
+              "tips": [
+                "Combine explicitamente quem conversa com quem sobre desempenho. Tech lead que dá feedback técnico e gestor que dá feedback de carreira precisam trocar informação antes, não depois, da avaliação."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que o papel precisa estar escrito",
+      "highlights": [
+        {
+          "icon": "grid",
+          "title": "Nada sem dono",
+          "text": "Itens que ninguém assume — como dívida técnica ou integração de novatos — não aparecem em nenhuma reunião até virarem crise."
+        },
+        {
+          "icon": "sync",
+          "title": "Nada com dois donos",
+          "text": "Quando tech lead e gestor decidem a mesma coisa, o time recebe orientações diferentes e aprende a escolher a que mais lhe convém."
+        },
+        {
+          "icon": "gauge",
+          "title": "Fora do caminho crítico",
+          "text": "O valor do tech lead está em destravar os outros. Escrever o código mais difícil sozinho é a forma mais cara de usar a pessoa mais experiente."
+        }
+      ],
+      "closingText": "Com os papéis combinados, fica claro que boa parte do trabalho do tech lead é decidir — ou garantir que as decisões técnicas sejam tomadas e entendidas. O próximo módulo trata de como decidir e de como registrar a decisão para que ela não se perca.",
+      "ctaTitle": "🧭 Papéis definidos!",
+      "ctaText": "Você já sabe o que é seu e o que não é. Agora vamos às decisões técnicas e ao registro que impede o time de rediscuti-las.",
+      "nextButtonText": "Ir para Módulo 1: Decisões Técnicas e ADRs"
+    },
+    {
+      "id": 1,
+      "icon": "folder",
+      "title": "Decisões Técnicas e ADRs",
+      "shortDescription": "Decidir com o time, registrar em uma página e revisitar quando o contexto mudar",
+      "introductionText": "Toda decisão técnica relevante tem três partes: o contexto que a motivou, a escolha feita e o preço que se aceitou pagar. Com o tempo, o contexto some da memória e só sobra a escolha — que passa a parecer arbitrária. O Architecture Decision Record, formato popularizado por Michael Nygard, resolve isso com um documento curto, versionado junto ao código. Neste módulo o time fictício precisa decidir se a fila de processamento de pagamentos continua no banco relacional ou passa para um serviço de mensageria; você conduz a decisão do início ao registro.",
+      "sections": [
+        {
+          "title": "📝 Do debate ao registro",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Classificar a decisão",
+              "guidance": "Antes de abrir discussão, pergunte quanto custa desfazer a escolha. Decisões fáceis de reverter (nome de variável, biblioteca de testes em um módulo isolado) devem ser tomadas rápido por quem está mais perto do problema. Decisões caras de reverter (banco de dados, protocolo entre serviços, contrato de API pública) merecem proposta escrita, prazo para comentários e ADR. Classifique a decisão da fila de pagamentos.",
+              "tips": [
+                "Tratar toda decisão como irreversível paralisa o time; tratar todas como reversíveis acumula escolhas caras feitas no impulso."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Proposta escrita antes da reunião",
+              "guidance": "Peça a uma pessoa do time — não ao tech lead — que escreva uma proposta curta com o problema, ao menos duas alternativas e os critérios de comparação (custo operacional, risco, esforço de migração). Ela circula com prazo fixo para comentários assíncronos. A reunião, se houver, serve para resolver as divergências que sobraram, não para apresentar o documento.",
+              "tips": [
+                "Proposta escrita dá voz a quem não fala em reunião e obriga quem propõe a deixar explícitas as alternativas descartadas."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Escrever o ADR",
+              "code": "docs/adr/0007-fila-de-pagamentos.md",
+              "guidance": "Registre a decisão com quatro seções: Contexto (as forças em jogo, inclusive as não técnicas, como prazo e conhecimento do time), Decisão (frase direta na voz ativa: decidimos que...), Status (proposto, aceito, substituído) e Consequências (o que melhora, o que piora e o que passa a ser necessário). Numere em sequência e guarde no repositório do serviço, onde passa por pull request como qualquer código.",
+              "tips": [
+                "Consequências negativas são a parte mais valiosa do ADR. Quem ler daqui a um ano precisa saber qual preço foi aceito de propósito."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Fechar a discussão com desacordo",
+              "guidance": "Nem toda decisão terá consenso. Garanta que todas as objeções foram ouvidas e registradas no ADR, anuncie a decisão e quem a tomou, e peça explicitamente o compromisso do time com a execução. Quem discordou pode — e deve — apontar se as consequências negativas previstas começarem a aparecer.",
+              "tips": [
+                "Consenso como requisito dá poder de veto à pessoa mais resistente. Ouvir todos não é o mesmo que esperar que todos concordem."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Revisitar e substituir",
+              "guidance": "ADR aceito não é editado: quando o contexto muda, escreve-se um novo ADR que referencia o anterior, e o antigo passa ao status substituído. Simule o cenário: seis meses depois, o volume de pagamentos triplicou. Escreva o ADR 0012 que substitui o 0007 e mostre como o histórico fica legível.",
+              "tips": [
+                "Um índice simples dos ADRs no início da pasta, com número, título e status, basta para que um novato reconstrua a história do sistema em uma tarde."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que registrar decisões",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Contexto que não se perde",
+          "text": "O motivo da escolha fica junto do código. Quem chega não precisa reconstruir a história em conversas de corredor."
+        },
+        {
+          "icon": "list",
+          "title": "Discussão que termina",
+          "text": "Com a decisão registrada, reabrir o assunto exige trazer um contexto novo — não apenas uma opinião diferente."
+        },
+        {
+          "icon": "shield",
+          "title": "Riscos assumidos às claras",
+          "text": "As consequências negativas escritas viram itens de acompanhamento, em vez de surpresas atribuídas a quem já saiu do time."
+        }
+      ],
+      "closingText": "Decisões bem tomadas e registradas reduzem a dependência do tech lead. O passo seguinte é ainda mais importante: desenvolver as pessoas para que elas mesmas tomem boas decisões. Para isso, code review, 1:1, feedback e delegação são as ferramentas do dia a dia.",
+      "ctaTitle": "📝 Primeiro ADR no repositório!",
+      "ctaText": "O time já decide e registra. Agora vamos para as práticas que fazem as pessoas crescerem enquanto entregam.",
+      "nextButtonText": "Ir para Módulo 2: Review, 1:1, Feedback e Delegação"
+    },
+    {
+      "id": 2,
+      "icon": "sync",
+      "title": "Review, 1:1, Feedback e Delegação",
+      "shortDescription": "As quatro práticas que desenvolvem pessoas enquanto o trabalho acontece",
+      "introductionText": "O tech lead tem poucas oportunidades formais de ensinar, mas muitas informais. O code review é a mais frequente: cada pull request é uma conversa sobre como o time escreve software. O 1:1 é o espaço para o que não cabe no review. O feedback dá direção específica e a delegação dá espaço para crescer. Neste módulo você aplica as quatro no time fictício, onde uma desenvolvedora pleno quer assumir mais responsabilidade e um desenvolvedor júnior tem pull requests que voltam três vezes.",
+      "sections": [
+        {
+          "title": "🤝 Desenvolvendo pessoas no dia a dia",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Comentários de review classificados",
+              "code": "bloqueante: | sugestão: | nit: | pergunta:",
+              "guidance": "Adote no guia de review do time um prefixo em cada comentário: bloqueante para o que impede o merge (erro, falha de segurança, quebra de contrato), sugestão para melhorias opcionais, nit para detalhes de estilo e pergunta para quando você não entendeu. Reescreva cinco comentários reais do time fictício usando os prefixos e trocando ordens por perguntas que explicam o porquê.",
+              "tips": [
+                "Tudo que um formatador ou linter pode apontar não deve consumir comentário humano. Automatize e reserve o review para lógica, design e clareza."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "PRs pequenos e resposta rápida",
+              "guidance": "Combine com o time um tamanho de referência para pull requests e um prazo máximo para a primeira resposta de review. PR grande recebe revisão superficial; PR que espera dias força a pessoa a trocar de contexto e acumular mudanças. Para o júnior cujos PRs voltam três vezes, proponha uma sessão de pareamento antes de abrir o próximo, em vez de mais uma rodada de comentários.",
+              "tips": [
+                "Quando o mesmo comentário aparece em três PRs seguidos, o problema não é do autor: falta um exemplo ou uma regra no guia do time."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "1:1 com a pauta da outra pessoa",
+              "guidance": "Monte uma cadência fixa de 1:1 — semanal ou quinzenal, de 30 minutos — e um documento compartilhado em que a outra pessoa escreve os assuntos primeiro. Status de tarefa não entra: isso se resolve no quadro do time. Prepare três perguntas abertas de reserva para quando a pauta vier vazia, como: o que está te atrapalhando que eu poderia remover?",
+              "tips": [
+                "Cancelar 1:1 por falta de tempo comunica prioridade. Se precisar mudar, remarque na mesma semana."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Feedback específico e frequente",
+              "code": "Situação → Comportamento → Impacto",
+              "guidance": "Use o modelo SBI: descreva a situação concreta, o comportamento observável (não a intenção nem a personalidade) e o impacto que ele teve. Escreva dois feedbacks para o time fictício — um de reconhecimento e um de correção — e entregue o de correção a sós, perto do fato. Feedback técnico pode vir do tech lead; o que afeta avaliação formal precisa ser alinhado com a gestora, como combinado no acordo de papéis.",
+              "tips": [
+                "Feedback guardado para a avaliação semestral chega tarde demais para ser útil e cedo demais para ser justo."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Delegar o problema, não a solução",
+              "guidance": "Entregue à desenvolvedora pleno a responsabilidade pela migração descrita no ADR do módulo anterior. Combine o resultado esperado, as restrições (prazo, orçamento de indisponibilidade), o nível de autonomia (decide e informa, ou propõe e aguarda) e dois checkpoints fixos. Nos checkpoints você pergunta e aponta riscos; não reescreve o plano.",
+              "tips": [
+                "Delegar só tarefas pequenas e já resolvidas não desenvolve ninguém. A pessoa cresce quando recebe uma parte da ambiguidade junto com o trabalho."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que essas práticas escalam",
+      "highlights": [
+        {
+          "icon": "tools",
+          "title": "Ensino embutido no fluxo",
+          "text": "Review bem feito ensina dezenas de vezes por semana, sem exigir treinamento separado nem tirar ninguém do trabalho."
+        },
+        {
+          "icon": "shield",
+          "title": "Espaço seguro e regular",
+          "text": "O 1:1 frequente faz problemas aparecerem cedo, quando ainda são incômodos — e não pedidos de demissão."
+        },
+        {
+          "icon": "bolt",
+          "title": "Capacidade que se multiplica",
+          "text": "Cada problema delegado com clareza é uma pessoa a mais capaz de conduzir a próxima decisão difícil sem o tech lead."
+        }
+      ],
+      "closingText": "Com pessoas crescendo e decisões distribuídas, surge a pergunta inevitável: como saber se o time está entregando bem e se está saudável? O último módulo trata dos sinais — os que se medem e os que só se percebem perguntando.",
+      "ctaTitle": "🤝 Práticas de desenvolvimento no lugar!",
+      "ctaText": "Review, 1:1, feedback e delegação rodando. Falta aprender a ler os sinais de entrega e de saúde do time sem virar fiscal.",
+      "nextButtonText": "Ir para Módulo 3: Métricas de Entrega e Saúde do Time"
+    },
+    {
+      "id": 3,
+      "icon": "gauge",
+      "title": "Métricas de Entrega e Saúde do Time",
+      "shortDescription": "As cinco métricas DORA, os limites delas e a segurança psicológica que nenhum painel mostra",
+      "introductionText": "A pesquisa DORA acompanha há mais de uma década como organizações entregam software e consolidou um conjunto pequeno de métricas de desempenho de entrega. Hoje são cinco, agrupadas em vazão e instabilidade. Elas são úteis justamente por serem poucas e por medirem o sistema, não as pessoas. Mas número sozinho não explica por que um time vai bem: o estudo Project Aristotle, do Google, analisou 180 times e concluiu que importa menos quem está no time e mais como o time trabalha junto. Neste módulo você monta o painel de entrega do time fictício e o questionário de saúde que o acompanha.",
+      "sections": [
+        {
+          "title": "📊 Lendo os sinais do time",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "As cinco métricas DORA",
+              "guidance": "Defina para o serviço de pagamentos fictício as métricas de vazão — tempo de espera da mudança (do commit até produção), frequência de deploy e tempo de recuperação de deploy com falha — e as de instabilidade — taxa de falha de mudança (deploys que exigem rollback ou hotfix) e taxa de retrabalho de deploy (deploys não planejados, disparados por incidente em produção). Para cada uma, indique de onde vem o dado: repositório, pipeline ou registro de incidentes.",
+              "tips": [
+                "O tempo de recuperação de deploy com falha substituiu o antigo MTTR no modelo atual da DORA: ele mede a recuperação de falhas causadas pela própria mudança."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Medir o serviço, não a pessoa",
+              "guidance": "Configure o painel no nível do serviço ou da aplicação, com tendência ao longo do tempo. Não crie visão por desenvolvedor nem compare o time de pagamentos com o time do aplicativo móvel: os contextos são diferentes demais. Escreva no topo do painel, em uma frase, para que ele serve — por exemplo, encontrar o próximo gargalo do fluxo de entrega.",
+              "tips": [
+                "A DORA lista como armadilhas comparar aplicações muito diferentes e usar as métricas para competir entre times. Elas servem para o time melhorar em relação a si mesmo."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Evitar que o número vire meta",
+              "guidance": "Simule o que acontece se a gestão impuser uma meta de dez deploys por dia: o time divide mudanças artificialmente, o número sobe e nada melhora. Essa é a lei de Goodhart em ação. Substitua a meta por uma pergunta de melhoria — o que nos impede de colocar uma mudança pequena em produção hoje? — e observe as cinco métricas juntas, porque elas se equilibram: vazão alta com instabilidade subindo é sinal de alerta.",
+              "tips": [
+                "Comece pela conversa e por uma planilha simples. A DORA alerta contra investir em integrações caras de medição antes de agir sobre o que já se sabe."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Questionário de saúde do time",
+              "guidance": "Monte um questionário anônimo e curto com uma ou duas afirmações para cada uma das cinco dinâmicas do Project Aristotle: segurança psicológica, confiabilidade entre colegas, estrutura e clareza, significado do trabalho e impacto. Aplique a cada trimestre e discuta os resultados com o time inteiro, escolhendo uma única dinâmica para trabalhar no período.",
+              "tips": [
+                "O resultado é do time, não do líder. Apresente os números, pergunte o que eles significam e deixe as ações saírem da conversa."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Segurança psicológica na prática",
+              "guidance": "Amy Edmondson define segurança psicológica como a crença compartilhada de que o time é seguro para correr riscos interpessoais — admitir erro, fazer pergunta, discordar. Pratique três comportamentos com o time fictício: conduzir o próximo postmortem sem culpados, focado no sistema e não em quem apertou o botão; admitir em público um erro seu da semana; e responder à próxima pergunta básica de um novato agradecendo, não corrigindo.",
+              "tips": [
+                "Segurança psicológica não é ausência de cobrança. Times seguros têm padrões altos — a diferença é que os problemas aparecem cedo, porque ninguém tem medo de levantá-los."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que medir com cuidado",
+      "highlights": [
+        {
+          "icon": "gauge",
+          "title": "Poucos números, bem escolhidos",
+          "text": "Cinco métricas que se equilibram dizem mais sobre o fluxo de entrega do que dezenas de indicadores que ninguém consegue interpretar."
+        },
+        {
+          "icon": "shield",
+          "title": "Confiança antes do painel",
+          "text": "Métrica usada para vigiar é manipulada. Métrica usada pelo time para melhorar vira ferramenta de conversa."
+        },
+        {
+          "icon": "globe",
+          "title": "O que o painel não mostra",
+          "text": "Medo de errar, falta de clareza e trabalho sem propósito não aparecem em logs de deploy — aparecem quando você pergunta do jeito certo."
+        }
+      ],
+      "closingText": "Você percorreu os quatro pilares da liderança técnica: papel claro, decisões registradas, pessoas em desenvolvimento e sinais lidos com cuidado. Nenhum deles depende de carisma; todos dependem de prática deliberada e de revisão periódica. O kit que você montou para o time fictício serve de ponto de partida para o seu próprio time.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você agora tem um método para liderar tecnicamente sem virar gargalo nem fiscal. Um próximo passo natural é Git e GitHub Workflow: Colaboração em Projetos de Código Aberto, para levar essas práticas ao fluxo de contribuição.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Quais são os dois eixos de responsabilidade que costumam se misturar na liderança de times de software?",
+      "explanation": "A liderança de um time técnico envolve direção técnica (arquitetura, qualidade, decisões, riscos) e desenvolvimento de pessoas (carreira, desempenho, contratação). Eles podem estar com uma pessoa só ou divididos entre tech lead e gestor; o problema é quando ninguém sabe onde cada um termina. As demais opções descrevem recortes que não organizam responsabilidades.",
+      "options": [
+        {
+          "text": "Direção técnica e desenvolvimento de pessoas",
+          "isCorrect": true
+        },
+        {
+          "text": "Frontend e backend",
+          "isCorrect": false
+        },
+        {
+          "text": "Planejamento de sprint e retrospectiva",
+          "isCorrect": false
+        },
+        {
+          "text": "Orçamento e marketing",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Por que o tech lead deve evitar pegar a tarefa do caminho crítico da sprint?",
+      "explanation": "O tech lead tem o tempo fragmentado por reuniões, revisões e interrupções. Se a tarefa crítica estiver com ele, qualquer atraso dele atrasa o time inteiro, que fica esperando. O valor dele está em destravar os outros. Não se trata de proibição de programar, nem de hierarquia ou de qualidade do código.",
+      "options": [
+        {
+          "text": "Porque com o tempo fragmentado ele vira gargalo e atrasa o time inteiro",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque tech lead não deve escrever código em nenhuma hipótese",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o código do tech lead não passa por revisão",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque tarefas críticas são sempre responsabilidade do gestor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "No livro Staff Engineer, de Will Larson, qual destes é um dos quatro arquétipos de liderança técnica?",
+      "explanation": "Larson descreve quatro arquétipos: tech lead, arquiteto, solucionador e braço direito. O tech lead orienta a execução de um ou poucos times em parceria com o gestor. Scrum master, product owner e gerente de projetos são papéis de outros contextos e não fazem parte dessa classificação.",
+      "options": [
+        {
+          "text": "Arquiteto",
+          "isCorrect": true
+        },
+        {
+          "text": "Scrum master",
+          "isCorrect": false
+        },
+        {
+          "text": "Product owner",
+          "isCorrect": false
+        },
+        {
+          "text": "Gerente de projetos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Quais seções compõem o formato clássico de um ADR?",
+      "explanation": "O formato popularizado por Michael Nygard tem título numerado e quatro seções: contexto, decisão, status e consequências. As consequências, inclusive as negativas, são o que permite entender depois o preço aceito. As outras opções descrevem documentos de outra natureza, como plano de projeto ou relatório de incidente.",
+      "options": [
+        {
+          "text": "Contexto, decisão, status e consequências",
+          "isCorrect": true
+        },
+        {
+          "text": "Objetivo, cronograma, orçamento e responsáveis",
+          "isCorrect": false
+        },
+        {
+          "text": "Problema, causa raiz, correção e prevenção",
+          "isCorrect": false
+        },
+        {
+          "text": "Requisitos, protótipo, testes e entrega",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "O contexto de uma decisão registrada em um ADR aceito mudou. O que fazer?",
+      "explanation": "ADR aceito não é reescrito: cria-se um novo ADR que referencia o anterior, e o antigo passa ao status substituído. Assim o histórico permanece legível e qualquer pessoa entende por que a decisão mudou. Editar ou apagar o original destrói exatamente a informação que o ADR existe para preservar.",
+      "options": [
+        {
+          "text": "Escrever um novo ADR que substitui o anterior e marcar o antigo como substituído",
+          "isCorrect": true
+        },
+        {
+          "text": "Editar o ADR original com a nova decisão",
+          "isCorrect": false
+        },
+        {
+          "text": "Apagar o ADR original para evitar confusão",
+          "isCorrect": false
+        },
+        {
+          "text": "Registrar a mudança apenas na ata da reunião",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Qual decisão mais justifica proposta escrita, prazo para comentários e ADR?",
+      "explanation": "Decisões caras de reverter, como trocar a forma de processar a fila de pagamentos, merecem processo mais cuidadoso. Decisões fáceis de desfazer, como nome de variável ou estilo de um teste, devem ser tomadas rapidamente por quem está perto do problema. Tratar tudo com o mesmo peso paralisa o time.",
+      "options": [
+        {
+          "text": "Migrar a fila de pagamentos do banco relacional para um serviço de mensageria",
+          "isCorrect": true
+        },
+        {
+          "text": "Renomear uma variável local em uma função",
+          "isCorrect": false
+        },
+        {
+          "text": "Escolher a ordem dos testes dentro de um arquivo",
+          "isCorrect": false
+        },
+        {
+          "text": "Ajustar o texto de uma mensagem de log",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Qual é o principal ganho de classificar comentários de code review com prefixos como bloqueante, sugestão e nit?",
+      "explanation": "O prefixo deixa claro o que impede o merge e o que é opcional, evitando que o autor trate um detalhe de estilo como exigência ou ignore um problema sério. Isso torna o review mais rápido e mais didático. Não substitui testes, não acelera o pipeline e não tem relação com métricas individuais.",
+      "options": [
+        {
+          "text": "O autor sabe o que impede o merge e o que é opcional",
+          "isCorrect": true
+        },
+        {
+          "text": "Dispensa a necessidade de testes automatizados",
+          "isCorrect": false
+        },
+        {
+          "text": "Permite contar quantos erros cada desenvolvedor comete",
+          "isCorrect": false
+        },
+        {
+          "text": "Faz o pipeline de CI rodar mais rápido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Qual destas práticas caracteriza um bom 1:1?",
+      "explanation": "O 1:1 pertence à outra pessoa: ela escreve a pauta primeiro, e o espaço serve para carreira, dificuldades, ideias e bloqueios. Status de tarefa se resolve no quadro do time. Cancelar com frequência comunica falta de prioridade, e transformar a conversa em cobrança de entregas destrói a confiança que a torna útil.",
+      "options": [
+        {
+          "text": "A pauta é escrita primeiro pela outra pessoa, e status de tarefa fica fora",
+          "isCorrect": true
+        },
+        {
+          "text": "O líder revisa o andamento de cada tarefa da sprint",
+          "isCorrect": false
+        },
+        {
+          "text": "Acontece apenas quando há um problema de desempenho",
+          "isCorrect": false
+        },
+        {
+          "text": "É cancelado sempre que não há assunto urgente",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "O que significa delegar o problema, e não a solução?",
+      "explanation": "Delegar o problema é entregar o resultado esperado, as restrições e o nível de autonomia, deixando a pessoa definir o caminho, com checkpoints combinados. Entregar um passo a passo pronto não desenvolve ninguém, e delegar sem acompanhamento é abandono. Nos checkpoints o líder pergunta e aponta riscos, não reescreve o plano.",
+      "options": [
+        {
+          "text": "Combinar resultado, restrições, autonomia e checkpoints e deixar a pessoa definir o caminho",
+          "isCorrect": true
+        },
+        {
+          "text": "Entregar um passo a passo detalhado para a pessoa executar",
+          "isCorrect": false
+        },
+        {
+          "text": "Repassar a tarefa e só verificar o resultado no prazo final",
+          "isCorrect": false
+        },
+        {
+          "text": "Delegar apenas tarefas pequenas que já foram resolvidas antes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "No modelo atual da DORA, quais métricas compõem o grupo de instabilidade da entrega?",
+      "explanation": "A instabilidade é medida pela taxa de falha de mudança (deploys que exigem intervenção imediata, como rollback ou hotfix) e pela taxa de retrabalho de deploy (deploys não planejados disparados por incidente em produção). Tempo de espera da mudança, frequência de deploy e tempo de recuperação de deploy com falha formam o grupo de vazão.",
+      "options": [
+        {
+          "text": "Taxa de falha de mudança e taxa de retrabalho de deploy",
+          "isCorrect": true
+        },
+        {
+          "text": "Frequência de deploy e tempo de espera da mudança",
+          "isCorrect": false
+        },
+        {
+          "text": "Linhas de código por dia e número de commits",
+          "isCorrect": false
+        },
+        {
+          "text": "Cobertura de testes e quantidade de pull requests",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "A gestão quer fixar uma meta de dez deploys por dia para todos os times. Qual é o risco?",
+      "explanation": "Quando uma métrica vira meta, as pessoas passam a otimizar o número em vez do resultado — a lei de Goodhart, que a própria DORA cita como armadilha. O time tende a fatiar mudanças artificialmente para bater a meta, sem melhorar a entrega. Além disso, comparar times com contextos diferentes com o mesmo alvo é outra armadilha apontada pela DORA.",
+      "options": [
+        {
+          "text": "O time passa a manipular o número sem melhorar a entrega",
+          "isCorrect": true
+        },
+        {
+          "text": "Nenhum: mais deploys sempre significam entrega melhor",
+          "isCorrect": false
+        },
+        {
+          "text": "A taxa de falha de mudança cai automaticamente",
+          "isCorrect": false
+        },
+        {
+          "text": "O tempo de recuperação deixa de precisar ser medido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Segundo o estudo Project Aristotle, do Google, qual dinâmica teve maior peso na eficácia dos times?",
+      "explanation": "Entre as cinco dinâmicas identificadas — segurança psicológica, confiabilidade, estrutura e clareza, significado e impacto — a segurança psicológica foi a mais importante. O estudo, com 180 times, concluiu que importa menos quem está no time e mais como o time trabalha junto, por isso senioridade e tamanho do time não aparecem como fatores principais.",
+      "options": [
+        {
+          "text": "Segurança psicológica",
+          "isCorrect": true
+        },
+        {
+          "text": "Senioridade média dos integrantes",
+          "isCorrect": false
+        },
+        {
+          "text": "Tamanho do time",
+          "isCorrect": false
+        },
+        {
+          "text": "Trabalho presencial no mesmo escritório",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "Um kit de liderança técnica aplicado a um time fictício de pagamentos: acordo de papéis entre tech lead e gestora, dois ADRs encadeados (a decisão e a sua substituição), guia de code review com prefixos, roteiro de 1:1 e feedbacks no modelo SBI, plano de delegação com checkpoints, painel das cinco métricas DORA no nível do serviço e questionário trimestral de saúde do time.",
+    "highlights": [
+      "Acordo de papéis e ADRs versionados no repositório",
+      "Guia de code review, roteiro de 1:1 e plano de delegação",
+      "Painel DORA do serviço e questionário de saúde do time"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "A forma de medir entrega de software amadureceu. A pesquisa DORA, referência da área, ampliou suas métricas de quatro para cinco — acrescentando a taxa de retrabalho de deploy — e passou a agrupá-las em vazão e instabilidade, com alertas explícitos contra usá-las como meta ou para comparar times. Ao mesmo tempo, ferramentas que extraem esses números automaticamente se popularizaram, o que torna mais fácil do que nunca transformar um bom instrumento em vigilância.",
+      "Do lado das pessoas, a evidência aponta na mesma direção. No Project Aristotle, que estudou 180 times no Google, a composição do time pesou menos do que a forma como ele trabalha junto, e a segurança psicológica foi a dinâmica mais importante. Para quem lidera tecnicamente, isso significa que as práticas deste programa — papéis claros, decisões transparentes, feedback frequente e métricas usadas pelo próprio time — não são complemento do trabalho técnico: são parte dele."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Times de produto",
+        "description": "Times que mantêm um serviço ou aplicação e precisam decidir e entregar com frequência."
+      },
+      {
+        "label": "Engenharia de plataforma",
+        "description": "Times que medem e melhoram o fluxo de entrega dos outros times."
+      },
+      {
+        "label": "Empresas em crescimento",
+        "description": "Onde a primeira geração de tech leads é promovida sem preparo formal."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Tech leads recém-promovidos",
+        "description": "Assumiram o papel e ainda trabalham como a melhor pessoa programadora do time."
+      },
+      {
+        "label": "Seniores a caminho de staff",
+        "description": "Querem ampliar a influência técnica sem necessariamente gerir pessoas."
+      },
+      {
+        "label": "Gestores de engenharia",
+        "description": "Precisam combinar papéis com o tech lead e usar métricas sem vigiar o time."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "A divisão entre trilha técnica e trilha de gestão, com papéis como tech lead e staff engineer, é prática comum em empresas de tecnologia de todos os portes. As métricas DORA são adotadas como padrão de medição de entrega por times de engenharia e plataformas de observabilidade, e o registro de decisões em ADRs é prática difundida em times que mantêm sistemas de longa duração.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "DORA — DORA's software delivery metrics: the four keys (guia oficial das métricas e armadilhas)",
+      "url": "https://dora.dev/guides/dora-metrics-four-keys"
+    },
+    {
+      "label": "Google re:Work — Guide: Understand team effectiveness (Project Aristotle)",
+      "url": "https://rework.withgoogle.com/intl/en/guides/understand-team-effectiveness"
+    },
+    {
+      "label": "O'Reilly — The Manager's Path, de Camille Fournier (2017)",
+      "url": "https://oreilly.com/library/view/the-managers-path/9781491973882"
+    },
+    {
+      "label": "Staff Engineer: Leadership beyond the management track, de Will Larson (2021)",
+      "url": "https://staffeng.com/book"
+    }
+  ]
 }

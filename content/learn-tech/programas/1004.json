@@ -1,0 +1,851 @@
+{
+  "id": 1004,
+  "image": "https://cdn.pixabay.com/photo/2020/12/03/23/35/work-5801876_1280.jpg",
+  "category": "Carreira e Soft Skills",
+  "categoryFilter": "carreira-soft-skills",
+  "title": "Produtividade, Hábitos e Metas para Quem Estuda e Trabalha com Tecnologia",
+  "lessons": "18 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Iniciante",
+  "description": "Para quem divide a semana entre trabalho, faculdade, curso e estudo por conta própria e sente que o tempo nunca fecha. Você define metas que dá para medir, entende os hábitos que comandam o seu dia, organiza tarefas com GTD e Matriz de Eisenhower e protege o tempo de foco — com ferramentas simples, em papel ou planilha.",
+  "letslearn": [
+    "Avaliar onde seu tempo e sua energia estão indo e escrever metas SMART com prazo",
+    "Mapear a própria rotina e mudar um hábito usando deixa, rotina e recompensa",
+    "Esvaziar a cabeça com GTD e priorizar com a Matriz de Eisenhower",
+    "Proteger blocos de foco, lidar com a procrastinação e revisar o próprio planejamento toda semana"
+  ],
+  "curriculum": "Da meta à rotina que a sustenta",
+  "about": "O programa segue a sequência de um treinamento de produtividade em quatro etapas: motivação, cotidiano, planejamento e concentração. Primeiro você decide para onde quer ir e por quê; depois olha com honestidade para a rotina e os hábitos que já tem; em seguida monta um sistema confiável de tarefas e prioridades; e por fim aprende a executar com foco e a revisar o que planejou. Todos os exemplos usam situações de quem estuda e trabalha com tecnologia — tickets, provas, cursos, notificações e prazos de entrega —, sempre com dados fictícios.",
+  "materials": [
+    "Folha das Esferas da Vida com 20 pontos para distribuir",
+    "Tabela de autoavaliação da rotina (quanto acho que levo x quanto levo de fato)",
+    "Ficha de troca de hábito em 5 passos",
+    "Diagrama de decisão do GTD e modelo da Matriz de Eisenhower",
+    "Grade horária diária com classificação importante, urgente e circunstancial",
+    "Planner de revisão: dia, semana, mês, trimestre e semestre"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Motivação: Por Que e Para Onde",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Cotidiano: Rotina e Hábitos",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Planejamento: Tarefas e Prioridades",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Concentração: Foco, Execução e Revisão",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Carreira e Soft Skills",
+    "mainTitle": "Produtividade não é fazer mais coisas: é gastar tempo e energia no que leva você aonde quer chegar.",
+    "introductionParagraphs": [
+      {
+        "title": "Produtividade começa pelo porquê",
+        "text": "Aplicativo de tarefas não resolve falta de direção. Quem não sabe o que quer alcançar acaba medindo produtividade pela quantidade de coisas riscadas da lista — e termina a semana cansado sem ter avançado no que importa. Por isso o programa começa pelas **metas**: o que você quer, em que prazo, e o que está ajudando ou atrapalhando."
+      },
+      {
+        "title": "O dia é feito de hábitos",
+        "text": "Boa parte do que você faz ao longo do dia acontece no automático: abrir o celular quando a compilação demora, responder mensagem assim que ela chega, adiar o estudo para depois do jantar. Entender o **loop do hábito** — deixa, rotina e recompensa — é o que permite trocar uma rotina ruim por outra sem depender só de força de vontade."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não promete rotina de quem acorda às quatro da manhã nem vende um aplicativo. As ferramentas cabem em uma folha de papel ou em uma planilha. A ideia é que você saia com um sistema simples, testado na sua própria semana, e com critério para ajustá-lo quando a vida mudar."
+      }
+    ],
+    "courseAboutTitle": "Um sistema pessoal, não uma receita pronta",
+    "courseAboutDescription": "Quem estuda e trabalha com tecnologia vive cercado de interrupções: chat, e-mail, reunião, alerta de sistema, prova, entrega de curso. O programa ensina a separar o importante do urgente, a colocar tudo para fora da cabeça em um lugar confiável e a reservar tempo de foco de verdade. Ao final, você tem metas escritas, um hábito em processo de troca, uma lista de tarefas organizada e uma rotina de revisão semanal.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Motivação: Por Que e Para Onde",
+        "items": [
+          {
+            "label": "Esferas da vida",
+            "description": "Onde seu tempo e sua energia estão hoje — e onde você queria que estivessem."
+          },
+          {
+            "label": "Metas SMART",
+            "description": "Transformar desejo vago em meta específica, mensurável e com prazo."
+          },
+          {
+            "label": "Por que metas não saem do papel",
+            "description": "A meta da meta, a meta à vista e o grupo de apoio."
+          },
+          {
+            "label": "Autoconsciência",
+            "description": "Os cinco pilares da inteligência emocional como ponto de partida."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Cotidiano: Rotina e Hábitos",
+        "items": [
+          {
+            "label": "Autoavaliação da rotina",
+            "description": "Comparar quanto tempo você acha que gasta com quanto gasta de fato."
+          },
+          {
+            "label": "Loop do hábito",
+            "description": "Deixa, rotina e recompensa, e os cinco tipos de gatilho."
+          },
+          {
+            "label": "Trocar um hábito",
+            "description": "Os cinco passos para substituir uma rotina por uma reação concorrente."
+          },
+          {
+            "label": "O dia perfeito",
+            "description": "Desenhar o dia ideal para usar como referência, não como regra."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Planejamento: Tarefas e Prioridades",
+        "items": [
+          {
+            "label": "GTD",
+            "description": "Capturar, esclarecer, organizar, revisar e fazer."
+          },
+          {
+            "label": "Matriz de Eisenhower",
+            "description": "Separar o importante do urgente e decidir o que fazer com cada tarefa."
+          },
+          {
+            "label": "Grade horária",
+            "description": "Encaixar as tarefas no dia e enxergar quanto tempo vai para o circunstancial."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Concentração: Foco, Execução e Revisão",
+        "items": [
+          {
+            "label": "Pomodoro",
+            "description": "Trabalhar em blocos curtos com pausa definida."
+          },
+          {
+            "label": "Proteger o foco",
+            "description": "Reduzir interrupções e reservar tempo sem notificação."
+          },
+          {
+            "label": "Procrastinação",
+            "description": "Começar pequeno e recomeçar sem culpa."
+          },
+          {
+            "label": "Revisão semanal",
+            "description": "Fechar o ciclo: planejar, fazer, checar e ajustar."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para aplicar na sua própria semana. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "gauge",
+      "title": "Motivação: Por Que e Para Onde",
+      "shortDescription": "Esferas da vida, metas SMART e autoconsciência",
+      "introductionText": "Antes de organizar tarefas, vale responder a uma pergunta simples: produtivo para quê? Sem essa resposta, qualquer sistema vira só uma forma mais eficiente de se ocupar. Neste módulo você faz um retrato de como distribui tempo e energia hoje, escreve metas que dá para acompanhar, entende por que tantas metas morrem em fevereiro e faz uma autoavaliação honesta de como lida com as próprias emoções — porque é aí que muita meta trava.",
+      "sections": [
+        {
+          "title": "🎯 Definindo para onde ir",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Esferas da vida: 20 pontos para distribuir",
+              "code": "Lazer · Físico · Família · Social · Profissional · Intelectual · Espiritual · Financeiro",
+              "guidance": "Você tem 20 pontos para distribuir entre as oito esferas, de acordo com quanto tempo e energia investe em cada uma hoje. Exemplo fictício: a Bia, que trabalha no suporte de uma software house e faz faculdade à noite, deu 8 para Profissional, 6 para Intelectual, 2 para Social, 2 para Lazer, 1 para Físico, 1 para Família e 0 para as demais. Depois de preencher, faça a segunda pergunta: essa distribuição reflete o que é mais importante para você neste momento? Se não, anote qual esfera quer aumentar.",
+              "tips": [
+                "Não existe distribuição certa. Uma fase de fim de curso pode pedir mais pontos em Intelectual; o problema é quando uma esfera fica em zero por muito tempo sem você ter decidido isso.",
+                "Guarde a folha: você vai refazer o exercício na revisão do último módulo."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Escrever uma meta SMART",
+              "code": "Específica · Mensurável · Atingível · Relevante · Temporal",
+              "guidance": "Pegue a esfera que você quer fortalecer e escreva uma meta para ela. Compare: 'estudar mais programação' não diz o que fazer nem quando acaba. 'Concluir os 6 módulos do curso de SQL até 15 de dezembro, estudando 4 horas por semana' é específica, dá para medir, cabe na rotina, tem relação com o que você quer e tem data. Escreva no máximo três metas — mais do que isso dilui a atenção.",
+              "tips": [
+                "Se você não consegue dizer em uma frase como vai saber que a meta foi cumprida, ela ainda não está mensurável.",
+                "Prazo curto ajuda. Uma meta de um ano pode ser quebrada em metas de trimestre e de mês."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Por que a meta não sai do papel",
+              "code": "meta da meta · recursos x interferências · meta à vista",
+              "guidance": "Para cada meta, responda três coisas. Qual é a meta da meta — o que você quer de fato quando cumprir essa meta (por exemplo, concluir o curso de SQL para concorrer à vaga de analista de dados júnior)? Quais recursos internos e externos ajudam e quais interferências afastam você dela? E onde a meta vai ficar visível todos os dias? Por fim, escolha pelo menos uma pessoa para contar a meta: grupo de apoio reduz a chance de desistir quando os outros desestimulam.",
+              "tips": [
+                "Meio é melhor que nada. Se a semana apertou e você estudou 2 das 4 horas, isso conta — o erro é zerar e esperar a segunda-feira perfeita.",
+                "Quando acertar, comemore. Quando errar, anote o que aprendeu e retome no dia seguinte."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Autoconsciência: um retrato honesto",
+              "code": "Autoconsciência · Autorregulação · Automotivação · Empatia · Habilidades sociais",
+              "guidance": "Responda a um questionário de 20 perguntas de 1 (nunca) a 5 (sempre), quatro para cada pilar da inteligência emocional: você sabe identificar o que sente? Consegue se acalmar quando está chateado? Persiste apesar dos obstáculos? Tenta ver a situação pela perspectiva do outro? Promove conversas difíceis para resolver problemas? Some os pontos por pilar e veja qual está mais baixo. É ele que vai merecer atenção quando a meta encontrar resistência.",
+              "tips": [
+                "Responda como você é, não como gostaria de ser. Nota máxima em tudo costuma indicar pouca autoconsciência, não excelência.",
+                "Inteligência emocional não é traço de nascença: ela se desenvolve com prática, como qualquer outra habilidade."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que começar pela motivação",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Enxergar antes de mudar",
+          "text": "As esferas da vida mostram para onde seu tempo já está indo. Muita gente descobre que a esfera que diz ser prioridade é a que recebe menos pontos."
+        },
+        {
+          "icon": "list",
+          "title": "Meta que dá para medir",
+          "text": "Meta SMART troca o 'preciso estudar mais' por algo que você consegue acompanhar semana a semana — e saber, sem dúvida, quando terminou."
+        },
+        {
+          "icon": "shield",
+          "title": "Emoção também é variável",
+          "text": "Frustração, cansaço e medo de errar derrubam mais metas do que falta de método. Conhecer seu ponto fraco ajuda a planejar em volta dele."
+        }
+      ],
+      "closingText": "Você já sabe onde está investindo tempo, tem até três metas escritas com prazo e conhece o pilar emocional que mais precisa de cuidado. Agora é hora de olhar para o lugar onde as metas são cumpridas ou abandonadas: o seu dia comum.",
+      "ctaTitle": "🎯 Metas no papel!",
+      "ctaText": "Você sabe para onde quer ir. Vamos ver como sua rotina e seus hábitos estão levando — ou não — você até lá.",
+      "nextButtonText": "Ir para Módulo 1: Cotidiano: Rotina e Hábitos"
+    },
+    {
+      "id": 1,
+      "icon": "sync",
+      "title": "Cotidiano: Rotina e Hábitos",
+      "shortDescription": "Autoavaliação da rotina, loop do hábito e troca de hábitos",
+      "introductionText": "A distância entre a meta e o resultado está quase toda no cotidiano. Grande parte do dia acontece no automático, e por isso mesmo é difícil de perceber. Este módulo começa medindo a rotina real, explica como um hábito se forma e se dispara, e termina com um método em cinco passos para trocar uma rotina que atrapalha por outra que ajuda. No fim, você desenha o seu dia perfeito para servir de referência.",
+      "sections": [
+        {
+          "title": "🔄 Entendendo o seu dia",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Autoavaliação da rotina",
+              "code": "Atividade | Quanto acho que levo | Seg | Ter | Qua | Qui | Sex | Quanto levo de fato",
+              "guidance": "Reserve uns 20 minutos para montar a tabela. Na primeira coluna, liste as atividades de um dia comum (acordar, deslocamento, trabalho, aula, estudo, refeições, redes sociais, sono); na segunda, quanto tempo você acha que gasta em cada uma. Depois, durante uma semana, anote o tempo real de cada dia, do momento em que acorda até dormir. Na última coluna, calcule a média. Exemplo fictício: 'soneca + acordar' — achava 10 minutos, a média real deu 30.",
+              "tips": [
+                "Quanto mais detalhe, mais padrões aparecem. 'Computador' é vago; 'revisar tickets', 'curso online' e 'vídeos' são três linhas diferentes.",
+                "Atividade que surgir durante a semana e não estava na lista entra no fim da tabela com 0 na coluna 'quanto acho que levo'."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "O loop do hábito",
+              "code": "Deixa → Rotina → Recompensa",
+              "guidance": "Todo hábito tem três partes: a deixa, que dispara o comportamento; a rotina, que é o hábito em si; e a recompensa, que é o que você está buscando. Exemplo: você marca uma tarefa como concluída (deixa), abre as notificações e responde tudo na hora (rotina) e sente que está sendo produtivo (recompensa). Escolha três comportamentos da sua tabela de rotina e identifique as três partes de cada um.",
+              "tips": [
+                "A recompensa costuma ser uma sensação — alívio, distração, sensação de dever cumprido —, não um objeto.",
+                "Hábito bom também tem loop. Entender o loop dos hábitos que já funcionam ajuda a construir os novos."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Os cinco gatilhos",
+              "code": "Tempo · Local · Acontecimento · Estado emocional · Outras pessoas",
+              "guidance": "Para cada hábito que você mapeou, descubra que tipo de gatilho o dispara. Tempo: o lanche no meio da tarde. Local: entrar na cozinha e pegar o biscoito em cima da mesa. Acontecimento: o celular vibra e você olha. Estado emocional: abrir as redes sociais quando está entediado com um bug difícil. Outras pessoas: o colega que sempre chama para o café na hora em que você ia estudar.",
+              "tips": [
+                "Gatilho de local funciona a seu favor: um lugar novo, como a biblioteca, tem menos rotinas antigas associadas e facilita começar um hábito.",
+                "Gatilho emocional só pode ser usado quando você percebe a emoção na hora. É aqui que a autoconsciência do módulo anterior entra."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Cinco passos para trocar um hábito",
+              "code": "1 deixa · 2 porquê · 3 registro · 4 reação concorrente · 5 acompanhamento",
+              "guidance": "Escolha um hábito que você quer mudar e siga os cinco passos. Primeiro, reconheça a deixa: o que você via, ouvia, falava e com quem estava. Segundo, descubra o porquê: o que a deixa desperta, o que você evita e qual a recompensa. Terceiro, registre durante uma semana quantas vezes e em que situações a deixa aparece. Quarto, defina a reação concorrente com lugar, companhia e passo a passo. Quinto, acompanhe por pelo menos um mês quantas vezes adotou a nova rotina. Exemplo fictício: o Caio chega do estágio cansado e abre o videogame em vez de estudar; ele decide que, ao chegar, toma banho, janta e abre o notebook já na aula do curso, deixada aberta na noite anterior.",
+              "tips": [
+                "O segundo passo é o mais difícil. Vale pedir ajuda a alguém de confiança para enxergar o porquê.",
+                "Escreva a reação concorrente como um roteiro, no presente: 'chego, guardo a mochila, abro o notebook'. Quanto menos decisão na hora, melhor."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Desenhe o seu dia perfeito",
+              "code": "horário de dormir → acordar → compromisso principal → hobby → descanso",
+              "guidance": "Escreva, em ordem, como seria um dia perfeito para você: a que horas dormiria na véspera, quanto tempo antes do compromisso principal acordaria, quando faria exercício, quando estudaria, quando teria tempo de hobby, como seriam as refeições e como encerraria o dia. Compare com a média real da tabela de rotina. A diferença entre os dois mostra quais hábitos valem a próxima troca.",
+              "tips": [
+                "O dia perfeito começa na noite anterior. Quase todo plano de manhã produtiva depende de dormir na hora.",
+                "Trate o dia perfeito como norte, não como regra. Chegar perto dele três dias por semana já é uma mudança grande."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que olhar para hábitos",
+      "highlights": [
+        {
+          "icon": "gauge",
+          "title": "O tempo que você não vê",
+          "text": "A tabela de rotina quase sempre mostra uma diferença entre o que você acha que gasta e o que gasta de fato. É nessa diferença que mora o tempo que parecia não existir."
+        },
+        {
+          "icon": "bolt",
+          "title": "Menos força de vontade",
+          "text": "Quando a reação concorrente já está decidida, você não precisa resistir à tentação na hora: só seguir o roteiro que escreveu."
+        },
+        {
+          "icon": "sync",
+          "title": "Troca, não proibição",
+          "text": "Tentar só cortar um hábito deixa a recompensa sem resposta. Trocar a rotina mantendo a recompensa é o que faz a mudança durar."
+        }
+      ],
+      "closingText": "Você mediu a rotina real, entende como um hábito se forma e tem um plano em andamento para trocar um deles. O próximo passo é dar ao dia uma estrutura: saber o que precisa ser feito e em que ordem.",
+      "ctaTitle": "🔄 Rotina mapeada!",
+      "ctaText": "Você já sabe para onde vai o seu tempo. Agora vamos decidir para onde ele deve ir.",
+      "nextButtonText": "Ir para Módulo 2: Planejamento: Tarefas e Prioridades"
+    },
+    {
+      "id": 2,
+      "icon": "list",
+      "title": "Planejamento: Tarefas e Prioridades",
+      "shortDescription": "GTD, Matriz de Eisenhower e grade horária",
+      "introductionText": "Uma cabeça cheia de pendências soltas gasta energia lembrando em vez de fazendo. Este módulo monta um sistema de tarefas em duas camadas: o GTD, para tirar tudo da cabeça e transformar cada item em uma próxima ação clara; e a Matriz de Eisenhower, para decidir o que vem primeiro. Por fim, você leva as tarefas para uma grade horária e enxerga quanto do seu dia vai para o que importa.",
+      "sections": [
+        {
+          "title": "🗂️ Montando um sistema confiável",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Capturar tudo em uma caixa de entrada",
+              "code": "GTD 1/5: capturar",
+              "guidance": "Durante 30 minutos, anote em um único lugar tudo o que está ocupando a sua cabeça: tarefas do trabalho, entregas da faculdade, cursos parados, contas a pagar, consulta médica, aquele projeto pessoal no GitHub. Pequeno ou grande, pessoal ou profissional, tudo vai para a mesma caixa de entrada — um caderno, um arquivo de texto ou um aplicativo de notas. A partir de hoje, toda nova pendência entra ali primeiro.",
+              "tips": [
+                "Uma caixa de entrada só. Pendência espalhada entre e-mail, chat, post-it e memória é pendência esquecida.",
+                "Não organize enquanto captura. Primeiro esvazie a cabeça; decidir o que fazer com cada item é o próximo passo."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Esclarecer: o que é isto?",
+              "code": "É passível de ação? → Qual é a próxima ação? → Leva menos de 2 minutos?",
+              "guidance": "Processe a caixa de entrada item por item seguindo o diagrama. Não é passível de ação? Vai para o lixo, para 'algum dia/talvez' ou para material de referência. É passível de ação? Defina a próxima ação física e concreta. Se ela leva menos de 2 minutos, faça agora. Se outra pessoa pode fazer, delegue e anote em 'aguardando'. Se não, adie para o calendário (tem data marcada) ou para a lista de próximas ações. Item que exige mais de uma ação vira projeto.",
+              "tips": [
+                "'Estudar para a prova de redes' não é próxima ação. 'Refazer os exercícios do capítulo 3 de sub-redes' é.",
+                "A regra dos 2 minutos evita que tarefas minúsculas ocupem espaço na lista mais tempo do que levariam para ser feitas."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Organizar e revisar as listas",
+              "code": "Projetos · Próximas ações · Calendário · Aguardando · Algum dia/talvez · Referência",
+              "guidance": "Distribua o resultado do passo anterior nas listas. Projetos guardam o resultado esperado; próximas ações guardam o que você faz assim que puder, de preferência agrupadas por contexto (no computador, no celular, na rua, na faculdade); calendário guarda só o que tem dia e hora; aguardando guarda o que depende de outra pessoa. Combine consigo mesmo um momento fixo para revisar essas listas — sem revisão, o sistema perde a confiança e você volta a guardar tudo na cabeça.",
+              "tips": [
+                "Calendário é território sagrado: só entra o que precisa acontecer naquele dia. Lista de desejos no calendário ensina você a ignorá-lo.",
+                "Todo projeto precisa de pelo menos uma próxima ação na lista. Projeto sem próxima ação é projeto parado."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Priorizar com a Matriz de Eisenhower",
+              "code": "Q1 faça agora · Q2 decida quando · Q3 delegue · Q4 elimine",
+              "guidance": "Pegue a lista de próximas ações e classifique cada uma com duas perguntas: é importante (está ligada às suas metas)? É urgente (tem prazo próximo ou já estourado)? Importante e urgente: faça agora — o deploy corrigido para amanhã, o trabalho que vence hoje. Importante e não urgente: decida quando fazer e reserve horário — o curso de SQL, o portfólio, o exercício físico. Urgente e não importante: delegue ou diga não com educação — a reunião em que você não precisa estar. Nem urgente nem importante: elimine ou reduza ao mínimo.",
+              "tips": [
+                "O quadrante 2 é onde você deveria passar a maior parte do tempo — e o mais fácil de adiar. O que não for agendado ali tende a cair no quadrante 1 depois.",
+                "Quando tudo é importante e urgente, nada é. Se o quadrante 1 vive cheio, o problema provavelmente é falta de planejamento no quadrante 2."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Levar as tarefas para a grade horária",
+              "code": "Horário | Tarefa | Importante · Urgente · Circunstancial",
+              "guidance": "Monte uma grade do dia em blocos de uma hora, das 8h às 23h. Preencha cada bloco com a tarefa planejada e marque a classe: importante (ligada às metas, feita com antecedência), urgente (prazo apertado, feita com pressão) ou circunstancial (não leva a lugar nenhum — rede social sem propósito, reunião sem pauta). No fim da semana, some os blocos de cada classe. O objetivo não é zerar urgente e circunstancial, e sim ver a proporção mudar a favor do importante.",
+              "tips": [
+                "Comece planejando o dia seguinte na noite anterior, em cinco minutos. Acordar sabendo o primeiro bloco evita a manhã perdida decidindo por onde começar.",
+                "Deixe folga. Grade preenchida de ponta a ponta quebra no primeiro imprevisto e desanima."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que um sistema e não só uma lista",
+      "highlights": [
+        {
+          "icon": "folder",
+          "title": "Cabeça livre",
+          "text": "Com tudo capturado em um lugar confiável, a mente para de lembrar pendências e passa a resolver problemas — o que, para quem programa ou estuda, é justamente o trabalho."
+        },
+        {
+          "icon": "grid",
+          "title": "Importante antes do urgente",
+          "text": "A matriz mostra o que você vem adiando por falta de prazo. É ali que costumam estar as metas que você escreveu no primeiro módulo."
+        },
+        {
+          "icon": "tools",
+          "title": "Ferramenta simples",
+          "text": "Papel, planilha ou aplicativo de notas resolvem. O que faz o sistema funcionar é a revisão regular, não a ferramenta escolhida."
+        }
+      ],
+      "closingText": "Você tem uma caixa de entrada, listas organizadas, prioridades definidas e uma grade para o dia. Falta a última peça: conseguir sentar e executar com foco, apesar das interrupções, e revisar o que planejou para o sistema não envelhecer.",
+      "ctaTitle": "🗂️ Sistema montado!",
+      "ctaText": "Tarefas capturadas e priorizadas. Agora vamos proteger o tempo para executá-las.",
+      "nextButtonText": "Ir para Módulo 3: Concentração: Foco, Execução e Revisão"
+    },
+    {
+      "id": 3,
+      "icon": "bolt",
+      "title": "Concentração: Foco, Execução e Revisão",
+      "shortDescription": "Pomodoro, interrupções, procrastinação e revisão semanal",
+      "introductionText": "Planejar bem e não conseguir executar é frustrante — e comum. Quem estuda e trabalha com tecnologia vive entre chat, e-mail, alertas e reuniões, e cada troca de contexto cobra um tempo de retomada. Este módulo traz técnicas para trabalhar em blocos de foco, reduzir interrupções, lidar com a procrastinação e, por fim, fechar o ciclo com uma revisão periódica que mantém metas, hábitos e listas vivos.",
+      "sections": [
+        {
+          "title": "⚡ Executar com foco",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Técnica Pomodoro",
+              "code": "25 min de foco + 5 min de pausa · pausa longa a cada 4 ciclos",
+              "guidance": "Escolha uma tarefa do quadrante 2, ligue um cronômetro de 25 minutos e trabalhe só nela até o alarme tocar. Faça uma pausa de 5 minutos longe da tela. A cada quatro ciclos, faça uma pausa maior, de 15 a 30 minutos. Se uma ideia ou pendência aparecer no meio do bloco, anote na caixa de entrada e volte para a tarefa.",
+              "tips": [
+                "Conte os pomodoros que cada tarefa levou. Depois de algumas semanas, suas estimativas de prazo ficam bem mais realistas.",
+                "Se 25 minutos parecerem longos demais, comece com 15. O hábito de começar vale mais que a duração do bloco."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Proteger o tempo de foco",
+              "code": "notificações off · horários fixos para e-mail e chat · bloco sem reunião",
+              "guidance": "Escolha pelo menos duas medidas para a próxima semana: desligar notificações durante os blocos de foco; definir dois ou três horários por dia para ver e-mail e chat; reservar no calendário um período da semana sem reuniões; deixar o celular em outro cômodo enquanto estuda. Combine com a equipe ou com quem mora com você — foco protegido em segredo costuma ser interrompido.",
+              "tips": [
+                "Estar sempre correndo não é sinal de produtividade. Muitas vezes é sinal de que o quadrante 2 ficou sem planejamento.",
+                "Mire em gastar a maior parte do tempo no importante e uma fração pequena apagando incêndios — nunca o inverso."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Lidar com a procrastinação",
+              "code": "comece hoje · meio é melhor que nada · retome",
+              "guidance": "Pegue a tarefa que você mais vem adiando e quebre-a até a primeira ação caber em um pomodoro. Faça só essa ação hoje. Se a tarefa ainda travar, volte ao loop do hábito: qual é a deixa que leva você a adiar e qual recompensa a fuga traz? Quando falhar um dia, não espere a segunda-feira: retome no dia seguinte, com uma meta menor se for preciso.",
+              "tips": [
+                "Primeiro faça, depois faça certo, depois faça melhor. Exigir perfeição na primeira tentativa é uma das formas mais comuns de adiar.",
+                "Tarefa grande e vaga é combustível de procrastinação. Próxima ação pequena e concreta é o antídoto."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Revisão semanal e planner de resultados",
+              "code": "rotina · processo · resultados no dia, semana, mês, trimestre e semestre",
+              "guidance": "Reserve uma hora fixa por semana para revisar. Esvazie a caixa de entrada, atualize as listas do GTD e reclassifique a matriz. Depois, no seu planner, responda três perguntas: revisei minha rotina (por que faço o que faço)? Revisei meu processo (o que deu resultado direto)? Quais foram meus resultados no dia, na semana e no mês — e onde estou em relação às metas do trimestre e do semestre? Ajuste o que não funcionou e mantenha o que funcionou. É o ciclo planejar, fazer, checar e agir aplicado à sua própria vida.",
+              "tips": [
+                "Refaça o exercício das esferas da vida uma vez por mês e compare com a primeira versão.",
+                "Revisão que não muda nada no planejamento seguinte é só leitura. Saia de cada revisão com pelo menos um ajuste concreto."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que foco é o fim da linha",
+      "highlights": [
+        {
+          "icon": "shield",
+          "title": "Interrupção tem custo",
+          "text": "Cada vez que você troca de contexto, leva tempo para voltar ao raciocínio. Blocos protegidos devolvem esse tempo sem precisar trabalhar mais horas."
+        },
+        {
+          "icon": "gauge",
+          "title": "Estimativas melhores",
+          "text": "Contar pomodoros por tarefa transforma o 'acho que leva uma tarde' em dado. Prazo realista é a base de um planejamento que não vive estourando."
+        },
+        {
+          "icon": "sync",
+          "title": "O ciclo que se corrige",
+          "text": "A revisão semanal é o que mantém o sistema útil. Sem ela, listas envelhecem, metas são esquecidas e você volta a guardar tudo na cabeça."
+        }
+      ],
+      "closingText": "Você percorreu o caminho completo: decidiu para onde ir, entendeu a rotina e os hábitos que levam até lá, montou um sistema confiável de tarefas e prioridades e aprendeu a executar com foco e revisar o que planejou. Nenhuma dessas peças é definitiva — o sistema vai mudar com a sua fase de vida, e a revisão semanal existe justamente para isso.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você tem metas escritas, um hábito em troca, um sistema de tarefas e uma rotina de revisão. Agora é manter o ciclo girando semana após semana.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "No exercício das esferas da vida, o que se distribui entre as oito esferas?",
+      "explanation": "O exercício distribui 20 pontos entre as esferas de acordo com quanto tempo e energia você investe em cada uma hoje. Não é uma nota de satisfação nem uma divisão de horas exatas, e não existe distribuição certa: o objetivo é comparar o retrato atual com o que é importante para você neste momento.",
+      "options": [
+        {
+          "text": "20 pontos, conforme o tempo e a energia investidos hoje em cada esfera",
+          "isCorrect": true
+        },
+        {
+          "text": "As 24 horas do dia, em horas exatas por esfera",
+          "isCorrect": false
+        },
+        {
+          "text": "Uma nota de 0 a 10 de satisfação em cada esfera",
+          "isCorrect": false
+        },
+        {
+          "text": "O salário mensal, dividido em percentuais por esfera",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Qual das metas abaixo segue o modelo SMART?",
+      "explanation": "Concluir os 6 módulos do curso até uma data, com 4 horas semanais, é específica, mensurável, atingível, relevante e tem prazo. As outras opções são desejos vagos: não dizem como medir nem quando terminam.",
+      "options": [
+        {
+          "text": "Concluir os 6 módulos do curso de SQL até 15 de dezembro, estudando 4 horas por semana",
+          "isCorrect": true
+        },
+        {
+          "text": "Estudar mais programação neste ano",
+          "isCorrect": false
+        },
+        {
+          "text": "Ser um desenvolvedor melhor",
+          "isCorrect": false
+        },
+        {
+          "text": "Aprender tudo sobre bancos de dados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Uma pessoa responde ao questionário de inteligência emocional e tira nota máxima em todas as perguntas. Qual é a leitura mais cuidadosa?",
+      "explanation": "Resultado máximo em tudo pode indicar autoconsciência muito alta ou, ao contrário, pouca autoconsciência — porque é preciso se conhecer bem para se avaliar com precisão. Por isso a orientação é responder como você é, não como gostaria de ser.",
+      "options": [
+        {
+          "text": "Pode ser autoconsciência muito alta ou falta dela, já que se avaliar exige se conhecer",
+          "isCorrect": true
+        },
+        {
+          "text": "Prova que a pessoa não precisa desenvolver nada",
+          "isCorrect": false
+        },
+        {
+          "text": "Indica que o questionário foi preenchido errado",
+          "isCorrect": false
+        },
+        {
+          "text": "Mostra que inteligência emocional é um traço de nascença",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Quais são as três partes do loop do hábito?",
+      "explanation": "O loop do hábito tem a deixa, que dispara o comportamento; a rotina, que é o hábito em si; e a recompensa, que é o que se busca ao entrar no loop. As outras opções misturam conceitos de planejamento que não descrevem como um hábito funciona.",
+      "options": [
+        {
+          "text": "Deixa, rotina e recompensa",
+          "isCorrect": true
+        },
+        {
+          "text": "Meta, tarefa e prazo",
+          "isCorrect": false
+        },
+        {
+          "text": "Capturar, organizar e fazer",
+          "isCorrect": false
+        },
+        {
+          "text": "Importante, urgente e circunstancial",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Abrir as redes sociais sempre que fica entediado com um bug difícil é um hábito disparado por qual tipo de gatilho?",
+      "explanation": "O tédio é um estado emocional, e é ele que dispara a rotina de abrir as redes sociais. Para usar ou mudar esse tipo de gatilho, é preciso perceber a emoção no momento em que ela acontece — o que é um exercício de inteligência emocional.",
+      "options": [
+        {
+          "text": "Estado emocional",
+          "isCorrect": true
+        },
+        {
+          "text": "Tempo",
+          "isCorrect": false
+        },
+        {
+          "text": "Localização",
+          "isCorrect": false
+        },
+        {
+          "text": "Outras pessoas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "No método de cinco passos para trocar um hábito, o que é a reação concorrente?",
+      "explanation": "A reação concorrente é a nova rotina que você adota quando a deixa aparece, descrita com lugar, companhia e passo a passo. Ela substitui a rotina antiga mantendo a resposta à mesma recompensa, em vez de simplesmente proibir o comportamento.",
+      "options": [
+        {
+          "text": "A nova rotina, descrita em detalhes, que você adota quando a deixa aparecer",
+          "isCorrect": true
+        },
+        {
+          "text": "Uma punição aplicada sempre que o hábito antigo acontece",
+          "isCorrect": false
+        },
+        {
+          "text": "A eliminação completa da deixa do seu dia",
+          "isCorrect": false
+        },
+        {
+          "text": "O registro de quantas vezes o hábito antigo aconteceu",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "No GTD, ao esclarecer um item da caixa de entrada que é passível de ação e leva menos de 2 minutos, o que fazer?",
+      "explanation": "A regra dos 2 minutos manda fazer na hora: anotar, organizar e revisar essa tarefa levaria mais tempo do que executá-la. Delegar, agendar ou listar fazem sentido para ações que levam mais tempo ou dependem de outra pessoa.",
+      "options": [
+        {
+          "text": "Fazer imediatamente",
+          "isCorrect": true
+        },
+        {
+          "text": "Colocar na lista de algum dia/talvez",
+          "isCorrect": false
+        },
+        {
+          "text": "Agendar no calendário para o dia seguinte",
+          "isCorrect": false
+        },
+        {
+          "text": "Transformar em projeto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Na Matriz de Eisenhower, o que fazer com uma tarefa importante, mas não urgente, como avançar no curso de SQL?",
+      "explanation": "Tarefas importantes e não urgentes ficam no quadrante 2: decida quando fazer e reserve horário na agenda. É onde se deveria passar a maior parte do tempo, e o que fica sem agendamento ali tende a virar urgência mais tarde. Delegar é para o urgente e não importante; eliminar, para o que não é nem um nem outro.",
+      "options": [
+        {
+          "text": "Decidir quando fazer e reservar horário no calendário",
+          "isCorrect": true
+        },
+        {
+          "text": "Fazer imediatamente, largando o resto",
+          "isCorrect": false
+        },
+        {
+          "text": "Delegar para outra pessoa",
+          "isCorrect": false
+        },
+        {
+          "text": "Eliminar da lista",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Qual destas é uma próxima ação bem escrita, no sentido do GTD?",
+      "explanation": "Próxima ação é uma ação física e concreta, que você sabe começar sem precisar pensar de novo. 'Refazer os exercícios do capítulo 3 de sub-redes' cumpre isso. As outras opções são projetos ou intenções vagas que ainda precisam ser quebradas.",
+      "options": [
+        {
+          "text": "Refazer os exercícios do capítulo 3 de sub-redes",
+          "isCorrect": true
+        },
+        {
+          "text": "Estudar para a prova de redes",
+          "isCorrect": false
+        },
+        {
+          "text": "Melhorar em redes de computadores",
+          "isCorrect": false
+        },
+        {
+          "text": "Resolver a faculdade",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Durante um pomodoro, surge a lembrança de uma conta a pagar. O que a técnica recomenda?",
+      "explanation": "A ideia do bloco é manter a atenção em uma única tarefa. Pendências que aparecem no meio são anotadas na caixa de entrada para serem tratadas depois, e você volta para a tarefa. Interromper o bloco ou tentar guardar na memória quebra justamente o foco que a técnica protege.",
+      "options": [
+        {
+          "text": "Anotar na caixa de entrada e voltar para a tarefa",
+          "isCorrect": true
+        },
+        {
+          "text": "Parar o pomodoro e pagar a conta imediatamente",
+          "isCorrect": false
+        },
+        {
+          "text": "Tentar lembrar da conta até o fim do bloco",
+          "isCorrect": false
+        },
+        {
+          "text": "Reiniciar o cronômetro do zero",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Qual é a forma mais eficaz de enfrentar uma tarefa que você vem adiando há semanas?",
+      "explanation": "Quebrar a tarefa até que a primeira ação caiba em um bloco curto e fazer só essa ação hoje reduz a barreira para começar. Esperar motivação, exigir perfeição ou aguardar uma data simbólica são justamente os mecanismos que alimentam a procrastinação.",
+      "options": [
+        {
+          "text": "Quebrá-la até a primeira ação caber em um pomodoro e fazer essa ação hoje",
+          "isCorrect": true
+        },
+        {
+          "text": "Esperar ter motivação suficiente para fazer tudo de uma vez",
+          "isCorrect": false
+        },
+        {
+          "text": "Recomeçar só na próxima segunda-feira, com tudo planejado",
+          "isCorrect": false
+        },
+        {
+          "text": "Só começar quando tiver certeza de que vai fazer perfeito",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Segundo o relatório de experiência do desenvolvedor da Atlassian de 2025, com 3.500 desenvolvedores e gestores, qual proporção dos desenvolvedores perde 10 horas ou mais por semana com ineficiências?",
+      "explanation": "O relatório, publicado em julho de 2025, aponta que 50% dos desenvolvedores perdem 10 horas ou mais por semana, principalmente com ineficiências como procurar informação e trocar de contexto entre ferramentas. É tempo que um sistema pessoal de foco e organização ajuda a recuperar, ainda que parte do problema seja da própria organização.",
+      "options": [
+        {
+          "text": "50%",
+          "isCorrect": true
+        },
+        {
+          "text": "5%",
+          "isCorrect": false
+        },
+        {
+          "text": "20%",
+          "isCorrect": false
+        },
+        {
+          "text": "Menos de 1%",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "Um sistema pessoal de produtividade testado na sua própria semana: até três metas SMART ligadas às esferas da vida que você quer fortalecer, uma tabela de rotina real, um hábito em processo de troca, listas do GTD organizadas, uma Matriz de Eisenhower atualizada, uma grade horária do dia e um planner de revisão semanal.",
+    "highlights": [
+      "Metas SMART escritas, com prazo e meta da meta",
+      "Sistema de tarefas com GTD e Matriz de Eisenhower",
+      "Rotina de foco e revisão semanal funcionando"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "Falta de foco não é impressão: no Work Trend Index da Microsoft, com 31 mil pessoas em 31 países (publicado em maio de 2023), 68% disseram não ter tempo ininterrupto suficiente para se concentrar durante o dia, e 64% relataram dificuldade para encontrar tempo e energia para fazer o próprio trabalho. Reuniões ineficientes, falta de objetivos claros e excesso de reuniões aparecem como os principais ladrões de produtividade.",
+      "Em tecnologia o quadro se repete. O relatório de experiência do desenvolvedor da Atlassian, publicado em julho de 2025 com 3.500 desenvolvedores e gestores, mostra que 50% dos desenvolvedores perdem 10 horas ou mais por semana com ineficiências e 90% perdem pelo menos 6 horas — com destaque para procurar informação e trocar de contexto entre ferramentas. Parte disso depende da empresa; a outra parte depende de como cada pessoa organiza tarefas, protege o foco e define prioridades. É essa parte que este programa trabalha."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Quem trabalha e estuda",
+        "description": "Conciliar expediente, faculdade e cursos sem deixar as metas de longo prazo para depois."
+      },
+      {
+        "label": "Rotina de equipe de tecnologia",
+        "description": "Tickets, reuniões, chat e alertas pedindo atenção ao mesmo tempo."
+      },
+      {
+        "label": "Estudo por conta própria",
+        "description": "Cursos online e projetos pessoais que só avançam com hábito e horário reservado."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem está começando na área",
+        "description": "Estudantes e profissionais em início de carreira que querem organizar estudo e trabalho."
+      },
+      {
+        "label": "Quem vive apagando incêndio",
+        "description": "Termina o dia cansado e com a sensação de não ter avançado no que importa."
+      },
+      {
+        "label": "Quem já tentou e desistiu",
+        "description": "Já baixou aplicativo de tarefas ou fez planejamento de ano novo que não durou."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Matriz de Eisenhower, GTD, Pomodoro e revisões periódicas são práticas difundidas em equipes de tecnologia, empresas de todos os tamanhos e programas de desenvolvimento de jovens profissionais. Não dependem de ferramenta paga nem de cargo: funcionam para o estagiário que concilia faculdade e trabalho e para quem coordena uma equipe com muitas demandas ao mesmo tempo.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Na Prática (Fundação Estudar) — curso online Produtividade Na Prática: módulos Motivação, Cotidiano, Planejamento e Concentração",
+      "url": "https://www.napratica.org.br/curso-online-produtividade-na-pratica/"
+    },
+    {
+      "label": "Getting Things Done — os cinco passos do GTD (David Allen Company)",
+      "url": "https://gettingthingsdone.com/fivesteps/"
+    },
+    {
+      "label": "Microsoft WorkLab — Work Trend Index 2023: tempo de foco e produtividade (maio de 2023)",
+      "url": "https://www.microsoft.com/en-us/worklab/we-can-not-keep-up-with-work-but-ai-can-help"
+    },
+    {
+      "label": "Atlassian — State of Developer Experience Report 2025 (julho de 2025)",
+      "url": "https://www.atlassian.com/blog/developer/developer-experience-report-2025"
+    }
+  ]
+}

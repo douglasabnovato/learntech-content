@@ -9,7 +9,7 @@
   "category": "outros",
   "status": "concluido",
   "content": {
-    "longDescription": "Graduação em Ciência da Computação pela UFJF, no Departamento de Ciência da Computação (DCC), cursada no período noturno — formação de base teórica e prática em algoritmos, estruturas de dados, engenharia de software e fundamentos de computação.",
+    "longDescription": "O bacharelado em Ciência da Computação noturno da Universidade Federal de Juiz de Fora (código 35A) é oferecido pelo Departamento de Ciência da Computação (DCC). O curso forma cientistas da computação com base generalista e interdisciplinar, apoiada em Computação e Matemática, e as aulas acontecem à noite, de segunda a sexta-feira.",
     "videoUrl": "",
     "gallery": [],
     "curriculum": [
@@ -19,6 +19,57 @@
       "Redes de Computadores",
       "Linguagens de Programação"
     ],
-    "officialLink": "https://www2.ufjf.br/cursocomputacao/"
+    "officialLink": "https://www2.ufjf.br/cursocomputacao/",
+    "paragraphs": [
+      "O curso de Ciência da Computação da UFJF tem duas modalidades, integral e noturna, cada uma com matriz curricular e projeto pedagógico próprios. A versão noturna (código 35A) fica a cargo do Departamento de Ciência da Computação, em Juiz de Fora (MG). No 3º semestre letivo de 2026, a página do curso listava 56 docentes efetivos e 3 substitutos ligados ao noturno (consulta em 29/10/2026).",
+      "As aulas costumam ir das 19h às 23h, de segunda a sexta-feira, conforme a grade de cada período. A matriz noturna prevê 9 períodos recomendados, e é possível concluir em 8 adiantando disciplinas. Já a integral recomenda 8 períodos. Em outubro de 2026 havia dois currículos ativos no noturno, de 2018 e de 2023. O de 2023 traz uma grade própria de eletivas e atividades curriculares. A maioria das disciplinas tem 60 horas, algumas têm 30, e a Monografia Final tem 120 horas.",
+      "Pelo projeto pedagógico, o objetivo é formar profissionais capazes de especificar, projetar, implantar e avaliar sistemas computacionais. Para isso, o curso dá base teórica para definir conceitos formalmente, desenvolver algoritmos e métodos de análise e resolver problemas com eficiência. Também treina a abstração para lidar com problemas complexos. A matriz foi pensada para ser teoricamente sólida, interdisciplinar e sem repetição de conteúdos. Atividades extraclasse podem contar como atividades complementares.",
+      "O turno noturno atende principalmente quem precisa conciliar a graduação com outras atividades durante o dia. Por isso a duração recomendada é um período mais longa que a do integral. As matrizes, as normas de TCC e estágio, o processo de matrícula e os contatos da coordenação estão no site do curso.",
+      "Segundo o perfil do egresso, quem se forma tem formação generalista e pode se especializar na área que escolher. Está preparado para projetar, implementar, implantar, manter e operar ambientes computacionais, criar soluções sozinho ou em equipe e levar em conta o impacto social do que faz. O curso também incentiva a iniciação científica e a pós-graduação, o que abre tanto a carreira acadêmica quanto o mercado de desenvolvimento e pesquisa."
+    ],
+    "links": [
+      {
+        "label": "Página do curso noturno",
+        "url": "https://www2.ufjf.br/cursocomputacao/ciencia-da-computacao-noturno/"
+      },
+      {
+        "label": "Matriz curricular",
+        "url": "https://www2.ufjf.br/cursocomputacao/sobre-o-curso/nova-grade/"
+      },
+      {
+        "label": "Currículos ativos (noturno)",
+        "url": "https://www2.ufjf.br/cursocomputacao/sobre-o-curso/curriculos-ativos/curriculos-ativos-noturno/"
+      },
+      {
+        "label": "Projeto pedagógico",
+        "url": "https://www2.ufjf.br/cursocomputacao/sobre-o-curso/projeto-pedagogico/"
+      },
+      {
+        "label": "Objetivos e perfil do egresso",
+        "url": "https://www2.ufjf.br/cursocomputacao/sobre-o-curso/objetivos-e-perfil/"
+      }
+    ],
+    "sources": [
+      {
+        "label": "UFJF Ciência da Computação: Ciência da Computação Noturno",
+        "url": "https://www2.ufjf.br/cursocomputacao/ciencia-da-computacao-noturno/"
+      },
+      {
+        "label": "UFJF Ciência da Computação: Matriz curricular",
+        "url": "https://www2.ufjf.br/cursocomputacao/sobre-o-curso/nova-grade/"
+      },
+      {
+        "label": "UFJF Ciência da Computação: Objetivos e perfil",
+        "url": "https://www2.ufjf.br/cursocomputacao/sobre-o-curso/objetivos-e-perfil/"
+      },
+      {
+        "label": "UFJF Ciência da Computação: Currículos ativos noturno",
+        "url": "https://www2.ufjf.br/cursocomputacao/sobre-o-curso/curriculos-ativos/curriculos-ativos-noturno/"
+      },
+      {
+        "label": "UFJF Ciência da Computação: Corpo docente noturno",
+        "url": "https://www2.ufjf.br/cursocomputacao/noturno/"
+      }
+    ]
   }
 }

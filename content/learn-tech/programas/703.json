@@ -3,8 +3,818 @@
   "image": "https://cdn.pixabay.com/photo/2015/09/06/00/17/macbook-926558_1280.jpg",
   "category": "English",
   "categoryFilter": "english",
-  "title": "Job Interview Prep: Como Passar em Entrevistas de TI em Inglês",
-  "lessons": "08+ Lições",
-  "duration": "06hr 00min",
-  "access": "Acesso Livre"
+  "title": "Job Interview Prep: Entrevistas de TI em Inglês, da Apresentação ao Live Coding",
+  "lessons": "18 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Intermediário",
+  "description": "Preparação estruturada para as conversas de uma entrevista de TI em inglês: a apresentação inicial, as perguntas comportamentais respondidas com o método STAR, a explicação de um projeto técnico, o raciocínio em voz alta durante o live coding e as frases para pedir esclarecimento. Nada de roteiro decorado: você monta um kit próprio e treina com gravação até a fala sair organizada.",
+  "letslearn": [
+    "Montar uma apresentação de 60 a 90 segundos para o “tell me about yourself”",
+    "Responder perguntas comportamentais com o método STAR, com foco na sua ação e em resultados medidos",
+    "Explicar um projeto técnico em camadas, deixando claras as decisões e os trade-offs",
+    "Pensar em voz alta no live coding, pedir esclarecimentos e fazer boas perguntas ao entrevistador"
+  ],
+  "curriculum": "Do pitch inicial à entrevista simulada",
+  "about": "O programa parte de onde o English for Tech e o Vocabulary for Developers pararam: você já lê e escreve inglês técnico no trabalho e agora precisa falar sob pressão, com alguém avaliando. A progressão segue a ordem de uma entrevista real: a apresentação, as perguntas sobre experiências passadas, a parte técnica e o fechamento com as suas perguntas. Em cada etapa você escreve uma versão, fala em voz alta, grava e revisa. O objetivo não é soar nativo, e sim ser claro, organizado e honesto quando não entende algo, que é o que o entrevistador consegue avaliar.",
+  "materials": [
+    "Modelo de apresentação em três partes (presente, passado, futuro)",
+    "Planilha de banco de histórias STAR mapeadas por competência",
+    "Folha de frases para live coding, esclarecimento e perguntas ao entrevistador",
+    "Checklist de revisão de gravação"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Apresentação e Primeira Impressão",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Perguntas Comportamentais com STAR",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Projeto Técnico e Live Coding em Voz Alta",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Esclarecimentos, Perguntas e Prática Gravada",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "English",
+    "mainTitle": "Fale com estrutura: uma entrevista de TI em inglês é uma sequência de conversas que dá para treinar.",
+    "introductionParagraphs": [
+      {
+        "title": "O inglês da entrevista é previsível",
+        "text": "Uma entrevista de TI tem poucas formas de pergunta e elas se repetem: **tell me about yourself**, **tell me about a time when...**, **walk me through a project**, o problema de código e o **do you have any questions for us?** no final. Como as formas são conhecidas, dá para preparar a estrutura de cada resposta com antecedência e deixar o improviso só para o conteúdo."
+      },
+      {
+        "title": "Clareza vale mais que sotaque",
+        "text": "Quem avalia quer entender o que você fez, como pensou e o que aconteceu depois. Uma resposta em inglês simples, com começo, meio e fim, comunica mais do que uma resposta cheia de vocabulário sofisticado e sem ordem. Por isso o programa trabalha estrutura antes de vocabulário: frases curtas, verbos de ação e números no resultado."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não oferece respostas prontas para decorar, não ensina a inventar experiência e não promete aprovação. Entrevistadores percebem resposta recitada, e cada empresa decide com critérios próprios. O que você leva é um kit de material seu e a prática de usá-lo em voz alta, que reduz o tempo gasto procurando palavras e libera atenção para o problema."
+      }
+    ],
+    "courseAboutTitle": "Do inglês técnico escrito ao inglês falado sob avaliação",
+    "courseAboutDescription": "Ler documentação e escrever pull requests em inglês é diferente de responder, ao vivo, por que você escolheu uma fila em vez de uma chamada síncrona. Este programa trata essa diferença com método: estrutura para cada tipo de pergunta, frases-ponte para ganhar tempo e pedir esclarecimento, e gravação para você ouvir o que o entrevistador ouve. É o passo anterior ao Daily Scrum English, que leva a mesma fala estruturada para a rotina da equipe.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Apresentação e Primeira Impressão",
+        "items": [
+          {
+            "label": "Presente, passado, futuro",
+            "description": "Uma estrutura de três partes para o tell me about yourself."
+          },
+          {
+            "label": "Versões de 30 e 90 segundos",
+            "description": "A mesma apresentação em dois tamanhos, para recrutador e para banca técnica."
+          },
+          {
+            "label": "Cargo, stack e motivação",
+            "description": "Nomear o que você faz sem tradução literal e explicar por que esta vaga."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Perguntas Comportamentais com STAR",
+        "items": [
+          {
+            "label": "Situation, Task, Action, Result",
+            "description": "Como distribuir o tempo da resposta e onde colocar o peso."
+          },
+          {
+            "label": "I, não we",
+            "description": "Deixar claro o que você fez dentro do trabalho da equipe."
+          },
+          {
+            "label": "Banco de histórias",
+            "description": "Seis a oito histórias reais mapeadas para as competências que as empresas avaliam."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Projeto Técnico e Live Coding em Voz Alta",
+        "items": [
+          {
+            "label": "Projeto em camadas",
+            "description": "Contexto, arquitetura, decisão, trade-off e resultado, nessa ordem."
+          },
+          {
+            "label": "Esclarecer antes de codar",
+            "description": "As perguntas sobre entrada, limites e casos de borda que o entrevistador espera."
+          },
+          {
+            "label": "Narrar o raciocínio",
+            "description": "Falar enquanto pensa, anunciar o silêncio e testar com exemplos."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Esclarecimentos, Perguntas e Prática Gravada",
+        "items": [
+          {
+            "label": "Pedir repetição sem constrangimento",
+            "description": "Frases para quando você não entendeu a pergunta ou uma palavra."
+          },
+          {
+            "label": "Perguntas ao entrevistador",
+            "description": "Perguntas sobre equipe, trabalho e expectativas que mostram interesse real."
+          },
+          {
+            "label": "Entrevista simulada",
+            "description": "Gravar, revisar com checklist e regravar a parte mais fraca."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para montar e treinar o seu kit de entrevista. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "laptop",
+      "title": "Apresentação e Primeira Impressão",
+      "shortDescription": "Tell me about yourself com estrutura e em dois tamanhos",
+      "introductionText": "Quase toda entrevista começa com alguma variação de tell me about yourself. Não é pedido de biografia: é um convite para você resumir quem é profissionalmente e por que está ali. Quem não preparou costuma começar pela faculdade e se perder no meio do caminho. Neste módulo você escreve uma apresentação curta, com estrutura fixa, e treina até conseguir dizê-la sem ler — mas também sem soar decorada.",
+      "sections": [
+        {
+          "title": "🎤 Sua apresentação",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Estrutura presente, passado, futuro",
+              "code": "I'm a backend developer with three years of experience...",
+              "guidance": "Escreva três blocos curtos. Presente: o que você faz hoje, em que tipo de produto e com que stack. Passado: uma ou duas experiências que explicam como chegou aí, com um resultado concreto. Futuro: o que você procura agora e por que esta vaga se encaixa. Use frases curtas e verbos de ação: I build, I led, I moved, I'm looking for.",
+              "tips": [
+                "Comece pelo presente. Abrir com o ano em que entrou na faculdade empurra o que interessa para o fim da resposta."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Duas versões: 30 e 90 segundos",
+              "guidance": "Cronometre a versão completa e corte até ficar entre 60 e 90 segundos. Depois faça uma versão de 30 segundos só com presente e futuro, para conversas rápidas com recrutador. Leia as duas em voz alta com cronômetro: o texto escrito quase sempre é mais longo do que parece.",
+              "tips": [
+                "Se passar de dois minutos, o entrevistador começa a esperar uma pausa para interromper. Termine antes e deixe que ele puxe o que quiser aprofundar."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Nomear cargo e stack sem tradução literal",
+              "code": "software engineer · frontend developer · on-call · tech lead",
+              "guidance": "Liste como o seu cargo e as suas tarefas são chamados em vagas em inglês e use esses termos. Analista de sistemas raramente vira systems analyst em uma vaga de desenvolvimento; plantão é on-call; sustentação costuma ser maintenance ou production support. Confira a pronúncia dos nomes de tecnologia que você vai citar, porque são as palavras que o entrevistador mais presta atenção.",
+              "tips": [
+                "Copie o título e três termos do próprio anúncio da vaga. Usar o vocabulário da empresa facilita a leitura de quem está do outro lado."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Why this company e walk me through your resume",
+              "code": "What caught my attention is...",
+              "guidance": "Prepare duas respostas vizinhas da apresentação. Para why this company, cite algo específico: o produto, um desafio técnico descrito pela empresa, o tipo de equipe. Para walk me through your resume, percorra as experiências em ordem cronológica, uma frase por emprego, sempre com o que você entregou e não só o que a empresa fazia.",
+              "tips": [
+                "Motivação genérica, como great company e good culture, serve para qualquer vaga e por isso não diz nada. Um detalhe concreto vale mais que três elogios."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que a apresentação merece preparo",
+      "highlights": [
+        {
+          "icon": "list",
+          "title": "Estrutura reduz o esforço",
+          "text": "Com a ordem das ideias definida, o cérebro só precisa encontrar as palavras, não o caminho. É isso que diminui as pausas longas no meio da frase."
+        },
+        {
+          "icon": "gauge",
+          "title": "Tempo sob controle",
+          "text": "Uma apresentação cronometrada deixa espaço para o entrevistador perguntar o que interessa a ele, em vez de ouvir tudo de uma vez."
+        },
+        {
+          "icon": "search",
+          "title": "Ganchos para a conversa",
+          "text": "Cada resultado citado na apresentação vira uma pergunta provável depois. Você escolhe por onde a entrevista começa a se aprofundar."
+        }
+      ],
+      "closingText": "Você tem uma apresentação em dois tamanhos e respostas prontas para as perguntas que costumam vir logo depois. Ela cita resultados que o entrevistador vai querer entender melhor — e a forma de contar essas histórias com detalhe é o assunto do próximo módulo.",
+      "ctaTitle": "🎤 Apresentação pronta!",
+      "ctaText": "Você já sabe abrir a conversa. Agora vamos estruturar as histórias que sustentam o que você disse.",
+      "nextButtonText": "Ir para Módulo 1: Perguntas Comportamentais com STAR"
+    },
+    {
+      "id": 1,
+      "icon": "bolt",
+      "title": "Perguntas Comportamentais com STAR",
+      "shortDescription": "Histórias reais, com a sua ação no centro e resultado medido",
+      "introductionText": "Perguntas comportamentais pedem um exemplo do passado: tell me about a time when you disagreed with a teammate, describe a situation where you missed a deadline. A premissa é que o comportamento passado indica o futuro. O método STAR (Situation, Task, Action, Result) organiza a resposta em quatro partes e evita os dois erros mais comuns: contexto longo demais e resultado esquecido. Algumas empresas estruturam toda a avaliação em torno disso — a Amazon, por exemplo, orienta candidatos a preparar histórias no formato STAR para os seus Leadership Principles.",
+      "sections": [
+        {
+          "title": "⭐ Respondendo com STAR",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Reconhecer a pergunta comportamental",
+              "code": "Tell me about a time when... · Give me an example of...",
+              "guidance": "Liste as aberturas que indicam pergunta comportamental: tell me about a time, give me an example, describe a situation, how did you handle. Quando ouvir uma delas, a resposta precisa ser uma história específica, com lugar e momento, e não uma opinião geral sobre como você costuma agir.",
+              "tips": [
+                "Responder I always try to communicate well não é história. Comece com In my last job, we had... e o entrevistador sabe que vem um exemplo concreto."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Distribuir o tempo entre as quatro partes",
+              "code": "Situation 20% · Task 10% · Action 60% · Result 10%",
+              "guidance": "Uma divisão usada por centros de carreira é cerca de 20% para a situação, 10% para a tarefa, 60% para a ação e 10% para o resultado. Escreva uma história e marque cada parte. Se a situação ocupa metade do texto, corte detalhes que não mudam o entendimento — o entrevistador não precisa saber o nome do sistema legado para entender o problema.",
+              "tips": [
+                "Situation e Task juntas cabem em duas ou três frases. O resto é o que você fez."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "I, não we",
+              "code": "I proposed... · I wrote... · I convinced...",
+              "guidance": "Releia a parte de ação e troque cada we que esconde a sua contribuição por I seguido de um verbo concreto. Trabalho em equipe continua aparecendo — I paired with the QA engineer to... — mas fica claro qual parte foi sua. O entrevistador está avaliando você, não a equipe.",
+              "tips": [
+                "Verbos que funcionam bem: identified, proposed, implemented, measured, negotiated, rolled back, documented."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Resultado com número e aprendizado",
+              "code": "As a result, p95 latency dropped from 800 to 300 ms.",
+              "guidance": "Feche cada história com o que mudou, de preferência medido: tempo de resposta, chamados abertos, tempo de deploy, horas economizadas. Se não houver número, descreva a consequência observável. Para histórias de erro ou conflito, acrescente uma frase sobre o que você faz diferente desde então.",
+              "tips": [
+                "Use números aproximados que você consegue defender. Inventar métrica é arriscado: a próxima pergunta costuma ser how did you measure that?"
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Montar o banco de histórias",
+              "guidance": "Escreva de seis a oito histórias reais e marque, para cada uma, as competências que ela demonstra: resolver problema sob pressão, discordar e chegar a acordo, assumir um erro, aprender algo rápido, entregar com prazo curto, melhorar algo sem ser pedido. Uma mesma história pode servir a duas ou três perguntas. Se a empresa publica seus princípios ou valores, como os Leadership Principles da Amazon, mapeie as histórias para eles.",
+              "tips": [
+                "Inclua pelo menos uma história de falha. Perguntas como tell me about a mistake you made são comuns, e não ter resposta pesa mais que o erro em si."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que STAR funciona",
+      "highlights": [
+        {
+          "icon": "grid",
+          "title": "Quatro caixas para preencher",
+          "text": "Em uma língua estrangeira, saber qual é a próxima parte da resposta elimina a pausa de quem procura o fio da meada."
+        },
+        {
+          "icon": "gauge",
+          "title": "Peso na ação",
+          "text": "A maior parte da resposta fica no que você fez, que é exatamente o que o entrevistador precisa avaliar."
+        },
+        {
+          "icon": "folder",
+          "title": "Reaproveitamento",
+          "text": "Um banco de histórias bem mapeado cobre dezenas de perguntas diferentes com o mesmo material, contado de ângulos diferentes."
+        }
+      ],
+      "closingText": "Você tem histórias reais, organizadas e com resultado. Muitas delas são sobre projetos técnicos — e explicar um projeto em inglês, com decisões e trade-offs, pede uma estrutura própria, junto com a parte mais temida: escrever código falando ao mesmo tempo.",
+      "ctaTitle": "⭐ Banco de histórias montado!",
+      "ctaText": "Suas experiências já cabem em respostas de dois minutos. Agora vamos para a parte técnica da conversa.",
+      "nextButtonText": "Ir para Módulo 2: Projeto Técnico e Live Coding em Voz Alta"
+    },
+    {
+      "id": 2,
+      "icon": "tools",
+      "title": "Projeto Técnico e Live Coding em Voz Alta",
+      "shortDescription": "Explicar decisões e mostrar o raciocínio enquanto resolve",
+      "introductionText": "Na parte técnica, o entrevistador avalia o resultado e também o caminho. Ao explicar um projeto, ele quer entender as decisões e o que você trocou por quê. No live coding, quer acompanhar o raciocínio: como você entende o problema, que abordagem escolhe e como verifica o código. Um engenheiro do Google descreveu o formato típico como cerca de 45 minutos com um entrevistador, a maior parte dedicada ao problema de programação — tempo em que o silêncio total joga contra você. Este módulo dá estrutura e frases para as duas situações.",
+      "sections": [
+        {
+          "title": "🛠️ Falando de código",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Explicar um projeto em camadas",
+              "code": "The goal was... · We built... · I decided to... · The trade-off was...",
+              "guidance": "Escolha um projeto e prepare cinco camadas, da mais geral para a mais específica: o problema de negócio, a arquitetura em uma frase, a decisão técnica que você tomou, o que perdeu com ela e o resultado. Comece pela camada geral e só desça quando o entrevistador pedir. Treine desenhando a arquitetura em quatro ou cinco caixas enquanto fala.",
+              "tips": [
+                "Começar pelo nome das bibliotecas antes de dizer o que o sistema faz é o erro mais comum. Primeiro o problema, depois a ferramenta."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Vocabulário de decisão e trade-off",
+              "code": "We chose X over Y because... · The downside was...",
+              "guidance": "Monte uma lista de frases para justificar escolhas: we chose X over Y because, it was good enough for our scale, the downside was, in hindsight I would, we accepted the risk of. Pratique justificando duas decisões reais do seu projeto, incluindo uma que você mudaria hoje.",
+              "tips": [
+                "Admitir que uma decisão teve custo mostra maturidade técnica. Projeto em que tudo foi perfeito soa como projeto que você não conhece a fundo."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Esclarecer antes de codar",
+              "code": "Can I assume the input is sorted? · What should happen if the list is empty?",
+              "guidance": "Diante de um problema de código, repita o enunciado com suas palavras e faça perguntas antes de escrever qualquer linha: tamanho da entrada, tipos aceitos, entradas inválidas, casos vazios, se a ordem importa. Entrevistadores muitas vezes não oferecem essas informações e esperam que você pergunte.",
+              "tips": [
+                "So, just to confirm, I need to return... é uma frase que confirma o entendimento e ainda dá alguns segundos para pensar."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Narrar o raciocínio e anunciar o silêncio",
+              "code": "Let me think about this for a moment.",
+              "guidance": "Fale o que está considerando: My first idea is a brute-force approach with two loops, which would be O(n²). Comece pela solução simples, diga a complexidade e depois proponha a melhoria. Quando precisar pensar em silêncio, avise antes e, ao voltar, resuma o que considerou e por que escolheu aquele caminho.",
+              "tips": [
+                "Silêncio do entrevistador geralmente significa que ele está pensando ou anotando, não que você errou. Siga em frente e preste atenção quando ele der uma dica."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Testar o código em voz alta",
+              "code": "Let me walk through this with a small example.",
+              "guidance": "Ao terminar, percorra o código com um exemplo normal e depois com casos de borda: lista vazia, um único elemento, valores repetidos, números negativos. Diga cada passo: here i is zero, so we... Encontrar e corrigir um bug sozinho durante o teste é um ponto a favor, não contra.",
+              "tips": [
+                "Frases úteis: I think there's an off-by-one here, let me fix that. · This handles the empty case because..."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que pensar em voz alta",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "O avaliador vê o processo",
+          "text": "Se você só mostra o código final, o entrevistador não sabe se chegou lá por raciocínio ou por memória. Narrando, você mostra como resolve problemas novos."
+        },
+        {
+          "icon": "sync",
+          "title": "Dicas chegam a tempo",
+          "text": "Quando o entrevistador acompanha o raciocínio, consegue redirecionar você antes que dez minutos sejam gastos no caminho errado."
+        },
+        {
+          "icon": "shield",
+          "title": "Teste como rede de segurança",
+          "text": "Percorrer o código com exemplos encontra o erro antes do entrevistador e mostra o hábito de verificar o próprio trabalho."
+        }
+      ],
+      "closingText": "Você consegue explicar um projeto com decisões e trade-offs e resolver um problema falando. Falta a parte que costuma ser ignorada na preparação: o que fazer quando não entende a pergunta, o que perguntar no final e como treinar tudo isso de forma que dê para medir a evolução.",
+      "ctaTitle": "🛠️ Parte técnica treinada!",
+      "ctaText": "Seu raciocínio já aparece em inglês. Agora vamos fechar o kit e colocar tudo à prova numa entrevista simulada.",
+      "nextButtonText": "Ir para Módulo 3: Esclarecimentos, Perguntas e Prática Gravada"
+    },
+    {
+      "id": 3,
+      "icon": "globe",
+      "title": "Esclarecimentos, Perguntas e Prática Gravada",
+      "shortDescription": "Pedir repetição, perguntar ao entrevistador e treinar com gravação",
+      "introductionText": "Em uma entrevista em inglês, não entender uma pergunta vai acontecer — por sotaque, conexão ruim ou uma palavra desconhecida. Pedir repetição é normal; responder outra pergunta por não ter entendido é o que prejudica. No fim, quase sempre vem o do you have any questions for us?, e ter perguntas boas mostra interesse real. Este módulo fecha o kit com essas frases e transforma tudo em uma entrevista simulada gravada, que é a forma mais direta de ouvir o que o entrevistador ouve.",
+      "sections": [
+        {
+          "title": "🌐 Fechando o kit",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Pedir repetição e esclarecimento",
+              "code": "Sorry, could you repeat the last part? · Do you mean... or...?",
+              "guidance": "Monte três níveis de frase. Não ouviu: Sorry, could you say that again? Ouviu mas não entendeu uma palavra: Sorry, I'm not familiar with the term X, could you explain it? Entendeu mas a pergunta é ambígua: Do you mean in terms of performance or cost? Treine as três até saírem sem hesitação.",
+              "tips": [
+                "Parafrasear a pergunta, So you're asking how I would..., confirma o entendimento e é bem recebido em entrevista técnica."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Ganhar tempo e se corrigir",
+              "code": "That's a good question, let me think. · Actually, let me rephrase that.",
+              "guidance": "Tenha frases-ponte para os momentos em que a palavra não vem: let me think for a second, what I mean is, in other words, let me put it another way. Quando perceber que errou, corrija na hora com actually ou sorry, I meant. Corrigir-se é sinal de controle, não de fraqueza.",
+              "tips": [
+                "Se não souber uma palavra, descreva: the tool that checks the code before merging funciona melhor que uma pausa longa procurando o termo exato."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Perguntas para o entrevistador",
+              "code": "What does a typical week look like for this team?",
+              "guidance": "Prepare de cinco a sete perguntas e escolha duas ou três na hora, conforme o que já foi respondido. Boas categorias: o trabalho do dia a dia, como a equipe decide e revisa código, os desafios técnicos atuais, como é medido o sucesso nos primeiros meses e o que o próprio entrevistador gosta no trabalho. Deixe salário e benefícios para a conversa com o recrutador.",
+              "tips": [
+                "Pergunta cuja resposta está na primeira página do site da empresa mostra o contrário de interesse. Pergunte o que só alguém de dentro sabe."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Entrevista simulada gravada",
+              "guidance": "Grave em vídeo uma simulação de 30 a 40 minutos: apresentação, duas perguntas STAR sorteadas do seu banco, explicação de um projeto, um problema de código fácil narrado em voz alta e suas perguntas finais. Assista com um checklist: tempo de cada resposta, pausas longas, we no lugar de I, resultados sem número, palavras mal pronunciadas. Escolha a parte mais fraca, reescreva e regrave só ela.",
+              "tips": [
+                "Repita a simulação com intervalo de uma semana e compare as gravações. Ouvir a evolução é mais confiável que a sensação de ter ido bem."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que treinar com gravação",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Você ouve o que o outro ouve",
+          "text": "A sensação durante a fala é diferente do resultado. A gravação mostra as pausas, os vícios e a velocidade que você não percebe falando."
+        },
+        {
+          "icon": "list",
+          "title": "Checklist objetivo",
+          "text": "Revisar com critérios fixos transforma a impressão de ter ido mal em pontos específicos para corrigir."
+        },
+        {
+          "icon": "sync",
+          "title": "Ciclo curto de melhoria",
+          "text": "Regravar só a parte fraca concentra o esforço onde ele rende, em vez de repetir a entrevista inteira a cada vez."
+        }
+      ],
+      "closingText": "Você montou um kit completo: apresentação em dois tamanhos, banco de histórias STAR, explicação de projeto, frases para live coding e esclarecimento, perguntas para o entrevistador e uma entrevista simulada gravada. A mesma fala estruturada serve depois da contratação, nas reuniões da equipe — que é o tema do Daily Scrum English.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Seu kit de entrevista está pronto e testado em gravação. Para levar essa clareza à rotina da equipe, o próximo passo é o Daily Scrum English.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Qual estrutura é recomendada para responder tell me about yourself?",
+      "explanation": "A estrutura presente, passado e futuro começa pelo que você faz hoje, explica brevemente como chegou aí e termina no que procura agora. Começar pela infância ou pela faculdade empurra o essencial para o fim; listar todas as tecnologias não conta uma história; e falar da vida pessoal não é o que a pergunta pede em uma entrevista profissional.",
+      "options": [
+        {
+          "text": "Presente, passado e futuro, em 60 a 90 segundos",
+          "isCorrect": true
+        },
+        {
+          "text": "Ordem cronológica desde a faculdade, com todos os empregos",
+          "isCorrect": false
+        },
+        {
+          "text": "Lista de todas as tecnologias que você conhece",
+          "isCorrect": false
+        },
+        {
+          "text": "Hobbies e vida pessoal, para quebrar o gelo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Por que preparar também uma versão de 30 segundos da apresentação?",
+      "explanation": "Conversas rápidas com recrutador ou o início de uma entrevista com pouco tempo pedem uma versão curta. Ter as duas prontas evita cortar a apresentação longa no improviso. Não há regra de que recrutadores só aceitam 30 segundos, nem relação com o nível do inglês ou com substituir a versão completa.",
+      "options": [
+        {
+          "text": "Para conversas curtas, como a primeira ligação com recrutador",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque toda empresa exige apresentação de no máximo 30 segundos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque ela substitui a versão longa em qualquer situação",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque frases curtas escondem erros de gramática",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Qual é a melhor resposta para why this company?",
+      "explanation": "Uma resposta que cita algo específico da empresa, como o produto ou um desafio técnico, mostra que você pesquisou e tem motivo real. Elogios genéricos servem para qualquer vaga; falar só de salário passa interesse apenas transacional; e dizer que mandou currículo para várias empresas não responde à pergunta.",
+      "options": [
+        {
+          "text": "Citar um aspecto específico do produto ou do desafio técnico da empresa",
+          "isCorrect": true
+        },
+        {
+          "text": "Dizer que é uma empresa grande com boa cultura",
+          "isCorrect": false
+        },
+        {
+          "text": "Mencionar que o salário é melhor que o atual",
+          "isCorrect": false
+        },
+        {
+          "text": "Explicar que está aplicando para muitas vagas ao mesmo tempo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Em uma resposta no método STAR, qual parte deve ocupar a maior parte do tempo?",
+      "explanation": "A ação é o que o entrevistador precisa avaliar: o que você fez. Centros de carreira sugerem algo como 60% da resposta para a ação, com situação e tarefa curtas e um resultado objetivo. Uma situação longa demais é o erro mais comum.",
+      "options": [
+        {
+          "text": "Action",
+          "isCorrect": true
+        },
+        {
+          "text": "Situation",
+          "isCorrect": false
+        },
+        {
+          "text": "Task",
+          "isCorrect": false
+        },
+        {
+          "text": "As quatro partes devem ter o mesmo tempo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Por que trocar we por I na parte de ação da resposta?",
+      "explanation": "O entrevistador avalia a sua contribuição. Com we, ele não sabe qual parte do trabalho foi sua. Usar I não significa esconder a equipe — você pode dizer com quem trabalhou — e não tem relação com gramática formal nem com parecer mais experiente que o resto do time.",
+      "options": [
+        {
+          "text": "Para deixar claro o que você fez dentro do trabalho da equipe",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque we é considerado informal demais em inglês",
+          "isCorrect": false
+        },
+        {
+          "text": "Para dar a entender que você fez tudo sozinho",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque entrevistadores não gostam de ouvir sobre equipes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Segundo recrutadores da AWS, como preparar histórias para os Leadership Principles da Amazon?",
+      "explanation": "Recrutadores da AWS orientam a preparar uma narrativa por Leadership Principle, no formato STAR, comunicada com dados e detalhes, e a ensaiar em voz alta. Eles também observam que você normalmente não sabe qual princípio está sendo avaliado em cada pergunta, por isso decorar respostas genéricas não ajuda.",
+      "options": [
+        {
+          "text": "Uma história no formato STAR para cada princípio, com dados e detalhes",
+          "isCorrect": true
+        },
+        {
+          "text": "Decorar a definição oficial de cada princípio",
+          "isCorrect": false
+        },
+        {
+          "text": "Uma única história longa que cubra todos os princípios",
+          "isCorrect": false
+        },
+        {
+          "text": "Não preparar nada, porque as perguntas são sempre técnicas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Ao explicar um projeto técnico, por onde começar?",
+      "explanation": "Começar pelo problema que o projeto resolvia dá contexto para tudo o que vem depois. Listar bibliotecas primeiro obriga o entrevistador a adivinhar para que servem; detalhes de código e métricas fazem sentido só depois que ele entende o objetivo.",
+      "options": [
+        {
+          "text": "Pelo problema que o projeto resolvia, antes das ferramentas",
+          "isCorrect": true
+        },
+        {
+          "text": "Pela lista de bibliotecas e frameworks usados",
+          "isCorrect": false
+        },
+        {
+          "text": "Pelo trecho de código mais complexo",
+          "isCorrect": false
+        },
+        {
+          "text": "Pelas métricas finais, sem explicar o contexto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Antes de começar a codar em um live coding, o que se espera do candidato?",
+      "explanation": "Confirmar o entendimento e perguntar sobre tamanho da entrada, entradas inválidas e casos vazios evita resolver o problema errado. Entrevistadores muitas vezes não oferecem essas informações e esperam que o candidato pergunte. Começar direto pela solução otimizada ou ficar em silêncio esconde o raciocínio.",
+      "options": [
+        {
+          "text": "Reformular o problema e perguntar sobre entrada, limites e casos de borda",
+          "isCorrect": true
+        },
+        {
+          "text": "Começar a digitar imediatamente para economizar tempo",
+          "isCorrect": false
+        },
+        {
+          "text": "Pensar em silêncio até ter a solução ótima completa",
+          "isCorrect": false
+        },
+        {
+          "text": "Perguntar ao entrevistador qual é a resposta esperada",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Você precisa de alguns segundos para pensar durante o live coding. Qual é a melhor atitude?",
+      "explanation": "Anunciar a pausa, com algo como let me think about this for a moment, e depois resumir o que considerou mantém o entrevistador acompanhando o raciocínio. Silêncio sem aviso deixa a dúvida se você travou; falar sem parar sem conteúdo atrapalha; e pedir para pular o problema encerra a avaliação.",
+      "options": [
+        {
+          "text": "Avisar que vai pensar e, ao voltar, resumir o que considerou",
+          "isCorrect": true
+        },
+        {
+          "text": "Ficar em silêncio sem avisar até ter certeza",
+          "isCorrect": false
+        },
+        {
+          "text": "Falar qualquer coisa para não deixar silêncio",
+          "isCorrect": false
+        },
+        {
+          "text": "Pedir para trocar de problema",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Você não conhece uma palavra usada na pergunta. O que fazer?",
+      "explanation": "Pedir esclarecimento sobre o termo é normal e esperado em entrevista. Responder adivinhando pode levar você a responder outra pergunta, o que prejudica mais que admitir a dúvida. Fingir que entendeu e mudar de assunto também é perceptível.",
+      "options": [
+        {
+          "text": "Dizer que não conhece o termo e pedir que o entrevistador explique",
+          "isCorrect": true
+        },
+        {
+          "text": "Responder adivinhando o significado pelo contexto",
+          "isCorrect": false
+        },
+        {
+          "text": "Ignorar a palavra e responder o que preparou",
+          "isCorrect": false
+        },
+        {
+          "text": "Pedir para continuar a entrevista em português",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Qual destas é uma boa pergunta para fazer ao entrevistador?",
+      "explanation": "Perguntar como é uma semana típica da equipe traz informação que só alguém de dentro sabe e mostra interesse no trabalho. Perguntas respondidas no site da empresa sugerem falta de pesquisa; benefícios e salário costumam ser tratados com o recrutador; e perguntar se passou coloca o entrevistador numa posição que ele não pode responder.",
+      "options": [
+        {
+          "text": "What does a typical week look like for this team?",
+          "isCorrect": true
+        },
+        {
+          "text": "What does your company do?",
+          "isCorrect": false
+        },
+        {
+          "text": "How many vacation days do I get?",
+          "isCorrect": false
+        },
+        {
+          "text": "Did I pass the interview?",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Depois de gravar uma entrevista simulada, qual é o próximo passo mais produtivo?",
+      "explanation": "Revisar com um checklist fixo transforma a impressão geral em pontos concretos, e regravar só a parte mais fraca concentra o esforço onde ele rende. Repetir a entrevista inteira sem revisar repete os mesmos erros; descartar a gravação perde a informação; e decorar o texto deixa a fala recitada.",
+      "options": [
+        {
+          "text": "Revisar com checklist e regravar só a parte mais fraca",
+          "isCorrect": true
+        },
+        {
+          "text": "Repetir a simulação inteira imediatamente, sem assistir",
+          "isCorrect": false
+        },
+        {
+          "text": "Apagar a gravação para não desanimar",
+          "isCorrect": false
+        },
+        {
+          "text": "Decorar palavra por palavra a transcrição da gravação",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "Um kit de entrevista em inglês feito com o seu material: apresentação em versões de 30 e 90 segundos, banco de seis a oito histórias STAR mapeadas por competência, roteiro em camadas para explicar um projeto técnico, folha de frases para live coding, esclarecimento e perguntas ao entrevistador, e uma entrevista simulada gravada e revisada com checklist.",
+    "highlights": [
+      "Apresentação cronometrada em dois tamanhos",
+      "Banco de histórias STAR com resultados medidos",
+      "Entrevista simulada gravada e revisada"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "No EF English Proficiency Index 2025, o Brasil ficou em 75º lugar entre 123 países e territórios, com 482 pontos — seis posições acima de 2024, mas ainda em um nível descrito como suficiente para tarefas do dia a dia. A edição de 2025 foi a primeira a incluir avaliação de fala e escrita, justamente as habilidades que uma entrevista testa.",
+      "Para quem trabalha com tecnologia, essa distância entre ler inglês técnico e conversar em inglês aparece no momento da entrevista para empresas estrangeiras ou equipes internacionais. Como o formato dessas entrevistas é conhecido e se repete, é uma das partes do inglês profissional em que preparação estruturada faz diferença mais rápido."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Vagas em empresas estrangeiras",
+        "description": "Processos seletivos inteiros em inglês, do recrutador à banca técnica."
+      },
+      {
+        "label": "Equipes internacionais no Brasil",
+        "description": "Empresas brasileiras com gestores ou times fora do país que entrevistam em inglês."
+      },
+      {
+        "label": "Promoções e trocas de equipe",
+        "description": "Conversas internas em que você precisa apresentar projetos e decisões técnicas."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem lê bem e trava ao falar",
+        "description": "Usa inglês técnico no trabalho, mas sente que a fala não acompanha sob pressão."
+      },
+      {
+        "label": "Quem tem entrevista marcada",
+        "description": "Precisa organizar o que vai dizer e treinar em poucas semanas."
+      },
+      {
+        "label": "Quem já reprovou em entrevista em inglês",
+        "description": "Sabia resolver o problema, mas não conseguiu mostrar o raciocínio."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Perguntas comportamentais e live coding são formatos comuns em processos seletivos de tecnologia. A Amazon, por exemplo, orienta publicamente candidatos a responder no formato STAR com base nos seus Leadership Principles, e entrevistas técnicas em empresas como o Google costumam reservar a maior parte do tempo a um problema de programação resolvido diante do entrevistador. A estrutura que você treina aqui serve a processos de empresas de qualquer porte que contratam em inglês.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "University of Washington Career & Internship Center — STAR Method of Interviewing",
+      "url": "https://careers.uw.edu/resources/star-method-of-interviewing/"
+    },
+    {
+      "label": "AWS — Life at AWS: recruiters share ways to excel in your AWS in-person interview",
+      "url": "https://aws.amazon.com/careers/life-at-aws-recruiters-share-10-ways-to-excel-in-your-aws-in-person-interview/"
+    },
+    {
+      "label": "Amazon Jobs — In-person interview: Leadership Principles, perguntas comportamentais e método STAR",
+      "url": "https://amazon.jobs/en-gb/landing_pages/in-person-interview"
+    },
+    {
+      "label": "Dean Jackson (Google), The Google Interview — ACM XRDS, 2013",
+      "url": "https://huang.isis.vanderbilt.edu/cs4278/readings/googleinterview.pdf"
+    },
+    {
+      "label": "EF EPI 2025 — Brasil melhora sua fluência em inglês e sobe seis posições em ranking global (PR Newswire)",
+      "url": "https://www.prnewswire.com/br/comunicados-para-a-imprensa/brasil-melhora-sua-fluencia-em-ingles-e-sobe-seis-posicoes-em-ranking-global-302617488.html"
+    }
+  ]
 }

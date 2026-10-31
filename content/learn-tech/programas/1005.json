@@ -1,0 +1,857 @@
+{
+  "id": 1005,
+  "image": "https://cdn.pixabay.com/photo/2019/10/03/12/12/hacker-4523097_1280.jpg",
+  "category": "Carreira e Soft Skills",
+  "categoryFilter": "carreira-soft-skills",
+  "title": "Hack Dev: Rotina, Trilha e Portfólio para a Primeira Vaga",
+  "lessons": "20 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Iniciante",
+  "description": "O método Hack Dev do learnTECH para quem estuda programação por conta própria e quer chegar à primeira vaga: diagnosticar habilidades numa escala de 1 a 4, seguir uma rotina diária de conteúdo, prática e networking, concluir uma trilha com desafios contados e transformar tudo em portfólio.",
+  "letslearn": [
+    "Avaliar cada habilidade técnica numa escala de 1 a 4 e decidir o que estudar primeiro",
+    "Montar uma rotina diária em três blocos: conteúdo, prática e networking",
+    "Organizar a trilha de estudo com uma lista de conclusão, verbos e contadores",
+    "Revisar GitHub e perfil profissional para mostrar o que você sabe fazer"
+  ],
+  "curriculum": "Do diagnóstico ao portfólio",
+  "about": "O Hack Dev é um método de organização para a formação em desenvolvimento, construído a partir da rotina real de quem estudou sozinho rumo à primeira vaga. O programa segue a ordem do método: primeiro o diagnóstico de tempo e de habilidades, depois a rotina diária em três blocos, em seguida a trilha de conteúdo com sua lista de conclusão e, por fim, a revisão do portfólio e os limites que mantêm a rotina de pé. Não ensina uma linguagem; ensina a organizar o estudo de qualquer uma.",
+  "materials": [
+    "Tabela de habilidades com a escala de 1 a 4",
+    "Modelo de organizador com os blocos A1, A2 e A3",
+    "Lista de conclusão com verbos e contadores",
+    "Checklist de revisão de repositório e de perfil"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Diagnóstico: Rotina Atual e Mapa de Habilidades",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "A Rotina Hack Dev: Conteúdo, Prática e Networking",
+      "lessonsCount": 6,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Trilha de Conteúdo e Lista de Conclusão",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Portfólio, Comunidades e Ritmo Sustentável",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Carreira e Soft Skills",
+    "mainTitle": "Organize a formação: menos começos, mais entregas que um recrutador consegue ver.",
+    "introductionParagraphs": [
+      {
+        "title": "Por que estudar muito não basta",
+        "text": "Quem estuda programação por conta própria costuma consumir conteúdo em excesso, praticar pouco e quase não aparecer para o mercado. O resultado é a pergunta que abriu este método: **por que não consigo vaga de dev?** Na maioria das vezes, a resposta não é falta de curso; é falta de organização entre aprender, fazer e mostrar."
+      },
+      {
+        "title": "Um método, não uma motivação",
+        "text": "O **Hack Dev** troca intenção por registro: uma escala de 1 a 4 para cada habilidade, três blocos diários com metas numéricas, uma lista de conclusão com contadores e datas de última execução. Tudo cabe em um calendário e em um arquivo de texto, sem ferramenta paga."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não ensina uma linguagem, não indica um curso específico e não promete vaga em prazo nenhum. Ele organiza o estudo que você já faz ou vai fazer, para que cada semana deixe uma evidência concreta do que você aprendeu."
+      }
+    ],
+    "courseAboutTitle": "Para quem estuda sozinho e quer chegar à primeira vaga",
+    "courseAboutDescription": "Este programa é o sistema operacional da sua formação. Ele vem antes ou ao lado dos programas técnicos: enquanto eles ensinam o que estudar, o Hack Dev organiza quando estudar, como praticar, como medir a evolução e como transformar estudo em portfólio e em rede de contatos.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Diagnóstico: Rotina Atual e Mapa de Habilidades",
+        "items": [
+          {
+            "label": "Rotina atual",
+            "description": "Retratar a semana real e comparar com a planejada."
+          },
+          {
+            "label": "Escala de 1 a 4",
+            "description": "Nenhum, Básico, Praticante e Avançado, medidos pelo que você faz."
+          },
+          {
+            "label": "Oito elementos",
+            "description": "Mapa, evolução, prazos, recompensas, superação, disciplina, foco e inspirações."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: A Rotina Hack Dev: Conteúdo, Prática e Networking",
+        "items": [
+          {
+            "label": "A1 conteúdo",
+            "description": "Anotar, resumir, explicar; questões de entrevista e testes de competência."
+          },
+          {
+            "label": "A2 prática",
+            "description": "Uma tarefa por dia: escolher, pesquisar e resolver."
+          },
+          {
+            "label": "A3 networking",
+            "description": "Vagas, interações e uma publicação diária com metas numéricas."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Trilha de Conteúdo e Lista de Conclusão",
+        "items": [
+          {
+            "label": "Concluir antes de começar",
+            "description": "A lista que fecha o que está pela metade."
+          },
+          {
+            "label": "Trilha em três etapas",
+            "description": "Conectar, fundamentar e especializar, com desafios por nível."
+          },
+          {
+            "label": "Artigo, roteiro e projeto",
+            "description": "Transformar cada tópico em três peças publicáveis."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Portfólio, Comunidades e Ritmo Sustentável",
+        "items": [
+          {
+            "label": "GitHub e perfil",
+            "description": "Personalizar, escrever e hospedar o que você concluiu."
+          },
+          {
+            "label": "Comunidades",
+            "description": "Duas comunidades para perguntar, responder e mostrar."
+          },
+          {
+            "label": "Ritmo sustentável",
+            "description": "Horários, prioridades, pausa e ajuda quando precisar."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos para montar o seu próprio Hack Dev. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "search",
+      "title": "Diagnóstico: Rotina Atual e Mapa de Habilidades",
+      "shortDescription": "O retrato da semana, a escala de 1 a 4 e os oito elementos da rotina",
+      "introductionText": "Rotina copiada de outra pessoa costuma durar uma semana. Este módulo começa pelo diagnóstico: como o seu tempo é usado hoje e em que nível você está em cada habilidade cobrada nas vagas de entrada. Com esses dois retratos, você define os oito elementos que dão sustentação ao método. Nada aqui é estudo de tecnologia ainda; é o mapa que decide o que estudar primeiro.",
+      "sections": [
+        {
+          "title": "🧭 Onde você está agora",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Entender a rotina atual",
+              "code": "semana real × semana planejada",
+              "guidance": "Antes de montar qualquer método, registre uma semana comum: a que horas você estuda, quanto tempo vai para trabalho, deslocamento, descanso e lazer. Responda por escrito: como eu gerencio meu tempo hoje? Onde as horas de estudo realmente acontecem e onde elas só aparecem na intenção? A rotina nova é construída em cima desse retrato, não de uma agenda ideal.",
+              "tips": [
+                "Anote o que aconteceu, não o que você planejou. A diferença entre as duas colunas é o primeiro dado útil do programa.",
+                "Se você trabalha em casa, marque onde o trabalho invadiu o estudo ou o descanso: limite pouco claro é a causa mais comum de rotina que não se sustenta."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "A escala de habilidade de 1 a 4",
+              "code": "1 Nenhum · 2 Básico · 3 Praticante · 4 Avançado",
+              "guidance": "O método usa quatro níveis para cada habilidade. 1 Nenhum: ainda sem conhecimento satisfatório. 2 Básico: iniciante ou entusiasta; leu exemplos da documentação, copiou código, fez cursos ou bootcamps e tem provas de conceito em repositórios próprios. 3 Praticante: usa o recurso no dia a dia, ainda decide com ajuda de outras pessoas e tem o código revisado por alguém mais experiente. 4 Avançado: aceita desafios complexos, orienta colegas, toma decisões estratégicas e faz revisão de código sobre aquele recurso.",
+              "tips": [
+                "O critério não é quanto tempo você estudou, e sim o que você consegue fazer e com quanta ajuda.",
+                "Para a primeira vaga, o alvo realista é nível 2 consistente nos fundamentos e nível 3 em uma ou duas tecnologias da vaga."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Avaliar a lista de habilidades",
+              "code": "habilidade | nota | evidência",
+              "guidance": "Monte uma tabela com as habilidades que aparecem nas vagas de entrada e dê uma nota de 1 a 4 para cada. A lista do método cobre três grupos: base (resolução de problemas, lógica e complexidade de algoritmos, estruturas de dados, recursividade, Git, clean code, comunicação técnica, gestão de tempo, metodologias ágeis); front-end (HTML, CSS, JavaScript, SPA, SSR, componentes reutilizáveis, otimização de desempenho de página, PWA, acessibilidade, React Hooks, Next.js); e arquitetura e qualidade (APIs REST, segurança de API, testes unitários e e2e, orientação a objetos, programação funcional, SOLID, design patterns, DDD, system design de front e de back).",
+              "tips": [
+                "Exemplo fictício: Ana, em transição de carreira, marcou 2 em HTML, CSS e JavaScript, 1 em testes e 1 em Git. O Git subiu para o topo da lista porque aparece em toda vaga e é rápido de levar ao nível 2.",
+                "Refaça a avaliação a cada mês. A tabela é o seu mapa de evolução, não uma prova."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Os oito elementos da rotina",
+              "code": "mapa · evolução · prazos · recompensas · superação · disciplina · foco · inspirações",
+              "guidance": "Com o retrato da semana e a tabela de habilidades em mãos, defina os oito elementos que sustentam a rotina: mapa (onde você está e aonde quer chegar), evolução (como vai medir o avanço), prazos (datas para cada bloco), recompensas (o que marca uma entrega concluída), superação (o que fazer na semana em que tudo der errado), disciplina (o mínimo diário inegociável), foco (o que fica de fora agora) e inspirações (pessoas e projetos que mostram o caminho).",
+              "tips": [
+                "Escreva cada elemento em uma linha. Se não couber em uma linha, ainda não está claro o bastante para guiar a semana.",
+                "Foco é decidir o que não estudar agora. Uma lista sem cortes vira mais uma lista de desejos."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que começar pelo diagnóstico",
+      "highlights": [
+        {
+          "icon": "gauge",
+          "title": "Medir sem se enganar",
+          "text": "A escala de 1 a 4 descreve o que você faz e com quanta ajuda, não quantas horas estudou. É uma régua que dá para usar sozinho."
+        },
+        {
+          "icon": "grid",
+          "title": "Prioridade visível",
+          "text": "Com a tabela preenchida, fica claro qual habilidade está mais longe do que as vagas pedem e qual sobe de nível mais rápido."
+        },
+        {
+          "icon": "sync",
+          "title": "Revisão mensal",
+          "text": "Refazer a avaliação todo mês transforma a sensação de não estar evoluindo em um registro concreto de mudança."
+        }
+      ],
+      "closingText": "Você já sabe como usa o seu tempo, onde está em cada habilidade e quais são os oito elementos que vão segurar a rotina. No próximo módulo, esse mapa vira três blocos diários com metas pequenas e mensuráveis.",
+      "ctaTitle": "🧭 Mapa traçado!",
+      "ctaText": "Diagnóstico feito. Agora vamos montar a rotina diária que leva você do retrato atual ao nível que as vagas pedem.",
+      "nextButtonText": "Ir para Módulo 1: A Rotina Hack Dev: Conteúdo, Prática e Networking"
+    },
+    {
+      "id": 1,
+      "icon": "bolt",
+      "title": "A Rotina Hack Dev: Conteúdo, Prática e Networking",
+      "shortDescription": "Os blocos A1, A2 e A3 com metas diárias e um organizador no calendário",
+      "introductionText": "A rotina Hack Dev cabe em três códigos: A1 conteúdo, A2 prática e A3 networking. Cada bloco tem uma meta pequena, um número e uma data de última execução. O desenho é proposital: quem procura a primeira vaga costuma estudar muito conteúdo, praticar pouco e quase não aparecer para o mercado. Os três blocos obrigam o equilíbrio entre aprender, fazer e ser visto.",
+      "sections": [
+        {
+          "title": "⚡ O dia em três blocos",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Três blocos todos os dias",
+              "code": "A1 conteúdo · A2 prática · A3 networking",
+              "guidance": "A rotina Hack Dev divide o dia de estudo em três blocos com códigos curtos: A1 conteúdo (anotar, responder questões, fazer testes), A2 prática (uma tarefa de código pesquisada e resolvida) e A3 networking (vagas, interações e publicação). Cada bloco tem uma meta pequena e mensurável, e o dia só conta como feito quando os três foram tocados, mesmo que de leve.",
+              "tips": [
+                "Os códigos A1, A2 e A3 existem para caber em um item de agenda ou em um post-it. Rotina que precisa de explicação para ser lembrada não é seguida.",
+                "Comece com de segunda a sexta. Fim de semana fica livre até a rotina de dias úteis se sustentar por um mês."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "A1.a: anotar, resumir, explicar",
+              "code": "anotar | resumir | explicar",
+              "guidance": "Para cada texto, vídeo ou PDF estudado, faça três movimentos: anote os conceitos enquanto consome, resuma em poucas linhas com suas palavras e explique como se fosse ensinar alguém. Só a terceira etapa revela o que você ainda não entendeu. Ao lado de cada conteúdo, registre a data da última vez que você o trabalhou.",
+              "tips": [
+                "Explicar em voz alta ou por escrito é o teste. Se travou, volte ao trecho específico, não ao conteúdo inteiro.",
+                "O resumo de hoje vira rascunho da publicação do bloco A3; nada do que você escreve se perde."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "A1.b e A1.c: questões de entrevista e testes de competência",
+              "code": "requisito da vaga → pergunta → resposta",
+              "guidance": "Leia os requisitos das vagas que você salvou e transforme cada um em pergunta de entrevista técnica: se a vaga pede Git, a pergunta é qual a diferença entre merge e rebase. Responda uma por dia. Uma vez por semana, faça um teste de competência em uma plataforma de testes técnicos ou na avaliação de habilidades de uma rede profissional, e anote a data e o resultado.",
+              "tips": [
+                "Questões montadas a partir de vagas reais treinam exatamente o que vai ser perguntado, em vez de um banco genérico.",
+                "Resultado ruim em teste é informação: leve a habilidade para a tabela de 1 a 4 e ajuste a nota."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "A2: uma tarefa de prática",
+              "code": "tarefa → pesquisar → resolver",
+              "guidance": "O bloco A2 é uma tarefa de código por dia, com três verbos: escolher a tarefa, pesquisar o que falta e resolver. Pode ser um desafio de uma trilha, uma parte de um projeto ou um exercício tirado de uma vaga. A meta é uma tarefa concluída, não horas sentado diante do editor. Em fase de prova ou de entrevistas, a meta pode subir para até quatro tarefas curtas.",
+              "tips": [
+                "Tarefa boa cabe em uma sessão. Se não cabe, quebre em partes e conte só a parte entregue.",
+                "Registre o que pesquisou: a lista de dúvidas resolvidas é material para entrevista."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "A3: vagas, interações e publicação",
+              "code": "vagas:20 · interações:10 · publicação:1",
+              "guidance": "Networking com metas numéricas. Vagas: salve vinte por dia, dez em uma rede profissional e dez em um portal de vagas de tecnologia, só para ler os requisitos e alimentar o A1.b. Interações: cinco mensagens e cinco comentários relevantes em publicações da área. Publicação: uma por dia, contando o que você fez e três aprendizados, com um contador do tipo 013/259 para mostrar a sequência.",
+              "tips": [
+                "Salvar vaga não é se candidatar. Candidate-se só onde você cobre a maior parte dos requisitos; as demais servem de pesquisa.",
+                "Comentário relevante acrescenta algo: uma dúvida, um exemplo, uma fonte. Comentário de uma palavra não gera conversa."
+              ]
+            },
+            {
+              "number": 6,
+              "title": "Montar o organizador no calendário",
+              "code": "A1.a Conteúdos -> anotar | resumir | explicar - 08/09",
+              "guidance": "Leve os três blocos para o calendário como eventos recorrentes de segunda a sexta, cada um com a meta no título (por exemplo, A3.a Vagas:20). Ao lado de cada item, mantenha a data da última execução, como no organizador original: 08/09, 06/09. Um item com data antiga salta aos olhos e mostra qual bloco está sendo abandonado antes de virar hábito perdido.",
+              "tips": [
+                "A data da última execução vale mais que um check do dia: ela mostra há quanto tempo você não toca naquele bloco.",
+                "Revise o organizador toda sexta. Meta que nunca é batida está alta demais; meta sempre batida com folga pode subir."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que três blocos",
+      "highlights": [
+        {
+          "icon": "list",
+          "title": "Metas que cabem no dia",
+          "text": "Uma tarefa de prática, uma publicação, dez interações. Números pequenos são cumpridos; metas grandes viram culpa acumulada."
+        },
+        {
+          "icon": "globe",
+          "title": "Aparecer enquanto aprende",
+          "text": "O bloco A3 começa no primeiro dia, não depois de estar pronto. Quem só aparece no fim chega ao mercado sem rede nem histórico."
+        },
+        {
+          "icon": "sync",
+          "title": "Um ciclo que se alimenta",
+          "text": "As vagas salvas viram questões de entrevista, o resumo do estudo vira publicação e a tarefa resolvida vira portfólio."
+        }
+      ],
+      "closingText": "Sua rotina diária já tem forma, metas e um lugar no calendário. Falta decidir o que entra no bloco de conteúdo e de prática ao longo dos meses: é a trilha, com uma lista de conclusão que impede o acúmulo de começos.",
+      "ctaTitle": "⚡ Rotina de pé!",
+      "ctaText": "Três blocos no calendário. Agora vamos organizar a trilha que alimenta esses blocos até a primeira vaga.",
+      "nextButtonText": "Ir para Módulo 2: Trilha de Conteúdo e Lista de Conclusão"
+    },
+    {
+      "id": 2,
+      "icon": "list",
+      "title": "Trilha de Conteúdo e Lista de Conclusão",
+      "shortDescription": "Concluir antes de começar, trilha em três etapas e desafios com contador",
+      "introductionText": "O problema de quem estuda por conta própria raramente é falta de conteúdo; é excesso de começo. Este módulo organiza o estudo em uma trilha com três etapas, cada uma fechada por desafios práticos, e acompanha tudo com uma lista de conclusão com verbos e contadores. Ao final, cada tópico estudado gera três peças: um artigo, um roteiro e um projeto.",
+      "sections": [
+        {
+          "title": "📋 A trilha e a lista",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Concluir antes de começar",
+              "code": "CONCLUIR · TERMINAR",
+              "guidance": "A lista de tarefas do método abre com duas palavras em maiúsculas: CONCLUIR e TERMINAR. Antes de abrir um curso novo, liste o que está pela metade e decida, item por item, o que é preciso para dar como finalizado. Terminar libera atenção para os próximos desafios; acumular começos não aparece em portfólio nenhum.",
+              "tips": [
+                "Pergunta que guia a lista: o que cada projeto no meu GitHub demonstra que eu sei fazer?",
+                "Desistir conscientemente também é concluir: risque o item e registre o motivo."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "A trilha em três etapas",
+              "code": "conectar → fundamentar → especializar",
+              "guidance": "Organize o conteúdo em uma trilha com três etapas: conectar (o primeiro contato com programação e com a web), fundamentar (HTML, CSS, JavaScript e lógica com profundidade) e especializar (a tecnologia da vaga que você quer, como React). Cada etapa tem conteúdos e um bloco de desafios práticos. Uma trilha gratuita de fundamentos de uma escola online serve de base, desde que você siga uma só até o fim.",
+              "tips": [
+                "Escolher a trilha é metade do trabalho; o artigo Como escolher uma formação para começar em desenvolvimento ajuda nessa decisão.",
+                "Trocar de trilha no meio é a forma mais comum de recomeçar do zero sem perceber."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Desafios por nível com contador",
+              "code": "[feitos/total][última revisão]",
+              "guidance": "Liste os desafios práticos da trilha por nível (iniciante, intermediário, avançado) e acompanhe cada grupo com três verbos e um contador. Os verbos: enviar (publicar o código), readme (documentar) e personalizar (mudar algo para que o projeto seja seu, não uma cópia). O contador mostra feitos sobre total e a data da última revisão.",
+              "tips": [
+                "Exemplo fictício: 1. Desafios Iniciante - enviar | readme | personalizar [03/05][18/09]. Três de cinco feitos, revisado em 18/09.",
+                "Personalizar é o que diferencia seu repositório dos milhares iguais: troque o tema, acrescente uma funcionalidade, mude os dados."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Desafios próprios: vagas, conteúdos, vídeos, artigos",
+              "code": "codar | readme | personalizar | escrever",
+              "guidance": "Depois dos desafios da trilha, crie os seus em quatro pastas. Desafios de vagas: testes técnicos de processos seletivos que você favoritou. Desafios de conteúdo e de vídeos: exercícios tirados do que você estudou. Desafios de artigos: textos para escrever. Os três primeiros seguem codar | readme | personalizar | escrever; o último é só escrever. O verbo escrever fecha o ciclo: cada desafio vira um texto curto explicando o que foi feito.",
+              "tips": [
+                "Teste técnico de processo seletivo é o exercício mais próximo do trabalho real que você vai encontrar antes da primeira vaga.",
+                "Um contador por pasta, como [00/22], mostra o tamanho real do que falta e evita a sensação de estudo infinito."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Do conteúdo ao trio artigo, roteiro e projeto",
+              "code": "ementa → teoria → prática → projeto",
+              "guidance": "Para cada tópico importante da trilha, produza três peças: um artigo, um roteiro de vídeo e um projeto no repositório. O processo é o mesmo de quem monta uma formação: escrever a ementa, separar teoria (fundamentos e definições) de prática (exercícios resolvidos) e manter um projeto que cresce em paralelo ao conteúdo. Você não precisa gravar nada; o roteiro escrito já obriga a organizar a explicação.",
+              "tips": [
+                "Ementa é a lista de tópicos na ordem em que alguém deveria aprendê-los. Se você não consegue escrevê-la, ainda não domina o assunto.",
+                "O projeto paralelo é o que vai para o portfólio; os artigos são o que vai para a publicação diária do bloco A3."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que lista de conclusão",
+      "highlights": [
+        {
+          "icon": "folder",
+          "title": "Tudo em pastas",
+          "text": "Desafios de trilha, de vagas, de conteúdo, de vídeos e de artigos em pastas separadas, cada uma com contador próprio."
+        },
+        {
+          "icon": "tools",
+          "title": "Verbos em vez de checks",
+          "text": "Enviar, readme, personalizar, escrever: cada verbo é uma etapa visível, e o projeto só conta quando passou por todas."
+        },
+        {
+          "icon": "gauge",
+          "title": "O tamanho real do que falta",
+          "text": "Contadores como [03/05] mostram quanto já foi feito e quanto resta, e acabam com a sensação de estudo sem fim."
+        }
+      ],
+      "closingText": "Você tem uma trilha com começo, meio e fim, desafios contados e um processo que transforma estudo em material publicável. No último módulo, esse material vira portfólio, presença em comunidade e uma rotina que se sustenta por meses.",
+      "ctaTitle": "📋 Trilha organizada!",
+      "ctaText": "Conteúdo e desafios em ordem. Vamos transformar o que você concluiu em portfólio e manter o ritmo sem esgotar.",
+      "nextButtonText": "Ir para Módulo 3: Portfólio, Comunidades e Ritmo Sustentável"
+    },
+    {
+      "id": 3,
+      "icon": "laptop",
+      "title": "Portfólio, Comunidades e Ritmo Sustentável",
+      "shortDescription": "GitHub, perfil profissional, comunidades e limites para a rotina durar",
+      "introductionText": "O fim da lista de tarefas do método tem três itens de conclusão: revisar o perfil profissional, revisar os repositórios e revisar o feed. É ali que meses de rotina viram algo que um recrutador consegue ver em poucos minutos. Este módulo cobre essa revisão, a escolha de comunidades e os limites que impedem a rotina de virar esgotamento.",
+      "sections": [
+        {
+          "title": "🗂️ Do estudo à vitrine",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Revisar os repositórios do GitHub",
+              "code": "personalizar | escrever | hospedar",
+              "guidance": "Abra cada repositório público e responda: o que ele demonstra que eu sei fazer? Em seguida aplique três verbos. Personalizar: nome claro, descrição e tópicos. Escrever: um README com objetivo, tecnologias, como rodar e o que você aprendeu. Hospedar: publique a versão online sempre que o projeto tiver interface. Repositório que não responde à pergunta vai para o arquivo.",
+              "tips": [
+                "Poucos repositórios bem documentados contam mais do que dezenas de exercícios soltos sem descrição.",
+                "Fixe no perfil os quatro ou seis projetos que cobrem as habilidades em que você se deu nota 2 ou 3."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Revisar o perfil profissional",
+              "code": "atualizar | personalizar | escrever",
+              "guidance": "No perfil da rede profissional, aplique atualizar, personalizar e escrever. Atualizar: cargo-alvo, tecnologias e projetos recentes. Personalizar: título com o cargo que você busca e as tecnologias que domina. Escrever: um resumo curto e a seção de projetos com link para o repositório e para a versão hospedada.",
+              "tips": [
+                "Use no perfil as mesmas palavras que aparecem nas vagas salvas no bloco A3; é por elas que recrutadores buscam.",
+                "As habilidades listadas devem bater com a tabela de 1 a 4: não liste o que está em nível 1."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Contar a história da formação",
+              "code": "feito + 3 aprendizados - 013/100",
+              "guidance": "As publicações diárias do A3 formam, juntas, a história da sua formação. Revise o feed periodicamente: ele precisa mostrar evolução (do primeiro desafio ao projeto mais completo), não só repetição. A meta de longo prazo da lista original é uma sequência de cem publicações, com o contador visível.",
+              "tips": [
+                "Uma boa publicação tem três partes: o que eu fiz, três aprendizados e o link para o código.",
+                "Sequência longa mostra constância, uma das qualidades que quem contrata júnior mais procura e menos consegue verificar."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Escolher comunidades de estudo",
+              "code": "perguntar · responder · mostrar",
+              "guidance": "Participe de comunidades ligadas a escolas online de programação, plataformas de cursos e bootcamps. Escolha no máximo duas para ser ativo: tirar dúvidas, responder dúvidas de quem está uma etapa atrás e mostrar os desafios concluídos. Dialogar é parte do método: muitas travas de carreira e de estudo não se resolvem sozinho.",
+              "tips": [
+                "Responder dúvida de iniciante é o treino mais barato de comunicação técnica, uma das habilidades da lista.",
+                "Comunidade demais vira consumo de conteúdo. Duas em que você participa valem mais que dez em que você só lê."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Ritmo sustentável",
+              "code": "começo · fim · prioridades · pausa",
+              "guidance": "Feche o método com os limites que impedem a rotina de virar sobrecarga. Delimite horários: hora para começar e para parar o estudo. Defina prioridades no início do dia e confira o que foi feito no fim. Viva o momento: quando for hora de descanso, descanse. E busque ajuda quando precisar, com pessoas próximas ou com acompanhamento profissional; atividade física, exames de rotina e terapia fazem parte da preparação, não a atrapalham.",
+              "tips": [
+                "O programa de produtividade do learnTECH aprofunda a gestão de tempo e de prioridades em quem já tem esta rotina de pé.",
+                "Se a rotina só funciona sem dormir, ela não funciona. Reduza as metas antes de cortar o descanso."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que fechar com portfólio e limites",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Evidência verificável",
+          "text": "Repositório com README e versão hospedada mostra em minutos o que você sabe fazer, sem depender da sua autoavaliação."
+        },
+        {
+          "icon": "globe",
+          "title": "Rede antes da vaga",
+          "text": "Comunidade ativa traz dúvida resolvida, indicação e treino de comunicação técnica, que também é cobrada em entrevista."
+        },
+        {
+          "icon": "shield",
+          "title": "Rotina que dura",
+          "text": "Horário de começo e de fim, prioridades e descanso protegido são o que faz o método funcionar no sexto mês, não só no primeiro."
+        }
+      ],
+      "closingText": "Você saiu de um retrato da semana para uma rotina com três blocos, uma trilha com desafios concluídos e um portfólio que conta a história da sua formação. Para seguir, o programa de produtividade do learnTECH aprofunda a gestão de tempo, e os artigos Rotina de um Desenvolvedor: foco, desafios e práticas para evoluir no código e Como escolher uma formação para começar em desenvolvimento complementam as escolhas feitas aqui.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Seu Hack Dev está montado: diagnóstico, rotina, trilha e portfólio. Agora é executar todos os dias e revisar todo mês.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Na escala de habilidade do método, o que caracteriza o nível 3, Praticante?",
+      "explanation": "O nível 3 descreve quem usa o recurso no dia a dia, mas ainda decide com ajuda e tem o código revisado por alguém mais experiente. Ter feito cursos e provas de conceito é nível 2; orientar colegas e fazer revisões é nível 4; a escala não mede horas de estudo.",
+      "options": [
+        {
+          "text": "Usa no dia a dia, decide com ajuda e tem o código revisado por alguém mais experiente",
+          "isCorrect": true
+        },
+        {
+          "text": "Fez cursos e mantém provas de conceito em repositórios próprios",
+          "isCorrect": false
+        },
+        {
+          "text": "Orienta colegas e toma decisões estratégicas sobre o recurso",
+          "isCorrect": false
+        },
+        {
+          "text": "Estudou mais de cem horas o assunto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Qual é o primeiro passo do diagnóstico proposto pelo programa?",
+      "explanation": "O método começa registrando a semana real: como o tempo é usado de fato. A rotina nova é construída sobre esse retrato. Copiar a rotina de outra pessoa ou escolher tecnologia antes do diagnóstico pula a etapa que decide o que estudar primeiro.",
+      "options": [
+        {
+          "text": "Registrar uma semana real e comparar com a planejada",
+          "isCorrect": true
+        },
+        {
+          "text": "Copiar a rotina de um desenvolvedor experiente",
+          "isCorrect": false
+        },
+        {
+          "text": "Escolher a tecnologia mais pedida nas vagas",
+          "isCorrect": false
+        },
+        {
+          "text": "Comprar um curso completo antes de planejar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Entre os oito elementos da rotina, o que significa foco?",
+      "explanation": "No método, foco é decidir o que fica de fora agora. Sem cortes, a lista de estudo vira lista de desejos. Estudar muitas horas seguidas, usar aplicativos de bloqueio ou aprender várias tecnologias ao mesmo tempo não são a definição adotada.",
+      "options": [
+        {
+          "text": "Decidir o que não será estudado agora",
+          "isCorrect": true
+        },
+        {
+          "text": "Estudar o máximo de horas seguidas possível",
+          "isCorrect": false
+        },
+        {
+          "text": "Usar aplicativos que bloqueiam redes sociais",
+          "isCorrect": false
+        },
+        {
+          "text": "Aprender várias tecnologias ao mesmo tempo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "O que representam os blocos A1, A2 e A3 da rotina?",
+      "explanation": "A1 é conteúdo (anotar, questões, testes), A2 é prática (uma tarefa pesquisada e resolvida) e A3 é networking (vagas, interações e publicação). Os códigos são curtos para caber na agenda; não representam níveis, turnos ou tecnologias.",
+      "options": [
+        {
+          "text": "Conteúdo, prática e networking",
+          "isCorrect": true
+        },
+        {
+          "text": "Iniciante, intermediário e avançado",
+          "isCorrect": false
+        },
+        {
+          "text": "Manhã, tarde e noite",
+          "isCorrect": false
+        },
+        {
+          "text": "HTML, CSS e JavaScript",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "No bloco A1.a, qual etapa revela o que você ainda não entendeu do conteúdo?",
+      "explanation": "Anotar e resumir ajudam a registrar, mas é explicar, como se fosse ensinar alguém, que expõe as lacunas. Assistir de novo em velocidade maior ou copiar trechos não testa a compreensão.",
+      "options": [
+        {
+          "text": "Explicar como se fosse ensinar alguém",
+          "isCorrect": true
+        },
+        {
+          "text": "Anotar enquanto consome o conteúdo",
+          "isCorrect": false
+        },
+        {
+          "text": "Assistir de novo em velocidade maior",
+          "isCorrect": false
+        },
+        {
+          "text": "Copiar os trechos mais importantes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Para que servem as vinte vagas salvas por dia no bloco A3?",
+      "explanation": "As vagas salvas servem principalmente para ler requisitos e alimentar as questões de entrevista do A1.b. Salvar não é se candidatar: a candidatura vai só para onde você cobre a maior parte dos requisitos.",
+      "options": [
+        {
+          "text": "Ler requisitos e transformá-los em questões de entrevista",
+          "isCorrect": true
+        },
+        {
+          "text": "Candidatar-se a todas no mesmo dia",
+          "isCorrect": false
+        },
+        {
+          "text": "Aumentar o número de candidaturas enviadas",
+          "isCorrect": false
+        },
+        {
+          "text": "Cumprir uma exigência das plataformas de vagas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Quais são os três verbos usados para acompanhar os desafios de uma trilha?",
+      "explanation": "Cada desafio passa por enviar (publicar o código), readme (documentar) e personalizar (tornar o projeto seu). Os demais conjuntos não fazem parte da lista do método.",
+      "options": [
+        {
+          "text": "Enviar, readme e personalizar",
+          "isCorrect": true
+        },
+        {
+          "text": "Assistir, copiar e entregar",
+          "isCorrect": false
+        },
+        {
+          "text": "Planejar, executar e descansar",
+          "isCorrect": false
+        },
+        {
+          "text": "Instalar, configurar e testar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "O que indica um contador como [03/05][18/09] na lista de tarefas?",
+      "explanation": "O primeiro par mostra feitos sobre o total (três de cinco desafios) e o segundo, a data da última revisão. Não é nota, nem horário, nem número de versões.",
+      "options": [
+        {
+          "text": "Três de cinco desafios feitos, revisados em 18/09",
+          "isCorrect": true
+        },
+        {
+          "text": "Nota 3 de 5 no desafio, entregue em 18/09",
+          "isCorrect": false
+        },
+        {
+          "text": "Três horas de estudo de cinco planejadas",
+          "isCorrect": false
+        },
+        {
+          "text": "Terceira versão de cinco do mesmo projeto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Por que a lista de tarefas começa com CONCLUIR e TERMINAR?",
+      "explanation": "Acumular começos não aparece em portfólio. Dar conteúdos e projetos como finalizados libera atenção para novos desafios e responde à pergunta sobre o que cada projeto demonstra. Não se trata de regra de plataforma nem de proibir novos cursos para sempre.",
+      "options": [
+        {
+          "text": "Porque terminar o que está pela metade libera atenção e gera portfólio",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque plataformas de curso exigem conclusão para emitir certificado",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque é proibido começar um curso novo durante a trilha",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque projetos inacabados são apagados do GitHub",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Qual pergunta orienta a revisão dos repositórios no GitHub?",
+      "explanation": "A pergunta central é o que cada projeto demonstra que você sabe fazer. Repositório que não responde a ela vai para o arquivo. Quantidade, estrelas e linguagem da moda não são o critério.",
+      "options": [
+        {
+          "text": "O que este projeto demonstra que eu sei fazer?",
+          "isCorrect": true
+        },
+        {
+          "text": "Quantos repositórios eu consigo publicar?",
+          "isCorrect": false
+        },
+        {
+          "text": "Quantas estrelas este projeto recebeu?",
+          "isCorrect": false
+        },
+        {
+          "text": "Este projeto usa a linguagem mais popular?",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Quantas comunidades o programa recomenda para participação ativa?",
+      "explanation": "A recomendação é no máximo duas, onde você pergunta, responde e mostra o que fez. Participar de muitas transforma comunidade em consumo de conteúdo.",
+      "options": [
+        {
+          "text": "No máximo duas",
+          "isCorrect": true
+        },
+        {
+          "text": "Pelo menos dez",
+          "isCorrect": false
+        },
+        {
+          "text": "Todas as que encontrar",
+          "isCorrect": false
+        },
+        {
+          "text": "Nenhuma até conseguir a primeira vaga",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Segundo o Octoverse 2025 do GitHub, quantos usuários brasileiros a plataforma tinha?",
+      "explanation": "O relatório de outubro de 2025 registrou mais de 6,8 milhões de usuários brasileiros, alta de 28,5% em um ano. Para quem procura a primeira vaga, isso significa que um perfil sem projetos documentados se perde em meio a milhões.",
+      "options": [
+        {
+          "text": "Mais de 6,8 milhões",
+          "isCorrect": true
+        },
+        {
+          "text": "Cerca de 500 mil",
+          "isCorrect": false
+        },
+        {
+          "text": "Aproximadamente 1 milhão",
+          "isCorrect": false
+        },
+        {
+          "text": "Mais de 50 milhões",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "O seu Hack Dev completo: uma tabela de habilidades avaliadas de 1 a 4, um organizador no calendário com os blocos A1, A2 e A3, uma lista de conclusão da trilha com desafios contados e um portfólio revisado, com repositórios documentados e perfil profissional alinhado às vagas.",
+    "highlights": [
+      "Tabela de habilidades com escala de 1 a 4",
+      "Organizador diário com metas de conteúdo, prática e networking",
+      "Lista de conclusão e portfólio revisado"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "A concorrência por visibilidade cresceu. O relatório Octoverse 2025 do GitHub, de outubro de 2025, registrou mais de 6,8 milhões de usuários brasileiros na plataforma, alta de 28,5% em um ano e quatro vezes o número de 2020. Um perfil sem projetos documentados se perde nesse volume.",
+      "Ao mesmo tempo, a demanda existe: segundo a Brasscom, em levantamento divulgado em fevereiro de 2025, o setor de tecnologia demandou 665.403 profissionais entre 2019 e 2024, enquanto 464.569 concluíram formação na área entre 2018 e 2023. E o estudo é cada vez mais autodirigido: na pesquisa de desenvolvedores do Stack Overflow de 2025, 68% disseram recorrer à documentação técnica para aprender e 44% usaram IA para aprender uma linguagem ou técnica nova no último ano. Quem estuda sozinho precisa de método para transformar esse acesso em entrega."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Transição de carreira",
+        "description": "Quem estuda nas horas livres e precisa de uma rotina que caiba ao lado do trabalho atual."
+      },
+      {
+        "label": "Estudo autodidata",
+        "description": "Quem aprende por cursos online e documentação e precisa de critério para concluir e mostrar."
+      },
+      {
+        "label": "Processos seletivos de entrada",
+        "description": "Estágio, trainee e vagas júnior que avaliam portfólio, teste técnico e comunicação."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem começa muitos cursos",
+        "description": "E sente que estuda bastante, mas não tem o que mostrar."
+      },
+      {
+        "label": "Quem estuda sozinho",
+        "description": "Sem turma nem orientador, e precisa de uma estrutura para manter o ritmo."
+      },
+      {
+        "label": "Quem está pronto para aplicar",
+        "description": "Já tem fundamentos e quer organizar portfólio, perfil e rotina de candidaturas."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Rotina de estudo, avaliação de habilidades por níveis e portfólio documentado são práticas presentes em todo o mercado de tecnologia: escalas de proficiência parecidas com a de 1 a 4 aparecem em avaliações de desempenho de equipes de desenvolvimento, e repositórios com README e versão hospedada são a forma mais comum de quem recruta júnior verificar o que a pessoa sabe fazer.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Canaltech — Brasil vira potência no GitHub com crescimento recorde de desenvolvedores (Octoverse 2025, 28/10/2025)",
+      "url": "https://canaltech.com.br/mercado/brasil-vira-potencia-no-github-com-crescimento-recorde-de-desenvolvedores/"
+    },
+    {
+      "label": "Convergência Digital — Brasscom: TIC pode gerar até 147 mil empregos formais no Brasil em 2025 (27/02/2025)",
+      "url": "https://convergenciadigital.com.br/governo/brasscom-tic-pode-gerar-ate-147-mil-empregos-formais-no-brasil-em-2025/"
+    },
+    {
+      "label": "Hack Reactor — What the 2025 Stack Overflow Developer Survey means for new coders (19/08/2025)",
+      "url": "https://www.hackreactor.com/?p=423565"
+    },
+    {
+      "label": "Catraca Livre — Curso gratuito 100% online ensina a programar do zero (trilha de fundamentos Discover, Rocketseat, 04/04/2024)",
+      "url": "https://catracalivre.com.br/educacao/curso-gratuito-100-online-ensina-a-programar-do-zero/"
+    }
+  ]
+}

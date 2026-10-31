@@ -9,15 +9,35 @@
   "category": "fullstack",
   "status": "concluido",
   "content": {
-    "longDescription": "W3Schools é uma referência de uso contínuo — tutoriais interativos e documentação prática de HTML, CSS, JavaScript e diversas outras tecnologias web, com exemplos executáveis direto no navegador.",
+    "longDescription": "O W3Schools é um site de tutoriais e referências para desenvolvimento web, criado em 1998 e mantido pela empresa norueguesa Refsnes Data. Ele reúne explicações curtas, exemplos editáveis no navegador e exercícios de HTML, CSS, JavaScript, SQL, Python e muitas outras tecnologias.",
     "videoUrl": "",
     "gallery": [],
     "curriculum": [
-      "HTML/CSS",
+      "HTML e CSS",
       "JavaScript",
       "SQL",
-      "Referência contínua de sintaxe e boas práticas"
+      "Python",
+      "Editor 'Try it Yourself' para testar exemplos no navegador",
+      "Exercícios e quizzes por tecnologia",
+      "Referência contínua de sintaxe"
     ],
-    "officialLink": "https://www.w3schools.com"
+    "officialLink": "https://www.w3schools.com",
+    "paragraphs": [
+      "O W3Schools foi criado em 1998 e é mantido pela Refsnes Data, empresa da Noruega. O nome vem de World Wide Web, mas o site não tem ligação com o W3C, o consórcio que define os padrões da web. Ele se tornou um dos materiais de consulta mais usados por quem programa para a web.",
+      "O conteúdo é organizado por tecnologia. Cada uma tem um tutorial dividido em capítulos curtos e uma referência com os elementos da linguagem (tags, propriedades, métodos, funções). Boa parte dos exemplos abre no editor 'Try it Yourself', onde é possível alterar o código e ver o resultado na hora. Há também exercícios, quizzes, modelos de páginas, o framework W3.CSS e um jogo de programação.",
+      "Os tutoriais, as referências e os exercícios são gratuitos. Como serviços pagos opcionais, o site vende o plano PLUS (sem anúncios e com recursos extras), o Spaces (hospedagem de sites) e cursos e certificados na loja Campus, em assuntos como HTML, CSS, JavaScript, SQL e Python (consulta em 30/10/2026).",
+      "Funciona mais como material de consulta do que como curso com começo e fim: serve para relembrar a sintaxe de uma propriedade CSS, testar um trecho de SQL ou ter uma primeira visão de uma tecnologia nova. A linguagem é simples e direta, o que ajuda iniciantes. Para detalhes e casos-limite, o melhor é complementar com documentações mais completas, como a MDN Web Docs ou a documentação oficial de cada linguagem.",
+      "O hábito de consultar referências faz parte do dia a dia de quem desenvolve. Ter uma fonte rápida e com exemplos executáveis encurta o ciclo entre a dúvida e o teste, e esse ciclo curto ajuda a aprender sem depender de cursos longos."
+    ],
+    "sources": [
+      {
+        "label": "W3Schools: About W3Schools",
+        "url": "https://www.w3schools.com/about/default.asp"
+      },
+      {
+        "label": "Wikipédia: W3Schools",
+        "url": "https://en.wikipedia.org/wiki/W3Schools"
+      }
+    ]
   }
 }

@@ -5,7 +5,69 @@
     "category": "Site Estático",
     "pricing": "Freemium",
     "thumb": "./assets/thumb_host/vercel.jpg",
-    "site_url": "https://vercel.com/"
+    "site_url": "https://vercel.com/",
+    "slug": "vercel",
+    "detalhe": {
+      "resumo": "A Vercel é uma plataforma de nuvem para publicar sites e aplicações web, muito usada em projetos de front-end. Conectada a um repositório Git, ela faz um deploy a cada push e gera um link de pré-visualização para cada branch e pull request.",
+      "paragrafos": [
+        "Você importa um repositório do GitHub, GitLab ou Bitbucket, e a Vercel detecta o framework, roda o build e publica o resultado. Cada push gera um novo deploy; os pushes na branch de produção, normalmente main, vão para o domínio principal, e o último push de cada pull request ganha uma URL de preview própria, que a Vercel informa em um comentário no pull request. Se algo der errado, o deploy anterior pode voltar ao ar rapidamente. Cada projeto recebe um subdomínio vercel.app, e é possível usar domínio próprio; além de arquivos estáticos, a plataforma roda funções no servidor.",
+        "A empresa se chamava ZEIT até abril de 2020 e é a criadora e mantenedora do Next.js, o que explica a presença forte da Vercel em projetos com esse framework. Em vagas de front-end e full stack, ela aparece como parte do fluxo de entrega: abrir pull request, revisar no link de preview e fazer merge para publicar. Times de produto e design também usam os previews para revisar mudanças antes de irem ao ar.",
+        "O plano Hobby é gratuito e, segundo a documentação consultada em outubro de 2026, inclui por mês 100 GB de transferência de dados, 1 milhão de invocações de funções e até 100 deploys por dia. Para começar, crie uma conta com o GitHub, suba para um repositório um projeto simples, como uma página feita com Vite, importe o repositório na Vercel e aguarde o primeiro deploy. Depois, crie uma branch, mude um texto, abra um pull request e abra o link de preview que aparece no comentário antes de fazer o merge.",
+        "O plano Hobby é restrito a uso pessoal e não comercial, conforme as diretrizes de uso justo da Vercel; site de cliente ou de empresa pede o plano Pro, que em outubro de 2026 custava US$ 20 por usuário desenvolvedor por mês. No Hobby, quem passa dos limites geralmente precisa esperar 30 dias para voltar a usar o recurso. Nunca coloque chaves e senhas no código: use as variáveis de ambiente do projeto. Pull requests vindos de forks precisam de autorização para gerar deploy, justamente para proteger essas variáveis. Alternativas para sites estáticos incluem Netlify, GitHub Pages e Cloudflare Pages.",
+        "No ecossistema LearnTECH, a Vercel é citada no programa Desenvolver uma Landing Page Moderna, nos artigos O que um evento de comunidade tech ensina que nenhum curso ensina e Como organizar um evento de comunidade tech, do propósito ao pós-evento, e nos eventos ByteClass e CodeXperience. Para um projeto como uma landing page ou o site de um evento, ela é um caminho direto para tirar o trabalho do computador e ter um link público para mostrar."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://vercel.com/"
+        },
+        {
+          "label": "Plano Hobby",
+          "url": "https://vercel.com/docs/plans/hobby"
+        },
+        {
+          "label": "Deploy de projetos do GitHub",
+          "url": "https://vercel.com/docs/git/vercel-for-github"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Vercel Docs: Vercel Hobby Plan",
+          "url": "https://vercel.com/docs/plans/hobby"
+        },
+        {
+          "label": "Vercel Docs: Deploying GitHub Projects with Vercel",
+          "url": "https://vercel.com/docs/git/vercel-for-github"
+        },
+        {
+          "label": "Wikipedia: Vercel",
+          "url": "https://en.wikipedia.org/wiki/Vercel"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "1"
+        },
+        {
+          "tipo": "blog",
+          "id": "eventos-de-comunidade-tech"
+        },
+        {
+          "tipo": "blog",
+          "id": "como-organizar-evento-de-comunidade-tech"
+        },
+        {
+          "tipo": "eventos",
+          "id": "byteclass-dev"
+        },
+        {
+          "tipo": "eventos",
+          "id": "codexperience"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Netlify",
@@ -13,7 +75,65 @@
     "category": "Site Estático",
     "pricing": "Freemium",
     "thumb": "./assets/thumb_host/netlify.jpg",
-    "site_url": "https://www.netlify.com/"
+    "site_url": "https://www.netlify.com/",
+    "slug": "netlify",
+    "detalhe": {
+      "resumo": "A Netlify é uma plataforma para publicar sites e aplicações web a partir de um repositório Git. Ela roda o build, distribui os arquivos por uma rede de entrega de conteúdo e cria um link de pré-visualização para cada pull request.",
+      "paragrafos": [
+        "Ao conectar um repositório, a Netlify gera os arquivos do site a cada mudança e os serve por uma CDN. Cada pull request ou merge request ganha um Deploy Preview, uma URL única onde o time pode ver e comentar as mudanças antes de publicar. Além de sites estáticos, a plataforma oferece funções serverless (incluindo funções agendadas, em segundo plano e de borda), formulários, armazenamento de arquivos e domínios próprios com SSL. A empresa popularizou o termo Jamstack, uma forma de construir sites pré-gerados que usam JavaScript e APIs.",
+        "A Netlify aparece em fluxos de trabalho de front-end, agências e times que publicam sites de marketing, documentação e portfólios. Para quem está começando, ela é uma forma simples de colocar um projeto no ar e ter um link para enviar em processos seletivos. Os Deploy Previews também ensinam uma prática comum em times: revisar a mudança funcionando antes do merge.",
+        "Em outubro de 2026, a Netlify usa planos por créditos. O plano Free custa US$ 0 e dá 300 créditos por mês, com Deploy Previews ilimitados, domínio próprio com SSL e funções; os planos pagos são o Personal, por US$ 9 por mês com 1.000 créditos, e o Pro, por US$ 20 por mês com 3.000 créditos. Para começar, crie uma conta, conecte um repositório com uma página HTML simples ou um projeto feito com Vite e faça o primeiro deploy. Depois, abra um pull request com uma alteração e confira o Deploy Preview antes do merge.",
+        "Entenda o consumo de créditos antes de publicar algo importante: segundo a documentação, cada deploy de produção custa 15 créditos, a banda custa 20 créditos por GB e cada 10 mil requisições custam 2 créditos, enquanto Deploy Previews e branch deploys não gastam créditos para serem gerados. No plano Free, quando os 300 créditos acabam, todos os sites da conta ficam pausados, mostrando uma página de site indisponível, até o próximo ciclo, e não é possível comprar créditos extras nesse plano. Para portfólio e estudos isso costuma bastar, mas evite fazer muitos deploys de produção seguidos. Guarde chaves e senhas nas variáveis de ambiente, não no código, e compare com alternativas como Vercel, GitHub Pages e Cloudflare Pages.",
+        "No ecossistema LearnTECH, a Netlify é citada no programa Desenvolver uma Landing Page Moderna. Em um projeto de landing page, ela serve para publicar o resultado e acompanhar cada nova versão por meio dos Deploy Previews."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.netlify.com/"
+        },
+        {
+          "label": "Planos e preços",
+          "url": "https://www.netlify.com/pricing/"
+        },
+        {
+          "label": "Como os créditos funcionam",
+          "url": "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Netlify: Pricing",
+          "url": "https://netlify.com/pricing.md"
+        },
+        {
+          "label": "Netlify Docs: How credits work",
+          "url": "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/how-credits-work/"
+        },
+        {
+          "label": "Netlify Changelog: Introducing credit-based plans",
+          "url": "https://www.netlify.com/changelog/netlify-pricing-update-introducing-credit-based-plans/"
+        },
+        {
+          "label": "Wikipedia: Netlify",
+          "url": "https://en.wikipedia.org/wiki/Netlify"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "1"
+        },
+        {
+          "tipo": "hospedagens",
+          "id": "vercel"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "github"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Cloudflare Pages",
@@ -22,7 +142,68 @@
     "pricing": "Freemium",
     "thumb": "https://www.google.com/s2/favicons?domain=pages.cloudflare.com&sz=256",
     "thumbFit": "contain",
-    "site_url": "https://pages.cloudflare.com/"
+    "site_url": "https://pages.cloudflare.com/",
+    "slug": "cloudflare-pages",
+    "detalhe": {
+      "resumo": "Serviço da Cloudflare para publicar sites estáticos e aplicações front-end na rede global da empresa, a partir de um repositório Git ou do envio direto dos arquivos prontos. Serve para colocar no ar portfólios, landing pages e projetos feitos com frameworks de front-end, com uma versão de prévia a cada alteração.",
+      "paragrafos": [
+        "No Cloudflare Pages, o projeto pode ser publicado de três formas, segundo a documentação oficial: conectando um provedor Git, para que cada envio de código gere um novo build e uma nova publicação; usando o Direct Upload, que recebe arquivos já gerados no seu computador; ou criando o projeto pela ferramenta de linha de comando C3. Além dos arquivos estáticos, o serviço oferece Pages Functions, que executam código no servidor sem que você precise manter uma máquina, e recursos de rollback, redirecionamentos e regras de cabeçalho. As implantações de prévia são ilimitadas, o que permite revisar uma alteração em um endereço separado antes de levá-la para produção.",
+        "O modelo de publicar a partir do Git, com prévia por branch, é o mesmo usado por outras plataformas de front-end, e por isso é um conhecimento útil em vagas de front-end, full stack e em trabalhos de freelancer. Na prática, serviços como este aparecem para hospedar sites institucionais, páginas de campanha, documentação e protótipos que precisam ficar no ar com custo baixo. Para quem está começando, saber explicar como o código sai do repositório e chega a um endereço público já mostra entendimento do ciclo completo de um projeto.",
+        "O plano gratuito é suficiente para estudar. Em outubro de 2026, a página de limites da documentação informa, para o plano Free, 500 builds por mês, um build por vez com tempo máximo de 20 minutos, até 20.000 arquivos por site, 25 MiB por arquivo, 100 domínios personalizados por projeto e 100 projetos por conta. A página de limites não define teto para tráfego de arquivos estáticos, e a página de preços do Workers, que também vale para os arquivos estáticos, diz que essas requisições são gratuitas e ilimitadas. Um bom primeiro exercício é criar um repositório com um index.html simples, conectar o repositório ao Pages, publicar e depois abrir uma branch com uma mudança para ver a prévia sendo gerada.",
+        "Um cuidado importante: em outubro de 2026, a página principal da documentação do Pages exibe um aviso perguntando se você tem certeza de que quer usar o Pages, afirma que o Workers cobre a maioria dos casos de uso do Pages com mais recursos e recomenda começar projetos novos com o Workers, indicando um guia de migração. O Pages continua disponível, mas vale considerar essa orientação antes de iniciar um projeto. As requisições às Pages Functions contam na cota do plano do Workers, então um site que usa muito código no servidor pode esbarrar nesse limite. Como alternativas para sites estáticos simples, existem o GitHub Pages, o GitLab Pages e o Firebase Hosting."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://pages.cloudflare.com/"
+        },
+        {
+          "label": "Documentação do Cloudflare Pages",
+          "url": "https://developers.cloudflare.com/pages/"
+        },
+        {
+          "label": "Limites do Cloudflare Pages",
+          "url": "https://developers.cloudflare.com/pages/platform/limits"
+        },
+        {
+          "label": "Preços do Cloudflare Workers (inclui arquivos estáticos)",
+          "url": "https://developers.cloudflare.com/workers/platform/pricing/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Cloudflare Docs: Pages",
+          "url": "https://developers.cloudflare.com/pages/"
+        },
+        {
+          "label": "Cloudflare Docs: Pages limits",
+          "url": "https://developers.cloudflare.com/pages/platform/limits"
+        },
+        {
+          "label": "Flavio Copes: Every hosting provider's free tier, side by side (checked September 2026)",
+          "url": "https://flaviocopes.com/hosting-free-tiers.md"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "hospedagens",
+          "id": "cloudflare-workers"
+        },
+        {
+          "tipo": "hospedagens",
+          "id": "github-pages"
+        },
+        {
+          "tipo": "hospedagens",
+          "id": "gitlab-pages"
+        },
+        {
+          "tipo": "programas",
+          "id": "2"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "GitHub Pages",
@@ -30,7 +211,73 @@
     "category": "Site Estático",
     "pricing": "Gratuito",
     "thumb": "./assets/thumb_host/github-pages.jpg",
-    "site_url": "https://pages.github.com/"
+    "site_url": "https://pages.github.com/",
+    "slug": "github-pages",
+    "detalhe": {
+      "resumo": "Serviço de hospedagem de sites estáticos do GitHub que publica arquivos HTML, CSS e JavaScript diretamente de um repositório, com ou sem uma etapa de build. É muito usado para portfólios, páginas de projetos e documentação.",
+      "paragrafos": [
+        "O GitHub Pages pega os arquivos de um repositório e os publica como um site, podendo antes passá-los por um processo de build. Há dois tipos de site, segundo a documentação oficial. O site de usuário ou de organização fica em um repositório chamado <owner>.github.io, só pode existir um por conta e é publicado em https://<owner>.github.io. O site de projeto fica dentro do repositório de um projeto, um por repositório, e é publicado em https://<owner>.github.io/<nome-do-repositorio>. Também é possível usar um domínio próprio no lugar do endereço padrão.",
+        "No mercado, o GitHub Pages aparece principalmente como vitrine: portfólio de quem procura a primeira vaga, página de apresentação de bibliotecas e projetos open source, documentação técnica e sites de eventos e comunidades. Como o site nasce do mesmo repositório do código, quem recruta pode ver o resultado publicado e o histórico de commits lado a lado. Saber publicar no Pages é um passo simples que demonstra domínio básico de Git, GitHub e estrutura de um site.",
+        "O caminho gratuito funciona com repositórios públicos no GitHub Free; repositórios privados só podem publicar no Pages nos planos GitHub Pro, Team e Enterprise. O guia do MDN mostra um primeiro exercício completo: criar uma pasta com um index.html, iniciar o repositório com git init, criar o repositório no GitHub, enviar os arquivos com git push e, em Settings > Pages, escolher a branch main como fonte. Em seguida, a própria página de configurações mostra o endereço em que o site ficou disponível. Para atualizar, basta fazer novos commits e enviar com git push.",
+        "Os limites, conferidos na documentação em outubro de 2026, são: repositório de origem com tamanho recomendado de até 1 GB, site publicado de no máximo 1 GB, publicação que expira se levar mais de 10 minutos, limite flexível de 100 GB de banda por mês e de 10 builds por hora (este não vale para sites publicados por um workflow próprio do GitHub Actions). O GitHub deixa claro que o Pages não deve ser usado como hospedagem gratuita para negócios, lojas virtuais ou software comercial como serviço, nem para sites que lidam com senhas ou números de cartão. Também vale saber que o GitHub registra o endereço IP de quem visita o site, por motivos de segurança, o que deve ser considerado na política de privacidade de um projeto.",
+        "O próprio ecossistema learnTECH usa o GitHub Pages: os sites career (empresas, vagas e perfis) e tools (ferramentas e hospedagens) são publicados nele, enquanto o learn-tech e o bootcamps ficam na Vercel e a API learntech-content roda no Cloudflare Workers com banco D1. É um exemplo real de como escolher a hospedagem pelo tipo de projeto: sites estáticos simples no Pages e a parte dinâmica em um serviço serverless. Para praticar o fluxo de Git e GitHub que antecede a publicação, o programa Git e GitHub Workflow: Colaboração em Projetos de Código Aberto é um complemento natural."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://pages.github.com/"
+        },
+        {
+          "label": "Documentação: O que é o GitHub Pages",
+          "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages"
+        },
+        {
+          "label": "Documentação: limites do GitHub Pages",
+          "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits"
+        },
+        {
+          "label": "MDN: How do I use GitHub Pages?",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Tools_and_setup/Using_GitHub_Pages"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "GitHub Docs: What is GitHub Pages?",
+          "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages"
+        },
+        {
+          "label": "GitHub Docs: GitHub Pages limits",
+          "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits"
+        },
+        {
+          "label": "MDN Web Docs: How do I use GitHub Pages?",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Tools_and_setup/Using_GitHub_Pages"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "ferramentas",
+          "id": "github"
+        },
+        {
+          "tipo": "programas",
+          "id": "604"
+        },
+        {
+          "tipo": "programas",
+          "id": "2"
+        },
+        {
+          "tipo": "hospedagens",
+          "id": "gitlab-pages"
+        },
+        {
+          "tipo": "hospedagens",
+          "id": "cloudflare-pages"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "GitLab Pages",
@@ -38,7 +285,64 @@
     "category": "Site Estático",
     "pricing": "Gratuito",
     "thumb": "./assets/thumb_host/gitlab-pages.jpg",
-    "site_url": "https://about.gitlab.com/"
+    "site_url": "https://docs.gitlab.com/user/project/pages/",
+    "slug": "gitlab-pages",
+    "detalhe": {
+      "resumo": "Recurso do GitLab que publica sites estáticos a partir de um repositório, usando o pipeline de CI/CD do próprio projeto. Serve para documentação, portfólios e páginas de projeto, e está disponível no plano gratuito.",
+      "paragrafos": [
+        "No GitLab Pages, quem publica o site é um job do pipeline de CI/CD, definido no arquivo .gitlab-ci.yml na raiz do repositório. Um job marcado com a propriedade pages é tratado como o job de publicação, e com pages: true ele publica a pasta padrão public; também é possível configurar outra pasta. Segundo o tutorial oficial, a partir do GitLab 17.10 a pasta public entra automaticamente nos artefatos do job quando pages.publish não é definido. Como o build roda no pipeline, dá para usar geradores de sites estáticos como Jekyll ou Hugo, mas não há processamento dinâmico no servidor, como PHP ou ASP.",
+        "O GitLab Pages é comum em times que já usam o GitLab para código e CI/CD, tanto no GitLab.com quanto em instalações próprias (Self-Managed) ou no GitLab Dedicated, que também oferecem o recurso. Por isso aparece em empresas que publicam documentação técnica ou páginas internas junto com o código. Para quem está aprendendo, tem uma vantagem extra: publicar um site no GitLab Pages obriga a entender o básico de um pipeline, um conhecimento cobrado em vagas de DevOps e de desenvolvimento.",
+        "O recurso está disponível no tier Free. O tutorial oficial Create a GitLab Pages website from scratch é um bom primeiro exercício: criar um index.html, um Gemfile com o Jekyll e um .gitlab-ci.yml que usa a imagem ruby:3.2, gera o site na pasta public e roda o job de publicação só na branch main. Depois do commit, você acompanha o pipeline em Build > Pipelines e encontra o link do site em Deploy > Pages. Os sites usam o domínio gitlab.io (por exemplo, example.gitlab.io para o usuário example), e por padrão cada projeto recebe um domínio único.",
+        "Alguns cuidados ajudam. No GitLab.com, os sites são públicos, a menos que você ative o Pages Access Control; em instalações próprias, quem decide é a administração da instância. Os sites em gitlab.io são servidos por HTTPS automaticamente, e domínios personalizados podem receber certificados do Let's Encrypt obtidos e renovados pelo GitLab, desde que você controle o DNS do domínio. As publicações podem ter prazo de expiração com pages.expire_in, o que é útil para versões temporárias. Para quem já usa o GitHub, o GitHub Pages é a alternativa equivalente."
+      ],
+      "links": [
+        {
+          "label": "Documentação do GitLab Pages",
+          "url": "https://docs.gitlab.com/user/project/pages/"
+        },
+        {
+          "label": "Tutorial oficial: Create a GitLab Pages website from scratch",
+          "url": "https://docs.gitlab.com/user/project/pages/getting_started/pages_from_scratch/"
+        },
+        {
+          "label": "Site oficial do GitLab",
+          "url": "https://about.gitlab.com/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "GitLab Docs: GitLab Pages",
+          "url": "https://docs.gitlab.com/user/project/pages/"
+        },
+        {
+          "label": "GitLab Docs: Tutorial: Create a GitLab Pages website from scratch",
+          "url": "https://docs.gitlab.com/user/project/pages/getting_started/pages_from_scratch/"
+        },
+        {
+          "label": "GitLab Blog: Hosting on GitLab.com with GitLab Pages (2016)",
+          "url": "https://about.gitlab.com/blog/gitlab-pages-setup/"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "hospedagens",
+          "id": "github-pages"
+        },
+        {
+          "tipo": "hospedagens",
+          "id": "cloudflare-pages"
+        },
+        {
+          "tipo": "programas",
+          "id": "604"
+        },
+        {
+          "tipo": "programas",
+          "id": "2"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Surge",
@@ -46,23 +350,199 @@
     "category": "Site Estático",
     "pricing": "Freemium",
     "thumb": "./assets/thumb_host/surge.jpg",
-    "site_url": "https://surge.sh/"
+    "site_url": "https://surge.sh/",
+    "slug": "surge",
+    "detalhe": {
+      "resumo": "Ferramenta de linha de comando para publicar sites estáticos em uma CDN com um único comando, sem configuração. É prática para colocar no ar protótipos, demonstrações e projetos de front-end em poucos minutos.",
+      "paragrafos": [
+        "O Surge é instalado pelo npm com npm install --global surge e, segundo a documentação, exige Node.js 18 ou mais recente. Em uma pasta que tenha um index.html, o comando surge publish envia os arquivos; na primeira vez, ele pede para criar uma conta com e-mail e senha no próprio terminal. A ferramenta sugere um domínio no formato <nome-da-pasta>.surge.sh, mas você pode digitar outro, e grava o domínio em um arquivo CNAME para as próximas publicações. Cada publicação gera uma revisão, e surge rollback desfaz uma publicação com problema.",
+        "Por ser tão direto, o Surge é útil quando a meta é mostrar algo rapidamente: o protótipo de uma tela para um cliente, a demonstração de um projeto de estudo, o resultado de um hackathon. A opção surge publish --preview cria uma revisão com endereço próprio sem mexer na versão de produção, e o comando surge tokens add gera um token para usar em pipelines de CI pela variável SURGE_TOKEN. Para aplicações de página única, basta nomear o arquivo principal como 200.html para que as rotas do lado do cliente funcionem.",
+        "Em outubro de 2026, a página de planos da documentação informa que o plano Free inclui projetos e domínios ilimitados (sujeitos a limites de frequência de publicação), domínios personalizados, certificados SSL gerenciados com HTTPS obrigatório, CDN, URLs limpas, colaboradores, as últimas 100 revisões por domínio e domínios privados, visíveis só para colaboradores. Um bom primeiro exercício é criar uma pasta com um index.html, rodar surge publish, aceitar o domínio sugerido e depois publicar uma alteração e testar o surge rollback. Atenção: os domínios .surge.sh de uma conta nova funcionam nos primeiros 90 minutos e depois ficam aguardando a verificação do e-mail, que é feita com surge verify.",
+        "O plano Pro adiciona apenas dois recursos: proteção por senha com caminhos protegidos (arquivo AUTH) e redirecionamentos (arquivo ROUTER). A documentação não mostra o valor; ele aparece pelo comando surge plan ou na página de preços, e a cobrança é só o preço do plano, sem taxa por excedente. Lembre que, sem o plano Pro, tudo o que for publicado fica acessível a qualquer pessoa com o link, então não envie arquivos com senhas, chaves de API ou dados pessoais. O pacote surge no npm usa a licença ISC; como alternativas para sites estáticos existem GitHub Pages, GitLab Pages e Cloudflare Pages.",
+        "No ecossistema learnTECH, o Surge aparece citado no programa Scrum e Kanban: Agilidade na Gestão de Projetos Tech. Em um contexto de gestão ágil, uma ferramenta que publica uma versão em um comando ajuda a deixar cada entrega visível para o time e para quem acompanha o projeto. Os detalhes de como a ferramenta é usada estão no próprio programa."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://surge.sh/"
+        },
+        {
+          "label": "Documentação: Getting Started",
+          "url": "https://surge.sh/docs/getting-started"
+        },
+        {
+          "label": "Documentação: planos",
+          "url": "https://surge.sh/docs/platform/plans"
+        },
+        {
+          "label": "Documentação: a CLI do Surge",
+          "url": "https://surge.sh/docs/cli/"
+        },
+        {
+          "label": "Pacote surge no npm",
+          "url": "https://npmjs.com/package/surge"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Surge: Getting Started",
+          "url": "https://surge.sh/docs/getting-started"
+        },
+        {
+          "label": "Surge: Plans",
+          "url": "https://surge.sh/docs/platform/plans"
+        },
+        {
+          "label": "npm: surge",
+          "url": "https://npmjs.com/package/surge"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "602"
+        },
+        {
+          "tipo": "hospedagens",
+          "id": "github-pages"
+        },
+        {
+          "tipo": "hospedagens",
+          "id": "cloudflare-pages"
+        },
+        {
+          "tipo": "hospedagens",
+          "id": "firebase-hosting"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Firebase Hosting",
     "description": "Hospedagem estática com CDN, SSL automático e rollback de versão.",
-    "category": "Aplicação",
+    "category": "Site Estático",
     "pricing": "Freemium",
     "thumb": "./assets/thumb_host/firebase.jpg",
-    "site_url": "https://firebase.google.com/docs/hosting?hl=pt-br"
+    "site_url": "https://firebase.google.com/docs/hosting?hl=pt-br",
+    "slug": "firebase-hosting",
+    "detalhe": {
+      "resumo": "Serviço de hospedagem do Firebase, plataforma do Google, que publica aplicações web em uma CDN global com SSL automático, prévias e rollback. É otimizado para sites estáticos e aplicações de página única, e pode ser combinado com Cloud Functions ou Cloud Run para conteúdo dinâmico.",
+      "paragrafos": [
+        "Segundo a documentação, o Firebase Hosting entrega o conteúdo por uma CDN global: os arquivos ficam em cache em SSDs nas bordas da rede e são servidos com compressão gzip ou Brotli, escolhida automaticamente. O SSL vem configurado sem nenhum passo extra, então o site é sempre servido por conexão segura. A publicação é feita pela Firebase CLI com um único comando, e o console permite voltar a uma versão anterior com um clique. Também há canais de prévia, com endereços temporários para mostrar alterações ao time, integração com o GitHub e o Local Emulator Suite para testar localmente.",
+        "O Firebase existe desde o início da década de 2010 e foi adquirido pelo Google em outubro de 2014, ano em que também foi lançado o Firebase Hosting, segundo a Wikipédia. Por fazer parte de uma plataforma maior, o Hosting costuma aparecer em projetos que já usam outros serviços do Firebase, como autenticação e banco de dados, em especial em times de front-end e de aplicativos e em startups. Conhecê-lo ajuda em vagas que citam o Firebase ou o Google Cloud.",
+        "O plano Spark, sem custo, inclui, em outubro de 2026 e segundo a página de preços, até 10 GB de armazenamento, até 360 MB por dia de transferência de dados, domínio personalizado com SSL e vários sites por projeto. O caminho de implementação da documentação serve como primeiro exercício: instalar a Firebase CLI, colocar os arquivos do site em uma pasta e rodar firebase init para ligá-la a um projeto, testar com firebase emulators:start, gerar uma prévia com firebase hosting:channel:deploy e publicar com firebase deploy. Depois, faça uma alteração, publique de novo e teste o rollback no console.",
+        "O limite de 360 MB por dia é pequeno para sites com muitas imagens ou vídeos, então otimize os arquivos e acompanhe o uso. No plano Blaze, de pagamento por uso, o que passa da cota gratuita custa US$ 0,026 por GB armazenado e US$ 0,15 por GB transferido, em outubro de 2026. Alguns serviços relacionados, como o Firebase App Hosting, exigem uma conta de faturamento. Para sites puramente estáticos, alternativas como GitHub Pages, Cloudflare Pages e Surge também têm planos gratuitos."
+      ],
+      "links": [
+        {
+          "label": "Documentação do Firebase Hosting (em português)",
+          "url": "https://firebase.google.com/docs/hosting?hl=pt-br"
+        },
+        {
+          "label": "Preços do Firebase",
+          "url": "https://firebase.google.com/pricing?hl=pt-b"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Firebase: Firebase Hosting",
+          "url": "https://firebase.google.com/docs/hosting?authuser=0"
+        },
+        {
+          "label": "Firebase: Preços",
+          "url": "https://firebase.google.com/pricing?hl=pt-b"
+        },
+        {
+          "label": "Wikipedia: Firebase",
+          "url": "https://en.wikipedia.org/wiki/Firebase"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "hospedagens",
+          "id": "cloudflare-pages"
+        },
+        {
+          "tipo": "hospedagens",
+          "id": "github-pages"
+        },
+        {
+          "tipo": "hospedagens",
+          "id": "surge"
+        },
+        {
+          "tipo": "programas",
+          "id": "1"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Railway",
-    "description": "Deploy de aplicação e banco a partir do repositório; hoje sem plano gratuito permanente.",
+    "description": "Deploy de aplicação e banco a partir do repositório; o plano Free dá US$ 1 de crédito por mês (out/2026).",
     "category": "Aplicação",
-    "pricing": "Pago",
+    "pricing": "Freemium",
     "thumb": "./assets/thumb_host/railway.jpg",
-    "site_url": "https://railway.app/"
+    "site_url": "https://railway.app/",
+    "slug": "railway",
+    "detalhe": {
+      "resumo": "Plataforma para publicar aplicações e bancos de dados a partir de um repositório GitHub, de uma imagem Docker ou da linha de comando, sem configurar servidores. A cobrança é feita pelo uso de recursos, com planos de entrada de baixo custo.",
+      "paragrafos": [
+        "No Railway, um projeto reúne serviços, como uma API e um banco de dados, em um painel visual. Pelo guia de início rápido, há três caminhos para publicar: escolher New Project, a opção GitHub repo e o repositório, e clicar em Deploy Now; usar a CLI, com railway init para criar o projeto e railway up para enviar os arquivos locais; ou adicionar um serviço do tipo Docker Image com o nome da imagem. Também existem templates prontos, que criam de uma vez os serviços e a configuração de uma aplicação, incluindo o banco. Depois da primeira publicação, o botão Generate Domain cria um endereço público para o serviço.",
+        "Plataformas desse tipo são usadas para colocar no ar APIs, back-ends de aplicações full stack, bots e protótipos, quando o time não quer administrar servidores. Por isso o Railway aparece em projetos de estudantes, startups e equipes pequenas, e o conhecimento é útil em vagas de back-end e full stack, em que se espera saber levar uma aplicação do repositório até a produção. Entender variáveis de ambiente, logs de build e de execução e a ligação entre aplicação e banco é o que se pratica aqui.",
+        "Em outubro de 2026, a documentação de planos lista: Trial gratuito com crédito único de US$ 5; plano Free de US$ 0 por mês com US$ 1 de crédito mensal, pensado para aplicações pequenas e limitado a uma réplica com 0,5 GB de RAM e 1 vCPU por serviço; Hobby de US$ 5 por mês, que inclui US$ 5 de uso; e Pro de US$ 20 por mês, que inclui US$ 20 de uso. Segundo o comparativo de Flavio Copes, o trial dura 30 dias. Um primeiro exercício possível é publicar uma API simples em Node.js direto do GitHub, gerar o domínio e ler os logs quando algo falhar, lembrando o conselho da documentação de percorrer o log inteiro, porque o erro real raramente está na última linha.",
+        "Como a cobrança é por uso, acompanhe o consumo: o que passa do valor incluído é cobrado à parte, o crédito incluído não acumula de um mês para o outro, e o plano Hobby cobra os US$ 5 mesmo sem uso. O comparativo de Flavio Copes informa ainda tráfego de saída a US$ 0,05 por GB nas tarifas padrão. Publicar a partir de um registro Docker privado exige o plano Pro. Guarde senhas e chaves em variáveis de ambiente, nunca no repositório, e compare com alternativas como Heroku (sem plano gratuito) e Cloudflare Workers (com plano gratuito, mas outro modelo de execução)."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://railway.app/"
+        },
+        {
+          "label": "Documentação: Quick Start",
+          "url": "https://docs.railway.com/quick-start"
+        },
+        {
+          "label": "Documentação: planos e preços",
+          "url": "https://docs.railway.com/pricing/plans"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Railway Docs: Pricing Plans",
+          "url": "https://docs.railway.com/pricing/plans"
+        },
+        {
+          "label": "Railway Docs: Quick Start",
+          "url": "https://docs.railway.com/quick-start"
+        },
+        {
+          "label": "Flavio Copes: Every hosting provider's free tier, side by side (checked September 2026)",
+          "url": "https://flaviocopes.com/hosting-free-tiers.md"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "hospedagens",
+          "id": "heroku"
+        },
+        {
+          "tipo": "hospedagens",
+          "id": "cloudflare-workers"
+        },
+        {
+          "tipo": "programas",
+          "id": "302"
+        },
+        {
+          "tipo": "programas",
+          "id": "401"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Heroku",
@@ -70,7 +550,72 @@
     "category": "Aplicação",
     "pricing": "Pago",
     "thumb": "./assets/thumb_host/heroku.jpg",
-    "site_url": "https://www.heroku.com/"
+    "site_url": "https://www.heroku.com/",
+    "slug": "heroku",
+    "detalhe": {
+      "resumo": "Plataforma como serviço (PaaS) da Salesforce para executar aplicações web em unidades de execução chamadas dynos, com banco de dados gerenciado e complementos. Não tem plano gratuito desde novembro de 2022 e, desde fevereiro de 2026, não recebe novos recursos.",
+      "paragrafos": [
+        "No Heroku, cada aplicação roda em dynos, e o tipo de dyno define recursos e preço. Em outubro de 2026, a página de uso e cobrança do Dev Center lista o Eco por US$ 5 por mês, com 1.000 horas compartilhadas entre todos os dynos Eco da conta; o Basic por cerca de US$ 0,01 por hora, limitado a US$ 7 por mês; o Standard-1X limitado a US$ 25 e o Standard-2X a US$ 50 por mês. A cobrança é por tempo de relógio, e não por uso de CPU, calculada proporcionalmente por segundo. A plataforma também oferece pipelines, times, complementos (add-ons) e bancos gerenciados como o Heroku Postgres.",
+        "Por muitos anos o Heroku foi uma das formas mais conhecidas de publicar uma aplicação, e por isso aparece em muitos tutoriais, cursos e sistemas que continuam em produção. Você pode encontrá-lo em empresas que mantêm aplicações nele e em materiais de estudo mais antigos. Conhecer o modelo de PaaS, com dynos, variáveis de ambiente e add-ons, ajuda a entender também plataformas mais recentes que seguem a mesma ideia.",
+        "Não há caminho gratuito. A partir de 28 de novembro de 2022, o Heroku deixou de oferecer dynos gratuitos e os planos hobby-dev do Heroku Postgres e do Heroku Data for Redis, segundo o changelog oficial. A opção mais barata é o plano Eco de US$ 5 por mês, e o comparativo de Flavio Copes informa que esses dynos entram em repouso após 30 minutos sem acesso. Quem segue um tutorial antigo que manda criar um app gratuito no Heroku vai precisar assinar um plano pago ou usar outra plataforma com plano gratuito.",
+        "Antes de escolher o Heroku para um projeto novo, considere a mudança anunciada em 6 de fevereiro de 2026: a empresa informou que está passando para um modelo de sustaining engineering, focado em estabilidade, segurança, confiabilidade e suporte, sem novos recursos, e a Salesforce deixou de vender novas assinaturas enterprise, mantendo os contratos existentes. A plataforma continua funcionando e com suporte. Na cobrança, lembre que qualquer dyno ativo gera custo mesmo sem tráfego, então reduza para zero o que não estiver em uso. Railway e Cloudflare Workers são alternativas com outros modelos de preço."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.heroku.com/"
+        },
+        {
+          "label": "Dev Center: uso e cobrança",
+          "url": "https://devcenter.heroku.com/articles/usage-and-billing"
+        },
+        {
+          "label": "Changelog: fim dos planos gratuitos (2022)",
+          "url": "https://devcenter.heroku.com/changelog-items/2502"
+        },
+        {
+          "label": "Blog do Heroku: An Update on Heroku (2026)",
+          "url": "https://www.heroku.com/blog/an-update-on-heroku/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Heroku Dev Center: Free Heroku Dynos, Heroku Postgres and Heroku Data for Redis are no longer available",
+          "url": "https://devcenter.heroku.com/changelog-items/2502"
+        },
+        {
+          "label": "Heroku Dev Center: Usage & Billing",
+          "url": "https://devcenter2.assets.heroku.com/articles/usage-and-billing"
+        },
+        {
+          "label": "Simon Willison: An update on Heroku (6 de fevereiro de 2026)",
+          "url": "https://simonwillison.net/2026/Feb/6/an-update-on-heroku/"
+        },
+        {
+          "label": "AlternativeTo: Heroku will stop selling new enterprise subscriptions and enter a kind of maintenance mode",
+          "url": "https://alternativeto.net/news/2026/2/heroku-will-stop-selling-new-enterprise-subscriptions-and-enter-a-kind-of-maintenance-mode"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "hospedagens",
+          "id": "railway"
+        },
+        {
+          "tipo": "hospedagens",
+          "id": "cloudflare-workers"
+        },
+        {
+          "tipo": "programas",
+          "id": "302"
+        },
+        {
+          "tipo": "programas",
+          "id": "304"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Pusher",
@@ -78,7 +623,76 @@
     "category": "Tempo Real",
     "pricing": "Freemium",
     "thumb": "./assets/thumb_host/pusher.jpg",
-    "site_url": "https://pusher.com/"
+    "site_url": "https://pusher.com/",
+    "slug": "pusher",
+    "detalhe": {
+      "resumo": "Serviço que oferece recursos de tempo real para aplicações web e móveis. Seu produto Channels é uma API de mensagens publicar e assinar (pub/sub) hospedada, usada para chat, indicadores de presença, gráficos ao vivo e outras atualizações instantâneas.",
+      "paragrafos": [
+        "O Pusher Channels cuida das conexões WebSocket entre o servidor e os clientes, com mecanismos automáticos de alternativa quando o WebSocket não está disponível. O modelo é baseado em canais e eventos: o servidor dispara um evento em um canal usando uma biblioteca de servidor, e os clientes inscritos naquele canal recebem o evento e executam uma função. A empresa anuncia mais de 40 SDKs, com bibliotecas de servidor para Node, PHP, Ruby, Python, Go, Java e ASP e de cliente para JavaScript, Android e iOS. A documentação trata de canais públicos, privados e de presença, e as notificações push ficam em outro produto, o Beams.",
+        "Os casos de uso listados pela empresa incluem chat, indicadores de presença, gráficos e painéis em tempo real, rastreamento de localização, jogos, colaboração e feeds de atividade. Usar um serviço como esse evita manter um servidor de WebSocket próprio, o que é atraente para times pequenos e para quem está aprendendo. O Pusher, que na época tinha sede em Londres, passou a fazer parte da MessageBird no fim de 2020, em uma aquisição noticiada pela Sifted em dezembro daquele ano. O tema aparece em vagas de back-end e full stack que pedem integração de recursos em tempo real.",
+        "O plano Sandbox é gratuito e, em outubro de 2026, segundo a página de preços, inclui 200 mil mensagens por dia e 100 conexões simultâneas; o primeiro plano pago, Startup, custa US$ 49 por mês, com 1 milhão de mensagens por dia e 500 conexões. O guia rápido de JavaScript serve como primeiro exercício: criar uma conta e um app Channels, copiar app ID, key, secret e cluster no painel, incluir o pusher-js na página, inscrever-se no canal my-channel, associar uma função ao evento my-event e disparar esse evento pelo servidor. Um próximo passo natural é transformar isso em um mural de mensagens simples.",
+        "O secret do app deve ficar só no servidor, nunca no código que vai para o navegador. Os limites do Sandbox são diários, e uma análise publicada pela Ably, empresa concorrente, afirma que, ao passar do limite, o Pusher bloqueia novas conexões e retorna erro 403 nas chamadas de servidor; por isso, planeje testes de carga com cuidado. Para dados de usuários, use canais privados, que exigem autorização, e evite enviar informações pessoais em canais públicos. Entre as alternativas há serviços concorrentes, como o próprio Ably, e a opção de manter um servidor WebSocket próprio."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://pusher.com/"
+        },
+        {
+          "label": "Pusher Channels",
+          "url": "https://www.pusher.com/channels"
+        },
+        {
+          "label": "Preços do Channels",
+          "url": "https://www.pusher.com/channels/pricing"
+        },
+        {
+          "label": "Documentação: JavaScript quick start",
+          "url": "https://pusher.com/docs/javascript_quick_start"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Pusher: Channels",
+          "url": "https://www.pusher.com/channels"
+        },
+        {
+          "label": "Pusher: Our pricing plans",
+          "url": "https://www.pusher.com/channels/pricing"
+        },
+        {
+          "label": "Pusher Docs: JavaScript quick start",
+          "url": "https://pusher.com/docs/javascript_quick_start"
+        },
+        {
+          "label": "Sifted: MessageBird acquires Pusher",
+          "url": "https://sifted.eu/articles/messagebird-acquires-pusher"
+        },
+        {
+          "label": "Ably: Pusher pricing (análise de concorrente)",
+          "url": "https://ably.com/topic/pusher-pricing"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "302"
+        },
+        {
+          "tipo": "programas",
+          "id": "301"
+        },
+        {
+          "tipo": "hospedagens",
+          "id": "cloudflare-workers"
+        },
+        {
+          "tipo": "hospedagens",
+          "id": "railway"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Cloudflare Workers",
@@ -87,6 +701,64 @@
     "pricing": "Freemium",
     "thumb": "https://www.google.com/s2/favicons?domain=cloudflare.com&sz=128",
     "site_url": "https://workers.cloudflare.com/",
-    "thumbFit": "contain"
+    "thumbFit": "contain",
+    "slug": "cloudflare-workers",
+    "detalhe": {
+      "resumo": "Plataforma serverless da Cloudflare que executa código na rede global da empresa, perto de quem acessa, e também serve arquivos estáticos. Integra-se a serviços de dados como o banco SQL D1, e é a plataforma que a própria Cloudflare recomenda para novos projetos web.",
+      "paragrafos": [
+        "O Workers é construído sobre uma arquitetura de isolates, que a Cloudflare descreve como muito mais leve que contêineres tradicionais, o que permite subir e encerrar execuções rapidamente. O código é publicado por padrão em mais de 330 cidades e pode ser escrito em JavaScript, TypeScript, Python ou Rust. Para guardar dados, a plataforma se liga ao D1 (banco SQL serverless), ao Workers KV (chave e valor), ao R2 (armazenamento de arquivos sem taxa de saída) e aos Durable Objects (computação com estado). Também é possível servir os arquivos estáticos de um site pelo próprio Workers.",
+        "O Workers aparece em projetos que precisam de APIs leves, back-ends para aplicações front-end e aplicações full stack com custo baixo e resposta rápida em qualquer região. Em outubro de 2026, a documentação do Cloudflare Pages chama o Workers de plataforma principal da Cloudflare para construir aplicações e recomenda começar novos projetos nele. Conhecer o modelo serverless na borda é útil em vagas de back-end, full stack e infraestrutura que usam a Cloudflare.",
+        "O plano Free, em outubro de 2026, inclui 100 mil requisições por dia e 10 ms de CPU por execução, e as requisições a arquivos estáticos são gratuitas e ilimitadas. O D1 gratuito permite 5 milhões de linhas lidas e 100 mil linhas gravadas por dia, com 5 GB de armazenamento; o KV gratuito, 100 mil leituras e 1.000 gravações por dia, com 1 GB. Os limites zeram diariamente às 00:00 UTC, e o plano pago tem cobrança mínima de US$ 5 por mês por conta. Um bom primeiro exercício é criar um Worker que responde com um JSON e, depois, ligá-lo a uma tabela no D1 para listar registros.",
+        "O limite de 10 ms de CPU no plano gratuito torna o Workers inadequado para processamento pesado, como converter vídeos ou rodar cálculos longos. Segundo o comparativo de Flavio Copes, ao passar do limite diário de requisições a Cloudflare responde com o erro 1027 até a meia-noite UTC, então monitore o uso de projetos com tráfego. No KV, operações além do limite falham com erro. Como o código usa serviços próprios da Cloudflare, como D1 e KV, mudar de plataforma depois exige adaptação; vale isolar o acesso a dados em uma camada do seu código.",
+        "O próprio ecossistema learnTECH usa o Cloudflare Workers: a API learntech-content, que entrega conteúdo para os sites, roda nele com banco D1. Os sites learn-tech e bootcamps ficam na Vercel, e career e tools no GitHub Pages. É um exemplo prático de arquitetura comum: sites estáticos em hospedagens simples e uma API serverless leve concentrando os dados."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://workers.cloudflare.com/"
+        },
+        {
+          "label": "Página do produto",
+          "url": "https://cloudflare.com/products/workers"
+        },
+        {
+          "label": "Preços e limites do plano gratuito",
+          "url": "https://developers.cloudflare.com/workers/platform/pricing/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Cloudflare: Workers (página do produto)",
+          "url": "https://cloudflare.com/products/workers"
+        },
+        {
+          "label": "Cloudflare Docs: Workers pricing",
+          "url": "https://developers.cloudflare.com/workers/platform/pricing/"
+        },
+        {
+          "label": "Flavio Copes: Every hosting provider's free tier, side by side (checked September 2026)",
+          "url": "https://flaviocopes.com/hosting-free-tiers.md"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "hospedagens",
+          "id": "cloudflare-pages"
+        },
+        {
+          "tipo": "hospedagens",
+          "id": "github-pages"
+        },
+        {
+          "tipo": "programas",
+          "id": "301"
+        },
+        {
+          "tipo": "programas",
+          "id": "401"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   }
 ]

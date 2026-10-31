@@ -4,83 +4,608 @@
     "duration": "Tech Lead",
     "thumb": "./assets/thumb_perfis-dev/tiagogouvea.jpg",
     "site_url": "https://www.tiagogouvea.com.br/",
-    "category": "Tech Leadership"
+    "category": "Tech Leadership",
+    "slug": "tiago-gouvea",
+    "detalhe": {
+      "resumo": "Perfil indicado pelo learnTECH para quem quer acompanhar conteúdo sobre liderança técnica e o papel de tech lead.",
+      "paragrafos": [
+        "O endereço indicado leva a o site pessoal do profissional, listado na categoria de liderança técnica. É uma referência para quem quer entender como a carreira de desenvolvimento pode evoluir para funções de liderança de times.",
+        "Página em revisão: as informações acima são básicas e serão completadas em breve."
+      ],
+      "atualizadoEm": "2026-10-30"
+    }
   },
   {
     "title": "Gabs Ferreira",
     "duration": "Dev Content",
     "thumb": "./assets/thumb_perfis-dev/gabsferreira.jpg",
     "site_url": "http://gabsferreira.com/",
-    "category": "Career Content"
+    "category": "Career Content",
+    "slug": "gabs-ferreira",
+    "detalhe": {
+      "resumo": "Gabs Ferreira é desenvolvedor e profissional de Developer Relations (DevRel) que produz conteúdo sobre carreira em tecnologia, com foco em trabalhar para empresas de fora do Brasil. Foi apresentador dos podcasts Dev Sem Fronteiras e Carreira Sem Fronteiras, da Alura, e em outubro de 2026 se apresenta no GitHub como Developer Advocate na SearchApi.",
+      "paragrafos": [
+        "DevRel, ou Developer Relations, é a área que faz a ponte entre uma empresa de tecnologia e as pessoas desenvolvedoras que usam seus produtos, com conteúdo, documentação, exemplos e presença na comunidade. Gabs Ferreira construiu a carreira justamente nesse cruzamento entre código e comunicação. Segundo a página do episódio 100 do Dev Sem Fronteiras, ele saiu da apresentação dos podcasts da Alura para trabalhar como DevRel em uma empresa da Estônia e depois passou a se dedicar a projetos próprios de conteúdo.",
+        "O tema que mais aparece no trabalho dele é a carreira internacional: como um dev brasileiro consegue trabalhar remotamente para empresas de fora. O Dev Sem Fronteiras, que ele apresentou, entrevista pessoas brasileiras que trabalham com tecnologia no exterior. No GitHub, o projeto próprio em destaque é o gringa-jobs, uma busca de vagas remotas de tecnologia voltada para quem mora no Brasil, construída com Next.js e com a API da SearchApi, empresa em que ele atua como Developer Advocate em outubro de 2026.",
+        "Para começar, uma boa porta de entrada é ouvir o episódio especial número 100 do Dev Sem Fronteiras, publicado em 8 de agosto de 2023, em que ele volta como convidado para falar da própria trajetória. Depois, escolha dois ou três episódios com pessoas que trabalham na área que você quer seguir e anote que caminhos elas usaram para conseguir a primeira vaga fora. Um exercício concreto é abrir o repositório gringa-jobs, ler como ele foi organizado e tentar rodar o projeto localmente: além do conteúdo de carreira, você pratica Next.js com um caso real.",
+        "Ao seguir conteúdo sobre carreira internacional, lembre que cada história é um caso individual: salário, visto, impostos e contrato mudam muito de país para país e de empresa para empresa. Use os relatos como mapa de possibilidades, não como promessa. Também vale separar o que é conteúdo educativo do que é divulgação de produto, já que o trabalho de DevRel envolve apresentar as ferramentas da empresa em que a pessoa trabalha. Para se preparar de verdade, combine esse conteúdo com estudo de inglês técnico e prática de entrevistas."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "http://gabsferreira.com/"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/gabsferreira"
+        },
+        {
+          "label": "Dev Sem Fronteiras #100 (Alura)",
+          "url": "https://www.alura.com.br/podcast/devrel-especial-com-gabs-ferreira-remoto-dev-sem-fronteiras-100-a8790"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Alura: DevRel especial com Gabs Ferreira (Dev Sem Fronteiras #100)",
+          "url": "https://www.alura.com.br/podcast/devrel-especial-com-gabs-ferreira-remoto-dev-sem-fronteiras-100-a8790"
+        },
+        {
+          "label": "GitHub: perfil gabsferreira",
+          "url": "https://github.com/gabsferreira"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "701"
+        },
+        {
+          "tipo": "programas",
+          "id": "703"
+        },
+        {
+          "tipo": "blog",
+          "id": "perfil-encontravel-linkedin"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "github"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Filipe Deschamps",
     "duration": "Clean Code",
     "thumb": "./assets/thumb_perfis-dev/filipedeschamps.jpg",
     "site_url": "https://filipedeschamps.com.br/",
-    "category": "Tech Education"
+    "category": "Tech Education",
+    "slug": "filipe-deschamps",
+    "detalhe": {
+      "resumo": "Filipe Deschamps é desenvolvedor e criador de conteúdo brasileiro conhecido pelo canal de programação no YouTube, pela newsletter diária de notícias de tecnologia e por ter criado o TabNews, comunidade de conteúdo para quem trabalha com programação. Também mantém o curso.dev, curso de programação em que os alunos acompanham a construção do próprio TabNews.",
+      "paragrafos": [
+        "O trabalho de Filipe Deschamps se espalha por alguns canais ligados entre si. No YouTube, ele publica vídeos práticos de programação e de conceitos de desenvolvimento web, com foco em JavaScript no front-end e no back-end. A Newsletter do Filipe Deschamps é enviada por e-mail todos os dias com notícias de tecnologia, e as fontes das notícias são publicadas no TabNews pela conta oficial NewsletterOficial, criada em novembro de 2022. O TabNews, por sua vez, é um site aberto de conteúdos para quem trabalha com programação e tecnologia, e o código dele é público no GitHub.",
+        "Boa parte da reputação dele vem de projetos de código aberto. No GitHub, onde tem mais de 40 mil seguidores em outubro de 2026, os repositórios fixados incluem o tabnews.com.br, a BrasilAPI (projeto coletivo que reúne dados públicos brasileiros em uma API), o video-maker para criar vídeos automatizados, o algoritmo do fogo do DOOM e um jogo multiplayer simples para praticar Socket.io. Esses projetos são muito usados como material de estudo porque mostram código real, com issues, pull requests e discussão aberta.",
+        "O caminho gratuito é começar pelos vídeos do canal e pela newsletter, que ajudam a criar o hábito de acompanhar o que acontece na área. Um primeiro exercício concreto é clonar o repositório meu-primeiro-jogo-multiplayer ou o doom-fire-algorithm, rodar na sua máquina e mudar uma regra do código para ver o efeito. Para quem quer ir além, o TabNews aceita publicações de qualquer pessoa cadastrada, então escrever um resumo do que você aprendeu é uma forma prática de treinar escrita técnica e receber comentários.",
+        "O curso.dev é o produto pago. Ele foi lançado primeiro para membros do canal e é organizado em dias e marcos, usando a construção do TabNews como projeto principal. Em junho de 2025, segundo uma discussão no TabNews com resposta do próprio Filipe, o curso estava no Dia 45, tratando de autenticação e autorização, e ainda recebia aulas novas. Antes de comprar, leia relatos de alunos com visões diferentes e confira o que já está publicado, já que é um curso em andamento e, segundo esses relatos, não usa TypeScript nem o App Router do Next.js."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://filipedeschamps.com.br/"
+        },
+        {
+          "label": "Newsletter",
+          "url": "https://filipedeschamps.com.br/newsletter"
+        },
+        {
+          "label": "TabNews",
+          "url": "https://www.tabnews.com.br/"
+        },
+        {
+          "label": "curso.dev",
+          "url": "https://curso.dev"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/filipedeschamps"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/c/FilipeDeschamps"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "GitHub: perfil filipedeschamps",
+          "url": "https://github.com/filipedeschamps"
+        },
+        {
+          "label": "TabNews: Criando um usuário para as publicações oficiais da Newsletter do Filipe Deschamps no TabNews",
+          "url": "https://www.tabnews.com.br/NewsletterOficial/criando-um-usuario-para-as-publicacoes-oficiais-da-newsletter-do-filipe-deschamps-no-tabnews"
+        },
+        {
+          "label": "TabNews: Andamento do curso.dev",
+          "url": "https://www.tabnews.com.br/mergulhao/andamento-do-curso-dev"
+        },
+        {
+          "label": "TabNews: [Curso] O curso.dev é realmente do Filipe Deschamps?",
+          "url": "https://www.tabnews.com.br/apolossauro/curso-o-curso-dev-e-realmente-do-filipe-deschamps"
+        },
+        {
+          "label": "DIO: YouTube, 12 canais que todo dev iniciante deve se inscrever",
+          "url": "https://www.dio.me/articles/youtube-12-canais-que-todo-dev-iniciante-deveprecisa-se-inscrever"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "ferramentas",
+          "id": "github"
+        },
+        {
+          "tipo": "programas",
+          "id": "4"
+        },
+        {
+          "tipo": "programas",
+          "id": "302"
+        },
+        {
+          "tipo": "blog",
+          "id": "javascript-fundamentos"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Lucas Montano",
     "duration": "Seniority",
     "thumb": "./assets/thumb_perfis-dev/lucasmontano.jpg",
     "site_url": "https://lucasmontano.com/",
-    "category": "Seniority"
+    "category": "Seniority",
+    "slug": "lucas-montano",
+    "detalhe": {
+      "resumo": "Lucas Montano é desenvolvedor de aplicativos e criador de conteúdo brasileiro que publica vídeos sobre programação e carreira no YouTube. No GitHub, se descreve com a frase \"Building great products & creating content\" e informa trabalhar na Disney Streaming Services em outubro de 2026.",
+      "paragrafos": [
+        "A trajetória pública de Lucas Montano começa no desenvolvimento web: em comentários no TabNews, ele conta que começou a programar em 2006 com PHP, JavaScript e CSS e que migrou para o desenvolvimento Android nativo em 2011. Desde então, a maior parte da experiência dele está em aplicativos móveis. No podcast Beyond Coding, da Xebia (episódio 147), ele fala sobre como entrou no desenvolvimento de apps, os desafios de dar suporte a muitos dispositivos, profiling, testes e atualização de aplicativos.",
+        "O canal no YouTube mistura programação e carreira, com temas como desenvolvimento mobile, comparações de tecnologias e design de sistemas. No mesmo episódio do Beyond Coding, ele comenta como produz conteúdo técnico, por que aprender por meio de projetos e qual o papel da inteligência artificial no desenvolvimento de software. Para quem está entrando na área, esse olhar de alguém que trabalha em produtos de grande escala ajuda a entender o que muda entre um projeto de estudo e um aplicativo usado por milhões de pessoas.",
+        "Para começar, escolha no canal os vídeos sobre a área que você estuda (mobile, front-end ou back-end) e anote os termos que aparecem e você ainda não conhece. Um exercício concreto é abrir o repositório magic-link, fixado no GitHub dele, que gera, envia e valida links mágicos de login, e tentar explicar em poucas linhas como o fluxo funciona. O site pessoal dele também tem o código aberto no GitHub, o que serve de exemplo de como um dev organiza a própria página.",
+        "Conteúdo de carreira feito por quem trabalha em empresas grandes no exterior é útil, mas reflete uma realidade específica. Compare o que você ouve com vagas reais da sua região e com o seu momento de carreira antes de tomar decisões. Também fique atento aos vídeos patrocinados: em comentários públicos ele cita patrocinadores do canal, e é saudável separar recomendação técnica de anúncio."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://lucasmontano.com/"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@LucasMontano"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/lucasmontano/"
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/lucasmontano"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "GitHub: perfil lucasmontano",
+          "url": "https://github.com/lucasmontano/"
+        },
+        {
+          "label": "Xebia: Beyond Coding #147, Insights from App Development to Content Creation with Lucas Montano",
+          "url": "https://xebia.com/podcasts/insights-from-app-development-to-content-creation-with-lucas-montano-147/"
+        },
+        {
+          "label": "TabNews: comentários de lucasmontano",
+          "url": "https://www.tabnews.com.br/lucasmontano/comentarios/1"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "rotina-desenvolvedor"
+        },
+        {
+          "tipo": "blog",
+          "id": "processo-seletivo-como-se-preparar"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "github"
+        },
+        {
+          "tipo": "perfis",
+          "id": "filipe-deschamps"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Rodrigo Branas",
     "duration": "Architecture",
     "thumb": "./assets/thumb_perfis-dev/branas.jpg",
     "site_url": "https://app.branas.io/",
-    "category": "Architecture"
+    "category": "Architecture",
+    "slug": "rodrigo-branas",
+    "detalhe": {
+      "resumo": "Rodrigo Branas é arquiteto de software, professor, autor e palestrante brasileiro, conhecido pelos cursos e vídeos sobre Clean Code, Clean Architecture, design patterns e boas práticas de desenvolvimento. Publica conteúdo gratuito no YouTube e no GitHub e oferece cursos pagos pela plataforma branas.io.",
+      "paragrafos": [
+        "Formado em Ciência da Computação pela UFSC e com MBA em Gerenciamento de Projetos pela FGV, Rodrigo Branas fundou a AgileCode, empresa de consultoria e treinamento, segundo sua bio no InfoQ Brasil. Em 2015 já tinha mais de 12 anos de experiência com aplicações corporativas e apresentou a palestra \"A evolução do AngularJS\" no TDC Florianópolis. Ele também é coautor do livro \"AngularJS: Maintaining Web Applications\", publicado pela Packt.",
+        "Hoje o foco do conteúdo dele é arquitetura de software. No GitHub, onde se apresenta como \"Software Architect, Professor, Author and Speaker\", os repositórios fixados tratam de design patterns, SOLID, DDD, arquitetura em camadas e ports and adapters aplicados ao front-end, quase todos em TypeScript. O repositório com o código da série do YouTube tem mais de 900 estrelas em outubro de 2026. Esses temas aparecem com frequência em entrevistas para vagas de pessoa desenvolvedora pleno e sênior e em times que mantêm sistemas grandes por muitos anos.",
+        "O caminho gratuito começa pelo canal no YouTube. Em comentários no TabNews, alunos recomendam as playlists sobre JavaScript (\"Desvendando a linguagem javascript\") e sobre versionamento com Git como materiais que continuam atuais. Um primeiro exercício concreto é abrir o repositório design_patterns, escolher um padrão, reescrever o exemplo com suas palavras e criar um teste que prove o comportamento.",
+        "O curso pago mais citado é o de Clean Code e Clean Architecture. Um relato de aluno publicado no TabNews em 2022 descreve aulas ao vivo semanais de cerca de 3 horas, oito encontros no total, desafios entre as aulas e um grupo no Telegram para discussão. Antes de entrar em um curso de arquitetura, tenha uma base sólida de lógica, orientação a objetos e testes, porque o conteúdo parte do pressuposto de que você já programa. Também vale lembrar que arquitetura não tem receita única: use os padrões como ferramentas e avalie o custo de cada camada no seu projeto."
+      ],
+      "links": [
+        {
+          "label": "Plataforma de cursos (branas.io)",
+          "url": "https://app.branas.io/"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://www.github.com/rodrigobranas"
+        },
+        {
+          "label": "Palestra no InfoQ: A evolução do AngularJS",
+          "url": "https://www.infoq.com/br/presentations/a-evolucao-do-angularjs"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "GitHub: perfil rodrigobranas",
+          "url": "https://www.github.com/rodrigobranas"
+        },
+        {
+          "label": "InfoQ Brasil: A evolução do AngularJS",
+          "url": "https://www.infoq.com/br/presentations/a-evolucao-do-angularjs"
+        },
+        {
+          "label": "Helion: autor Rodrigo Branas",
+          "url": "https://helion.pl/autorzy/rodrigo-branas"
+        },
+        {
+          "label": "TabNews: relato sobre o curso Clean Code e Clean Architecture",
+          "url": "https://www.tabnews.com.br/ncls/bfd977d4-2a49-4746-a4ce-0a3ae032949c"
+        },
+        {
+          "label": "TabNews: comentário recomendando as playlists de Rodrigo Branas",
+          "url": "https://www.tabnews.com.br/tocodando/51f6fde2-aa48-4ef1-90fe-de590967c5a0"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "301"
+        },
+        {
+          "tipo": "programas",
+          "id": "303"
+        },
+        {
+          "tipo": "programas",
+          "id": "604"
+        },
+        {
+          "tipo": "blog",
+          "id": "javascript-fundamentos"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Programador BR",
     "duration": "Fullstack",
     "thumb": "./assets/thumb_perfis-dev/programadorbr.jpg",
     "site_url": "https://programadorbr.com/",
-    "category": "Fullstack"
+    "category": "Fullstack",
+    "slug": "programador-br",
+    "detalhe": {
+      "resumo": "Perfil indicado pelo learnTECH para quem quer acompanhar conteúdo sobre desenvolvimento fullstack em português.",
+      "paragrafos": [
+        "O endereço indicado leva a o site Programador BR, listado na categoria fullstack. É uma referência para quem estuda desenvolvimento web de ponta a ponta, do front-end ao back-end.",
+        "Página em revisão: as informações acima são básicas e serão completadas em breve."
+      ],
+      "atualizadoEm": "2026-10-30"
+    }
   },
   {
     "title": "Código Fonte TV",
     "duration": "Curiosidades",
     "thumb": "./assets/thumb_perfis-dev/codigofonte-tv.jpg",
     "site_url": "https://codigofonte.tv/",
-    "category": "Tech Media"
+    "category": "Tech Media",
+    "slug": "codigo-fonte-tv",
+    "detalhe": {
+      "resumo": "O Código Fonte TV é um canal brasileiro de programação e tecnologia no YouTube, apresentado pelo casal de programadores Gabriel Fróes e Vanessa Weber. Publica vídeos semanais para quem trabalha na área ou quer aprender, misturando conteúdo técnico, notícias e vlogs.",
+      "paragrafos": [
+        "Segundo o TecMundo, o canal é feito por Gabriel Fróes e Vanessa Weber, dois programadores, e traz vídeos semanais que unem informação e um estilo descontraído e didático. Além dos conteúdos sobre programação, eles comentam notícias de tecnologia e contam experiências da área em vlogs. Os primeiros vídeos do canal são de agosto de 2009, e em outubro de 2026 ele tinha cerca de 661 mil inscritos, de acordo com a ferramenta de análise ThoughtLeaders.",
+        "Entre as séries do canal está a \"Mão no Código\", publicada no YouTube a partir de agosto de 2018 e registrada na base TheTVDB. Séries desse tipo mostram o código sendo escrito passo a passo, o que complementa a leitura de documentação. Já os vídeos de notícias e conceitos ajudam a entender o vocabulário da área e a acompanhar o que está mudando no mercado.",
+        "O canal aparece em listas da comunidade com recomendações para quem estuda programação. Na lista Awesome Brazilian YouTubers, mantida no GitHub, ele está na seção de programação em geral, marcado como canal verificado e com publicações semanais. O artigo da DIO \"12 canais que todo dev iniciante deve se inscrever\" também o inclui.",
+        "Para aproveitar, use o canal como complemento de uma formação estruturada, como um curso de lógica de programação. Quando um vídeo apresentar um conceito novo, reproduza o exemplo no seu editor, mude alguma parte e observe o resultado. Anotar dúvidas e procurar a resposta na documentação oficial fixa melhor o conteúdo do que só assistir.",
+        "Como acontece com todo conteúdo em vídeo, confira a data de publicação, porque linguagens e ferramentas mudam rápido e o acervo do canal tem muitos anos. Separe vídeos educativos de publicidade e patrocínios, e compare opiniões sobre carreira com vagas reais e com pessoas que trabalham na área que você quer seguir."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://codigofonte.tv/"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/c/codigofontetv"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "TecMundo: 10 canais do YouTube para quem curte tecnologia",
+          "url": "https://www.tecmundo.com.br/internet/242330-10-canais-youtube-curte-tecnologia.htm"
+        },
+        {
+          "label": "ThoughtLeaders: Código Fonte TV (dados do canal)",
+          "url": "https://app.thoughtleaders.io/youtube/codigo-fonte-tv"
+        },
+        {
+          "label": "Ecosyste.ms: Awesome Brazilian YouTubers (rcarubbi)",
+          "url": "https://awesome.ecosyste.ms/lists/rcarubbi%2Fawesome-brazilian-youtubers"
+        },
+        {
+          "label": "DIO: YouTube, 12 canais que todo dev iniciante deve se inscrever",
+          "url": "https://www.dio.me/articles/youtube-12-canais-que-todo-dev-iniciante-deveprecisa-se-inscrever"
+        },
+        {
+          "label": "TheTVDB: Mão no Código (Código Fonte TV)",
+          "url": "https://thetvdb.com/series/mao-no-codigo-codigo-fonte-tv/allseasons/official"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "901"
+        },
+        {
+          "tipo": "programas",
+          "id": "4"
+        },
+        {
+          "tipo": "blog",
+          "id": "escolher-formacao-dev"
+        },
+        {
+          "tipo": "perfis",
+          "id": "programador-br"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Tania Rascia",
     "duration": "Front/Writing",
     "thumb": "./assets/thumb_perfis-dev/taniarascia.jpg",
     "site_url": "https://www.taniarascia.com/",
-    "category": "Frontend"
+    "category": "Frontend",
+    "slug": "tania-rascia",
+    "detalhe": {
+      "resumo": "Tania Rascia é engenheira de software principal (principal software engineer) e escritora técnica dos Estados Unidos, conhecida pelos tutoriais claros de JavaScript, DOM, React e Node.js. Seu site reúne mais de 170 artigos e projetos de código aberto e é bastante citado como exemplo de quem aprende em público.",
+      "paragrafos": [
+        "O site de Tania Rascia funciona como um \"jardim digital\" com artigos, notas e projetos. Ela escreve sobre desenvolvimento web, principalmente JavaScript, React, APIs e visualização de dados, sempre com explicações do zero e exemplos de código. Para a DigitalOcean, escreveu as séries \"How to Code in JavaScript\" e \"Understanding the DOM\", que também virou e-book em 2020. Ela também publicou tutoriais em sites como LogRocket, SitePoint, Envato Tuts+ e Codrops.",
+        "A trajetória dela é um exemplo conhecido de transição de carreira. Ela trabalhou como chef de 2007 a 2014, mudou para o desenvolvimento web em 2014 e foi de estagiária a engenheira sênior, chegando ao cargo de principal engineer em 2021, com foco em design systems e direção técnica. Em outubro de 2026, a página \"Me\" do site indica que ela é principal software engineer na Balto AI. O post \"Everything I Know As A Software Developer Without A Degree\" é recomendado pelo blog da Qualified como ponto de partida.",
+        "O conteúdo é gratuito e em inglês, o que também ajuda a treinar a leitura técnica. Um bom primeiro exercício é escolher um artigo da série sobre o DOM, reproduzir os exemplos em um arquivo HTML simples e, depois, refazer o mesmo exercício sem olhar o texto. Quem quer acompanhar as novidades pode assinar a newsletter \"Tania's List\", no Substack, que ela descreve como sem anúncios, posts patrocinados ou links de afiliado.",
+        "Os projetos de código aberto dela, como o app de notas TakeNote, o emulador Chip8 e o tema New Moon para editores, são bons para estudar como um projeto pequeno é organizado do começo ao fim. Leia a licença de cada repositório antes de reaproveitar código. Como parte dos tutoriais tem alguns anos, confira sempre a documentação atual da tecnologia (MDN, React, Node.js) para ver se a API ou a forma recomendada de fazer algo mudou."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.taniarascia.com/"
+        },
+        {
+          "label": "Sobre / currículo",
+          "url": "https://taniarascia.com/me"
+        },
+        {
+          "label": "Newsletter Tania's List",
+          "url": "https://taniarascia.substack.com"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Tania Rascia: Hey, I'm Tania",
+          "url": "https://www.taniarascia.com/"
+        },
+        {
+          "label": "Tania Rascia: Me",
+          "url": "https://taniarascia.com/me"
+        },
+        {
+          "label": "Substack: Tania's List, About",
+          "url": "https://taniarascia.substack.com/about"
+        },
+        {
+          "label": "Qualified: The Best Personal Software Engineering Blogs",
+          "url": "https://www.qualified.io/blog/posts/the-best-personal-software-engineering-blogs"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "4"
+        },
+        {
+          "tipo": "programas",
+          "id": "2"
+        },
+        {
+          "tipo": "programas",
+          "id": "101"
+        },
+        {
+          "tipo": "blog",
+          "id": "javascript-fundamentos"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "O Dev Tá Ligado",
     "duration": "Dicas/Carreira",
     "thumb": "./assets/thumb_perfis-dev/odevtaligado.jpg",
     "site_url": "https://www.odevtaligado.com/",
-    "category": "Career Content"
+    "category": "Career Content",
+    "slug": "o-dev-ta-ligado",
+    "detalhe": {
+      "resumo": "Perfil indicado pelo learnTECH para quem quer acompanhar dicas e conteúdo sobre carreira em desenvolvimento de software.",
+      "paragrafos": [
+        "O endereço indicado leva a o site O Dev Tá Ligado, listado na categoria de conteúdo de carreira. É uma referência para quem está começando ou quer orientação sobre os rumos da carreira de dev.",
+        "Página em revisão: as informações acima são básicas e serão completadas em breve."
+      ],
+      "atualizadoEm": "2026-10-30"
+    }
   },
   {
-    "title": "Vinicius Gomes",
+    "title": "Vinnicius Gomes",
     "duration": "Frontend",
     "thumb": "./assets/thumb_perfis-dev/vinniciusgomes.jpg",
     "site_url": "https://vinniciusgomes.dev/",
-    "category": "Frontend"
+    "category": "Frontend",
+    "slug": "vinicius-gomes",
+    "detalhe": {
+      "resumo": "Vinnicius Gomes é engenheiro de software brasileiro com foco em front-end e mobile, que escreve artigos sobre JavaScript e desenvolvimento web no Medium e no site pessoal. Nos perfis públicos, ele relata mais de 100 projetos entregues para clientes em mais de 25 países.",
+      "paragrafos": [
+        "Vinnicius Gomes (o nome aparece com dois \"n\" nos perfis dele) começou a programar em 2012 e iniciou a graduação em Ciência da Computação em 2017, segundo o próprio README do GitHub. Ele se apresenta como engenheiro de software sênior e escreve para compartilhar o que aprende, em posts de blog e em sites de perguntas e respostas como o Stack Overflow. Os temas principais dos textos são front-end, JavaScript e desenvolvimento web.",
+        "A experiência descrita por ele inclui projetos para clientes como Governo do Brasil, UOL, Santander, Burger King, IBM e Nações Unidas. O README do GitHub cita o cargo de Senior Mobile Software Engineer na Stone, trabalhando no aplicativo para microempreendedores que usam a maquininha Ton, enquanto a bio do Medium cita a Liber Capital. A stack listada é ampla: JavaScript, TypeScript, React, Vue.js, Angular, React Native, Flutter, Node.js, GraphQL, bancos SQL e NoSQL, Docker e nuvens como AWS, Azure e GCP.",
+        "Para quem estuda front-end, os artigos dele no Medium são um bom complemento à documentação oficial, porque mostram como as tecnologias aparecem em projetos reais. Um primeiro exercício é escolher um artigo sobre um tema de JavaScript ou React, reproduzir o exemplo em um projeto pequeno e anotar o que você mudaria. O README do GitHub dele também serve de modelo para montar o seu: apresentação curta, stack e links para os canais profissionais.",
+        "Uma stack longa como a dele reflete anos de projetos variados; para quem está começando, o mais eficiente é aprofundar uma tecnologia de cada vez antes de ampliar. Como os perfis públicos às vezes ficam desatualizados, confira no LinkedIn qual é a função atual antes de citar a empresa em que ele trabalha. Ao reaproveitar trechos de código de artigos, verifique a versão da biblioteca usada no texto."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://vinniciusgomes.dev/"
+        },
+        {
+          "label": "Medium",
+          "url": "https://vinniciusgomes.medium.com/about"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://www.github.com/vinniciusgomes/vinniciusgomes"
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://br.linkedin.com/in/vinniciusgomes"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Medium: About, Vinnicius Gomes",
+          "url": "https://vinniciusgomes.medium.com/about"
+        },
+        {
+          "label": "GitHub: README vinniciusgomes",
+          "url": "https://www.github.com/vinniciusgomes/vinniciusgomes"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "101"
+        },
+        {
+          "tipo": "programas",
+          "id": "103"
+        },
+        {
+          "tipo": "programas",
+          "id": "4"
+        },
+        {
+          "tipo": "blog",
+          "id": "react-interfaces-modernas"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Mario Souto",
     "duration": "Next.js",
     "thumb": "./assets/thumb_perfis-dev/mariosouto.jpg",
     "site_url": "https://mariosouto.com/",
-    "category": "Next.js Expert"
+    "category": "Next.js Expert",
+    "slug": "mario-souto",
+    "detalhe": {
+      "resumo": "Mario Souto é desenvolvedor e criador de conteúdo conhecido como DevSoutinho, com foco em front-end, React e Next.js. É instrutor de cursos de Next.js na Alura e se apresenta como GitHub Star, Microsoft MVP e Google Developer Expert.",
+      "paragrafos": [
+        "O conteúdo de Mario Souto circula com a marca DevSoutinho, que reúne canal de vídeos, newsletter no Substack e presença em comunidades como o TabNews. Na newsletter \"Mario Souto - DevSoutinho\", que passa de mil assinantes em outubro de 2026, ele convida o leitor a aprender programação e tecnologia junto com ele. Os títulos de GitHub Star, Microsoft MVP e Google Developer Expert, citados na apresentação dele, são programas de reconhecimento que essas empresas dão a pessoas que produzem conteúdo técnico e apoiam a comunidade.",
+        "A especialidade mais conhecida dele é o Next.js, framework construído sobre o React. Na Alura, ele é o instrutor do curso \"Next.js: explorando o framework\", feito em parceria com o canal DevSoutinho, com 142 minutos de vídeo e 48 atividades. No curso, a pessoa constrói uma página promocional com home e página de perguntas frequentes e aprende rotas baseadas em arquivos, diferença entre renderização no cliente e no servidor, arquivos estáticos e performance. Next.js aparece com frequência em vagas de front-end e full stack que pedem React.",
+        "Para começar, assine a newsletter gratuita e, se você já conhece o básico de React, faça o curso de Next.js na Alura ou siga o tutorial oficial do Next.js em paralelo. Um primeiro exercício concreto é criar um projeto Next.js com duas páginas, uma home e uma de perguntas frequentes, como no curso, e publicar em um serviço de hospedagem gratuito. Depois, compare a renderização no cliente e no servidor medindo o carregamento no navegador.",
+        "O Next.js muda bastante entre versões, especialmente na forma de organizar rotas, então confira a versão usada em cada vídeo ou curso antes de seguir o passo a passo. Os cursos da Alura exigem assinatura paga; o conteúdo gratuito fica na newsletter e nos canais dele. Antes de aprender Next.js, garanta uma base de JavaScript e React, porque o framework pressupõe esse conhecimento."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://mariosouto.com/"
+        },
+        {
+          "label": "Newsletter DevSoutinho",
+          "url": "https://devsoutinho.substack.com"
+        },
+        {
+          "label": "Curso na Alura: Next.js, explorando o framework",
+          "url": "https://www.alura.com.br/conteudo/next-js-iniciando-framework"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Substack: Mario Souto - DevSoutinho",
+          "url": "https://devsoutinho.substack.com"
+        },
+        {
+          "label": "Alura: Next.js, explorando o framework",
+          "url": "https://www.alura.com.br/conteudo/next-js-iniciando-framework"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "102"
+        },
+        {
+          "tipo": "programas",
+          "id": "101"
+        },
+        {
+          "tipo": "blog",
+          "id": "react-interfaces-modernas"
+        },
+        {
+          "tipo": "perfis",
+          "id": "vinicius-gomes"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "João Fernando Baraky",
     "duration": "Soft Skills",
     "thumb": "./assets/thumb_perfis-dev/baraky.jpg",
     "site_url": "https://baraky.com.br/",
-    "category": "Leadership"
+    "category": "Leadership",
+    "slug": "joao-fernando-baraky",
+    "detalhe": {
+      "resumo": "Perfil indicado pelo learnTECH para quem quer acompanhar conteúdo sobre soft skills e liderança na carreira de tecnologia.",
+      "paragrafos": [
+        "O endereço indicado leva a o site pessoal do profissional, listado na categoria de liderança. É uma referência para quem quer desenvolver habilidades como comunicação e trabalho em equipe, além das competências técnicas.",
+        "Página em revisão: as informações acima são básicas e serão completadas em breve."
+      ],
+      "atualizadoEm": "2026-10-30"
+    }
   }
 ]

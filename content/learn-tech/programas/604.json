@@ -3,8 +3,826 @@
   "image": "https://cdn.pixabay.com/photo/2018/03/10/12/00/teamwork-3213924_1280.jpg",
   "category": "Projetos",
   "categoryFilter": "projetos",
-  "title": "Git e GitHub Workflow: Colaboração em Projetos de Código Aberto",
-  "lessons": "10+ Lições",
-  "duration": "07hr 30min",
-  "access": "Acesso Livre"
+  "title": "Git e GitHub: Fluxo de Trabalho em Equipe e Contribuição em Código Aberto",
+  "lessons": "18 passos",
+  "duration": "12h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Iniciante/Intermediário",
+  "description": "Do primeiro commit ao primeiro pull request aceito em um projeto de outra pessoa. Você aprende a registrar histórico com critério, trabalhar em branches, resolver conflitos, revisar código em equipe e contribuir com projetos de código aberto — com uma automação básica rodando a cada mudança.",
+  "letslearn": [
+    "Registrar mudanças em commits pequenos, com mensagens que explicam o porquê",
+    "Criar branches, integrar com merge ou rebase e resolver conflitos sem pânico",
+    "Trabalhar com feature branch, pull request e code review, e escolher entre GitHub Flow e Git Flow",
+    "Contribuir com um projeto de código aberto via fork e automatizar verificações com GitHub Actions"
+  ],
+  "curriculum": "Do commit local à colaboração aberta",
+  "about": "O programa segue a ordem em que as dúvidas aparecem na prática. Primeiro o Git sozinho, no seu computador: o que é um commit, a área de preparação e como voltar atrás. Depois as branches, que são onde nascem os conflitos e onde merge e rebase deixam de ser palavras soltas. Em seguida o trabalho em equipe no GitHub: issues, pull request, revisão de código e a escolha do fluxo. Por fim, a contribuição em um projeto que não é seu e a primeira automação com GitHub Actions. Todos os exemplos usam um projeto fictício, a 'agenda-cli', uma pequena ferramenta de linha de comando para registrar compromissos.",
+  "materials": [
+    "Repositório de prática com conflitos preparados para resolver",
+    "Modelos de README, CONTRIBUTING e template de pull request",
+    "Folha de comandos do dia a dia, agrupados por situação",
+    "Checklist de revisão de pull request"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Git Local: Commits e Histórico",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Branches, Merge, Rebase e Conflitos",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Pull Request, Code Review e Fluxos de Equipe",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Código Aberto e GitHub Actions",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Projetos",
+    "mainTitle": "Pare de ter medo do Git: trabalhe em equipe com histórico limpo, revisão de código e contribuições que são aceitas.",
+    "introductionParagraphs": [
+      {
+        "title": "Git e GitHub não são a mesma coisa",
+        "text": "O **Git** é o sistema de controle de versão que roda no seu computador: guarda o histórico, cria branches e junta mudanças. O **GitHub** é uma plataforma que hospeda repositórios Git e acrescenta a camada de colaboração: issues, pull requests, revisão de código e automação. Separar os dois evita a confusão mais comum de quem começa — e explica por que quase tudo que você faz no GitHub tem um equivalente na linha de comando."
+      },
+      {
+        "title": "O histórico é documentação",
+        "text": "Um repositório com commits pequenos e mensagens claras responde sozinho a perguntas como 'quando isso mudou?' e 'por quê?'. Um repositório com commits chamados 'ajustes' e 'agora vai' obriga alguém a perguntar para uma pessoa — que pode já ter saído da equipe. Cuidar do histórico é cuidar de quem vai mexer no código depois, inclusive você."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não cobre comandos raros de manutenção interna do Git, não ensina interfaces gráficas específicas e não monta pipelines de implantação complexos. O foco é o conjunto que você usa toda semana em um time — e a contribuição em código aberto, que exercita esse conjunto com pessoas que você não conhece."
+      }
+    ],
+    "courseAboutTitle": "A ferramenta comum a todos os papéis de um time de tecnologia",
+    "courseAboutDescription": "Desenvolvedores, designers que mantêm sistemas de design, analistas de dados e redatores técnicos acabam no mesmo lugar: um repositório com branches, pull requests e revisão. Na trilha de Projetos, este programa vem depois de 'Liderança Técnica: Como Gerir Equipes de Desenvolvedores' e transforma as práticas de equipe discutidas ali em rotina concreta: como a mudança nasce, é revisada e chega à branch principal.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Git Local: Commits e Histórico",
+        "items": [
+          {
+            "label": "Três áreas do Git",
+            "description": "Diretório de trabalho, área de preparação e repositório: onde cada mudança está."
+          },
+          {
+            "label": "Commit com propósito",
+            "description": "Uma mudança lógica por commit e uma mensagem que explica o motivo."
+          },
+          {
+            "label": "Voltar atrás com segurança",
+            "description": "Descartar, desfazer preparação e reverter commit sem apagar histórico."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Branches, Merge, Rebase e Conflitos",
+        "items": [
+          {
+            "label": "Branch é só um ponteiro",
+            "description": "Por que criar branch é barato e por que você deve criar muitas."
+          },
+          {
+            "label": "Merge e rebase",
+            "description": "Duas formas de integrar trabalho e a regra que impede o rebase de estragar o dia da equipe."
+          },
+          {
+            "label": "Conflito resolvido",
+            "description": "Ler os marcadores, decidir o conteúdo final e concluir a integração."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Pull Request, Code Review e Fluxos de Equipe",
+        "items": [
+          {
+            "label": "Issues e Projects",
+            "description": "Registrar o trabalho antes de começar e acompanhar em um quadro."
+          },
+          {
+            "label": "Pull request e revisão",
+            "description": "Descrever a mudança, pedir revisão e responder comentários."
+          },
+          {
+            "label": "GitHub Flow x Git Flow",
+            "description": "Quando um fluxo simples basta e quando o projeto pede branches de versão."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Código Aberto e GitHub Actions",
+        "items": [
+          {
+            "label": "Ler antes de contribuir",
+            "description": "Licença, CONTRIBUTING, código de conduta e issues marcadas para iniciantes."
+          },
+          {
+            "label": "Fork e upstream",
+            "description": "Trabalhar na sua cópia e manter ela atualizada com o projeto original."
+          },
+          {
+            "label": "Primeiro workflow",
+            "description": "Uma verificação automática que roda em todo pull request."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para executar no repositório de prática. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "laptop",
+      "title": "Git Local: Commits e Histórico",
+      "shortDescription": "Configuração, área de preparação, commits e como desfazer",
+      "introductionText": "Antes de colaborar, é preciso dominar o Git sozinho. Um repositório Git é uma pasta com um histórico de fotografias do projeto, chamadas commits. Toda mudança passa por três lugares: o diretório de trabalho, onde você edita; a área de preparação (staging), onde você escolhe o que entra no próximo commit; e o repositório, onde o commit fica gravado. Neste módulo você cria o repositório da agenda-cli, faz os primeiros commits e aprende a desfazer erros sem apagar o que não devia.",
+      "sections": [
+        {
+          "title": "🧰 O Git no seu computador",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Configurar identidade e iniciar o repositório",
+              "code": "git config --global user.name \"Seu Nome\"\ngit init",
+              "guidance": "Configure nome e e-mail uma única vez: eles aparecem como autoria de cada commit. Depois crie a pasta agenda-cli e rode git init para transformá-la em repositório. Crie também um arquivo .gitignore listando o que não deve ser versionado, como pastas de dependências e arquivos de ambiente.",
+              "tips": [
+                "Use no Git o mesmo e-mail da sua conta no GitHub; assim os commits aparecem ligados ao seu perfil.",
+                "Arquivos com senhas e chaves de acesso nunca entram no repositório. Coloque-os no .gitignore antes do primeiro commit."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Status e área de preparação",
+              "code": "git status\ngit add agenda.py\ngit diff --staged",
+              "guidance": "Crie dois arquivos e rode git status: ambos aparecem como não rastreados. Adicione só um com git add e rode git status de novo. Repare que o Git separa o que está preparado do que não está. Use git diff para ver mudanças ainda não preparadas e git diff --staged para ver o que vai entrar no commit.",
+              "tips": [
+                "git status é o comando mais útil do Git. Na dúvida sobre o que está acontecendo, rode ele antes de qualquer outra coisa."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Commits pequenos com mensagem que explica",
+              "code": "git commit -m \"Adiciona comando para listar compromissos\"",
+              "guidance": "Faça um commit por mudança lógica: adicionar um comando é um commit, corrigir um erro de digitação em outro arquivo é outro. Escreva a primeira linha no imperativo e curta, com até cerca de 50 caracteres; se precisar explicar o motivo, deixe uma linha em branco e escreva o corpo da mensagem.",
+              "tips": [
+                "Teste da mensagem: ela completa a frase 'se aplicado, este commit vai...'? 'Adiciona comando de listagem' completa; 'mudanças' não.",
+                "Commit pequeno é fácil de revisar, de reverter e de entender meses depois."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Ler o histórico e desfazer com segurança",
+              "code": "git log --oneline\ngit restore --staged agenda.py\ngit revert a1b2c3d",
+              "guidance": "Use git log --oneline para ver o histórico resumido. Pratique três formas de voltar atrás: git restore arquivo descarta alterações não preparadas; git restore --staged arquivo tira um arquivo da área de preparação; git revert cria um novo commit que desfaz um commit anterior, sem reescrever o histórico.",
+              "tips": [
+                "git restore em um arquivo modificado descarta a alteração de vez. Confira com git diff antes.",
+                "Em commits que já foram enviados para o repositório remoto, prefira git revert: ele desfaz sem mudar o histórico que outras pessoas já baixaram."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que o básico bem feito importa",
+      "highlights": [
+        {
+          "icon": "list",
+          "title": "Histórico que responde perguntas",
+          "text": "Commits pequenos e bem descritos dizem quando e por que algo mudou. É a diferença entre investigar um erro em minutos ou em uma tarde."
+        },
+        {
+          "icon": "shield",
+          "title": "Erro com volta",
+          "text": "Saber exatamente onde cada mudança está — trabalho, preparação ou commit — é o que permite desfazer sem perder trabalho."
+        },
+        {
+          "icon": "search",
+          "title": "Revisão possível",
+          "text": "Ninguém revisa bem um commit que mistura cinco assuntos. O cuidado começa no seu computador, muito antes do pull request."
+        }
+      ],
+      "closingText": "Você já tem um repositório com histórico limpo e sabe desfazer erros. Até aqui tudo aconteceu em uma linha única de commits. No próximo módulo o histórico se ramifica — e é aí que entram branches, integração e conflitos.",
+      "ctaTitle": "🧰 Primeiros commits gravados!",
+      "ctaText": "O histórico da agenda-cli começou do jeito certo. Agora vamos trabalhar em paralelo com branches.",
+      "nextButtonText": "Ir para Módulo 1: Branches, Merge, Rebase e Conflitos"
+    },
+    {
+      "id": 1,
+      "icon": "sitemap",
+      "title": "Branches, Merge, Rebase e Conflitos",
+      "shortDescription": "Trabalhar em paralelo, integrar mudanças e resolver conflitos",
+      "introductionText": "No Git, uma branch é apenas um ponteiro leve para um commit. Criar uma é instantâneo, e por isso a prática recomendada é abrir uma branch para cada mudança. O desafio está em juntar de volta: o Git integra sozinho tudo que não se sobrepõe, e para quando duas branches alteram as mesmas linhas. Neste módulo você cria branches na agenda-cli, integra com merge e com rebase, provoca um conflito de propósito e o resolve. Por fim, conecta o repositório ao GitHub.",
+      "sections": [
+        {
+          "title": "🌿 Trabalho em paralelo",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Criar e trocar de branch",
+              "code": "git switch -c feature/exportar-csv\ngit branch",
+              "guidance": "Crie uma branch para a funcionalidade de exportar compromissos em CSV e faça dois commits nela. Volte para main com git switch main e repare que os arquivos voltam ao estado anterior. Use git branch para listar as branches e ver em qual você está.",
+              "tips": [
+                "Dê nomes que dizem o assunto: feature/exportar-csv ou fix/data-invalida dizem mais que teste2.",
+                "Antes de trocar de branch, faça commit ou guarde as alterações com git stash para não carregá-las por engano."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Merge: fast-forward e commit de merge",
+              "code": "git switch main\ngit merge feature/exportar-csv",
+              "guidance": "Integre a branch em main. Se main não recebeu commits novos desde que a branch foi criada, o Git apenas avança o ponteiro (fast-forward). Agora repita com main tendo recebido outro commit no meio do caminho: o Git cria um commit de merge com dois pais, que registra o ponto de junção.",
+              "tips": [
+                "Depois de integrada, apague a branch com git branch -d. Branch antiga acumulada só confunde."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Provocar e resolver um conflito",
+              "code": "<<<<<<< HEAD\n=======\n>>>>>>> feature/formato-data",
+              "guidance": "Em duas branches, altere a mesma linha do arquivo de formatação de data e tente integrar. O Git para e marca o trecho: entre <<<<<<< e ======= está a sua versão, entre ======= e >>>>>>> está a outra. Edite o arquivo deixando o conteúdo final correto, apague os marcadores, rode git add no arquivo e conclua com git commit.",
+              "tips": [
+                "Conflito não é erro: é o Git pedindo uma decisão que só uma pessoa pode tomar. Na dúvida sobre qual versão vale, pergunte a quem escreveu a outra.",
+                "Se a integração ficou confusa, git merge --abort volta tudo ao estado anterior."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Rebase e a regra que não se quebra",
+              "code": "git switch feature/lembretes\ngit rebase main",
+              "guidance": "Com main à frente da sua branch, rode git rebase main. O Git reaplica seus commits um a um sobre a ponta de main, produzindo um histórico linear, sem commit de merge. Conflitos podem aparecer em cada commit reaplicado: resolva, rode git add e continue com git rebase --continue.",
+              "tips": [
+                "A regra do livro Pro Git: não faça rebase de commits que já existem fora do seu repositório e sobre os quais outras pessoas podem ter baseado trabalho.",
+                "Rebase reescreve commits — eles ganham novos identificadores. Na sua branch local, antes de compartilhar, é seguro; em main, nunca."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Conectar ao GitHub: push, fetch e pull",
+              "code": "git remote add origin <url-do-repositorio>\ngit push -u origin main",
+              "guidance": "Crie um repositório vazio no GitHub, adicione-o como remoto origin e envie main com git push -u. Envie também uma branch. Depois faça uma alteração direto pela interface do GitHub e traga para o seu computador: git fetch baixa sem integrar, git pull baixa e integra.",
+              "tips": [
+                "Use git fetch quando quiser ver o que mudou antes de integrar; git pull é fetch seguido de merge (ou rebase, se configurado)."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que branches mudam o jeito de trabalhar",
+      "highlights": [
+        {
+          "icon": "sitemap",
+          "title": "Isolamento barato",
+          "text": "Cada mudança vive na própria branch até estar pronta. main continua estável enquanto várias funcionalidades andam em paralelo."
+        },
+        {
+          "icon": "sync",
+          "title": "Integração consciente",
+          "text": "Merge preserva o histórico como aconteceu; rebase deixa a história linear. Saber a diferença é escolher o histórico que a equipe quer ler."
+        },
+        {
+          "icon": "tools",
+          "title": "Conflito sob controle",
+          "text": "Quem já resolveu conflito de propósito, em ambiente de treino, resolve com calma o conflito real às seis da tarde de sexta."
+        }
+      ],
+      "closingText": "Você trabalha em branches, integra de duas formas, resolve conflitos e sincroniza com o GitHub. Falta o que transforma isso em trabalho de equipe: a mudança passa por outra pessoa antes de entrar em main.",
+      "ctaTitle": "🌿 Branches dominadas!",
+      "ctaText": "Seu repositório já está no GitHub. Agora vamos colocar revisão de código e um fluxo de equipe no meio do caminho.",
+      "nextButtonText": "Ir para Módulo 2: Pull Request, Code Review e Fluxos de Equipe"
+    },
+    {
+      "id": 2,
+      "icon": "sync",
+      "title": "Pull Request, Code Review e Fluxos de Equipe",
+      "shortDescription": "Issues, Projects, pull request, revisão e a escolha do fluxo",
+      "introductionText": "Em equipe, nenhuma mudança chega à branch principal sem passar por um pull request: um pedido para integrar uma branch, com espaço para descrição, discussão, revisão e verificações automáticas. Antes dele vem a issue, que registra o problema ou a ideia; em volta, um quadro do GitHub Projects mostra o andamento. Neste módulo você monta esse ciclo completo na agenda-cli, pratica a revisão dos dois lados e compara os dois fluxos mais conhecidos: GitHub Flow e Git Flow.",
+      "sections": [
+        {
+          "title": "🤝 Do pedido à mudança integrada",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Issues e um quadro no Projects",
+              "guidance": "Abra três issues na agenda-cli: um erro (datas no formato errado), uma melhoria (exportar CSV) e uma dúvida de documentação. Use rótulos como bug e enhancement e atribua uma pessoa responsável. Crie um projeto no GitHub Projects com as colunas A fazer, Em andamento e Concluído e adicione as issues a ele.",
+              "tips": [
+                "Uma boa issue descreve o comportamento esperado, o comportamento atual e como reproduzir. Quem for resolver não deveria precisar perguntar.",
+                "O quadro do Projects é o mesmo raciocínio do Kanban visto em 'Scrum e Kanban: Agilidade na Gestão de Projetos Tech', agora ligado ao código."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "GitHub Flow na prática",
+              "code": "git switch -c fix/formato-data\ngit push -u origin fix/formato-data",
+              "guidance": "Siga o ciclo do GitHub Flow para resolver a issue do erro de data: crie uma branch a partir de main, faça commits, envie a branch, abra um pull request, receba revisão, integre e apague a branch. A regra que sustenta o fluxo: main está sempre em estado de ser publicada.",
+              "tips": [
+                "Branch de vida curta gera conflito pequeno. Quanto mais tempo uma branch fica longe de main, maior a conta na hora de integrar."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Abrir um pull request que se explica",
+              "code": "Closes #3",
+              "guidance": "Abra o pull request com título claro e descrição dizendo o que mudou, por que e como testar. Escreva Closes #3 (com o número da issue) na descrição: ao integrar, a issue é fechada automaticamente. Crie também um arquivo .github/pull_request_template.md para que todo pull request já comece com essas seções.",
+              "tips": [
+                "Use pull request em rascunho (draft) para pedir opinião cedo, antes de a mudança estar pronta.",
+                "Pull request pequeno é revisado no mesmo dia; pull request de mil linhas espera a semana inteira e é revisado pela metade."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Code review dos dois lados",
+              "guidance": "Em dupla, revise o pull request da outra pessoa: comente linhas específicas, sugira alterações e conclua com Comment, Approve ou Request changes. Depois responda à revisão do seu próprio pull request com novos commits na mesma branch. Por fim, ative uma regra de proteção em main exigindo pelo menos uma aprovação antes da integração.",
+              "tips": [
+                "Revise o código, não a pessoa. 'Esta função pode receber data vazia?' funciona melhor que 'você esqueceu o caso vazio'.",
+                "Ao integrar, o GitHub oferece três opções: commit de merge, squash (junta tudo em um commit) e rebase. Combine com a equipe qual usar."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "GitHub Flow x Git Flow",
+              "guidance": "Compare os dois fluxos. O GitHub Flow tem uma branch principal e branches curtas por mudança, e combina com produtos publicados continuamente. O Git Flow acrescenta uma branch develop de integração e branches de feature, release e hotfix, e combina com software que mantém versões numeradas em paralelo. Escreva no README da agenda-cli qual fluxo o projeto adota e por quê.",
+              "tips": [
+                "Na dúvida, comece pelo mais simples. Adotar Git Flow sem ter versões paralelas para manter só acrescenta branches para sincronizar."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que o pull request é o centro da colaboração",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Duas pessoas viram o código",
+          "text": "A revisão pega erros, mas sobretudo espalha conhecimento: depois dela, mais de uma pessoa entende cada parte do sistema."
+        },
+        {
+          "icon": "list",
+          "title": "Rastreabilidade",
+          "text": "Issue, branch, commits, discussão e decisão ficam ligados. Meses depois, dá para saber não só o que mudou, mas o que foi discutido."
+        },
+        {
+          "icon": "shield",
+          "title": "main protegida",
+          "text": "Com proteção de branch, nada chega à branch principal sem aprovação. A regra deixa de depender da memória de cada um."
+        }
+      ],
+      "closingText": "Você tem o ciclo completo de equipe: issue, branch, pull request, revisão e integração, com um fluxo escolhido de forma consciente. O último passo é usar tudo isso em um projeto que não é seu — e deixar uma máquina fazer as verificações repetitivas.",
+      "ctaTitle": "🤝 Fluxo de equipe funcionando!",
+      "ctaText": "Seu repositório já tem issues, quadro, pull requests revisados e main protegida. Agora vamos para o código aberto.",
+      "nextButtonText": "Ir para Módulo 3: Código Aberto e GitHub Actions"
+    },
+    {
+      "id": 3,
+      "icon": "globe",
+      "title": "Código Aberto e GitHub Actions",
+      "shortDescription": "Fork, CONTRIBUTING, licença, upstream e o primeiro workflow",
+      "introductionText": "Contribuir com código aberto é o mesmo fluxo de pull request, com uma diferença: você não tem permissão para criar branches no repositório do projeto. Por isso trabalha em um fork — sua cópia do repositório — e envia o pull request de lá. Também muda o contexto social: você vai lidar com mantenedores que não conhece e que têm regras próprias. Neste módulo você prepara a agenda-cli para receber contribuições, contribui com um projeto de prática via fork e cria uma verificação automática com GitHub Actions.",
+      "sections": [
+        {
+          "title": "🌍 Contribuindo com o projeto dos outros",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Ler o projeto antes de escrever código",
+              "guidance": "Escolha um projeto de prática e leia, nesta ordem: a licença (LICENSE), que define como o código pode ser usado, alterado e distribuído; o CONTRIBUTING, que diz como o projeto quer receber contribuições; o código de conduta; e as issues marcadas como good first issue ou help wanted. Depois faça o caminho inverso: adicione LICENSE, CONTRIBUTING e um código de conduta à agenda-cli.",
+              "tips": [
+                "Projeto sem licença não é código aberto: por padrão, ninguém tem permissão para reutilizar o código. Escolha uma licença antes de publicar.",
+                "Para trabalhar em uma issue sem esses rótulos, pergunte antes na própria issue. Evita trabalho que o projeto não pretende aceitar."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Fork, clone e upstream",
+              "code": "git remote add upstream <url-do-original>\ngit fetch upstream\ngit rebase upstream/main",
+              "guidance": "Faça um fork pelo botão do GitHub e clone o seu fork. Adicione o repositório original como remoto upstream. Antes de começar qualquer mudança, traga as novidades do upstream para a sua main e só então crie a branch da contribuição.",
+              "tips": [
+                "origin é o seu fork, upstream é o projeto original. Você envia para origin e busca de upstream.",
+                "Nunca trabalhe direto na main do fork: mantê-la igual à do original facilita todas as atualizações seguintes."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Pull request do fork para o projeto original",
+              "guidance": "Faça a mudança em uma branch com nome descritivo, siga o estilo de código pedido no CONTRIBUTING, envie a branch para o seu fork e abra o pull request apontando para o repositório original. Na descrição, cite a issue que ele resolve. Responda aos comentários dos mantenedores com novos commits no mesmo pull request.",
+              "tips": [
+                "Mantenedores são, em geral, voluntários. Demora para responder não é rejeição; uma lembrança educada depois de alguns dias é aceitável.",
+                "Documentação e correção de texto são contribuições legítimas e um ótimo primeiro pull request."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Primeiro workflow do GitHub Actions",
+              "code": "on: [push, pull_request]\njobs:\n  testes:\n    runs-on: ubuntu-latest",
+              "guidance": "Crie o arquivo .github/workflows/ci.yml na agenda-cli. Defina o evento (on) para push e pull_request, um job que roda em ubuntu-latest e os passos: actions/checkout para baixar o código, a instalação da linguagem e o comando de testes. Abra um pull request e veja a verificação rodar. Depois, na proteção de main, exija que ela passe antes da integração.",
+              "tips": [
+                "Comece com uma verificação só — testes ou lint. Workflow grande demais logo no início quebra por motivos que ninguém entende.",
+                "Nunca escreva senhas no arquivo do workflow: use os secrets do repositório."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que contribuir em código aberto",
+      "highlights": [
+        {
+          "icon": "globe",
+          "title": "Portfólio verificável",
+          "text": "Um pull request aceito em projeto público mostra código, comunicação e capacidade de seguir regras de outra equipe — tudo com data e link."
+        },
+        {
+          "icon": "folder",
+          "title": "Projeto pronto para receber ajuda",
+          "text": "Licença, CONTRIBUTING e issues bem descritas são o que separa um repositório público de um projeto em que as pessoas conseguem colaborar."
+        },
+        {
+          "icon": "bolt",
+          "title": "Verificação que não esquece",
+          "text": "Com GitHub Actions, os testes rodam em todo pull request. A revisão humana fica livre para o que a máquina não avalia: clareza e decisão."
+        }
+      ],
+      "closingText": "Você saiu do primeiro commit local para uma contribuição em projeto de outra pessoa, com revisão, fluxo de equipe e uma verificação automática protegendo a branch principal. É o conjunto que se espera de qualquer pessoa que entra em um time de tecnologia — e que funciona igual em uma empresa de cinco pessoas ou em um projeto aberto com milhares de colaboradores.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você versiona, colabora, revisa e contribui com código aberto. O próximo passo natural é assumir a manutenção de um projeto: revisar contribuições de outras pessoas.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Qual é a função da área de preparação (staging) no Git?",
+      "explanation": "A área de preparação guarda o que vai entrar no próximo commit. É ela que permite escolher, entre várias alterações feitas, quais formam uma mudança lógica. Ela não envia nada ao GitHub, não é backup automático e não tem relação com branches.",
+      "options": [
+        {
+          "text": "Escolher quais alterações entram no próximo commit",
+          "isCorrect": true
+        },
+        {
+          "text": "Enviar os arquivos para o GitHub",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardar um backup automático a cada salvamento",
+          "isCorrect": false
+        },
+        {
+          "text": "Criar uma nova branch temporária",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Qual mensagem de commit segue as boas práticas?",
+      "explanation": "Uma boa primeira linha é curta, no imperativo e diz o que o commit faz. 'Corrige formato de data na listagem' cumpre isso. Mensagens como 'ajustes' ou 'agora vai' não informam nada, e uma linha enorme com tudo que foi feito indica que o commit deveria ter sido dividido.",
+      "options": [
+        {
+          "text": "Corrige formato de data na listagem",
+          "isCorrect": true
+        },
+        {
+          "text": "ajustes",
+          "isCorrect": false
+        },
+        {
+          "text": "agora vai",
+          "isCorrect": false
+        },
+        {
+          "text": "Mudei vários arquivos, arrumei a data, o CSV, o README e outras coisas que faltavam",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Um commit com erro já foi enviado ao repositório remoto e outras pessoas já o baixaram. Qual é a forma segura de desfazê-lo?",
+      "explanation": "git revert cria um novo commit que desfaz o anterior, sem reescrever o histórico que outras pessoas já têm. Apagar ou reescrever commits compartilhados obriga todos a reconciliar o histórico. Apagar a pasta não afeta o remoto, e git status apenas mostra o estado atual.",
+      "options": [
+        {
+          "text": "Usar git revert, que cria um commit desfazendo o anterior",
+          "isCorrect": true
+        },
+        {
+          "text": "Reescrever o histórico e forçar o envio",
+          "isCorrect": false
+        },
+        {
+          "text": "Apagar a pasta do projeto e clonar de novo",
+          "isCorrect": false
+        },
+        {
+          "text": "Rodar git status até o commit sumir",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "O que é uma branch no Git?",
+      "explanation": "Uma branch é um ponteiro leve para um commit, que avança conforme novos commits são feitos nela. Por isso criar uma branch é instantâneo. Ela não é uma cópia de todos os arquivos, não é um repositório separado e não é exclusiva do GitHub.",
+      "options": [
+        {
+          "text": "Um ponteiro leve para um commit, que avança a cada novo commit",
+          "isCorrect": true
+        },
+        {
+          "text": "Uma cópia completa de todos os arquivos do projeto",
+          "isCorrect": false
+        },
+        {
+          "text": "Um repositório separado no GitHub",
+          "isCorrect": false
+        },
+        {
+          "text": "Um recurso que só existe na interface do GitHub",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Durante um merge, o arquivo mostra os marcadores <<<<<<<, ======= e >>>>>>>. O que fazer?",
+      "explanation": "Os marcadores delimitam as duas versões em conflito. Você edita o arquivo deixando o conteúdo final correto, remove os marcadores, prepara o arquivo com git add e conclui com git commit. Apagar o repositório ou escolher às cegas uma versão inteira descarta trabalho; o Git não resolve sozinho porque a decisão depende do significado do código.",
+      "options": [
+        {
+          "text": "Editar o trecho deixando o conteúdo correto, remover os marcadores, rodar git add e concluir com commit",
+          "isCorrect": true
+        },
+        {
+          "text": "Esperar o Git resolver o conflito automaticamente",
+          "isCorrect": false
+        },
+        {
+          "text": "Apagar o repositório local e clonar de novo",
+          "isCorrect": false
+        },
+        {
+          "text": "Fazer commit com os marcadores no arquivo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Segundo o livro Pro Git, em qual situação você NÃO deve fazer rebase?",
+      "explanation": "A regra é não fazer rebase de commits que existem fora do seu repositório e sobre os quais outras pessoas podem ter baseado trabalho. Rebase reescreve commits; em histórico compartilhado, isso obriga colaboradores a reconciliar o trabalho e pode duplicar commits. Em uma branch local ainda não compartilhada, o rebase é seguro.",
+      "options": [
+        {
+          "text": "Em commits já publicados sobre os quais outras pessoas podem ter baseado trabalho",
+          "isCorrect": true
+        },
+        {
+          "text": "Em uma branch local que ninguém mais baixou",
+          "isCorrect": false
+        },
+        {
+          "text": "Sempre que a branch tiver mais de um commit",
+          "isCorrect": false
+        },
+        {
+          "text": "Quando a branch principal se chama main",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Qual é a regra central do GitHub Flow?",
+      "explanation": "No GitHub Flow, main está sempre em estado de ser publicada, e cada mudança acontece em uma branch curta que volta por pull request. Branches develop e release pertencem ao Git Flow. Commits direto em main e branches de longa duração vão contra a ideia do fluxo.",
+      "options": [
+        {
+          "text": "main está sempre pronta para ser publicada; cada mudança vem de uma branch curta via pull request",
+          "isCorrect": true
+        },
+        {
+          "text": "Toda mudança passa primeiro por uma branch develop e depois por uma branch release",
+          "isCorrect": false
+        },
+        {
+          "text": "Todos fazem commit direto em main para evitar conflitos",
+          "isCorrect": false
+        },
+        {
+          "text": "Cada pessoa mantém uma branch própria durante todo o projeto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "O que acontece ao escrever 'Closes #3' na descrição de um pull request?",
+      "explanation": "Palavras-chave como Closes seguidas do número ligam o pull request à issue, e ela é fechada automaticamente quando o pull request é integrado na branch padrão. Não fecha na abertura, não apaga nada e não atribui revisores.",
+      "options": [
+        {
+          "text": "A issue 3 é fechada automaticamente quando o pull request é integrado",
+          "isCorrect": true
+        },
+        {
+          "text": "A issue 3 é apagada no momento em que o pull request é aberto",
+          "isCorrect": false
+        },
+        {
+          "text": "O pull request 3 é fechado sem integração",
+          "isCorrect": false
+        },
+        {
+          "text": "Três revisores são designados automaticamente",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Em qual cenário o Git Flow faz mais sentido que o GitHub Flow?",
+      "explanation": "O Git Flow, com develop, release e hotfix, foi pensado para software com versões numeradas, às vezes mantidas em paralelo. Um site publicado várias vezes por dia se beneficia do GitHub Flow, mais simples. Tamanho do time ou ser o primeiro projeto não justificam por si só a complexidade extra.",
+      "options": [
+        {
+          "text": "Software com versões numeradas que precisam ser mantidas em paralelo",
+          "isCorrect": true
+        },
+        {
+          "text": "Um site publicado várias vezes por dia",
+          "isCorrect": false
+        },
+        {
+          "text": "Qualquer projeto com mais de duas pessoas",
+          "isCorrect": false
+        },
+        {
+          "text": "O primeiro projeto de quem está aprendendo Git",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Por que você trabalha em um fork ao contribuir com um projeto de código aberto?",
+      "explanation": "Em geral você não tem permissão de escrita no repositório do projeto. O fork é a sua cópia, onde você cria branches e envia commits; o pull request leva a mudança de volta para revisão dos mantenedores. O fork não é obrigatório por licença, não substitui o pull request e não serve para criar um projeto rival.",
+      "options": [
+        {
+          "text": "Porque você não tem permissão de escrita no repositório original e envia a mudança por pull request a partir da sua cópia",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque a licença proíbe clonar o repositório original",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o fork integra a mudança sem precisar de pull request",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque contribuir significa criar uma versão concorrente do projeto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Qual é o papel do arquivo CONTRIBUTING em um repositório?",
+      "explanation": "O CONTRIBUTING explica como o projeto quer receber contribuições: como abrir issues, padrão de código, como rodar os testes e como enviar pull requests. Quem define os direitos de uso é a licença; o código de conduta trata do comportamento esperado; e a lista de dependências fica em outro arquivo.",
+      "options": [
+        {
+          "text": "Explicar como o projeto quer receber contribuições",
+          "isCorrect": true
+        },
+        {
+          "text": "Definir como o código pode ser usado e distribuído",
+          "isCorrect": false
+        },
+        {
+          "text": "Listar as dependências do projeto",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardar as senhas usadas pelos workflows",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Onde fica o arquivo de um workflow do GitHub Actions?",
+      "explanation": "Os workflows são arquivos YAML dentro de .github/workflows no repositório. O GitHub lê essa pasta e executa os workflows conforme os eventos definidos em on, como push e pull_request. Não ficam na raiz como .gitignore, nem no README, nem em configuração local do Git.",
+      "options": [
+        {
+          "text": "Em um arquivo YAML na pasta .github/workflows",
+          "isCorrect": true
+        },
+        {
+          "text": "Dentro do arquivo .gitignore",
+          "isCorrect": false
+        },
+        {
+          "text": "Em uma seção especial do README",
+          "isCorrect": false
+        },
+        {
+          "text": "Na configuração global do Git em cada computador",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "O repositório público da agenda-cli, pronto para receber colaboração: histórico com commits claros, branches integradas por pull request revisado, issues organizadas em um quadro do Projects, main protegida, LICENSE, CONTRIBUTING, template de pull request e um workflow do GitHub Actions rodando os testes em cada mudança. Além disso, um pull request enviado via fork a um projeto de prática de outra pessoa.",
+    "highlights": [
+      "Repositório com fluxo de pull request e revisão obrigatória",
+      "Arquivos de comunidade: LICENSE, CONTRIBUTING e template de pull request",
+      "Workflow de integração contínua com GitHub Actions",
+      "Uma contribuição enviada via fork a um projeto de terceiros"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "Segundo o relatório Octoverse 2025 do GitHub, a plataforma passou de 180 milhões de desenvolvedores, com cerca de 36 milhões de novas contas em um ano. Foram 518,7 milhões de pull requests integrados em projetos públicos e de código aberto, quase 1 bilhão de commits enviados e 11,5 bilhões de minutos de GitHub Actions usados em projetos públicos. O Brasil aparece em 4º lugar no mundo, com 6,89 milhões de desenvolvedores.",
+      "Para quem está entrando, isso significa que o fluxo de branch, pull request e revisão não é detalhe de uma empresa: é a forma padrão de trabalho em tecnologia. Saber Git e GitHub é pré-requisito silencioso em praticamente toda vaga — raramente é o assunto da entrevista, mas aparece no primeiro dia de trabalho."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Times de desenvolvimento",
+        "description": "Toda mudança de código passa por branch, pull request e revisão antes de ir para produção."
+      },
+      {
+        "label": "Projetos de código aberto",
+        "description": "Bibliotecas e ferramentas mantidas por comunidades que colaboram via fork e pull request."
+      },
+      {
+        "label": "Documentação e conteúdo",
+        "description": "Sites de documentação, sistemas de design e materiais técnicos versionados como código."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem usa Git só com três comandos",
+        "description": "Sabe add, commit e push, mas trava diante de conflito ou rebase."
+      },
+      {
+        "label": "Quem vai entrar em um time",
+        "description": "Precisa trabalhar com pull request e revisão de código desde a primeira semana."
+      },
+      {
+        "label": "Quem quer contribuir com código aberto",
+        "description": "Quer fazer o primeiro pull request em um projeto público sem passar vergonha."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Git é o controle de versão padrão do mercado, e o fluxo de pull request com revisão é usado de startups a grandes empresas, além de praticamente todos os projetos de código aberto relevantes. Plataformas diferentes, como GitHub, GitLab e Bitbucket, mudam a interface, mas o modelo — branch, pedido de integração, revisão, verificação automática — é o mesmo, o que torna a habilidade transferível entre empresas e equipes.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "GitHub Blog — Octoverse 2025: A new developer joins GitHub every second",
+      "url": "https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/"
+    },
+    {
+      "label": "Pro Git (git-scm.com) — Git Branching: Rebasing",
+      "url": "https://git-scm.com/book/en/v2/Git-Branching-Rebasing"
+    },
+    {
+      "label": "GitHub Docs — Contributing to open source",
+      "url": "https://docs.github.com/en/get-started/exploring-projects-on-github/contributing-to-open-source"
+    },
+    {
+      "label": "GitHub Blog — Announcing Open Source Guides (opensource.guide)",
+      "url": "https://github.blog/news-insights/announcing-open-source-guides/"
+    }
+  ]
 }

@@ -4,7 +4,805 @@
   "category": "Web",
   "categoryFilter": "web",
   "title": "JavaScript para Iniciantes: A Base da Web Moderna",
-  "lessons": "25+ Lições",
-  "duration": "18hr 10min",
-  "access": "Acesso Livre"
+  "lessons": "16 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Iniciante",
+  "description": "O primeiro contato com JavaScript guiado por um projeto concreto: a vitrine de uma livraria montada a partir de um catálogo em JSON. Você aprende variáveis, tipos, funções, arrays e objetos, manipula o DOM, responde a eventos e termina carregando os dados com fetch e organizando o código em módulos.",
+  "letslearn": [
+    "Declarar variáveis, entender os tipos básicos e escrever funções que devolvem valores",
+    "Ler e transformar uma lista de objetos com filter, map e sort",
+    "Criar elementos no DOM e reagir a eventos do usuário",
+    "Carregar um arquivo JSON com fetch e dividir o projeto em módulos"
+  ],
+  "curriculum": "Do primeiro script à vitrine dinâmica",
+  "about": "O programa usa um único projeto do começo ao fim: a vitrine de uma livraria infantil fictícia, alimentada por um catálogo em JSON com título, autor, preço original, preço promocional, lote e categoria de cada livro. Cada módulo acrescenta uma camada: primeiro a linguagem (variáveis, tipos e funções), depois os dados (arrays e objetos), depois a página (DOM e eventos) e, por fim, a organização (fetch e módulos). Nada é introduzido sem um uso imediato na vitrine, e cada passo termina com algo visível no navegador ou no console.",
+  "materials": [
+    "Catálogo fictício de 20 livros em JSON (catalogo.json)",
+    "Página HTML inicial com a estrutura da vitrine",
+    "Checklist de revisão do projeto por módulo",
+    "Lista de erros comuns no console e como interpretá-los"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Variáveis, Tipos e Funções",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Arrays e Objetos (JSON)",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "DOM e Eventos",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Fetch, Módulos e Organização",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Web",
+    "mainTitle": "Da primeira variável à vitrine que se monta sozinha a partir dos dados.",
+    "introductionParagraphs": [
+      {
+        "title": "Por que começar por JavaScript",
+        "text": "HTML descreve o conteúdo e CSS cuida da aparência, mas é o **JavaScript** que faz a página reagir: filtrar uma lista, calcular um desconto, buscar dados novos sem recarregar. Ele é a única linguagem de programação que todo navegador executa nativamente, e por isso aparece em praticamente qualquer site que você abrir."
+      },
+      {
+        "title": "Um projeto, não exercícios soltos",
+        "text": "Em vez de exemplos desconectados, você constrói uma vitrine de livros a partir de um catálogo em JSON. Cada conceito aparece porque a vitrine precisa dele: a função para formatar o preço, o filter para mostrar uma categoria, o evento para responder ao menu, o fetch para tirar os dados de dentro do código. Ao final, você tem um projeto pequeno e completo que consegue explicar linha por linha."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não usa framework, biblioteca nem ferramenta de build. Tudo roda com um arquivo HTML, alguns arquivos .js e um servidor local simples. A intenção é que você entenda o que o navegador faz sozinho antes de adicionar qualquer camada por cima."
+      }
+    ],
+    "courseAboutTitle": "A base que todo o resto da web pressupõe",
+    "courseAboutDescription": "Frameworks mudam, mas todos eles assumem que você sabe o que é um objeto, como percorrer um array, o que acontece quando um evento dispara e como uma requisição devolve dados. Este programa cobre exatamente essa base, aplicada a um caso de uso real de comércio eletrônico: transformar uma lista de produtos em uma vitrine com filtro, preço promocional e ordenação.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Variáveis, Tipos e Funções",
+        "items": [
+          {
+            "label": "const e let",
+            "description": "Quando o valor pode mudar e quando não deve."
+          },
+          {
+            "label": "Tipos básicos",
+            "description": "Número, texto e booleano, e por que \"62.90\" não é 62.9."
+          },
+          {
+            "label": "Funções",
+            "description": "Formatar preço e calcular desconto com funções que devolvem valor."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Arrays e Objetos (JSON)",
+        "items": [
+          {
+            "label": "Objeto como ficha",
+            "description": "Um livro descrito por propriedades e lido com ponto."
+          },
+          {
+            "label": "O formato JSON",
+            "description": "As regras que tornam o catálogo um texto válido."
+          },
+          {
+            "label": "filter, map e sort",
+            "description": "Selecionar, transformar e ordenar a lista sem laços manuais."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: DOM e Eventos",
+        "items": [
+          {
+            "label": "Criar elementos",
+            "description": "Montar o card de um livro com createElement e textContent."
+          },
+          {
+            "label": "Renderizar a lista",
+            "description": "Uma função que limpa e redesenha a vitrine inteira."
+          },
+          {
+            "label": "Eventos",
+            "description": "Ligar o menu de categoria e a ordenação à vitrine."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Fetch, Módulos e Organização",
+        "items": [
+          {
+            "label": "Dados fora do código",
+            "description": "Mover o catálogo para um arquivo .json servido por HTTP."
+          },
+          {
+            "label": "fetch com async/await",
+            "description": "Buscar o arquivo, conferir a resposta e tratar erro."
+          },
+          {
+            "label": "Módulos",
+            "description": "Dividir o projeto em arquivos com import e export."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para executar na sua própria vitrine. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "laptop",
+      "title": "Variáveis, Tipos e Funções",
+      "shortDescription": "Os blocos mínimos da linguagem, aplicados a preços de livros",
+      "introductionText": "Antes de mexer na página, você precisa dominar três coisas: guardar um valor, saber de que tipo ele é e empacotar uma operação em uma função reutilizável. Neste módulo você trabalha só no console do navegador e em um arquivo .js ligado a uma página vazia. O assunto é um único livro fictício, O Farol da Rua Torta, com preço original de R$ 69,90 e promocional de R$ 62,90 — e o objetivo é chegar a uma função que mostra esses preços formatados e o percentual de desconto.",
+      "sections": [
+        {
+          "title": "💻 Primeiros valores e primeiras funções",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "const, let e o console",
+              "code": "const titulo = 'O Farol da Rua Torta';",
+              "guidance": "Crie um arquivo script.js, ligue-o ao HTML com uma tag script no fim do body e declare o título, o autor e os dois preços do livro. Use const para o que não muda e let só quando for reatribuir. Mostre os valores com console.log e abra as ferramentas do desenvolvedor (F12) para vê-los.",
+              "tips": [
+                "Comece sempre com const. Se o navegador reclamar de atribuição a constante, aí sim troque por let — e pergunte-se se a reatribuição é mesmo necessária.",
+                "Evite var em código novo: ele ignora o escopo de bloco e causa surpresas que const e let não causam."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Tipos: número não é texto",
+              "code": "typeof 62.9 // 'number'",
+              "guidance": "Use typeof para verificar o tipo de cada variável. Depois compare 62.9 + 7 com '62.90' + 7: o primeiro soma, o segundo concatena e devolve '62.907'. Preço guardado como texto quebra qualquer cálculo; no catálogo, preços são sempre números.",
+              "tips": [
+                "Em JavaScript o separador decimal é o ponto. A vírgula de R$ 62,90 é só formatação de exibição, nunca parte do dado.",
+                "Se um número vier como texto, converta com Number('62.90') antes de calcular."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Função para formatar o preço",
+              "code": "function formatarPreco(valor) { ... }",
+              "guidance": "Escreva uma função que recebe um número e devolve o texto em reais. Dentro dela, use valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }), que já aplica o símbolo R$, a vírgula decimal e o ponto de milhar. Teste com 62.9 e com 1234.5.",
+              "tips": [
+                "Uma função que devolve valor (return) é mais útil que uma que só imprime: você pode usar o resultado em qualquer lugar, inclusive na página."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Calcular o desconto",
+              "code": "Math.round((1 - promo / original) * 100)",
+              "guidance": "Escreva calcularDesconto(original, promocional) devolvendo o percentual inteiro. Para 69.90 e 62.90 o resultado é 10. Em seguida, use template literal para montar uma frase: `De ${formatarPreco(original)} por ${formatarPreco(promo)} (-${desconto}%)`.",
+              "tips": [
+                "Faça 0.1 + 0.2 no console: o resultado é 0.30000000000000004. Números decimais têm imprecisão de ponto flutuante, por isso arredonde só no fim, na exibição.",
+                "Proteja a função: se o preço promocional for maior ou igual ao original, devolva 0 em vez de um desconto negativo."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que começar pelos fundamentos",
+      "highlights": [
+        {
+          "icon": "shield",
+          "title": "Tipo errado, conta errada",
+          "text": "Metade dos bugs de iniciante em loja virtual é preço tratado como texto. Saber o tipo de cada valor evita somas que viram concatenação."
+        },
+        {
+          "icon": "tools",
+          "title": "Função é ferramenta reutilizável",
+          "text": "formatarPreco e calcularDesconto vão ser chamadas em cada card da vitrine. Escrevê-las uma vez e testá-las isoladamente economiza tempo depois."
+        },
+        {
+          "icon": "search",
+          "title": "O console como laboratório",
+          "text": "Testar uma linha no console antes de colocá-la no arquivo é o hábito que mais acelera o aprendizado — e o primeiro lugar onde olhar quando algo quebra."
+        }
+      ],
+      "closingText": "Você já tem um livro descrito por variáveis e duas funções que transformam números em texto apresentável. Mas uma vitrine tem vinte livros, não um. No próximo módulo você agrupa esses dados em objetos e listas — o formato que o catálogo em JSON usa.",
+      "ctaTitle": "💻 Primeiro script funcionando!",
+      "ctaText": "Preço formatado e desconto calculado. Agora vamos sair de um livro para o catálogo inteiro.",
+      "nextButtonText": "Ir para Módulo 1: Arrays e Objetos (JSON)"
+    },
+    {
+      "id": 1,
+      "icon": "list",
+      "title": "Arrays e Objetos (JSON)",
+      "shortDescription": "O catálogo como lista de objetos e as três operações que mais se usa",
+      "introductionText": "Um objeto agrupa as propriedades de uma coisa; um array guarda várias coisas em ordem. Juntos, formam a estrutura de quase todo dado que circula na web — inclusive o catálogo da vitrine: uma lista de vinte livros, cada um com id, titulo, autor, preco_original, preco_promocional, lote e categoria. Neste módulo você escreve esse catálogo, entende as regras do formato JSON e aprende a filtrar, transformar e ordenar a lista com métodos de array.",
+      "sections": [
+        {
+          "title": "📋 Do livro ao catálogo",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Um livro como objeto",
+              "code": "livro.preco_promocional",
+              "guidance": "Substitua as variáveis soltas do módulo anterior por um único objeto livro com as sete propriedades do catálogo. Leia cada propriedade com ponto (livro.titulo) e reescreva a frase de preço usando o objeto. Depois passe o objeto inteiro para uma função descreverLivro(livro).",
+              "tips": [
+                "Ler uma propriedade que não existe devolve undefined, sem erro. Se aparecer undefined na tela, confira a grafia do nome da propriedade."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "O catálogo em formato JSON",
+              "code": "[ { \"id\": 1, \"titulo\": \"...\" }, ... ]",
+              "guidance": "Monte o catálogo fictício com vinte livros em quatro categorias (Lançamentos, Bichos e Amigos, Emoções e Identidade, Imaginação) e quatro lotes. Escreva-o seguindo as regras do JSON: chaves e textos entre aspas duplas, sem vírgula depois do último item, sem comentários. Valide colando o texto em JSON.parse no console.",
+              "tips": [
+                "Todo JSON é um literal JavaScript válido, mas nem todo objeto JavaScript é JSON válido: aspas simples, vírgula sobrando e comentários quebram o JSON.",
+                "JSON.parse transforma texto em objeto; JSON.stringify faz o caminho inverso."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "filter e map",
+              "code": "catalogo.filter((l) => l.categoria === 'Imaginação')",
+              "guidance": "Use filter para obter só os livros de uma categoria e confira o tamanho com .length. Depois use map para gerar uma lista de textos no formato 'Título — R$ 62,90'. Combine os dois: filtrar uma categoria e, sobre o resultado, mapear os textos.",
+              "tips": [
+                "filter e map não alteram o array original; devolvem um array novo. Isso permite filtrar várias vezes a partir do mesmo catálogo completo."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Ordenar por preço e por título",
+              "code": "[...catalogo].sort((a, b) => a.preco_promocional - b.preco_promocional)",
+              "guidance": "Ordene o catálogo pelo preço promocional do menor para o maior, depois do maior para o menor, e por fim por título em ordem alfabética com a.titulo.localeCompare(b.titulo, 'pt-BR'). Faça a cópia com o operador de espalhamento antes de ordenar.",
+              "tips": [
+                "sort altera o array em que é chamado. Sem a cópia, a ordem original do catálogo se perde.",
+                "Sem função de comparação, sort converte tudo em texto: [10, 9, 100].sort() devolve [10, 100, 9]."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que arrays e objetos são o centro",
+      "highlights": [
+        {
+          "icon": "grid",
+          "title": "O formato dos dados da web",
+          "text": "Produtos de loja, posts, resultados de busca: quase tudo chega ao navegador como uma lista de objetos em JSON. Ler essa estrutura é habilidade básica."
+        },
+        {
+          "icon": "sync",
+          "title": "Transformar sem destruir",
+          "text": "filter e map criam listas novas e preservam o catálogo original. É o que permite trocar de filtro quantas vezes quiser sem recarregar nada."
+        },
+        {
+          "icon": "gauge",
+          "title": "Ordenação com critério",
+          "text": "Saber que sort compara texto por padrão e altera o array evita a vitrine que ordena R$ 100 antes de R$ 9 e embaralha a lista original."
+        }
+      ],
+      "closingText": "O catálogo inteiro já pode ser filtrado e ordenado — mas só no console. O próximo passo é levar esse resultado para a página, em forma de cards, e deixar o usuário escolher o filtro e a ordem.",
+      "ctaTitle": "📋 Catálogo sob controle!",
+      "ctaText": "Você filtra, transforma e ordena a lista. Agora vamos desenhar a vitrine na tela.",
+      "nextButtonText": "Ir para Módulo 2: DOM e Eventos"
+    },
+    {
+      "id": 2,
+      "icon": "bolt",
+      "title": "DOM e Eventos",
+      "shortDescription": "Transformar dados em cards e fazer a vitrine responder ao usuário",
+      "introductionText": "O DOM é a representação da página que o JavaScript consegue ler e alterar. Com ele você cria elementos, preenche textos e responde a cliques e escolhas em menus. Neste módulo a vitrine ganha forma: cada livro do catálogo vira um card com título, autor, preço original riscado, preço promocional e selo de desconto; um menu filtra por categoria e outro ordena. A regra que guia tudo é uma só — os dados mandam, e a tela é redesenhada a partir deles.",
+      "sections": [
+        {
+          "title": "⚡ A vitrine na tela",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Montar um card",
+              "code": "document.createElement('article')",
+              "guidance": "Escreva criarCard(livro), que cria um article com um h3 para o título, um parágrafo para o autor, um elemento del para o preço original, um strong para o promocional e um span com o desconto. Preencha tudo com textContent e devolva o article. Adicione um card de teste à página com appendChild.",
+              "tips": [
+                "Prefira textContent a innerHTML para inserir dados: textContent trata tudo como texto e não executa marcação que venha dentro do dado.",
+                "Guarde o id do livro em um atributo data-id no card. Ele será útil quando a vitrine ganhar botões."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Renderizar a lista inteira",
+              "code": "function renderizar(lista) { ... }",
+              "guidance": "Crie renderizar(lista), que localiza o contêiner da vitrine com querySelector, limpa o conteúdo anterior com replaceChildren() e adiciona um card para cada livro com forEach. Mostre também a contagem de itens exibidos. Chame renderizar(catalogo) ao carregar a página.",
+              "tips": [
+                "Trate a lista vazia: se o filtro não encontrar nada, mostre uma mensagem em vez de uma área em branco."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Filtrar por categoria com um evento",
+              "code": "select.addEventListener('change', ...)",
+              "guidance": "Adicione um select com a opção Todas e uma opção por categoria. Gere as opções a partir dos próprios dados: new Set(catalogo.map((l) => l.categoria)) devolve as categorias sem repetição. No evento change, leia event.target.value, filtre o catálogo e chame renderizar com o resultado.",
+              "tips": [
+                "Gerar o menu a partir dos dados garante que uma categoria nova no catálogo apareça no filtro sem mexer no HTML."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Combinar filtro e ordenação",
+              "code": "const estado = { categoria: 'todas', ordem: 'relevancia' };",
+              "guidance": "Adicione um segundo select de ordenação (menor preço, maior preço, título). Guarde as escolhas do usuário em um objeto estado e escreva atualizarVitrine(), que parte sempre do catálogo completo, aplica o filtro, aplica a ordem e chama renderizar. Os dois eventos apenas atualizam o estado e chamam atualizarVitrine().",
+              "tips": [
+                "Se cada evento ordenar ou filtrar o que já está na tela, a segunda escolha desfaz a primeira. Partir do catálogo completo a cada mudança elimina esse bug.",
+                "Para destacar os maiores descontos, acrescente a opção de ordenar pelo resultado de calcularDesconto."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que pensar em renderizar a partir dos dados",
+      "highlights": [
+        {
+          "icon": "sync",
+          "title": "Uma fonte, uma tela",
+          "text": "A vitrine é sempre o resultado de catálogo + estado. Não existe chance de o menu dizer uma categoria e os cards mostrarem outra."
+        },
+        {
+          "icon": "shield",
+          "title": "textContent por padrão",
+          "text": "Inserir dados como texto, e não como HTML, fecha a porta para conteúdo malicioso vindo de um catálogo externo."
+        },
+        {
+          "icon": "list",
+          "title": "Menu que acompanha os dados",
+          "text": "Opções geradas a partir do catálogo nunca ficam desatualizadas. Adicionou categoria no JSON, ela aparece no filtro."
+        }
+      ],
+      "closingText": "A vitrine já funciona: cards gerados a partir dos dados, filtro por categoria, preço promocional com desconto e ordenação. Mas o catálogo ainda está escrito dentro do script. No último módulo você o tira de lá, carrega-o como arquivo e organiza o código como um projeto de verdade.",
+      "ctaTitle": "⚡ Vitrine interativa!",
+      "ctaText": "Filtro e ordenação funcionando juntos. Agora vamos separar dados e código.",
+      "nextButtonText": "Ir para Módulo 3: Fetch, Módulos e Organização"
+    },
+    {
+      "id": 3,
+      "icon": "sitemap",
+      "title": "Fetch, Módulos e Organização",
+      "shortDescription": "Carregar o catálogo como arquivo e dividir o projeto em partes",
+      "introductionText": "Em uma loja real, o catálogo não fica escrito no JavaScript: ele vem de um arquivo ou de um servidor e muda sem que alguém precise editar código. Neste módulo você move os dados para catalogo.json, carrega-os com fetch, trata o carregamento e o erro, e divide o script em módulos com responsabilidades claras. É a forma que o projeto precisa ter para continuar compreensível quando crescer.",
+      "sections": [
+        {
+          "title": "🗂️ Dados de fora, código em partes",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Mover o catálogo para um arquivo",
+              "guidance": "Recorte o array do script e salve-o como catalogo.json, na mesma pasta do HTML. Abra a pasta em um servidor local (a extensão de servidor do seu editor ou python3 -m http.server) e acesse a página por http://localhost, não pelo duplo clique no arquivo.",
+              "tips": [
+                "Aberta como file://, a página bloqueia fetch e módulos por regras de segurança do navegador. Os erros de CORS no console quase sempre significam isso."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "fetch com async/await",
+              "code": "const resposta = await fetch('./catalogo.json');",
+              "guidance": "Escreva a função assíncrona carregarCatalogo(). Faça o fetch, verifique resposta.ok e, se estiver tudo certo, devolva await resposta.json(), que já converte o texto em array de objetos. Se resposta.ok for falso, lance um erro com o código resposta.status.",
+              "tips": [
+                "fetch só rejeita a promessa em falha de rede. Um 404 chega como resposta normal com ok igual a false — por isso a verificação é obrigatória."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Carregando, pronto e erro",
+              "code": "try { ... } catch (erro) { ... }",
+              "guidance": "Antes do fetch, mostre a mensagem Carregando catálogo… na vitrine. Envolva a chamada em try/catch: no sucesso, guarde os dados e chame atualizarVitrine(); no erro, mostre uma mensagem clara e registre o detalhe com console.error. Teste o erro renomeando o arquivo por um instante.",
+              "tips": [
+                "No painel Rede das ferramentas do desenvolvedor, ative a limitação de velocidade para ver a mensagem de carregamento de verdade."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Dividir em módulos",
+              "code": "<script type=\"module\" src=\"./js/main.js\"></script>",
+              "guidance": "Separe o código em quatro arquivos dentro de uma pasta js: dados.js (carregarCatalogo), formatar.js (formatarPreco e calcularDesconto), vitrine.js (criarCard e renderizar) e main.js (estado, eventos e inicialização). Exporte com export, importe com import { formatarPreco } from './formatar.js' e carregue só o main.js com type=\"module\".",
+              "tips": [
+                "Em módulos nativos do navegador, o caminho do import precisa começar com ./, ../ ou / e incluir a extensão .js.",
+                "Módulos são adiados por padrão e rodam em modo estrito, então o script não precisa mais ficar no fim do body."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que organização faz parte do básico",
+      "highlights": [
+        {
+          "icon": "globe",
+          "title": "Dados que mudam sem deploy de código",
+          "text": "Com o catálogo em arquivo, trocar um preço ou incluir um livro é editar o JSON. O mesmo fetch funciona quando o arquivo passar a vir de uma API."
+        },
+        {
+          "icon": "folder",
+          "title": "Cada arquivo, uma responsabilidade",
+          "text": "Problema na formatação? Abra formatar.js. Card desalinhado? vitrine.js. A divisão reduz o lugar onde procurar a um arquivo."
+        },
+        {
+          "icon": "gauge",
+          "title": "Três estados, não um",
+          "text": "Uma vitrine que só trata o sucesso parece pronta no seu computador e fica em branco na primeira conexão lenta ou arquivo faltando."
+        }
+      ],
+      "closingText": "Você saiu de uma variável no console para uma vitrine completa: dados em JSON carregados com fetch, cards gerados pelo DOM, filtro por categoria, preço promocional com desconto e ordenação, tudo dividido em módulos. É o mesmo fluxo — buscar dados, transformar, desenhar e reagir — que está por trás de frameworks como React e Vue.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Sua vitrine carrega dados, filtra, ordena e está organizada em módulos. O próximo passo natural é aprofundar em CSS responsivo ou partir para um framework de componentes.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Qual declaração é a mais adequada para o título de um livro que não será reatribuído?",
+      "explanation": "const declara uma variável que não pode ser reatribuída, o que comunica a intenção e evita mudanças acidentais. let é para valores que serão reatribuídos. var tem escopo de função e é evitado em código novo, e uma atribuição sem declaração é erro em modo estrito.",
+      "options": [
+        {
+          "text": "const titulo = 'O Farol da Rua Torta';",
+          "isCorrect": true
+        },
+        {
+          "text": "var titulo = 'O Farol da Rua Torta';",
+          "isCorrect": false
+        },
+        {
+          "text": "titulo = 'O Farol da Rua Torta';",
+          "isCorrect": false
+        },
+        {
+          "text": "let const titulo = 'O Farol da Rua Torta';",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Qual é o resultado de '62.90' + 7 em JavaScript?",
+      "explanation": "Quando um dos operandos do + é texto, o JavaScript concatena em vez de somar: o resultado é o texto '62.907'. Por isso preços devem ser guardados como número. Para somar, seria preciso converter antes com Number('62.90').",
+      "options": [
+        {
+          "text": "'62.907'",
+          "isCorrect": true
+        },
+        {
+          "text": "69.9",
+          "isCorrect": false
+        },
+        {
+          "text": "Um erro de tipo",
+          "isCorrect": false
+        },
+        {
+          "text": "NaN",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Qual chamada formata 62.9 como R$ 62,90?",
+      "explanation": "toLocaleString com a localidade pt-BR e as opções style: 'currency' e currency: 'BRL' aplica símbolo, vírgula decimal e separador de milhar. toFixed(2) devolve '62.90' com ponto e sem símbolo; String apenas converte; Math.round arredonda para inteiro.",
+      "options": [
+        {
+          "text": "(62.9).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })",
+          "isCorrect": true
+        },
+        {
+          "text": "(62.9).toFixed(2)",
+          "isCorrect": false
+        },
+        {
+          "text": "String(62.9)",
+          "isCorrect": false
+        },
+        {
+          "text": "Math.round(62.9)",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Qual destes trechos é JSON válido?",
+      "explanation": "JSON exige chaves e textos entre aspas duplas, não aceita vírgula depois do último item e não permite comentários. Só a primeira alternativa segue todas as regras; as outras usam chave sem aspas, aspas simples ou vírgula sobrando.",
+      "options": [
+        {
+          "text": "{ \"titulo\": \"Pipoca no Espaço\", \"lote\": 2 }",
+          "isCorrect": true
+        },
+        {
+          "text": "{ titulo: \"Pipoca no Espaço\", lote: 2 }",
+          "isCorrect": false
+        },
+        {
+          "text": "{ 'titulo': 'Pipoca no Espaço', 'lote': 2 }",
+          "isCorrect": false
+        },
+        {
+          "text": "{ \"titulo\": \"Pipoca no Espaço\", \"lote\": 2, }",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "O que catalogo.filter((l) => l.categoria === 'Imaginação') faz com o array catalogo?",
+      "explanation": "filter devolve um array novo com os itens que passam no teste e não altera o array original. Por isso é possível filtrar várias vezes a partir do mesmo catálogo completo. Não remove itens do original, não devolve um único item (isso é find) e não ordena.",
+      "options": [
+        {
+          "text": "Devolve um novo array só com os livros dessa categoria, sem alterar o original",
+          "isCorrect": true
+        },
+        {
+          "text": "Remove do catalogo os livros de outras categorias",
+          "isCorrect": false
+        },
+        {
+          "text": "Devolve apenas o primeiro livro dessa categoria",
+          "isCorrect": false
+        },
+        {
+          "text": "Ordena o catalogo colocando essa categoria primeiro",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Por que [10, 9, 100].sort() devolve [10, 100, 9]?",
+      "explanation": "Sem função de comparação, sort converte os elementos em texto e compara caractere a caractere, e '1' vem antes de '9'. Para ordenar números, passe (a, b) => a - b. Lembre também que sort altera o próprio array, por isso a vitrine ordena uma cópia.",
+      "options": [
+        {
+          "text": "Porque, sem função de comparação, sort compara os valores como texto",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque sort ordena do maior para o menor por padrão",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque sort mantém a ordem em que os itens foram inseridos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque arrays de números não podem ser ordenados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Por que preferir textContent a innerHTML para escrever o título do livro no card?",
+      "explanation": "textContent insere o valor como texto puro, então qualquer marcação dentro do dado aparece literalmente e não é interpretada. innerHTML interpreta HTML, o que abre espaço para conteúdo malicioso quando os dados vêm de fora. Não há diferença relevante de estilo nem de suporte entre navegadores.",
+      "options": [
+        {
+          "text": "Porque trata o dado como texto e não interpreta marcação que venha nele",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque innerHTML não funciona dentro de article",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque textContent aplica o CSS automaticamente",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque innerHTML foi removido dos navegadores modernos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Qual evento de um select é o adequado para refiltrar a vitrine quando o usuário escolhe outra categoria?",
+      "explanation": "O evento change dispara quando o valor do select muda por escolha do usuário. click dispara também ao apenas abrir o menu, submit pertence a formulários e load à página ou a recursos carregados.",
+      "options": [
+        {
+          "text": "change",
+          "isCorrect": true
+        },
+        {
+          "text": "click",
+          "isCorrect": false
+        },
+        {
+          "text": "submit",
+          "isCorrect": false
+        },
+        {
+          "text": "load",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "A vitrine tem filtro e ordenação. Qual abordagem evita que uma escolha desfaça a outra?",
+      "explanation": "Guardar as escolhas em um objeto de estado e, a cada mudança, partir do catálogo completo, filtrar, ordenar e renderizar garante que o resultado sempre reflita as duas escolhas. Trabalhar sobre o que já está na tela acumula ou perde operações; recarregar a página descarta as escolhas.",
+      "options": [
+        {
+          "text": "Guardar as escolhas em um estado e redesenhar sempre a partir do catálogo completo",
+          "isCorrect": true
+        },
+        {
+          "text": "Cada evento filtra ou ordena os cards que já estão na tela",
+          "isCorrect": false
+        },
+        {
+          "text": "Recarregar a página a cada mudança de menu",
+          "isCorrect": false
+        },
+        {
+          "text": "Esconder os cards com CSS em vez de redesenhar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "O fetch de catalogo.json recebeu um 404. O que acontece se o código não verificar resposta.ok?",
+      "explanation": "fetch só rejeita a promessa em falha de rede; um 404 chega como resposta normal, com ok igual a false e status 404. Sem a verificação, o código tenta seguir como se houvesse dados e falha mais adiante com um erro menos claro. Por isso o passo confere resposta.ok e lança um erro com o status.",
+      "options": [
+        {
+          "text": "A promessa é resolvida normalmente e o código segue como se houvesse dados",
+          "isCorrect": true
+        },
+        {
+          "text": "O fetch rejeita a promessa automaticamente",
+          "isCorrect": false
+        },
+        {
+          "text": "O navegador mostra uma página de erro no lugar da vitrine",
+          "isCorrect": false
+        },
+        {
+          "text": "O fetch tenta de novo até encontrar o arquivo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Por que a vitrine com fetch e módulos não funciona abrindo o HTML com duplo clique?",
+      "explanation": "Aberta pelo protocolo file://, a página esbarra nas regras de segurança do navegador (CORS) para módulos e requisições, e os erros aparecem no console. A solução é servir a pasta por um servidor local e acessar por http://localhost. Não tem relação com versão do JavaScript nem com o tamanho do JSON.",
+      "options": [
+        {
+          "text": "Porque pelo protocolo file:// o navegador bloqueia módulos e requisições por segurança",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque o JSON precisa ser convertido em .js antes",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque fetch só funciona em navegadores de celular",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o arquivo HTML precisa ter mais de um script",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Qual linha importa corretamente formatarPreco de um módulo nativo do navegador?",
+      "explanation": "Em módulos nativos, o caminho do import precisa começar com ./, ../ ou / e incluir a extensão. Exportações nomeadas são importadas entre chaves. Omitir a extensão ou o ./ funciona em alguns empacotadores, mas não no navegador; require pertence a outro sistema de módulos.",
+      "options": [
+        {
+          "text": "import { formatarPreco } from './formatar.js';",
+          "isCorrect": true
+        },
+        {
+          "text": "import { formatarPreco } from 'formatar';",
+          "isCorrect": false
+        },
+        {
+          "text": "import formatarPreco from formatar.js;",
+          "isCorrect": false
+        },
+        {
+          "text": "const formatarPreco = require('./formatar');",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "A vitrine de uma livraria infantil fictícia: um catálogo de vinte livros em JSON carregado com fetch e transformado em cards no DOM, com preço original riscado, preço promocional, selo de desconto, filtro por categoria e ordenação por preço ou título. O código fica dividido em módulos e trata carregamento e erro.",
+    "highlights": [
+      "Vitrine gerada a partir de um arquivo JSON",
+      "Filtro por categoria e ordenação combinados",
+      "Projeto organizado em módulos, sem framework"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "JavaScript é usado como linguagem do lado do cliente em 98,9% de todos os sites, segundo o levantamento contínuo da W3Techs. Na pesquisa de desenvolvedores do Stack Overflow de 2025, ele aparece como a linguagem mais usada: 66% de todos os respondentes e 68,8% dos desenvolvedores profissionais declararam trabalhar com ele.",
+      "Para quem está começando, isso significa que o tempo investido em JavaScript não fica preso a um nicho: o mesmo fundamento serve para sites, lojas virtuais, painéis e para os frameworks que você vai encontrar depois. E o fluxo aprendido aqui — buscar dados em JSON, transformar e desenhar na tela — é o que se repete em praticamente todo projeto web."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Lojas virtuais e catálogos",
+        "description": "Vitrines com filtro, ordenação e preço promocional montadas a partir de listas de produtos."
+      },
+      {
+        "label": "Sites institucionais",
+        "description": "Listas de eventos, notícias ou cardápios carregadas de um arquivo em vez de escritas à mão."
+      },
+      {
+        "label": "Base para frameworks",
+        "description": "React, Vue e similares pressupõem arrays, objetos, eventos e fetch — este é o pré-requisito."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem já sabe HTML e CSS",
+        "description": "Monta páginas estáticas e quer fazê-las reagir a dados e ao usuário."
+      },
+      {
+        "label": "Quem está começando a programar",
+        "description": "Quer aprender lógica com um resultado visível no navegador desde o primeiro passo."
+      },
+      {
+        "label": "Quem copia scripts sem entender",
+        "description": "Já colou trechos prontos e quer saber o que cada linha faz."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Praticamente todo site e toda loja virtual executa JavaScript no navegador, de páginas de pequenos negócios a grandes plataformas de comércio eletrônico. Carregar uma lista de produtos e renderizá-la com filtro e ordenação é uma das tarefas mais comuns do desenvolvimento web, e a habilidade se transfere entre setores e tamanhos de empresa.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "MDN Web Docs — Working with JSON",
+      "url": "https://developer.mozilla.org/docs/Learn_web_development/Core/Scripting/JSON"
+    },
+    {
+      "label": "MDN Web Docs — Módulos JavaScript (guia)",
+      "url": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Modules"
+    },
+    {
+      "label": "Stack Overflow Developer Survey 2025 — Technology",
+      "url": "https://survey.stackoverflow.co/2025/technology/"
+    },
+    {
+      "label": "W3Techs — Usage statistics of JavaScript as client-side programming language on websites",
+      "url": "https://w3techs.com/technologies/details/cp-javascript/"
+    }
+  ]
 }

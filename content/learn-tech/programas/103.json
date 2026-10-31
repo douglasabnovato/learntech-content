@@ -3,8 +3,809 @@
   "image": "https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg",
   "category": "Frontend",
   "categoryFilter": "frontend",
-  "title": "Vue.js 3: Guia Completo para Desenvolvimento Ágil",
-  "lessons": "22+ Lições",
-  "duration": "16hr 00min",
-  "access": "Acesso Livre"
+  "title": "Vue 3 na Prática: Composition API, Rotas e Pinia",
+  "lessons": "16 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Intermediário",
+  "description": "Construa uma aplicação Vue 3 completa usando a Composition API: estado reativo com ref, reactive, computed e watch, componentes que conversam por props e eventos, rotas com Vue Router, estado compartilhado com Pinia e build com Vite. O projeto é um sistema de reserva de salas de estudo, feito do zero e entendendo o papel de cada peça.",
+  "letslearn": [
+    "Declarar estado com ref e reactive e saber quando usar cada um",
+    "Derivar valores com computed e reagir a mudanças com watch",
+    "Criar componentes com props, eventos e as diretivas do template",
+    "Organizar páginas com Vue Router e compartilhar estado com Pinia",
+    "Criar, rodar e gerar o build de produção de um projeto com Vite"
+  ],
+  "curriculum": "Da reatividade ao app com rotas e store",
+  "about": "O programa começa no comando que cria o projeto e termina com uma aplicação de várias páginas pronta para publicar. Primeiro vem o sistema de reatividade do Vue, que sustenta todo o resto. Depois os componentes e o template, em seguida as rotas e, por último, o estado compartilhado e o build. Quem fez React: Componentes, Estado e a Primeira Aplicação vai reconhecer os problemas, porque componentes, estado e listas existem nos dois. As soluções do Vue são diferentes, e o programa compara as duas quando a comparação ajuda a entender. Bibliotecas só entram depois que o problema que elas resolvem aparece no projeto.",
+  "materials": [
+    "Projeto de reserva de salas com uma versão por módulo",
+    "Tabela de consulta: ref, reactive, computed e watch",
+    "Checklist de revisão de componente Vue",
+    "Lista de erros comuns de reatividade e como reconhecê-los"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Projeto e Reatividade",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Componentes, Props e Diretivas",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Páginas com Vue Router",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Estado Compartilhado com Pinia",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Frontend",
+    "mainTitle": "Do primeiro ref ao app com rotas e store: Vue 3 como ele é escrito hoje.",
+    "introductionParagraphs": [
+      {
+        "title": "Reatividade é o centro do Vue",
+        "text": "No Vue você não avisa que algo mudou. O framework **rastreia** quais dados cada componente leu durante a renderização e, quando um desses dados muda, **dispara** a atualização só de quem depende dele. Quase todo o resto, de computed a Pinia, é construído sobre esse mecanismo. Por isso ele é o primeiro assunto do programa."
+      },
+      {
+        "title": "Composition API e script setup",
+        "text": "A documentação oficial usa Single-File Components com `<script setup>` como forma principal de escrever a Composition API, e o projeto gerado pelo `create-vue` já vem assim. Neste programa todo o código segue esse formato. A Options API, mais antiga, aparece só quando você precisar ler código legado."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não usa Nuxt, renderização no servidor nem biblioteca de componentes visuais. O objetivo é entender o Vue e as duas bibliotecas oficiais que quase todo projeto adota, Vue Router e Pinia, a ponto de você conseguir decidir sozinho quando vale a pena acrescentar mais ferramentas."
+      }
+    ],
+    "courseAboutTitle": "Um segundo framework, aprendido pelo que tem de próprio",
+    "courseAboutDescription": "Muita gente aprende Vue como se fosse React com outra sintaxe e se perde justamente no que o diferencia: reatividade por rastreamento, templates com diretivas e estado que pode ser alterado diretamente. Este programa parte dessas diferenças. No final você escreve Vue idiomático e sabe explicar a razão de cada escolha.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Projeto e Reatividade",
+        "items": [
+          {
+            "label": "create-vue e Vite",
+            "description": "Criar o projeto oficial e entender cada pasta gerada."
+          },
+          {
+            "label": "ref e reactive",
+            "description": "As duas formas de declarar estado e as limitações de reactive."
+          },
+          {
+            "label": "computed",
+            "description": "Valores derivados com cache que se recalculam quando precisam."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Componentes, Props e Diretivas",
+        "items": [
+          {
+            "label": "Props e emits",
+            "description": "Dados descem por props e eventos sobem por emits."
+          },
+          {
+            "label": "Diretivas",
+            "description": "v-for, v-if, v-show e v-bind no lugar certo."
+          },
+          {
+            "label": "v-model",
+            "description": "Formulário ligado ao estado nos dois sentidos."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Páginas com Vue Router",
+        "items": [
+          {
+            "label": "Rotas e RouterView",
+            "description": "Mapear URLs para componentes de página."
+          },
+          {
+            "label": "Parâmetros dinâmicos",
+            "description": "Uma página de detalhe que serve para qualquer sala."
+          },
+          {
+            "label": "Navegação e carregamento sob demanda",
+            "description": "Mudar de página pelo código, criar a página 404 e dividir o bundle."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Estado Compartilhado com Pinia",
+        "items": [
+          {
+            "label": "defineStore",
+            "description": "Uma store no formato setup, com o que você já sabe de Composition API."
+          },
+          {
+            "label": "storeToRefs e watch",
+            "description": "Desestruturar sem perder a reatividade e persistir dados."
+          },
+          {
+            "label": "Build de produção",
+            "description": "Gerar a pasta dist e conferir o resultado antes de publicar."
+          }
+        ]
+      }
+    ],
+    "transitionText": "A seguir está o conteúdo completo de cada módulo, com os passos práticos para fazer no seu próprio projeto. No final, um quiz com a explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "laptop",
+      "title": "Projeto e Reatividade",
+      "shortDescription": "create-vue, script setup, ref, reactive e computed",
+      "introductionText": "Neste módulo você cria o projeto de reserva de salas e escreve a primeira tela: a lista de salas com um filtro por capacidade. O objetivo vai além de mostrar a lista. É entender por que um ref precisa de .value no script e não precisa no template, por que reactive perde a reatividade quando é desestruturado e por que o filtro deve ser um computed e não uma função chamada no template. Os dados são fictícios: seis salas com nome, andar, capacidade e recursos.",
+      "sections": [
+        {
+          "title": "⚙️ Criando o projeto e o primeiro estado",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Criar o projeto com create-vue",
+              "code": "npm create vue@latest",
+              "guidance": "Rode o comando oficial de criação e responda Sim para Vue Router e Pinia. Para o resto, deixe Não por enquanto. O projeto gerado usa o Vite como ferramenta de build. Depois rode npm install e npm run dev, abra o endereço que aparece no terminal e altere um texto no App.vue: a página se atualiza sem recarregar, porque o Vite troca só o módulo alterado.",
+              "tips": [
+                "A documentação oficial pede Node.js ^22.18.0 ou >=24.12.0. Se a criação falhar logo no início, confira a versão com node -v antes de qualquer outra coisa.",
+                "Se não souber se precisa de uma opção do assistente, responda Não. Qualquer uma delas pode ser instalada depois."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Ler um Single-File Component",
+              "code": "<script setup> + <template> + <style scoped>",
+              "guidance": "Abra um componente gerado e identifique os três blocos. Tudo o que é importado ou declarado no nível de cima do <script setup> já pode ser usado no template, sem return. Crie o arquivo ListaSalas.vue com um array fixo de salas e mostre a quantidade na tela.",
+              "tips": [
+                "O atributo scoped faz o CSS valer só para aquele componente. É o que permite dar a uma classe o nome .card em dois arquivos sem conflito."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "ref, reactive e a armadilha da desestruturação",
+              "code": "const capacidadeMinima = ref(1)",
+              "guidance": "Declare o filtro de capacidade com ref. No script, leia e altere o valor por capacidadeMinima.value. No template, use só capacidadeMinima, porque o Vue desembrulha o ref sozinho. Agora teste reactive: crie const filtros = reactive({ andar: 'todos' }), desestruture com let { andar } = filtros e altere andar. A tela não muda, porque a variável desestruturada perdeu a ligação com o objeto reativo.",
+              "tips": [
+                "reactive só aceita objetos, arrays, Map e Set. Também não é possível trocar o objeto inteiro sem perder o rastreamento. Por isso a documentação recomenda ref como API principal.",
+                "Um ref que guarda um objeto também é reativo em profundidade: filtros.value.andar = '2' funciona."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "computed para o filtro",
+              "code": "const salasVisiveis = computed(() => ...)",
+              "guidance": "Crie salasVisiveis como computed que filtra as salas pela capacidade mínima. O computed guarda o resultado em cache e só refaz o cálculo quando um ref que ele leu muda. Uma função chamada no template seria executada de novo a cada renderização do componente, mesmo que o filtro não tivesse mudado.",
+              "tips": [
+                "Um computed deve só calcular e devolver o valor. Requisição, alteração de outro estado ou gravação no localStorage ficam para o watch, que você vai ver no Módulo 3."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que a reatividade vem primeiro",
+      "highlights": [
+        {
+          "icon": "sync",
+          "title": "Rastreamento automático",
+          "text": "O Vue registra quais refs cada componente leu ao renderizar e atualiza só esses componentes quando os valores mudam. Você não precisa declarar dependências à mão."
+        },
+        {
+          "icon": "gauge",
+          "title": "Cálculo com cache",
+          "text": "Um computed não refaz o cálculo se nada do que ele leu mudou. Em listas grandes, isso evita refiltrar tudo a cada clique em outra parte da tela."
+        },
+        {
+          "icon": "shield",
+          "title": "Erros previsíveis",
+          "text": "Quase todo bug de tela que não atualiza no Vue vem de esquecer o .value no script ou de desestruturar um reactive. Conhecendo as duas causas, você encontra o problema rápido."
+        }
+      ],
+      "closingText": "O projeto está rodando e a lista de salas responde ao filtro. Por enquanto tudo está num componente só. No próximo módulo a tela é dividida em componentes que recebem dados por props, avisam o componente pai por eventos e usam as diretivas do template.",
+      "ctaTitle": "⚙️ Reatividade entendida!",
+      "ctaText": "Você já sabe declarar e derivar estado. Agora vamos dividir a interface em componentes.",
+      "nextButtonText": "Ir para Módulo 1: Componentes, Props e Diretivas"
+    },
+    {
+      "id": 1,
+      "icon": "grid",
+      "title": "Componentes, Props e Diretivas",
+      "shortDescription": "defineProps, defineEmits, v-for, v-if e v-model",
+      "introductionText": "Um componente Vue recebe dados por props e avisa o componente pai por eventos. O fluxo é de mão única: o filho nunca altera uma prop diretamente. Neste módulo a lista vira um conjunto de SalaCard, cada cartão ganha um botão Reservar que emite um evento e aparece o formulário de reserva, com campos ligados ao estado por v-model. Também é aqui que você aprende as diretivas, que são a forma do template de repetir, esconder e ligar atributos.",
+      "sections": [
+        {
+          "title": "🧱 Componentes que conversam",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Props com defineProps",
+              "code": "const props = defineProps({ sala: Object })",
+              "guidance": "Crie o SalaCard.vue recebendo a sala como prop e use o componente dentro da lista. Declare o tipo da prop: se ela vier errada, o Vue mostra um aviso no console em modo de desenvolvimento. Tente alterar props.sala.nome dentro do cartão e leia o aviso. A prop pertence a quem a enviou.",
+              "tips": [
+                "defineProps e defineEmits são macros do compilador. Funcionam só dentro de <script setup> e não precisam de import."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Eventos com defineEmits",
+              "code": "const emit = defineEmits(['reservar'])",
+              "guidance": "Faça o botão do cartão chamar emit('reservar', sala.id). Na lista, escute com @reservar e guarde o id da sala escolhida num ref. O cartão não sabe o que acontece depois do clique. Ele só informa o que o usuário fez, e por isso pode ser usado em qualquer outra tela.",
+              "tips": [
+                "Dê nome de ação ao evento, como reservar ou remover, e não de detalhe de interface, como clicouBotao. O componente pai está interessado no que o usuário quis fazer."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "v-for, :key, v-if e v-show",
+              "code": "<SalaCard v-for=\"sala in salasVisiveis\" :key=\"sala.id\" />",
+              "guidance": "Repita o cartão com v-for e passe o id da sala em :key. Quando o filtro não encontrar nenhuma sala, use v-if para mostrar uma mensagem de lista vazia. Use v-show para o selo Lotada, que liga e desliga muitas vezes. v-if cria e destrói o elemento, enquanto v-show só alterna o display no CSS.",
+              "tips": [
+                "Não coloque v-if e v-for no mesmo elemento. No Vue 3 o v-if é avaliado primeiro e não tem acesso à variável do laço. Para filtrar, use o computed do módulo anterior."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Formulário de reserva com v-model",
+              "code": "<input v-model.trim=\"nome\"> <input type=\"number\" v-model.number=\"pessoas\">",
+              "guidance": "Crie o FormReserva.vue com nome, data, horário e número de pessoas, cada campo ligado a um ref por v-model. O modificador .trim remove os espaços nas pontas e .number converte o texto em número. Crie um computed formValido que confere se o número de pessoas cabe na capacidade da sala, e use-o para desabilitar o botão de enviar.",
+              "tips": [
+                "Sem .number, o valor de um input type=number chega como texto. Nesse caso a comparação '12' > 8 converte o texto e funciona, mas '12' + 1 dá '121'. O modificador evita esse tipo de erro."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que props descem e eventos sobem",
+      "highlights": [
+        {
+          "icon": "sitemap",
+          "title": "Um dono para cada dado",
+          "text": "Se só o componente pai altera o dado, um valor errado na tela tem uma única origem possível. Quando o filho também altera, você precisa investigar dois lugares."
+        },
+        {
+          "icon": "grid",
+          "title": "Componente reaproveitável",
+          "text": "Um cartão que só recebe props e emite eventos não depende da tela onde está. A mesma peça serve para a lista de salas e para a página de minhas reservas."
+        },
+        {
+          "icon": "list",
+          "title": "Template legível",
+          "text": "As diretivas mostram a intenção logo na marcação. v-for indica repetição, v-if indica uma condição e v-model indica que o campo está ligado ao estado."
+        }
+      ],
+      "closingText": "A interface está dividida em componentes com entradas e saídas claras, e o formulário valida a reserva. Ainda é uma página só. No próximo módulo o app ganha URLs: lista de salas, detalhe de cada sala, minhas reservas e uma página 404.",
+      "ctaTitle": "🧱 Componentes conversando!",
+      "ctaText": "Props, eventos e diretivas funcionando. Agora vamos dar a cada tela o seu próprio endereço.",
+      "nextButtonText": "Ir para Módulo 2: Páginas com Vue Router"
+    },
+    {
+      "id": 2,
+      "icon": "globe",
+      "title": "Páginas com Vue Router",
+      "shortDescription": "Rotas, parâmetros, navegação pelo código e carregamento sob demanda",
+      "introductionText": "Uma aplicação de página única ainda precisa de URLs. Elas permitem compartilhar um link, usar o botão voltar e atualizar a página sem perder o lugar. O Vue Router associa cada caminho a um componente e troca o conteúdo sem recarregar a página. Neste módulo o projeto ganha quatro rotas: /salas, /salas/:id, /minhas-reservas e uma rota que captura qualquer outro endereço para mostrar a página 404.",
+      "sections": [
+        {
+          "title": "🧭 Uma URL para cada tela",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Configurar o router",
+              "code": "createRouter({ history: createWebHistory(), routes })",
+              "guidance": "Abra o src/router/index.js gerado pelo create-vue e declare as rotas. Confira no main.js que app.use(router) é chamado antes de mount. No App.vue, troque o conteúdo fixo por <RouterView />, que é onde a página da rota atual aparece, e monte o menu com <RouterLink to=\"/salas\">.",
+              "tips": [
+                "RouterLink troca de página sem recarregar. Uma tag <a> comum faz o navegador baixar a aplicação inteira de novo e o estado em memória se perde.",
+                "No modo createWebHistory o servidor de produção precisa devolver o index.html para qualquer caminho. Se não devolver, atualizar a página em /salas/3 mostra um 404 do servidor."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Rota dinâmica para o detalhe",
+              "code": "{ path: '/salas/:id', component: SalaDetalhe, props: true }",
+              "guidance": "Crie a página de detalhe com um parâmetro :id. Com props: true, o parâmetro chega ao componente como prop, e o componente não precisa saber que existe um router. A alternativa é ler o parâmetro com useRoute().params.id.",
+              "tips": [
+                "Ao ir de /salas/1 para /salas/2, o Vue reaproveita a mesma instância do componente. Código que só roda na montagem não roda de novo, então observe o id com watch ou use um computed."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Navegar pelo código",
+              "code": "const router = useRouter(); router.push('/minhas-reservas')",
+              "guidance": "Depois que o formulário confirmar a reserva, leve o usuário para a página de minhas reservas com router.push. useRouter devolve o router, que você usa para navegar. useRoute devolve a rota atual, que você usa para ler parâmetros e query.",
+              "tips": [
+                "Use router.replace em vez de push quando a tela anterior não deve aparecer de novo ao clicar em voltar, como uma página de confirmação."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Página 404 e carregamento sob demanda",
+              "code": "{ path: '/:pathMatch(.*)*', component: () => import('./NaoEncontrada.vue') }",
+              "guidance": "Coloque uma rota que captura qualquer caminho e mostra a página de não encontrado. Para as páginas menos acessadas, troque o import fixo por uma função que importa o componente. O Vite gera um arquivo separado para cada uma, e esse arquivo só é baixado quando o usuário entra na rota.",
+              "tips": [
+                "Comece carregando sob demanda as páginas que pouca gente abre. Já a página inicial deve vir no pacote principal, para não esperar um segundo download."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que rotas são parte do produto",
+      "highlights": [
+        {
+          "icon": "globe",
+          "title": "Endereço compartilhável",
+          "text": "Se cada sala tem a sua URL, o usuário pode mandar o link de uma sala específica. Sem rota, a pessoa que abrir o link precisa encontrar a sala de novo na lista."
+        },
+        {
+          "icon": "sitemap",
+          "title": "Página como componente",
+          "text": "Cada rota aponta para um componente de página, que é montado com os componentes do módulo anterior. A estrutura de pastas passa a seguir a estrutura de URLs."
+        },
+        {
+          "icon": "gauge",
+          "title": "Download menor",
+          "text": "Com carregamento sob demanda, o primeiro acesso baixa só a página que o usuário abriu. As outras são baixadas quando ele navega até elas."
+        }
+      ],
+      "closingText": "O app tem várias páginas, mas cada uma guarda o próprio estado. Quando você reserva uma sala na página de detalhe, a página de minhas reservas não fica sabendo. No último módulo esse dado passa para uma store do Pinia e fica disponível em todas as páginas.",
+      "ctaTitle": "🧭 Navegação pronta!",
+      "ctaText": "Rotas, parâmetros e página 404 funcionando. Falta compartilhar as reservas entre as páginas.",
+      "nextButtonText": "Ir para Módulo 3: Estado Compartilhado com Pinia"
+    },
+    {
+      "id": 3,
+      "icon": "folder",
+      "title": "Estado Compartilhado com Pinia",
+      "shortDescription": "Setup store, storeToRefs, persistência com watch e build",
+      "introductionText": "O Pinia é a biblioteca oficial de estado do Vue. Uma store setup é escrita com o que você já usou: ref vira estado, computed vira getter e função vira action. Neste módulo as reservas saem dos componentes e vão para uma store, um watch grava a lista no localStorage para que ela sobreviva a uma atualização da página, e o projeto termina com o build de produção feito pelo Vite.",
+      "sections": [
+        {
+          "title": "🗃️ Um lugar para as reservas",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Criar a store com defineStore",
+              "code": "export const useReservasStore = defineStore('reservas', () => { ... })",
+              "guidance": "Dentro da função, declare reservas como ref de array, totalPorSala como computed e as funções reservar e cancelar. Devolva tudo no return. Use a store no formulário para gravar e na página de minhas reservas para listar. As duas páginas passam a ler o mesmo dado.",
+              "tips": [
+                "Em uma setup store, todo o estado precisa estar no return. O Pinia não aceita estado privado, e deixar um ref de fora atrapalha o devtools e os plugins.",
+                "O nome segue a convenção use...Store, porque a função é usada como um composable."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Desestruturar com storeToRefs",
+              "code": "const { reservas } = storeToRefs(store); const { cancelar } = store",
+              "guidance": "Se você desestruturar a store diretamente, estado e getters perdem a reatividade, o mesmo problema que você viu com reactive no Módulo 0. Use storeToRefs para estado e getters. As actions podem ser desestruturadas direto da store, porque já estão ligadas a ela.",
+              "tips": [
+                "Se a dúvida for se algo é estado ou action, a regra é simples: dado passa por storeToRefs e função sai direto da store."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Persistir com watch",
+              "code": "watch(reservas, (lista) => { ... }, { deep: true })",
+              "guidance": "Dentro da store, comece reservas lendo o que está no localStorage e crie um watch que grava a lista sempre que ela mudar. Sem deep: true, o watch de um ref só é disparado quando você troca o .value inteiro. Um push no array não dispara. Teste: faça uma reserva, atualize a página e confira que ela continua lá.",
+              "tips": [
+                "watch serve para efeitos colaterais, como gravar, buscar dados ou registrar log. Valores derivados continuam no computed.",
+                "Use watchEffect quando quiser que as dependências sejam detectadas automaticamente. Use watch quando quiser escolher o que observar e receber o valor antigo e o novo."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Build de produção",
+              "code": "npm run build",
+              "guidance": "Gere o build e veja a pasta dist: o Vite minificou o código e separou em arquivos as páginas carregadas sob demanda. Rode npm run preview para testar a versão de produção no seu computador antes de publicar. Navegue por todas as rotas e atualize a página em cada uma.",
+              "tips": [
+                "O devtools do Vue e os avisos de props existem só em desenvolvimento. Teste também o build, porque o comportamento em produção pode ser diferente."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que uma store oficial",
+      "highlights": [
+        {
+          "icon": "folder",
+          "title": "Estado com endereço",
+          "text": "As reservas ficam num arquivo só. Qualquer página que precise delas importa a store, e você não precisa passar props por várias camadas de componentes."
+        },
+        {
+          "icon": "tools",
+          "title": "Sem sintaxe nova",
+          "text": "Uma setup store usa ref, computed e funções. Quem já domina a Composition API escreve uma store sem aprender outro conjunto de regras."
+        },
+        {
+          "icon": "search",
+          "title": "Inspeção no devtools",
+          "text": "O Vue DevTools mostra o estado de cada store e as alterações feitas nele. Para descobrir por que uma reserva sumiu, você consulta esse histórico."
+        }
+      ],
+      "closingText": "Você começou com um ref e terminou com uma aplicação de várias páginas: estado reativo, componentes com entradas e saídas claras, rotas com parâmetros, uma store compartilhada que persiste os dados e um build pronto para publicar. É com essas peças que se constrói a maioria das aplicações Vue que você vai encontrar no mercado.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você escreve Vue 3 idiomático, do ref ao build. Se quiser comparar com outra forma de organizar estado global, o próximo programa da trilha é Estado Global com Redux e Context API em Aplicações Reais.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Com const total = ref(0), como se altera o valor dentro do <script setup>?",
+      "explanation": "No JavaScript, o valor de um ref fica em .value, e é essa propriedade que permite ao Vue rastrear leituras e disparar atualizações. Só no template o ref é desembrulhado automaticamente. Atribuir direto a total não funciona, porque é uma const e trocaria o próprio ref. Não existe método set em um ref.",
+      "options": [
+        {
+          "text": "total.value++",
+          "isCorrect": true
+        },
+        {
+          "text": "total++",
+          "isCorrect": false
+        },
+        {
+          "text": "total.set(total + 1)",
+          "isCorrect": false
+        },
+        {
+          "text": "this.total++",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Por que let { andar } = reactive({ andar: '1' }) não atualiza a tela quando andar muda?",
+      "explanation": "Ao desestruturar uma propriedade primitiva de um objeto reactive, você recebe uma cópia do valor e perde a ligação com o proxy. A reatividade do Vue funciona pelo acesso às propriedades do objeto reativo. Essa é uma das limitações que levam a documentação a recomendar ref como API principal.",
+      "options": [
+        {
+          "text": "A variável desestruturada é uma cópia sem ligação com o proxy reativo",
+          "isCorrect": true
+        },
+        {
+          "text": "reactive não aceita strings como valor de propriedade",
+          "isCorrect": false
+        },
+        {
+          "text": "Faltou chamar nextTick depois de alterar a variável",
+          "isCorrect": false
+        },
+        {
+          "text": "Desestruturação não é suportada dentro de <script setup>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Qual a vantagem de usar computed para filtrar a lista em vez de uma função chamada no template?",
+      "explanation": "Um computed guarda o resultado em cache e só refaz o cálculo quando alguma dependência reativa que ele leu muda. Uma função chamada no template executa a cada renderização do componente. As duas formas produzem o mesmo resultado na tela e aceitam refs. A diferença está em quantas vezes o cálculo é feito.",
+      "options": [
+        {
+          "text": "O resultado fica em cache e só é recalculado quando uma dependência muda",
+          "isCorrect": true
+        },
+        {
+          "text": "Só um computed consegue ler valores de refs",
+          "isCorrect": false
+        },
+        {
+          "text": "Funções não podem ser usadas em templates do Vue",
+          "isCorrect": false
+        },
+        {
+          "text": "O computed roda no servidor e libera o navegador",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Um componente filho precisa avisar o componente pai que o usuário clicou em Reservar. Qual é a forma idiomática?",
+      "explanation": "No Vue os dados descem por props e as ações sobem por eventos. O filho declara o evento com defineEmits e chama emit, e o pai escuta com @reservar. Alterar a prop quebra o fluxo de mão única e gera aviso. Acessar o pai diretamente cria um acoplamento que impede reaproveitar o componente.",
+      "options": [
+        {
+          "text": "Declarar o evento com defineEmits e chamar emit('reservar', id)",
+          "isCorrect": true
+        },
+        {
+          "text": "Alterar a prop recebida para o pai perceber a mudança",
+          "isCorrect": false
+        },
+        {
+          "text": "Acessar o componente pai e chamar a função dele diretamente",
+          "isCorrect": false
+        },
+        {
+          "text": "Gravar o id no localStorage para o pai ler",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Qual é a diferença entre v-if e v-show?",
+      "explanation": "v-if cria ou destrói o elemento conforme a condição, então ele nem existe no DOM quando a condição é falsa. v-show sempre renderiza o elemento e só alterna a propriedade display no CSS. v-show é mais barato para algo que liga e desliga com frequência. v-if é melhor quando a condição muda pouco ou quando o conteúdo é pesado.",
+      "options": [
+        {
+          "text": "v-if cria e destrói o elemento, v-show só alterna o display no CSS",
+          "isCorrect": true
+        },
+        {
+          "text": "São equivalentes, v-show é apenas um nome alternativo",
+          "isCorrect": false
+        },
+        {
+          "text": "v-show só funciona dentro de v-for",
+          "isCorrect": false
+        },
+        {
+          "text": "v-if só aceita valores booleanos literais",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Para que serve o modificador .number em v-model.number?",
+      "explanation": "O valor de um input sempre chega como texto, inclusive em type=number. O modificador .number converte esse texto em número antes de gravar no estado, o que evita resultados como '12' + 1 = '121'. Ele não valida o campo, não bloqueia letras e não define limites. Para limites existem os atributos min e max e a sua própria validação.",
+      "options": [
+        {
+          "text": "Converte o valor digitado em número antes de gravar no estado",
+          "isCorrect": true
+        },
+        {
+          "text": "Impede o usuário de digitar letras no campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Define o valor mínimo e máximo aceito pelo campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Formata o número com separador de milhar na tela",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Qual é a diferença entre useRouter() e useRoute()?",
+      "explanation": "useRouter devolve a instância do router, usada para navegar com push e replace. useRoute devolve a rota atual, de onde se leem params, query e path. Os dois funcionam em qualquer componente depois de app.use(router) e não são versões antiga e nova um do outro.",
+      "options": [
+        {
+          "text": "useRouter navega, useRoute lê a rota atual (params, query)",
+          "isCorrect": true
+        },
+        {
+          "text": "useRoute é a versão nova de useRouter",
+          "isCorrect": false
+        },
+        {
+          "text": "useRouter só funciona no App.vue",
+          "isCorrect": false
+        },
+        {
+          "text": "useRoute serve para declarar novas rotas em tempo de execução",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Ao navegar de /salas/1 para /salas/2, a página de detalhe continua mostrando a sala 1. Qual é a causa mais provável?",
+      "explanation": "Quando só o parâmetro muda, o Vue Router reaproveita a mesma instância do componente. Código que só roda na montagem não roda de novo. A solução é observar o parâmetro com watch ou derivar os dados com computed a partir da prop ou de route.params. A rota não precisa ser declarada duas vezes, e o cache do navegador não tem relação com isso.",
+      "options": [
+        {
+          "text": "O componente foi reaproveitado e a busca só rodava na montagem",
+          "isCorrect": true
+        },
+        {
+          "text": "Rotas dinâmicas só funcionam com createWebHashHistory",
+          "isCorrect": false
+        },
+        {
+          "text": "É preciso declarar uma rota para cada id de sala",
+          "isCorrect": false
+        },
+        {
+          "text": "O navegador guardou a página anterior em cache",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "O que acontece ao declarar component: () => import('./MinhasReservas.vue') em uma rota?",
+      "explanation": "A função de import dinâmico faz o Vite gerar um arquivo separado para aquela página, que só é baixado quando o usuário entra na rota. Isso deixa o primeiro carregamento menor. A página continua sendo um componente comum, com acesso à store e ao router.",
+      "options": [
+        {
+          "text": "A página vira um arquivo separado, baixado só quando a rota é acessada",
+          "isCorrect": true
+        },
+        {
+          "text": "A página passa a ser renderizada no servidor",
+          "isCorrect": false
+        },
+        {
+          "text": "A página perde acesso às stores do Pinia",
+          "isCorrect": false
+        },
+        {
+          "text": "A rota passa a exigir recarregar a página inteira",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Em uma setup store do Pinia, o que corresponde aos getters?",
+      "explanation": "Em uma setup store, ref vira estado, computed vira getter e função vira action. É a mesma Composition API dos componentes. watch pode ser usado dentro da store para efeitos colaterais, mas não é getter. Não existe uma propriedade getters no formato setup, porque ela pertence ao formato de options.",
+      "options": [
+        {
+          "text": "Os computed declarados e devolvidos pela função",
+          "isCorrect": true
+        },
+        {
+          "text": "Os refs declarados e devolvidos pela função",
+          "isCorrect": false
+        },
+        {
+          "text": "Os watch declarados dentro da função",
+          "isCorrect": false
+        },
+        {
+          "text": "Um objeto getters passado como terceiro argumento",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Por que usar storeToRefs ao desestruturar estado de uma store?",
+      "explanation": "Desestruturar a store diretamente quebra a reatividade de estado e getters, o mesmo problema da desestruturação de reactive. storeToRefs cria refs para essas propriedades e ignora as actions, que podem ser desestruturadas diretamente porque já estão ligadas à store.",
+      "options": [
+        {
+          "text": "Para manter a reatividade de estado e getters após a desestruturação",
+          "isCorrect": true
+        },
+        {
+          "text": "Para tornar o estado somente leitura",
+          "isCorrect": false
+        },
+        {
+          "text": "Para conseguir chamar as actions da store",
+          "isCorrect": false
+        },
+        {
+          "text": "Para gravar o estado automaticamente no localStorage",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Segundo a pesquisa State of JavaScript 2024, como o Vue.js aparece entre os frameworks usados no trabalho?",
+      "explanation": "Na pergunta sobre frameworks usados no trabalho, o Vue.js foi citado por 3.976 dos 12.802 respondentes, cerca de 31%. Ficou em segundo lugar, atrás do React, com 8.548 citações, e à frente do Angular, com 3.642. É uma base menor que a do React, mas grande o bastante para sustentar vagas e um ecossistema ativo.",
+      "options": [
+        {
+          "text": "Em segundo lugar, citado por cerca de 31% de quem respondeu",
+          "isCorrect": true
+        },
+        {
+          "text": "Em primeiro lugar, à frente do React",
+          "isCorrect": false
+        },
+        {
+          "text": "Atrás de Angular e Svelte, com menos de 10%",
+          "isCorrect": false
+        },
+        {
+          "text": "Fora da lista de frameworks pesquisados",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "Um sistema de reserva de salas de estudo em Vue 3. Ele tem lista de salas com filtro por capacidade, página de detalhe por URL, formulário de reserva que valida a capacidade, página de minhas reservas alimentada por uma store do Pinia e dados que continuam lá depois de atualizar a página. O build de produção é feito com o Vite. Todos os dados são fictícios.",
+    "highlights": [
+      "Aplicação de várias páginas com Vue Router e página 404",
+      "Store do Pinia com persistência no navegador",
+      "Componentes com props, eventos e formulário com v-model"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "Na pesquisa State of JavaScript 2024, o Vue.js foi o segundo framework de frontend mais citado entre os usados no trabalho. Foram 3.976 dos 12.802 respondentes, cerca de 31%, atrás só do React. A mesma pesquisa registrou que o Vue subiu três posições no ranking de retenção, ou seja, quem usa tende a querer continuar usando.",
+      "Para quem já conhece React, o Vue amplia as vagas a que você pode se candidatar e mostra outra forma de resolver os mesmos problemas, com reatividade por rastreamento no lugar de re-renderização explícita. Para quem está começando, é um ecossistema com ferramentas oficiais para cada etapa, do create-vue ao Pinia, com menos escolhas para fazer antes de escrever a primeira tela."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Painéis e sistemas internos",
+        "description": "Telas de cadastro, agendamento e consulta com formulários e listas filtradas."
+      },
+      {
+        "label": "Aplicações de página única",
+        "description": "Produtos com várias telas, rotas e estado compartilhado entre elas."
+      },
+      {
+        "label": "Adoção gradual em sites existentes",
+        "description": "O Vue pode controlar só uma parte de uma página já pronta, sem reescrever o resto."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem já sabe JavaScript",
+        "description": "Domina funções, arrays e módulos e quer o primeiro framework."
+      },
+      {
+        "label": "Quem vem do React",
+        "description": "Quer entender o modelo de reatividade do Vue sem levar os hábitos do React."
+      },
+      {
+        "label": "Quem vai manter um projeto Vue",
+        "description": "Precisa ler e alterar componentes, rotas e stores escritos por outras pessoas."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "O Vue é usado em painéis administrativos, sistemas internos, comércio eletrônico e produtos de página única, muitas vezes adotado aos poucos dentro de sites que já existiam. Como é o segundo framework mais usado no trabalho segundo o State of JavaScript, a habilidade serve para empresas e setores diferentes.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Vue.js — Reactivity Fundamentals (documentação oficial)",
+      "url": "https://vuejs.org/guide/essentials/reactivity-fundamentals.md"
+    },
+    {
+      "label": "Vue.js — Quick Start: create-vue, Vite e requisitos de Node.js",
+      "url": "https://vuejs.org/guide/quick-start"
+    },
+    {
+      "label": "Vue Router — Getting Started (documentação oficial)",
+      "url": "https://router.vuejs.org/guide"
+    },
+    {
+      "label": "Pinia — Defining a Store: option e setup stores, storeToRefs",
+      "url": "https://pinia.vuejs.org/core-concepts/"
+    },
+    {
+      "label": "State of JavaScript 2024 — Front-end Frameworks",
+      "url": "https://2024.stateofjs.com/es-ES/libraries/front-end-frameworks"
+    }
+  ]
 }

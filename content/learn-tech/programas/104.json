@@ -3,8 +3,788 @@
   "image": "https://cdn.pixabay.com/photo/2014/09/24/14/29/macbook-459196_1280.jpg",
   "category": "Frontend",
   "categoryFilter": "frontend",
-  "title": "Estado Global com Redux e Context API em Aplicações Reais",
-  "lessons": "12+ Lições",
-  "duration": "10hr 15min",
-  "access": "Acesso Livre"
+  "title": "Estado Global em React: Context API, Redux Toolkit e RTK Query",
+  "lessons": "15 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Intermediário",
+  "description": "O passo depois de dominar useState: decidir onde cada dado deve morar quando a aplicação cresce. Você aprende a reconhecer quando o estado realmente precisa ser global, a resolver com Context API e useReducer, a usar Redux Toolkit quando a escala pede, e a tratar dados do servidor como cache em vez de estado global.",
+  "letslearn": [
+    "Classificar cada dado da aplicação: local, compartilhado, global ou vindo do servidor",
+    "Combinar Context API e useReducer sem provocar re-renderizações desnecessárias",
+    "Montar uma store com Redux Toolkit usando configureStore, createSlice e seletores",
+    "Buscar e manter dados do servidor em cache com RTK Query, invalidando com tags",
+    "Justificar tecnicamente quando NÃO usar estado global"
+  ],
+  "curriculum": "Do estado local à arquitetura de estado",
+  "about": "Este programa continua de onde \"React: Componentes, Estado e a Primeira Aplicação\" parou — no momento em que o projeto começa a pedir mais do que elevar o estado ao pai comum. A progressão é deliberada: primeiro você aprende a diagnosticar o problema, depois resolve com o que o próprio React oferece (Context API e useReducer), em seguida passa ao Redux Toolkit para estado de interface compartilhado em escala e, por fim, separa o que é estado do servidor e o entrega ao RTK Query. O projeto que atravessa os quatro módulos é um painel de chamados de suporte de uma empresa fictícia, e cada ferramenta só entra depois que o problema que ela resolve aparece no código.",
+  "materials": [
+    "Repositório do painel de chamados com uma pasta por módulo",
+    "API fictícia de chamados para rodar localmente",
+    "Árvore de decisão: onde este dado deve morar?",
+    "Checklist de revisão de slice e de endpoint"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Quando o Estado Precisa Ser Global",
+      "lessonsCount": 3,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Context API com useReducer",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Redux Toolkit: Slices e Store",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Estado do Servidor com RTK Query",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Frontend",
+    "mainTitle": "Cada dado no seu lugar: estado local, global e do servidor sem confusão.",
+    "introductionParagraphs": [
+      {
+        "title": "O problema não é a ferramenta, é o lugar do dado",
+        "text": "A maior parte das aplicações React que ficam difíceis de manter não sofre por falta de biblioteca, e sim por excesso de estado no lugar errado: lista que veio da API copiada para a store, valor de formulário espalhado pela aplicação inteira, tema guardado em três lugares. Este programa começa ensinando a **classificar** cada dado antes de escolher onde guardá-lo."
+      },
+      {
+        "title": "Do nativo ao especializado",
+        "text": "O React já traz **Context API** e **useReducer**, que resolvem bem boa parte dos casos de estado compartilhado. Quando a aplicação cresce em telas, pessoas e regras, o **Redux Toolkit** oferece uma store única, previsível e com ferramentas de depuração. E para dados que vêm do servidor, o **RTK Query** cuida de cache, carregamento e atualização — um problema diferente de estado de interface."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não defende uma biblioteca como resposta para tudo nem compara dez alternativas superficialmente. O foco é em três ferramentas bem documentadas e no critério para escolher entre elas — inclusive o critério para não usar nenhuma."
+      }
+    ],
+    "courseAboutTitle": "O passo seguinte ao React básico",
+    "courseAboutDescription": "Quem conclui \"React: Componentes, Estado e a Primeira Aplicação\" sabe elevar estado e passar props. Este programa trata do que vem depois: aplicações com várias telas que compartilham sessão, filtros e dados remotos. Ao final, você consegue ler a arquitetura de estado de um projeto existente, entender por que cada dado está onde está e propor mudanças com argumento técnico.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Quando o Estado Precisa Ser Global",
+        "items": [
+          {
+            "label": "Mapa do estado",
+            "description": "Classificar dados em local, compartilhado, global e do servidor."
+          },
+          {
+            "label": "Prop drilling",
+            "description": "Quando passar props por camadas é problema de verdade — e quando não é."
+          },
+          {
+            "label": "Critérios de decisão",
+            "description": "Perguntas objetivas para escolher entre prop, Context, Redux ou cache."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Context API com useReducer",
+        "items": [
+          {
+            "label": "Reducer e ações",
+            "description": "Centralizar as regras de atualização em uma função pura."
+          },
+          {
+            "label": "Provider e hooks próprios",
+            "description": "Separar estado e dispatch em contextos e esconder a fiação."
+          },
+          {
+            "label": "Custo de re-renderização",
+            "description": "Por que todo consumidor re-renderiza e como dividir contextos."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Redux Toolkit: Slices e Store",
+        "items": [
+          {
+            "label": "configureStore",
+            "description": "Uma store com middleware, DevTools e verificações já configurados."
+          },
+          {
+            "label": "createSlice",
+            "description": "Estado inicial, reducers e ações gerados em um só lugar."
+          },
+          {
+            "label": "Seletores",
+            "description": "Ler da store sem re-renderizar a tela inteira a cada ação."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Estado do Servidor com RTK Query",
+        "items": [
+          {
+            "label": "createApi",
+            "description": "Declarar endpoints e receber hooks prontos com carregamento e erro."
+          },
+          {
+            "label": "Tags e invalidação",
+            "description": "Atualizar a lista automaticamente depois de uma mutação."
+          },
+          {
+            "label": "Servidor x interface",
+            "description": "A fronteira que define o que nunca deveria entrar em um slice."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos aplicados ao painel de chamados. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "search",
+      "title": "Quando o Estado Precisa Ser Global",
+      "shortDescription": "Diagnosticar antes de instalar: onde cada dado deve morar",
+      "introductionText": "\"Estado global\" costuma ser a primeira resposta para qualquer dor de crescimento em React, e muitas vezes é a errada. Antes de escolher ferramenta, você precisa saber que tipo de dado está tratando. Neste módulo você faz um inventário do painel de chamados — usuário logado, tema, filtros, lista de chamados, rascunho do formulário — e classifica cada item. Essa classificação decide o resto do programa.",
+      "sections": [
+        {
+          "title": "🔎 Diagnóstico do estado",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Inventariar o estado da aplicação",
+              "code": "local | compartilhado | global | servidor",
+              "guidance": "Liste todos os dados que mudam no painel de chamados e anote, para cada um, quais componentes leem e quais alteram. Separe em quatro grupos: local (um componente só), compartilhado (alguns componentes próximos), global (partes distantes da árvore) e do servidor (a fonte da verdade está na API).",
+              "tips": [
+                "Um mesmo dado raramente pertence a dois grupos. Se parecer que sim, provavelmente são dois dados: a lista de chamados é do servidor; o chamado selecionado é da interface."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Reconhecer o prop drilling que dói",
+              "guidance": "Rastreie o caminho do usuário logado desde o componente raiz até o avatar no cabeçalho e o botão de atribuir chamado. Conte quantos componentes recebem a prop apenas para repassá-la. Dois níveis é normal; cinco componentes intermediários que não usam o dado é sinal de que ele precisa ser acessível de outra forma.",
+              "tips": [
+                "Antes de partir para estado global, tente composição: passar o componente pronto via children muitas vezes elimina as camadas intermediárias sem nenhuma ferramenta nova."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Escolher a ferramenta pelo tipo de dado",
+              "guidance": "Aplique uma árvore de decisão a cada item do inventário: é usado por um componente? Estado local. Por vizinhos? Eleve ao pai comum. Por partes distantes e muda pouco (tema, sessão)? Context. Muitas regras de atualização, muitas telas e necessidade de rastrear mudanças? Redux Toolkit. Vem da API? Ferramenta de cache, como o RTK Query.",
+              "tips": [
+                "Filtros que o usuário pode querer compartilhar por link pertencem à URL, não à memória. Essa é uma quinta opção que costuma ser esquecida."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que diagnosticar primeiro",
+      "highlights": [
+        {
+          "icon": "sitemap",
+          "title": "Árvore mais simples",
+          "text": "Estado colocado o mais perto possível de quem o usa reduz o número de componentes afetados por cada mudança e facilita a leitura."
+        },
+        {
+          "icon": "globe",
+          "title": "Servidor é outro problema",
+          "text": "Dado remoto envelhece, precisa ser recarregado e pode falhar. Tratá-lo como estado de interface obriga você a reinventar cache à mão."
+        },
+        {
+          "icon": "tools",
+          "title": "Ferramenta proporcional",
+          "text": "Cada biblioteca traz código para manter e conceitos para a equipe aprender. Escolher pelo tipo de dado evita instalar por hábito."
+        }
+      ],
+      "closingText": "Você agora tem um mapa: sabe quais dados do painel são locais, quais são globais e quais vêm do servidor. O próximo passo é resolver o estado global de baixa frequência — sessão e tema — usando apenas o que o React já oferece.",
+      "ctaTitle": "🔎 Mapa do estado pronto!",
+      "ctaText": "Cada dado tem um endereço. Agora vamos levar a sessão e o tema a qualquer componente sem passar props por camadas.",
+      "nextButtonText": "Ir para Módulo 1: Context API com useReducer"
+    },
+    {
+      "id": 1,
+      "icon": "sync",
+      "title": "Context API com useReducer",
+      "shortDescription": "Estado compartilhado com o que o React já oferece",
+      "introductionText": "Context API e useReducer são dois recursos independentes que funcionam muito bem juntos. O reducer concentra as regras de atualização em uma função pura; o contexto torna o estado e a função de despacho acessíveis a qualquer componente abaixo do provedor. Essa combinação é o padrão recomendado pela própria documentação do React para escalar estado sem biblioteca externa. Neste módulo você aplica o padrão à sessão do usuário e ao tema do painel e aprende o custo que ele cobra.",
+      "sections": [
+        {
+          "title": "🔁 Reducer + Context na prática",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Escrever o reducer da sessão",
+              "code": "const [estado, dispatch] = useReducer(sessaoReducer, inicial)",
+              "guidance": "Crie uma função que recebe o estado atual e uma ação e devolve o próximo estado, tratando as ações de entrar, sair e trocar de tema. Use-a com useReducer no componente raiz. O reducer não busca dados, não altera o objeto recebido e não tem efeito colateral: só calcula.",
+              "tips": [
+                "Nomeie as ações pelo que aconteceu (\"sessão encerrada\"), não pelo que a tela deve fazer (\"limpar cabeçalho\"). Isso mantém o reducer independente da interface."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Criar contextos e fornecer os valores",
+              "code": "<SessaoContext value={estado}>",
+              "guidance": "Crie dois contextos com createContext: um para o estado e outro para o dispatch. No componente que chama useReducer, envolva a árvore com os dois provedores. No React 19 o próprio contexto pode ser usado como provedor; em versões anteriores, use a propriedade Provider.",
+              "tips": [
+                "Separar estado e dispatch permite que um botão que só dispara ações leia apenas o contexto de dispatch, que é estável entre renderizações."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Esconder a fiação em um provedor e hooks próprios",
+              "code": "export function useSessao()",
+              "guidance": "Mova reducer, contextos e provedores para um único arquivo que exporta um componente SessaoProvider e dois hooks: useSessao e useSessaoDispatch. Os componentes da interface passam a importar só os hooks, sem saber que existe contexto por trás.",
+              "tips": [
+                "Dentro do hook, lance um erro claro se o valor do contexto vier nulo. Isso denuncia na hora um componente usado fora do provedor."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Medir e conter re-renderizações",
+              "guidance": "Com o React DevTools Profiler, troque o tema e observe quais componentes renderizam. Todo componente que lê um contexto renderiza de novo quando o valor dele muda. Divida contextos por frequência de mudança — sessão de um lado, tema de outro — e evite passar objetos recriados a cada renderização como valor.",
+              "tips": [
+                "Context é ótimo para dados que mudam pouco. Se o valor muda a cada tecla digitada e dezenas de componentes o consomem, esse é um sinal para considerar outra ferramenta."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que começar pelo nativo",
+      "highlights": [
+        {
+          "icon": "shield",
+          "title": "Zero dependência",
+          "text": "Context API e useReducer fazem parte do React. Não há pacote para atualizar nem API de terceiros para a equipe aprender."
+        },
+        {
+          "icon": "list",
+          "title": "Regras em um só lugar",
+          "text": "O reducer reúne todas as transições de estado. Para entender como a sessão muda, basta ler uma função."
+        },
+        {
+          "icon": "gauge",
+          "title": "Custo conhecido",
+          "text": "Você sabe exatamente quem re-renderiza quando o valor muda e pode dividir contextos para conter esse custo."
+        }
+      ],
+      "closingText": "Sessão e tema agora chegam a qualquer componente sem prop drilling, com as regras concentradas em um reducer. Mas o painel também tem filtros, seleção de chamados e preferências que mudam o tempo todo e são lidos por muitas telas. É aqui que uma store dedicada começa a valer o custo.",
+      "ctaTitle": "🔁 Contexto sob controle!",
+      "ctaText": "Você resolveu estado global de baixa frequência sem biblioteca. Agora vamos para o Redux Toolkit, pensado para estado de interface em escala.",
+      "nextButtonText": "Ir para Módulo 2: Redux Toolkit: Slices e Store"
+    },
+    {
+      "id": 2,
+      "icon": "grid",
+      "title": "Redux Toolkit: Slices e Store",
+      "shortDescription": "Store única, slices e seletores para estado de interface em escala",
+      "introductionText": "O Redux guarda o estado em uma store única, que só muda por meio de ações processadas por reducers. O Redux Toolkit é a forma oficial e recomendada de escrever Redux hoje: elimina o código repetitivo do Redux clássico, já configura as ferramentas de depuração e permite escrever reducers com sintaxe de mutação, convertida em atualização imutável pela biblioteca Immer. Neste módulo os filtros e a seleção de chamados do painel saem do componente e vão para slices.",
+      "sections": [
+        {
+          "title": "🧱 Montando a store",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Criar a store com configureStore",
+              "code": "configureStore({ reducer: { filtros: filtrosReducer } })",
+              "guidance": "Instale @reduxjs/toolkit e react-redux. Crie a store com configureStore, passando um objeto de reducers. Envolva a aplicação no Provider do react-redux. A função já inclui o middleware de thunk, a integração com o Redux DevTools e, em desenvolvimento, verificações que acusam mutação acidental e valores não serializáveis no estado.",
+              "tips": [
+                "Exporte os tipos RootState e AppDispatch a partir da store. Com eles, os hooks tipados evitam erros de digitação em toda a aplicação."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Escrever o slice de filtros",
+              "code": "createSlice({ name: 'filtros', initialState, reducers })",
+              "guidance": "Use createSlice com nome, estado inicial e reducers para status, prioridade e responsável do chamado. A função gera os criadores de ação automaticamente, com tipos no formato nome/reducer. Dentro dos reducers, você pode escrever estado.status = acao.payload: o Immer transforma essa escrita em uma cópia imutável.",
+              "tips": [
+                "A sintaxe de mutação só é segura dentro de createSlice e createReducer. Fora deles, alterar o estado diretamente continua sendo erro."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Ler e despachar nos componentes",
+              "code": "dispatch(statusAlterado('aberto'))",
+              "guidance": "No componente de filtros, leia o valor com useSelector e altere com useDispatch, chamando os criadores de ação gerados pelo slice. Crie versões tipadas dos dois hooks em um arquivo próprio e use só elas no restante do código.",
+              "tips": [
+                "Em TypeScript, react-redux oferece useSelector.withTypes e useDispatch.withTypes para criar os hooks tipados em uma linha."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Seletores que não re-renderizam à toa",
+              "code": "createSelector([selecionaFiltros], (f) => ...)",
+              "guidance": "O useSelector faz o componente renderizar de novo sempre que o valor selecionado muda por referência. Um seletor que devolve um array ou objeto novo a cada chamada faz o componente renderizar a cada ação despachada. Use createSelector, reexportado pelo Redux Toolkit, para memorizar valores derivados, como a contagem de chamados por prioridade.",
+              "tips": [
+                "Guarde na store o mínimo e derive o resto com seletores. Contagens, totais e listas filtradas são cálculo, não estado."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que o Redux Toolkit",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Mudanças rastreáveis",
+          "text": "Toda alteração passa por uma ação com nome. No Redux DevTools você vê a sequência de ações e o estado antes e depois de cada uma."
+        },
+        {
+          "icon": "folder",
+          "title": "Um arquivo por assunto",
+          "text": "Cada slice reúne estado inicial, regras e ações de um domínio. Mexer nos filtros do painel significa abrir um arquivo."
+        },
+        {
+          "icon": "bolt",
+          "title": "Menos código repetitivo",
+          "text": "configureStore e createSlice substituem a configuração manual, as constantes de tipo e os criadores de ação do Redux clássico."
+        }
+      ],
+      "closingText": "Filtros e seleção agora vivem em slices, com mudanças rastreáveis e seletores que limitam re-renderizações. Falta o dado mais volumoso do painel: a lista de chamados, que vem da API. Colocá-la em um slice escrito à mão seria o erro mais comum de quem adota Redux — e o próximo módulo mostra a alternativa.",
+      "ctaTitle": "🧱 Store de pé!",
+      "ctaText": "O estado de interface está organizado em slices. Agora vamos tratar os dados do servidor como cache, não como estado global.",
+      "nextButtonText": "Ir para Módulo 3: Estado do Servidor com RTK Query"
+    },
+    {
+      "id": 3,
+      "icon": "globe",
+      "title": "Estado do Servidor com RTK Query",
+      "shortDescription": "Cache de dados remotos e a fronteira entre servidor e interface",
+      "introductionText": "Dados do servidor têm problemas próprios: ficam desatualizados, precisam de estado de carregamento e erro, são pedidos ao mesmo tempo por vários componentes e devem ser recarregados depois de uma alteração. Escrever isso à mão em slices gera muito código e muito bug. O RTK Query é a ferramenta de busca e cache incluída no Redux Toolkit: você declara os endpoints e recebe hooks prontos. Neste módulo a lista de chamados sai do código manual e passa a ser cache — e você fecha o programa com a regra que separa estado do servidor de estado da interface.",
+      "sections": [
+        {
+          "title": "🌐 Dados remotos como cache",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Declarar a API com createApi",
+              "code": "createApi({ reducerPath: 'chamadosApi', baseQuery, endpoints })",
+              "guidance": "Crie um API slice com createApi, importado de @reduxjs/toolkit/query/react, usando fetchBaseQuery com a URL base da API fictícia de chamados. Declare um endpoint de consulta para listar chamados. Na store, registre o reducer gerado na chave indicada por reducerPath e acrescente o middleware da API ao middleware padrão.",
+              "tips": [
+                "Normalmente existe um único API slice por URL base. Endpoints de assuntos diferentes podem ser injetados nele em arquivos separados."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Usar os hooks gerados",
+              "code": "const { data, isLoading, error } = useListarChamadosQuery()",
+              "guidance": "O endpoint listarChamados gera o hook useListarChamadosQuery. Use-o no componente da lista e renderize três casos: carregando (isLoading), erro (error) e sucesso (data). Monte o mesmo hook em dois componentes ao mesmo tempo e confirme na aba de rede que só uma requisição é feita.",
+              "tips": [
+                "isLoading indica a primeira carga; isFetching indica qualquer requisição em andamento, inclusive recargas. Use cada um para um indicador visual diferente."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Mutações e invalidação por tags",
+              "code": "invalidatesTags: ['Chamado']",
+              "guidance": "Crie um endpoint de mutação para abrir um chamado. Declare tagTypes na API, marque a consulta com providesTags e a mutação com invalidatesTags usando a mesma tag. Ao concluir a mutação, o RTK Query recarrega sozinho toda consulta que fornecia aquela tag — sem nenhum dispatch manual para atualizar a lista.",
+              "tips": [
+                "Hooks de mutação devolvem um par: a função que dispara a requisição e um objeto com o resultado. O nome segue o padrão use + endpoint + Mutation."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Traçar a fronteira: quando NÃO usar estado global",
+              "guidance": "Revise o painel inteiro com o mapa do Módulo 0. Dados do servidor ficam no cache do RTK Query, nunca copiados para slices. Rascunho do formulário de novo chamado fica em estado local. Filtros compartilháveis vão para a URL. Na store sobra apenas estado de interface que muitas telas leem e alteram. Remova da store tudo que não passar nesse critério.",
+              "tips": [
+                "Pergunta de verificação: se eu recarregar a página, de onde esse dado volta? Se a resposta for \"da API\", ele é cache do servidor, não estado global."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que separar servidor e interface",
+      "highlights": [
+        {
+          "icon": "sync",
+          "title": "Sempre atualizado",
+          "text": "Invalidação por tags recarrega exatamente as consultas afetadas por uma alteração, sem código de sincronização espalhado pelos componentes."
+        },
+        {
+          "icon": "gauge",
+          "title": "Uma requisição, vários leitores",
+          "text": "Componentes que pedem o mesmo dado compartilham a mesma entrada de cache, e requisições duplicadas são evitadas automaticamente."
+        },
+        {
+          "icon": "shield",
+          "title": "Store enxuta",
+          "text": "Com os dados remotos no cache, a store guarda só o que é realmente da interface, e fica fácil de ler e de depurar."
+        }
+      ],
+      "closingText": "O painel de chamados agora tem cada dado no lugar certo: estado local nos componentes, sessão e tema em contexto, filtros e seleção em slices, lista de chamados em cache e filtros compartilháveis na URL. Mais importante que qualquer API específica é o critério que você usou para chegar aqui — e que vale para qualquer biblioteca que apareça depois.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você sabe quando o estado precisa ser global, como implementá-lo com Context ou Redux Toolkit e quando entregar o problema a uma ferramenta de cache. Para levar isso a aplicações renderizadas no servidor, o próximo passo natural é \"Next.js e Tailwind CSS: Performance e Estilo na Prática\".",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Qual destes dados do painel é estado do servidor, e não estado de interface?",
+      "explanation": "A lista de chamados tem sua fonte da verdade na API: pode mudar sem a interface saber e precisa ser recarregada. Tema, chamado selecionado e rascunho do formulário só existem no navegador e pertencem à interface.",
+      "options": [
+        {
+          "text": "A lista de chamados retornada pela API",
+          "isCorrect": true
+        },
+        {
+          "text": "O tema claro ou escuro escolhido pelo usuário",
+          "isCorrect": false
+        },
+        {
+          "text": "O chamado atualmente selecionado na tela",
+          "isCorrect": false
+        },
+        {
+          "text": "O texto digitado no formulário de novo chamado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Um dado é usado apenas por dois componentes irmãos. Qual é a solução mais proporcional?",
+      "explanation": "Elevar o estado ao pai comum resolve o compartilhamento entre vizinhos sem nenhuma ferramenta nova. Context, Redux ou armazenamento do navegador acrescentam complexidade para um problema que não a exige.",
+      "options": [
+        {
+          "text": "Elevar o estado para o componente pai comum",
+          "isCorrect": true
+        },
+        {
+          "text": "Criar um contexto global para o dado",
+          "isCorrect": false
+        },
+        {
+          "text": "Criar um slice no Redux Toolkit",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardar o valor no armazenamento local do navegador",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Filtros que o usuário pode querer enviar por link para um colega devem ficar preferencialmente onde?",
+      "explanation": "Se o estado precisa sobreviver a um link compartilhado ou a uma recarga, a URL é o lugar natural. Store, contexto e estado local existem só na memória da aba aberta.",
+      "options": [
+        {
+          "text": "Na URL, como parâmetros de busca",
+          "isCorrect": true
+        },
+        {
+          "text": "Em um slice do Redux",
+          "isCorrect": false
+        },
+        {
+          "text": "Em um contexto do React",
+          "isCorrect": false
+        },
+        {
+          "text": "No estado local do componente de filtros",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "O que caracteriza a função reducer usada com useReducer?",
+      "explanation": "Um reducer é uma função pura: recebe o estado atual e uma ação e devolve o próximo estado, sem alterar o que recebeu e sem efeitos colaterais como requisições. É isso que torna as transições previsíveis e testáveis.",
+      "options": [
+        {
+          "text": "Recebe estado e ação e devolve o próximo estado, sem efeitos colaterais",
+          "isCorrect": true
+        },
+        {
+          "text": "Busca dados na API e grava o resultado no estado",
+          "isCorrect": false
+        },
+        {
+          "text": "Altera diretamente o objeto de estado recebido",
+          "isCorrect": false
+        },
+        {
+          "text": "Só pode ser usada junto com o Redux",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Por que a documentação do React sugere contextos separados para o estado e para o dispatch?",
+      "explanation": "A função dispatch é estável entre renderizações. Em um contexto próprio, componentes que só disparam ações não dependem do valor do estado. Não há exigência técnica de separar, nem relação com segurança ou servidor.",
+      "options": [
+        {
+          "text": "Para que componentes que só despacham ações não dependam do valor do estado",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque um contexto não pode guardar funções",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o React exige um contexto por hook",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que o dispatch funcione também no servidor",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Quando o valor de um contexto muda, o que acontece com os componentes que o leem?",
+      "explanation": "Todo componente que consome aquele contexto é renderizado de novo quando o valor muda. Por isso convém dividir contextos por frequência de mudança e evitar valores recriados a cada renderização.",
+      "options": [
+        {
+          "text": "Todos os componentes que leem aquele contexto renderizam de novo",
+          "isCorrect": true
+        },
+        {
+          "text": "Apenas o primeiro componente da árvore renderiza",
+          "isCorrect": false
+        },
+        {
+          "text": "Nenhum renderiza até a página ser recarregada",
+          "isCorrect": false
+        },
+        {
+          "text": "Apenas os componentes que usam Redux renderizam",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "O que a função configureStore do Redux Toolkit faz além de criar a store?",
+      "explanation": "configureStore já inclui o middleware de thunk, a integração com o Redux DevTools e, em desenvolvimento, verificações de mutação acidental e de valores não serializáveis. Ela não cria endpoints nem substitui o Provider.",
+      "options": [
+        {
+          "text": "Configura middleware padrão, DevTools e verificações de desenvolvimento",
+          "isCorrect": true
+        },
+        {
+          "text": "Gera automaticamente os endpoints da API",
+          "isCorrect": false
+        },
+        {
+          "text": "Dispensa o uso do Provider do react-redux",
+          "isCorrect": false
+        },
+        {
+          "text": "Converte componentes de classe em funções",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Por que é possível escrever estado.status = valor dentro de um reducer do createSlice?",
+      "explanation": "O createSlice usa a biblioteca Immer, que registra as alterações feitas em um rascunho e produz um novo estado imutável. Fora de createSlice e createReducer, alterar o estado diretamente continua sendo erro.",
+      "options": [
+        {
+          "text": "Porque o Immer converte a escrita em uma atualização imutável",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque o Redux Toolkit abandonou a imutabilidade",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o estado é copiado por inteiro a cada tecla",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque essa sintaxe só funciona em TypeScript",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Um seletor devolve um array filtrado novo a cada chamada. Qual é a consequência?",
+      "explanation": "O useSelector compara o valor por referência. Um array novo a cada chamada nunca é igual ao anterior, então o componente renderiza a cada ação despachada. createSelector memoriza o resultado e evita isso.",
+      "options": [
+        {
+          "text": "O componente renderiza de novo a cada ação despachada",
+          "isCorrect": true
+        },
+        {
+          "text": "A store deixa de aceitar novas ações",
+          "isCorrect": false
+        },
+        {
+          "text": "O seletor passa a ser executado só uma vez",
+          "isCorrect": false
+        },
+        {
+          "text": "O Redux DevTools para de registrar as ações",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Qual hook o RTK Query gera para um endpoint de consulta chamado listarChamados?",
+      "explanation": "Para consultas, o nome segue o padrão use + nome do endpoint com inicial maiúscula + Query. Mutações seguem o mesmo padrão terminando em Mutation.",
+      "options": [
+        {
+          "text": "useListarChamadosQuery",
+          "isCorrect": true
+        },
+        {
+          "text": "useListarChamados",
+          "isCorrect": false
+        },
+        {
+          "text": "useQueryListarChamados",
+          "isCorrect": false
+        },
+        {
+          "text": "listarChamadosHook",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Como o RTK Query sabe que deve recarregar a lista depois que um chamado é criado?",
+      "explanation": "A consulta declara com providesTags quais tags fornece e a mutação declara com invalidatesTags quais tags invalida. Quando a mutação termina, as consultas que fornecem aquela tag são recarregadas automaticamente.",
+      "options": [
+        {
+          "text": "A mutação invalida uma tag que a consulta declarou em providesTags",
+          "isCorrect": true
+        },
+        {
+          "text": "O componente precisa chamar dispatch manualmente após a mutação",
+          "isCorrect": false
+        },
+        {
+          "text": "O RTK Query recarrega todas as consultas a cada segundo",
+          "isCorrect": false
+        },
+        {
+          "text": "O reducer do slice copia o novo chamado para a lista",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Qual destas práticas é sinal de que o estado global está sendo usado no lugar errado?",
+      "explanation": "Copiar para um slice dados que vieram da API cria uma segunda fonte da verdade que envelhece e exige sincronização manual. Esses dados pertencem a uma camada de cache. As demais opções são usos adequados de cada ferramenta.",
+      "options": [
+        {
+          "text": "Copiar a resposta da API para um slice escrito à mão",
+          "isCorrect": true
+        },
+        {
+          "text": "Guardar o tema da aplicação em um contexto",
+          "isCorrect": false
+        },
+        {
+          "text": "Manter o rascunho de um formulário em estado local",
+          "isCorrect": false
+        },
+        {
+          "text": "Derivar totais com seletores memorizados",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "Um painel de chamados de suporte de uma empresa fictícia, com cada dado no lugar certo: sessão e tema em Context com useReducer, filtros e seleção em slices do Redux Toolkit, lista de chamados em cache com RTK Query e invalidação automática após criar um chamado, e filtros compartilháveis pela URL.",
+    "highlights": [
+      "Provedor de sessão com Context API, useReducer e hooks próprios",
+      "Store com configureStore, slices e seletores memorizados",
+      "API slice com consultas, mutações e invalidação por tags",
+      "Documento de decisão explicando onde cada dado mora e por quê"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "O Redux Toolkit continua sendo uma das peças mais presentes no ecossistema React: na semana de 21 a 27 de outubro de 2026, o pacote @reduxjs/toolkit registrou cerca de 38 milhões de downloads no npm (número que inclui instalações automatizadas, e não pessoas). Ao mesmo tempo, o ecossistema se diversificou: na pesquisa State of React 2024, o uso declarado do Zustand subiu de 28% para 41% em um ano.",
+      "Essa diversidade é o motivo deste programa ensinar critério antes de ferramenta. Quem entra em uma equipe vai encontrar projetos com Redux, com Context, com bibliotecas mais leves e com camadas de cache para dados remotos — muitas vezes no mesmo código. Saber dizer onde cada dado deve morar é a habilidade que se transfere entre todos eles."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Painéis e sistemas internos",
+        "description": "Muitas telas compartilhando filtros, seleção e dados remotos que precisam ficar atualizados."
+      },
+      {
+        "label": "Produtos com sessão e preferências",
+        "description": "Usuário logado, permissões e tema acessíveis em qualquer ponto da interface."
+      },
+      {
+        "label": "Manutenção de código existente",
+        "description": "Ler, entender e simplificar projetos React que já usam Redux ou Context."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem concluiu o programa de React",
+        "description": "Já domina componentes, props e useState e quer o passo seguinte."
+      },
+      {
+        "label": "Quem herdou um projeto com Redux",
+        "description": "Precisa entender a store existente e decidir o que manter."
+      },
+      {
+        "label": "Quem sofre com prop drilling",
+        "description": "Passa dados por várias camadas e quer uma solução proporcional."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Context API faz parte do próprio React e aparece em praticamente toda aplicação de porte médio, ainda que só para tema e sessão. O Redux Toolkit é comum em aplicações corporativas grandes, sistemas internos e produtos com muitas telas e muitas pessoas mexendo no mesmo código, onde rastrear cada mudança de estado compensa. O critério para escolher entre eles vale para qualquer equipe que use React.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "React — Scaling Up with Reducer and Context (documentação oficial)",
+      "url": "https://react.dev/learn/scaling-up-with-reducer-and-context"
+    },
+    {
+      "label": "Redux Toolkit — RTK Query Overview (documentação oficial, repositório)",
+      "url": "https://github.com/reduxjs/redux-toolkit/blob/master/docs/rtk-query/overview.md"
+    },
+    {
+      "label": "State of React 2024 — State Management",
+      "url": "https://state-of-react-2024.onrender.com/gl-ES/libraries/state-management"
+    },
+    {
+      "label": "PkgPulse — @reduxjs/toolkit: downloads semanais pela API do npm",
+      "url": "https://www.pkgpulse.com/packages/%40reduxjs/toolkit"
+    }
+  ]
 }

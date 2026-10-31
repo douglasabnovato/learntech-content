@@ -3,8 +3,830 @@
   "image": "https://cdn.pixabay.com/photo/2015/09/05/20/02/coding-924920_1280.jpg",
   "category": "Backend",
   "categoryFilter": "backend",
-  "title": "Arquitetura de Microsserviços com Docker e Kubernetes",
-  "lessons": "20+ Lições",
-  "duration": "18hr 30min",
-  "access": "Acesso Livre"
+  "title": "Microsserviços com Docker e Kubernetes: do Monólito Modular ao Cluster Local",
+  "lessons": "18 passos",
+  "duration": "14h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Avançado",
+  "description": "Um programa honesto sobre microsserviços: primeiro você aprende quando eles não valem a pena e organiza um monólito modular; depois empacota em contêineres, sobe vários serviços com Docker Compose, liga tudo por HTTP e por fila, torna o sistema observável e termina rodando em um cluster Kubernetes na sua própria máquina.",
+  "letslearn": [
+    "Decidir com critério entre monólito modular e microsserviços, e reconhecer o custo de distribuir",
+    "Escrever Dockerfiles enxutos com build em estágios, cache de camadas e usuário sem privilégio",
+    "Subir um ambiente de vários serviços com Docker Compose, incluindo banco e fila de mensagens",
+    "Escolher entre chamada HTTP síncrona e mensagem assíncrona, com timeout, nova tentativa e idempotência",
+    "Instrumentar serviços com logs estruturados, identificador de correlação, health checks e métricas",
+    "Publicar Pods, Deployments e Services em um cluster Kubernetes local com kind"
+  ],
+  "curriculum": "Do monólito modular ao Kubernetes",
+  "about": "O programa parte de uma API já funcionando, no nível de quem concluiu Node.js e Express: Criando APIs RESTful Escaláveis, e percorre o caminho que sistemas reais costumam percorrer. Primeiro o código é organizado em módulos com fronteiras claras dentro de um único processo; só então um desses módulos é extraído para um serviço próprio, com motivo declarado. Em cada etapa você vê o problema antes da ferramenta: o contêiner aparece para resolver o 'na minha máquina funciona', o Compose para subir o conjunto com um comando, a fila para desacoplar o que não precisa de resposta imediata e o Kubernetes para manter réplicas vivas sem intervenção manual. O projeto usa uma livraria fictícia e roda inteiro no seu computador, sem conta em provedor de nuvem.",
+  "materials": [
+    "Repositório da livraria fictícia com o estado do projeto ao fim de cada módulo",
+    "Checklist de revisão de Dockerfile",
+    "Arquivo compose.yaml comentado e manifestos Kubernetes de referência",
+    "Roteiro de decisão: monólito modular ou serviço separado"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Monólito Modular Antes de Tudo",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Contêineres e Dockerfile",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Compose e Comunicação entre Serviços",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Observabilidade e Kubernetes Local",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Backend",
+    "mainTitle": "Distribua o sistema só quando houver motivo — e, quando houver, faça direito.",
+    "introductionParagraphs": [
+      {
+        "title": "Microsserviço não é ponto de partida",
+        "text": "A maioria dos sistemas de microsserviços bem-sucedidos começou como um monólito que cresceu e foi dividido; os que nasceram distribuídos com frequência tiveram problemas sérios. Dividir cobra um **custo fixo**: rede que falha, deploy de várias peças, dados espalhados, depuração entre processos. Esse custo só se paga quando o sistema e a equipe são grandes o bastante. Por isso o programa começa com um **monólito modular** — um só processo, com fronteiras internas tão claras quanto as de serviços separados."
+      },
+      {
+        "title": "Contêiner resolve empacotamento, não arquitetura",
+        "text": "Docker e Kubernetes são úteis mesmo para um monólito: imagem reproduzível, ambiente local igual ao de produção, réplicas que reiniciam sozinhas. Eles não transformam um sistema em microsserviços, e microsserviços não exigem Kubernetes. Separar as duas decisões evita o erro comum de adotar o pacote inteiro porque uma das partes era necessária."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não ensina service mesh, operadores, Helm nem cluster gerenciado em nuvem. O Kubernetes aqui é introdutório: Pod, Deployment e Service em um cluster local, o suficiente para entender o que está sendo orquestrado e ler manifestos de uma equipe. Ao final, você sabe argumentar por que separar um serviço — e por que não separar os outros."
+      }
+    ],
+    "courseAboutTitle": "Arquitetura distribuída com os pés no chão",
+    "courseAboutDescription": "Este é o programa para quem já constrói APIs e começa a ouvir falar de contêineres, filas e clusters em toda reunião técnica. Em vez de uma lista de ferramentas, ele entrega um critério: cada peça entra porque resolve um problema que você viu acontecer. É a diferença entre quem copia um compose.yaml de tutorial e quem consegue explicar o que cada linha faz e o que acontece quando ela falha.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Monólito Modular Antes de Tudo",
+        "items": [
+          {
+            "label": "O custo de distribuir",
+            "description": "O que se ganha e o que se paga ao separar um sistema em processos independentes."
+          },
+          {
+            "label": "Fronteiras de módulo",
+            "description": "Módulos que só conversam por interface pública e não leem as tabelas uns dos outros."
+          },
+          {
+            "label": "Critério de extração",
+            "description": "Os sinais concretos que justificam transformar um módulo em serviço."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Contêineres e Dockerfile",
+        "items": [
+          {
+            "label": "Imagem e contêiner",
+            "description": "A diferença entre o pacote imutável e o processo que roda a partir dele."
+          },
+          {
+            "label": "Build em estágios",
+            "description": "Compilar em uma imagem e entregar outra, menor e sem ferramentas de build."
+          },
+          {
+            "label": "Imagem segura e rápida",
+            "description": "Cache de camadas, .dockerignore, versão fixa e usuário sem privilégio."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Compose e Comunicação entre Serviços",
+        "items": [
+          {
+            "label": "Ambiente com um comando",
+            "description": "Serviços, banco e fila descritos em um compose.yaml."
+          },
+          {
+            "label": "HTTP síncrono",
+            "description": "Chamada direta com timeout e nova tentativa, e o acoplamento que ela cria."
+          },
+          {
+            "label": "Fila assíncrona",
+            "description": "Publicar um evento, consumir em outro serviço e tolerar mensagens repetidas."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Observabilidade e Kubernetes Local",
+        "items": [
+          {
+            "label": "Enxergar o sistema",
+            "description": "Logs estruturados, identificador de correlação, health checks e métricas."
+          },
+          {
+            "label": "Cluster na sua máquina",
+            "description": "Criar um cluster com kind e carregar suas imagens nele."
+          },
+          {
+            "label": "Pod, Deployment e Service",
+            "description": "Réplicas que se recuperam sozinhas, endereço estável e atualização com volta atrás."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para executar no projeto da livraria fictícia. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "sitemap",
+      "title": "Monólito Modular Antes de Tudo",
+      "shortDescription": "Quando microsserviços valem a pena — e o que fazer até lá",
+      "introductionText": "Antes de escrever um Dockerfile, vale responder a pergunta que muitas equipes pulam: o sistema precisa mesmo ser distribuído? Microsserviços trocam complexidade dentro do código por complexidade na rede e na operação. Para uma equipe pequena com um produto ainda mudando, essa troca quase sempre é ruim. Neste módulo você organiza a API da livraria fictícia — catálogo, pedidos e notificações — como um monólito modular, e define com antecedência o critério que justificaria tirar um módulo de dentro dele.",
+      "sections": [
+        {
+          "title": "🧱 Fronteiras antes de processos",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "O custo de distribuir",
+              "guidance": "Liste o que muda quando catálogo e pedidos deixam de ser chamadas de função e passam a ser chamadas de rede: a chamada pode falhar ou demorar, a transação única de banco deixa de existir, cada serviço tem deploy, log e versão próprios, e depurar um pedido passa a exigir seguir a requisição por vários processos. Compare com o que se ganha: deploy independente, escala independente e autonomia de equipes. Escreva, para o projeto da livraria, quais desses ganhos você realmente precisa hoje.",
+              "tips": [
+                "Se a resposta honesta for 'nenhum ainda', o monólito é a arquitetura certa no momento — não um atraso.",
+                "Microsserviços resolvem principalmente problema de organização: várias equipes mexendo no mesmo sistema sem se atropelar. Com uma equipe só, esse benefício praticamente desaparece."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Módulos com interface pública",
+              "code": "src/modulos/{catalogo,pedidos,notificacoes}",
+              "guidance": "Reorganize o código em uma pasta por módulo de negócio. Cada módulo expõe um único arquivo de entrada com as funções que os outros podem chamar; todo o resto é interno. Pedidos que precisa do preço de um livro chama catalogo.obterPreco(id), nunca importa um arquivo interno do catálogo.",
+              "tips": [
+                "Uma regra de lint que proíbe importar caminhos internos de outro módulo transforma a convenção em verificação automática."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Dados de cada módulo são do módulo",
+              "guidance": "Separe as tabelas por módulo, por exemplo em esquemas diferentes do mesmo PostgreSQL. Nenhum módulo faz consulta com JOIN em tabela de outro; se precisa do dado, pede pela interface pública. É a regra mais difícil de manter e a que mais facilita uma extração futura.",
+              "tips": [
+                "Banco compartilhado com JOIN entre módulos é o que transforma uma divisão futura em reescrita. Serviços que leem as tabelas uns dos outros são um monólito distribuído: todo o custo da rede, nenhuma independência."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Critério de extração por escrito",
+              "guidance": "Registre em um documento curto de decisão os sinais que justificariam extrair um módulo: precisa escalar de forma muito diferente dos outros, tem ciclo de deploy próprio, pertence a outra equipe ou exige tecnologia diferente. No projeto, notificações cumpre dois deles — envia mensagens em picos depois de cada pedido e não precisa responder na hora — e será o candidato dos próximos módulos. Catálogo e pedidos ficam juntos.",
+              "tips": [
+                "Extraia pelas bordas: o módulo com menos dependências de entrada é o mais barato de tirar. O núcleo do negócio costuma ser o último, quando chega a sair."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que começar pelo monólito modular",
+      "highlights": [
+        {
+          "icon": "grid",
+          "title": "Fronteiras se descobrem",
+          "text": "Acertar onde um serviço termina é difícil até para quem tem experiência. Dentro de um processo, mover uma fronteira é refatoração; entre serviços, é migração de dados e de contrato."
+        },
+        {
+          "icon": "gauge",
+          "title": "Velocidade enquanto o produto muda",
+          "text": "Um deploy, um log, uma transação. Enquanto não se sabe o que os usuários querem, o custo fixo da distribuição atrasa justamente o aprendizado."
+        },
+        {
+          "icon": "tools",
+          "title": "Extração sem reescrita",
+          "text": "Módulo com interface pública e dados próprios já se comporta como serviço. Separá-lo depois é trocar a chamada de função por chamada de rede, não redesenhar o sistema."
+        }
+      ],
+      "closingText": "A livraria tem agora um monólito com três módulos bem separados e uma decisão registrada: notificações é candidato a serviço próprio, o resto fica onde está. Antes de separar qualquer coisa, porém, o sistema precisa rodar igual em qualquer máquina. É o papel do contêiner.",
+      "ctaTitle": "🧱 Fronteiras desenhadas!",
+      "ctaText": "Você sabe o que separar e, principalmente, o que não separar. Agora vamos empacotar a aplicação em uma imagem.",
+      "nextButtonText": "Ir para Módulo 1: Contêineres e Dockerfile"
+    },
+    {
+      "id": 1,
+      "icon": "folder",
+      "title": "Contêineres e Dockerfile",
+      "shortDescription": "Imagens pequenas, reproduzíveis e sem privilégio",
+      "introductionText": "Um contêiner é um processo isolado que roda a partir de uma imagem: um pacote imutável com o sistema de arquivos e as dependências da aplicação. Isso resolve o problema do 'na minha máquina funciona', porque desenvolvimento, teste e produção passam a rodar exatamente o mesmo artefato. Mas um Dockerfile escrito sem cuidado gera imagens de centenas de megabytes, builds lentos e processos rodando como root. Neste módulo você escreve o Dockerfile da livraria seguindo as práticas da documentação oficial do Docker.",
+      "sections": [
+        {
+          "title": "📦 Do código à imagem",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Imagem e contêiner",
+              "code": "docker run --rm -p 3000:3000 livraria:0.1.0",
+              "guidance": "Construa uma primeira imagem simples com docker build -t livraria:0.1.0 . e rode um contêiner a partir dela. Pare o contêiner, rode outro da mesma imagem e observe que nada do que foi gravado dentro do primeiro aparece no segundo. A imagem é somente leitura; o contêiner é uma instância descartável.",
+              "tips": [
+                "Tudo que precisa sobreviver ao contêiner — dados de banco, arquivos enviados — vai para um volume ou para um serviço externo, nunca para o sistema de arquivos do contêiner."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Build em estágios",
+              "code": "FROM node:22-slim AS build ... FROM node:22-slim",
+              "guidance": "Divida o Dockerfile em dois estágios. O primeiro instala todas as dependências, inclusive as de desenvolvimento, e gera o build. O segundo parte de uma imagem base limpa, instala só as dependências de produção e copia do primeiro estágio apenas o resultado com COPY --from=build. Compare o tamanho final com docker image ls.",
+              "tips": [
+                "Ferramentas de compilação, testes e código-fonte TypeScript ficam no estágio descartado. Menos coisa na imagem final é menos coisa para atualizar e menos superfície de ataque."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Cache de camadas e .dockerignore",
+              "code": "COPY package*.json ./ → RUN npm ci → COPY . .",
+              "guidance": "Cada instrução gera uma camada, e o Docker reaproveita do cache tudo que vem antes da primeira camada alterada. Copie primeiro só os arquivos de dependência, instale, e só depois copie o restante do código: mudar uma linha de código deixa de reinstalar tudo. Crie um .dockerignore excluindo node_modules, .git e arquivos de ambiente.",
+              "tips": [
+                "Sem .dockerignore, um arquivo .env local pode acabar dentro da imagem — e imagem publicada em registro é lida por quem tiver acesso a ele."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Versão fixa e usuário sem privilégio",
+              "code": "USER node",
+              "guidance": "Fixe a versão da imagem base em vez de usar latest, para que o build de amanhã produza o mesmo resultado que o de hoje. No estágio final, troque para um usuário sem privilégio com a instrução USER — a imagem oficial do Node já traz o usuário node. Use a forma de lista no CMD, como CMD [\"node\", \"dist/server.js\"], para que o processo receba os sinais de encerramento.",
+              "tips": [
+                "Tags podem ser republicadas pelo mantenedor com outro conteúdo. Para reprodutibilidade total, fixe também o digest sha256 da imagem base."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que o Dockerfile merece revisão",
+      "highlights": [
+        {
+          "icon": "sync",
+          "title": "O mesmo artefato em todo lugar",
+          "text": "A imagem testada é a que vai para produção, byte a byte. Diferença de versão de runtime entre máquinas deixa de ser causa de bug."
+        },
+        {
+          "icon": "bolt",
+          "title": "Build rápido",
+          "text": "Com as camadas na ordem certa, alterar o código reconstrói só o fim da imagem. Em pipeline de integração contínua, isso é minutos economizados em todo commit."
+        },
+        {
+          "icon": "shield",
+          "title": "Menos superfície de ataque",
+          "text": "Imagem final sem compilador, sem arquivos de ambiente e sem root limita o estrago de uma vulnerabilidade explorada na aplicação."
+        }
+      ],
+      "closingText": "A livraria agora vira uma imagem pequena, reproduzível e que roda sem privilégio. Uma imagem, porém, é uma peça só. O sistema real precisa de banco, de fila e — depois da extração — de dois serviços conversando. Subir tudo isso à mão, contêiner por contêiner, não escala nem para uma pessoa.",
+      "ctaTitle": "📦 Aplicação empacotada!",
+      "ctaText": "Sua API roda em qualquer máquina com Docker. Vamos montar o ambiente completo e separar o primeiro serviço.",
+      "nextButtonText": "Ir para Módulo 2: Compose e Comunicação entre Serviços"
+    },
+    {
+      "id": 2,
+      "icon": "globe",
+      "title": "Compose e Comunicação entre Serviços",
+      "shortDescription": "Vários serviços, um comando, e duas formas de conversar",
+      "introductionText": "Com a imagem pronta, chega a hora de executar a decisão do Módulo 0: extrair notificações para um serviço próprio. Isso traz dois problemas novos. O primeiro é operacional — agora são dois serviços, um banco e uma fila para subir juntos; o Docker Compose resolve descrevendo tudo em um arquivo. O segundo é de projeto — como os serviços conversam. Uma chamada HTTP é simples, mas prende um serviço à disponibilidade do outro; uma mensagem em fila desacopla, mas obriga a lidar com entrega repetida e consistência eventual. Este módulo trabalha os dois lados.",
+      "sections": [
+        {
+          "title": "🔗 Serviços que se encontram e se falam",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "O ambiente em um compose.yaml",
+              "code": "docker compose up --build",
+              "guidance": "Descreva em um compose.yaml os serviços api (catálogo e pedidos), notificacoes, postgres e rabbitmq. Para os seus serviços, use build apontando para o Dockerfile; para banco e fila, imagens oficiais com versão fixa. Declare um volume nomeado para os dados do PostgreSQL e passe configuração por variáveis de ambiente.",
+              "tips": [
+                "O Compose cria uma rede para o projeto e cada serviço é encontrado pelo nome: a API acessa o banco em postgres:5432, não em localhost. Dentro de um contêiner, localhost é o próprio contêiner."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Ordem de subida com health check",
+              "code": "depends_on: { postgres: { condition: service_healthy } }",
+              "guidance": "Por padrão, depends_on só garante que o contêiner do banco foi iniciado, não que o banco já aceita conexões. Defina um healthcheck no postgres (por exemplo com pg_isready) e use a condição service_healthy para que a API só suba depois dele.",
+              "tips": [
+                "Mesmo com a ordem certa no Compose, o serviço deve tentar reconectar sozinho. Em produção o banco pode reiniciar a qualquer momento, e não haverá Compose para segurar ninguém."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Chamada HTTP com timeout e nova tentativa",
+              "guidance": "O serviço de notificações precisa do título do livro e consulta a API por HTTP. Configure um timeout explícito na chamada, faça no máximo duas novas tentativas com espera crescente entre elas, e defina o que acontece se tudo falhar — aqui, enviar a notificação sem o título. Desligue a API com docker compose stop api e veja o comportamento.",
+              "tips": [
+                "Chamada sem timeout é a forma mais comum de uma falha em um serviço derrubar outro: as requisições ficam presas esperando e esgotam conexões e memória de quem chamou.",
+                "Cadeia de chamadas síncronas soma latências e multiplica pontos de falha. Se A chama B, que chama C, A só funciona quando os três funcionam ao mesmo tempo."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Evento em fila",
+              "code": "pedidos → exchange pedido.criado → fila notificacoes",
+              "guidance": "Em vez de a API chamar notificações a cada pedido, publique no RabbitMQ um evento pedido.criado com o id do pedido e os dados necessários. O serviço de notificações consome a fila e confirma (ack) a mensagem só depois de processá-la. Pare o consumidor, crie pedidos, suba o consumidor de novo e veja as mensagens acumuladas serem processadas.",
+              "tips": [
+                "A API não sabe quem consome o evento nem precisa esperar. Se amanhã outro serviço quiser reagir a pedidos criados, ele só assina o evento — sem mudar a API."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Consumidor idempotente",
+              "guidance": "Filas como o RabbitMQ entregam pelo menos uma vez: se o consumidor cair depois de enviar o e-mail e antes do ack, a mensagem volta. Guarde o id de cada evento processado em uma tabela do serviço de notificações e ignore os repetidos. Simule a falha encerrando o consumidor no meio do processamento.",
+              "tips": [
+                "Pergunte de cada consumidor: o que acontece se esta mensagem chegar duas vezes? Se a resposta for 'o cliente recebe dois e-mails' ou 'cobra duas vezes', falta idempotência."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que comunicação é a parte difícil",
+      "highlights": [
+        {
+          "icon": "list",
+          "title": "Ambiente declarado",
+          "text": "Um compose.yaml no repositório substitui a página de wiki com vinte comandos de instalação. Quem chega à equipe sobe o sistema inteiro com um comando."
+        },
+        {
+          "icon": "bolt",
+          "title": "Síncrono quando precisa de resposta",
+          "text": "HTTP serve quando quem chama não pode continuar sem o resultado. O preço é depender da disponibilidade do outro lado — e por isso timeout não é opcional."
+        },
+        {
+          "icon": "sync",
+          "title": "Assíncrono quando pode esperar",
+          "text": "A fila absorve picos e quedas do consumidor, e quem publica segue em frente. Em troca, o sistema fica eventualmente consistente e cada consumidor precisa tolerar repetição."
+        }
+      ],
+      "closingText": "A livraria agora tem dois serviços, um banco e uma fila subindo juntos, conversando por HTTP onde precisa de resposta e por evento onde pode esperar. Com mais de um processo, porém, aparece uma pergunta nova: quando algo dá errado, onde está o erro? Sem observabilidade, um sistema distribuído é uma caixa-preta com várias caixas dentro.",
+      "ctaTitle": "🔗 Serviços conversando!",
+      "ctaText": "Você extraiu o primeiro serviço com motivo e escolheu como ele fala com os outros. Agora vamos enxergar o que acontece lá dentro e levar tudo para o Kubernetes.",
+      "nextButtonText": "Ir para Módulo 3: Observabilidade e Kubernetes Local"
+    },
+    {
+      "id": 3,
+      "icon": "search",
+      "title": "Observabilidade e Kubernetes Local",
+      "shortDescription": "Enxergar o sistema e mantê-lo de pé com Pod, Deployment e Service",
+      "introductionText": "Em um processo só, um stack trace conta a história inteira. Em vários, um pedido atravessa a API, a fila e o serviço de notificações, e cada um escreve seu log em um lugar. A primeira metade deste módulo instala o mínimo de observabilidade que torna isso investigável. A segunda metade leva os serviços para um cluster Kubernetes rodando na sua máquina com kind, onde você descreve quantas réplicas quer e o cluster se encarrega de manter esse número — inclusive quando um contêiner morre.",
+      "sections": [
+        {
+          "title": "🔭 Enxergar o que acontece",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Logs estruturados com correlação",
+              "code": "{\"nivel\":\"info\",\"servico\":\"api\",\"correlacaoId\":\"...\",\"msg\":\"pedido criado\"}",
+              "guidance": "Troque logs em texto livre por uma linha JSON por evento, escrita na saída padrão. Gere um identificador de correlação na entrada de cada requisição, devolva-o no cabeçalho da resposta, propague-o nas chamadas HTTP e dentro das mensagens da fila. Com ele, docker compose logs filtrado por um único id mostra o caminho completo de um pedido.",
+              "tips": [
+                "Contêiner escreve log na saída padrão, não em arquivo. Quem coleta e guarda é a plataforma — o Docker, o Kubernetes ou o agente de logs."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Health checks e métricas",
+              "code": "GET /saude/vivo · GET /saude/pronto · GET /metrics",
+              "guidance": "Exponha dois endpoints de saúde com papéis diferentes: vivo responde se o processo está funcionando; pronto responde se ele consegue atender — banco conectado, fila acessível. Exponha também métricas básicas em /metrics no formato do Prometheus: total de requisições por rota e status, e tempo de resposta. Essas três medidas respondem a maior parte das perguntas de incidente.",
+              "tips": [
+                "Nunca faça a verificação de vivo depender do banco. Se o banco cair, reiniciar todos os serviços não o traz de volta — só soma uma segunda falha à primeira."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "☸️ Kubernetes na sua máquina",
+          "subsections": [
+            {
+              "number": 3,
+              "title": "Cluster local com kind",
+              "code": "kind create cluster --name livraria",
+              "guidance": "Crie um cluster com o kind, que roda os nós do Kubernetes como contêineres Docker. Confirme com kubectl get nodes. Como o cluster não enxerga as imagens do seu Docker local, carregue-as com kind load docker-image livraria-api:0.1.0 --name livraria. O minikube é alternativa equivalente para tudo que este módulo faz.",
+              "tips": [
+                "Use sempre uma tag de versão nas imagens. Com a tag latest, o Kubernetes tenta baixar a imagem de um registro a cada criação de Pod — e falha, porque ela só existe no cluster local."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Pod e Deployment",
+              "code": "apiVersion: apps/v1 · kind: Deployment · replicas: 2",
+              "guidance": "Um Pod é a menor unidade do Kubernetes: um ou mais contêineres que compartilham rede. Você quase nunca cria Pods à mão; cria um Deployment, que declara a imagem e quantas réplicas devem existir. Aplique o manifesto da API com kubectl apply -f, apague um dos Pods com kubectl delete pod e observe com kubectl get pods -w o Deployment criar outro no lugar. Configure as probes de liveness e readiness apontando para os endpoints do passo 2.",
+              "tips": [
+                "Pods são descartáveis e trocam de IP a cada recriação. Nada deve depender do endereço de um Pod específico — é para isso que existe o Service."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Service, atualização e volta atrás",
+              "code": "kubectl rollout undo deployment/api",
+              "guidance": "Crie um Service do tipo ClusterIP que seleciona os Pods da API pelo rótulo. Ele dá um nome DNS estável e distribui as requisições entre as réplicas prontas; o serviço de notificações passa a chamar http://api. Para testar do seu computador, use kubectl port-forward service/api 8080:80. Depois, publique uma versão nova da imagem, acompanhe a troca gradual com kubectl rollout status e volte para a anterior com kubectl rollout undo.",
+              "tips": [
+                "Na atualização gradual, o Deployment só derruba Pods antigos à medida que os novos ficam prontos — por isso a probe de readiness bem feita é o que torna o deploy seguro.",
+                "Banco e fila podem continuar fora do cluster neste estágio. Rodar estado dentro do Kubernetes é tema próprio, que pede StatefulSet e volumes persistentes."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que observar e orquestrar",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Um id, a história inteira",
+          "text": "O identificador de correlação transforma logs de três serviços em uma linha do tempo única. Sem ele, investigar um pedido é comparar horários em janelas diferentes."
+        },
+        {
+          "icon": "gauge",
+          "title": "Saúde com significado",
+          "text": "Vivo e pronto respondem perguntas diferentes, e a plataforma age diferente em cada uma: reinicia o processo travado, tira do tráfego o que ainda não está pronto."
+        },
+        {
+          "icon": "laptop",
+          "title": "Estado desejado",
+          "text": "No Kubernetes você declara o que quer, não os passos para chegar lá. O cluster compara o desejado com o real o tempo todo e corrige a diferença."
+        }
+      ],
+      "closingText": "Você levou a livraria de um monólito desorganizado a um monólito modular com um serviço extraído por motivo concreto, empacotado em imagens enxutas, conversando por HTTP e por fila, observável por logs, saúde e métricas, e rodando com réplicas em um cluster Kubernetes. Mais importante que qualquer comando: você sabe justificar cada peça, e sabe dizer quando não usá-la.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você domina o ciclo do contêiner ao cluster e decide com critério quando distribuir. O próximo passo natural é automatizar build e deploy em um pipeline de integração contínua.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Uma equipe de quatro pessoas vai lançar um produto novo, cujas funcionalidades ainda devem mudar bastante. Qual arquitetura é mais indicada para começar?",
+      "explanation": "Com uma equipe pequena e fronteiras ainda incertas, o custo fixo de microsserviços — rede, deploys múltiplos, dados distribuídos — atrasa o aprendizado sem trazer o principal benefício, que é a autonomia de várias equipes. Um monólito modular mantém a velocidade e prepara uma extração futura. Kubernetes não decide arquitetura, e um serviço por tabela cria acoplamento máximo.",
+      "options": [
+        {
+          "text": "Monólito modular, com fronteiras internas claras",
+          "isCorrect": true
+        },
+        {
+          "text": "Microsserviços desde o início, para não precisar migrar depois",
+          "isCorrect": false
+        },
+        {
+          "text": "Um microsserviço para cada tabela do banco",
+          "isCorrect": false
+        },
+        {
+          "text": "Qualquer uma, desde que rode em Kubernetes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Dois serviços separados leem e escrevem nas mesmas tabelas do mesmo banco e fazem JOIN entre elas. O que isso caracteriza?",
+      "explanation": "Serviços que compartilham tabelas não podem mudar seu modelo de dados nem fazer deploy de forma independente, mas continuam pagando o custo da comunicação por rede. É o chamado monólito distribuído: os custos dos dois mundos sem os benefícios de nenhum. Banco compartilhado não é requisito de consistência nem prática recomendada.",
+      "options": [
+        {
+          "text": "Um monólito distribuído: custos da rede sem independência real",
+          "isCorrect": true
+        },
+        {
+          "text": "A forma recomendada de garantir consistência entre serviços",
+          "isCorrect": false
+        },
+        {
+          "text": "Um monólito modular bem projetado",
+          "isCorrect": false
+        },
+        {
+          "text": "Uma exigência para usar filas de mensagens",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Qual destes é um bom sinal para extrair um módulo para um serviço próprio?",
+      "explanation": "Necessidade de escala muito diferente, ciclo de deploy próprio, outra equipe responsável ou tecnologia distinta são motivos concretos. Arquivo grande se resolve com refatoração interna; tendência de mercado não é critério técnico; e ser o núcleo do negócio costuma ser motivo para extrair por último, não primeiro.",
+      "options": [
+        {
+          "text": "O módulo precisa escalar de forma muito diferente dos demais",
+          "isCorrect": true
+        },
+        {
+          "text": "O arquivo principal do módulo passou de 500 linhas",
+          "isCorrect": false
+        },
+        {
+          "text": "Microsserviços estão em alta no mercado",
+          "isCorrect": false
+        },
+        {
+          "text": "É o módulo central do negócio, com mais dependências",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Qual é a principal vantagem de um build em múltiplos estágios no Dockerfile?",
+      "explanation": "O build em estágios permite compilar com todas as ferramentas em um estágio e copiar só o resultado para uma imagem final limpa. A imagem fica menor e sem compiladores ou dependências de desenvolvimento. Não substitui o .dockerignore, não dispensa versão da base e não paraleliza contêineres em produção.",
+      "options": [
+        {
+          "text": "A imagem final leva só o necessário para rodar, sem ferramentas de build",
+          "isCorrect": true
+        },
+        {
+          "text": "Dispensa o uso de .dockerignore",
+          "isCorrect": false
+        },
+        {
+          "text": "Permite usar a tag latest com segurança",
+          "isCorrect": false
+        },
+        {
+          "text": "Faz o contêiner rodar em vários processadores ao mesmo tempo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Por que copiar package.json e instalar as dependências antes de copiar o restante do código?",
+      "explanation": "O Docker reaproveita do cache as camadas anteriores à primeira que mudou. Com os arquivos de dependência copiados primeiro, alterar o código-fonte não invalida a camada de instalação, e o build fica muito mais rápido. A ordem não afeta segurança, não é exigência do npm e não muda o tamanho final.",
+      "options": [
+        {
+          "text": "Para aproveitar o cache de camadas e não reinstalar tudo a cada mudança de código",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque o npm exige que o código seja copiado depois",
+          "isCorrect": false
+        },
+        {
+          "text": "Para reduzir o tamanho da imagem final pela metade",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que o contêiner rode sem privilégio de root",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "O que acontece com um arquivo gravado dentro de um contêiner quando ele é removido e outro é criado a partir da mesma imagem?",
+      "explanation": "A imagem é somente leitura e cada contêiner tem sua própria camada gravável, descartada junto com ele. O novo contêiner parte da imagem original e não vê o arquivo. Dados que precisam persistir vão para volumes ou serviços externos.",
+      "options": [
+        {
+          "text": "O arquivo se perde, a menos que estivesse em um volume",
+          "isCorrect": true
+        },
+        {
+          "text": "O arquivo passa a fazer parte da imagem automaticamente",
+          "isCorrect": false
+        },
+        {
+          "text": "O novo contêiner herda o arquivo do anterior",
+          "isCorrect": false
+        },
+        {
+          "text": "O Docker impede a remoção enquanto houver arquivos novos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "No Docker Compose, como o serviço api deve acessar o banco definido como serviço postgres?",
+      "explanation": "O Compose cria uma rede para o projeto em que cada serviço é resolvido pelo nome. Dentro de um contêiner, localhost aponta para o próprio contêiner, não para o banco. O IP do contêiner muda entre execuções, e publicar a porta no host é para acesso de fora, não entre serviços.",
+      "options": [
+        {
+          "text": "Pelo nome do serviço, por exemplo postgres:5432",
+          "isCorrect": true
+        },
+        {
+          "text": "Por localhost:5432",
+          "isCorrect": false
+        },
+        {
+          "text": "Pelo IP do contêiner do banco, fixado no código",
+          "isCorrect": false
+        },
+        {
+          "text": "Só é possível publicando a porta do banco no computador",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Por que toda chamada HTTP entre serviços deve ter timeout explícito?",
+      "explanation": "Sem timeout, requisições ficam presas esperando um serviço lento ou fora do ar e acumulam conexões e memória no serviço que chamou, espalhando a falha. O timeout limita esse dano e permite aplicar uma alternativa. Ele não garante entrega, não deixa a rede mais rápida e não substitui autenticação.",
+      "options": [
+        {
+          "text": "Para que a lentidão ou queda de um serviço não prenda os recursos de quem chama",
+          "isCorrect": true
+        },
+        {
+          "text": "Para garantir que a requisição seja entregue exatamente uma vez",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque deixa a comunicação de rede mais rápida",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque substitui a necessidade de autenticação entre serviços",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Um consumidor de fila envia um e-mail e cai antes de confirmar (ack) a mensagem. O que deve ser feito para evitar e-mail duplicado?",
+      "explanation": "Filas com entrega pelo menos uma vez reenviam mensagens não confirmadas, então o consumidor precisa ser idempotente: registrar o id do evento processado e ignorar repetições. Confirmar antes de processar troca duplicidade por perda de mensagem. Desligar a fila ou voltar a uma chamada síncrona não resolve o problema de projeto.",
+      "options": [
+        {
+          "text": "Tornar o consumidor idempotente, registrando o id dos eventos já processados",
+          "isCorrect": true
+        },
+        {
+          "text": "Confirmar a mensagem antes de processá-la",
+          "isCorrect": false
+        },
+        {
+          "text": "Trocar a fila por uma chamada HTTP síncrona sem timeout",
+          "isCorrect": false
+        },
+        {
+          "text": "Nada: filas garantem entrega exatamente uma vez",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Para que serve um identificador de correlação propagado entre serviços?",
+      "explanation": "O identificador de correlação acompanha uma requisição por todos os serviços, inclusive dentro das mensagens da fila, e permite filtrar os logs de todos eles para reconstruir o caminho de um único pedido. Não é mecanismo de autenticação, de cache nem de balanceamento.",
+      "options": [
+        {
+          "text": "Reunir os logs de vários serviços referentes à mesma requisição",
+          "isCorrect": true
+        },
+        {
+          "text": "Autenticar um serviço perante o outro",
+          "isCorrect": false
+        },
+        {
+          "text": "Guardar respostas em cache entre requisições",
+          "isCorrect": false
+        },
+        {
+          "text": "Escolher para qual réplica a requisição será enviada",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "No Kubernetes, qual objeto mantém o número desejado de réplicas e recria um Pod que foi apagado?",
+      "explanation": "O Deployment declara a imagem e o número de réplicas e, por meio de um ReplicaSet, cria Pods novos sempre que o real diverge do desejado. O Service dá endereço estável e distribui tráfego, mas não cria Pods. Um Pod sozinho não se recria, e o kind é a ferramenta que cria o cluster local.",
+      "options": [
+        {
+          "text": "Deployment",
+          "isCorrect": true
+        },
+        {
+          "text": "Service",
+          "isCorrect": false
+        },
+        {
+          "text": "O próprio Pod",
+          "isCorrect": false
+        },
+        {
+          "text": "kind",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Segundo a pesquisa anual da CNCF de 2025, qual proporção dos usuários de contêineres roda Kubernetes em produção?",
+      "explanation": "A pesquisa de 2025 da Cloud Native Computing Foundation aponta 82% dos usuários de contêineres com Kubernetes em produção, contra 66% em 2023. O número mede quem já usa contêineres e respondeu à pesquisa — não significa que todo sistema precise de Kubernetes, e sim que, onde há contêineres em produção, ele é o orquestrador padrão.",
+      "options": [
+        {
+          "text": "82%",
+          "isCorrect": true
+        },
+        {
+          "text": "25%",
+          "isCorrect": false
+        },
+        {
+          "text": "50%",
+          "isCorrect": false
+        },
+        {
+          "text": "Praticamente 100%",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "O backend de uma livraria fictícia organizado como monólito modular (catálogo e pedidos) mais um serviço de notificações extraído por critério documentado. Tudo empacotado em imagens com build em estágios, subindo com banco e fila por um único compose.yaml, conversando por HTTP com timeout e por eventos com consumidor idempotente, instrumentado com logs estruturados, health checks e métricas, e publicado com Deployments e Services em um cluster Kubernetes local.",
+    "highlights": [
+      "Monólito modular com um serviço extraído e a decisão registrada por escrito",
+      "Ambiente completo com Docker Compose: dois serviços, PostgreSQL e RabbitMQ",
+      "Manifestos Kubernetes com réplicas, probes, Service e volta atrás de versão"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "Contêineres deixaram de ser assunto de equipe de infraestrutura. Na pesquisa de desenvolvedores do Stack Overflow de 2025, o Docker aparece com cerca de 71% de uso entre os respondentes, um salto de 17 pontos percentuais em relação a 2024 — o maior crescimento de uma ferramenta no levantamento. Na pesquisa anual da CNCF de 2025, 82% dos usuários de contêineres rodam Kubernetes em produção, contra 66% em 2023.",
+      "Isso não quer dizer que todo sistema deva virar microsserviços — e é por isso que o programa começa pelo monólito modular. Quer dizer que ler um Dockerfile, subir um ambiente com Compose e entender um manifesto de Deployment virou parte do básico esperado de quem trabalha com backend, inclusive em equipes que mantêm um único serviço."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Ambiente de desenvolvimento reproduzível",
+        "description": "Equipes que querem que qualquer pessoa suba o sistema inteiro com um comando."
+      },
+      {
+        "label": "Sistemas que cresceram além de uma equipe",
+        "description": "Produtos em que várias equipes precisam fazer deploy sem depender umas das outras."
+      },
+      {
+        "label": "Processamento assíncrono",
+        "description": "Notificações, faturamento, relatórios e qualquer tarefa que não precisa de resposta imediata."
+      },
+      {
+        "label": "Plataformas baseadas em Kubernetes",
+        "description": "Empresas que já publicam em cluster e precisam de quem leia e escreva manifestos com segurança."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem já constrói APIs",
+        "description": "Desenvolve backend e quer entender contêineres, filas e orquestração com profundidade."
+      },
+      {
+        "label": "Quem herdou microsserviços",
+        "description": "Entrou em uma equipe com vários serviços e precisa entender por que as coisas são como são."
+      },
+      {
+        "label": "Quem precisa decidir arquitetura",
+        "description": "Vai participar da escolha entre manter o monólito e dividir, e quer argumentos além da moda."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Docker é ferramenta de rotina em empresas de todos os tamanhos, do ambiente local de uma startup ao pipeline de entrega de grandes plataformas. Kubernetes é o orquestrador padrão onde há contêineres em produção, presente em provedores de nuvem e em ambientes próprios. Microsserviços, por outro lado, aparecem com mais força em organizações com muitas equipes de produto — e muitas empresas bem-sucedidas operam monólitos modulares por escolha.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Martin Fowler — MonolithFirst",
+      "url": "https://www.martinfowler.com/bliki/MonolithFirst.html"
+    },
+    {
+      "label": "Docker Docs — Building best practices (multi-stage builds, imagem base, .dockerignore)",
+      "url": "https://docs.docker.com/build/building/best-practices/"
+    },
+    {
+      "label": "Kubernetes Documentation — Deployments",
+      "url": "https://v1-35.docs.kubernetes.io/docs/concepts/workloads/controllers/deployment/"
+    },
+    {
+      "label": "Computer Weekly — CNCF 2025 Annual Survey: 82% dos usuários de contêineres com Kubernetes em produção",
+      "url": "https://www.computerweekly.com/blog/Open-Source-Insider/CNCF-Kubernetes-now-de-facto-operating-system-for-AI"
+    },
+    {
+      "label": "Highlights from the Stack Overflow Developer Survey 2025 — uso do Docker em 71,1%",
+      "url": "https://1000software.substack.com/p/highlights-from-the-stack-overflow"
+    }
+  ]
 }

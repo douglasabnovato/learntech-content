@@ -3,22 +3,44 @@
   "slug": "driven-fullstack",
   "title": "Formação Full Stack",
   "institution": "Driven Educação",
-  "description": "Formação intensiva de 9 meses em desenvolvimento full stack, com pagamento após empregabilidade.",
+  "description": "Formação intensiva em desenvolvimento de software da Driven Educação, de seis a nove meses, com pagamento após a contratação (modelo ISA).",
   "coverImage": "/media/bootcamps/instituicoes/driven.webp",
   "altText": "Identidade visual da Driven Educação",
   "category": "fullstack",
   "status": "concluido",
   "content": {
-    "longDescription": "Programa de formação full stack da Driven Educação, com 1.450 horas ao longo de 9 meses, unindo projetos práticos, portfólio e preparação para processos seletivos do mercado de tecnologia.",
+    "longDescription": "A Driven é uma edtech brasileira fundada em 2020, que oferece uma formação intensiva para desenvolvedores, baseada em projetos. Em 2021 o programa era descrito com cerca de 1.200 horas ao longo de até nove meses. O aluno só começava a pagar depois de empregado, com um percentual do salário (Income Share Agreement).",
     "videoUrl": "",
     "gallery": [],
     "curriculum": [
-      "Lógica de Programação",
-      "JavaScript",
-      "Desenvolvimento Front-end",
-      "Desenvolvimento Back-end",
-      "Projetos em equipe"
+      "Lógica de programação e JavaScript",
+      "Desenvolvimento front-end",
+      "Desenvolvimento back-end",
+      "Projetos práticos inspirados em demandas de empresas parceiras",
+      "Fundamentos de computação, algoritmos e estruturas de dados",
+      "Habilidades comportamentais (comunicação, gestão de tempo) com mentoria de carreira"
     ],
-    "officialLink": "https://www.driven.com.br"
+    "officialLink": "https://www.driven.com.br",
+    "paragraphs": [
+      "A Driven Educação é uma edtech brasileira criada no fim de 2020 por fundadores que já tinham lançado a plataforma de estudos Responde Aí, entre eles o engenheiro e professor Paulo Monteiro. Em agosto de 2021 a empresa captou R$ 16 milhões em rodada liderada pela Iporanga Ventures. A meta anunciada era formar 10 mil novos profissionais de tecnologia em quatro anos.",
+      "Segundo as reportagens da época, a formação durava de seis a nove meses, com cerca de 1.200 horas e uma rotina de aproximadamente seis horas de estudo por dia. O programa tinha três frentes. A maior parte da carga horária (cerca de 70%) era de projetos práticos inspirados em demandas de empresas parceiras como iFood, Stone e OLX. As outras duas eram fundamentos de computação, algoritmos e estruturas de dados, e o desenvolvimento de habilidades comportamentais, com apoio de psicólogos, mentores de carreira e tutores técnicos.",
+      "O financiamento seguia o modelo de Income Share Agreement (ISA). O aluno não pagava durante o curso e, depois de contratado com renda a partir de R$ 3.000 mensais, repassava 17% do salário até quitar o valor. Em 2021 havia também opções de pagamento à vista (R$ 17.600) ou parcelado. Valores e regras podem ter mudado (dados de 2021, consulta em 30/10/2026).",
+      "A entrada era por processo seletivo, que avaliava interesse pela área, resiliência e raciocínio lógico. Nas primeiras turmas, cerca de 20 mil pessoas se inscreveram para 140 vagas. O foco inicial eram estudantes e recém-formados de cursos de exatas.",
+      "Formações intensivas como essa simulam o ritmo de um time de produto: projetos com prazo, trabalho em equipe e feedback técnico frequente. Com isso o aluno sai com um portfólio de projetos completos, além de já ter passado por processos seletivos e pela preparação para entrevistas."
+    ],
+    "sources": [
+      {
+        "label": "Exame: Nova edtech Driven capta R$ 16 mi para preparar líderes de tecnologia (2021)",
+        "url": "https://www.exame.com/insight/nova-edtech-driven-capta-r-16-mi-para-preparar-lideres-de-tecnologia/p/"
+      },
+      {
+        "label": "Bloomberg Línea: Startup de educação recebe aporte para acelerar formação de profissionais de tecnologia (2021)",
+        "url": "https://www.bloomberglinea.com.br/2021/08/24/startup-de-educacao-recebe-aporte-para-acelerar-formacao-de-profissionais-de-tecnologia/"
+      },
+      {
+        "label": "Baguete: Driven capta R$ 16 milhões (2021)",
+        "url": "https://www.baguete.com.br/noticias/driven-capta-r-16-milhoes"
+      }
+    ]
   }
 }

@@ -3,8 +3,829 @@
   "image": "https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg",
   "category": "Web",
   "categoryFilter": "web",
-  "title": "HTML5 e CSS3 Moderno: Do Zero ao Deployment",
-  "lessons": "20+ Lições",
-  "duration": "15hr 20min",
-  "access": "Acesso Livre"
+  "title": "HTML5 e CSS3 Moderno: do Zero ao Currículo Publicado",
+  "lessons": "18 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Iniciante",
+  "description": "O ponto de partida para quem nunca escreveu uma página. Você aprende a estruturar conteúdo com HTML semântico, montar um formulário acessível, diagramar com CSS moderno (box model, flexbox, grid e media queries) e publicar o resultado no GitHub Pages. O projeto é o seu currículo/portfólio de uma página, no ar com endereço próprio.",
+  "letslearn": [
+    "Montar o esqueleto de um documento HTML e escolher a tag certa pelo significado, não pela aparência",
+    "Construir um formulário com rótulos, agrupamento e validação nativa que funciona com teclado e leitor de tela",
+    "Entender o box model e diagramar com flexbox, grid e media queries a partir do celular",
+    "Publicar uma página estática no GitHub Pages e conferir o resultado com uma checklist"
+  ],
+  "curriculum": "Do HTML semântico ao site publicado",
+  "about": "O programa começa com um arquivo em branco e termina com um currículo/portfólio publicado na internet. A sequência segue a ordem em que uma página é de fato construída: primeiro o conteúdo e o significado (HTML), depois a interação mais comum (formulário), depois a aparência (CSS) e, por último, a publicação. Cada módulo acrescenta uma camada ao mesmo arquivo, então nada do que você escreve é descartado. O primeiro módulo traz um glossário comentado das tags que você mais vai usar, com link para a referência da MDN.",
+  "materials": [
+    "Arquivo inicial com o conteúdo fictício do currículo",
+    "Glossário comentado de tags semânticas, de formulário e de mídia",
+    "Checklist de acessibilidade e publicação"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Estrutura e Semântica",
+      "lessonsCount": 6,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Formulários e Acessibilidade",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "CSS Moderno: Box Model, Flexbox, Grid e Responsivo",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Publicando no GitHub Pages",
+      "lessonsCount": 3,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Web",
+    "mainTitle": "Escreva a página pelo significado, dê forma com CSS e coloque no ar com o seu nome.",
+    "introductionParagraphs": [
+      {
+        "title": "HTML descreve o que o conteúdo é",
+        "text": "O erro mais comum de quem começa é escolher tag pela aparência: usar um título porque a letra fica grande, ou uma div para tudo. O **HTML** não serve para desenhar; serve para dizer o que cada pedaço é: um cabeçalho, uma navegação, o conteúdo principal, um formulário. Navegador, buscador e leitor de tela leem esse significado. A aparência é trabalho do CSS, e separar as duas coisas desde o primeiro dia evita retrabalho."
+      },
+      {
+        "title": "Acessibilidade não é etapa final",
+        "text": "Uma página bem marcada já nasce quase toda acessível: rótulo ligado ao campo, imagem com texto alternativo, idioma declarado, títulos em ordem. Em 2025, 94,8% das um milhão de páginas iniciais mais acessadas tinham falhas detectáveis de acessibilidade, e boa parte delas se resolve com a tag certa. Por isso o assunto aparece junto do HTML e do formulário, e não num apêndice."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não usa framework de CSS, não usa JavaScript e não instala ferramenta de build. Tudo cabe em um arquivo HTML e um arquivo CSS, editados num editor de texto e abertos no navegador. A ideia é que você entenda cada linha antes de passar para ferramentas que escondem essas linhas. A landing page com mais interação fica para o programa seguinte."
+      }
+    ],
+    "courseAboutTitle": "A primeira página que é sua de verdade",
+    "courseAboutDescription": "Ao final você terá um endereço na internet com o seu currículo: quem você é, o que já fez, como falar com você. É um projeto pequeno de propósito. Pequeno o bastante para terminar, completo o bastante para passar por todas as etapas de um site real, da primeira tag até a publicação. É também a base do programa seguinte, em que você constrói uma landing page.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Estrutura e Semântica",
+        "items": [
+          {
+            "label": "Esqueleto do documento",
+            "description": "doctype, idioma, codificação, viewport e título: as linhas que toda página precisa."
+          },
+          {
+            "label": "Landmarks",
+            "description": "header, nav, main, section e footer aplicados às partes do currículo."
+          },
+          {
+            "label": "Glossário comentado",
+            "description": "As tags semânticas, de formulário e de mídia que você mais vai usar, com link para a MDN."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Formulários e Acessibilidade",
+        "items": [
+          {
+            "label": "Rótulo ligado ao campo",
+            "description": "label com for e id, e por que placeholder não substitui rótulo."
+          },
+          {
+            "label": "Tipos de input e validação nativa",
+            "description": "email, tel, url, required: o navegador valida antes de você escrever código."
+          },
+          {
+            "label": "Teclado e leitor de tela",
+            "description": "Testar a página sem mouse e conferir o que uma pessoa cega ouviria."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: CSS Moderno: Box Model, Flexbox, Grid e Responsivo",
+        "items": [
+          {
+            "label": "Box model",
+            "description": "Conteúdo, padding, borda e margem, e o box-sizing que deixa a conta previsível."
+          },
+          {
+            "label": "Flexbox e grid",
+            "description": "Flexbox para alinhar numa direção, grid para diagramar em duas."
+          },
+          {
+            "label": "Responsivo a partir do celular",
+            "description": "Começar pela tela estreita e acrescentar regras com media queries."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Publicando no GitHub Pages",
+        "items": [
+          {
+            "label": "Repositório",
+            "description": "O nome de repositório que vira endereço e onde fica o index.html."
+          },
+          {
+            "label": "Publicação",
+            "description": "Configurar a fonte de publicação e entender o tempo até a página aparecer."
+          },
+          {
+            "label": "Checklist final",
+            "description": "Validar o HTML, testar no celular e revisar acessibilidade no endereço público."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para executar no seu próprio currículo. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "laptop",
+      "title": "Estrutura e Semântica",
+      "shortDescription": "O esqueleto do documento, as regiões da página e o glossário de tags",
+      "introductionText": "Uma página HTML é texto com marcações que dizem ao navegador o que cada parte é. Neste módulo você cria o arquivo index.html do seu currículo e escreve o conteúdo inteiro antes de pensar em cor ou fonte. O conteúdo de exemplo é fictício: uma pessoa desenvolvedora iniciante chamada Lia Moraes, com resumo, experiências, projetos e contato. Troque pelos seus dados quando quiser. A segunda parte do módulo é um glossário comentado para consultar durante todo o programa.",
+      "sections": [
+        {
+          "title": "🧱 O esqueleto do currículo",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "As linhas que toda página precisa",
+              "code": "<!DOCTYPE html>\n<html lang=\"pt-BR\">",
+              "guidance": "Crie uma pasta curriculo e, dentro dela, o arquivo index.html. Escreva a declaração <!DOCTYPE html>, o elemento <html lang=\"pt-BR\"> e, dentro dele, <head> e <body>. No <head>, coloque <meta charset=\"utf-8\">, <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"> e <title>Lia Moraes, desenvolvedora web</title>. Abra o arquivo no navegador e veja o título na aba.",
+              "tips": [
+                "O doctype não informa a versão do HTML: ele existe para o navegador renderizar no modo padrão em vez do modo de compatibilidade antigo. Por isso hoje ele é sempre o mesmo, curto.",
+                "O atributo lang faz o leitor de tela pronunciar o texto com a voz do idioma certo. Esquecer dele é uma das seis falhas de acessibilidade mais comuns da web."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Títulos e texto pelo significado",
+              "code": "<h1> uma vez; <h2> por seção",
+              "guidance": "No <body>, escreva o nome em um <h1>, e cada parte do currículo (Sobre, Experiência, Projetos, Contato) como <h2>. Dentro de cada experiência, o cargo pode ser <h3>. O texto corrido vai em <p>. Use <strong> para o que é importante e <em> para ênfase de leitura. Não pule níveis: depois de <h2> vem <h3>, não <h4>.",
+              "tips": [
+                "Quem usa leitor de tela costuma navegar pulando de título em título. A hierarquia de títulos é o sumário da sua página.",
+                "Se você escolheu <h4> porque a letra é do tamanho que queria, troque pelo nível certo e ajuste o tamanho no CSS depois."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "As regiões da página",
+              "code": "<header> <nav> <main> <footer>",
+              "guidance": "Envolva o nome e o subtítulo em <header>. Logo abaixo, um <nav> com links âncora para cada seção (href=\"#projetos\"). Todo o conteúdo do currículo vai dentro de um único <main>, e cada parte vira uma <section> com id e um <h2>. Cada projeto, por fazer sentido sozinho, vira um <article>. No fim, <footer> com o ano e os links para perfis.",
+              "tips": [
+                "Essas tags criam landmarks: pontos para onde o leitor de tela salta direto. Em 2025, menos da metade das páginas iniciais mais acessadas tinha um <main>.",
+                "Toda <section> deve ter um título. Se você não consegue dar um título a ela, provavelmente ela deveria ser uma <div>."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "📖 Glossário comentado de tags",
+          "subsections": [
+            {
+              "number": 4,
+              "title": "Tags estruturais e semânticas",
+              "code": "header, nav, main, section, article, aside, footer",
+              "guidance": "<header>: conteúdo introdutório da página ou de uma seção, como nome, logo e subtítulo. <nav>: um bloco de links de navegação principais, não qualquer link solto. <main>: o conteúdo dominante, um só por página. <section>: uma parte temática que tem título e não tem tag mais específica. <article>: conteúdo que faz sentido isolado, como um projeto ou um post. <aside>: conteúdo só indiretamente relacionado ao principal, como uma caixa lateral. <footer>: rodapé da página ou da seção, com autoria, direitos e links relacionados. <address>: informações de contato. <time datetime=\"2025-03\">: uma data legível por máquina.",
+              "tips": [
+                "Referência completa: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements",
+                "<div> e <span> não têm significado. Use quando nenhuma das tags acima descreve o conteúdo e você só precisa de um gancho para o CSS."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Tags de formulário",
+              "code": "form, label, input, textarea, select, button, fieldset",
+              "guidance": "<form>: o contêiner que agrupa os campos e define para onde vão os dados. <label>: o rótulo de qualquer controle (input, textarea, select), não só de input. <input>: campo de uma linha cujo comportamento muda com o type (text, email, tel, url, checkbox). <textarea>: texto em várias linhas. <select> com <option>: escolha numa lista. <button>: botão clicável; dentro de um formulário, o padrão é type=\"submit\". <fieldset> com <legend>: agrupa campos relacionados e dá um título ao grupo, lido pelo leitor de tela antes de cada campo.",
+              "tips": [
+                "Referência dos tipos de input: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements/input",
+                "Prefira <button> a <div> com clique: o botão já recebe foco pelo teclado e é anunciado como botão."
+              ]
+            },
+            {
+              "number": 6,
+              "title": "Tags de mídia e de texto",
+              "code": "img, figure, figcaption, picture, svg, blockquote",
+              "guidance": "<img>: imagem, sempre com alt. O alt descreve a função da imagem; se ela é só decorativa, alt=\"\" vazio. <figure> com <figcaption>: conteúdo autocontido com legenda, que pode ser imagem, código ou gráfico. <picture> com <source>: oferece versões diferentes da mesma imagem conforme tela ou formato, com um <img> obrigatório no fim. <svg>: gráfico vetorial que escala sem perder nitidez, bom para ícones. Para texto: <strong> é importância e <b> só chama atenção sem dar importância; <q> é citação curta na linha e <blockquote> é citação longa; <abbr title=\"...\"> marca sigla; <code> marca trecho de código.",
+              "tips": [
+                "Referência de imagens: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements/img",
+                "Teste do alt: se a imagem não carregar, o texto alternativo lido no lugar dela faz a frase continuar fazendo sentido?"
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que semântica importa",
+      "highlights": [
+        {
+          "icon": "sitemap",
+          "title": "A página tem um sumário",
+          "text": "Títulos em ordem e landmarks dão à página uma estrutura que leitor de tela, buscador e você mesmo, daqui a seis meses, conseguem percorrer."
+        },
+        {
+          "icon": "search",
+          "title": "Buscador entende o conteúdo",
+          "text": "Um <main> com <h1> e seções tituladas diz com clareza do que a página trata. Uma pilha de div não diz nada."
+        },
+        {
+          "icon": "tools",
+          "title": "CSS mais simples depois",
+          "text": "Com a estrutura certa, o CSS vira ajuste de aparência. Sem ela, o CSS tenta consertar marcação, e cada mudança quebra outra coisa."
+        }
+      ],
+      "closingText": "Seu currículo já tem todo o conteúdo, organizado em regiões com significado. Ainda é uma página sem estilo, e isso é bom sinal: se ela é legível assim, a estrutura está certa. No próximo módulo você acrescenta a seção de contato com um formulário que qualquer pessoa consegue usar.",
+      "ctaTitle": "🧱 Estrutura de pé!",
+      "ctaText": "O conteúdo está marcado pelo significado. Agora vamos montar a parte em que o visitante fala com você.",
+      "nextButtonText": "Ir para Módulo 1: Formulários e Acessibilidade"
+    },
+    {
+      "id": 1,
+      "icon": "shield",
+      "title": "Formulários e Acessibilidade",
+      "shortDescription": "Rótulos, tipos de campo, validação nativa e teste sem mouse",
+      "introductionText": "O formulário é a parte da página em que o visitante precisa agir, e por isso é onde a falta de cuidado mais exclui gente. Campo sem rótulo é a terceira falha de acessibilidade mais comum da web. Neste módulo você monta o formulário de contato do currículo com nome, e-mail, assunto e mensagem, usando só HTML. Um detalhe prático: o GitHub Pages hospeda páginas estáticas e não processa envio de formulário. Para receber as mensagens de verdade, o action precisa apontar para um serviço de formulários; aqui o foco é a marcação correta, que serve para qualquer destino.",
+      "sections": [
+        {
+          "title": "✉️ O formulário de contato",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Rótulo ligado ao campo",
+              "code": "<label for=\"email\">E-mail</label>\n<input id=\"email\" name=\"email\">",
+              "guidance": "Dentro da <section id=\"contato\">, crie um <form>. Para cada campo, escreva um <label> cujo for é igual ao id do campo. Clique no texto do rótulo e veja o cursor ir para o campo: é o sinal de que a ligação funcionou. Dê também um name a cada campo; é ele que identifica o dado no envio.",
+              "tips": [
+                "Placeholder não substitui rótulo: ele some quando a pessoa começa a digitar e costuma ter contraste baixo. Use para exemplo de formato, se usar."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "O tipo certo para cada dado",
+              "code": "type=\"email\" | type=\"tel\" | type=\"url\"",
+              "guidance": "Use type=\"email\" no e-mail, type=\"tel\" no telefone e <textarea> na mensagem. Abra a página no celular: o teclado muda conforme o tipo, com @ no e-mail e números no telefone. Para o assunto, um <select> com opções fictícias como Vaga, Projeto freelance e Outro.",
+              "tips": [
+                "O atributo autocomplete (name, email, tel) permite ao navegador preencher os dados que a pessoa já salvou. Menos digitação, menos erro."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Validação nativa e agrupamento",
+              "code": "required minlength=\"10\"",
+              "guidance": "Marque nome, e-mail e mensagem com required e dê à mensagem um minlength. Tente enviar com campos vazios ou com um e-mail sem @: o navegador bloqueia e mostra o aviso, sem nenhuma linha de JavaScript. Se houver um grupo de opções, como Preferência de contato com dois radio, envolva em <fieldset> com <legend>.",
+              "tips": [
+                "Indique no rótulo quais campos são obrigatórios, em texto. Asterisco vermelho sozinho depende de cor e de convenção que nem todo mundo conhece."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Testar com teclado e revisar a página toda",
+              "code": "Tab, Shift+Tab, Enter, Espaço",
+              "guidance": "Largue o mouse e percorra a página com Tab: todo link e campo deve receber foco, na ordem em que aparece, com indicação visível de onde o foco está. Envie o formulário com Enter. Depois revise a página inteira: toda <img> tem alt, todo link tem texto que faz sentido fora do contexto (nada de clique aqui), e nenhum link ou botão está vazio, como um ícone sem texto.",
+              "tips": [
+                "Link de ícone, como o do perfil no GitHub, precisa de texto acessível: um texto visualmente oculto ou um aria-label com o nome do destino.",
+                "Nunca remova o contorno de foco com outline: none sem colocar outro indicador no lugar."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que acessibilidade começa no HTML",
+      "highlights": [
+        {
+          "icon": "shield",
+          "title": "As falhas mais comuns são de marcação",
+          "text": "Texto alternativo ausente, campo sem rótulo, link vazio e botão vazio estão entre as seis falhas que somam 96% dos erros detectados nas páginas mais acessadas. Todas se resolvem no HTML."
+        },
+        {
+          "icon": "bolt",
+          "title": "O navegador trabalha por você",
+          "text": "Tipos de input e atributos como required entregam teclado certo, validação e mensagem de erro sem script. Cada recurso nativo é código que você não precisa manter."
+        },
+        {
+          "icon": "globe",
+          "title": "Mais gente consegue usar",
+          "text": "Quem navega por teclado, usa leitor de tela ou está com o celular numa mão só depende das mesmas coisas: foco visível, rótulo claro e alvo fácil de acertar."
+        }
+      ],
+      "closingText": "Seu currículo agora tem um formulário que funciona por teclado, avisa erros sozinho e é compreendido por leitor de tela. O conteúdo e a interação estão prontos. No próximo módulo, a página finalmente ganha aparência.",
+      "ctaTitle": "✉️ Contato pronto!",
+      "ctaText": "Formulário marcado e testado sem mouse. Agora vamos diagramar tudo com CSS.",
+      "nextButtonText": "Ir para Módulo 2: CSS Moderno: Box Model, Flexbox, Grid e Responsivo"
+    },
+    {
+      "id": 2,
+      "icon": "grid",
+      "title": "CSS Moderno: Box Model, Flexbox, Grid e Responsivo",
+      "shortDescription": "Caixas, alinhamento, diagramação e telas de todos os tamanhos",
+      "introductionText": "Todo elemento HTML é desenhado como uma caixa retangular. Entender essa caixa é o que faz o CSS parar de parecer imprevisível. Neste módulo você cria o arquivo estilo.css, liga ao HTML com <link rel=\"stylesheet\" href=\"estilo.css\"> e constrói a aparência do currículo em camadas: base, caixas, alinhamento, diagramação e adaptação à largura da tela. Você não muda nenhuma tag do HTML para isso, e esse é o teste de que a estrutura do Módulo 0 ficou boa.",
+      "sections": [
+        {
+          "title": "🎨 Dando forma ao currículo",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Base: variáveis, fonte e cores",
+              "code": ":root { --cor-texto: #1f2933; --espaco: 1rem; }",
+              "guidance": "Declare no :root as cores e o espaçamento como propriedades personalizadas e use com var(--cor-texto). Defina font-family, line-height em torno de 1.5 e uma largura máxima para o texto, como max-width: 70ch no <main>. Confira o contraste entre texto e fundo; texto claro sobre fundo claro é a falha de acessibilidade mais frequente da web.",
+              "tips": [
+                "Com as cores em variáveis, mudar a paleta é alterar uma linha. Sem elas, é procurar e substituir em todo o arquivo."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Box model e box-sizing",
+              "code": "*, *::before, *::after { box-sizing: border-box; }",
+              "guidance": "Cada caixa tem conteúdo, padding (espaço interno), borda e margin (espaço externo). Aplique uma borda temporária nas seções e use as ferramentas do desenvolvedor do navegador para ver as quatro camadas. Por padrão, width mede só o conteúdo, e padding e borda somam por fora. Com box-sizing: border-box, a largura passa a incluir padding e borda, e a conta fica previsível.",
+              "tips": [
+                "Margens verticais entre blocos vizinhos se fundem: 20px embaixo de um e 30px em cima do outro dão 30px, não 50px. Isso é comportamento previsto, não bug."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Flexbox para alinhar numa direção",
+              "code": "nav ul { display: flex; gap: 1rem; flex-wrap: wrap; }",
+              "guidance": "Transforme a lista de links do <nav> num container flex para colocá-los lado a lado. Use gap para o espaço entre itens, justify-content para distribuí-los no eixo principal e align-items para alinhá-los no eixo cruzado. Faça o mesmo com a linha de links do <footer>. Com flex-wrap: wrap, os itens descem de linha quando falta espaço.",
+              "tips": [
+                "Flexbox pensa em uma dimensão por vez: uma linha ou uma coluna. Quando você precisa controlar linhas e colunas juntas, a ferramenta é grid."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Grid para diagramar os projetos",
+              "code": "grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));",
+              "guidance": "Na <section id=\"projetos\">, aplique display: grid ao container dos <article>. Com repeat(auto-fit, minmax(16rem, 1fr)), o navegador decide quantas colunas cabem: uma no celular, duas ou três em telas largas, sem nenhuma media query. A unidade fr divide o espaço que sobra entre as colunas.",
+              "tips": [
+                "Grid e flexbox não competem. Um padrão comum é grid para a diagramação da seção e flexbox para alinhar o conteúdo dentro de cada cartão."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Responsivo a partir do celular",
+              "code": "@media (min-width: 48rem) { ... }",
+              "guidance": "Escreva primeiro o CSS para a tela estreita, em uma coluna. Depois acrescente uma media query com min-width para telas largas, por exemplo para colocar o <header> com foto e texto lado a lado. Teste no modo de dispositivo do navegador e num celular de verdade. Imagens recebem max-width: 100% e height: auto para nunca estourarem a largura.",
+              "tips": [
+                "A meta viewport do Módulo 0 é o que faz o celular respeitar suas media queries. Sem ela, ele finge ter tela de computador e reduz tudo.",
+                "Começar pelo celular costuma gerar menos CSS: a versão de uma coluna é a mais simples, e as telas largas só acrescentam."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que estas ferramentas",
+      "highlights": [
+        {
+          "icon": "grid",
+          "title": "Diagramação sem gambiarra",
+          "text": "Flexbox e grid substituíram float e tabela como forma de diagramar. O que antes exigia truques hoje é uma propriedade com nome claro."
+        },
+        {
+          "icon": "gauge",
+          "title": "Caixas previsíveis",
+          "text": "Com box-sizing: border-box e o box model entendido, a largura que você escreve é a largura que aparece. Some a maior fonte de frustração de quem começa."
+        },
+        {
+          "icon": "sync",
+          "title": "Uma página, todas as telas",
+          "text": "Um único HTML se adapta do celular ao monitor. Media queries com largura mínima ou máxima estão na grande maioria das páginas da web."
+        }
+      ],
+      "closingText": "O currículo agora tem aparência própria, alinha os elementos com flexbox, diagrama os projetos com grid e se adapta a qualquer largura. Tudo isso sem trocar uma tag do HTML. Falta o último passo: tirar a página do seu computador e colocá-la num endereço que você possa mandar para qualquer pessoa.",
+      "ctaTitle": "🎨 Currículo com cara de site!",
+      "ctaText": "Estrutura, formulário e estilo prontos. Agora vamos colocar a página no ar.",
+      "nextButtonText": "Ir para Módulo 3: Publicando no GitHub Pages"
+    },
+    {
+      "id": 3,
+      "icon": "globe",
+      "title": "Publicando no GitHub Pages",
+      "shortDescription": "Repositório, publicação e a checklist antes de divulgar o link",
+      "introductionText": "Uma página só é portfólio quando outra pessoa consegue abrir. O GitHub Pages hospeda sites estáticos, feitos de HTML, CSS e imagens, direto de um repositório do GitHub, sem servidor para configurar. É exatamente o que o seu currículo é. Neste módulo você publica a página num endereço com o seu nome de usuário e faz a revisão final no endereço público, que é onde os recrutadores vão olhar.",
+      "sections": [
+        {
+          "title": "🚀 Do seu computador para a internet",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "O repositório que vira endereço",
+              "code": "seu-usuario.github.io",
+              "guidance": "Crie uma conta no GitHub, se ainda não tiver. Crie um repositório público chamado exatamente seu-usuario.github.io, trocando seu-usuario pelo seu nome de usuário. Envie para a raiz dele os arquivos index.html, estilo.css e a pasta de imagens, pela interface web (Add file, Upload files) ou com git. O arquivo principal precisa se chamar index.html: é ele que o servidor entrega quando alguém abre o endereço.",
+              "tips": [
+                "Nomes de arquivo em minúsculas e sem espaço ou acento evitam o erro clássico de funcionar no seu computador e quebrar no servidor, que diferencia maiúsculas."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Configurar a publicação",
+              "code": "Settings > Pages > Deploy from a branch",
+              "guidance": "No repositório, abra Settings e, na barra lateral, Pages. Em Build and deployment, escolha Deploy from a branch e selecione o branch principal e a pasta raiz. Salve e aguarde: alterações podem levar até 10 minutos para aparecer. Depois disso, abra https://seu-usuario.github.io no navegador.",
+              "tips": [
+                "Se a página não mudou depois de um envio, espere alguns minutos e recarregue ignorando o cache antes de procurar erro no código."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Checklist no endereço público",
+              "guidance": "Com a página no ar, faça a revisão final: passe o HTML no validador do W3C e corrija os erros; abra no celular; percorra com Tab; confira que toda imagem tem alt e que o idioma está declarado; rode a auditoria de acessibilidade do Lighthouse, nas ferramentas do desenvolvedor do Chrome. Troque os dados fictícios pelos seus. Só então coloque o link no seu perfil profissional.",
+              "tips": [
+                "Ferramenta automática encontra só parte dos problemas. O teste com teclado e a leitura com o leitor de tela do próprio sistema continuam necessários.",
+                "Cada correção é um novo envio ao repositório. O histórico de alterações também mostra a quem avalia que você sabe trabalhar com versionamento."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que publicar faz parte do aprendizado",
+      "highlights": [
+        {
+          "icon": "folder",
+          "title": "Repositório é vitrine",
+          "text": "O código fica visível ao lado do site. Quem avalia seu currículo pode abrir os arquivos e ver como você marca e organiza uma página."
+        },
+        {
+          "icon": "list",
+          "title": "Revisão no ambiente real",
+          "text": "Caminho de imagem errado e nome de arquivo com maiúscula só aparecem no servidor. Revisar no endereço público pega o que o computador local esconde."
+        },
+        {
+          "icon": "laptop",
+          "title": "Sem servidor para manter",
+          "text": "Página estática não precisa de banco de dados nem de atualização de segurança do servidor. Para um currículo, é a hospedagem mais simples que existe."
+        }
+      ],
+      "closingText": "Você saiu de um arquivo em branco e chegou a um currículo publicado: HTML semântico, formulário acessível, CSS com flexbox, grid e media queries, e um endereço público com o seu nome. Esse é o ciclo completo de uma página web, e todo projeto maior repete as mesmas etapas com mais peças.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Seu currículo está no ar. O próximo passo natural é o programa de landing page, que acrescenta seções de produto, mais interação e otimização.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Para que serve a declaração <!DOCTYPE html> no início do arquivo?",
+      "explanation": "No HTML atual, o doctype faz o navegador renderizar a página no modo padrão, em vez do modo de compatibilidade usado para páginas muito antigas. Ele não indica versão, não carrega o CSS e não define o idioma; o idioma é declarado com o atributo lang no elemento html.",
+      "options": [
+        {
+          "text": "Fazer o navegador renderizar a página no modo padrão",
+          "isCorrect": true
+        },
+        {
+          "text": "Informar que o arquivo usa HTML na versão 5.3",
+          "isCorrect": false
+        },
+        {
+          "text": "Definir o idioma do conteúdo da página",
+          "isCorrect": false
+        },
+        {
+          "text": "Carregar a folha de estilo padrão do projeto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Qual é a tag adequada para o conteúdo principal e dominante da página, usada uma vez só?",
+      "explanation": "O <main> representa o conteúdo dominante do <body> e deve existir uma vez por página. <section> é uma parte temática dentro dele, <article> é conteúdo que faz sentido isolado e <aside> é conteúdo só indiretamente relacionado ao principal.",
+      "options": [
+        {
+          "text": "<main>",
+          "isCorrect": true
+        },
+        {
+          "text": "<section>",
+          "isCorrect": false
+        },
+        {
+          "text": "<article>",
+          "isCorrect": false
+        },
+        {
+          "text": "<aside>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Uma imagem do currículo é só decorativa e não acrescenta informação. Como deve ficar o alt?",
+      "explanation": "Imagem decorativa recebe alt vazio (alt=\"\"), o que faz o leitor de tela ignorá-la. Omitir o atributo leva alguns leitores a anunciar o nome do arquivo, e escrever imagem ou repetir o texto vizinho só acrescenta ruído.",
+      "options": [
+        {
+          "text": "Com o atributo vazio: alt=\"\"",
+          "isCorrect": true
+        },
+        {
+          "text": "Sem o atributo alt",
+          "isCorrect": false
+        },
+        {
+          "text": "Com alt=\"imagem\"",
+          "isCorrect": false
+        },
+        {
+          "text": "Com o mesmo texto do parágrafo ao lado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 0,
+      "question": "Qual é a diferença entre <strong> e <b>?",
+      "explanation": "<strong> indica importância, seriedade ou urgência do conteúdo. <b> apenas chama a atenção para um trecho sem dar importância extra. Os dois costumam aparecer em negrito, mas a escolha é pelo significado; para negrito puramente visual, o caminho é font-weight no CSS.",
+      "options": [
+        {
+          "text": "<strong> indica importância; <b> só chama atenção, sem dar importância",
+          "isCorrect": true
+        },
+        {
+          "text": "<b> foi removida do HTML e não deve mais ser usada",
+          "isCorrect": false
+        },
+        {
+          "text": "<strong> deixa o texto mais grosso que <b>",
+          "isCorrect": false
+        },
+        {
+          "text": "Não há diferença, são sinônimos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Como ligar um <label> ao seu campo de forma que clicar no texto leve o foco ao campo?",
+      "explanation": "O atributo for do label deve ter o mesmo valor do id do campo (envolver o campo dentro do label também funciona). O name identifica o dado no envio, mas não liga o rótulo. Placeholder não é rótulo, e title não cria essa associação de forma confiável.",
+      "options": [
+        {
+          "text": "Usando no label um for com o mesmo valor do id do campo",
+          "isCorrect": true
+        },
+        {
+          "text": "Usando no label um for com o mesmo valor do name do campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Colocando o texto do rótulo no placeholder do campo",
+          "isCorrect": false
+        },
+        {
+          "text": "Colocando o label logo antes do campo, sem atributos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "O que acontece ao enviar um formulário com um campo type=\"email\" e required vazio?",
+      "explanation": "Com required, o navegador bloqueia o envio e mostra um aviso no campo, sem JavaScript. Com type=\"email\", ele também recusa um valor fora do formato de e-mail. O envio não segue para o servidor e a página não é recarregada.",
+      "options": [
+        {
+          "text": "O navegador bloqueia o envio e mostra um aviso no campo",
+          "isCorrect": true
+        },
+        {
+          "text": "O formulário é enviado e o servidor devolve o erro",
+          "isCorrect": false
+        },
+        {
+          "text": "Nada acontece, pois validação exige JavaScript",
+          "isCorrect": false
+        },
+        {
+          "text": "O navegador preenche o campo com um e-mail de exemplo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 1,
+      "question": "Para que servem <fieldset> e <legend> num formulário?",
+      "explanation": "O <fieldset> agrupa controles relacionados, como um conjunto de opções de rádio, e o <legend> dá um título ao grupo, que o leitor de tela anuncia junto dos campos. Eles não validam, não enviam dados e não são obrigatórios em todo formulário.",
+      "options": [
+        {
+          "text": "Agrupar campos relacionados e dar um título ao grupo",
+          "isCorrect": true
+        },
+        {
+          "text": "Validar todos os campos de uma vez",
+          "isCorrect": false
+        },
+        {
+          "text": "Definir o endereço para onde os dados são enviados",
+          "isCorrect": false
+        },
+        {
+          "text": "São obrigatórios em todo formulário HTML",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Com box-sizing: border-box, uma caixa com width: 300px, padding de 20px e borda de 2px ocupa quantos pixels de largura?",
+      "explanation": "Com border-box, a largura declarada já inclui padding e borda, então a caixa ocupa 300px e o conteúdo fica com o que sobra. No modo padrão (content-box), padding e borda somariam por fora: 300 + 40 + 4 = 344px. A margem nunca entra nessa conta.",
+      "options": [
+        {
+          "text": "300px",
+          "isCorrect": true
+        },
+        {
+          "text": "344px",
+          "isCorrect": false
+        },
+        {
+          "text": "322px",
+          "isCorrect": false
+        },
+        {
+          "text": "256px",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Quando faz mais sentido usar grid em vez de flexbox?",
+      "explanation": "Flexbox organiza itens numa dimensão por vez, linha ou coluna, e é ideal para alinhar links de um menu. Grid controla linhas e colunas ao mesmo tempo, como numa grade de cartões de projeto. Os dois funcionam em todos os navegadores atuais e são frequentemente usados juntos.",
+      "options": [
+        {
+          "text": "Quando é preciso controlar linhas e colunas ao mesmo tempo",
+          "isCorrect": true
+        },
+        {
+          "text": "Quando é preciso alinhar itens numa única linha",
+          "isCorrect": false
+        },
+        {
+          "text": "Sempre, porque flexbox foi substituído por grid",
+          "isCorrect": false
+        },
+        {
+          "text": "Só quando o site não precisa ser responsivo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 2,
+      "question": "No modo a partir do celular (mobile first), como são escritas as media queries?",
+      "explanation": "No mobile first, o CSS base atende a tela estreita, e as media queries com min-width acrescentam regras à medida que a tela fica mais larga. Usar max-width é a abordagem inversa, que parte da tela larga. Media queries não dependem de JavaScript nem do sistema operacional.",
+      "options": [
+        {
+          "text": "O CSS base é para tela estreita e media queries com min-width acrescentam regras",
+          "isCorrect": true
+        },
+        {
+          "text": "O CSS base é para tela larga e media queries com max-width removem regras",
+          "isCorrect": false
+        },
+        {
+          "text": "Cada tamanho de celular recebe um arquivo CSS separado",
+          "isCorrect": false
+        },
+        {
+          "text": "As media queries detectam o modelo do aparelho pelo nome",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Qual nome de repositório publica um site de usuário no endereço seu-usuario.github.io?",
+      "explanation": "Para um site de usuário, o repositório deve se chamar exatamente seu-usuario.github.io, com o seu nome de usuário. Outros nomes também podem ser publicados pelo Pages, mas ficam num subcaminho do endereço, e não na raiz.",
+      "options": [
+        {
+          "text": "seu-usuario.github.io",
+          "isCorrect": true
+        },
+        {
+          "text": "curriculo",
+          "isCorrect": false
+        },
+        {
+          "text": "github-pages",
+          "isCorrect": false
+        },
+        {
+          "text": "index.html",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Segundo o relatório WebAIM Million 2025, qual proporção das um milhão de páginas iniciais mais acessadas tinha falhas de acessibilidade detectáveis?",
+      "explanation": "94,8% das páginas iniciais analisadas tinham falhas detectáveis das diretrizes WCAG, com média de cerca de 51 erros por página. Seis tipos de falha, como baixo contraste, texto alternativo ausente e campo sem rótulo, somam 96% dos erros, e quase todos se resolvem com HTML e CSS bem feitos.",
+      "options": [
+        {
+          "text": "94,8%",
+          "isCorrect": true
+        },
+        {
+          "text": "12%",
+          "isCorrect": false
+        },
+        {
+          "text": "48,2%",
+          "isCorrect": false
+        },
+        {
+          "text": "Menos de 1%",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "Um currículo/portfólio de uma página, publicado no GitHub Pages: conteúdo marcado com HTML semântico, seção de projetos diagramada com grid, navegação com flexbox, formulário de contato acessível e layout que se adapta do celular ao monitor. Tudo em um HTML e um CSS que você entende linha por linha.",
+    "highlights": [
+      "Currículo/portfólio publicado em seu-usuario.github.io",
+      "Formulário de contato com rótulos e validação nativa",
+      "Layout responsivo com flexbox, grid e media queries"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "A web ainda falha no básico. O relatório WebAIM Million 2025 analisou as um milhão de páginas iniciais mais acessadas e encontrou falhas de acessibilidade detectáveis em 94,8% delas, com média de cerca de 51 erros por página. Texto com baixo contraste aparece em 79,1% das páginas, imagem sem texto alternativo em 55,5% e campo de formulário sem rótulo em 48,2%. Só 42,6% tinham um elemento main.",
+      "Para quem está começando, isso é uma oportunidade: são erros de HTML e CSS, não de tecnologia avançada. Quem aprende a marcar pelo significado, rotular campos e cuidar do contraste desde a primeira página já entrega acima da média do que está publicado, e esse cuidado aparece logo no código do seu portfólio."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Portfólio e presença profissional",
+        "description": "Um endereço próprio para mostrar quem você é e o que já construiu."
+      },
+      {
+        "label": "Qualquer página web",
+        "description": "Sites institucionais, blogs e documentação começam pelas mesmas tags e pelo mesmo CSS."
+      },
+      {
+        "label": "Base para frameworks",
+        "description": "React, Vue e qualquer biblioteca de interface geram HTML e CSS no fim; este é o pré-requisito."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem nunca programou",
+        "description": "Não precisa saber nada antes: só de um editor de texto e um navegador."
+      },
+      {
+        "label": "Quem está em transição de carreira",
+        "description": "Precisa de um portfólio no ar para mostrar o que já sabe fazer."
+      },
+      {
+        "label": "Quem aprendeu copiando trechos",
+        "description": "Já fez páginas, mas quer entender por que cada tag e cada propriedade está ali."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "HTML e CSS estão em todo site da web, sem exceção, e as ferramentas deste programa são as que o mercado usa hoje. Segundo o Web Almanac de 2022, flexbox aparecia em 74% das páginas para celular e grid em 12%, com crescimento ano a ano, e media queries com max-width e min-width estavam em 83% e 79% das páginas. O GitHub Pages é uma das formas mais comuns de publicar portfólios e documentação de projetos de código aberto.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "WebAIM — The WebAIM Million 2025: acessibilidade das um milhão de páginas iniciais mais acessadas",
+      "url": "https://webaim.org/projects/million/2025"
+    },
+    {
+      "label": "MDN Web Docs — Referência de elementos HTML",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements"
+    },
+    {
+      "label": "GitHub Docs — Quickstart for GitHub Pages",
+      "url": "https://docs.github.com/en/pages/quickstart"
+    },
+    {
+      "label": "HTTP Archive — Web Almanac 2022, capítulo CSS (uso de flexbox, grid e media queries)",
+      "url": "https://almanac.httparchive.org/en/2022/css"
+    }
+  ]
 }

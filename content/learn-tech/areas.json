@@ -314,7 +314,8 @@
       }
     ],
     "categorias": [
-      "projetos"
+      "projetos",
+      "carreira-soft-skills"
     ],
     "closing": "Habilidade técnica te faz escrever código. Habilidade comportamental e método te fazem construir junto e entregar com previsibilidade.",
     "sources": [
@@ -410,7 +411,8 @@
     "categorias": [
       "english",
       "produtos-digitais",
-      "ia"
+      "ia",
+      "marketing-crm"
     ],
     "closing": null,
     "sources": [
@@ -432,5 +434,92 @@
       }
     ],
     "updatedAt": "2026-10-28"
+  },
+  {
+    "id": "marketing-tech",
+    "title": "Marketing Tech e CRM",
+    "subtitle": "Quem junta dados, canais e código para a empresa conversar com cada cliente na hora certa",
+    "icon": "FaHandshake",
+    "paragraphs": [
+      "Marketing tech é a parte do marketing que se programa. Analistas de CRM, desenvolvedores de e-mail e landing pages e profissionais de growth montam jornadas que disparam sozinhas, réguas que acompanham o cliente da primeira visita à recompra, páginas que captam e registram consentimento e painéis que mostram o que funcionou. O trabalho mistura plataforma (Salesforce Marketing Cloud, RD Station, HubSpot), código (HTML para e-mail, AMPscript, SQL, JavaScript) e negócio: cada mensagem precisa de público, gatilho, base legal e métrica.",
+      "Há espaço porque a maioria das empresas ainda improvisa. No Panoramas RD Station 2026, que ouviu cerca de 3 mil profissionais de marketing e vendas e foi divulgado em junho de 2026, 54% das empresas diziam operar sem CRM, 62% não acompanhavam as taxas de conversão do funil e 57% não usavam a API oficial do WhatsApp, embora 75% das equipes de vendas usassem o aplicativo no primeiro contato com o cliente. Quem sabe organizar base, canal e medição resolve um problema que quase todo mundo tem.",
+      "Para quem contrata, o perfil valorizado é híbrido: técnico o bastante para configurar uma jornada, escrever uma consulta de segmentação e corrigir um template, e próximo do negócio o bastante para ligar uma régua a uma meta e explicar o resultado para a diretoria. A demanda por quem gera e qualifica demanda aparece nos rankings: o relatório Empregos em Alta 2025 do LinkedIn, divulgado em janeiro de 2025, colocou o especialista em geração de leads entre os cargos que mais cresceram no Brasil, com e-mail marketing, campanhas segmentadas e análise de métricas entre as habilidades citadas. Para quem trabalha, a rotina é de ciclos curtos, muitas áreas pedindo ao mesmo tempo e responsabilidade real: um disparo errado chega a milhares de pessoas."
+    ],
+    "diaADia": [
+      "Abrir a semana com o planejamento dos disparos e jornadas e validar cada peça com quem pediu antes de publicar.",
+      "Montar e testar jornadas transacionais e réguas de relacionamento em e-mail e WhatsApp.",
+      "Escrever consultas SQL para segmentar públicos e manter as bases limpas, sem duplicados e com opt-out respeitado.",
+      "Codificar e-mails e landing pages em HTML, com personalização (como AMPscript) e formulários integrados ao CRM.",
+      "Atender pedidos de outras áreas (vendas, e-commerce, expansão, jurídico) e registrar tudo em chamados ou no quadro do time.",
+      "Acompanhar resultados em painéis e transformar números em decisões no relatório semanal ou nos OKRs."
+    ],
+    "competencias": [
+      "Desenho de jornadas e réguas: gatilho, público, intervalo, mensagem e métrica",
+      "HTML e CSS para e-mail (tabelas, compatibilidade entre clientes) e landing pages",
+      "SQL para segmentação e linguagem de personalização da plataforma (AMPscript, Liquid ou similar)",
+      "Operação de WhatsApp Business: templates aprovados, opt-in e números oficiais",
+      "LGPD aplicada a comunicações: base legal, consentimento, descadastro e registro",
+      "Leitura de métricas e relato para gestão (funil, conversão, OKR)",
+      "Organização de demandas em ciclos curtos e comunicação com áreas de negócio"
+    ],
+    "ferramentas": [
+      "Salesforce Marketing Cloud (Journey Builder, Automation Studio, CloudPages)",
+      "RD Station Marketing ou HubSpot",
+      "Zenvia, Blip ou outro provedor da API do WhatsApp Business",
+      "Plataformas de e-commerce, como Wake Commerce ou VTEX",
+      "Constant Contact ou Mailchimp para e-mail marketing",
+      "Excel ou Google Planilhas e Looker Studio para bases e painéis",
+      "Litmus ou Mailtrap para testar e-mails antes do envio"
+    ],
+    "comoComecar": [
+      "Escolha um negócio fictício e desenhe três réguas no papel: boas-vindas, carrinho ou orçamento abandonado e pós-compra.",
+      "Codifique um e-mail responsivo em HTML com tabelas e teste em mais de um cliente de e-mail.",
+      "Crie uma conta gratuita no Trailhead e faça as trilhas de Journey Builder e AMPscript num ambiente de prática.",
+      "Publique uma landing page com formulário e texto de consentimento claro, e documente onde o dado vai parar.",
+      "Monte um painel com números de exemplo e escreva, em um parágrafo, o que você recomendaria fazer na semana seguinte."
+    ],
+    "cards": [
+      {
+        "categoria": "marketing-crm",
+        "icon": "FaHandshake",
+        "title": "Marketing e CRM",
+        "description": "Jornadas, réguas de relacionamento, e-mail e landing pages que conectam a empresa ao cliente.",
+        "color": "rose"
+      },
+      {
+        "categoria": "produtos-digitais",
+        "icon": "AiFillProduct",
+        "title": "Produtos Digitais",
+        "description": "Funil, métricas e experimentos: a visão de produto que transforma disparos em resultado de negócio.",
+        "color": "amber"
+      }
+    ],
+    "categorias": [
+      "marketing-crm"
+    ],
+    "closing": "Marketing tech não é só apertar o botão de enviar: é decidir quem recebe, quando, com qual permissão e como saber se valeu a pena. Comece por uma régua pequena, bem documentada e medida.",
+    "sources": [
+      {
+        "label": "Portal Tela: Panoramas RD Station 2026 indicam gestão marcada pelo improviso (01/06/2026)",
+        "url": "https://www.portaltela.com/noticias/economia/2026/06/01/panoramas-rd-station-2026-indicam-gestao-marcada-pelo-improviso/"
+      },
+      {
+        "label": "Mundo do Marketing: especialista em geração de leads se destaca no Empregos em Alta 2025 do LinkedIn (21/01/2025)",
+        "url": "https://mundodomarketing.com.br/carreira-em-marketing-posto-de-especialista-em-geracao-de-leads-se-destaca-em-2025"
+      },
+      {
+        "label": "Trailhead: credencial Marketing Cloud Engagement Specialist",
+        "url": "https://trailhead.salesforce.com/es-MX/credentials/marketingcloudemailspecialist"
+      },
+      {
+        "label": "Trailhead: trilha Code with AMPscript",
+        "url": "https://trailhead.salesforce.com/content/learn/trails/code-with-ampscript"
+      },
+      {
+        "label": "Trailhead: WhatsApp no Journey Builder",
+        "url": "https://trailhead.salesforce.com/content/learn/modules/conversations-using-whatsapp-in-journey-builder/prepare-for-whatsapp"
+      }
+    ],
+    "updatedAt": "2026-10-31"
   }
 ]

@@ -3,8 +3,826 @@
   "image": "https://cdn.pixabay.com/photo/2014/10/05/19/02/binary-code-475664_1280.jpg",
   "category": "Data Base",
   "categoryFilter": "data-base",
-  "title": "PostgreSQL Avançado: Queries Complexas e Performance",
-  "lessons": "15+ Lições",
-  "duration": "12hr 00min",
-  "access": "Acesso Livre"
+  "title": "PostgreSQL Avançado: Consultas Complexas e Performance",
+  "lessons": "18 passos",
+  "duration": "14h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Intermediário/Avançado",
+  "description": "Para quem já escreve SELECT com JOIN e GROUP BY e quer ir além: consultas com CTEs, subqueries e window functions, índices escolhidos com critério, leitura de EXPLAIN ANALYZE, transações com o nível de isolamento certo e JSONB indexado. Tudo sobre uma base fictícia de central de suporte, medindo antes e depois de cada mudança.",
+  "letslearn": [
+    "Quebrar consultas longas em CTEs legíveis e usar CTE recursiva, LATERAL e EXISTS no lugar certo",
+    "Resolver ranking, acumulados e intervalo entre eventos com window functions",
+    "Ler um plano de EXPLAIN ANALYZE e escolher entre índice B-tree, composto, parcial, de expressão ou GIN",
+    "Escolher o nível de isolamento de uma transação e tratar falhas de serialização",
+    "Guardar e consultar JSONB sem transformar o banco em depósito de documentos"
+  ],
+  "curriculum": "Do SQL que funciona ao SQL que escala",
+  "about": "O programa continua de onde termina \"Banco de Dados na prática: SQL, NoSQL e modelagem para aplicações reais\". Lá você modelou tabelas e escreveu as consultas básicas; aqui as mesmas ideias são levadas ao ponto em que o volume de dados começa a cobrar. A sequência vai da forma da consulta (CTEs, subqueries e window functions) para o custo dela (índices e EXPLAIN ANALYZE) e termina no comportamento sob concorrência (transações, isolamento e bloqueios) e em JSONB. O projeto é uma base fictícia de uma central de suporte com chamados, eventos de atendimento e atributos variáveis em JSONB. Nenhum índice é criado sem antes olhar o plano, e nenhuma otimização é aceita sem medir de novo. A referência é a documentação oficial da versão estável atual do PostgreSQL (18).",
+  "materials": [
+    "Script de criação da base fictícia de chamados com gerador de dados em massa",
+    "Roteiro de leitura de EXPLAIN ANALYZE nó a nó",
+    "Tabela de decisão: qual tipo de índice para qual consulta",
+    "Checklist de revisão de consulta antes de ir para produção"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "CTEs e Subqueries",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Window Functions",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Índices e EXPLAIN ANALYZE",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Transações, JSONB e Performance",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Data Base",
+    "mainTitle": "Escreva consultas que respondem perguntas difíceis e continuam rápidas quando a tabela passa de milhões de linhas.",
+    "introductionParagraphs": [
+      {
+        "title": "A consulta certa e a consulta rápida",
+        "text": "Uma consulta pode devolver o resultado correto e ainda assim ser inviável: leva segundos com dez mil linhas e minutos com dez milhões. O PostgreSQL decide como executar cada comando com base em estatísticas da tabela, e o **EXPLAIN ANALYZE** mostra exatamente o que ele decidiu e quanto custou. Este programa ensina a escrever a consulta pensando nas duas coisas ao mesmo tempo."
+      },
+      {
+        "title": "SQL é mais expressivo do que parece",
+        "text": "Boa parte do código que se escreve na aplicação para montar rankings, acumulados e hierarquias pode ser resolvida dentro do banco com **CTEs** e **window functions**, com menos tráfego de rede e menos chance de erro. Saber o que o SQL já faz evita laços na aplicação que buscam linha por linha."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não ensina administração de servidor, replicação nem ajuste fino de parâmetros de memória. O foco é o que está ao alcance de quem escreve as consultas e cria as tabelas: forma da consulta, índices, transações e modelagem de dados semiestruturados. É também onde está a maior parte dos ganhos de desempenho."
+      }
+    ],
+    "courseAboutTitle": "O passo seguinte ao SQL do dia a dia",
+    "courseAboutDescription": "Quem sabe SELECT, JOIN e GROUP BY já resolve a maior parte das telas de uma aplicação. O que separa esse nível do intermediário/avançado é conseguir explicar por que uma consulta está lenta, propor a mudança certa e provar que ela funcionou. É a habilidade que costuma ser cobrada em revisão de código, em investigação de incidente e em entrevista para vaga de backend ou dados.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: CTEs e Subqueries",
+        "items": [
+          {
+            "label": "CTE com WITH",
+            "description": "Dar nome a etapas intermediárias e ler a consulta de cima para baixo."
+          },
+          {
+            "label": "CTE recursiva",
+            "description": "Percorrer hierarquias de categorias sem laço na aplicação."
+          },
+          {
+            "label": "EXISTS, IN e LATERAL",
+            "description": "A subquery certa para cada pergunta, incluindo a armadilha do NOT IN com NULL."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Window Functions",
+        "items": [
+          {
+            "label": "Ranking",
+            "description": "ROW_NUMBER, RANK e DENSE_RANK e o que muda nos empates."
+          },
+          {
+            "label": "Acumulados e médias móveis",
+            "description": "PARTITION BY, ORDER BY e a moldura de linhas que cada cálculo enxerga."
+          },
+          {
+            "label": "LAG e LEAD",
+            "description": "Medir o tempo entre um evento e o seguinte sem autojunção."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Índices e EXPLAIN ANALYZE",
+        "items": [
+          {
+            "label": "Ler um plano",
+            "description": "Seq Scan, Index Scan, Bitmap Heap Scan e a diferença entre linhas estimadas e reais."
+          },
+          {
+            "label": "B-tree composto, parcial e de expressão",
+            "description": "Indexar exatamente o que a consulta filtra, na ordem certa."
+          },
+          {
+            "label": "Criar índice sem parar a aplicação",
+            "description": "CREATE INDEX CONCURRENTLY e o custo de cada índice nas escritas."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Transações, JSONB e Performance",
+        "items": [
+          {
+            "label": "Isolamento",
+            "description": "Read Committed, Repeatable Read e Serializable, e quando repetir a transação."
+          },
+          {
+            "label": "JSONB com GIN",
+            "description": "Operadores de contenção, classes de operador e quando promover uma chave a coluna."
+          },
+          {
+            "label": "Boas práticas de produção",
+            "description": "Paginação por chave, pg_stat_statements e estatísticas atualizadas."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para executar na base fictícia de chamados. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "sitemap",
+      "title": "CTEs e Subqueries",
+      "shortDescription": "Dar forma à consulta antes de pensar em velocidade",
+      "introductionText": "Consulta complexa raramente é difícil por causa de uma cláusula específica; é difícil porque ninguém consegue lê-la. Neste módulo você reorganiza consultas longas em etapas nomeadas com WITH, percorre uma hierarquia com CTE recursiva e escolhe entre IN, EXISTS e LATERAL de acordo com a pergunta. A base é fictícia: tabelas chamados, clientes, categorias (com categoria_pai) e eventos_chamado.",
+      "sections": [
+        {
+          "title": "🧱 Consultas em etapas",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "CTE para nomear etapas",
+              "code": "WITH abertos AS (SELECT ... ) SELECT ... FROM abertos",
+              "guidance": "Pegue uma consulta com duas subqueries aninhadas (chamados abertos por cliente e média de tempo de resposta) e reescreva cada parte como uma CTE com nome. A consulta final passa a ler como uma sequência de passos. Desde a versão 12, uma CTE não recursiva, sem efeitos colaterais e referenciada uma única vez é incorporada à consulta principal pelo planejador, então organizar em WITH não custa desempenho por si só.",
+              "tips": [
+                "Use AS MATERIALIZED quando quiser forçar o cálculo uma única vez (por exemplo, uma etapa cara referenciada várias vezes) e AS NOT MATERIALIZED quando quiser o contrário. Meça os dois antes de decidir."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "CTE recursiva para hierarquias",
+              "code": "WITH RECURSIVE arvore AS (... UNION ALL ...)",
+              "guidance": "A tabela categorias tem categoria_pai. Escreva uma CTE recursiva que parte de uma categoria raiz (termo não recursivo) e junta os filhos a cada iteração (termo recursivo), carregando o nível e o caminho. Use o resultado para contar chamados de toda a subárvore de uma categoria.",
+              "tips": [
+                "Dado com ciclo faz a recursão nunca terminar. Guarde o caminho em um array e pare quando o id já estiver nele, ou use a cláusula CYCLE disponível desde a versão 14."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "EXISTS, IN e a armadilha do NOT IN",
+              "code": "WHERE NOT EXISTS (SELECT 1 FROM ... WHERE ...)",
+              "guidance": "Liste clientes sem nenhum chamado no último mês de três formas: NOT IN, NOT EXISTS e LEFT JOIN com IS NULL. Depois insira um chamado com cliente_id nulo e rode de novo. O NOT IN passa a devolver zero linhas, porque comparar com NULL resulta em desconhecido. NOT EXISTS não tem esse problema e costuma gerar um plano de anti-join.",
+              "tips": [
+                "Regra prática: para negação contra uma subquery, prefira NOT EXISTS. Reserve IN para listas pequenas e conhecidas."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "LATERAL para o top-N por grupo",
+              "code": "FROM clientes c CROSS JOIN LATERAL (... LIMIT 3) ult",
+              "guidance": "Para cada cliente, traga os três chamados mais recentes. Uma subquery em LATERAL pode referenciar colunas da tabela à esquerda, então ela roda por cliente com ORDER BY aberto_em DESC LIMIT 3. Compare com a mesma resposta feita por window function no módulo seguinte.",
+              "tips": [
+                "Com um índice em (cliente_id, aberto_em DESC), a LATERAL lê só as três linhas de cada cliente em vez de ordenar a tabela inteira."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que a forma da consulta importa",
+      "highlights": [
+        {
+          "icon": "list",
+          "title": "Leitura em etapas",
+          "text": "CTE com nome transforma um bloco ilegível em passos revisáveis. Quem mantém a consulta depois entende o que cada parte responde."
+        },
+        {
+          "icon": "sitemap",
+          "title": "Hierarquia no banco",
+          "text": "A CTE recursiva resolve árvores de categorias, organogramas e dependências em uma única ida ao banco, sem laço na aplicação."
+        },
+        {
+          "icon": "shield",
+          "title": "Resultado correto com NULL",
+          "text": "NOT EXISTS responde certo mesmo quando há nulos na subquery. O NOT IN, nesse caso, devolve vazio sem dar erro."
+        }
+      ],
+      "closingText": "Suas consultas agora têm etapas nomeadas e usam a subquery adequada a cada pergunta. Falta o tipo de cálculo que mais costuma ir parar no código da aplicação sem necessidade: ranking, acumulado e comparação com a linha anterior.",
+      "ctaTitle": "🧱 Consultas organizadas!",
+      "ctaText": "As consultas da base de chamados já se leem de cima para baixo. Agora vamos calcular sobre conjuntos de linhas sem perder o detalhe de cada uma.",
+      "nextButtonText": "Ir para Módulo 1: Window Functions"
+    },
+    {
+      "id": 1,
+      "icon": "grid",
+      "title": "Window Functions",
+      "shortDescription": "Ranking, acumulados e intervalo entre eventos sem perder as linhas",
+      "introductionText": "GROUP BY resume: dez linhas viram uma. Uma window function calcula sobre um conjunto de linhas relacionadas e devolve o resultado em cada linha, sem agrupá-las. É o que permite mostrar o chamado ao lado da média do seu cliente, a posição de um atendente no ranking do mês ou o tempo entre um evento e o próximo. Todo o módulo gira em torno de três decisões: como particionar (PARTITION BY), em que ordem (ORDER BY) e quais linhas cada cálculo enxerga (a moldura).",
+      "sections": [
+        {
+          "title": "📊 Calculando sobre janelas",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "ROW_NUMBER, RANK e DENSE_RANK",
+              "code": "RANK() OVER (PARTITION BY mes ORDER BY resolvidos DESC)",
+              "guidance": "Monte o ranking mensal de atendentes por chamados resolvidos usando as três funções lado a lado. Com empate, ROW_NUMBER numera de forma arbitrária, RANK repete a posição e pula a seguinte (1, 1, 3) e DENSE_RANK repete sem pular (1, 1, 2). Escolha conforme a regra de negócio, não por hábito.",
+              "tips": [
+                "ROW_NUMBER com empate devolve uma ordem que pode mudar entre execuções. Acrescente uma coluna de desempate no ORDER BY, como o id."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Top-N por grupo com window function",
+              "code": "WHERE posicao <= 3",
+              "guidance": "Refaça os três chamados mais recentes por cliente com ROW_NUMBER() OVER (PARTITION BY cliente_id ORDER BY aberto_em DESC). Como window functions são calculadas depois do WHERE, você não pode filtrar por elas no mesmo nível: calcule a posição em uma CTE e filtre na consulta de fora.",
+              "tips": [
+                "Compare o plano com a versão LATERAL do módulo anterior. Com muitos clientes e poucos chamados por cliente, uma pode ser bem mais rápida que a outra; o EXPLAIN decide."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Acumulados e médias móveis",
+              "code": "AVG(abertos) OVER (ORDER BY dia ROWS BETWEEN 6 PRECEDING AND CURRENT ROW)",
+              "guidance": "Calcule chamados abertos por dia, o acumulado do mês com SUM() OVER (PARTITION BY mês ORDER BY dia) e a média móvel de sete dias com uma moldura em ROWS. Quando há ORDER BY sem moldura explícita, o padrão é RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW, que inclui as linhas empatadas na ordenação. Isso explica acumulados que \"pulam\" quando há datas repetidas.",
+              "tips": [
+                "Para média móvel por número de linhas, declare ROWS explicitamente. Se faltar algum dia na série, gere o calendário com generate_series e faça LEFT JOIN antes de calcular."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "LAG e LEAD para intervalos",
+              "code": "aconteceu_em - LAG(aconteceu_em) OVER (PARTITION BY chamado_id ORDER BY aconteceu_em)",
+              "guidance": "Na tabela eventos_chamado, calcule quanto tempo passou entre cada evento e o anterior do mesmo chamado. Com isso, meça o tempo até a primeira resposta e encontre chamados que ficaram parados mais de 48 horas entre dois eventos. Sem LAG, a alternativa seria uma autojunção bem mais difícil de ler.",
+              "tips": [
+                "Use a cláusula WINDOW para dar nome a uma janela repetida (WINDOW w AS (PARTITION BY ... ORDER BY ...)) e escreva OVER w em cada função."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que window functions mudam o jogo",
+      "highlights": [
+        {
+          "icon": "grid",
+          "title": "Detalhe e agregado juntos",
+          "text": "Cada linha continua na saída e ganha ao lado o total, a média ou a posição do seu grupo. Não é preciso juntar a tabela com ela mesma."
+        },
+        {
+          "icon": "sync",
+          "title": "Menos código na aplicação",
+          "text": "Ranking, acumulado e diferença entre linhas consecutivas saem prontos do banco, em vez de laços que trazem tudo para a memória."
+        },
+        {
+          "icon": "gauge",
+          "title": "Moldura explícita, resultado previsível",
+          "text": "Declarar ROWS ou RANGE deixa claro quais linhas entram no cálculo e evita surpresas com valores empatados."
+        }
+      ],
+      "closingText": "Você já resolve rankings, séries e intervalos direto no SQL. Essas consultas varrem muitas linhas, e é aqui que a pergunta muda de \"o resultado está certo?\" para \"quanto isso custa?\". O próximo módulo ensina a medir.",
+      "ctaTitle": "📊 Janelas dominadas!",
+      "ctaText": "Rankings e métricas de atendimento prontos. Agora vamos abrir o plano de execução e entender onde o tempo é gasto.",
+      "nextButtonText": "Ir para Módulo 2: Índices e EXPLAIN ANALYZE"
+    },
+    {
+      "id": 2,
+      "icon": "gauge",
+      "title": "Índices e EXPLAIN ANALYZE",
+      "shortDescription": "Medir antes de indexar e indexar exatamente o que a consulta usa",
+      "introductionText": "Índice não é botão de acelerar: cada um ocupa espaço, deixa INSERT e UPDATE mais lentos e só ajuda as consultas que conseguem usá-lo. Por isso o módulo começa pelo plano de execução, não pelo CREATE INDEX. Gere alguns milhões de linhas na base fictícia (generate_series ajuda), rode ANALYZE para atualizar as estatísticas e só então comece a medir.",
+      "sections": [
+        {
+          "title": "🔎 Do plano ao índice certo",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Ler um EXPLAIN ANALYZE",
+              "code": "EXPLAIN (ANALYZE, BUFFERS) SELECT ...",
+              "guidance": "Rode a consulta de chamados abertos por cliente com EXPLAIN (ANALYZE, BUFFERS). Leia o plano de dentro para fora: cada nó mostra custo estimado, linhas estimadas, linhas reais, tempo real e loops. A primeira coisa a procurar é a diferença grande entre linhas estimadas e reais; ela indica estatística desatualizada ou condição que o planejador não consegue estimar. Na versão atual, BUFFERS já é incluído por padrão quando você usa ANALYZE.",
+              "tips": [
+                "EXPLAIN ANALYZE executa o comando de verdade. Para medir um UPDATE ou DELETE sem alterar dados, rode dentro de BEGIN; ... ROLLBACK;."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "B-tree composto e a ordem das colunas",
+              "code": "CREATE INDEX ON chamados (status, aberto_em)",
+              "guidance": "A consulta mais frequente filtra status = 'aberto' e ordena por aberto_em. Crie o índice composto (status, aberto_em) e veja o plano trocar Seq Scan + Sort por Index Scan sem ordenação. Depois teste a ordem inversa (aberto_em, status) e compare. Um B-tree composto é mais eficiente quando a consulta restringe as colunas da esquerda; coluna com igualdade vem antes da coluna de intervalo ou ordenação.",
+              "tips": [
+                "Use INCLUDE para levar colunas que só aparecem no SELECT. Assim o planejador pode responder com Index Only Scan, sem visitar a tabela, desde que o mapa de visibilidade esteja em dia (o VACUUM cuida disso)."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Índice parcial",
+              "code": "CREATE INDEX ON chamados (atendente_id) WHERE status <> 'fechado'",
+              "guidance": "Em uma central de suporte, a grande maioria dos chamados está fechada, mas o painel só consulta os que não estão. Um índice parcial guarda apenas as linhas que satisfazem o WHERE, ficando muito menor e mais barato de manter. Compare o tamanho com pg_relation_size e confirme no plano que ele é usado.",
+              "tips": [
+                "O planejador só usa o índice parcial se conseguir provar que o WHERE da consulta implica o do índice. Condição escrita de outro jeito, ou com parâmetro no lugar do valor, pode impedir o uso."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Índice em expressão",
+              "code": "CREATE INDEX ON clientes (lower(email))",
+              "guidance": "A busca de cliente usa WHERE lower(email) = lower($1). Um índice simples em email não serve, porque a consulta compara o resultado de uma função. Crie o índice sobre a própria expressão e confirme que a consulta passa a usá-lo. O mesmo vale para date_trunc, extrações de JSONB e conversões de tipo.",
+              "tips": [
+                "A expressão na consulta precisa ser a mesma do índice. Um cast diferente ou uma função equivalente escrita de outro modo faz o índice ser ignorado."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Criar índice sem travar escritas",
+              "code": "CREATE INDEX CONCURRENTLY ...",
+              "guidance": "Em produção, CREATE INDEX comum bloqueia escritas na tabela até terminar. CREATE INDEX CONCURRENTLY evita esse bloqueio, ao custo de ser mais lento e não poder rodar dentro de um bloco de transação. Se falhar, deixa um índice marcado como inválido que precisa ser removido e recriado. Por fim, consulte pg_stat_user_indexes para encontrar índices que nunca são usados e só pesam nas escritas.",
+              "tips": [
+                "Todo índice novo tem custo em INSERT, UPDATE e espaço em disco. Antes de criar, verifique se um índice existente, com outra ordem de colunas, já não resolve."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que medir antes de indexar",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "O plano diz onde dói",
+          "text": "Estimado contra real, loops e buffers lidos mostram o nó que consome o tempo. Otimizar outro ponto é esforço perdido."
+        },
+        {
+          "icon": "tools",
+          "title": "O índice do tamanho da pergunta",
+          "text": "Composto, parcial ou de expressão: cada tipo responde a um formato de filtro. O índice certo costuma ser menor e mais útil que o genérico."
+        },
+        {
+          "icon": "bolt",
+          "title": "Leitura rápida tem preço na escrita",
+          "text": "Cada índice é atualizado em toda inserção e alteração. Remover o que ninguém usa também é otimização."
+        }
+      ],
+      "closingText": "Você já sabe ler um plano, criar o índice adequado e provar o ganho com números. Falta o que acontece quando várias sessões usam o banco ao mesmo tempo e quando parte dos dados não cabe em colunas fixas.",
+      "ctaTitle": "🔎 Planos lidos, índices no lugar!",
+      "ctaText": "As consultas da base de chamados já usam os índices certos. Agora vamos para concorrência, JSONB e os hábitos que mantêm o banco saudável.",
+      "nextButtonText": "Ir para Módulo 3: Transações, JSONB e Performance"
+    },
+    {
+      "id": 3,
+      "icon": "shield",
+      "title": "Transações, JSONB e Performance",
+      "shortDescription": "Concorrência correta, dados semiestruturados e hábitos de produção",
+      "introductionText": "Uma consulta rápida em teste pode se comportar de outro jeito com cem sessões simultâneas. Este módulo trata de três assuntos que só aparecem em produção: o nível de isolamento das transações e os erros que ele pode gerar, o uso de JSONB para atributos que variam de chamado para chamado, e os hábitos que evitam que o banco fique lento com o tempo. Para testar concorrência, abra duas sessões do psql lado a lado.",
+      "sections": [
+        {
+          "title": "🛡️ Concorrência e dados flexíveis",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Níveis de isolamento na prática",
+              "code": "BEGIN ISOLATION LEVEL REPEATABLE READ;",
+              "guidance": "Em duas sessões, leia o total de chamados abertos, altere em uma e leia de novo na outra. Em Read Committed (o padrão do PostgreSQL) cada comando vê um retrato novo dos dados confirmados. Em Repeatable Read a transação inteira vê o mesmo retrato. Em Serializable o banco garante resultado equivalente a alguma execução em série. Read Uncommitted existe na sintaxe, mas no PostgreSQL se comporta como Read Committed: leitura suja nunca acontece.",
+              "tips": [
+                "Repeatable Read e Serializable podem abortar com erro de serialização (SQLSTATE 40001). A aplicação precisa repetir a transação inteira desde o início, não só o último comando."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Fila de trabalho com FOR UPDATE SKIP LOCKED",
+              "code": "SELECT ... FOR UPDATE SKIP LOCKED LIMIT 1",
+              "guidance": "Vários atendentes pegam o próximo chamado da fila ao mesmo tempo. Com SELECT ... FOR UPDATE, o segundo espera o primeiro; com SKIP LOCKED, ele pula a linha já travada e pega a seguinte. Implemente a distribuição de chamados assim e verifique, com duas sessões, que nenhum chamado é atribuído duas vezes.",
+              "tips": [
+                "Mantenha a transação curta: trave, atualize e confirme. Transação aberta por muito tempo segura bloqueios e atrasa a limpeza de versões antigas das linhas."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "JSONB e seus operadores",
+              "code": "WHERE atributos @> '{\"canal\": \"chat\"}'",
+              "guidance": "Cada tipo de chamado tem campos próprios (canal, modelo do equipamento, versão do app). Guarde-os em uma coluna atributos do tipo jsonb. Pratique -> (devolve jsonb), ->> (devolve texto), @> (contenção) e ? (existência de chave). Prefira jsonb a json: ele é armazenado já decomposto, aceita indexação e não guarda espaços nem chaves duplicadas.",
+              "tips": [
+                "Campo que aparece em todo chamado, entra em JOIN ou precisa de restrição (NOT NULL, FOREIGN KEY) deve virar coluna. JSONB é para o que realmente varia."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Indexar JSONB com GIN",
+              "code": "CREATE INDEX ON chamados USING GIN (atributos jsonb_path_ops)",
+              "guidance": "Um índice GIN com a classe padrão jsonb_ops atende @>, ?, ?| e ?&, além das consultas de jsonpath com @? e @@. A classe jsonb_path_ops atende só @>, @? e @@, mas gera um índice menor e geralmente mais rápido para contenção. Para filtros e ordenações sobre uma chave específica, como atributos->>'canal', um B-tree de expressão costuma ser a melhor escolha.",
+              "tips": [
+                "GIN não ajuda em comparação de intervalo sobre um valor extraído (por exemplo, valor numérico maior que 100). Para isso, use índice de expressão com o cast exato que a consulta usa."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Boas práticas de performance",
+              "code": "WHERE (aberto_em, id) < ($1, $2) ORDER BY aberto_em DESC, id DESC LIMIT 50",
+              "guidance": "Feche o projeto com três hábitos. Troque paginação por OFFSET, que lê e descarta todas as linhas anteriores, por paginação por chave, que continua de onde a página parou. Ative a extensão pg_stat_statements para ver quais consultas somam mais tempo total, não só as mais lentas individualmente. E confira se o autovacuum e o ANALYZE estão em dia, porque estatística velha leva o planejador a escolher planos ruins.",
+              "tips": [
+                "Comece a otimização pelo topo do pg_stat_statements ordenado por tempo total. Uma consulta de 5 ms chamada um milhão de vezes pesa mais que uma de 2 segundos chamada uma vez."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que isso só aparece em produção",
+      "highlights": [
+        {
+          "icon": "shield",
+          "title": "Isolamento é decisão de negócio",
+          "text": "Saber o que cada nível garante, e preparar a aplicação para repetir transações, evita saldos errados e atribuições duplicadas que nenhum teste isolado mostra."
+        },
+        {
+          "icon": "folder",
+          "title": "Flexível sem virar bagunça",
+          "text": "JSONB guarda o que varia; colunas guardam o que é estrutural. A divisão certa mantém restrições, junções e índices funcionando."
+        },
+        {
+          "icon": "gauge",
+          "title": "Desempenho é hábito",
+          "text": "Paginação por chave, estatísticas atualizadas e acompanhamento contínuo das consultas mais caras mantêm o banco rápido depois que o projeto acaba."
+        }
+      ],
+      "closingText": "Você saiu de consultas que só funcionavam para consultas legíveis, medidas e seguras sob concorrência, com dados flexíveis bem indexados. Esse conjunto permite investigar um problema de desempenho real e defender a solução com números. A trilha continua em \"MongoDB: Do Zero ao CRUD em Aplicações NoSQL\", onde o modelo de documentos que aqui ficou restrito a uma coluna JSONB passa a ser o modelo principal.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você escreve consultas complexas, lê planos de execução, escolhe índices e controla transações no PostgreSQL. O próximo passo na trilha é comparar tudo isso com um banco orientado a documentos.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "A subquery de um NOT IN devolve pelo menos um valor NULL. O que acontece com o resultado?",
+      "explanation": "Comparar um valor com NULL resulta em desconhecido, então nenhuma linha satisfaz o NOT IN e a consulta devolve zero linhas, sem erro. NOT EXISTS não sofre desse problema, por isso é a forma recomendada de negação contra subquery.",
+      "options": [
+        {
+          "text": "A consulta devolve zero linhas, sem erro",
+          "isCorrect": true
+        },
+        {
+          "text": "Os valores NULL são ignorados e o resultado sai normal",
+          "isCorrect": false
+        },
+        {
+          "text": "O PostgreSQL gera um erro de sintaxe",
+          "isCorrect": false
+        },
+        {
+          "text": "O NOT IN passa a se comportar como IN",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Desde a versão 12, o que o PostgreSQL faz com uma CTE não recursiva, sem efeitos colaterais e referenciada uma única vez?",
+      "explanation": "Nesse caso o planejador incorpora a CTE à consulta principal, permitindo otimizá-las juntas. Para forçar o cálculo separado existe AS MATERIALIZED. Antes da versão 12 a CTE era sempre materializada, o que a tornava uma barreira de otimização.",
+      "options": [
+        {
+          "text": "Incorpora a CTE à consulta principal por padrão",
+          "isCorrect": true
+        },
+        {
+          "text": "Sempre materializa o resultado em uma tabela temporária",
+          "isCorrect": false
+        },
+        {
+          "text": "Cria automaticamente um índice para a CTE",
+          "isCorrect": false
+        },
+        {
+          "text": "Executa a CTE em paralelo em outra sessão",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Para trazer os três chamados mais recentes de cada cliente, o que permite que a subquery do FROM use colunas da tabela à esquerda?",
+      "explanation": "Uma subquery marcada com LATERAL pode referenciar colunas de itens anteriores no FROM e é avaliada para cada linha deles, o que permite ORDER BY ... LIMIT 3 por cliente. Subquery comum no FROM não enxerga essas colunas; WITH RECURSIVE serve para hierarquias; e HAVING filtra grupos.",
+      "options": [
+        {
+          "text": "A palavra-chave LATERAL",
+          "isCorrect": true
+        },
+        {
+          "text": "Uma CTE com WITH RECURSIVE",
+          "isCorrect": false
+        },
+        {
+          "text": "A cláusula HAVING",
+          "isCorrect": false
+        },
+        {
+          "text": "Nada: subquery no FROM sempre enxerga as outras tabelas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Dois atendentes empatam em primeiro lugar. Qual função produz as posições 1, 1, 2 para eles e o próximo colocado?",
+      "explanation": "DENSE_RANK repete a posição no empate e não pula a seguinte. RANK produziria 1, 1, 3. ROW_NUMBER numeraria 1, 2, 3, com ordem arbitrária entre os empatados. NTILE divide as linhas em grupos e não é função de ranking com empate.",
+      "options": [
+        {
+          "text": "DENSE_RANK()",
+          "isCorrect": true
+        },
+        {
+          "text": "RANK()",
+          "isCorrect": false
+        },
+        {
+          "text": "ROW_NUMBER()",
+          "isCorrect": false
+        },
+        {
+          "text": "NTILE(3)",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Por que não se pode escrever WHERE ROW_NUMBER() OVER (...) <= 3 diretamente?",
+      "explanation": "Window functions são calculadas depois do WHERE, do GROUP BY e do HAVING, então não estão disponíveis para filtrar nesse mesmo nível. A solução é calcular a posição em uma CTE ou subquery e filtrar na consulta externa.",
+      "options": [
+        {
+          "text": "Porque window functions são calculadas depois do WHERE",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque ROW_NUMBER só funciona com GROUP BY",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o PostgreSQL não aceita comparação com números inteiros em WHERE",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque é preciso criar um índice antes de usar ROW_NUMBER",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Com ORDER BY e sem moldura explícita, quais linhas entram em SUM() OVER (ORDER BY dia)?",
+      "explanation": "O padrão é RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW: da primeira linha da partição até a linha atual, incluindo as linhas empatadas com ela na ordenação. Por isso datas repetidas fazem o acumulado saltar. Para contar linhas fisicamente, declare ROWS.",
+      "options": [
+        {
+          "text": "Da primeira linha da partição até a atual, incluindo as empatadas com ela",
+          "isCorrect": true
+        },
+        {
+          "text": "Apenas a linha atual",
+          "isCorrect": false
+        },
+        {
+          "text": "Todas as linhas da partição, sempre",
+          "isCorrect": false
+        },
+        {
+          "text": "As seis linhas anteriores e a atual",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "No EXPLAIN ANALYZE, um nó estima 10 linhas e devolve 2 milhões. O que isso indica primeiro?",
+      "explanation": "Diferença grande entre linhas estimadas e reais indica que o planejador está trabalhando com estatísticas desatualizadas ou com uma condição que não consegue estimar, e por isso pode ter escolhido o plano errado. Rodar ANALYZE na tabela é o primeiro passo. Não é sinal de índice corrompido nem de falta de memória.",
+      "options": [
+        {
+          "text": "Estatísticas desatualizadas ou condição difícil de estimar pelo planejador",
+          "isCorrect": true
+        },
+        {
+          "text": "Que o índice está corrompido",
+          "isCorrect": false
+        },
+        {
+          "text": "Que o servidor ficou sem memória durante a execução",
+          "isCorrect": false
+        },
+        {
+          "text": "Nada: estimativas sempre diferem bastante e podem ser ignoradas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "A consulta filtra status = 'aberto' e ordena por aberto_em. Qual índice B-tree composto atende melhor?",
+      "explanation": "Um B-tree composto é mais eficiente quando a consulta restringe as colunas da esquerda. Com (status, aberto_em), o índice vai direto aos chamados abertos e já os entrega ordenados por data, dispensando o Sort. Na ordem inversa a igualdade em status não delimita a faixa lida. Dois índices separados exigiriam combinar e ordenar depois.",
+      "options": [
+        {
+          "text": "(status, aberto_em)",
+          "isCorrect": true
+        },
+        {
+          "text": "(aberto_em, status)",
+          "isCorrect": false
+        },
+        {
+          "text": "Dois índices separados, um em cada coluna, sempre são equivalentes",
+          "isCorrect": false
+        },
+        {
+          "text": "Um índice GIN em status",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Qual é o cuidado ao rodar EXPLAIN ANALYZE em um DELETE?",
+      "explanation": "EXPLAIN ANALYZE executa o comando de verdade para medir o tempo real. Em um DELETE, as linhas seriam apagadas. A documentação recomenda envolver a medição em BEGIN e ROLLBACK para descartar o efeito.",
+      "options": [
+        {
+          "text": "O comando é executado de verdade; envolva em BEGIN e ROLLBACK",
+          "isCorrect": true
+        },
+        {
+          "text": "Nenhum: EXPLAIN ANALYZE apenas estima, sem executar",
+          "isCorrect": false
+        },
+        {
+          "text": "EXPLAIN ANALYZE não aceita DELETE",
+          "isCorrect": false
+        },
+        {
+          "text": "É preciso desativar os índices antes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Qual é o nível de isolamento padrão do PostgreSQL?",
+      "explanation": "Read Committed é o padrão: cada comando vê os dados confirmados até o seu início. Read Uncommitted pode ser pedido na sintaxe, mas no PostgreSQL se comporta como Read Committed. Repeatable Read e Serializable precisam ser escolhidos explicitamente.",
+      "options": [
+        {
+          "text": "Read Committed",
+          "isCorrect": true
+        },
+        {
+          "text": "Read Uncommitted",
+          "isCorrect": false
+        },
+        {
+          "text": "Repeatable Read",
+          "isCorrect": false
+        },
+        {
+          "text": "Serializable",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Uma transação em Serializable falha com SQLSTATE 40001. O que a aplicação deve fazer?",
+      "explanation": "O código 40001 indica falha de serialização. A documentação orienta abortar a transação e repeti-la inteira desde o início, porque as leituras feitas antes podem ter mudado. Repetir só o último comando mantém leituras antigas; baixar o isolamento muda as garantias do negócio.",
+      "options": [
+        {
+          "text": "Abortar e repetir a transação inteira desde o início",
+          "isCorrect": true
+        },
+        {
+          "text": "Repetir apenas o último comando que falhou",
+          "isCorrect": false
+        },
+        {
+          "text": "Ignorar o erro, pois os dados já foram gravados",
+          "isCorrect": false
+        },
+        {
+          "text": "Reiniciar o servidor de banco de dados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Qual é a diferença entre as classes de operador GIN jsonb_ops e jsonb_path_ops?",
+      "explanation": "jsonb_ops, a padrão, atende também os operadores de existência de chave (?, ?| e ?&). jsonb_path_ops atende só @>, @? e @@, mas gera um índice menor e geralmente mais rápido para buscas por contenção. Nenhuma das duas serve para comparação de intervalo sobre um valor extraído.",
+      "options": [
+        {
+          "text": "jsonb_path_ops não atende os operadores de existência de chave, mas costuma ser menor e mais rápido para @>",
+          "isCorrect": true
+        },
+        {
+          "text": "jsonb_path_ops é a classe padrão e atende todos os operadores",
+          "isCorrect": false
+        },
+        {
+          "text": "jsonb_ops só funciona com a coluna do tipo json, não jsonb",
+          "isCorrect": false
+        },
+        {
+          "text": "Não há diferença: são nomes alternativos para a mesma classe",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "A camada de consultas de uma central de suporte fictícia com milhões de chamados gerados: relatórios com CTEs e window functions (ranking de atendentes, tempo até a primeira resposta, média móvel de abertura), índices escolhidos a partir de EXPLAIN ANALYZE com o antes e depois registrado, uma fila de distribuição de chamados segura sob concorrência e atributos variáveis em JSONB indexados com GIN.",
+    "highlights": [
+      "Relatórios de atendimento com CTEs, LATERAL e window functions",
+      "Conjunto de índices justificado por planos de execução medidos",
+      "Fila de chamados com FOR UPDATE SKIP LOCKED e atributos em JSONB"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "O PostgreSQL é o banco de dados mais usado entre os desenvolvedores: na Stack Overflow Developer Survey 2025, 55,6% de todos os respondentes e 58,2% dos desenvolvedores profissionais declararam usá-lo, cerca de 15 pontos à frente do segundo colocado, o MySQL. Entre quem já o usa, 65,5% querem continuar usando, e 46,5% dos respondentes disseram querer trabalhar com ele no próximo ano.",
+      "O projeto segue em ritmo anual: a versão 18 é a estável atual e a 19 está em release candidate, com lançamento previsto para 19 de novembro de 2026. Os conceitos deste programa (planejador, índices, isolamento, JSONB) valem para todas as versões suportadas. Com o PostgreSQL presente na maior parte das aplicações novas, saber por que uma consulta está lenta virou requisito comum em vagas de backend e de dados."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Backends de aplicações",
+        "description": "APIs cujo tempo de resposta depende de consultas e índices bem escolhidos."
+      },
+      {
+        "label": "Relatórios e análise",
+        "description": "Rankings, séries temporais e métricas operacionais calculados direto no banco."
+      },
+      {
+        "label": "Sistemas com concorrência",
+        "description": "Filas, reservas e saldos que precisam continuar corretos com muitos acessos simultâneos."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem já escreve SQL do dia a dia",
+        "description": "Domina SELECT, JOIN e GROUP BY e quer resolver consultas mais difíceis."
+      },
+      {
+        "label": "Desenvolvedores backend",
+        "description": "Precisam entender por que um endpoint ficou lento e o que fazer no banco."
+      },
+      {
+        "label": "Analistas de dados",
+        "description": "Querem usar window functions e CTEs para relatórios sem exportar tudo para planilha."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "O PostgreSQL é open source, mantido por uma comunidade global e oferecido como serviço gerenciado pelos principais provedores de nuvem. Aparece em startups, empresas de tecnologia, órgãos públicos e instituições financeiras, como banco principal de aplicações e também como base de relatórios. Por ser o banco mais usado entre desenvolvedores, o conhecimento de consultas e performance nele é transferível entre empresas e setores.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Documentação oficial do PostgreSQL 18 — 13.2 Transaction Isolation",
+      "url": "https://www.postgresql.org/docs/current/transaction-iso.html"
+    },
+    {
+      "label": "Documentação oficial do PostgreSQL — EXPLAIN",
+      "url": "https://www.postgresql.org/docs/19/sql-explain.html"
+    },
+    {
+      "label": "PostgreSQL Global Development Group — PostgreSQL 19 RC 1 Released",
+      "url": "https://www.postgresql.org/about/news/postgresql-19-rc-1-released-3409/"
+    },
+    {
+      "label": "PostgreSQL Global Development Group — PostgreSQL 19 Beta 1 Released",
+      "url": "https://www.postgresql.org/about/news/postgresql-19-beta-1-3313/"
+    },
+    {
+      "label": "Vonng — PostgreSQL na Stack Overflow Developer Survey 2025 (uso, admiração e desejo)",
+      "url": "https://blog.vonng.com/en/pg/so2025-pg/"
+    },
+    {
+      "label": "Crunchy Data — Indexing JSONB in Postgres",
+      "url": "https://www.crunchydata.com/blog/indexing-jsonb-in-postgres"
+    }
+  ]
 }

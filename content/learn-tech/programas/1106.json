@@ -1,0 +1,866 @@
+{
+  "id": 1106,
+  "image": "/media/learn-tech/programas/1106.webp",
+  "category": "Marketing e CRM",
+  "categoryFilter": "marketing-crm",
+  "title": "WhatsApp Business para Empresas: Contas, Templates, Categorias de Mensagem e Conversão",
+  "lessons": "20 passos",
+  "duration": "12h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Intermediário",
+  "description": "Como uma rede de lojas organiza o WhatsApp como canal de empresa: contas e números por público na plataforma da Meta, templates na categoria certa, disparos por provedor, chatbot especificado, opt-in registrado e medição de venda atribuída. Com regras e preços da Meta vigentes em outubro de 2026.",
+  "letslearn": [
+    "Estruturar portfólio, contas (WABAs) e números por público, entendendo verificação, qualidade e limite de mensagens",
+    "Escrever templates de marketing, utilidade e autenticação que passam na análise, com variáveis bem mapeadas",
+    "Operar disparos por provedor com base limpa, lista de teste, agenda semanal e lista de bloqueio",
+    "Especificar um chatbot de atendimento com requisitos testáveis",
+    "Registrar opt-in conforme a Meta e a LGPD e medir clique, resposta e venda atribuída com grupo de controle"
+  ],
+  "curriculum": "Do número ao pedido faturado",
+  "about": "O programa reproduz o trabalho de quem assumiu o WhatsApp de uma rede de lojas com franquias: herdar contas espalhadas, escrever e revisar dezenas de templates, rodar réguas semanais por um provedor, encomendar ajustes de chatbot e provar para a diretoria que o canal vende. A empresa usada nos exemplos, a Rede Construir+, é fictícia, assim como todos os dados. As regras da Meta (categorias, limites, opt-in, preços) seguem a documentação oficial vigente em outubro de 2026 e trazem data, porque mudam várias vezes por ano. Complementa o programa de CRM na prática: lá as réguas e a LGPD aparecem no plano geral; aqui o foco é o canal WhatsApp em detalhe.",
+  "materials": [
+    "Planilha de inventário de WABAs e números por público",
+    "Modelo de ficha de template (nome, categoria, variáveis, versão)",
+    "Modelo de base CSV e agenda semanal de disparos",
+    "Checklist de pré-envio e de limpeza de templates",
+    "Planilha de base de conversão com grupo de controle"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Contas, Números e Limites na Plataforma da Meta",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Templates: Categorias, Variáveis e Aprovação",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Provedores, Disparos e Chatbot",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Opt-in, LGPD e Medição de Conversão",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Marketing e CRM",
+    "mainTitle": "Faça o WhatsApp funcionar como canal de empresa: número certo, template aprovado, base limpa e venda medida.",
+    "introductionParagraphs": [
+      {
+        "title": "O canal que todo cliente já usa",
+        "text": "Para a maioria dos brasileiros, falar com uma loja é mandar mensagem no WhatsApp. Para a empresa, isso só vira canal quando existe estrutura: **contas** com dono, **templates** na categoria correta, **base** com consentimento e **medição** que liga a mensagem ao pedido. Sem isso, o WhatsApp vira um conjunto de celulares e planilhas soltas."
+      },
+      {
+        "title": "Regras que mudam e custam",
+        "text": "A Meta cobra por mensagem entregue conforme a **categoria** desde julho de 2025, reclassifica templates promocionais disfarçados de utilidade e limita quem recebe bloqueios demais. Entender essas regras é o que separa uma régua que escala de um número que perde qualidade no meio da campanha."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não ensina a programar a Cloud API nem a desenhar menus de chatbot para o varejo. O foco é a operação: estrutura de contas, escrita e manutenção de templates, rotina de disparo com provedor, especificação de bot, opt-in e conversão."
+      }
+    ],
+    "courseAboutTitle": "WhatsApp como canal de CRM, não como celular da loja",
+    "courseAboutDescription": "O programa segue a ordem real do trabalho: organizar contas e números, escrever templates que passam na análise, colocar as réguas para rodar com teste e agenda e, por fim, provar resultado com consentimento registrado e grupo de controle. Cada passo usa a Rede Construir+, uma rede fictícia de material de construção e acabamento com lojas próprias, franquias, e-commerce e programa para arquitetos.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Contas, Números e Limites na Plataforma da Meta",
+        "items": [
+          {
+            "label": "App x Cloud API",
+            "description": "Quando o aplicativo basta e quando a empresa precisa da plataforma."
+          },
+          {
+            "label": "WABA por público",
+            "description": "Inventário de contas e um número para cada público."
+          },
+          {
+            "label": "Limites e qualidade",
+            "description": "Quantos usuários cabem em 24 horas e o que derruba a qualidade."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Templates: Categorias, Variáveis e Aprovação",
+        "items": [
+          {
+            "label": "Quatro categorias",
+            "description": "Marketing, utilidade, autenticação e serviço, e a janela de 24 horas."
+          },
+          {
+            "label": "Variáveis",
+            "description": "Parâmetros numerados, mapeamento de colunas e os erros que aparecem na base."
+          },
+          {
+            "label": "Reclassificação e limpeza",
+            "description": "Status, recurso, edição e acervo versionado."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Provedores, Disparos e Chatbot",
+        "items": [
+          {
+            "label": "Provedor e custo",
+            "description": "O que é do BSP, o que é da Meta e como calcular a conta."
+          },
+          {
+            "label": "Base e teste",
+            "description": "CSV com as variáveis, lista de teste interna e agenda semanal."
+          },
+          {
+            "label": "Bot especificado",
+            "description": "Requisitos testáveis para um chatbot de atendimento."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Opt-in, LGPD e Medição de Conversão",
+        "items": [
+          {
+            "label": "Opt-in e LGPD",
+            "description": "Aceite separado por finalidade, registrado com data e origem."
+          },
+          {
+            "label": "Atribuição",
+            "description": "Clique, resposta e venda faturada com grupo de controle."
+          },
+          {
+            "label": "Saúde da base",
+            "description": "Higienização, pesquisa com quem recebe e relatório com plano de ação."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para aplicar na sua operação. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "sitemap",
+      "title": "Contas, Números e Limites na Plataforma da Meta",
+      "shortDescription": "App x Cloud API, WABA por público, verificação, qualidade e limites de envio",
+      "introductionText": "Antes de escrever a primeira mensagem, alguém precisa decidir quantas contas existem, quem é dono delas e qual número fala com qual público. Na Rede Construir+, uma rede fictícia de lojas de material de construção e acabamento com franquias, e-commerce e um programa para arquitetos, essa decisão mal tomada no início virou um inventário confuso: contas criadas para teste e esquecidas, conta sem número, número de franquia misturado com número de cliente. Este módulo reconstrói essa estrutura do jeito certo e explica as regras de qualidade e limite que valem para todos os números da empresa.",
+      "sections": [
+        {
+          "title": "🏗️ A estrutura antes da mensagem",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "App WhatsApp Business ou WhatsApp Business Platform",
+              "code": "App (balcão) x Cloud API (sistema)",
+              "guidance": "O aplicativo WhatsApp Business serve para a loja que atende no próprio celular: uma pessoa, um aparelho, conversa manual. Quando a empresa precisa disparar templates para milhares de contatos, integrar com CRM, ligar um chatbot ou dar a mesma caixa de atendimento para várias pessoas, o caminho é a WhatsApp Business Platform, acessada pela Cloud API, hospedada pela própria Meta. A antiga On-Premises API, instalada no servidor da empresa, deixou de entregar mensagens em 23/10/2025; projeto novo nasce na Cloud API, direto ou por meio de um provedor. Na Rede Construir+, cada franquia pode continuar com o app para o balcão, enquanto as réguas da matriz rodam na plataforma.",
+              "tips": [
+                "Pergunta de corte: a mensagem sai de um sistema (CRM, e-commerce, bot) ou de uma pessoa digitando? Se sai de sistema, é plataforma.",
+                "Não cadastre na plataforma o mesmo número que um vendedor usa no app pessoal da loja sem planejar a migração: o histórico e o uso do aparelho mudam."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Portfólio, WABA e número: faça o inventário",
+              "code": "Portfólio > WABA > número",
+              "guidance": "No topo fica o portfólio empresarial (antigo Business Manager). Dentro dele, cada conta do WhatsApp tem um único número comercial e pode ser agrupada em hierarquias, e a conta de mensagens guarda os templates e a cobrança; o identificador que o mercado chama de WABA hoje aponta para a conta de mensagens. Monte uma planilha com uma linha por WABA: nome, identificação, portfólio dono, números vinculados, uso e responsável. Foi assim que a Rede Construir+ descobriu uma WABA criada sem nenhum número, outra usada só para testes de integração com o CRM e uma conta de marca parceira registrada dentro do portfólio da rede. Conta sem uso é removida; conta de teste fica marcada como teste; conta de terceiro volta para o portfólio de quem é dono.",
+              "tips": [
+                "A coluna mais importante do inventário é 'pertence a'. Se a WABA estiver no portfólio da agência ou do provedor, a empresa não controla templates nem números quando o contrato acaba.",
+                "Nomeie WABAs pelo público e não pela campanha: 'Construir+ Clientes' sobrevive a dez campanhas; 'Construir+ Black Friday' não."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Um número para cada público",
+              "code": "[B2C] [FRA] [ARQ] [COM] [CLB] [EXP]",
+              "guidance": "Separe os números por público e por finalidade, e use o mesmo prefixo nos nomes de templates e disparos. Na Rede Construir+: [B2C] atendimento e réguas para clientes finais; [FRA] avisos operacionais para franqueados (alerta diário ao franqueado, com orçamentos a vencer e leads sem atendimento); [ARQ] programa de relacionamento para arquitetos e especificadores; [COM] comunicados internos da rede; [CLB] clube de vantagens; [EXP] prospecção de novos franqueados. Público diferente bloqueia por motivos diferentes: um franqueado não bloqueia o aviso de orçamento vencido, mas um cliente final bloqueia oferta repetida. Separar números evita que a reação de um público derrube a operação de outro.",
+              "tips": [
+                "Documente a descrição de cada número em um lugar só (número, público, WABA, nome de exibição, status). Número 'inativo' continua na lista, com a data em que deixou de ser usado.",
+                "O prefixo no nome do template ([B2C], [FRA], [ARQ]) é o que permite filtrar relatórios e fazer a limpeza de templates depois."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Verificação, nome de exibição e perfil",
+              "guidance": "O nome de exibição de cada número passa por análise da Meta e deve corresponder à marca que aparece no site e nos materiais da empresa. O perfil comercial (descrição, endereço, site, horário) é o que o cliente vê antes de responder, então preencha completo. Verificar o portfólio empresarial é também um dos caminhos que a Meta oferece para subir o limite inicial de envio. Na Rede Construir+, os números ganharam nomes que dizem quem fala: 'Construir+', 'Construir+ Franquias', 'Construir+ Arquitetos'.",
+              "tips": [
+                "Nome de exibição genérico ou diferente da marca registrada costuma ser recusado. Tenha o CNPJ, o site com a mesma marca e o domínio validados antes de pedir.",
+                "Perfil incompleto aumenta a desconfiança e, com ela, o bloqueio. Ele custa dez minutos e protege a qualidade do número."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Limite de mensagens e qualidade",
+              "code": "250 → 2.000 → escala automática",
+              "guidance": "O limite conta quantos usuários diferentes recebem mensagens iniciadas pela empresa (fora da janela de atendimento) em 24 horas móveis. Pela documentação da Meta, um portfólio novo começa em 250 usuários; sobe para 2.000 ao cumprir um dos caminhos de escala (por exemplo, verificar a empresa ou entregar 2.000 mensagens de boa qualidade em 30 dias); depois disso, sobe automaticamente um nível quando a qualidade está alta e a empresa usou pelo menos metade do limite nos últimos 7 dias. O limite é calculado no portfólio e compartilhado pelos números. A qualidade vem do comportamento do usuário: bloqueios, denúncias e feedback negativo. Qualidade baixa por tempo prolongado leva a limitação de envio.",
+              "tips": [
+                "Planeje a campanha pelo limite: com 2.000 usuários por 24 horas, uma base de 9.000 contatos leva cinco dias. Escalonar o disparo por lote também protege a qualidade.",
+                "Olhe a qualidade do número no Gerenciador do WhatsApp antes de cada disparo grande, não depois."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que a estrutura vem primeiro",
+      "highlights": [
+        {
+          "icon": "shield",
+          "title": "Dono é quem controla",
+          "text": "WABA no portfólio da empresa significa templates, números e histórico preservados quando agência ou provedor mudam."
+        },
+        {
+          "icon": "grid",
+          "title": "Público isolado, risco isolado",
+          "text": "Um número por público impede que a rejeição de uma oferta para cliente final derrube o aviso operacional para franqueados."
+        },
+        {
+          "icon": "gauge",
+          "title": "Limite é planejamento",
+          "text": "Saber quantos usuários cabem em 24 horas transforma 'dispara tudo hoje' em um cronograma de lotes que a qualidade aguenta."
+        }
+      ],
+      "closingText": "A Rede Construir+ agora tem um inventário de contas, um número por público, perfis completos e um plano de envio que respeita o limite. O próximo passo é o que sai por esses números: os templates, suas categorias e as regras que decidem se uma mensagem é aprovada como utilidade ou como marketing.",
+      "ctaTitle": "🏗️ Contas organizadas!",
+      "ctaText": "Cada número tem dono, público e limite conhecido. Agora vamos escrever as mensagens que passam pela análise da Meta.",
+      "nextButtonText": "Ir para Módulo 1: Templates: Categorias, Variáveis e Aprovação"
+    },
+    {
+      "id": 1,
+      "icon": "list",
+      "title": "Templates: Categorias, Variáveis e Aprovação",
+      "shortDescription": "Marketing, utilidade, autenticação e serviço; montagem, parâmetros e reclassificação",
+      "introductionText": "Toda mensagem que a empresa inicia fora da janela de atendimento sai por um template aprovado pela Meta, e a categoria do template define regra, preço e risco. O erro mais caro deste módulo não é técnico: é escrever uma confirmação de orçamento com frase de propaganda e um convite para seguir o perfil da loja no Instagram, cadastrar como utilidade e ver o template ser aprovado como marketing. Você vai montar templates da Rede Construir+ do zero, com variáveis bem nomeadas, e aprender a manter o acervo limpo.",
+      "sections": [
+        {
+          "title": "🧾 Do texto ao template aprovado",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "As quatro categorias de mensagem",
+              "code": "marketing | utilidade | autenticação | serviço",
+              "guidance": "Mensagens iniciadas pela empresa usam template e se dividem em três categorias: marketing (ofertas, novidades, reengajamento, convites), utilidade (atualização de pedido, conta ou transação que o usuário fez ou pediu) e autenticação (código de uso único). A quarta categoria é serviço: respostas livres, sem template, enviadas dentro da janela de atendimento de 24 horas que se abre quando o cliente escreve e se renova a cada nova mensagem dele. Classifique as réguas da Rede Construir+: 'pedido saiu para entrega' é utilidade; 'seu orçamento venceu, temos condições especiais' é marketing; 'seu código de acesso ao portal do arquiteto é 4821' é autenticação; responder a dúvida do cliente sobre prazo é serviço.",
+              "tips": [
+                "A janela de 24 horas é aberta pelo cliente, nunca pela empresa. Fora dela, só template.",
+                "Cada mensagem tem uma categoria e uma cobrança. Por isso a categoria é decisão de custo, não só de aprovação."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Utilidade não pode vender",
+              "code": "conteúdo misto = marketing",
+              "guidance": "Para ser utilidade, o template precisa ser não promocional e específico do usuário (um pedido, um orçamento, uma conta) ou essencial para ele. Conteúdo misto vira marketing. Veja este exemplo fictício de confirmação de orçamento da Rede Construir+: 'Recebemos seu orçamento {{1}} na loja {{2}}. Aproveite e conheça nossas ofertas da semana! Siga nosso perfil para novidades.' As duas últimas frases são promocionais, então o template é marketing. A versão de utilidade fica só com o fato e o contato: 'Olá, {{1}}. Seu orçamento {{2}} foi registrado na loja {{3}}. Dúvidas sobre os itens: {{4}}.' A promoção, se fizer sentido, vai em outro template, de marketing, para quem aceitou marketing.",
+              "tips": [
+                "Pesquisa de satisfação só é utilidade quando cita o pedido ou atendimento específico. 'Avalie nossa empresa' é genérico e vira marketing.",
+                "Teste rápido: se tirar a frase, o cliente perde informação sobre o pedido? Se não perde, a frase é promoção."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Criar o template no Gerenciador do WhatsApp",
+              "code": "b2c_orcamento_aberto_v2",
+              "guidance": "Caminho: Todas as ferramentas > Gerenciador do WhatsApp > escolher a conta (WABA) e o número no canto superior > Gerenciar modelos > Criar modelo. Escolha a categoria, dê um nome em minúsculas com sublinhado (espaços viram _), selecione Português (Brasil) e monte as partes: cabeçalho opcional (texto, imagem, vídeo, documento ou localização), corpo obrigatório, rodapé opcional e botões. Os botões podem ser de resposta rápida ou de ação: abrir site, ligar, copiar código de oferta ou iniciar um fluxo. Na mídia de cabeçalho você sobe um arquivo de exemplo; o arquivo real é definido no envio. Revise a pré-visualização e envie para análise.",
+              "tips": [
+                "Padronize o nome: prefixo do público, assunto e versão. Exemplo: b2c_orcamento_aberto_v2. Quem abrir a lista daqui a um ano entende o que é.",
+                "Botão de cancelamento ('Parar promoções') no lugar de 'responda SAIR' no texto: o clique é registrado de forma estruturada e a frase deixa de ocupar o corpo."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Variáveis e parâmetros sem erro",
+              "code": "{{1}}=nome {{2}}=numero_orcamento {{3}}=nome_loja",
+              "guidance": "Variáveis entram no corpo como {{1}}, {{2}}, {{3}} e cada uma recebe um valor de exemplo na análise. Na ferramenta de envio, cada número é mapeado para uma coluna da base: {{1}} = nome, {{2}} = numero_orcamento, {{3}} = nome_loja. Os erros reais que apareceram na rotina da Rede Construir+: variável com espaço no nome (informa loja), cabeçalho do arquivo diferente do nome esperado, texto concatenado sem espaço ('loja Construir+Centro') e variável usada para carregar frases inteiras de oferta, o que esconde do revisor o que de fato será enviado. Variável é dado do cliente ou do pedido; o texto fixo fica no template.",
+              "tips": [
+                "Template de autenticação tem regras próprias: vem da biblioteca de templates, usa botão de código (copiar ou preenchimento automático), não aceita link, mídia nem emoji, e o parâmetro tem no máximo 15 caracteres.",
+                "Antes de aprovar uma base, abra três linhas e leia a mensagem montada como o cliente vai ler. Espaço sobrando e nome em caixa alta aparecem na hora."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Status, reclassificação e limpeza do acervo",
+              "code": "Em análise → Ativo | Rejeitado | Pausado",
+              "guidance": "Depois de enviado, o template fica Em análise e termina como Ativo, Rejeitado ou, mais tarde, Pausado por reclamações e bloqueios. Desde 9/4/2025, um template enviado como utilidade que a Meta considera marketing é aprovado diretamente como marketing; empresas avisadas por uso indevido têm a troca imediata. A mudança de categoria feita pela Meta pode ser contestada em até 60 dias, pelo Business Support Home. Se o texto precisa mudar várias vezes, crie uma nova versão em vez de editar o mesmo template. A cada trimestre, a Rede Construir+ exporta a lista de templates, marca na planilha 'utilizado: 0/1', confere com as réguas ativas e exclui os que não saem há meses, registrando a versão da limpeza (v1.0, v1.1).",
+              "tips": [
+                "Template parado acumula risco: alguém reaproveita, sem saber, um texto de campanha vencida.",
+                "Guarde, para cada template, o texto aprovado, a categoria final e a data. Quando a Meta reclassifica, você precisa comparar com o que foi enviado."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que a categoria decide tanto",
+      "highlights": [
+        {
+          "icon": "bolt",
+          "title": "Preço por mensagem",
+          "text": "Desde 1/7/2025 a Meta cobra por mensagem entregue, com valor por categoria e país. Utilidade disfarçada de marketing muda o custo da régua."
+        },
+        {
+          "icon": "search",
+          "title": "Revisão automática",
+          "text": "A Meta reclassifica templates e pode restringir quem insiste em usar utilidade para promover. A escrita honesta é a única que não dá retrabalho."
+        },
+        {
+          "icon": "folder",
+          "title": "Acervo que se explica",
+          "text": "Nome padronizado, variáveis documentadas e limpeza versionada fazem o próximo analista entender o canal em uma tarde."
+        }
+      ],
+      "closingText": "Agora os templates da Rede Construir+ têm categoria correta, variáveis previsíveis e um acervo enxuto. Falta colocá-los para rodar: escolher o provedor, montar as bases, testar antes do envio e conectar o chatbot que atende quem responde.",
+      "ctaTitle": "🧾 Templates aprovados!",
+      "ctaText": "Você escreve, classifica e mantém templates. Vamos levá-los ao disparo de verdade.",
+      "nextButtonText": "Ir para Módulo 2: Provedores, Disparos e Chatbot"
+    },
+    {
+      "id": 2,
+      "icon": "tools",
+      "title": "Provedores, Disparos e Chatbot",
+      "shortDescription": "BSPs, custo, base de envio, lista de teste, bloqueio e especificação de bot",
+      "introductionText": "A Meta fornece o canal; quase sempre é um provedor (BSP, Business Solution Provider) como Zenvia ou Blip, ou uma plataforma de marketing como o Salesforce Marketing Cloud conectada à Cloud API, que dá a tela de disparo, a gestão de contatos, o bot e a caixa de atendimento. Este módulo reproduz a rotina semanal de disparos da Rede Construir+, da planilha de base ao botão de enviar, e termina com a especificação de um chatbot de atendimento escrita para ser aceita ou recusada na homologação.",
+      "sections": [
+        {
+          "title": "📤 Da base ao envio",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "O papel do provedor e a conta do custo",
+              "code": "custo = provedor + Σ(mensagens × valor da categoria)",
+              "guidance": "Separe duas contas: a do provedor (licença, usuários, bot, suporte) e a da Meta (mensagens). Pela tabela oficial, desde 1/7/2025 a Meta cobra por template entregue, conforme a categoria e o país do destinatário; mensagens do cliente para a empresa são gratuitas. A partir de 1/10/2026, cada número tem 1.000 mensagens de serviço gratuitas por mês e as excedentes passam a ser cobradas, assim como as de utilidade enviadas dentro da janela de atendimento. Para empresas brasileiras, o faturamento em reais começou a ser liberado em julho de 2026. Antes de prometer uma régua, calcule mensagens por mês por categoria e multiplique pelo valor vigente na tabela da Meta mais o que o provedor cobra.",
+              "tips": [
+                "Peça ao provedor o relatório de consumo e confira com a fatura todo mês. Diferença entre o que foi disparado e o que foi cobrado é a primeira coisa a investigar.",
+                "Preço e regra da Meta mudam várias vezes por ano. Coloque na planilha de custo a data da tabela usada."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Montar a base de disparo",
+              "code": "Telefone;nome;numero_orcamento;nome_loja;contato_loja",
+              "guidance": "Cada disparo começa com um arquivo CSV cujas colunas correspondem às variáveis do template. Exemplo da régua de orçamento em aberto: Telefone;nome;numero_orcamento;nome_loja;contato_loja. Para envio pelo Marketing Cloud, a base também leva Locale (br) e SubscriberKey, a chave única do contato. Regras: telefone com 55 + DDD + número, sem espaço nem traço; nome tratado (só a primeira palavra, primeira letra maiúscula); duplicados removidos; quem está na lista de bloqueio excluído antes, não depois. Nomeie o arquivo com data, público e régua: AAAAMMDD-publico-regua.csv (por exemplo, 20260310-arq-reativacao.csv).",
+              "tips": [
+                "Base de franqueados: ordene por nome da loja e remova duplicados. Um sócio com três lojas não precisa receber três vezes o mesmo comunicado.",
+                "Guarde a base enviada na pasta do mês. Sem ela, não existe medição de conversão depois."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Lista de teste e agenda semanal",
+              "code": "SEG a vencer | TER >R$10 mil | QUA obras sem orçamento",
+              "guidance": "Antes de cada envio, dispare o mesmo template para uma lista de teste com a equipe interna (cada pessoa com chave própria, como TESTE01, TESTE02) e confira imagem, variáveis, botões e link no celular. Mantenha uma planilha de quem recebe o quê: o coordenador recebe todas as réguas; a área de atendimento recebe a de pedido entregue; a gestão de franquias recebe a do alerta diário ao franqueado. As réguas recorrentes entram numa agenda semanal fixa. Na Rede Construir+, com dados fictícios: segunda, orçamentos a vencer até quarta; terça, orçamentos sem atendimento acima de R$ 10 mil; quarta, obras cadastradas sem orçamento; quinta, orçamentos a vencer até domingo; sexta, nova rodada dos orçamentos acima de R$ 10 mil.",
+              "tips": [
+                "Agenda fixa ajuda o franqueado a criar hábito: ele sabe que na segunda chega a lista de orçamentos a vencer.",
+                "Quando um gatilho muda (valor de corte, imagem, texto), registre a data na planilha da agenda e no provedor no mesmo dia."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Opt-out, lista de bloqueio e resposta que não é bloqueio",
+              "code": "botão 'Parar promoções' → lista de bloqueio",
+              "guidance": "Cada template de marketing precisa de uma saída clara. Prefira o botão de cancelamento, que alimenta a lista de bloqueio automática do provedor, ao texto 'responda SAIR'. Revise também as respostas livres: na Rede Construir+, a planilha de bloqueio misturava pedidos de descadastro com reclamações de entrega e com franqueados que receberam mensagem de cliente. Pedido de saída vai para a lista de bloqueio; reclamação vai para o atendimento com o número do pedido; contato errado (franqueado na base B2C) corrige a origem do dado. Junte ainda os números inválidos do relatório de entrega e exclua-os da próxima base.",
+              "tips": [
+                "A lista de bloqueio é por número e por público. Quem saiu das ofertas B2C pode continuar recebendo o aviso de entrega do próprio pedido, que é utilidade.",
+                "Reclamação tratada como descadastro some do radar do atendimento e volta como avaliação negativa em outro canal."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Especificar o chatbot de atendimento",
+              "code": "https://wa.me/55DDNNNNNNNNN?text=Ol%C3%A1!",
+              "guidance": "Pedido de bot a fornecedor se escreve como requisito testável. Uma especificação típica traz ajustes como estes: menus numerados viram botões; perguntas de sim ou não usam componente de confirmação; o bot coleta Nome (obrigatório), E-mail (opcional), CEP (obrigatório) e pergunta se o telefone de contato é o mesmo da conversa; antes de criar o lead, procura lead existente com mesmo telefone ou e-mail e, se achar, mostra os dados e pergunta se atualiza; com o CEP, consulta a API que devolve a loja mais próxima, gera um link wa.me com texto pré-preenchido e envia ao vendedor da loja uma mensagem com os dados do cliente. Cada item vira um caso de teste na homologação, que tem prazo combinado em contrato.",
+              "tips": [
+                "O texto do link wa.me precisa ser codificado para URL (espaço vira %20, acento vira sequência %C3...). Teste o link em Android e iOS.",
+                "Diga ao cliente quando ele fala com um assistente automático e ofereça atendimento humano em qualquer ponto do fluxo."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que a rotina importa tanto quanto o template",
+      "highlights": [
+        {
+          "icon": "list",
+          "title": "Base é o produto",
+          "text": "Telefone mal formatado, duplicado ou bloqueado gera custo, reclamação e queda de qualidade antes mesmo de alguém ler o texto."
+        },
+        {
+          "icon": "shield",
+          "title": "Teste antes, não depois",
+          "text": "A lista de teste interna pega imagem quebrada e variável vazia quando o erro ainda custa cinco mensagens, não cinco mil."
+        },
+        {
+          "icon": "sitemap",
+          "title": "Bot com critério de aceite",
+          "text": "Requisito escrito como caso de teste é o que permite recusar uma entrega incompleta dentro do prazo de homologação."
+        }
+      ],
+      "closingText": "A Rede Construir+ dispara com base limpa, testa antes, separa descadastro de reclamação e tem um bot especificado item por item. Falta provar que tudo isso vende e que o contato aceitou receber: opt-in, LGPD e medição de conversão fecham o programa.",
+      "ctaTitle": "📤 Disparos em rotina!",
+      "ctaText": "Seus envios têm base, teste, agenda e saída. Vamos medir o que voltou em resposta e em venda.",
+      "nextButtonText": "Ir para Módulo 3: Opt-in, LGPD e Medição de Conversão"
+    },
+    {
+      "id": 3,
+      "icon": "gauge",
+      "title": "Opt-in, LGPD e Medição de Conversão",
+      "shortDescription": "Consentimento registrado, clique, resposta, venda atribuída e saúde da base",
+      "introductionText": "Disparo sem consentimento é risco legal e risco de qualidade; disparo sem medição é custo sem resposta. Este módulo junta as duas pontas: como coletar e registrar o opt-in que a Meta e a LGPD exigem e como ligar cada mensagem enviada a uma resposta, a um clique e, no fim, a um pedido faturado. Os números de exemplo são fictícios e servem para você montar a mesma planilha com os seus.",
+      "sections": [
+        {
+          "title": "📊 Do aceite à venda atribuída",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Opt-in que vale e fica registrado",
+              "code": "aceite_privacidade ≠ consentimento_marketing",
+              "guidance": "A política da Meta, atualizada em novembro de 2024, pede que a pessoa saiba que está aceitando receber mensagens e de qual empresa; a coleta pode ser em site, SMS, ligação com URA ou papel assinado na loja. A LGPD pede finalidade clara e, quando a base legal é o consentimento, cabe à empresa prová-lo. Na prática, o formulário da Rede Construir+ tem duas caixas separadas e nenhuma vem marcada: 'Li a política de privacidade' (aceite_privacidade) e 'Quero receber ofertas da Rede Construir+ por WhatsApp, e-mail e SMS' (consentimento_marketing). No CRM, guarde também data e hora, origem (landing page, loja, bot) e o texto exato aceito.",
+              "tips": [
+                "A boa prática da Meta é pedir aceite por tipo de mensagem (pedido, ofertas, novidades) e oferecer saída para cada um. Quem aceita só atualização de pedido não entra em régua de oferta.",
+                "Aceite de privacidade não é consentimento de marketing. Juntar os dois em uma caixa só é o erro mais comum em formulários de varejo."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Clique e resposta como dados do CRM",
+              "code": "status_bot = 'Outbound - Tenho interesse'",
+              "guidance": "Cada botão de template deve gravar um estado no CRM. Na régua de prospecção de franqueados da Rede Construir+, o clique em 'Tenho interesse' preenche o campo status_bot com 'Outbound - Tenho interesse' e cria tarefa para o time comercial; 'Não quero contato' preenche 'Outbound - Não quer contato' e tira o lead das próximas mensagens; quem não clica segue na régua de falta de retorno. Links levam parâmetros de origem (utm_source=whatsapp, utm_campaign com o nome do template) para que o acesso ao site apareça separado no relatório.",
+              "tips": [
+                "Um link por template, com utm_campaign igual ao nome do template, resolve metade da atribuição sem ferramenta nova.",
+                "Para anúncios que abrem conversa no WhatsApp, a Meta oferece a API de Conversões para mensagens: os eventos (cadastro, compra) voltam para o gerenciador de anúncios. Avisos de qualidade de sinal da fonte de dados devem ser verificados no gerenciador de eventos."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Venda atribuída com grupo de controle",
+              "code": "efeito = conversão(recebeu) − conversão(controle)",
+              "guidance": "Monte a base de conversão juntando o que foi enviado com o que foi faturado. Colunas: mês, telefone, numero_orcamento, data_envio, régua, status_orcamento, valor_orcamento, pedido_convertido, data_faturamento, valor_pedido. Defina antes a janela de atribuição (por exemplo, pedido faturado até 30 dias após o envio) e separe ao acaso uma parte da base que não recebe a mensagem, o grupo de controle. Exemplo fictício: 1.000 orçamentos vencidos, 900 recebem a régua e 100 ficam de fora; convertem 8% dos que receberam e 5% do controle. O efeito atribuível ao WhatsApp é a diferença, 3 pontos, e não os 8%.",
+              "tips": [
+                "Sem grupo de controle, a régua leva crédito por vendas que aconteceriam de qualquer jeito, e o orçamento de canal cresce em cima de número inflado.",
+                "Some valor_pedido só de pedidos faturados. Orçamento convertido e depois cancelado não é venda."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Cuidar da base",
+              "code": "rotina quinzenal de higienização",
+              "guidance": "Base envelhece: telefone muda de dono, franqueado troca de número, loja fecha. Na Rede Construir+, a rotina quinzenal inclui revisar números de franqueado com erro de envio, retirar inválidos apontados no relatório de entrega, conferir duplicados entre públicos e checar a qualidade de cada número. Ouvir quem recebe pouco lê as mensagens costuma revelar problemas de origem: um formato que não ajuda na decisão (uma lista de orçamentos para fechar na semana tende a funcionar melhor do que um lead solto) ou dados errados no cadastro, como datas de aniversário. Correção de origem vale mais do que nova mensagem.",
+              "tips": [
+                "Pergunte a quem recebe. Dez ligações para franqueados explicam uma taxa de leitura baixa melhor do que um mês de painel.",
+                "Contato que não lê nem clica há meses é candidato a sair da régua de marketing, não a receber mais mensagens."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Relatório que vira plano de ação",
+              "code": "enviado → lido → clicado → convertido",
+              "guidance": "Feche cada mês com uma página por régua: enviados, entregues, lidos, clicados, respondidos, convertidos no prazo, valor faturado, custo de mensagens e bloqueios. Compare canais com o mesmo público e o mesmo período; com dados fictícios, um aviso ao cliente final teve 60% de leitura no WhatsApp e 12% de abertura no e-mail, mas o e-mail custou menos por conversão. A pauta da reunião sai do relatório: régua com leitura baixa muda horário ou texto; régua com clique alto e venda baixa tem problema na loja ou na oferta; régua com bloqueio crescente reduz frequência.",
+              "tips": [
+                "Indicador de objetivo deve medir venda, como 'orçamentos assistidos que viraram pedido'. Taxa de leitura é diagnóstico, não meta.",
+                "Mostre o custo de mensagens ao lado da receita atribuída. A diretoria entende uma linha de retorno sobre o custo do canal sem explicação."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que consentimento e medição andam juntos",
+      "highlights": [
+        {
+          "icon": "shield",
+          "title": "Prova antes do envio",
+          "text": "Data, origem e texto do aceite registrados são o que sustenta o disparo diante do cliente, da Meta e da LGPD."
+        },
+        {
+          "icon": "sync",
+          "title": "Botão que alimenta o CRM",
+          "text": "Clique e resposta viram campo e tarefa. O canal deixa de ser só envio e passa a mover o funil."
+        },
+        {
+          "icon": "gauge",
+          "title": "Efeito, não volume",
+          "text": "Grupo de controle separa a venda que o WhatsApp trouxe da que viria sozinha, e é isso que justifica o custo por mensagem."
+        }
+      ],
+      "closingText": "Você estruturou as contas, escreveu templates com a categoria certa, montou a rotina de disparo e o bot e agora mede o que cada mensagem trouxe, com consentimento registrado. É a operação que permite crescer o canal sem queimar números nem a confiança do cliente.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você opera WhatsApp Business de ponta a ponta: contas, templates, disparos, bot, opt-in e conversão. O próximo passo é integrar essas réguas às jornadas do CRM.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Uma rede quer disparar templates a partir do CRM e ligar um chatbot. Qual é o caminho?",
+      "explanation": "Disparo integrado a sistema, bot e atendimento por várias pessoas pedem a WhatsApp Business Platform pela Cloud API, direto ou via provedor. O app serve ao atendimento manual de um aparelho, e a On-Premises API deixou de entregar mensagens em 23/10/2025.",
+      "options": [
+        {
+          "text": "WhatsApp Business Platform pela Cloud API",
+          "isCorrect": true
+        },
+        {
+          "text": "Aplicativo WhatsApp Business em cada celular",
+          "isCorrect": false
+        },
+        {
+          "text": "On-Premises API instalada no servidor da empresa",
+          "isCorrect": false
+        },
+        {
+          "text": "WhatsApp pessoal com lista de transmissão",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Por que separar números por público (clientes, franqueados, arquitetos)?",
+      "explanation": "Cada público reage de um jeito: bloqueios e denúncias de clientes finais a uma oferta não devem derrubar a qualidade do número que envia avisos operacionais à rede. A separação também organiza opt-out, templates e relatórios. Ela não dispensa templates nem aumenta limite por si só.",
+      "options": [
+        {
+          "text": "Para que a reação de um público não afete a qualidade e a operação de outro",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque cada número dispensa aprovação de templates",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque a Meta exige um número por campanha",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque números separados não têm limite de mensagens",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Segundo a documentação da Meta, qual é o limite inicial de um portfólio novo?",
+      "explanation": "Portfólios novos começam com 250 usuários únicos em 24 horas móveis para mensagens iniciadas pela empresa. O limite sobe para 2.000 com um caminho de escala, como a verificação, e depois cresce automaticamente com qualidade alta e uso de pelo menos metade do limite.",
+      "options": [
+        {
+          "text": "250 usuários únicos em 24 horas móveis",
+          "isCorrect": true
+        },
+        {
+          "text": "1.000 mensagens por mês",
+          "isCorrect": false
+        },
+        {
+          "text": "Ilimitado desde o primeiro dia",
+          "isCorrect": false
+        },
+        {
+          "text": "10.000 mensagens por hora",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Um template diz 'Seu orçamento 123 foi registrado. Aproveite 10% de desconto hoje!'. Em qual categoria ele termina?",
+      "explanation": "Conteúdo misto, com informação de transação e promoção, é classificado como marketing. Para ser utilidade, o template precisa ser não promocional. A saída é separar em dois templates.",
+      "options": [
+        {
+          "text": "Marketing, porque mistura informação com promoção",
+          "isCorrect": true
+        },
+        {
+          "text": "Utilidade, porque cita o orçamento",
+          "isCorrect": false
+        },
+        {
+          "text": "Autenticação, porque tem um número",
+          "isCorrect": false
+        },
+        {
+          "text": "Serviço, porque fala de um pedido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "O que abre a janela de atendimento de 24 horas?",
+      "explanation": "A janela é aberta quando o usuário envia mensagem (ou liga) para a empresa e se renova a cada nova mensagem dele. Dentro dela a empresa responde sem template. Template aprovado ou disparo da empresa não abrem a janela.",
+      "options": [
+        {
+          "text": "Uma mensagem enviada pelo cliente à empresa",
+          "isCorrect": true
+        },
+        {
+          "text": "O envio de um template de marketing pela empresa",
+          "isCorrect": false
+        },
+        {
+          "text": "A aprovação de um template pela Meta",
+          "isCorrect": false
+        },
+        {
+          "text": "O cadastro do cliente no CRM",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Desde abril de 2025, o que acontece quando a Meta entende que um template enviado como utilidade é marketing?",
+      "explanation": "Desde 9/4/2025, o template é aprovado diretamente como marketing, e a mudança pode ser contestada no Gerenciador do WhatsApp. Ele não é apagado nem enviado de graça, e a reclassificação não depende de um novo cadastro.",
+      "options": [
+        {
+          "text": "Ele é aprovado como marketing",
+          "isCorrect": true
+        },
+        {
+          "text": "Ele é excluído da conta automaticamente",
+          "isCorrect": false
+        },
+        {
+          "text": "Ele continua como utilidade e gera multa",
+          "isCorrect": false
+        },
+        {
+          "text": "Ele passa a ser enviado sem cobrança",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Qual é a função da lista de teste antes de um disparo?",
+      "explanation": "A lista de teste interna recebe o mesmo template com a mesma base de variáveis e permite conferir imagem, texto montado, botões e links no celular antes do envio real. Ela não aumenta limite nem substitui a aprovação da Meta.",
+      "options": [
+        {
+          "text": "Conferir no celular imagem, variáveis, botões e links antes do envio real",
+          "isCorrect": true
+        },
+        {
+          "text": "Aumentar o limite diário de mensagens",
+          "isCorrect": false
+        },
+        {
+          "text": "Dispensar a análise do template pela Meta",
+          "isCorrect": false
+        },
+        {
+          "text": "Registrar o opt-in dos clientes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Um cliente responde ao disparo reclamando de uma entrega atrasada. O que fazer?",
+      "explanation": "Reclamação não é pedido de descadastro: ela vai para o atendimento, com o número do pedido. Colocar na lista de bloqueio esconde o problema. Pedido explícito de saída é que vai para a lista.",
+      "options": [
+        {
+          "text": "Encaminhar ao atendimento com o número do pedido",
+          "isCorrect": true
+        },
+        {
+          "text": "Incluir o número na lista de bloqueio",
+          "isCorrect": false
+        },
+        {
+          "text": "Ignorar, porque a régua é automática",
+          "isCorrect": false
+        },
+        {
+          "text": "Enviar outro template de oferta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "No pedido de chatbot, o que deve acontecer antes de criar um lead novo?",
+      "explanation": "A especificação pede que o bot procure um lead existente com os mesmos dados (telefone ou e-mail, por exemplo) e, se encontrar, mostre os dados e pergunte se atualiza. Isso evita duplicados no CRM e mantém o histórico.",
+      "options": [
+        {
+          "text": "Procurar lead existente com os mesmos dados e perguntar se atualiza",
+          "isCorrect": true
+        },
+        {
+          "text": "Criar sempre um lead novo para não perder dado",
+          "isCorrect": false
+        },
+        {
+          "text": "Pedir CPF obrigatório ao cliente",
+          "isCorrect": false
+        },
+        {
+          "text": "Encerrar a conversa e enviar um e-mail",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Qual formulário atende melhor à LGPD e à política da Meta?",
+      "explanation": "Aceite de privacidade e consentimento de marketing são finalidades diferentes e devem ser caixas separadas, desmarcadas, com nome da empresa e canal claros. Data, origem e texto aceito ficam registrados no CRM.",
+      "options": [
+        {
+          "text": "Duas caixas desmarcadas: privacidade e consentimento de marketing, com registro de data e origem",
+          "isCorrect": true
+        },
+        {
+          "text": "Uma caixa já marcada que cobre tudo",
+          "isCorrect": false
+        },
+        {
+          "text": "Nenhuma caixa, porque o cliente informou o telefone",
+          "isCorrect": false
+        },
+        {
+          "text": "Uma caixa de privacidade que vale também para ofertas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Com dados fictícios, quem recebeu a régua converteu 8% e o grupo de controle 5%. Qual é o efeito atribuível?",
+      "explanation": "O efeito da mensagem é a diferença entre os grupos: 3 pontos percentuais. Os 8% incluem vendas que aconteceriam sem o disparo, e somar os dois grupos não tem sentido.",
+      "options": [
+        {
+          "text": "3 pontos percentuais",
+          "isCorrect": true
+        },
+        {
+          "text": "8%",
+          "isCorrect": false
+        },
+        {
+          "text": "13%",
+          "isCorrect": false
+        },
+        {
+          "text": "5%",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Segundo estudo da Nodus encomendado pela Meta (campo em janeiro de 2025), quantos compradores on-line usam o WhatsApp para falar com lojas ou prestadores de serviço?",
+      "explanation": "O estudo apontou 89% de uso do WhatsApp para contato com lojas e prestadores, e 40% de compras pelo aplicativo. É um dado de uso, não uma garantia de conversão: o resultado de cada régua precisa ser medido.",
+      "options": [
+        {
+          "text": "89%",
+          "isCorrect": true
+        },
+        {
+          "text": "40%",
+          "isCorrect": false
+        },
+        {
+          "text": "25%",
+          "isCorrect": false
+        },
+        {
+          "text": "Menos de 10%",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "A operação de WhatsApp de uma rede de lojas, documentada: inventário de contas e números por público, acervo de templates com categoria e variáveis, rotina semanal de disparos com base, teste e lista de bloqueio, especificação de chatbot e uma planilha de conversão que separa o efeito da mensagem com grupo de controle.",
+    "highlights": [
+      "Inventário de WABAs e números com dono e público",
+      "Templates de marketing e utilidade prontos para análise",
+      "Base de conversão com venda atribuída e grupo de controle"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "Em estudo da Nodus encomendado pela Meta, com campo em janeiro de 2025 e divulgado pelo Meio & Mensagem em 24/04/2025, 89% dos compradores on-line disseram usar o WhatsApp para falar com lojas ou prestadores de serviço, 40% compram pelo aplicativo e 48% usam o canal para agendar entregas.",
+      "Ao mesmo tempo, as regras ficaram mais exigentes. A Meta cobra por mensagem entregue, com valor por categoria, desde 1/7/2025; a partir de 1/10/2026 passou a cobrar mensagens de serviço acima de 1.000 por número ao mês e as de utilidade dentro da janela de atendimento, segundo a página oficial de preços. Classificar bem, manter a qualidade e medir a venda deixou de ser detalhe técnico e virou conta de margem."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Varejo com lojas e franquias",
+        "description": "Réguas para clientes, avisos para franqueados e comunicação com a rede, cada um no seu número."
+      },
+      {
+        "label": "E-commerce e pós-venda",
+        "description": "Confirmação de pedido, rastreio e recuperação de orçamento com templates de utilidade e de marketing."
+      },
+      {
+        "label": "Programas de relacionamento",
+        "description": "Arquitetos, especificadores e clientes recorrentes com opt-in próprio e medição de resultado."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Analista de CRM ou marketing",
+        "description": "Vai assumir o WhatsApp da empresa e precisa operar templates, disparos e relatórios."
+      },
+      {
+        "label": "Quem herdou um canal bagunçado",
+        "description": "Tem contas, números e templates acumulados e quer pôr ordem antes de crescer."
+      },
+      {
+        "label": "Gestor de atendimento ou e-commerce",
+        "description": "Contrata provedor ou bot e precisa saber o que pedir e como medir."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "O WhatsApp Business Platform é usado por varejistas, bancos, e-commerces, redes de franquias e prestadores de serviço para confirmação de pedido, recuperação de carrinho e orçamento, atendimento e autenticação. No Brasil, a operação costuma passar por provedores como Zenvia e Blip ou por plataformas de marketing como o Salesforce Marketing Cloud, e a habilidade de operar templates, bases e métricas do canal aparece em vagas de CRM, growth e atendimento digital.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Meta for Developers — Pricing on the WhatsApp Business Platform (cobrança por mensagem e mudanças de 2025 e 2026)",
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing"
+    },
+    {
+      "label": "Meta for Developers — Template categorization (marketing, utilidade, autenticação e reclassificação)",
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/templates/template-categorization"
+    },
+    {
+      "label": "Meta for Developers — Messaging limits (limites por portfólio e caminhos de escala)",
+      "url": "https://developers.facebook.com/docs/whatsapp/messaging-limits"
+    },
+    {
+      "label": "Meta for Developers — Get opt-in for WhatsApp (requisitos e boas práticas de opt-in)",
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/getting-opt-in"
+    },
+    {
+      "label": "Meta for Developers — On-Premises API sunset (encerramento em 23/10/2025 e migração para a Cloud API)",
+      "url": "https://developers.facebook.com/docs/whatsapp/on-premises/sunset"
+    },
+    {
+      "label": "Meio & Mensagem — O impacto do WhatsApp na jornada de compra, segundo a Meta (estudo Nodus, 24/04/2025)",
+      "url": "https://www.meioemensagem.com.br/midia/o-impacto-do-whatsapp-na-jornada-de-compra-segundo-a-meta"
+    }
+  ]
+}

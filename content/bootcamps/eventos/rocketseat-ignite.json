@@ -9,7 +9,7 @@
   "category": "frontend",
   "status": "concluido",
   "content": {
-    "longDescription": "O Ignite é o programa de especialização da Rocketseat voltado para quem já programa há mais de um ano e quer se aprofundar no ecossistema React. A trilha cobre componentização, hooks, Context API, consumo de APIs e boas práticas de arquitetura front-end, com desafios práticos entregues a cada módulo.",
+    "longDescription": "O Ignite foi o programa de especialização da Rocketseat para quem já programava e queria se aprofundar numa tecnologia, organizado em trilhas como ReactJS, Node.js e React Native. A trilha de ReactJS era dividida em módulos, os chamados chapters, cada um com um projeto e desafios práticos. Hoje a Rocketseat organiza seus cursos em formações reunidas na assinatura Rocketseat ONE.",
     "videoUrl": "",
     "gallery": [],
     "curriculum": [
@@ -19,6 +19,45 @@
       "Consumo de APIs (Axios/React Query)",
       "Testes automatizados (Jest)"
     ],
-    "officialLink": "https://www.rocketseat.com.br/ignite"
+    "officialLink": "https://www.rocketseat.com.br/ignite",
+    "paragraphs": [
+      "A Rocketseat é uma comunidade de desenvolvedores e edtech brasileira conhecida pelos eventos gratuitos Next Level Week (NLW) e por cursos de programação em JavaScript e no ecossistema React. Entre esses cursos, o Ignite era o programa de especialização: não era voltado a iniciantes, e sim a quem já programava e queria se atualizar ou se aprofundar numa stack. Havia trilhas separadas, como ReactJS, Node.js e React Native, e edições identificadas pelo ano.",
+      "Cada trilha era dividida em módulos, os chapters, e cada módulo girava em torno da construção de um projeto completo, com desafios a entregar ao final. Na edição de 2022 da trilha ReactJS, por exemplo, os projetos incluíam um feed com Vite, TypeScript e Tailwind CSS, um cronômetro de tarefas com react-router-dom e React Hook Form, aplicações em Next.js como uma loja integrada ao Stripe e um app de agendamento, um design system com Storybook em monorepo e um sistema de gestão com testes em Vitest e Playwright.",
+      "Ao longo da trilha, o aluno trabalhava componentização, hooks e Context API, tipagem com TypeScript, consumo de APIs, roteamento, formulários, renderização no servidor com Next.js e testes automatizados. A proposta era aprender construindo aplicações próximas das usadas no mercado, em vez de estudar cada conceito isolado.",
+      "Hoje o Ignite não aparece mais como produto na oferta da Rocketseat. O conteúdo passou a ser organizado em formações por tecnologia, como React, Next.js, Node.js, React Native, Java, Python, Go e IA para devs, reunidas na assinatura anual Rocketseat ONE. A assinatura dá acesso a todas as formações e às suas atualizações. Mentorias e eventos ao vivo são vendidos à parte. Na página oficial, consultada em 30/10/2026, o plano anual aparecia por R$ 2.197,00, com mais de 22 formações com certificado. A empresa também abriu a Faculdade de Tecnologia Rocketseat, com pós-graduação para desenvolvedores.",
+      "Para quem já domina o básico de JavaScript, programas como o Ignite e as formações que o sucederam ajudam a sair do nível de tutorial: o aluno constrói projetos completos com as ferramentas usadas no dia a dia do front-end, monta portfólio e entra em contato com uma comunidade grande de desenvolvedores."
+    ],
+    "links": [
+      {
+        "label": "Rocketseat ONE (assinatura atual)",
+        "url": "https://www.rocketseat.com.br/assinatura"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Rocketseat Blog: Rocketseat ONE, essa assinatura vale a pena?",
+        "url": "https://www.rocketseat.com.br/blog/artigos/post/rocketseat-one-vale-a-pena"
+      },
+      {
+        "label": "Central de Ajuda Rocketseat: O que é o Rocketseat ONE?",
+        "url": "https://helpdesk.rocketseat.com.br/o-que-%C3%A9-o-rocketseat-one"
+      },
+      {
+        "label": "Rocketseat: Assinatura Rocketseat ONE",
+        "url": "https://www.rocketseat.com.br/assinatura"
+      },
+      {
+        "label": "GitHub Topics: ignite-2022 (projetos da trilha ReactJS)",
+        "url": "https://github.com/topics/ignite-2022"
+      },
+      {
+        "label": "TabNews: discussão sobre Ignite e Rocketseat ONE (out/2023)",
+        "url": "https://www.tabnews.com.br/vap/c983eb32-f6a2-4ad7-a286-7265fc1931d7"
+      },
+      {
+        "label": "IT Forum: Rocketseat lança faculdade de tecnologia com pós em IA para devs",
+        "url": "https://itforum.com.br/?p=9592600"
+      }
+    ]
   }
 }

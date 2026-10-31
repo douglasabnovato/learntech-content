@@ -370,7 +370,7 @@
               "title": "Reconhecer quando parar",
               "guidance": "Antes de instalar biblioteca de estado global, verifique: o dado é realmente usado em partes distantes da árvore? Se for só passar por dois níveis, prop resolve. Se for dado que vem do servidor, o problema provavelmente é de cache, não de estado global.",
               "tips": [
-                "Na pesquisa State of React 2025, 34% dos respondentes não usam biblioteca de estado nenhuma. Não usar também é uma escolha de arquitetura."
+                "Muitos projetos React não usam biblioteca de estado nenhuma: useState, props e Context resolvem boa parte dos casos. Não usar também é uma escolha de arquitetura."
               ]
             }
           ]
@@ -668,23 +668,23 @@
     {
       "id": 12,
       "moduleId": 3,
-      "question": "Segundo a pesquisa State of React 2025, qual proporção dos respondentes não usa nenhuma biblioteca de estado?",
-      "explanation": "34% dos respondentes não usam biblioteca de estado alguma, o que mostra que os recursos nativos do React resolvem boa parte dos casos. Isso não significa que bibliotecas sejam desnecessárias — significa que instalar antes de ter o problema é decisão precipitada.",
+      "question": "Quando faz sentido instalar uma biblioteca de estado global em um projeto React?",
+      "explanation": "Os recursos nativos do React (useState, props, Context) resolvem boa parte dos casos. A biblioteca entra quando aparece um problema concreto: muitos componentes distantes lendo e alterando o mesmo dado, ou regras de atualização difíceis de manter. Instalar antes de ter o problema é decisão precipitada.",
       "options": [
         {
-          "text": "34%",
+          "text": "Quando surge um problema concreto de estado compartilhado que os recursos nativos não resolvem bem",
           "isCorrect": true
         },
         {
-          "text": "5%",
+          "text": "Sempre, no primeiro dia de qualquer projeto",
           "isCorrect": false
         },
         {
-          "text": "60%",
+          "text": "Nunca: bibliotecas de estado não são usadas no mercado",
           "isCorrect": false
         },
         {
-          "text": "Menos de 1%",
+          "text": "Só quando o projeto usa TypeScript",
           "isCorrect": false
         }
       ]

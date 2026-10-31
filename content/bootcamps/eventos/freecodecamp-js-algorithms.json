@@ -9,7 +9,7 @@
   "category": "fullstack",
   "status": "concluido",
   "content": {
-    "longDescription": "Currículo open-source e gratuito do freeCodeCamp, com centenas de horas de exercícios interativos cobrindo variáveis, arrays, objetos, funções, programação orientada a objetos e funcional em JavaScript, finalizado com projetos certificáveis.",
+    "longDescription": "A certificação JavaScript Algorithms and Data Structures faz parte do currículo gratuito e de código aberto do freeCodeCamp, organização sem fins lucrativos. Ela cobre os fundamentos de JavaScript, estruturas de dados, algoritmos e os paradigmas orientado a objetos e funcional, e o certificado é obtido com a entrega de cinco projetos obrigatórios. Em 2025 o freeCodeCamp reformulou seu currículo, e a versão original passou a ser tratada como legado.",
     "videoUrl": "",
     "gallery": [],
     "curriculum": [
@@ -19,6 +19,41 @@
       "Programação Orientada a Objetos",
       "Programação Funcional"
     ],
-    "officialLink": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/"
+    "officialLink": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
+    "paragraphs": [
+      "O freeCodeCamp é uma organização sem fins lucrativos que mantém um currículo gratuito e de código aberto de programação. A certificação JavaScript Algorithms and Data Structures entrou no catálogo em 2018, quando o currículo saiu de beta com seis certificações. Ela é inteiramente dedicada à linguagem JavaScript.",
+      "Tudo acontece no navegador, com desafios interativos curtos: o aluno lê uma instrução, escreve o código e testes automáticos conferem a resposta. Os exercícios são opcionais e servem de preparação. Para receber o certificado, é preciso entregar cinco projetos obrigatórios, que também são verificados por testes automatizados.",
+      "O conteúdo vai da sintaxe básica e dos recursos do ES6 (variáveis, arrays, objetos, funções, laços) até expressões regulares, depuração, estruturas de dados, programação orientada a objetos, programação funcional e algoritmos intermediários. Em 2024 a plataforma passou a oferecer uma versão beta do curso, baseada em projetos e que usa JavaScript junto com HTML e CSS. A versão original, focada só na linguagem, ficou identificada como legado.",
+      "Em setembro de 2025 o freeCodeCamp anunciou uma reformulação. Cada uma das novas certificações, com cerca de 300 horas de estudo, passou a exigir projetos e também um exame feito por um aplicativo de desktop. Todas levam a uma certificação final, a Certified Full Stack Developer. A nova certificação de JavaScript foi lançada em dezembro de 2025 e cobre funções, objetos, funções de ordem superior, manipulação do DOM, eventos e JavaScript assíncrono. O exame tem 50 questões. Segundo o anúncio, quem já tem a certificação antiga não a perde de imediato, e a primeira expiração das certificações legadas está prevista para 2028 ou depois (consulta em 30/10/2026).",
+      "Por ser gratuito, autoguiado e reconhecido internacionalmente, o curso é uma porta de entrada comum para quem está aprendendo a programar. Os exercícios diários ajudam a fixar a lógica, e os projetos com testes acostumam o aluno a trabalhar a partir de requisitos, uma habilidade útil em entrevistas técnicas e em qualquer stack."
+    ],
+    "links": [
+      {
+        "label": "Anúncio da nova certificação de JavaScript (freeCodeCamp, dez/2025)",
+        "url": "https://freecodecamp.org/news/freecodecamps-new-javascript-certification-is-now-live"
+      },
+      {
+        "label": "Anúncio da reformulação do currículo (fórum do freeCodeCamp, set/2025)",
+        "url": "https://forum.freecodecamp.org/t/major-curriculum-update-introducing-new-freecodecamp-certifications/762070"
+      }
+    ],
+    "sources": [
+      {
+        "label": "freeCodeCamp News: freeCodeCamp's new coding curriculum is now live (2018)",
+        "url": "https://www.freecodecamp.org/news/freecodecamps-new-coding-curriculum-is-now-live-with-1400-coding-lessons-and-6-developer-certifications-you-can-earn/"
+      },
+      {
+        "label": "Fórum freeCodeCamp: Legacy vs Beta JavaScript Algorithms and Data Structures (2024)",
+        "url": "https://forum.freecodecamp.org/t/legacy-javascript-algorithms-and-data-structures-vs-beta-javascript-algorithms-and-data-structures/711097"
+      },
+      {
+        "label": "Fórum freeCodeCamp: Major Curriculum Update (2025)",
+        "url": "https://forum.freecodecamp.org/t/major-curriculum-update-introducing-new-freecodecamp-certifications/762070"
+      },
+      {
+        "label": "freeCodeCamp News: freeCodeCamp's new JavaScript certification is now live (2025)",
+        "url": "https://freecodecamp.org/news/freecodecamps-new-javascript-certification-is-now-live"
+      }
+    ]
   }
 }

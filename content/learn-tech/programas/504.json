@@ -4,7 +4,809 @@
   "category": "Produtos Digitais",
   "categoryFilter": "produtos-digitais",
   "title": "Métricas de Produto: North Star, OMTM e Retenção",
-  "lessons": "14+ Lições",
-  "duration": "11hr 00min",
-  "access": "Acesso Livre"
+  "lessons": "17 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Intermediário",
+  "description": "Escolha, meça e leia as métricas que dizem se um produto digital entrega valor. Você define uma North Star Metric e a desdobra em entradas, mapeia o funil AARRR, escolhe a métrica do momento, mede ativação, retenção por coorte e churn, e fecha com plano de eventos e painel lido toda semana.",
+  "letslearn": [
+    "Definir uma North Star Metric e desdobrá-la em uma árvore de métricas acionáveis",
+    "Mapear o funil AARRR e escolher a OMTM da fase atual, com contra-métrica",
+    "Medir ativação, retenção por coorte e churn com o denominador correto",
+    "Separar métricas acionáveis de métricas de vaidade",
+    "Escrever um plano de instrumentação de eventos e ler um painel para tomar decisão"
+  ],
+  "curriculum": "Da North Star ao painel semanal",
+  "about": "O programa acompanha um produto fictício, o Agendê — agendamento on-line para salões pequenos — do começo ao fim. Primeiro você decide qual número representa o valor entregue ao cliente e quais alavancas o movem. Depois mapeia a jornada no funil AARRR e escolhe onde focar agora. Em seguida mede quem ativa, quem fica e quem cancela, com coortes e churn calculados do jeito certo. Por último, garante que os eventos estão registrados corretamente e monta o painel que o time lê toda semana. Todos os números do programa são fictícios e servem para praticar as contas.",
+  "materials": [
+    "Modelo de árvore de métricas para preencher",
+    "Planilha de coortes com dados fictícios do Agendê",
+    "Modelo de plano de instrumentação de eventos",
+    "Roteiro da leitura semanal de painel"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "North Star e Árvore de Métricas",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Funil AARRR, OMTM e Métricas de Vaidade",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Ativação, Retenção por Coorte e Churn",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Instrumentação de Eventos e Leitura de Painel",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Produtos Digitais",
+    "mainTitle": "Meça o valor que o produto entrega — não o barulho que ele faz.",
+    "introductionParagraphs": [
+      {
+        "title": "Muitos números, pouca decisão",
+        "text": "Ferramentas de análise registram tudo, e quase tudo sobe quando a empresa cresce. O resultado comum é um relatório cheio de gráficos verdes que não diz o que funcionou nem o que fazer a seguir. Métrica de produto bem feita é o contrário: poucos números, cada um com definição escrita, cada um capaz de cair e, quando cai, apontando para uma decisão."
+      },
+      {
+        "title": "Da North Star à métrica da semana",
+        "text": "A **North Star Metric** representa o valor que o cliente recebe e dura anos. A **árvore de métricas** liga essa métrica a entradas que um time consegue mover. O **funil AARRR** mostra onde a jornada vaza, e a **OMTM** é o foco da fase atual. Retenção por coorte e churn dizem se o valor se repete. Cada peça responde a uma pergunta diferente — e o programa ensina qual usar quando."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não ensina a operar uma ferramenta de análise específica clique a clique, nem trata de estatística avançada ou de testes A/B em profundidade. O foco é o raciocínio: escolher a métrica certa, defini-la sem ambiguidade, calcular sem erro de denominador e ler o resultado com senso crítico. Esse raciocínio vale em qualquer ferramenta."
+      }
+    ],
+    "courseAboutTitle": "O passo seguinte ao MVP",
+    "courseAboutDescription": "Quem fez o programa MVP na Prática: Do Briefing à Validação com Baixo Custo validou que existe interesse. Este programa trata da pergunta seguinte: o produto está entregando valor de forma repetida, e onde ele perde clientes? É o conjunto de métricas que alimenta a priorização do programa Gestão de Backlog: Priorização para Product Owners — cada item do backlog passa a ter uma métrica que deve mover.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: North Star e Árvore de Métricas",
+        "items": [
+          {
+            "label": "Valor antes de número",
+            "description": "Escrever o que o cliente ganha antes de escolher o que medir."
+          },
+          {
+            "label": "Os três jogos",
+            "description": "Atenção, transação ou produtividade, e o que isso muda na métrica."
+          },
+          {
+            "label": "Árvore de métricas",
+            "description": "Desdobrar a North Star em entradas com responsável."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Funil AARRR, OMTM e Métricas de Vaidade",
+        "items": [
+          {
+            "label": "Funil AARRR",
+            "description": "Um evento definido para cada etapa da jornada e a conversão entre elas."
+          },
+          {
+            "label": "OMTM",
+            "description": "A única métrica que importa na fase atual, e quando trocá-la."
+          },
+          {
+            "label": "Vaidade e contra-métrica",
+            "description": "Cortar números que não mudam decisão e proteger a meta contra atalhos."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Ativação, Retenção por Coorte e Churn",
+        "items": [
+          {
+            "label": "Ativação",
+            "description": "Encontrar nos dados o momento em que o cliente recebe valor."
+          },
+          {
+            "label": "Coortes",
+            "description": "Montar a tabela e ler o formato da curva de retenção."
+          },
+          {
+            "label": "Churn",
+            "description": "Calcular a perda mensal com o denominador correto e projetá-la no ano."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Instrumentação de Eventos e Leitura de Painel",
+        "items": [
+          {
+            "label": "Plano de eventos",
+            "description": "Nomes, propriedades e a métrica que cada evento alimenta."
+          },
+          {
+            "label": "Qualidade de dados",
+            "description": "Validar contagens antes de confiar em qualquer gráfico."
+          },
+          {
+            "label": "Painel e leitura semanal",
+            "description": "Montar o painel no Data Studio e transformar variação em decisão."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para aplicar no produto fictício — ou no seu. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "gauge",
+      "title": "North Star e Árvore de Métricas",
+      "shortDescription": "Uma métrica que traduz o valor entregue ao cliente — e as alavancas que a movem",
+      "introductionText": "Todo produto tem dezenas de números disponíveis, e quase todos sobem quando a empresa cresce. O problema é que crescer em tudo ao mesmo tempo não diz o que funcionou. Neste módulo você trabalha com um produto fictício, o Agendê — um sistema de agendamento on-line para salões de beleza pequenos — e define para ele uma North Star Metric: o número que melhor representa o valor que o cliente recebe. Depois quebra essa métrica em entradas que um time consegue mover na semana.",
+      "sections": [
+        {
+          "title": "🧭 Encontrando a métrica que guia o produto",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Valor entregue antes de número",
+              "guidance": "Antes de escolher qualquer métrica, escreva em uma frase o que o cliente ganha ao usar o produto. Para o Agendê: o salão deixa de perder horários e o cliente final marca sem precisar ligar. A North Star tem que medir esse ganho acontecendo — e não o esforço da empresa para vendê-lo.",
+              "tips": [
+                "Se a frase de valor menciona a sua empresa (\"vendermos mais planos\"), ela descreve o que você captura, não o que o cliente recebe. Reescreva do ponto de vista dele."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Qual jogo o produto joga",
+              "code": "atenção · transação · produtividade",
+              "guidance": "Classifique o produto em um dos três jogos de engajamento: atenção (o valor é o tempo gasto, como em mídia), transação (o valor é a compra concluída, como em e-commerce) ou produtividade (o valor é a tarefa feita mais rápido, como em software B2B). O Agendê joga produtividade: um salão que gasta mais tempo dentro do sistema provavelmente está tendo dificuldade, não sucesso.",
+              "tips": [
+                "Tempo de uso só é métrica de sucesso no jogo da atenção. Em produtividade, tempo alto pode ser sinal de atrito."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "O checklist da North Star",
+              "code": "agendamentos confirmados / semana",
+              "guidance": "Teste a candidata contra critérios: expressa valor para o cliente, representa a visão do produto, é indicador antecedente de receita (mexe antes do faturamento), é acionável pelo time, é fácil de entender por qualquer área e é mensurável hoje. Para o Agendê, \"agendamentos confirmados por semana em salões ativos\" passa no teste; \"receita mensal\" falha, porque é consequência atrasada, e \"cadastros\" falha porque não mostra valor algum.",
+              "tips": [
+                "Receita é resultado importante, mas é indicador atrasado. A North Star deve se mover antes, para dar tempo de reagir."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "A árvore de métricas",
+              "code": "NSM = salões ativos × agendamentos por salão",
+              "guidance": "Desdobre a North Star em entradas (input metrics) que, somadas ou multiplicadas, a explicam. No Agendê: número de salões ativos × agendamentos por salão. E agendamentos por salão se desdobra em profissionais cadastrados por salão, percentual de agendamentos feitos pelo link público e taxa de comparecimento após o lembrete. Cada folha da árvore deve poder ter um time responsável.",
+              "tips": [
+                "Entre três e cinco entradas é o suficiente. Uma árvore com vinte folhas volta ao problema de olhar tudo e não decidir nada."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que uma North Star bem escolhida importa",
+      "highlights": [
+        {
+          "icon": "gauge",
+          "title": "Um número para alinhar",
+          "text": "Produto, vendas e suporte passam a discutir a mesma coisa. A pergunta deixa de ser \"o que cada área quer\" e vira \"isso move a North Star?\"."
+        },
+        {
+          "icon": "sitemap",
+          "title": "Do objetivo ao trabalho da semana",
+          "text": "A árvore liga a métrica da empresa a entradas que um time consegue mover em um ciclo curto, sem esperar o fechamento do trimestre."
+        },
+        {
+          "icon": "shield",
+          "title": "Proteção contra atalhos",
+          "text": "Uma métrica que mede valor real é difícil de inflar com truque. Se ela sobe, o cliente de fato recebeu mais."
+        }
+      ],
+      "closingText": "O Agendê agora tem uma North Star e uma árvore com quatro entradas. Mas a North Star mostra o destino, não o caminho: falta enxergar onde, na jornada do cliente, o produto está perdendo gente. É disso que trata o próximo módulo.",
+      "ctaTitle": "🧭 North Star definida!",
+      "ctaText": "Você tem a métrica que representa valor e as alavancas que a movem. Agora vamos mapear a jornada inteira e escolher onde focar primeiro.",
+      "nextButtonText": "Ir para Módulo 1: Funil AARRR, OMTM e Métricas de Vaidade"
+    },
+    {
+      "id": 1,
+      "icon": "list",
+      "title": "Funil AARRR, OMTM e Métricas de Vaidade",
+      "shortDescription": "A jornada em cinco etapas, o foco do momento e os números que só enfeitam",
+      "introductionText": "A North Star é estável: costuma durar anos. O foco do time, não — ele muda conforme o produto amadurece. Neste módulo você mapeia a jornada do Agendê no funil AARRR, escolhe a única métrica que importa para a fase atual (OMTM) e aprende a separar números que orientam decisão daqueles que só fazem o relatório parecer bom.",
+      "sections": [
+        {
+          "title": "📊 Do funil ao foco da fase",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "O funil AARRR aplicado ao produto",
+              "code": "Aquisição → Ativação → Retenção → Receita → Indicação",
+              "guidance": "Escreva, para cada etapa, o evento que a define no Agendê. Aquisição: salão cria conta. Ativação: salão recebe o primeiro agendamento pelo link público. Retenção: salão continua recebendo agendamentos semana após semana. Receita: salão assina o plano pago. Indicação: salão indica outro salão que se cadastra. Com os cinco eventos definidos, calcule a taxa de conversão entre etapas consecutivas.",
+              "tips": [
+                "As etapas não acontecem sempre nessa ordem. Um salão pode indicar outro antes de pagar. Use o funil como mapa, não como trilho."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "OMTM: a métrica do momento",
+              "code": "ativação em 7 dias = 310 / 1.000 = 31%",
+              "guidance": "Olhe as taxas de conversão do passo anterior e encontre o maior vazamento. Suponha que, de 1.000 salões cadastrados no mês, só 310 recebem o primeiro agendamento: a ativação é o gargalo. A One Metric That Matters do trimestre passa a ser a taxa de ativação em 7 dias. Ela fica na parede, é discutida toda semana e define quais experimentos entram no backlog.",
+              "tips": [
+                "OMTM não substitui a North Star: ela é a entrada da árvore que mais limita o resultado agora. Quando o gargalo muda, a OMTM muda junto."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Métricas de vaidade",
+              "guidance": "Liste os números que aparecem no relatório mensal e pergunte de cada um: se este número dobrasse amanhã, que decisão eu tomaria diferente? Total acumulado de cadastros, visualizações de página e seguidores em rede social quase sempre só sobem e não mudam decisão nenhuma. Troque-os por versões acionáveis: taxa em vez de total, por coorte em vez de acumulado, por período em vez de desde o início.",
+              "tips": [
+                "Total acumulado nunca cai, por definição. Se um número nunca pode cair, ele não pode avisar que algo deu errado."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Contra-métricas",
+              "guidance": "Para cada métrica que o time vai perseguir, defina uma que não pode piorar. Se a OMTM é ativação em 7 dias, a contra-métrica pode ser a taxa de cancelamento de agendamentos: forçar o salão a publicar o link antes de configurar os horários pode ativar mais e gerar agendamentos que não se cumprem. As duas aparecem lado a lado no painel.",
+              "tips": [
+                "Toda meta numérica cria incentivo para atalho. A contra-métrica é o que torna o atalho visível."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que foco vence abrangência",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "O gargalo aparece",
+          "text": "Com as taxas entre etapas lado a lado, fica óbvio onde está a maior perda — e onde um ponto percentual vale mais."
+        },
+        {
+          "icon": "bolt",
+          "title": "Decisão mais rápida",
+          "text": "Um time com uma métrica do momento não precisa negociar prioridade a cada reunião. O experimento que não mexe na OMTM espera."
+        },
+        {
+          "icon": "shield",
+          "title": "Relatório honesto",
+          "text": "Taxas e coortes podem cair, e por isso avisam. Totais acumulados só servem para slide de comemoração."
+        }
+      ],
+      "closingText": "O Agendê tem agora uma OMTM — a ativação — e uma contra-métrica que impede atalhos. Antes de tentar melhorar a ativação, porém, é preciso defini-la com rigor e saber se quem ativa fica. É o que você faz no próximo módulo, com tabelas de coorte e cálculo de churn.",
+      "ctaTitle": "📊 Funil mapeado e foco escolhido!",
+      "ctaText": "Você sabe onde o produto perde gente e qual número perseguir neste trimestre. Agora vamos medir quem fica — e por quanto tempo.",
+      "nextButtonText": "Ir para Módulo 2: Ativação, Retenção por Coorte e Churn"
+    },
+    {
+      "id": 2,
+      "icon": "sync",
+      "title": "Ativação, Retenção por Coorte e Churn",
+      "shortDescription": "Definir o momento de valor, ler curvas de coorte e calcular churn sem enganar a si mesmo",
+      "introductionText": "Aquisição sem retenção é balde furado: cada mês você enche, e cada mês esvazia. Este módulo trata das métricas que mostram se o produto realmente entrega valor repetido. Você define o evento de ativação do Agendê a partir dos dados, monta uma tabela de coortes, lê o formato da curva de retenção e calcula churn mensal do jeito certo — com o denominador certo.",
+      "sections": [
+        {
+          "title": "🔁 Medindo quem fica",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Definir o evento de ativação",
+              "code": "ativado = ≥ 3 agendamentos nos primeiros 7 dias",
+              "guidance": "Ativação é o primeiro momento em que o cliente recebe o valor prometido, não o fim do cadastro. Compare a retenção na semana 8 entre salões que fizeram e que não fizeram cada ação candidata nos primeiros 7 dias: configurar horários, cadastrar um profissional, receber um agendamento pelo link. No exemplo fictício, quem recebeu ao menos 3 agendamentos na primeira semana retém 58% na semana 8, contra 14% dos demais. Essa vira a definição de ativado.",
+              "tips": [
+                "Correlação não prova causa. Use a comparação para escolher a hipótese e confirme com um experimento antes de redesenhar o onboarding inteiro."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Montar a tabela de coortes",
+              "code": "coorte × semana desde o cadastro",
+              "guidance": "Agrupe os salões pela semana em que criaram conta (a coorte) e, para cada coorte, calcule o percentual que fez o evento de valor — receber agendamento — em cada semana seguinte. Cada linha é uma coorte; cada coluna, a semana desde o cadastro. Para o Agendê, use a retenção por período exato (N-day): conta como retido na semana 4 quem recebeu agendamento naquela semana.",
+              "tips": [
+                "Defina retenção por uma ação de valor, não por login. Um salão que só abre o sistema para cancelar não está retido."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Ler a curva de retenção",
+              "guidance": "Transforme uma linha da tabela em gráfico. Uma coorte fictícia de 120 salões: semana 1, 70%; semana 4, 48%; semana 8, 41%; semana 12, 40%. A queda forte no começo é normal. O que importa é se a curva achata: aqui ela estabiliza perto de 40%, sinal de que existe um grupo que encontrou valor. Curva que continua descendo até zero indica que o produto ainda não reteve ninguém de verdade.",
+              "tips": [
+                "Compare coortes de meses diferentes na mesma semana relativa. Se as coortes novas achatam mais alto que as antigas, as mudanças no produto estão funcionando."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Calcular churn mensal",
+              "code": "churn = 18 ÷ 400 = 4,5%",
+              "guidance": "Churn de clientes no mês = cancelamentos no mês ÷ clientes pagantes no início do mês. O Agendê começou outubro com 400 salões pagantes e 18 cancelaram: churn de 4,5%. Salões que assinaram durante outubro ficam fora do denominador, senão o crescimento disfarça a perda. Calcule também o churn de receita, porque perder um salão de plano grande pesa mais que perder um de plano básico.",
+              "tips": [
+                "4,5% ao mês parece pouco, mas em doze meses a base original encolhe para cerca de 58% (0,955 elevado a 12). Sempre traduza churn mensal para o efeito no ano."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Segmentar para achar o motivo",
+              "guidance": "Quebre retenção e churn por atributo: plano, número de profissionais, canal de aquisição, se ativou ou não. No Agendê fictício, salões com apenas um profissional cancelam três vezes mais. Leve o achado a entrevistas com esses clientes antes de concluir: o número mostra onde está a perda, a conversa mostra por quê.",
+              "tips": [
+                "Segmentos muito pequenos geram variação que parece padrão. Antes de agir, verifique quantos clientes há em cada grupo."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que retenção é a métrica que não mente",
+      "highlights": [
+        {
+          "icon": "sync",
+          "title": "Valor repetido",
+          "text": "Um cliente que volta toda semana está dizendo, com comportamento, que o produto resolve algo. Nenhuma pesquisa de satisfação é tão clara."
+        },
+        {
+          "icon": "grid",
+          "title": "Coorte separa o que o crescimento mistura",
+          "text": "Na média geral, muitos cadastros novos escondem a perda dos antigos. A tabela de coortes mostra cada safra separadamente."
+        },
+        {
+          "icon": "gauge",
+          "title": "Churn compõe",
+          "text": "Uma perda mensal pequena vira uma perda anual grande. Medir com o denominador certo é o que evita a surpresa no fechamento do ano."
+        }
+      ],
+      "closingText": "Você definiu ativação a partir de dados, leu curvas de coorte e calculou churn sem inflar o resultado. Tudo isso depende, porém, de os eventos estarem sendo registrados de forma confiável. No último módulo você escreve o plano de instrumentação e monta o painel que o time vai ler toda semana.",
+      "ctaTitle": "🔁 Retenção sob controle!",
+      "ctaText": "Você já sabe dizer se o produto retém e onde perde clientes. Agora vamos garantir que os dados por trás disso estejam certos — e visíveis.",
+      "nextButtonText": "Ir para Módulo 3: Instrumentação de Eventos e Leitura de Painel"
+    },
+    {
+      "id": 3,
+      "icon": "sitemap",
+      "title": "Instrumentação de Eventos e Leitura de Painel",
+      "shortDescription": "Plano de eventos, qualidade de dados e o painel que vira rotina de decisão",
+      "introductionText": "Métrica sem instrumentação é opinião com gráfico. Este módulo fecha o programa pela base: você escreve o plano de eventos do Agendê, define como validar que os dados chegam certos, monta um painel no Data Studio e pratica a parte que quase ninguém ensina — ler o painel, separar variação real de ruído e escrever uma leitura semanal que leve a uma decisão.",
+      "sections": [
+        {
+          "title": "🛠️ Do evento ao painel",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "O plano de instrumentação",
+              "code": "objeto_acao: agendamento_confirmado",
+              "guidance": "Monte uma tabela com uma linha por evento: nome, quando dispara, propriedades e qual métrica alimenta. Use uma convenção única de nome, objeto mais ação no passado: agendamento_criado, agendamento_confirmado, profissional_cadastrado. Cada propriedade tem tipo e valores permitidos definidos — por exemplo, origem com os valores link_publico ou painel_interno.",
+              "tips": [
+                "Comece pelos eventos que alimentam a árvore da North Star e o funil. Instrumentar todo clique gera volume, não resposta."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Validar antes de confiar",
+              "guidance": "Antes de qualquer gráfico, confira o dado: dispare cada evento em ambiente de teste e verifique se chega uma vez só, com as propriedades preenchidas. Compare a contagem semanal de agendamento_criado com a tabela de agendamentos do banco; diferença acima de alguns pontos percentuais indica evento perdido ou duplicado.",
+              "tips": [
+                "Mantenha a tabela do plano como documento vivo. Evento renomeado sem registro quebra a série histórica e ninguém percebe até a reunião de resultado."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Montar o painel no Data Studio",
+              "code": "North Star → OMTM + contra-métrica → funil e coortes",
+              "guidance": "Conecte a planilha ou a base exportada ao Data Studio (ferramenta gratuita do Google, que se chamou Looker Studio entre 2022 e 2026) e monte o painel em três faixas: no topo, a North Star com a variação semanal; no meio, a OMTM e sua contra-métrica; embaixo, o funil AARRR e a tabela de coortes. Cada gráfico leva no título a definição da métrica e o período.",
+              "tips": [
+                "Se uma métrica precisa de explicação verbal toda vez que alguém abre o painel, a definição tem que ir para o próprio painel."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Ler o painel e escrever a leitura semanal",
+              "guidance": "Toda semana, responda por escrito a quatro perguntas: o que mudou, quanto mudou comparado com a variação normal das últimas oito semanas, o que pode explicar (lançamento, feriado, campanha, falha de instrumentação) e qual decisão isso pede. Uma queda de 6% em agendamentos na semana de feriado prolongado não pede o mesmo que uma queda de 6% numa semana comum.",
+              "tips": [
+                "Sempre confira o denominador. Uma taxa de ativação que sobe porque os cadastros caíram não é a mesma notícia que uma que sobe porque mais salões ativaram."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que instrumentação é trabalho de produto",
+      "highlights": [
+        {
+          "icon": "list",
+          "title": "Definição escrita",
+          "text": "O plano de eventos é o contrato entre produto e engenharia. Sem ele, duas pessoas medem a mesma métrica e chegam a números diferentes."
+        },
+        {
+          "icon": "tools",
+          "title": "Dado confiável primeiro",
+          "text": "Uma decisão tomada sobre um evento duplicado é pior do que nenhuma decisão. Validar é parte da entrega, não etapa opcional."
+        },
+        {
+          "icon": "search",
+          "title": "Painel que leva a decisão",
+          "text": "Painel bonito que ninguém lê é decoração. A leitura semanal escrita é o que transforma número em próxima ação."
+        }
+      ],
+      "closingText": "Você saiu de uma frase sobre o valor do produto para um sistema completo: North Star e árvore, funil e OMTM, ativação e retenção medidas por coorte, churn com denominador correto, eventos instrumentados e um painel lido toda semana. É esse conjunto que permite a um time de produto discutir resultado com dados em vez de opinião.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você define, mede e lê as métricas de um produto digital. O próximo passo natural é levar essas métricas para a priorização do backlog, ligando cada item à entrada da árvore que ele deve mover.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Qual destas é a melhor candidata a North Star Metric para um sistema de agendamento on-line para salões?",
+      "explanation": "A North Star deve expressar o valor que o cliente recebe e mover-se antes da receita. Agendamentos confirmados em salões ativos medem exatamente o valor entregue. Receita mensal é indicador atrasado; total de cadastros não mostra valor; tempo de sessão, num produto de produtividade, pode até indicar atrito.",
+      "options": [
+        {
+          "text": "Agendamentos confirmados por semana em salões ativos",
+          "isCorrect": true
+        },
+        {
+          "text": "Receita mensal recorrente",
+          "isCorrect": false
+        },
+        {
+          "text": "Total acumulado de salões cadastrados",
+          "isCorrect": false
+        },
+        {
+          "text": "Tempo médio de sessão no painel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Em um produto que joga o jogo da produtividade, por que tempo de uso costuma ser uma métrica ruim de sucesso?",
+      "explanation": "No jogo da produtividade o valor está em concluir uma tarefa de forma rápida e confiável. Mais tempo dentro do produto pode significar dificuldade, não sucesso. Tempo de uso é métrica central apenas no jogo da atenção, como em mídia e jogos.",
+      "options": [
+        {
+          "text": "Porque mais tempo pode indicar atrito para concluir a tarefa",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque tempo de uso não pode ser medido em aplicações web",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque tempo de uso só vale para produtos pagos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque tempo de uso sempre cresce junto com a receita",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "O que são as métricas de entrada (input metrics) na árvore da North Star?",
+      "explanation": "As entradas são os fatores que, combinados, explicam a North Star e que um time consegue influenciar em ciclos curtos. Elas não são metas financeiras separadas, nem a lista de todos os eventos, nem métricas de outras empresas.",
+      "options": [
+        {
+          "text": "Fatores acionáveis que, combinados, explicam a North Star",
+          "isCorrect": true
+        },
+        {
+          "text": "Metas financeiras definidas pela diretoria",
+          "isCorrect": false
+        },
+        {
+          "text": "A lista completa de eventos instrumentados no produto",
+          "isCorrect": false
+        },
+        {
+          "text": "Métricas de concorrentes usadas como referência",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "De 1.000 salões cadastrados no mês, 310 recebem o primeiro agendamento em até 7 dias. Qual é a taxa de ativação em 7 dias?",
+      "explanation": "Taxa de ativação = ativados ÷ cadastrados no período = 310 ÷ 1.000 = 31%. As outras alternativas confundem a conta (69% é quem não ativou) ou usam valores absolutos como se fossem taxa.",
+      "options": [
+        {
+          "text": "31%",
+          "isCorrect": true
+        },
+        {
+          "text": "69%",
+          "isCorrect": false
+        },
+        {
+          "text": "3,1%",
+          "isCorrect": false
+        },
+        {
+          "text": "310%",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Qual é a relação entre a OMTM e a North Star Metric?",
+      "explanation": "A North Star é estável e representa o valor de longo prazo. A OMTM é o foco do momento: a entrada que mais limita o resultado na fase atual, e muda quando o gargalo muda. Elas coexistem; uma não substitui a outra.",
+      "options": [
+        {
+          "text": "A OMTM é o foco da fase atual e muda quando o gargalo muda; a North Star é estável",
+          "isCorrect": true
+        },
+        {
+          "text": "A OMTM substitui a North Star a cada trimestre",
+          "isCorrect": false
+        },
+        {
+          "text": "São sinônimos usados por autores diferentes",
+          "isCorrect": false
+        },
+        {
+          "text": "A OMTM é sempre a receita, e a North Star é sempre o número de usuários",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Por que \"total acumulado de cadastros desde o lançamento\" é considerado métrica de vaidade?",
+      "explanation": "Um total acumulado só pode subir, então nunca avisa que algo piorou e não muda nenhuma decisão. A versão acionável é uma taxa por período ou por coorte. O problema não é ser difícil de calcular nem ser de marketing.",
+      "options": [
+        {
+          "text": "Porque nunca cai e por isso não sinaliza problema nem orienta decisão",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque é difícil de calcular com precisão",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque só o time de marketing usa",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque cadastros não têm relação com o produto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Qual é a melhor forma de definir o evento de ativação de um produto?",
+      "explanation": "Ativação é o primeiro momento em que o cliente recebe o valor prometido. A forma mais sólida de escolhê-la é comparar a retenção futura de quem fez e de quem não fez cada ação candidata no início, e confirmar com experimento. Concluir o cadastro ou abrir o aplicativo não garante valor.",
+      "options": [
+        {
+          "text": "Comparar a retenção futura de quem fez e de quem não fez cada ação candidata no início",
+          "isCorrect": true
+        },
+        {
+          "text": "Considerar ativado quem concluiu o cadastro",
+          "isCorrect": false
+        },
+        {
+          "text": "Considerar ativado quem abriu o aplicativo ao menos uma vez",
+          "isCorrect": false
+        },
+        {
+          "text": "Escolher a ação que a maioria dos usuários faz no primeiro dia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Uma curva de retenção de coorte cai rápido nas primeiras semanas e depois estabiliza perto de 40%. Como interpretar?",
+      "explanation": "Queda inicial forte é normal. O sinal importante é a curva achatar: existe um grupo que encontrou valor e continua usando. Uma curva que não achata e segue descendo até zero é o que indicaria ausência de retenção real.",
+      "options": [
+        {
+          "text": "Existe um grupo de clientes que encontrou valor e continua usando",
+          "isCorrect": true
+        },
+        {
+          "text": "O produto está perdendo todos os clientes e vai chegar a zero",
+          "isCorrect": false
+        },
+        {
+          "text": "A instrumentação está quebrada, porque retenção não pode estabilizar",
+          "isCorrect": false
+        },
+        {
+          "text": "A coorte é pequena demais para qualquer conclusão, sempre",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Um produto começou o mês com 400 clientes pagantes, ganhou 50 novos durante o mês e perdeu 18. Qual é o churn de clientes do mês?",
+      "explanation": "Churn de clientes = cancelamentos ÷ base no início do período = 18 ÷ 400 = 4,5%. Incluir os 50 novos no denominador (18 ÷ 450 = 4%) faz o crescimento disfarçar a perda. Subtrair novos de perdidos mede crescimento líquido, não churn.",
+      "options": [
+        {
+          "text": "4,5%",
+          "isCorrect": true
+        },
+        {
+          "text": "4%",
+          "isCorrect": false
+        },
+        {
+          "text": "Negativo, porque entraram mais clientes do que saíram",
+          "isCorrect": false
+        },
+        {
+          "text": "8%",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Qual é o principal objetivo de um plano de instrumentação de eventos?",
+      "explanation": "O plano documenta quais eventos existem, quando disparam, que propriedades carregam e qual métrica alimentam. Ele é o contrato entre produto e engenharia que garante que todos medem a mesma coisa. Registrar todo clique gera volume sem resposta.",
+      "options": [
+        {
+          "text": "Definir eventos, propriedades e a métrica que cada um alimenta, com nomes padronizados",
+          "isCorrect": true
+        },
+        {
+          "text": "Registrar todos os cliques possíveis para analisar depois",
+          "isCorrect": false
+        },
+        {
+          "text": "Substituir o banco de dados da aplicação",
+          "isCorrect": false
+        },
+        {
+          "text": "Gerar automaticamente o painel de métricas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Antes de montar um painel, a contagem semanal do evento agendamento_criado aparece 30% acima do número de agendamentos no banco de dados. O que fazer primeiro?",
+      "explanation": "Uma diferença grande entre evento e banco indica evento duplicado ou disparado no momento errado. O dado precisa ser corrigido antes de alimentar qualquer decisão. Ignorar, ajustar a meta ou trocar de ferramenta não resolve a origem do problema.",
+      "options": [
+        {
+          "text": "Investigar duplicidade ou disparo indevido do evento antes de usar o número",
+          "isCorrect": true
+        },
+        {
+          "text": "Usar o número do evento, porque é mais atualizado que o banco",
+          "isCorrect": false
+        },
+        {
+          "text": "Ajustar a meta em 30% para compensar",
+          "isCorrect": false
+        },
+        {
+          "text": "Trocar a ferramenta de painel",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "A taxa de ativação subiu de 31% para 36% numa semana em que os cadastros caíram pela metade. Qual é a leitura correta?",
+      "explanation": "A taxa pode subir só porque o denominador encolheu — por exemplo, se a queda de cadastros eliminou visitantes pouco qualificados. Antes de comemorar, confira o número absoluto de ativados e o motivo da queda nos cadastros. Ler a taxa isolada leva a conclusão errada.",
+      "options": [
+        {
+          "text": "Conferir o número absoluto de ativados e o motivo da queda de cadastros antes de concluir",
+          "isCorrect": true
+        },
+        {
+          "text": "O onboarding melhorou e o resultado deve ser comemorado",
+          "isCorrect": false
+        },
+        {
+          "text": "A taxa de ativação deixou de ser útil e deve ser removida do painel",
+          "isCorrect": false
+        },
+        {
+          "text": "A queda de cadastros é irrelevante quando a taxa sobe",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "Um sistema de métricas completo para um produto fictício: North Star definida e justificada, árvore de métricas com entradas, funil AARRR com taxas de conversão, OMTM com contra-métrica, tabela de coortes com curva de retenção, cálculo de churn, plano de instrumentação de eventos e um painel no Data Studio acompanhado de uma leitura semanal escrita.",
+    "highlights": [
+      "North Star e árvore de métricas documentadas",
+      "Tabela de coortes e cálculo de churn",
+      "Plano de eventos e painel com leitura semanal"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "Reter clientes ficou mais difícil. O relatório de benchmarks de 2024 da Mixpanel, baseado no uso de produtos digitais em vários setores, aponta que nenhum dos setores analisados melhorou a retenção em 2023, e que as empresas no topo (percentil 90) cresceram 6% enquanto a média entre setores ficou em 2,4%. A diferença entre os dois grupos está, em boa parte, em saber qual comportamento do usuário sustenta o crescimento.",
+      "Ao mesmo tempo, montar um painel deixou de exigir equipe de dados: o Data Studio, ferramenta gratuita do Google, voltou a usar esse nome em abril de 2026 e continua com uma camada gratuita para relatórios e painéis compartilháveis. A ferramenta deixou de ser o gargalo. O que separa um painel útil de um enfeite é a escolha das métricas e a qualidade da leitura — que é o que este programa ensina."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Produtos SaaS",
+        "description": "Ativação, retenção e churn mensal definem a saúde de quem vende assinatura."
+      },
+      {
+        "label": "Aplicativos de consumo",
+        "description": "Coortes mostram se cada nova versão retém melhor que a anterior."
+      },
+      {
+        "label": "Times de produto e growth",
+        "description": "North Star e OMTM organizam a priorização e a conversa com a liderança."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Product owners e product managers",
+        "description": "Precisam justificar prioridades com dados e definir metas de time."
+      },
+      {
+        "label": "Quem lançou um MVP",
+        "description": "Validou o interesse e agora precisa saber se o produto retém."
+      },
+      {
+        "label": "Analistas e desenvolvedores",
+        "description": "Instrumentam eventos e montam painéis, e querem entender o que medir e por quê."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "North Star, funil AARRR, coortes e churn são o vocabulário comum de times de produto em empresas de software, aplicativos e comércio eletrônico, de startups a grandes plataformas. Ferramentas de análise de produto já trazem relatórios de retenção por coorte e de funil prontos, e por isso a habilidade valorizada não é operar o relatório, e sim escolher a métrica e interpretá-la corretamente.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Amplitude — The North Star Playbook",
+      "url": "https://amplitude.com/books/north-star/about-north-star-framework"
+    },
+    {
+      "label": "Amplitude — The Three Games of Customer Engagement Strategy",
+      "url": "https://amplitude.com/blog/customer-engagement-strategy"
+    },
+    {
+      "label": "Blinkist Magazine — The Lean Analytics discipline of One Metric That Matters",
+      "url": "https://www.blinkist.com/magazine/posts/the-lean-analytics-discipline-of-one-metric-that-matters"
+    },
+    {
+      "label": "Mixpanel — A primer on retention analytics for product leaders",
+      "url": "https://mixpanel.com/blog/retention-analytics-primer/"
+    },
+    {
+      "label": "Mixpanel — The 2024 Mixpanel Benchmarks Report",
+      "url": "https://mixpanel.com/blog/2024-mixpanel-benchmarks-report"
+    },
+    {
+      "label": "PPC Land — Data Studio is back: Google retires the Looker Studio name",
+      "url": "https://ppc.land/data-studio-is-back-google-kills-looker-studio-name-for-good/"
+    }
+  ]
 }

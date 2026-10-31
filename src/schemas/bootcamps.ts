@@ -9,8 +9,29 @@ const midiaSchema = z.object({
   alt: z.string().optional(),
 });
 
+/* Atividade da programação de uma edição. */
+const atividadeSchema = z.object({
+  tipo: z.enum(["palestra", "painel", "workshop", "networking", "sorteio"]),
+  titulo: textoObrigatorio,
+  descricao: z.string().optional(),
+});
+
+/* Uma edição de evento recorrente. Só year, image, highlight e status são obrigatórios;
+   os demais detalham eventos com várias edições no mesmo ano (ex.: comunidades locais). */
 const edicaoSchema = z.object({
+  numero: z.number().int().positive().optional(),
   year: z.string().regex(/^\d{4}$/),
+  /* Data no formato AAAA-MM-DD; o build confere se bate com year. */
+  data: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+  horario: z.string().optional(),
+  local: z.object({ nome: textoObrigatorio, cidade: textoObrigatorio }).optional(),
+  tema: z.string().optional(),
+  /* Série ou formato da edição (ex.: "Pcamp Pocket"). Numeração é única dentro do formato. */
+  formato: z.string().optional(),
+  programacao: z.array(atividadeSchema).optional(),
+  /* Presença do autor na edição. */
+  participacao: z.enum(["presente", "inscrito", "nao-participou"]).optional(),
+  link: urlAbsoluta.optional(),
   image: z.string(),
   highlight: textoObrigatorio,
   status: z.enum(["realizado", "anunciado"]),
@@ -31,6 +52,8 @@ export const eventoSchema = z.object({
   status: z.enum(["concluido", "desejado"]),
   content: z.object({
     longDescription: textoObrigatorio,
+    /* Texto completo da página (o longDescription fica como abertura). */
+    paragraphs: z.array(textoObrigatorio).optional(),
     videoUrl: z.string().optional(),
     gallery: z.array(midiaSchema).optional(),
     curriculum: z.array(textoObrigatorio),
@@ -38,6 +61,8 @@ export const eventoSchema = z.object({
     editions: z.array(edicaoSchema).optional(),
     links: z.array(z.object({ label: textoObrigatorio, url: urlAbsoluta })).optional(),
     certificate: urlOuMidia.optional(),
+    /* Fontes consultadas para escrever a página. */
+    sources: z.array(z.object({ label: textoObrigatorio, url: urlAbsoluta })).optional(),
   }),
 });
 

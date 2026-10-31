@@ -6,6 +6,7 @@ import { programaSchema, paginaSchema, PAGINAS, CAMPOS_RESUMO, areaSchema, type 
 import { eventoSchema, type Evento } from "../../src/schemas/bootcamps";
 import { empresaSchema, vagaOuPerfilSchema, destaquesSchema, ferramentaSchema, modeloCurriculoSchema } from "../../src/schemas/career-tools";
 import { coberturaSchema, type Cobertura } from "../../src/schemas/cobertura";
+import { acervoSchema, type Acervo } from "../../src/schemas/acervo";
 
 export interface Conteudo {
   programas: Programa[];
@@ -20,7 +21,19 @@ export interface Conteudo {
   ferramentas: z.infer<typeof ferramentaSchema>[];
   hospedagens: z.infer<typeof ferramentaSchema>[];
   cobertura: Cobertura;
+  acervo: Acervo;
 }
+
+/* Endereço público de cada site: usado para montar a URL pronta dos itens relacionados. */
+export const SITES = {
+  "learn-tech": "https://learn-tech-pied.vercel.app",
+  bootcamps: "https://bootcamps-dun.vercel.app",
+  career: "https://douglasabnovato.github.io/career",
+  tools: "https://douglasabnovato.github.io/tools",
+} as const;
+
+/* Palavras por minuto usadas no tempo de leitura dos artigos. */
+export const PALAVRAS_POR_MINUTO = 200;
 
 export interface Recurso {
   caminho: string;
@@ -104,6 +117,7 @@ export function carregarConteudo(raiz: string): { conteudo: Conteudo; erros: str
     ferramentas: lista("tools/ferramentas.json", ferramentaSchema),
     hospedagens: lista("tools/hospedagens.json", ferramentaSchema),
     cobertura: conferir(coberturaSchema, lerJson(c("cobertura.json"), erros), "cobertura.json", erros) ?? { atualizadoEm: "", referencias: [], itens: [] },
+    acervo: conferir(acervoSchema, lerJson(c("acervo.json"), erros), "acervo.json", erros) ?? { atualizadoEm: "", itens: [] },
   };
   return { conteudo, erros };
 }
@@ -126,6 +140,70 @@ function referenciasMidia(valor: unknown, achados: Set<string> = new Set()): Set
   else if (valor && typeof valor === "object") Object.values(valor).forEach((v) => referenciasMidia(v, achados));
   return achados;
 }
+
+interface ItemBlog { id: string; title: string; blogURL?: string; tag?: string; readingTime?: string; lead?: string; body?: string[]; quote?: string; bodyContinued?: string[]; highlights?: { label?: string; description?: string }[] }
+
+/* Itens do blog (paginas/blog.json). */
+export function itensBlog(c: Conteudo): ItemBlog[] {
+  return ((c.paginas.blog as { itens?: ItemBlog[] } | undefined)?.itens ?? []);
+}
+
+/* Tempo de leitura de um artigo: todas as palavras do texto ÷ PALAVRAS_POR_MINUTO, arredondado para cima. */
+export function tempoDeLeitura(post: ItemBlog): string {
+  const partes = [post.lead, post.quote, ...(post.body ?? []), ...(post.bodyContinued ?? []), ...(post.highlights ?? []).flatMap((h) => [h.label, h.description])];
+  const palavras = partes.filter((t): t is string => typeof t === "string").join(" ").split(/\s+/).filter(Boolean).length;
+  return `${Math.max(1, Math.ceil(palavras / PALAVRAS_POR_MINUTO))} min`;
+}
+
+interface Alvo { projeto: string; titulo: string; url: string }
+
+/* Índice "tipo:id" → projeto, título e URL pública de tudo que pode ser relacionado. */
+export function indiceDoEcossistema(c: Conteudo): Map<string, Alvo> {
+  const m = new Map<string, Alvo>();
+  for (const p of c.programas) m.set(`programas:${p.id}`, { projeto: "learn-tech", titulo: p.title, url: `${SITES["learn-tech"]}/program/${p.categoryFilter}/${p.id}` });
+  for (const b of itensBlog(c)) m.set(`blog:${b.id}`, { projeto: "learn-tech", titulo: b.title, url: `${SITES["learn-tech"]}/blog/${b.id}` });
+  for (const e of c.eventos) m.set(`eventos:${e.slug}`, { projeto: "bootcamps", titulo: e.title, url: `${SITES.bootcamps}/event/${e.slug}` });
+  const listas = [["empresas", c.empresas, "career"], ["vagas", c.vagas, "career"], ["perfis", c.perfis, "career"], ["ferramentas", c.ferramentas, "tools"], ["hospedagens", c.hospedagens, "tools"]] as const;
+  for (const [tipo, itens, projeto] of listas) {
+    for (const i of itens as { title: string; slug?: string; site_url: string; detalhe?: unknown }[]) {
+      if (!i.slug) continue;
+      const pagina = projeto === "career" ? `${SITES.career}/detalhe.html#tipo=${tipo}&id=${i.slug}` : `${SITES.tools}/detalhe.html#id=${i.slug}`;
+      m.set(`${tipo}:${i.slug}`, { projeto, titulo: i.title, url: i.detalhe ? pagina : i.site_url });
+    }
+  }
+  return m;
+}
+
+/* Todas as listas que aceitam página de detalhe, com o nome do tipo. */
+function listasComDetalhe(c: Conteudo) {
+  return { empresas: c.empresas, vagas: c.vagas, perfis: c.perfis, ferramentas: c.ferramentas, hospedagens: c.hospedagens };
+}
+
+/* Frases sobre o processo de pesquisa que não podem aparecer em texto publicado (vão só nas observações do lote). */
+export const FRASES_PROIBIDAS: RegExp[] = [
+  /n[ãa]o p[ôo]de ser (aberto|aberta|verificad[oa]|confirmad[oa])/i,
+  /nesta revis[ãa]o/i,
+  /n[ãa]o consegui (abrir|confirmar|verificar|acessar)/i,
+  /fora da lista de (sites|urls) permitid/i,
+  /n[ãa]o acess[íi]vel na revis[ãa]o/i,
+];
+
+/* Nas páginas de detalhe, "card" é o card do próprio catálogo: falar dele é falar do processo. */
+export const FRASE_CARD = /\b(o|do|no) card (aponta|diz|classific|indica|informa|mostra)|\b(link|endereço|url|site_url|título|categoria|rótulo|página indicada) (do|no) card\b/i;
+
+/* Aviso que libera uma página simples sem fontes (o autor completa depois). */
+export const MARCA_EM_REVISAO = "Página em revisão";
+
+/* Percorre o valor e devolve [caminho, texto] de cada string. */
+function textos(valor: unknown, caminho = "", saida: [string, string][] = []): [string, string][] {
+  if (typeof valor === "string") saida.push([caminho, valor]);
+  else if (Array.isArray(valor)) valor.forEach((v, i) => textos(v, `${caminho}[${i}]`, saida));
+  else if (valor && typeof valor === "object") for (const [k, v] of Object.entries(valor)) textos(v, caminho ? `${caminho}.${k}` : k, saida);
+  return saida;
+}
+
+/* Domínio sem "www.", para contar fontes independentes. */
+const dominio = (url: string) => { try { return new URL(url).hostname.replace(/^www\./, ""); } catch { return url; } };
 
 /* Regras de integridade entre arquivos: ids, módulos, quiz, destaques, mídia e cobertura. */
 export function verificarIntegridade(c: Conteudo, pastaMidia: string): string[] {
@@ -176,6 +254,14 @@ export function verificarIntegridade(c: Conteudo, pastaMidia: string): string[] 
 
   repetidos(c.eventos.map((e) => e.id)).forEach((id) => erros.push(`evento id ${id}: repetido`));
   repetidos(c.eventos.map((e) => e.slug)).forEach((s) => erros.push(`evento ${s}: slug repetido`));
+  /* Edições: data dentro do ano informado, número único por formato e ordem cronológica. */
+  for (const e of c.eventos) {
+    const eds = e.content.editions ?? [];
+    for (const ed of eds) if (ed.data && !ed.data.startsWith(ed.year)) erros.push(`evento ${e.slug}: edição ${ed.data} fora do ano ${ed.year}`);
+    repetidos(eds.filter((ed) => ed.numero).map((ed) => `${ed.formato ?? ""}#${ed.numero}`)).forEach((n) => erros.push(`evento ${e.slug}: edição ${n} repetida`));
+    const chaves = eds.map((ed) => ed.data ?? `${ed.year}-99-99`);
+    if (chaves.some((k, i) => i > 0 && k < chaves[i - 1]!)) erros.push(`evento ${e.slug}: edições fora de ordem cronológica`);
+  }
 
   const listas = { empresas: c.empresas, vagas: c.vagas, perfis: c.perfis, ferramentas: c.ferramentas, hospedagens: c.hospedagens };
   for (const [nome, itens] of Object.entries(listas)) {
@@ -183,6 +269,55 @@ export function verificarIntegridade(c: Conteudo, pastaMidia: string): string[] 
     repetidos(itens.flatMap((i) => (i.slug ? [i.slug] : []))).forEach((s) => erros.push(`${nome}: slug "${s}" repetido`));
     for (const i of itens) if (i.detalhe && !i.slug) erros.push(`${nome}: "${i.title}" tem detalhe mas não tem slug`);
   }
+  const indice = indiceDoEcossistema(c);
+  for (const [nome, itens] of Object.entries(listasComDetalhe(c))) {
+    for (const i of itens) {
+      for (const r of i.detalhe?.relacionados ?? []) {
+        if (!indice.has(`${r.tipo}:${r.id}`)) erros.push(`${nome}: "${i.title}" relaciona ${r.tipo} "${r.id}", que não existe (ou não tem slug)`);
+        if (r.tipo === nome && r.id === i.slug) erros.push(`${nome}: "${i.title}" relaciona a si mesmo`);
+      }
+    }
+  }
+  for (const b of itensBlog(c)) {
+    const esperado = tempoDeLeitura(b);
+    if (b.readingTime !== esperado) erros.push(`blog ${b.id}: readingTime "${b.readingTime}" deveria ser "${esperado}" (${PALAVRAS_POR_MINUTO} palavras/min)`);
+  }
+
+  /* Qualidade editorial do que é publicado. */
+  const publicado: [string, unknown][] = [
+    ...c.programas.map((p) => [`programa ${p.id}`, p] as [string, unknown]),
+    ...c.eventos.map((e) => [`evento ${e.slug}`, e] as [string, unknown]),
+    ...Object.entries(c.paginas).map(([n, p]) => [`página ${n}`, p] as [string, unknown]),
+    ...Object.entries(listasComDetalhe(c)).flatMap(([n, itens]) => itens.map((i) => [`${n} "${i.title}"`, i] as [string, unknown])),
+  ];
+  for (const [origem, valor] of publicado) {
+    for (const [campo, texto] of textos(valor)) {
+      const regras = origem.startsWith("programa") || origem.startsWith("evento") || origem.startsWith("página") ? FRASES_PROIBIDAS : [...FRASES_PROIBIDAS, FRASE_CARD];
+      const f = regras.find((r) => r.test(texto));
+      if (f) erros.push(`${origem} → ${campo}: frase sobre o processo de pesquisa ("${texto.match(f)![0]}"); isso vai só nas observações do lote`);
+    }
+  }
+  for (const [nome, itens] of Object.entries(listasComDetalhe(c))) {
+    for (const i of itens) {
+      const d = i.detalhe;
+      if (!d) continue;
+      const emRevisao = d.paragrafos.some((p) => p.includes(MARCA_EM_REVISAO));
+      const dominios = new Set((d.fontes ?? []).map((f) => dominio(f.url)));
+      if (!emRevisao && dominios.size < 2) erros.push(`${nome}: "${i.title}" precisa de fontes de pelo menos 2 domínios diferentes (tem ${dominios.size}) ou do aviso "${MARCA_EM_REVISAO}"`);
+    }
+  }
+
+  /* Acervo do hd: ids únicos e cada arquivo (hash) em um só item. */
+  repetidos(c.acervo.itens.map((i) => i.id)).forEach((id) => erros.push(`acervo ${id}: id repetido`));
+  const donoDoHash = new Map<string, string>();
+  for (const it of c.acervo.itens) {
+    for (const f of it.arquivos) {
+      const dono = donoDoHash.get(f.sha256);
+      if (dono && dono !== it.id) erros.push(`acervo: o mesmo arquivo (${f.sha256.slice(0, 12)}…) está em ${dono} e ${it.id}`);
+      donoDoHash.set(f.sha256, it.id);
+    }
+  }
+
   if (!c.vagas.some((v) => v.title === c.destaques.vaga)) erros.push(`destaques: vaga "${c.destaques.vaga}" não existe em vagas.json`);
   if (!c.empresas.some((v) => v.title === c.destaques.empresa)) erros.push(`destaques: empresa "${c.destaques.empresa}" não existe em empresas.json`);
   if (!c.perfis.some((v) => v.title === c.destaques.perfil)) erros.push(`destaques: perfil "${c.destaques.perfil}" não existe em perfis.json`);
@@ -222,8 +357,29 @@ function resumoPrograma(p: Programa): Record<string, unknown> {
   return r;
 }
 
+/* Copia a lista trocando cada relacionado { tipo, id } pelo alvo completo (projeto, título e URL). */
+function resolverRelacionados<T extends { detalhe?: { relacionados?: { tipo: string; id: string }[] } }>(itens: T[], indice: Map<string, Alvo>): T[] {
+  return itens.map((i) => {
+    if (!i.detalhe?.relacionados?.length) return i;
+    const relacionados = i.detalhe.relacionados.flatMap((r) => {
+      const alvo = indice.get(`${r.tipo}:${r.id}`);
+      return alvo ? [{ tipo: r.tipo, id: r.id, ...alvo }] : [];
+    });
+    return { ...i, detalhe: { ...i.detalhe, relacionados } };
+  });
+}
+
 /* Monta a lista de recursos publicados (caminho relativo a /v1 e o dado de cada um). */
-export function montarRecursos(c: Conteudo): Recurso[] {
+export function montarRecursos(conteudoBruto: Conteudo): Recurso[] {
+  const indice = indiceDoEcossistema(conteudoBruto);
+  const c: Conteudo = {
+    ...conteudoBruto,
+    empresas: resolverRelacionados(conteudoBruto.empresas, indice),
+    vagas: resolverRelacionados(conteudoBruto.vagas, indice),
+    perfis: resolverRelacionados(conteudoBruto.perfis, indice),
+    ferramentas: resolverRelacionados(conteudoBruto.ferramentas, indice),
+    hospedagens: resolverRelacionados(conteudoBruto.hospedagens, indice),
+  };
   const r: Recurso[] = [
     { caminho: "learn-tech/programas.json", descricao: "Catálogo de programas (campos de card)", dados: c.programas.map(resumoPrograma) },
     ...c.programas.map((p) => ({ caminho: `learn-tech/programas/${p.id}.json`, descricao: `Programa ${p.id} completo (módulos e quiz)`, dados: p })),

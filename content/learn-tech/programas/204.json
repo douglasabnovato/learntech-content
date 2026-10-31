@@ -4,7 +4,802 @@
   "category": "UX/UI",
   "categoryFilter": "ux-ui",
   "title": "UX Research: Métodos de Pesquisa para Validar Ideias",
-  "lessons": "12+ Lições",
-  "duration": "10hr 00min",
-  "access": "Acesso Livre"
+  "lessons": "17 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Intermediário",
+  "description": "Como descobrir, antes de construir, se uma ideia resolve um problema real. Você planeja um estudo, conduz entrevistas, monta um questionário que não induz a resposta, roda um teste de usabilidade com cinco pessoas, sintetiza os dados em mapa de afinidade, personas e jornada, e apresenta os achados de um jeito que leva a decisão — tudo respeitando a ética e a LGPD.",
+  "letslearn": [
+    "Transformar uma dúvida de produto em pergunta de pesquisa e escolher o método que responde a ela",
+    "Conduzir entrevistas e escrever questionários sem induzir as respostas",
+    "Planejar e moderar um teste de usabilidade, sabendo o que cinco usuários mostram e o que não mostram",
+    "Sintetizar dados em mapa de afinidade, personas baseadas em evidência e mapa de jornada",
+    "Tratar dados de participantes conforme a LGPD e apresentar achados que viram decisão"
+  ],
+  "curriculum": "Da hipótese à evidência",
+  "about": "O programa segue o ciclo de um estudo real, aplicado a um produto fictício: o Agendei, aplicativo de agendamento para salões de beleza de bairro. Você começa pela pergunta — não pelo método —, passa pelas técnicas que ouvem o usuário (entrevista e questionário), pela técnica que observa o usuário (teste de usabilidade), e termina na parte que mais se negligencia: transformar anotações soltas em achados, proteger os dados de quem participou e convencer a equipe a agir. Se você vem de Aprenda UX/UI para criar interfaces modernas, criativas e funcionais, este é o programa que ensina a provar que a interface funciona; protótipos feitos em Figma para Iniciantes: Do Protótipo ao Design System servem como material de teste no módulo 2.",
+  "materials": [
+    "Modelo de plano de pesquisa de uma página",
+    "Roteiro de entrevista semiestruturada e roteiro de teste de usabilidade",
+    "Modelo de termo de consentimento e checklist de LGPD para pesquisa",
+    "Planilha de registro de problemas com escala de severidade",
+    "Modelo de relatório de achados em uma página"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Planejando a Pesquisa",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Entrevistas e Questionários",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Teste de Usabilidade",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Síntese, Ética e Apresentação",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "UX/UI",
+    "mainTitle": "Pare de adivinhar o que o usuário quer: pergunte, observe e decida com evidência.",
+    "introductionParagraphs": [
+      {
+        "title": "Pesquisa não é opinião com planilha",
+        "text": "Toda equipe de produto tem hipóteses: o usuário quer isso, o usuário não entende aquilo. O problema não é ter hipótese, é tratá-la como fato. **UX Research** é o conjunto de métodos que transforma suposição em evidência — ouvindo o que as pessoas dizem, observando o que elas fazem e separando com cuidado uma coisa da outra, porque raramente coincidem."
+      },
+      {
+        "title": "O método vem depois da pergunta",
+        "text": "Entrevista, questionário e teste de usabilidade respondem perguntas diferentes. Entrevista explica o porquê; questionário mede o quanto; teste de usabilidade mostra onde a interface falha. Escolher o método antes de saber o que se quer descobrir é a forma mais comum de gastar semanas e voltar com dados que não servem para decidir nada."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não ensina a usar uma ferramenta de pesquisa específica e não promete significância estatística com cinco entrevistas. O foco é método: planejar, coletar, sintetizar e comunicar com rigor, em estudos pequenos e baratos que uma equipe consegue rodar em poucos dias — e reconhecer quando o problema exige um estudo maior."
+      }
+    ],
+    "courseAboutTitle": "A ponte entre a ideia e a decisão",
+    "courseAboutDescription": "Este programa é para quem já desenha interfaces e quer parar de depender de gosto pessoal para defendê-las. Ao final, você sabe montar um estudo do zero, conduzir as sessões, tratar os dados dos participantes de forma legal e ética, e entregar um relatório curto que a equipe lê e usa. É a habilidade que muda a conversa de “eu acho” para “nós observamos”.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Planejando a Pesquisa",
+        "items": [
+          {
+            "label": "Pergunta de pesquisa",
+            "description": "Transformar a dúvida da equipe em algo que um estudo consegue responder."
+          },
+          {
+            "label": "Escolha de método",
+            "description": "Atitudinal ou comportamental, qualitativo ou quantitativo — e por quê."
+          },
+          {
+            "label": "Recrutamento e plano",
+            "description": "Quem participa, quantos, e o plano de uma página que alinha a equipe."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Entrevistas e Questionários",
+        "items": [
+          {
+            "label": "Roteiro de entrevista",
+            "description": "Perguntas abertas sobre comportamento passado, não sobre desejos futuros."
+          },
+          {
+            "label": "Conduzir sem induzir",
+            "description": "Silêncio, sondagem e as perguntas que contaminam a resposta."
+          },
+          {
+            "label": "Questionário honesto",
+            "description": "Perguntas fechadas, escalas e os vieses que distorcem os números."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Teste de Usabilidade",
+        "items": [
+          {
+            "label": "Tarefas realistas",
+            "description": "Escrever tarefas que não entregam o caminho da resposta."
+          },
+          {
+            "label": "Pensar em voz alta",
+            "description": "Moderar a sessão e ouvir o raciocínio do participante."
+          },
+          {
+            "label": "Cinco usuários, com limites",
+            "description": "De onde vem a regra dos cinco e quando ela não vale."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Síntese, Ética e Apresentação",
+        "items": [
+          {
+            "label": "Mapa de afinidade",
+            "description": "Agrupar observações em temas sem forçar o encaixe."
+          },
+          {
+            "label": "Personas e jornada",
+            "description": "Artefatos construídos a partir dos dados, não da imaginação."
+          },
+          {
+            "label": "LGPD e apresentação",
+            "description": "Proteger quem participou e comunicar achados que viram decisão."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para aplicar no estudo do Agendei — ou no seu próprio produto. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "search",
+      "title": "Planejando a Pesquisa",
+      "shortDescription": "Pergunta, método, participantes e o plano de uma página",
+      "introductionText": "Pesquisa ruim quase nunca falha na coleta — falha no planejamento. A equipe decide fazer entrevistas porque é o que sabe fazer, conversa com quem estiver disponível e volta com horas de gravação que não respondem à dúvida que motivou o estudo. Neste módulo você planeja o primeiro estudo do Agendei: a equipe suspeita que os donos de salão abandonam o cadastro do app, mas ninguém sabe por quê. Você vai transformar essa suspeita em pergunta, escolher o método e definir quem precisa ser ouvido.",
+      "sections": [
+        {
+          "title": "🧭 Do palpite ao plano",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Escrever a pergunta de pesquisa",
+              "code": "O que precisamos saber para decidir ___?",
+              "guidance": "Parta da decisão que a equipe precisa tomar, não do tema. No Agendei, a decisão é se vale simplificar o cadastro ou mudar a proposta do app. Daí sai a pergunta: o que impede donos de salão de concluir o cadastro? Liste ao lado as hipóteses atuais da equipe — por exemplo, o cadastro pede dados demais, ou o dono não vê vantagem sobre a agenda de papel — para que o estudo possa confirmá-las ou derrubá-las.",
+              "tips": [
+                "Se a pergunta não muda nenhuma decisão quando respondida, ela é curiosidade, não pesquisa. Corte antes de gastar sessões com ela."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Escolher o método pela pergunta",
+              "guidance": "Classifique o que você quer saber em dois eixos. Atitudinal (o que as pessoas dizem) ou comportamental (o que elas fazem). Qualitativo (por quê, como) ou quantitativo (quanto, quantos). Entrevista é atitudinal e qualitativa; questionário é atitudinal e quantitativo; teste de usabilidade é comportamental. Para entender por que o cadastro é abandonado, comece por entrevistas e observe o cadastro em uso; deixe o questionário para medir, depois, o tamanho de cada motivo encontrado.",
+              "tips": [
+                "Pessoas são péssimas em prever o próprio comportamento. Quando a pergunta é sobre o que elas farão, prefira observar o que já fazem."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Definir quem participa",
+              "guidance": "Escreva critérios de inclusão e exclusão em termos de comportamento, não de demografia: donos de salão que usam algum tipo de agenda e que começaram o cadastro no último mês sem concluir. Monte um questionário de triagem curto, com perguntas que não revelem a resposta esperada, e recrute alguns participantes a mais do que precisa, porque faltas acontecem.",
+              "tips": [
+                "Evite recrutar colegas, amigos e quem trabalha no próprio produto. Eles conhecem demais o assunto e querem agradar."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Fechar o plano de uma página",
+              "code": "Objetivo · Perguntas · Método · Participantes · Cronograma · Dados",
+              "guidance": "Reúna tudo em um documento curto: objetivo e decisão em jogo, perguntas de pesquisa, método, perfil e número de participantes, cronograma, quem observa as sessões e como os dados pessoais serão coletados, guardados e eliminados. Circule o plano com a equipe antes de recrutar — é a última chance barata de descobrir que a pergunta estava errada.",
+              "tips": [
+                "Incluir a parte de dados no plano desde o início evita o improviso que, depois, vira problema de LGPD."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que planejar antes de coletar",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Pergunta certa, dado útil",
+          "text": "Um estudo responde bem uma ou duas perguntas. Saber quais são antes de começar é o que separa achado acionável de material de arquivo."
+        },
+        {
+          "icon": "grid",
+          "title": "Método é consequência",
+          "text": "Dizer e fazer são coisas diferentes. O cruzamento entre atitudinal e comportamental, qualitativo e quantitativo, aponta o método sem depender de preferência pessoal."
+        },
+        {
+          "icon": "list",
+          "title": "Equipe alinhada",
+          "text": "Um plano curto e circulado evita que, no fim, alguém diga que não era isso que queria saber."
+        }
+      ],
+      "closingText": "Você tem uma pergunta, um método, critérios de participação e um plano que a equipe aprovou. No próximo módulo você vai a campo com as duas técnicas que escutam o usuário: a entrevista, que explica o porquê, e o questionário, que mede o quanto.",
+      "ctaTitle": "🧭 Plano aprovado!",
+      "ctaText": "O estudo tem objetivo, método e participantes definidos. Agora é hora de conversar com eles.",
+      "nextButtonText": "Ir para Módulo 1: Entrevistas e Questionários"
+    },
+    {
+      "id": 1,
+      "icon": "list",
+      "title": "Entrevistas e Questionários",
+      "shortDescription": "Ouvir sem induzir e medir sem distorcer",
+      "introductionText": "Entrevistas e questionários coletam o que as pessoas dizem — e o que elas dizem é influenciado pela forma como se pergunta. Uma pergunta que sugere a resposta, uma escala desequilibrada ou um entrevistador ansioso por confirmar a própria hipótese bastam para produzir dados que parecem sólidos e não valem nada. Neste módulo você entrevista donos de salão sobre como organizam a agenda hoje e escreve um questionário para medir o peso de cada motivo de abandono do cadastro.",
+      "sections": [
+        {
+          "title": "🎙️ Escutar com método",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Montar o roteiro semiestruturado",
+              "code": "Me conta da última vez que você...",
+              "guidance": "Organize o roteiro em blocos: aquecimento, contexto de trabalho, o episódio específico e encerramento. Peça histórias concretas e recentes — a última vez que um cliente desmarcou, a última vez que tentou usar um app de agenda — em vez de opiniões gerais. O roteiro é um guia, não um script: a ordem pode mudar conforme a conversa.",
+              "tips": [
+                "Perguntas sobre o passado produzem fatos; perguntas sobre o futuro, “como você usaria?”, produzem desejos. Desejo não é evidência de uso."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Conduzir sem induzir",
+              "guidance": "Faça perguntas abertas e neutras: em vez de “o cadastro foi difícil?”, pergunte “como foi o cadastro?”. Use o silêncio — espere alguns segundos depois da resposta, porque a parte mais útil costuma vir em seguida. Sonde com “por que isso?”, “pode me mostrar?” e “o que aconteceu depois?”. Não explique o produto nem defenda o design: você está ali para aprender, não para vender.",
+              "tips": [
+                "Tenha uma segunda pessoa tomando notas. Quem conduz e anota ao mesmo tempo perde as reações e acaba conduzindo pior."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Escrever o questionário",
+              "guidance": "Use as entrevistas para gerar as opções de resposta, e o questionário para medir quantas pessoas se encaixam em cada uma. Faça uma pergunta por vez — nada de “o cadastro foi rápido e fácil?” —, ofereça escalas equilibradas, com tantas opções positivas quanto negativas, inclua a opção não sei ou não se aplica e coloque perguntas demográficas no fim. Teste o questionário com duas ou três pessoas antes de enviar.",
+              "tips": [
+                "Pergunte apenas o que você vai usar. Cada pergunta a mais reduz a taxa de resposta e aumenta a quantidade de dado pessoal que você precisa proteger."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Ler os resultados com cautela",
+              "guidance": "Antes de comparar percentuais, verifique quem respondeu: se o questionário foi enviado só para quem concluiu o cadastro, ele não diz nada sobre quem desistiu. Olhe a distribuição, não só a média, e leia as respostas abertas — elas costumam explicar os números estranhos. Trate diferenças pequenas com amostras pequenas como indício, não como conclusão.",
+              "tips": [
+                "Quem responde questionário voluntariamente tende a ser quem está mais satisfeito ou mais irritado. Registre esse viés de autosseleção no relatório."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que a forma de perguntar importa",
+      "highlights": [
+        {
+          "icon": "sync",
+          "title": "História, não opinião",
+          "text": "Episódios concretos mostram o que realmente aconteceu. Opiniões gerais mostram o que a pessoa acha que deveria ter acontecido."
+        },
+        {
+          "icon": "shield",
+          "title": "Proteção contra o próprio viés",
+          "text": "Perguntas neutras e silêncio deixam espaço para a resposta que contradiz a hipótese da equipe — que é justamente a mais valiosa."
+        },
+        {
+          "icon": "gauge",
+          "title": "Número com contexto",
+          "text": "Um percentual só vale tanto quanto a amostra que o produziu. Saber quem respondeu é parte do resultado."
+        }
+      ],
+      "closingText": "Você sabe agora o que os donos de salão dizem sobre o cadastro e quantos compartilham cada motivo. Falta ver o que eles fazem quando estão diante da tela. No próximo módulo, o teste de usabilidade coloca o protótipo nas mãos dos participantes.",
+      "ctaTitle": "🎙️ Vozes coletadas!",
+      "ctaText": "Entrevistas feitas e questionário no ar. Agora vamos observar o comportamento, não só o discurso.",
+      "nextButtonText": "Ir para Módulo 2: Teste de Usabilidade"
+    },
+    {
+      "id": 2,
+      "icon": "laptop",
+      "title": "Teste de Usabilidade",
+      "shortDescription": "Tarefas, pensar em voz alta e o que cinco usuários revelam",
+      "introductionText": "No teste de usabilidade, um facilitador acompanha um participante enquanto ele tenta realizar tarefas realistas na interface. É o método que mais rapidamente revela onde o produto falha, porque não depende do que a pessoa lembra ou opina: os problemas aparecem na frente de todos. Neste módulo você testa o novo fluxo de cadastro do Agendei com donos de salão e entende de onde vem — e onde termina — a famosa recomendação de testar com cinco usuários.",
+      "sections": [
+        {
+          "title": "🖥️ Observando a interface em uso",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Escrever tarefas realistas",
+              "code": "Você abriu o salão hoje e quer liberar seus horários de sábado...",
+              "guidance": "Cada tarefa descreve um objetivo dentro de um cenário, não o caminho até ele. Evite usar as palavras dos botões da interface: se a tarefa diz “clique em Configurar agenda”, o participante só procura o rótulo. Defina antes o que conta como sucesso em cada tarefa e ordene-as da mais simples para a mais complexa.",
+              "tips": [
+                "Rode um teste piloto com um colega antes das sessões reais. Ele revela tarefas ambíguas e problemas técnicos sem desperdiçar participante."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Moderar com pensar em voz alta",
+              "guidance": "Peça ao participante que diga o que está pensando enquanto usa a interface: o que procura, o que espera que aconteça, o que o surpreende. Quando ele travar, resista a ajudar; pergunte “o que você esperava encontrar aqui?”. Responda perguntas com outra pergunta e deixe claro, no início, que quem está sendo testado é o produto, não a pessoa.",
+              "tips": [
+                "No teste remoto moderado, peça para compartilhar a tela e confirme antes se o participante concorda com a gravação — tela pode mostrar notificações e dados pessoais."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Cinco usuários: a conta e os limites",
+              "code": "Problemas encontrados = N × (1 − (1 − L)^n)",
+              "guidance": "A recomendação vem de um modelo de Nielsen e Landauer: se cada usuário revela, em média, 31% dos problemas (L), cinco usuários revelam cerca de 85% deles. O próprio Nielsen recomenda gastar o orçamento de 15 usuários em três rodadas de cinco, corrigindo o design entre elas. A regra tem limites claros: vale para estudos qualitativos com um único perfil de usuário; com perfis muito diferentes, teste três a quatro de cada; estudos quantitativos, com métricas, pedem cerca de 20 participantes; e problemas raros ou de nicho podem não aparecer em cinco sessões.",
+              "tips": [
+                "Cinco usuários servem para encontrar problemas, não para medir. Nunca apresente percentuais como “80% dos usuários falharam” a partir de cinco sessões."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Registrar e classificar problemas",
+              "guidance": "Logo após cada sessão, registre os problemas observados em uma planilha: onde aconteceu, o que o participante fez, quantos tiveram o mesmo problema e a evidência (trecho de fala, momento da gravação). Classifique a severidade em uma escala simples — cosmético, menor, grave, impeditivo — considerando frequência, impacto e se o usuário consegue contornar sozinho.",
+              "tips": [
+                "Anote o comportamento, não a sua interpretação. “Ficou 40 segundos procurando o botão de salvar” é dado; “o usuário estava confuso” é leitura."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que observar é diferente de perguntar",
+      "highlights": [
+        {
+          "icon": "laptop",
+          "title": "Comportamento real",
+          "text": "O participante pode dizer que achou fácil e mesmo assim levar dois minutos para encontrar um botão. O teste mostra as duas coisas."
+        },
+        {
+          "icon": "sync",
+          "title": "Ciclos curtos",
+          "text": "Três rodadas de cinco, com correções no meio, encontram mais problemas do que uma rodada de quinze — porque cada rodada testa um design melhor."
+        },
+        {
+          "icon": "bolt",
+          "title": "Barato e rápido",
+          "text": "Um estudo qualitativo pequeno cabe em poucos dias: planejar, testar e analisar. O custo principal é o incentivo aos participantes."
+        }
+      ],
+      "closingText": "Você tem entrevistas, respostas de questionário e uma planilha de problemas de usabilidade. É muito material — e material bruto não convence ninguém. No último módulo você transforma tudo isso em achados, protege os dados dos participantes e apresenta o resultado à equipe.",
+      "ctaTitle": "🖥️ Sessões concluídas!",
+      "ctaText": "Os problemas apareceram na tela. Agora vamos dar sentido a eles e levá-los até a decisão.",
+      "nextButtonText": "Ir para Módulo 3: Síntese, Ética e Apresentação"
+    },
+    {
+      "id": 3,
+      "icon": "sitemap",
+      "title": "Síntese, Ética e Apresentação",
+      "shortDescription": "Dos dados brutos ao achado, com respeito a quem participou",
+      "introductionText": "Síntese é o momento em que a pesquisa vira conhecimento: observações isoladas se agrupam em padrões, padrões viram achados e achados viram recomendações. É também a etapa em que a equipe mais se apressa e mais distorce, encaixando os dados na conclusão que já queria. Neste módulo você organiza o material do Agendei em mapa de afinidade, constrói personas e jornada a partir dele, trata os dados dos participantes conforme a LGPD e prepara uma apresentação que leva a equipe a agir.",
+      "sections": [
+        {
+          "title": "🗂️ Do material bruto à decisão",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Mapa de afinidade",
+              "guidance": "Escreva uma observação por nota — um fato, uma fala, um problema —, cada pessoa da equipe trabalhando sozinha por alguns minutos para não contaminar as outras. Depois, agrupem as notas parecidas e só então deem nome a cada grupo, com uma frase que diga o que o grupo revela. Por fim, priorizem os grupos, definam o próximo passo de cada um e um responsável.",
+              "tips": [
+                "Não force uma nota a caber num grupo. Se ela pertence a dois, duplique; se não pertence a nenhum, deixe isolada — às vezes é o achado mais importante."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Personas baseadas em dados",
+              "guidance": "Uma persona resume um padrão de comportamento que se repetiu na pesquisa, não um perfil inventado. Comece pelos grupos do mapa de afinidade: quais objetivos, frustrações e formas de trabalhar se agrupam? No Agendei, um padrão pode ser “o dono que atende sozinho e marca tudo pelo celular entre um cliente e outro”. Cada afirmação da persona deve apontar para evidências do estudo.",
+              "tips": [
+                "Idade, foto e hobbies raramente mudam uma decisão de design. Comportamento, objetivo e contexto mudam. Se um detalhe não vem dos dados, retire."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Mapa de jornada",
+              "code": "Etapas · Ações · Pensamentos · Emoções · Oportunidades",
+              "guidance": "Escolha uma persona e um objetivo — por exemplo, começar a receber agendamentos pelo app — e desenhe as etapas que ela percorre, do momento em que ouve falar do Agendei até o primeiro agendamento recebido. Em cada etapa, registre o que a pessoa faz, pensa e sente, sempre com base nas entrevistas e nos testes. Os pontos de atrito viram as oportunidades da última linha.",
+              "tips": [
+                "Jornada sem pesquisa por trás é hipótese desenhada. Marque com clareza quais etapas têm evidência e quais ainda são suposição."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Ética e LGPD na pesquisa",
+              "guidance": "Antes de cada sessão, explique quem conduz a pesquisa, o objetivo, quais dados serão coletados, se haverá gravação e observadores, por quanto tempo os dados ficam guardados e que a participação é voluntária e pode ser interrompida a qualquer momento. Na prática de produto, a base legal mais comum é o consentimento (art. 7º, I), que a LGPD define como manifestação livre, informada e inequívoca para uma finalidade determinada — e que pode ser revogado a qualquer momento (art. 8º, § 5º). Colete só o necessário, guarde gravações com acesso restrito, use códigos (P1, P2) no lugar de nomes nos materiais de síntese e elimine os dados ao fim do prazo combinado.",
+              "tips": [
+                "Dados de saúde, origem racial ou étnica e outros dados sensíveis (art. 5º, II) exigem consentimento específico e destacado. Pesquisa com crianças exige consentimento de um dos pais ou responsável legal. Na dúvida, envolva o encarregado de dados da empresa antes de recrutar."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Apresentar os achados",
+              "guidance": "Comece pela resposta à pergunta de pesquisa, não pela metodologia. Para cada achado, mostre a evidência — um trecho de fala anonimizado, um clipe curto, quantos participantes tiveram o problema — e a recomendação que decorre dele. Termine com os próximos passos e o que ainda não se sabe. Um relatório de uma página, lido em dez minutos, é mais útil que cinquenta slides que ninguém abre.",
+              "tips": [
+                "Convide a equipe para assistir a pelo menos uma sessão ao vivo. Quem viu um usuário travar defende a correção com muito mais convicção do que quem só leu o relatório."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que a síntese decide o valor da pesquisa",
+      "highlights": [
+        {
+          "icon": "grid",
+          "title": "Padrão, não anedota",
+          "text": "Agrupar observações de várias sessões mostra o que se repete. Uma frase marcante de um participante só vira achado quando aparece de novo."
+        },
+        {
+          "icon": "shield",
+          "title": "Confiança de quem participa",
+          "text": "Participante que sabe o que acontece com os seus dados fala com mais liberdade. Ética e LGPD não são burocracia — são condição para dado honesto."
+        },
+        {
+          "icon": "globe",
+          "title": "Achado que circula",
+          "text": "Pesquisa que não chega à equipe não muda o produto. Comunicar bem é parte do método, não um enfeite no final."
+        }
+      ],
+      "closingText": "Você fechou o ciclo completo: da dúvida da equipe ao relatório que sustenta uma decisão, passando por entrevistas, questionário, teste de usabilidade e síntese — com os dados de cada participante tratados de forma legal e respeitosa. É esse ciclo, repetido em estudos pequenos e frequentes, que faz um produto melhorar com evidência em vez de opinião.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você planeja, conduz, sintetiza e apresenta pesquisa com usuários. O próximo passo é repetir o ciclo no seu produto e transformar pesquisa em hábito da equipe.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Qual é o melhor ponto de partida para planejar um estudo de UX Research?",
+      "explanation": "O plano começa pela decisão que a equipe precisa tomar e pela pergunta que, respondida, orienta essa decisão. O método vem depois, como consequência da pergunta. Começar pela técnica favorita, pela ferramenta ou pelo número de participantes produz dados que podem não responder a nada útil.",
+      "options": [
+        {
+          "text": "A decisão que a equipe precisa tomar e a pergunta de pesquisa que dela decorre",
+          "isCorrect": true
+        },
+        {
+          "text": "O método que a equipe já domina melhor",
+          "isCorrect": false
+        },
+        {
+          "text": "A ferramenta de pesquisa disponível na empresa",
+          "isCorrect": false
+        },
+        {
+          "text": "O maior número de participantes que o orçamento permite",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "A equipe quer saber o que os usuários realmente fazem na tela de cadastro, não o que dizem fazer. Que tipo de método atende melhor?",
+      "explanation": "Quando a pergunta é sobre o que as pessoas fazem, o método precisa ser comportamental, como o teste de usabilidade ou a análise de uso. Entrevistas e questionários são atitudinais: captam o que a pessoa diz, que muitas vezes difere do que ela faz.",
+      "options": [
+        {
+          "text": "Um método comportamental, como o teste de usabilidade",
+          "isCorrect": true
+        },
+        {
+          "text": "Um questionário com escala de concordância",
+          "isCorrect": false
+        },
+        {
+          "text": "Uma entrevista sobre como a pessoa usaria o app no futuro",
+          "isCorrect": false
+        },
+        {
+          "text": "Um grupo focal sobre preferências de design",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Qual critério de recrutamento é mais adequado para estudar o abandono do cadastro do Agendei?",
+      "explanation": "Critérios baseados em comportamento ligam os participantes diretamente à pergunta de pesquisa: quem começou e não concluiu o cadastro é quem sabe por que desistiu. Faixa etária sozinha não garante relação com o problema; colegas conhecem demais o produto; e quem já é usuário ativo não abandonou o cadastro.",
+      "options": [
+        {
+          "text": "Donos de salão que começaram o cadastro no último mês e não concluíram",
+          "isCorrect": true
+        },
+        {
+          "text": "Qualquer pessoa entre 25 e 45 anos",
+          "isCorrect": false
+        },
+        {
+          "text": "Colegas da empresa, por serem fáceis de agendar",
+          "isCorrect": false
+        },
+        {
+          "text": "Os usuários mais ativos do app",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Qual destas perguntas de entrevista tende a produzir a evidência mais confiável?",
+      "explanation": "Pedir o relato de um episódio concreto e recente traz fatos sobre o comportamento passado. Perguntas sobre uso futuro produzem desejos, perguntas fechadas com termo carregado sugerem a resposta, e pedir que o participante desenhe a solução transfere a ele um trabalho que é da equipe.",
+      "options": [
+        {
+          "text": "“Me conta da última vez que um cliente desmarcou um horário. O que você fez?”",
+          "isCorrect": true
+        },
+        {
+          "text": "“Você usaria um app que lembrasse os clientes do horário?”",
+          "isCorrect": false
+        },
+        {
+          "text": "“Você acha que o nosso cadastro é complicado demais?”",
+          "isCorrect": false
+        },
+        {
+          "text": "“Como seria o app de agenda perfeito para você?”",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Por que a pergunta “O cadastro foi rápido e fácil?” é problemática em um questionário?",
+      "explanation": "Ela junta duas perguntas em uma: o cadastro pode ter sido rápido e difícil, ou lento e fácil, e a resposta não diz a qual parte o participante se refere. Além disso, sugere a resposta positiva. A solução é separar em duas perguntas neutras.",
+      "options": [
+        {
+          "text": "Porque pergunta duas coisas ao mesmo tempo e sugere a resposta",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque questionários não podem perguntar sobre cadastro",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque é curta demais para ser compreendida",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque deveria ser feita apenas em entrevista",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Um questionário enviado apenas a usuários que concluíram o cadastro indica alta satisfação. O que se pode concluir sobre quem abandonou?",
+      "explanation": "Praticamente nada: quem abandonou não fazia parte da amostra. A satisfação de quem concluiu não representa quem desistiu, e generalizar seria um erro de amostragem. O resultado deve ser lido apenas para o grupo que respondeu.",
+      "options": [
+        {
+          "text": "Quase nada, porque quem abandonou não estava na amostra",
+          "isCorrect": true
+        },
+        {
+          "text": "Que quem abandonou também estava satisfeito",
+          "isCorrect": false
+        },
+        {
+          "text": "Que o abandono foi causado por motivos externos ao app",
+          "isCorrect": false
+        },
+        {
+          "text": "Que o cadastro não precisa ser alterado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Qual é a melhor forma de escrever uma tarefa para teste de usabilidade?",
+      "explanation": "A tarefa deve descrever um objetivo dentro de um cenário realista, sem usar os rótulos da interface. Dizer em qual botão clicar transforma o teste em busca de palavras; perguntar a opinião sobre a tela é entrevista, não teste; e pedir para explorar livremente não permite avaliar sucesso.",
+      "options": [
+        {
+          "text": "Descrever um objetivo realista sem usar as palavras dos botões da interface",
+          "isCorrect": true
+        },
+        {
+          "text": "Indicar em qual botão clicar para garantir que o participante chegue ao fim",
+          "isCorrect": false
+        },
+        {
+          "text": "Perguntar ao participante se ele gostou da tela",
+          "isCorrect": false
+        },
+        {
+          "text": "Pedir que explore o app livremente, sem objetivo definido",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Segundo o modelo de Nielsen e Landauer, o que acontece em um teste qualitativo com cinco usuários de um mesmo perfil?",
+      "explanation": "Com cada usuário revelando em média 31% dos problemas, cinco usuários encontram cerca de 85% deles. O modelo não diz que se encontram todos os problemas — para isso seriam necessários uns 15 —, e por isso a recomendação é fazer três rodadas de cinco com correções entre elas.",
+      "options": [
+        {
+          "text": "Encontram cerca de 85% dos problemas de usabilidade",
+          "isCorrect": true
+        },
+        {
+          "text": "Encontram todos os problemas de usabilidade",
+          "isCorrect": false
+        },
+        {
+          "text": "Produzem métricas estatisticamente significativas",
+          "isCorrect": false
+        },
+        {
+          "text": "Encontram cerca de 31% dos problemas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Em qual situação a regra dos cinco usuários NÃO se aplica bem?",
+      "explanation": "A regra vale para estudos qualitativos que buscam problemas em um único perfil de usuário. Estudos quantitativos, que medem taxa de sucesso ou tempo de tarefa, precisam de amostras maiores — cerca de 20 participantes segundo a própria NN/g. Com perfis muito diferentes, é preciso testar participantes de cada grupo.",
+      "options": [
+        {
+          "text": "Em um estudo quantitativo que quer medir a taxa de sucesso de uma tarefa",
+          "isCorrect": true
+        },
+        {
+          "text": "Em um teste qualitativo de protótipo com um único perfil de usuário",
+          "isCorrect": false
+        },
+        {
+          "text": "Em uma rodada de teste feita entre duas versões de design",
+          "isCorrect": false
+        },
+        {
+          "text": "Em um teste remoto moderado com compartilhamento de tela",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "No mapa de afinidade, por que cada pessoa escreve suas notas sozinha antes do agrupamento?",
+      "explanation": "Trabalhar individualmente primeiro reduz a influência da opinião dos outros e faz aparecer mais perspectivas. O agrupamento e a nomeação dos temas vêm depois, em conjunto. Não tem relação com economizar material, com evitar duplicatas nem com dispensar a priorização.",
+      "options": [
+        {
+          "text": "Para reduzir a influência das opiniões dos outros sobre as observações",
+          "isCorrect": true
+        },
+        {
+          "text": "Para evitar que existam notas duplicadas",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que cada pessoa defina os temas finais sozinha",
+          "isCorrect": false
+        },
+        {
+          "text": "Para dispensar a etapa de priorização",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Em uma pesquisa de produto conduzida por uma empresa, qual prática está de acordo com a LGPD?",
+      "explanation": "Pedir consentimento informado para uma finalidade determinada, coletar só o necessário e permitir a revogação a qualquer momento seguem os princípios da finalidade e da necessidade e o art. 8º, § 5º. Guardar gravações indefinidamente, coletar dados sem uso previsto ou divulgar nomes nos relatórios vai contra esses princípios.",
+      "options": [
+        {
+          "text": "Obter consentimento informado, coletar só o necessário e aceitar a revogação a qualquer momento",
+          "isCorrect": true
+        },
+        {
+          "text": "Guardar as gravações indefinidamente, caso sejam úteis no futuro",
+          "isCorrect": false
+        },
+        {
+          "text": "Coletar o máximo de dados possível no questionário de triagem",
+          "isCorrect": false
+        },
+        {
+          "text": "Identificar os participantes pelo nome completo no relatório final",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Como deve começar a apresentação dos achados de uma pesquisa?",
+      "explanation": "A apresentação deve abrir com a resposta à pergunta de pesquisa e os principais achados, porque é isso que a equipe precisa para decidir. Metodologia e detalhes de recrutamento vêm depois, como apoio. Começar pela metodologia ou pela transcrição completa faz a equipe perder o essencial.",
+      "options": [
+        {
+          "text": "Pela resposta à pergunta de pesquisa e pelos principais achados",
+          "isCorrect": true
+        },
+        {
+          "text": "Pela descrição detalhada da metodologia",
+          "isCorrect": false
+        },
+        {
+          "text": "Pela transcrição completa de todas as entrevistas",
+          "isCorrect": false
+        },
+        {
+          "text": "Pela lista de todos os participantes com seus dados",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "Um estudo completo para o Agendei, produto fictício: plano de pesquisa de uma página, roteiro de entrevista, questionário revisado, roteiro e registro de teste de usabilidade com cinco participantes, mapa de afinidade, personas e jornada baseados nos dados, termo de consentimento alinhado à LGPD e um relatório de achados em uma página pronto para apresentar à equipe.",
+    "highlights": [
+      "Plano de pesquisa e roteiros de entrevista e de teste",
+      "Síntese com mapa de afinidade, personas e jornada",
+      "Termo de consentimento e relatório de achados"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "Validar uma ideia não exige laboratório nem orçamento grande. A Nielsen Norman Group mostra que um estudo qualitativo com cinco usuários de um mesmo perfil revela cerca de 85% dos problemas de usabilidade, e que um teste pequeno cabe em poucos dias, entre planejamento, sessões e análise. Corrigir o problema no protótipo custa uma fração do que custa corrigi-lo depois do lançamento.",
+      "Ao mesmo tempo, pesquisar exige cuidado com quem participa. Desde 2018 a Lei Geral de Proteção de Dados (Lei nº 13.709) estabelece princípios como finalidade, necessidade e transparência para qualquer tratamento de dados pessoais, e gravações, transcrições e respostas de pesquisa são dados pessoais. Saber conduzir pesquisa de forma ética e legal deixou de ser diferencial e passou a ser requisito."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Descoberta de produto",
+        "description": "Verificar se o problema existe e vale ser resolvido antes de escrever código."
+      },
+      {
+        "label": "Validação de protótipos",
+        "description": "Testar fluxos em protótipo e corrigir antes do desenvolvimento."
+      },
+      {
+        "label": "Serviços públicos e digitais",
+        "description": "Garantir que pessoas com perfis diversos consigam concluir tarefas essenciais."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Designers de interface",
+        "description": "Querem sustentar decisões de design com evidência, não com gosto pessoal."
+      },
+      {
+        "label": "Pessoas de produto",
+        "description": "Precisam validar ideias antes de comprometer o time de desenvolvimento."
+      },
+      {
+        "label": "Quem quer entrar em UX Research",
+        "description": "Já conhece o básico de UX e quer dominar o ciclo completo de um estudo."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Pesquisa com usuários é prática de equipes de produto de todos os tamanhos, de startups que validam uma ideia em uma semana a governos que publicam manuais de pesquisa para seus serviços digitais, como o GOV.UK Service Manual do Reino Unido. Os métodos são os mesmos em qualquer setor; o que muda é a escala e o rigor exigido.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Nielsen Norman Group — Why You Only Need to Test with 5 Users",
+      "url": "https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/"
+    },
+    {
+      "label": "Nielsen Norman Group — Usability (User) Testing 101",
+      "url": "https://www.nngroup.com/articles/usability-testing-101/"
+    },
+    {
+      "label": "Nielsen Norman Group — Affinity Diagramming for Sorting UX Findings and Ideas",
+      "url": "https://www.nngroup.com/articles/affinity-diagram/"
+    },
+    {
+      "label": "GOV.UK Service Manual — Getting informed consent for user research",
+      "url": "https://www.gov.uk/service-manual/user-research/getting-users-consent-for-research"
+    },
+    {
+      "label": "Lei nº 13.709/2018 (LGPD) — texto compilado",
+      "url": "https://www.tce.rn.gov.br/as/Ouvidoria/Legislação/Lei_137092018_compilado_LGPD.pdf"
+    }
+  ]
 }

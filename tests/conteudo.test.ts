@@ -57,6 +57,17 @@ describe("regras de integridade", () => {
     expect(verificarIntegridade(c, path.join(RAIZ, "media")).join()).toMatch(/lessonsCount 99/);
   });
 
+  it("acusa edição repetida, fora do ano ou fora de ordem", () => {
+    const c = copia();
+    const e = c.eventos.find((x) => x.slug === "capivara-tech-juiz-de-fora")!;
+    const [a, b] = e.content.editions!;
+    e.content.editions = [b!, { ...a!, data: "2025-01-01" }, { ...b! }];
+    const msg = verificarIntegridade(c, path.join(RAIZ, "media")).join();
+    expect(msg).toMatch(/fora do ano/);
+    expect(msg).toMatch(/repetida/);
+    expect(msg).toMatch(/fora de ordem/);
+  });
+
   it("acusa questão com duas alternativas corretas", () => {
     const c = copia();
     c.programas.find((p) => p.id === 901)!.quiz![0]!.options.forEach((o) => (o.isCorrect = true));
@@ -103,6 +114,46 @@ describe("regras de integridade", () => {
     expect(verificarIntegridade(c, path.join(RAIZ, "media")).join()).toMatch(/categoria "categoria-inexistente" não é categoryFilter/);
   });
 
+  it("acusa relacionado que não existe", () => {
+    const c = copia();
+    c.empresas[0]!.slug = "empresa-teste";
+    c.empresas[0]!.detalhe = { resumo: "r", paragrafos: ["p"], relacionados: [{ tipo: "programas", id: "99999" }], atualizadoEm: "2026-10-29" };
+    expect(verificarIntegridade(c, path.join(RAIZ, "media")).join()).toMatch(/relaciona programas "99999", que não existe/);
+  });
+
+  it("acusa tempo de leitura diferente do calculado", () => {
+    const c = copia();
+    const blog = c.paginas.blog as { itens: { readingTime: string }[] };
+    blog.itens[0]!.readingTime = "99 min";
+    expect(verificarIntegridade(c, path.join(RAIZ, "media")).join()).toMatch(/readingTime "99 min" deveria ser/);
+  });
+
+  it("acusa frase sobre o processo de pesquisa no texto publicado", () => {
+    const c = copia();
+    const f = c.ferramentas.find((x) => x.detalhe)!;
+    f.detalhe!.paragrafos.push("O site oficial não pôde ser aberto nesta revisão.");
+    expect(verificarIntegridade(c, path.join(RAIZ, "media")).join()).toMatch(/frase sobre o processo de pesquisa/);
+  });
+
+  it("exige fontes de 2 domínios no detalhe, salvo página em revisão", () => {
+    const c = copia();
+    const f = c.ferramentas.find((x) => x.detalhe)!;
+    f.detalhe!.fontes = [{ label: "a", url: "https://exemplo.com/a" }, { label: "b", url: "https://www.exemplo.com/b" }];
+    expect(verificarIntegridade(c, path.join(RAIZ, "media")).join()).toMatch(/pelo menos 2 domínios/);
+    f.detalhe!.paragrafos.push("Página em revisão: as informações acima são básicas e serão completadas em breve.");
+    expect(verificarIntegridade(c, path.join(RAIZ, "media")).join()).not.toMatch(/pelo menos 2 domínios/);
+  });
+
+  it("acusa o mesmo arquivo do hd em dois itens do acervo", () => {
+    const c = copia();
+    const arq = { sha256: "a".repeat(64), ext: "pdf", bytes: 1 };
+    c.acervo.itens.push(
+      { id: "HD-9001", lote: "2026-10-30", origem: "hd/teste", descricao: "x", direitos: "a-triar", estado: "novo", destinos: [], arquivos: [arq] },
+      { id: "HD-9002", lote: "2026-10-30", origem: "hd/teste", descricao: "y", direitos: "a-triar", estado: "novo", destinos: [], arquivos: [arq] },
+    );
+    expect(verificarIntegridade(c, path.join(RAIZ, "media")).join()).toMatch(/mesmo arquivo .* HD-9001 e HD-9002/);
+  });
+
   it("acusa destaque que saiu do catálogo", () => {
     const c = copia();
     c.destaques.empresa = "Empresa Inexistente";
@@ -123,6 +174,17 @@ describe("recursos gerados", () => {
   it("cada programa e cada evento tem recurso próprio", () => {
     for (const p of conteudo.programas) expect(recursos.some((r) => r.caminho === `learn-tech/programas/${p.id}.json`)).toBe(true);
     for (const e of conteudo.eventos) expect(recursos.some((r) => r.caminho === `bootcamps/eventos/${e.slug}.json`)).toBe(true);
+  });
+
+  it("publica relacionados com título e URL prontos", () => {
+    const c = structuredClone(conteudo);
+    const f = c.ferramentas.find((x) => x.slug && x.detalhe)!;
+    f.detalhe!.relacionados = [{ tipo: "programas", id: "901" }];
+    const lista = montarRecursos(c).find((r) => r.caminho === "tools/ferramentas.json")!.dados as typeof c.ferramentas;
+    const rel = lista.find((x) => x.slug === f.slug)!.detalhe!.relacionados![0]!;
+    expect(rel.projeto).toBe("learn-tech");
+    expect(rel.url).toMatch(/^https:\/\/learn-tech-pied\.vercel\.app\/program\/.+\/901$/);
+    expect(rel.titulo).toBeTruthy();
   });
 
   it("o OpenAPI é gerado com os caminhos principais", () => {

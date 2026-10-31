@@ -1,0 +1,875 @@
+{
+  "id": 106,
+  "image": "/media/learn-tech/programas/106.webp",
+  "category": "Frontend",
+  "categoryFilter": "frontend",
+  "title": "Migração de Landing Pages entre Plataformas: Formulários, Dicionário de Dados e Integração com o CRM",
+  "lessons": "21 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Intermediário",
+  "description": "O roteiro de um projeto real de migração de cerca de vinte landing pages de uma plataforma de automação de marketing para o Salesforce: inventário das páginas, dicionário que liga cada campo do formulário ao objeto Lead, reconstrução acessível em HTML, componente LWC ou CloudPages com AMPscript, testes e a virada com redirects 301.",
+  "letslearn": [
+    "Inventariar landing pages, versões, formulários e dependências da plataforma de origem",
+    "Montar o dicionário de dados do formulário ao objeto Lead, com campos ocultos, UTM e status",
+    "Tratar o consentimento LGPD com aceites separados e gravados como booleano",
+    "Reconstruir o formulário acessível e responsivo e integrá-lo por LWC ou por CloudPages com AMPscript",
+    "Testar campo a campo, evitar duplicidade e virar as URLs com 301, SEO e analytics conferidos"
+  ],
+  "curriculum": "Da página antiga ao lead no CRM",
+  "about": "O programa reproduz uma migração feita na prática por uma rede de lojas de material de construção, aqui chamada de Rede Construir+: landing pages de franquia, catálogo, tabloide, venda corporativa, ambientação 3D, simulador de DRE e páginas de patrocínio saíram de uma plataforma de automação de marketing para o Salesforce. A sequência é a do projeto: primeiro conhecer as páginas, depois escrever o dicionário que liga formulário e CRM, então reconstruir e integrar, e por fim testar e virar. Os exemplos usam nomes de páginas e campos fictícios, e os erros discutidos são os que de fato apareceram no código. Complementa o programa de e-mail HTML e landing pages integradas ao CRM, aprofundando a parte que ele trata de forma breve: levar páginas que já existem de uma plataforma para outra.",
+  "materials": [
+    "Modelo de dicionário de variáveis (LP, label, name, chave, API, status)",
+    "Script de inventário que extrai título, inputs, scripts e frameworks de cada HTML",
+    "Esqueleto de componente LWC de formulário e de CloudPage com AMPscript",
+    "Roteiro de teste e checklist de virada"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Inventário e Diagnóstico das Páginas",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Dicionário de Dados: do Formulário ao Lead",
+      "lessonsCount": 6,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Reconstrução: HTML Acessível, LWC e CloudPages",
+      "lessonsCount": 6,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Testes, QA e Virada",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Frontend",
+    "mainTitle": "Mudar landing pages de plataforma sem perder lead, consentimento nem tráfego.",
+    "introductionParagraphs": [
+      {
+        "title": "Migrar não é copiar HTML",
+        "text": "Uma landing page com formulário é mais que layout: tem campos com nomes que só a plataforma antiga entende, scripts de rastreamento, validação baseada em bibliotecas daquela ferramenta e um destino no CRM. Copiar o HTML para a nova plataforma leva tudo isso junto, e o que quebra quase nunca dá erro visível: o lead simplesmente chega sem o telefone, sem o canal de entrada ou sem o consentimento."
+      },
+      {
+        "title": "O dicionário de dados é o centro",
+        "text": "O projeto gira em torno de uma planilha com uma linha por campo por página, ligando o label que a pessoa lê ao **nome de API** do campo no Lead, com os campos ocultos obrigatórios, os dois aceites da **LGPD** e um status AJUSTAR, AJUSTADO ou OK. É ela que front-end e administrador do CRM usam para combinar o que é enviado e para saber quando cada LP está pronta."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não ensina a administrar o Salesforce nem a desenhar jornadas de relacionamento, que são assunto de outros programas. O foco é o trabalho de front-end da migração: entender as páginas, escrever o contrato de dados, reconstruir o formulário com qualidade, integrá-lo e provar que funciona antes de desligar a plataforma antiga."
+      }
+    ],
+    "courseAboutTitle": "A migração vista por quem escreve a página",
+    "courseAboutDescription": "Troca de plataforma de marketing acontece em toda empresa que cresce, e quem é chamado para mover as páginas costuma ser o desenvolvedor front-end. Este programa entrega o método completo, baseado em um projeto real: inventário, dicionário, reconstrução, integração por LWC ou CloudPages, testes e virada. Ao final você consegue estimar, executar e comprovar uma migração de landing pages, em vez de descobrir os problemas depois que os leads pararam de chegar.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Inventário e Diagnóstico das Páginas",
+        "items": [
+          {
+            "label": "Inventário numerado",
+            "description": "Cada LP com URL antiga, versão em edição e destino novo."
+          },
+          {
+            "label": "Estrutura por script",
+            "description": "Títulos, inputs, scripts, frameworks e tamanho de cada página em JSON."
+          },
+          {
+            "label": "Classificação e dependências",
+            "description": "Tipos de página, ordem de trabalho e o que fica na plataforma antiga."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Dicionário de Dados: do Formulário ao Lead",
+        "items": [
+          {
+            "label": "Colunas e nomes",
+            "description": "Do label na tela ao nome de API __c, com uma convenção única."
+          },
+          {
+            "label": "Ocultos, UTM e LGPD",
+            "description": "Canal de entrada, record type, proprietário, origem de campanha e dois aceites separados."
+          },
+          {
+            "label": "Status por linha",
+            "description": "AJUSTAR, AJUSTADO e OK para acompanhar o andamento."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Reconstrução: HTML Acessível, LWC e CloudPages",
+        "items": [
+          {
+            "label": "HTML, CSS e JS",
+            "description": "Formulário acessível, layout responsivo e envio sem jQuery."
+          },
+          {
+            "label": "Componente LWC",
+            "description": "Estrutura html/js/meta, @api, wire e Apex imperativo."
+          },
+          {
+            "label": "CloudPages",
+            "description": "A mesma LP com AMPscript criando o lead pelo Marketing Cloud Connect."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Testes, QA e Virada",
+        "items": [
+          {
+            "label": "Lead de teste",
+            "description": "Conferência campo a campo contra o dicionário."
+          },
+          {
+            "label": "Bugs, duplicidade e QA",
+            "description": "Erros reais de validação, envio repetido, navegadores e testes Jest de verdade."
+          },
+          {
+            "label": "Virada",
+            "description": "Redirects 301, canonical, sitemap e analytics."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para aplicar em uma migração sua. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "search",
+      "title": "Inventário e Diagnóstico das Páginas",
+      "shortDescription": "Levantar páginas, versões, estrutura e dependências antes de migrar",
+      "introductionText": "Migrar landing pages parece trabalho de copiar e colar HTML. Não é. Cada página traz formulários com campos próprios, scripts da plataforma de origem, versões antigas esquecidas e imagens pesadas. Este módulo reproduz o primeiro passo do projeto real de levar cerca de vinte LPs de uma plataforma de automação de marketing para o Salesforce: saber exatamente o que existe, o que cada página faz e o que não deve atravessar para o outro lado.",
+      "sections": [
+        {
+          "title": "🗂️ Conhecer o terreno antes de mudar",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Levantar todas as páginas e suas versões",
+              "code": "lp-01-seja-franqueado/ … lp-20-franquias/",
+              "guidance": "Antes de abrir qualquer editor, liste cada landing page que existe na plataforma de origem. Na migração da Rede Construir+ eram cerca de vinte: Seja um Franqueado, Loja dentro de Loja, Cadastro de Representantes, Programa de Indicação, três LPs de patrocínio esportivo (uma por time fictício), três páginas de Dia do Torcedor, Catálogo, Tabloide, Venda Corporativa, Visitamos sua Obra, Ambientação 3D, Franquias e o Simulador de DRE. Para cada uma, anote três endereços: a URL antiga publicada, a versão em edição na plataforma e o destino novo. Numere as pastas (lp-01-seja-franqueado, lp-02-loja-dentro-de-loja...) para que a ordem do inventário seja a ordem do trabalho.",
+              "tips": [
+                "Muitas páginas têm várias cópias com sufixos como v1 a v9, 'download', 'view' e 'edição'. Marque qual é a publicada; as outras são histórico e não entram na migração.",
+                "Abra cada arquivo salvo antes de confiar no nome. No inventário real, o index.html de uma pasta de Franquias era, na verdade, uma tela do painel administrativo da plataforma salva por engano."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Extrair a estrutura de cada página com um script",
+              "code": "{ title, h[], inputs[], scripts[], css_frameworks[], bytes }",
+              "guidance": "Abrir vinte páginas no navegador e anotar à mão é lento e erra. Escreva um script que percorra as pastas e, para cada HTML, gere uma linha com: título, headings (h1 a h3), nomes dos inputs, scripts externos, frameworks de CSS/JS detectados (Bootstrap, jQuery, Swiper, Slick, AOS, Font Awesome), presença de AMPscript ou SSJS, formulários e tamanho em bytes. O resultado vira a planilha-mestra do projeto e responde rápido perguntas como 'quais páginas têm formulário?' e 'quais dependem de jQuery Validate?'.",
+              "tips": [
+                "Guarde a saída em JSON por página: ela é comparável entre versões e serve de linha de base para o QA depois da migração.",
+                "Inclua o tamanho em bytes. Páginas de evento com mais de 4 MB e um tabloide com mais de 9 MB apareceram só por causa dessa coluna: eram imagens embutidas no HTML."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Classificar por tipo e complexidade",
+              "guidance": "Com a planilha pronta, agrupe as páginas por esforço. Institucional sem formulário (LPs de patrocínio, com FAQ em acordeão). Formulário simples (Visitamos sua Obra, Ambientação 3D: nome, e-mail, telefone e aceite). Formulário com regra (Cadastro de Representantes alterna CPF e CNPJ; Programa de Indicação tem duas etapas, representante e loja indicada; Catálogo pergunta estado, cidade, loja e estágio da obra). Ferramenta interativa (Simulador de DRE, com fórmulas por seção e resultado de lucro líquido). Seleção de região (Tabloide). O menu do e-commerce na Wake fica em trilha separada, porque não envia dado ao CRM.",
+              "tips": [
+                "A classificação define a ordem: comece por um formulário simples para validar a integração de ponta a ponta, depois replique.",
+                "Ferramentas como o simulador não geram lead por si só. Decida no inventário se elas ganham um formulário de captura ou continuam só informativas."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Mapear o que é da plataforma antiga e não migra",
+              "code": "scout.js · jquery.validate · firstsession · id_submit",
+              "guidance": "Toda plataforma de automação injeta coisas na página: script de rastreamento de visitantes, cópias próprias de jQuery, jQuery Validate, jQuery Form e jQuery UI, além de campos ocultos de controle de sessão e de envio (no inventário apareciam como firstsession, lastsession e id_submit em quase todos os formulários). Liste esses itens por página e marque o destino de cada um: remover, substituir por equivalente da nova plataforma ou reescrever. Sem essa lista, o HTML copiado carrega dependências que não funcionam mais e quebram em silêncio.",
+              "tips": [
+                "Campo oculto de controle da plataforma antiga não vai para o dicionário de dados. Ele resolvia um problema daquela ferramenta, não do negócio.",
+                "Salve uma cópia estática de cada página publicada antes de começar. Ela é a referência visual no QA e a prova do que existia caso alguém pergunte depois."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que o inventário vem primeiro",
+      "highlights": [
+        {
+          "icon": "list",
+          "title": "Escopo real",
+          "text": "A lista numerada de páginas, com URL antiga, versão em edição e destino, é o que transforma 'migrar as LPs' em um trabalho com começo e fim."
+        },
+        {
+          "icon": "search",
+          "title": "Achados que só o script mostra",
+          "text": "Páginas de vários megabytes, arquivos salvos por engano e cópias v1 a v9 aparecem na planilha antes de virar retrabalho."
+        },
+        {
+          "icon": "tools",
+          "title": "Dependência explícita",
+          "text": "Saber quais scripts e campos ocultos são da plataforma antiga evita copiar código que deixa de funcionar na nova."
+        }
+      ],
+      "closingText": "Você tem a lista de páginas, a estrutura de cada uma, a classificação por esforço e o que fica para trás. Falta definir para onde vai cada dado que os formulários coletam, e é isso que o dicionário resolve.",
+      "ctaTitle": "🗂️ Inventário fechado!",
+      "ctaText": "Todas as páginas mapeadas. Vamos ligar cada campo de formulário ao campo certo do CRM.",
+      "nextButtonText": "Ir para Módulo 1: Dicionário de Dados: do Formulário ao Lead"
+    },
+    {
+      "id": 1,
+      "icon": "sitemap",
+      "title": "Dicionário de Dados: do Formulário ao Lead",
+      "shortDescription": "O contrato entre o formulário da LP e o objeto Lead no CRM",
+      "introductionText": "O coração da migração é uma planilha: o dicionário de variáveis. Ela liga cada campo que a pessoa vê na landing page ao campo do objeto Lead que o time comercial e o de CRM usam. Aqui você monta esse dicionário, padroniza nomes, define os campos que o usuário não preenche, captura origem de campanha e trata o consentimento exigido pela LGPD, com um status que mostra o andamento de cada linha.",
+      "sections": [
+        {
+          "title": "📋 O dicionário de variáveis",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Montar as colunas do dicionário",
+              "code": "LP | Label | name | ordem | chave | API SF | status",
+              "guidance": "O dicionário de variáveis é uma planilha com uma linha por campo, por LP. As colunas usadas no projeto: LP; Label no formulário (o texto que o usuário lê); Name no formulário (atributo name do input); Ordem do campo; Chave enviada (a chave do objeto JSON que sai da página); Label no CRM; Nome de API no CRM; Linha de atribuição no código; Status. Essa planilha é o contrato entre quem faz o front-end e quem mantém o Salesforce: se não está nela, não é enviado.",
+              "tips": [
+                "Uma linha por campo por LP parece repetitivo, mas é o que permite dar status separado a cada página. A mesma coluna 'telefone' pode estar OK em uma LP e pendente em outra.",
+                "Coloque a ordem do campo na tela: ela orienta o HTML, a leitura por leitor de tela e o roteiro de teste."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Padronizar nomes do input ao campo de API",
+              "code": "celular → tel → MobilePhone",
+              "guidance": "Um mesmo dado passa por quatro nomes: o label ('Telefone (WhatsApp)'), o name do input (celular), a chave do JSON (tel) e o campo de API no Lead (MobilePhone). Campos padrão do Salesforce usam o nome nativo (FirstName, LastName, Email, MobilePhone); campos personalizados terminam em __c (CidadeLoja__c, EstadoLoja__c, NomeLoja__c, Filial__c). Defina uma convenção e aplique em todas as LPs: chaves em camelCase em inglês ou em português, nunca misturadas, e o mesmo dado com o mesmo nome em todas as páginas.",
+              "tips": [
+                "No código original, o mesmo formulário enviava primeiroNome, segundoNome e numeroCelular para um método e newFirstName, newPhone para outro. Cada nome diferente é um mapeamento a mais para manter e um ponto a mais para errar.",
+                "Name de input em português e chave em inglês funcionam, desde que a tradução esteja escrita no dicionário e não na cabeça de quem codou."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Definir os campos obrigatórios ocultos",
+              "code": "CanalDeEntrada__c = 'Landing Page Catálogo'",
+              "guidance": "Todo lead da Rede Construir+ precisa chegar com campos que o usuário não preenche: canal de entrada (CanalDeEntrada__c, ex.: 'Landing Page Catálogo'), empresa da rede (Empresa__c), tipo de cliente que vira o record type (RecordTypeName__c = 'Cliente_Final'), proprietário do lead (OwnerId) e um identificador de rastreio (IdLead__c). No dicionário eles aparecem com ordem 0 e label OBRIGATÓRIO. Decida onde cada um é definido: valor fixo por LP pode vir do componente; proprietário e record type devem ser resolvidos no servidor.",
+              "tips": [
+                "Nunca coloque o Id do proprietário ou do record type como input hidden no HTML. Qualquer pessoa altera o valor no DevTools; resolva pelo nome no Apex ou por regra de atribuição.",
+                "Use um prefixo de teste reconhecível nos dados de homologação (ex.: nome 'CMAIS-CAT-0001' e sobrenome 'Teste-0001'). Fica fácil achar e apagar os leads de teste depois."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Capturar UTM e canal de entrada",
+              "code": "new URLSearchParams(location.search).get('utm_source')",
+              "guidance": "O canal de entrada diz de qual LP o lead veio; a UTM diz qual campanha levou a pessoa até ali. Leia utm_source, utm_medium e utm_campaign da URL no carregamento, guarde em campos ocultos e envie com o formulário para campos próprios no Lead (UtmSource__c, UtmMedium__c, UtmCampaign__c). Assim o relatório no CRM separa quem veio do e-mail, do anúncio e do WhatsApp sem depender só da ferramenta de analytics.",
+              "tips": [
+                "Se a pessoa navegar antes de enviar, a UTM some da URL. Guarde em sessionStorage na primeira página e leia de lá no envio.",
+                "Padronize os valores de UTM em minúsculas e documente a lista no próprio dicionário; 'Email', 'email' e 'e-mail' viram três canais no relatório."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Consentimento LGPD no formulário",
+              "code": "PoliticaPrivacidade__c = !String.isBlank(v) ? Boolean.valueOf(v) : false",
+              "guidance": "As LPs tinham dois aceites e eles são diferentes: 'Concordo com a Política de Privacidade e autorizo o uso dos meus dados' (PoliticaPrivacidade__c) e 'Aceito receber e-mails, SMS e WhatsApp da Rede Construir+' (ConsentimentoMarketing__c). O primeiro condiciona o envio; o segundo é opcional e controla comunicação de marketing. Use dois checkboxes separados, nenhum pré-marcado, texto que diga a finalidade e link para a política. No servidor, converta para booleano com padrão falso quando vier vazio, e registre também a data do aceite.",
+              "tips": [
+                "A LGPD pede consentimento livre, informado e inequívoco, para finalidade determinada, em cláusula destacada quando escrito, e o ônus de provar é do controlador. Checkbox pré-marcado não prova nada.",
+                "Revogar precisa ser tão fácil quanto aceitar. Garanta que o campo de marketing também é atualizado pelo descadastro, não só pela LP."
+              ]
+            },
+            {
+              "number": 6,
+              "title": "Controlar o andamento com status",
+              "code": "AJUSTAR → AJUSTADO → OK",
+              "guidance": "A última coluna do dicionário diz o que fazer com cada linha: AJUSTAR (o campo do formulário ou da API ainda não bate, ex.: um campo novo como 'Você está construindo ou reformando?' que precisa de EstagioObra__c no Lead), AJUSTADO (corrigido, aguardando teste) e OK (testado com lead real de homologação). Filtrar por status vira a reunião de acompanhamento: quantas linhas faltam, em quais LPs, e quem depende de quem (front-end ou administrador do CRM).",
+              "tips": [
+                "Só marque OK depois de ver o valor gravado no registro do Lead. Código escrito não é campo testado.",
+                "Campo que existe no formulário e não existe no CRM é decisão de negócio: criar o campo, juntar em uma descrição ou parar de perguntar. Registre a decisão na linha."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que o dicionário é o contrato",
+      "highlights": [
+        {
+          "icon": "sitemap",
+          "title": "Um nome por dado",
+          "text": "Label, name, chave e campo de API ligados em uma linha acabam com o 'qual era mesmo o nome desse campo?'."
+        },
+        {
+          "icon": "shield",
+          "title": "Consentimento com prova",
+          "text": "Dois aceites separados, sem pré-marcação, gravados como booleano com data, são o que sustenta a comunicação de marketing depois."
+        },
+        {
+          "icon": "gauge",
+          "title": "Andamento visível",
+          "text": "AJUSTAR, AJUSTADO e OK por linha mostram quanto falta, em qual LP e quem precisa agir."
+        }
+      ],
+      "closingText": "O dicionário está completo, com nomes padronizados, campos ocultos definidos, UTM capturada e consentimento tratado. Agora ele vira código: HTML, CSS, JavaScript e o componente que envia o lead.",
+      "ctaTitle": "📋 Dicionário pronto!",
+      "ctaText": "Cada campo tem nome, destino e status. Hora de reconstruir as páginas.",
+      "nextButtonText": "Ir para Módulo 2: Reconstrução: HTML Acessível, LWC e CloudPages"
+    },
+    {
+      "id": 2,
+      "icon": "laptop",
+      "title": "Reconstrução: HTML Acessível, LWC e CloudPages",
+      "shortDescription": "Formulário acessível, componente LWC reutilizável e a rota CloudPages",
+      "introductionText": "Com o inventário e o dicionário prontos, as páginas são reconstruídas. Primeiro a base que vale para qualquer plataforma: HTML semântico, CSS responsivo e JavaScript de envio sem dependências da ferramenta antiga. Depois as duas rotas do Salesforce usadas no projeto: componentes LWC em páginas do Experience Cloud e, para páginas de campanha, CloudPages com AMPscript.",
+      "sections": [
+        {
+          "title": "🧱 Reconstruindo as páginas",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "HTML semântico e acessível do formulário",
+              "code": "<label for=\"tel\">Telefone (WhatsApp)</label><input id=\"tel\" name=\"tel\" type=\"tel\" autocomplete=\"tel\" required>",
+              "guidance": "Reconstrua o formulário a partir do dicionário, na ordem definida. Cada input com label associado por for/id (não só placeholder), type correto (email, tel), autocomplete (given-name, family-name, email, tel), inputmode para teclado numérico no celular, required nos obrigatórios e uma área de erro ligada por aria-describedby. Agrupe os aceites em um fieldset com legend. O texto do aceite fica no label do checkbox, para que clicar no texto marque a caixa.",
+              "tips": [
+                "Placeholder some quando a pessoa digita e não é lido de forma confiável por leitor de tela. Ele complementa o label, nunca substitui.",
+                "Mensagens de sucesso e erro em um elemento com role='status' ou aria-live='polite' são anunciadas sem mover o foco."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "CSS responsivo e páginas leves",
+              "code": "@media (max-width: 768px) { .beneficios { grid-template-columns: 1fr; } }",
+              "guidance": "As páginas antigas carregavam Bootstrap, Swiper, Slick e AOS juntos, às vezes para um carrossel só. Na reconstrução, escreva o layout com CSS moderno (grid e flex), mobile-first, e use os mesmos pontos de quebra que já existiam nos componentes (768, 1024 e 1280 px) para manter a aparência aprovada. Troque imagens embutidas em base64 por arquivos otimizados (WebP ou AVIF) com width, height e loading='lazy' abaixo da dobra.",
+              "tips": [
+                "Grid que vira uma coluna no celular resolve a maioria dos blocos de benefícios: grid-template-columns: repeat(2, 1fr) no desktop e 1fr abaixo de 768 px.",
+                "Uma biblioteca de carrossel inteira por causa de um slider é custo de carregamento para todo visitante. Avalie scroll-snap em CSS antes."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "JavaScript de validação e envio sem jQuery",
+              "code": "form.addEventListener('submit', async (e) => { e.preventDefault(); … })",
+              "guidance": "Substitua jQuery Validate pela validação nativa (required, type, pattern) mais uma camada própria para regras de negócio: CPF ou CNPJ conforme o tipo de documento escolhido, telefone com DDD, aceite de privacidade marcado. No envio, bloqueie o botão, mostre 'Enviando…', trate sucesso e erro com mensagens distintas e só limpe o formulário depois da confirmação. Monte o objeto com as chaves exatamente iguais às do dicionário.",
+              "tips": [
+                "Desabilitar o botão durante o envio é a primeira barreira contra lead duplicado por clique repetido.",
+                "Valide de novo no servidor. A validação no navegador é para a pessoa; a do servidor é para o dado."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Estrutura de um componente LWC",
+              "code": "formLead/ formLead.html · formLead.js · formLead.js-meta.xml",
+              "guidance": "No Experience Cloud, cada LP vira uma página montada com componentes Lightning Web Components. Um componente é uma pasta com o mesmo nome em três arquivos principais: o .html (template), o .js (classe que estende LightningElement) e o .js-meta.xml (apiVersion, isExposed e targets, como lightningCommunity__Page para aparecer no Experience Builder). O projeto original quebrou cada LP em menu, painéis do corpo e rodapé (menuLpTorcedor, bodyPainel2LpTorcedor... footerLpTorcedor). Faça o mesmo, mas extraia o formulário em um componente único, reutilizado por todas as LPs.",
+              "tips": [
+                "No código real, a mesma lógica de modal e envio estava copiada no cabeçalho, no corpo e no rodapé da mesma LP. Três cópias significam três lugares para corrigir o mesmo bug.",
+                "Exponha só os targets que você usa. Uma LP pública não precisa de lightning__RecordPage nem de lightning__FlowScreen, e apiVersion diferente entre componentes do mesmo projeto (61 e 62) é sinal de pasta copiada sem revisão."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "@api, wire e chamada imperativa ao Apex",
+              "code": "import salvarLead from '@salesforce/apex/LeadLpController.salvarLead';",
+              "guidance": "Torne o componente configurável: propriedades com @api (canalEntrada, urlObrigado) expostas no js-meta.xml por targetConfigs aparecem como campos no Experience Builder, e a mesma peça serve ao Catálogo e à Venda Corporativa. Para leitura de dados, como a lista de lojas por estado, use @wire com um método Apex cacheable. Para gravar o lead, importe o método de @salesforce/apex/ e chame de forma imperativa no submit, porque inserção não pode ser cacheable. Do lado do Apex, o método recebe um mapa com as chaves do dicionário e faz a atribuição campo a campo.",
+              "tips": [
+                "Trate o retorno do Apex como imutável: para alterar a lista de lojas, faça uma cópia antes.",
+                "Página pública roda como usuário convidado do site. Revise as permissões desse perfil e use 'with sharing' no Apex; o mínimo necessário, nada além."
+              ]
+            },
+            {
+              "number": 6,
+              "title": "Alternativa: CloudPages com AMPscript",
+              "code": "SET @id = CreateSalesforceObject(\"Lead\", 3, \"LastName\", @sobrenome, \"Email\", @email, \"CanalDeEntrada__c\", \"LP Catálogo\")",
+              "guidance": "Quando a LP pertence a uma campanha de Marketing Cloud e não precisa de Experience Cloud, uma CloudPage resolve com menos peças. O mesmo HTML do passo 1 envia para a própria página; no topo, um bloco AMPscript lê os campos com RequestParameter, valida, procura lead existente pelo e-mail e cria o registro com CreateSalesforceObject('Lead', n, campo, valor, …), que exige o Marketing Cloud Connect e devolve o Id criado. Grave também em uma Data Extension para ter o histórico de envios da página.",
+              "tips": [
+                "O número de campos passado à função precisa bater com a quantidade de pares nome-valor; contar errado é a falha mais comum.",
+                "Escolha uma plataforma por LP e anote no inventário. Duas LPs iguais, uma em cada stack, dobram a manutenção."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que reconstruir em vez de copiar",
+      "highlights": [
+        {
+          "icon": "laptop",
+          "title": "Acessível de fábrica",
+          "text": "Label, autocomplete e mensagens anunciadas resolvem os erros de formulário mais comuns da web antes de eles existirem."
+        },
+        {
+          "icon": "grid",
+          "title": "Um formulário, muitas LPs",
+          "text": "Um componente configurável por @api substitui as cópias do mesmo código em cabeçalho, corpo e rodapé."
+        },
+        {
+          "icon": "globe",
+          "title": "Duas rotas, uma regra",
+          "text": "LWC no Experience Cloud ou AMPscript na CloudPage: o HTML e o dicionário são os mesmos, só muda quem grava o lead."
+        }
+      ],
+      "closingText": "As páginas estão reconstruídas, com um formulário reutilizável e duas rotas de integração. O último módulo garante que tudo isso funciona com dado real e que a troca não quebra links, buscas nem relatórios.",
+      "ctaTitle": "🧱 Páginas reconstruídas!",
+      "ctaText": "Formulário acessível, componente reutilizável e integração no lugar. Agora é testar e virar a chave.",
+      "nextButtonText": "Ir para Módulo 3: Testes, QA e Virada"
+    },
+    {
+      "id": 3,
+      "icon": "shield",
+      "title": "Testes, QA e Virada",
+      "shortDescription": "Lead de teste, correção de bugs reais, QA e o dia da troca",
+      "introductionText": "Página no ar não é página migrada. Falta provar que cada campo chega ao lugar certo, que os erros são tratados, que não há lead duplicado e que quem clica em um link antigo chega na página nova. Este módulo fecha o projeto com o roteiro de teste, os bugs que apareceram no código real e o checklist do dia da virada.",
+      "sections": [
+        {
+          "title": "✅ Provar que funciona e trocar",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Testar campo a campo contra o dicionário",
+              "code": "CMAIS-CAT-0001 · Teste-0001",
+              "guidance": "Para cada LP, envie um lead de teste com valores reconhecíveis em todos os campos (prefixo CMAIS-, sobrenome Teste-0001, cidade e loja fictícias) e abra o registro no Salesforce. Confira linha por linha do dicionário: o valor chegou no campo certo, os ocultos (canal, empresa, record type, proprietário) foram preenchidos, os dois aceites chegaram como verdadeiro ou falso conforme marcados. Só então mude o status da linha para OK.",
+              "tips": [
+                "Teste também com os aceites desmarcados. O caso 'privacidade sim, marketing não' é o mais comum na vida real e o mais esquecido no teste.",
+                "Apague os leads de teste ao final de cada rodada, filtrando pelo prefixo, para não poluir relatórios e jornadas."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Validação e mensagens: os erros que o código real tinha",
+              "code": "this.aceitePrivacidade = event.target.checked;",
+              "guidance": "Revise a lógica de envio procurando falhas que passam despercebidas. Na migração original apareceram: o handler do aceite só marcava verdadeiro e nunca voltava a falso ao desmarcar; a mensagem 'aceite a política' era exibida mesmo depois de um envio válido, por falta de else ou return; o modal fechava antes da resposta do servidor, escondendo o erro; e os dados pessoais eram impressos no console. Corrija cada um e escreva o teste que teria pego o problema.",
+              "tips": [
+                "Para checkbox, leia sempre event.target.checked e atribua o valor, em vez de só tratar o caso marcado.",
+                "console.log com nome, e-mail e telefone em produção é dado pessoal exposto para quem abrir o DevTools. Remova antes da virada."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Envio, duplicidade e redirecionamento",
+              "code": "sucesso → /obrigado?lp=catalogo",
+              "guidance": "Teste o caminho completo: envio com sucesso leva à página de obrigado (ou mensagem) e dispara o evento de conversão; erro de servidor mostra mensagem e mantém os dados digitados; duplo clique não cria dois leads; mesmo e-mail enviado duas vezes segue a regra combinada (atualizar o lead existente ou criar com marcação de duplicidade). Defina a regra de duplicidade com o administrador do CRM antes do teste, não depois.",
+              "tips": [
+                "A página de obrigado com URL própria é a forma mais simples de medir conversão no analytics e no gerenciador de tags.",
+                "Simule a falha: troque temporariamente o nome de um campo de API e confirme que a pessoa vê uma mensagem útil e não um erro técnico."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "QA cross-browser, dispositivos e testes automatizados",
+              "code": "expect(salvarLead).toHaveBeenCalledWith({ dados: expect.objectContaining({ tel: '11999990000' }) })",
+              "guidance": "Rode a matriz mínima: Chrome, Safari (iOS) e Firefox, em celular e desktop, mais navegação só por teclado e um leitor de tela em um dos formulários. Compare cada página nova com a cópia estática salva no inventário. Nos componentes LWC, substitua os testes Jest gerados pelo CLI (que só faziam expect(1).toBe(1)) por testes que montam o componente, preenchem campos, marcam aceites e verificam o que é enviado ao Apex simulado.",
+              "tips": [
+                "Teste gerado e nunca preenchido dá falsa segurança: a pipeline fica verde e nada foi verificado.",
+                "No iOS, confira o teclado de cada campo (e-mail, telefone) e se o zoom automático não dispara em inputs com fonte menor que 16 px."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Checklist de virada: redirects, SEO e analytics",
+              "code": "301 /lp-antiga/catalogo → /catalogo",
+              "guidance": "Na data da troca: publique as páginas novas; configure redirect 301 de cada URL antiga para a nova equivalente (não para a home); dê a cada página nova um canonical próprio; atualize sitemap e links internos, de e-mails e de anúncios; confira que tags de analytics e de conversão disparam nas novas URLs; remova noindex de homologação. Depois, acompanhe tráfego e leads por LP e mantenha os redirects por pelo menos um ano antes de desligar a plataforma antiga.",
+              "tips": [
+                "Redirecionar tudo para a página inicial é tratado como página inexistente pelos buscadores e frustra quem clicou em um link antigo de campanha.",
+                "Compare o volume de leads por LP na semana anterior e na seguinte. Queda brusca em uma única página quase sempre é formulário ou redirect quebrado."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que o teste decide a virada",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Valor no registro",
+          "text": "O teste termina no Lead aberto no CRM, não no 'enviado com sucesso' da tela."
+        },
+        {
+          "icon": "sync",
+          "title": "Erros que se repetem",
+          "text": "Aceite que não desmarca, mensagem errada e dado no console aparecem em qualquer migração; agora você sabe onde procurar."
+        },
+        {
+          "icon": "globe",
+          "title": "Ninguém perde o caminho",
+          "text": "Redirect 301 página a página, canonical e analytics conferidos mantêm busca, campanhas e relatórios funcionando."
+        }
+      ],
+      "closingText": "Você percorreu a migração inteira: inventário, dicionário de dados, reconstrução acessível, integração com o CRM, testes e virada. É o mesmo roteiro para qualquer troca de plataforma de páginas, do construtor de landing pages ao e-commerce.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você sabe migrar landing pages com formulário de uma plataforma para outra sem perder lead, consentimento nem tráfego.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Por que gerar a estrutura das páginas com um script em vez de anotar abrindo uma a uma?",
+      "explanation": "O script produz para todas as páginas os mesmos dados (títulos, inputs, scripts, frameworks, tamanho) em formato comparável, e revela problemas como páginas de vários megabytes ou arquivos salvos por engano. Ele não migra nada sozinho, não substitui o QA visual e não tem relação com permissão na plataforma.",
+      "options": [
+        {
+          "text": "Para ter dados iguais e comparáveis de todas as páginas e achar problemas cedo",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque o script já converte o HTML para o formato da nova plataforma",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque dispensa o QA visual depois da migração",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque a plataforma antiga bloqueia a abertura de páginas no navegador",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Campos como firstsession, lastsession e id_submit, presentes em quase todos os formulários antigos, devem ir para o dicionário de dados?",
+      "explanation": "Esses campos são controles internos da plataforma de origem e resolviam um problema dela, não do negócio. Na nova plataforma eles não têm função, então são removidos. Mapeá-los para o Lead criaria campos inúteis no CRM.",
+      "options": [
+        {
+          "text": "Não: são controles da plataforma antiga e são removidos na migração",
+          "isCorrect": true
+        },
+        {
+          "text": "Sim: todo input hidden precisa de um campo correspondente no Lead",
+          "isCorrect": false
+        },
+        {
+          "text": "Sim, mas só como campos de texto longo",
+          "isCorrect": false
+        },
+        {
+          "text": "Não, porque campos ocultos não podem ser enviados em nenhuma plataforma",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Qual é a melhor LP para começar a reconstrução?",
+      "explanation": "Começar por um formulário simples (nome, e-mail, telefone e aceite) valida a integração de ponta a ponta com pouco risco; depois o padrão é replicado. Começar pela página mais complexa mistura problemas de regra com problemas de integração, e o simulador nem gera lead por si só.",
+      "options": [
+        {
+          "text": "Uma LP de formulário simples, para validar a integração de ponta a ponta",
+          "isCorrect": true
+        },
+        {
+          "text": "O simulador de DRE, por ser a página mais complexa",
+          "isCorrect": false
+        },
+        {
+          "text": "Todas ao mesmo tempo, para ganhar prazo",
+          "isCorrect": false
+        },
+        {
+          "text": "O menu do e-commerce, porque tem mais tráfego",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Na linha 'Telefone (WhatsApp) | celular | tel | MobilePhone' do dicionário, o que é MobilePhone?",
+      "explanation": "MobilePhone é o nome de API do campo padrão do Lead no Salesforce. 'Telefone (WhatsApp)' é o label que a pessoa lê, celular é o name do input e tel é a chave enviada no JSON. Campos personalizados é que terminam em __c.",
+      "options": [
+        {
+          "text": "O nome de API do campo padrão do Lead no Salesforce",
+          "isCorrect": true
+        },
+        {
+          "text": "O atributo name do input no HTML",
+          "isCorrect": false
+        },
+        {
+          "text": "O texto do label exibido na página",
+          "isCorrect": false
+        },
+        {
+          "text": "Um campo personalizado que precisa ser criado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Onde deve ser definido o proprietário (OwnerId) de um lead vindo de LP pública?",
+      "explanation": "Valor colocado em input hidden no HTML pode ser alterado por qualquer pessoa no DevTools. Proprietário e record type devem ser resolvidos no servidor, no Apex ou por regra de atribuição do CRM. Deixar o usuário escolher ou não definir nunca são opções corretas.",
+      "options": [
+        {
+          "text": "No servidor, pelo Apex ou por regra de atribuição",
+          "isCorrect": true
+        },
+        {
+          "text": "Em um input hidden com o Id fixo no HTML",
+          "isCorrect": false
+        },
+        {
+          "text": "Em um campo de seleção para o visitante escolher",
+          "isCorrect": false
+        },
+        {
+          "text": "Em lugar nenhum: o Salesforce ignora o proprietário de leads",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Como tratar os dois aceites (política de privacidade e comunicações de marketing) no formulário?",
+      "explanation": "São finalidades diferentes: a privacidade condiciona o envio, o marketing é opcional. Dois checkboxes separados, sem pré-marcação, com texto claro, gravados como booleano. Pela LGPD, o consentimento é para finalidade determinada e o controlador precisa prová-lo; um aceite único ou pré-marcado não serve para isso.",
+      "options": [
+        {
+          "text": "Dois checkboxes separados, desmarcados, gravados em campos booleanos distintos",
+          "isCorrect": true
+        },
+        {
+          "text": "Um único checkbox que cobre as duas finalidades",
+          "isCorrect": false
+        },
+        {
+          "text": "Os dois já marcados, para aumentar a taxa de aceite",
+          "isCorrect": false
+        },
+        {
+          "text": "Só um texto no rodapé informando o uso dos dados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Por que o formulário reconstruído deve ter label associado a cada input em vez de só placeholder?",
+      "explanation": "O placeholder some ao digitar e não é lido de forma confiável por leitores de tela; o label com for/id é anunciado e amplia a área de clique. Na análise WebAIM Million 2025, 48,2% das home pages tinham inputs sem label, um dos erros mais frequentes da web.",
+      "options": [
+        {
+          "text": "Porque placeholder some ao digitar e não substitui o label para leitor de tela",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque o Salesforce rejeita inputs sem label",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque label melhora a velocidade de envio",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque placeholder não funciona em celulares",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "No LWC, por que a gravação do lead usa chamada imperativa ao Apex e não @wire?",
+      "explanation": "@wire é para leitura reativa com métodos cacheable, e método cacheable não pode inserir registros. A gravação acontece no submit, em resposta a uma ação, então o método é importado de @salesforce/apex/ e chamado de forma imperativa. @api serve para propriedades configuráveis, não para enviar dados.",
+      "options": [
+        {
+          "text": "Porque @wire usa métodos cacheable, que servem para leitura e não para inserir",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque @wire só funciona em páginas internas, nunca no Experience Cloud",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque chamada imperativa dispensa o Apex",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque @api já faz o envio automaticamente",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Em uma CloudPage, o que a função AMPscript CreateSalesforceObject exige e devolve?",
+      "explanation": "Ela recebe o nome do objeto, o número de campos e os pares nome-valor, exige a integração pelo Marketing Cloud Connect e devolve o Id do registro criado. Não cria Data Extension, não envia e-mail e o número de campos precisa bater com os pares informados.",
+      "options": [
+        {
+          "text": "Exige o Marketing Cloud Connect e devolve o Id do registro criado",
+          "isCorrect": true
+        },
+        {
+          "text": "Cria uma Data Extension com os campos do formulário",
+          "isCorrect": false
+        },
+        {
+          "text": "Envia um e-mail de confirmação ao lead",
+          "isCorrect": false
+        },
+        {
+          "text": "Aceita qualquer quantidade de pares, sem informar o número de campos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Quando a linha do dicionário pode ser marcada como OK?",
+      "explanation": "OK significa testado: o lead de teste foi enviado e o valor apareceu no campo certo do registro no CRM. Código escrito ou formulário que mostra 'sucesso' na tela ainda não provam que o dado chegou ao lugar correto.",
+      "options": [
+        {
+          "text": "Depois de ver o valor gravado no campo certo do Lead de teste",
+          "isCorrect": true
+        },
+        {
+          "text": "Assim que o código de atribuição é escrito",
+          "isCorrect": false
+        },
+        {
+          "text": "Quando a página mostra a mensagem de sucesso",
+          "isCorrect": false
+        },
+        {
+          "text": "Quando o administrador do CRM cria o campo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Um handler de checkbox faz 'if (e.target.checked) this.aceite = true;'. Qual é o problema?",
+      "explanation": "O valor nunca volta a falso: quem marca e depois desmarca o aceite continua registrado como tendo aceitado. A correção é atribuir sempre o valor lido, this.aceite = e.target.checked. Não é questão de desempenho nem de sintaxe.",
+      "options": [
+        {
+          "text": "Desmarcar não volta o valor para falso",
+          "isCorrect": true
+        },
+        {
+          "text": "checked não existe em checkbox",
+          "isCorrect": false
+        },
+        {
+          "text": "O código é lento por usar if",
+          "isCorrect": false
+        },
+        {
+          "text": "Nenhum, é a forma recomendada",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Na virada, para onde a URL antiga de uma LP deve redirecionar?",
+      "explanation": "Cada URL antiga vai, com redirect permanente 301 no servidor, para a página nova equivalente. Mandar tudo para a home é tratado como página inexistente pelos buscadores e frustra quem clicou no link. A orientação do Google é manter os redirects por pelo menos um ano.",
+      "options": [
+        {
+          "text": "Para a página nova equivalente, com 301, mantido por pelo menos um ano",
+          "isCorrect": true
+        },
+        {
+          "text": "Para a página inicial do site, com 302",
+          "isCorrect": false
+        },
+        {
+          "text": "Para nenhum lugar: a página antiga deve dar erro 404",
+          "isCorrect": false
+        },
+        {
+          "text": "Para a página nova, por redirect em JavaScript por uma semana",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "O pacote de uma migração de landing pages da Rede Construir+: inventário em JSON de todas as páginas, dicionário de variáveis com status por campo, um formulário acessível e responsivo reutilizável, sua versão como componente LWC configurável e como CloudPage com AMPscript, o roteiro de teste com leads fictícios e o checklist de virada com mapa de redirects 301.",
+    "highlights": [
+      "Dicionário de dados do formulário ao objeto Lead",
+      "Formulário acessível integrado ao CRM por LWC ou CloudPages",
+      "Roteiro de teste e checklist de virada"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "O Salesforce foi apontado pela IDC como o fornecedor número 1 de CRM pelo 12º ano seguido, com 20,7% do mercado em 2024 (IDC Worldwide Semiannual Software Tracker, abril de 2025, divulgado pela Salesforce em maio de 2025). Quando uma empresa concentra vendas e marketing nessa plataforma, as landing pages que estavam em ferramentas separadas costumam ser trazidas para perto do CRM, e alguém precisa fazer essa mudança sem perder os leads no caminho.",
+      "Ao mesmo tempo, o formulário é um dos pontos mais frágeis da web: na análise WebAIM Million de 2025 (dados de fevereiro de 2025), 48,2% das home pages tinham campos de formulário sem label e 34,2% de todos os inputs analisados não estavam rotulados corretamente. Uma migração é a oportunidade de corrigir isso de uma vez, junto com o consentimento exigido pela LGPD."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Troca de plataforma de marketing",
+        "description": "Mover LPs de uma ferramenta de automação para o Salesforce ou para outra stack."
+      },
+      {
+        "label": "Varejo com captação de leads",
+        "description": "Catálogos, tabloides por região, franquias e venda corporativa que alimentam o time comercial."
+      },
+      {
+        "label": "Saneamento de formulários",
+        "description": "Padronizar nomes, consentimento e acessibilidade de páginas que cresceram sem regra."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Dev front-end em time de marketing",
+        "description": "Recebe a tarefa de mover páginas e precisa garantir que os dados cheguem ao CRM."
+      },
+      {
+        "label": "Quem começa no ecossistema Salesforce",
+        "description": "Já domina HTML, CSS e JavaScript e quer entender LWC e CloudPages na prática."
+      },
+      {
+        "label": "Quem cuida de CRM e quer falar a língua do dev",
+        "description": "Precisa de um dicionário de dados e de um roteiro de teste que os dois lados entendam."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Landing pages integradas ao CRM sustentam a captação de leads em varejo, serviços, educação e indústria, e o Salesforce, com 20,7% do mercado de CRM em 2024 segundo a IDC, é o destino mais comum dessas integrações. Experience Cloud com LWC e CloudPages com AMPscript são as duas rotas nativas da plataforma para publicar páginas que gravam leads, o que torna o método deste programa reaproveitável em qualquer empresa que use o ecossistema.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Salesforce News — Salesforce é o nº 1 em CRM pelo 12º ano no ranking da IDC (maio de 2025)",
+      "url": "https://www.salesforce.com/news/stories/idc-crm-market-share-ranking-2025/"
+    },
+    {
+      "label": "WebAIM — The WebAIM Million 2025: acessibilidade das 1 milhão de home pages mais acessadas",
+      "url": "https://webaim.org/projects/million/2025"
+    },
+    {
+      "label": "Salesforce Developers — Lightning Web Components: Call Apex Methods",
+      "url": "https://developer.salesforce.com/docs/platform/lwc/guide/apex"
+    },
+    {
+      "label": "Salesforce Developers — AMPscript: CreateSalesforceObject()",
+      "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud-ampscript/references/mc-ampscript-salesforce/mc-ampscript-reference-salesforce-create-object.md"
+    },
+    {
+      "label": "Google Search Central — Como mover um site com mudança de URLs",
+      "url": "https://developers.google.com/search/docs/advanced/crawling/what-is-site-move"
+    },
+    {
+      "label": "Gran Cursos Online — LGPD: consentimento e requisitos de validade (art. 8º)",
+      "url": "https://blog.grancursosonline.com.br/lei-13-709-2018-lgpd-consentimento-e-requisitos-de-validade-art-8/amp/"
+    }
+  ]
+}

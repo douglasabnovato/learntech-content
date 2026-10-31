@@ -3,8 +3,823 @@
   "image": "https://cdn.pixabay.com/photo/2016/11/23/14/45/coding-1853305_1280.jpg",
   "category": "Frontend",
   "categoryFilter": "frontend",
-  "title": "Next.js e Tailwind CSS: Performance e Estilo na Prática",
-  "lessons": "18+ Lições",
-  "duration": "14hr 30min",
-  "access": "Acesso Livre"
+  "title": "Next.js e Tailwind CSS: App Router, Cache e Deploy na Prática",
+  "lessons": "17 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Intermediário",
+  "description": "O passo seguinte ao React: transformar componentes em um site completo, com rotas, dados vindos do servidor, cache explícito, imagens e fontes otimizadas e estilo com Tailwind CSS. Você termina com o projeto publicado na Vercel e entende o que roda no servidor, o que roda no navegador e por quê.",
+  "letslearn": [
+    "Montar rotas, layouts e páginas dinâmicas com o App Router",
+    "Decidir o que é Server Component e o que é Client Component, e onde fica a fronteira",
+    "Buscar dados no servidor, controlar o cache com 'use cache' e atualizar a tela depois de uma Server Action",
+    "Otimizar imagens e fontes com next/image e next/font",
+    "Estilizar com Tailwind CSS: utilitários, layout responsivo, tema próprio e modo escuro",
+    "Publicar na Vercel com deploys de pré-visualização e variáveis de ambiente"
+  ],
+  "curriculum": "Do React ao site em produção",
+  "about": "O programa começa onde \"React: Componentes, Estado e a Primeira Aplicação\" terminou. Lá você aprendeu a pensar em componentes e estado; aqui descobre o que um framework acrescenta: rotas a partir de pastas, renderização no servidor, cache controlado por você e otimizações que seriam trabalhosas de fazer à mão. O projeto é o site de agenda de uma comunidade fictícia de desenvolvedores, com lista de encontros, página de cada encontro e formulário de inscrição. A sequência vai das rotas aos componentes de servidor, dos dados ao cache, e fecha com estilo e publicação. Os exemplos seguem o Next.js 16 (versão 16.4 no momento da escrita) e o Tailwind CSS v4.",
+  "materials": [
+    "Repositório do site de agenda com um ramo por módulo",
+    "Arquivo de dados fictícios dos encontros em JSON",
+    "Mapa de decisão: Server ou Client Component",
+    "Checklist de publicação na Vercel"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "App Router: Rotas e Layouts",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Server e Client Components",
+      "lessonsCount": 3,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Dados, Cache e Imagens",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Tailwind CSS e Deploy na Vercel",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Frontend",
+    "mainTitle": "Do componente React ao site publicado: rotas, servidor, cache e estilo em um só projeto.",
+    "introductionParagraphs": [
+      {
+        "title": "O que o framework acrescenta ao React",
+        "text": "O React desenha interface; ele não decide como as URLs viram páginas, onde os dados são buscados nem como o HTML chega rápido ao navegador. O **Next.js** cobre essas lacunas com convenções: uma pasta vira rota, um arquivo vira layout, e componentes podem rodar no servidor antes de qualquer JavaScript ser enviado. Você escreve menos código de infraestrutura e mais código do produto."
+      },
+      {
+        "title": "Servidor por padrão, navegador quando precisa",
+        "text": "No App Router, todo componente roda no servidor até que você diga o contrário. Isso inverte o hábito de quem vem do React puro: a pergunta deixa de ser \"como busco esse dado no navegador?\" e passa a ser \"esse pedaço realmente precisa de interatividade?\". Responder bem a essa pergunta é o que separa um site leve de um que manda JavaScript desnecessário para o celular do usuário."
+      },
+      {
+        "title": "Estilo sem sair do componente",
+        "text": "O **Tailwind CSS** troca folhas de estilo separadas por classes utilitárias aplicadas direto na marcação. Parece estranho nos primeiros minutos e passa a fazer sentido quando você percebe que o estilo de um componente fica junto dele, que o tema vive em variáveis CSS e que o CSS final contém só as classes que você realmente usou."
+      }
+    ],
+    "courseAboutTitle": "O passo seguinte ao React",
+    "courseAboutDescription": "Este programa transforma quem monta componentes em quem entrega um site completo. A diferença não está em decorar convenções de pastas, e sim em entender onde cada linha executa: no servidor, durante a construção, no cache ou no navegador. Com esse mapa na cabeça, desempenho deixa de ser ajuste de última hora e passa a ser consequência das escolhas de arquitetura.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: App Router: Rotas e Layouts",
+        "items": [
+          {
+            "label": "Pastas viram rotas",
+            "description": "page.tsx, layout.tsx e a estrutura da pasta app."
+          },
+          {
+            "label": "Rotas dinâmicas",
+            "description": "Segmentos entre colchetes e a leitura de params com await."
+          },
+          {
+            "label": "Estados de rota",
+            "description": "loading.tsx, error.tsx e not-found.tsx sem código de controle manual."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Server e Client Components",
+        "items": [
+          {
+            "label": "Servidor por padrão",
+            "description": "O que um Server Component pode fazer e o que ele não envia ao navegador."
+          },
+          {
+            "label": "A diretiva 'use client'",
+            "description": "Marcar a fronteira o mais baixo possível na árvore."
+          },
+          {
+            "label": "Composição entre os dois",
+            "description": "Passar Server Components como children de um Client Component."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Dados, Cache e Imagens",
+        "items": [
+          {
+            "label": "Busca no servidor e streaming",
+            "description": "Componentes async e Suspense para mostrar a página antes dos dados lentos."
+          },
+          {
+            "label": "Cache explícito",
+            "description": "'use cache', cacheLife e cacheTag no modelo de Cache Components."
+          },
+          {
+            "label": "Mutação e imagens",
+            "description": "Server Actions com updateTag e o componente next/image."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Tailwind CSS e Deploy na Vercel",
+        "items": [
+          {
+            "label": "Utilitários e responsivo",
+            "description": "Classes utilitárias e breakpoints que valem do tamanho indicado para cima."
+          },
+          {
+            "label": "Tema e fontes",
+            "description": "@theme, next/font e modo escuro com variáveis CSS."
+          },
+          {
+            "label": "Publicação",
+            "description": "Deploy pela Vercel, pré-visualização por branch e variáveis de ambiente."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para executar no seu próprio projeto. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "sitemap",
+      "title": "App Router: Rotas e Layouts",
+      "shortDescription": "Pastas que viram URLs, layouts que persistem e estados de rota prontos",
+      "introductionText": "No App Router, a estrutura de pastas dentro de app é o mapa do site. Cada pasta é um segmento da URL, e arquivos com nomes reservados dizem o que aquele segmento faz: page.tsx é a página, layout.tsx é a moldura que envolve as páginas filhas, loading.tsx é o que aparece enquanto o conteúdo carrega. Neste módulo você monta as rotas do site de agenda da comunidade fictícia: a página inicial, a lista de encontros e a página de cada encontro.",
+      "sections": [
+        {
+          "title": "🗺️ O mapa do site em pastas",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Criar o projeto",
+              "code": "npx create-next-app@latest agenda-dev",
+              "guidance": "Crie o projeto aceitando as opções recomendadas: TypeScript, ESLint, Tailwind CSS e App Router. Rode npm run dev e abra o endereço local. Repare que o servidor de desenvolvimento já usa o Turbopack, o empacotador padrão desde o Next.js 16, e que o Node.js mínimo exigido é o 20.9.",
+              "tips": [
+                "Abra app/page.tsx e app/layout.tsx antes de mexer em qualquer coisa. Os dois arquivos juntos explicam metade do App Router."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Páginas e layouts aninhados",
+              "code": "app/encontros/page.tsx",
+              "guidance": "Crie a pasta encontros com um page.tsx que lista três encontros fictícios. Depois crie um layout.tsx na mesma pasta com um menu lateral. Navegue entre a página inicial e a lista com o componente Link, de next/link, e observe que o layout raiz não é redesenhado na troca de página.",
+              "tips": [
+                "O layout raiz precisa conter as tags html e body. Layouts internos recebem children e só envolvem o pedaço que muda.",
+                "Use Link em vez de a para navegação interna: ele faz a troca no cliente e pré-carrega a rota quando o link aparece na tela."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Rota dinâmica para cada encontro",
+              "code": "const { slug } = await params",
+              "guidance": "Crie app/encontros/[slug]/page.tsx. O componente recebe params como uma Promise; leia o slug com await e busque o encontro correspondente no arquivo de dados. Se o slug não existir, chame notFound(), de next/navigation. Para gerar as páginas na construção, exporte generateStaticParams devolvendo a lista de slugs.",
+              "tips": [
+                "Desde o Next.js 16, params, searchParams, cookies() e headers() só podem ser lidos de forma assíncrona. Código antigo que acessa params.slug direto deixa de funcionar."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Carregando, erro e página não encontrada",
+              "code": "loading.tsx · error.tsx · not-found.tsx",
+              "guidance": "Adicione os três arquivos na pasta encontros. O loading.tsx vira automaticamente o fallback de um Suspense em volta da página; o error.tsx captura erros do segmento e oferece uma forma de tentar de novo; o not-found.tsx responde ao notFound() do passo anterior. Simule um atraso na busca para ver o loading aparecer.",
+              "tips": [
+                "error.tsx precisa ser Client Component, porque recebe uma função para tentar renderizar o segmento outra vez. Comece o arquivo com 'use client'."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que rotas por pastas importam",
+      "highlights": [
+        {
+          "icon": "folder",
+          "title": "A URL está no explorador de arquivos",
+          "text": "Para achar o código de /encontros/abc você abre app/encontros/[slug]. Não existe arquivo de rotas separado para ficar desatualizado."
+        },
+        {
+          "icon": "grid",
+          "title": "Layout que não pisca",
+          "text": "Menus e cabeçalhos em layout.tsx preservam estado e não são redesenhados na navegação. O usuário vê só o conteúdo trocar."
+        },
+        {
+          "icon": "shield",
+          "title": "Estados tratados por convenção",
+          "text": "Carregamento, erro e página inexistente têm arquivo próprio. Fica difícil esquecer um deles, porque a ausência do arquivo salta aos olhos na revisão."
+        }
+      ],
+      "closingText": "O site já tem rotas, layouts e páginas dinâmicas. Até aqui você escreveu componentes como no React puro, sem pensar onde eles rodam. No próximo módulo entra a decisão central do App Router: o que fica no servidor e o que vai para o navegador.",
+      "ctaTitle": "🗺️ Rotas de pé!",
+      "ctaText": "O mapa do site está pronto. Agora vamos decidir onde cada componente executa.",
+      "nextButtonText": "Ir para Módulo 1: Server e Client Components"
+    },
+    {
+      "id": 1,
+      "icon": "sync",
+      "title": "Server e Client Components",
+      "shortDescription": "Onde cada componente executa e como os dois tipos se combinam",
+      "introductionText": "No App Router, componentes são Server Components por padrão: executam no servidor, podem ler banco de dados e variáveis secretas, e o código deles não é enviado ao navegador. Client Components são os que precisam de estado, efeitos ou eventos do usuário, e são marcados com a diretiva 'use client'. O erro mais comum é marcar a página inteira como cliente por causa de um botão. Este módulo ensina a manter a fronteira no menor pedaço possível.",
+      "sections": [
+        {
+          "title": "🔀 A fronteira entre servidor e navegador",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "O que um Server Component pode fazer",
+              "code": "export default async function Page()",
+              "guidance": "Transforme a página de lista de encontros em uma função async e leia o arquivo de dados direto, sem fetch nem useEffect. Coloque um console.log no componente e repare que a mensagem aparece no terminal, não no console do navegador.",
+              "tips": [
+                "Server Components não podem usar useState, useEffect nem manipuladores como onClick. Se você precisar de um deles, aquele pedaço é Client Component.",
+                "Para garantir que um módulo com segredos nunca seja importado no cliente, importe o pacote server-only no topo dele."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "'use client' no menor pedaço possível",
+              "code": "'use client'",
+              "guidance": "Crie um botão de favoritar com useState em um arquivo próprio que começa com 'use client'. Use esse botão dentro da página de encontro, que continua sendo Server Component. Só o botão e o que ele importa vão para o pacote JavaScript do navegador.",
+              "tips": [
+                "A diretiva marca uma fronteira: tudo que o arquivo importa também passa a fazer parte do cliente. Por isso ela deve ficar nas folhas da árvore, não na raiz.",
+                "Props que atravessam a fronteira precisam ser serializáveis. Datas, objetos simples e strings passam; funções comuns e instâncias de classe, não."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Server Component dentro de Client Component",
+              "code": "<Abas>{children}</Abas>",
+              "guidance": "Crie um componente de abas interativo como Client Component que recebe o conteúdo por children. Na página, passe como children a lista de participantes, que é um Server Component. O conteúdo é renderizado no servidor e a aba só controla qual parte aparece.",
+              "tips": [
+                "Um Client Component não pode importar um Server Component, mas pode recebê-lo pronto por props ou children. É esse padrão que evita empurrar a fronteira para cima."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que a fronteira importa",
+      "highlights": [
+        {
+          "icon": "gauge",
+          "title": "Menos JavaScript no celular",
+          "text": "Código de Server Component não vai para o navegador. Bibliotecas usadas só para formatar dados ficam no servidor e não pesam no carregamento."
+        },
+        {
+          "icon": "shield",
+          "title": "Segredo fica no servidor",
+          "text": "Chave de API e acesso ao banco podem ficar em Server Components com segurança, desde que nada sensível seja passado como prop para o cliente."
+        },
+        {
+          "icon": "sitemap",
+          "title": "Fronteira é decisão de projeto",
+          "text": "Onde você coloca 'use client' define quanto da árvore vira JavaScript no navegador. Uma linha no arquivo errado transforma uma página inteira em cliente."
+        }
+      ],
+      "closingText": "Você já sabe separar o que roda no servidor do que roda no navegador. O próximo passo é aproveitar o servidor de verdade: buscar dados, decidir o que pode ficar em cache e atualizar a tela depois que o usuário envia um formulário.",
+      "ctaTitle": "🔀 Fronteira no lugar!",
+      "ctaText": "Servidor e navegador com papéis claros. Agora vamos aos dados e ao cache.",
+      "nextButtonText": "Ir para Módulo 2: Dados, Cache e Imagens"
+    },
+    {
+      "id": 2,
+      "icon": "bolt",
+      "title": "Dados, Cache e Imagens",
+      "shortDescription": "Busca no servidor, streaming, cache explícito, mutações e next/image",
+      "introductionText": "Com o modelo de Cache Components, que a partir do Next.js 16.4 já vem ativo em projetos novos e será o padrão no Next.js 17, nada é guardado em cache sem que você peça. Código dinâmico roda a cada requisição; o que pode ser reaproveitado recebe a diretiva 'use cache'. Este módulo mostra como buscar dados no servidor, exibir a página antes dos dados lentos, cachear com tempo de vida definido, atualizar o cache depois de uma mutação e servir imagens no tamanho certo.",
+      "sections": [
+        {
+          "title": "⚡ Dados rápidos e atualizados",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Ativar Cache Components",
+              "code": "cacheComponents: true",
+              "guidance": "Abra next.config.ts e confira se a opção cacheComponents está ligada; em projetos criados antes da 16.4, ligue-a você mesmo. A partir daí, qualquer leitura de dados que não esteja em cache precisa estar dentro de um Suspense, e o Next.js avisa no desenvolvimento quando isso não acontece.",
+              "tips": [
+                "O aviso não é burocracia: ele aponta exatamente o trecho que impediria o resto da página de ser pré-renderizado."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Streaming com Suspense",
+              "code": "<Suspense fallback={<Esqueleto />}>",
+              "guidance": "Na página de um encontro, separe a contagem de vagas restantes, que muda a cada inscrição, em um componente async próprio e envolva-o em Suspense. O título, a descrição e o local aparecem imediatamente; a contagem chega em seguida, na mesma resposta.",
+              "tips": [
+                "Desenhe o fallback com o mesmo tamanho do conteúdo final. Assim a página não pula quando os dados chegam."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Cache com 'use cache'",
+              "code": "'use cache'; cacheLife('hours'); cacheTag('encontros')",
+              "guidance": "Crie a função que lê a lista de encontros e comece o corpo dela com 'use cache'. Defina o tempo de vida com cacheLife e associe uma etiqueta com cacheTag, ambas importadas de next/cache. A chave do cache é gerada automaticamente a partir dos argumentos da função.",
+              "tips": [
+                "Pense em 'use cache' como um Cache-Control no nível do componente ou da função: você declara o que pode ser reaproveitado e por quanto tempo.",
+                "Não leia cookies() ou headers() dentro de uma função com 'use cache'. Dado do usuário em cache compartilhado é vazamento de informação."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Server Action e atualização do cache",
+              "code": "updateTag('encontros')",
+              "guidance": "Crie uma Server Action, em arquivo com 'use server', que recebe o formulário de inscrição, valida os campos e grava o participante no arquivo de dados fictícios. Depois da gravação, chame updateTag('encontros') para que quem se inscreveu veja a vaga descontada na hora. Ligue a ação ao formulário pela prop action.",
+              "tips": [
+                "updateTag só pode ser chamado em Server Actions e garante que o usuário leia o próprio dado recém-gravado. Para conteúdo que tolera atraso, revalidateTag(tag, 'max') atualiza em segundo plano.",
+                "Valide no servidor mesmo que o formulário já valide no navegador. Uma Server Action é um endpoint público e pode ser chamada sem passar pela sua tela."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Imagens com next/image",
+              "code": "<Image src={capa} alt=\"...\" sizes=\"(min-width: 768px) 50vw, 100vw\" />",
+              "guidance": "Troque as tags img das capas dos encontros pelo componente Image, de next/image. Informe largura e altura, ou use fill dentro de um contêiner posicionado, para reservar o espaço e evitar deslocamento de layout. Preencha sizes para que o navegador escolha a versão certa no srcset. Imagens de outros domínios precisam ser liberadas em images.remotePatterns.",
+              "tips": [
+                "Todas as imagens carregam sob demanda por padrão. Para a imagem principal acima da dobra, que costuma ser o LCP da página, peça carregamento antecipado com fetchPriority=\"high\".",
+                "A opção images.domains está obsoleta desde o Next.js 16. Use remotePatterns, que restringe protocolo, domínio e caminho."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que cache explícito é melhor",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Você lê o que está em cache",
+          "text": "Com 'use cache' a decisão aparece no código. Acaba a dúvida de versões anteriores, em que o framework guardava respostas sem que ninguém tivesse pedido."
+        },
+        {
+          "icon": "sync",
+          "title": "Atualização no momento certo",
+          "text": "Etiquetas ligam a gravação ao dado exibido. A Server Action invalida exatamente o que mudou, sem reconstruir o site inteiro."
+        },
+        {
+          "icon": "gauge",
+          "title": "Página que aparece antes",
+          "text": "Streaming e imagens com espaço reservado fazem o conteúdo útil chegar primeiro e não pular de lugar, o que pesa nas métricas de LCP e CLS."
+        }
+      ],
+      "closingText": "O site já busca dados no servidor, guarda em cache o que pode e se atualiza depois de cada inscrição. Falta a parte que o usuário vê primeiro: aparência, adaptação a telas diferentes e a publicação em um endereço real.",
+      "ctaTitle": "⚡ Dados sob controle!",
+      "ctaText": "Cache explícito, mutações e imagens otimizadas. Agora vamos dar cara ao site e colocá-lo no ar.",
+      "nextButtonText": "Ir para Módulo 3: Tailwind CSS e Deploy na Vercel"
+    },
+    {
+      "id": 3,
+      "icon": "globe",
+      "title": "Tailwind CSS e Deploy na Vercel",
+      "shortDescription": "Utilitários, responsivo, tema, fontes, modo escuro e publicação",
+      "introductionText": "O Tailwind CSS v4 é configurado no próprio CSS: um @import \"tailwindcss\" no arquivo global e um bloco @theme para os tokens do projeto. Não há mais arquivo de configuração em JavaScript obrigatório. Neste módulo você estiliza o site de agenda com classes utilitárias, adapta o layout a telas pequenas e grandes, define um tema próprio com fonte otimizada e modo escuro, e publica o resultado na Vercel.",
+      "sections": [
+        {
+          "title": "🎨 Estilo e publicação",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Pensar em utilitários",
+              "code": "className=\"rounded-xl border p-6 shadow-sm\"",
+              "guidance": "Estilize o cartão de encontro só com classes utilitárias: espaçamento, borda, raio, sombra e tipografia. Use hover: e focus-visible: para os estados do link. Quando o mesmo conjunto de classes se repetir, extraia um componente React em vez de criar uma classe CSS nova.",
+              "tips": [
+                "Confira se globals.css contém @import \"tailwindcss\" e se postcss.config.mjs usa o plugin @tailwindcss/postcss. É essa dupla que liga o Tailwind ao Next.js.",
+                "O componente é a unidade de reaproveitamento. Repetição de classes dentro de um único componente não é problema."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Layout responsivo do menor para o maior",
+              "code": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3",
+              "guidance": "Monte a grade de encontros começando pela tela de celular, sem prefixo. Acrescente md: e lg: para mudar o número de colunas a partir de cada largura. Teste redimensionando o navegador e no modo de dispositivo das ferramentas de desenvolvedor.",
+              "tips": [
+                "Prefixos de breakpoint valem daquela largura para cima: md: começa em 48rem e não significa \"só em tablet\". Escreva primeiro o estilo do celular e acrescente as mudanças."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Tema próprio e fonte com next/font",
+              "code": "@theme inline { --font-sans: var(--font-inter); }",
+              "guidance": "Carregue a fonte com next/font/google no layout raiz, definindo a opção variable para expor uma variável CSS, e aplique a classe da variável na tag html. No globals.css, crie um bloco @theme com a cor da marca em --color-marca-500 e aponte --font-sans para a variável da fonte. As classes bg-marca-500 e font-sans passam a existir automaticamente.",
+              "tips": [
+                "next/font baixa a fonte na construção e a serve do seu próprio domínio. O navegador do usuário não faz requisição ao Google, e o espaço do texto é reservado para evitar deslocamento.",
+                "Use @theme inline quando o valor do token aponta para outra variável, como a criada pelo next/font."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Modo escuro",
+              "code": "dark:bg-zinc-900 dark:text-zinc-100",
+              "guidance": "Acrescente variantes dark: às cores de fundo e texto do layout e dos cartões. Por padrão, a variante segue a preferência do sistema operacional, via prefers-color-scheme. Se quiser um botão para alternar o tema, redefina a variante com @custom-variant e controle uma classe no elemento html.",
+              "tips": [
+                "Teste o contraste nos dois temas. Cinza claro sobre branco que parecia elegante costuma reprovar na verificação de acessibilidade."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Publicar na Vercel",
+              "code": "git push origin main",
+              "guidance": "Suba o projeto para um repositório Git e importe-o no painel da Vercel. O framework é detectado sozinho e o primeiro deploy sai do branch principal. Cadastre as variáveis de ambiente no painel, abra um pull request com uma mudança pequena e confira o deploy de pré-visualização com endereço próprio.",
+              "tips": [
+                "Rode npm run build no seu computador antes de enviar. Erros de tipo e de pré-renderização aparecem ali, e corrigir local é mais rápido que ler log de deploy.",
+                "Variáveis com prefixo NEXT_PUBLIC_ vão para o JavaScript do navegador. Chave secreta nunca recebe esse prefixo."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que estilo e publicação fecham o ciclo",
+      "highlights": [
+        {
+          "icon": "laptop",
+          "title": "Estilo junto do componente",
+          "text": "Com utilitários, abrir o componente é ver a aparência dele. Apagar o componente apaga o estilo, sem CSS órfão acumulando no projeto."
+        },
+        {
+          "icon": "tools",
+          "title": "Tema em variáveis CSS",
+          "text": "Cores, fontes e breakpoints definidos em @theme viram classes e também variáveis CSS. Mudar a marca é mudar um valor, não caçar ocorrências."
+        },
+        {
+          "icon": "globe",
+          "title": "Cada mudança com endereço próprio",
+          "text": "O deploy de pré-visualização permite revisar a mudança funcionando antes de ela chegar à produção. A revisão deixa de ser só leitura de código."
+        }
+      ],
+      "closingText": "Você saiu de componentes React soltos para um site publicado, com rotas por pastas, fronteira clara entre servidor e navegador, cache declarado no código, imagens e fontes otimizadas e estilo consistente em qualquer tela. É o conjunto que se espera de quem entra em uma equipe que trabalha com Next.js.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Seu site está no ar. O próximo passo natural é lidar com estado compartilhado em aplicações maiores, assunto de \"Estado Global com Redux e Context API em Aplicações Reais\".",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "No App Router, o que torna um segmento de URL acessível como página?",
+      "explanation": "Uma pasta dentro de app define o segmento da URL, mas ele só vira página acessível quando contém um arquivo page. O layout envolve páginas, mas sozinho não cria rota acessível. Não existe arquivo central de rotas no App Router, e o nome do componente exportado não importa.",
+      "options": [
+        {
+          "text": "A presença de um arquivo page.tsx dentro da pasta correspondente",
+          "isCorrect": true
+        },
+        {
+          "text": "O registro da rota em um arquivo routes.ts na raiz",
+          "isCorrect": false
+        },
+        {
+          "text": "A presença de um arquivo layout.tsx sozinho na pasta",
+          "isCorrect": false
+        },
+        {
+          "text": "O nome do componente exportado, que deve ser igual ao da URL",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "No Next.js 16, como se lê o slug em app/encontros/[slug]/page.tsx?",
+      "explanation": "Desde o Next.js 16, params é uma Promise e o acesso síncrono foi removido; é preciso usar await params. useRouter é hook de Client Component e não fornece params dessa forma, e não há variável global nem leitura de process.env para isso.",
+      "options": [
+        {
+          "text": "Com const { slug } = await params",
+          "isCorrect": true
+        },
+        {
+          "text": "Lendo params.slug diretamente, sem await",
+          "isCorrect": false
+        },
+        {
+          "text": "Com useRouter().slug dentro do Server Component",
+          "isCorrect": false
+        },
+        {
+          "text": "Lendo process.env.SLUG",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Para que serve o arquivo loading.tsx dentro de uma pasta de rota?",
+      "explanation": "O loading.tsx é usado automaticamente como fallback de um Suspense em volta da página daquele segmento, aparecendo enquanto o conteúdo carrega. Erros são tratados por error.tsx, páginas inexistentes por not-found.tsx, e ele não tem relação com pré-carregamento de imagens.",
+      "options": [
+        {
+          "text": "Vira o fallback de um Suspense em volta da página do segmento",
+          "isCorrect": true
+        },
+        {
+          "text": "Captura erros lançados pela página",
+          "isCorrect": false
+        },
+        {
+          "text": "Responde quando o usuário acessa uma URL inexistente",
+          "isCorrect": false
+        },
+        {
+          "text": "Pré-carrega as imagens da rota antes da navegação",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Sem nenhuma diretiva, como é tratado um componente dentro da pasta app?",
+      "explanation": "No App Router, componentes são Server Components por padrão. Só passam a ser Client Components quando o arquivo, ou um arquivo que os importa acima na fronteira, começa com 'use client'. O framework não decide pelo uso de hooks: usar useState sem a diretiva gera erro.",
+      "options": [
+        {
+          "text": "Como Server Component",
+          "isCorrect": true
+        },
+        {
+          "text": "Como Client Component",
+          "isCorrect": false
+        },
+        {
+          "text": "O framework decide sozinho conforme os hooks usados",
+          "isCorrect": false
+        },
+        {
+          "text": "Como componente estático sem acesso a dados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Uma página de encontro tem apenas um botão de favoritar com useState. Qual é a melhor abordagem?",
+      "explanation": "Colocar o botão em arquivo próprio com 'use client' e mantê-lo dentro de uma página que continua sendo Server Component limita o JavaScript enviado ao navegador ao botão. Marcar a página inteira como cliente leva todo o código dela para o navegador; Server Components não podem usar useState; e o estado não precisa ir para o layout.",
+      "options": [
+        {
+          "text": "Extrair o botão para um arquivo com 'use client' e usá-lo na página de servidor",
+          "isCorrect": true
+        },
+        {
+          "text": "Colocar 'use client' no topo da página inteira",
+          "isCorrect": false
+        },
+        {
+          "text": "Usar useState direto no Server Component",
+          "isCorrect": false
+        },
+        {
+          "text": "Mover o estado para o layout raiz",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Como um Client Component pode exibir conteúdo de um Server Component?",
+      "explanation": "Um Client Component não pode importar um Server Component, mas pode recebê-lo já renderizado por children ou outra prop. É isso que permite um componente de abas interativo exibir conteúdo renderizado no servidor. Importar diretamente faria o código ir para o cliente, e não existe a diretiva 'use both'.",
+      "options": [
+        {
+          "text": "Recebendo-o pronto por children ou outra prop",
+          "isCorrect": true
+        },
+        {
+          "text": "Importando o Server Component diretamente no arquivo do cliente",
+          "isCorrect": false
+        },
+        {
+          "text": "Usando a diretiva 'use both' nos dois arquivos",
+          "isCorrect": false
+        },
+        {
+          "text": "Não é possível combinar os dois tipos na mesma página",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "No modelo de Cache Components, o que acontece com uma leitura de dados sem 'use cache'?",
+      "explanation": "Com Cache Components o cache é opt-in: código dinâmico executa a cada requisição, e o que pode ser reaproveitado precisa ser marcado com 'use cache'. Isso substitui o cache implícito das versões anteriores do App Router. Não há cache automático de 60 segundos nem bloqueio da leitura.",
+      "options": [
+        {
+          "text": "Executa a cada requisição, porque o cache só existe quando é pedido",
+          "isCorrect": true
+        },
+        {
+          "text": "É guardada em cache automaticamente para sempre",
+          "isCorrect": false
+        },
+        {
+          "text": "É guardada em cache automaticamente por 60 segundos",
+          "isCorrect": false
+        },
+        {
+          "text": "É bloqueada até que a função receba 'use cache'",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Depois de gravar uma inscrição em uma Server Action, qual chamada garante que o usuário veja o próprio dado atualizado na hora?",
+      "explanation": "updateTag, exclusivo de Server Actions, expira a etiqueta e lê o dado novo na mesma requisição, garantindo que quem gravou veja a mudança. revalidateTag com perfil faz revalidação em segundo plano, adequada a conteúdo que tolera atraso. router.push só navega, e recarregar a página não invalida cache no servidor.",
+      "options": [
+        {
+          "text": "updateTag com a etiqueta do dado alterado",
+          "isCorrect": true
+        },
+        {
+          "text": "revalidateTag com o perfil 'max'",
+          "isCorrect": false
+        },
+        {
+          "text": "router.push para a mesma página",
+          "isCorrect": false
+        },
+        {
+          "text": "window.location.reload() no navegador",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Por que informar width e height, ou usar fill, no componente Image do Next.js?",
+      "explanation": "As dimensões permitem reservar o espaço da imagem antes de ela carregar, evitando que o conteúdo pule de lugar (deslocamento de layout, medido pelo CLS). Elas não definem a qualidade da compressão, não desligam o carregamento sob demanda e não são exigência de SEO.",
+      "options": [
+        {
+          "text": "Para reservar o espaço da imagem e evitar deslocamento de layout",
+          "isCorrect": true
+        },
+        {
+          "text": "Para definir a qualidade da compressão da imagem",
+          "isCorrect": false
+        },
+        {
+          "text": "Para desligar o carregamento sob demanda",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque os buscadores ignoram imagens sem dimensões",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "No Tailwind CSS, o que significa a classe md:grid-cols-3?",
+      "explanation": "Os prefixos de breakpoint do Tailwind valem daquela largura para cima: md: aplica a partir de 48rem no tema padrão. Por isso se escreve primeiro o estilo do celular, sem prefixo, e se acrescentam as mudanças para telas maiores. Não é uma regra exclusiva de tablet nem de telas menores.",
+      "options": [
+        {
+          "text": "Três colunas a partir da largura do breakpoint md para cima",
+          "isCorrect": true
+        },
+        {
+          "text": "Três colunas apenas em tablets",
+          "isCorrect": false
+        },
+        {
+          "text": "Três colunas em telas menores que o breakpoint md",
+          "isCorrect": false
+        },
+        {
+          "text": "Três colunas de tamanho médio em qualquer tela",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "No Tailwind CSS v4, o que acontece ao declarar --color-marca-500 dentro de @theme?",
+      "explanation": "Variáveis em @theme geram classes utilitárias conforme o namespace: --color-* cria bg-marca-500, text-marca-500 e similares, e o valor também fica disponível como variável CSS. Não é necessário arquivo de configuração em JavaScript, e a variável não fica restrita ao modo escuro.",
+      "options": [
+        {
+          "text": "Passam a existir utilitários como bg-marca-500 e a variável CSS correspondente",
+          "isCorrect": true
+        },
+        {
+          "text": "Nada, até a cor ser registrada também em tailwind.config.js",
+          "isCorrect": false
+        },
+        {
+          "text": "A cor substitui todas as cores padrão do Tailwind",
+          "isCorrect": false
+        },
+        {
+          "text": "A cor só fica disponível dentro da variante dark:",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Uma chave secreta de API foi cadastrada como NEXT_PUBLIC_CHAVE_PAGAMENTO na Vercel. Qual é o problema?",
+      "explanation": "Variáveis com prefixo NEXT_PUBLIC_ são embutidas no JavaScript enviado ao navegador, então qualquer visitante pode ler a chave. Segredos devem ficar sem esse prefixo e ser usados só em código de servidor. O prefixo não impede o deploy, não restringe a variável ao ambiente de pré-visualização e não criptografa o valor.",
+      "options": [
+        {
+          "text": "O prefixo expõe o valor no JavaScript que vai para o navegador",
+          "isCorrect": true
+        },
+        {
+          "text": "O prefixo impede o deploy de produção",
+          "isCorrect": false
+        },
+        {
+          "text": "O prefixo restringe a variável aos deploys de pré-visualização",
+          "isCorrect": false
+        },
+        {
+          "text": "Nenhum: o prefixo criptografa o valor automaticamente",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "O site de agenda de uma comunidade fictícia de desenvolvedores, publicado na Vercel: lista de encontros com cache declarado no código, página dinâmica para cada encontro com contagem de vagas em streaming, formulário de inscrição com Server Action que atualiza a tela na hora, imagens e fontes otimizadas, layout responsivo e modo escuro com Tailwind CSS.",
+    "highlights": [
+      "Site Next.js com App Router publicado na Vercel",
+      "Formulário de inscrição com Server Action e cache atualizado",
+      "Tema próprio com Tailwind CSS, fonte otimizada e modo escuro"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "Na pesquisa de desenvolvedores do Stack Overflow de 2025, o uso de Next.js subiu de 17% para 20% dos respondentes, enquanto o React foi de 39% para 44%. Next.js é o framework que mais cresce sobre a base React, e o modelo de projeto padrão do create-next-app já vem com App Router, TypeScript e Tailwind CSS.",
+      "O framework também mudou bastante entre 2024 e 2026: Turbopack virou o empacotador padrão, o cache passou a ser explícito com 'use cache' e o modelo de Cache Components será o padrão no Next.js 17. Muito tutorial disponível ainda ensina o modelo antigo. Aprender pela versão atual evita desaprender depois e prepara para ler o código que as equipes estão escrevendo hoje."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Sites de conteúdo e marketing",
+        "description": "Páginas que precisam carregar rápido e ser bem indexadas, com partes estáticas e dinâmicas."
+      },
+      {
+        "label": "Lojas e catálogos",
+        "description": "Listas de produtos em cache, páginas dinâmicas por item e imagens otimizadas."
+      },
+      {
+        "label": "Produtos com área logada",
+        "description": "Painéis que misturam dados do usuário, renderizados a cada requisição, com partes reaproveitadas em cache."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem concluiu o programa de React",
+        "description": "Já domina componentes, props e estado e quer construir um site completo."
+      },
+      {
+        "label": "Quem usou o Pages Router ou tutoriais antigos",
+        "description": "Precisa atualizar o modelo mental para App Router, Server Components e cache explícito."
+      },
+      {
+        "label": "Quem escreve CSS tradicional",
+        "description": "Quer entender o Tailwind CSS v4 e a configuração direto no CSS."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Next.js é usado de sites institucionais e blogs a lojas virtuais e produtos com área logada, e roda tanto na Vercel quanto em outras plataformas por meio de adaptadores. Tailwind CSS se tornou escolha comum em projetos React novos e já vem configurado no modelo oficial do create-next-app. A combinação é frequente em vagas de frontend e em projetos de agências e startups.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Next.js Blog — Next.js 16: Cache Components, proxy.ts, Turbopack padrão, novas APIs de cache e mudanças de requisitos",
+      "url": "https://nextjs.org/blog/next-16"
+    },
+    {
+      "label": "Next.js Blog — Next.js 16.4: Cache Components recomendado e ativo por padrão em novos projetos",
+      "url": "https://nextjs.org/blog/next-16-4"
+    },
+    {
+      "label": "Tailwind CSS — Install Tailwind CSS with Next.js",
+      "url": "https://tailwindcss.com/docs/guides/nextjs"
+    },
+    {
+      "label": "Tailwind CSS — Theme variables (@theme, namespaces e breakpoints)",
+      "url": "https://tailwindcss.com/docs/configuration"
+    },
+    {
+      "label": "Pagepro — Stack Overflow 2025: React and Next.js grow in use",
+      "url": "https://pagepro.co/blog/react-tldr/stack-overflow-2025-react-and-next-js-grow-in-use-drop-in-admiration/"
+    }
+  ]
 }

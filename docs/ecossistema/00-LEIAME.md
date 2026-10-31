@@ -23,6 +23,9 @@ Gerado em 27/10/2026. Os documentos 01 a 07 são análise e proposta. O 08 regis
 | `13-revisao-conteudo-existente.md` | Revisão do conteúdo que já existia nos 4 sites, com plano e decisões (detalhe em `revisao/`) | Concluído |
 | `14-conteudo-estatico.md` | Inventário do conteúdo estático dos 4 sites e decisões (detalhe em `inventario-estatico/`) | Concluído |
 | `15-relatorio-conteudo-estatico.md` | Conteúdo estático levado à API, cópias geradas, verificação e decisões | Concluído |
+| `../processo/README.md` | **Processo de levas do hd (vigente a partir de 30/10/2026)** | Em vigor |
+| `17-relatorio-2026-10-29.md` | Páginas de detalhe: cobertura, divergências dos cards e pendências da rodada | Em andamento |
+| `16-regras-editoriais.md` | Regras editoriais por site, troca de nomes, método de pesquisa, relacionados, tempo de leitura, imagens externas | Em vigor |
 | `09-relatorio-2026-10-28.md` | Primeiro lote: 3 programas, 13 artigos, tools, career, Startup Way, decisões a revisar | Concluído |
 
 ## Fluxo

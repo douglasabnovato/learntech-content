@@ -212,7 +212,7 @@
       {
         "cargo": "Analista Financeiro",
         "empresa": "Empresa Exemplo Distribuidora",
-        "descricaoEmpresa": "Distribuidora fictícia de produtos de limpeza, usada apenas como exemplo.",
+        "descricaoEmpresa": "Distribuidora regional de produtos de limpeza, com cerca de 300 funcionários e atuação em três estados: porte médio, área financeira estruturada e volume de dados que justifica análise. Empresa fictícia, usada como exemplo.",
         "periodo": "Jul/2022 – atual",
         "local": "Belo Horizonte – MG",
         "modelo": "Híbrido",
@@ -410,7 +410,7 @@
       {
         "cargo": "Desenvolvedora Front-end Júnior",
         "empresa": "Empresa Exemplo Software",
-        "descricaoEmpresa": "Empresa fictícia de software para gestão de clínicas, usada apenas como exemplo.",
+        "descricaoEmpresa": "Empresa de software (SaaS) para gestão de clínicas, usada por centenas de clínicas no país, com times de produto, revisão de código e entrega contínua. Empresa fictícia, usada como exemplo.",
         "periodo": "Mar/2025 – atual",
         "local": "Juiz de Fora – MG",
         "modelo": "Híbrido",
@@ -431,6 +431,7 @@
       {
         "cargo": "Estagiária de Desenvolvimento Web",
         "empresa": "Agência Exemplo Digital",
+        "descricaoEmpresa": "Agência digital de médio porte que cria sites e campanhas para marcas do varejo, com vários projetos em paralelo e prazos curtos. Empresa fictícia, usada como exemplo.",
         "periodo": "Jan/2024 – Fev/2025",
         "local": "Remoto",
         "modelo": "Remoto",
@@ -535,5 +536,307 @@
       }
     ],
     "atualizadoEm": "2026-10-28"
+  },
+  {
+    "slug": "analista-crm-marketing-tech-pleno",
+    "nivel": "pleno",
+    "paraQuem": "Para quem já trabalha (ou quer trabalhar) como Analista de CRM ou Desenvolvedor de Marketing Tech e precisa mostrar, num só documento, as duas metades do cargo: a técnica (Salesforce Marketing Cloud, SQL, AMPscript, HTML, WhatsApp) e a de negócio (réguas, metas, franqueados, compliance). Mostra também como uma trajetória com suporte, front-end e organização de eventos vira vantagem, e não ruído, num perfil pleno.",
+    "ficticio": true,
+    "nome": "Rafael Modelo Andrade",
+    "titulo": "Analista de CRM Pleno | Salesforce Marketing Cloud, Jornadas, WhatsApp e Landing Pages",
+    "localizacao": "Juiz de Fora – MG",
+    "contato": {
+      "telefone": "(00) 00000-0000",
+      "email": "rafael.modelo@example.com",
+      "linkedin": "https://www.example.com/linkedin/rafael-modelo",
+      "github": "https://www.example.com/github/rafael-modelo",
+      "portfolio": "https://www.example.com/portfolio/rafael-modelo"
+    },
+    "objetivo": "Atuar como Analista de CRM ou Desenvolvedor de Marketing Tech pleno, construindo jornadas, réguas de relacionamento e landing pages integradas ao CRM em empresas de varejo ou serviços com operação multicanal.",
+    "resumo": "Profissional de marketing tech com cerca de três anos em growth e CRM numa rede nacional de franquias de materiais de acabamento e na holding de varejo formada a partir dela. Construo jornadas transacionais e réguas de relacionamento no Salesforce Marketing Cloud (Journey Builder, Automation Studio, CloudPages, AMPscript e SQL), opero WhatsApp pela API oficial e publico landing pages integradas ao CRM. Antes, fui desenvolvedor front-end com React e passei anos em suporte técnico e supervisão de contact center, de onde trago atendimento a públicos diversos, documentação e organização de filas. Trabalho em ciclos semanais com planning, daily e review, e cuido de LGPD e testes antes de qualquer disparo.",
+    "competencias": [
+      {
+        "categoria": "Plataformas de CRM e automação",
+        "itens": [
+          "Salesforce Marketing Cloud: Journey Builder, Automation Studio, Contact Builder e CloudPages (intermediário a avançado)",
+          "Constant Contact (intermediário)",
+          "Zenvia: WhatsApp e SMS (intermediário)",
+          "WhatsApp Business Platform: templates, opt-in e números oficiais (intermediário)"
+        ]
+      },
+      {
+        "categoria": "Código e dados",
+        "itens": [
+          "AMPscript (intermediário)",
+          "Server-Side JavaScript no Marketing Cloud (básico)",
+          "SQL para segmentação em data extensions (intermediário)",
+          "HTML e CSS para e-mail e landing pages (avançado)",
+          "JavaScript e React (intermediário)"
+        ]
+      },
+      {
+        "categoria": "E-commerce e análise",
+        "itens": [
+          "Wake Commerce: catálogo, categorias e vitrine (intermediário)",
+          "Looker Studio (intermediário)",
+          "Excel: bases, procv/xlookup, tabelas dinâmicas (avançado)"
+        ]
+      },
+      {
+        "categoria": "Gestão e negócio",
+        "itens": [
+          "Réguas de relacionamento e jornadas transacionais",
+          "OKR e relatórios para diretoria",
+          "Rituais ágeis em ciclos semanais",
+          "LGPD aplicada a comunicações de marketing"
+        ]
+      },
+      {
+        "categoria": "Competências comportamentais",
+        "itens": [
+          "Comunicação com franqueados, vendedores e diretoria",
+          "Organização de muitas demandas em paralelo",
+          "Documentação de processos",
+          "Facilitação de eventos e grupos"
+        ]
+      }
+    ],
+    "experiencias": [
+      {
+        "cargo": "Analista de Tech Growth CRM (Salesforce Developer)",
+        "empresa": "Holding Exemplo do Varejo de Construção",
+        "descricaoEmpresa": "Holding do varejo de construção formada a partir de uma rede nacional de franquias, com mais de uma marca e um time de tecnologia e growth compartilhado. Empresa fictícia, usada como exemplo.",
+        "periodo": "Mar/2025 – atual",
+        "local": "Juiz de Fora – MG",
+        "modelo": "Híbrido",
+        "atividades": [
+          "Construí jornadas transacionais de pedido em e-mail e WhatsApp (pedido aprovado, nota fiscal, expedição, retirada e entrega), com um template por etapa, roteiro de testes e acompanhamento dos primeiros dias antes da entrega final.",
+          "Migrei landing pages de uma plataforma de automação anterior para o ecossistema Salesforce, mantendo formulários e campos por meio de um dicionário de variáveis e sem perda de captação durante a troca.",
+          "Criei alertas automáticos por WhatsApp para vendedores das lojas sobre leads novos e orçamentos sem acompanhamento, alinhando copy, base e regras com as áreas comercial e de operações.",
+          "Organizei unidades de negócio e números oficiais de WhatsApp por marca, junto com o gerente de conta da Meta e a agência parceira, para separar envios, templates e permissões.",
+          "Mantive o controle de usuários e perfis do Marketing Cloud e implantei lista de bloqueio solicitada pelo jurídico, revisando com compliance as bases legais de cada comunicação.",
+          "Montei painéis no Looker Studio e relatórios semanais por projeto, usados nas reuniões de planning e review do time."
+        ],
+        "tecnologias": [
+          "Salesforce Marketing Cloud",
+          "Journey Builder",
+          "Automation Studio",
+          "CloudPages",
+          "AMPscript",
+          "SSJS",
+          "SQL",
+          "WhatsApp Business Platform",
+          "Looker Studio",
+          "Excel"
+        ]
+      },
+      {
+        "cargo": "Growth Hacker",
+        "empresa": "Rede Exemplo de Acabamentos",
+        "descricaoEmpresa": "Rede nacional de franquias de materiais de acabamento para construção e reforma, com lojas-showroom, e-commerce e programa de relacionamento com arquitetos. Empresa fictícia, usada como exemplo.",
+        "periodo": "Jun/2023 – Fev/2025",
+        "local": "Juiz de Fora – MG",
+        "modelo": "Híbrido",
+        "atividades": [
+          "Planejei e executei o roadmap semanal de campanhas de CRM, com disparos recorrentes para franqueados (novos leads, orçamentos a vencer), clientes finais (novos orçamentos, recuperação, boas-vindas) e pós-venda.",
+          "Transformei encartes e tabloides regionais em campanhas segmentadas por estado, com versões de e-mail e WhatsApp para cada praça.",
+          "Recategorizei o catálogo do e-commerce na Wake Commerce e reorganizei o menu de categorias com imagens, facilitando a navegação nas páginas de vitrine.",
+          "Mantive a base padrão de contatos das lojas a partir de chamados de franqueados (aberturas, repasses, encerramentos e troca de telefones), reduzindo leads enviados ao contato errado.",
+          "Apoiei o programa de relacionamento com arquitetos e especificadores com réguas de boas-vindas, aniversário e campanhas, além da comunicação de eventos presenciais.",
+          "Preparei relatórios de OKR para a diretoria ligando as ações de CRM a orçamentos gerados e conversão, e não só ao volume de envios."
+        ],
+        "tecnologias": [
+          "Constant Contact",
+          "Zenvia",
+          "WhatsApp",
+          "Wake Commerce",
+          "HTML",
+          "CSS",
+          "Excel"
+        ]
+      },
+      {
+        "cargo": "Desenvolvedor Front-end",
+        "empresa": "Startup Exemplo de Software",
+        "descricaoEmpresa": "Startup de software para pequenos negócios. Empresa fictícia, usada como exemplo.",
+        "periodo": "Mar/2022 – Mai/2023",
+        "local": "Remoto",
+        "modelo": "Remoto",
+        "atividades": [
+          "Desenvolvi telas e componentes em React a partir de layouts no Figma, com atenção a responsividade e acessibilidade.",
+          "Corrigi bugs reportados pelo suporte e documentei as soluções para o time, diminuindo chamados repetidos."
+        ],
+        "tecnologias": [
+          "React",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "Git"
+        ]
+      },
+      {
+        "cargo": "Analista de Suporte e Desenvolvedor Front-end",
+        "empresa": "Empresa Exemplo de Telefonia em Nuvem",
+        "descricaoEmpresa": "Empresa de telefonia VoIP e comunicação em nuvem. Empresa fictícia, usada como exemplo.",
+        "periodo": "Jun/2020 – Fev/2022",
+        "local": "Juiz de Fora – MG",
+        "modelo": "Remoto",
+        "atividades": [
+          "Atendi clientes em configurações de telefonia e integrações, escalando para o desenvolvimento casos com causa técnica.",
+          "Migrei do suporte para o front-end, construindo páginas em React para o painel do cliente."
+        ],
+        "tecnologias": [
+          "React",
+          "JavaScript",
+          "HTML",
+          "CSS"
+        ]
+      }
+    ],
+    "experienciaAnterior": [
+      {
+        "empresa": "Contact Center Exemplo",
+        "cargo": "Suporte técnico e Supervisor de Operações",
+        "periodo": "2015 – 2019"
+      },
+      {
+        "empresa": "Órgão Público Exemplo",
+        "cargo": "Estagiário de TI e Planejamento",
+        "periodo": "2011 – 2013"
+      }
+    ],
+    "projetos": [
+      {
+        "nome": "Jornada transacional de pedido com dados fictícios",
+        "descricao": "Jornada de exemplo com cinco etapas de pedido em e-mail e WhatsApp, com templates em HTML e AMPscript, data extension de exemplo, consulta SQL de entrada e checklist de testes. Tudo documentado no repositório.",
+        "tecnologias": [
+          "Salesforce Marketing Cloud (Trailhead Playground)",
+          "AMPscript",
+          "SQL",
+          "HTML"
+        ]
+      },
+      {
+        "nome": "Landing page com central de preferências",
+        "descricao": "Página de captação com formulário, consentimento LGPD e central de preferências de comunicação, publicada como exemplo para uma loja fictícia de materiais de construção.",
+        "tecnologias": [
+          "CloudPages",
+          "AMPscript",
+          "HTML",
+          "CSS"
+        ]
+      },
+      {
+        "nome": "Painel semanal de comunicações",
+        "descricao": "Painel no Looker Studio com números de exemplo de envios, aberturas, cliques e conversões por régua e por canal, com uma página de leitura para a diretoria.",
+        "tecnologias": [
+          "Looker Studio",
+          "Google Planilhas"
+        ]
+      },
+      {
+        "nome": "Startup de logística nascida em hackathon",
+        "descricao": "Cofundação de uma startup de entregas criada num hackathon: validação do problema com comerciantes, protótipo de site e pitch para bancas de avaliação.",
+        "tecnologias": [
+          "React",
+          "Figma"
+        ]
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Tecnologia em Análise e Desenvolvimento de Sistemas",
+        "instituicao": "Faculdade Exemplo de Tecnologia",
+        "periodo": "2023 – 2025",
+        "status": "Concluído"
+      },
+      {
+        "curso": "Técnico em Informática",
+        "instituicao": "Instituto Federal Exemplo",
+        "periodo": "2016 – 2017",
+        "status": "Concluído"
+      },
+      {
+        "curso": "Bacharelado em Ciência da Computação",
+        "instituicao": "Universidade Exemplo",
+        "periodo": "2008 – 2015",
+        "status": "Não concluído (quatro de oito semestres)"
+      }
+    ],
+    "certificados": [
+      "Salesforce Certified Marketing Cloud Engagement Specialist – exemplo de credencial a buscar; liste só se tiver",
+      "Trilha Code with AMPscript (Trailhead) – 2025",
+      "Jornadas no Journey Builder (Trailhead) – 2025",
+      "LGPD para Marketing (12 h) – Escola Exemplo Online, 2025"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário — leitura de documentação técnica"
+      },
+      {
+        "idioma": "Espanhol",
+        "nivel": "Básico"
+      }
+    ],
+    "comunidade": [
+      "Co-organização de um evento regional de DevOps (2025 – 2026).",
+      "Organização de uma conferência regional de desenvolvimento de software (2023 – 2025).",
+      "Coordenação voluntária de um projeto de educação em tecnologia (2025 – 2026).",
+      "Participação em hackathon de inovação social e em programa de aceleração de startups (2023)."
+    ],
+    "dicas": [
+      {
+        "secao": "Título",
+        "texto": "Coloque o cargo e as três ou quatro palavras que a triagem procura (Salesforce Marketing Cloud, jornadas, WhatsApp, landing pages). Vagas de CRM usam nomes diferentes para o mesmo trabalho: Analista de CRM, Especialista em Automação, Marketing Ops, Desenvolvedor de Marketing Cloud."
+      },
+      {
+        "secao": "Resumo profissional",
+        "texto": "Mostre as duas metades do cargo: o que você constrói na plataforma e para que serve no negócio. Uma trajetória longa fora da área (suporte, eventos) cabe em uma frase, dizendo o que ela trouxe."
+      },
+      {
+        "secao": "Competências",
+        "texto": "Separe plataforma, código e negócio, e indique o nível. Em Marketing Cloud, cite os módulos que você usou de verdade: 'Salesforce' sozinho não diz nada, porque o ecossistema tem dezenas de produtos."
+      },
+      {
+        "secao": "Experiência profissional",
+        "texto": "Descreva a empresa pelo porte e pelo modelo (rede de franquias, holding, e-commerce) para que quem lê entenda a complexidade. Não exponha dados internos, nomes de campanhas, clientes ou números confidenciais do empregador."
+      },
+      {
+        "secao": "Atividades",
+        "texto": "Comece com verbo de ação e termine com o efeito: 'construí a jornada X, com testes e acompanhamento, que passou a avisar o cliente em cada etapa do pedido'. Use números apenas quando forem seus e puderem ser divulgados; um resultado qualitativo bem descrito vale mais que um número inventado."
+      },
+      {
+        "secao": "Projetos",
+        "texto": "Em CRM o código costuma ficar preso na plataforma da empresa. Recrie uma jornada, uma landing page e um painel com dados fictícios (o Trailhead oferece ambientes de prática) e publique a documentação no portfólio."
+      },
+      {
+        "secao": "Certificados",
+        "texto": "A credencial de Marketing Cloud Engagement Specialist é um diferencial reconhecido por recrutadores; badges e trilhas do Trailhead mostram estudo contínuo. Nunca liste uma certificação que você ainda não tem."
+      },
+      {
+        "secao": "Comunidade",
+        "texto": "Organizar eventos treina exatamente o que o CRM exige: convite, inscrição, comunicação antes e depois, prazos e muita gente envolvida. Diga o seu papel e o período."
+      }
+    ],
+    "fontes": [
+      {
+        "label": "MIT Career Advising & Professional Development: Career toolkit: Crafting an effective resume",
+        "url": "https://capd.mit.edu/resources/career-toolkit-crafting-an-effective-resume/"
+      },
+      {
+        "label": "UNC Computer Science: Writing a Technical Resume",
+        "url": "https://cs.unc.edu/student-life/career/technical-resumes/"
+      },
+      {
+        "label": "Trailhead: credencial Marketing Cloud Engagement Specialist",
+        "url": "https://trailhead.salesforce.com/es-MX/credentials/marketingcloudemailspecialist"
+      },
+      {
+        "label": "Prefeitura de São Paulo (Secretaria de Desenvolvimento Econômico e Trabalho): Como preparar um currículo",
+        "url": "https://prefeitura.sp.gov.br/web/desenvolvimento/w/dicas/preparar_um_curriculo/619"
+      }
+    ],
+    "atualizadoEm": "2026-10-31"
   }
 ]

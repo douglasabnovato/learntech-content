@@ -3,8 +3,829 @@
   "image": "https://cdn.pixabay.com/photo/2018/03/10/12/00/teamwork-3213924_1280.jpg",
   "category": "UX/UI",
   "categoryFilter": "ux-ui",
-  "title": "Figma para Iniciantes: Do Protótipo ao Design System",
-  "lessons": "30+ Lições",
-  "duration": "20hr 00min",
-  "access": "Acesso Livre"
+  "title": "Figma para Iniciantes: do Layout ao Mini Design System",
+  "lessons": "17 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Iniciante",
+  "description": "O Figma do zero até um arquivo que outra pessoa consegue usar: frames e layout, auto layout, componentes com variantes, estilos e variáveis, um protótipo navegável e a entrega para desenvolvimento. Ao final, as peças se juntam em um mini design system organizado.",
+  "letslearn": [
+    "Montar telas com frames, constraints e grids de layout em vez de formas soltas",
+    "Usar auto layout para criar elementos que se ajustam ao conteúdo",
+    "Criar componentes com variantes e propriedades, e entender a relação entre principal e instância",
+    "Organizar cores, tipografia e espaçamentos com estilos e variáveis",
+    "Ligar telas em um protótipo navegável e preparar o arquivo para o desenvolvimento no Dev Mode"
+  ],
+  "curriculum": "Da tela solta ao sistema reutilizável",
+  "about": "O programa usa um único projeto do começo ao fim: o aplicativo de reserva de quadras esportivas Quadra Já, de um clube de bairro fictício. Cada módulo acrescenta uma camada ao mesmo arquivo — primeiro as telas, depois as peças reutilizáveis, depois os valores compartilhados e a navegação, e por fim a organização que permite entregar o trabalho. Todo recurso aparece junto com o problema que ele resolve. Os fundamentos de UX e interface são assunto do programa Aprenda UX/UI para criar interfaces modernas, criativas e funcionais; a escolha de cores e fontes em profundidade fica para Psicologia das Cores e Tipografia aplicada ao Produto Digital. Aqui o foco é a ferramenta.",
+  "materials": [
+    "Arquivo inicial do Quadra Já com o rascunho das telas",
+    "Tabela de atalhos de teclado usados no programa",
+    "Checklist de revisão de componente antes de publicar",
+    "Modelo de página de documentação para o mini design system"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Frames, Camadas e Layout",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Auto Layout e Componentes",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Estilos, Variáveis e Protótipo",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Dev Mode e o Mini Design System",
+      "lessonsCount": 3,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "UX/UI",
+    "mainTitle": "Pare de desenhar retângulos soltos: construa telas que se ajustam, peças que se reaproveitam e um arquivo que o time inteiro entende.",
+    "introductionParagraphs": [
+      {
+        "title": "O Figma não é um programa de desenho",
+        "text": "Quem chega de ferramentas de ilustração costuma posicionar cada elemento na mão, pixel a pixel. Funciona até o primeiro texto mudar de tamanho. O **Figma** foi feito para outra lógica: elementos que têm regras de layout, peças que se repetem a partir de uma origem e valores — cores, tamanhos, espaços — que vivem em um lugar só. Aprender o Figma é aprender essas regras, não os botões."
+      },
+      {
+        "title": "Um projeto, quatro camadas",
+        "text": "Você trabalha no mesmo arquivo do início ao fim, o aplicativo **Quadra Já**. Primeiro monta as telas com frames e grids; depois transforma o que se repete em componentes com auto layout; em seguida centraliza cores e textos em estilos e variáveis e liga as telas em um protótipo; por último organiza tudo para a entrega ao desenvolvimento. Cada camada depende da anterior, e é por isso que a ordem importa."
+      },
+      {
+        "title": "O que funciona no plano gratuito",
+        "text": "Todo o conteúdo dos módulos 0 a 2 roda no plano **Starter**, que é gratuito e permite até 3 arquivos de design em uma equipe. Três recursos exigem plano pago e estão sinalizados nos passos: **modos de variáveis** (como tema claro e escuro), **bibliotecas compartilhadas** entre arquivos e o **Dev Mode**. Você entende cada um e sabe quando vai precisar dele, mesmo que ainda não pague por nenhum."
+      }
+    ],
+    "courseAboutTitle": "A ferramenta que conecta design e código",
+    "courseAboutDescription": "Saber usar o Figma deixou de ser habilidade só de designer. Desenvolvedores inspecionam medidas e copiam valores, gestores comentam fluxos, analistas revisam protótipos. Este programa ensina a ferramenta pelo uso que o mercado espera: arquivos organizados, componentes que não quebram quando alguém os altera e uma entrega que o desenvolvimento consegue seguir sem adivinhar.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Frames, Camadas e Layout",
+        "items": [
+          {
+            "label": "Frame, grupo e seção",
+            "description": "Por que a tela é um frame e quando usar cada contêiner."
+          },
+          {
+            "label": "Constraints",
+            "description": "Como um elemento se comporta quando a tela muda de tamanho."
+          },
+          {
+            "label": "Grids de layout",
+            "description": "Colunas e margens que dão ritmo e alinhamento às telas."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Auto Layout e Componentes",
+        "items": [
+          {
+            "label": "Auto layout",
+            "description": "Direção, espaçamento, padding e redimensionamento hug, fill e fixed."
+          },
+          {
+            "label": "Componente e instância",
+            "description": "A peça principal, as cópias que herdam dela e o que pode ser sobrescrito."
+          },
+          {
+            "label": "Variantes e propriedades",
+            "description": "Um componente com estados e opções no lugar de dez componentes soltos."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Estilos, Variáveis e Protótipo",
+        "items": [
+          {
+            "label": "Estilos de texto e efeito",
+            "description": "Tipografia e sombras definidas uma vez e aplicadas em todo o arquivo."
+          },
+          {
+            "label": "Variáveis e modos",
+            "description": "Cores e espaçamentos como tokens, com apelidos e temas."
+          },
+          {
+            "label": "Protótipo navegável",
+            "description": "Conexões, fluxos, overlays e componentes interativos."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Dev Mode e o Mini Design System",
+        "items": [
+          {
+            "label": "Arquivo organizado",
+            "description": "Páginas, nomes e documentação que outra pessoa entende sem você explicar."
+          },
+          {
+            "label": "Handoff no Dev Mode",
+            "description": "Ready for dev, inspeção, anotações e comparação de versões."
+          },
+          {
+            "label": "Biblioteca",
+            "description": "Publicar componentes, estilos e variáveis para outros arquivos usarem."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos para executar no seu arquivo do Quadra Já. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "laptop",
+      "title": "Frames, Camadas e Layout",
+      "shortDescription": "A estrutura de qualquer tela: frames, constraints e grids",
+      "introductionText": "Toda tela no Figma começa em um frame. Ele não é só uma moldura: é o contêiner que define o tamanho do dispositivo, recorta o que passa da borda, recebe grids de layout e decide como os elementos de dentro se comportam quando o tamanho muda. Neste módulo você cria as três primeiras telas do Quadra Já — lista de quadras, detalhe da quadra e confirmação de reserva — e aprende a estrutura que sustenta todo o resto do programa.",
+      "sections": [
+        {
+          "title": "🖼️ A estrutura das telas",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Frame, grupo e seção",
+              "code": "F = ferramenta Frame",
+              "guidance": "Pressione F, escolha um tamanho de celular no painel da direita e crie a tela Lista de quadras. Dentro dela, desenhe um cartão com retângulo, texto e ícone. Agrupe os elementos do cartão com Ctrl+G (Cmd+G no Mac) e depois compare com transformá-los em frame com Ctrl+Alt+G (Cmd+Option+G). Por fim, envolva as três telas em uma seção, que serve para organizar o canvas.",
+              "tips": [
+                "Grupo só junta camadas; frame tem tamanho próprio, preenchimento, recorte e regras de layout. Na dúvida, use frame.",
+                "Seção não é tela: é uma área do canvas para agrupar frames relacionados, como um fluxo inteiro."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Nomear e ordenar camadas",
+              "guidance": "Abra o painel de camadas e renomeie cada elemento pelo que ele é, não pelo que o Figma sugeriu: cartao-quadra, titulo, preco, icone-favorito. Reordene para que a ordem das camadas siga a ordem de leitura da tela.",
+              "tips": [
+                "Rectangle 47 não diz nada para quem abrir o arquivo depois. O nome da camada vira, mais adiante, o nome da propriedade que o desenvolvimento lê no Dev Mode."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Constraints: o que acontece quando a tela muda",
+              "guidance": "Selecione a barra de navegação inferior e defina a constraint vertical como Bottom e a horizontal como Left & Right. Agora redimensione o frame da tela: a barra continua grudada no rodapé e esticada na largura. Teste o mesmo com o botão de voltar, preso em Top e Left.",
+              "tips": [
+                "Constraints só valem para filhos diretos de um frame. Dentro de um grupo, elas não têm efeito.",
+                "Segure Ctrl (Cmd no Mac) enquanto redimensiona o frame para mexer nele sem aplicar as constraints dos filhos."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Grid de layout",
+              "code": "4 colunas · margem 16 · gutter 16",
+              "guidance": "No frame da tela, adicione um grid de layout de colunas: 4 colunas, margem de 16 e espaço entre colunas de 16. Alinhe os cartões e textos ao grid. Ative e desative a visualização do grid com Ctrl+Shift+4 (Ctrl+G no Mac) para revisar o alinhamento.",
+              "tips": [
+                "Grid é guia, não prisão. O que importa é que elementos parecidos estejam alinhados da mesma forma em todas as telas.",
+                "Espaçamentos em múltiplos de 4 ou 8 facilitam a vida de todo mundo: designer, desenvolvedor e quem revisa."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que a estrutura vem primeiro",
+      "highlights": [
+        {
+          "icon": "grid",
+          "title": "Tela com regras",
+          "text": "Frame com constraints e grid continua coerente quando muda de tamanho. Formas soltas precisam ser reposicionadas uma por uma."
+        },
+        {
+          "icon": "list",
+          "title": "Camadas que se explicam",
+          "text": "Um painel de camadas bem nomeado é a primeira documentação do arquivo — e a que mais gente lê sem perceber."
+        },
+        {
+          "icon": "laptop",
+          "title": "Um tamanho de referência",
+          "text": "Desenhar sobre um frame com o tamanho real do dispositivo evita a surpresa de descobrir, na implementação, que o conteúdo não cabia."
+        }
+      ],
+      "closingText": "Você tem três telas estruturadas, com camadas nomeadas, constraints e grid. Repare que o cartão de quadra aparece várias vezes e que cada cópia foi ajustada na mão. No próximo módulo isso acaba: o cartão passa a se ajustar sozinho ao conteúdo e a existir em um lugar só.",
+      "ctaTitle": "🖼️ Telas de pé!",
+      "ctaText": "A estrutura está pronta. Agora vamos transformar o que se repete em peças que se ajustam e se reaproveitam.",
+      "nextButtonText": "Ir para Módulo 1: Auto Layout e Componentes"
+    },
+    {
+      "id": 1,
+      "icon": "tools",
+      "title": "Auto Layout e Componentes",
+      "shortDescription": "Elementos que se ajustam ao conteúdo e peças que se repetem a partir de uma origem",
+      "introductionText": "Dois recursos fazem o Figma deixar de ser ferramenta de desenho: o auto layout, que dá a um frame regras de direção e espaçamento parecidas com as do CSS, e os componentes, que permitem repetir uma peça a partir de uma origem única. Juntos, eles resolvem os dois problemas que mais consomem tempo de quem está começando: reposicionar elementos quando um texto muda e corrigir a mesma peça em dez lugares diferentes.",
+      "sections": [
+        {
+          "title": "📐 Auto layout",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "O primeiro auto layout",
+              "code": "Shift + A",
+              "guidance": "Crie um botão com um texto Reservar, selecione-o e pressione Shift+A. O Figma envolve o texto em um frame com auto layout. Defina padding horizontal de 24, vertical de 12 e troque o texto para Reservar agora: o botão cresce sozinho. Faça o mesmo com o cartão de quadra, usando direção vertical e espaçamento de 8 entre os itens.",
+              "tips": [
+                "Direção, espaçamento entre itens (gap) e padding são as três decisões de todo auto layout. Comece sempre por elas.",
+                "Os conceitos são os mesmos do flexbox do CSS, o que facilita muito a conversa com o desenvolvimento."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Hug, fill e fixed",
+              "guidance": "No cartão, deixe a altura em Hug contents para que ela acompanhe o conteúdo. Coloque o cartão dentro de uma lista com auto layout vertical e defina a largura dele como Fill container: agora ele ocupa toda a largura disponível. Use Fixed apenas no que precisa de medida exata, como o ícone de 24 por 24.",
+              "tips": [
+                "Hug ajusta ao que está dentro; fill ocupa o espaço do pai; fixed não muda. Quase todo problema de auto layout é uma dessas três escolhas errada.",
+                "Ative o wrap em uma lista horizontal de horários para que os itens passem para a linha de baixo quando não couberem mais."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "🧩 Componentes",
+          "subsections": [
+            {
+              "number": 3,
+              "title": "Componente principal e instância",
+              "code": "Ctrl + Alt + K",
+              "guidance": "Selecione o botão e transforme-o em componente com Ctrl+Alt+K (Cmd+Option+K no Mac). Arraste cópias dele do painel Assets para as três telas. Volte ao componente principal, mude a cor do fundo e veja todas as instâncias mudarem. Em uma instância, troque apenas o texto: a alteração fica nela, e o resto continua herdando do principal.",
+              "tips": [
+                "Instância herda tudo e permite sobrescrever conteúdo e aparência. Estrutura — adicionar ou remover camadas — só se muda no principal.",
+                "Desanexar uma instância (detach) corta o vínculo para sempre. Faça isso só quando tiver certeza de que aquela peça deixou de ser o mesmo componente."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Variantes",
+              "code": "Tipo=Primário, Estado=Padrão",
+              "guidance": "Duplique o botão principal para criar as versões Secundário e Desabilitado, selecione todos e use Combine as variants. Renomeie as propriedades para Tipo e Estado. Agora, em qualquer instância, você troca de versão por um menu no painel da direita em vez de procurar outro componente.",
+              "tips": [
+                "Variantes agrupam versões da mesma peça. Se duas versões não têm nada em comum além do nome, provavelmente são componentes diferentes.",
+                "Mantenha as variantes com a mesma estrutura de camadas: isso preserva as sobrescritas de texto quando alguém troca de variante."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Propriedades de componente",
+              "guidance": "No cartão de quadra, crie uma propriedade de texto para o nome da quadra, uma propriedade booleana para mostrar ou esconder o selo Coberta e uma propriedade de troca de instância para o ícone do esporte. Quem usa o cartão passa a configurá-lo pelo painel, sem precisar entrar nas camadas.",
+              "tips": [
+                "Booleana para mostrar e esconder evita dobrar o número de variantes. Use variante para estados visuais e propriedade para opções independentes."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que auto layout e componentes andam juntos",
+      "highlights": [
+        {
+          "icon": "sync",
+          "title": "Uma origem, muitas cópias",
+          "text": "Corrigir o componente principal corrige todas as telas. A mesma peça deixa de existir em versões ligeiramente diferentes espalhadas pelo arquivo."
+        },
+        {
+          "icon": "grid",
+          "title": "Conteúdo real não quebra o layout",
+          "text": "Com auto layout, um nome de quadra longo ou um preço com mais dígitos empurra os elementos em vez de sobrepor. O design passa a aguentar dado de verdade."
+        },
+        {
+          "icon": "laptop",
+          "title": "A mesma lógica do código",
+          "text": "Componente com propriedades e layout por direção e espaçamento é exatamente como a interface será construída. A distância entre o arquivo e a implementação diminui."
+        }
+      ],
+      "closingText": "Botão e cartão agora são componentes com variantes e propriedades, e as telas se ajustam ao conteúdo. Mas as cores e fontes ainda estão digitadas à mão em cada peça. No próximo módulo esses valores ganham nome e lugar próprio, e as telas passam a ser navegáveis.",
+      "ctaTitle": "🧩 Peças reutilizáveis prontas!",
+      "ctaText": "Seu arquivo já tem componentes de verdade. Vamos dar nome às cores e aos textos e ligar as telas em um protótipo.",
+      "nextButtonText": "Ir para Módulo 2: Estilos, Variáveis e Protótipo"
+    },
+    {
+      "id": 2,
+      "icon": "bolt",
+      "title": "Estilos, Variáveis e Protótipo",
+      "shortDescription": "Valores com nome, temas e telas que se navegam",
+      "introductionText": "Um arquivo com doze tons de verde quase iguais é sinal de que as cores estão sendo escolhidas na hora, em cada elemento. Estilos e variáveis resolvem isso dando nome a cada valor e guardando-o em um lugar só. Estilos funcionam bem para conjuntos de propriedades, como uma tipografia completa ou uma sombra; variáveis guardam valores únicos — uma cor, um número, um texto, um booleano — e podem ter modos, como tema claro e escuro. Com os valores organizados, você liga as telas em um protótipo que qualquer pessoa consegue testar.",
+      "sections": [
+        {
+          "title": "🎨 Valores com nome",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Estilos de texto e de efeito",
+              "guidance": "Crie estilos de texto para Título, Subtítulo, Corpo e Legenda, cada um com fonte, tamanho, peso e altura de linha. Crie também um estilo de efeito para a sombra do cartão. Aplique os estilos nas telas no lugar dos valores avulsos.",
+              "tips": [
+                "Estilo é bom para valor composto: um estilo de texto guarda fonte, tamanho, peso e altura de linha de uma vez.",
+                "Use barra no nome, como Texto/Título, para agrupar os estilos no painel."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Variáveis primitivas e semânticas",
+              "code": "verde/500 → cor/acao/primaria",
+              "guidance": "Na janela de variáveis, crie uma coleção Primitivas com as cores da paleta, como verde/500 e cinza/900. Crie outra coleção Semânticas com variáveis que dizem para que a cor serve, como cor/acao/primaria e cor/texto/padrao, apontando para as primitivas por apelido (alias). Aplique as semânticas nos componentes.",
+              "tips": [
+                "Componente usa a variável semântica, nunca a primitiva. Assim, trocar a cor da marca é mudar um apelido, não procurar elemento por elemento.",
+                "Crie também variáveis numéricas de espaçamento, como espaco/2 = 8 e espaco/4 = 16, e aplique-as no gap e no padding do auto layout."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Modos: tema claro e escuro",
+              "guidance": "Na coleção Semânticas, adicione um segundo modo chamado Escuro e defina, para cada variável, o valor correspondente. Selecione um frame e troque o modo no painel da direita: a tela inteira muda de tema sem duplicar nenhum componente.",
+              "tips": [
+                "Modos extras exigem plano pago: no Professional são até 10 modos por coleção e no Organization até 20. No Starter, entenda o conceito e monte a estrutura com um único modo.",
+                "Modos servem também para idioma, densidade ou tamanho de dispositivo, não só para tema."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "▶️ Protótipo navegável",
+          "subsections": [
+            {
+              "number": 4,
+              "title": "Conexões e ponto de partida",
+              "guidance": "Na aba Prototype, ligue o cartão de quadra à tela Detalhe com o gatilho On click e a ação Navigate to. Ligue o botão Reservar à tela Confirmação e o botão de voltar com a ação Back. Defina a tela Lista como ponto de partida do fluxo e abra a apresentação para testar.",
+              "tips": [
+                "Dê ao fluxo um nome que descreva a tarefa, como Reservar uma quadra. Quem revisa sabe o que deve conseguir fazer.",
+                "Use Smart Animate entre telas com camadas de mesmo nome para que o Figma anime a diferença entre elas."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Overlay e componente interativo",
+              "guidance": "Crie um modal de confirmação de horário e abra-o com a ação Open overlay, com fundo escurecido e fechamento ao clicar fora. Depois, dentro do conjunto de variantes do botão de favorito, ligue a variante Desmarcado à Marcado com On click e Change to: o comportamento passa a valer em todas as instâncias, sem conexão em cada tela.",
+              "tips": [
+                "Componente interativo economiza dezenas de conexões repetidas e mantém o protótipo leve.",
+                "Protótipo serve para testar um fluxo, não para simular o aplicativo inteiro. Escolha a tarefa que você quer validar."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que nomear valores e testar fluxos",
+      "highlights": [
+        {
+          "icon": "gauge",
+          "title": "Mudança em um lugar só",
+          "text": "Trocar a cor primária ou o tamanho do corpo de texto passa a ser uma edição, não uma caça ao elemento por todas as telas."
+        },
+        {
+          "icon": "sync",
+          "title": "Tokens que viram código",
+          "text": "Variáveis com nomes semânticos têm correspondência direta com as variáveis de CSS e os tokens do desenvolvimento. O nome é o contrato entre as duas pontas."
+        },
+        {
+          "icon": "search",
+          "title": "Erro encontrado antes do código",
+          "text": "Um protótipo navegável revela o botão que leva a lugar nenhum e o passo que falta no fluxo enquanto corrigir ainda custa minutos."
+        }
+      ],
+      "closingText": "O Quadra Já tem valores com nome, uma estrutura pronta para tema escuro e um fluxo de reserva que pode ser testado do início ao fim. Falta transformar esse arquivo em algo que outra pessoa consiga usar sem você ao lado: organização, documentação e entrega.",
+      "ctaTitle": "▶️ Protótipo funcionando!",
+      "ctaText": "As telas se navegam e os valores têm nome. Vamos organizar tudo em um mini design system e preparar a entrega.",
+      "nextButtonText": "Ir para Módulo 3: Dev Mode e o Mini Design System"
+    },
+    {
+      "id": 3,
+      "icon": "sitemap",
+      "title": "Dev Mode e o Mini Design System",
+      "shortDescription": "Organização, documentação e entrega para o desenvolvimento",
+      "introductionText": "Um design system não começa com cem componentes. Começa quando as peças que você já tem ficam organizadas, documentadas e disponíveis para outras pessoas. Neste módulo o arquivo do Quadra Já ganha páginas separadas para fundamentos e componentes, cada peça recebe uma descrição de uso, e as telas são marcadas e anotadas para o desenvolvimento. É a parte que separa um arquivo bonito de um arquivo útil.",
+      "sections": [
+        {
+          "title": "🗂️ Do arquivo ao sistema",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Organizar o arquivo e documentar",
+              "guidance": "Divida o arquivo em páginas: Capa, Fundamentos (cores, tipografia, espaçamentos), Componentes e Telas. Na página Componentes, coloque cada componente em uma seção com título, todas as variantes visíveis e uma nota de quando usar e quando não usar. Preencha também o campo de descrição do componente, que aparece para quem o insere a partir do painel Assets.",
+              "tips": [
+                "Documentação boa responde a uma pergunta: qual destas peças eu uso aqui? Exemplos de uso certo e errado valem mais que parágrafos.",
+                "Um mini design system realista para este projeto tem poucas peças: cores, quatro estilos de texto, escala de espaçamento, botão, campo, cartão e barra de navegação."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Entrega no Dev Mode",
+              "code": "Shift + D",
+              "guidance": "Marque as três telas como Ready for dev. Alterne para o Dev Mode com Shift+D e veja o que o desenvolvimento enxerga: medidas, espaçamentos, variáveis e estilos aplicados, propriedades de componente e trechos de código gerados. Adicione anotações nos pontos que não aparecem no desenho, como o comportamento do botão Reservar quando a quadra está ocupada.",
+              "tips": [
+                "O Dev Mode faz parte dos planos pagos (Professional, Organization e Enterprise). No Starter, faça o mesmo exercício com anotações em texto ao lado das telas.",
+                "Quando uma tela muda depois de marcada, use a comparação de versões para mostrar exatamente o que foi alterado em vez de pedir que alguém descubra."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Publicar a biblioteca",
+              "guidance": "Com componentes, estilos e variáveis organizados, publique o arquivo como biblioteca pelo painel Assets e escreva uma descrição da versão. Em outro arquivo, ative a biblioteca e insira um botão: quando você atualizar o componente original e publicar de novo, o arquivo que o usa recebe um aviso de atualização.",
+              "tips": [
+                "Bibliotecas compartilhadas de componentes, estilos e variáveis exigem plano pago. No Starter, mantenha o sistema e as telas no mesmo arquivo.",
+                "Publique com uma descrição curta do que mudou. Sem ela, quem recebe a atualização não sabe se pode aceitar sem revisar as telas."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que organizar e entregar",
+      "highlights": [
+        {
+          "icon": "folder",
+          "title": "Achar sem perguntar",
+          "text": "Páginas separadas e componentes documentados permitem que outra pessoa encontre o que precisa sem depender de quem montou o arquivo."
+        },
+        {
+          "icon": "shield",
+          "title": "Menos interpretação na entrega",
+          "text": "Telas marcadas, valores com nome e anotações nos comportamentos reduzem a chance de o desenvolvimento implementar uma versão antiga ou adivinhar uma regra."
+        },
+        {
+          "icon": "globe",
+          "title": "Um sistema que cresce",
+          "text": "Uma biblioteca publicada leva a mesma correção a todos os arquivos que a usam. É assim que o mini design system vira base para produtos maiores."
+        }
+      ],
+      "closingText": "Você saiu de telas desenhadas à mão para um arquivo com estrutura, componentes com variantes, valores com nome, um protótipo testável e uma entrega organizada. Esse é o conjunto que se espera de quem trabalha com o Figma em equipe, seja do lado do design, seja do lado do código.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você domina a base do Figma e tem um mini design system funcionando. O próximo passo natural é aprofundar as escolhas de cor e tipografia em Psicologia das Cores e Tipografia aplicada ao Produto Digital.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Qual é a principal diferença entre um grupo e um frame no Figma?",
+      "explanation": "O frame é um contêiner com tamanho próprio, preenchimento, recorte de conteúdo, grids de layout e regras como constraints e auto layout. O grupo apenas junta camadas e assume o tamanho delas. Por isso as telas são sempre frames. Nenhum dos dois é exclusivo de plano pago, e ambos aparecem no painel de camadas.",
+      "options": [
+        {
+          "text": "O frame tem tamanho próprio e aceita regras de layout; o grupo só junta camadas",
+          "isCorrect": true
+        },
+        {
+          "text": "O grupo pode receber grid de layout e o frame não",
+          "isCorrect": false
+        },
+        {
+          "text": "O frame só existe nos planos pagos",
+          "isCorrect": false
+        },
+        {
+          "text": "Grupos não aparecem no painel de camadas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Você quer que a barra de navegação fique sempre no rodapé e esticada na largura quando a tela mudar de tamanho. Qual configuração usar?",
+      "explanation": "Constraints definem como um filho se comporta quando o frame pai é redimensionado. Bottom prende o elemento ao rodapé e Left & Right o estica na largura. Center e Top colocariam a barra no lugar errado, e Scale distorceria a proporção.",
+      "options": [
+        {
+          "text": "Constraint vertical Bottom e horizontal Left & Right",
+          "isCorrect": true
+        },
+        {
+          "text": "Constraint vertical Top e horizontal Center",
+          "isCorrect": false
+        },
+        {
+          "text": "Constraint Scale nos dois eixos",
+          "isCorrect": false
+        },
+        {
+          "text": "Colocar a barra dentro de um grupo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Por que nomear as camadas pelo que elas são, em vez de manter nomes como Rectangle 47?",
+      "explanation": "Nomes descritivos tornam o arquivo legível para quem chega depois, inclusive o desenvolvimento, que vê esses nomes ao inspecionar. Nomear camadas não altera desempenho, não é exigência para exportar e não muda a aparência do desenho.",
+      "options": [
+        {
+          "text": "Para que outras pessoas, inclusive o desenvolvimento, entendam a estrutura da tela",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque o Figma não permite exportar camadas com nome padrão",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque nomes padrão deixam o arquivo mais pesado",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o nome da camada define a cor do elemento",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Qual atalho adiciona auto layout aos elementos selecionados?",
+      "explanation": "Shift+A envolve a seleção em um frame com auto layout, ou adiciona auto layout a um frame existente. Ctrl+G agrupa, Ctrl+Alt+K cria componente e Shift+D alterna para o Dev Mode.",
+      "options": [
+        {
+          "text": "Shift + A",
+          "isCorrect": true
+        },
+        {
+          "text": "Ctrl + G",
+          "isCorrect": false
+        },
+        {
+          "text": "Ctrl + Alt + K",
+          "isCorrect": false
+        },
+        {
+          "text": "Shift + D",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Em auto layout, qual opção faz um elemento ocupar todo o espaço disponível no frame pai?",
+      "explanation": "Fill container faz o elemento ocupar o espaço disponível no pai. Hug contents ajusta o tamanho ao conteúdo de dentro, e Fixed mantém uma medida exata. Wrap não é opção de redimensionamento: ele faz os itens passarem para uma nova linha quando não cabem.",
+      "options": [
+        {
+          "text": "Fill container",
+          "isCorrect": true
+        },
+        {
+          "text": "Hug contents",
+          "isCorrect": false
+        },
+        {
+          "text": "Fixed",
+          "isCorrect": false
+        },
+        {
+          "text": "Wrap",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Você mudou a cor de fundo do componente principal do botão. O que acontece com as instâncias?",
+      "explanation": "Instâncias herdam do componente principal tudo que não foi sobrescrito nelas, então recebem a nova cor. A exceção são instâncias desanexadas (detach), que perderam o vínculo, e propriedades que foram sobrescritas na própria instância. Não é preciso publicar nada para isso acontecer dentro do mesmo arquivo.",
+      "options": [
+        {
+          "text": "Todas recebem a nova cor, exceto onde a cor foi sobrescrita na instância",
+          "isCorrect": true
+        },
+        {
+          "text": "Nada muda até cada instância ser atualizada manualmente",
+          "isCorrect": false
+        },
+        {
+          "text": "As instâncias são convertidas em grupos",
+          "isCorrect": false
+        },
+        {
+          "text": "Só mudam as instâncias criadas depois da alteração",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 1,
+      "question": "Para mostrar ou esconder o selo Coberta no cartão de quadra, qual recurso evita dobrar o número de variantes?",
+      "explanation": "Uma propriedade booleana liga e desliga a visibilidade de uma camada sem criar variantes novas. Criar variantes com e sem o selo dobraria o conjunto a cada opção independente. Desanexar a instância corta o vínculo com o componente, e duplicar o componente cria duas origens para a mesma peça.",
+      "options": [
+        {
+          "text": "Uma propriedade booleana de componente",
+          "isCorrect": true
+        },
+        {
+          "text": "Criar uma variante com selo e outra sem selo para cada estado",
+          "isCorrect": false
+        },
+        {
+          "text": "Desanexar a instância e apagar o selo",
+          "isCorrect": false
+        },
+        {
+          "text": "Duplicar o componente principal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Quando um estilo é mais adequado que uma variável?",
+      "explanation": "Estilos servem para valores compostos, como um estilo de texto que reúne fonte, tamanho, peso e altura de linha. Variáveis guardam um valor único por modo e são as que permitem temas como claro e escuro. Variáveis podem inclusive ser aplicadas dentro de estilos.",
+      "options": [
+        {
+          "text": "Quando o valor é composto, como uma tipografia com fonte, tamanho, peso e altura de linha",
+          "isCorrect": true
+        },
+        {
+          "text": "Quando você precisa de tema claro e escuro",
+          "isCorrect": false
+        },
+        {
+          "text": "Quando o valor é um número de espaçamento usado no auto layout",
+          "isCorrect": false
+        },
+        {
+          "text": "Estilos e variáveis são a mesma coisa com nomes diferentes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Por que os componentes devem usar a variável cor/acao/primaria em vez de verde/500?",
+      "explanation": "A variável semântica descreve para que a cor serve e aponta para a primitiva por apelido. Se a cor da marca mudar, ou se houver tema escuro, basta mudar o apelido ou o modo, e todos os componentes acompanham. Não há diferença de desempenho nem restrição de plano nesse uso.",
+      "options": [
+        {
+          "text": "Porque a semântica diz o uso da cor e permite trocar o valor em um lugar só, inclusive por tema",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque variáveis primitivas não podem ser aplicadas em camadas",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque nomes semânticos deixam o arquivo mais leve",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o plano Starter não aceita variáveis com números no nome",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 2,
+      "question": "Qual é o jeito mais econômico de fazer o botão de favorito alternar entre marcado e desmarcado em todas as telas do protótipo?",
+      "explanation": "Um componente interativo liga as variantes entre si dentro do próprio conjunto, e o comportamento passa a valer em todas as instâncias. Criar conexões em cada tela multiplica o trabalho e a chance de esquecer uma; overlay serve para sobrepor uma camada; Smart Animate é uma animação de transição, não um mecanismo de estado.",
+      "options": [
+        {
+          "text": "Ligar as variantes com Change to dentro do conjunto de variantes",
+          "isCorrect": true
+        },
+        {
+          "text": "Criar uma tela duplicada para cada estado e conectar uma a uma",
+          "isCorrect": false
+        },
+        {
+          "text": "Abrir a versão marcada como overlay",
+          "isCorrect": false
+        },
+        {
+          "text": "Ativar Smart Animate no frame da tela",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Segundo a central de ajuda do Figma, em quais planos o Dev Mode está incluído?",
+      "explanation": "O Dev Mode faz parte dos planos pagos: Professional, Organization e Enterprise (além das versões para educação e governo). O Starter, gratuito, não o inclui. Ele também não é um plugin de terceiros nem um produto vendido separadamente do Figma.",
+      "options": [
+        {
+          "text": "Professional, Organization e Enterprise",
+          "isCorrect": true
+        },
+        {
+          "text": "Somente no Starter",
+          "isCorrect": false
+        },
+        {
+          "text": "Em todos os planos, inclusive o gratuito, sem diferença",
+          "isCorrect": false
+        },
+        {
+          "text": "Apenas como plugin de terceiros instalado à parte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Para que serve marcar uma tela como Ready for dev?",
+      "explanation": "Ready for dev indica ao desenvolvimento quais telas, componentes ou seções estão prontos para implementar, e elas aparecem reunidas em uma visualização própria no Dev Mode. A marcação não gera o código final, não bloqueia edições e não publica biblioteca.",
+      "options": [
+        {
+          "text": "Sinalizar ao desenvolvimento o que está pronto para implementar",
+          "isCorrect": true
+        },
+        {
+          "text": "Gerar automaticamente o código final da aplicação",
+          "isCorrect": false
+        },
+        {
+          "text": "Impedir que qualquer pessoa edite a tela",
+          "isCorrect": false
+        },
+        {
+          "text": "Publicar a tela como biblioteca de componentes",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "O arquivo completo do Quadra Já, um aplicativo fictício de reserva de quadras: três telas estruturadas com frames, constraints e grid; botão, cartão e barra de navegação como componentes com auto layout, variantes e propriedades; cores, tipografia e espaçamentos em estilos e variáveis; um fluxo de reserva navegável; e uma página de fundamentos e componentes documentados, pronta para a entrega ao desenvolvimento.",
+    "highlights": [
+      "Telas com auto layout que se ajustam ao conteúdo",
+      "Componentes com variantes, propriedades e interação",
+      "Protótipo navegável do fluxo de reserva",
+      "Mini design system documentado e pronto para o handoff"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "O Figma é, na prática, o padrão do mercado de design de interface. Na pesquisa Design Tools Survey 2024 da UX Tools, com 2.220 profissionais, ele aparece com 82,3% de participação entre as ferramentas de UI design e nota de satisfação 4,57 de 5. A distância para o Sketch, antigo líder, chegou a 46 para 1.",
+      "Essa concentração muda o que se espera de quem entra na área: o arquivo de Figma virou o documento de trabalho compartilhado entre design, produto e desenvolvimento. Saber montar componentes que não quebram, nomear valores como tokens e entregar uma tela pronta para implementar é o que torna alguém útil em uma equipe desde a primeira semana — e vale tanto para designers quanto para desenvolvedores que precisam ler esses arquivos."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Produtos digitais",
+        "description": "Aplicativos e sistemas web em que as telas evoluem a cada ciclo e precisam continuar consistentes."
+      },
+      {
+        "label": "Equipes de design e desenvolvimento",
+        "description": "A entrega pelo Dev Mode reduz idas e vindas sobre medidas, cores e comportamentos."
+      },
+      {
+        "label": "Validação de ideias",
+        "description": "Protótipos navegáveis para testar um fluxo com usuários antes de escrever código."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem está começando em UX/UI",
+        "description": "Conhece os fundamentos de interface e precisa dominar a ferramenta do mercado."
+      },
+      {
+        "label": "Desenvolvedores front-end",
+        "description": "Recebem arquivos de Figma e querem entender componentes, variáveis e o Dev Mode."
+      },
+      {
+        "label": "Quem desenha no improviso",
+        "description": "Já usa o Figma, mas posiciona tudo à mão e sofre quando um texto muda."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "O Figma é usado de equipes de uma pessoa a grandes empresas de produto, em agências, startups, bancos e órgãos públicos. Como roda no navegador e permite edição simultânea, tornou-se o lugar onde design, produto e desenvolvimento discutem a mesma tela. A habilidade é transferível entre setores e tamanhos de empresa.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Figma Learn — Figma plans and features (planos, limites do Starter, Dev Mode, bibliotecas e modos de variáveis)",
+      "url": "https://help.figma.com/hc/articles/360040328273"
+    },
+    {
+      "label": "Figma Learn — Guide to auto layout in Figma",
+      "url": "https://help.figma.com/hc/en-us/articles/360040451373-Guide-to-auto-layout-in-Figma"
+    },
+    {
+      "label": "Figma Learn — Overview of variables, collections, and modes",
+      "url": "https://help.figma.com/hc/en-us/articles/14506821864087-Overview-of-variables-collections-and-modes"
+    },
+    {
+      "label": "Figma Learn — Guide to Dev Mode",
+      "url": "https://help.figma.com/hc/en-us/articles/15023124644247"
+    },
+    {
+      "label": "UX Tools — 2024 Design Tools Survey: Interface Design Trends",
+      "url": "https://uxtools.co/survey/interface-design/trends"
+    }
+  ]
 }

@@ -3,13 +3,13 @@
   "slug": "caelum-java",
   "title": "Formação Java",
   "institution": "Caelum (Alura)",
-  "description": "Fundamentos sólidos de Programação Orientada a Objetos com Java, da Caelum, hoje parte da Alura.",
+  "description": "Base de Java e Programação Orientada a Objetos no estilo da Caelum, escola que deu origem à Alura, onde esse conteúdo segue hoje.",
   "coverImage": "/media/bootcamps/instituicoes/caelum.webp",
   "altText": "Identidade visual da Formação Java da Caelum",
   "category": "backend",
   "status": "concluido",
   "content": {
-    "longDescription": "A Formação Java da Caelum (incorporada à Alura) guia o aluno desde a sintaxe da linguagem e boas práticas até modelagem orientada a objetos consistente, preparando a base para frameworks como Spring e persistência com JPA/Hibernate.",
+    "longDescription": "A Caelum foi uma escola presencial de tecnologia criada em 2004 em São Paulo pelos irmãos Paulo e Guilherme Silveira, conhecida pelos cursos de Java. Em 2013 os fundadores criaram a Alura, a escola online do grupo, que hoje concentra o conteúdo de Java em carreiras e formações online. A formação percorre a sintaxe da linguagem, a orientação a objetos e o tratamento de exceções, e prepara o terreno para frameworks como Spring e para a persistência com JPA/Hibernate.",
     "videoUrl": "",
     "gallery": [],
     "curriculum": [
@@ -19,6 +19,44 @@
       "Spring Boot",
       "Hibernate/JPA"
     ],
-    "officialLink": "https://www.alura.com.br"
+    "officialLink": "https://www.alura.com.br",
+    "paragraphs": [
+      "A Caelum foi fundada em 2004 pelos irmãos Paulo e Guilherme Silveira, que antes haviam criado o GUJ, comunidade de usuários Java em português. Começou como escola presencial em São Paulo, voltada a ensinar tecnologias novas para quem já programava, e se expandiu para o Rio de Janeiro (2007) e Brasília (2011), ampliando o catálogo para C#, Python e outras linguagens. Em 2011 o grupo lançou uma plataforma online, que em 2013 ganhou marca própria: a Alura.",
+      "Por isso a relação entre as duas é de origem, e não de compra: a Alura nasceu dentro do Grupo Caelum como sua frente online. Hoje a Alura é a marca principal, faz parte de um ecossistema que inclui a FIAP e a PM3, e apresenta a qualidade da Caelum como algo disponível online na própria Alura. Quem procura hoje um curso de Java no estilo Caelum vai encontrá-lo nas formações e carreiras da Alura.",
+      "Na Alura, o conteúdo de Java está organizado em trilhas como a carreira de Desenvolvimento Back-End Java e a formação Trilha completa de carreira Dev Back-End Java. Esta última reunia 33 cursos e cerca de 319 horas na consulta de 30/10/2026, indo dos primeiros passos em lógica, Git e Java até APIs com Spring Boot, microsserviços e mensageria. Há também cursos específicos de introdução à orientação a objetos, herança, polimorfismo e interfaces, exceções e persistência com Spring Data JPA.",
+      "Uma formação desse tipo atende quem quer trabalhar com back-end em Java, linguagem muito usada em bancos, seguradoras e grandes sistemas corporativos no Brasil. Dominar orientação a objetos, exceções e o modelo de persistência com JPA/Hibernate antes de partir para o Spring torna o uso do framework muito mais compreensível, porque o aluno entende o que acontece por trás das anotações."
+    ],
+    "links": [
+      {
+        "label": "Alura: carreira Desenvolvimento Back-End Java",
+        "url": "https://www.alura.com.br/carreiras/desenvolvimento-backend-java"
+      },
+      {
+        "label": "Alura: Trilha completa de carreira Dev Back-End Java",
+        "url": "https://www.alura.com.br/formacao-trilha-completa-dev-backend-java"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Alura: Da Caelum à Alura, conheça a nossa jornada e história",
+        "url": "https://www.alura.com.br/artigos/historia-da-caelum"
+      },
+      {
+        "label": "Alura: Aniversário de 11 anos da Alura",
+        "url": "https://www.alura.com.br/artigos/11-anos-alura"
+      },
+      {
+        "label": "Alura: A qualidade reconhecida da Caelum você só tem online na Alura",
+        "url": "https://www.alura.com.br/caelum"
+      },
+      {
+        "label": "Alura: Trilha completa de carreira Dev Back-End Java",
+        "url": "https://www.alura.com.br/formacao-trilha-completa-dev-backend-java"
+      },
+      {
+        "label": "Alura: carreira Desenvolvimento Back-End Java",
+        "url": "https://www.alura.com.br/carreiras/desenvolvimento-backend-java"
+      }
+    ]
   }
 }

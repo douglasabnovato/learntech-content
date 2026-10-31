@@ -1,0 +1,874 @@
+{
+  "id": 1104,
+  "image": "/media/learn-tech/programas/1104.webp",
+  "category": "Marketing e CRM",
+  "categoryFilter": "marketing-crm",
+  "title": "Operação Diária de CRM: Planning, Disparos, Validação de Peças e Relatórios",
+  "lessons": "21 passos",
+  "duration": "12h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Intermediário",
+  "description": "A rotina de quem opera CRM de verdade: abrir o dia pelos controles, montar o planning, catalogar disparos por público e canal, limpar a base, validar a peça com quem pediu, disparar em lotes e fechar com relatório. Tudo praticado com a Rede Construir+, uma rede fictícia de lojas de material de construção com franquias, e-commerce e clube de arquitetos.",
+  "letslearn": [
+    "Organizar o dia e a semana com arquivos de controle, planning, daily e cálculo de capacidade",
+    "Manter um catálogo de disparos por remetente, público e canal, com ficha e calendário de rotina",
+    "Montar e limpar bases no Excel, aplicar a lista de bloqueio e validar a peça com quem pediu",
+    "Registrar resultados, medir orçamento assistido, versionar arquivos e preparar a passagem de bastão"
+  ],
+  "curriculum": "Da rotina ao relatório",
+  "about": "O programa reproduz a rotina real de um analista de CRM em uma rede de varejo com franquias. A parte conceitual de jornadas, réguas e LGPD fica no programa CRM na Prática; aqui o foco é a execução de todos os dias. A sequência acompanha o trabalho: primeiro a rotina e os rituais, depois o catálogo do que sai e para quem, em seguida a montagem da base, a validação e o envio, e por fim o registro do resultado e a documentação que permite a outra pessoa assumir. Cada passo traz o procedimento, os campos e os erros que aparecem na prática.",
+  "materials": [
+    "Modelo de planning diário e quadro de tarefas com datas",
+    "Planilha de capacidade do ciclo em minutos",
+    "Ficha de disparo e calendário de rotina da Rede Construir+",
+    "Planilha-modelo de base com fórmulas de telefone e PROCX",
+    "Checklist de validação de peça e de base",
+    "Modelo de To-Do de ausência para passagem de bastão"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Rotina, Rituais e Planning",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Catálogo de Disparos por Público e Canal",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Base, Validação de Peças e Execução",
+      "lessonsCount": 6,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Relatórios, Documentação e Passagem de Bastão",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Marketing e CRM",
+    "mainTitle": "Opere CRM com rotina: do planning da manhã ao relatório que fecha o disparo.",
+    "introductionParagraphs": [
+      {
+        "title": "O trabalho que ninguém vê",
+        "text": "Uma jornada bonita no quadro não envia mensagem sozinha. Entre o pedido e o WhatsApp no celular do cliente existe uma rotina: extrair a base, limpar telefones, cruzar com a lista de bloqueio, conferir a loja de cada cliente, validar a peça, disparar sem afogar o atendimento e registrar o resultado. É essa rotina que decide se a **operação de CRM** é previsível ou se vive de apagar incêndio."
+      },
+      {
+        "title": "Erro de base custa caro",
+        "text": "Duplicado na base é mensagem cobrada duas vezes. Telefone antigo de franqueado é alerta que ninguém lê. Cliente que pediu para sair e recebe de novo é problema de LGPD. Quase todo erro de disparo nasce antes do envio, na base e na validação, e por isso o programa dedica a essas etapas mais tempo do que à copy."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não ensina a desenhar jornadas, a escrever transacionais nem a interpretar a LGPD em profundidade: isso está no programa CRM na Prática. Também não ensina HTML de e-mail nem campanhas promocionais, que têm programas próprios. Aqui o assunto é a execução diária, com as ferramentas que as equipes usam: Excel, Zenvia, Salesforce Marketing Cloud, SharpSpring e a WhatsApp Business Platform."
+      }
+    ],
+    "courseAboutTitle": "A rotina de quem opera CRM, passo a passo",
+    "courseAboutDescription": "Quem entra numa equipe de CRM encontra dezenas de disparos rodando, cada um com seu jeito, e quase nenhum documentado. Este programa entrega o método para pôr ordem nisso: um dia que começa pelos controles, um catálogo em que cada disparo tem ficha, uma base montada sempre da mesma forma, uma validação com dono e um relatório que fecha o ciclo. É o que transforma um operador de ferramenta em alguém a quem a liderança confia a operação.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Rotina, Rituais e Planning",
+        "items": [
+          {
+            "label": "Arquivos de controle",
+            "description": "O que abrir antes do e-mail e por que cada um importa."
+          },
+          {
+            "label": "Planning e daily",
+            "description": "Lista do dia, rituais da semana e quadro com tarefas datadas."
+          },
+          {
+            "label": "Capacidade e To-Do",
+            "description": "Minutos livres no ciclo e follow-up por frente com histórico."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Catálogo de Disparos por Público e Canal",
+        "items": [
+          {
+            "label": "Remetentes e públicos",
+            "description": "Prefixos [FRA], [B2C], [POS], [ARQ], [PRO] e [EXP] e um número por público."
+          },
+          {
+            "label": "Ficha e calendário",
+            "description": "Os campos de cada disparo e as regras de segunda, sexta e véspera de feriado."
+          },
+          {
+            "label": "Canais e demandas",
+            "description": "Execução em e-mail, WhatsApp e SMS e os cinco requisitos para aceitar um pedido."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Base, Validação de Peças e Execução",
+        "items": [
+          {
+            "label": "Base padrão de lojas",
+            "description": "Atender chamados de contato e manter as duas bases em sincronia."
+          },
+          {
+            "label": "Limpeza e fórmulas",
+            "description": "Ordem da limpeza, telefone normalizado e PROCX contra a base de lojas."
+          },
+          {
+            "label": "Validação e envio",
+            "description": "Checklist com quem pediu, bloqueio, números de teste e disparo em lotes."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Relatórios, Documentação e Passagem de Bastão",
+        "items": [
+          {
+            "label": "Relatório do disparo",
+            "description": "Status por canal e marca de atualização no planejamento de réguas."
+          },
+          {
+            "label": "Orçamento assistido e leitura",
+            "description": "Do disparo à venda e a investigação de quem não lê."
+          },
+          {
+            "label": "Organização e continuidade",
+            "description": "Pastas, nomes, versões e a passagem de bastão."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos e exercícios na Rede Construir+. Ao final, um quiz com a explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "laptop",
+      "title": "Rotina, Rituais e Planning",
+      "shortDescription": "Arquivos de controle, planning, daily e capacidade da semana",
+      "introductionText": "Operar CRM no dia a dia é, antes de tudo, cumprir uma rotina que não depende de memória. Todo disparo depende de quatro arquivos, todo dia começa com um planning e toda semana tem limite de tempo. Este módulo monta essa estrutura: o que abrir primeiro, como transformar o planejamento de réguas em lista do dia, como reportar na daily sem relato solto e como saber, em minutos, se cabe mais uma demanda na semana. É a parte menos visível do trabalho, e é a que evita o disparo esquecido e a demanda aceita sem tempo para fazer.",
+      "sections": [
+        {
+          "title": "📅 O dia e a semana de quem opera CRM",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Abrir o dia pelos arquivos de controle",
+              "code": "planejamento-reguas.xlsx · lista-bloqueio.xlsx · numeros-teste.xlsx · base-padrao-lojas.xlsx",
+              "guidance": "O dia de quem opera CRM começa sempre do mesmo jeito, antes de qualquer e-mail: abrir os quatro arquivos dos quais todo disparo depende. O planejamento de réguas diz o que sai hoje e guarda o resultado do que já saiu. A lista de bloqueio reúne quem pediu para não receber. A lista de números de teste tem os telefones da equipe que recebem cada envio antes do público. A base padrão de lojas liga cada loja ao telefone da loja, do franqueado e do consultor que atende o cliente. Só depois vêm as caixas de entrada: e-mail, chat da equipe e chamados abertos pelas franquias. Exercício: monte a pasta de trabalho da Rede Construir+ com esses quatro arquivos e um atalho para cada um.",
+              "tips": [
+                "Se a base padrão de lojas estiver desatualizada, o disparo sai certo e chega errado: o cliente recebe o WhatsApp da loja que mudou de dono ou fechou. Por isso ela abre junto com o planejamento, não quando alguém reclama.",
+                "Trate as caixas de entrada depois de abrir os controles. Quem começa pelo e-mail passa a manhã respondendo e esquece o disparo das 9h."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Montar o planning do dia",
+              "code": "planning = disparos fixos do dia + demandas validadas + relatório da vez + 1 tarefa de projeto",
+              "guidance": "O planning é a lista do que você se compromete a entregar hoje, montada a partir do planejamento de réguas e das demandas já validadas. Entram, nesta ordem: os disparos fixos do dia da semana, os disparos sob demanda que já têm copy, imagem e base aprovados, o relatório da vez e uma tarefa de projeto. Ordene pelo que tem horário: aniversário de arquiteto sai primeiro, porque perde o sentido depois do almoço; pós-venda depende da extração do sistema de entregas; relatório pode esperar a tarde. Cada item do planning traz o nome de quem pediu, porque é com essa pessoa que a peça será validada. O trabalho do dia passa a ser cumprir o planning, e o que entrar no meio do caminho vai para o planning de amanhã ou desloca outro item, de forma explícita.",
+              "tips": [
+                "Item sem dono não entra no planning. Disparo que ninguém pediu também não tem quem valide a peça nem quem responda ao cliente.",
+                "Na Rede Construir+, a segunda-feira é o dia mais pesado: o pós-venda acumula as entregas de sexta, sábado e domingo. Reserve a manhã inteira para ele."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Daily, planning da semana e review",
+              "code": "Ontem: … | Hoje: … | Impedimentos: …",
+              "guidance": "Três rituais seguram a operação. Na segunda-feira, o planning da semana distribui as demandas pelos dias. Todo dia, a daily responde a três perguntas: o que foi concluído ontem, no que você trabalha hoje e se há algum bloqueio. Na sexta-feira, a review mostra o que saiu e o que ficou. Para a daily não virar relato solto, mantenha um quadro com colunas fixas: Rotina, Em andamento, Relatórios, Projetos, Concluído e Backlog. Cada tarefa tem número e ganha a data do dia em que foi reportada, como em \"Tarefa 41 – Chamados de contato das lojas – 19/08 – 27/08\". A sequência de datas mostra, sem discussão, há quantos dias uma tarefa está parada.",
+              "tips": [
+                "No Scrum, a daily é um evento de 15 minutos para planejar o dia e expor impedimentos. As três perguntas são um formato prático para caber nesse tempo, não uma regra do método.",
+                "Impedimento bom de reportar tem nome e data: \"aguardando base da equipe comercial desde 14/01\". \"Aguardando retorno\" sem dono não destrava nada."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Calcular a capacidade do ciclo",
+              "code": "Livre = (dias úteis × 528) − rotina diária − rotina semanal − rotina mensal − reuniões",
+              "guidance": "Antes de aceitar demanda nova, saiba quanto tempo livre a semana realmente tem. Considere 528 minutos por dia útil (8h48). Uma semana de cinco dias tem 2.640 minutos. Desconte a rotina fixa: chamados das lojas, caixa de e-mail, disparos diários, treinamento. Desconte também as reuniões: daily, planning, review e alinhamentos. O que sobra é o espaço para demandas pontuais e projetos. Exercício com a Rede Construir+: em uma semana de 5 dias, a rotina diária soma 950 minutos, a semanal 120, a mensal 80 e as reuniões 360. Sobram 1.130 minutos. Se as demandas pontuais pedirem 1.640 minutos, faltam 510, e a capacidade usada passa de 100%. Registre também o valor de cada tarefa em uma escala de 1 a 4, cruzando se ela agrega valor e se é necessária, para decidir o que sai quando a semana estoura.",
+              "tips": [
+                "Semana com feriado tem quatro dias, ou seja, 2.112 minutos. Quem não ajusta o ciclo no feriado entra na semana já atrasado.",
+                "Tarefa de valor 2, necessária mas sem agregar valor, como renovar um acesso, não pode ser cortada. Tarefa de valor 3, que agrega valor mas não é necessária agora, é a primeira a ir para o backlog."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "To-Do e follow-up por frente",
+              "code": "B – Pós-venda  🔴 Encurtar links do e-mail (20/01)  🟢 Modelos das 13 etapas (09/01)  Report: <link>",
+              "guidance": "Além do quadro, mantenha um documento de To-Do com uma seção por frente de trabalho, identificada por letra: A – Pós-venda, B – Alerta do consultor, C – Expansão, D – Rotina. Em cada frente, os itens abertos aparecem com marcador vermelho no topo, e os concluídos com marcador verde logo abaixo, sempre com a data entre parênteses. Cada frente termina com o link do seu report, o documento que explica a frente em detalhe. A cada dia, copie a versão anterior para uma nova seção datada em vez de sobrescrever. Esse histórico responde depois quando algo mudou e quem pediu. Para reuniões com a liderança, gere a versão de follow-up (FUP) a partir do mesmo documento.",
+              "tips": [
+                "Escreva o item pendente com o próximo passo concreto e não com o tema: \"Pedir à TI a extração de orçamentos abertos (enviado 14/01)\" em vez de \"Orçamentos\".",
+                "Item que aparece em vermelho por mais de uma semana tem de sair do To-Do e ir para a daily como impedimento."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que a rotina vem antes do disparo",
+      "highlights": [
+        {
+          "icon": "folder",
+          "title": "Quatro arquivos, todo dia",
+          "text": "Planejamento, bloqueio, números de teste e base de lojas abertos antes do e-mail evitam o erro mais comum: disparar com informação de ontem."
+        },
+        {
+          "icon": "gauge",
+          "title": "Capacidade em minutos",
+          "text": "Saber quantos minutos livres a semana tem transforma \"não dá\" em conta que a liderança consegue ler e priorizar."
+        },
+        {
+          "icon": "sync",
+          "title": "Ritual que mostra o atraso",
+          "text": "Tarefa numerada e datada a cada daily mostra há quantos dias algo está parado, sem precisar de cobrança."
+        }
+      ],
+      "closingText": "Você já tem a estrutura do dia e da semana: arquivos de controle, planning, rituais e capacidade. O próximo passo é saber exatamente o que sai, para quem e por qual número: o catálogo de disparos.",
+      "ctaTitle": "📅 Rotina montada!",
+      "ctaText": "Seu dia começa pelos controles e termina com o planning cumprido. Agora vamos catalogar os disparos que esse planning organiza.",
+      "nextButtonText": "Ir para Módulo 1: Catálogo de Disparos por Público e Canal"
+    },
+    {
+      "id": 1,
+      "icon": "list",
+      "title": "Catálogo de Disparos por Público e Canal",
+      "shortDescription": "Remetentes, fichas, calendário, canais e demandas sob encomenda",
+      "introductionText": "Uma operação com dezenas de disparos só fica sob controle quando cada um tem nome, público, remetente e ficha. Este módulo organiza o catálogo da Rede Construir+ por número remetente e público (franqueado, cliente final, pós-venda, arquitetos, profissionais e expansão). Ele também transforma as fichas em calendário semanal, mostra o que muda na execução de e-mail, WhatsApp e SMS e define como receber demandas de outras áreas sem virar refém delas.",
+      "sections": [
+        {
+          "title": "🗂️ O que sai, para quem e por onde",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Organizar o catálogo por remetente e público",
+              "code": "[FRA] franqueado · [B2C] cliente final · [POS] pós-venda · [ARQ] arquitetos · [PRO] profissionais · [EXP] expansão",
+              "guidance": "Liste todos os disparos agrupados pelo número remetente, porque cada número de WhatsApp fala com um público e não deve ser misturado. Use um prefixo de público no nome de cada disparo: [FRA] para franqueados, [B2C] para cliente final, [POS] para pós-venda, [ARQ] para arquitetos e especificadores, [PRO] para profissionais de obra, [EXP] para candidatos a franquia. Na Rede Construir+, o número da central fala com o cliente final, o número do consultor fala com o franqueado e o número do clube de arquitetos fala com especificadores. Um mesmo programa pode atravessar públicos. O alerta do consultor de atendimento, por exemplo, avisa o franqueado de um lead novo, avisa o arquiteto de um cliente VIP com orçamento aberto e manda ao cliente final a oferta do produto que está no orçamento dele. São três disparos, com três remetentes, no mesmo programa.",
+              "tips": [
+                "Número inativo continua no catálogo, marcado como inativo. Assim ninguém o reaproveita para outro público sem saber que a base dele já recebeu outra comunicação.",
+                "Mensagem para o franqueado saindo do número da central confunde o cliente que um dia receber resposta daquele número. Remetente é parte da identidade da mensagem."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "A ficha de cada disparo",
+              "code": "nome | gatilho | origem da base | dia/frequência | remetente | template | variáveis | bloqueio | horário | lote",
+              "guidance": "Cada disparo do catálogo tem uma ficha na base padrão de mensagens, com os mesmos campos: nome com prefixo, gatilho, origem da base, dia e frequência, remetente, nome do template, variáveis, se aplica a lista de bloqueio, horário e tamanho do lote. Exemplo da Rede Construir+: \"[B2C] Novos orçamentos\". Gatilho: orçamento criado na loja na semana. Base: extração do BI toda sexta. Remetente: central. Template: b2c_novos_orcamentos_v2. Variáveis: Telefone, imageUrl, nome, nr_orcamento, nome_loja, info_loja, link. Bloqueio: sim. Lote: 5 × 150 a cada 15 minutos. A ficha também guarda o texto atual do template e a pasta onde ficam as bases já enviadas.",
+              "tips": [
+                "O campo \"aplica bloqueio\" não é sempre sim. Aviso interno para franqueado parceiro pode dispensar a lista de bloqueio de clientes, mas a ficha precisa dizer isso por escrito, para ninguém decidir na hora.",
+                "Quando o template muda, a ficha muda no mesmo dia. Ficha desatualizada é a origem do clássico \"a variável nr_orcamento sumiu e ninguém percebeu\"."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "O calendário de rotina",
+              "code": "SEG pós-venda (sex–dom) · TER–SEX pós-venda D-1 · SEX aniversários sáb/dom · véspera de feriado · 1º dia útil: trocar imagens",
+              "guidance": "Transforme as fichas em um calendário semanal, com regras para os dias que fogem do padrão. Na Rede Construir+, o pós-venda sai de terça a sexta com as entregas do dia anterior; na segunda, sai com sexta, sábado e domingo. O aniversário de arquitetos é o primeiro envio do dia; na sexta, os aniversários de sábado e domingo são agendados; na véspera de feriado, o do feriado também. Novos orçamentos e orçamentos vencidos saem na sexta, com a base do BI. A oferta da semana sai na segunda, assim que a base chega. No primeiro dia útil do mês, troque as imagens que trazem mês ou validade. Coloque o calendário no planejamento de réguas, para o planning do dia sair dele.",
+              "tips": [
+                "Feriado regional pega desprevenido quem opera rede de franquias. Antes de agendar, confira se a praça da loja tem feriado municipal naquele dia.",
+                "Imagem com \"válido até 31/01\" disparada em fevereiro desmente a mensagem. A troca do início do mês precisa estar no calendário, e não na memória."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "E-mail, WhatsApp e SMS: o que cada um pede",
+              "code": "WhatsApp: template + variáveis | E-mail: segmento + descadastro + privacidade | SMS: curto, sem acento, link curto",
+              "guidance": "Cada canal tem o seu ritual de execução. No WhatsApp, a mensagem parte de um template aprovado na Meta, com as variáveis preenchidas por um arquivo de importação. Desde julho de 2025 a cobrança é por mensagem entregue, então cada telefone inválido na base é tentativa perdida, e cada duplicado é cobrança em dobro. No e-mail, o envio parte de uma lista ou segmento na ferramenta de automação, como SharpSpring ou Salesforce Marketing Cloud, e a peça precisa de link de descadastro e de link para a política de privacidade. No SMS, o texto é curto, sem acento e com link encurtado, porque acentos mudam a codificação e reduzem os caracteres por mensagem. Exercício: escreva a mesma chamada de Black Friday da Rede Construir+ nos três canais e anote o que mudou em cada um.",
+              "tips": [
+                "SMS ainda serve para alcance, mesmo que pouca gente o use para conversar. Reserve-o para avisos curtos e campanhas de grande volume, sempre com o mesmo controle de lote do WhatsApp.",
+                "Não cole a copy do WhatsApp no e-mail. Negrito com asterisco e emoji em sequência funcionam no app, e no e-mail viram ruído."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Receber demandas e dividir responsabilidades",
+              "code": "Requisitos: copy · imagem · canal · base · plano inicial",
+              "guidance": "Disparo sob demanda chega de outras áreas: comunicação com a rede, expansão de franquias, indústria parceira com campanha própria. Nada entra no planning sem cinco requisitos: copy, imagem, canal, base e plano inicial (datas e frequência). Combine por escrito quem faz o quê. A área solicitante produz a copy, entrega a base e define o plano. O CRM conduz os primeiros disparos, orienta a área nos seguintes e cuida dos acessos às plataformas. Exemplo da Rede Construir+: a expansão pede para recuperar 1.000 candidatos que saíram do funil, em até quatro mensagens com botões \"Saiba mais\" e \"Não tenho interesse\". O CRM monta a estrutura, faz o primeiro envio junto com a pessoa da expansão, grava a demonstração e passa a operação.",
+              "tips": [
+                "Demanda que chega só com a copy volta com a lista do que falta. Começar a montar a base sem saber o público e a frequência é retrabalho garantido.",
+                "Quando a área solicitante vai disparar sozinha depois, dê a ela só o acesso que o disparo exige. Importar contatos é permissão separada e deve ficar com o CRM."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que catalogar antes de executar",
+      "highlights": [
+        {
+          "icon": "sitemap",
+          "title": "Um remetente, um público",
+          "text": "Separar números por público preserva a identidade da conversa e evita que o cliente receba alerta pensado para o franqueado."
+        },
+        {
+          "icon": "list",
+          "title": "Ficha que responde sozinha",
+          "text": "Gatilho, base, variáveis, bloqueio e lote escritos na ficha tiram as decisões do improviso na hora do envio."
+        },
+        {
+          "icon": "globe",
+          "title": "Cada canal com seu ritual",
+          "text": "Template e variáveis no WhatsApp, descadastro no e-mail, texto curto no SMS: o mesmo conteúdo, execuções diferentes."
+        }
+      ],
+      "closingText": "Com o catálogo, as fichas e o calendário prontos, você sabe o que sai em cada dia. Falta a parte em que o disparo acontece de verdade: preparar a base, validar a peça e executar.",
+      "ctaTitle": "🗂️ Catálogo pronto!",
+      "ctaText": "Cada disparo tem público, remetente e ficha. Vamos para a execução: base, validação e envio.",
+      "nextButtonText": "Ir para Módulo 2: Base, Validação de Peças e Execução"
+    },
+    {
+      "id": 2,
+      "icon": "shield",
+      "title": "Base, Validação de Peças e Execução",
+      "shortDescription": "Base padrão de lojas, limpeza, importação, validação e envio em lotes",
+      "introductionText": "É aqui que o disparo acontece, e é aqui que os erros caros nascem: telefone mal formatado, duplicado cobrado duas vezes, loja com número antigo, variável vazia, cliente que pediu para sair e recebeu de novo. O módulo segue a ordem real do trabalho: manter a base padrão de lojas, extrair e limpar, normalizar telefone com fórmulas, preencher o arquivo de importação, validar a peça com quem pediu e disparar em lotes, acompanhando o que volta.",
+      "sections": [
+        {
+          "title": "🧪 Da extração ao envio",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Manter a base padrão de lojas",
+              "code": "Loja | Sócio operador | Tel. consultor (antigo → novo) | Tel. contato da loja (antigo → novo) | Data | Origem",
+              "guidance": "A base padrão de lojas é a tabela que todo disparo consulta para saber o nome de envio da loja, o telefone da loja que vai na mensagem ao cliente, o telefone do franqueado e o do consultor que recebe os alertas. Ela muda o tempo todo: loja nova, loja encerrada, repasse para outro franqueado, troca de número pessoal pelo da loja. As alterações chegam por chamado no sistema de gestão da rede, como o SULTS, por e-mail da equipe de expansão ou pelo chat. Atenda com o mesmo roteiro: localizar a loja pelo identificador, registrar o número antigo, atualizar a base manual e a base automática, responder com mensagem padrão e registrar o chamado numa planilha com origem, data, loja, UF, responsável e status.",
+              "tips": [
+                "O telefone de contato da loja enviado ao cliente precisa ser um número com WhatsApp. Confirme isso antes de encerrar o chamado, porque o cliente vai clicar no link.",
+                "Loja encerrada sai da base no dia do encerramento. Loja nova entra antes do primeiro disparo que pode incluí-la; senão, o cliente dela recebe uma mensagem com o campo da loja vazio."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Extrair e limpar a base",
+              "code": "duplicado orçamento → duplicado telefone → \"verificar telefone\" → status → exclusões → #REF → classificar",
+              "guidance": "Toda base sai do sistema mais suja do que parece. Antes de exportar, confira se os campos selecionados são os esperados: no pós-venda da Rede Construir+, são número do pedido, loja, data de saída, nota fiscal, status da entrega e observação. Depois, limpe em ordem fixa: remover duplicados de número de orçamento ou pedido; remover duplicados de telefone; remover as linhas marcadas como \"verificar telefone\"; manter só o status que interessa (entregue, no pós-venda); remover retirada em balcão quando a mensagem fala de entrega; excluir unidades que não devem receber, como canal digital geral, televendas e lojas inativas; corrigir fórmulas com #REF. Por fim, classifique pelo nome da loja e, quando houver valor, do maior para o menor.",
+              "tips": [
+                "Antes de apagar linhas filtradas no Excel, selecione só as células visíveis (Alt + ;). Sem isso, a exclusão leva junto as linhas escondidas pelo filtro.",
+                "Mantenha a ordem da limpeza. Remover duplicado de telefone antes do de orçamento faz um cliente com dois orçamentos perder justamente o maior."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Normalizar telefone e montar as colunas de envio",
+              "code": "=PROCX(A2;BasePadrao!$P:$P;BasePadrao!$C:$C;\"-\")",
+              "guidance": "As colunas de envio são calculadas por fórmula, numa planilha-modelo que você copia a cada base. O telefone passa por uma cadeia de verificações. Primeiro, tire parênteses, traços e espaços do fixo e do celular. Depois, conte os dígitos e verifique se o terceiro dígito indica celular. Se os dois números forem válidos, use o celular; se só um for, use esse. Por fim, acrescente o 55 ou marque \"verificar telefone\". O nome de envio usa só o primeiro nome. O produto junta código e descrição resumida. Nome e telefone da loja vêm da base padrão, por PROCX. Para o franqueado, um índice numera os orçamentos de cada loja, e a mensagem lista os três maiores e soma o resto em \"demais orçamentos\".",
+              "tips": [
+                "Ao copiar fórmulas de uma base antiga, confira se a ordem das colunas não mudou na extração nova. Uma coluna a mais desloca todas as referências, e o nome do cliente aparece no lugar do produto.",
+                "Quando a fórmula aponta para outro arquivo, apague a referência ao arquivo antigo (o trecho entre colchetes) antes de arrastar. Senão, a base nova é preenchida com os dados da semana passada."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Preencher o arquivo de importação, aplicar o bloqueio e incluir os testes",
+              "code": "Telefone | imageUrl | nome | nr_orcamento | nome_loja | info_loja | link",
+              "guidance": "Na ferramenta de disparo, baixe o modelo CSV do template. No Excel, use Texto para Colunas, separado por vírgula, e preencha cada variável com a coluna da base, colando como valor. Exemplo: Telefone ← telefone ok; nome ← nome ok; nr_orcamento ← número do orçamento; nome_loja ← nome loja; info_loja ← loja e WhatsApp; link ← link da loja. Cruze os telefones com a lista de bloqueio por PROCV e retire quem aparecer. Acrescente ao fim os números de teste da equipe. Renomeie o arquivo com o nome do disparo e a data, como \"[B2C] Novos orcamentos 2507\". No Salesforce Marketing Cloud, o caminho equivale: template aprovado na Meta, data extension marcada como Is Sendable, importação de CSV em UTF-8 mapeada pelo cabeçalho, opt-in ativo e jornada configurada.",
+              "tips": [
+                "No Marketing Cloud, quando a base cresce e a importação já existe, basta iniciar de novo a mesma importação para incluir os registros novos. Criar outra importação a cada vez espalha versões da base.",
+                "Os números de teste entram no fim do arquivo, e não no começo. Assim, em envio por lotes, a equipe recebe junto com o último lote e confirma que o arquivo saiu inteiro."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Validar a peça com quem pediu",
+              "code": "copy ✓ datas ✓ imagem do mês ✓ variáveis ✓ links ✓ público ✓ bloqueio ✓ horário ✓ opção de sair ✓",
+              "guidance": "Validação é um passo com dono: a pessoa que pediu o disparo confere a peça montada, e não só a copy no documento. Envie a ela a pré-visualização com dados reais de uma linha da base. A checagem segue uma lista. Copy aprovada e igual ao template. Datas do texto iguais às da imagem. Imagem do mês corrente. Variáveis preenchidas, sem \"Olá ,\". Links que abrem no destino certo. Público e exclusões conferidos. Lista de bloqueio aplicada. Horário dentro do combinado. Opção de sair visível: botão de cancelar notificações no WhatsApp, link de descadastro e de privacidade no e-mail. Confira também no próprio WhatsApp, num número de teste, porque a pré-visualização da ferramenta nem sempre mostra quebras de linha e negrito como o app.",
+              "tips": [
+                "Peça com oferta e preço tem duas validações: a da área que pediu e a de quem responde pelo preço. Uma não substitui a outra.",
+                "Guarde a aprovação por escrito, no chat ou no e-mail, junto da base enviada. Quando aparecer um erro, a pergunta será quem aprovou e qual versão."
+              ]
+            },
+            {
+              "number": 6,
+              "title": "Disparar em lotes e monitorar",
+              "code": "lotes: 9 × 64 a cada 30 min · último lote: 14:35 · status: enviado | entregue | lido | erro",
+              "guidance": "Disparo grande sai em lotes, para não afogar o atendimento com respostas simultâneas. Na Rede Construir+, o pós-venda sai em 9 lotes de 64 contatos a cada 30 minutos, e o SMS de Black Friday sai em 5 lotes de 7.500 a cada 15 minutos. Antes do envio, avise a equipe de atendimento do horário e do volume. Na plataforma, confira a mensagem renderizada mais uma vez e escolha entre enviar agora ou agendar. Depois do último lote, anote o horário. Nas primeiras horas, acompanhe os status (enviado, entregue, lido e erro) e as respostas. Erro concentrado numa loja costuma ser número errado na base padrão. Resposta pedindo para sair entra na lista de bloqueio no mesmo dia.",
+              "tips": [
+                "Sexta à tarde não é bom horário para disparo que gera conversa: as respostas chegam quando a loja já fechou e esfriam até segunda.",
+                "Se a primeira leva de status mostrar muito erro, pause os lotes seguintes e investigue antes. Lote é também um freio."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que a base merece mais tempo que a copy",
+      "highlights": [
+        {
+          "icon": "shield",
+          "title": "Bloqueio sempre aplicado",
+          "text": "Cruzar a base com a lista de bloqueio em todo envio ao cliente é o que impede de contatar quem já pediu para sair."
+        },
+        {
+          "icon": "tools",
+          "title": "Fórmula no lugar da mão",
+          "text": "Telefone, nome e loja calculados por fórmula numa planilha-modelo dão o mesmo resultado em toda base, semana após semana."
+        },
+        {
+          "icon": "bolt",
+          "title": "Lote como freio",
+          "text": "Enviar em lotes protege o atendimento e dá tempo de parar quando os primeiros status mostram erro."
+        }
+      ],
+      "closingText": "Você já monta a base, valida a peça e dispara com controle. O último módulo fecha o ciclo: registrar o resultado, medir o que importa para o negócio e deixar a operação pronta para outra pessoa.",
+      "ctaTitle": "🚀 Disparo no ar!",
+      "ctaText": "Base limpa, peça validada e envio em lotes. Agora vamos medir, documentar e preparar a passagem de bastão.",
+      "nextButtonText": "Ir para Módulo 3: Relatórios, Documentação e Passagem de Bastão"
+    },
+    {
+      "id": 3,
+      "icon": "sitemap",
+      "title": "Relatórios, Documentação e Passagem de Bastão",
+      "shortDescription": "Resultado do disparo, orçamento assistido, organização e continuidade",
+      "introductionText": "Um disparo só termina quando o resultado está registrado e outra pessoa consegue repeti-lo. Este módulo fecha o ciclo: o relatório no planejamento de réguas, a medição de orçamento assistido, a investigação de quem não lê, a organização de pastas, nomes e versões, e a passagem de bastão para férias ou mudança de função, com To-Do de ausência, gravações e demonstração.",
+      "sections": [
+        {
+          "title": "📊 Fechar, registrar e passar adiante",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Fechar o disparo no planejamento de réguas",
+              "code": "WhatsApp: enviados | recebidos | lidos | erro · E-mail: enviadas | entregues | abertura | hard bounce · atualizado: dd/mm até dd/mm",
+              "guidance": "Todo disparo termina com uma linha no relatório do planejamento de réguas, preenchida a partir da plataforma. No WhatsApp, registre enviados, recebidos, lidos e erros. No e-mail, registre mensagens enviadas, entregues, taxa de abertura e hard bounces. Cada linha tem prefixo de público, data, remetente e origem da base. Feche sempre com a marca de atualização, por exemplo \"atualizado: 15/02 até 15/02\", que mostra até que dia o relatório é confiável. Sem essa marca, ninguém sabe se o mês está completo ou se faltam disparos a lançar.",
+              "tips": [
+                "Lance o resultado no mesmo dia ou no seguinte. Algumas plataformas guardam o detalhe por envio só por um período, e o relatório atrasado vira estimativa.",
+                "Hard bounce no e-mail e erro no WhatsApp voltam para a base: o contato é marcado e não entra no próximo envio. Relatório que não limpa a base só descreve o problema."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Medir o orçamento assistido",
+              "code": "orçamentos impactados → em negociação → fechados (15 dias) ÷ base do mês",
+              "guidance": "Leitura alta não paga a operação. A pergunta da liderança é quantos orçamentos que receberam mensagem viraram venda. Mantenha uma base do mês com os disparos de rotina para o cliente final, com telefone, número do orçamento e data do disparo, atualizada a cada envio. A cada quinzena, consolide: primeiro os disparos de rotina, a partir da base do mês; depois os disparos sob demanda, a partir dos arquivos de cada um. Cruze os números de orçamento com a situação no funil e com as vendas, e preencha o relatório de orçamento assistido. Limpe antes de colar: tire duplicados e orçamentos sem atendimento, e confira os formatos de data. Exercício com a Rede Construir+: em 1.200 orçamentos que receberam a oferta da semana, 84 fecharam em até 15 dias. Compare com um grupo que não recebeu.",
+              "tips": [
+                "Mantenha um calendário de acompanhamento com os dias de cada mês e marque \"ok\" nos dias já consolidados. É o jeito mais rápido de saber, numa auditoria, qual dia faltou.",
+                "Datas exportadas em formato americano (mês/dia) viram outra data no Excel em português sem dar erro. Confira uma data conhecida antes de cruzar a base inteira."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Investigar quem não lê",
+              "code": "juntar → limpar → gráficos → interpretar → ação por causa",
+              "guidance": "A análise mais útil é a de quem não lê. Para os alertas enviados aos franqueados, exporte da plataforma os resultados por destinatário, separe o texto em colunas e cruze com a base padrão de lojas. Siga quatro passos: juntar os dados de várias semanas, limpar, montar gráficos e só então interpretar. Selecione os pontos de inflexão (lojas cuja leitura caiu de repente) e uns cinco casos normais para comparar. Investigue a causa antes de concluir que o franqueado não se interessa: o número cadastrado pode ser pessoal e não da loja, pode ter mudado após um repasse ou pode estar bloqueado. Feche com uma ação por causa: corrigir a base, conversar com o consultor de campo da praça ou mudar o horário.",
+              "tips": [
+                "Antes de redesenhar uma régua, levante o histórico do que já foi enviado: ano, data, dia da semana, comunicação, canal, natureza, enviados e leitura. Sem esse histórico, a régua \"nova\" repete o que já não funcionou.",
+                "Leitura baixa em todas as lojas ao mesmo tempo aponta para o disparo (horário, template, remetente). Leitura baixa em poucas lojas aponta para a base."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Pastas, nomes e versões",
+              "code": "2026/10-Outubro/[B2C] Novos orcamentos 3110.xlsx · template_b2c_novos_orc_v2 · video-boas-praticas-lavras-1010.mp4",
+              "guidance": "Organização é o que permite refazer um disparo seis meses depois. Siga um fluxo de arquivos: todo download vai para a pasta de downloads; o que for referência é copiado para a pasta da categoria; o restante é recortado para o armazenamento. As bases enviadas ficam por ano e mês, com o nome do disparo e a data no formato ddmm. Templates e bases nas plataformas seguem um padrão sem espaços, como exp_falta_retorno_1901 e template_b2c_novos_orc_v2, e a versão sobe quando o texto muda. Arquivos hospedados para links, como vídeos e PDFs, levam nome em minúsculas, sem espaço, acento, ç ou caractere especial. O manual de orientações também tem versão: v1, v2, v3 e produção, cada uma datada, e cada procedimento termina com \"atualizado: dd/mm/aaaa\".",
+              "tips": [
+                "Nunca coloque nome ou telefone de cliente no nome de arquivo ou de pasta. O nome do arquivo aparece em listagens, e-mails e históricos de compartilhamento, e escapa do controle de acesso da planilha.",
+                "Quando duas versões do mesmo template ficarem ativas ao mesmo tempo, registre na ficha do disparo qual é a vigente. Template antigo aprovado é tentação para o próximo apressado."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Passagem de bastão",
+              "code": "ID | Demanda | O que fazer | Resp. | OBS | Status",
+              "guidance": "Férias, mudança de função ou saída exigem que a operação continue sem você. Prepare um To-Do de ausência com as colunas ID, Demanda, O que fazer, Responsável, Observação e Status, e registre em cada linha a dependência externa, como \"falta a TI criar a consulta da base; quando ativar, incluir os números de teste\". Grave a tela executando cada disparo de rotina do começo ao fim e transforme as gravações em guias passo a passo. Depois, faça uma demonstração ao vivo com quem vai assumir, com essa pessoa no teclado. Confira os acessos: quem assume precisa ter acesso a cada plataforma antes da sua saída, e os acessos de quem sai entram na lista para desativar, com data.",
+              "tips": [
+                "O teste da passagem de bastão é a pessoa nova disparar sozinha uma vez, com você disponível mas sem tocar no teclado. Guia que nunca foi seguido por outra pessoa não está pronto.",
+                "Deixe no To-Do de ausência o que não fazer: disparos suspensos, bases que não podem ser reaproveitadas, templates em revisão. Quem cobre ausência costuma errar por excesso de iniciativa."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que documentar é parte da operação",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Resultado que vira ação",
+          "text": "Investigar quem não lê aponta problemas de base e de horário que a média esconde."
+        },
+        {
+          "icon": "folder",
+          "title": "Nome que se encontra",
+          "text": "Prefixo, data e versão no nome de arquivos e templates permitem refazer um disparo meses depois."
+        },
+        {
+          "icon": "sync",
+          "title": "Operação que sobrevive à ausência",
+          "text": "To-Do de ausência, gravações e demonstração fazem a rotina continuar quando quem a montou não está."
+        }
+      ],
+      "closingText": "Você percorreu a operação inteira de CRM: rotina e rituais, catálogo por público e canal, base e validação, execução em lotes, relatório e documentação. É esse conjunto que torna uma operação previsível, auditável e transferível.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você opera CRM com rotina, controle e registro. O próximo passo natural é automatizar as rotinas mais repetidas em jornadas na plataforma.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Quais arquivos devem estar abertos antes de tratar o e-mail, no início do dia?",
+      "explanation": "Todo disparo do dia depende desses quatro controles: o que sai, quem não pode receber, quem testa e para qual loja e telefone a mensagem aponta. Começar pelo e-mail ou só pela ferramenta deixa o disparo sujeito a informação desatualizada.",
+      "options": [
+        {
+          "text": "Planejamento de réguas, lista de bloqueio, números de teste e base padrão de lojas",
+          "isCorrect": true
+        },
+        {
+          "text": "Apenas o relatório do mês anterior",
+          "isCorrect": false
+        },
+        {
+          "text": "Somente a ferramenta de disparo",
+          "isCorrect": false
+        },
+        {
+          "text": "A caixa de chamados e o calendário de reuniões",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Em uma semana de 5 dias úteis, com 528 minutos por dia, rotina de 1.150 minutos e reuniões de 360, quanto tempo sobra para demandas pontuais?",
+      "explanation": "O tempo do ciclo é 5 × 528 = 2.640 minutos. Descontando 1.150 de rotina e 360 de reuniões, sobram 1.130. 2.640 é o total bruto, 1.490 esquece as reuniões e 510 é o excesso do exemplo em que as pontuais pediam 1.640.",
+      "options": [
+        {
+          "text": "1.130 minutos",
+          "isCorrect": true
+        },
+        {
+          "text": "2.640 minutos",
+          "isCorrect": false
+        },
+        {
+          "text": "1.490 minutos",
+          "isCorrect": false
+        },
+        {
+          "text": "510 minutos",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Qual é a função de registrar a data em uma tarefa a cada daily em que ela é reportada?",
+      "explanation": "A sequência de datas na tarefa mostra quanto tempo ela está parada e ajuda a decidir quando virar impedimento. O Scrum não exige esse registro, ele não altera o número de concluídas e convive com o To-Do por frente.",
+      "options": [
+        {
+          "text": "Mostrar há quantos dias a tarefa está aberta, sem depender de memória",
+          "isCorrect": true
+        },
+        {
+          "text": "Cumprir uma exigência obrigatória do Scrum",
+          "isCorrect": false
+        },
+        {
+          "text": "Aumentar o número de tarefas concluídas",
+          "isCorrect": false
+        },
+        {
+          "text": "Substituir o To-Do por frente",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Por que cada número remetente de WhatsApp deve falar com um único público?",
+      "explanation": "Um alerta para o franqueado saindo do número da central confunde o cliente que conversa com aquele número. A separação é de organização e identidade; não há proibição de vários templates por número, nem custo dobrado por público, nem garantia de leitura maior.",
+      "options": [
+        {
+          "text": "Porque o remetente faz parte da identidade da conversa e misturar públicos confunde quem recebe",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque a Meta proíbe mais de um template por número",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o custo da mensagem dobra quando o público muda",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque números diferentes têm taxas de leitura sempre maiores",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Na Rede Construir+, como fica o aniversário de arquitetos no fim de semana?",
+      "explanation": "A regra do calendário é agendar na sexta os envios de sábado e domingo e, na véspera de feriado, o do feriado. Mensagem de aniversário enviada depois perde o sentido, e depender de plantão no fim de semana é frágil.",
+      "options": [
+        {
+          "text": "É agendado na sexta-feira para sábado e domingo",
+          "isCorrect": true
+        },
+        {
+          "text": "É enviado na segunda com os dois dias acumulados",
+          "isCorrect": false
+        },
+        {
+          "text": "É cancelado nos fins de semana",
+          "isCorrect": false
+        },
+        {
+          "text": "É disparado no sábado pela equipe de plantão",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Uma área pede um disparo e envia apenas a copy. Qual é a conduta correta?",
+      "explanation": "Nada entra no planning sem os cinco requisitos: copy, imagem, canal, base e plano inicial. Montar a base sem conhecer público e frequência gera retrabalho, e disparar para todos ignora segmentação e consentimento.",
+      "options": [
+        {
+          "text": "Devolver a lista do que falta: imagem, canal, base e plano inicial",
+          "isCorrect": true
+        },
+        {
+          "text": "Montar a base por conta própria e disparar no mesmo dia",
+          "isCorrect": false
+        },
+        {
+          "text": "Disparar para toda a base de clientes para garantir alcance",
+          "isCorrect": false
+        },
+        {
+          "text": "Adaptar a copy de outra campanha parecida",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Ao apagar linhas filtradas de uma base no Excel, por que selecionar só as células visíveis (Alt + ;)?",
+      "explanation": "Sem selecionar apenas as células visíveis, a exclusão pode levar linhas ocultas pelo filtro, que deveriam permanecer na base. O atalho não tem relação com velocidade, formatação ou conversão em valores.",
+      "options": [
+        {
+          "text": "Para não apagar junto as linhas escondidas pelo filtro",
+          "isCorrect": true
+        },
+        {
+          "text": "Para acelerar o cálculo das fórmulas",
+          "isCorrect": false
+        },
+        {
+          "text": "Para remover a formatação condicional",
+          "isCorrect": false
+        },
+        {
+          "text": "Para converter as fórmulas em valores",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Por que os números de teste da equipe entram no fim do arquivo de importação?",
+      "explanation": "No envio em lotes, os números de teste no fim chegam com o último lote e servem de prova de que o envio terminou. O teste prévio da peça é feito antes, separadamente. Não há rejeição de números internos, e a ordem não tem relação com a lista de bloqueio.",
+      "options": [
+        {
+          "text": "Para que a equipe receba junto com o último lote e confirme que o arquivo saiu inteiro",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque a ferramenta rejeita números internos no começo",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que a equipe receba antes de todos os clientes",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque números de teste não passam pela lista de bloqueio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Desde julho de 2025, como a Meta cobra as mensagens de template no WhatsApp Business Platform?",
+      "explanation": "A Meta passou ao modelo por mensagem em 1º de julho de 2025, com tarifa por categoria e mercado, e cobra apenas quando a mensagem é entregue. Por isso, duplicados na base geram cobrança dupla, e telefones inválidos geram tentativas sem resultado.",
+      "options": [
+        {
+          "text": "Por mensagem entregue, conforme a categoria e o país do destinatário",
+          "isCorrect": true
+        },
+        {
+          "text": "Por conversa de 24 horas, independentemente do número de mensagens",
+          "isCorrect": false
+        },
+        {
+          "text": "Por mensagem enviada, mesmo que não seja entregue",
+          "isCorrect": false
+        },
+        {
+          "text": "Por mensalidade fixa por número",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "O que a marca \"atualizado: 15/02 até 15/02\" indica no relatório do planejamento de réguas?",
+      "explanation": "A marca mostra até onde o relatório está completo, para que ninguém leia um mês parcial como fechado. Ela não se refere a apagamento, aprovação de template ou prazo de validação.",
+      "options": [
+        {
+          "text": "Até que dia os resultados lançados são completos e confiáveis",
+          "isCorrect": true
+        },
+        {
+          "text": "A data em que o relatório será apagado",
+          "isCorrect": false
+        },
+        {
+          "text": "O dia em que o template foi aprovado",
+          "isCorrect": false
+        },
+        {
+          "text": "O prazo para a área solicitante validar a peça",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "A leitura dos alertas caiu de repente em três lojas, enquanto as demais seguem estáveis. O que investigar primeiro?",
+      "explanation": "Queda concentrada em poucas lojas aponta para a base dessas lojas. Se fosse horário ou template, a queda apareceria na rede inteira. Comparar com a abertura de e-mail mistura métricas de canais diferentes.",
+      "options": [
+        {
+          "text": "A base: número pessoal no lugar do da loja, troca após repasse ou bloqueio",
+          "isCorrect": true
+        },
+        {
+          "text": "O horário do disparo para toda a rede",
+          "isCorrect": false
+        },
+        {
+          "text": "O texto do template, que deve ser reescrito",
+          "isCorrect": false
+        },
+        {
+          "text": "A taxa de abertura de e-mail das mesmas lojas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Qual é o teste que indica que a passagem de bastão está pronta?",
+      "explanation": "Guia que nunca foi seguido por outra pessoa não está validado. O tamanho do documento e a velocidade das gravações não provam nada, e desativar acessos antes da demonstração impede justamente a transição.",
+      "options": [
+        {
+          "text": "A pessoa que assume dispara sozinha uma vez, seguindo o guia, com você disponível mas sem tocar no teclado",
+          "isCorrect": true
+        },
+        {
+          "text": "O guia passo a passo ter mais de dez páginas",
+          "isCorrect": false
+        },
+        {
+          "text": "Todas as gravações terem sido feitas em uma semana",
+          "isCorrect": false
+        },
+        {
+          "text": "Os acessos de quem sai terem sido desativados antes da demonstração",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "O kit de operação de CRM da Rede Construir+: planning diário e quadro de tarefas, planilha de capacidade, catálogo de disparos com fichas e calendário semanal, planilha-modelo de base com fórmulas de limpeza e telefone, checklist de validação, relatório no planejamento de réguas com orçamento assistido, e um To-Do de ausência pronto para a passagem de bastão.",
+    "highlights": [
+      "Catálogo de disparos por público e canal, com ficha e calendário",
+      "Planilha-modelo de base com limpeza, telefone normalizado e bloqueio",
+      "Relatório de disparo e de orçamento assistido com marca de atualização"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "O WhatsApp virou o canal em que o brasileiro conversa com o comércio: 89% dos compradores online entrevistados usam o app para falar com lojas e prestadores de serviço, e 63% querem receber por ele o acompanhamento de entregas, segundo pesquisa da Nodus feita para a Meta em janeiro de 2025 e publicada pelo Meio & Mensagem em abril de 2025. Pós-venda, alerta de orçamento e aviso de entrega deixaram de ser extras e passaram a ser esperados.",
+      "Ao mesmo tempo, cada erro de operação passou a ter preço. Desde 1º de julho de 2025, a WhatsApp Business Platform cobra por mensagem entregue, conforme a categoria e o país, e a Meta anunciou que as mensagens de utilidade dentro da janela de atendimento deixam de ser gratuitas em 1º de outubro de 2026. Base com duplicados e telefones errados agora pesa direto no custo.",
+      "E o mix de canais continua necessário: no Panorama Mobile Time/Opinion Box de janeiro de 2025, 72% dos brasileiros disseram nunca ou quase nunca enviar SMS, mas 54% recebem SMS todos os dias ou quase todos os dias. Operar e-mail, WhatsApp e SMS com o mesmo rigor de base e de validação é o que separa uma operação de CRM de uma sequência de envios."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Redes de franquias",
+        "description": "Alertas para franqueados, base de contatos por loja e chamados de atualização vindos da rede."
+      },
+      {
+        "label": "Varejo com e-commerce",
+        "description": "Pós-venda por canal (loja física, site e marketplace), recuperação de orçamento e campanhas sazonais."
+      },
+      {
+        "label": "Programas de relacionamento",
+        "description": "Comunicação recorrente com arquitetos, profissionais e clientes VIP, com calendário e relatório."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem está entrando em CRM",
+        "description": "Assume uma operação já rodando e precisa entender a rotina antes de mudar qualquer coisa."
+      },
+      {
+        "label": "Quem dispara sem processo",
+        "description": "Já usa Zenvia, Marketing Cloud ou outra ferramenta, mas monta cada base de um jeito."
+      },
+      {
+        "label": "Quem coordena a equipe",
+        "description": "Precisa de planning, capacidade e documentação para distribuir trabalho e cobrir ausências."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "A rotina de planning, catálogo de disparos, validação de base e relatório aparece em qualquer empresa que fala com clientes em escala pelo WhatsApp, e-mail e SMS: redes de franquias, varejistas de material de construção, e-commerces, farmácias, bancos e escolas. Com o WhatsApp como canal de conversa com o comércio para 89% dos compradores online ouvidos pela Nodus para a Meta em janeiro de 2025, a habilidade de operar disparos com controle se transfere entre setores e ferramentas.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Meta for Developers — WhatsApp Business Platform: preços por mensagem, categorias e janela de atendimento",
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing"
+    },
+    {
+      "label": "Meio & Mensagem — O impacto do WhatsApp na jornada de compra, segundo a Meta (abril de 2025)",
+      "url": "https://www.meioemensagem.com.br/midia/o-impacto-do-whatsapp-na-jornada-de-compra-segundo-a-meta"
+    },
+    {
+      "label": "Teletime — 72% dos brasileiros mandam SMS nunca ou quase nunca, Panorama Mobile Time/Opinion Box (março de 2025)",
+      "url": "https://teletime.com.br/07/03/2025/72-dos-brasileiros-mandam-sms-nunca-ou-quase-nunca/"
+    },
+    {
+      "label": "Trailhead (Salesforce) — Import Subscriber Data: data extensions, Is Sendable e importação de arquivos",
+      "url": "https://trailhead.salesforce.com/content/learn/modules/email-creation-and-sending/import-subscriber-data"
+    },
+    {
+      "label": "Scrum.org — Introduction to the Daily Scrum",
+      "url": "https://www.scrum.org/resources/introduction-daily-scrum"
+    }
+  ]
+}

@@ -17,6 +17,19 @@
       "Minicursos",
       "Palestras acadêmicas e de mercado"
     ],
-    "officialLink": ""
+    "officialLink": "",
+    "paragraphs": [
+      "O Simpósio Mineiro de Computação (SMC) de 2012 reuniu em Juiz de Fora, de 21 a 24 de novembro, dois eventos acadêmicos de computação: o Workshop Mineiro de Sistemas de Informação (WMSI), no IF Sudeste MG, e a VII Escola Regional de Informática de Minas Gerais (ERI-MG), no Instituto de Ciências Exatas (ICE) da UFJF.",
+      "As Escolas Regionais de Informática fazem parte de uma rede de eventos apoiados pela Sociedade Brasileira de Computação (SBC) em vários estados. São realizadas nas próprias instituições de ensino, com inscrições de valor acessível, e têm como objetivo aproximar estudantes de eventos científicos, divulgar temas atuais da área e estimular o interesse pela pesquisa. O formato combina palestras e minicursos ministrados por pesquisadores e profissionais, apresentação de trabalhos acadêmicos e relatos da indústria.",
+      "No SMC 2012, a programação incluiu apresentação de artigos, minicursos e palestras acadêmicas e de mercado. Douglas participou como inscrito durante a graduação em Ciência da Computação.",
+      "O público principal desse tipo de evento são estudantes de graduação e pós-graduação em computação, especialmente quem está no início do curso, além de professores e pesquisadores da região.",
+      "Para quem está na graduação, participar de uma escola regional é muitas vezes o primeiro contato com o ambiente de um congresso científico: ver como pesquisas são apresentadas, fazer minicursos sobre temas que ainda não estão na grade e conhecer estudantes e professores de outras instituições."
+    ],
+    "sources": [
+      {
+        "label": "SBC: Escolas Regionais",
+        "url": "https://www.sbc.org.br/escolas-regionais"
+      }
+    ]
   }
 }

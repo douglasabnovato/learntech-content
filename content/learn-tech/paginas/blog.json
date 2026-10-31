@@ -1,6 +1,724 @@
 {
   "itens": [
     {
+      "id": "videoteca-e-leituras-para-autoconhecimento-e-carreira",
+      "blogURL": "/blog/videoteca-e-leituras-para-autoconhecimento-e-carreira",
+      "img": "https://cdn.pixabay.com/photo/2016/09/15/16/28/tree-1671079_1280.jpg",
+      "title": "Videoteca do autoconhecimento: palestras, livros e filmes para pensar a carreira",
+      "tag": "Carreira",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-10-30",
+      "readingTime": "5 min",
+      "lead": "Antes de escolher entre front-end, dados ou produto, vale uma pergunta mais difícil: o que você quer da sua carreira e por quê? Reunimos a videoteca e as leituras de um curso de autoconhecimento e organizamos tudo por tema, com uma frase sobre o porquê de cada item. Não é para maratonar: escolha um tema, assista, anote o que mexeu com você e só então passe ao próximo.",
+      "highlights": [
+        {
+          "label": "Contar a própria história",
+          "description": "Palestras sobre narrativa e vulnerabilidade para enxergar a trajetória como matéria-prima."
+        },
+        {
+          "label": "Escolher sem paralisar",
+          "description": "Ideias sobre excesso de opções, escolhas difíceis e múltiplos interesses."
+        },
+        {
+          "label": "Mentalidade e hábitos",
+          "description": "Livros e vídeos sobre crescimento, perspectiva e pequenas mudanças que se acumulam."
+        }
+      ],
+      "body": [
+        "Tema 1, a sua história. A proposta do curso começa pedindo que você conte a sua vida como a sinopse de um filme, e três referências ajudam nisso. The clues to a great story, de Andrew Stanton, roteirista da Pixar, mostra que toda boa história promete ao público que vale a pena acompanhá-la, o que serve também para uma apresentação pessoal numa entrevista. The power of vulnerability, de Brené Brown, explica por que mostrar quem você é, inclusive as imperfeições, é condição para conexões verdadeiras. E o livro A Coragem de Ser Imperfeito, da mesma autora, aprofunda a ideia para quem trava com medo de errar em público. Completam o tema o trabalho de Richard Leider sobre propósito e os vídeos de Joni Galvão, da Soap, sobre como construir boas narrativas.",
+        "Tema 2, como os outros te veem. Autoconhecimento também vem de fora, e por isso o curso pede para ouvir pelo menos três pessoas sobre seus pontos fortes e fracos. O livro Descubra seus Pontos Fortes, de Marcus Buckingham e Donald O. Clifton, defende investir no que você já faz bem em vez de gastar toda a energia corrigindo fraquezas, algo útil para quem está decidindo em qual área de tecnologia se especializar. O vídeo A Sabedoria das Perguntas, de Ryoichi Oka Penna, ajuda a formular boas perguntas para essas conversas de feedback.",
+        "Tema 3, mentalidade e perspectiva. The power of believing that you can improve, de Carol Dweck, apresenta o poder do ainda: não saber programar ainda é diferente de não saber, e o livro Mindset, da mesma autora, desenvolve essa ideia. What reality are you creating for yourself?, de Isaac Lidsky, que perdeu a visão aos poucos, mostra como as histórias que contamos a nós mesmos moldam o que conseguimos fazer. Metaphorically speaking, de James Geary, revela como as metáforas que usamos orientam nosso pensamento. Dois filmes entram aqui: Divertida Mente (Pixar, 2015), sobre o papel de cada emoção, inclusive a tristeza, e Brilho Eterno de uma Mente sem Lembranças (2004), sobre o quanto as memórias, boas e ruins, nos constituem."
+      ],
+      "quote": "Autoconhecimento não é um destino, é um hábito: assistir, refletir, conversar com alguém e mudar um comportamento de cada vez.",
+      "bodyContinued": [
+        "Tema 4, sentido e resiliência. Em Busca de Sentido, de Viktor Frankl, é a leitura de base: escrito por um psiquiatra que sobreviveu a campos de concentração, sustenta que sempre resta a liberdade de escolher como responder ao que acontece. 3 things I learned while my plane crashed, de Ric Elias, passageiro de um avião que fez um pouso forçado, é um lembrete curto sobre não adiar o que importa. Embrace the shake, do artista Phil Hansen, conta como um tremor nas mãos virou ponto de partida criativo, uma boa analogia para limitações de prazo, orçamento ou tecnologia.",
+        "Tema 5, escolhas e carreira. The paradox of choice, de Barry Schwartz, mostra por que opções demais geram ansiedade e frustração, sensação conhecida de quem olha a lista infinita de linguagens e frameworks. How to make hard choices, da filósofa Ruth Chang, propõe decidir com base nos seus valores quando nenhuma opção é claramente melhor. What makes us feel good about our work?, de Dan Ariely, mostra que sentido e reconhecimento pesam tanto quanto dinheiro na motivação. How to find work you love, de Scott Dinsmore, dá passos práticos para conectar paixões e trabalho. Why some of us don't have one true calling, de Emilie Wapnick, acolhe quem gosta de muitas coisas e mostra como isso pode ser vantagem, algo comum em quem transita entre design, código e produto. How to know your life purpose in 5 minutes, de Adam Leipzig (TEDxMalibu), resume propósito em perguntas simples sobre quem você é e a quem serve. Para fechar com provocação, Why you will fail to have a great career, de Larry Smith, desmonta uma a uma as desculpas para não perseguir o que você quer. O curso também indica um vídeo da agência de tendências Box1824 sobre como as motivações mudaram entre gerações.",
+        "Tema 6, futuro e hábitos. The psychology of your future self, de Dan Gilbert, explica por que subestimamos o quanto ainda vamos mudar, um bom argumento contra decisões de carreira definitivas aos vinte anos. Try something new for 30 days, de Matt Cutts, sugere experimentos de 30 dias, ótimo formato para testar uma nova linguagem ou rotina de estudos. Are you human?, de Ze Frank, é uma sequência bem-humorada de perguntas sobre o que temos em comum. Nos livros, O Poder do Hábito, de Charles Duhigg, explica o ciclo gatilho, rotina e recompensa; Inteligência Positiva, de Shirzad Chamine, ajuda a reconhecer as vozes internas que sabotam seu desempenho; e Metas que Desafiam, de Mark Murphy, discute como definir objetivos ambiciosos que realmente engajam.",
+        "Como usar esta lista: escolha um tema por semana, assista a uma palestra e leia um capítulo, e registre três coisas, o que você aprendeu sobre si, o que quer mudar e qual é o primeiro passo. A maioria das palestras do TED tem legendas em português no próprio site. Se você está em transição para tecnologia, esse exercício vale tanto quanto o próximo curso técnico: saber por que você quer estar na área é o que te segura quando o primeiro projeto der errado."
+      ],
+      "sources": [
+        {
+          "label": "Talks to watch when you don't know what to do with your life (Larry Smith, Emilie Wapnick, Ze Frank, Dan Gilbert, Ruth Chang) — TED",
+          "url": "https://www.ted.com/playlists/225/talks_to_get_you_through_your"
+        },
+        {
+          "label": "Talks to help you find the right job (Scott Dinsmore, Dan Ariely) — TED",
+          "url": "https://www.ted.com/playlists/220/talks_to_help_you_find_the_right_job"
+        },
+        {
+          "label": "Talks for when you feel like you're not enough (Carol Dweck, Brené Brown) — TED",
+          "url": "https://www.ted.com/playlists/331/talks_for_when_you_feel_like_y"
+        },
+        {
+          "label": "How to tell a story (Andrew Stanton) — TED",
+          "url": "https://www.ted.com/playlists/62/how_to_tell_a_story"
+        },
+        {
+          "label": "Isaac Lidsky: What reality are you creating for yourself? — TED",
+          "url": "https://www.ted.com/talks/isaac_lidsky_what_reality_are_you_creating_for_yourself"
+        },
+        {
+          "label": "Barry Schwartz: The paradox of choice — TED",
+          "url": "https://www.ted.com/talks/barry_schwartz_the_paradox_of_choice"
+        },
+        {
+          "label": "Matt Cutts: Try something new for 30 days — TED",
+          "url": "https://www.ted.com/talks/matt_cutts_try_something_new_for_30_days"
+        }
+      ]
+    },
+    {
+      "id": "tecnicas-de-lideranca-e-equipes-produtivas",
+      "blogURL": "/blog/tecnicas-de-lideranca-e-equipes-produtivas",
+      "img": "https://cdn.pixabay.com/photo/2018/03/10/12/00/teamwork-3213924_1280.jpg",
+      "title": "Cinco técnicas de liderança e uma matriz de tempo para times de tecnologia",
+      "tag": "Carreira",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-10-30",
+      "readingTime": "6 min",
+      "lead": "Liderar não começa com um cargo. Começa no dia em que você precisa convencer o time a refatorar um módulo, negociar escopo com produto ou decidir o que fica fora da sprint. Juntamos o que dois cursos de liderança e gestão de equipes ensinam e traduzimos para a rotina de quem é tech lead, dev sênior ou pessoa de produto: cinco técnicas para pensar como líder e um jeito simples de organizar o trabalho do time.",
+      "highlights": [
+        {
+          "label": "Validar antes de construir",
+          "description": "Toda ideia é hipótese até ser testada com quem vai usar, inclusive a sua arquitetura favorita."
+        },
+        {
+          "label": "Mostrar em vez de explicar",
+          "description": "Um protótipo ou um diagrama resolve em cinco minutos a discussão que levaria uma reunião inteira."
+        },
+        {
+          "label": "Importante antes do urgente",
+          "description": "A matriz de Eisenhower ajuda o time a sair do modo bombeiro e investir no que evita incêndios."
+        }
+      ],
+      "body": [
+        "A primeira técnica é o customer development, ideia popularizada por Steve Blank e depois incorporada ao movimento lean startup: nada é verdade até ser testado e validado fora da sua cabeça. Para um time de produto, isso significa tratar cada feature do roadmap como hipótese. Antes de gastar três sprints, converse com cinco usuários, olhe os dados de uso, publique uma versão mínima. Para um tech lead, vale também para decisões técnicas: a migração para microsserviços é mesmo necessária ou é uma suposição que ninguém mediu? Perguntas para se fazer: quantas ideias suas morrem no backlog sem nunca serem testadas? Você muda de rota quando a evidência contradiz o plano, ou insiste?",
+        "A segunda é a prototipagem, que pode ser resumida em em vez de falar, mostre. Protótipo é o primeiro modelo de algo, feito para testar um conceito. Em tecnologia ele tem muitas formas: um wireframe no Figma, uma prova de conceito num branch descartável, um diagrama de sequência num quadro, um mock de API. Quem lidera e chega à discussão com algo visível sai na frente, porque o time entende mais rápido, critica com mais precisão e decide melhor. A pergunta incômoda aqui é: você costuma errar rápido com rascunhos ou demora semanas aperfeiçoando antes de mostrar?",
+        "A terceira é o service design, a atenção aos detalhes de toda a experiência de quem recebe o seu trabalho. A disciplina tem raízes no service blueprint, o mapa visual de todas as etapas de um serviço, descrito por G. Lynn Shostack num artigo da Harvard Business Review de 1984. No dia a dia de um time de dev, os clientes não são só os usuários finais: são também o time de suporte que recebe os chamados, o colega que vai dar manutenção no seu código e o outro squad que consome a sua API. Documentação clara, mensagens de erro úteis, changelog legível e onboarding de novos devs são detalhes de service design."
+      ],
+      "quote": "O trabalho de quem lidera não é fazer mais coisas, é decidir com o time o que deve ser feito primeiro. Fazer a coisa certa vale mais do que fazer muitas coisas.",
+      "bodyContinued": [
+        "A quarta técnica é a proatividade, entendida como o oposto da reação. A raiz do conceito está em Viktor Frankl, que em Em Busca de Sentido defende que sempre resta a escolha de como responder às circunstâncias, e ele virou o primeiro hábito do livro Os 7 Hábitos das Pessoas Altamente Eficazes, de Stephen Covey. Num time de tecnologia, proatividade é ver o alerta no monitoramento e abrir o incidente antes que alguém peça, propor o teste que falta, estudar a tecnologia que o time vai adotar no próximo trimestre. O vocabulário entrega quem é proativo: vamos procurar alternativas, eu assumo, eu faço. A quinta técnica é o pensamento sistêmico, a capacidade de enxergar conexões invisíveis: um prazo apertado gera atalhos, os atalhos geram bugs, os bugs geram mais urgência e o ciclo se repete. Quem lidera aprende a perguntar qual estrutura está produzindo o problema, e não só quem errou.",
+        "Técnicas individuais não bastam se o time está mal organizado. A primeira escolha é como você enxerga as pessoas: como recursos que executam tarefas isoladas ou como parceiras com metas negociadas e compartilhadas. Equipes pequenas, multidisciplinares e com autonomia respondem mais rápido, e a diversidade de perfis pesa a favor: times parecidos demais tendem a concordar no papel e errar juntos na prática. Isso não exige abolir a hierarquia. Em momentos de crise, como um incidente em produção, alguém precisa ter a palavra final.",
+        "Depois vem o fluxo de trabalho, em três passos. Primeiro, coloque tudo no papel: liste todas as demandas sem se preocupar em organizar, depois agrupe as tarefas grandes em projetos ou épicos. Segundo, aloque pessoas considerando não só as habilidades, mas o tempo disponível de cada uma; se alguns estão sobrecarregados e outros ociosos, capacite ou redistribua. Terceiro, priorize numa pilha única, em que a tarefa de cima é sempre a mais importante. Métodos consagrados ajudam: o GTD, de David Allen, com seus cinco passos (coletar, processar, organizar, revisar e fazer, com a regra de resolver na hora o que leva até dois minutos), e o ciclo PDCA (planejar, fazer, checar e agir), associado a Walter Shewhart e difundido por W. Edwards Deming, que combina bem com retrospectivas de sprint.",
+        "A matriz de Eisenhower fecha o pacote. Para cada demanda, duas perguntas: é importante? É urgente? Importante e urgente, como um bug crítico em produção, se faz agora. Importante e não urgente, como pagar dívida técnica, escrever testes, planejar a arquitetura e cuidar das relações do time, se agenda e se protege. Urgente e não importante, como boa parte das interrupções e reuniões sem pauta, se delega ou se recusa com diplomacia. Nem importante nem urgente se elimina. O quadrante que separa times maduros dos apagadores de incêndio é o segundo: quem negligencia o importante hoje o encontra amanhã no quadrante da crise.",
+        "Algumas dicas práticas tiradas da matriz: não se orgulhe de estar sempre correndo, porque isso costuma ser sinal de prioridade mal definida; tenha no máximo três grandes objetivos para o trimestre e confira se cada tarefa serve a algum deles; reserve blocos semanais sem reuniões para trabalho de foco; faça as reuniões operacionais curtas e em pé. Teste por uma semana deixar de fazer o que você classificou como nem importante nem urgente e veja se alguém sente falta. Liderar times de tecnologia é, no fim, um exercício contínuo de validar, mostrar, cuidar dos detalhes, agir antes e enxergar o sistema."
+      ],
+      "sources": [
+        {
+          "label": "5 Técnicas indispensáveis para um líder (e-book) — Na Prática / Fundação Estudar",
+          "url": "https://www.napratica.org.br/"
+        },
+        {
+          "label": "Criando equipes altamente produtivas e Matriz de gestão do tempo (Marcelo Nakagawa) — Endeavor Brasil",
+          "url": "https://endeavor.org.br/"
+        },
+        {
+          "label": "What is customer development? — Eric Ries, Startup Lessons Learned (2008)",
+          "url": "https://www.startuplessonslearned.com/2008/11/what-is-customer-development.html"
+        },
+        {
+          "label": "Service blueprint — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Service_blueprint"
+        },
+        {
+          "label": "Service design — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Service_design"
+        }
+      ]
+    },
+    {
+      "id": "gestao-de-growth-em-ciclos-semanais",
+      "blogURL": "/blog/gestao-de-growth-em-ciclos-semanais",
+      "img": "https://cdn.pixabay.com/photo/2020/12/03/23/35/work-5801876_1280.jpg",
+      "title": "Gestão de growth em ciclos semanais: uma planilha, cinco dias e nenhuma desculpa",
+      "tag": "Carreira",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-10-30",
+      "readingTime": "4 min",
+      "lead": "Time de growth e CRM vive de demandas que chegam todo dia: um pop-up novo, um relatório para segunda, um ajuste de QA na landing page, uma campanha com clube de futebol. Sem um ritmo, tudo vira urgente. Este texto mostra como uma planilha de ciclos semanais organizava esse trabalho e o que ela tem em comum com Scrum, Kanban e ferramentas como Planner e ClickUp.",
+      "highlights": [
+        {
+          "label": "Ciclo = semana útil",
+          "description": "Cada ciclo é numerado pela semana do ano e vai de segunda a sexta, com previsão de conclusão."
+        },
+        {
+          "label": "Esforço em minutos",
+          "description": "Estimar em minutos obriga a quebrar a tarefa até ela caber num dia de trabalho."
+        },
+        {
+          "label": "Atraso visível",
+          "description": "Prazo inicial, data de finalização e atraso lado a lado mostram onde o planejamento falha."
+        }
+      ],
+      "body": [
+        "A planilha tinha onze colunas: Projeto, Status, Ciclo, Previsão de Conclusão, Responsável, Tarefa, Esforço, Prazo Inicial, Data de Finalização, Atraso e Observação. Os projetos eram frentes permanentes numeradas, como 00 - Geral, 04 - Leads e 05 - E-Commerce, e cada linha era uma tarefa concreta dentro de uma delas: criar um pop-up de captura de CEP, montar um relatório, fazer QA de uma página, preparar o material de uma ação com clube de futebol. O status era binário, finalizado ou não finalizado, e os ciclos levavam o número da semana do ano, como Ciclo 26, de 23/06 a 27/06, e Ciclo 27, de 30/06 a 04/07.",
+        "O esforço era anotado em minutos, às vezes como conta (cinco blocos de uma hora mais duas horas de revisão, por exemplo). Parece detalhe, mas é o coração do método: se uma tarefa não cabe numa estimativa em minutos, ela ainda não é tarefa, é projeto. A coluna de atraso compara o prazo inicial com a data real de finalização, e a observação guarda o contexto, como a dependência de uma reunião ou de um retorno de outra área."
+      ],
+      "quote": "Planejar a semana não é prever o futuro. É deixar registrado o que você achou que daria tempo, para aprender com a diferença.",
+      "bodyContinued": [
+        "Do Scrum, o ciclo semanal pega o timebox. O Scrum Guide define sprints de duração fixa de um mês ou menos, com planejamento no início e revisão no fim; uma semana é um sprint curto, adequado a um time pequeno com demandas de marketing que mudam rápido. A coluna Previsão de Conclusão faz o papel da meta da sprint, e a revisão de sexta-feira, olhando o que ficou não finalizado, é uma retrospectiva informal. O que a planilha não tem, e um time maior sentiria falta, é um backlog priorizado separado do ciclo.",
+        "Do Kanban, vem o foco no fluxo. O Kanban Guide pede que o fluxo de trabalho seja visível e que se acompanhem quatro métricas: trabalho em andamento, vazão (itens finalizados por unidade de tempo), idade do item em andamento e tempo de ciclo do início ao fim. A planilha já tem quase tudo: contar linhas finalizadas por ciclo dá a vazão, e a diferença entre prazo inicial e finalização se aproxima do tempo de ciclo. Falta só um limite de trabalho em andamento, que impediria abrir a sexta frente quando cinco ainda estão paradas.",
+        "Quando a planilha começa a pesar, as ferramentas ajudam. No Microsoft Planner, os buckets podem representar os projetos, e cada tarefa tem progresso (não iniciada, em andamento, concluída), prioridade, datas de início e de conclusão, com atrasos destacados em vermelho, além de rótulos e checklist. No ClickUp, o recurso de Sprints cria pastas por time com duração configurável, permite mover tarefas que sobraram para o próximo sprint e liga estimativas de tempo ou pontos por meio de ClickApps, com relatórios em painéis. Em qualquer uma delas, a lógica continua sendo a da planilha: ciclo, responsável, esforço e prazo.",
+        "Para quem está começando, vale montar o próprio ciclo semanal antes de pedir uma ferramenta. Liste as tarefas da semana na segunda, estime em minutos, anote o que terminou na sexta e calcule o atraso. Em quatro semanas você terá dados sobre a sua própria capacidade, e essa é a conversa que qualquer líder quer ter numa entrevista: não quantas ferramentas você conhece, mas como você sabe o que cabe na sua semana."
+      ],
+      "sources": [
+        {
+          "label": "The Kanban Guide (2020.7) — Kanban Guides",
+          "url": "https://kanbanguides.org/the-kanban-guide/2020.7"
+        },
+        {
+          "label": "The Scrum Guide (2020) — Scrum Guides",
+          "url": "https://scrumguides.org/scrum-guide.html"
+        },
+        {
+          "label": "Intro to Sprints — ClickUp Help",
+          "url": "https://help.clickup.com/hc/en-us/articles/6303974210071-Intro-to-Sprints"
+        },
+        {
+          "label": "Microsoft Planner: Creating Buckets and Tasks — RPI ITSSC",
+          "url": "https://itssc.rpi.edu/hc/en-us/articles/19379074676109-Microsoft-Planner-Creating-Buckets-and-Tasks"
+        }
+      ]
+    },
+    {
+      "id": "assinatura-de-email-corporativa-em-html",
+      "blogURL": "/blog/assinatura-de-email-corporativa-em-html",
+      "img": "https://cdn.pixabay.com/photo/2016/11/23/14/45/coding-1853305_1280.jpg",
+      "title": "Assinatura de e-mail corporativa em HTML: tabelas, imagens e padrão para um grupo de empresas",
+      "tag": "Tecnologia",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-10-30",
+      "readingTime": "4 min",
+      "lead": "A assinatura de e-mail é a peça de design mais vista e menos cuidada de uma empresa. Ela aparece em todo e-mail, em todo cliente de e-mail, no celular e no modo escuro, e quase sempre quebra em algum deles. Fazer uma assinatura que funcione para várias empresas de um mesmo grupo é um ótimo exercício de HTML de verdade: o HTML de 1999 que os clientes de e-mail ainda exigem.",
+      "highlights": [
+        {
+          "label": "Tabela, não div",
+          "description": "Layout com tabelas e CSS inline é o que sobrevive no Outlook, no Gmail e no celular."
+        },
+        {
+          "label": "Imagem hospedada e leve",
+          "description": "Logo em PNG ou JPG num servidor público com HTTPS, no tamanho exato em que aparece, com texto alternativo."
+        },
+        {
+          "label": "Um molde, várias marcas",
+          "description": "Variáveis para nome, cargo, empresa, logo e cor; um único modelo para todo o grupo."
+        }
+      ],
+      "body": [
+        "Pense num grupo fictício, o Grupo Construir+, com uma holding e várias empresas. Cada uma tem logo e cor, mas todas precisam parecer da mesma família. O caminho prático começa fora do código: rascunhe duas ou três variações num editor de slides ou no Figma (nome em uma linha ou em duas, logo à esquerda ou acima), com campos genéricos como Nome Sobrenome, e-mail e telefone em formato (XX) XXXXX-XXXX. Aprovado o rascunho, ele vira HTML.",
+        "Aqui está a primeira armadilha: exportar o rascunho como uma imagem única e colar no e-mail. Fica bonito na sua tela e péssimo no resto. Se o cliente de e-mail bloquear imagens, a assinatura some; o texto não pode ser copiado; leitores de tela não leem nada; e cada pessoa precisa de uma imagem própria. A assinatura boa é texto de verdade, com só o logo como imagem."
+      ],
+      "quote": "Assinatura de e-mail é a única página que você publica milhares de vezes por dia sem saber em que navegador ela vai abrir.",
+      "bodyContinued": [
+        "Na construção, siga as regras do HTML para e-mail. A Exclaimer, que vende gestão de assinaturas, recomenda estruturar o layout com tabelas, fixar a largura da tabela, usar padding em vez de elementos vazios para espaçar e manter a assinatura entre 320 e 600 pixels de largura, com 450 como referência. Para texto, a mesma orientação sugere 11 a 12 pontos para nome e cargo, 8 a 10 para contatos e 7 a 8 para avisos legais, sempre com uma pilha de fontes de reserva (Arial, Helvetica, sans-serif), porque fonte personalizada raramente chega ao destinatário. Escreva o CSS inline em cada célula; muitos clientes descartam o bloco style.",
+        "Imagens vão hospedadas num endereço público com HTTPS, de preferência no domínio da empresa, exportadas no tamanho em que serão exibidas e com width e height declarados. Todo img precisa de alt: o logo pode ter o nome da empresa como texto alternativo, como recomenda o tutorial de imagens do W3C. Garanta contraste suficiente, não coloque informação só na cor e teste no modo escuro, onde fundos transparentes e textos cinza costumam desaparecer. Links de telefone usam tel:, de e-mail usam mailto:, e redes sociais entram como ícones pequenos com alt.",
+        "Sobre o aviso legal: texto de confidencialidade no rodapé não protege dado nenhum por si só. O que a LGPD exige é base legal para tratar dados pessoais, transparência e segurança. Na assinatura, o útil é curto: nome da empresa, CNPJ se for padrão do grupo e um link para a política de privacidade. Evite colocar dados pessoais desnecessários, como celular particular, só porque o modelo tem um campo para isso.",
+        "Para padronizar no grupo inteiro, transforme o HTML num molde com variáveis. No Microsoft 365, regras de fluxo de e-mail do Exchange Online podem acrescentar uma assinatura ou aviso em HTML a todas as mensagens, com tokens como %%DisplayName%%, %%Title%% e %%Company%% preenchidos a partir do perfil do usuário; a documentação da Microsoft recomenda criar uma exceção para não repetir o bloco em respostas e testar em modo de teste antes de ativar. Sem ferramenta central, um gerador simples em HTML e JavaScript, em que a pessoa escolhe a empresa e preenche nome e cargo, já resolve e é um ótimo projeto de portfólio.",
+        "Antes de publicar, teste no Outlook para desktop, no Outlook na web, no Gmail, no Apple Mail e em celulares Android e iOS, com e sem imagens, no claro e no escuro. Versione o HTML num repositório e registre quem pode alterar o modelo. Assinatura padronizada é identidade visual, mas também é governança."
+      ],
+      "sources": [
+        {
+          "label": "Guidelines for signature design — Exclaimer Support",
+          "url": "https://support.exclaimer.com/hc/en-gb/articles/4458004178589-Guidelines-for-signature-design"
+        },
+        {
+          "label": "Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online — Microsoft Learn",
+          "url": "https://learn.microsoft.com/tr-tr/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers"
+        },
+        {
+          "label": "Images Tutorial — W3C Web Accessibility Initiative",
+          "url": "https://www.w3.org/WAI/tutorials/images/"
+        },
+        {
+          "label": "Lei nº 13.709/2018 (LGPD) — Planalto",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+        }
+      ]
+    },
+    {
+      "id": "chatbot-e-whatsapp-no-atendimento-do-varejo",
+      "blogURL": "/blog/chatbot-e-whatsapp-no-atendimento-do-varejo",
+      "img": "https://cdn.pixabay.com/photo/2016/02/19/10/00/office-1207746_1280.jpg",
+      "title": "Chatbot e WhatsApp no atendimento do varejo: do menu ao vendedor certo",
+      "tag": "Tecnologia",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-10-30",
+      "readingTime": "4 min",
+      "lead": "Todo cliente que manda mensagem para uma loja quer, no fundo, a mesma coisa: falar com alguém que resolva. Um bot bem feito não substitui esse alguém; ele encurta o caminho até ele. Veja como se desenha um bot de WhatsApp para uma rede de varejo, o que entra numa proposta de melhoria, como integrar com o CRM e o e-commerce e quais métricas mostram se o robô ajuda ou atrapalha.",
+      "highlights": [
+        {
+          "label": "Coletar e encaminhar",
+          "description": "O bot pergunta o mínimo (nome, CEP, telefone), cria o lead no CRM e entrega o cliente à loja mais próxima."
+        },
+        {
+          "label": "Humano na hora certa",
+          "description": "Transbordo para atendente quando o assunto é complexo, e só se houver alguém disponível."
+        },
+        {
+          "label": "Custo por mensagem",
+          "description": "Desde julho de 2025 a Meta cobra por mensagem entregue; o desenho do fluxo mexe no orçamento."
+        }
+      ],
+      "body": [
+        "O WhatsApp é o canal dominante das conversas comerciais no Brasil. Na base da RD Station Conversas, o aplicativo concentrou 97% das mensagens enviadas pelas empresas em 2025, e os usos mais citados por 1.351 respondentes foram atendimento comercial e fechamento de vendas (47%), pós-venda (37%) e captação de leads (35%). Robô também já é rotina: no Panorama Mobile Time/Opinion Box de agosto de 2022, com 2.073 entrevistados, 90% dos usuários de WhatsApp já tinham conversado com bots de atendimento, mas a nota média dada a eles foi 3,2 numa escala de 1 a 5. Todo mundo usa, pouca gente elogia.",
+        "Pense na Rede Construir+, uma rede fictícia de franquias de acabamento. O objetivo do bot cabe numa frase: colocar o cliente em contato com o franqueado certo em três, dois, um. Para isso o fluxo faz triagem (orçamento, dúvida, pós-venda), coleta nome, CEP e telefone, consulta uma API interna que devolve a loja mais próxima pelo CEP, cria o lead no CRM e entrega ao cliente um link wa.me com o número do consultor e uma mensagem pronta. Ao mesmo tempo, o consultor recebe um aviso com os dados do cliente."
+      ],
+      "quote": "Um bom bot é medido pelo tempo que o cliente leva para chegar à pessoa certa, não pelo tempo que ele passa conversando com o robô.",
+      "bodyContinued": [
+        "Uma proposta de melhoria de bot costuma ter a mesma estrutura: cenário atual, ajustes solicitados, definição técnica, considerações, papéis e responsabilidades, estimativa de horas por tipo de tarefa (arquitetura, desenvolvimento, testes, deploy) e termos comerciais. Os ajustes típicos dizem muito sobre boas práticas: trocar menus numerados por botões, criar um diálogo de confirmação para perguntas de sim ou não, deixar claro o que é obrigatório (nome, CEP, telefone) e o que é opcional (e-mail), perguntar se o cliente quer usar o número de onde está falando ou informar outro, e verificar duplicidade antes de criar o lead: se já existe cadastro com o mesmo nome, e-mail, CEP ou telefone, o bot mostra os dados e pergunta se deve atualizar.",
+        "Leia com atenção as considerações e os termos. O fornecedor depende de você para os textos das mensagens, para a API que busca a loja e para o alinhamento interno: se as lojas não responderem pelo canal combinado, o lead se perde mesmo com o bot perfeito. Os termos definem o que está fora do escopo, como funciona o cancelamento, quem homologa em ambiente de testes (sandbox) e em que prazo, e o que acontece depois do deploy. Mudança pedida depois da aprovação vira nova demanda, com nova estimativa.",
+        "Humano entra quando o assunto pede julgamento: negociação, reclamação, pedido fora do padrão. Plataformas como Blip e Zenvia oferecem o transbordo do bot para uma fila de atendentes. A documentação da Blip recomenda checar se há atendente online antes de transferir, porque, se ninguém estiver disponível, o bot para de responder e o cliente fica falando sozinho. Fora do horário, o fluxo deve dizer quando haverá retorno e já deixar o lead registrado.",
+        "Dinheiro também é desenho de fluxo. Desde 1º de julho de 2025, a plataforma de negócios do WhatsApp cobra por mensagem entregue, com preços por categoria (marketing, utilidade, autenticação e serviço) e por país. Segundo a documentação da Meta, cada número tem 1.000 mensagens de serviço gratuitas por mês, e a partir de 1º de outubro de 2026 as mensagens de utilidade dentro da janela de 24 horas passaram a ser cobradas. Conversas iniciadas por anúncios de clique para o WhatsApp abrem uma janela gratuita de até 7 dias. Disparo de oferta em massa, portanto, custa; responder bem quem chegou sozinho custa bem menos.",
+        "As métricas que valem acompanhar: taxa de conclusão do fluxo, abandono por etapa, leads criados e duplicados evitados, tempo até o primeiro contato humano, taxa de resposta das lojas, conversão em orçamento e satisfação ao fim da conversa. Se o abandono se concentra numa pergunta, o problema é a pergunta, não o cliente."
+      ],
+      "sources": [
+        {
+          "label": "Pricing on the WhatsApp Business Platform — Meta for Developers",
+          "url": "https://developers.facebook.com/docs/whatsapp/pricing"
+        },
+        {
+          "label": "Cenário das Conversas e Atendimento em 2025 — RD Station",
+          "url": "https://www.rdstation.com/pesquisas/panorama-marketing-vendas/edicao-2026/conversas/cenario-2025/"
+        },
+        {
+          "label": "Nove em cada dez usuários de WhatsApp já conversaram com robôs de atendimento — Mercado&Consumo (set/2022)",
+          "url": "https://mercadoeconsumo.com.br/12/09/2022/inovacao/nove-em-cada-dez-usuarios-de-whatsapp-ja-conversaram-com-robos-de-atendimento/"
+        },
+        {
+          "label": "Verificar se existe atendente disponível no Builder — Blip Help",
+          "url": "https://hmg-help.blip.ai/docs/en/builder/verificar-se-existe-atendente-disponível-no-builder"
+        },
+        {
+          "label": "Visão geral do Blip Desk — Blip Help",
+          "url": "https://hmg-help.blip.ai/docs/en/helpdesk/blipdesk/visao-geral-desk"
+        }
+      ]
+    },
+    {
+      "id": "marketing-com-clubes-de-futebol-no-varejo",
+      "blogURL": "/blog/marketing-com-clubes-de-futebol-no-varejo",
+      "img": "https://cdn.pixabay.com/photo/2019/09/23/12/02/rugby-4498375_1280.jpg",
+      "title": "Marketing com clubes de futebol no varejo: da camisa ao relatório de leads",
+      "tag": "Tecnologia",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-10-30",
+      "readingTime": "4 min",
+      "lead": "Colocar a marca na camisa de um clube é a parte fácil. O difícil é transformar paixão de torcedor em cadastro, visita à loja e venda, sem perder o controle de estoque de brindes nem desrespeitar a LGPD. Este guia mostra o método por trás de uma parceria entre uma rede de varejo e clubes de futebol, do pedido de camisa autografada ao relatório de campanha, usando como exemplo a Rede Construir+, uma rede fictícia de lojas de acabamento.",
+      "highlights": [
+        {
+          "label": "Ativo com regra",
+          "description": "Camisas e brindes de clube são moeda: precisam de critério de concessão, estoque controlado e resposta padrão."
+        },
+        {
+          "label": "Dia temático",
+          "description": "Um dia do clube concentra a ação: loja decorada, oferta, landing page e captação de cadastro no mesmo período."
+        },
+        {
+          "label": "Relatório que fecha o ciclo",
+          "description": "Leads por canal, por cidade e com consentimento registrado mostram se a parceria valeu o investimento."
+        }
+      ],
+      "body": [
+        "O futebol é um território disputado pelas marcas. O Mapa do Patrocínio de Uniformes 2025 do Ibope Repucom, divulgado em janeiro de 2026, contou 164 marcas nos uniformes dos 20 clubes da Série A, 24% a mais que em 2024; o segmento de imobiliário, construção e acabamentos ficou em segundo lugar, com 19 marcas. Na edição anterior, o mesmo instituto apontou que 63% dos brasileiros ouvidos comprariam produtos de marcas que patrocinam seus times ou atletas favoritos. Ou seja: o varejo de construção está ali, e o torcedor está disposto a ouvir.",
+        "Mas estar na camisa não vende sozinho. Quando a Americanas estreou no futebol em 2021 com Grêmio e Internacional, além do logo abaixo do número dos jogadores, criou uma versão da marca nas cores do Grêmio para não usar as cores do rival e previu ativações e surpresas para os torcedores. Esse cuidado com o detalhe é o que separa patrocínio de presença decorativa. Numa rede de franquias como a Rede Construir+, a ativação acontece na ponta: é o franqueado que precisa receber material, brinde e argumento para usar o clube na negociação com o cliente."
+      ],
+      "quote": "Patrocínio sem processo vira distribuição de camisa. Com processo, vira base de clientes que você consegue medir.",
+      "bodyContinued": [
+        "O primeiro processo é o dos ativos. Camisas oficiais e autografadas são escassas e desejadas, então a Rede Construir+ abriu um fluxo de pedidos pelo sistema de chamados das franquias: o franqueado pede, informa tamanho e justifica o uso. A equipe de marketing responde com mensagens padrão (pedido recebido, em análise, aprovado, enviado com rastreio) e mantém uma planilha de controle por clube e tamanho. A regra de concessão é explícita: brinde vai para negociações acima de um valor definido pela gestão da rede ou para ativações que gerem valor para a franquia, como eventos de relacionamento. Quando falta camisa de um clube, a resposta já oferece alternativas de outro clube parceiro, em vez de deixar o pedido parado.",
+        "O segundo é o dia temático do clube. Uma janela curta, de poucos dias, com loja decorada, condição comercial, peças para redes sociais e uma landing page própria. A página tem um formulário enxuto: nome, contato, cidade da loja mais próxima, aceite da política de privacidade e consentimento de marketing em campos separados. A LGPD exige que o consentimento seja livre, informado e para finalidade determinada, então caixa pré-marcada e texto escondido estão fora. Cada cadastro entra no CRM com o canal de entrada (a landing page daquele dia temático), o que permite comparar campanhas depois.",
+        "O terceiro é o relatório. Ao fim do período, exporte os leads com data, canal, cidade da loja e status de consentimento, e cruze com vendas e visitas das lojas participantes. Perguntas que importam: quantos cadastros por loja, quantos viraram orçamento, quais cidades responderam melhor, quanto custou cada lead considerando brindes e mídia. O relatório circula entre marketing e gestão da rede, mas os dados pessoais, não: para quem decide, bastam totais e taxas.",
+        "Para quem está entrando no ecossistema, o recado é que marketing esportivo também é tecnologia: formulário, integração com CRM, segmentação por cidade, automação de resposta e painel de resultado. Quem domina essas peças consegue propor uma ação de clube com começo, meio e métrica, e não só pedir verba para camisa."
+      ],
+      "sources": [
+        {
+          "label": "Brasileirão 2025 reúne 164 marcas nos uniformes dos clubes — Poder360 (jan/2026)",
+          "url": "https://www.poder360.com.br/poder-sportsmkt/brasileirao-2025-reune-164-marcas-nos-uniformes-dos-clubes/"
+        },
+        {
+          "label": "Mapa do Patrocínio de Uniformes 2025 — Ibope Repucom",
+          "url": "https://static.poder360.com.br/2026/01/IBOPE_Repucom_Mapa_do_patrocinio_2025.pdf"
+        },
+        {
+          "label": "63% dos torcedores comprariam produtos de marcas que patrocinam seus times — Mundo do Marketing (jan/2025)",
+          "url": "https://mundodomarketing.com.br/63-dos-torcedores-comprariam-produtos-e-servicos-de-marcas-que-patrocinam-seus-times-favoritos"
+        },
+        {
+          "label": "Americanas faz sua estreia no futebol com dupla Gre-Nal — Meio & Mensagem (jun/2021)",
+          "url": "https://www.meioemensagem.com.br/marketing/americanas-faz-sua-estreia-no-futebol-com-dupla-grenal"
+        },
+        {
+          "label": "Lei nº 13.709/2018 (LGPD) — Planalto",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+        }
+      ]
+    },
+    {
+      "id": "editais-de-fomento-a-inovacao-como-ler-e-onde-encontrar",
+      "blogURL": "/blog/editais-de-fomento-a-inovacao-como-ler-e-onde-encontrar",
+      "img": "https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_1280.jpg",
+      "title": "Editais de fomento à inovação: como ler e onde encontrar",
+      "tag": "Carreira",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-10-30",
+      "readingTime": "7 min",
+      "lead": "Dinheiro para inovar existe, mas ele chega em formatos diferentes: edital com recurso que não precisa ser devolvido, programa de aceleração, prêmio, chamada de inovação aberta, crédito barato. Quem não sabe distinguir um do outro perde tempo concorrendo ao que não serve para o seu caso. Partimos de um boletim de oportunidades de fomento do Sebrae Minas, de junho de 2023, para mostrar como esse material é organizado, quem cada tipo de apoio atende e como ler um edital sem cair nas armadilhas mais comuns. No fim, um mapa atualizado das principais fontes de 2025 e 2026.",
+      "highlights": [
+        {
+          "label": "Três gavetas",
+          "description": "Editais (em geral não reembolsáveis), programas de apoio e parcerias, e linhas de financiamento (reembolsáveis)."
+        },
+        {
+          "label": "Quem você é importa",
+          "description": "Startup, pesquisador, MEI ou pequena empresa, estudante e ONG cabem em editais diferentes, e a elegibilidade elimina antes do mérito."
+        },
+        {
+          "label": "Leitura em ordem",
+          "description": "Elegibilidade, contrapartida, maturidade tecnológica (TRL), prazos e documentos, nessa sequência, antes de escrever uma linha do projeto."
+        }
+      ],
+      "body": [
+        "O boletim do Sebrae Minas de junho de 2023 se apresenta como um compilado de oportunidades de captação para empreendedores e instituições de qualquer setor e porte, e separa tudo em três gavetas. Editais são instrumentos que apoiam projetos com incentivo financeiro, muitas vezes não reembolsável. Programas de apoio e parcerias cobrem várias etapas do desenvolvimento de um produto, serviço ou modelo de negócio e quase sempre envolvem mais de uma instituição. Linhas de financiamento são recursos reembolsáveis, ou seja, crédito. Cada oportunidade aparece numa ficha com os mesmos campos: objetivo, recursos, prazo, público-alvo, requisitos e acesso. O boletim também permite filtrar por público: startups, micro e pequenas empresas, médias e grandes empresas e instituições de ciência, tecnologia e inovação (ICTs). E traz um aviso que vale para qualquer compilado: as regras são de responsabilidade de quem oferta, e o edital original é que vale.",
+        "Naquela edição apareciam, entre outras: Crédito para Inovar, de Finep e Sebrae, com consultoria gratuita para montar o projeto e garantia do fundo de aval FAMPE para acessar as linhas Inovacred; Sanepar Startups, com R$ 750 mil não reembolsáveis para desafios do setor hídrico, aberto a sociedades empresariais e limitadas, mas fechado a MEI; Vibra Mulheres Empreendedoras, com aporte de capital em startups com liderança feminina; Fermenta Ambev, com apoio de R$ 15 mil a R$ 50 mil para projetos de cultura cervejeira, aberto a pessoas jurídicas com ou sem fins lucrativos, MEI e coletivos; Bora Cultura Preta, da Ambev, de R$ 50 mil a R$ 500 mil para negócios e ONGs com maioria de sócios negros; UNICEF Venture Fund, com US$ 100 mil sem participação societária para startups com protótipo em código aberto; BRDE Labs e programa AGEUNI, no Paraná, com mentorias, provas de conceito e P&D com recurso estadual; o edital da Fiotec e da Fiocruz pelo Marco Legal das Startups, com até R$ 30 mil para protótipo; Smart Factory, da Plataforma Inovação para a Indústria com ABDI e BNDES, que cobre até 70% de projetos de até R$ 800 mil de tecnologia 4.0; Finep Startup, para empresas com faturamento entre R$ 360 mil e R$ 4,8 milhões; e as acelerações BASF Agrostart, Startup Tetra Pak e Google for Startups Accelerator. Os valores e prazos são os publicados no boletim em junho de 2023, e essas chamadas já encerraram, mas o desenho de cada uma ensina muito."
+      ],
+      "quote": "Edital não é ponto de partida. Primeiro você sabe o que quer construir e quanto custa; depois procura quem paga a parte certa disso.",
+      "bodyContinued": [
+        "Cada tipo serve a um público. Startup com CNPJ e alguma receita é o alvo de aceleração corporativa (Agrostart, Tetra Pak, Google), de desafios de inovação aberta (Sanepar, Fiocruz) e de subvenção ou investimento (Finep Startup, UNICEF). Pesquisador vinculado a uma ICT entra por chamadas de P&D e por projetos em parceria com empresas, como o AGEUNI. MEI e pequena empresa precisam olhar o tipo societário com lupa: a Sanepar excluía MEI, a Fermenta aceitava; para elas, o caminho mais frequente é crédito orientado e consultoria do Sebrae. Estudante raramente é proponente; entra como membro de equipe, bolsista ou em hackathons e desafios sem pré-requisito, como o da Fiocruz. ONG e coletivo cabem em editais sociais e culturais com recorte de diversidade, como os dois da Ambev. Organizações privadas ofertam por interesse estratégico, e o dinheiro costuma vir com contrato, prova de conceito ou participação no negócio. Leia isso como parte do preço.",
+        "Para ler um edital, siga esta ordem. 1) Elegibilidade: porte, faturamento, tempo de CNPJ, tipo societário, CNAE, estado e vínculo do coordenador. Se não passar aqui, pare. 2) Contrapartida: quanto você precisa aportar, em dinheiro ou em horas e estrutura mensuráveis. 3) Maturidade tecnológica, a escala TRL de 1 (ideia) a 9 (produto em operação): muitos editais exigem faixa de 3 a 9, ou seja, prova de conceito pronta. 4) Itens financiáveis e vedados, porque orçamento incompatível derruba projeto bom. 5) Prazos: submissão, impugnação, recurso, resultado e execução. 6) Documentos: certidões negativas, contrato social, currículo Lattes, plano de trabalho, cartas de parceiros. 7) Critérios de avaliação e pesos, que dizem onde gastar mais texto. Em agosto de 2026, especialistas ouvidos pelo Hoje em Dia relataram que a demanda em Minas já supera em cerca de dez vezes os recursos disponíveis, o que deixa pouco espaço para erro formal.",
+        "O que está valendo agora. A Finep segue com o programa Mais Inovação: em fevereiro de 2026 lançou subvenção regional de R$ 300 milhões para Norte, Nordeste e Centro-Oeste, com projetos de R$ 2 milhões a R$ 5 milhões, faixa TRL 3 a 9 e reserva de 30% para micro e pequenas empresas; o Inovacred continua como crédito via agentes parceiros. O CNPq abriu a chamada 29/2026, RHAE IA, com R$ 50 milhões para inserir mestres e doutores em pequenas empresas e startups, até R$ 300 mil em bolsas por proposta e contrapartida mínima de 20%. A FAPEMIG tinha, em agosto de 2026, chamadas como Pesquisador na Empresa (R$ 5 milhões), Cientista Empreendedor (R$ 10 milhões) e o Novo Seed (R$ 15 milhões, até R$ 100 mil por startup); as outras FAPs têm programas equivalentes. O Programa Centelha, de MCTI, Finep, CNPq e Confap, chegou à terceira fase com todos os estados e 9.754 ideias submetidas em 2025. Sebrae e Embrapii mantêm até janeiro de 2027 o modelo em que Embrapii cobre até 50% do projeto e o Sebrae até 70% da contrapartida da pequena empresa, para projetos TRL 3 a 9. A Lei do Bem, para empresas do lucro real, beneficiou 4.598 empresas no ano-base 2025. E os contratos públicos para solução inovadora (CPSI), criados pelo Marco Legal das Startups, somavam 293 até junho de 2026, com média de R$ 807,7 mil por contrato. Completam o mapa o Catalisa ICT, do Sebrae, para mestres e doutores que querem transformar pesquisa em negócio, e o BNDES Garagem, aceleração gratuita para startups.",
+        "Onde acompanhar: as páginas de chamadas abertas da Finep, do CNPq e da sua FAP; o Diário Oficial; os portais do Sebrae da sua UF; os núcleos de inovação tecnológica das universidades (em Juiz de Fora, o Critt da UFJF divulga chamadas da FAPEMIG há anos); plataformas como Prosas, onde vários editais privados do boletim eram publicados; e os boletins de federações das indústrias. Monte uma planilha com prazo, elegibilidade e contrapartida e revise toda semana.",
+        "Isso conversa com a trajetória de quem construiu este ecossistema. Em Juiz de Fora, o Moinho transformou um antigo moinho de farinha em hub de inovação; o Fator S Challenge, em maio de 2023, e o hackathon de inovação social de janeiro do mesmo ano funcionaram como portas de entrada; e a Volta Express nasceu justamente num hackathon. É o caminho que o boletim desenha sem dizer: o desafio sem pré-requisito valida a ideia, a aceleração organiza o negócio, o Centelha ou a FAP financia a primeira versão, e só depois fazem sentido subvenção, crédito e compra pública. Pular etapas costuma sair caro. Comece pelo degrau em que você realmente está."
+      ],
+      "sources": [
+        {
+          "label": "Finep lança edital com R$ 150 milhões para o Nordeste e recursos para outras regiões — O Povo (19/02/2026)",
+          "url": "https://www.opovo.com.br/noticias/economia/2026/02/19/finep-lanca-edital-com-rs-150-milhoes-para-o-nordeste-e-recursos-para-outras-regioes.html"
+        },
+        {
+          "label": "Chamada CNPq/SETEC/SETAD/MCTI/FNDCT nº 29/2026 — RHAE IA (CNPq)",
+          "url": "https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-29-2026/chamadapublica29_2026_RHAEIA_2769274.pdf"
+        },
+        {
+          "label": "Minas prevê R$ 600 milhões para inovação: onde estão os recursos e como disputar editais — Hoje em Dia (24/08/2026)",
+          "url": "https://www.hojeemdia.com.br/economiaefinancas/minas-preve-r-600-milh-es-para-inovac-o-veja-onde-est-o-os-recursos-e-como-disputar-editais-1.1129841"
+        },
+        {
+          "label": "Retrospectiva Centelha 2025 — Programa Centelha (dez/2025)",
+          "url": "https://programacentelha.com.br/wp-content/uploads/2025/12/Retrospectiva-Centelha-2025.pdf"
+        },
+        {
+          "label": "Sebrae e Embrapii garantem R$ 116 milhões para pequenas empresas e startups — Agência Sebrae (27/09/2023)",
+          "url": "https://agenciasebrae.com.br/inovacao-e-tecnologia/sebrae-e-embrapii-garantem-r-116-milhoes-para-pequenas-empresas-e-startups-desenvolverem-projetos-de-inovacao"
+        },
+        {
+          "label": "Lei do Bem: números do ano-base 2025 — Convergência Digital (27/10/2026)",
+          "url": "https://convergenciadigital.com.br/?p=56528"
+        },
+        {
+          "label": "Contratos públicos de inovação chegam a quase 300 no Brasil — Agência Sebrae (28/08/2026)",
+          "url": "https://agenciasebrae.com.br/inovacao-e-tecnologia/contratos-publicos-de-inovacao-chegam-a-quase-300-no-brasil-aponta-pesquisa/"
+        }
+      ]
+    },
+    {
+      "id": "atleticas-universitarias-esporte-e-universidade",
+      "blogURL": "/blog/atleticas-universitarias-esporte-e-universidade",
+      "img": "https://cdn.pixabay.com/photo/2019/09/23/12/02/rugby-4498375_1280.jpg",
+      "title": "Atléticas e esporte universitário: um motivo a mais para entrar (e ficar) na universidade",
+      "tag": "Carreira",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-10-30",
+      "readingTime": "6 min",
+      "lead": "Quem pensa em universidade costuma pensar em vestibular, grade e diploma. Pouca gente conta o que acontece fora da sala: a atlética do curso, o treino depois da aula, a quadra lotada numa terça à noite. Em 2010 e 2011, Douglas viveu isso como estudante de Ciência da Computação na UFJF, nos Jogos Universitários de Juiz de Fora. A tabela daquela edição de 2010 ainda está no acervo dele, e ela conta muito sobre como o esporte universitário funciona, no Brasil e no mundo.",
+      "highlights": [
+        {
+          "label": "Da atlética ao mundial",
+          "description": "Jogos internos e entre faculdades, JUBs organizados pela CBDU e Jogos Mundiais Universitários da FISU formam uma escada que começa no seu curso."
+        },
+        {
+          "label": "Esporte que segura o aluno",
+          "description": "Um estudo com calouros associa a prática esportiva no campus a notas melhores e mais chance de seguir para o segundo ano."
+        },
+        {
+          "label": "Nutrição sem mito",
+          "description": "Comida de verdade como base, hidratação e orientação de nutricionista valem mais que a prateleira de suplementos."
+        }
+      ],
+      "body": [
+        "A tabela dos Jogos Universitários de Juiz de Fora (JUJF) de 2010 é uma aula de organização. A 3ª edição foi sediada pela Faculdade de Educação Física e Desportos da UFJF (Faefid) de 19 a 28 de novembro de 2010, com sete instituições da cidade (UFJF, Granbery, Vianna Júnior, Suprema, Universo, Estácio e Unipac) e dez modalidades: handebol, futsal, futebol, vôlei, basquete, tênis de campo, atletismo, xadrez, natação e tênis de mesa. A abertura teve desfile de delegações e partidas de handebol e futsal na mesma noite; a premiação previa medalhas para os três primeiros de cada modalidade e taça para as três melhores instituições no ranking geral.",
+        "Lendo a grade com atenção, aparecem as escolhas de quem organiza. Em dias úteis, os jogos começam às 18h15, 19h ou 20h30, depois do expediente e no horário em que muita gente estuda à noite; nos fins de semana, a programação vai das 8h30 ao fim da tarde. Os esportes coletivos usam chave única, em que todos se enfrentam, e o futebol tem duas chaves (A e B) com semifinal, disputa de 3º lugar e final. Atletismo, natação, xadrez e tênis de mesa ficam concentrados nos sábados e domingos, com confirmação de inscrição, sorteio e aquecimento. Handebol, futsal, vôlei e basquete têm torneios femininos e masculinos, e a estrutura se espalha por ginásio, quadra multiuso, campo, pista, piscina, quadra de tênis e até ginásios de outras instituições e de clube. É logística de evento de verdade, feita em boa parte por estudantes."
+      ],
+      "quote": "A quadra ensina o que a sala de aula às vezes demora a ensinar: chegar no horário, jogar para o time e perder sem desistir do campeonato.",
+      "bodyContinued": [
+        "Esse formato local é o primeiro degrau de uma escada maior. No Brasil, a Confederação Brasileira do Desporto Universitário (CBDU) organiza os Jogos Universitários Brasileiros (JUBs): a edição de 2026 foi marcada para 23 de agosto a 5 de setembro, em Goiânia e Trindade (GO), com previsão de cerca de 7 mil participantes entre estudantes-atletas, técnicos, dirigentes e árbitros e mais de 30 locais de competição, segundo reportagem de julho de 2026. A CBDU também tem o JUBs Atléticas, voltado às associações atléticas dos cursos. Dentro das federais, as ligas fazem o trabalho de base: o InterUFMG 2025, organizado pela Liga das Atléticas da UFMG, reuniu 1.179 atletas de 14 atléticas em 16 modalidades, entre março e julho de 2025. Do total, 205 atletas (17,4%) eram assistidos pela assistência estudantil, proporção acima da média da universidade, estimada em cerca de 15%, segundo o relatório do próprio evento.",
+        "No topo está a FISU, a federação internacional do esporte universitário. Os Jogos Mundiais Universitários de Rhine-Ruhr 2025, na Alemanha, reuniram mais de 9.200 participantes de mais de 100 países, em 18 modalidades e 234 provas com medalha, de 16 a 27 de julho de 2025. A próxima edição de verão está prevista para a região de Chungcheong, na Coreia do Sul, em agosto de 2027. Nos Estados Unidos, o modelo é outro: a NCAA reúne mais de 500 mil estudantes-atletas em mais de mil escolas, e as Divisões I e II distribuem quase US$ 4 bilhões por ano em bolsas atléticas para 197 mil estudantes, segundo a ficha oficial de 2024. A Divisão III não dá bolsa por esporte, mas 80% dos seus atletas recebem algum auxílio por mérito ou necessidade. No Brasil, a vaga em federal é gratuita e o esporte não paga a mensalidade, mas pode pagar algo tão valioso quanto: motivo para continuar.",
+        "E há evidência de que continuar fica mais fácil. Um estudo da Michigan State University com cerca de 1.800 calouros, publicado no Journal of College Student Retention, comparou quem jogava esportes internos com colegas de perfil semelhante: os praticantes terminaram o primeiro ano com média 3,25 contra 3,07, cancelaram ou reprovaram menos créditos e tiveram 40% mais chance de avançar para o segundo ano (MSUToday, maio de 2019). Correlação não é garantia, e conciliar treino com prova é difícil, mas a lógica faz sentido: quem tem um time tem amigos, rotina e um motivo para voltar ao campus. A tabela de 2010 mostra isso: jogo às 20h30 numa sexta, depois da aula.",
+        "Box prático: nutrição de quem treina e estuda. No acervo do autor, ao lado da tabela, há uma nota sobre suplementos para natação: dextrose, multivitamínicos, termogênicos, glutamina, whey, sports drinks, ginkgo, barras proteicas e guaraná. Ela acerta num ponto (carboidrato é combustível e hidratação importa) e exagera em outros. Para fazer melhor hoje: (1) a base é o Guia Alimentar para a População Brasileira, do Ministério da Saúde, cuja regra de ouro é preferir alimentos in natura ou minimamente processados e preparações culinárias aos ultraprocessados; (2) suplemento é complemento, não atalho: a RDC 243/2018 da Anvisa proíbe alegações de anabolismo e de queima de gordura em produtos para atletas, então desconfie de rótulo que promete isso; (3) cafeína e guaraná estimulam, e o excesso faz mal, como a própria nota já alertava; (4) em treino longo, hidrate antes, durante e depois, e bebida esportiva é ferramenta para esforço prolongado, não refrigerante do dia a dia; (5) plano alimentar individual é atribuição do nutricionista, e muitas universidades têm atendimento pela assistência estudantil ou pelos cursos de Nutrição.",
+        "Para quem está decidindo se vale a pena entrar na universidade, fica a provocação: procure a atlética do curso no primeiro mês. Não para virar atleta profissional, mas porque organizar uma tabela como aquela, cumprir horário de treino e defender as cores da faculdade numa noite de semana treina exatamente o que o mercado de tecnologia pede: trabalho em equipe, disciplina e capacidade de entregar sob pressão."
+      ],
+      "sources": [
+        {
+          "label": "Faefid/UFJF: Faefid sedia os Jogos Universitários de Juiz de Fora a partir desta sexta (19/11/2010)",
+          "url": "https://www2.ufjf.br/faefid/2010/11/19/faefid-sedia-os-jogos-universitarios-de-juiz-de-fora-a-partir-desta-sesta/"
+        },
+        {
+          "label": "O Hoje: Goiás sediará a maior edição da história dos Jogos Universitários Brasileiros (09/07/2026)",
+          "url": "https://ohoje.com/2026/07/09/goias-sediara-a-maior-edicao-da-historia-dos-jogos-universitarios-brasileiros/"
+        },
+        {
+          "label": "UFMG/PRAE: Análise do evento esportivo InterUFMG 2025 (dez/2025)",
+          "url": "https://www.ufmg.br/prae/wp-content/uploads/2025/12/4_ANALISE-DO-EVENTO-ESPORTIVO-INTERUFMG-2025_AVALIACAO-DA-REALIZACAO-E-PROPOSTAS-DE-MELHORIAS-PARA-APOIO-INSTITUCIONAL-1.pdf"
+        },
+        {
+          "label": "FISU: Over 9,200 participants from more than 100 countries ready to kick off Rhine-Ruhr 2025 (14/07/2025)",
+          "url": "https://www.fisu.net/2025/07/14/over-9200-participants-from-more-than-100-countries-ready-to-kick-off-the-rhine-ruhr-2025-fisu-world-university-games/"
+        },
+        {
+          "label": "NCAA: Recruiting Fact Sheet (out/2024, dados 2023-24)",
+          "url": "https://ncaaorg.s3.amazonaws.com/compliance/recruiting/NCAA_RecruitingFactSheet.pdf"
+        },
+        {
+          "label": "MSUToday: Can recreational sports really make you a better student? (10/05/2019)",
+          "url": "https://msutoday.msu.edu/news/2019/05/can-recreational-sports-really-make-you-a-better-student"
+        },
+        {
+          "label": "Revista de Saúde Pública (USP): Regulatory framework for dietary supplements and the public health challenge (2019)",
+          "url": "https://scielosp.org/article/rsp/2019.v53/90"
+        }
+      ]
+    },
+    {
+      "id": "como-e-trabalhar-com-crm-no-varejo-de-franquias",
+      "blogURL": "/blog/como-e-trabalhar-com-crm-no-varejo-de-franquias",
+      "img": "https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557396_1280.jpg",
+      "title": "Como é trabalhar com CRM e growth no varejo de franquias: a visão do profissional e a do headhunter",
+      "tag": "Carreira",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-10-30",
+      "readingTime": "4 min",
+      "lead": "Uma rede de franquias tem centenas de lojas, cada uma com a sua praça, e uma equipe central que precisa falar com clientes, franqueados e candidatos a franqueado ao mesmo tempo. É ali que CRM, growth e desenvolvimento se encontram. O autor do learnTECH viveu essa rotina numa rede de lojas de material de construção; aqui está como ela é vista de dentro e como quem recruta avalia quem quer entrar nela.",
+      "highlights": [
+        {
+          "label": "Muitos públicos",
+          "description": "Cliente final, profissional da obra, franqueado e candidato a franquia, cada um com a sua régua."
+        },
+        {
+          "label": "Canais e regras",
+          "description": "E-mail, WhatsApp oficial e landing pages, sempre com opt-in e base legal na LGPD."
+        },
+        {
+          "label": "Perfil híbrido",
+          "description": "Técnica de automação e dados somada a comunicação e organização para muitas demandas."
+        }
+      ],
+      "body": [
+        "O franchising é grande no Brasil. Segundo a Associação Brasileira de Franchising (ABF), o setor faturou R$ 301,7 bilhões em 2025, alta nominal de 10,5% sobre 2024, com 202.444 unidades, 3.297 redes e 1,762 milhão de empregos diretos (dados divulgados em março de 2026). Em Minas Gerais, ainda segundo a ABF, Casa e Construção esteve entre os segmentos que mais cresceram em 2025, com alta de 16,5%, puxada por reformas residenciais (Diário do Comércio, 11/03/2026). Por trás desses números há equipes centrais de marketing, CRM e tecnologia que trabalham para a rede inteira.",
+        "Na prática, o dia a dia de CRM numa rede de lojas de construção gira em torno de réguas e jornadas. Um lead que pede visita técnica recebe uma sequência de e-mails com intervalo de alguns dias; quem fez orçamento e não comprou entra numa régua de reengajamento; quem comprou recebe as mensagens transacionais de cada etapa do pedido, como confirmação, nota fiscal emitida, previsão de chegada, saiu para entrega e pedido entregue, por e-mail e por WhatsApp. Ao mesmo tempo, há landing pages para captar clientes, profissionais e futuros franqueados, encartes de ofertas que mudam por estado, campanhas sazonais como a Black Friday e pedidos de marcas parceiras da indústria que querem comunicar com a base. Cada peça precisa de copy, imagem, canal e base definidos antes do disparo."
+      ],
+      "quote": "Numa rede de franquias, o disparo é a parte fácil. O difícil é saber de onde veio cada contato, quem pode receber o quê e qual loja vai atender a resposta.",
+      "bodyContinued": [
+        "Os desafios mais comuns vêm da descentralização. Os contatos chegam do site, das lojas, de formulários, de eventos e de chatbots, com qualidade variada, e precisam ser unificados antes de qualquer segmentação. O WhatsApp virou canal principal, e a Meta exige que a empresa tenha opt-in da pessoa, com o nome da empresa e clareza sobre o que ela vai receber, além de recomendar opt-in por categoria de mensagem para reduzir bloqueios. A LGPD entra em cada decisão: em fevereiro de 2024 a Autoridade Nacional de Proteção de Dados (ANPD) publicou um guia sobre legítimo interesse que cita campanhas de marketing direto como exemplo e pede teste de balanceamento documentado por operação. Na rotina isso vira lista de exclusão respeitada, base legal registrada para cada régua e controle de quem acessa cada ferramenta.",
+        "Pelo lado de quem recruta, o perfil procurado é híbrido. Na parte técnica aparecem automação de marketing (Salesforce Marketing Cloud e similares), CRM de vendas, SQL para segmentar públicos, HTML e CSS para e-mail e páginas, WhatsApp Business Platform e leitura de métricas de engajamento e conversão. A credencial Salesforce Certified Marketing Cloud Engagement Specialist, voltada a design de mensagens, gestão de assinantes e dados e entrega na caixa de entrada, é um jeito de comprovar essa base. Guias de carreira de analista de CRM listam ainda pensamento analítico, comunicação e orientação a resultado, e no varejo de franquias isso se traduz em conversar com franqueados, consultores de campo, agências, compliance e diretoria sem perder o fio das prioridades.",
+        "Para se preparar, monte um portfólio que mostre o raciocínio completo, com dados fictícios: uma régua de pós-compra com gatilho, público, intervalos, mensagens e a métrica de sucesso; um conjunto de mensagens transacionais para e-mail e WhatsApp; uma landing page com formulário e a política de privacidade ligada. Na entrevista, explique como você decidiria quem pode receber cada mensagem. E ao ler a vaga, observe sinais de maturidade: ferramentas citadas pelo nome, clareza sobre quem aprova as comunicações, apoio de TI ou dados e metas de relacionamento que vão além do número de envios. A página da empresa no learnTECH Career e os programas de CRM do ecossistema mostram esse trabalho com mais detalhes."
+      ],
+      "sources": [
+        {
+          "label": "Portal do Franchising (ABF): Mercado de franquias supera os R$ 300 bilhões em 2025",
+          "url": "https://www.portaldofranchising.com.br/noticias/mercado-de-franquias/"
+        },
+        {
+          "label": "Diário do Comércio: Franquias faturam mais de R$ 26 bilhões em Minas e crescem 10,2% em 2025 (11/03/2026)",
+          "url": "https://diariodocomercio.com.br/negocios/franquias-minas-gerais-faturam-26-bilhoes-crescem/"
+        },
+        {
+          "label": "Meta for Developers: Get opt-in for WhatsApp",
+          "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/getting-opt-in.md"
+        },
+        {
+          "label": "BMA Advogados: O legítimo interesse na visão da ANPD (23/02/2024)",
+          "url": "https://www.bmalaw.com.br/conteudo/direito-digital-protecao-de-dados-e-cybersecurity/artigos-e-noticias/o-legitimo-interesse-na-visao-da-anpd/pdf"
+        },
+        {
+          "label": "Trailhead: Salesforce Certified Marketing Cloud Engagement Specialist",
+          "url": "https://trailhead.salesforce.com/es-MX/credentials/marketingcloudemailspecialist"
+        },
+        {
+          "label": "Guia da Carreira: Analista de CRM, o que é e o que faz (2023)",
+          "url": "https://www.guiadacarreira.com.br/blog/analista-de-crm"
+        }
+      ]
+    },
+    {
+      "id": "seo-local-perfil-de-empresa-no-google",
+      "blogURL": "/blog/seo-local-perfil-de-empresa-no-google",
+      "img": "https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_1280.jpg",
+      "title": "SEO local para redes com várias lojas: o Perfil da Empresa no Google na prática",
+      "tag": "Tecnologia",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-10-30",
+      "readingTime": "4 min",
+      "lead": "Quando alguém procura uma loja perto de casa, o primeiro resultado costuma ser um mapa com três perfis, não um site. Para redes e franquias, aparecer ali depende de dezenas de Perfis da Empresa no Google (o antigo Google Meu Negócio) bem configurados e coerentes entre si. Usamos a Rede Construir+, uma rede fictícia com 40 lojas próprias e franqueadas, para mostrar o que a central de ajuda do Google pede.",
+      "highlights": [
+        {
+          "label": "Verificação em massa",
+          "description": "Redes com 10 ou mais lojas da mesma empresa podem verificar os perfis juntos, como cadeia."
+        },
+        {
+          "label": "Gestores por unidade",
+          "description": "A matriz fica como proprietária e cada loja recebe um administrador com acesso só ao que precisa."
+        },
+        {
+          "label": "NAP consistente",
+          "description": "Nome, endereço e telefone iguais no perfil, no site e nos dados estruturados de cada loja."
+        }
+      ],
+      "body": [
+        "O Google explica que os resultados locais dependem de três fatores: relevância (o quanto o perfil combina com a busca), distância (o quão perto a loja está de quem procura) e destaque (o quanto a empresa é conhecida, o que inclui links de outros sites e a quantidade de avaliações). A central de ajuda é direta: não há como pedir nem pagar por uma posição melhor. O que se controla é a qualidade do perfil: dados completos e corretos, verificação, horários, fotos e respostas às avaliações.",
+        "Para uma rede, as diretrizes de representação da empresa são o ponto de partida. Cada endereço físico tem um único perfil, sem duplicatas em outras contas. Todas as lojas no mesmo país usam o mesmo nome, sem slogans, códigos de loja ou nome do bairro, salvo quando a fachada daquela unidade usa outro nome ou quando é uma submarca. Todas compartilham a categoria principal que melhor descreve o negócio, e as categorias devem ser poucas e específicas. Um departamento só ganha perfil próprio se funcionar como unidade separada, com entrada e categoria próprias."
+      ],
+      "quote": "Para o Google, cada loja é um endereço real com um responsável real. Planilha bonita sem dono em cada unidade vira perfil desatualizado.",
+      "bodyContinued": [
+        "A verificação em massa vale para contas com 10 ou mais perfis da mesma empresa. A Rede Construir+ sobe uma planilha com todas as lojas, sem deixar nenhuma de fora, e depois pede a verificação em Verificações, opção Rede. Enviar a planilha não dispara a verificação sozinho. O número de perfis precisa refletir o tamanho real da rede, e o Google pode pedir comprovação. Agências que gerenciam várias empresas na mesma conta e empresas que só atendem no local do cliente não usam esse caminho. Atrasos costumam vir de dados fora das diretrizes, como nome com código de loja ou telefone de central de atendimento no lugar do número da unidade.",
+        "O controle de acesso segue a estrutura da rede. Cada perfil tem um único proprietário principal e pode ter outros proprietários e administradores. Proprietários têm controle total; administradores fazem quase tudo, como editar dados, responder avaliações e publicar posts, mas não adicionam nem removem usuários e não excluem o perfil. Na prática, o marketing da matriz fica como proprietário de todas as lojas e cada franqueado é administrador só da sua. Rótulos personalizados e grupos de locais ajudam a filtrar lojas por região ou formato. Novos proprietários e administradores passam por sete dias de restrição para ações sensíveis, então planeje trocas de equipe com antecedência.",
+        "NAP é a sigla em inglês para nome, endereço e telefone, e consistência é a regra. As diretrizes pedem telefone local da unidade em vez de central de atendimento, sempre que possível, e um site que represente aquela loja, sem redirecionamentos. No site, cada loja deve ter sua página com dados estruturados LocalBusiness: nome e endereço são obrigatórios, e telefone com código do país, URL da página da loja, horário de funcionamento e coordenadas com pelo menos cinco casas decimais são recomendados. Departamentos entram como itens aninhados, com nome no formato loja mais departamento. O mesmo dado em três lugares (perfil, página e marcação) evita sinais contraditórios.",
+        "O perfil vivo completa o trabalho. Responder às avaliações, positivas e negativas, é uma das recomendações explícitas do Google para se destacar. Os posts têm três tipos: novidade, oferta (com título, datas e, se quiser, cupom) e evento (com início e fim). Posts com telefone que o Google não consegue associar à empresa podem ser recusados, e os mais antigos que seis meses são arquivados, a menos que tenham período definido. Horários especiais em feriados e inaugurações fecham a lista de tarefas que cada administrador de loja deveria revisar todo mês."
+      ],
+      "sources": [
+        {
+          "label": "Google Business Profile Help — How to improve your local ranking on Google",
+          "url": "https://support.google.com/business/answer/7091?hl=en"
+        },
+        {
+          "label": "Google Business Profile Help — Guidelines for representing your business on Google",
+          "url": "https://support.google.com/business/answer/3038177"
+        },
+        {
+          "label": "Google Business Profile Help — Verify Business Profiles in bulk",
+          "url": "https://support.google.com/business/answer/4490296?hl=en-IN"
+        },
+        {
+          "label": "Google Business Profile Help — Manage your Business Profile owners & managers",
+          "url": "https://support.google.com/business/answer/3403100?hl=en-GB"
+        },
+        {
+          "label": "Google Business Profile Help — Posts on your Business Profile",
+          "url": "https://support.google.com/business/answer/7342169?hl=en-GB"
+        },
+        {
+          "label": "Google Search Central — Local business (LocalBusiness) structured data (atualizado em set. 2026)",
+          "url": "https://developers.google.com/structured-data/local-businesses/"
+        }
+      ]
+    },
+    {
+      "id": "hack-dev-rotina-e-trilha-para-a-primeira-vaga",
+      "blogURL": "/blog/hack-dev-rotina-e-trilha-para-a-primeira-vaga",
+      "img": "https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg",
+      "title": "Hack Dev: uma rotina diária e uma trilha para chegar à primeira vaga de dev",
+      "tag": "Carreira",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-10-30",
+      "readingTime": "4 min",
+      "lead": "Estudar programação sem método costuma terminar em dezenas de cursos começados e nenhum projeto apresentável. O Hack Dev nasceu como um organizador pessoal para resolver isso: uma rotina diária em três blocos, uma trilha com começo, meio e fim, e uma escala simples para medir o que você já sabe. Aqui ele está aberto, para você adaptar à sua realidade.",
+      "highlights": [
+        {
+          "label": "Conteúdo",
+          "description": "Estudar anotando, resumindo e explicando, treinar perguntas de entrevista e fazer testes de competência."
+        },
+        {
+          "label": "Prática",
+          "description": "Pelo menos uma tarefa por dia: pesquisar, resolver e registrar no repositório."
+        },
+        {
+          "label": "Networking",
+          "description": "Candidaturas, interações e uma publicação curta sobre o que você fez e aprendeu."
+        }
+      ],
+      "body": [
+        "A rotina tem três blocos fixos. O primeiro é conteúdo: cada aula ou texto vira anotação, resumo e uma explicação com suas palavras, porque só se entende de verdade o que se consegue explicar. No mesmo bloco entram as perguntas de entrevista técnica, tiradas dos requisitos das vagas, e um teste de competência por vez nas plataformas que oferecem avaliações. O segundo bloco é prática: pelo menos uma tarefa por dia, em que você pesquisa, resolve e sobe o resultado. O terceiro é networking, com metas pequenas e contáveis: por exemplo, 20 vagas analisadas ou candidaturas no dia, cinco mensagens e cinco comentários, e uma publicação que diga o que foi feito e três aprendizados.",
+        "Ao lado de cada item fica a data da última vez em que ele foi feito. Isso transforma a rotina em um painel: quando uma data fica velha, aquele bloco está sendo deixado de lado. Montar a rotina exige algumas decisões antes da primeira semana: um mapa do que estudar, um jeito de ver a evolução, prazos, pequenas recompensas e as inspirações que vão segurar a disciplina nos dias ruins. E também limites: horário para começar e para parar, prioridades definidas no início do dia e tempo livre de verdade, porque cansaço acumulado derruba qualquer plano."
+      ],
+      "quote": "O que cada projeto no meu GitHub demonstra que eu sei fazer? Se a resposta não for clara, o projeto ainda não terminou.",
+      "bodyContinued": [
+        "A trilha é uma lista de tarefas com fim. Primeiro, concluir os conteúdos já começados em vez de abrir novos. Depois, os desafios práticos em três níveis (iniciante, intermediário e avançado), cada um com três etapas: enviar o código, escrever o README e personalizar o projeto para que ele não seja só uma cópia da aula. Em seguida vêm desafios tirados de vagas reais, de vídeos e de artigos, e por último a revisão da vitrine: LinkedIn atualizado, repositórios com descrição e projeto publicado, e um perfil no GitHub com README de apresentação, que aparece na página do perfil quando existe um repositório público com o mesmo nome do usuário. Cada etapa tem um contador de feito sobre total e uma data-alvo.",
+        "Para saber onde investir, o Hack Dev usa uma escala de quatro níveis por habilidade. Nível 1, nenhum: ainda não há conhecimento satisfatório. Nível 2, básico: leu documentação, copiou exemplos, fez cursos ou bootcamps e tem provas de conceito no próprio repositório. Nível 3, praticante: usa o recurso no dia a dia, ainda decide com ajuda de outras pessoas e tem o código revisado por alguém mais experiente. Nível 4, avançado: aceita desafios complexos, mentora colegas, toma decisões sobre o recurso e faz code review. A lista avaliada mistura fundamentos (lógica, estruturas de dados, recursividade, Git, clean code), front-end (HTML, CSS, JavaScript, React hooks, Next.js, SPA e SSR, acessibilidade, desempenho), qualidade (testes unitários e de ponta a ponta), arquitetura (APIs REST, SOLID, padrões de projeto, DDD) e habilidades como comunicação técnica, gestão de tempo e métodos ágeis.",
+        "Ninguém precisa seguir sozinho. Comunidades e escolas como Rocketseat, DIO, Alura, Trybe, DevMedia e cursos da Udemy oferecem trilhas, desafios e grupos de discussão. A IA também entrou no estudo: segundo o blog do Stack Overflow, em janeiro de 2026, 44% de quem aprendia a programar usou ferramentas de IA em 2025, contra 37% em 2024. Use a IA para tirar dúvidas e revisar, mas faça o exercício com as próprias mãos, senão o nível 2 nunca vira nível 3.",
+        "No learnTECH, essa estrutura virou o programa Hack Dev, que transforma a rotina e a trilha em passos guiados, e conversa com o artigo Rotina de um Desenvolvedor, sobre foco e hábitos no dia a dia de quem já programa. Comece pequeno: escolha uma meta por bloco, registre as datas por duas semanas e só então aumente o volume."
+      ],
+      "sources": [
+        {
+          "label": "Stack Overflow Blog — Are you learning with AI? We want to know about it (jan. 2026)",
+          "url": "https://stackoverflow.blog/2026/01/29/are-you-learning-with-ai-we-want-to-know-about-it/"
+        },
+        {
+          "label": "Hack Reactor — What the 2025 Stack Overflow Developer Survey means for new coders (ago. 2025)",
+          "url": "https://www.hackreactor.com/?p=423565"
+        },
+        {
+          "label": "GitHub Docs — Managing your profile README",
+          "url": "https://docs.github.com/en/account-and-profile/how-tos/profile-customization/managing-your-profile-readme"
+        }
+      ]
+    },
+    {
+      "id": "lgpd-nas-comunicacoes-de-crm",
+      "blogURL": "/blog/lgpd-nas-comunicacoes-de-crm",
+      "img": "https://cdn.pixabay.com/photo/2019/10/03/12/12/hacker-4523097_1280.jpg",
+      "title": "LGPD nas comunicações de CRM: base legal, descadastro e registro em e-mail, SMS e WhatsApp",
+      "tag": "Tecnologia",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-10-30",
+      "readingTime": "5 min",
+      "lead": "Quem trabalha com CRM envia mensagens para milhares de pessoas de uma vez, e cada envio é um tratamento de dados pessoais. A LGPD não proíbe e-mail, SMS nem WhatsApp, mas exige saber por que você pode falar com aquela pessoa, oferecer uma saída simples e conseguir provar tudo depois. Usamos uma rede fictícia de lojas de material de construção, a Rede Construir+, para mostrar como isso vira regra de trabalho.",
+      "highlights": [
+        {
+          "label": "Base legal",
+          "description": "Cada tipo de mensagem precisa de uma justificativa: consentimento, execução de contrato ou legítimo interesse, com regras diferentes."
+        },
+        {
+          "label": "Saída fácil",
+          "description": "Descadastro em todo envio, central de preferências e uma lista de bloqueio consultada antes de qualquer disparo."
+        },
+        {
+          "label": "Prova e mínimo",
+          "description": "Guardar onde e quando o contato aceitou, e coletar só os dados de que a comunicação precisa."
+        }
+      ],
+      "body": [
+        "A Lei nº 13.709/2018 lista as hipóteses que autorizam o tratamento de dados. Três aparecem o tempo todo no CRM. O consentimento (art. 7º, I) é a manifestação livre, informada e inequívoca do titular para uma finalidade determinada (art. 5º, XII), e pode ser revogado a qualquer momento por procedimento gratuito e facilitado (art. 8º, § 5º). A execução de contrato (art. 7º, V) costuma sustentar as mensagens que fazem parte da compra, como pedido confirmado, nota fiscal emitida e previsão de entrega. E o legítimo interesse (art. 7º, IX) pode sustentar algumas comunicações de relacionamento, desde que se tratem só os dados estritamente necessários e haja transparência (art. 10, §§ 1º e 2º).",
+        "O legítimo interesse não é um atalho para dispensar a caixa de seleção. O guia orientativo da ANPD sobre o tema, publicado em fevereiro de 2024, propõe um teste em três fases: finalidade (o interesse é legítimo e ligado a uma situação concreta?), necessidade (há um meio menos invasivo?) e balanceamento com salvaguardas (o envio é razoavelmente esperado pelo titular naquele contexto?). Em um dos exemplos do guia, promoções enviadas a quem já tem relação com a empresa e pode se descadastrar passam no teste. Sem relação prévia e sem informação clara, a conclusão tende a ser a oposta. O legítimo interesse também não vale para dados sensíveis."
+      ],
+      "quote": "Cadastro e descadastro têm que ser verdade: se a pessoa disse sim, você consegue mostrar onde; se disse não, nenhuma automação volta a falar com ela.",
+      "bodyContinued": [
+        "Separar transacional de promocional é o primeiro passo prático. Na Rede Construir+, a confirmação do pedido vai por WhatsApp em uma mensagem curta e objetiva, e o e-mail leva a nota fiscal e os detalhes da compra, servindo também de registro. Ofertas e novidades só vão para quem aceitou recebê-las. A política da Meta para o WhatsApp exige opt-in antes da primeira mensagem, com o nome da empresa e a indicação clara de que a pessoa aceita receber comunicações dela, e recomenda opt-ins separados por tipo de mensagem. A própria plataforma divide os modelos em marketing, utilidade e autenticação, e desde 1º de julho de 2025 cobra por mensagem entregue, com preço diferente por categoria. Classificar errado uma oferta como utilidade é problema de conformidade e de custo.",
+        "A saída precisa ser tão fácil quanto a entrada. Todo e-mail promocional leva um link de descadastro que funciona, e todo SMS ou WhatsApp automático explica como parar, por exemplo respondendo SAIR. Uma central de preferências permite escolher o que receber (só conteúdos técnicos, só ofertas, só uma marca) em vez de sair de tudo. Por trás disso fica a lista de bloqueio: e-mails e telefones que não podem receber nada, consultada antes de cada envio, incluindo pedidos de eliminação que chegam pelo encarregado ou pelo jurídico com base no art. 18 da LGPD. Um bloqueio urgente pode ser feito à mão no mesmo dia, mas o processo definitivo deve ser automático, para que nenhuma lista importada reative quem saiu.",
+        "Minimização é a regra da necessidade (art. 6º, III) aplicada ao formulário. Uma landing page de captação precisa de nome e um contato; CPF só faz sentido no orçamento ou na compra. Também vale para grupos com várias marcas: o contato que aceitou ofertas de uma marca não aceitou, só por isso, as de outra, porque a finalidade informada foi aquela (art. 6º, I). Formulários com caixa de aceite não devem liberar o envio sem a marcação, e todo formulário, e-mail e página precisa de um link visível para a política de privacidade.",
+        "Por fim, registro. O art. 37 exige que controlador e operador mantenham registro das operações de tratamento, em especial quando a base é o legítimo interesse, e o art. 6º, X, pede que a empresa consiga demonstrar as medidas que adota. No CRM, isso significa guardar com cada contato a origem (qual formulário ou loja), a data e a hora do aceite, o texto exibido e a versão da política vigente, além da data e do canal de cada descadastro. Com esse histórico, responder a um titular ou à ANPD vira uma consulta, não uma investigação."
+      ],
+      "sources": [
+        {
+          "label": "Lei nº 13.709/2018 (LGPD), texto integral — gov.br",
+          "url": "https://www.gov.br/governodigital/pt-br/identidade/identificacao-do-cidadao-e-carteira-de-identidade-nacional/camara-executiva-federal-de-identificacao-do-cidadao-cefic/L13709.pdf"
+        },
+        {
+          "label": "ANPD — Guia orientativo: hipóteses legais de tratamento, legítimo interesse (v1.0, fev. 2024)",
+          "url": "https://tce.pb.gov.br/wp-content/uploads/2025/03/guia_legitimo_interesse.pdf"
+        },
+        {
+          "label": "ANPD — Glossário: legítima expectativa e legítimo interesse",
+          "url": "https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes/glossario-anpd/l"
+        },
+        {
+          "label": "Meta for Developers — Get opt-in for WhatsApp",
+          "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/getting-opt-in"
+        },
+        {
+          "label": "Meta for Developers — Pricing on the WhatsApp Business Platform",
+          "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing"
+        }
+      ]
+    },
+    {
       "id": "eventos-de-comunidade-tech",
       "blogURL": "/blog/eventos-de-comunidade-tech",
       "img": "/media/bootcamps/eventos/codexperience-2023/7.webp",
@@ -9,7 +727,7 @@
       "tag": "Carreira",
       "author": "Equipe learnTECH",
       "publishedAt": "2026-10-27",
-      "readingTime": "5 min",
+      "readingTime": "3 min",
       "lead": "Um evento de comunidade não substitui o estudo, mas mostra o que o estudo sozinho não mostra: como as pessoas da área pensam, trabalham e se ajudam. Em outubro de 2023, a primeira edição do CodeXperience Zona da Mata reuniu estudantes e profissionais na UniAcademia, em Juiz de Fora, e serve de exemplo concreto do que dá para levar de um dia assim.",
       "highlights": [
         {
@@ -59,7 +777,7 @@
       "tag": "Carreira",
       "author": "Equipe learnTECH",
       "publishedAt": "2026-10-28",
-      "readingTime": "5 min",
+      "readingTime": "6 min",
       "lead": "Organizar um evento de comunidade é um projeto como outro qualquer: tem objetivo, público, escopo, prazo e uma equipe que precisa saber quem faz o quê. Este guia reúne um passo a passo em oito etapas, as lições de quem integrou a organização do CodeXperience Zona da Mata em 2024, em Juiz de Fora, e modelos de convite para palestrantes, apoiadores e parceiros que você pode adaptar ao seu encontro.",
       "highlights": [
         {
@@ -126,7 +844,7 @@
       "tag": "Carreira",
       "author": "Equipe learnTECH",
       "publishedAt": "2026-10-28",
-      "readingTime": "6 min",
+      "readingTime": "3 min",
       "lead": "Processo seletivo parece uma caixa-preta, mas a maioria das empresas segue um roteiro parecido. O guia público de candidatos de um banco digital, por exemplo, descreve seis etapas até a oferta: teste de alinhamento cultural, triagem, conversa com recrutador, entrevista com a liderança, entrevista com stakeholder e desafio técnico. Saber em que etapa você está muda tudo na hora de se preparar.",
       "highlights": [
         {
@@ -167,7 +885,7 @@
       "tag": "Carreira",
       "author": "Equipe learnTECH",
       "publishedAt": "2026-10-28",
-      "readingTime": "6 min",
+      "readingTime": "3 min",
       "lead": "Uma vaga tem camadas: o que a empresa precisa, o que ela gostaria de encontrar e o que oferece em troca. Quem lê tudo como exigência deixa de se candidatar a oportunidades em que teria chance. Para mostrar como separar essas camadas, usamos um anúncio público de CRM Developer Jr de uma agência de CRM, publicado em 2026.",
       "highlights": [
         {
@@ -208,7 +926,7 @@
       "tag": "Carreira",
       "author": "Equipe learnTECH",
       "publishedAt": "2026-10-28",
-      "readingTime": "6 min",
+      "readingTime": "3 min",
       "lead": "Muitas empresas aplicam uma bateria de testes online antes de qualquer entrevista. Eles são cronometrados, não permitem voltar atrás e costumam misturar lógica, linguagem, framework e perfil comportamental. A partir da bateria real de uma consultoria de software internacional e de uma lista de exercícios universitária, mostramos o que esperar e como treinar.",
       "highlights": [
         {
@@ -253,7 +971,7 @@
       "tag": "Carreira",
       "author": "Equipe learnTECH",
       "publishedAt": "2026-10-28",
-      "readingTime": "5 min",
+      "readingTime": "3 min",
       "lead": "Quem recruta usa o LinkedIn como um buscador: digita um cargo e algumas tecnologias e olha os primeiros resultados. Se essas palavras não estão no seu perfil, você simplesmente não aparece, por melhor que seja. Um guia curto que circula na comunidade de dados resume a técnica em quatro áreas do perfil; aqui adaptamos a ideia para quem desenvolve software.",
       "highlights": [
         {
@@ -299,7 +1017,7 @@
       "tag": "Carreira",
       "author": "Equipe learnTECH",
       "publishedAt": "2026-10-28",
-      "readingTime": "5 min",
+      "readingTime": "3 min",
       "lead": "Networking não é colecionar contatos. É deixar claro o que você faz para que as pessoas saibam quando lembrar de você e para quem te indicar. Seja num grupo de negócios, seja no coffee break de um evento de comunidade, a ferramenta é a mesma: uma apresentação curta, ensaiada e com um pedido concreto no final.",
       "highlights": [
         {
@@ -340,7 +1058,7 @@
       "tag": "Carreira",
       "author": "Equipe learnTECH",
       "publishedAt": "2026-10-28",
-      "readingTime": "6 min",
+      "readingTime": "3 min",
       "lead": "O primeiro cliente freelancer costuma ser pequeno: uma escola, uma clínica, uma loja do bairro. O projeto raramente desanda por causa do código; desanda porque ninguém escreveu o que estava incluído. Para mostrar como evitar isso, usamos um caso real anonimizado: o site institucional de uma escola técnica da área da saúde, aqui chamada de Instituto Aurora de Educação em Saúde.",
       "highlights": [
         {
@@ -385,7 +1103,7 @@
       "tag": "Carreira",
       "author": "Equipe learnTECH",
       "publishedAt": "2026-10-28",
-      "readingTime": "7 min",
+      "readingTime": "3 min",
       "lead": "Universidades públicas abrem todo semestre editais para bolsistas e voluntários em projetos internos. Para quem estuda computação, costuma ser a primeira chance de trabalhar num sistema real antes do estágio. Mesmo assim, muita gente perde a vaga por ler só o título. Usando como exemplo editais públicos do Programa de Treinamento Profissional da UFJF, publicados entre 2017 e 2019, este guia mostra o que procurar em cada parte do documento.",
       "highlights": [
         {
@@ -427,7 +1145,7 @@
       "tag": "Carreira",
       "author": "Equipe learnTECH",
       "publishedAt": "2026-10-28",
-      "readingTime": "6 min",
+      "readingTime": "3 min",
       "lead": "O primeiro salário em tecnologia costuma chegar junto com uma lista de desejos: notebook melhor, cadeira, curso, viagem. Organizar esse dinheiro desde o começo evita que o aumento de renda vire só aumento de gasto. Este texto resume ideias de três livros conhecidos de finanças pessoais e as adapta para quem está começando na área, sem indicar nenhum produto financeiro específico.",
       "highlights": [
         {
@@ -468,7 +1186,7 @@
       "tag": "Carreira",
       "author": "Equipe learnTECH",
       "publishedAt": "2026-10-28",
-      "readingTime": "6 min",
+      "readingTime": "3 min",
       "lead": "Numa entrevista técnica ou numa daily, a resposta certa conta, mas a forma como ela chega também. Postura, olhar, tom de voz e até o silêncio mostram segurança ou desconforto antes da primeira linha de código. Dois clássicos ajudam a pensar nisso: \"O Corpo Fala\", de Pierre Weil e Roland Tompakow, e \"Como Fazer Amigos e Influenciar Pessoas\", de Dale Carnegie.",
       "highlights": [
         {
@@ -509,7 +1227,7 @@
       "tag": "Carreira",
       "author": "Equipe learnTECH",
       "publishedAt": "2026-10-28",
-      "readingTime": "6 min",
+      "readingTime": "3 min",
       "lead": "Toda vaga diz que a empresa tem uma cultura forte. Para entender o que isso significa na prática, ajuda olhar um caso bem documentado. Em \"Google: a biografia\", o jornalista Steven Levy acompanhou a empresa por dentro durante anos; em \"Por que fazemos o que fazemos?\", Mario Sergio Cortella discute propósito no trabalho. Juntos, os dois livros ajudam a montar perguntas para avaliar uma empresa antes de aceitar uma proposta.",
       "highlights": [
         {
@@ -555,7 +1273,7 @@
       "tag": "Carreira",
       "author": "Equipe learnTECH",
       "publishedAt": "2026-10-28",
-      "readingTime": "6 min",
+      "readingTime": "3 min",
       "lead": "Graduação, curso técnico, bootcamp, curso gratuito ou estudo por conta própria: todos podem levar a uma vaga em desenvolvimento, mas cobram preços diferentes em tempo, dinheiro e disciplina. Comparar pelo nome ou pela propaganda não funciona. Este texto propõe quatro critérios, conteúdo, carga, custo e prática, e usa como exemplo programas públicos de escolas e comunidades.",
       "highlights": [
         {
@@ -597,7 +1315,7 @@
       "tag": "Carreira",
       "author": "Equipe learnTECH",
       "publishedAt": "2026-10-28",
-      "readingTime": "7 min",
+      "readingTime": "4 min",
       "lead": "Ao se candidatar, você entrega currículo, contatos, histórico profissional, às vezes resultados de testes e até dados sensíveis para programas de diversidade. A Lei Geral de Proteção de Dados Pessoais (Lei 13.709/2018) define o que a empresa pode fazer com isso e quais direitos você tem. Usando como exemplo o aviso de privacidade de recrutamento de uma consultoria global, este texto mostra como ler esse tipo de documento.",
       "highlights": [
         {
@@ -644,7 +1362,7 @@
       "tag": "Javascript",
       "author": "Equipe learnTECH",
       "publishedAt": "2026-07-10",
-      "readingTime": "6 min",
+      "readingTime": "2 min",
       "lead": "JavaScript é a única linguagem que roda nativamente em praticamente todo navegador do planeta — e é ela que transforma uma página estática em algo que responde ao que você faz. Antes de qualquer framework, existe um punhado de conceitos que decide se você vai entender o que está acontecendo, ou só copiar código sem saber por quê.",
       "highlights": [
         {
@@ -685,7 +1403,7 @@
       "tag": "React JS",
       "author": "Equipe learnTECH",
       "publishedAt": "2026-07-15",
-      "readingTime": "6 min",
+      "readingTime": "2 min",
       "lead": "React é a biblioteca JavaScript mais usada do mundo para construir interfaces — mantida pela Meta e adotada por empresas de todos os portes. Mas o que faz ela valer a pena não é popularidade: é uma forma diferente de pensar a tela, dividida em pedaços pequenos e reutilizáveis, em vez de um documento único e monolítico.",
       "highlights": [
         {
@@ -726,7 +1444,7 @@
       "tag": "Node JS",
       "author": "Equipe learnTECH",
       "publishedAt": "2026-07-16",
-      "readingTime": "6 min",
+      "readingTime": "2 min",
       "lead": "JavaScript nasceu para rodar dentro do navegador. O Node.js quebrou essa regra: é um ambiente que executa JavaScript fora do navegador, no servidor — o que permite usar a mesma linguagem do frontend para construir o backend inteiro de uma aplicação.",
       "highlights": [
         {
@@ -767,7 +1485,7 @@
       "tag": "Scrum",
       "author": "Equipe learnTECH",
       "publishedAt": "2026-07-17",
-      "readingTime": "5 min",
+      "readingTime": "2 min",
       "lead": "Scrum não é sobre reunião diária nem sobre post-it colorido — isso é só a superfície. Na essência, é um framework para lidar com trabalho complexo dividindo-o em ciclos curtos, entregando algo utilizável no fim de cada um, e ajustando o rumo com base no que foi aprendido, em vez de tentar planejar tudo perfeitamente antes de começar.",
       "highlights": [
         {
@@ -807,7 +1525,7 @@
       "tag": "Hack",
       "author": "Equipe learnTECH",
       "publishedAt": "2026-10-28",
-      "readingTime": "6 min",
+      "readingTime": "3 min",
       "lead": "A rotina de quem desenvolve raramente é só código: tem estudo, reuniões, projetos paralelos, inglês e vida fora da tela. Sem estrutura, o dia vira uma sequência de trocas de contexto e a sensação no fim é de muito esforço e pouca entrega. O método a seguir vem de uma grade semanal real e de conversas de mentoria usando IA para organizar várias frentes ao mesmo tempo.",
       "highlights": [
         {
@@ -841,6 +1559,215 @@
         {
           "label": "The Scrum Guide — Ken Schwaber e Jeff Sutherland",
           "url": "https://scrumguides.org/"
+        }
+      ]
+    },
+    {
+      "id": "okrs-e-report-executivo-de-growth",
+      "blogURL": "/blog/okrs-e-report-executivo-de-growth",
+      "img": "/media/learn-tech/blog/okrs-e-report-executivo-de-growth.webp",
+      "title": "OKRs e report executivo de growth: como montar e apresentar sem virar um mural de números",
+      "tag": "Gestão",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-10-31",
+      "readingTime": "4 min",
+      "lead": "Todo mês alguém de growth precisa entrar numa sala com a diretoria e responder a uma pergunta simples: estamos indo para onde combinamos? O report executivo é a resposta, e os OKRs são a régua. Quando os dois estão bem amarrados, a reunião vira decisão. Quando não estão, vira um desfile de gráficos que ninguém lembra no dia seguinte. Aqui mostramos como uma rede fictícia de lojas de acabamento, a Rede Construir+, organiza objetivos, resultados-chave e o próprio report.",
+      "highlights": [
+        {
+          "label": "Um OKR por frente",
+          "description": "Cada frente de growth (programa de relacionamento, CRM, performance, eventos, produto) chega com um objetivo e de três a cinco resultados-chave, sempre com o valor atual ao lado da meta."
+        },
+        {
+          "label": "Fato, causa, ação",
+          "description": "Todo desvio aparece com o que aconteceu, por que aconteceu e o que será feito, com responsável e data."
+        },
+        {
+          "label": "Roadmap em MVPs",
+          "description": "Projetos longos são quebrados em entregas pequenas por trilha, para que a diretoria veja progresso real a cada mês."
+        }
+      ],
+      "body": [
+        "OKR quer dizer Objectives and Key Results. O método foi popularizado por Andy Grove na Intel nos anos 1970 e levado ao Google por John Doerr em 1999, como ele conta no livro Measure What Matters. A estrutura é curta de propósito: um objetivo qualitativo, que diz aonde se quer chegar, e de três a cinco resultados-chave mensuráveis, que dizem como saber se chegou. A avaliação vai de 0 a 1. Em metas aspiracionais, ficar perto de 0,7 é sinal de ambição bem calibrada; em metas de compromisso, como uma entrega com prazo, o esperado é 1. Se todos os resultados batem 100% todo trimestre, a meta estava fácil demais.",
+        "Na Rede Construir+, o report de growth abre com uma agenda que é, na prática, o mapa das frentes: funil de orçamentos, programa de relacionamento com especificadores, programa de assinatura, eventos de loja, performance de mídia, CRM, comunicação com a rede e roadmap de produto. Cada frente tem sua página de OKR. Um exemplo fictício: objetivo \"ser referência entre os programas de relacionamento do varejo de acabamentos\"; KR1, total de profissionais cadastrados; KR2, percentual de ativos no mês (especificando de fato); KR3, uso da plataforma; KR4, troca de pontos. Ao lado de cada KR vai o número atual e, entre parênteses, a meta. Quem lê entende em cinco segundos se a frente está atrasada ou adiantada."
+      ],
+      "quote": "Report bom não mostra tudo o que o time fez. Mostra o que mudou, por que mudou e qual decisão precisa ser tomada agora.",
+      "bodyContinued": [
+        "O coração do report é a visão geral do funil. Em vez de começar pelo que foi feito, comece pelo que ficou na mesa: quanto foi orçado, quanto virou venda e quanto continua em aberto, separado por faixa de valor. Em seguida, compare a previsão (forecast) com a meta e diga o tamanho da distância. Um exemplo fictício: \"a previsão indica crescimento sobre o ano anterior, mas ainda estamos atrás da meta do trimestre; há orçamentos grandes em aberto que precisam de ação das lojas nesta semana\". A frase termina numa ação, e a lista de orçamentos-chave segue por e-mail para quem vai agir.",
+        "Para os desvios, use sempre o trio fato, causa e ação. Fato: a taxa de leitura das mensagens para arquitetos está baixa. Causa: só enviamos boas-vindas e parabéns de aniversário, então não há motivo para abrir. Ação: comunicação mensal com novidades e saldo de pontos, mais uma campanha especial no mês do aniversário. Quando a ação ainda não existe, escreva \"a definir\" e leve a pergunta para a sala; esconder o buraco só adia a conversa. Indicadores de mídia como ROAS (receita sobre investimento em anúncios) entram com uma ressalva honesta: se a origem da venda depende de alguém preencher um campo na loja, o número é tão bom quanto esse preenchimento.",
+        "Feche com o roadmap. Projetos de tecnologia longos (nova plataforma de vendas, catálogo de produtos, meios de pagamento, rastreio de pedidos) assustam quando aparecem como uma barra única de nove meses. Quebre cada trilha em MVP1, MVP2, MVP3, com mês de entrega, piloto controlado e treinamento antes de abrir para toda a rede. A diretoria passa a cobrar entregas pequenas e verificáveis, e o time ganha espaço para aprender no caminho.",
+        "Por fim, cuide da comunicação do próprio report. Uma matriz simples de editoria, canal, público, texto e chamada evita que franqueados, especificadores, lideranças e clientes recebam a mesma mensagem do mesmo jeito. Uma rotina semanal ajuda: uma prévia na sexta com as ativações da semana seguinte e um acompanhamento em tempo real só para o que é especial. Para quem está começando, o exercício mais útil é pegar o último relatório que você produziu e reescrever cada página como objetivo, resultado-chave, número atual, meta e próxima ação. O que não couber nesse formato provavelmente não precisava estar ali."
+      ],
+      "sources": [
+        {
+          "label": "Objectives and key results — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Objectives_and_key_results"
+        },
+        {
+          "label": "Measure What Matters, de John Doerr — Penguin Random House",
+          "url": "https://www.penguinrandomhouse.com/books/546304/measure-what-matters-by-john-doerr"
+        },
+        {
+          "label": "How Google Sets Goals: Inside Buffer's Experiment with OKRs (2016)",
+          "url": "https://buffer.com/resources/okrs-experiment/"
+        }
+      ]
+    },
+    {
+      "id": "programa-de-relacionamento-com-especificadores-no-varejo",
+      "blogURL": "/blog/programa-de-relacionamento-com-especificadores-no-varejo",
+      "img": "/media/learn-tech/blog/programa-de-relacionamento-com-especificadores-no-varejo.webp",
+      "title": "Programa de relacionamento com especificadores: pontos, vitrine, eventos e churn no varejo de acabamentos",
+      "tag": "Marketing e CRM",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-10-31",
+      "readingTime": "5 min",
+      "lead": "No varejo de acabamentos, quem escolhe o porcelanato muitas vezes não é quem paga por ele. Arquitetos e designers de interiores especificam, o cliente compra, a loja vende. Um programa de relacionamento com esses especificadores é a forma de transformar essa influência em parceria contínua, e não em favores pontuais. Mostramos como a Rede Construir+, uma rede fictícia de franquias, estrutura pontos, vitrine, eventos e combate ao churn, sem esquecer a ética profissional de quem está do outro lado.",
+      "highlights": [
+        {
+          "label": "Pontos com regra clara",
+          "description": "Pontuação por venda especificada, bônus para novos cadastros e um catálogo de trocas que se renova; tudo visível para o profissional e para o cliente."
+        },
+        {
+          "label": "Vitrine curada",
+          "description": "Uma seleção mensal de produtos com pontuação maior para o especificador e margem melhor para a loja, que alinha os incentivos dos dois lados."
+        },
+        {
+          "label": "Churn por segmento",
+          "description": "Novos, ativos, ativos esfriando e inativos recebem mensagens diferentes, com motivo real para abrir."
+        }
+      ],
+      "body": [
+        "Por que investir nesse público? Em pesquisa CAU/BR-Datafolha de 2015, 54% da população economicamente ativa disse já ter construído ou reformado, e 85,4% dessas pessoas fizeram a obra sem arquiteto ou engenheiro. Apenas 14,6% contrataram esses profissionais, mas 78% de quem contratou arquitetos ficou satisfeito, e 70% dos entrevistados disseram considerar contratar um na próxima obra. Traduzindo para o varejo: os especificadores ainda participam de uma parte pequena das obras, que tendem a ser as de maior planejamento e, possivelmente, de ticket mais alto em acabamento. Quem atende bem esse grupo hoje está bem posicionado se essa fatia crescer.",
+        "Antes da mecânica, vem a ética. O Código de Ética e Disciplina do CAU proíbe o arquiteto de receber comissão ou vantagem de fornecedores de insumos do seu contratante, com base no artigo 18 da Lei 12.378/2010. A chamada reserva técnica, uma comissão paga de forma velada por lojas a quem indica clientes, é alvo de acordos entre conselhos e Ministério Público, como o firmado em Goiás em 2018. Por isso, um programa sério evita dinheiro escondido e aposta em reconhecimento transparente: pontos trocados por experiências, conteúdo, ferramentas de trabalho e visibilidade, com regulamento público e validação jurídica. Se o cliente final descobrir as regras, nada deve parecer estranho para ele."
+      ],
+      "quote": "Programa de relacionamento não é tabela de comissão com nome bonito. É um motivo recorrente para o profissional voltar à sua loja, e esse motivo precisa resistir à luz do dia.",
+      "bodyContinued": [
+        "A mecânica da Rede Construir+ tem quatro peças. Cadastro: o profissional entra pela loja, por formulário ou em eventos, e ganha pontuação dupla nas primeiras especificações. Pontuação: cada orçamento que vira venda com o profissional vinculado gera pontos, e o saldo é comunicado com frequência. Vitrine: todo mês, uma curadoria de itens com pontuação dobrada para o especificador e bônus de margem para a loja; o resultado-chave aqui é a participação dos itens da vitrine nas vendas especificadas. Troca de pontos: um catálogo que é renovado e divulgado, porque pouca troca é sinal de que o profissional não vê valor no que acumula.",
+        "Eventos fazem o programa sair da tela. Funcionam bem as visitas guiadas a feiras do setor (recepção, pulseira de identificação, guia de bolso com os estandes que interessam, kit e lanche), visitas a fábricas, encontros regionais com franqueados e especificadores da mesma praça e uma premiação de melhores do ano: o melhor do mês em toda a rede e o melhor do ano por estado, com troféu, destaque na plataforma e nas redes sociais. Cada evento precisa de uma régua de comunicação com antecipação, convite, lembrete e cobertura, e de um combinado com as lojas, que garantem o credenciamento e a presença dos seus profissionais.",
+        "O churn começa silencioso. Segmente a base em novos, ativos, ativos que estão esfriando e inativos, e trate cada grupo de um jeito: boas-vindas e primeiro orçamento para os novos; novidades, lançamentos e saldo para os ativos; desafio com prazo (uma corrida de pontos, por exemplo) para quem está esfriando; reativação com conversa um a um para os inativos que já foram relevantes. Um sinal clássico de problema é a taxa de leitura baixa quando o programa só manda parabéns e boas-vindas. A correção é dar motivo para abrir: conteúdo de projeto, novidades de produto, saldo e campanhas. Toda semana, olhe também os orçamentos especificados em aberto e leve os maiores para a loja responsável.",
+        "Nada disso funciona com base suja. Leads que entram como especificador sem ser, cadastros sem loja vinculada e contatos inválidos distorcem os indicadores e geram mensagens erradas. Defina regras de entrada por origem, campos obrigatórios (como a loja de referência) e uma rotina de higienização. Acompanhe, como exemplo de painel, total de cadastrados, percentual de ativos no mês, uso da plataforma, troca de pontos e participação da vitrine. Para quem quer trabalhar com CRM no varejo, montar a régua de churn de um programa assim, do segmento à mensagem, é um ótimo projeto de portfólio."
+      ],
+      "sources": [
+        {
+          "label": "Pesquisa revela que mais de 80% dos brasileiros fazem obra sem arquiteto ou engenheiro (CAU/BR-Datafolha, 2015) — Condomínio SC",
+          "url": "https://condominiosc.com.br/radar/2279-pesquisa-revela-que-mais-de-80-dos-brasileiros-fazem-obra-sem-arquiteto-ou-engenheiro"
+        },
+        {
+          "label": "Reserva técnica: entenda a polêmica sobre o recebimento de comissões — Engenharia 360",
+          "url": "https://engenharia360.com/reserva-tecnica-entenda-polemica-sobre-o-recebimento-de-comissoes/"
+        },
+        {
+          "label": "MP e Conselho de Arquitetura firmam acordo visando coibir cobrança de reserva técnica (2018) — Rota Jurídica",
+          "url": "https://www.rotajuridica.com.br/?p=64619"
+        }
+      ]
+    },
+    {
+      "id": "personas-e-estudo-de-mercado-na-pratica",
+      "blogURL": "/blog/personas-e-estudo-de-mercado-na-pratica",
+      "img": "/media/learn-tech/blog/personas-e-estudo-de-mercado-na-pratica.webp",
+      "title": "Personas e estudo de mercado na prática: do radar de tendências à persona de expansão de franquias",
+      "tag": "UX/UI",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-10-31",
+      "readingTime": "5 min",
+      "lead": "Persona não é desenho bonito com nome, idade e uma frase de efeito. É uma síntese de pesquisa que ajuda o time a decidir o que dizer, para quem e em qual canal. Neste artigo seguimos o caminho completo na Rede Construir+, uma rede fictícia de lojas de acabamento: o estudo de mercado, as personas de consumidor e um tipo menos comentado, a persona de expansão, que representa quem pode virar franqueado.",
+      "highlights": [
+        {
+          "label": "Estudo em camadas",
+          "description": "Contexto e tendências, concorrência, olhar para dentro, perfis de público, matriz de necessidades e, só então, mensagem."
+        },
+        {
+          "label": "Mapa de empatia",
+          "description": "O que a persona pensa e sente, ouve, vê, fala e faz, mais dores, ganhos e as perguntas que ela faria."
+        },
+        {
+          "label": "Persona de expansão",
+          "description": "Quatro perfis de potencial franqueado, do lojista especialista ao executivo em transição de carreira."
+        }
+      ],
+      "body": [
+        "O termo persona como método de design foi descrito por Alan Cooper em 1999, no livro The Inmates Are Running the Asylum. A ideia é criar personagens fictícios, mas construídos a partir de dados de várias pessoas reais, para representar tipos de usuário. O alerta da literatura é direto: persona feita só com as suposições do time não deve guiar decisões, e persona que nunca é revisada envelhece. Por isso, a ordem importa: primeiro o estudo, depois a persona.",
+        "Um estudo de mercado útil tem camadas. Radar: o que acontece no setor (no caso da construção, temas como a obra feita aos poucos, inflação de materiais e a casa ressignificada como espaço de trabalho e bem-estar). Olhar para o lado: concorrência organizada numa matriz com marca e assinatura, conceito, motor de valor (experiência, acesso, tradição) e ações de destaque; grandes home centers, lojas especializadas e indústrias que falam direto com o consumidor aparecem como grupos diferentes. Olhar para dentro: o que a empresa realmente é, e não o que o nome sugere. Depois vêm os perfis de público, uma matriz de necessidades que viram oportunidades e, por fim, a plataforma de comunicação."
+      ],
+      "quote": "Se a persona não muda nenhuma decisão de canal, de mensagem ou de produto, ela é decoração. Persona boa termina em uma lista de perguntas que o seu conteúdo precisa responder.",
+      "bodyContinued": [
+        "Para o consumidor, a Rede Construir+ trabalha com quatro perfis, cada um com benefício, atributo e mensagem principal. Os engajados têm alto envolvimento e planejam a obra; a mensagem é variedade de acabamentos com bom preço. Os práticos querem segurança e pouco envolvimento; a mensagem é compra segura com garantia. O B2B, pequenos construtores e empreiteiros, busca economia e disponibilidade; a mensagem é parceria para a obra. Os especificadores, arquitetos e designers, valorizam qualidade e confiança; a mensagem é \"trabalhamos para você e para o seu cliente\". Um mote único amarra tudo, e cada perfil recebe a sua mensagem secundária.",
+        "A persona de expansão segue o mesmo raciocínio para quem pode abrir uma franquia. Exemplo fictício, em quatro perfis. O especialista: dono de loja de acabamento numa cidade média, segunda geração do negócio, bom relacionamento com arquitetos; quer acesso a grandes indústrias e reputação local (conversão total da loja). O generalista: dono de loja de material básico, forte em reparos e fraco em acabamento, preparando a sucessão; quer profissionalizar e deixar um legado (conversão parcial). O simpatizante: pequeno construtor ou arquiteto que vive a falta de opções na cidade e quer empreender com risco menor. O empreendedor: executivo cansado do mundo corporativo, sem experiência no setor, que vê na franquia um modelo já estruturado.",
+        "Para cada um, o mapa de empatia registra o que pensa e sente (\"quero crescer sem arriscar tudo\"), o que ouve (\"o concorrente entrega mais rápido\"), o que vê (uma loja da rede na cidade vizinha), o que fala e faz (pesquisa na internet, conversa com quem já é franqueado), além de dores e ganhos. A parte mais valiosa é o FAQ: o e-commerce vai tirar a minha venda? O preço do site é o mesmo da loja? O que faço com o meu estoque e com as marcas com que já trabalho? Vou perder a minha marca? Vocês me ensinam a me relacionar com arquitetos? Qual o investimento, o capital de giro e o retorno? Cada pergunta vira conteúdo de landing page, roteiro de live para candidatos e mensagem de nutrição.",
+        "Algumas respostas têm base legal. A Lei 13.966/2019 obriga o franqueador a entregar a Circular de Oferta de Franquia pelo menos 10 dias antes da assinatura do contrato ou de qualquer pagamento, com o investimento inicial estimado, as taxas, o perfil do franqueado ideal e as regras de território. E o contexto ajuda a explicar o interesse: segundo a ABF, o franchising brasileiro faturou R$ 301,7 bilhões em 2025, alta nominal de 10,5%, com 202.444 unidades e 3.297 redes (dados divulgados em abril de 2026). Persona de expansão não promete lucro; ela antecipa a dúvida certa e leva o candidato ao documento certo.",
+        "Feche o ciclo ligando personas a canais. Desenhe um mapa de entradas: por onde cada persona chega (anúncios, redes sociais, landing pages, formulários na loja, eventos, telefone) e para qual fluxo vai depois. Revise as personas quando os dados de CRM mostrarem um comportamento novo. Para quem está começando em UX ou marketing, um bom exercício é escolher um negócio da sua cidade, montar duas personas com entrevistas reais e escrever o FAQ de cada uma: é ali que o estudo vira produto."
+      ],
+      "sources": [
+        {
+          "label": "Personas – why and how you should use them — Interaction Design Foundation",
+          "url": "https://ixdf.org/literature/article/personas-why-and-how-you-should-use-them"
+        },
+        {
+          "label": "Empathy map — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Empathy_map"
+        },
+        {
+          "label": "Lei nº 13.966, de 26 de dezembro de 2019 (Lei de Franquias) — Senado Federal",
+          "url": "https://legis.senado.leg.br/norma/31881984/publicacao/31882396"
+        },
+        {
+          "label": "Franchising supera R$ 300 bi em 2025 e cresce 10,5% no Brasil, aponta ABF — Propmark (06/04/2026)",
+          "url": "https://propmark.com.br/mercado/franchising-supera-r-300-bi-em-2025-e-cresce-10-5-no-brasil-aponta-abf/"
+        },
+        {
+          "label": "Pesquisa CAU/BR-Datafolha sobre obras sem arquiteto ou engenheiro (2015) — Condomínio SC",
+          "url": "https://condominiosc.com.br/radar/2279-pesquisa-revela-que-mais-de-80-dos-brasileiros-fazem-obra-sem-arquiteto-ou-engenheiro"
+        }
+      ]
+    },
+    {
+      "id": "encarte-digital-e-tabloide-por-praca",
+      "blogURL": "/blog/encarte-digital-e-tabloide-por-praca",
+      "img": "/media/learn-tech/blog/encarte-digital-e-tabloide-por-praca.webp",
+      "title": "Encarte digital e tabloide por praça: do preço regional à revista digital",
+      "tag": "Marketing e CRM",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-10-31",
+      "readingTime": "5 min",
+      "lead": "O velho tabloide de ofertas não morreu: mudou de formato. Em redes com lojas em vários estados, o mesmo produto pode ter preço diferente em cada praça, e isso transforma um simples PDF de promoções num pequeno projeto de dados, design, regras de consumo e automação. Veja como a Rede Construir+, uma rede fictícia de lojas de acabamento, produz o encarte mensal por estado e o distribui como revista digital.",
+      "highlights": [
+        {
+          "label": "Uma versão por praça",
+          "description": "Mesmo layout, preços e limites de cada estado, com nome de arquivo padronizado e validade clara."
+        },
+        {
+          "label": "Preço que respeita a lei",
+          "description": "Preço à vista em destaque, parcelamento com total e juros, e o mesmo item com o mesmo preço dentro de cada versão."
+        },
+        {
+          "label": "Jornada, não anexo",
+          "description": "Landing page com escolha do estado, entrega por e-mail, lembrete por WhatsApp e medição por praça."
+        }
+      ],
+      "body": [
+        "Por que regionalizar? Frete, tributos e condições comerciais variam por estado, e a tabela de preços das lojas acompanha essa variação. Um encarte nacional único obriga a escolher entre o preço mais alto (e perder competitividade) ou o mais baixo (e criar uma oferta que algumas lojas não conseguem honrar). A saída é uma base de ofertas com uma linha por item e por praça, da qual saem automaticamente as versões do mês: uma por estado, com o mesmo layout. Um padrão de nome como tabloide-mes-ano-UF evita o clássico arquivo final-final-2 circulando no grupo de WhatsApp.",
+        "A anatomia de uma página ajuda a revisar. No topo, o tema do mês (por exemplo, um festival de acabamentos) e a validade. Depois, blocos por categoria (pisos, metais, louças) ou por ambiente (sala, cozinha, banheiro, área externa). Cada quadro de produto traz o nome técnico (formato, acabamento, cor), o \"de/por\", o percentual de desconto, a unidade de venda (metro quadrado ou peça), o código do item e o limite de quantidade. Exemplo fictício: porcelanato 90x90 cm acetinado, de R$ 120,00 por R$ 79,90 o m², limite de 500 m² por cliente. No rodapé, \"imagens ilustrativas\", o convite para a loja mais próxima e o endereço do site."
+      ],
+      "quote": "Encarte regional errado não é só um erro de design: é uma oferta pública que alguém vai querer cobrar no balcão.",
+      "bodyContinued": [
+        "Regra de preço é requisito, não detalhe. O Decreto 5.903/2006, que regulamenta a Lei 10.962/2004, exige que o preço seja informado com correção, clareza, precisão, ostensividade e legibilidade. Exige também o total à vista e, quando houver parcelamento, o valor total, o número e o valor das parcelas, os juros e os encargos. O decreto trata como infração atribuir preços distintos ao mesmo item, e a Lei 13.543/2017 acrescentou regras para a divulgação de preço no comércio eletrônico. Na prática, cada versão regional precisa ser coerente por dentro, deixar claro a qual praça e a qual período se refere, e combinar com o preço que a loja daquela praça vai cobrar.",
+        "Do PDF à revista digital, o formato pesa. Defina um tamanho máximo de arquivo (5 MB, por exemplo) e ajuste a resolução das imagens e o número de páginas para cabê-lo; PDF pesado não abre no celular de quem está na obra. Publique numa landing page que pergunta o estado e entrega a versão certa, em PDF ou como página folheável. Na automação, uma ferramenta como o Journey Builder, do Salesforce Marketing Cloud, recebe o contato pela fonte de entrada (o formulário ou uma base), envia o e-mail com conteúdo dinâmico por estado, espera alguns dias e decide o próximo passo: quem não abriu recebe um lembrete por outro canal, quem clicou entra na régua de orçamento.",
+        "Há também a versão interna. Uma edição de análise, com código, limite e desconto de cada item, serve para as lojas planejarem estoque e para o time de CRM reativar clientes com orçamentos em aberto que contêm itens do tabloide. Para que as lojas usem o material, prepare uma régua de lançamento para a rede: novidade na primeira semana, o que é e quais as vantagens na segunda, uma provocação na terceira (\"sua equipe já está usando o tabloide com os clientes?\"), live com franqueados e vendedores na quarta e um lembrete de urgência quando o material entra no segundo mês.",
+        "Por fim, controle as peças. Uma planilha simples, com atualização datada, guarda as versões, as artes de última hora, os testes de e-mail e até os brindes de campanha (tamanhos, quantidades e regra de quem pode pedir, com respostas padrão para as solicitações). Meça por praça: acessos à landing page, contatos captados, orçamentos com itens do encarte e vendas atribuídas, lembrando que a atribuição só é confiável se a origem for registrada corretamente na loja. Para quem quer entrar em marketing de varejo, montar um encarte regional de três estados, com base de dados, checklist legal e jornada de envio, é um projeto de portfólio que mostra muito mais do que saber diagramar."
+      ],
+      "sources": [
+        {
+          "label": "Decreto 5.903/2006: oferta e afixação de preço de produto ou serviço — Procon Goiás",
+          "url": "https://goias.gov.br/procon/decreto-5-903-20-09-06-oferta-e-afixacao-de-preco-de-produto-ou-servico/"
+        },
+        {
+          "label": "Lei nº 10.962, de 11 de outubro de 2004 — Câmara dos Deputados",
+          "url": "https://www2.camara.leg.br/legin/fed/lei/2004/lei-10962-11-outubro-2004-534307-norma-pl.html"
+        },
+        {
+          "label": "Get Started with Journey Builder — Trailhead (Salesforce)",
+          "url": "https://trailhead.salesforce.com/content/learn/modules/journey-builder-basics/get-started-with-journey-builder"
         }
       ]
     }

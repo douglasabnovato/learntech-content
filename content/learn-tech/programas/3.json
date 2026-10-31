@@ -3,8 +3,843 @@
   "image": "https://cdn.pixabay.com/photo/2015/09/05/22/33/office-925806_1280.jpg",
   "category": "Web",
   "categoryFilter": "web",
-  "title": "Web Design Responsivo: Criando sites que se adaptam a qualquer tela",
-  "lessons": "10+ Lições",
-  "duration": "08hr 45min",
-  "access": "Acesso Livre"
+  "title": "Web Design Responsivo: do Celular ao Monitor com CSS Moderno",
+  "lessons": "20 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Iniciante",
+  "description": "Um aprofundamento em design responsivo para quem já monta uma página com HTML e CSS. Você aprende a começar pelo celular, medir com unidades relativas, servir a imagem certa para cada tela com srcset e picture, ajustar a tipografia com clamp(), fazer componentes que se adaptam ao espaço com container queries e testar tudo em dispositivos reais sem esquecer a acessibilidade.",
+  "letslearn": [
+    "Escrever o CSS a partir da tela estreita e acrescentar regras só quando o conteúdo pede",
+    "Escolher entre rem, em, %, ch e unidades de viewport sabendo o efeito de cada uma",
+    "Servir imagens do tamanho certo com srcset, sizes e picture",
+    "Criar tipografia fluida com clamp() que continua respeitando o zoom do usuário",
+    "Fazer componentes que se reorganizam pelo próprio espaço com container queries",
+    "Testar em DevTools, em celular real e nos critérios de acessibilidade de reflow e alvo de toque"
+  ],
+  "curriculum": "Do layout que encolhe ao layout que se adapta",
+  "about": "Este programa continua de onde HTML5 e CSS3 Moderno: do Zero ao Currículo Publicado parou. Lá, flexbox, grid e media queries apareceram dentro de um currículo de uma página; aqui, o design responsivo vira o assunto principal. O projeto é a página de programação de uma mostra de curtas-metragens fictícia: capa com imagem, grade de filmes, cards que aparecem em dois lugares com larguras diferentes e uma tabela de sessões. A progressão vai da base mobile first às imagens, depois à tipografia e aos componentes autônomos, e termina com testes em dispositivo e acessibilidade. Cada recurso entra depois de mostrar o problema que ele resolve.",
+  "materials": [
+    "Página inicial da mostra fictícia (HTML sem estilo) e imagens em vários tamanhos",
+    "Tabela de larguras de teste: 320, 375, 768, 1024 e 1440 pixels",
+    "Checklist de responsividade e acessibilidade para revisar antes de publicar",
+    "Folha de referência de unidades CSS e de quando usar cada uma"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Mobile First e Unidades Relativas",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Imagens Responsivas",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Tipografia Fluida e Container Queries",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Testes em Dispositivos e Acessibilidade",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Web",
+    "mainTitle": "Uma página que funciona em qualquer tela não nasce no monitor: nasce no celular e cresce.",
+    "introductionParagraphs": [
+      {
+        "title": "Responsivo não é encolher o desktop",
+        "text": "O erro mais comum é desenhar a página para o monitor e depois tentar espremê-la no celular com uma pilha de exceções. O **mobile first** inverte a ordem: a versão estreita é a base, sem nenhuma media query, e cada regra extra só entra quando há espaço para ela. O CSS fica menor, e o celular — onde está a maior parte do tráfego — recebe a versão mais simples."
+      },
+      {
+        "title": "A página se adapta em várias camadas",
+        "text": "Media query é só uma das ferramentas. Unidades relativas fazem as medidas acompanharem a fonte do usuário, **srcset** e **picture** entregam a imagem do tamanho certo, **clamp()** faz o texto crescer sem saltos e **container queries** deixam cada componente decidir seu próprio layout pelo espaço que recebeu, e não pela largura da tela inteira."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não usa framework de CSS, não usa JavaScript para layout e não ensina a fazer uma versão separada do site para celular. Tudo é HTML e CSS padrão, suportado pelos navegadores atuais, para que você entenda o mecanismo antes de usar qualquer ferramenta que o esconda."
+      }
+    ],
+    "courseAboutTitle": "Do layout que encolhe ao layout que se adapta",
+    "courseAboutDescription": "Saber escrever uma media query não é o mesmo que fazer uma página responsiva. A diferença aparece quando o usuário aumenta a fonte, abre a página num celular de 320 pixels, gira o tablet ou usa uma conexão lenta. Este programa trata desses casos um por um, com um projeto que só fica pronto quando passa por todos eles.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Mobile First e Unidades Relativas",
+        "items": [
+          {
+            "label": "Meta viewport",
+            "description": "A linha sem a qual nenhuma media query funciona no celular."
+          },
+          {
+            "label": "Base para a tela estreita",
+            "description": "Escrever primeiro o CSS do celular e acrescentar regras com min-width."
+          },
+          {
+            "label": "Unidades relativas",
+            "description": "rem, em, %, ch e unidades de viewport, cada uma no seu lugar."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Imagens Responsivas",
+        "items": [
+          {
+            "label": "Imagem fluida sem salto",
+            "description": "max-width, width e height para a imagem caber e não empurrar o texto."
+          },
+          {
+            "label": "srcset e sizes",
+            "description": "Deixar o navegador escolher o arquivo do tamanho certo."
+          },
+          {
+            "label": "picture",
+            "description": "Recorte diferente para o celular e formatos modernos com alternativa."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Tipografia Fluida e Container Queries",
+        "items": [
+          {
+            "label": "clamp()",
+            "description": "Texto que cresce entre um mínimo e um máximo sem quebrar o zoom."
+          },
+          {
+            "label": "Container queries",
+            "description": "Um card que muda de layout pelo espaço que recebeu."
+          },
+          {
+            "label": "Unidades cqi",
+            "description": "Medidas proporcionais ao contêiner, e não à tela."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Testes em Dispositivos e Acessibilidade",
+        "items": [
+          {
+            "label": "DevTools e celular real",
+            "description": "O que o simulador mostra e o que só o aparelho revela."
+          },
+          {
+            "label": "Reflow e zoom",
+            "description": "A página a 320 pixels e a 400% de zoom sem rolagem lateral."
+          },
+          {
+            "label": "Toque, hover e movimento",
+            "description": "Alvos de toque, dispositivos sem mouse e preferência por menos animação."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para aplicar na página da mostra. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "laptop",
+      "title": "Mobile First e Unidades Relativas",
+      "shortDescription": "Viewport, CSS a partir do celular e medidas que acompanham o usuário",
+      "introductionText": "O projeto deste programa é a página de programação de uma mostra de curtas-metragens fictícia, a Mostra de Curtas da Serra Clara: uma capa com imagem, uma grade com doze filmes, uma lista de destaques na lateral e uma tabela de sessões. Você recebe o HTML sem estilo e vai escrever o CSS do zero. Neste módulo você monta a base: a página correta no celular sem nenhuma media query, medidas em unidades relativas e os primeiros pontos de quebra escolhidos pelo conteúdo, e não por um modelo de aparelho.",
+      "sections": [
+        {
+          "title": "📱 A base que começa pelo celular",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "A meta viewport",
+              "code": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+              "guidance": "Abra a página sem essa linha no modo dispositivo do navegador: ela aparece minúscula, porque o navegador móvel simula uma tela larga (por volta de 980 pixels) e reduz tudo para caber. Acrescente a meta viewport no head e recarregue. Agora a largura do layout passa a ser a largura real do aparelho, e as media queries começam a valer.",
+              "tips": [
+                "Não acrescente maximum-scale=1 nem user-scalable=no: isso impede o usuário de dar zoom com os dedos, e quem enxerga pouco depende disso."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Escrever primeiro o CSS da tela estreita",
+              "guidance": "Estilize a página inteira olhando para uma largura de 360 pixels, sem nenhuma media query: uma coluna, cards empilhados, menu em lista. Esse é o CSS que todo aparelho recebe. Só depois de ele estar bom você vai acrescentar regras para telas maiores.",
+              "tips": [
+                "No celular, quase tudo já funciona com o fluxo normal do HTML. Se a base está cheia de position e larguras fixas, ela foi pensada para o monitor."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "rem, em, % e ch, cada um no seu lugar",
+              "code": "padding: 1rem; max-width: 65ch;",
+              "guidance": "Troque os pixels por unidades relativas. Use rem para tamanhos de fonte e espaçamentos gerais, porque acompanha a fonte que o usuário configurou no navegador. Use em quando a medida deve seguir a fonte do próprio componente, como o padding de um botão. Use % para larguras dentro do pai e ch para limitar a largura de um bloco de texto em número aproximado de caracteres.",
+              "tips": [
+                "Teste: aumente a fonte padrão nas configurações do navegador. Com rem, a página inteira acompanha; com px, o texto fica do mesmo tamanho e o usuário perde a preferência que escolheu."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Unidades de viewport sem a armadilha do celular",
+              "code": "min-height: 100svh;",
+              "guidance": "Faça a capa da mostra ocupar a altura da tela. Com 100vh, no celular a capa fica maior que a área visível, porque a barra de endereço aparece e some. As unidades svh (menor viewport), lvh (maior) e dvh (dinâmica, que muda junto com a barra) resolvem isso. Para a capa, svh garante que nada fique escondido atrás da barra.",
+              "tips": [
+                "Use dvh com moderação: como ela muda enquanto o usuário rola, o layout pode se mexer durante a rolagem."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Pontos de quebra escolhidos pelo conteúdo",
+              "code": "@media (min-width: 40em) { ... }",
+              "guidance": "Abra a página e vá alargando a janela devagar. Quando a coluna única começar a ficar com linhas longas demais e espaço sobrando, esse é o ponto de quebra: acrescente ali uma media query com min-width que passa a grade de filmes para duas colunas. Repita até a largura de monitor. Os números vêm do seu conteúdo, não de uma lista de modelos de celular.",
+              "tips": [
+                "Escrever o ponto de quebra em em faz a media query acompanhar a fonte do usuário: quem aumentou a fonte recebe o layout de uma coluna mais cedo, que é exatamente o que precisa."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que começar pelo celular",
+      "highlights": [
+        {
+          "icon": "gauge",
+          "title": "Menos CSS para quem tem menos",
+          "text": "O celular recebe só a base, sem precisar desfazer regras pensadas para o monitor. Quem tem tela maior recebe acréscimos, não correções."
+        },
+        {
+          "icon": "list",
+          "title": "Prioridade forçada",
+          "text": "Numa coluna estreita não cabe tudo lado a lado. Começar por ela obriga a decidir o que vem primeiro, e essa ordem melhora a página em qualquer tela."
+        },
+        {
+          "icon": "sync",
+          "title": "Medidas que acompanham o usuário",
+          "text": "Com rem e em, a página respeita a fonte que a pessoa configurou. Pixels fixos ignoram essa preferência sem avisar."
+        }
+      ],
+      "closingText": "A página da mostra já funciona do celular ao monitor, com medidas relativas e pontos de quebra escolhidos pelo conteúdo. Mas as imagens ainda são um arquivo único e pesado, baixado inteiro até pelo celular. No próximo módulo cada tela passa a receber a imagem que precisa.",
+      "ctaTitle": "📱 Base mobile first pronta!",
+      "ctaText": "Sua página começa pelo celular e cresce com o espaço. Agora vamos cuidar do que mais pesa nela: as imagens.",
+      "nextButtonText": "Ir para Módulo 1: Imagens Responsivas"
+    },
+    {
+      "id": 1,
+      "icon": "globe",
+      "title": "Imagens Responsivas",
+      "shortDescription": "Imagem fluida, srcset, sizes, picture e carregamento sob demanda",
+      "introductionText": "Imagem costuma ser a maior parte do peso de uma página. Uma foto de 2400 pixels de largura numa tela de 360 pixels é baixada inteira e reduzida pelo navegador: o usuário paga em dados e em tempo por pixels que nunca vê. Neste módulo você prepara a foto de capa e os cartazes dos filmes em vários tamanhos e ensina o navegador a escolher. A regra geral é: o HTML descreve as opções, e o navegador decide, porque só ele sabe a largura da tela, a densidade de pixels e, em alguns casos, a qualidade da conexão.",
+      "sections": [
+        {
+          "title": "🖼️ A imagem certa para cada tela",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Imagem fluida e sem salto de layout",
+              "code": "img { max-width: 100%; height: auto; }",
+              "guidance": "Aplique essa regra a todas as imagens: elas nunca passam da largura do pai e mantêm a proporção. Depois, coloque width e height com as dimensões reais em cada img do HTML. Com esses dois atributos o navegador calcula a proporção antes de baixar o arquivo e reserva o espaço, e o texto não pula para baixo quando a imagem chega.",
+              "tips": [
+                "Segundo o Web Almanac 2024, só 32% das imagens em páginas móveis têm width e height definidos. É uma das correções mais baratas que existem."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "srcset com descritor de largura",
+              "code": "srcset=\"cartaz-400.jpg 400w, cartaz-800.jpg 800w, cartaz-1200.jpg 1200w\"",
+              "guidance": "Gere cada cartaz em três larguras e liste-as no srcset, cada arquivo com sua largura real seguida de w. Mantenha o src apontando para um tamanho intermediário: é ele que vale em navegador que não entende srcset. O navegador combina essas larguras com a densidade de pixels da tela para escolher um arquivo.",
+              "tips": [
+                "O descritor x (1x, 2x) serve para imagem de tamanho fixo, como um logotipo. Para imagem que muda de largura com o layout, use w."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "sizes: contar ao navegador a largura de exibição",
+              "code": "sizes=\"(min-width: 60em) 33vw, (min-width: 40em) 50vw, 100vw\"",
+              "guidance": "O navegador escolhe a imagem antes de calcular o CSS, então não sabe que o cartaz ocupa um terço da tela no monitor. O sizes diz isso: a lista é lida da esquerda para a direita e vale a primeira condição verdadeira. Escreva as larguras de acordo com a grade que você montou no módulo anterior. Sem sizes, o navegador supõe que a imagem ocupa a tela inteira e baixa um arquivo maior que o necessário.",
+              "tips": [
+                "Confira no painel de rede do DevTools qual arquivo foi baixado em cada largura. Um sizes errado não quebra nada visualmente, só desperdiça dados — por isso passa despercebido."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "picture para recortar e para trocar o formato",
+              "code": "<picture><source media=\"(min-width: 40em)\" srcset=\"capa-larga.jpg\"><img src=\"capa-quadrada.jpg\" alt=\"...\"></picture>",
+              "guidance": "A foto da capa é um plano aberto da plateia; no celular, reduzida, a tela de cinema vira um ponto. Use picture para servir um recorte mais fechado no celular e o plano aberto a partir de 40em: isso é direção de arte. No mesmo elemento, sources com type=\"image/avif\" e type=\"image/webp\" oferecem formatos mais leves, e o navegador usa o primeiro que entende.",
+              "tips": [
+                "O img dentro de picture é obrigatório: é ele que aparece na tela, que leva o alt e que serve de alternativa. Os sources só trocam o arquivo."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Carregar sob demanda, menos a imagem principal",
+              "code": "loading=\"lazy\"",
+              "guidance": "Coloque loading=\"lazy\" nos cartazes que ficam abaixo da primeira tela: eles só são baixados quando o usuário se aproxima deles. Na imagem da capa, faça o contrário: nada de lazy, e acrescente fetchpriority=\"high\", porque ela é o maior elemento visível ao abrir a página e atrasar seu download atrasa a página inteira.",
+              "tips": [
+                "Pelo Web Almanac 2024, 9,5% das imagens principais (LCP) em páginas móveis estão marcadas como lazy — um erro que deixa a página mais lenta justamente no que o usuário vê primeiro."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que imagem merece um módulo",
+      "highlights": [
+        {
+          "icon": "gauge",
+          "title": "O maior peso da página",
+          "text": "Servir a imagem do tamanho certo costuma economizar mais dados do que qualquer otimização de CSS ou JavaScript."
+        },
+        {
+          "icon": "shield",
+          "title": "Layout estável",
+          "text": "width e height reservam o espaço da imagem. O usuário não toca no link errado porque o texto pulou no último segundo."
+        },
+        {
+          "icon": "search",
+          "title": "O navegador decide melhor",
+          "text": "Você descreve as opções; o navegador conhece a tela, a densidade de pixels e a conexão. Com srcset e sizes corretos, ele escolhe por você."
+        }
+      ],
+      "closingText": "As imagens da mostra agora chegam no tamanho e no formato certos, sem empurrar o texto e sem atrasar a capa. Falta o texto acompanhar o espaço com a mesma suavidade, e os cards se adaptarem ao lugar onde aparecem. É o assunto do próximo módulo.",
+      "ctaTitle": "🖼️ Imagens sob medida!",
+      "ctaText": "Cada tela baixa só o que precisa. Agora vamos fazer o texto e os componentes se ajustarem ao espaço.",
+      "nextButtonText": "Ir para Módulo 2: Tipografia Fluida e Container Queries"
+    },
+    {
+      "id": 2,
+      "icon": "grid",
+      "title": "Tipografia Fluida e Container Queries",
+      "shortDescription": "clamp() para o texto e componentes que se adaptam ao próprio espaço",
+      "introductionText": "Com media queries, o título da capa muda de tamanho aos saltos: pequeno até 40em, médio até 60em, grande depois. O clamp() troca os saltos por uma curva contínua, com mínimo e máximo garantidos. O segundo problema é mais sutil: o card de filme aparece na grade principal, onde tem espaço, e na lista de destaques da lateral, onde é estreito. Uma media query olha para a tela, que é a mesma nos dois lugares. As container queries olham para o espaço que o componente recebeu, e isso muda a forma de projetar componentes.",
+      "sections": [
+        {
+          "title": "🔤 Texto fluido e componentes autônomos",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Título fluido com clamp()",
+              "code": "font-size: clamp(1.75rem, 1.2rem + 2.5vw, 3.5rem);",
+              "guidance": "Aplique ao título da capa. O primeiro valor é o mínimo, o último é o máximo e o do meio é o valor preferido, que cresce com a largura da tela. Alargue a janela e veja o título crescer sem saltos, parando nos limites. Faça o mesmo, com uma variação menor, para os subtítulos.",
+              "tips": [
+                "Nunca use só vw no valor do meio. Texto em vw não aumenta com o zoom do navegador, e a página falha no critério de redimensionar o texto até 200%. Somar rem com vw mantém o zoom funcionando."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Medida de linha e espaçamento fluido",
+              "code": "max-width: 65ch; gap: clamp(1rem, 3vw, 2rem);",
+              "guidance": "Limite a largura da sinopse de cada filme para algo entre 45 e 75 caracteres por linha, faixa confortável de leitura. Depois use clamp() também nos espaçamentos entre seções e entre cards da grade: no celular, espaço apertado; no monitor, mais respiro, sem nenhuma media query.",
+              "tips": [
+                "Linha longa demais faz o olho se perder ao voltar para o começo da próxima. Num monitor largo, texto sem max-width é o problema mais comum de leitura."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Transformar o card em contêiner",
+              "code": ".card-wrap { container-type: inline-size; }",
+              "guidance": "Envolva cada card de filme em um elemento e declare nele container-type: inline-size. Isso faz o navegador acompanhar a largura desse elemento e permite consultá-la. Dê também um nome com container-name, por exemplo filme, para deixar claro qual contêiner cada regra consulta.",
+              "tips": [
+                "Uma container query estiliza os descendentes do contêiner, nunca o próprio contêiner. Por isso o card fica dentro de um invólucro, e é o invólucro que vira contêiner."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "O card que muda pelo espaço que recebe",
+              "code": "@container filme (width > 28rem) { .card { grid-template-columns: 8rem 1fr; } }",
+              "guidance": "Por padrão, o card mostra o cartaz em cima e o texto embaixo. Escreva uma container query que, quando o contêiner passar de 28rem, coloca o cartaz ao lado do texto. Agora o mesmo card aparece empilhado na lateral estreita e horizontal na grade principal, sem uma linha de CSS que saiba onde ele está.",
+              "tips": [
+                "Media query para o layout da página, container query para o layout do componente. Essa divisão evita regras do tipo \"card dentro da lateral, em tela grande\"."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Unidades cqi para medidas do componente",
+              "code": "font-size: clamp(1rem, 0.8rem + 3cqi, 1.5rem);",
+              "guidance": "Troque o vw do título do card por cqi, que vale 1% da largura do contêiner. O título passa a crescer com o card, e não com a tela: na lateral estreita fica menor, na grade principal fica maior, mesmo com a janela do mesmo tamanho.",
+              "tips": [
+                "Se não houver contêiner acima do elemento, as unidades cq passam a se comportar como unidades da viewport pequena (svh, svw). O cálculo não quebra, mas deixa de fazer o que você queria."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que pensar em contêiner",
+      "highlights": [
+        {
+          "icon": "grid",
+          "title": "Um componente, vários lugares",
+          "text": "O card se ajusta ao espaço que recebe. Colocá-lo numa coluna nova da página não exige escrever regras novas para ele."
+        },
+        {
+          "icon": "sync",
+          "title": "Sem saltos",
+          "text": "clamp() troca três ou quatro media queries por uma linha, com limites que impedem o texto de ficar ilegível ou gigante."
+        },
+        {
+          "icon": "tools",
+          "title": "Suporte nos navegadores atuais",
+          "text": "clamp(), container queries de tamanho e as unidades cq funcionam nos principais navegadores atuais, sem biblioteca nem JavaScript."
+        }
+      ],
+      "closingText": "O texto da mostra cresce de forma contínua e cada card decide seu layout pelo espaço que tem. A página parece pronta em qualquer largura que você testou. O último módulo trata do que você ainda não testou: aparelho de verdade, zoom, toque e as pessoas que navegam de formas diferentes da sua.",
+      "ctaTitle": "🔤 Texto e componentes fluidos!",
+      "ctaText": "Sua página se adapta em vários níveis. Agora vamos prová-la em dispositivos reais e nos critérios de acessibilidade.",
+      "nextButtonText": "Ir para Módulo 3: Testes em Dispositivos e Acessibilidade"
+    },
+    {
+      "id": 3,
+      "icon": "shield",
+      "title": "Testes em Dispositivos e Acessibilidade",
+      "shortDescription": "DevTools, reflow a 320 pixels, toque, movimento e celular real",
+      "introductionText": "Uma página responsiva que só foi vista no monitor de quem a fez ainda não foi testada. O modo dispositivo do navegador ajuda, mas não mostra o dedo cobrindo o botão, a barra de endereço que some nem o celular antigo com pouca memória. E responsividade também é acessibilidade: quem usa zoom de 400% num notebook enxerga, na prática, uma tela de celular. Neste módulo você passa a página da mostra por uma rotina de testes que pode repetir em qualquer projeto.",
+      "sections": [
+        {
+          "title": "🧪 Provar a página em condições reais",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Modo dispositivo e as larguras do meio",
+              "guidance": "Abra o modo dispositivo do DevTools e passe pelas larguras da tabela de teste: 320, 375, 768, 1024 e 1440 pixels. Depois, em vez de escolher um aparelho, arraste a borda devagar de 320 até 1440. Os problemas costumam aparecer entre um ponto de quebra e outro, em larguras que nenhum modelo da lista tem.",
+              "tips": [
+                "Ative a régua de media queries do DevTools: ela mostra onde estão os seus pontos de quebra e facilita testar um pixel antes e um depois de cada um."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Reflow: 320 pixels e zoom de 400%",
+              "guidance": "Num navegador com janela de 1280 pixels, aplique zoom de 400%. A página precisa funcionar sem rolagem horizontal, como exige o critério Reflow (1.4.10) das WCAG: conteúdo que rola na vertical deve caber numa largura equivalente a 320 pixels CSS. Procure largura fixa, texto cortado e elemento que sai pela lateral.",
+              "tips": [
+                "Tabela de dados é exceção prevista no critério. Envolva a tabela de sessões num elemento com overflow-x: auto, tabindex=\"0\" e um rótulo, para que só ela role na horizontal e quem usa teclado consiga rolá-la."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Alvos de toque e dispositivos sem hover",
+              "code": "@media (hover: hover) and (pointer: fine) { ... }",
+              "guidance": "No celular, links e botões precisam de área suficiente para o dedo e de espaço entre si. Aumente o padding dos links do menu e dos botões de sessão. Depois, mova efeitos que dependem de passar o mouse para dentro de uma media query de hover e pointer: num aparelho de toque, informação que só aparece no hover simplesmente não existe.",
+              "tips": [
+                "O critério Target Size (2.5.8) das WCAG 2.2 pede pelo menos 24 por 24 pixels CSS por alvo, ou espaçamento equivalente. Muitas equipes adotam 44 por 44 como meta, que é o nível mais exigente da norma."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Respeitar quem prefere menos movimento",
+              "code": "@media (prefers-reduced-motion: reduce) { ... }",
+              "guidance": "A capa da mostra tem uma transição ao rolar e os cards crescem ao receber foco. Dentro de uma media query prefers-reduced-motion: reduce, desligue ou reduza essas animações. Ative a preferência no sistema operacional, ou simule-a pelo DevTools, e confira o resultado.",
+              "tips": [
+                "Reduzir movimento não é tirar o feedback. Troque a animação por uma mudança instantânea de cor ou borda, para que o foco continue visível."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Celular real e checklist final",
+              "guidance": "Publique a página e abra no seu celular, de preferência também num aparelho mais antigo. Gire a tela, use a página com uma mão, navegue pelo teclado no computador e rode a auditoria do Lighthouse no DevTools. Passe item por item do checklist: viewport, imagens com width e height, sizes conferido, título com clamp, reflow a 320, alvos de toque e movimento reduzido.",
+              "tips": [
+                "O simulador não reproduz processador lento, memória curta nem a barra de endereço real. Cinco minutos num aparelho de verdade encontram problemas que uma hora de DevTools não mostra."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que testar além do monitor",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Os erros moram entre os pontos de quebra",
+          "text": "Testar só larguras de aparelhos conhecidos deixa passar a faixa intermediária, onde os layouts mais quebram."
+        },
+        {
+          "icon": "shield",
+          "title": "Responsivo é acessível",
+          "text": "Quem usa zoom alto vê a versão estreita da página. Uma página que funciona a 320 pixels atende também essas pessoas."
+        },
+        {
+          "icon": "laptop",
+          "title": "O aparelho conta o resto",
+          "text": "Toque, rotação, barra de endereço e desempenho só aparecem de verdade num celular. O simulador é o começo do teste, não o fim."
+        }
+      ],
+      "closingText": "A página da mostra começa pelo celular, mede em unidades relativas, serve a imagem certa, tem texto fluido, cards que se adaptam ao lugar e passou por testes de reflow, toque, movimento e aparelho real. Essa rotina vale para qualquer página que você fizer daqui em diante, com ou sem framework.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Sua página se adapta a qualquer tela e foi testada como deve. O próximo passo da trilha é dar comportamento a ela com JavaScript para Iniciantes: A Base da Web Moderna.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "O que acontece quando uma página é aberta no celular sem a meta viewport?",
+      "explanation": "Sem a meta viewport, o navegador móvel desenha a página numa largura virtual de desktop (por volta de 980 pixels) e reduz tudo para caber na tela, por isso as media queries de largura pequena não são ativadas. A meta viewport não bloqueia CSS, não tem relação com imagens e não desativa o zoom — inclusive, não se deve usá-la para desativar o zoom.",
+      "options": [
+        {
+          "text": "O navegador simula uma tela larga e reduz a página, e as media queries de celular não se aplicam",
+          "isCorrect": true
+        },
+        {
+          "text": "O navegador ignora todo o CSS da página",
+          "isCorrect": false
+        },
+        {
+          "text": "As imagens deixam de ser carregadas",
+          "isCorrect": false
+        },
+        {
+          "text": "O usuário fica impedido de dar zoom",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Numa abordagem mobile first, como as media queries de largura costumam ser escritas?",
+      "explanation": "No mobile first, o CSS sem media query é a versão do celular, e cada media query com min-width acrescenta regras quando há mais espaço. Escrever com max-width é o caminho inverso, de quem parte do desktop. Media query por modelo de aparelho envelhece rápido, e não usar media query nenhuma raramente basta para páginas com mais de uma coluna.",
+      "options": [
+        {
+          "text": "Com min-width, acrescentando regras à base do celular",
+          "isCorrect": true
+        },
+        {
+          "text": "Com max-width, desfazendo regras escritas para o desktop",
+          "isCorrect": false
+        },
+        {
+          "text": "Uma media query para cada modelo de celular conhecido",
+          "isCorrect": false
+        },
+        {
+          "text": "Não se usa media query em mobile first",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Por que a capa com min-height: 100vh pode ficar maior que a área visível no celular?",
+      "explanation": "No celular, a barra de endereço aparece e some, e o vh corresponde à altura com a barra recolhida — maior que a área visível quando a barra está à mostra. As unidades svh, lvh e dvh foram criadas para esse caso; svh usa a menor área e garante que nada fique escondido. Não tem relação com a meta viewport, com rem nem com densidade de pixels.",
+      "options": [
+        {
+          "text": "Porque vh não considera a barra do navegador que aparece e some; svh resolve isso",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque vh só funciona com a meta viewport desativada",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque vh é calculado a partir do tamanho da fonte",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque telas de alta densidade dobram o valor de vh",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Para que servem os atributos width e height numa tag img de layout fluido?",
+      "explanation": "Com width e height, o navegador conhece a proporção da imagem antes de baixá-la e reserva o espaço, evitando que o texto pule quando ela chega. O tamanho exibido continua sendo controlado pelo CSS (max-width: 100% e height: auto). Os atributos não escolhem arquivo, não comprimem a imagem e não ativam o lazy loading.",
+      "options": [
+        {
+          "text": "Permitem reservar o espaço da imagem antes do download e evitar salto de layout",
+          "isCorrect": true
+        },
+        {
+          "text": "Fixam a imagem nesse tamanho em qualquer tela",
+          "isCorrect": false
+        },
+        {
+          "text": "Fazem o navegador comprimir a imagem",
+          "isCorrect": false
+        },
+        {
+          "text": "Ativam o carregamento sob demanda",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Qual é o papel do atributo sizes junto com um srcset de descritores w?",
+      "explanation": "O navegador escolhe a imagem antes de aplicar o CSS, então não sabe quanto espaço ela vai ocupar. O sizes informa a largura de exibição em cada condição, e com ela o navegador escolhe o arquivo adequado do srcset. Sem sizes, ele supõe 100vw. O sizes não redimensiona a imagem na tela, não gera arquivos e não define o formato.",
+      "options": [
+        {
+          "text": "Informar ao navegador a largura em que a imagem será exibida, para ele escolher o arquivo",
+          "isCorrect": true
+        },
+        {
+          "text": "Definir o tamanho em que a imagem aparece na tela, no lugar do CSS",
+          "isCorrect": false
+        },
+        {
+          "text": "Gerar automaticamente as versões menores da imagem",
+          "isCorrect": false
+        },
+        {
+          "text": "Indicar o formato do arquivo, como AVIF ou WebP",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "A imagem de capa é o maior elemento visível ao abrir a página. Como ela deve ser carregada?",
+      "explanation": "A imagem principal (o elemento LCP) deve ser carregada o quanto antes: sem loading=\"lazy\" e, de preferência, com fetchpriority=\"high\". O lazy é para imagens abaixo da primeira tela. Colocar lazy na capa atrasa justamente o que o usuário vê primeiro — o Web Almanac 2024 encontrou esse erro em 9,5% das imagens LCP em páginas móveis.",
+      "options": [
+        {
+          "text": "Sem loading=\"lazy\" e com fetchpriority=\"high\"",
+          "isCorrect": true
+        },
+        {
+          "text": "Com loading=\"lazy\", para economizar dados",
+          "isCorrect": false
+        },
+        {
+          "text": "Com JavaScript, depois que a página terminar de carregar",
+          "isCorrect": false
+        },
+        {
+          "text": "Como imagem de fundo no CSS, para não bloquear o HTML",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Por que não usar apenas vw no tamanho da fonte, como font-size: 4vw?",
+      "explanation": "Texto definido só em vw depende apenas da largura da janela e não cresce com o zoom do navegador, o que fere o critério de redimensionar o texto. Somar rem com vw dentro de clamp() mantém a fluidez e faz o zoom voltar a funcionar. vw é suportado pelos navegadores, funciona em qualquer elemento e não tem relação com o peso da fonte.",
+      "options": [
+        {
+          "text": "Porque o texto deixa de responder ao zoom do navegador",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque vw não é suportado nos navegadores atuais",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque vw só funciona em elementos de bloco",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque vw aumenta o peso do arquivo de fonte",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Qual é a diferença essencial entre uma media query e uma container query?",
+      "explanation": "A media query consulta características da tela (viewport), que é a mesma para todos os componentes da página. A container query consulta o tamanho de um elemento ancestral declarado como contêiner, então o mesmo componente pode ter layouts diferentes em lugares diferentes. Container queries não substituem toda media query, não dependem de JavaScript e são suportadas pelos navegadores atuais.",
+      "options": [
+        {
+          "text": "A media query consulta a tela; a container query consulta o espaço de um elemento ancestral",
+          "isCorrect": true
+        },
+        {
+          "text": "A container query só funciona com JavaScript",
+          "isCorrect": false
+        },
+        {
+          "text": "A media query é a versão antiga e foi descontinuada",
+          "isCorrect": false
+        },
+        {
+          "text": "A container query só consulta a altura, nunca a largura",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Por que o card de filme foi colocado dentro de um invólucro com container-type: inline-size?",
+      "explanation": "Uma container query estiliza os descendentes do contêiner, não o próprio contêiner. Para mudar o layout do card, ele precisa estar dentro de um elemento que seja o contêiner consultado. O invólucro não tem relação com acessibilidade, com o carregamento das imagens nem com o desempenho da rolagem.",
+      "options": [
+        {
+          "text": "Porque a container query estiliza os descendentes do contêiner, não o próprio contêiner",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque leitores de tela exigem um elemento extra em volta de cards",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que as imagens do card sejam carregadas sob demanda",
+          "isCorrect": false
+        },
+        {
+          "text": "Para melhorar o desempenho da rolagem da página",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "O que exige o critério Reflow (1.4.10) das WCAG para conteúdo que rola na vertical?",
+      "explanation": "O critério exige que o conteúdo funcione numa largura equivalente a 320 pixels CSS sem perda de informação e sem rolagem em duas direções — o que corresponde a uma janela de 1280 pixels com zoom de 400%. Há exceções para conteúdo que depende de layout bidimensional, como tabelas de dados e mapas. O critério não fixa número de pontos de quebra nem proíbe zoom.",
+      "options": [
+        {
+          "text": "Funcionar numa largura equivalente a 320 pixels CSS sem rolagem horizontal",
+          "isCorrect": true
+        },
+        {
+          "text": "Ter pelo menos três pontos de quebra definidos",
+          "isCorrect": false
+        },
+        {
+          "text": "Funcionar só nas larguras de aparelhos populares",
+          "isCorrect": false
+        },
+        {
+          "text": "Bloquear o zoom para preservar o layout",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Uma informação do card só aparece quando o mouse passa por cima. Qual é o problema no celular?",
+      "explanation": "Aparelhos de toque não têm um estado de hover confiável, então informação que depende dele fica inacessível. A solução é mostrar a informação por padrão e reservar efeitos de hover para dentro de @media (hover: hover) and (pointer: fine). Não é questão de desempenho, de bloqueio do navegador ou de contraste.",
+      "options": [
+        {
+          "text": "Em aparelhos de toque não há hover confiável, e a informação fica inacessível",
+          "isCorrect": true
+        },
+        {
+          "text": "O hover deixa a página lenta em celulares",
+          "isCorrect": false
+        },
+        {
+          "text": "Os navegadores móveis bloqueiam qualquer CSS com :hover",
+          "isCorrect": false
+        },
+        {
+          "text": "O texto perde contraste em telas pequenas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Segundo a StatCounter, em setembro de 2026, que fatia do tráfego web mundial veio de celulares?",
+      "explanation": "Em setembro de 2026, a StatCounter registrou cerca de 59% do tráfego web mundial vindo de celulares, 39% de computadores e menos de 2% de tablets. É por isso que a versão estreita é a base do projeto, e não um ajuste feito no final.",
+      "options": [
+        {
+          "text": "Cerca de 59%",
+          "isCorrect": true
+        },
+        {
+          "text": "Cerca de 20%",
+          "isCorrect": false
+        },
+        {
+          "text": "Cerca de 39%",
+          "isCorrect": false
+        },
+        {
+          "text": "Mais de 90%",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "A página de programação da Mostra de Curtas da Serra Clara, um festival fictício: capa com foto recortada de forma diferente no celular e no monitor, grade de doze filmes com cartazes servidos por srcset e sizes, títulos com tipografia fluida, cards que mudam de layout por container query na grade principal e na lista de destaques, e uma tabela de sessões que rola sozinha em telas estreitas. Tudo testado a 320 pixels, a 400% de zoom e num celular real.",
+    "highlights": [
+      "Página mobile first com unidades relativas e pontos de quebra pelo conteúdo",
+      "Imagens com srcset, sizes e picture, sem salto de layout",
+      "Cards com container queries e tipografia fluida com clamp()",
+      "Checklist de testes de responsividade e acessibilidade aplicado"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "O celular já é a tela principal da web. Segundo a StatCounter, em setembro de 2026 cerca de 59% do tráfego web mundial veio de celulares, 39% de computadores e menos de 2% de tablets. Uma página pensada só para o monitor atende a minoria dos acessos.",
+      "Ao mesmo tempo, boa parte da web ainda erra no básico. O Web Almanac 2024 mostra que 42% das páginas móveis usam srcset, mas só 32% das imagens têm width e height definidos, o atributo sizes costuma exagerar a largura real da imagem e 9,5% das imagens principais estão marcadas para carregar sob demanda. Quem domina esses detalhes entrega páginas mais leves e estáveis do que a média.",
+      "As ferramentas também mudaram: clamp(), unidades de viewport dinâmicas e container queries já funcionam nos principais navegadores atuais. Muito do que antes exigia JavaScript ou dezenas de media queries hoje se resolve com poucas linhas de CSS."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Sites institucionais e de eventos",
+        "description": "Páginas que a maioria das pessoas abre pelo celular, muitas vezes em rede móvel."
+      },
+      {
+        "label": "Lojas e catálogos",
+        "description": "Grades de produtos com muitas imagens, onde servir o tamanho certo pesa no tempo de carregamento."
+      },
+      {
+        "label": "Bibliotecas de componentes",
+        "description": "Componentes que precisam funcionar em qualquer coluna onde forem colocados."
+      },
+      {
+        "label": "Serviços públicos e acessibilidade",
+        "description": "Páginas que precisam atender quem usa zoom alto, leitor de tela ou aparelho antigo."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem terminou o básico de HTML e CSS",
+        "description": "Já montou uma página com flexbox, grid e media queries e quer fazer isso com critério."
+      },
+      {
+        "label": "Quem tem página que quebra no celular",
+        "description": "Vê texto cortado, rolagem lateral ou imagem pesada e não sabe por onde começar."
+      },
+      {
+        "label": "Quem vai trabalhar com front-end",
+        "description": "Precisa entregar interfaces que funcionam em qualquer tela antes de aprender frameworks."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Design responsivo é requisito básico em praticamente qualquer vaga de front-end, web design ou desenvolvimento web, de agências pequenas a equipes de produto. Como a maior parte do tráfego vem do celular e os critérios de acessibilidade incluem reflow e tamanho de alvo, a habilidade aparece tanto na construção de páginas novas quanto na correção de sites existentes.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "StatCounter Global Stats — Desktop vs Mobile vs Tablet Market Share Worldwide",
+      "url": "https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet"
+    },
+    {
+      "label": "HTTP Archive — Web Almanac 2024, capítulo Media (srcset, picture, sizes, lazy loading)",
+      "url": "https://almanac.httparchive.org/en/2024/media"
+    },
+    {
+      "label": "MDN Web Docs — CSS container queries",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_queries"
+    },
+    {
+      "label": "W3C WAI — Understanding Success Criterion 1.4.10: Reflow (WCAG 2.2)",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/reflow"
+    },
+    {
+      "label": "web.dev — Use srcset to automatically choose the right image",
+      "url": "https://web.dev/articles/use-srcset-to-automatically-choose-the-right-image"
+    }
+  ]
 }

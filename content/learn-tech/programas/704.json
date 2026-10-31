@@ -3,8 +3,814 @@
   "image": "https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557396_1280.jpg",
   "category": "English",
   "categoryFilter": "english",
-  "title": "Daily Scrum English: Melhore sua Comunicação em Daily Meetings",
-  "lessons": "10+ Lições",
-  "duration": "05hr 30min",
-  "access": "Acesso Livre"
+  "title": "Daily Scrum English: Inglês para a Daily e as Reuniões do Time",
+  "lessons": "17 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Iniciante/Intermediário",
+  "description": "O inglês que você usa toda manhã na daily e ao longo do dia com o time: contar o que fez e o que vai fazer, reportar um bloqueio, dar uma estimativa, discordar sem criar atrito e escrever um status ou um comentário de pull request que ninguém precisa ler duas vezes. Frases curtas, tempos verbais certos e prática semanal.",
+  "letslearn": [
+    "Montar uma fala de daily curta e focada na meta da sprint",
+    "Usar passado simples, present perfect e futuro sem misturar os três",
+    "Reportar bloqueios, pedir ajuda e renegociar prazos com clareza",
+    "Concordar, discordar e pedir esclarecimento com educação",
+    "Escrever status assíncrono no chat e comentários de pull request bem rotulados"
+  ],
+  "curriculum": "Da fala de 60 segundos ao status escrito",
+  "about": "O programa parte de onde o English for Tech parou: lá você criou a rotina de estudo e gravou uma primeira atualização de daily; aqui você aprofunda exatamente essa situação e as que vêm junto com ela. A sequência segue o dia do time: primeiro a estrutura da daily, depois a gramática que ela exige, em seguida as conversas difíceis (bloqueio, prazo, discordância) e, por fim, a comunicação escrita que acontece fora da reunião. Cada passo traz frases-modelo prontas para adaptar ao seu trabalho, e todos os exemplos usam um projeto fictício: um time que constrói a tela de checkout de um app de pedidos.",
+  "materials": [
+    "Banco de frases por situação (daily, bloqueio, estimativa, opinião, status)",
+    "Roteiro de daily de 60 segundos para preencher",
+    "Modelo de status assíncrono para o chat do time",
+    "Tabela de rótulos para comentário de pull request",
+    "Plano de prática semanal com gravação"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "A Estrutura da Daily",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Tempos Verbais que a Daily Usa",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Bloqueios, Prazos e Opiniões",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Escrita Assíncrona e Prática Semanal",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "English",
+    "mainTitle": "Fale na daily em inglês sem roteiro decorado: o que fez, o que vai fazer e o que está travando.",
+    "introductionParagraphs": [
+      {
+        "title": "A daily é a reunião mais previsível do dia",
+        "text": "Quase toda daily tem as mesmas peças: progresso desde ontem, plano para hoje e algum obstáculo. Isso é uma ótima notícia para quem está aprendendo: com **um conjunto pequeno de frases bem treinadas** você cobre a maior parte do que precisa dizer. O problema raramente é vocabulário; é travar no tempo verbal, alongar demais ou não saber como dizer que algo deu errado."
+      },
+      {
+        "title": "Não é reunião de status",
+        "text": "Na versão 2020 do Scrum Guide, a Daily Scrum é um evento de 15 minutos dos Developers para **inspecionar o progresso em direção à meta da sprint** e adaptar o plano. As três perguntas clássicas (ontem, hoje, impedimentos) saíram do texto oficial, mas continuam sendo um roteiro útil. Neste programa você usa esse roteiro como apoio, sem esquecer o objetivo: o time precisa sair da reunião sabendo se a meta continua de pé."
+      },
+      {
+        "title": "Metade da comunicação é escrita",
+        "text": "Em time remoto ou híbrido, muito do que seria dito na daily vira mensagem: status no chat, resposta em thread, comentário em pull request. Escrever bem em inglês ali é tão importante quanto falar, e tem a vantagem de dar tempo para revisar. O último módulo é dedicado a isso."
+      }
+    ],
+    "courseAboutTitle": "Inglês para a rotina do time, não para a prova",
+    "courseAboutDescription": "Este programa não ensina gramática em ordem de livro. Ensina a gramática que a daily exige, na hora em que ela aparece: passado simples para o que terminou, present perfect para o que acabou de acontecer, presente contínuo e going to para o plano. O resto é repertório de situação: como pedir ajuda sem parecer perdido, como avisar que o prazo vai escorregar e como discordar de um colega sênior sem soar rude.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: A Estrutura da Daily",
+        "items": [
+          {
+            "label": "Para que a daily existe",
+            "description": "O que o Scrum Guide 2020 diz e por que isso muda o que você fala."
+          },
+          {
+            "label": "Ontem, hoje, impedimentos",
+            "description": "O roteiro de três partes como apoio, não como formulário."
+          },
+          {
+            "label": "Fala de 60 segundos",
+            "description": "Abrir, conectar à meta da sprint e passar a vez."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Tempos Verbais que a Daily Usa",
+        "items": [
+          {
+            "label": "Simple past",
+            "description": "O que você terminou ontem, com marcador de tempo."
+          },
+          {
+            "label": "Present perfect",
+            "description": "O que já está feito ou ainda está em andamento, sem dizer quando."
+          },
+          {
+            "label": "Plano para hoje",
+            "description": "Presente contínuo, going to e will, cada um no seu lugar."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Bloqueios, Prazos e Opiniões",
+        "items": [
+          {
+            "label": "Bloqueio e pedido de ajuda",
+            "description": "Dizer o que trava, por quê e o que você precisa."
+          },
+          {
+            "label": "Estimativas e prazos",
+            "description": "Dar número com incerteza e avisar cedo quando não vai dar."
+          },
+          {
+            "label": "Concordar e discordar",
+            "description": "Frases que mantêm a conversa técnica e não pessoal."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Escrita Assíncrona e Prática Semanal",
+        "items": [
+          {
+            "label": "Status no chat",
+            "description": "Um update que se entende sem contexto e termina com um pedido claro."
+          },
+          {
+            "label": "Comentário em pull request",
+            "description": "Rótulos que dizem se o comentário bloqueia ou não."
+          },
+          {
+            "label": "Rotina semanal",
+            "description": "Gravar, comparar e aumentar o repertório um pouco por semana."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com frases-modelo para adaptar ao seu trabalho e exercícios curtos. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "list",
+      "title": "A Estrutura da Daily",
+      "shortDescription": "Propósito da daily, o roteiro de três partes e a fala de 60 segundos",
+      "introductionText": "Antes de pensar em inglês, vale entender o que a daily precisa produzir. Segundo o Scrum Guide 2020, ela é um evento de até 15 minutos em que os Developers inspecionam o progresso rumo à meta da sprint e ajustam o plano do dia. Isso define o que é relevante dizer: não a lista de tudo o que você tocou, e sim o que afeta a meta. Neste módulo você monta uma fala curta, com começo, meio e fim, que funciona mesmo quando o inglês ainda está inseguro.",
+      "sections": [
+        {
+          "title": "🗣️ Montando a sua fala",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "O objetivo da daily em uma frase",
+              "code": "Sprint Goal: let users pay with a saved card",
+              "guidance": "Escreva em inglês a meta da sprint atual do seu time (ou use a do projeto fictício: permitir pagamento com cartão salvo). Toda frase que você disser na daily deve ajudar alguém a responder: a meta continua de pé? Se uma informação não muda isso, ela pode ir para o chat depois.",
+              "tips": [
+                "A versão 2020 do Scrum Guide removeu as três perguntas do texto oficial justamente para tirar o foco do relatório individual e colocá-lo na meta do time."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "O roteiro de três partes",
+              "code": "Yesterday I... / Today I'm... / No blockers.",
+              "guidance": "Use as três partes como esqueleto: o que você concluiu, o que vai fazer hoje e se algo está travando. Escreva uma linha para cada parte sobre o seu trabalho real. Exemplo: 'Yesterday I finished the card form validation. Today I'm working on the error messages. No blockers.'",
+              "tips": [
+                "'No blockers' ou 'Nothing blocking me' é uma resposta completa. Não precisa inventar um problema para ter o que dizer."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Conectar o seu trabalho à meta",
+              "code": "This gets us closer to... / This is the last piece for...",
+              "guidance": "Acrescente meia frase que ligue a tarefa à meta: 'This is the last piece for the saved card flow.' ou 'Once this is merged, QA can start testing checkout.' É essa ligação que transforma relatório individual em informação útil para o time.",
+              "tips": [
+                "Fale do item do backlog, não do arquivo: 'the payment confirmation screen' diz mais que 'the PaymentConfirm component'."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Abrir, fechar e passar a vez",
+              "code": "Okay, quick update from me. ... That's it from me.",
+              "guidance": "Treine as frases de moldura: 'Quick update from me', 'That's it from me', 'Over to you, Bia'. Quando uma discussão começar a crescer, use 'Can we take this offline?' ou 'Let's discuss this after the daily' para manter a reunião nos 15 minutos.",
+              "tips": [
+                "Uma fala de daily boa cabe em 30 a 60 segundos. Cronometre a sua: se passou de 90, alguma parte é detalhe que pode virar mensagem."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que estrutura vem antes de vocabulário",
+      "highlights": [
+        {
+          "icon": "list",
+          "title": "Esqueleto alivia o nervosismo",
+          "text": "Com a ordem das partes decidida, a cabeça fica livre para escolher palavras. É a diferença entre improvisar tudo e preencher lacunas conhecidas."
+        },
+        {
+          "icon": "gauge",
+          "title": "Curto é profissional",
+          "text": "Uma fala de um minuto, focada na meta, é melhor recebida que três minutos de detalhes. Em inglês, isso também reduz a chance de erro."
+        },
+        {
+          "icon": "sitemap",
+          "title": "O time acima da tarefa",
+          "text": "Ligar o seu item à meta da sprint mostra que você entende o objetivo do trabalho, não só a sua parte."
+        }
+      ],
+      "closingText": "Você já tem uma fala com estrutura, foco na meta e frases de moldura. O que costuma travar a seguir é o verbo: 'I finished' ou 'I have finished'? 'I will' ou 'I'm going to'? O próximo módulo resolve isso com regras práticas e exemplos da daily.",
+      "ctaTitle": "🗣️ Fala de 60 segundos pronta!",
+      "ctaText": "O esqueleto está de pé. Agora vamos acertar os tempos verbais que dão sentido a cada parte.",
+      "nextButtonText": "Ir para Módulo 1: Tempos Verbais que a Daily Usa"
+    },
+    {
+      "id": 1,
+      "icon": "sync",
+      "title": "Tempos Verbais que a Daily Usa",
+      "shortDescription": "Simple past, present perfect, presente contínuo e futuro na prática",
+      "introductionText": "A daily fala de três momentos: o que já terminou, o que está em andamento e o que vem a seguir. Em inglês, cada um tem um tempo verbal preferido, e misturá-los é o erro mais comum de quem fala português, porque nossa língua resolve tudo com o pretérito. Este módulo não é uma aula de gramática completa: é a gramática mínima que a daily usa, com a regra que decide qual tempo escolher.",
+      "sections": [
+        {
+          "title": "⏱️ Um tempo verbal para cada momento",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Simple past para o que terminou",
+              "code": "Yesterday I fixed / reviewed / deployed...",
+              "guidance": "Quando há um marcador de tempo terminado (yesterday, on Friday, this morning depois que a manhã passou), use o passado simples: 'Yesterday I reviewed Leo's pull request and fixed the rounding bug.' Liste três coisas que você fez ontem e escreva cada uma no simple past.",
+              "tips": [
+                "Verbos irregulares frequentes na daily: wrote, found, made, took, ran (the tests), had (a call), spent (time on), went (through)."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Present perfect para o que já está feito",
+              "code": "I've already merged... / I haven't started... yet",
+              "guidance": "Sem marcador de tempo e com foco no resultado agora, use have + particípio: 'I've merged the API changes, so the front end can use them.' Com already, yet e just ele aparece o tempo todo. Nunca combine present perfect com yesterday: 'I've fixed it yesterday' está errado; diga 'I fixed it yesterday'.",
+              "tips": [
+                "Para algo que começou antes e continua, use present perfect continuous: 'I've been working on the refund flow since Monday.'"
+              ]
+            },
+            {
+              "number": 3,
+              "title": "O plano de hoje",
+              "code": "Today I'm working on... / I'm going to... / I'll...",
+              "guidance": "Presente contínuo e going to servem para o que já está decidido: 'Today I'm pairing with Bia on the tests' e 'I'm going to open the PR before lunch.' Will aparece mais em decisões na hora e ofertas: 'I'll check the logs and let you know.' Escreva o seu plano de hoje com duas frases de cada tipo.",
+              "tips": [
+                "Evite 'Today I will to work': depois de will e de modais o verbo vai sem to. Depois de going vem to: 'going to work'."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Palavras que dão ritmo",
+              "code": "still / already / yet / almost / pretty much",
+              "guidance": "Pequenas palavras deixam a fala natural e precisa: 'I'm still working on the tests', 'It's almost done, just missing the error states', 'The migration is pretty much ready'. Cuidado com falsos cognatos comuns: actually significa 'na verdade', não 'atualmente' (currently); pretend é 'fingir', não 'pretender' (intend, plan to).",
+              "tips": [
+                "'Done' é ambíguo: diga se está merged, deployed ou só pronto para revisão ('ready for review'). Isso evita mal-entendido sobre o estado real."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que o tempo verbal importa na daily",
+      "highlights": [
+        {
+          "icon": "sync",
+          "title": "Estado do trabalho, sem ambiguidade",
+          "text": "'I worked on it' e 'I've finished it' contam histórias diferentes para o time. O verbo certo diz se a tarefa terminou ou não."
+        },
+        {
+          "icon": "bolt",
+          "title": "Menos esforço ao falar",
+          "text": "Com a regra decidida antes (marcador de tempo = passado simples), você não para no meio da frase para escolher o tempo."
+        },
+        {
+          "icon": "search",
+          "title": "Erro que se nota",
+          "text": "Present perfect com yesterday e 'will to' são erros que falantes nativos percebem na hora. Eliminar dois ou três erros recorrentes muda a impressão da fala inteira."
+        }
+      ],
+      "closingText": "Com os tempos verbais no lugar, a fala do dia a dia flui. Mas daily não é só boa notícia: às vezes você está travado, a estimativa estourou ou você discorda da solução proposta. O próximo módulo traz as frases para essas conversas.",
+      "ctaTitle": "⏱️ Passado, presente e plano no lugar!",
+      "ctaText": "Seus verbos agora dizem exatamente em que estado o trabalho está. Vamos para as conversas que exigem mais tato.",
+      "nextButtonText": "Ir para Módulo 2: Bloqueios, Prazos e Opiniões"
+    },
+    {
+      "id": 2,
+      "icon": "shield",
+      "title": "Bloqueios, Prazos e Opiniões",
+      "shortDescription": "Reportar impedimentos, pedir ajuda, estimar e discordar com educação",
+      "introductionText": "As conversas mais importantes da daily são as menos confortáveis: dizer que algo está travado, que o prazo não vai fechar ou que você não concorda com a abordagem. Em língua estrangeira, a tendência é ficar em silêncio, e é exatamente isso que transforma um atraso de um dia em um atraso de uma semana. Este módulo dá frases objetivas e educadas para cada uma dessas situações, com a estrutura que torna o pedido fácil de atender.",
+      "sections": [
+        {
+          "title": "🚧 Quando algo não vai bem",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Reportar um bloqueio",
+              "code": "I'm blocked on X because Y. I need Z.",
+              "guidance": "Um bloqueio bem reportado tem três partes: o que está parado, por quê e o que você precisa. 'I'm blocked on the saved card flow because the staging API keeps returning a 500. I need someone from the backend team to check the logs.' Escreva um bloqueio real ou fictício nesse formato.",
+              "tips": [
+                "Variações úteis: 'I'm waiting on...' (dependo de alguém), 'I'm stuck on...' (não sei resolver), 'This is blocking the release'. Escolha a que descreve a situação."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Pedir ajuda sem rodeios",
+              "code": "Could you pair with me for 15 minutes after the daily?",
+              "guidance": "Pedido bom é específico no tempo e no assunto: 'Could someone who knows the payment gateway pair with me for 15 minutes after the daily?' Diga o que você já tentou: 'I've already checked the config and cleared the cache.' Isso mostra trabalho feito e economiza o tempo de quem ajuda.",
+              "tips": [
+                "'Could you...?' e 'Would you mind...?' são educados sem ser excessivos. 'Do you have a minute?' é a abertura padrão em chat."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Dar uma estimativa",
+              "code": "It should take about two days. / I'd say end of day tomorrow.",
+              "guidance": "Estimativa em inglês costuma vir com marcador de incerteza: should, probably, about, roughly. 'It should take about two days, depending on the review.' Aprenda as siglas de prazo do chat: EOD (end of day), EOW (end of week), ETA (estimated time of arrival, usado para 'quando fica pronto').",
+              "tips": [
+                "Diga a condição da estimativa: 'If the API is ready by Wednesday, I can finish by Friday.' Assim o prazo vem com a dependência visível."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Avisar que o prazo vai escorregar",
+              "code": "Heads-up: this is taking longer than expected.",
+              "guidance": "Avise cedo, explique o motivo e proponha um caminho: 'Heads-up: the refund flow is taking longer than expected because of an edge case with partial payments. I think I'll need one more day. Should we move it to the next sprint or cut the partial refund for now?' Termine com uma pergunta que permita uma decisão.",
+              "tips": [
+                "Má notícia dada na terça é planejamento; dada na sexta é surpresa. O inglês simples e cedo vale mais que o inglês perfeito e tarde."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Concordar, discordar e pedir esclarecimento",
+              "code": "I see your point, but... / Just to make sure I understood...",
+              "guidance": "Para discordar, reconheça e proponha: 'I see your point, but I'm worried about performance. What if we cache the result?' ou 'I'm not sure that's the best approach, because...'. Para concordar com conteúdo: 'That makes sense' e 'Good point'. Quando não entender, peça sem constrangimento: 'Sorry, could you say that again?' e 'Just to make sure I understood: you want X, right?'",
+              "tips": [
+                "Fale da solução, não da pessoa: 'This approach might break the cache' em vez de 'You are wrong'. Em inglês de trabalho, suavizadores como might, could e I think são esperados, não sinal de fraqueza."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que estas conversas importam",
+      "highlights": [
+        {
+          "icon": "shield",
+          "title": "Impedimento visível é impedimento resolvível",
+          "text": "Identificar o que trava o trabalho é parte do propósito da daily. Um bloqueio dito em voz alta pode ser resolvido no mesmo dia."
+        },
+        {
+          "icon": "gauge",
+          "title": "Estimativa com incerteza declarada",
+          "text": "'Should take about two days' comunica o número e o risco. O time planeja melhor com uma faixa honesta do que com uma promessa exata."
+        },
+        {
+          "icon": "tools",
+          "title": "Discordância técnica, não pessoal",
+          "text": "Frases que reconhecem o outro ponto antes de propor uma alternativa mantêm a discussão sobre o código e preservam a relação."
+        }
+      ],
+      "closingText": "Você agora tem frases para as conversas difíceis da daily e da reunião de time. Muitas delas, porém, acontecem por escrito: um bloqueio postado no chat, uma estimativa respondida em thread, uma discordância em comentário de pull request. O último módulo trata da escrita assíncrona e de como manter a prática viva toda semana.",
+      "ctaTitle": "🚧 Conversas difíceis sob controle!",
+      "ctaText": "Bloqueio, prazo e discordância já têm frase pronta. Vamos levar isso para a escrita e montar a sua rotina de prática.",
+      "nextButtonText": "Ir para Módulo 3: Escrita Assíncrona e Prática Semanal"
+    },
+    {
+      "id": 3,
+      "icon": "globe",
+      "title": "Escrita Assíncrona e Prática Semanal",
+      "shortDescription": "Status no chat, comentário em PR e uma rotina que sustenta o progresso",
+      "introductionText": "Em times remotos e distribuídos, boa parte da comunicação é escrita e lida horas depois. Guias de trabalho remoto, como o handbook público da GitLab, recomendam escrever como se o leitor não tivesse nenhum contexto, colocar um resumo no topo de mensagens longas e terminar com um pedido claro. Em inglês, a escrita tem uma vantagem: você pode revisar antes de enviar. Este módulo transforma o que você treinou para a fala em mensagens e fecha com um plano semanal de prática.",
+      "sections": [
+        {
+          "title": "✍️ Comunicação que funciona sem reunião",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Status assíncrono no chat",
+              "code": "Done: ... / Today: ... / Blockers: ... / Need: ...",
+              "guidance": "Escreva o seu status em quatro linhas curtas, com verbos no tempo certo: 'Done: merged the card form validation (PR #142)'. 'Today: error messages for declined cards'. 'Blockers: none'. 'Need: a review from someone on the backend by EOD'. Em equipes que fazem daily por escrito, esse formato substitui a fala.",
+              "tips": [
+                "Coloque o link do ticket ou do PR na própria linha. Quem lê depois não precisa perguntar 'which one?'."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Mensagem com contexto e pedido",
+              "code": "TL;DR: ... / Context: ... / Ask: ... by Thursday",
+              "guidance": "Para mensagens mais longas, abra com um resumo (TL;DR), dê o contexto em poucas frases e termine com o pedido e o prazo: 'Ask: could you approve the new error copy by Thursday?' Marque quem decide. Depois de uma decisão tomada em call, poste um resumo escrito: 'Quick recap: we agreed to...'.",
+              "tips": [
+                "Escreva para quem não estava na conversa. Se a mensagem só faz sentido para quem participou da call, falta contexto."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Comentário em pull request",
+              "code": "suggestion (non-blocking): Could we extract this into a helper?",
+              "guidance": "O padrão Conventional Comments propõe começar o comentário com um rótulo que diz a intenção: praise, nitpick, suggestion, issue, question, thought. Decorações como (blocking) e (non-blocking) dizem se o comentário impede a aprovação. Reescreva três comentários secos ('wrong', 'change this') nesse formato, com o motivo na segunda linha.",
+              "tips": [
+                "Comece pelo elogio sincero quando houver: 'praise: Nice test coverage on the edge cases.' Comentário de revisão em segunda língua soa mais duro do que você imagina; o rótulo e a pergunta suavizam."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "A rotina semanal de prática",
+              "code": "Mon: script · Tue–Thu: record · Fri: compare",
+              "guidance": "Uma vez por semana, escreva sua fala de daily, grave-se lendo e depois falando sem texto, e compare as duas gravações. Anote os erros que se repetem e uma frase nova que você ouviu de um colega. Em quatro semanas você terá um banco de frases seu, tirado das reuniões reais do seu time.",
+              "tips": [
+                "Escolha um único foco por semana (tempos verbais, bloqueios, estimativas, discordância). Treinar tudo de uma vez dilui a melhora."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que a escrita assíncrona pesa",
+      "highlights": [
+        {
+          "icon": "globe",
+          "title": "Fusos diferentes, mesmo time",
+          "text": "Uma mensagem com contexto e pedido claro destrava o colega que começa a trabalhar quando você já saiu."
+        },
+        {
+          "icon": "folder",
+          "title": "Registro que fica",
+          "text": "Decisão escrita pode ser encontrada depois. Decisão só falada costuma ser lembrada de formas diferentes por pessoas diferentes."
+        },
+        {
+          "icon": "bolt",
+          "title": "Tempo para revisar",
+          "text": "Na escrita você confere o tempo verbal e o tom antes de enviar. É o melhor lugar para consolidar o que você ainda erra na fala."
+        }
+      ],
+      "closingText": "Você saiu de uma fala de daily estruturada para o conjunto completo da comunicação de time: tempos verbais certos, conversas difíceis com tato e mensagens escritas que funcionam sem reunião. A rotina semanal garante que isso continue crescendo com o vocabulário do seu próprio projeto.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você agora participa da daily e das conversas do time em inglês com estrutura e clareza. O próximo passo natural é ampliar o vocabulário técnico com o programa Vocabulary for Developers.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Segundo o Scrum Guide 2020, qual é o propósito da Daily Scrum?",
+      "explanation": "A Daily Scrum existe para os Developers inspecionarem o progresso em direção à meta da sprint e adaptarem o plano. Ela não é uma reunião de prestação de contas ao gestor, não é o momento de resolver problemas técnicos longos e não substitui a Sprint Review.",
+      "options": [
+        {
+          "text": "Inspecionar o progresso rumo à meta da sprint e adaptar o plano",
+          "isCorrect": true
+        },
+        {
+          "text": "Cada pessoa prestar contas das horas trabalhadas ao gestor",
+          "isCorrect": false
+        },
+        {
+          "text": "Resolver em detalhe todos os problemas técnicos do dia",
+          "isCorrect": false
+        },
+        {
+          "text": "Apresentar o incremento pronto para os stakeholders",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Qual é a duração máxima da Daily Scrum no Scrum Guide 2020?",
+      "explanation": "A Daily Scrum é um evento de 15 minutos. O limite curto obriga cada fala a se concentrar no que afeta a meta; discussões maiores devem ser levadas para depois da reunião.",
+      "options": [
+        {
+          "text": "15 minutos",
+          "isCorrect": true
+        },
+        {
+          "text": "5 minutos",
+          "isCorrect": false
+        },
+        {
+          "text": "30 minutos",
+          "isCorrect": false
+        },
+        {
+          "text": "1 hora",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Durante a daily, dois colegas começam a discutir em detalhe uma solução técnica. Qual frase ajuda a manter a reunião no tempo?",
+      "explanation": "'Can we take this offline?' é a forma usual de propor que a discussão continue depois da daily, só com quem precisa participar. As outras frases não interrompem a discussão ou soam rudes.",
+      "options": [
+        {
+          "text": "Can we take this offline?",
+          "isCorrect": true
+        },
+        {
+          "text": "Please continue, we have time.",
+          "isCorrect": false
+        },
+        {
+          "text": "Stop talking about this.",
+          "isCorrect": false
+        },
+        {
+          "text": "That's it from me.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Qual frase está correta para falar de algo que você terminou ontem?",
+      "explanation": "Com um marcador de tempo terminado como yesterday, o inglês usa o passado simples: 'I fixed the bug yesterday.' O present perfect ('I've fixed') não combina com yesterday, e 'I have fix' e 'I was fix' são formas gramaticalmente erradas.",
+      "options": [
+        {
+          "text": "I fixed the bug yesterday.",
+          "isCorrect": true
+        },
+        {
+          "text": "I've fixed the bug yesterday.",
+          "isCorrect": false
+        },
+        {
+          "text": "I have fix the bug yesterday.",
+          "isCorrect": false
+        },
+        {
+          "text": "I was fix the bug yesterday.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Você começou a trabalhar no fluxo de reembolso na segunda-feira e ainda está nele. Qual frase descreve isso melhor?",
+      "explanation": "O present perfect continuous ('I've been working on... since Monday') descreve algo que começou no passado e continua agora. 'I worked' indica que terminou; 'I work' é hábito; 'I will work' é futuro.",
+      "options": [
+        {
+          "text": "I've been working on the refund flow since Monday.",
+          "isCorrect": true
+        },
+        {
+          "text": "I worked on the refund flow since Monday.",
+          "isCorrect": false
+        },
+        {
+          "text": "I work on the refund flow since Monday.",
+          "isCorrect": false
+        },
+        {
+          "text": "I will work on the refund flow since Monday.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Qual palavra em inglês corresponde a 'atualmente'?",
+      "explanation": "'Atualmente' é currently. Actually é falso cognato e significa 'na verdade'. Eventually significa 'no fim das contas', e actively significa 'ativamente'.",
+      "options": [
+        {
+          "text": "Currently",
+          "isCorrect": true
+        },
+        {
+          "text": "Actually",
+          "isCorrect": false
+        },
+        {
+          "text": "Eventually",
+          "isCorrect": false
+        },
+        {
+          "text": "Actively",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Qual é o relato de bloqueio mais útil para o time?",
+      "explanation": "Um bom relato diz o que está parado, por quê e o que você precisa. Só dizer que está travado ou que o código está ruim não permite que ninguém ajude, e 'No blockers' esconde o problema.",
+      "options": [
+        {
+          "text": "I'm blocked on checkout because the staging API returns a 500. I need someone from backend to check the logs.",
+          "isCorrect": true
+        },
+        {
+          "text": "I'm blocked.",
+          "isCorrect": false
+        },
+        {
+          "text": "The code is bad and nothing works.",
+          "isCorrect": false
+        },
+        {
+          "text": "No blockers, but I couldn't do anything yesterday.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "No chat do time, o que significa a sigla EOD?",
+      "explanation": "EOD é end of day, o fim do expediente. ETA é a previsão de quando algo fica pronto, EOW é end of week, e nenhuma delas significa 'erro'.",
+      "options": [
+        {
+          "text": "End of day (fim do expediente)",
+          "isCorrect": true
+        },
+        {
+          "text": "Estimated order of delivery",
+          "isCorrect": false
+        },
+        {
+          "text": "End of week (fim da semana)",
+          "isCorrect": false
+        },
+        {
+          "text": "Error on deploy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Qual é a forma mais educada e construtiva de discordar de uma proposta técnica?",
+      "explanation": "Reconhecer o ponto do outro e propor uma alternativa com o motivo mantém a discussão técnica. 'You are wrong' é pessoal, 'Whatever you want' encerra a discussão sem contribuir, e 'No' não oferece caminho.",
+      "options": [
+        {
+          "text": "I see your point, but I'm worried about performance. What if we cache the result?",
+          "isCorrect": true
+        },
+        {
+          "text": "You are wrong about this.",
+          "isCorrect": false
+        },
+        {
+          "text": "Whatever you want.",
+          "isCorrect": false
+        },
+        {
+          "text": "No.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "O que deve vir no topo de uma mensagem assíncrona longa?",
+      "explanation": "Um resumo curto (TL;DR) no topo permite que o leitor entenda o essencial antes de decidir ler o resto. Saudações longas, desculpas e histórico completo atrasam a informação principal.",
+      "options": [
+        {
+          "text": "Um resumo curto (TL;DR) com o essencial",
+          "isCorrect": true
+        },
+        {
+          "text": "Uma saudação longa para criar clima",
+          "isCorrect": false
+        },
+        {
+          "text": "Um pedido de desculpas pelo tamanho da mensagem",
+          "isCorrect": false
+        },
+        {
+          "text": "O histórico completo da discussão em ordem cronológica",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "No padrão Conventional Comments, o que indica a decoração (non-blocking)?",
+      "explanation": "(non-blocking) indica que o comentário não deve impedir a aprovação do pull request; o autor pode tratá-lo agora ou depois. (blocking) faz o contrário. A decoração não tem relação com prazo nem com quem deve responder.",
+      "options": [
+        {
+          "text": "Que o comentário não deve impedir a aprovação do pull request",
+          "isCorrect": true
+        },
+        {
+          "text": "Que o pull request não pode ser aprovado até o comentário ser resolvido",
+          "isCorrect": false
+        },
+        {
+          "text": "Que só o líder técnico pode responder ao comentário",
+          "isCorrect": false
+        },
+        {
+          "text": "Que o comentário deve ser resolvido até o fim do dia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Na pesquisa Stack Overflow Developer Survey 2025, qual parcela dos respondentes declarou trabalhar totalmente remoto?",
+      "explanation": "32,4% dos respondentes trabalham totalmente remoto, e somando as duas opções de trabalho híbrido chega-se a cerca de 37%. Com tanta gente fora do escritório, mensagens escritas e reuniões online passam a ser o principal canal do time.",
+      "options": [
+        {
+          "text": "Cerca de 32%",
+          "isCorrect": true
+        },
+        {
+          "text": "Cerca de 5%",
+          "isCorrect": false
+        },
+        {
+          "text": "Cerca de 75%",
+          "isCorrect": false
+        },
+        {
+          "text": "Cerca de 95%",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "Um kit pessoal de comunicação de time em inglês: um roteiro de daily de 60 segundos ligado à meta da sprint, um banco de frases organizado por situação (bloqueio, pedido de ajuda, estimativa, prazo, concordância e discordância), um modelo de status assíncrono para o chat, três comentários de pull request reescritos com rótulos e quatro semanas de gravações de daily para comparar a evolução.",
+    "highlights": [
+      "Roteiro de daily de 60 segundos focado na meta da sprint",
+      "Banco de frases por situação de reunião",
+      "Modelo de status assíncrono e comentários de PR rotulados"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "Trabalho de desenvolvimento é cada vez mais distribuído. Na Stack Overflow Developer Survey 2025, 32,4% dos respondentes disseram trabalhar totalmente remoto e cerca de 37% em regime híbrido; nos Estados Unidos, a parcela totalmente remota chega a 45%. Para quem trabalha do Brasil em times internacionais, a daily em inglês e o chat em inglês são a rotina, não a exceção.",
+      "A daily é também o lugar onde a sua comunicação é mais vista: todo dia, diante de todo o time. Um bloqueio dito com clareza, uma estimativa honesta e uma discordância bem colocada constroem confiança mais rápido que qualquer certificado. E, por ser uma reunião previsível, é o ponto de partida mais eficiente para destravar o inglês de trabalho."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Daily e reuniões de time",
+        "description": "Atualização diária, planning, refinamento e retrospectiva com colegas de outros países."
+      },
+      {
+        "label": "Chat e threads",
+        "description": "Status assíncrono, pedidos de ajuda e resumos de decisão em canais do time."
+      },
+      {
+        "label": "Revisão de código",
+        "description": "Comentários de pull request claros sobre o que bloqueia e o que é sugestão."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem entrou num time internacional",
+        "description": "Já participa da daily em inglês e quer falar com mais segurança e menos improviso."
+      },
+      {
+        "label": "Quem lê bem, mas trava ao falar",
+        "description": "Entende documentação e reuniões, mas fica em silêncio quando precisa reportar um problema."
+      },
+      {
+        "label": "Quem se prepara para vaga remota",
+        "description": "Quer chegar à primeira daily já com o repertório básico do dia a dia do time."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Daily, reuniões de time em inglês e comunicação assíncrona por escrito são prática corrente em empresas de software com equipes distribuídas, de startups a grandes empresas de tecnologia, e em consultorias que alocam desenvolvedores brasileiros em clientes no exterior. O repertório deste programa vale para qualquer time que use Scrum ou um processo ágil parecido.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Scrum.org — Introduction to the Daily Scrum (propósito, timebox de 15 minutos e participantes, conforme o Scrum Guide 2020)",
+      "url": "https://www.scrum.org/resources/introduction-daily-scrum"
+    },
+    {
+      "label": "Scrum.org — Getting Forensic About the Daily Scrum 2020 (remoção das três perguntas na versão 2020 do Scrum Guide)",
+      "url": "https://www.scrum.org/resources/blog/getting-forensic-daily-scrum-2020"
+    },
+    {
+      "label": "GitLab Handbook — Sync vs. Async Culture (escrita sem contexto prévio, TL;DR, pedido claro e registro de decisões)",
+      "url": "https://handbook.gitlab.com/handbook/communication/sync-vs-async-culture/"
+    },
+    {
+      "label": "Conventional Comments — padrão de rótulos e decorações para comentários de revisão",
+      "url": "https://conventionalcomments.org/"
+    },
+    {
+      "label": "Stack Overflow Developer Survey 2025 — Work (regime de trabalho remoto, híbrido e presencial)",
+      "url": "https://survey.stackoverflow.co/2025/work"
+    }
+  ]
 }

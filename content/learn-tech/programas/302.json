@@ -3,8 +3,820 @@
   "image": "https://cdn.pixabay.com/photo/2016/11/23/14/45/coding-1853305_1280.jpg",
   "category": "Backend",
   "categoryFilter": "backend",
-  "title": "Node.js e Express: Criando APIs RESTful Escaláveis",
-  "lessons": "25+ Lições",
-  "duration": "22hr 00min",
-  "access": "Acesso Livre"
+  "title": "Node.js e Express: APIs REST Testadas, do Primeiro Endpoint ao Deploy",
+  "lessons": "18 passos",
+  "duration": "14h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Intermediário",
+  "description": "Construa uma API REST completa com Node.js e Express 5: rotas organizadas, middlewares, validação de entrada, tratamento de erro centralizado, banco de dados com Prisma, testes automatizados com Vitest e supertest, configuração por variáveis de ambiente e deploy. Cada peça entra quando o problema que ela resolve aparece.",
+  "letslearn": [
+    "Estruturar uma API Express 5 em rotas, middlewares e camadas que não se misturam",
+    "Validar toda entrada antes que ela chegue à regra de negócio e responder com o status HTTP certo",
+    "Centralizar o tratamento de erro aproveitando que o Express 5 encaminha promessas rejeitadas",
+    "Persistir dados com Prisma e traduzir erros do banco em respostas compreensíveis",
+    "Testar a API de ponta a ponta com Vitest e supertest e publicá-la configurada por variáveis de ambiente"
+  ],
+  "curriculum": "Da primeira rota à API em produção",
+  "about": "O programa continua de onde Back-end descomplicado: APIs, lógica de negócios e integração eficiente parou: lá você entendeu o que é uma API e como requisição e resposta conversam; aqui você constrói uma, inteira, com Node.js e Express 5. O projeto é a API de agendamento de revisões de uma oficina de bicicletas fictícia. A progressão segue a vida real de um serviço: primeiro ele responde, depois se defende de entrada ruim e de falhas, em seguida guarda dados de verdade e, por fim, ganha testes, configuração e um endereço público. Escalar para vários serviços e contêineres é assunto do programa seguinte da trilha, Arquitetura de Microsserviços com Docker e Kubernetes.",
+  "materials": [
+    "Repositório com o estado do projeto ao fim de cada módulo",
+    "Coleção de requisições para testar a API manualmente",
+    "Tabela de status HTTP com quando usar cada um",
+    "Checklist de publicação de uma API Node.js"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Node.js, Express 5 e as Primeiras Rotas",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Middlewares, Validação e Tratamento de Erro",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Persistência com Prisma",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Testes, Configuração e Deploy",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Backend",
+    "mainTitle": "Uma API que responde certo, recusa o que está errado e continua de pé em produção.",
+    "introductionParagraphs": [
+      {
+        "title": "Fazer funcionar é a menor parte",
+        "text": "Uma rota que devolve JSON se escreve em cinco linhas. O trabalho de verdade está no resto: o que acontece quando o corpo da requisição chega incompleto, quando o banco recusa um registro duplicado, quando a porta já está ocupada ou quando alguém muda uma regra e quebra outra sem perceber. Este programa trata **essas** situações como conteúdo principal, não como apêndice."
+      },
+      {
+        "title": "Por que Express 5",
+        "text": "O **Express 5** encaminha automaticamente ao middleware de erro as promessas rejeitadas por rotas e middlewares. Isso elimina o try/catch repetido em toda rota assíncrona, que era a maior fonte de API travada em Express 4. Ele também mudou a sintaxe de caminhos, a forma de req.body sem parser e removeu métodos antigos — e você vai aprender já na versão atual, sem hábitos que precisariam ser desfeitos."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não cobre autenticação completa, filas, cache nem orquestração de contêineres. A API roda como um único processo com um banco de dados. O objetivo é que essa base fique sólida — rotas, validação, erros, persistência e testes —, porque é sobre ela que qualquer arquitetura maior é montada."
+      }
+    ],
+    "courseAboutTitle": "Do endpoint isolado ao serviço publicado",
+    "courseAboutDescription": "Quem já entende o que é uma API costuma travar na passagem para o projeto real: onde colocar cada coisa, como testar sem subir servidor na mão, como guardar a senha do banco fora do código. Este programa responde a essas perguntas com um único projeto que cresce módulo a módulo, de modo que cada decisão aparece no momento em que faz falta.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Node.js, Express 5 e as Primeiras Rotas",
+        "items": [
+          {
+            "label": "Projeto do zero",
+            "description": "Node.js com módulos ES, Express 5 e a separação entre app e servidor."
+          },
+          {
+            "label": "Rotas e verbos HTTP",
+            "description": "GET, POST, PATCH e DELETE com o status code que cada resposta merece."
+          },
+          {
+            "label": "Router por recurso",
+            "description": "Um arquivo de rotas por assunto da API, montado em um prefixo."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Middlewares, Validação e Tratamento de Erro",
+        "items": [
+          {
+            "label": "Cadeia de middlewares",
+            "description": "Como a requisição atravessa as funções e por que a ordem importa."
+          },
+          {
+            "label": "Validação na borda",
+            "description": "Recusar entrada inválida com 400 antes de qualquer regra de negócio."
+          },
+          {
+            "label": "Erro em um lugar só",
+            "description": "Middleware de erro de quatro argumentos e o 404 para rota inexistente."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Persistência com Prisma",
+        "items": [
+          {
+            "label": "Schema e migrações",
+            "description": "Modelar as tabelas em um arquivo e versionar cada mudança."
+          },
+          {
+            "label": "Camada de serviço",
+            "description": "Tirar o acesso ao banco de dentro das rotas."
+          },
+          {
+            "label": "Erros do banco como resposta HTTP",
+            "description": "Registro duplicado vira 409, registro ausente vira 404."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Testes, Configuração e Deploy",
+        "items": [
+          {
+            "label": "Testes de ponta a ponta",
+            "description": "Vitest e supertest batendo na API sem abrir porta de rede."
+          },
+          {
+            "label": "Variáveis de ambiente",
+            "description": "Arquivo .env, a flag --env-file do Node.js e validação na inicialização."
+          },
+          {
+            "label": "Publicação",
+            "description": "Rota de saúde, encerramento gracioso e migrações aplicadas no deploy."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para executar no seu próprio projeto. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "laptop",
+      "title": "Node.js, Express 5 e as Primeiras Rotas",
+      "shortDescription": "Projeto, rotas, status HTTP e organização por recurso",
+      "introductionText": "O Express é uma camada fina sobre o servidor HTTP do Node.js: ele recebe a requisição, encontra a rota que corresponde ao método e ao caminho e entrega a você objetos req e res mais fáceis de usar. Neste módulo você monta o esqueleto da API da oficina — bicicletas e agendamentos de revisão — e já adota as duas decisões que vão facilitar todo o resto: separar a aplicação do servidor e organizar as rotas por recurso.",
+      "sections": [
+        {
+          "title": "🚲 O esqueleto da API",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Criar o projeto com Express 5",
+              "code": "npm install express@5",
+              "guidance": "Inicie um projeto com npm init, defina \"type\": \"module\" no package.json para usar import e export, e instale o Express 5. Confirme que sua versão do Node.js atende ao mínimo exigido: o Express 5 requer Node.js 18 ou superior. Prefira uma versão LTS atual.",
+              "tips": [
+                "Fixe a versão do Node.js do projeto em um campo engines no package.json. Isso evita o clássico funciona na minha máquina quando o servidor de deploy usa outra versão."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Separar app de servidor",
+              "code": "export const app = express()",
+              "guidance": "Crie app.js, que monta e exporta a aplicação, e server.js, que importa o app e chama app.listen. No Express 5, erros como porta ocupada (EADDRINUSE) chegam ao callback do listen em vez de serem lançados, então trate o parâmetro de erro ali. Essa separação é o que vai permitir testar a API no Módulo 3 sem abrir porta nenhuma.",
+              "tips": [
+                "Regra prática: app.js nunca chama listen; server.js nunca declara rota."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Rotas, verbos e status HTTP",
+              "code": "res.status(201).json(bicicleta)",
+              "guidance": "Escreva o CRUD de bicicletas com dados em memória: GET para listar e buscar por id, POST para criar, PATCH para alterar e DELETE para remover. Devolva 200 para leitura, 201 para criação e 204 sem corpo para remoção. Use res.status(código).json(dados): no Express 5 a forma antiga res.json(dados, código) foi removida.",
+              "tips": [
+                "O status code é parte do contrato. Um cliente que recebe 200 com uma mensagem de erro no corpo vai tratar a falha como sucesso."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Um Router por recurso",
+              "code": "app.use('/bicicletas', bicicletasRouter)",
+              "guidance": "Mova as rotas de bicicletas para um arquivo próprio com express.Router() e monte-o no prefixo /bicicletas. Faça o mesmo para /agendamentos, com a rota aninhada /bicicletas/:id/agendamentos para listar as revisões de uma bicicleta. Lembre que no Express 5 parâmetros e curingas seguem a nova sintaxe: um curinga precisa de nome, como /{*splat}, e o ponto de interrogação para parâmetro opcional deu lugar às chaves.",
+              "tips": [
+                "Use substantivos no plural para recursos e deixe o verbo para o método HTTP. /bicicletas com POST é melhor que /criarBicicleta."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que começar pela estrutura",
+      "highlights": [
+        {
+          "icon": "sitemap",
+          "title": "Cada recurso no seu arquivo",
+          "text": "Com um Router por recurso, mexer em agendamentos não exige rolar por trezentas linhas de rotas de bicicleta. A estrutura da pasta espelha a estrutura da API."
+        },
+        {
+          "icon": "globe",
+          "title": "Status é contrato",
+          "text": "O código HTTP é a primeira coisa que o cliente lê. Acertar 201, 204, 400 e 404 desde o início evita que o front-end precise adivinhar o que aconteceu."
+        },
+        {
+          "icon": "tools",
+          "title": "App testável desde o primeiro dia",
+          "text": "Separar app e servidor custa um arquivo a mais agora e economiza horas quando os testes chegarem."
+        }
+      ],
+      "closingText": "A API já responde e está organizada por recurso. Mas ela confia em tudo que recebe: um corpo sem campo obrigatório vira registro quebrado, e uma falha qualquer derruba a resposta sem explicação. O próximo módulo constrói as defesas.",
+      "ctaTitle": "🚲 Primeiras rotas no ar!",
+      "ctaText": "Sua API já tem recursos, verbos e status corretos. Agora vamos ensinar a ela a recusar entrada ruim e a falhar com elegância.",
+      "nextButtonText": "Ir para Módulo 1: Middlewares, Validação e Tratamento de Erro"
+    },
+    {
+      "id": 1,
+      "icon": "shield",
+      "title": "Middlewares, Validação e Tratamento de Erro",
+      "shortDescription": "A cadeia de funções que protege a regra de negócio",
+      "introductionText": "Toda requisição no Express atravessa uma sequência de funções — os middlewares — até que uma delas responda. Entender essa cadeia é entender o Express inteiro: parser de JSON, log, validação, rota e tratamento de erro são todos middlewares, e a ordem em que você os registra decide o comportamento da API. Neste módulo você usa essa cadeia para garantir duas coisas: dado inválido não passa da borda, e qualquer erro termina numa resposta previsível.",
+      "sections": [
+        {
+          "title": "🛡️ Defendendo a API",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Ler o corpo com express.json",
+              "code": "app.use(express.json())",
+              "guidance": "Registre o parser de JSON antes das rotas. Faça um POST sem ele e observe: no Express 5, req.body é undefined quando o corpo não foi interpretado (no Express 4 era um objeto vazio). Depois registre o parser e repita. Esse experimento mostra na prática que ordem de middleware é comportamento.",
+              "tips": [
+                "Se você também aceitar formulário, note que express.urlencoded passou a ter extended: false como padrão no Express 5."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Escrever o próprio middleware",
+              "code": "(req, res, next) => { ...; next() }",
+              "guidance": "Crie um middleware de log que registre método, caminho, status e tempo de resposta. Ele precisa chamar next() para a requisição seguir adiante, e ler o status só quando a resposta terminar, no evento finish de res. Registre-o logo no início da cadeia.",
+              "tips": [
+                "Um middleware que não chama next() nem envia resposta deixa a requisição pendurada até o cliente desistir. É o primeiro suspeito quando uma rota nunca responde."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Validar na borda com um schema",
+              "code": "schema.safeParse(req.body)",
+              "guidance": "Descreva o formato esperado de bicicleta e de agendamento com uma biblioteca de schema, como o Zod, e crie um middleware validar(schema) que roda antes da rota. Se a validação falhar, responda 400 com a lista de campos inválidos; se passar, substitua req.body pelo dado já limpo e tipado. A rota passa a confiar no que recebe.",
+              "tips": [
+                "Valide também req.params e req.query. Um id que não é número chegando ao banco gera erro 500 onde deveria haver 400."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Um middleware de erro para tudo",
+              "code": "app.use((err, req, res, next) => { ... })",
+              "guidance": "Crie uma classe HttpError com status e mensagem e lance-a nas rotas quando algo não existir ou não for permitido. Registre, depois de todas as rotas, um middleware com quatro argumentos: o Express reconhece o tratador de erro justamente pela quantidade de parâmetros. Ele monta uma resposta JSON padronizada com o status do erro, ou 500 quando o erro não é conhecido.",
+              "tips": [
+                "Em erro 500, registre o stack no log e devolva ao cliente só uma mensagem genérica. Detalhe interno na resposta é informação de graça para quem quer atacar a API.",
+                "Se res.headersSent for verdadeiro, a resposta já começou a ser enviada: delegue com next(err) para o tratador padrão do Express encerrar a conexão."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Rotas assíncronas e o 404",
+              "code": "app.get('/bicicletas/:id', async (req, res) => { ... })",
+              "guidance": "Transforme as rotas em funções async. No Express 5, quando uma rota ou middleware devolve uma promessa rejeitada, o erro é encaminhado ao middleware de erro como se você tivesse chamado next(err) — sem try/catch em cada rota. Por fim, registre antes do tratador de erro um middleware sem caminho que responde 404 para qualquer rota inexistente.",
+              "tips": [
+                "Isso vale para a promessa que a rota devolve. Erro dentro de setTimeout ou de callback antigo continua precisando ser capturado ali e passado a next(err)."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que a borda importa",
+      "highlights": [
+        {
+          "icon": "shield",
+          "title": "Dado ruim para na porta",
+          "text": "Com validação antes da rota, a regra de negócio só lida com dado no formato certo. O código interno fica mais curto e para de checar a mesma coisa em vários lugares."
+        },
+        {
+          "icon": "list",
+          "title": "Ordem é comportamento",
+          "text": "Parser, log, validação, rotas, 404 e erro: a sequência de registro define o que cada função enxerga. A maioria dos bugs de Express é um middleware no lugar errado."
+        },
+        {
+          "icon": "bolt",
+          "title": "Falha previsível",
+          "text": "Todo erro sai pelo mesmo tratador, no mesmo formato JSON. O cliente da API escreve um único código para lidar com falhas."
+        }
+      ],
+      "closingText": "A API agora recusa entrada inválida com 400, responde 404 para o que não existe e transforma qualquer falha em JSON padronizado. O ponto fraco que sobrou é óbvio: os dados vivem em memória e somem a cada reinício. O próximo módulo coloca um banco de dados de verdade por trás das rotas.",
+      "ctaTitle": "🛡️ API blindada!",
+      "ctaText": "Validação e erros centralizados funcionando. Hora de guardar os dados em um lugar que sobreviva ao reinício do servidor.",
+      "nextButtonText": "Ir para Módulo 2: Persistência com Prisma"
+    },
+    {
+      "id": 2,
+      "icon": "folder",
+      "title": "Persistência com Prisma",
+      "shortDescription": "Schema, migrações, camada de serviço e erros do banco",
+      "introductionText": "Trocar o array em memória por um banco de dados muda menos código do que parece — se a rota não souber como o dado é guardado. Neste módulo você usa o Prisma, um ORM que gera um cliente tipado a partir de um arquivo de schema, com SQLite no desenvolvimento para não depender de nenhum servidor instalado. A lição central não é o Prisma em si: é manter o acesso a dados numa camada própria, de modo que trocar a ferramenta por SQL escrito à mão afete um arquivo, e não a API inteira.",
+      "sections": [
+        {
+          "title": "🗄️ Dados que sobrevivem ao reinício",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Modelar o schema",
+              "code": "npx prisma migrate dev --name inicial",
+              "guidance": "Declare no schema do Prisma os modelos Bicicleta e Agendamento, com a relação de um para muitos entre eles, um campo único para o número de série da bicicleta e datas de criação. Gere a primeira migração: o Prisma cria o SQL correspondente, aplica no banco e guarda o arquivo na pasta de migrações, que vai para o controle de versão.",
+              "tips": [
+                "Migração é histórico do banco. Nunca edite uma migração que já foi aplicada em outro ambiente; crie uma nova."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Camada de serviço",
+              "code": "bicicletasService.criar(dados)",
+              "guidance": "Crie um módulo de serviço por recurso que concentra o acesso ao banco e as regras de negócio — por exemplo, não permitir dois agendamentos da mesma bicicleta no mesmo dia. A rota só lê a requisição, chama o serviço e escreve a resposta. Exporte uma única instância do cliente do Prisma e reutilize-a em todos os serviços.",
+              "tips": [
+                "Teste para saber se a separação está boa: dá para chamar o serviço de um script, sem Express? Se sim, a regra de negócio não está presa à camada HTTP.",
+                "Prefere SQL escrito à mão? A mesma estrutura funciona com um driver de banco e consultas parametrizadas. Nunca monte SQL concatenando texto vindo da requisição."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Listagem com paginação e filtro",
+              "code": "GET /agendamentos?status=pendente&pagina=2",
+              "guidance": "Implemente a listagem de agendamentos lendo filtros e paginação de req.query, já validados pelo schema do Módulo 1. Use take e skip do Prisma, ordene por data e devolva junto o total de registros para o cliente montar a navegação. Defina um limite máximo por página.",
+              "tips": [
+                "Listagem sem limite funciona com vinte registros de teste e derruba a API com vinte mil. O teto por página é proteção, não detalhe."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Traduzir erros do banco",
+              "code": "if (err.code === 'P2002') throw new HttpError(409, ...)",
+              "guidance": "Cadastre duas bicicletas com o mesmo número de série e veja o erro que o Prisma lança: o código P2002 indica violação de restrição única. No serviço, capture esse caso e converta em HttpError 409 Conflict; para busca por id que não encontra nada, lance 404. O middleware de erro do módulo anterior cuida do resto.",
+              "tips": [
+                "Converta só os erros que você reconhece. Erro de banco desconhecido deve seguir como 500 e aparecer no log, não ser mascarado como erro do cliente."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que separar o acesso a dados",
+      "highlights": [
+        {
+          "icon": "folder",
+          "title": "Schema versionado",
+          "text": "Cada mudança no banco vira um arquivo de migração revisável. Qualquer pessoa da equipe recria o banco do zero com um comando."
+        },
+        {
+          "icon": "sitemap",
+          "title": "Rota fina, serviço gordo",
+          "text": "Regra de negócio no serviço pode ser reutilizada e testada sem HTTP. A rota vira tradução entre requisição e chamada de função."
+        },
+        {
+          "icon": "gauge",
+          "title": "Listagem com teto",
+          "text": "Paginação e limite máximo mantêm o tempo de resposta estável quando a tabela cresce."
+        }
+      ],
+      "closingText": "A API agora guarda dados de verdade, aplica regras de negócio num lugar só e transforma erros de banco em respostas que o cliente entende. Para chamar isso de pronto para produção faltam três coisas: provar que funciona com testes, tirar configuração de dentro do código e publicar.",
+      "ctaTitle": "🗄️ Dados persistidos!",
+      "ctaText": "Banco, migrações e camada de serviço no lugar. Vamos garantir com testes que tudo continua funcionando e colocar a API no ar.",
+      "nextButtonText": "Ir para Módulo 3: Testes, Configuração e Deploy"
+    },
+    {
+      "id": 3,
+      "icon": "gauge",
+      "title": "Testes, Configuração e Deploy",
+      "shortDescription": "Vitest, supertest, variáveis de ambiente e publicação",
+      "introductionText": "Uma API sem testes só é confiável até a próxima alteração. Neste módulo você escreve testes que fazem requisições reais à aplicação — sem abrir porta e sem clicar em nada —, isola o banco usado nos testes, move toda configuração para variáveis de ambiente e prepara o processo para viver num servidor: responder a verificações de saúde, aplicar migrações no deploy e encerrar sem cortar requisições no meio.",
+      "sections": [
+        {
+          "title": "🚀 Do computador para a produção",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Primeiro teste com Vitest e supertest",
+              "code": "await request(app).post('/bicicletas').send(dados).expect(201)",
+              "guidance": "Instale Vitest e supertest como dependências de desenvolvimento. Importe o app de app.js — não o server.js — e passe-o ao request do supertest, que sobe a aplicação numa porta temporária só durante o teste. Escreva um teste para cada contrato importante: criação devolve 201, corpo inválido devolve 400 com os campos, id inexistente devolve 404.",
+              "tips": [
+                "Teste o caminho de erro com o mesmo cuidado do caminho feliz. É nele que a API costuma quebrar sem ninguém perceber."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Banco isolado para testes",
+              "guidance": "Aponte os testes para um banco SQLite separado, definido por variável de ambiente, aplique as migrações antes da suíte e limpe as tabelas antes de cada teste com beforeEach. Cada teste cria os dados de que precisa e não depende da ordem em que os outros rodam.",
+              "tips": [
+                "Se um teste só passa quando roda depois de outro, ele está compartilhando estado. Corrija antes que a suíte cresça."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Configuração por variáveis de ambiente",
+              "code": "node --env-file=.env server.js",
+              "guidance": "Mova porta, URL do banco e nível de log para variáveis de ambiente. Em desenvolvimento, o Node.js lê um arquivo .env com a flag --env-file, sem pacote extra; a função process.loadEnvFile faz o mesmo a partir do código. Coloque o .env no .gitignore e versione um .env.example só com os nomes. Valide as variáveis na inicialização com um schema e encerre o processo com mensagem clara se faltar alguma.",
+              "tips": [
+                "Valores em process.env são sempre texto. A porta 3000 chega como a string '3000' — converta e valide.",
+                "Se a variável já existe no ambiente, ela prevalece sobre o valor do arquivo .env. É assim que o servidor de produção sobrescreve o padrão local."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Preparar o processo para produção",
+              "code": "process.on('SIGTERM', () => server.close())",
+              "guidance": "Crie uma rota GET /saude que confirme que a API e o banco respondem, usada pela plataforma para saber se o serviço está vivo. Rode com NODE_ENV=production. Trate o sinal SIGTERM fechando o servidor com server.close(), que para de aceitar conexões novas e deixa as em andamento terminarem, e só então desconecte o banco.",
+              "tips": [
+                "Sem encerramento gracioso, todo deploy corta as requisições que estavam no meio. O usuário vê erro sem motivo aparente."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Publicar a API",
+              "code": "npx prisma migrate deploy",
+              "guidance": "Escolha uma plataforma que rode Node.js e ofereça banco gerenciado. Configure as variáveis de ambiente no painel, instale só dependências de produção com npm ci --omit=dev, aplique as migrações pendentes com prisma migrate deploy e inicie com node server.js, lendo a porta de process.env.PORT. Faça a suíte de testes rodar a cada push antes do deploy.",
+              "tips": [
+                "migrate dev é para desenvolvimento e pode recriar o banco; em produção use sempre migrate deploy, que só aplica migrações já existentes."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que isso separa projeto de produto",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Mudança com rede de proteção",
+          "text": "Com testes de contrato, alterar uma regra e descobrir que quebrou outra acontece em segundos no seu computador, e não em produção."
+        },
+        {
+          "icon": "tools",
+          "title": "Mesmo código, vários ambientes",
+          "text": "Configuração fora do código permite rodar a mesma versão em desenvolvimento, teste e produção trocando só as variáveis."
+        },
+        {
+          "icon": "sync",
+          "title": "Deploy sem susto",
+          "text": "Rota de saúde, migração automática e encerramento gracioso fazem a troca de versão acontecer sem derrubar ninguém."
+        }
+      ],
+      "closingText": "Você saiu de uma rota que devolvia JSON para uma API publicada: organizada por recurso, com validação na borda, erros centralizados, banco versionado, testes automatizados e configuração por ambiente. É esse conjunto que se espera de quem entrega um serviço back-end — e é a base sobre a qual se constrói quando um serviço só deixa de ser suficiente.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Sua API está testada e publicada. O próximo passo natural da trilha é Arquitetura de Microsserviços com Docker e Kubernetes, onde esse serviço passa a rodar em contêiner ao lado de outros.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Por que separar a aplicação Express (app.js) do arquivo que chama app.listen (server.js)?",
+      "explanation": "Com o app exportado sem listen, os testes podem importá-lo e passá-lo ao supertest, que cuida da porta só durante o teste. Não há ganho de desempenho, o Express não exige essa divisão e ela não substitui o uso de Router.",
+      "options": [
+        {
+          "text": "Para poder testar a aplicação sem abrir uma porta fixa",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque o Express 5 exige dois arquivos para iniciar",
+          "isCorrect": false
+        },
+        {
+          "text": "Para a API responder mais rápido em produção",
+          "isCorrect": false
+        },
+        {
+          "text": "Para dispensar o uso de express.Router",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Qual status HTTP é o mais adequado para a resposta de um POST que criou um registro com sucesso?",
+      "explanation": "201 Created indica que um novo recurso foi criado. 200 funciona, mas informa menos; 204 indica sucesso sem corpo, típico de remoção; 202 indica que o pedido foi aceito para processamento posterior, não que já foi concluído.",
+      "options": [
+        {
+          "text": "201",
+          "isCorrect": true
+        },
+        {
+          "text": "204",
+          "isCorrect": false
+        },
+        {
+          "text": "202",
+          "isCorrect": false
+        },
+        {
+          "text": "302",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "No Express 5, como se escreve uma rota curinga que captura qualquer caminho, inclusive a raiz?",
+      "explanation": "No Express 5 o curinga precisa ter nome, e envolvê-lo em chaves o torna opcional, de modo que /{*splat} casa também com a raiz. A forma antiga /* não é mais aceita, e expressões regulares no caminho deixaram de ser suportadas.",
+      "options": [
+        {
+          "text": "app.get('/{*splat}', ...)",
+          "isCorrect": true
+        },
+        {
+          "text": "app.get('/*', ...)",
+          "isCorrect": false
+        },
+        {
+          "text": "app.get('/(.*)', ...)",
+          "isCorrect": false
+        },
+        {
+          "text": "app.get('/:caminho?', ...)",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "No Express 5, quanto vale req.body em um POST com JSON quando express.json() não foi registrado?",
+      "explanation": "Sem um parser, o Express 5 deixa req.body como undefined. No Express 4 o valor era um objeto vazio, o que escondia o esquecimento. O corpo nunca chega como texto ou objeto preenchido sem o middleware de parser.",
+      "options": [
+        {
+          "text": "undefined",
+          "isCorrect": true
+        },
+        {
+          "text": "Um objeto vazio {}",
+          "isCorrect": false
+        },
+        {
+          "text": "O JSON já convertido em objeto",
+          "isCorrect": false
+        },
+        {
+          "text": "O corpo como texto bruto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Como o Express reconhece que um middleware é um tratador de erro?",
+      "explanation": "O tratador de erro é identificado pela assinatura com quatro parâmetros: (err, req, res, next). Nome da função, nome do arquivo ou opção de configuração não fazem diferença. Ele deve ser registrado depois das rotas para receber os erros delas.",
+      "options": [
+        {
+          "text": "Pela função ter quatro parâmetros: err, req, res e next",
+          "isCorrect": true
+        },
+        {
+          "text": "Pelo nome da função conter a palavra error",
+          "isCorrect": false
+        },
+        {
+          "text": "Por ser registrado com app.error()",
+          "isCorrect": false
+        },
+        {
+          "text": "Por estar no arquivo errorHandler.js",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Uma rota async do Express 5 lança um erro após um await. O que acontece?",
+      "explanation": "No Express 5, a promessa rejeitada devolvida pela rota é encaminhada ao middleware de erro como se next(err) tivesse sido chamado. No Express 4 isso exigia try/catch ou .catch(next); sem isso a requisição podia ficar pendurada. O processo não é encerrado por esse motivo.",
+      "options": [
+        {
+          "text": "O erro é encaminhado automaticamente ao middleware de erro",
+          "isCorrect": true
+        },
+        {
+          "text": "A requisição fica pendurada até o cliente desistir",
+          "isCorrect": false
+        },
+        {
+          "text": "O processo do Node.js é encerrado",
+          "isCorrect": false
+        },
+        {
+          "text": "O Express responde 200 com o erro no corpo",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Qual é a principal vantagem de manter o acesso ao banco numa camada de serviço, fora das rotas?",
+      "explanation": "Com o acesso a dados e as regras no serviço, a rota só traduz HTTP, a regra pode ser reutilizada e testada sem Express, e trocar a ferramenta de persistência afeta um módulo. A camada não acelera consultas nem dispensa migrações ou validação.",
+      "options": [
+        {
+          "text": "Regra de negócio reutilizável e independente da camada HTTP",
+          "isCorrect": true
+        },
+        {
+          "text": "As consultas ao banco ficam mais rápidas",
+          "isCorrect": false
+        },
+        {
+          "text": "Dispensa o uso de migrações",
+          "isCorrect": false
+        },
+        {
+          "text": "Torna desnecessária a validação de entrada",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "O Prisma lança um erro com código P2002 ao cadastrar uma bicicleta com número de série repetido. Qual resposta HTTP é a mais adequada?",
+      "explanation": "P2002 indica violação de restrição única: o pedido entra em conflito com o estado atual do recurso, o que corresponde a 409 Conflict. 500 sugeriria falha do servidor, 404 indicaria ausência e 401 trata de autenticação.",
+      "options": [
+        {
+          "text": "409 Conflict",
+          "isCorrect": true
+        },
+        {
+          "text": "500 Internal Server Error",
+          "isCorrect": false
+        },
+        {
+          "text": "404 Not Found",
+          "isCorrect": false
+        },
+        {
+          "text": "401 Unauthorized",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Por que definir um limite máximo de itens por página numa listagem?",
+      "explanation": "Sem teto, um cliente pode pedir a tabela inteira e a resposta cresce junto com o banco, até ficar lenta ou estourar memória. O limite mantém o custo de cada requisição previsível. Não tem relação com regra do Prisma, com o protocolo HTTP ou com cache.",
+      "options": [
+        {
+          "text": "Para manter o custo de cada resposta previsível quando a tabela cresce",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque o Prisma não aceita consultas sem take",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o HTTP limita o tamanho de respostas JSON",
+          "isCorrect": false
+        },
+        {
+          "text": "Para que o navegador guarde a resposta em cache",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Ao testar com supertest, o que se passa para a função request?",
+      "explanation": "O supertest recebe a aplicação Express exportada e cuida de subir uma porta temporária durante o teste. Não é preciso ter o servidor rodando, nem informar URL de produção, e o banco é configurado à parte pelas variáveis de ambiente.",
+      "options": [
+        {
+          "text": "A aplicação Express exportada de app.js",
+          "isCorrect": true
+        },
+        {
+          "text": "A URL da API publicada em produção",
+          "isCorrect": false
+        },
+        {
+          "text": "O caminho do arquivo server.js já em execução",
+          "isCorrect": false
+        },
+        {
+          "text": "A conexão com o banco de dados",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Uma variável PORT está definida no ambiente do servidor e também no arquivo .env carregado com --env-file. Qual valor o Node.js usa?",
+      "explanation": "Segundo a documentação do Node.js, quando a variável já existe no ambiente, esse valor prevalece sobre o do arquivo. É o que permite à plataforma de produção sobrescrever os padrões locais. Não há erro nem escolha do maior valor.",
+      "options": [
+        {
+          "text": "O valor que já estava no ambiente",
+          "isCorrect": true
+        },
+        {
+          "text": "O valor do arquivo .env",
+          "isCorrect": false
+        },
+        {
+          "text": "O maior dos dois valores",
+          "isCorrect": false
+        },
+        {
+          "text": "Nenhum: o Node.js encerra com erro de conflito",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Na pesquisa Stack Overflow Developer Survey 2025, qual percentual dos respondentes declarou usar Node.js?",
+      "explanation": "48,7% dos respondentes declararam usar Node.js na categoria de frameworks e tecnologias web. Express aparece com 19,9%. Os números mostram que a base em Node.js é amplamente compartilhada, enquanto o framework por cima varia mais.",
+      "options": [
+        {
+          "text": "48,7%",
+          "isCorrect": true
+        },
+        {
+          "text": "19,9%",
+          "isCorrect": false
+        },
+        {
+          "text": "85%",
+          "isCorrect": false
+        },
+        {
+          "text": "12%",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "A API REST de agendamento de revisões de uma oficina de bicicletas fictícia, em Node.js e Express 5: recursos de bicicletas e agendamentos, validação de entrada, erros padronizados em JSON, persistência com Prisma, suíte de testes com Vitest e supertest, configuração por variáveis de ambiente e publicação com rota de saúde e migrações automáticas.",
+    "highlights": [
+      "API REST organizada por recurso, com status HTTP corretos",
+      "Validação e tratamento de erro centralizados",
+      "Testes automatizados e deploy configurado por ambiente"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "Na Stack Overflow Developer Survey 2025, 48,7% dos respondentes declararam usar Node.js na categoria de frameworks e tecnologias web, e JavaScript aparece com 66% entre as linguagens. Express, a camada mais fina sobre o servidor HTTP do Node.js, aparece com 19,9%.",
+      "A chegada do Express 5 como versão estável mudou detalhes que aparecem em todo projeto — tratamento de erro em rotas assíncronas, sintaxe de caminhos, comportamento de req.body. Quem aprende agora começa na versão atual e consegue ler tanto código novo quanto os projetos em Express 4 que ainda vão precisar de migração."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Back-end de aplicações web e mobile",
+        "description": "A API que entrega e recebe os dados das telas construídas em React, Vue ou apps nativos."
+      },
+      {
+        "label": "Sistemas internos e integrações",
+        "description": "Serviços que conectam planilhas, ERPs e outras APIs dentro de uma empresa."
+      },
+      {
+        "label": "Base para microsserviços",
+        "description": "Cada serviço de uma arquitetura distribuída é, no fundo, uma API como esta."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem já sabe JavaScript",
+        "description": "Domina funções, objetos e async/await e quer levar isso para o servidor."
+      },
+      {
+        "label": "Quem vem do front-end",
+        "description": "Consome APIs todo dia e quer entender e construir o outro lado."
+      },
+      {
+        "label": "Quem tem API sem testes",
+        "description": "Já fez rotas funcionarem, mas não sabe organizar, testar nem publicar com segurança."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Node.js com Express aparece em startups, consultorias e equipes de produto de empresas de todos os portes, principalmente onde o time já trabalha com JavaScript no front-end e quer uma única linguagem nas duas pontas. O conhecimento de rotas, middlewares, validação e testes se transfere diretamente para outros frameworks do ecossistema Node.js.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Express — Migrando para o Express 5 (guia oficial de mudanças da versão 5)",
+      "url": "https://expressjs.com/en/guide/migrating-5"
+    },
+    {
+      "label": "Express — Manipulação de erros (guia oficial)",
+      "url": "https://expressjs.com/pt-br/guide/error-handling.html"
+    },
+    {
+      "label": "Node.js — How to read environment variables from Node.js (--env-file e process.loadEnvFile)",
+      "url": "https://nodejs.org/learn/command-line/how-to-read-environment-variables-from-nodejs"
+    },
+    {
+      "label": "Stack Overflow Developer Survey 2025 — Technology",
+      "url": "https://survey.stackoverflow.co/2025/technology"
+    }
+  ]
 }

@@ -3,8 +3,796 @@
   "image": "https://cdn.pixabay.com/photo/2014/03/22/22/17/phone-292994_1280.jpg",
   "category": "Produtos Digitais",
   "categoryFilter": "produtos-digitais",
-  "title": "Produtos Digitais: da ideia ao lançamento com metodologias ágeis",
-  "lessons": "15+ Lições",
-  "duration": "12hr 45min",
-  "access": "Acesso Livre"
+  "title": "Produtos Digitais: do Problema ao Lançamento",
+  "lessons": "16 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Iniciante",
+  "description": "A porta de entrada para quem quer trabalhar com produto digital. Você aprende a separar problema de solução, conversar com clientes sem induzir respostas, transformar ideias em hipóteses testáveis e planejar um lançamento guiado por resultado — não por lista de funcionalidades.",
+  "letslearn": [
+    "Explicar o que é um produto digital e por que ele é diferente de um projeto com data de entrega",
+    "Separar descoberta (discovery) de entrega (delivery) e reconhecer os quatro grandes riscos de um produto",
+    "Conduzir entrevistas com clientes baseadas em fatos do passado e montar uma proposta de valor",
+    "Transformar ideias em hipóteses, testá-las com experimentos baratos e planejar um roadmap por resultados até o lançamento"
+  ],
+  "curriculum": "Fundamentos de Produto Digital",
+  "about": "O programa abre a trilha de produto. Ele cobre o ciclo inteiro em nível introdutório: entender o que é produto, enxergar o problema antes da solução, ouvir clientes, formular a proposta de valor, testar as suposições mais arriscadas, organizar o roadmap por resultados e lançar com critério. O fio condutor é um produto fictício — o Horário Certo, um aplicativo de agendamento para salões de beleza de bairro — que você acompanha da primeira entrevista ao plano de lançamento. Os aprofundamentos ficam para os programas seguintes da trilha: Gestão de Backlog: Priorização para Product Owners, MVP na Prática: Do Briefing à Validação com Baixo Custo e Métricas de Produto: North Star, OMTM e Retenção.",
+  "materials": [
+    "Modelo de declaração de problema",
+    "Roteiro de entrevista com perguntas sobre o passado",
+    "Canvas de proposta de valor em branco",
+    "Modelo de cartão de hipótese e experimento",
+    "Modelo de roadmap Agora / Próximo / Depois"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Produto, Problema e Risco",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Conversando com Clientes",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Hipóteses e Experimentos",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Do Roadmap ao Lançamento",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Produtos Digitais",
+    "mainTitle": "Resolva o problema certo antes de construir a solução: o ciclo de um produto digital, da primeira conversa com o cliente ao lançamento.",
+    "introductionParagraphs": [
+      {
+        "title": "Produto não é lista de funcionalidades",
+        "text": "Um produto digital existe para resolver um problema de alguém de um jeito que também funcione para o negócio. Entregar a funcionalidade pedida não garante nada disso. Por isso o trabalho de produto se mede por **resultado** — o cliente mudou de comportamento? o negócio ganhou com isso? — e não pela quantidade de coisas entregues."
+      },
+      {
+        "title": "Descobrir antes de entregar",
+        "text": "Times de produto trabalham em duas frentes que andam juntas: a **descoberta**, que decide o que vale a pena construir, e a **entrega**, que constrói com qualidade o que foi decidido. A descoberta existe para reduzir risco cedo, quando errar ainda custa uma conversa ou um protótipo, e não meses de desenvolvimento."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não ensina uma ferramenta específica nem uma certificação. Também não aprofunda priorização de backlog, construção de MVP ou métricas — cada um desses assuntos tem um programa próprio na trilha. Aqui você monta a visão de conjunto e pratica cada etapa uma vez, em pequena escala, para saber onde cada peça se encaixa."
+      }
+    ],
+    "courseAboutTitle": "A visão de conjunto do trabalho de produto",
+    "courseAboutDescription": "Quem chega a produto costuma conhecer uma parte: o desenvolvedor conhece a entrega, o designer conhece a experiência, o analista de negócio conhece os requisitos. Este programa liga as partes. Ao final, você sabe por que uma ideia precisa virar hipótese, por que entrevista não é pesquisa de opinião e por que um roadmap com datas e funcionalidades costuma prometer o que ninguém sabe se vai funcionar.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Produto, Problema e Risco",
+        "items": [
+          {
+            "label": "Produto x projeto",
+            "description": "Por que produto se mede por resultado contínuo e não por entrega com data."
+          },
+          {
+            "label": "Problema antes da solução",
+            "description": "Escrever uma declaração de problema que não esconda a solução dentro dela."
+          },
+          {
+            "label": "Discovery, delivery e os quatro riscos",
+            "description": "Valor, usabilidade, viabilidade técnica e viabilidade de negócio."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Conversando com Clientes",
+        "items": [
+          {
+            "label": "Planejar a entrevista",
+            "description": "Quem entrevistar, quantos e com que objetivo."
+          },
+          {
+            "label": "Perguntar sobre o passado",
+            "description": "Histórias reais no lugar de opiniões e promessas sobre o futuro."
+          },
+          {
+            "label": "Proposta de valor",
+            "description": "Ligar tarefas, dores e ganhos do cliente ao que o produto oferece."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Hipóteses e Experimentos",
+        "items": [
+          {
+            "label": "Árvore de oportunidades",
+            "description": "Do resultado desejado às oportunidades e às soluções possíveis."
+          },
+          {
+            "label": "Suposições arriscadas",
+            "description": "Encontrar o que precisa ser verdade para a ideia dar certo."
+          },
+          {
+            "label": "Experimento barato",
+            "description": "Testar uma suposição com critério de sucesso definido antes."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Do Roadmap ao Lançamento",
+        "items": [
+          {
+            "label": "Roadmap por resultados",
+            "description": "Agora, Próximo e Depois organizados por problema, não por funcionalidade."
+          },
+          {
+            "label": "Entrega em incrementos",
+            "description": "Liberar aos poucos para aprender e reduzir o tamanho do erro."
+          },
+          {
+            "label": "Lançamento e aprendizado",
+            "description": "Plano de lançamento, critério de reversão e a revisão depois de no ar."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos aplicados ao produto fictício do programa. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "laptop",
+      "title": "Produto, Problema e Risco",
+      "shortDescription": "O que é produto digital, o problema antes da solução e os quatro riscos",
+      "introductionText": "Antes de qualquer técnica, vale acertar o vocabulário. Produto digital não é o aplicativo em si: é a combinação de software, experiência e modelo de negócio que resolve um problema de alguém de forma sustentável. Neste módulo você conhece o Horário Certo, o produto fictício que acompanha o programa — um aplicativo de agendamento para salões de beleza de bairro —, escreve a primeira declaração de problema e aprende a enxergar onde estão os riscos antes de escrever a primeira linha de código.",
+      "sections": [
+        {
+          "title": "🧭 Entendendo o terreno",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Produto não é projeto",
+              "guidance": "Um projeto tem escopo, prazo e termina quando é entregue. Um produto continua depois da entrega: ele é usado, medido, ajustado e evolui enquanto fizer sentido para clientes e negócio. Escreva em duas colunas como seria o Horário Certo tratado como projeto (lista de telas e data de entrega) e como produto (quem ele atende, que problema resolve e como saberemos que funcionou).",
+              "tips": [
+                "Se a única forma de saber se deu certo é perguntar se foi entregue no prazo, você está pensando em projeto, não em produto."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Problema antes da solução",
+              "code": "[Quem] tem dificuldade em [o quê] quando [situação], o que causa [consequência].",
+              "guidance": "Escreva a declaração de problema do Horário Certo sem mencionar aplicativo, botão ou tecnologia. Exemplo fictício: donas de salão de bairro perdem horários quando clientes faltam sem avisar, o que deixa a cadeira vazia e reduz o faturamento da semana. Depois releia: se a frase só faz sentido com a sua solução, ela é uma solução disfarçada.",
+              "tips": [
+                "“Os clientes precisam de um app de agendamento” não é problema, é solução. Pergunte por quê até chegar à dor real."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Discovery e delivery",
+              "guidance": "Discovery é o trabalho de decidir o que vale a pena construir: conversar com clientes, prototipar, testar suposições. Delivery é construir com qualidade e colocar em produção o que passou por essa peneira. As duas frentes andam em paralelo, com o mesmo time. Liste três atividades do Horário Certo e classifique cada uma em discovery ou delivery.",
+              "tips": [
+                "Discovery não é uma fase que acaba antes do desenvolvimento começar. Em times maduros, há aprendizado com clientes toda semana."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Os quatro grandes riscos",
+              "guidance": "Todo produto corre quatro riscos: de valor (o cliente vai comprar ou escolher usar?), de usabilidade (ele consegue usar?), de viabilidade técnica (o time consegue construir com o tempo, as habilidades e a tecnologia que tem?) e de viabilidade de negócio (a solução funciona para o negócio — custo, jurídico, vendas, suporte?). Escreva uma pergunta de risco do Horário Certo para cada um.",
+              "tips": [
+                "Na prática, o risco de valor é o que mais derruba produtos. Ataque-o primeiro, porque ele é o mais barato de testar e o mais caro de descobrir tarde."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que começar pelo problema",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Menos desperdício",
+          "text": "Funcionalidade construída para um problema que ninguém tem continua custando: precisa de manutenção, suporte e espaço na tela, mesmo sem uso."
+        },
+        {
+          "icon": "shield",
+          "title": "Risco visível",
+          "text": "Nomear os quatro riscos transforma uma sensação vaga de incerteza em perguntas concretas que podem ser respondidas uma a uma."
+        },
+        {
+          "icon": "sync",
+          "title": "Trabalho contínuo",
+          "text": "Tratar o software como produto muda a pergunta de “entregamos?” para “funcionou?”, e essa pergunta só se responde depois de colocar no ar."
+        }
+      ],
+      "closingText": "Você já sabe o que é produto, escreveu o problema do Horário Certo sem esconder a solução e listou os riscos. Mas a declaração de problema ainda é uma suposição sua. No próximo módulo você vai ouvir quem vive o problema.",
+      "ctaTitle": "🧭 Terreno mapeado!",
+      "ctaText": "Problema escrito e riscos identificados. Agora é hora de confirmar com quem vive o problema todo dia.",
+      "nextButtonText": "Ir para Módulo 1: Conversando com Clientes"
+    },
+    {
+      "id": 1,
+      "icon": "search",
+      "title": "Conversando com Clientes",
+      "shortDescription": "Entrevistas que revelam comportamento real e a proposta de valor",
+      "introductionText": "Entrevista com cliente é a ferramenta mais barata de discovery e a mais mal usada. O erro clássico é apresentar a ideia e perguntar se a pessoa usaria: quase todo mundo diz que sim, por educação, e quase ninguém usa depois. Neste módulo você planeja e conduz entrevistas sobre fatos do passado, organiza o que ouviu e monta a proposta de valor do Horário Certo a partir de evidência, não de palpite.",
+      "sections": [
+        {
+          "title": "🎙️ Ouvindo quem vive o problema",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Planejar as entrevistas",
+              "guidance": "Defina o objetivo (entender como salões de bairro lidam hoje com faltas), o perfil de quem será entrevistado (donas de salão com até cinco cadeiras) e uma meta modesta: cinco ou seis conversas de 30 minutos. Escreva o roteiro com no máximo seis perguntas abertas e deixe espaço para seguir o que surgir.",
+              "tips": [
+                "Entreviste quem tem o problema, não quem compraria por você. Amigos e colegas tendem a ser gentis demais para ser úteis."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Perguntar sobre o passado",
+              "code": "Me conte da última vez que uma cliente faltou.",
+              "guidance": "Peça histórias específicas e recentes: o que aconteceu, o que a pessoa fez, quanto tempo levou, o que ela tentou antes. Fuja de perguntas sobre o futuro (“você usaria?”) e de perguntas fechadas que já sugerem a resposta. Comportamento passado é evidência; intenção futura é opinião.",
+              "tips": [
+                "Quando ouvir “sempre” ou “normalmente”, peça um caso concreto: “e da última vez, como foi?”. A generalização esconde os detalhes que importam."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Sintetizar o que você ouviu",
+              "guidance": "Logo após cada conversa, preencha um resumo de uma página: quem é a pessoa, a história principal, as dores, o que ela já tentou e citações marcantes. Depois de todas as entrevistas, agrupe as dores repetidas. No exemplo fictício, quatro de seis donas de salão confirmavam horários um a um por mensagem, gastando cerca de uma hora por dia.",
+              "tips": [
+                "Registre o que a pessoa fez, não só o que disse sentir. “Manda mensagem para cada cliente na véspera” vale mais que “acho chato confirmar horário”."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Montar a proposta de valor",
+              "guidance": "Use o canvas de proposta de valor. Do lado do cliente, liste as tarefas que ele tenta realizar, as dores que encontra no caminho e os ganhos que deseja. Do lado do produto, liste o que você oferece, quais dores isso alivia e quais ganhos cria. Ligue cada item da oferta a uma dor ou ganho real das entrevistas; o que não se liga a nada é candidato a corte.",
+              "tips": [
+                "O encaixe entre oferta e cliente é uma afirmação até que os clientes confirmem. O canvas organiza hipóteses, não prova nada sozinho."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que entrevistar antes de construir",
+      "highlights": [
+        {
+          "icon": "list",
+          "title": "Fato vence opinião",
+          "text": "Perguntar sobre o que a pessoa fez da última vez traz evidência. Perguntar se ela usaria traz cortesia, e cortesia não paga assinatura."
+        },
+        {
+          "icon": "grid",
+          "title": "Proposta ancorada",
+          "text": "Cada item do canvas ligado a uma dor ouvida em entrevista é uma decisão defensável. Item sem ligação é funcionalidade esperando para não ser usada."
+        },
+        {
+          "icon": "sync",
+          "title": "Hábito, não evento",
+          "text": "Conversar com clientes toda semana, mesmo que pouco, mantém o time perto da realidade. Uma rodada grande por ano envelhece rápido."
+        }
+      ],
+      "closingText": "Você confirmou a dor com quem a vive e organizou a proposta de valor do Horário Certo. Agora surgem muitas ideias de solução — lembrete automático, confirmação por mensagem, cobrança de sinal. Qual testar primeiro? O próximo módulo responde com hipóteses e experimentos.",
+      "ctaTitle": "🎙️ Clientes ouvidos!",
+      "ctaText": "Dores confirmadas e proposta de valor montada. Vamos transformar as ideias em hipóteses que podem ser testadas.",
+      "nextButtonText": "Ir para Módulo 2: Hipóteses e Experimentos"
+    },
+    {
+      "id": 2,
+      "icon": "bolt",
+      "title": "Hipóteses e Experimentos",
+      "shortDescription": "Árvore de oportunidades, suposições arriscadas e testes baratos",
+      "introductionText": "Toda ideia de solução carrega suposições: que o cliente quer, que consegue usar, que dá para construir, que o negócio sustenta. Construir a solução inteira para descobrir qual suposição estava errada é o jeito mais caro de aprender. Neste módulo você organiza as ideias numa árvore que as liga ao resultado desejado, encontra as suposições mais arriscadas e desenha experimentos pequenos para testá-las. A construção de um MVP completo é assunto do programa MVP na Prática: Do Briefing à Validação com Baixo Custo; aqui o foco são testes de horas ou dias.",
+      "sections": [
+        {
+          "title": "🧪 Da ideia à evidência",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Montar a árvore de oportunidades",
+              "guidance": "No topo, coloque o resultado desejado (exemplo fictício: reduzir a taxa de faltas dos salões clientes de 18% para 10%). Abaixo, as oportunidades — necessidades e dores dos clientes que, se resolvidas, movem esse resultado. Abaixo de cada oportunidade, as soluções possíveis. Por último, os testes de suposição de cada solução. Desenhe pelo menos três soluções para a oportunidade escolhida.",
+              "tips": [
+                "Comparar três soluções para a mesma oportunidade evita se apaixonar pela primeira ideia. Uma ideia só não tem com o que ser comparada."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Listar as suposições",
+              "code": "Acreditamos que [quem] vai [comportamento] porque [motivo].",
+              "guidance": "Para a solução escolhida (lembrete automático com confirmação em um toque), escreva o que precisa ser verdade em cada um dos quatro riscos. Exemplo de valor: acreditamos que clientes do salão vão responder ao lembrete confirmando ou cancelando, porque hoje já respondem à mensagem manual da dona do salão.",
+              "tips": [
+                "Hipótese boa pode ser provada errada. Se nenhum resultado possível faria você mudar de ideia, ela não é hipótese, é convicção."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Priorizar o que testar",
+              "guidance": "Classifique cada suposição em dois eixos: o quanto ela é importante para a ideia funcionar e quanta evidência você já tem sobre ela. Comece pelas suposições muito importantes e com pouca evidência — são as que, se estiverem erradas, derrubam tudo e que você ainda não sabe responder.",
+              "tips": [
+                "Suposição importante com muita evidência não precisa de teste agora. Gastar experimento com ela é confirmar o que você já sabe."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Desenhar um experimento barato",
+              "guidance": "Escolha o teste mais simples que gera evidência sobre a suposição: um protótipo clicável mostrado a cinco donas de salão, uma página com botão de interesse para medir procura, ou o lembrete enviado manualmente por uma semana. Antes de rodar, escreva o critério de sucesso com número (exemplo: pelo menos 60% das clientes respondem ao lembrete).",
+              "tips": [
+                "Critério definido depois do resultado sempre parece ter sido atingido. Escreva o número antes e não mexa nele."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que testar suposições",
+      "highlights": [
+        {
+          "icon": "sitemap",
+          "title": "Tudo ligado ao resultado",
+          "text": "A árvore mostra por que cada solução existe. Quando um teste falha, você sabe se troca a solução, a oportunidade ou revê o resultado."
+        },
+        {
+          "icon": "gauge",
+          "title": "Custo proporcional",
+          "text": "Um protótipo testado em dois dias responde a mesma pergunta que um mês de desenvolvimento, por uma fração do custo."
+        },
+        {
+          "icon": "shield",
+          "title": "Decisão com critério",
+          "text": "Com o critério de sucesso escrito antes, o resultado do experimento decide. Sem ele, quem decide é a opinião mais forte da sala."
+        }
+      ],
+      "closingText": "Você tem uma solução com as suposições mais arriscadas testadas e evidência para seguir. Falta transformar isso em plano: o que vem agora, o que vem depois, e como colocar no ar sem apostar tudo de uma vez.",
+      "ctaTitle": "🧪 Evidência na mão!",
+      "ctaText": "Suposições testadas com critério. Vamos organizar o caminho até o lançamento.",
+      "nextButtonText": "Ir para Módulo 3: Do Roadmap ao Lançamento"
+    },
+    {
+      "id": 3,
+      "icon": "sitemap",
+      "title": "Do Roadmap ao Lançamento",
+      "shortDescription": "Roadmap por resultados, entrega incremental e lançamento com critério",
+      "introductionText": "O roadmap tradicional é uma lista de funcionalidades com datas, e ele promete exatamente o que a discovery ensinou a desconfiar: que sabemos o que vai funcionar antes de testar. Neste módulo você reorganiza o plano em torno de problemas e resultados, entrega em incrementos pequenos e prepara um lançamento com critério de sucesso e de reversão. A organização detalhada do backlog é tema do programa Gestão de Backlog: Priorização para Product Owners.",
+      "sections": [
+        {
+          "title": "🚀 Planejar, entregar e lançar",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Roadmap por resultados",
+              "code": "Agora | Próximo | Depois",
+              "guidance": "Monte o roadmap do Horário Certo em três colunas. Em cada coluna, escreva o problema a resolver e o resultado esperado, não a funcionalidade. Exemplo fictício para Agora: reduzir faltas sem trabalho manual da dona do salão. Quanto mais distante a coluna, menos detalhe — Depois é direção, não compromisso.",
+              "tips": [
+                "Datas firmes só em Agora, onde a incerteza já foi reduzida pela discovery. Prometer data para Depois é prometer uma solução que ainda não foi testada."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Entregar em incrementos",
+              "guidance": "Divida a primeira solução no menor pedaço que gera valor e aprendizado: por exemplo, só o lembrete com confirmação, sem reagendamento. Planeje a liberação gradual — primeiro para poucos salões, depois para todos —, com a funcionalidade controlada por uma chave que permita ligar e desligar sem nova versão.",
+              "tips": [
+                "Liberar para 5% dos usuários e algo dar errado é um incidente pequeno. Liberar para 100% e o mesmo erro acontecer é uma crise."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Plano de lançamento",
+              "guidance": "Escreva o plano em uma página: público inicial, como ele será avisado, o que o suporte precisa saber, que número indica sucesso, que número indica problema e o que fazer se ele aparecer (critério de reversão). Combine com quem atende os clientes antes de ligar a funcionalidade.",
+              "tips": [
+                "Lançamento sem critério de reversão vira discussão no pior momento. Decida antes, com calma, o que faz voltar atrás."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Aprender depois do lançamento",
+              "guidance": "Duas a quatro semanas depois, compare o resultado com o que estava no roadmap: a taxa de faltas caiu? Converse de novo com algumas donas de salão para entender o porquê dos números. Atualize a árvore de oportunidades com o que aprendeu e decida o próximo passo. A escolha e a leitura das métricas são aprofundadas no programa Métricas de Produto: North Star, OMTM e Retenção.",
+              "tips": [
+                "Lançar não encerra o trabalho, abre a fase em que você finalmente tem dados reais. Reserve tempo para olhar para eles."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que planejar por resultado",
+      "highlights": [
+        {
+          "icon": "globe",
+          "title": "Promessa honesta",
+          "text": "Um roadmap por problemas comunica direção sem prometer soluções não testadas. Ele muda quando o aprendizado muda, sem parecer atraso."
+        },
+        {
+          "icon": "tools",
+          "title": "Erro pequeno",
+          "text": "Entrega incremental e liberação gradual limitam quantas pessoas são afetadas quando algo sai diferente do esperado."
+        },
+        {
+          "icon": "folder",
+          "title": "Ciclo fechado",
+          "text": "Comparar o resultado com o plano e voltar à árvore transforma cada lançamento em insumo para a próxima decisão."
+        }
+      ],
+      "closingText": "Você percorreu o ciclo inteiro de um produto digital: do problema escrito sem solução à entrevista com clientes, da proposta de valor às hipóteses testadas, do roadmap por resultados ao lançamento com critério. Cada etapa foi praticada em pequena escala com o Horário Certo; os programas seguintes da trilha aprofundam backlog, MVP e métricas.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você conhece o ciclo de produto de ponta a ponta. O próximo passo natural é Gestão de Backlog: Priorização para Product Owners.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Qual é a principal diferença entre tratar um software como projeto e como produto?",
+      "explanation": "Um projeto termina quando o escopo é entregue no prazo. Um produto continua depois da entrega e se mede pelo resultado: se o cliente resolveu o problema e se o negócio ganhou com isso. Tamanho do time, linguagem de programação ou existência de aplicativo móvel não definem essa diferença.",
+      "options": [
+        {
+          "text": "Produto se mede pelo resultado contínuo, não só pela entrega no prazo",
+          "isCorrect": true
+        },
+        {
+          "text": "Produto sempre tem um aplicativo móvel e projeto não",
+          "isCorrect": false
+        },
+        {
+          "text": "Projeto é feito por times maiores que produto",
+          "isCorrect": false
+        },
+        {
+          "text": "Produto usa linguagens de programação mais modernas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Qual das frases é uma declaração de problema, e não uma solução disfarçada?",
+      "explanation": "A declaração de problema descreve quem sofre, em que situação e com que consequência, sem citar a solução. As outras três já trazem a resposta embutida (aplicativo, botão, notificação), o que fecha a porta para outras soluções antes mesmo de entender a dor.",
+      "options": [
+        {
+          "text": "Donas de salão perdem horários quando clientes faltam sem avisar, o que reduz o faturamento",
+          "isCorrect": true
+        },
+        {
+          "text": "Os salões precisam de um aplicativo de agendamento",
+          "isCorrect": false
+        },
+        {
+          "text": "Falta um botão de confirmar horário no site do salão",
+          "isCorrect": false
+        },
+        {
+          "text": "Os clientes querem receber notificações no celular",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "O risco de que o cliente não queira comprar ou usar a solução é chamado de:",
+      "explanation": "Risco de valor é a dúvida sobre se o cliente vai comprar ou escolher usar. Usabilidade trata de conseguir usar; viabilidade técnica, de o time conseguir construir; viabilidade de negócio, de a solução funcionar para custos, vendas, jurídico e demais áreas da empresa.",
+      "options": [
+        {
+          "text": "Risco de valor",
+          "isCorrect": true
+        },
+        {
+          "text": "Risco de usabilidade",
+          "isCorrect": false
+        },
+        {
+          "text": "Risco de viabilidade técnica",
+          "isCorrect": false
+        },
+        {
+          "text": "Risco de viabilidade de negócio",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Qual pergunta tende a produzir a evidência mais confiável em uma entrevista com cliente?",
+      "explanation": "Pedir o relato de um fato recente e específico traz comportamento real. Perguntar se a pessoa usaria ou pagaria convida a uma resposta educada sobre o futuro, e perguntas fechadas que sugerem a resposta induzem o entrevistado a concordar.",
+      "options": [
+        {
+          "text": "Me conte da última vez que uma cliente faltou ao horário",
+          "isCorrect": true
+        },
+        {
+          "text": "Você usaria um aplicativo que confirma horários?",
+          "isCorrect": false
+        },
+        {
+          "text": "Quanto você pagaria por esse aplicativo?",
+          "isCorrect": false
+        },
+        {
+          "text": "Você concorda que faltas são um grande problema?",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "No canvas de proposta de valor, o perfil do cliente é formado por:",
+      "explanation": "O perfil do cliente descreve as tarefas que ele tenta realizar, as dores que encontra e os ganhos que deseja. O mapa de valor, do outro lado, descreve o que o produto oferece, as dores que alivia e os ganhos que cria. Preço, canais e concorrentes não fazem parte do perfil.",
+      "options": [
+        {
+          "text": "Tarefas, dores e ganhos",
+          "isCorrect": true
+        },
+        {
+          "text": "Preço, canais e concorrentes",
+          "isCorrect": false
+        },
+        {
+          "text": "Funcionalidades, telas e integrações",
+          "isCorrect": false
+        },
+        {
+          "text": "Idade, renda e localização apenas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Ao sintetizar entrevistas, o que tem mais peso como evidência?",
+      "explanation": "O que a pessoa efetivamente fez — por exemplo, mandar mensagem a cada cliente na véspera — é evidência de comportamento. Sentimentos genéricos, elogios à ideia e sugestões de funcionalidade são úteis como pista, mas não substituem o relato do que aconteceu.",
+      "options": [
+        {
+          "text": "O que a pessoa fez de fato na situação relatada",
+          "isCorrect": true
+        },
+        {
+          "text": "O quanto a pessoa elogiou a ideia apresentada",
+          "isCorrect": false
+        },
+        {
+          "text": "As funcionalidades que a pessoa sugeriu",
+          "isCorrect": false
+        },
+        {
+          "text": "A nota de 0 a 10 que a pessoa deu à ideia",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Na árvore de oportunidades, o que fica no topo?",
+      "explanation": "O topo da árvore é o resultado desejado, a necessidade de negócio que o time quer mover. Abaixo vêm as oportunidades (necessidades e dores dos clientes), depois as soluções e, por fim, os testes de suposição de cada solução.",
+      "options": [
+        {
+          "text": "O resultado desejado",
+          "isCorrect": true
+        },
+        {
+          "text": "A solução preferida pelo time",
+          "isCorrect": false
+        },
+        {
+          "text": "A lista de funcionalidades do trimestre",
+          "isCorrect": false
+        },
+        {
+          "text": "Os testes de suposição",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Quais suposições devem ser testadas primeiro?",
+      "explanation": "Suposições muito importantes e com pouca evidência são as que podem derrubar a ideia e que o time ainda não sabe responder. Testar as que já têm muita evidência é confirmar o que se sabe; as pouco importantes não mudam a decisão mesmo se estiverem erradas.",
+      "options": [
+        {
+          "text": "As muito importantes para a ideia e com pouca evidência",
+          "isCorrect": true
+        },
+        {
+          "text": "As muito importantes e com bastante evidência",
+          "isCorrect": false
+        },
+        {
+          "text": "As pouco importantes, por serem mais rápidas",
+          "isCorrect": false
+        },
+        {
+          "text": "Todas ao mesmo tempo, antes de qualquer decisão",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Por que o critério de sucesso de um experimento deve ser definido antes de rodá-lo?",
+      "explanation": "Definido depois, o critério tende a ser ajustado ao resultado obtido, e qualquer número parece um sucesso. Escrito antes, é o resultado que decide. Não há exigência legal envolvida, nem relação com a velocidade do teste ou com a quantidade de participantes.",
+      "options": [
+        {
+          "text": "Para que o resultado decida, e não a interpretação feita depois",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque é uma exigência legal para testes com clientes",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque acelera a execução do experimento",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque permite testar com menos participantes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "O que caracteriza um roadmap orientado a resultados?",
+      "explanation": "Um roadmap por resultados organiza o plano em torno dos problemas a resolver e dos resultados esperados, com mais detalhe no curto prazo e menos no longo. Lista de funcionalidades com datas fixas, ordem alfabética ou previsão de entrega por desenvolvedor descrevem outro tipo de plano.",
+      "options": [
+        {
+          "text": "Organiza o plano por problemas e resultados esperados, não por funcionalidades",
+          "isCorrect": true
+        },
+        {
+          "text": "Lista todas as funcionalidades com datas fixas para o ano",
+          "isCorrect": false
+        },
+        {
+          "text": "Ordena as funcionalidades por ordem alfabética",
+          "isCorrect": false
+        },
+        {
+          "text": "Mostra quanto tempo cada desenvolvedor vai levar em cada tarefa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Qual é a principal vantagem de liberar uma funcionalidade de forma gradual?",
+      "explanation": "Liberar primeiro para uma parcela pequena dos usuários limita o impacto de um erro e permite aprender antes de expor todos. Não elimina a necessidade de testes, não reduz o custo de desenvolvimento por si só e não tem relação com o tamanho do aplicativo.",
+      "options": [
+        {
+          "text": "Limitar quantas pessoas são afetadas se algo der errado",
+          "isCorrect": true
+        },
+        {
+          "text": "Dispensar os testes antes de colocar no ar",
+          "isCorrect": false
+        },
+        {
+          "text": "Reduzir automaticamente o custo de desenvolvimento",
+          "isCorrect": false
+        },
+        {
+          "text": "Diminuir o tamanho do aplicativo instalado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Segundo o relatório de adoção de funcionalidades da Pendo de 2019, que parcela das funcionalidades de um software típico é raramente ou nunca usada?",
+      "explanation": "O relatório, baseado em dados de 615 assinaturas, indicou que 80% das funcionalidades do software médio são raramente ou nunca usadas. É o argumento central para descobrir antes de entregar e medir depois de lançar: construir não garante uso.",
+      "options": [
+        {
+          "text": "80%",
+          "isCorrect": true
+        },
+        {
+          "text": "10%",
+          "isCorrect": false
+        },
+        {
+          "text": "35%",
+          "isCorrect": false
+        },
+        {
+          "text": "Menos de 5%",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "Um dossiê de produto completo para o Horário Certo, um aplicativo fictício de agendamento para salões de bairro: declaração de problema, roteiro e síntese de entrevistas, canvas de proposta de valor, árvore de oportunidades, cartões de hipótese com experimentos e critérios de sucesso, roadmap Agora / Próximo / Depois e plano de lançamento com critério de reversão. Nenhuma linha de código é necessária — o foco é a decisão sobre o que construir e por quê.",
+    "highlights": [
+      "Declaração de problema e síntese de entrevistas",
+      "Canvas de proposta de valor e árvore de oportunidades",
+      "Hipóteses testáveis, roadmap por resultados e plano de lançamento"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "Construir não garante uso. O relatório de adoção de funcionalidades da Pendo de 2019, com dados de 615 assinaturas, indicou que 80% das funcionalidades do software médio são raramente ou nunca usadas. Em uma análise clássica da CB Insights com 101 relatos de startups que fecharam, a falta de necessidade de mercado foi o motivo mais citado, por 42% delas.",
+      "Os dois números contam a mesma história: o erro mais caro em produto digital não é técnico, é construir a coisa errada. Ferramentas que aceleram o desenvolvimento tornam esse risco maior, não menor — fica mais fácil entregar muito, e por isso mais importante saber o que vale a pena entregar. Discovery, hipóteses e roadmap por resultados são a resposta prática a esse problema."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Startups e novos produtos",
+        "description": "Decidir o que construir com pouco dinheiro e pouco tempo, antes que a verba acabe."
+      },
+      {
+        "label": "Times de produto em empresas",
+        "description": "Evoluir um produto existente com base em evidência, não na lista de pedidos mais barulhenta."
+      },
+      {
+        "label": "Transformação digital",
+        "description": "Áreas que deixam de entregar projetos com data e passam a manter produtos que precisam gerar resultado."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem quer entrar em produto",
+        "description": "Vem de desenvolvimento, design, análise ou negócio e quer entender o trabalho de produto de ponta a ponta."
+      },
+      {
+        "label": "Quem empreende",
+        "description": "Tem uma ideia de produto digital e quer testá-la antes de investir em desenvolvimento."
+      },
+      {
+        "label": "Quem já está em um time",
+        "description": "Recebe pedidos de funcionalidade e quer trocar a lista de entregas por resultados mensuráveis."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Discovery contínua, proposta de valor e roadmap por resultados são práticas de times de produto em empresas de tecnologia de todos os tamanhos, de startups em fase inicial a bancos, varejistas e órgãos públicos com produtos digitais. O vocabulário — riscos de valor e usabilidade, árvore de oportunidades, canvas de proposta de valor — é comum em vagas de product manager, product owner e product designer.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "SVPG (Marty Cagan) — The Four Big Risks",
+      "url": "https://svpg.com/four-big-risks/"
+    },
+    {
+      "label": "Product Talk (Teresa Torres) — Opportunity Solution Tree",
+      "url": "https://www.producttalk.org/glossary-discovery-opportunity-solution-tree/"
+    },
+    {
+      "label": "Product Talk (Teresa Torres) — Continuous Discovery",
+      "url": "https://www.producttalk.org/glossary-discovery-continuous-discovery/"
+    },
+    {
+      "label": "Strategyzer — Value Proposition Canvas",
+      "url": "https://www.strategyzer.com/canvas/value-proposition-canvas"
+    },
+    {
+      "label": "Pendo — The 2019 Feature Adoption Report",
+      "url": "https://www.pendo.io/resources/the-2019-feature-adoption-report/"
+    },
+    {
+      "label": "Fortune — Why startups fail, according to their founders (análise da CB Insights)",
+      "url": "https://fortune.com/2014/09/25/why-startups-fail-according-to-their-founders/amp"
+    }
+  ]
 }

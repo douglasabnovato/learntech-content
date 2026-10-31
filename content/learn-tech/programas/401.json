@@ -3,8 +3,798 @@
   "image": "https://cdn.pixabay.com/photo/2016/02/18/19/25/pc-1207886_640.jpg",
   "category": "Data Base",
   "categoryFilter": "data-base",
-  "title": "Banco de Dados na prática: SQL, NoSQL e modelagem para aplicações reais",
-  "lessons": "12+ Lições",
-  "duration": "10hr 30min",
-  "access": "Acesso Livre"
+  "title": "Banco de Dados na Prática: Modelagem, SQL e Quando Usar NoSQL",
+  "lessons": "16 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Iniciante",
+  "description": "A porta de entrada da trilha de banco de dados. Você parte de um problema descrito em palavras, desenha o modelo, transforma o desenho em tabelas normalizadas, escreve o SQL que cria e consulta essas tabelas e termina sabendo quando um banco NoSQL faz mais sentido do que um relacional — e quando não faz.",
+  "letslearn": [
+    "Identificar entidades, atributos e relacionamentos a partir de uma descrição de negócio",
+    "Ler e definir cardinalidade (1:1, 1:N, N:N) e resolver o N:N com tabela associativa",
+    "Normalizar tabelas até a terceira forma normal (3FN) e reconhecer a redundância que ela evita",
+    "Escrever DDL e DML básicos e consultas com WHERE, JOIN, GROUP BY e HAVING",
+    "Comparar os tipos de banco NoSQL e escolher o modelo de dados pelo padrão de acesso"
+  ],
+  "curriculum": "Da descrição do negócio à consulta SQL",
+  "about": "O programa segue a ordem em que um banco de dados é construído de verdade: primeiro se entende o que precisa ser guardado, depois se decide como guardar e só então se escreve código. Todo o trabalho gira em torno de um único caso fictício — a oficina de bicicletas Pedal Firme, com clientes, bicicletas, ordens de serviço e peças —, que começa como um parágrafo de texto, vira diagrama, vira tabelas e termina respondendo perguntas em SQL. O último módulo coloca o mesmo caso ao lado de um modelo em documento para mostrar, com o dado na mão, o que muda ao sair do relacional. Os exemplos usam PostgreSQL, mas o SQL ensinado é o padrão que funciona, com pequenas diferenças, em MySQL, SQLite e SQL Server.",
+  "materials": [
+    "Descrição do caso da oficina Pedal Firme, com dados fictícios",
+    "Script SQL de criação e carga das tabelas, por módulo",
+    "Checklist de normalização (1FN, 2FN, 3FN)",
+    "Folha de consulta rápida de SQL: DDL, DML, JOIN e agregação"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Modelagem Conceitual: Entidades e Relacionamentos",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Modelo Lógico e Normalização",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "SQL Básico: Criar, Alterar e Consultar",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "NoSQL e a Escolha do Banco",
+      "lessonsCount": 3,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Data Base",
+    "mainTitle": "Antes de escrever SQL, decida o que guardar: do problema ao modelo, do modelo à consulta.",
+    "introductionParagraphs": [
+      {
+        "title": "Por que começar pelo modelo",
+        "text": "Quase todo problema de banco de dados que aparece em produção nasceu antes da primeira linha de SQL: um dado guardado em dois lugares, uma tabela que mistura dois assuntos, um relacionamento que ninguém percebeu que era **muitos-para-muitos**. A **modelagem** é o momento barato de errar — apagar uma linha num diagrama custa segundos; migrar uma tabela com dados reais custa dias."
+      },
+      {
+        "title": "SQL é uma linguagem de perguntas",
+        "text": "Com o modelo pronto, o **SQL** deixa de ser uma coleção de comandos decorados e vira o que ele é: uma forma de descrever o resultado que você quer. Você diz quais dados, de quais tabelas, com qual filtro e agrupados como — e o banco decide como buscar. Entender isso é o que permite escrever consultas novas em vez de copiar as antigas."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não trata de desempenho, índices avançados nem administração de servidor — isso é assunto de **PostgreSQL Avançado: Queries Complexas e Performance**. Também não aprofunda um banco NoSQL específico; o CRUD em documento fica para **MongoDB: Do Zero ao CRUD em Aplicações NoSQL**. Aqui o objetivo é a base que torna esses dois programas compreensíveis."
+      }
+    ],
+    "courseAboutTitle": "A base de qualquer aplicação que guarda dados",
+    "courseAboutDescription": "Toda aplicação que lembra de alguma coisa — um cadastro, um pedido, um histórico — depende de um banco de dados bem desenhado. Este programa ensina o raciocínio que vem antes da ferramenta: separar assuntos, ligar o que se relaciona e perguntar ao banco exatamente o que se precisa. É conhecimento que não envelhece com a troca de framework e que aparece em entrevista técnica de quase toda vaga de desenvolvimento ou dados.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Modelagem Conceitual: Entidades e Relacionamentos",
+        "items": [
+          {
+            "label": "Entidades e atributos",
+            "description": "Encontrar no texto do negócio o que precisa virar registro e o que o descreve."
+          },
+          {
+            "label": "Cardinalidade",
+            "description": "Quantos de um lado se ligam a quantos do outro, e por que isso decide a estrutura."
+          },
+          {
+            "label": "Diagrama ER no brModelo",
+            "description": "Desenhar o modelo conceitual numa ferramenta gratuita, direto no navegador."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Modelo Lógico e Normalização",
+        "items": [
+          {
+            "label": "Chaves primária e estrangeira",
+            "description": "Como cada linha é identificada e como uma tabela aponta para outra."
+          },
+          {
+            "label": "Tabela associativa",
+            "description": "A forma de representar um relacionamento muitos-para-muitos em tabelas."
+          },
+          {
+            "label": "1FN, 2FN e 3FN",
+            "description": "As três regras que eliminam repetição e dependência no lugar errado."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: SQL Básico: Criar, Alterar e Consultar",
+        "items": [
+          {
+            "label": "DDL com restrições",
+            "description": "CREATE TABLE com chave, NOT NULL, UNIQUE, CHECK e FOREIGN KEY."
+          },
+          {
+            "label": "DML com segurança",
+            "description": "INSERT, UPDATE e DELETE — e o WHERE que impede de alterar a tabela inteira."
+          },
+          {
+            "label": "JOIN e agregação",
+            "description": "Juntar tabelas, contar, somar e filtrar grupos com GROUP BY e HAVING."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: NoSQL e a Escolha do Banco",
+        "items": [
+          {
+            "label": "Os quatro tipos de NoSQL",
+            "description": "Documento, chave-valor, colunar e grafo: o que cada um guarda bem."
+          },
+          {
+            "label": "O mesmo dado em dois modelos",
+            "description": "A ordem de serviço em tabelas e em documento, lado a lado."
+          },
+          {
+            "label": "Critérios de escolha",
+            "description": "Decidir pelo padrão de acesso e pela consistência exigida, não pela moda."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos aplicados ao caso da oficina. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "sitemap",
+      "title": "Modelagem Conceitual: Entidades e Relacionamentos",
+      "shortDescription": "Do parágrafo de texto ao diagrama entidade-relacionamento",
+      "introductionText": "O ponto de partida é uma descrição em linguagem comum: \"A oficina Pedal Firme atende clientes que trazem uma ou mais bicicletas. Cada vez que uma bicicleta entra, abre-se uma ordem de serviço com data de entrada, problema relatado e valor da mão de obra. Uma ordem pode usar várias peças do estoque, e a mesma peça aparece em muitas ordens.\" Neste módulo você transforma esse texto em um modelo conceitual — um desenho que mostra o que precisa ser guardado e como as coisas se ligam, sem ainda pensar em tabela, tipo de dado ou banco específico.",
+      "sections": [
+        {
+          "title": "🧩 Lendo o negócio como um modelo",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Encontrar as entidades",
+              "guidance": "Sublinhe os substantivos da descrição e pergunte, para cada um: o sistema precisa guardar várias ocorrências disso, cada uma com dados próprios? Se sim, é candidato a entidade. No caso da oficina saem quatro: Cliente, Bicicleta, Ordem de Serviço e Peça. \"Oficina\" não entra — existe uma só, e ela é o próprio sistema.",
+              "tips": [
+                "Substantivo que só descreve outro (como \"data de entrada\" ou \"problema relatado\") não é entidade: é atributo da entidade que ele descreve."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Atributos e identificador",
+              "code": "Cliente(id, nome, telefone, email)",
+              "guidance": "Liste o que se precisa saber de cada entidade e escolha o atributo que identifica uma ocorrência sem ambiguidade. Nome não serve: dois clientes podem se chamar igual. Por isso a maioria dos modelos usa um código numérico gerado pelo sistema como identificador.",
+              "tips": [
+                "Atributo que pode ter vários valores para a mesma ocorrência — como vários telefones — é sinal de que ali existe outra entidade ou uma lista que precisará de tabela própria."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Relacionamentos e cardinalidade",
+              "code": "Cliente 1 — N Bicicleta",
+              "guidance": "Para cada par de entidades que se ligam, faça a pergunta nos dois sentidos. Um cliente pode ter quantas bicicletas? Várias. Uma bicicleta pertence a quantos clientes? Um. Logo, 1:N. Uma ordem usa quantas peças? Várias. Uma peça aparece em quantas ordens? Várias. Logo, N:N. Anote também se a participação é obrigatória: pode existir cliente sem bicicleta cadastrada?",
+              "tips": [
+                "A cardinalidade sai das regras do negócio, não do bom senso. Se a oficina decidir que uma bicicleta pode ter dois donos, o modelo muda — por isso vale confirmar com quem conhece o negócio."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Desenhar o DER no brModelo",
+              "guidance": "Abra o brModelo Web no navegador e monte o diagrama conceitual: retângulos para entidades, losangos para relacionamentos, círculos para atributos e as cardinalidades anotadas nas linhas. Repare que o relacionamento entre Ordem de Serviço e Peça tem um atributo próprio — a quantidade usada —, que não pertence nem à ordem nem à peça.",
+              "tips": [
+                "Quando um relacionamento tem atributo próprio, ele quase sempre vai virar tabela no modelo lógico. Guarde essa observação para o próximo módulo."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que modelar antes de codificar",
+      "highlights": [
+        {
+          "icon": "sitemap",
+          "title": "Erro barato",
+          "text": "Corrigir uma cardinalidade no diagrama leva segundos. Corrigir a mesma decisão depois que a tabela tem milhares de linhas exige migração e teste."
+        },
+        {
+          "icon": "list",
+          "title": "Linguagem comum",
+          "text": "O diagrama conceitual pode ser lido por quem conhece o negócio e não sabe SQL. É ali que se descobre a regra que ninguém tinha mencionado."
+        },
+        {
+          "icon": "search",
+          "title": "Independente da ferramenta",
+          "text": "O modelo conceitual não diz se o banco é PostgreSQL, MySQL ou outro. A decisão técnica vem depois, apoiada num entendimento já validado."
+        }
+      ],
+      "closingText": "Você tem um diagrama que descreve o que a oficina precisa guardar e como as coisas se relacionam. Ele ainda não é um banco de dados: não diz como cada relacionamento vira coluna nem evita que o mesmo dado se repita. É disso que trata o modelo lógico.",
+      "ctaTitle": "🧩 Modelo conceitual pronto!",
+      "ctaText": "As entidades e os relacionamentos da oficina estão no papel. Agora vamos transformá-los em tabelas que não repetem dados.",
+      "nextButtonText": "Ir para Módulo 1: Modelo Lógico e Normalização"
+    },
+    {
+      "id": 1,
+      "icon": "grid",
+      "title": "Modelo Lógico e Normalização",
+      "shortDescription": "Tabelas, chaves e as três primeiras formas normais",
+      "introductionText": "O modelo lógico traduz o diagrama para a estrutura do banco relacional: tabelas com colunas, cada linha identificada por uma chave primária, e tabelas que se referem umas às outras por chaves estrangeiras. Junto com essa tradução vem a normalização, um conjunto de regras que verifica se cada dado está guardado em um lugar só. Normalizar não é burocracia acadêmica: é o que impede que o telefone de um cliente esteja certo numa linha e errado em outra.",
+      "sections": [
+        {
+          "title": "🗂️ Do diagrama às tabelas",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Entidade vira tabela, 1:N vira chave estrangeira",
+              "code": "bicicleta(id, cliente_id, marca, modelo, cor)",
+              "guidance": "Cada entidade vira uma tabela, e o identificador vira a chave primária. No relacionamento 1:N, a chave do lado 1 é copiada para a tabela do lado N como chave estrangeira: a bicicleta guarda o id do seu cliente, e não o contrário. Faça o mesmo entre Bicicleta e Ordem de Serviço.",
+              "tips": [
+                "Pense de onde a seta parte: quem é \"muitos\" carrega a referência. Um cliente não tem espaço para guardar uma lista de bicicletas numa coluna só."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "N:N vira tabela associativa",
+              "code": "item_os(ordem_id, peca_id, quantidade)",
+              "guidance": "Um relacionamento muitos-para-muitos não cabe em chave estrangeira de nenhum dos dois lados. Crie uma terceira tabela com as chaves das duas entidades e os atributos do próprio relacionamento — aqui, a quantidade. A chave primária dessa tabela é a combinação ordem_id + peca_id.",
+              "tips": [
+                "Guarde também o preço unitário cobrado na tabela associativa. O preço da peça no estoque muda com o tempo; o valor cobrado naquela ordem, não."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Primeira forma normal (1FN)",
+              "guidance": "Uma tabela está em 1FN quando cada coluna guarda um único valor atômico e não há grupos repetidos. Uma coluna pecas com o texto \"corrente, câmara, pastilha\" viola a 1FN: não dá para somar, filtrar nem garantir que a peça existe. A correção é exatamente a tabela associativa do passo anterior.",
+              "tips": [
+                "Colunas numeradas como telefone1, telefone2, telefone3 também são grupo repetido disfarçado. Se a quantidade pode variar, o lugar é uma tabela própria."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Segunda e terceira formas normais (2FN e 3FN)",
+              "guidance": "Na 2FN, nenhuma coluna pode depender só de parte de uma chave composta: em item_os, o nome da peça depende apenas de peca_id, então não deve estar ali — fica em peca. Na 3FN, nenhuma coluna pode depender de outra coluna que não é chave: se a tabela ordem_servico guardar o nome do cliente, esse nome é determinado por bicicleta_id (via dono da bicicleta), e não pela chave da ordem. Remova e busque por JOIN quando precisar.",
+              "tips": [
+                "Pergunta de verificação para a 3FN: se este valor mudar, em quantas linhas eu precisaria atualizar? Se a resposta for mais de uma, ele está no lugar errado.",
+                "Tabela com chave primária de uma coluna só já está automaticamente em 2FN quando está em 1FN; a 2FN só tem o que verificar em chave composta."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que normalizar",
+      "highlights": [
+        {
+          "icon": "shield",
+          "title": "Um dado, um lugar",
+          "text": "Com o telefone do cliente numa única linha, atualizar uma vez basta. Some o caso em que duas telas mostram números diferentes para a mesma pessoa."
+        },
+        {
+          "icon": "sync",
+          "title": "Sem anomalias",
+          "text": "Normalizar evita as três anomalias clássicas: não conseguir cadastrar uma peça sem ordem, perder a peça ao apagar a ordem e atualizar em um lugar e esquecer de outro."
+        },
+        {
+          "icon": "grid",
+          "title": "Consultas que fazem sentido",
+          "text": "Com cada assunto na sua tabela, somar, contar e filtrar vira uma consulta direta, em vez de um trabalho de quebrar texto dentro de uma coluna."
+        }
+      ],
+      "closingText": "O modelo lógico da oficina tem cinco tabelas — cliente, bicicleta, ordem_servico, peca e item_os —, todas em 3FN, com chaves que amarram os relacionamentos. Falta transformar esse desenho em comandos que o banco executa e começar a fazer perguntas aos dados.",
+      "ctaTitle": "🗂️ Tabelas normalizadas!",
+      "ctaText": "Cada dado da oficina tem um lugar só. Agora vamos criar essas tabelas de verdade e consultá-las com SQL.",
+      "nextButtonText": "Ir para Módulo 2: SQL Básico: Criar, Alterar e Consultar"
+    },
+    {
+      "id": 2,
+      "icon": "laptop",
+      "title": "SQL Básico: Criar, Alterar e Consultar",
+      "shortDescription": "DDL, DML, SELECT com JOIN e agregação com GROUP BY",
+      "introductionText": "SQL tem dois grandes grupos de comandos. A DDL (Data Definition Language) define a estrutura: criar, alterar e remover tabelas. A DML (Data Manipulation Language) mexe nos dados: inserir, atualizar, apagar e consultar. Neste módulo você cria o banco da oficina no PostgreSQL, carrega dados fictícios e escreve as consultas que o dono da oficina faria: quais ordens estão abertas, quanto cada cliente já gastou, quais peças mais saem.",
+      "sections": [
+        {
+          "title": "🛠️ Do modelo ao banco funcionando",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "CREATE TABLE com restrições",
+              "code": "id integer GENERATED ALWAYS AS IDENTITY PRIMARY KEY",
+              "guidance": "Crie as tabelas na ordem das dependências: primeiro cliente e peca, depois bicicleta, ordem_servico e item_os. Use NOT NULL nas colunas obrigatórias, UNIQUE no e-mail do cliente, CHECK (quantidade > 0) no item e REFERENCES para cada chave estrangeira. As restrições são regras do negócio que o próprio banco passa a garantir, mesmo que a aplicação tenha um bug.",
+              "tips": [
+                "Em uma chave estrangeira sem cláusula ON DELETE, o padrão no PostgreSQL é NO ACTION: o banco recusa apagar um cliente que ainda tem bicicletas. Na maioria dos casos é exatamente o que você quer.",
+                "Use numeric(10,2) para valores em dinheiro. Tipos de ponto flutuante como real acumulam erro de arredondamento."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "INSERT, UPDATE e DELETE",
+              "code": "UPDATE ordem_servico SET status = 'concluida' WHERE id = 7;",
+              "guidance": "Insira alguns clientes, bicicletas, peças e ordens fictícios. Depois feche uma ordem com UPDATE e remova um item lançado por engano com DELETE. Tente apagar uma peça usada em alguma ordem e leia a mensagem de erro: é a chave estrangeira protegendo o histórico.",
+              "tips": [
+                "UPDATE ou DELETE sem WHERE altera a tabela inteira. Antes de executar, rode um SELECT com o mesmo WHERE para ver quais linhas serão atingidas.",
+                "Em testes, envolva a alteração em BEGIN e ROLLBACK: você vê o efeito e desfaz tudo antes de confirmar."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "SELECT com filtro e ordenação",
+              "code": "SELECT id, data_entrada FROM ordem_servico WHERE status = 'aberta' ORDER BY data_entrada;",
+              "guidance": "Liste as ordens abertas da mais antiga para a mais nova. Experimente combinar condições com AND e OR, buscar por trecho de texto com LIKE e limitar o resultado com LIMIT. Escolha as colunas pelo nome em vez de usar asterisco.",
+              "tips": [
+                "Para testar ausência de valor use IS NULL. A comparação = NULL nunca é verdadeira, porque NULL significa \"desconhecido\", não \"vazio\"."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "JOIN: juntando tabelas",
+              "code": "FROM bicicleta b JOIN cliente c ON c.id = b.cliente_id",
+              "guidance": "Mostre cada ordem de serviço com o modelo da bicicleta e o nome do cliente juntando três tabelas pelas chaves. O INNER JOIN (ou só JOIN) traz apenas as linhas que têm par dos dois lados. Depois use LEFT JOIN de cliente para bicicleta para listar também os clientes que ainda não têm bicicleta cadastrada.",
+              "tips": [
+                "Se o resultado de um JOIN tiver muito mais linhas do que o esperado, confira a condição do ON: faltou ligar alguma coluna e o banco combinou linhas que não deviam se encontrar."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "GROUP BY e HAVING",
+              "code": "GROUP BY p.nome HAVING SUM(i.quantidade) >= 5",
+              "guidance": "Calcule quantas peças de cada tipo saíram no mês com SUM e GROUP BY, e o total gasto por cliente juntando ordens e itens. Use HAVING para mostrar só os grupos que passam de um limite. Lembre a diferença: WHERE filtra as linhas antes de agrupar; HAVING filtra os grupos depois de calculados.",
+              "tips": [
+                "Toda coluna do SELECT que não está dentro de uma função de agregação precisa aparecer no GROUP BY. Se o banco reclamar, é isso que está faltando.",
+                "COUNT(*) conta linhas; COUNT(coluna) ignora as linhas em que a coluna é NULL. A diferença aparece justamente depois de um LEFT JOIN."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que SQL continua central",
+      "highlights": [
+        {
+          "icon": "tools",
+          "title": "Regras no lugar certo",
+          "text": "NOT NULL, UNIQUE, CHECK e FOREIGN KEY valem para qualquer aplicação que acesse o banco. A regra não depende de cada tela lembrar de validar."
+        },
+        {
+          "icon": "bolt",
+          "title": "Declarativo",
+          "text": "Você descreve o resultado e o banco escolhe como buscar. A mesma consulta continua correta quando a tabela passa de cem para um milhão de linhas."
+        },
+        {
+          "icon": "globe",
+          "title": "Padrão que viaja",
+          "text": "SELECT, JOIN e GROUP BY funcionam praticamente iguais em PostgreSQL, MySQL, SQLite e SQL Server. O que você aprende aqui não fica preso a um fornecedor."
+        }
+      ],
+      "closingText": "O banco da oficina existe, guarda dados com regras garantidas pelo próprio banco e responde perguntas reais do negócio. Antes de fechar a trilha de fundamentos, falta olhar para fora do modelo relacional e entender quando outra forma de guardar dados resolve melhor.",
+      "ctaTitle": "🛠️ Banco de pé e respondendo!",
+      "ctaText": "Você criou, carregou e consultou o banco da oficina. Agora vamos ver o mesmo caso pelo ponto de vista do NoSQL.",
+      "nextButtonText": "Ir para Módulo 3: NoSQL e a Escolha do Banco"
+    },
+    {
+      "id": 3,
+      "icon": "search",
+      "title": "NoSQL e a Escolha do Banco",
+      "shortDescription": "Tipos de NoSQL, o mesmo dado em documento e critérios de decisão",
+      "introductionText": "NoSQL é um nome guarda-chuva para bancos que não organizam os dados em tabelas relacionais. Eles não surgiram para substituir o SQL, e sim para resolver casos em que o modelo relacional fica caro: estrutura que varia muito de um registro para outro, volume de leitura e escrita distribuído em muitas máquinas, dados que são essencialmente uma rede de ligações. Este módulo mostra os principais tipos, coloca a oficina num modelo de documento e termina com critérios para escolher — que é a habilidade que realmente importa.",
+      "sections": [
+        {
+          "title": "🌐 Além das tabelas",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Os quatro tipos de NoSQL",
+              "guidance": "Conheça o que cada família guarda bem. Documento (como MongoDB): registros em formato parecido com JSON, cada um com sua própria estrutura. Chave-valor (como Redis): um valor buscado por uma chave, muito rápido, usado para cache e sessão. Colunar de famílias de colunas (como Cassandra): grandes volumes de escrita distribuídos em muitos servidores. Grafo (como Neo4j): nós e arestas, para dados em que as ligações são o assunto principal.",
+              "tips": [
+                "Muitos sistemas usam mais de um: PostgreSQL para o cadastro e os pedidos, Redis para o cache de sessão. Escolher banco não é escolher um só."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "A mesma ordem de serviço em documento",
+              "code": "{ \"bicicleta\": {...}, \"itens\": [ {\"peca\": \"Corrente 9v\", \"qtd\": 1} ] }",
+              "guidance": "Escreva uma ordem de serviço como um único documento, com os dados da bicicleta e a lista de itens embutidos. Compare com as cinco tabelas do módulo anterior: ler uma ordem inteira ficou mais simples, mas responder \"quantas correntes saíram no mês\" exige percorrer todos os documentos, e mudar o nome de uma peça exige atualizar cada ordem que a contém.",
+              "tips": [
+                "Em documento, o modelo se desenha a partir das telas e consultas mais frequentes, não das entidades. É a mesma pergunta de modelagem, feita a partir de outro ponto."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Critérios para escolher",
+              "guidance": "Monte uma tabela de decisão com quatro perguntas. Os dados têm relacionamentos fortes e precisam de consistência em cada transação (dinheiro, estoque)? Relacional. A estrutura varia muito entre registros e costuma ser lida inteira de uma vez? Documento. A necessidade é guardar algo temporário e buscar por uma chave em microssegundos? Chave-valor. A pergunta principal é sobre caminhos entre itens? Grafo. Aplique as quatro à oficina e justifique a escolha.",
+              "tips": [
+                "Na dúvida, comece pelo relacional. O PostgreSQL também guarda JSON com o tipo jsonb, o que cobre muitos casos de estrutura flexível sem trocar de banco."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que saber escolher importa",
+      "highlights": [
+        {
+          "icon": "gauge",
+          "title": "Custo da troca",
+          "text": "Mudar de banco depois que a aplicação está em uso significa migrar dados e reescrever consultas. A escolha certa no início economiza meses."
+        },
+        {
+          "icon": "folder",
+          "title": "Modelo segue o acesso",
+          "text": "Relacional modela pelas entidades; documento modela pelas consultas. Saber os dois deixa você reconhecer qual descrição o problema pede."
+        },
+        {
+          "icon": "shield",
+          "title": "Consistência tem preço",
+          "text": "Transações e chaves estrangeiras protegem dados críticos. Abrir mão delas só faz sentido quando o ganho em flexibilidade ou escala é real."
+        }
+      ],
+      "closingText": "Você saiu de um parágrafo de texto e chegou a um banco relacional normalizado, consultado em SQL, e sabe explicar por que ele foi a escolha certa para a oficina — ou quando não seria. Essa é a base sobre a qual se constroem consultas complexas, desempenho e proteção de dados.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você modela, normaliza, escreve SQL e escolhe o banco com critério. Os próximos passos da trilha são PostgreSQL Avançado: Queries Complexas e Performance e MongoDB: Do Zero ao CRUD em Aplicações NoSQL.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Na descrição de uma oficina, qual item é um atributo, e não uma entidade?",
+      "explanation": "Data de entrada descreve uma ordem de serviço: não tem dados próprios nem existe sozinha, por isso é atributo. Cliente, Peça e Bicicleta são coisas das quais o sistema guarda várias ocorrências, cada uma com seus próprios dados — são entidades.",
+      "options": [
+        {
+          "text": "Data de entrada",
+          "isCorrect": true
+        },
+        {
+          "text": "Cliente",
+          "isCorrect": false
+        },
+        {
+          "text": "Peça",
+          "isCorrect": false
+        },
+        {
+          "text": "Bicicleta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Uma ordem de serviço usa várias peças, e a mesma peça aparece em várias ordens. Qual é a cardinalidade?",
+      "explanation": "A pergunta feita nos dois sentidos dá \"várias\" dos dois lados, o que caracteriza um relacionamento muitos-para-muitos (N:N). 1:N valeria se cada peça pudesse estar em uma única ordem; 1:1 exigiria uma de cada lado.",
+      "options": [
+        {
+          "text": "N:N (muitos-para-muitos)",
+          "isCorrect": true
+        },
+        {
+          "text": "1:N (um-para-muitos)",
+          "isCorrect": false
+        },
+        {
+          "text": "1:1 (um-para-um)",
+          "isCorrect": false
+        },
+        {
+          "text": "Não há relacionamento entre as duas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Por que o nome do cliente é uma escolha ruim de identificador?",
+      "explanation": "O identificador precisa distinguir uma ocorrência de todas as outras sem ambiguidade, e dois clientes podem ter o mesmo nome. Por isso se usa um código gerado pelo sistema. Não tem relação com tamanho do texto, acentuação ou proibição de algum banco específico.",
+      "options": [
+        {
+          "text": "Porque duas pessoas diferentes podem ter o mesmo nome",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque bancos de dados não aceitam texto como identificador",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque nomes com acento quebram o banco",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o identificador precisa ser sempre uma data",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Em um relacionamento 1:N entre Cliente e Bicicleta, onde fica a chave estrangeira?",
+      "explanation": "A chave do lado 1 é copiada para a tabela do lado N: cada bicicleta guarda o id do seu cliente. Guardar a lista de bicicletas no cliente exigiria vários valores numa coluna, o que viola a 1FN. Tabela associativa é para N:N.",
+      "options": [
+        {
+          "text": "Na tabela bicicleta, apontando para o cliente",
+          "isCorrect": true
+        },
+        {
+          "text": "Na tabela cliente, com a lista de bicicletas",
+          "isCorrect": false
+        },
+        {
+          "text": "Em uma tabela associativa obrigatória",
+          "isCorrect": false
+        },
+        {
+          "text": "Nas duas tabelas, uma apontando para a outra",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Uma coluna pecas guarda o texto \"corrente, câmara, pastilha\". Qual forma normal é violada?",
+      "explanation": "A 1FN exige que cada coluna guarde um único valor atômico, sem listas ou grupos repetidos. Uma lista em texto impede somar, filtrar e garantir que a peça existe. A correção é a tabela associativa entre ordem e peça.",
+      "options": [
+        {
+          "text": "Primeira forma normal (1FN)",
+          "isCorrect": true
+        },
+        {
+          "text": "Segunda forma normal (2FN)",
+          "isCorrect": false
+        },
+        {
+          "text": "Terceira forma normal (3FN)",
+          "isCorrect": false
+        },
+        {
+          "text": "Nenhuma, desde que as peças estejam separadas por vírgula",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "A tabela ordem_servico guarda bicicleta_id e também o nome do cliente dono da bicicleta. Qual é o problema?",
+      "explanation": "O nome do cliente depende de bicicleta_id (via cliente), que não é a chave da ordem: é uma dependência transitiva, proibida pela 3FN. Se o cliente corrigir o nome, seria preciso atualizar todas as suas ordens. O nome deve ficar só em cliente e ser buscado por JOIN.",
+      "options": [
+        {
+          "text": "Dependência transitiva, que viola a 3FN",
+          "isCorrect": true
+        },
+        {
+          "text": "Nenhum, repetir o nome acelera as consultas sem efeito colateral",
+          "isCorrect": false
+        },
+        {
+          "text": "Viola a 1FN porque o nome tem mais de uma palavra",
+          "isCorrect": false
+        },
+        {
+          "text": "Chave estrangeira não pode coexistir com coluna de texto",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Qual comando pertence à DDL, e não à DML?",
+      "explanation": "DDL define a estrutura do banco: CREATE, ALTER e DROP. INSERT, UPDATE e SELECT manipulam ou consultam os dados e fazem parte da DML.",
+      "options": [
+        {
+          "text": "CREATE TABLE",
+          "isCorrect": true
+        },
+        {
+          "text": "INSERT",
+          "isCorrect": false
+        },
+        {
+          "text": "UPDATE",
+          "isCorrect": false
+        },
+        {
+          "text": "SELECT",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "O que acontece ao executar UPDATE peca SET preco = 0; sem WHERE?",
+      "explanation": "Sem WHERE, o UPDATE atinge todas as linhas da tabela. O banco não pede confirmação nem dá erro. Por isso a prática é rodar antes um SELECT com o mesmo filtro e, em testes, trabalhar dentro de uma transação que pode ser desfeita com ROLLBACK.",
+      "options": [
+        {
+          "text": "O preço de todas as peças passa a ser zero",
+          "isCorrect": true
+        },
+        {
+          "text": "O banco recusa o comando por falta de WHERE",
+          "isCorrect": false
+        },
+        {
+          "text": "Só a primeira linha da tabela é alterada",
+          "isCorrect": false
+        },
+        {
+          "text": "O banco pede confirmação antes de alterar",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Você quer listar todos os clientes, inclusive os que ainda não têm bicicleta cadastrada. Qual junção usar a partir de cliente?",
+      "explanation": "O LEFT JOIN mantém todas as linhas da tabela da esquerda (cliente) e preenche com NULL as colunas da direita quando não há par. O INNER JOIN descartaria os clientes sem bicicleta. CROSS JOIN combina todas as linhas com todas, e WHERE sozinho não faz junção externa.",
+      "options": [
+        {
+          "text": "cliente LEFT JOIN bicicleta",
+          "isCorrect": true
+        },
+        {
+          "text": "cliente INNER JOIN bicicleta",
+          "isCorrect": false
+        },
+        {
+          "text": "cliente CROSS JOIN bicicleta",
+          "isCorrect": false
+        },
+        {
+          "text": "Um SELECT em bicicleta com WHERE cliente_id IS NOT NULL",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 2,
+      "question": "Qual é a diferença entre WHERE e HAVING?",
+      "explanation": "WHERE filtra linhas antes do agrupamento, por isso não pode usar funções de agregação. HAVING filtra os grupos depois que GROUP BY e as agregações foram calculados. Os dois não são sinônimos e nenhum deles é exclusivo de algum banco.",
+      "options": [
+        {
+          "text": "WHERE filtra linhas antes de agrupar; HAVING filtra grupos depois",
+          "isCorrect": true
+        },
+        {
+          "text": "São sinônimos; HAVING é só a forma antiga de escrever",
+          "isCorrect": false
+        },
+        {
+          "text": "HAVING filtra linhas e WHERE filtra colunas",
+          "isCorrect": false
+        },
+        {
+          "text": "HAVING só existe no PostgreSQL",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Qual tipo de banco NoSQL é mais indicado para guardar sessões e cache, buscados por uma chave em altíssima velocidade?",
+      "explanation": "Bancos chave-valor, como o Redis, são feitos para gravar e buscar um valor por chave muito rapidamente, o que os torna padrão para cache e sessão. Grafo serve para dados em que as ligações são o foco; documento, para registros com estrutura variável; colunar, para grandes volumes distribuídos.",
+      "options": [
+        {
+          "text": "Chave-valor",
+          "isCorrect": true
+        },
+        {
+          "text": "Grafo",
+          "isCorrect": false
+        },
+        {
+          "text": "Documento",
+          "isCorrect": false
+        },
+        {
+          "text": "Colunar de famílias de colunas",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Na Stack Overflow Developer Survey 2025, qual banco de dados foi o mais usado pelos respondentes?",
+      "explanation": "O PostgreSQL apareceu em primeiro, usado por 55,6% dos respondentes da pergunta sobre bancos, à frente de MySQL (40,5%), SQLite (37,5%) e Microsoft SQL Server (30,1%). O MongoDB, NoSQL mais citado entre os de documento, ficou com 24%.",
+      "options": [
+        {
+          "text": "PostgreSQL",
+          "isCorrect": true
+        },
+        {
+          "text": "MongoDB",
+          "isCorrect": false
+        },
+        {
+          "text": "Microsoft SQL Server",
+          "isCorrect": false
+        },
+        {
+          "text": "Redis",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "O banco de dados completo de uma oficina de bicicletas fictícia: o diagrama conceitual no brModelo, o modelo lógico com cinco tabelas em 3FN, o script SQL que cria as tabelas com chaves e restrições e as carrega com dados de exemplo, e um conjunto de consultas que respondem perguntas do negócio — ordens abertas, gasto por cliente, peças mais usadas. Fecha com a mesma ordem de serviço modelada como documento e uma tabela de decisão justificando a escolha do banco.",
+    "highlights": [
+      "Diagrama entidade-relacionamento da oficina",
+      "Script SQL com tabelas normalizadas e restrições",
+      "Consultas com JOIN, GROUP BY e HAVING respondendo perguntas reais"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "Banco de dados é uma das poucas habilidades que aparecem em praticamente toda vaga de desenvolvimento e de dados. Na Stack Overflow Developer Survey 2025, entre os mais de 26 mil respondentes da pergunta sobre bancos, os quatro mais usados são relacionais e falam SQL: PostgreSQL (55,6%), MySQL (40,5%), SQLite (37,5%) e Microsoft SQL Server (30,1%). O PostgreSQL está no topo pelo terceiro ano seguido e também lidera em admiração, com 65,5%.",
+      "O NoSQL também tem espaço real — Redis aparece com 28% e MongoDB com 24% —, mas quase sempre ao lado de um banco relacional, e não no lugar dele. Para quem está começando, isso define a ordem certa: modelagem e SQL primeiro, porque é o que você vai encontrar em quase todo sistema, e NoSQL em seguida, como ferramenta escolhida para um problema específico."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Back-end de aplicações",
+        "description": "Toda API que cadastra, consulta ou altera dados depende de um modelo bem feito por trás."
+      },
+      {
+        "label": "Análise de dados",
+        "description": "Relatórios e painéis começam por uma consulta SQL que junta e agrega tabelas."
+      },
+      {
+        "label": "Sistemas internos e pequenos negócios",
+        "description": "Controle de estoque, agenda, ordens de serviço e cadastros saem de um modelo relacional simples."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem nunca criou um banco",
+        "description": "Começa do zero, sem pré-requisito além de lógica básica de programação."
+      },
+      {
+        "label": "Quem usa ORM sem entender",
+        "description": "Já salva dados por uma biblioteca e quer saber o que acontece por baixo."
+      },
+      {
+        "label": "Quem vai para a área de dados",
+        "description": "Precisa ler, modelar e consultar tabelas antes de qualquer ferramenta de análise."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Bancos relacionais com SQL estão em sistemas bancários, comércio eletrônico, saúde, governo e em quase todo produto digital, do aplicativo de uma startup ao sistema de gestão de uma rede varejista. Bancos NoSQL complementam esse núcleo em cache, catálogos de estrutura variável, registros de eventos e recomendações. Modelagem e SQL são habilidades transferíveis entre setores, empresas e fornecedores de banco.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Stack Overflow Developer Survey 2025 — Technology: Databases",
+      "url": "https://survey.stackoverflow.co/2025/technology/"
+    },
+    {
+      "label": "Documentação do PostgreSQL — Table Expressions: joins, GROUP BY e HAVING (com links para a versão atual)",
+      "url": "https://postgresql.org/docs/12/queries-table-expressions.html"
+    },
+    {
+      "label": "Tutorial do PostgreSQL 18 — The SQL Language (cópia da documentação oficial: tabelas, consultas, joins, agregação)",
+      "url": "https://docs.pgedge.com/postgresql/v18/tutorial/the-sql-language/"
+    },
+    {
+      "label": "EDB — PostgreSQL's incredible trip to the top with developers (2025)",
+      "url": "https://enterprisedb.com/blog/postgresqls-incredible-trip-top-developers-0"
+    }
+  ]
 }

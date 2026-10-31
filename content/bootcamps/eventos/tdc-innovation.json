@@ -23,6 +23,42 @@
         "url": "/media/bootcamps/eventos/tdc-innovation-2023/2.webp",
         "type": "image",
         "alt": "Grade de trilhas presenciais e digitais da edição"
+      },
+      {
+        "id": "tdc-innovation-2023-3",
+        "url": "/media/bootcamps/eventos/tdc-innovation-2023/3.webp",
+        "type": "image",
+        "alt": "Transmissão do palco principal do TDC Innovation 2023 acompanhada à distância"
+      },
+      {
+        "id": "tdc-innovation-2023-4",
+        "url": "/media/bootcamps/eventos/tdc-innovation-2023/4.webp",
+        "type": "image",
+        "alt": "Apresentadores no palco do TDC Innovation 2023"
+      },
+      {
+        "id": "tdc-innovation-2023-5",
+        "url": "/media/bootcamps/eventos/tdc-innovation-2023/5.webp",
+        "type": "image",
+        "alt": "Palestrante no palco do TDC Innovation 2023"
+      },
+      {
+        "id": "tdc-innovation-2023-6",
+        "url": "/media/bootcamps/eventos/tdc-innovation-2023/6.webp",
+        "type": "image",
+        "alt": "Slide de uma palestra do TDC Innovation 2023 na transmissão"
+      },
+      {
+        "id": "tdc-innovation-2023-7",
+        "url": "/media/bootcamps/eventos/tdc-innovation-2023/7.webp",
+        "type": "image",
+        "alt": "Página do TDC Innovation 2023 na plataforma de eventos on-line"
+      },
+      {
+        "id": "tdc-innovation-2023-8",
+        "url": "/media/bootcamps/eventos/tdc-innovation-2023/8.webp",
+        "type": "image",
+        "alt": "Tela de intervalo da transmissão do TDC Innovation 2023"
       }
     ],
     "curriculum": [
@@ -31,6 +67,29 @@
       "UX e testes",
       "Diversidade, acessibilidade e carreira"
     ],
-    "officialLink": "https://thedevconf.com/tdc/2023/innovation/"
+    "officialLink": "https://thedevconf.com/tdc/2023/innovation/",
+    "paragraphs": [
+      "The Developer's Conference (TDC) é um dos maiores eventos independentes de desenvolvimento de software do Brasil, organizado em trilhas temáticas, cada uma com coordenação própria, e realizado em edições em diferentes capitais ao longo do ano. Desde a pandemia, as edições passaram a ser híbridas, com público presencial e transmissão online. O TDC Innovation é a edição de Florianópolis, voltada a inovação e tecnologia.",
+      "O TDC Innovation 2023 aconteceu de 14 a 16 de junho, em Florianópolis, com trilhas de cloud, DevOps, arquitetura, dados, inteligência artificial, UX e testes, entre outras. A edição teve parceria com o Universo Ágil Hub, que promoveu em 26 de maio de 2023 uma transmissão de aquecimento (\"Esquenta\") com apresentação da programação e sorteio de ingressos. Douglas acompanhou o evento online, incluindo as trilhas de Diversidade e Acessibilidade e de Carreira e Mentoria, transmitidas com interpretação em Libras.",
+      "No formato híbrido do TDC, parte das trilhas acontece presencialmente e parte é digital, e o ingresso define a que salas e transmissões o participante tem acesso. Cada trilha reúne uma sequência de palestras curtas sobre um mesmo tema, o que permite montar um roteiro próprio ao longo dos dias.",
+      "O público inclui desenvolvedores, profissionais de dados, design e qualidade, gestores, organizadores de comunidades e empresas patrocinadoras. A inscrição é paga, com valores que variam por modalidade e data de compra, e é feita pelo site oficial do TDC.",
+      "Para a carreira, acompanhar um evento como o TDC é uma forma eficiente de conhecer, em poucos dias, o que outras empresas estão fazendo em várias áreas ao mesmo tempo. Trilhas como Carreira e Mentoria e Diversidade e Acessibilidade ajudam a pensar o desenvolvimento profissional para além da técnica, e a versão online torna o evento acessível para quem não pode viajar.",
+      "O texto de boas-vindas da edição mostra como o acesso era dividido em modalidades de ingresso. O Community Pass, gratuito, liberava a trilha Stadium, com palestras premium escolhidas por sua representatividade e pela pluralidade de temas, as trilhas de patrocinadores, com estandes online, promoções, sorteios e contato com profissionais de empresas nacionais e internacionais, além das trilhas de Diversidade e Acessibilidade e de Carreira e Mentoria. Cada trilha ocupava um dia inteiro de evento e contava com curadoria de profissionais da área. Os ingressos premium digitais permitiam escolher entre as nove trilhas que corriam em paralelo a cada dia, cada uma com sete palestras e um painel de debates, e o ingresso VIP reunia todas as trilhas premium, o acesso posterior às gravações sob demanda e uma caixa de brindes preparada com os parceiros.",
+      "A participação online era simples: perto da data, cada inscrito recebia por e-mail o link de acesso à plataforma do evento, que liberava o conteúdo correspondente ao seu ingresso. Por isso, a organização pedia que o participante confirmasse o interesse em receber os e-mails do TDC, refazendo o cadastro caso tivesse deixado de recebê-los, e que reservasse com antecedência o tempo para assistir a um ou mais dias ou a palestras específicas. Também incentivava a divulgação do evento, apresentado como uma plataforma de inovação colaborativa construída por muitas pessoas, e lembrava que os inscritos já concorriam a prêmios, com a opção de entrar em sorteios extras para ampliar as chances."
+    ],
+    "sources": [
+      {
+        "label": "Sympla: Esquenta TDC Innovation e Universo Ágil Hub (live de 26/05/2023)",
+        "url": "https://www.sympla.com.br/evento-online/esquenta-tdc-innovation-e-universo-agil-hub/1992466"
+      },
+      {
+        "label": "LPI: LPI Thrilled to be Participating in TDC Innovation (edição 2022, formato híbrido)",
+        "url": "https://www.lpi.org/?p=4534"
+      },
+      {
+        "label": "Galícia Educação: Evento TDC – The Developers Conference",
+        "url": "https://www.galiciaeducacao.com.br/blog/evento-tdc-the-developers-conference"
+      }
+    ]
   }
 }

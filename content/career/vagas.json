@@ -4,112 +4,940 @@
     "duration": "Atualizado",
     "thumb": "./assets/thumb_jobs/coodesh.jpg",
     "site_url": "https://coodesh.com/",
-    "category": "Tech Jobs"
+    "category": "Tech Jobs",
+    "slug": "coodesh",
+    "detalhe": {
+      "resumo": "A Coodesh é uma plataforma brasileira de recrutamento em tecnologia, fundada em 2019, que liga empresas a desenvolvedores por meio de testes técnicos, desafios de código e vagas. Para quem procura emprego, o cadastro é gratuito e permite praticar avaliações, receber pontuação por habilidade e se candidatar a vagas.",
+      "paragrafos": [
+        "A Coodesh funciona nos dois lados do processo seletivo. Para as empresas, oferece um sistema de recrutamento com avaliações técnicas, entrevistas e testes comportamentais. Para os desenvolvedores, oferece um perfil com currículo público e interativo, em que as habilidades aparecem validadas pelos resultados dos testes. Em outubro de 2026, a página para desenvolvedores listava testes técnicos em 12 trilhas (como Back-End, React, Python, Go e Rust), desafios de código em 18 stacks, testes comportamentais e testes de inglês do nível A1 ao C2.",
+        "As vagas podem ser filtradas por carreira (Back-End, Front-End, Mobile e outras) e por tecnologia (React, Node.js, Python e outras), do estágio ao nível sênior. A página oficial não detalha o tipo de contrato, então vale conferir em cada vaga se ela é CLT ou PJ e se é remota, híbrida ou presencial. Como as empresas usam a própria Coodesh para aplicar testes, é comum que o candidato faça uma avaliação técnica como parte da candidatura.",
+        "Para começar, crie a conta na área para desenvolvedores. O cadastro pode ser feito com nome, e-mail e senha ou com uma conta do GitHub, do Gmail ou do LinkedIn, e a própria Coodesh diz que não pede dados de pagamento. Um bom primeiro exercício é fazer um teste da trilha que você está estudando, ver a nota por habilidade e refazer o teste depois de algumas semanas para medir a evolução. A plataforma também oferece preparatórios gratuitos para processos seletivos de empresas como Google e Nubank.",
+        "Complete o perfil com calma, porque um perfil completo aumenta as chances de ser encontrado por empresas, como orienta o tutorial oficial. Trate as notas como um diagnóstico, não como um veredito: um resultado baixo mostra o que estudar a seguir. Antes de fazer um teste, confira o tempo disponível e as regras, e leia os termos de uso para saber como seus dados e resultados são compartilhados com as empresas.",
+        "Para se preparar melhor, o blog do learnTECH tem os artigos \"Testes técnicos online: o que esperar e como treinar\" e \"Como é um processo seletivo em tecnologia e como se preparar em cada etapa\", que combinam bem com a prática de testes na Coodesh."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://coodesh.com/"
+        },
+        {
+          "label": "Área para desenvolvedores",
+          "url": "https://coodesh.com/en/developers"
+        },
+        {
+          "label": "Tutorial: como criar conta como desenvolvedor",
+          "url": "https://coodesh.com/blog/produto/tutoriais/veja-como-criar-conta-como-desenvolvedor-na-coodesh"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Coodesh: Para Desenvolvedores",
+          "url": "https://coodesh.com/en/developers"
+        },
+        {
+          "label": "Coodesh Blog: Veja como criar conta como desenvolvedor na Coodesh",
+          "url": "https://coodesh.com/blog/produto/tutoriais/veja-como-criar-conta-como-desenvolvedor-na-coodesh"
+        },
+        {
+          "label": "B2B Stack: Coodesh",
+          "url": "https://www.b2bstack.com.br/product/coodesh"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "testes-tecnicos-online"
+        },
+        {
+          "tipo": "blog",
+          "id": "processo-seletivo-como-se-preparar"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "github"
+        },
+        {
+          "tipo": "vagas",
+          "id": "geekhunter"
+        },
+        {
+          "tipo": "vagas",
+          "id": "programathor"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "GeekHunter",
     "duration": "Atualizado",
     "thumb": "./assets/thumb_jobs/geekhunter.jpg",
-    "site_url": "https://www.geekhunter.com.br/vagas",
-    "category": "Tech Jobs"
+    "site_url": "https://www.geekhunter.com/en/jobs",
+    "category": "Tech Jobs",
+    "slug": "geekhunter",
+    "detalhe": {
+      "resumo": "A GeekHunter é uma plataforma brasileira de recrutamento especializada em tecnologia, fundada em 2015 em Florianópolis, que conecta profissionais de TI a empresas. Para quem procura emprego, o cadastro é gratuito; para as empresas, ela vende software de recrutamento e um serviço de recrutadores dedicados.",
+      "paragrafos": [
+        "A GeekHunter começou em 2015 em Florianópolis (SC) com a proposta de conectar empresas a talentos de tecnologia. Em agosto de 2023 foi comprada pela Howdy.com, empresa americana de Austin que ajuda companhias a contratar profissionais remotos em outros países, e passou a ser uma subsidiária, mantendo marca e equipe próprias, segundo o Baguete. Na época, a plataforma tinha mais de 13 mil empresas e cerca de 400 mil profissionais cadastrados. Em outubro de 2026, o site oficial fala em mais de 600 mil talentos avaliados e mais de 3 mil empresas clientes.",
+        "O produto para empresas inclui um sistema de acompanhamento de candidatos (ATS), acesso a uma base de profissionais com mais de 400 habilidades técnicas mapeadas, triagem com IA e o serviço Tech Recruiter as a Service, em que recrutadores da GeekHunter fazem a busca e a triagem. Na listagem pública de vagas consultada em outubro de 2026 havia 785 oportunidades, com destaque para Java e Spring Boot, Angular, Kafka, sistemas ERP como TOTVS Protheus, infraestrutura e segurança. Aparecem vagas remotas, híbridas e presenciais, em regime CLT ou PJ, e só parte delas informa a faixa salarial.",
+        "Como empregadora, a GeekHunter é uma empresa de recrutamento e tecnologia, com times de produto, desenvolvimento, vendas e recrutamento técnico. As vagas da própria empresa ficam no portal dela na Gupy; a página institucional não traz link de carreiras. Por isso, não há como listar aqui as tecnologias usadas internamente nem os perfis abertos no momento.",
+        "Para usar a plataforma como candidato, o cadastro pede nome, e-mail, celular, LinkedIn, currículo em PDF de até 3 MB e a expectativa salarial como CLT e/ou PJ, em reais ou outras moedas. Você escolhe se o perfil fica visível para as empresas em geral ou só nas vagas em que se candidatar, e a plataforma usa IA para indicar seu perfil às empresas mais compatíveis. Um bom primeiro exercício é montar o perfil com as tecnologias que você realmente usou em projetos, com links para o GitHub, e definir uma pretensão salarial com base nas faixas publicadas nas vagas.",
+        "Antes de enviar dados, leia a Política de Privacidade e os Termos de Uso e use a opção de visibilidade de acordo com a sua situação; quem está empregado pode preferir aparecer só nas vagas em que se candidatar. Desconfie de qualquer pedido de pagamento para participar de processos seletivos. O artigo do LearnTECH sobre LGPD para quem procura emprego explica quais direitos você tem sobre os dados enviados, e o artigo sobre perfil encontrável ajuda a escolher as palavras-chave que recrutadores procuram."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.geekhunter.com/pt/empresas/sobre-a-geekhunter"
+        },
+        {
+          "label": "Vagas de tecnologia",
+          "url": "https://www.geekhunter.com.br/pt/vagas"
+        },
+        {
+          "label": "Criar perfil grátis",
+          "url": "https://www.geekhunter.com/pt/candidates/signup"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "GeekHunter: Conheça a GeekHunter, quem somos",
+          "url": "https://www.geekhunter.com/pt/empresas/sobre-a-geekhunter"
+        },
+        {
+          "label": "GeekHunter: Criar perfil grátis",
+          "url": "https://www.geekhunter.com/pt/candidates/signup"
+        },
+        {
+          "label": "GeekHunter: Vagas de Tecnologia no Brasil",
+          "url": "https://www.geekhunter.com.br/pt/vagas?page=2"
+        },
+        {
+          "label": "Baguete: Howdy.com adquire GeekHunter",
+          "url": "https://www.baguete.com.br/noticias/howdy-com-adquire-geekhunter"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "perfil-encontravel-linkedin"
+        },
+        {
+          "tipo": "blog",
+          "id": "lgpd-seus-dados-ao-se-candidatar"
+        },
+        {
+          "tipo": "blog",
+          "id": "como-ler-uma-vaga"
+        },
+        {
+          "tipo": "empresas",
+          "id": "gupy"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "LinkedIn",
     "duration": "Global",
     "thumb": "./assets/thumb_jobs/linkedin.jpg",
     "site_url": "https://www.linkedin.com/jobs/",
-    "category": "General Jobs"
+    "category": "General Jobs",
+    "slug": "linkedin",
+    "detalhe": {
+      "resumo": "O LinkedIn é a maior rede social profissional do mundo, com mais de 1,4 bilhão de membros segundo a própria empresa. Além de perfis e conexões, reúne vagas de emprego, publicações e páginas de empresas, e é um dos primeiros lugares onde recrutadores procuram candidatos.",
+      "paragrafos": [
+        "O LinkedIn combina três coisas: o perfil profissional, que funciona como um currículo público; a rede de conexões; e um feed onde aparecem publicações, conteúdo patrocinado e vagas. A área de vagas permite buscar oportunidades e acompanhar empresas. O selo \"Open to Work\" sinaliza para recrutadores que você está procurando emprego. Para empresas, existe o LinkedIn Recruiter, uma ferramenta paga de busca de candidatos.",
+        "Por ser uma plataforma geral, o LinkedIn tem vagas de praticamente todas as áreas e níveis, inclusive em tecnologia. Uma análise de alternativas publicada pela goLance em agosto de 2026 aponta que a rede foi pensada sobretudo para emprego em tempo integral, o que torna o encaixe de trabalhos por projeto e freelas menos natural. Na prática, muitos processos seletivos começam com o recrutador encontrando o perfil antes mesmo de a vaga ser divulgada, por isso um perfil bem escrito pesa tanto quanto a candidatura.",
+        "Para começar, crie a conta gratuita e preencha o perfil com título, resumo, experiências, formação e as tecnologias que você usa. Um primeiro exercício concreto é escrever o título do perfil com as palavras que um recrutador digitaria na busca (por exemplo, a stack e a área que você procura) e conectar o perfil aos seus projetos no GitHub. Depois, siga as empresas que interessam e ative alertas de vaga para as buscas que você repete.",
+        "Cuidado com o volume do feed, que mistura conteúdo útil com publicações feitas só para gerar engajamento: use o tempo na plataforma com objetivo. Desconfie de vagas e mensagens que pedem pagamento, dados bancários ou documentos logo no primeiro contato e confirme a vaga no site oficial da empresa. Revise as configurações de privacidade para decidir o que fica público. O LinkedIn não substitui plataformas especializadas em tecnologia ou freelance, que podem ser usadas em paralelo.",
+        "No ecossistema learnTECH, o LinkedIn aparece no programa \"Desenvolver uma Landing Page Moderna\" e em dois artigos do blog: \"Perfil encontrável: palavras-chave que levam recrutadores até você\", que trata de como ser achado nas buscas, e \"Networking com propósito e o pitch de 60 segundos\", sobre como se apresentar e criar contatos."
+      ],
+      "links": [
+        {
+          "label": "LinkedIn Vagas",
+          "url": "https://www.linkedin.com/jobs/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "LinkedIn: About us",
+          "url": "https://news.linkedin.com/about-us"
+        },
+        {
+          "label": "goLance: Best LinkedIn Alternatives in 2026 (By Use Case)",
+          "url": "https://golance.com/blogs/best-linkedin-alternatives-2026"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "perfil-encontravel-linkedin"
+        },
+        {
+          "tipo": "blog",
+          "id": "networking-pitch-60-segundos"
+        },
+        {
+          "tipo": "programas",
+          "id": "1"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "github"
+        },
+        {
+          "tipo": "blog",
+          "id": "lgpd-seus-dados-ao-se-candidatar"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Polywork",
-    "duration": "Professional",
+    "duration": "Descontinuado",
     "thumb": "./assets/thumb_jobs/polywork.jpg",
     "site_url": "https://www.polywork.com/",
-    "category": "Networking"
+    "category": "Networking",
+    "slug": "polywork",
+    "detalhe": {
+      "resumo": "O Polywork foi uma rede profissional lançada como alternativa ao LinkedIn, voltada para quem queria mostrar uma carreira com vários projetos e interesses. O serviço foi encerrado em 31 de janeiro de 2025 e não está mais disponível.",
+      "paragrafos": [
+        "Atenção: o Polywork não funciona mais. A plataforma encerrou as atividades em 31 de janeiro de 2025, depois de anunciar o fechamento entre o fim de dezembro de 2024 e janeiro de 2025. Segundo a goLance, o domínio deixou de responder e os perfis criados lá não existem mais. Por isso, não vale criar conta nem colocar um link do Polywork no currículo.",
+        "Enquanto funcionou, o Polywork oferecia perfis personalizáveis, uma linha do tempo com o que a pessoa fazia e espaços para projetos e colaborações. A proposta era mostrar carreiras com várias frentes, que não cabem bem em um currículo tradicional. Em 2022, a empresa recebeu cerca de US$ 13 milhões de investimento. No fim de 2023, mudou de rumo e passou a funcionar como um construtor de sites pessoais, mudança que desagradou parte dos usuários antigos.",
+        "Quem tinha um perfil no Polywork e quer algo parecido hoje pode montar o mesmo conteúdo em outros lugares. Um exercício prático é reunir os projetos que estavam no perfil em um repositório ou página no GitHub e resumir cada um em duas ou três linhas no perfil do LinkedIn, com link para o código ou a demonstração.",
+        "A história do Polywork mostra um cuidado importante: não deixe seu portfólio depender de uma única plataforma. Serviços gratuitos podem mudar de modelo ou fechar, e os perfis somem junto. Guarde uma cópia do seu conteúdo, prefira links que você controla (como um site próprio ou repositórios) e revise o currículo de tempos em tempos para remover links que deixaram de funcionar."
+      ],
+      "fontes": [
+        {
+          "label": "goLance: Best LinkedIn Alternatives in 2026 (By Use Case)",
+          "url": "https://golance.com/blogs/best-linkedin-alternatives-2026"
+        },
+        {
+          "label": "Prompt-Led Product (Substack): What Happened To Polywork?",
+          "url": "https://promptledproduct.substack.com/p/what-happened-to-polywork-an-eye"
+        },
+        {
+          "label": "Mybzz: Mybzz vs Polywork",
+          "url": "https://mybzz.com/compare/mybzz-vs-polywork"
+        },
+        {
+          "label": "DEV Community: Polywork is dead to me",
+          "url": "https://dev.to/conr/polywork-is-dead-to-me-153j"
+        },
+        {
+          "label": "@mandarvaze's microblog: Polywork Shutting Down",
+          "url": "https://microblog.desipenguin.com/post/polywork-shutting-down/"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "vagas",
+          "id": "linkedin"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "github"
+        },
+        {
+          "tipo": "blog",
+          "id": "perfil-encontravel-linkedin"
+        },
+        {
+          "tipo": "blog",
+          "id": "networking-pitch-60-segundos"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Programadores JF",
     "duration": "Local",
     "thumb": "./assets/thumb_jobs/programadoresjuizdefora.jpg",
     "site_url": "https://programador.emjuizdefora.com/oportunidades",
-    "category": "Community"
+    "category": "Community",
+    "slug": "programadores-jf",
+    "detalhe": {
+      "resumo": "Espaço de oportunidades indicado pelo learnTECH para quem procura vagas de programação em Juiz de Fora (MG) e região.",
+      "paragrafos": [
+        "O endereço indicado leva a uma página de oportunidades voltada à comunidade local de desenvolvimento. Antes de se candidatar, confira no próprio site se as vagas estão atualizadas e quais são os requisitos e o modelo de contratação.",
+        "Página em revisão: as informações acima são básicas e serão completadas em breve."
+      ],
+      "atualizadoEm": "2026-10-30"
+    }
   },
   {
     "title": "Programathor",
     "duration": "Específico",
     "thumb": "./assets/thumb_jobs/programathor.jpg",
     "site_url": "https://programathor.com.br/",
-    "category": "Tech Jobs"
+    "category": "Tech Jobs",
+    "slug": "programathor",
+    "detalhe": {
+      "resumo": "O ProgramaThor é uma plataforma brasileira de vagas especializada em desenvolvedores Front-end, Back-end, Full Stack e Mobile, criada em 2017. Reúne vagas CLT, PJ e de estágio, presenciais, híbridas e remotas, com filtros por tecnologia, nível e porte da empresa.",
+      "paragrafos": [
+        "O ProgramaThor foi criado em 2017 pelo empreendedor francês Etienne Curati e por Rafael Oshiro e passou pelo programa de aceleração GVentures, da FGV, segundo a Baguete. O modelo é parecido desde o início: para o desenvolvedor, o uso é gratuito, e as empresas pagam para publicar vagas e acessar candidatos. Hoje o site oferece às empresas um serviço de busca em que só pagam taxa se contratarem alguém indicado. Em outubro de 2026, a página inicial informava mais de 300 mil desenvolvedores cadastrados, mais de 20 mil empresas e mais de 1,5 milhão de candidaturas.",
+        "A lista de vagas pode ser filtrada por tipo de contrato (CLT, PJ e estágio), nível (júnior, pleno e sênior), formato (remoto ou presencial/híbrido) e porte da empresa (startup, pequena/média ou grande). Também há filtros por cidade e por dezenas de tecnologias, de Java e PHP a Flutter, AWS e LangChain. Em outubro de 2026, a primeira página trazia vagas como desenvolvedor mobile Flutter sênior PJ remoto, DevOps pleno CLT remoto e estágio full-stack presencial. A maioria das vagas não mostra salário, e as que mostram usam faixas, como \"Até R$5.000\".",
+        "Para começar, crie a conta pela opção de candidato (\"Sou desenvolvedor\") e preencha o perfil com as tecnologias que você realmente usa, com links para GitHub e portfólio. Um bom primeiro exercício é escolher três vagas parecidas, listar as tecnologias que se repetem nelas e comparar com o que você já sabe: a diferença vira seu plano de estudo. O site tem ainda uma página sobre salário de programador e um blog.",
+        "Preste atenção ao tipo de contrato antes de se candidatar: CLT e PJ têm direitos, impostos e custos muito diferentes, e uma vaga PJ com valor maior nem sempre rende mais no fim do mês. Confira também se uma vaga presencial aceita candidatos de outras cidades, porque algumas não aceitam. Quando a vaga não informa salário, pergunte a faixa logo no início do processo para não perder tempo.",
+        "No blog do learnTECH, os artigos \"Como ler uma vaga e reconhecer uma boa empresa\" e \"Finanças pessoais para o primeiro salário em tecnologia\" ajudam a comparar as vagas do ProgramaThor e a entender o que muda entre um contrato e outro. Para quem vai enfrentar etapas técnicas, o artigo \"Testes técnicos online: o que esperar e como treinar\" complementa a preparação."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://programathor.com.br/"
+        },
+        {
+          "label": "Vagas",
+          "url": "https://programathor.com.br/jobs"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "ProgramaThor: Oportunidades para Desenvolvedores",
+          "url": "https://programathor.com.br/"
+        },
+        {
+          "label": "ProgramaThor: Vagas para Programador(a) e Desenvolvedor(a)",
+          "url": "https://programathor.com.br/jobs"
+        },
+        {
+          "label": "Baguete: Portal de seleção foca programadores",
+          "url": "https://www.baguete.com.br/noticias/portal-de-selecao-foca-programadores"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "como-ler-uma-vaga"
+        },
+        {
+          "tipo": "blog",
+          "id": "financas-primeiro-salario-tech"
+        },
+        {
+          "tipo": "blog",
+          "id": "testes-tecnicos-online"
+        },
+        {
+          "tipo": "vagas",
+          "id": "trampos"
+        },
+        {
+          "tipo": "vagas",
+          "id": "vagas-com"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Bossabox",
     "duration": "Freelance/Projetos",
     "thumb": "./assets/thumb_jobs/bossabox.jpg",
     "site_url": "https://app.bossabox.com/profile/jobs/active-products",
-    "category": "Freelance"
+    "category": "Freelance",
+    "slug": "bossabox",
+    "detalhe": {
+      "resumo": "A BossaBox é uma startup brasileira que monta squads, ou seja, times de produto e tecnologia, para desenvolver produtos digitais para startups e grandes empresas. Funciona como um marketplace que conecta profissionais de tecnologia autônomos a essas demandas, com uma plataforma própria de gestão dos times.",
+      "paragrafos": [
+        "A BossaBox surgiu em 2017 oferecendo produtos digitais para empresas que queriam entrar no ambiente online e, a partir dessa demanda, evoluiu para um marketplace de serviços de tecnologia. Nesse modelo, a empresa cliente contrata um squad, e a BossaBox seleciona e organiza profissionais como desenvolvedores, designers, gerentes de produto e líderes técnicos. O acompanhamento é feito por uma plataforma de gestão de squads, que em 2024 já tinha um módulo de BI e, segundo a empresa, receberia recursos de inteligência artificial em 2025.",
+        "Para o profissional, a proposta é trabalhar de forma autônoma com mais previsibilidade de renda, o que a empresa chama de \"prolancer\". Em 2022, a plataforma tinha cerca de 25 mil profissionais cadastrados, segundo o Canaltech. Em 2025, o CEO André Abreu disse ao IT Forum que a empresa busca desenvolvedores sêniores e dá muito peso a soft skills avançadas. Por isso, a BossaBox tende a ser uma opção para quem já tem experiência, e não uma porta de entrada para iniciantes.",
+        "A trajetória da empresa teve altos e baixos. Ela recebeu aportes de fundos como Redpoint eVentures e Astella, incluindo R$ 8 milhões em 2020 e uma extensão de US$ 1,5 milhão em 2022. Em meados de 2022, perdeu muitos clientes e chegou perto de encerrar as operações, com cortes de pessoal. Depois de uma reestruturação focada em contas estratégicas de valor mais alto, a Startups noticiou em dezembro de 2024 que a empresa tinha atingido o breakeven e projetava triplicar a receita daquele ano. Entre os clientes citados estão Bayer, Cubo Itaú, CRMBônus e SumUp.",
+        "Para se preparar, monte um portfólio com projetos que mostrem o produto inteiro, não só o código: o problema, as decisões, o que foi entregue e como o time se organizou. Experiência com rituais ágeis, comunicação escrita clara e autonomia para negociar escopo pesam bastante em trabalho por squads. Antes de aceitar um projeto, entenda a forma de contratação, a dedicação esperada e como será feita a remuneração.",
+        "Trabalhar como autônomo traz cuidados próprios. Como prestador de serviço, você normalmente precisa de CNPJ, cuida dos seus impostos e não tem os direitos de um contrato CLT, como férias e 13º salário. Compare o valor por hora com o custo real de manter esse formato e tenha uma reserva para os períodos sem projeto. Plataformas parecidas, como a Impulso, também trabalham com times remotos sob demanda."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://bossabox.com/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Startups: Após quase fechar, BossaBox alcança breakeven e triplica em 2024",
+          "url": "https://startups.com.br/negocios/apos-quase-fechar-bossabox-alcanca-breakeven-e-triplica-em-2024/"
+        },
+        {
+          "label": "Canaltech: Marketplace dos profissionais de TI, BossaBox capta US$ 1,5 mi em investimentos",
+          "url": "https://canaltech.com.br/mercado/marketplace-dos-profissionais-de-ti-bossabox-capta-us-15-mi-em-investimentos-213399/"
+        },
+        {
+          "label": "IT Forum: Com marketplace de serviços de TI, BossaBox aproxima áreas de negócio e tecnologia",
+          "url": "https://itforum.com.br/marketplace-bossa-box/"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "proposta-freelancer-escopo-prazo-preco"
+        },
+        {
+          "tipo": "programas",
+          "id": "602"
+        },
+        {
+          "tipo": "blog",
+          "id": "perfil-encontravel-linkedin"
+        },
+        {
+          "tipo": "vagas",
+          "id": "impulso"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Impulso",
     "duration": "Comunidade",
     "thumb": "./assets/thumb_jobs/impulso.jpg",
     "site_url": "https://app.impulso.team/painel",
-    "category": "Squads"
+    "category": "Squads",
+    "slug": "impulso",
+    "detalhe": {
+      "resumo": "A Impulso é uma empresa brasileira que monta times de tecnologia remotos, os chamados Remote Squads, para empresas que precisam desenvolver novos projetos ou reforçar equipes. Foi lançada em 2017 pelo grupo HE:labs e reúne uma rede de profissionais de desenvolvimento, design, gestão e qualidade.",
+      "paragrafos": [
+        "A Impulso nasceu dentro da HE:labs, software house fundada em 2010. O projeto começou em 2016 como um estudo sobre como repensar o modelo das software houses tradicionais e foi lançado oficialmente em novembro de 2017. A ideia é formar times sob demanda com profissionais de uma rede própria, que trabalham principalmente de forma remota, para criar produtos novos ou estender equipes de clientes.",
+        "Em 2018, a Baguete descreveu como funcionava a rede: o profissional entrava informando suas especialidades, a disponibilidade de tempo e o valor da hora, e podia participar de mais de um projeto ao mesmo tempo. A Impulso selecionava as pessoas conforme a necessidade de cada projeto, considerando maturidade do time, tecnologia e perfil, e acompanhava as equipes com base no retorno de colegas e clientes. Em outubro de 2018, segundo o IT Forum, a rede tinha mais de 3 mil profissionais de áreas como back-end, front-end, mobile, QA, infraestrutura e agilidade, e oferecia aos membros ativos mentorias, cursos e descontos.",
+        "A empresa também apareceu como porta de entrada para iniciantes. Em parceria com a DIO, ofereceu bootcamps gratuitos, como o Impulso FullStack Developer, com 104 horas de conteúdo sobre Git, algoritmos, HTML, CSS, JavaScript, React, PostgreSQL e Ruby on Rails. A página do bootcamp dizia que a Impulso era remote first e previa 150 contratações em 2021 para vagas 100% remotas, abertas a iniciantes de qualquer cidade do Brasil.",
+        "Hoje a empresa se apresenta pelo endereço impulso.team com o lema \"Teams that grow with your company\". Segundo dados do Bouncewatch atualizados em janeiro de 2025, ela oferece profissionais para alocação remota em qualquer stack, monta times para projetos estratégicos em cerca de três semanas e tem por volta de 163 funcionários. O formato atual parece mais voltado à alocação de profissionais em empresas do que à comunidade aberta de 2018, por isso vale conferir no site quais oportunidades estão abertas antes de se cadastrar.",
+        "No learnTECH, a Impulso é citada no programa \"Programar com IA sem Perder o Aprendizado\". Para quem pensa em trabalhar em times remotos, vale treinar desde já comunicação por escrito, uso de Git em equipe e organização do próprio tempo. Antes de aceitar uma alocação, confirme o tipo de contrato, a carga horária e quem será o seu gestor no dia a dia."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://impulso.team/"
+        },
+        {
+          "label": "Bootcamp Impulso FullStack Developer (DIO)",
+          "url": "https://www.dio.me/bootcamp/impulso-fullstack-developer"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Baguete: HE:labs abre empresa de times remotos",
+          "url": "https://www.baguete.com.br/noticias/helabs-abre-empresa-de-times-remotos"
+        },
+        {
+          "label": "IT Forum: Empresa de TI aposta em times sob demanda para crescer",
+          "url": "https://itforum.com.br/?p=174837"
+        },
+        {
+          "label": "DIO: Impulso FullStack Developer",
+          "url": "https://www.dio.me/bootcamp/impulso-fullstack-developer"
+        },
+        {
+          "label": "Bouncewatch: Impulso, Teams that grow with your company",
+          "url": "https://bouncewatch.com/company/impulso-2"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "801"
+        },
+        {
+          "tipo": "programas",
+          "id": "604"
+        },
+        {
+          "tipo": "blog",
+          "id": "proposta-freelancer-escopo-prazo-preco"
+        },
+        {
+          "tipo": "vagas",
+          "id": "bossabox"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Trampos",
     "duration": "Geral",
     "thumb": "./assets/thumb_jobs/trampos.jpg",
     "site_url": "https://trampos.co/oportunidades/?tr=desenvolvedor",
-    "category": "General Jobs"
+    "category": "General Jobs",
+    "slug": "trampos",
+    "detalhe": {
+      "resumo": "O Trampos é um site brasileiro de vagas focado em comunicação, áreas criativas e tecnologia. Os candidatos se cadastram de graça, e as empresas pagam para publicar as vagas.",
+      "paragrafos": [
+        "O Trampos começou em 2008 divulgando vagas pelo Twitter e pelo Facebook e, no fim de 2013, virou empresa e lançou uma plataforma própria para publicar vagas e cadastrar profissionais. Os fundadores citados pela Baguete em 2014 são Tiago Yonamine, com formação em publicidade e marketing, e o desenvolvedor Marcel Ueno. Desde essa mudança, o modelo é cobrar das empresas pela publicação das vagas, enquanto o cadastro do candidato é gratuito.",
+        "O foco inicial eram vagas de agências, comunicação e áreas criativas, mas a tecnologia ganhou espaço. Em novembro de 2020, o Olhar Digital noticiou mais de 160 vagas de TI no site, para todo o país, em regime CLT ou PJ e com opção de trabalho remoto. Entre os exemplos estavam desenvolvedor full stack, líder técnico em WordPress, arquiteto da informação e cientista de dados. Por isso, o Trampos costuma ser útil para quem procura vagas em agências digitais, produtoras e startups, onde tecnologia, design e marketing trabalham juntos.",
+        "Para começar, crie a conta de candidato e preencha o perfil com as tecnologias que você usa e links para portfólio e GitHub. Como muitas vagas são de empresas de comunicação, um portfólio com projetos visuais, como landing pages e sites responsivos, ajuda a mostrar o que você sabe fazer. Um exercício concreto é buscar vagas de desenvolvedor no site, salvar três que combinam com o seu nível e adaptar o resumo do perfil às palavras-chave que mais aparecem nelas.",
+        "Leia com atenção o tipo de contrato de cada vaga, porque CLT e PJ têm direitos e custos muito diferentes, e vagas em agências podem ter ritmo intenso de prazos. Desconfie de qualquer anúncio que peça pagamento, compra de curso ou dados bancários para seguir no processo, já que o cadastro do candidato é gratuito. Para ampliar a busca, combine o Trampos com plataformas especializadas em desenvolvimento, como o ProgramaThor, e com sites gerais, como a VAGAS.com."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://trampos.co/"
+        },
+        {
+          "label": "Vagas de desenvolvedor",
+          "url": "https://trampos.co/oportunidades/?tr=desenvolvedor"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Baguete: Trampos muda e quer faturar R$ 1 mi no ano",
+          "url": "https://www.baguete.com.br/noticias/trampos-muda-e-quer-faturar-r-1-mi-no-ano"
+        },
+        {
+          "label": "Olhar Digital: Plataforma disponibiliza 160 vagas de TI com salários de até R$ 12 mil",
+          "url": "https://olhardigital.com.br/2020/11/19/pro/plataforma-disponibiliza-160-vagas-de-ti-com-salarios-de-ate-r-12-mil/"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "como-ler-uma-vaga"
+        },
+        {
+          "tipo": "blog",
+          "id": "perfil-encontravel-linkedin"
+        },
+        {
+          "tipo": "vagas",
+          "id": "programathor"
+        },
+        {
+          "tipo": "vagas",
+          "id": "vagas-com"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Revelo",
     "duration": "International",
     "thumb": "./assets/thumb_jobs/revelo.jpg",
-    "site_url": "https://app.careers.revelo.com/#/international/positions/list",
-    "category": "Global Jobs"
+    "site_url": "https://app.careers.revelo.com/",
+    "category": "Global Jobs",
+    "slug": "revelo",
+    "detalhe": {
+      "resumo": "A Revelo é uma empresa de recrutamento em tecnologia criada no Brasil em 2015 que hoje conecta desenvolvedores da América Latina a empresas dos Estados Unidos, em vagas remotas de tempo integral. Também oferece projetos pagos de treinamento de IA, nos quais o profissional revisa e depura código escrito por modelos.",
+      "paragrafos": [
+        "O caminho para o candidato é descrito pela própria Revelo em três etapas. Primeiro, você cria um perfil gratuito, o que leva cerca de cinco minutos e pode incluir a conexão com o LinkedIn. Depois, passa por uma conversa assíncrona e por testes de programação. Com o perfil aprovado, pode se candidatar com um clique às vagas compatíveis, e a Revelo faz a apresentação à empresa e oferece dicas de preparação para a entrevista. Em outubro de 2026, o site informa uma rede de mais de 400 mil desenvolvedores verificados e mais de 2.500 empresas clientes.",
+        "A Revelo começou como plataforma de recrutamento para o mercado brasileiro e, em novembro de 2020, lançou a Revelo Internacional para levar candidatos a vagas no exterior, segundo reportagem do NeoFeed de 2021. Hoje o foco são vagas de engenharia de software em empresas americanas, com contrato de prestador independente e trabalho a partir do próprio país, sem visto nem mudança. Em outubro de 2026, a página para profissionais cita remuneração de até US$ 95 mil por ano, com tetos diferentes por área (back-end, full-stack, dados, front-end e mobile). O pagamento pode ser feito em dólar ou em moeda local, e a conversão para moeda local tem taxa.",
+        "Os requisitos publicados mostram que a plataforma não é uma porta de entrada para iniciantes: é preciso morar na América Latina, ter pelo menos três anos de experiência em engenharia de software e, para vagas de tempo integral, inglês avançado ou fluente. Entre os países listados estão Brasil, México, Colômbia, Argentina, Chile, Peru, Equador e Costa Rica. Se você ainda está no começo, use a Revelo como referência do que o mercado internacional pede e trabalhe as lacunas com antecedência. Um bom primeiro exercício é escrever uma versão em inglês do seu resumo profissional e treinar a explicação de um projeto seu em voz alta, como faria numa entrevista.",
+        "A Revelo afirma que não cobra nada dos candidatos e que quem paga é a empresa contratante, então desconfie de qualquer pessoa que peça dinheiro em nome dela. O site também deixa claro que ter o perfil aprovado não garante uma vaga. Como o vínculo é de prestador independente, e não CLT, vale entender antes como ficam impostos, férias e benefícios, que segundo a Revelo variam conforme a vaga, a empresa e o país. Os projetos de treinamento de IA são pagos por hora ou por tarefa e não incluem os benefícios das vagas de tempo integral."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.revelo.com/"
+        },
+        {
+          "label": "Revelo para profissionais",
+          "url": "https://www.revelo.com/work"
+        },
+        {
+          "label": "Cadastro de candidatos",
+          "url": "https://app.careers.revelo.com/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Revelo: Find work (página para profissionais)",
+          "url": "https://www.revelo.com/work"
+        },
+        {
+          "label": "Revelo: Find, Hire & Pay Full Stack Developers in Latin America",
+          "url": "https://www.revelo.com/staffing/hire-full-stack-developers"
+        },
+        {
+          "label": "NeoFeed: Trabalho sem fronteiras, o passaporte de internacionalização da Revelo",
+          "url": "https://neofeed.com.br/blog/home/trabalho-sem-fronteiras-o-passaporte-de-internacionalizacao-da-revelo/"
+        },
+        {
+          "label": "Convergência Digital: Revelo abre 600 vagas e usa IA para seleção dos candidatos",
+          "url": "https://convergenciadigital.com.br/carreira/revelo-abre-600-vagas-e-usa-ia-para-seleo-dos-candidatos"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "vagas",
+          "id": "we-work-remotely"
+        },
+        {
+          "tipo": "programas",
+          "id": "703"
+        },
+        {
+          "tipo": "programas",
+          "id": "701"
+        },
+        {
+          "tipo": "blog",
+          "id": "testes-tecnicos-online"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Movile",
     "duration": "Ecossistema",
     "thumb": "./assets/thumb_jobs/movile.jpg",
     "site_url": "https://www.movile.com.br/carreiras-movile",
-    "category": "Ecosystem"
+    "category": "Ecosystem",
+    "slug": "movile",
+    "detalhe": {
+      "resumo": "A Movile é um grupo brasileiro de tecnologia, fundado em 1998 em Campinas (SP), que controla o iFood e reuniu ao longo dos anos empresas como Sympla e PlayKids. No site career, ela aparece como porta de entrada para as vagas das empresas desse ecossistema.",
+      "paragrafos": [
+        "A empresa nasceu em 1998 com o nome Intraweb, na incubadora de empresas da Unicamp, criada por Fabricio Bloisi e Eduardo Henrique para desenvolver intranets corporativas. Nos anos seguintes trabalhou com chat por SMS, venda de toques para celular e um portal de busca WAP, segundo a Wikipédia. Depois passou a investir e comprar aplicativos, montando um ecossistema que inclui o iFood (com investimento do grupo desde 2013), a Sympla, de ingressos, a PlayKids, de apps infantis, além de Rapiddo, Maplink e outras empresas. A Prosus, antiga Naspers, investe na Movile desde 2008 e, segundo o Brazil Journal em maio de 2024, detinha mais de 90% do capital da holding.",
+        "Por ser uma holding, a Movile funciona como guarda-chuva de várias empresas que contratam por conta própria. Em março de 2021, por exemplo, a CNN Brasil noticiou que o grupo tinha 870 vagas remotas, 380 delas em tecnologia, nas áreas de engenharia de software, machine learning, ciência de dados, design e produto. Naquele momento, as vagas de tecnologia eram divulgadas em movile.com.br/tecnologia e as demais em movile.com.br/carreiras. Esse tipo de anúncio mostra que o ecossistema contrata para perfis técnicos e também para vendas, logística, marketing e recursos humanos.",
+        "Sobre a cultura, uma reportagem da Exame de 2016 ouviu estagiários da Movile, que descreveram autonomia desde cedo, pouca hierarquia e foco em resultado. O processo seletivo daquela época incluía dinâmicas de grupo, casos reais da empresa e entrevista técnica. São relatos antigos e podem não refletir a realidade de hoje, mas ajudam a entender o tipo de perfil valorizado: gente que assume responsabilidade e aprende rápido. Para confirmar como está a cultura atual, compare com informações recentes das próprias empresas e com avaliações de funcionários.",
+        "Como o ecossistema mudou bastante nos últimos anos, comece pela página de carreiras de cada empresa do grupo que interessa a você, e não só pela página da holding. Leia cada vaga separando o que é obrigatório do que é desejável e prepare exemplos concretos de projetos para contar na entrevista. Desconfie de anúncios em grupos de mensagem ou redes sociais que peçam pagamento ou dados bancários para participar de um processo seletivo; vagas legítimas não cobram do candidato."
+      ],
+      "links": [
+        {
+          "label": "Página de carreiras",
+          "url": "https://www.movile.com.br/carreiras-movile"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Wikipédia: Movile (company)",
+          "url": "https://en.wikipedia.org/wiki/Movile_(company)"
+        },
+        {
+          "label": "Brazil Journal: CEO do iFood vai comandar a Prosus, a gigante holandesa de tecnologia",
+          "url": "https://braziljournal.com/ceo-do-ifood-vai-comandar-a-prosus-a-gigante-holandesa-de-tecnologia/"
+        },
+        {
+          "label": "CNN Brasil: Dono do iFood, grupo Movile tem 870 vagas para trabalho remoto em todo o Brasil",
+          "url": "https://www.cnnbrasil.com.br/economia/macroeconomia/dono-do-ifood-grupo-movile-tem-870-vagas-para-trabalho-remoto-em-todo-o-brasil/"
+        },
+        {
+          "label": "Exame: O que dizem 10 jovens que trabalham na Movile, dona do iFood",
+          "url": "https://exame.com/carreira/o-que-dizem-10-jovens-que-trabalham-na-movile-dona-do-ifood/"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "processo-seletivo-como-se-preparar"
+        },
+        {
+          "tipo": "blog",
+          "id": "como-ler-uma-vaga"
+        },
+        {
+          "tipo": "blog",
+          "id": "cultura-de-empresa-tech"
+        },
+        {
+          "tipo": "vagas",
+          "id": "glassdoor"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Glassdoor",
     "duration": "Reviews/Jobs",
     "thumb": "./assets/thumb_jobs/glassdoor.jpg",
     "site_url": "https://www.glassdoor.com.br/",
-    "category": "Reviews"
+    "category": "Reviews",
+    "slug": "glassdoor",
+    "detalhe": {
+      "resumo": "O Glassdoor é um site em que funcionários e ex-funcionários avaliam empresas de forma anônima e compartilham salários e benefícios, e que também reúne vagas de emprego. É útil para pesquisar uma empresa antes de se candidatar ou de uma entrevista.",
+      "paragrafos": [
+        "Na prática, o Glassdoor junta três coisas: avaliações de empresas, dados de salário informados pelos próprios usuários e vagas abertas, com buscas personalizadas e alertas. A página institucional do site afirma que quem procura emprego nunca paga e que a comunidade anônima é gratuita. Em 2023, o Glassdoor lançou as \"bowls\", fóruns em que os usuários conversam de forma anônima sobre temas ou sobre uma empresa específica; nas bowls de empresa, entram funcionários verificados. O recurso se inspira no Fishbowl, aplicativo de discussões anônimas que o Glassdoor comprou em 2021, segundo a Axios.",
+        "O Glassdoor foi lançado em 2008 nos Estados Unidos e chegou oficialmente ao Brasil em 26 de junho de 2019, junto com México e Argentina, segundo o Money Times. A versão brasileira foi formada a partir da Love Mondays, plataforma de avaliações que o Glassdoor havia comprado em 2016; os usuários mantiveram as avaliações e informações de salário que já existiam. A página institucional atual do site registra a Indeed como dona da marca. Para quem está começando em tecnologia, o Glassdoor serve menos como fonte de vagas e mais como ferramenta de pesquisa sobre empresas, faixas salariais e processos seletivos.",
+        "Para começar, crie uma conta gratuita e pesquise as empresas que aparecem nas vagas que você quer. Um exercício concreto: escolha três empresas, leia as avaliações mais recentes de cada uma e anote os pontos que se repetem sobre liderança, carga de trabalho e processo seletivo. Depois, compare as faixas salariais informadas para o cargo de entrada que você procura, lembrando que são dados declarados pelos usuários. Use essas anotações para preparar perguntas para a entrevista e para negociar com mais informação.",
+        "Avaliações são opiniões individuais e muitas empresas têm poucas, então olhe a quantidade, a data e o padrão geral, e não uma nota isolada. O anonimato também tem limites: em 2022, a Justiça brasileira mandou o Glassdoor revelar a identidade de usuários que haviam criticado uma empresa, num caso ligado a ações trabalhistas, segundo o portal Contábeis. Ao escrever uma avaliação, descreva fatos, evite expor colegas e não publique informações confidenciais. Para ter uma visão mais completa, combine o Glassdoor com a página de carreiras da empresa, o LinkedIn e conversas com quem trabalha lá."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.glassdoor.com.br/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Glassdoor: About Us / Press",
+          "url": "https://api.glassdoor.com/about/"
+        },
+        {
+          "label": "Money Times: Com planos de expansão na América Latina, Glassdoor chega ao Brasil",
+          "url": "https://www.moneytimes.com.br/com-planos-de-expansao-na-america-latina-glassdoor-chega-ao-brasil/"
+        },
+        {
+          "label": "Axios: Glassdoor launches new feature to allow for more anonymous discussion",
+          "url": "https://www.axios.com/2023/07/20/glassdoor-launches-new-feature-to-allow-for-more-anonymous-discussion"
+        },
+        {
+          "label": "Contábeis: Site deve revelar identidade de usuário que criticou empresa",
+          "url": "https://www.contabeis.com.br/noticias/52687/site-deve-revelar-identidade-de-usuario-que-criticou-empresa/"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "como-ler-uma-vaga"
+        },
+        {
+          "tipo": "blog",
+          "id": "cultura-de-empresa-tech"
+        },
+        {
+          "tipo": "blog",
+          "id": "financas-primeiro-salario-tech"
+        },
+        {
+          "tipo": "blog",
+          "id": "lgpd-seus-dados-ao-se-candidatar"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Abler",
     "duration": "Plataforma",
     "thumb": "./assets/thumb_jobs/abler.jpg",
     "site_url": "https://candidatos.abler.com.br/app/vagas",
-    "category": "ATS"
+    "category": "ATS",
+    "slug": "abler",
+    "detalhe": {
+      "resumo": "A Abler é uma plataforma brasileira de recrutamento e seleção, do tipo ATS (sistema de rastreamento de candidatos), usada por empresas para publicar vagas e organizar processos seletivos. Para o candidato, é onde se cadastra o currículo e se candidata às vagas das empresas que usam o sistema.",
+      "paragrafos": [
+        "A Abler é uma startup de Curitiba, fundada em 2017 segundo o B2B Stack, que vende software e consultoria para automatizar o recrutamento. Avaliações de clientes no Capterra citam recursos como publicação de vagas em vários sites, banco de candidatos com busca e filtros, perguntas de triagem personalizadas, testes de candidatos (incluindo relatório comportamental DISC), página de carreiras e opções voltadas à inclusão de pessoas com deficiência. Segundo o Startupi, o sistema entrega aos recrutadores um ranking de candidatos, mas não conduz a seleção: quem decide é a empresa.",
+        "As vagas que aparecem na Abler são das empresas clientes, de portes e setores variados, e não só de tecnologia. Por isso, o tipo de contratação (CLT, estágio, temporário ou outro) e o formato (presencial, híbrido ou remoto) dependem de cada anúncio. Muitas vezes o candidato chega à Abler sem procurar por ela: clica em \"candidatar-se\" na página de uma empresa e é levado ao formulário do sistema. Saber disso ajuda a entender por que o mesmo cadastro aparece em processos de empresas diferentes.",
+        "Para começar, preencha o currículo com calma e de forma completa, porque a triagem e o ranking usam essas informações. Um exercício concreto: pegue uma vaga que interessa a você, liste as palavras-chave da descrição (tecnologias, ferramentas, tipo de formação) e confira se elas aparecem, de forma verdadeira, no seu perfil. Responda as perguntas de triagem com atenção e, nos testes comportamentais, com sinceridade, já que respostas pensadas só para agradar tendem a ficar incoerentes. Depois de se candidatar, acompanhe o status no portal e no e-mail.",
+        "Ao cadastrar currículo num sistema usado por várias empresas, leia a política de privacidade e veja quais dados ficam visíveis e por quanto tempo; a LGPD garante o direito de pedir acesso e exclusão dos seus dados. Algumas avaliações no Capterra apontam limitações, como a falta de aplicativo para celular. A cobrança descrita nas fontes é voltada às empresas (o B2B Stack cita planos a partir de R$ 300 por mês). Desconfie de qualquer contato que peça pagamento para avançar num processo seletivo."
+      ],
+      "links": [
+        {
+          "label": "Portal de vagas",
+          "url": "https://candidatos.abler.com.br/app/vagas"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Startupi: Abler (tag)",
+          "url": "https://startupi.com.br/tags/abler/"
+        },
+        {
+          "label": "B2B Stack: Compare Abler Recrutamento Digital com Recrutei",
+          "url": "https://www.b2bstack.com.br/compare/abler-recrutamento-digital-vs-recrutei"
+        },
+        {
+          "label": "Capterra: Abler Reviews 2026",
+          "url": "https://www.capterra.com/p/209595/Abler/reviews/"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "lgpd-seus-dados-ao-se-candidatar"
+        },
+        {
+          "tipo": "blog",
+          "id": "processo-seletivo-como-se-preparar"
+        },
+        {
+          "tipo": "blog",
+          "id": "perfil-encontravel-linkedin"
+        },
+        {
+          "tipo": "blog",
+          "id": "testes-tecnicos-online"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "99freelas",
     "duration": "Freelance",
     "thumb": "./assets/thumb_jobs/99freelas.jpg",
     "site_url": "https://www.99freelas.com.br/projects",
-    "category": "Freelance"
+    "category": "Freelance",
+    "slug": "99freelas",
+    "detalhe": {
+      "resumo": "O 99Freelas é um site brasileiro de trabalho freelancer, criado em 2014, em que clientes publicam projetos e profissionais enviam propostas. Reúne serviços como programação e web, design, redação, tradução, SEO e edição de vídeo.",
+      "paragrafos": [
+        "O funcionamento segue o modelo de marketplace. O cliente publica um projeto, os freelancers filtram as oportunidades da sua área e enviam propostas com preço e prazo, e o cliente escolhe. O pagamento é depositado pelo cliente na plataforma e liberado para o freelancer depois que o trabalho é concluído e aprovado, com saque para a conta bancária cadastrada. Cada conta tem um perfil de freelancer e outro de cliente, e o aplicativo para Android inclui uma calculadora para definir preço por hora ou por projeto, segundo o Canaltech.",
+        "As oportunidades são projetos pontuais, e não vagas CLT. O foco é o mercado brasileiro, e o blog Freelas em Crise, em abril de 2026, estimou que os projetos típicos ficam entre R$ 200 e R$ 1.500. Para quem está aprendendo tecnologia, é um lugar para fazer os primeiros trabalhos pagos, como landing pages, ajustes em sites ou pequenas automações, e assim construir portfólio e referências.",
+        "As taxas e os planos mudam com frequência e as fontes externas não concordam entre si, então confira sempre os valores atuais no painel do site antes de enviar propostas. Segundo o Ecarts, em setembro de 2026 a plataforma tinha um plano gratuito e planos pagos com mensalidade (Pro e Business), que reduzem a taxa e encurtam o prazo de saque. Em qualquer cenário, inclua a taxa no cálculo do seu preço.",
+        "Para começar, monte um perfil com descrição objetiva das suas habilidades e coloque no portfólio projetos reais, mesmo que sejam de estudo. Um primeiro exercício concreto: escolha um projeto pequeno publicado no site, escreva uma proposta personalizada com escopo, prazo realista e preço, e compare com as orientações do artigo sobre propostas do blog do ecossistema. Evite propostas copiadas e genéricas, que são ignoradas com facilidade.",
+        "Mantenha a conversa e o pagamento dentro da plataforma, porque é isso que garante a proteção do serviço; desconfie de clientes que pedem para negociar por fora ou que oferecem pagamento antecipado de forma estranha. Defina o escopo por escrito antes de começar, para evitar pedidos que crescem sem fim. Como alternativas, existem o Workana, com mais projetos em espanhol e de outros países da América Latina, e plataformas internacionais em inglês.",
+        "Página em revisão: as informações acima são básicas e serão completadas em breve."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.99freelas.com.br/"
+        },
+        {
+          "label": "Lista de projetos",
+          "url": "https://www.99freelas.com.br/projects"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Ecarts: 99Freelas em 2026: quanto paga, taxas e como ganhar dinheiro",
+          "url": "https://ecarts.com.br/tecnologia/99freelas-em-2026-quanto-paga-taxas-e-como-ganhar-dinheiro/"
+        },
+        {
+          "label": "Freelas em Crise: Workana, 99Freelas e Upwork, comparativo",
+          "url": "https://www.freelasemcrise.com.br/blog/workana-99freelas-upwork-comparativo"
+        },
+        {
+          "label": "Canaltech: Principais aplicativos para freelancers",
+          "url": "https://canaltech.com.br/apps/principais-aplicativos-freelancers/"
+        },
+        {
+          "label": "B2B Stack: We Work Remotely vs 99freelas",
+          "url": "https://www.b2bstack.com.br/compare/we-work-remotely-vs-99freelas"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "proposta-freelancer-escopo-prazo-preco"
+        },
+        {
+          "tipo": "vagas",
+          "id": "workana"
+        },
+        {
+          "tipo": "programas",
+          "id": "1"
+        },
+        {
+          "tipo": "blog",
+          "id": "financas-primeiro-salario-tech"
+        }
+      ],
+      "atualizadoEm": "2026-10-30"
+    }
   },
   {
     "title": "Superprof",
     "duration": "Aulas",
     "thumb": "./assets/thumb_jobs/superprof.jpg",
     "site_url": "https://www.superprof.com.br/",
-    "category": "Mentoring"
+    "category": "Mentoring",
+    "slug": "superprof",
+    "detalhe": {
+      "resumo": "A Superprof é uma plataforma de anúncios que conecta alunos a professores particulares de vários assuntos, incluindo programação e informática. É operada pela empresa francesa Superprof SAS; no Brasil, o professor pode anunciar de graça, e o aluno paga uma assinatura mensal para entrar em contato com os professores.",
+      "paragrafos": [
+        "Na Superprof, o professor cria um anúncio com o assunto, a forma de aula (presencial ou on-line) e o preço que cobra, e o aluno procura e envia pedidos de aula. Pelos termos de uso do site brasileiro, a Superprof funciona apenas como suporte de anúncios: não participa do pagamento das aulas e não garante as qualificações nem a veracidade do que cada professor anuncia. O valor da aula é combinado diretamente entre aluno e professor.",
+        "Para o aluno, o contato é feito pelo Passe Aluno, que em outubro de 2026 custava R$ 69 por mês, segundo os termos de uso. Com o passe, é possível mandar pedidos para quantos professores quiser durante a assinatura. A renovação é automática e sem fidelidade, e o cancelamento é feito pelo painel do usuário. O reembolso só é previsto em casos específicos, como indisponibilidade do professor.",
+        "Para quem ensina, a plataforma pode ser uma forma de ganhar experiência e renda dando aulas de lógica de programação, linguagens ou ferramentas. Pelos termos, é possível publicar até cinco anúncios gratuitos, e novos professores devem oferecer a primeira aula grátis, de 30 minutos a 1 hora. Há também um plano profissional pago, que em outubro de 2026 custava R$ 269 por ano para deixar o anúncio em destaque, com renovação automática. Um bom primeiro exercício é escrever um anúncio claro sobre um tema que você domina e preparar o roteiro dessa primeira aula.",
+        "O principal cuidado é com a cobrança do Passe Aluno. Há reclamações públicas, como uma registrada no Portal da Queixa em setembro de 2026, de alunos que entenderam que a aula seria gratuita e foram cobrados pela assinatura mesmo sem ter tido aula. Leia as condições antes de informar o cartão, anote a data de renovação e cancele se não for usar. Como a plataforma não verifica tudo o que é anunciado, confira avaliações, peça uma conversa inicial e combine por escrito preço, duração e política de faltas.",
+        "No contexto de carreira, a Superprof não é uma plataforma de vagas no sentido tradicional: ela serve para encontrar professores ou para dar aulas como atividade autônoma. Quem pretende dar aulas de forma frequente deve tratar isso como um trabalho freelancer, com preço, escopo e prazos bem definidos. Para estudar sozinho, há alternativas gratuitas, como cursos abertos e a documentação oficial das tecnologias."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.superprof.com.br/"
+        },
+        {
+          "label": "Termos de uso e menções legais",
+          "url": "https://www.superprof.com.br/tcgu.html"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Superprof: Menções legais e condições gerais de uso",
+          "url": "https://www.superprof.com.br/tcgu.html"
+        },
+        {
+          "label": "Portal da Queixa: Superprof, cobrança de taxa não informada e ausência de serviço prestado",
+          "url": "https://portaldaqueixa.com/brands/superprof/complaints/superprof-cobranca-de-taxa-nao-informada-e-ausencia-de-servico-prestado-162708626"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "proposta-freelancer-escopo-prazo-preco"
+        },
+        {
+          "tipo": "programas",
+          "id": "901"
+        },
+        {
+          "tipo": "blog",
+          "id": "escolher-formacao-dev"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Workana",
     "duration": "Freelance",
     "thumb": "./assets/thumb_jobs/workana.jpg",
     "site_url": "https://www.workana.com/jobs",
-    "category": "Freelance"
+    "category": "Freelance",
+    "slug": "workana",
+    "detalhe": {
+      "resumo": "O Workana é uma plataforma de trabalho freelancer com foco na América Latina, em especial Brasil, Argentina e México. Clientes publicam projetos e freelancers enviam propostas com prazo e preço.",
+      "paragrafos": [
+        "O cliente publica um projeto com descrição e valor estimado, os freelancers enviam propostas e o cliente escolhe uma delas. Ao final de cada trabalho, o cliente avalia o freelancer, e boas avaliações rendem selos que dão mais visibilidade ao perfil. Segundo o Canaltech, novos perfis passam por revisão da equipe de moderação, o que pode levar até 15 dias. Há relatos de usuários, como um publicado no TabNews em 2022, de espera bem mais longa pela aprovação, então cadastre-se com antecedência.",
+        "Os projetos cobrem áreas como programação, design, redação, marketing, jurídico e arquitetura, e a maioria é em português ou espanhol. São trabalhos por projeto, e não vagas CLT. Para quem fala espanhol, o leque de clientes aumenta, porque a plataforma atende vários países da América Latina. Para quem está começando em tecnologia, serve para conseguir os primeiros trabalhos pagos e montar um histórico de avaliações.",
+        "As taxas e os planos mudam, então confira no site antes de propor. Segundo a central de ajuda do Workana, em outubro de 2026 a comissão sobre o que o freelancer recebe é escalonada por cliente, conforme o total já pago por aquele cliente: 20% até US$ 300, 10% de US$ 301 a US$ 3 mil e 5% acima disso. O cliente paga uma taxa de serviço de 4,5% em cada contrato fechado, com mínimo de US$ 2, além de um custo de processamento que varia conforme o meio de pagamento e o país. Enviar propostas é gratuito, e há planos pagos para freelancers, como o Explorer, anunciado por cerca de US$ 1 por dia.",
+        "Para começar, complete o perfil com uma descrição clara das suas habilidades e um portfólio com projetos reais, mesmo que de estudo. Escolha bem os projetos para os quais vai enviar propostas: prefira projetos pequenos e bem descritos que combinem com o que você já sabe fazer. Um primeiro exercício concreto é escrever uma proposta com escopo, prazo e preço para um projeto real do site, usando o artigo sobre propostas do blog do ecossistema como guia.",
+        "Mantenha toda a negociação e o pagamento dentro da plataforma e desconfie de clientes que pedem para sair dela ou que solicitam trabalho de teste longo sem pagamento. Inclua a comissão no seu preço, sem citá-la ao cliente, o que a plataforma desaconselha, e combine o escopo por escrito antes de começar. Como alternativa com foco só no Brasil, há o 99Freelas; para vagas remotas internacionais em inglês, existem quadros como o We Work Remotely."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.workana.com/"
+        },
+        {
+          "label": "Lista de projetos",
+          "url": "https://www.workana.com/jobs"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Workana (central de ajuda): como funcionam as comissões",
+          "url": "https://help.workana.com/hc/en-us/articles/360041235874"
+        },
+        {
+          "label": "Workana (central de ajuda): ¿Cuánto cuesta usar Workana?",
+          "url": "https://help.workana.com/hc/es/articles/360040846094--Cu%C3%A1nto-cuesta-usar-Workana"
+        },
+        {
+          "label": "Canaltech: Principais aplicativos para freelancers",
+          "url": "https://canaltech.com.br/apps/principais-aplicativos-freelancers/"
+        },
+        {
+          "label": "TabNews: relato sobre 99Freelas e Workana",
+          "url": "https://www.tabnews.com.br/BlackMan/173c0bbb-7a0a-4361-b9f4-fb19af4d4c5d"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "proposta-freelancer-escopo-prazo-preco"
+        },
+        {
+          "tipo": "vagas",
+          "id": "99freelas"
+        },
+        {
+          "tipo": "vagas",
+          "id": "we-work-remotely"
+        },
+        {
+          "tipo": "blog",
+          "id": "financas-primeiro-salario-tech"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "Santander Open Academy",
@@ -178,13 +1006,119 @@
     "duration": "Brasil",
     "thumb": "/media/career/vagas-com.webp",
     "site_url": "https://www.vagas.com.br/vagas-de-tecnologia",
-    "category": "General Jobs"
+    "category": "General Jobs",
+    "slug": "vagas-com",
+    "detalhe": {
+      "resumo": "A VAGAS.com é um site brasileiro de empregos, criado em 1999, em que o candidato cadastra o currículo gratuitamente e se candidata a vagas de empresas de todo o país. Também oferece às empresas uma ferramenta de recrutamento e seleção, e tem uma página dedicada a vagas de tecnologia.",
+      "paragrafos": [
+        "A VAGAS.com foi fundada em 1999 em São Paulo e completou 25 anos em 2024. Segundo o blog da empresa, ela lançou o primeiro sistema de gestão de processos seletivos (ATS) do segmento e mantém o cadastro de currículo gratuito para candidatos desde a fundação. A empresa informava, em 2024, 42 milhões de currículos cadastrados, mais de 10 milhões de vagas publicadas e 68 mil empresas clientes da ferramenta de seleção. Mais recentemente, passou a usar uma combinação de inteligência artificial e avaliação humana para ranquear candidatos.",
+        "Depois de cadastrar o currículo e fazer login, o candidato vê as vagas que mais combinam com o perfil e pode se candidatar pelo próprio site ou aplicativo. A busca tem filtros por modelo de trabalho (presencial, híbrido ou remoto), tipo de contratação (como CLT, estágio e freelance), localidade, benefícios, área, nível hierárquico e vagas para pessoas com deficiência. Em outubro de 2026, a página de vagas de tecnologia listava 417 oportunidades, como coordenador de TI, assistente de TI, analista de TI e estágios, muitas em São Paulo, Minas Gerais e Rio de Janeiro.",
+        "Esse perfil de vagas mostra que o site é forte em empresas tradicionais e em funções de suporte, infraestrutura e sistemas, além de desenvolvimento. Para começar, preencha o currículo por completo, com formação, cursos, projetos e as tecnologias que você realmente domina. Um exercício concreto: encontre cinco vagas de estágio ou júnior na sua cidade ou remotas, anote as habilidades que se repetem e ajuste o currículo para deixar essas palavras-chave visíveis, sem inventar experiência. O guia de cargos do site ajuda a entender a diferença entre funções parecidas, como analista de suporte e analista de sistemas.",
+        "O site se descreve como o maior site de empregos do Brasil; trate isso como autodescrição. Antes de enviar dados, pesquise a empresa anunciante e desconfie de anúncios que peçam pagamento, compra de curso ou dados bancários para seguir no processo. Leia a política de privacidade e lembre que, pela LGPD, você pode pedir acesso e exclusão dos seus dados. Para ampliar a busca, combine a VAGAS.com com o LinkedIn, com plataformas especializadas em tecnologia e com as páginas de carreira das empresas que interessam a você."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.vagas.com.br/"
+        },
+        {
+          "label": "Vagas de tecnologia",
+          "url": "https://www.vagas.com.br/vagas-de-tecnologia"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "VAGAS.com: Vagas de tecnologia",
+          "url": "https://www.vagas.com.br/vagas-de-tecnologia"
+        },
+        {
+          "label": "Blog VAGAS.com: Vagas completa 25 anos inovando sempre para conectar empresas e profissionais",
+          "url": "https://www.vagas.com.br/blog/?p=3145"
+        },
+        {
+          "label": "CB Insights: Vagas, perfil da empresa",
+          "url": "https://www.cbinsights.com/company/vagas/"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "como-ler-uma-vaga"
+        },
+        {
+          "tipo": "blog",
+          "id": "lgpd-seus-dados-ao-se-candidatar"
+        },
+        {
+          "tipo": "blog",
+          "id": "processo-seletivo-como-se-preparar"
+        },
+        {
+          "tipo": "blog",
+          "id": "perfil-encontravel-linkedin"
+        },
+        {
+          "tipo": "vagas",
+          "id": "programathor"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   },
   {
     "title": "We Work Remotely",
     "duration": "Remoto",
     "thumb": "/media/career/we-work-remotely.webp",
     "site_url": "https://weworkremotely.com/categories/remote-programming-jobs",
-    "category": "Global Jobs"
+    "category": "Global Jobs",
+    "slug": "we-work-remotely",
+    "detalhe": {
+      "resumo": "O We Work Remotely é um quadro internacional de vagas 100% remotas, criado em 2008, com categorias como programação, design e marketing. O link desta página leva à categoria de vagas de programação.",
+      "paragrafos": [
+        "Empresas de vários países publicam anúncios de vagas remotas, organizados por categorias; na área de programação há subcategorias como full-stack. Cada anúncio indica de onde a pessoa pode trabalhar: algumas vagas aceitam candidatos de qualquer lugar do mundo (\"Anywhere in the World\"), outras se restringem a certos países ou fusos. O site também oferece feeds RSS por categoria, úteis para acompanhar vagas novas sem precisar entrar todos os dias. Segundo o perfil no B2B Stack, a comunidade soma mais de 3 milhões de visitantes e mais de 22 mil vagas publicadas.",
+        "Em outubro de 2026, a categoria de programação trazia vagas de full-stack, machine learning, segurança, infraestrutura e engenharia de dados, de empresas com sede na Alemanha, Índia, Portugal, Áustria, Argentina e Estados Unidos, entre outros. Algumas exibiam faixa salarial anual em dólar, em patamares típicos de vagas sêniores americanas. Na prática, a maior parte das oportunidades pede experiência e inglês fluente, então o site é mais útil para quem já trabalha na área e quer uma vaga internacional.",
+        "Para começar, prepare um currículo em inglês e mantenha atualizados o LinkedIn e o GitHub, com projetos que mostrem seu trabalho. Um exercício concreto: assine o feed RSS da categoria de programação, separe dez vagas e anote quais tecnologias, nível de experiência e regiões aparecem com mais frequência. Isso dá um mapa do que estudar e mostra se as vagas aceitam candidatos do Brasil. Os programas de inglês para tecnologia e de preparação para entrevistas em inglês do ecossistema ajudam nessa etapa.",
+        "Leia com atenção a restrição de localização de cada vaga antes de se candidatar, porque muitas não aceitam candidatos de fora de certos países. Entenda também o tipo de contrato oferecido (funcionário ou prestador de serviço), já que isso muda a forma de receber, os impostos e os benefícios. Fique atento a diferenças de fuso horário nas reuniões. Como em qualquer site de vagas, desconfie de recrutadores que peçam pagamento, compra de equipamento ou dados bancários antes de uma contratação formal."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://weworkremotely.com/"
+        },
+        {
+          "label": "Vagas de programação",
+          "url": "https://weworkremotely.com/categories/remote-programming-jobs"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "We Work Remotely: Remote programming jobs",
+          "url": "https://weworkremotely.com/categories/remote-programming-jobs"
+        },
+        {
+          "label": "B2B Stack: We Work Remotely vs 99freelas",
+          "url": "https://www.b2bstack.com.br/compare/we-work-remotely-vs-99freelas"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "vagas",
+          "id": "revelo"
+        },
+        {
+          "tipo": "programas",
+          "id": "701"
+        },
+        {
+          "tipo": "programas",
+          "id": "703"
+        },
+        {
+          "tipo": "blog",
+          "id": "perfil-encontravel-linkedin"
+        }
+      ],
+      "atualizadoEm": "2026-10-29"
+    }
   }
 ]

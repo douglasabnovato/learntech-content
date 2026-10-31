@@ -9,8 +9,8 @@
   "category": "outros",
   "status": "concluido",
   "content": {
-    "longDescription": "De 19 a 21 de maio de 2023, o Moinho, em Juiz de Fora, recebeu o Fator S Challenge, ideathon do Sebrae Minas com a Wabtec Corporation e a Mhark. O desafio foi pensar o futuro do transporte ferroviário de carga no Brasil. Equipes com perfis complementares passaram por formação de times, workshops de definição do problema e de prototipação, mentorias e pitch final. Entre os projetos apresentados estava o Fuser, proposta de aplicativo para reduzir o custo de caminhões que rodam vazios no trecho Itaguaí–São Paulo.",
-    "videoUrl": "",
+    "longDescription": "De 19 a 21 de maio de 2023, o Moinho, em Juiz de Fora, recebeu o Fator S Challenge, ideathon do Sebrae Minas com a Wabtec Corporation e a Mhark. O desafio foi pensar o futuro do transporte ferroviário de carga no Brasil. Equipes com perfis complementares passaram por formação de times, workshops de definição do problema e de prototipação, mentorias e pitch final. Entre os projetos apresentados estava o Fuser, da equipe do autor do learnTECH: um aplicativo para ocupar a capacidade ociosa de composições ferroviárias que voltam vazias no trecho Itaguaí–São Paulo.",
+    "videoUrl": "https://www.youtube.com/embed/WW8qL1QAhOE",
     "gallery": [
       {
         "id": "fator-s-challenge-1",
@@ -41,6 +41,150 @@
         "url": "/media/bootcamps/eventos/fator-s-challenge/5.webp",
         "type": "image",
         "alt": "Canvas de modelo de negócio preenchido com post-its"
+      },
+      {
+        "id": "fator-s-challenge-6",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/6.webp",
+        "type": "image",
+        "alt": "Auditório do Moinho durante a abertura do Fator S Challenge"
+      },
+      {
+        "id": "fator-s-challenge-7",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/7.webp",
+        "type": "image",
+        "alt": "Palco do Fator S Challenge com o painel Tecnologia, Inovação e Sustentabilidade"
+      },
+      {
+        "id": "fator-s-challenge-8",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/8.webp",
+        "type": "image",
+        "alt": "Slide da etapa de validação do problema e prototipação"
+      },
+      {
+        "id": "fator-s-challenge-9",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/9.webp",
+        "type": "image",
+        "alt": "Mentor apresentando no palco do Fator S Challenge"
+      },
+      {
+        "id": "fator-s-challenge-10",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/10.webp",
+        "type": "image",
+        "alt": "Esboço de protótipo feito pela equipe durante a maratona"
+      },
+      {
+        "id": "fator-s-challenge-11",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/11.webp",
+        "type": "image",
+        "alt": "Marca da equipe Fuser, criada durante o desafio"
+      },
+      {
+        "id": "fator-s-challenge-12",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/12.webp",
+        "type": "image",
+        "alt": "Equipes reunidas no palco para as apresentações"
+      },
+      {
+        "id": "fator-s-challenge-13",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/13.webp",
+        "type": "image",
+        "alt": "Equipe apresentando o pitch no palco"
+      },
+      {
+        "id": "fator-s-challenge-14",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/14.webp",
+        "type": "image",
+        "alt": "Plateia acompanhando os pitches das equipes"
+      },
+      {
+        "id": "fator-s-challenge-15",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/15.webp",
+        "type": "image",
+        "alt": "Quadro de modelo de negócios preenchido com notas adesivas"
+      },
+      {
+        "id": "fator-s-challenge-16",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/16.webp",
+        "type": "image",
+        "alt": "Equipe Fuser reunida no palco do Fator S Challenge"
+      },
+      {
+        "id": "fator-s-challenge-17",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/17.webp",
+        "type": "image",
+        "alt": "Cartaz de divulgação do Fator S Challenge em Juiz de Fora"
+      },
+      {
+        "id": "fator-s-challenge-18",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/18.webp",
+        "type": "image",
+        "alt": "Abertura do Fator S Challenge no auditório do Moinho"
+      },
+      {
+        "id": "fator-s-challenge-19",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/19.webp",
+        "type": "image",
+        "alt": "Palestra no palco com o tema Tecnologia, Inovação e Sustentabilidade"
+      },
+      {
+        "id": "fator-s-challenge-20",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/20.webp",
+        "type": "image",
+        "alt": "Slide de conceitos apresentado no workshop"
+      },
+      {
+        "id": "fator-s-challenge-21",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/21.webp",
+        "type": "image",
+        "alt": "Slide com os passos para um pitch de sucesso"
+      },
+      {
+        "id": "fator-s-challenge-22",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/22.webp",
+        "type": "image",
+        "alt": "Quadro com post-its usado na definição do problema"
+      },
+      {
+        "id": "fator-s-challenge-23",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/23.webp",
+        "type": "image",
+        "alt": "Esboços em papel da solução da equipe"
+      },
+      {
+        "id": "fator-s-challenge-24",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/24.webp",
+        "type": "image",
+        "alt": "Bloco de fluxo de receita preenchido no canvas de negócio"
+      },
+      {
+        "id": "fator-s-challenge-25",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/25.webp",
+        "type": "image",
+        "alt": "Bloco de proposta de valor preenchido no canvas"
+      },
+      {
+        "id": "fator-s-challenge-26",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/26.webp",
+        "type": "image",
+        "alt": "Equipe Fuser apresentando o pitch para a banca"
+      },
+      {
+        "id": "fator-s-challenge-27",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/27.webp",
+        "type": "image",
+        "alt": "Equipe no palco durante as apresentações finais"
+      },
+      {
+        "id": "fator-s-challenge-28",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/28.webp",
+        "type": "image",
+        "alt": "Arte do segundo dia do Fator S Challenge"
+      },
+      {
+        "id": "fator-s-challenge-29",
+        "url": "/media/bootcamps/eventos/fator-s-challenge/29.webp",
+        "type": "image",
+        "alt": "Plateia acompanhando os pitches no auditório"
       }
     ],
     "curriculum": [
@@ -50,6 +194,28 @@
       "Mentorias de negócio e de pitch",
       "Pitch final para banca"
     ],
-    "officialLink": "https://mg.agenciasebrae.com.br/cultura-empreendedora/inscricoes-abertas-para-desafio-de-empreendedorismo-em-juiz-de-fora/"
+    "officialLink": "https://mg.agenciasebrae.com.br/cultura-empreendedora/inscricoes-abertas-para-desafio-de-empreendedorismo-em-juiz-de-fora/",
+    "paragraphs": [
+      "O Fator S é a linha de programas de ideação e empreendedorismo do Sebrae Minas voltada a negócios de base tecnológica, digitais e escaláveis, e funciona como primeira etapa da jornada de startups da instituição. Os programas da família reúnem pessoas com perfis diferentes, formam equipes multidisciplinares e as levam, em poucos dias de imersão, da definição de um problema até a apresentação de uma proposta de negócio para uma banca.",
+      "O Fator S Challenge 2023 aconteceu de 19 a 21 de maio de 2023 no Moinho, hub de inovação instalado num antigo moinho de farinha na zona norte de Juiz de Fora. A edição foi feita com a Wabtec Corporation, fabricante de locomotivas e equipamentos ferroviários com fábrica em Contagem (MG), e com a Mhark, e propôs um desafio de setor: pensar o futuro do transporte ferroviário de carga no Brasil.",
+      "Ao longo do fim de semana, as equipes passaram por formação de times, workshops de definição do problema e de prototipação, mentorias de negócio e de pitch e, por fim, pitch final para banca. O roteiro segue a metodologia usada nos programas Fator S, que combina workshops curtos com mentorias e costuma organizar os participantes em perfis complementares, como desenvolvimento, design, marketing e negócios. Entre os projetos apresentados estava o Fuser, proposta de aplicativo para reduzir o custo de caminhões que rodam vazios no trecho Itaguaí–São Paulo.",
+      "Ideathons desse tipo não exigem ideia pronta nem experiência prévia em empreendedorismo; a inscrição costuma ser individual e gratuita, e as equipes se formam no próprio evento. São indicados para estudantes, profissionais de tecnologia e pessoas de outras áreas que queiram testar como é transformar um problema real em proposta de negócio.",
+      "Para quem trabalha com tecnologia, a experiência treina habilidades que o dia a dia técnico raramente exercita: entender o problema antes da solução, validar hipóteses com usuários, trabalhar com pessoas de outras áreas e defender uma ideia em poucos minutos. O contato com uma empresa do porte da Wabtec e com mentores do Sebrae também amplia a rede de contatos.",
+      "O pitch da equipe Fuser partiu de dois lados do mesmo problema. De um lado, a concessionária ferroviária, que transporta uma parcela grande das exportações do país e paga para rodar com composições vazias na volta. Do outro, um empreendedor fictício, dono de uma empresa de triagem de resíduos, que sofre com o custo e o risco do transporte rodoviário de produtos leves e volumosos. A proposta foi um aplicativo que liga essas pontas: o embarcador encontra o trecho e o horário que atendem à carga, contrata pelo app e acompanha a viagem, e a concessionária cobra uma taxa por transporte. Para dimensionar a oportunidade, a equipe estimou só o gasto com diesel de uma composição vazia no trecho de 382 km entre Itaguaí e São Paulo, uma vez por dia, com o preço médio do diesel da época, e chegou a cerca de R$ 7 milhões por ano. O mercado inicial escolhido foi o eixo Rio de Janeiro–São Paulo, que somava cerca de 41% do PIB brasileiro em 2022, segundo o IBGE."
+    ],
+    "sources": [
+      {
+        "label": "UFV / Sebrae Minas: Edital Fator S Agita Florestal-MG (set/2023)",
+        "url": "https://dxt.caf.ufv.br/wp-content/uploads/2023/09/EDITAL-FATOR-S-AGITA-Florestal-MG-15-17_09.pdf"
+      },
+      {
+        "label": "Forbes Brasil: Juiz de Fora ganha hub de inovação e empreendedorismo (15/04/2021)",
+        "url": "https://forbes.com.br/forbes-tech/2021/04/juiz-de-fora-ganha-hub-de-inovacao-e-empreendedorismo/"
+      },
+      {
+        "label": "Diário do Comércio: Wabtec vai iniciar obras de centro de engenharia em Contagem (01/02/2025)",
+        "url": "https://diariodocomercio.com.br/economia/wabtec-vai-iniciar-obras-de-centro-de-engenharia-em-contagem/"
+      }
+    ]
   }
 }

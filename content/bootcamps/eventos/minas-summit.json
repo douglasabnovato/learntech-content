@@ -46,6 +46,31 @@
         "highlight": "Próxima edição — data e programação a serem anunciadas.",
         "status": "anunciado"
       }
+    ],
+    "paragraphs": [
+      "O Minas Summit é um evento de inovação corporativa e tecnologia realizado em Belo Horizonte. A primeira edição aconteceu em 30 de junho de 2023, no Minascentro, como edição especial do Corporate Venture Summit, unindo a FCJ Venture Builder, liderada por Paulo Justino, o Órbi Conecta e o San Pedro Valley, a comunidade de startups de BH. A proposta declarada era reposicionar Minas Gerais como polo de inovação e aproximar empresários de diversos setores da tecnologia; a expectativa para a estreia era de cerca de 2.500 pessoas, mais de 40 palestrantes e mais de 40 horas de conteúdo.",
+      "O evento cresceu a cada edição. Em 2024, a segunda edição ocupou dois dias (26 e 27 de junho) no Minascentro, dentro da BH Tech Week, e reuniu cerca de 10 mil pessoas, com mais de 1.500 startups, 300 painelistas e 80 horas de conteúdo; inteligência artificial foi um dos temas mais discutidos. A terceira edição, em 5 e 6 de junho de 2025, no BeFly Minascentro, teve o lema \"Inovação que move o mundo\", sete palcos simultâneos e parcerias temáticas com SEG Summit, Órbi Academy, AI Summit Brasil e Future Law, sob realização do Grupo FCJ com Órbi Conecta, 100 Open Startups e BH-TEC.",
+      "A quarta edição aconteceu em 17 e 18 de junho de 2026, das 9h às 18h, no BeFly Minascentro (Av. Augusto de Lima, 785, Centro), organizada pelo FCJ Group em parceria com o BH-TEC e com apoio do Sebrae Minas e da FIEMG. A expectativa divulgada era de cerca de 11 mil participantes e 80 expositores, com 100 horas de conteúdo em palcos batizados com referências mineiras (Praça da Liberdade, Mineirão, Lagoa da Pampulha, Mercado Central e Casa do Baile). A programação incluiu temas como empreendedorismo, cibersegurança, healthtech, mineração e indústria e corporate venture capital, além da competição de startups Innovation Race, de Speed Date com investidores e de rodada de negócios.",
+      "O público mistura corporações, startups, investidores, estudantes e profissionais de tecnologia. A participação é por ingresso, vendido no site oficial, com diferentes categorias de acesso; preços e programação mudam a cada ano.",
+      "Para quem trabalha com tecnologia, um evento desse porte serve menos para aprender uma ferramenta específica e mais para entender para onde o mercado está indo: que problemas as grandes empresas querem resolver, como startups se conectam a elas e quais temas (como IA e cibersegurança) estão puxando investimento. É também uma das maiores oportunidades de networking do ecossistema mineiro."
+    ],
+    "sources": [
+      {
+        "label": "Grandes Nomes da Propaganda: Minas Summit nasce para reposicionar Minas Gerais na inovação (20/05/2023)",
+        "url": "https://grandesnomesdapropaganda.com.br/?p=162404"
+      },
+      {
+        "label": "Itatiaia: Minas Summit reuniu quase 10 mil pessoas em dois dias de evento (03/07/2024)",
+        "url": "https://www.itatiaia.com.br/colunas/orbi-ict/inovacao/minas-summit-reuniu-quase-10-mil-pessoas-em-dois-dias-de-evento-expectativa-e-de-r-50-milhoes-em-negocios/"
+      },
+      {
+        "label": "Diário do Comércio: Minas Summit 2025 vai reunir grandes nomes da inovação em BH (20/05/2025)",
+        "url": "https://diariodocomercio.com.br/negocios/minas-summit-2025-vai-reunir-grandes-nomes-inovacao-bh/"
+      },
+      {
+        "label": "Estado de Minas: Minas Summit espera 11 mil participantes na maior edição do evento em BH (jun/2026)",
+        "url": "https://www.em.com.br/economia/economia-digital/2026/06/7438814-minas-summit-espera-11-mil-participantes-na-maior-edicao-do-evento-em-bh.html"
+      }
     ]
   }
 }

@@ -3,8 +3,838 @@
   "image": "https://cdn.pixabay.com/photo/2015/06/01/09/04/phone-793046_960_720.jpg",
   "category": "UX/UI",
   "categoryFilter": "ux-ui",
-  "title": "Aprenda UX/UI para criar interfaces modernas, criativas e funcionais",
-  "lessons": "15+ Lições",
-  "duration": "12hr 45min",
-  "access": "Acesso Livre"
+  "title": "Fundamentos de UX/UI: do Problema do Usuário ao Wireframe Testado",
+  "lessons": "17 passos",
+  "duration": "10h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Iniciante",
+  "description": "A porta de entrada da trilha de UX/UI. Você aprende a separar experiência de interface, a seguir um processo de design em vez de desenhar no escuro, a avaliar telas com as heurísticas de Nielsen, a organizar conteúdo e fluxos e a validar um wireframe com pessoas reais — tudo antes de abrir qualquer ferramenta de alta fidelidade.",
+  "letslearn": [
+    "Explicar a diferença entre UX e UI e onde uma depende da outra",
+    "Conduzir um problema pelas quatro fases do Double Diamond",
+    "Avaliar uma interface com as 10 heurísticas de usabilidade de Nielsen",
+    "Organizar conteúdo, navegação e fluxos de usuário antes de desenhar telas",
+    "Desenhar wireframes de baixa fidelidade e testá-los com cinco pessoas"
+  ],
+  "curriculum": "Do problema ao wireframe validado",
+  "about": "O programa trata design como resolução de problema, não como decoração. A progressão segue a ordem em que o trabalho acontece num projeto real: entender o que é UX e o que é UI, escolher um processo, aprender os critérios com que uma interface é julgada, organizar a informação e só então desenhar — em papel ou em caixas cinzas — e colocar o desenho na frente de quem vai usá-lo. O fio condutor é um projeto fictício: o aplicativo de reserva de quadras de um clube esportivo de bairro. Ferramentas de alta fidelidade ficam para o programa seguinte, Figma para Iniciantes: Do Protótipo ao Design System.",
+  "materials": [
+    "Modelo de frase de problema e de perguntas \"Como poderíamos\"",
+    "Planilha de avaliação heurística com escala de severidade",
+    "Roteiro de teste de usabilidade com cinco tarefas",
+    "Kit de wireframe em papel para impressão"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "UX, UI e o Processo de Design",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Heurísticas de Nielsen na Prática",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "Arquitetura da Informação e Fluxos",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Wireframe e Teste com Usuário",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "UX/UI",
+    "mainTitle": "Antes da tela bonita, a tela certa: entenda o problema, organize a informação e teste cedo.",
+    "introductionParagraphs": [
+      {
+        "title": "Design não começa no visual",
+        "text": "Quem chega ao design pela parte visual costuma abrir a ferramenta e começar a desenhar. O resultado pode ser bonito e mesmo assim errado: a tela resolve um problema que ninguém tinha, ou esconde a ação que o usuário veio fazer. **UX** é o trabalho de descobrir o que a pessoa precisa e como ela chega lá; **UI** é a forma concreta que essa resposta ganha na tela. As duas são necessárias, mas a ordem importa."
+      },
+      {
+        "title": "Critério no lugar de gosto",
+        "text": "\"Eu acho mais bonito assim\" não é argumento em revisão de design. Este programa troca opinião por critério: um processo com fases claras, dez heurísticas de usabilidade usadas há décadas para avaliar interfaces e, acima de tudo, a observação de pessoas reais tentando usar o que você desenhou. Quando há discordância, a resposta vem do teste, não de quem fala mais alto."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não ensina ferramenta de prototipação de alta fidelidade, não aprofunda teoria de cor e tipografia nem métodos avançados de pesquisa. Cada um desses assuntos tem programa próprio na trilha. Aqui o foco é a base que todos eles pressupõem: saber qual problema está sendo resolvido e conseguir provar que a solução funciona."
+      }
+    ],
+    "courseAboutTitle": "A base de toda a trilha de UX/UI",
+    "courseAboutDescription": "Este é o primeiro programa da trilha. Depois dele vêm Figma para Iniciantes: Do Protótipo ao Design System, Psicologia das Cores e Tipografia aplicada ao Produto Digital e UX Research: Métodos de Pesquisa para Validar Ideias. Os três partem do que é construído aqui: um problema bem definido, uma estrutura de informação coerente e o hábito de testar antes de refinar.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: UX, UI e o Processo de Design",
+        "items": [
+          {
+            "label": "UX e UI",
+            "description": "O que cada uma cobre e por que uma interface bonita pode ter experiência ruim."
+          },
+          {
+            "label": "Usabilidade",
+            "description": "Eficácia, eficiência e satisfação: os três critérios que tornam uma tela boa de usar."
+          },
+          {
+            "label": "Double Diamond",
+            "description": "Descobrir, definir, desenvolver e entregar — divergir antes de convergir."
+          },
+          {
+            "label": "Frase de problema",
+            "description": "Transformar um pedido vago em um desafio que dá para resolver e medir."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Heurísticas de Nielsen na Prática",
+        "items": [
+          {
+            "label": "Status e linguagem",
+            "description": "Mostrar o que está acontecendo e falar a língua de quem usa."
+          },
+          {
+            "label": "Erros e controle",
+            "description": "Prevenir erros, deixar desfazer e explicar o que deu errado."
+          },
+          {
+            "label": "Consistência e memória",
+            "description": "Padrões previsíveis e opções visíveis em vez de coisas para decorar."
+          },
+          {
+            "label": "Avaliação heurística",
+            "description": "Revisar uma tela com método e classificar a gravidade de cada problema."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: Arquitetura da Informação e Fluxos",
+        "items": [
+          {
+            "label": "Inventário de conteúdo",
+            "description": "Listar tudo o que o produto precisa mostrar antes de decidir onde fica."
+          },
+          {
+            "label": "Card sorting",
+            "description": "Descobrir como as pessoas agrupam e nomeiam as coisas."
+          },
+          {
+            "label": "Navegação e rótulos",
+            "description": "Estruturar menus com nomes que o usuário reconhece."
+          },
+          {
+            "label": "Fluxo de usuário",
+            "description": "Mapear o caminho de uma tarefa, incluindo os desvios e os erros."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Wireframe e Teste com Usuário",
+        "items": [
+          {
+            "label": "Wireframe de baixa fidelidade",
+            "description": "Caixas cinzas e papel: decidir estrutura sem discutir cor."
+          },
+          {
+            "label": "Hierarquia no wireframe",
+            "description": "Ordem de leitura, ação principal e agrupamento por proximidade."
+          },
+          {
+            "label": "Roteiro de teste",
+            "description": "Tarefas realistas e o protocolo de pensar em voz alta."
+          },
+          {
+            "label": "Cinco pessoas e iteração",
+            "description": "Conduzir o teste, registrar o que viu e decidir o que mudar."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos aplicados ao projeto do aplicativo de reserva de quadras. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "laptop",
+      "title": "UX, UI e o Processo de Design",
+      "shortDescription": "O que é cada disciplina e como sair do pedido vago para um problema definido",
+      "introductionText": "O projeto deste programa começa com um pedido típico: \"o clube quer um aplicativo para reservar quadras\". Parece claro, mas não diz quem reserva, por que o sistema atual incomoda nem o que seria um bom resultado. Neste módulo você separa UX de UI, aprende os critérios que definem usabilidade e usa o Double Diamond para transformar o pedido em um problema que dá para resolver — e para saber quando foi resolvido.",
+      "sections": [
+        {
+          "title": "🧭 Do pedido ao problema",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "UX e UI não são sinônimos",
+              "guidance": "UX (experiência do usuário) é tudo o que a pessoa vive ao tentar atingir um objetivo com o produto: encontrar a quadra livre, entender o preço, confirmar a reserva, receber o lembrete. UI (interface do usuário) é a camada que ela vê e toca: botões, campos, textos, cores, espaçamentos. Liste cinco momentos da reserva de quadra e marque em cada um o que é decisão de UX (o que acontece e em que ordem) e o que é decisão de UI (como aparece na tela).",
+              "tips": [
+                "Teste rápido: se a decisão continuaria valendo num atendimento por telefone, ela é de UX. Se só existe por causa da tela, é de UI.",
+                "Uma UI caprichada não salva um fluxo que pede dados desnecessários; uma boa UX mal desenhada na tela também perde o usuário. Uma depende da outra."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Os três critérios de usabilidade",
+              "code": "eficácia · eficiência · satisfação",
+              "guidance": "Usabilidade é a medida em que pessoas específicas conseguem atingir objetivos específicos com eficácia (conseguem completar a tarefa?), eficiência (com quanto esforço e tempo?) e satisfação (como se sentem fazendo isso?). Escreva, para a reserva de quadra, um exemplo concreto de falha em cada critério — por exemplo, a pessoa não acha o horário (eficácia), precisa de nove toques para reservar (eficiência), fica insegura se a reserva foi feita (satisfação).",
+              "tips": [
+                "Os três critérios ficam vazios sem \"quem\" e \"para quê\". Uma tela pode ser ótima para o administrador do clube e péssima para o sócio que reserva uma vez por mês."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "O Double Diamond",
+              "code": "Descobrir → Definir → Desenvolver → Entregar",
+              "guidance": "O Double Diamond, publicado pelo Design Council britânico em 2004, divide o trabalho em dois losangos. No primeiro você abre (Descobrir: conversar com quem é afetado, observar o processo atual) e depois fecha (Definir: escolher o problema a atacar). No segundo abre de novo (Desenvolver: gerar várias soluções) e fecha (Entregar: testar em pequena escala, descartar o que falha, refinar o que funciona). Desenhe os dois losangos e escreva, em cada fase, uma atividade que você faria para o clube.",
+              "tips": [
+                "O erro mais comum é pular o primeiro losango e começar desenhando. Você acaba refinando a solução certa para o problema errado.",
+                "As fases não são uma linha reta: um teste ruim na entrega pode mandar você de volta à definição. Voltar não é fracasso, é o processo funcionando."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Frase de problema e \"Como poderíamos\"",
+              "code": "[Quem] precisa [fazer o quê] porque [motivo]",
+              "guidance": "Feche o primeiro losango com uma frase de problema. Com dados fictícios de entrevistas: \"Sócios que jogam à noite precisam saber quais quadras estão livres sem ligar para a secretaria, porque o telefone só atende em horário comercial\". Em seguida, reescreva como pergunta aberta: \"Como poderíamos mostrar a disponibilidade das quadras a qualquer hora?\". Essa pergunta é o ponto de partida do segundo losango.",
+              "tips": [
+                "Se a frase de problema já contém a solução (\"precisam de um app\"), ela está fechada demais. O problema é saber a disponibilidade; o app é uma das respostas possíveis.",
+                "Junto da frase, anote como vai saber que resolveu: por exemplo, reservar em menos de um minuto sem ajuda."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que começar pelo processo",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Problema antes de solução",
+          "text": "Gastar tempo na fase de descoberta custa pouco. Descobrir depois do lançamento que o problema era outro custa o projeto inteiro."
+        },
+        {
+          "icon": "sync",
+          "title": "Divergir e convergir",
+          "text": "Abrir possibilidades e depois escolher, duas vezes, impede que a primeira ideia que apareceu vire a única ideia considerada."
+        },
+        {
+          "icon": "gauge",
+          "title": "Sucesso mensurável",
+          "text": "Com critérios de usabilidade definidos, \"ficou bom\" deixa de ser opinião e vira algo que dá para verificar em teste."
+        }
+      ],
+      "closingText": "Você tem um problema definido e um processo para chegar à solução. Antes de desenhar, falta aprender como uma interface é julgada. No próximo módulo entram as dez heurísticas que servem de régua para qualquer tela — inclusive as que você ainda vai criar.",
+      "ctaTitle": "🧭 Problema definido!",
+      "ctaText": "Você já separa UX de UI e sabe em que fase do processo está. Agora vamos aprender a avaliar uma interface com critério.",
+      "nextButtonText": "Ir para Módulo 1: Heurísticas de Nielsen na Prática"
+    },
+    {
+      "id": 1,
+      "icon": "list",
+      "title": "Heurísticas de Nielsen na Prática",
+      "shortDescription": "Dez regras práticas para avaliar qualquer interface",
+      "introductionText": "As 10 heurísticas de usabilidade foram desenvolvidas por Jakob Nielsen e Rolf Molich em 1990 e refinadas por Nielsen em 1994, a partir da análise de 249 problemas de usabilidade. São regras práticas amplas, não um manual de regras detalhadas — e justamente por isso continuam valendo para sites, aplicativos e até painéis de eletrodomésticos. Neste módulo você aplica cada uma ao sistema atual de reservas do clube (um formulário web antigo, fictício) e termina conduzindo uma avaliação heurística completa.",
+      "sections": [
+        {
+          "title": "📏 As dez heurísticas aplicadas",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Status do sistema e linguagem do mundo real",
+              "code": "#1 Visibilidade do status · #2 Correspondência com o mundo real",
+              "guidance": "A heurística 1 pede que o sistema sempre informe o que está acontecendo, com retorno em tempo razoável: ao tocar em \"Reservar\", a pessoa precisa ver que a ação foi recebida e, depois, que foi concluída. A 2 pede a linguagem de quem usa, não a do sistema. No formulário antigo, encontre os pontos sem retorno e os termos internos — por exemplo, \"Recurso 3\" no lugar de \"Quadra de saibro coberta\".",
+              "tips": [
+                "Toda ação que leva mais de um instante precisa de algum sinal de progresso. Botão que não muda de estado convida o usuário a tocar de novo e criar reserva duplicada."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Controle, prevenção e recuperação de erros",
+              "code": "#3 Controle e liberdade · #5 Prevenção de erros · #9 Reconhecer, diagnosticar e recuperar de erros",
+              "guidance": "A heurística 3 pede uma saída de emergência clara: cancelar, voltar, desfazer. A 5 diz que é melhor impedir o erro do que mostrar uma boa mensagem depois — como não deixar escolher um horário que já está ocupado. A 9 cobre o que sobra: mensagens em linguagem simples, que dizem qual foi o problema e como resolver. Reescreva a mensagem fictícia \"Erro 409: conflito de agendamento\" seguindo a heurística 9.",
+              "tips": [
+                "Uma boa mensagem de erro responde a três perguntas: o que aconteceu, por que aconteceu e o que fazer agora.",
+                "Horário indisponível que aparece desabilitado na grade é prevenção. Horário que só dá erro depois de enviado é correção — mais cara para o usuário."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Consistência, memória e excesso",
+              "code": "#4 Consistência · #6 Reconhecer em vez de lembrar · #7 Flexibilidade · #8 Design minimalista · #10 Ajuda",
+              "guidance": "A 4 pede que a mesma coisa tenha o mesmo nome e o mesmo comportamento em todo o produto e siga as convenções que o usuário já conhece de outros apps. A 6 pede opções visíveis em vez de exigir que a pessoa decore — mostrar as últimas quadras reservadas em vez de pedir o código delas. A 7 trata de atalhos para quem usa sempre, a 8 de cortar o que não ajuda a tarefa, e a 10 de ajuda fácil de achar e focada na tarefa. Encontre no formulário antigo um exemplo de violação de cada uma.",
+              "tips": [
+                "Design minimalista não significa tela vazia. Significa que cada elemento disputa atenção com os outros, então o que não ajuda a tarefa atrapalha."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Conduzir uma avaliação heurística",
+              "code": "problema · heurística · local · severidade 0–4",
+              "guidance": "Percorra o fluxo completo de reserva duas vezes: a primeira para se familiarizar, a segunda anotando cada problema numa planilha com quatro colunas — o que é, qual heurística viola, onde ocorre e qual a gravidade. Use a escala de severidade de 0 (não é problema) a 4 (catástrofe, impede a tarefa). Peça a outra pessoa que faça o mesmo de forma independente e só depois juntem as listas.",
+              "tips": [
+                "Avaliadores diferentes encontram problemas diferentes. Juntar duas ou três avaliações independentes rende bem mais do que uma pessoa revisando três vezes.",
+                "Avaliação heurística não substitui teste com usuário: ela encontra problemas prováveis, o teste mostra quais realmente atrapalham."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que heurísticas funcionam",
+      "highlights": [
+        {
+          "icon": "shield",
+          "title": "Linguagem comum",
+          "text": "Dizer \"isso viola prevenção de erros\" encerra a discussão de gosto e aponta para um princípio que toda a equipe pode consultar."
+        },
+        {
+          "icon": "bolt",
+          "title": "Rápida e barata",
+          "text": "Uma avaliação heurística cabe numa tarde e não depende de recrutar participantes. É o primeiro filtro antes de gastar tempo com teste."
+        },
+        {
+          "icon": "grid",
+          "title": "Vale para qualquer tela",
+          "text": "Por serem amplas, as heurísticas se aplicam a site, app, quiosque ou painel. Você aprende uma vez e usa em qualquer projeto."
+        }
+      ],
+      "closingText": "Você já sabe olhar uma interface e apontar onde ela falha, com nome e gravidade. Muitos dos problemas encontrados, porém, não são de tela: são de organização — informação no lugar errado, menus com nomes que ninguém entende. É disso que trata o próximo módulo.",
+      "ctaTitle": "📏 Olhar treinado!",
+      "ctaText": "Você avalia telas com critério. Agora vamos organizar a informação para que a próxima tela já nasça certa.",
+      "nextButtonText": "Ir para Módulo 2: Arquitetura da Informação e Fluxos"
+    },
+    {
+      "id": 2,
+      "icon": "sitemap",
+      "title": "Arquitetura da Informação e Fluxos",
+      "shortDescription": "Organizar conteúdo, nomear a navegação e mapear o caminho de cada tarefa",
+      "introductionText": "Arquitetura da informação é a organização do conteúdo de um produto: o que existe, como está agrupado, que nome cada grupo recebe e como a pessoa chega de um ponto a outro. É uma etapa invisível quando bem feita e evidente quando falha — o usuário que procura \"Minhas reservas\" em três menus diferentes está enfrentando um problema de arquitetura, não de cor ou de fonte. Neste módulo você monta a estrutura do aplicativo do clube e desenha os fluxos das tarefas principais.",
+      "sections": [
+        {
+          "title": "🗂️ Estrutura antes de tela",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Inventário de conteúdo",
+              "guidance": "Liste, em cartões ou numa planilha, tudo o que o aplicativo precisa ter: quadras, horários, preços, regras de cancelamento, reservas do sócio, pagamento, avisos do clube, contato. Não pense em telas ainda, só em itens de conteúdo e funcionalidades. Para o projeto, chegue a algo entre 20 e 30 itens.",
+              "tips": [
+                "Itens que você não consegue justificar com algo que apareceu na descoberta são candidatos a sair. Inventário também serve para cortar."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Card sorting simples",
+              "code": "aberto: o participante agrupa e nomeia",
+              "guidance": "Entregue os cartões do inventário a algumas pessoas do perfil do clube (colegas servem para um primeiro ensaio) e peça que agrupem como fizer sentido para elas e deem nome a cada grupo. Esse é o card sorting aberto. Anote os agrupamentos que se repetem e, principalmente, as palavras que as pessoas usam para nomear os grupos.",
+              "tips": [
+                "No card sorting fechado, os grupos já vêm prontos e o participante só distribui os cartões. Use o aberto para descobrir a estrutura e o fechado para conferir uma estrutura que você já propôs.",
+                "Se ninguém usou a palavra que você tinha em mente para um menu, essa palavra provavelmente não deveria estar no menu."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Navegação e rótulos",
+              "guidance": "Com os grupos em mãos, desenhe o mapa do aplicativo: uma árvore com a tela inicial no topo e as seções abaixo. Para um app de uso pontual como o do clube, prefira poucas seções no primeiro nível — por exemplo, Reservar, Minhas reservas, Clube e Conta — e rótulos que descrevem o conteúdo, não termos internos ou criativos.",
+              "tips": [
+                "Rótulo criativo (\"Arena\", \"Meu jogo\") obriga o usuário a adivinhar. Rótulo descritivo (\"Reservar quadra\") se explica sozinho — é a heurística 2 aplicada à navegação.",
+                "Árvore muito funda esconde conteúdo; árvore muito larga sobrecarrega a escolha. Mantenha a tarefa principal a no máximo dois toques da tela inicial."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Fluxo de usuário da tarefa principal",
+              "code": "entrada → decisão → ação → confirmação",
+              "guidance": "Desenhe o fluxo de \"reservar uma quadra para hoje à noite\": retângulos para telas, losangos para decisões (há horário livre? o sócio está com mensalidade em dia?) e setas para as transições. Comece pelo caminho feliz e depois acrescente os desvios: horário esgotado, pagamento recusado, desistência no meio. Conte as telas do caminho feliz.",
+              "tips": [
+                "Fluxo que só mostra o caminho feliz esconde as telas que mais geram reclamação. Os desvios também precisam de tela, texto e saída.",
+                "Cada tela que você consegue tirar do caminho feliz é um ponto a menos onde o usuário pode desistir."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que organizar antes de desenhar",
+      "highlights": [
+        {
+          "icon": "folder",
+          "title": "Achar sem procurar",
+          "text": "Conteúdo agrupado como o usuário pensa reduz a busca a um palpite certo, em vez de uma exploração por todos os menus."
+        },
+        {
+          "icon": "sitemap",
+          "title": "Mapa do produto",
+          "text": "Com a árvore e os fluxos no papel, a equipe discute estrutura antes de discutir pixel — e mudar uma caixa num diagrama custa minutos."
+        },
+        {
+          "icon": "globe",
+          "title": "As palavras do usuário",
+          "text": "Rótulos tirados do card sorting falam a língua de quem usa. É o tipo de melhoria que não aparece no visual e aparece no resultado."
+        }
+      ],
+      "closingText": "Você tem o conteúdo organizado, a navegação nomeada e o fluxo da tarefa principal mapeado, com os desvios. Cada retângulo desse fluxo é uma tela esperando para ser desenhada. No próximo módulo você as desenha em baixa fidelidade e coloca na frente de pessoas reais.",
+      "ctaTitle": "🗂️ Estrutura pronta!",
+      "ctaText": "O aplicativo do clube já tem esqueleto. Agora vamos desenhar as telas e descobrir se funcionam.",
+      "nextButtonText": "Ir para Módulo 3: Wireframe e Teste com Usuário"
+    },
+    {
+      "id": 3,
+      "icon": "tools",
+      "title": "Wireframe e Teste com Usuário",
+      "shortDescription": "Desenhar em baixa fidelidade, testar com cinco pessoas e iterar",
+      "introductionText": "Wireframe é o desenho da estrutura de uma tela: o que aparece, em que ordem e com que destaque, sem cor, sem imagem final e sem fonte escolhida. A baixa fidelidade é proposital: ela mantém a conversa na estrutura e torna barato jogar fora o que não funciona. Neste módulo você desenha as telas do fluxo de reserva, prepara um teste de usabilidade simples e o conduz com cinco pessoas — o tamanho que a Nielsen Norman Group recomenda para estudos qualitativos rápidos.",
+      "sections": [
+        {
+          "title": "✏️ Do papel ao teste",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Wireframe de baixa fidelidade",
+              "code": "caixas · rótulos · um X onde vai imagem",
+              "guidance": "Para cada tela do caminho feliz do fluxo, desenhe à mão, no tamanho de um celular: retângulos para blocos de conteúdo, linhas onduladas para texto corrido, textos reais apenas em botões, títulos e rótulos. Faça pelo menos duas versões diferentes da tela de escolha de horário — uma em lista, outra em grade — antes de escolher.",
+              "tips": [
+                "Escreva os textos de botão de verdade, mesmo no papel. \"Confirmar reserva\" e \"Enviar\" levam o usuário a entender coisas diferentes, e o teste precisa captar isso.",
+                "Se você está escolhendo tom de azul, saiu da baixa fidelidade cedo demais."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Hierarquia e ação principal",
+              "guidance": "Revise cada wireframe perguntando: qual é a única coisa que a pessoa veio fazer nesta tela? Essa ação precisa ser o elemento de maior destaque e estar onde o olhar chega naturalmente. Agrupe elementos relacionados por proximidade e separe os que não se relacionam com espaço — por exemplo, data e horário juntos, regras de cancelamento num bloco à parte.",
+              "tips": [
+                "Teste do olhar semicerrado: aperte os olhos diante do wireframe. O que continua visível é o que a tela está dizendo que é mais importante.",
+                "Duas ações principais na mesma tela, com o mesmo destaque, são duas ações secundárias."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Roteiro de teste",
+              "code": "cenário + tarefa + critério de sucesso",
+              "guidance": "Escreva de três a cinco tarefas como cenários realistas, sem entregar o caminho: \"Você quer jogar tênis hoje depois das 19h. Reserve uma quadra.\" — e não \"Clique em Reservar e escolha o horário\". Para cada tarefa, defina o que conta como sucesso. Inclua no roteiro uma breve abertura explicando que quem está sendo testado é o desenho, não a pessoa, e o pedido para pensar em voz alta.",
+              "tips": [
+                "Tarefa que usa as mesmas palavras do botão vira caça-palavras: a pessoa procura o termo, não pensa no objetivo.",
+                "Ensaie o roteiro com um colega antes. Tarefa ambígua aparece no primeiro ensaio e economiza uma sessão perdida."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Conduzir o teste com cinco pessoas",
+              "guidance": "Monte um protótipo de papel (as telas soltas, que você troca à mão conforme a pessoa \"toca\") ou fotografe os wireframes e ligue-os numa ferramenta simples de clique. Conduza cinco sessões individuais. Durante a tarefa, não ajude e não explique: observe, anote onde a pessoa hesita, o que diz e onde erra. Se ela perguntar \"é aqui?\", devolva: \"O que você acha?\".",
+              "tips": [
+                "Segundo a Nielsen Norman Group, cinco participantes encontram cerca de 85% dos problemas de usabilidade num estudo qualitativo. A partir daí, cada pessoa a mais repete o que você já viu.",
+                "A regra vale para um perfil de usuário. Se o app tiver públicos muito diferentes — sócio e administrador —, cada perfil precisa de seus próprios participantes."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Priorizar e iterar",
+              "code": "frequência × gravidade",
+              "guidance": "Junte as anotações das cinco sessões e liste cada problema com quantas pessoas o encontraram e quão grave foi (usando a mesma escala de 0 a 4 da avaliação heurística). Corrija primeiro o que é frequente e grave. Redesenhe os wireframes e, se possível, teste de novo com outras cinco pessoas: é na segunda rodada que você confirma se a correção funcionou ou criou um problema novo.",
+              "tips": [
+                "Três testes pequenos com iteração entre eles ensinam mais do que um teste grande no final, quando já não há tempo para mudar.",
+                "Registre também o que funcionou bem. Na próxima versão, é isso que você não pode quebrar."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que testar cedo e barato",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Evidência no lugar de opinião",
+          "text": "Ver uma pessoa travar na mesma tela que você achava óbvia resolve em cinco minutos uma discussão que poderia durar semanas."
+        },
+        {
+          "icon": "sync",
+          "title": "Errar no papel",
+          "text": "Mudar um wireframe custa uma folha. Mudar uma tela já programada custa horas de desenvolvimento — e às vezes uma versão publicada."
+        },
+        {
+          "icon": "gauge",
+          "title": "Ciclos curtos",
+          "text": "Desenhar, testar e corrigir em rodadas pequenas faz o produto melhorar a cada volta, em vez de esperar um grande teste final."
+        }
+      ],
+      "closingText": "Você levou um pedido vago até telas testadas com pessoas reais: definiu o problema, avaliou com heurísticas, organizou a informação, desenhou e iterou. Esse ciclo é o mesmo em projetos grandes — muda a escala, não o raciocínio. O próximo passo é dar alta fidelidade a esses wireframes, que é o assunto de Figma para Iniciantes: Do Protótipo ao Design System.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você domina a base de UX/UI: do problema ao wireframe validado. Siga para o Figma e transforme esses rascunhos em protótipos interativos.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Qual afirmação descreve melhor a diferença entre UX e UI?",
+      "explanation": "UX abrange toda a experiência da pessoa ao tentar atingir um objetivo com o produto — o que acontece, em que ordem, com que esforço. UI é a camada visível e interativa onde essa experiência se materializa. Não são sinônimos, UX não se limita a pesquisa e UI não é só escolha de cores.",
+      "options": [
+        {
+          "text": "UX é a experiência completa para atingir um objetivo; UI é a camada da tela onde ela acontece",
+          "isCorrect": true
+        },
+        {
+          "text": "UX e UI são nomes diferentes para a mesma atividade",
+          "isCorrect": false
+        },
+        {
+          "text": "UX é apenas pesquisa com usuário; UI é todo o resto do projeto",
+          "isCorrect": false
+        },
+        {
+          "text": "UI cuida da usabilidade e UX cuida só das cores e fontes",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "Quais são as quatro fases do Double Diamond, na ordem?",
+      "explanation": "O Double Diamond do Design Council tem quatro fases: Descobrir e Definir no primeiro losango (entender e escolher o problema), Desenvolver e Entregar no segundo (gerar e testar soluções). As outras sequências misturam etapas de outros métodos ou começam pela solução.",
+      "options": [
+        {
+          "text": "Descobrir, Definir, Desenvolver, Entregar",
+          "isCorrect": true
+        },
+        {
+          "text": "Desenhar, Testar, Programar, Lançar",
+          "isCorrect": false
+        },
+        {
+          "text": "Definir, Descobrir, Entregar, Desenvolver",
+          "isCorrect": false
+        },
+        {
+          "text": "Pesquisar, Prototipar, Validar, Medir",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Qual destas é a frase de problema mais adequada para o início do projeto do clube?",
+      "explanation": "Uma boa frase de problema diz quem tem a necessidade, qual é a necessidade e por quê — sem trazer a solução embutida. As alternativas que mencionam app, botão ou cor já escolheram a resposta antes de entender o problema, o que fecha o segundo losango antes de abri-lo.",
+      "options": [
+        {
+          "text": "Sócios que jogam à noite precisam saber quais quadras estão livres sem depender do horário da secretaria",
+          "isCorrect": true
+        },
+        {
+          "text": "O clube precisa de um aplicativo moderno de reservas",
+          "isCorrect": false
+        },
+        {
+          "text": "A tela de reservas precisa de um botão verde maior",
+          "isCorrect": false
+        },
+        {
+          "text": "Os usuários querem um design mais bonito",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Ao tocar em \"Reservar\", nada muda na tela por alguns segundos e o usuário toca de novo. Qual heurística foi violada principalmente?",
+      "explanation": "A heurística 1, visibilidade do status do sistema, pede retorno adequado e em tempo razoável sobre o que está acontecendo. Sem esse retorno, o usuário não sabe se a ação foi recebida e repete o toque. As outras heurísticas citadas existem, mas não descrevem a falta de retorno.",
+      "options": [
+        {
+          "text": "Visibilidade do status do sistema",
+          "isCorrect": true
+        },
+        {
+          "text": "Design estético e minimalista",
+          "isCorrect": false
+        },
+        {
+          "text": "Ajuda e documentação",
+          "isCorrect": false
+        },
+        {
+          "text": "Flexibilidade e eficiência de uso",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Mostrar os horários ocupados como desabilitados na grade, em vez de dar erro depois do envio, aplica qual heurística?",
+      "explanation": "Impedir que o erro aconteça é a heurística de prevenção de erros, que Nielsen considera preferível a uma boa mensagem depois do problema. Recuperação de erros entra quando o erro já ocorreu. Consistência e reconhecimento em vez de memorização tratam de outros aspectos.",
+      "options": [
+        {
+          "text": "Prevenção de erros",
+          "isCorrect": true
+        },
+        {
+          "text": "Ajudar a reconhecer, diagnosticar e recuperar de erros",
+          "isCorrect": false
+        },
+        {
+          "text": "Consistência e padrões",
+          "isCorrect": false
+        },
+        {
+          "text": "Correspondência entre o sistema e o mundo real",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Qual é a forma recomendada de conduzir uma avaliação heurística?",
+      "explanation": "Avaliadores percorrem a interface de forma independente, registram cada problema com a heurística violada, o local e a gravidade, e só depois consolidam as listas — porque pessoas diferentes encontram problemas diferentes. Avaliação heurística não usa participantes reais e não substitui o teste com usuário.",
+      "options": [
+        {
+          "text": "Avaliadores revisam de forma independente, classificam a gravidade e depois juntam as listas",
+          "isCorrect": true
+        },
+        {
+          "text": "A equipe inteira revisa a tela junta numa reunião e vota nos problemas",
+          "isCorrect": false
+        },
+        {
+          "text": "Usuários reais tentam completar tarefas enquanto pensam em voz alta",
+          "isCorrect": false
+        },
+        {
+          "text": "Um único especialista revisa e a avaliação substitui o teste com usuário",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "No card sorting aberto, o que o participante faz?",
+      "explanation": "No card sorting aberto, o participante agrupa os cartões como achar melhor e dá nome a cada grupo — o que revela tanto a estrutura mental quanto o vocabulário dos usuários. No fechado, os grupos já vêm definidos. Desenhar telas e votar em layout não fazem parte do método.",
+      "options": [
+        {
+          "text": "Agrupa os cartões livremente e cria nomes para os grupos",
+          "isCorrect": true
+        },
+        {
+          "text": "Distribui os cartões em grupos já definidos pela equipe",
+          "isCorrect": false
+        },
+        {
+          "text": "Desenha a tela onde cada cartão deveria aparecer",
+          "isCorrect": false
+        },
+        {
+          "text": "Vota no layout visual de que mais gosta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "Para o menu principal do app do clube, qual rótulo segue melhor as boas práticas de navegação?",
+      "explanation": "Rótulos descritivos, nas palavras de quem usa, permitem que a pessoa saiba o que vai encontrar antes de tocar. Rótulos criativos ou internos obrigam a adivinhar — é a heurística de correspondência com o mundo real aplicada à navegação.",
+      "options": [
+        {
+          "text": "Reservar quadra",
+          "isCorrect": true
+        },
+        {
+          "text": "Arena",
+          "isCorrect": false
+        },
+        {
+          "text": "Módulo de recursos",
+          "isCorrect": false
+        },
+        {
+          "text": "Explore",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Por que um fluxo de usuário deve incluir os desvios, e não só o caminho feliz?",
+      "explanation": "Horário esgotado, pagamento recusado e desistência no meio também acontecem e precisam de tela, texto e saída. Fluxo que só mostra o caminho feliz deixa essas situações sem desenho, e é nelas que costumam surgir as reclamações. Não é exigência de ferramenta nem questão de tamanho do diagrama.",
+      "options": [
+        {
+          "text": "Porque erros e desistências também precisam de tela, mensagem e saída planejadas",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque diagramas maiores impressionam mais nas apresentações",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque as ferramentas de fluxo não aceitam diagramas com um único caminho",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque o caminho feliz raramente é usado pelos usuários",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "Qual é a principal vantagem de um wireframe de baixa fidelidade?",
+      "explanation": "Sem cor, imagem ou fonte definidas, a conversa fica na estrutura — o que aparece, em que ordem, com que destaque — e jogar fora uma versão custa pouco. Ele não substitui o protótipo de alta fidelidade nem dispensa teste, e não serve para aprovar identidade visual.",
+      "options": [
+        {
+          "text": "Mantém a discussão na estrutura e torna barato descartar o que não funciona",
+          "isCorrect": true
+        },
+        {
+          "text": "Permite aprovar a paleta de cores com o cliente",
+          "isCorrect": false
+        },
+        {
+          "text": "Dispensa o teste com usuário, porque já é simples",
+          "isCorrect": false
+        },
+        {
+          "text": "Pode ser entregue diretamente para programação",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Qual destas é uma tarefa bem escrita para um teste de usabilidade?",
+      "explanation": "Uma boa tarefa apresenta um cenário realista e um objetivo, sem entregar o caminho nem repetir as palavras dos botões. As alternativas erradas dizem onde clicar, pedem opinião em vez de comportamento ou fazem uma pergunta hipotética que o teste não consegue observar.",
+      "options": [
+        {
+          "text": "Você quer jogar tênis hoje depois das 19h. Reserve uma quadra.",
+          "isCorrect": true
+        },
+        {
+          "text": "Clique em Reservar, escolha a quadra 2 e toque em Confirmar.",
+          "isCorrect": false
+        },
+        {
+          "text": "Você gostou das cores desta tela?",
+          "isCorrect": false
+        },
+        {
+          "text": "Você usaria este aplicativo no futuro?",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Segundo a Nielsen Norman Group, quantos problemas de usabilidade um teste qualitativo com cinco participantes costuma revelar?",
+      "explanation": "O artigo de Jakob Nielsen indica que cinco participantes encontram cerca de 85% dos problemas, e que é melhor fazer várias rodadas pequenas, com redesenho entre elas, do que um único teste grande. A regra vale para um perfil de usuário; públicos muito diferentes precisam de participantes próprios.",
+      "options": [
+        {
+          "text": "Cerca de 85%",
+          "isCorrect": true
+        },
+        {
+          "text": "Cerca de 20%",
+          "isCorrect": false
+        },
+        {
+          "text": "Exatamente 50%",
+          "isCorrect": false
+        },
+        {
+          "text": "Todos os problemas, sem exceção",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "O projeto de UX do aplicativo de reserva de quadras de um clube esportivo de bairro fictício: frase de problema, avaliação heurística do sistema antigo, mapa de navegação baseado em card sorting, fluxo da reserva com os desvios, wireframes de baixa fidelidade das telas principais e o relatório de um teste com cinco pessoas, com as correções priorizadas.",
+    "highlights": [
+      "Frase de problema e critérios de sucesso",
+      "Avaliação heurística com escala de severidade",
+      "Mapa de navegação e fluxo de usuário completo",
+      "Wireframes testados com cinco pessoas e revisados"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "Design bem feito aparece no resultado financeiro. Um estudo da McKinsey que acompanhou 300 empresas de capital aberto por cinco anos encontrou que as do quartil superior no índice de design tiveram crescimento de receita 32 pontos percentuais maior e retorno total ao acionista 56 pontos percentuais maior que o restante do setor.",
+      "O mesmo estudo mostra o espaço que ainda existe: mais de 40% das empresas não conversavam com usuários finais durante o desenvolvimento, e só cerca de metade fazia pesquisa antes de gerar as primeiras ideias. Quem sabe definir o problema, avaliar com critério e testar cedo traz para a equipe exatamente o que falta na maioria delas."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "Aplicativos e sites de serviço",
+        "description": "Reservas, agendamentos, cadastros e compras — qualquer produto em que o usuário veio cumprir uma tarefa."
+      },
+      {
+        "label": "Sistemas internos",
+        "description": "Ferramentas usadas por equipes todos os dias, em que cada passo a mais custa horas somadas no mês."
+      },
+      {
+        "label": "Revisão de produto existente",
+        "description": "Avaliação heurística e teste rápido para encontrar onde um produto em uso está perdendo pessoas."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem está começando em design",
+        "description": "Quer entrar em UX/UI e precisa de uma base de processo antes de aprender ferramenta."
+      },
+      {
+        "label": "Quem vem do design gráfico",
+        "description": "Já domina o visual e quer entender usabilidade, fluxos e teste com usuário."
+      },
+      {
+        "label": "Quem desenvolve ou gerencia produto",
+        "description": "Trabalha ao lado de designers e quer falar a mesma língua e avaliar telas com critério."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "Os métodos deste programa — processo em fases, avaliação heurística, card sorting, wireframes e teste com poucos participantes — são prática corrente em equipes de produto digital de todos os tamanhos, de startups a bancos e órgãos de governo. Por não dependerem de ferramenta específica, continuam valendo quando a ferramenta da moda muda.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Design Council — Framework for Innovation (Double Diamond)",
+      "url": "https://www.designcouncil.org.uk/our-resources/framework-for-innovation/"
+    },
+    {
+      "label": "Nielsen Norman Group — 10 Usability Heuristics for User Interface Design",
+      "url": "https://www.nngroup.com/articles/ten-usability-heuristics/"
+    },
+    {
+      "label": "Nielsen Norman Group — Heuristic Evaluation (vídeo)",
+      "url": "https://www.nngroup.com/videos/heuristic-evaluation/"
+    },
+    {
+      "label": "Nielsen Norman Group — Why You Only Need to Test with 5 Users",
+      "url": "https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/"
+    },
+    {
+      "label": "McKinsey — The business value of design",
+      "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-business-value-of-design"
+    }
+  ]
 }

@@ -3,8 +3,825 @@
   "image": "https://cdn.pixabay.com/photo/2016/11/29/03/15/man-1867009_1280.jpg",
   "category": "Data Base",
   "categoryFilter": "data-base",
-  "title": "MongoDB: Do Zero ao CRUD em Aplicações NoSQL",
-  "lessons": "10+ Lições",
-  "duration": "08hr 00min",
-  "access": "Acesso Livre"
+  "title": "MongoDB: Documentos, CRUD, Índices e Agregação",
+  "lessons": "18 passos",
+  "duration": "12h estimadas",
+  "access": "Acesso Livre",
+  "accessType": "livre",
+  "level": "Iniciante/Intermediário",
+  "description": "Um programa prático para sair do zero no MongoDB: entender documentos e coleções, decidir entre embutir e referenciar, escrever CRUD com o mongosh e com o driver Node.js, consultar com filtros e projeções, criar índices que o banco realmente usa e resumir dados com o aggregation pipeline — tudo em um cluster gratuito no Atlas.",
+  "letslearn": [
+    "Criar um cluster gratuito no Atlas e conectar pelo mongosh e por uma aplicação Node.js",
+    "Modelar dados pensando em como eles são lidos, escolhendo entre embutir e referenciar",
+    "Escrever inserções, consultas, atualizações e remoções com filtros, operadores e projeções",
+    "Proteger a coleção com validação de schema e acelerar consultas com índices",
+    "Montar relatórios com o aggregation pipeline usando $match, $group, $sort e $lookup"
+  ],
+  "curriculum": "Do primeiro documento ao relatório agregado",
+  "about": "O programa continua de onde \"Banco de Dados na prática: SQL, NoSQL e modelagem para aplicações reais\" parou: lá você viu quando um banco de documentos faz sentido; aqui você opera um. O fio condutor é o banco de pedidos de uma cafeteria fictícia, com produtos, clientes e pedidos. A progressão vai do documento isolado à modelagem, da modelagem ao CRUD dentro de uma aplicação Node.js, e termina com índices e agregações — a parte que separa quem usa MongoDB de quem usa MongoDB bem. Cada passo mostra o comando, o que ele devolve e o erro mais comum ao usá-lo.",
+  "materials": [
+    "Script de carga com produtos, clientes e pedidos fictícios da cafeteria",
+    "Projeto Node.js inicial com a conexão ao Atlas configurada por variável de ambiente",
+    "Folha de consulta com operadores de consulta, atualização e estágios de agregação",
+    "Checklist de modelagem: perguntas para decidir entre embutir e referenciar"
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "title": "Documentos, Coleções e o Atlas Gratuito",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 1,
+      "title": "Modelagem: Embutir ou Referenciar",
+      "lessonsCount": 4,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 2,
+      "title": "CRUD e Consultas com o Driver Node.js",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    },
+    {
+      "id": 3,
+      "title": "Índices e Aggregation Pipeline",
+      "lessonsCount": 5,
+      "component": "ModuleRenderer"
+    }
+  ],
+  "enrollDetails": {
+    "categoryBadge": "Data Base",
+    "mainTitle": "Guarde os dados do jeito que a aplicação os lê: documentos, consultas e agregações no MongoDB.",
+    "introductionParagraphs": [
+      {
+        "title": "Por que um banco de documentos",
+        "text": "Em um banco relacional, um pedido com seus itens costuma virar duas ou três tabelas e uma junção na hora de ler. No **MongoDB**, o pedido pode ser um único documento com os itens dentro, no mesmo formato do objeto que a aplicação usa. Isso simplifica a leitura e a escrita — mas transfere para você uma decisão que o modelo relacional tomava por padrão: o que fica junto e o que fica separado."
+      },
+      {
+        "title": "Flexível não quer dizer sem regra",
+        "text": "O MongoDB aceita documentos de formatos diferentes na mesma coleção. Isso é útil para evoluir o produto e perigoso quando ninguém controla o que entra. Por isso o programa trata **validação de schema** e **índices** como parte do básico, não como tópico avançado: são eles que impedem que a flexibilidade vire bagunça e lentidão."
+      },
+      {
+        "title": "O que este programa não faz",
+        "text": "Não cobre replicação, sharding, transações multidocumento nem administração de servidor próprio. Também não usa ODM por cima do driver: você escreve as consultas com o driver oficial para entender o que de fato chega ao banco. Ao final, você terá base para decidir sozinho quando uma camada extra vale a pena."
+      }
+    ],
+    "courseAboutTitle": "Do primeiro documento ao relatório agregado",
+    "courseAboutDescription": "Este é o programa para quem quer usar MongoDB em uma aplicação de verdade, não só rodar comandos soltos. Você monta o banco de uma cafeteria fictícia, decide a estrutura dos documentos pelo jeito que eles serão lidos, escreve o CRUD em Node.js e termina medindo consultas com explain e montando relatórios de vendas com o aggregation pipeline.",
+    "moduleOverviews": [
+      {
+        "moduleId": 0,
+        "title": "Módulo 0: Documentos, Coleções e o Atlas Gratuito",
+        "items": [
+          {
+            "label": "Cluster M0",
+            "description": "Criar o cluster gratuito, usuário do banco e liberação de acesso de rede."
+          },
+          {
+            "label": "Documento, BSON e _id",
+            "description": "Como um documento é guardado e por que todo documento tem um identificador único."
+          },
+          {
+            "label": "Primeiras inserções",
+            "description": "insertOne e insertMany no mongosh para carregar o cardápio."
+          }
+        ]
+      },
+      {
+        "moduleId": 1,
+        "title": "Módulo 1: Modelagem: Embutir ou Referenciar",
+        "items": [
+          {
+            "label": "Padrões de acesso",
+            "description": "Modelar a partir das consultas que a aplicação faz, não das entidades."
+          },
+          {
+            "label": "Embutir e referenciar",
+            "description": "Itens dentro do pedido; cliente em coleção própria, ligado por _id."
+          },
+          {
+            "label": "Validação com $jsonSchema",
+            "description": "Regras que o banco aplica a cada inserção e atualização."
+          }
+        ]
+      },
+      {
+        "moduleId": 2,
+        "title": "Módulo 2: CRUD e Consultas com o Driver Node.js",
+        "items": [
+          {
+            "label": "MongoClient",
+            "description": "Conectar a aplicação ao Atlas sem deixar a senha no código."
+          },
+          {
+            "label": "Filtros e projeções",
+            "description": "Operadores de comparação, campos aninhados, ordenação e limite."
+          },
+          {
+            "label": "Atualizar e remover com segurança",
+            "description": "$set, $inc, $push, upsert e o cuidado com filtros vazios."
+          }
+        ]
+      },
+      {
+        "moduleId": 3,
+        "title": "Módulo 3: Índices e Aggregation Pipeline",
+        "items": [
+          {
+            "label": "explain e índices",
+            "description": "Ver a diferença entre varrer a coleção e usar um índice."
+          },
+          {
+            "label": "Índice composto e único",
+            "description": "A ordem dos campos e a garantia de valor sem repetição."
+          },
+          {
+            "label": "Pipeline de agregação",
+            "description": "Relatórios de vendas com $match, $unwind, $group, $sort e $lookup."
+          }
+        ]
+      }
+    ],
+    "transitionText": "Abaixo está o conteúdo completo de cada módulo, com os passos práticos para executar no seu próprio cluster. Ao final, um quiz com explicação de cada resposta fecha a revisão."
+  },
+  "moduleContents": [
+    {
+      "id": 0,
+      "icon": "laptop",
+      "title": "Documentos, Coleções e o Atlas Gratuito",
+      "shortDescription": "Cluster gratuito, mongosh e a anatomia de um documento",
+      "introductionText": "Antes de modelar qualquer coisa, você precisa de um banco rodando e de uma forma de conversar com ele. Neste módulo você cria um cluster gratuito no MongoDB Atlas, conecta pelo mongosh e insere os primeiros documentos do cardápio da cafeteria fictícia. No caminho, entende a hierarquia do MongoDB — servidor, banco, coleção, documento — e por que todo documento ganha um _id mesmo quando você não pede.",
+      "sections": [
+        {
+          "title": "☁️ Banco no ar e primeiros documentos",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Criar o cluster gratuito no Atlas",
+              "code": "Cluster M0 (Free)",
+              "guidance": "Crie uma conta no Atlas e um cluster do tipo M0, o plano gratuito. Em seguida, crie um usuário de banco com senha própria e libere o seu IP na lista de acesso de rede. Sem esses dois passos a conexão é recusada, mesmo com o cluster ativo.",
+              "tips": [
+                "O M0 oferece 512 MB de armazenamento e não inclui backup: é ambiente de estudo e protótipo, não de produção.",
+                "Evite liberar acesso de qualquer IP (0.0.0.0/0) por comodidade. Libere o seu e remova quando não precisar mais."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Conectar com o mongosh",
+              "code": "mongosh \"mongodb+srv://<cluster>/\" --username aluno",
+              "guidance": "Copie a string de conexão no painel do Atlas, opção de shell, e conecte com o mongosh. Rode show dbs e use cafeteria: o banco passa a existir de fato só quando a primeira coleção recebe dados.",
+              "tips": [
+                "Bancos e coleções são criados sob demanda. Um erro de digitação no nome da coleção cria uma coleção nova vazia em vez de dar erro — confira com show collections."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Anatomia de um documento",
+              "code": "{ _id: ObjectId(...), nome: \"Cappuccino\", precoCentavos: 1200, tags: [\"quente\"] }",
+              "guidance": "Um documento é um conjunto de pares campo e valor, guardado em BSON, um formato binário parecido com JSON que tem tipos extras como ObjectId, Date e Decimal128. Valores podem ser textos, números, datas, arrays e outros documentos. O campo _id é obrigatório e único dentro da coleção.",
+              "tips": [
+                "Guarde preço em centavos como número inteiro (ou em Decimal128). Ponto flutuante comum acumula erro de arredondamento em somas de dinheiro."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Inserir o cardápio",
+              "code": "db.produtos.insertMany([ {...}, {...} ])",
+              "guidance": "Insira um produto com insertOne e o restante do cardápio com insertMany. Observe o retorno: os _id gerados para cada documento. Depois rode db.produtos.find() e db.produtos.countDocuments() para conferir o que entrou.",
+              "tips": [
+                "Se você não informar _id, o driver gera um ObjectId. Ele já carrega o instante de criação, o que permite ordenar por ordem de inserção aproximada."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que começar pelo documento",
+      "highlights": [
+        {
+          "icon": "grid",
+          "title": "O formato da aplicação",
+          "text": "O documento tem o mesmo formato do objeto que o código usa. Não há tradução entre linhas de tabela e objeto para ler um produto inteiro."
+        },
+        {
+          "icon": "globe",
+          "title": "Banco na nuvem sem custo",
+          "text": "O cluster gratuito do Atlas permite estudar com um banco gerenciado de verdade, acessível de qualquer máquina, sem instalar servidor."
+        },
+        {
+          "icon": "shield",
+          "title": "Acesso fechado por padrão",
+          "text": "Usuário com senha e lista de IPs liberados são exigidos desde o primeiro dia. Segurança começa na conexão, não no deploy."
+        }
+      ],
+      "closingText": "Você tem um cluster no ar, conecta pelo mongosh e já tem o cardápio inserido. Até aqui, cada documento é independente. No próximo módulo entra a decisão que mais pesa em um projeto MongoDB: como representar dados relacionados, como o pedido, seus itens e o cliente que o fez.",
+      "ctaTitle": "☁️ Banco no ar!",
+      "ctaText": "Cluster criado, conexão feita e primeiros documentos inseridos. Agora vamos decidir a forma dos dados.",
+      "nextButtonText": "Ir para Módulo 1: Modelagem: Embutir ou Referenciar"
+    },
+    {
+      "id": 1,
+      "icon": "sitemap",
+      "title": "Modelagem: Embutir ou Referenciar",
+      "shortDescription": "Padrões de acesso, documentos aninhados, referências e validação",
+      "introductionText": "No modelo relacional, a regra é normalizar e juntar na leitura. No MongoDB, a regra prática da documentação oficial é outra: dados acessados juntos devem ser guardados juntos. Isso não significa embutir tudo. Este módulo ensina a olhar para as consultas que a aplicação faz e decidir, caso a caso, o que fica dentro do documento e o que vai para uma coleção própria — e termina colocando regras de validação para que essa estrutura seja respeitada.",
+      "sections": [
+        {
+          "title": "🧱 Desenhando os documentos da cafeteria",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Partir das consultas, não das tabelas",
+              "guidance": "Liste as operações mais frequentes da cafeteria: mostrar um pedido completo, listar os pedidos de um cliente, atualizar o status de um pedido, somar vendas por produto. Para cada uma, anote quais dados precisam aparecer juntos e com que frequência a operação acontece. Essa lista é a base da modelagem.",
+              "tips": [
+                "Se você começar desenhando entidades e relacionamentos como faria em SQL, tende a recriar tabelas em forma de coleções e perder a vantagem do documento."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Embutir os itens no pedido",
+              "code": "itens: [ { produtoId, nome, qtd, precoCentavos } ]",
+              "guidance": "Os itens só existem dentro do pedido, são lidos sempre junto com ele e têm quantidade pequena. Embuta-os como um array de documentos. Copie para o item o nome e o preço do produto no momento da compra: se o cardápio mudar de preço amanhã, o pedido de hoje continua correto.",
+              "tips": [
+                "Uma operação de escrita em um único documento é atômica no MongoDB. Pedido e itens no mesmo documento são gravados por inteiro ou não são gravados."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Referenciar o cliente",
+              "code": "clienteId: ObjectId(\"...\")",
+              "guidance": "O cliente existe sem pedidos, tem dados que mudam de forma independente (telefone, endereço) e pode acumular centenas de pedidos ao longo do tempo. Guarde-o na coleção clientes e, no pedido, só o clienteId. Não embuta a lista de pedidos dentro do cliente: ela cresceria sem limite.",
+              "tips": [
+                "Array que cresce sem limite é sinal de referência. Todo documento tem limite de 16 MB, e documentos grandes custam memória e rede mesmo quando você só queria um campo."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Validar a estrutura com $jsonSchema",
+              "code": "db.createCollection(\"pedidos\", { validator: { $jsonSchema: {...} } })",
+              "guidance": "Crie a coleção pedidos com um validador que exija clienteId, itens e status, defina bsonType para cada campo e restrinja status a uma lista de valores com enum. Tente inserir um pedido sem itens e veja a rejeição. Para coleção que já existe, aplique o validador com o comando collMod.",
+              "tips": [
+                "Por padrão o validador usa validationLevel strict e validationAction error: toda inserção e atualização é checada e o documento inválido é recusado. Use warn só durante migrações, para registrar sem bloquear."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que a modelagem decide o desempenho",
+      "highlights": [
+        {
+          "icon": "search",
+          "title": "Uma leitura, um documento",
+          "text": "Quando o pedido carrega os itens, mostrar a tela do pedido é uma única busca por _id. Sem junção, sem segunda viagem ao banco."
+        },
+        {
+          "icon": "sitemap",
+          "title": "Referência onde há crescimento",
+          "text": "Dados que crescem sem limite ou mudam por conta própria ficam em coleção separada. Isso mantém os documentos pequenos e as atualizações simples."
+        },
+        {
+          "icon": "shield",
+          "title": "Flexível com regras",
+          "text": "A validação de schema impede o campo com nome errado e o status inventado, sem abrir mão da liberdade de evoluir o formato com o produto."
+        }
+      ],
+      "closingText": "Os documentos da cafeteria têm forma definida: produtos e clientes em coleções próprias, pedidos com itens embutidos e referência ao cliente, tudo protegido por validação. Falta tirar isso do shell e levar para dentro de uma aplicação — é o que o próximo módulo faz com o driver Node.js.",
+      "ctaTitle": "🧱 Modelo desenhado!",
+      "ctaText": "Você decidiu o que fica junto e o que fica separado. Agora vamos escrever o CRUD dentro de uma aplicação.",
+      "nextButtonText": "Ir para Módulo 2: CRUD e Consultas com o Driver Node.js"
+    },
+    {
+      "id": 2,
+      "icon": "bolt",
+      "title": "CRUD e Consultas com o Driver Node.js",
+      "shortDescription": "Conexão, filtros, projeções, atualizações e remoções em código",
+      "introductionText": "O mongosh é ótimo para explorar, mas a aplicação conversa com o banco pelo driver. A boa notícia é que a sintaxe é quase a mesma: o filtro que você testou no shell vira o mesmo objeto JavaScript no código. Este módulo monta as operações da cafeteria em Node.js — registrar pedido, listar, mudar status, remover — e mostra os dois erros que mais causam estrago: substituir um documento inteiro sem querer e apagar mais do que devia.",
+      "sections": [
+        {
+          "title": "⚡ Operações da cafeteria em código",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Conectar com o MongoClient",
+              "code": "const client = new MongoClient(process.env.MONGODB_URI)",
+              "guidance": "Instale o pacote mongodb, leia a string de conexão de uma variável de ambiente e crie um único MongoClient para a aplicação inteira. Obtenha o banco com client.db(\"cafeteria\") e as coleções com db.collection(\"pedidos\"). Feche a conexão com client.close() ao encerrar o script.",
+              "tips": [
+                "O MongoClient mantém um pool de conexões. Criar um cliente novo a cada requisição esgota conexões do cluster — e o M0 tem limite baixo.",
+                "Nunca grave usuário e senha no código nem no repositório. Use um arquivo .env fora do controle de versão."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Registrar pedidos",
+              "code": "await pedidos.insertOne({ clienteId, itens, status: \"aberto\", criadoEm: new Date() })",
+              "guidance": "Escreva a função que registra um pedido: monte o documento com os itens copiados do cardápio, chame insertOne e devolva o insertedId. Teste um pedido inválido e trate o erro de validação que o banco devolve.",
+              "tips": [
+                "Guarde datas como Date, não como texto. Assim você filtra por intervalo e ordena corretamente sem conversão."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Consultar com filtros e operadores",
+              "code": "pedidos.find({ status: \"aberto\", \"itens.nome\": \"Cappuccino\", criadoEm: { $gte: inicio } })",
+              "guidance": "Monte consultas com igualdade, operadores de comparação ($gt, $gte, $lt, $in) e campos aninhados com notação de ponto. Note que filtrar por itens.nome encontra pedidos em que qualquer item do array tenha esse nome. Use findOne quando espera um único resultado.",
+              "tips": [
+                "find devolve um cursor, não um array. Use toArray() ou percorra com for await; buscar tudo de uma vez em coleção grande estoura memória."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Projeção, ordenação e limite",
+              "code": ".find(filtro).project({ status: 1, criadoEm: 1 }).sort({ criadoEm: -1 }).limit(10)",
+              "guidance": "Peça só os campos que a tela usa com uma projeção, ordene do mais recente para o mais antigo e limite a quantidade. Para paginação simples, combine sort com limit e um filtro pelo último valor visto, em vez de skip alto.",
+              "tips": [
+                "Em uma projeção não se mistura inclusão e exclusão de campos, com uma exceção: _id pode ser excluído (_id: 0) em uma projeção de inclusão."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Atualizar e remover com segurança",
+              "code": "updateOne({ _id }, { $set: { status: \"pago\" } })",
+              "guidance": "Mude o status com $set, some pontos de fidelidade do cliente com $inc e acrescente um item a um pedido aberto com $push. Teste também upsert: true, que cria o documento quando o filtro não encontra nenhum. Para remover, use deleteOne com filtro por _id e confira deletedCount.",
+              "tips": [
+                "Sem operador ($set, $inc...), replaceOne troca o documento inteiro pelo novo — campos não informados somem. Em updateOne, o driver exige operadores justamente para evitar esse acidente.",
+                "deleteMany({}) com filtro vazio apaga todos os documentos da coleção. Rode o mesmo filtro com countDocuments antes de apagar."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que o CRUD merece cuidado",
+      "highlights": [
+        {
+          "icon": "sync",
+          "title": "Mesmo filtro no shell e no código",
+          "text": "A consulta testada no mongosh vira o mesmo objeto JavaScript no driver. Você depura no shell e cola na aplicação."
+        },
+        {
+          "icon": "gauge",
+          "title": "Trazer só o necessário",
+          "text": "Projeção e limite reduzem o volume que trafega do cluster para a aplicação. Em tela de listagem, a diferença é grande."
+        },
+        {
+          "icon": "tools",
+          "title": "Operadores evitam acidentes",
+          "text": "$set altera um campo sem tocar no resto. Entender a diferença entre atualizar e substituir evita perder dados em produção."
+        }
+      ],
+      "closingText": "A aplicação da cafeteria registra, consulta, atualiza e remove pedidos com o driver oficial. Com poucos documentos, tudo é rápido. O próximo módulo mostra o que acontece quando a coleção cresce, como medir uma consulta e como transformar milhares de pedidos em um relatório de vendas.",
+      "ctaTitle": "⚡ CRUD funcionando!",
+      "ctaText": "Seu código já conversa com o banco. Agora vamos medir as consultas e montar relatórios.",
+      "nextButtonText": "Ir para Módulo 3: Índices e Aggregation Pipeline"
+    },
+    {
+      "id": 3,
+      "icon": "list",
+      "title": "Índices e Aggregation Pipeline",
+      "shortDescription": "explain, índices compostos e únicos, e relatórios agregados",
+      "introductionText": "Sem índice, o MongoDB precisa examinar cada documento da coleção para responder a uma consulta. Com algumas centenas de pedidos isso passa despercebido; com centenas de milhares, a tela trava. Este módulo começa medindo: você lê o plano de execução com explain, cria os índices que as consultas da cafeteria pedem e confirma que o banco passou a usá-los. Depois troca de assunto para o aggregation pipeline, a ferramenta para resumir dados no próprio banco — vendas por produto, ticket médio, pedidos com os dados do cliente.",
+      "sections": [
+        {
+          "title": "📈 Consultas rápidas e relatórios",
+          "subsections": [
+            {
+              "number": 1,
+              "title": "Ler o plano com explain",
+              "code": "db.pedidos.find({ status: \"aberto\" }).explain(\"executionStats\")",
+              "guidance": "Carregue alguns milhares de pedidos fictícios com o script do programa e rode explain na consulta de pedidos abertos. Procure o estágio COLLSCAN e compare totalDocsExamined com nReturned: quando o banco examina muito mais documentos do que devolve, falta índice.",
+              "tips": [
+                "No Atlas, a aba Performance Advisor sugere índices a partir das consultas lentas reais. Use como pista, não como ordem: cada índice custa espaço e deixa as escritas mais lentas."
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Criar um índice composto",
+              "code": "db.pedidos.createIndex({ clienteId: 1, criadoEm: -1 })",
+              "guidance": "A tela de histórico filtra pedidos por cliente e ordena do mais recente. Crie um índice com clienteId e criadoEm, nessa ordem, rode o explain de novo e confirme o estágio IXSCAN. Teste a mesma consulta filtrando só por criadoEm e veja que o índice não ajuda da mesma forma.",
+              "tips": [
+                "Regra prática para ordenar campos no índice composto: primeiro os de igualdade, depois os de ordenação, por último os de intervalo.",
+                "Um índice composto atende consultas pelo seu prefixo: { clienteId, criadoEm } também serve para filtrar só por clienteId."
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Garantir unicidade",
+              "code": "db.clientes.createIndex({ email: 1 }, { unique: true })",
+              "guidance": "Crie um índice único no e-mail dos clientes e tente inserir dois clientes com o mesmo e-mail: o segundo é recusado com erro de chave duplicada (código 11000). Trate esse erro no Node.js para mostrar uma mensagem clara em vez de quebrar a aplicação.",
+              "tips": [
+                "Se a coleção já tiver duplicados, a criação do índice único falha. Limpe os dados antes."
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Primeiro pipeline: vendas por produto",
+              "code": "[ { $match }, { $unwind: \"$itens\" }, { $group }, { $sort } ]",
+              "guidance": "Monte um pipeline que filtre pedidos pagos do mês com $match, desmembre o array de itens com $unwind, agrupe por nome do produto somando quantidade e receita com $group e $sum, e ordene da maior receita para a menor com $sort. Execute estágio por estágio para ver o que cada um entrega ao seguinte.",
+              "tips": [
+                "Coloque $match o mais cedo possível. No início do pipeline ele pode usar índice e reduz o volume que os estágios seguintes processam."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Juntar dados com $lookup e formatar com $project",
+              "code": "{ $lookup: { from: \"clientes\", localField: \"clienteId\", foreignField: \"_id\", as: \"cliente\" } }",
+              "guidance": "Monte o relatório dos últimos pedidos com o nome do cliente: use $lookup para trazer o documento de clientes, $unwind para transformar o array resultante em objeto e $project para entregar só os campos do relatório, já com o total calculado. Rode o mesmo pipeline pelo driver com collection.aggregate(pipeline).",
+              "tips": [
+                "Se um $lookup aparece em quase toda leitura da aplicação, reavalie a modelagem: talvez parte daquele dado devesse estar embutida."
+              ]
+            }
+          ]
+        }
+      ],
+      "highlightsTitle": "🔍 Por que medir antes de otimizar",
+      "highlights": [
+        {
+          "icon": "gauge",
+          "title": "Número, não impressão",
+          "text": "O explain mostra quantos documentos o banco leu para devolver o resultado. É a medida que diz se o índice resolveu ou se só parece mais rápido."
+        },
+        {
+          "icon": "search",
+          "title": "Índice com propósito",
+          "text": "Cada índice acelera leituras específicas e cobra em escrita e espaço. Criar índice para as consultas reais é melhor que indexar todos os campos."
+        },
+        {
+          "icon": "list",
+          "title": "Resumo no banco",
+          "text": "O pipeline agrega milhares de pedidos no servidor e devolve só o resultado. A aplicação não precisa baixar tudo para somar em memória."
+        }
+      ],
+      "closingText": "Você saiu de um documento isolado para um banco modelado pelo uso, com validação, CRUD em Node.js, índices medidos com explain e relatórios agregados. Esse é o conjunto que permite colocar o MongoDB em uma aplicação e entender o que acontece quando ela cresce. O passo seguinte da trilha é \"Segurança de Dados e LGPD: Protegendo Informações em Aplicações Reais\", que trata de como proteger os dados pessoais que bancos como este guardam.",
+      "ctaTitle": "🎓 Programa concluído!",
+      "ctaText": "Você modela, consulta, indexa e agrega dados no MongoDB. O próximo passo natural é proteger esses dados: acesso, criptografia e LGPD.",
+      "nextButtonText": "Concluir o programa"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "moduleId": 0,
+      "question": "Qual é a relação correta entre os elementos do MongoDB?",
+      "explanation": "Um cluster ou servidor contém bancos; cada banco contém coleções; cada coleção contém documentos. A coleção é o equivalente aproximado da tabela e o documento, da linha — mas um documento pode ter arrays e documentos aninhados.",
+      "options": [
+        {
+          "text": "Banco contém coleções, e coleções contêm documentos",
+          "isCorrect": true
+        },
+        {
+          "text": "Coleção contém bancos, e bancos contêm documentos",
+          "isCorrect": false
+        },
+        {
+          "text": "Documento contém coleções, e coleções contêm campos",
+          "isCorrect": false
+        },
+        {
+          "text": "Banco contém documentos, e documentos contêm coleções",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "moduleId": 0,
+      "question": "O que acontece se você inserir um documento sem informar o campo _id?",
+      "explanation": "O _id é obrigatório e único na coleção. Quando não é informado, o driver ou o mongosh gera um ObjectId automaticamente. A inserção não falha e não fica sem identificador.",
+      "options": [
+        {
+          "text": "Um ObjectId é gerado automaticamente para o documento",
+          "isCorrect": true
+        },
+        {
+          "text": "A inserção é recusada por falta de chave primária",
+          "isCorrect": false
+        },
+        {
+          "text": "O documento é gravado sem identificador",
+          "isCorrect": false
+        },
+        {
+          "text": "O _id recebe o número da linha, começando em 1",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "moduleId": 0,
+      "question": "Qual é o armazenamento oferecido pelo cluster gratuito M0 do MongoDB Atlas?",
+      "explanation": "Segundo a página de preços do MongoDB, o M0 é gratuito, tem 512 MB de armazenamento, RAM e vCPU compartilhadas e não inclui serviço de backup. Serve para estudo e protótipo.",
+      "options": [
+        {
+          "text": "512 MB",
+          "isCorrect": true
+        },
+        {
+          "text": "5 GB",
+          "isCorrect": false
+        },
+        {
+          "text": "Ilimitado, cobrado só por operação",
+          "isCorrect": false
+        },
+        {
+          "text": "16 MB",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "moduleId": 1,
+      "question": "Qual princípio a documentação do MongoDB propõe para orientar a modelagem?",
+      "explanation": "A documentação resume a ideia como: dados acessados juntos devem ser guardados juntos. A modelagem parte dos padrões de acesso da aplicação, e não de uma normalização no estilo relacional nem da regra de embutir tudo.",
+      "options": [
+        {
+          "text": "Dados acessados juntos devem ser guardados juntos",
+          "isCorrect": true
+        },
+        {
+          "text": "Cada entidade deve ter sempre a sua própria coleção",
+          "isCorrect": false
+        },
+        {
+          "text": "Todos os dados relacionados devem ficar embutidos em um documento",
+          "isCorrect": false
+        },
+        {
+          "text": "A estrutura deve copiar o diagrama do banco relacional",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "moduleId": 1,
+      "question": "Por que a lista de pedidos não deve ficar embutida dentro do documento do cliente?",
+      "explanation": "Um cliente pode acumular pedidos indefinidamente, e array que cresce sem limite é sinal clássico de referência: o documento ficaria cada vez maior, perto do limite de 16 MB, e caro de ler. Os pedidos ficam em coleção própria com clienteId.",
+      "options": [
+        {
+          "text": "Porque a lista cresce sem limite e o documento ficaria cada vez maior",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque o MongoDB não permite arrays de documentos",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque documentos embutidos não podem ser consultados",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque cada documento só pode ter um nível de aninhamento",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "moduleId": 1,
+      "question": "Com um validador $jsonSchema na configuração padrão, o que acontece ao inserir um documento que viola as regras?",
+      "explanation": "O padrão é validationLevel strict e validationAction error: toda inserção e atualização é checada e o documento inválido é recusado. O modo warn, que só registra o aviso, precisa ser configurado explicitamente.",
+      "options": [
+        {
+          "text": "A inserção é recusada com erro de validação",
+          "isCorrect": true
+        },
+        {
+          "text": "O documento é gravado e um aviso vai para o log",
+          "isCorrect": false
+        },
+        {
+          "text": "Os campos inválidos são removidos e o resto é gravado",
+          "isCorrect": false
+        },
+        {
+          "text": "O validador só é verificado na próxima consulta",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "moduleId": 2,
+      "question": "Qual é a forma recomendada de usar o MongoClient em uma aplicação Node.js?",
+      "explanation": "O MongoClient mantém um pool de conexões e deve ser criado uma vez e reaproveitado. Criar um cliente por requisição abre conexões demais, e a string de conexão com credenciais deve vir de variável de ambiente, nunca do código.",
+      "options": [
+        {
+          "text": "Criar um único cliente e reaproveitá-lo, com a string de conexão em variável de ambiente",
+          "isCorrect": true
+        },
+        {
+          "text": "Criar um cliente novo a cada requisição e fechar logo depois",
+          "isCorrect": false
+        },
+        {
+          "text": "Gravar a string de conexão no código para evitar erro de configuração",
+          "isCorrect": false
+        },
+        {
+          "text": "Abrir um cliente por coleção usada na aplicação",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "moduleId": 2,
+      "question": "O que o filtro { \"itens.nome\": \"Cappuccino\" } encontra na coleção de pedidos?",
+      "explanation": "A notação de ponto alcança campos de documentos aninhados, inclusive dentro de arrays. Quando o campo é um array de documentos, o filtro casa com o pedido se qualquer item tiver aquele nome — não precisa ser o primeiro nem o único.",
+      "options": [
+        {
+          "text": "Pedidos em que qualquer item do array tenha o nome Cappuccino",
+          "isCorrect": true
+        },
+        {
+          "text": "Só pedidos em que o primeiro item seja Cappuccino",
+          "isCorrect": false
+        },
+        {
+          "text": "Só pedidos em que todos os itens sejam Cappuccino",
+          "isCorrect": false
+        },
+        {
+          "text": "Nenhum: não é possível filtrar por campo dentro de array",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "moduleId": 2,
+      "question": "Qual operação muda apenas o status de um pedido, preservando os demais campos?",
+      "explanation": "O operador $set altera só os campos indicados. replaceOne substitui o documento inteiro, apagando o que não foi informado. deleteOne remove o documento, e insertOne cria outro, gerando duplicidade.",
+      "options": [
+        {
+          "text": "updateOne({ _id }, { $set: { status: \"pago\" } })",
+          "isCorrect": true
+        },
+        {
+          "text": "replaceOne({ _id }, { status: \"pago\" })",
+          "isCorrect": false
+        },
+        {
+          "text": "deleteOne({ _id }) seguido de insertOne({ status: \"pago\" })",
+          "isCorrect": false
+        },
+        {
+          "text": "insertOne({ _id, status: \"pago\" })",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "moduleId": 3,
+      "question": "No resultado de explain(\"executionStats\"), o que indica que a consulta não usou índice?",
+      "explanation": "O estágio COLLSCAN significa varredura da coleção inteira, e costuma vir com totalDocsExamined muito maior que nReturned. Com índice, o plano mostra IXSCAN. O tamanho do resultado sozinho não indica uso de índice.",
+      "options": [
+        {
+          "text": "Um estágio COLLSCAN, com muitos documentos examinados para poucos devolvidos",
+          "isCorrect": true
+        },
+        {
+          "text": "Um estágio IXSCAN",
+          "isCorrect": false
+        },
+        {
+          "text": "nReturned igual a zero",
+          "isCorrect": false
+        },
+        {
+          "text": "A presença do campo _id no resultado",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "moduleId": 3,
+      "question": "Um índice composto { clienteId: 1, criadoEm: -1 } atende de forma eficiente qual consulta?",
+      "explanation": "Índices compostos servem às consultas pelo prefixo: filtrar por clienteId e ordenar por criadoEm usa o índice inteiro, e filtrar só por clienteId usa o prefixo. Filtrar só por criadoEm, sem clienteId, não aproveita o índice da mesma forma.",
+      "options": [
+        {
+          "text": "Pedidos de um cliente ordenados do mais recente para o mais antigo",
+          "isCorrect": true
+        },
+        {
+          "text": "Todos os pedidos de um intervalo de datas, sem filtrar cliente",
+          "isCorrect": false
+        },
+        {
+          "text": "Pedidos filtrados por status",
+          "isCorrect": false
+        },
+        {
+          "text": "Pedidos que contêm um produto específico",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "moduleId": 3,
+      "question": "Em um pipeline de vendas por produto, por que colocar $match logo no início?",
+      "explanation": "No início do pipeline o $match pode usar índice e reduz a quantidade de documentos que $unwind, $group e $sort precisam processar. Ele não é obrigatório na primeira posição, mas colocá-lo cedo é a otimização mais simples e eficaz.",
+      "options": [
+        {
+          "text": "Porque pode usar índice e reduz o volume processado pelos estágios seguintes",
+          "isCorrect": true
+        },
+        {
+          "text": "Porque o MongoDB exige que todo pipeline comece com $match",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque $group só funciona depois de um $match",
+          "isCorrect": false
+        },
+        {
+          "text": "Porque $match no início ordena o resultado automaticamente",
+          "isCorrect": false
+        }
+      ]
+    }
+  ],
+  "whatYouBuild": {
+    "title": "O que você vai construir",
+    "description": "O banco de pedidos de uma cafeteria fictícia em um cluster gratuito do Atlas: coleções de produtos, clientes e pedidos modeladas pelo uso, com itens embutidos e cliente referenciado, validação de schema, um módulo Node.js com as operações de CRUD, índices verificados com explain e relatórios de vendas por produto e de últimos pedidos montados com o aggregation pipeline.",
+    "highlights": [
+      "Coleções modeladas com embutir e referenciar, protegidas por $jsonSchema",
+      "CRUD em Node.js com o driver oficial e conexão segura ao Atlas",
+      "Índices medidos com explain e relatórios com aggregation pipeline"
+    ]
+  },
+  "whyNow": {
+    "title": "Por que isso importa agora",
+    "paragraphs": [
+      "Na pesquisa de desenvolvedores do Stack Overflow de 2025, o MongoDB aparece com 24% de uso entre todos os respondentes, ao lado de PostgreSQL (55,6%), MySQL (40,5%), SQLite (37,5%) e Redis (28%). Cerca de um em cada quatro desenvolvedores trabalha com ele, o que o coloca entre os bancos mais usados e como o principal representante do modelo de documentos nessa lista.",
+      "Para quem está entrando, isso significa que é comum encontrar MongoDB em projetos de Node.js, APIs e produtos que nasceram com dados de formato variável. Saber modelar documentos, indexar e agregar — e não só fazer CRUD — é o que permite trabalhar com esses projetos sem repetir os erros de quem trata o MongoDB como uma tabela sem regras."
+    ]
+  },
+  "appliedIn": {
+    "title": "Onde se aplica",
+    "items": [
+      {
+        "label": "APIs e backends em Node.js",
+        "description": "Aplicações em que o documento tem o mesmo formato do objeto JSON que trafega na API."
+      },
+      {
+        "label": "Catálogos e conteúdo variável",
+        "description": "Produtos, cadastros e conteúdos com atributos que mudam de um item para outro."
+      },
+      {
+        "label": "Protótipos e MVPs",
+        "description": "Projetos que começam no cluster gratuito e evoluem o formato dos dados junto com o produto."
+      }
+    ]
+  },
+  "forWho": {
+    "title": "Para quem é este programa",
+    "profiles": [
+      {
+        "label": "Quem só conhece SQL",
+        "description": "Sabe consultar tabelas e quer entender como pensar em documentos sem copiar o modelo relacional."
+      },
+      {
+        "label": "Quem programa em JavaScript",
+        "description": "Já escreve Node.js e precisa de um banco para guardar os dados da aplicação."
+      },
+      {
+        "label": "Quem usa MongoDB sem método",
+        "description": "Já faz CRUD, mas nunca leu um explain nem montou um pipeline de agregação."
+      }
+    ]
+  },
+  "marketUsage": {
+    "title": "Quem usa no mercado",
+    "description": "O MongoDB é usado de startups a grandes empresas, principalmente em aplicações web e mobile, catálogos de produtos e sistemas com dados de formato variável. Com cerca de um quarto dos desenvolvedores usando o banco segundo o Stack Overflow 2025 e um plano gratuito permanente no Atlas para estudo, é uma das portas de entrada mais acessíveis para bancos NoSQL — e a habilidade de modelar documentos se transfere para outros bancos do mesmo tipo.",
+    "companies": []
+  },
+  "sources": [
+    {
+      "label": "Stack Overflow — 2025 Developer Survey: Technology (seção Databases)",
+      "url": "https://survey.stackoverflow.co/2025/technology"
+    },
+    {
+      "label": "MongoDB — Pricing: plano gratuito M0 do Atlas (512 MB, sem backup)",
+      "url": "https://www.mongodb.com/pricing?tck=docs"
+    },
+    {
+      "label": "MongoDB Docs — Best Practices for Data Modeling: embedding vs. references",
+      "url": "https://mongodb.com/docs/manual/data-modeling/concepts/embedding-vs-references/"
+    },
+    {
+      "label": "MongoDB Docs — Data Model Design",
+      "url": "https://mongodb.com/docs/manual/core/data-model-design"
+    },
+    {
+      "label": "Vonng — análise dos bancos de dados no Stack Overflow Survey 2025",
+      "url": "https://blog.vonng.com/en/pg/so2025-pg/"
+    }
+  ]
 }
