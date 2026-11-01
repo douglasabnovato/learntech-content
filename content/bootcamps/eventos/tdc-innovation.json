@@ -102,6 +102,16 @@
         "label": "Galícia Educação: Evento TDC – The Developers Conference",
         "url": "https://www.galiciaeducacao.com.br/blog/evento-tdc-the-developers-conference"
       }
+    ],
+    "relacionados": [
+      {
+        "tipo": "blog",
+        "id": "eventos-de-comunidade-tech"
+      },
+      {
+        "tipo": "blog",
+        "id": "networking-pitch-60-segundos"
+      }
     ]
   }
 }

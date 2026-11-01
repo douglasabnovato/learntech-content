@@ -1,0 +1,90 @@
+{
+  "id": "25",
+  "slug": "na-pratica-carreira",
+  "title": "Cursos de Carreira e Produtividade Na Prática",
+  "institution": "Fundação Estudar (Na Prática)",
+  "description": "Sequência de cursos online do Na Prática sobre autoconhecimento, decisão e plano de carreira, processo seletivo e produtividade, feita durante a transição de carreira.",
+  "coverImage": "/media/bootcamps/instituicoes/na-pratica-carreira.webp",
+  "altText": "Materiais dos cursos online do Na Prática: roda da vida, plano odisseico e matriz de decisão",
+  "category": "outros",
+  "status": "concluido",
+  "content": {
+    "longDescription": "O Na Prática é o braço de carreira da Fundação Estudar e mantém cursos online curtos sobre competências que escola e faculdade raramente ensinam. Entre 2018 e 2020, Douglas percorreu a trilha quase inteira: Autoconhecimento, Decisão de Carreira, Plano de Carreira, Processos Seletivos e Produtividade. Guardou apostilas, planilhas e exercícios respondidos, que depois viraram a base dos programas de carreira do learnTECH.",
+    "paragraphs": [
+      "A Fundação Estudar organiza sua atuação em três frentes, e o Na Prática é a que cuida das decisões de carreira de jovens, com um portal de conteúdo gratuito e cursos online. Os cursos seguem um padrão parecido: vídeos curtos, apostila para imprimir, fórum da turma e missões práticas, muitas delas com um nível básico e um nível opcional mais profundo. A ideia não é decorar conceitos, e sim sair de cada módulo com alguma coisa respondida no papel.",
+      "No Autoconhecimento, o ponto de partida é a própria história: contar a vida como a sinopse de um filme, pedir a pessoas próximas a imagem que elas têm de você, escolher memórias marcantes de cada fase e perguntar o que cada uma revela sobre valores e padrões de comportamento. O curso também trabalha mentalidade de crescimento, isto é, tratar um problema como algo que ainda não foi resolvido, e não como prova de incapacidade. Junto vêm ferramentas como a roda da vida, que dá nota a cada área da vida para mostrar onde está o desequilíbrio, e uma videoteca de apoio.",
+      "Decisão de Carreira e Plano de Carreira partem de um problema conhecido: excesso de opções paralisa. Os exercícios ajudam a mapear o que você não gosta de fazer, em que assuntos as pessoas procuram você, quando você entra em estado de fluxo e quais influências pesaram nas suas decisões passadas. O plano odisseico pede três versões possíveis dos próximos anos, para comparar caminhos em vez de procurar uma carreira perfeita. Depois, a carreira escolhida vira plano: o que pesquisar, com quem conversar, como agir, o que entregar, em que data e para quem prestar contas, numa planilha de ação no estilo 5W2H.",
+      "Processos Seletivos ensina a contar a própria trajetória de forma objetiva com o método STAR (situação, tarefa, ação, resultado) e a usar uma matriz de decisão para comparar propostas: cada fator, como salário, aprendizado, autonomia ou equilíbrio, recebe um peso de 1 a 5, e cada opção é avaliada nesses fatores. Produtividade trata de motivação, rotina, planejamento e concentração, com a matriz de Eisenhower, o diagrama do Getting Things Done, uma tabela para registrar a rotina de uma semana, a atividade das esferas da vida e um roteiro em cinco passos para trocar um hábito: identificar o gatilho, entender o que o comportamento resolve, perceber a recompensa e testar uma rotina substituta.",
+      "Para quem trabalha ou quer trabalhar com tecnologia, essas ferramentas resolvem problemas bem concretos. O plano odisseico e a matriz de decisão ajudam a escolher entre front-end, dados, suporte ou produto sem decidir no impulso. O STAR transforma projetos de portfólio e experiências fora da área em histórias que um recrutador entende. E a parte de hábitos e rotina é o que sustenta meses de estudo à noite, depois do expediente, que é a realidade de quem faz transição de carreira.",
+      "Os cursos foram pensados para universitários, recém-formados e jovens profissionais em dúvida sobre o próximo passo, mas funcionam para qualquer pessoa em transição. Não exigem conhecimento prévio. Exigem disposição para escrever, conversar com outras pessoas e revisitar as respostas meses depois.",
+      "No learnTECH, esse percurso foi reescrito em programas próprios: 1001 (Autoconhecimento em Ação) retoma as missões de história, memórias e valores; 1002 (Decisão e Plano de Carreira) reúne mapeamento de opções, plano odisseico e plano de ação; 1003 (Processo Seletivo na Prática) trata de currículo, STAR, entrevistas e decisão de proposta; 1004 (Produtividade, Hábitos e Metas) organiza rotina, prioridades e hábitos; e 1005 (Hack Dev) aplica tudo isso à rotina de estudo e ao portfólio de quem busca a primeira vaga em tecnologia."
+    ],
+    "curriculum": [
+      "Autoconhecimento: história pessoal, memórias marcantes e mentalidade de crescimento",
+      "Roda da vida e esferas da vida",
+      "Decisão de carreira: interesses, fluxo, influências e plano odisseico",
+      "Plano de carreira e plano de ação (5W2H)",
+      "Processo seletivo: método STAR, testes, dinâmicas e entrevistas",
+      "Matriz de decisão para comparar propostas",
+      "Produtividade: matriz de Eisenhower, Getting Things Done e registro de rotina",
+      "Cinco passos para mudar um hábito"
+    ],
+    "officialLink": "https://napratica.org.br/cursos-de-carreira-fundacao-estudar",
+    "links": [
+      {
+        "label": "Na Prática: curso Decisão de Carreira",
+        "url": "https://napratica.org.br/curso-decisao-de-carreira-na-pratica"
+      },
+      {
+        "label": "Na Prática: curso online Produtividade Na Prática",
+        "url": "https://www.napratica.org.br/curso-online-produtividade-na-pratica/"
+      },
+      {
+        "label": "Na Prática: curso online Processos Seletivos Na Prática",
+        "url": "https://www.napratica.org.br/fundacao-estudar-lanca-curso-online-processos-seletivos-na-pratica/"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Na Prática: Decisão de Carreira, curso online com cinco módulos e certificado de 8 horas (30/09/2021)",
+        "url": "https://napratica.org.br/curso-decisao-de-carreira-na-pratica"
+      },
+      {
+        "label": "Na Prática: Fundação Estudar lança curso online Processos Seletivos Na Prática, seis módulos e cerca de 8 horas (29/11/2017)",
+        "url": "https://www.napratica.org.br/fundacao-estudar-lanca-curso-online-processos-seletivos-na-pratica/"
+      },
+      {
+        "label": "Na Prática: novo curso online Produtividade Na Prática, quatro módulos e cerca de 8 horas (16/10/2018)",
+        "url": "https://www.napratica.org.br/curso-online-produtividade-na-pratica/"
+      },
+      {
+        "label": "Exame: curso online gratuito da Fundação Estudar sobre autoconhecimento (19/07/2016)",
+        "url": "https://exame.com/carreira/este-curso-online-gratuito-vai-reforcar-seu-autoconhecimento"
+      },
+      {
+        "label": "Na Prática: cursos de carreira da Fundação Estudar (13/11/2017)",
+        "url": "https://napratica.org.br/cursos-de-carreira-fundacao-estudar"
+      }
+    ],
+    "videoUrl": "",
+    "gallery": [],
+    "relacionados": [
+      {
+        "tipo": "programas",
+        "id": "1001"
+      },
+      {
+        "tipo": "programas",
+        "id": "1002"
+      },
+      {
+        "tipo": "programas",
+        "id": "1003"
+      },
+      {
+        "tipo": "programas",
+        "id": "1004"
+      }
+    ]
+  }
+}

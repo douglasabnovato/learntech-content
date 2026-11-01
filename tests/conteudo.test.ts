@@ -68,6 +68,16 @@ describe("regras de integridade", () => {
     expect(msg).toMatch(/fora de ordem/);
   });
 
+  it("acusa evento que relaciona conteúdo inexistente e publica o relacionado resolvido", () => {
+    const c = copia();
+    const e = c.eventos.find((x) => x.slug === "hackathon-inovacao-social-jf")!;
+    e.content.relacionados = [{ tipo: "programas", id: "999999" }];
+    expect(verificarIntegridade(c, path.join(RAIZ, "media")).join()).toMatch(/evento hackathon-inovacao-social-jf: relaciona programas "999999"/);
+    e.content.relacionados = [{ tipo: "programas", id: "901" }];
+    const publicado = montarRecursos(c).find((r) => r.caminho === "bootcamps/eventos/hackathon-inovacao-social-jf.json")!.dados as typeof e;
+    expect(publicado.content.relacionados![0]!.url).toMatch(/\/program\/.+\/901$/);
+  });
+
   it("acusa questão com duas alternativas corretas", () => {
     const c = copia();
     c.programas.find((p) => p.id === 901)!.quiz![0]!.options.forEach((o) => (o.isCorrect = true));

@@ -205,6 +205,24 @@
         "label": "Tribuna de Minas: I Festival de Inovação Social de Juiz de Fora acontece nesta quinta e sexta (01/11/2022)",
         "url": "https://tribunademinas.com.br/?p=500123"
       }
+    ],
+    "relacionados": [
+      {
+        "tipo": "blog",
+        "id": "bastidores-de-um-hackathon-de-comunidade"
+      },
+      {
+        "tipo": "blog",
+        "id": "como-organizar-evento-de-comunidade-tech"
+      },
+      {
+        "tipo": "programas",
+        "id": "503"
+      },
+      {
+        "tipo": "eventos",
+        "id": "fator-s-challenge"
+      }
     ]
   }
 }

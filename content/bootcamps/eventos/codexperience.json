@@ -180,6 +180,20 @@
       "Em 9 de novembro de 2024, a segunda edição voltou à UniAcademia com três trilhas temáticas, ignite talks (apresentações curtas e cronometradas) e open spaces, em que os próprios participantes propõem e conduzem as conversas. Nessa edição Douglas integrou a organização, conduziu em dupla a abertura oficial e desenvolveu a landing page do evento em React, Vite, TypeScript e Tailwind. A edição de 2025, em 29 de novembro, manteve o formato gratuito com palestras simultâneas, workshops, ignite talks e roda de conversa, viabilizada por quatro cotas de apoio.",
       "O público é amplo: estudantes que querem conhecer a área, profissionais em busca de atualização e pessoas em transição de carreira. As inscrições são feitas pelo Sympla e a divulgação acontece pelo Instagram do evento; por ser gratuito e com vagas limitadas pelo espaço, costuma ser necessário garantir o ingresso com antecedência.",
       "Eventos de comunidade como o CodeXperience aproximam quem está começando de quem já trabalha na área, mostram o que as empresas da região fazem e abrem espaço para os primeiros passos como palestrante, voluntário ou organizador. Para quem mora fora dos grandes centros, são uma das formas mais acessíveis de construir rede de contatos e se manter atualizado."
+    ],
+    "relacionados": [
+      {
+        "tipo": "blog",
+        "id": "como-organizar-evento-de-comunidade-tech"
+      },
+      {
+        "tipo": "blog",
+        "id": "eventos-de-comunidade-tech"
+      },
+      {
+        "tipo": "eventos",
+        "id": "gdg-jf"
+      }
     ]
   }
 }

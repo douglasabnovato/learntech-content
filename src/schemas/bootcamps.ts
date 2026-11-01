@@ -1,6 +1,7 @@
 /* bootcamps.ts — schema dos eventos, espelho de BootcampEvent do frontend bootcamps. */
 import { z } from "zod";
 import { textoObrigatorio, urlOuMidia, urlAbsoluta, slug } from "./comum";
+import { relacionadoSchema } from "./career-tools";
 
 const midiaSchema = z.object({
   id: textoObrigatorio,
@@ -63,6 +64,8 @@ export const eventoSchema = z.object({
     certificate: urlOuMidia.optional(),
     /* Fontes consultadas para escrever a página. */
     sources: z.array(z.object({ label: textoObrigatorio, url: urlAbsoluta })).optional(),
+    /* Ligações com conteúdo dos outros projetos ({ tipo, id }); o build confere e publica título e URL. */
+    relacionados: z.array(relacionadoSchema).optional(),
   }),
 });
 

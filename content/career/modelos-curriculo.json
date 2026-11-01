@@ -519,6 +519,10 @@
       {
         "secao": "Formato",
         "texto": "Prefira um layout simples, sem excesso de enfeites, em uma ou no máximo duas páginas. Não reduza a fonte para caber mais texto: corte o que é menos relevante."
+      },
+      {
+        "secao": "Níveis de habilidade",
+        "texto": "Em vez de barras ou estrelas, que não dizem nada a quem recruta, use uma régua com significado claro e seja honesta com ela. Uma régua simples em quatro níveis: nenhum (ainda não estudou o recurso); básico (estudou, seguiu cursos e documentação e tem provas de conceito no próprio repositório); praticante (usa no dia a dia de trabalho, ainda com apoio de alguém mais experiente nas decisões e no code review); avançado (aceita desafios complexos, toma decisões técnicas sobre o recurso, faz code review e mentora outras pessoas). Coloque o nível só nas tecnologias principais da vaga e esteja pronta para dar um exemplo de cada uma na entrevista."
       }
     ],
     "fontes": [
