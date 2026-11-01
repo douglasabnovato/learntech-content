@@ -59,6 +59,18 @@
         "url": "/media/bootcamps/eventos/tdc-innovation-2023/8.webp",
         "type": "image",
         "alt": "Tela de intervalo da transmissão do TDC Innovation 2023"
+      },
+      {
+        "id": "tdc-innovation-9",
+        "url": "/media/bootcamps/eventos/tdc-innovation-2023/9.webp",
+        "type": "image",
+        "alt": "Palestra de uma das trilhas do TDC Innovation 2023"
+      },
+      {
+        "id": "tdc-innovation-10",
+        "url": "/media/bootcamps/eventos/tdc-innovation-2023/10.webp",
+        "type": "image",
+        "alt": "Acompanhando uma trilha do TDC pelo notebook"
       }
     ],
     "curriculum": [
