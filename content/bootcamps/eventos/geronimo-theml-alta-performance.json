@@ -1,0 +1,68 @@
+{
+  "id": "27",
+  "slug": "geronimo-theml-alta-performance",
+  "title": "Treinamento de Alta Performance com Geronimo Theml",
+  "institution": "Geronimo Theml",
+  "description": "Treinamento de produtividade e alta performance com metas claras, dia perfeito, folha de produtividade, planejamento por tríade e inteligência emocional.",
+  "coverImage": "/media/bootcamps/instituicoes/geronimo-theml-alta-performance.webp",
+  "altText": "Folha de produtividade e planilha de planejamento diário do treinamento de alta performance",
+  "category": "outros",
+  "status": "concluido",
+  "content": {
+    "longDescription": "Geronimo Theml é advogado e palestrante, autor de Produtividade para Quem Quer Tempo (Editora Gente, 2016), e criou um método de produtividade que começa pela clareza de objetivos. Entre 2018 e 2019, Douglas seguiu o treinamento de alta performance dele e aplicou as ferramentas à própria rotina: metas, dia perfeito, folha de produtividade, planilha de planejamento por tríade, quiz de inteligência emocional e um memo de prioridades por área da vida.",
+    "paragraphs": [
+      "Antes de trabalhar com produtividade, Geronimo Theml foi professor de direito e advogado da União, chegando a procurador-chefe da AGU no Espírito Santo, segundo a Forbes Brasil. Deixou o cargo, criou a Academia de Produtividade e publicou em 2016 o livro Produtividade para Quem Quer Tempo, que liderou as vendas no país na última semana de abril daquele ano. A tese dele é que estar ocupado não é o mesmo que ser produtivo, e que tudo começa pela clareza do que se quer.",
+      "O primeiro bloco do treinamento trata de metas e de por que elas falham. Os motivos mais comuns: a meta não é específica, mensurável, atingível, relevante e com prazo (o modelo SMART); não fica à vista no dia a dia; não se sabe o que ajuda e o que atrapalha; não se conhece a meta por trás da meta; falta grupo de apoio; e a pessoa abandona tudo quando só fez metade. A resposta é comportamental: fazer metade é melhor que não fazer, comemorar o acerto, aprender com o erro e recomeçar.",
+      "Depois vêm as ferramentas de rotina. O exercício do dia perfeito pede para descrever, passo a passo, como seria um dia ideal, do horário de dormir na véspera ao momento de lazer, e usar isso como referência para montar a rotina real. A folha de produtividade organiza a semana por papéis: o que mantém o equilíbrio, o que aproxima da meta e o que é tarefa necessária, e fecha cada dia com uma avaliação curta. A planilha de planejamento divide o dia em blocos de horário e classifica cada tarefa como importante, urgente ou circunstancial, para mostrar quanto tempo vai para o que de fato importa.",
+      "Completam o treinamento um quiz de inteligência emocional, que mede autoconsciência, autorregulação, automotivação, empatia e habilidades sociais, e o memo, uma lista de prioridades por área da vida (imagem profissional, estudos, carreira, saúde, lazer) revisitada ao longo do semestre. O material de apoio inclui temas como medos, organização financeira por percentuais do orçamento, rotina matinal, meditação, visualização e organização de projetos pessoais com agenda e listas de tarefas.",
+      "Na carreira em tecnologia, o ganho é direto. Quem estuda programação depois do trabalho precisa de metas mensuráveis (terminar um projeto, publicar um artigo, fechar um módulo), de blocos fixos na agenda e de um jeito de perceber quando o dia inteiro foi consumido por urgências. A classificação em importante, urgente e circunstancial também serve para times: ajuda a separar incidente de prioridade e a proteger tempo para aprender.",
+      "O treinamento é para quem sente que trabalha muito e avança pouco, para quem está em transição e precisa conciliar emprego e estudo e para quem quer criar uma rotina sem depender de motivação. No learnTECH, essas ferramentas foram reescritas no programa 1004 (Produtividade, Hábitos e Metas para Quem Estuda e Trabalha com Tecnologia), aplicadas à rotina de estudo e ao portfólio no 1005 (Hack Dev) e conectadas ao autoconhecimento do 1001 e ao plano de ação do 1002."
+    ],
+    "curriculum": [
+      "Por que as metas não são cumpridas e o modelo SMART",
+      "Exercício do dia perfeito",
+      "Folha de produtividade semanal por papéis",
+      "Planejamento diário por blocos: importante, urgente e circunstancial",
+      "Quiz de inteligência emocional em cinco pilares",
+      "Memo de prioridades por área da vida",
+      "Rotina, hábitos, finanças pessoais e organização de projetos"
+    ],
+    "officialLink": "",
+    "links": [
+      {
+        "label": "Forbes Brasil: clareza é o segredo da produtividade",
+        "url": "https://forbes.com.br/carreira/2016/05/clareza-e-o-segredo-da-produtividade-diz-advogado-campeao-das-livrarias/"
+      },
+      {
+        "label": "Skoob: Produtividade para Quem Quer Tempo",
+        "url": "https://www.skoob.com.br/book/579769"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Forbes Brasil: Clareza é o segredo da produtividade, diz advogado campeão das livrarias (16/05/2016)",
+        "url": "https://forbes.com.br/carreira/2016/05/clareza-e-o-segredo-da-produtividade-diz-advogado-campeao-das-livrarias/"
+      },
+      {
+        "label": "Skoob: Produtividade para Quem Quer Tempo, Geronimo Theml (Editora Gente, 2016)",
+        "url": "https://www.skoob.com.br/book/579769"
+      },
+      {
+        "label": "Voitto: resumo de Produtividade para Quem Quer Tempo (folha de produtividade e ciclo semanal)",
+        "url": "https://blog.voitto.com.br/resumo/en/produtividade-para-quem-quer-tempo"
+      }
+    ],
+    "videoUrl": "",
+    "gallery": [],
+    "relacionados": [
+      {
+        "tipo": "programas",
+        "id": "1004"
+      },
+      {
+        "tipo": "programas",
+        "id": "1001"
+      }
+    ]
+  }
+}

@@ -20,7 +20,8 @@
     "copias:conferir": "node scripts/exportar-copias.mjs --conferir",
     "midia:externa": "node scripts/baixar-imagens-externas.mjs",
     "hd:inventariar": "node scripts/hd-inventariar.mjs",
-    "leva:status": "node scripts/leva-status.mjs"
+    "leva:status": "node scripts/leva-status.mjs",
+    "cobertura": "node scripts/cobertura-projetos.mjs"
   },
   "dependencies": {
     "hono": "^4.13.9",

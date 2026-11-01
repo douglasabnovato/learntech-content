@@ -158,6 +158,20 @@
         "label": "Visite São Paulo — Product Camp 2026",
         "url": "https://visitesaopaulo.com/evento/product-camp-2026-2026/"
       }
+    ],
+    "relacionados": [
+      {
+        "tipo": "programas",
+        "id": "501"
+      },
+      {
+        "tipo": "programas",
+        "id": "801"
+      },
+      {
+        "tipo": "eventos",
+        "id": "gdg-jf"
+      }
     ]
   }
 }

@@ -72,6 +72,20 @@
         "label": "Google for Developers: Perguntas frequentes sobre GDG e DevFest",
         "url": "https://developers.google.com/community/devfest/faq?hl=pt-br"
       }
+    ],
+    "relacionados": [
+      {
+        "tipo": "blog",
+        "id": "eventos-de-comunidade-tech"
+      },
+      {
+        "tipo": "eventos",
+        "id": "capivara-tech-juiz-de-fora"
+      },
+      {
+        "tipo": "eventos",
+        "id": "hackathon-inovacao-social-jf"
+      }
     ]
   }
 }

@@ -74,12 +74,24 @@ Os detalhes da triagem que servem para o lote (dados pessoais, riscos, potencial
 - Mudança de código entra com teste no mesmo lote: schema, regra, página e teste no navegador.
 - As páginas novas são abertas num navegador com os dados gerados.
 
+### 7b. Cobertura entre projetos (regra de 01/11/2026)
+O conteúdo de cada item deve aparecer no máximo de projetos que o tema permitir, e não só no primeiro destino óbvio.
+- **Mapa de temas por projeto:**
+  - formação que o autor fez ou quer fazer → evento no bootcamps (concluído ou desejado) e programa no learn-tech;
+  - evento de que o autor participou ou que organizou → evento no bootcamps e artigo com os bastidores no learn-tech;
+  - trabalho em empresa → página da empresa e modelo de currículo na career, programa ou artigo no learn-tech, e fichas das ferramentas usadas no tools;
+  - ferramenta citada em qualquer material → ficha no tools, ligada por `relacionados` aos programas e artigos.
+- **Medição:** `npm run cobertura -- <lote>` mostra quantos itens chegam a 1, 2, 3 ou 4 projetos, lista os que chegam a um só e acusa destino inexistente. Cada item que fica num projeto só precisa de uma justificativa no relatório (por exemplo: dados de terceiros, tema sem lugar em outro site).
+- **Exibição:** antes de entregar, confira se o site consome o recurso (API e cópia de reserva). Os eventos do bootcamps ganham `links` para os artigos e programas relacionados; as páginas de detalhe da career e do tools, `relacionados`.
+- **Destino só conta se foi usado de verdade:** nunca acrescente destino ao acervo para melhorar a métrica.
+
 ### 8. Entrega
 - O relatório do lote fica em `lotes/AAAA-MM-DD.md` e mostra:
   - o que entrou e o que mudou em conteúdo antigo;
   - as divergências encontradas;
   - as pendências que dependem do autor.
 - O `acervo.json` é atualizado com estado e destinos.
+- **`PROXIMOS-PASSOS.md`** (raiz da API) é atualizado: tarefas do autor numeradas, em ordem de prioridade, com a data em que foram identificadas e como fazer. As concluídas vão para "Concluídas", com a data. A mesma lista é apresentada no chat ao fim de cada entrega.
 
 ◆ **A2:** o autor roda `npm run verificar` e os builds, faz commit, push e merge (feature → developer → main) e o deploy da API. O deploy é automático se os segredos da Cloudflare estiverem no GitHub; senão, é manual com `npm run deploy`.
 
@@ -128,6 +140,7 @@ hd ──(etapas 1-5)──► content/*.json ──(build: Zod + integridade)�
 |---|---|
 | `npm run hd:inventariar [-- --registrar]` | Inventário do hd com hash |
 | `npm run leva:status [-- AAAA-MM-DD]` | Diz se a leva pode ser fechada e o hd liberado (◆A3) |
+| `npm run cobertura [-- AAAA-MM-DD]` | Quantos projetos cada item do acervo alcança; acusa destino inexistente |
 | `npm run validar` | Schema, integridade e regras editoriais (rápido) |
 | `npm run verificar` | Typecheck, testes e build completo |
 | `npm run copias` / `npm run copias:conferir` | Gera ou confere as cópias de reserva dos sites |
@@ -141,3 +154,12 @@ hd ──(etapas 1-5)──► content/*.json ──(build: Zod + integridade)�
 - `pesquisa.md`: método de pesquisa, fontes confiáveis, números e orçamento.
 - `seguranca-privacidade.md`: LGPD, dados pessoais, imagens, segredos.
 - `lotes/`: plano e relatório de cada leva.
+- `../../PROXIMOS-PASSOS.md`: tarefas pendentes do autor, numeradas, em ordem e com data.
+
+## Melhoria contínua (a cada remessa)
+Ao fim de cada remessa, o Claude registra na retrospectiva do lote o que falhou ou custou caro e transforma isso, quando possível, em regra automática, script ou passo do processo. Histórico:
+- 27/10: regras editoriais escritas a partir das correções do autor.
+- 30/10: checagens no build (fontes de 2 domínios, frases proibidas, tempo de leitura, hash único no acervo).
+- 31/10: regra de fechamento de leva, `leva:status` e o campo `pendencias` (catalogar não é concluir).
+- 31/10: revisão independente por amostra pegou uma anonimização quebrada por frases que ligavam a empresa fictícia à real; a varredura passou a procurar essas ligações.
+- 01/11: cobertura entre projetos (`cobertura`) e lista única de próximos passos do autor.

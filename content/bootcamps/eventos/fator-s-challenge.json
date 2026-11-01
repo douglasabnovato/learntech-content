@@ -216,6 +216,24 @@
         "label": "Diário do Comércio: Wabtec vai iniciar obras de centro de engenharia em Contagem (01/02/2025)",
         "url": "https://diariodocomercio.com.br/economia/wabtec-vai-iniciar-obras-de-centro-de-engenharia-em-contagem/"
       }
+    ],
+    "relacionados": [
+      {
+        "tipo": "blog",
+        "id": "do-problema-ao-pitch-canvas-em-ideathon"
+      },
+      {
+        "tipo": "blog",
+        "id": "editais-de-fomento-a-inovacao-como-ler-e-onde-encontrar"
+      },
+      {
+        "tipo": "programas",
+        "id": "503"
+      },
+      {
+        "tipo": "eventos",
+        "id": "startup-way-challenge-2023"
+      }
     ]
   }
 }

@@ -911,9 +911,10 @@
       "direitos": "sensivel-anonimizar",
       "estado": "publicado-em-parte",
       "destinos": [
-        "eventos/startup-way-challenge-2023"
+        "eventos/startup-way-challenge-2023",
+        "learn-tech/blog/do-problema-ao-pitch-canvas-em-ideathon"
       ],
-      "proximaAcao": "Ideia da equipe, fase alcançada, Lean Canvas ou pitch; artigo sobre Matriz CSD e Lean Canvas",
+      "proximaAcao": "Ideia da equipe, fase alcançada e pitch do Startup Way ainda dependem do autor; o artigo sobre Matriz CSD e Canvas foi publicado.",
       "arquivos": [],
       "registradoSemHash": true
     },
@@ -943,6 +944,7 @@
       "direitos": "proprio",
       "estado": "publicado",
       "destinos": [
+        "bootcamps/eventos/na-pratica-carreira",
         "learn-tech/programas/1001"
       ],
       "arquivos": [
@@ -985,6 +987,7 @@
       "direitos": "terceiro-citavel",
       "estado": "referencia",
       "destinos": [
+        "bootcamps/eventos/dnc-imersao-hardwork-power",
         "learn-tech/programas/1002"
       ],
       "arquivos": [
@@ -1032,6 +1035,7 @@
       "direitos": "terceiro-citavel",
       "estado": "publicado",
       "destinos": [
+        "bootcamps/eventos/geronimo-theml-alta-performance",
         "learn-tech/programas/1004"
       ],
       "arquivos": [
@@ -1088,8 +1092,9 @@
       "direitos": "proprio",
       "estado": "publicado",
       "destinos": [
-        "learn-tech/programas/1005",
-        "learn-tech/blog/hack-dev-rotina-e-trilha-para-a-primeira-vaga"
+        "career/modelos-curriculo/desenvolvedora-front-end-junior",
+        "learn-tech/blog/hack-dev-rotina-e-trilha-para-a-primeira-vaga",
+        "learn-tech/programas/1005"
       ],
       "arquivos": [
         {
@@ -1187,6 +1192,7 @@
       "direitos": "terceiro-citavel",
       "estado": "publicado",
       "destinos": [
+        "bootcamps/eventos/na-pratica-carreira",
         "learn-tech/blog/tecnicas-de-lideranca-e-equipes-produtivas",
         "learn-tech/blog/videoteca-e-leituras-para-autoconhecimento-e-carreira",
         "learn-tech/programas/1001",
@@ -1433,7 +1439,8 @@
       "direitos": "proprio",
       "estado": "publicado",
       "destinos": [
-        "bootcamps/eventos/hackathon-inovacao-social-jf"
+        "bootcamps/eventos/hackathon-inovacao-social-jf",
+        "learn-tech/blog/bastidores-de-um-hackathon-de-comunidade"
       ],
       "arquivos": [
         {
@@ -2409,7 +2416,8 @@
       "direitos": "proprio",
       "estado": "publicado",
       "destinos": [
-        "bootcamps/eventos/fator-s-challenge"
+        "bootcamps/eventos/fator-s-challenge",
+        "learn-tech/blog/do-problema-ao-pitch-canvas-em-ideathon"
       ],
       "arquivos": [
         {
@@ -4757,6 +4765,7 @@
       "direitos": "sensivel-anonimizar",
       "estado": "publicado",
       "destinos": [
+        "career/empresas/abc-da-construcao",
         "learn-tech/programas/1101",
         "learn-tech/programas/1104"
       ],
@@ -4796,6 +4805,7 @@
       "direitos": "sensivel-anonimizar",
       "estado": "publicado",
       "destinos": [
+        "career/empresas/abc-da-construcao",
         "learn-tech/programas/1101",
         "learn-tech/programas/1104"
       ],
@@ -4845,6 +4855,7 @@
       "direitos": "sensivel-anonimizar",
       "estado": "publicado",
       "destinos": [
+        "career/empresas/abc-da-construcao",
         "learn-tech/programas/1101",
         "learn-tech/programas/1104"
       ],
@@ -5907,6 +5918,7 @@
       "direitos": "sensivel-anonimizar",
       "estado": "publicado",
       "destinos": [
+        "career/empresas/abc-da-construcao",
         "learn-tech/programas/1101",
         "learn-tech/programas/1104"
       ],
@@ -11946,6 +11958,7 @@
       "direitos": "sensivel-anonimizar",
       "estado": "referencia",
       "destinos": [
+        "career/empresas/abc-da-construcao",
         "learn-tech/blog/programa-de-relacionamento-com-especificadores-no-varejo",
         "learn-tech/programas/1103"
       ],
@@ -12019,7 +12032,8 @@
         "career/modelos-curriculo/analista-crm-marketing-tech-pleno",
         "learn-tech/areas/marketing-tech",
         "learn-tech/programas/1101",
-        "learn-tech/programas/1104"
+        "learn-tech/programas/1104",
+        "tools/ferramentas/salesforce-marketing-cloud"
       ],
       "arquivos": [
         {
@@ -14961,8 +14975,10 @@
       "direitos": "sensivel-anonimizar",
       "estado": "publicado",
       "destinos": [
+        "career/modelos-curriculo/analista-crm-marketing-tech-pleno",
         "learn-tech/programas/1101",
-        "learn-tech/programas/1105"
+        "learn-tech/programas/1105",
+        "tools/ferramentas/salesforce-marketing-cloud"
       ],
       "arquivos": [
         {
@@ -14995,6 +15011,7 @@
       "direitos": "sensivel-anonimizar",
       "estado": "publicado",
       "destinos": [
+        "career/modelos-curriculo/analista-crm-marketing-tech-pleno",
         "learn-tech/programas/1101",
         "learn-tech/programas/1102",
         "learn-tech/programas/1105"
@@ -15119,9 +15136,11 @@
       "direitos": "sensivel-anonimizar",
       "estado": "referencia",
       "destinos": [
+        "career/empresas/abc-da-construcao",
         "learn-tech/blog/gestao-de-growth-em-ciclos-semanais",
         "learn-tech/programas/105",
-        "learn-tech/programas/1104"
+        "learn-tech/programas/1104",
+        "tools/ferramentas/sults"
       ],
       "arquivos": [
         {

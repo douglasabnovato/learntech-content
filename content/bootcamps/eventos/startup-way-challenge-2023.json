@@ -41,6 +41,20 @@
         "label": "UFRPE: Startup Way - Manual (edição jun/2023 com Sebrae e IEBT)",
         "url": "https://ad.ufrpe.br/sites/ufrpe.br/files/Startup%20Way%20-%20Manual.pdf"
       }
+    ],
+    "relacionados": [
+      {
+        "tipo": "blog",
+        "id": "do-problema-ao-pitch-canvas-em-ideathon"
+      },
+      {
+        "tipo": "programas",
+        "id": "503"
+      },
+      {
+        "tipo": "eventos",
+        "id": "fator-s-challenge"
+      }
     ]
   }
 }

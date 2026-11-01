@@ -278,6 +278,12 @@ export function verificarIntegridade(c: Conteudo, pastaMidia: string): string[] 
       }
     }
   }
+  for (const e of c.eventos) {
+    for (const r of e.content.relacionados ?? []) {
+      if (!indice.has(`${r.tipo}:${r.id}`)) erros.push(`evento ${e.slug}: relaciona ${r.tipo} "${r.id}", que não existe (ou não tem slug)`);
+      if (r.tipo === "eventos" && r.id === e.slug) erros.push(`evento ${e.slug}: relaciona a si mesmo`);
+    }
+  }
   for (const b of itensBlog(c)) {
     const esperado = tempoDeLeitura(b);
     if (b.readingTime !== esperado) erros.push(`blog ${b.id}: readingTime "${b.readingTime}" deveria ser "${esperado}" (${PALAVRAS_POR_MINUTO} palavras/min)`);
@@ -379,6 +385,14 @@ export function montarRecursos(conteudoBruto: Conteudo): Recurso[] {
     perfis: resolverRelacionados(conteudoBruto.perfis, indice),
     ferramentas: resolverRelacionados(conteudoBruto.ferramentas, indice),
     hospedagens: resolverRelacionados(conteudoBruto.hospedagens, indice),
+    eventos: conteudoBruto.eventos.map((e) => {
+      if (!e.content.relacionados?.length) return e;
+      const relacionados = e.content.relacionados.flatMap((r) => {
+        const alvo = indice.get(`${r.tipo}:${r.id}`);
+        return alvo ? [{ tipo: r.tipo, id: r.id, ...alvo }] : [];
+      });
+      return { ...e, content: { ...e.content, relacionados } };
+    }),
   };
   const r: Recurso[] = [
     { caminho: "learn-tech/programas.json", descricao: "Catálogo de programas (campos de card)", dados: c.programas.map(resumoPrograma) },

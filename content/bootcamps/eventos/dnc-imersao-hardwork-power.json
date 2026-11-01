@@ -1,0 +1,63 @@
+{
+  "id": "26",
+  "slug": "dnc-imersao-hardwork-power",
+  "title": "Imersão Hardwork Power",
+  "institution": "Escola DNC",
+  "description": "Imersão online de carreira da Escola DNC sobre hard skills, soft skills e preparação para processos seletivos, com mentoria de carreira.",
+  "coverImage": "/media/bootcamps/instituicoes/dnc-imersao-hardwork-power.webp",
+  "altText": "Material da imersão Hardwork Power Online com os módulos do curso",
+  "category": "outros",
+  "status": "concluido",
+  "content": {
+    "longDescription": "A Escola DNC é uma edtech de São José dos Campos (SP), fundada em 2012, com formações online voltadas a transição e atualização de carreira. A Hardwork Power foi uma imersão curta de carreira da escola, em formato EAD, que Douglas fez no período da sua transição para a tecnologia. O material dele registra cinco módulos, de introdução a preparação final, mais mentoria de carreira depois do treinamento.",
+    "paragraphs": [
+      "A Escola DNC se apresenta como escola de formação complementar para o mercado de trabalho, com cursos online em marketing, dados, tecnologia, produto e gestão de projetos. O método combina aula, treino, prática em projetos e mentoria. Em 2021 a escola recebeu um aporte de R$ 1,1 milhão de investidores-anjo, segundo o Startupi, e em 2024 declarava mais de 20 cursos no portfólio.",
+      "A Hardwork Power Online é uma imersão de carreira, não um curso técnico. Pelo material guardado, a versão online tinha carga de 8 horas, aulas gravadas, exercícios e suporte de consultores para dúvidas. O roteiro passa por cinco módulos: introdução, preparação inicial, hard skills e soft skills, frameworks de soft skills e preparação final.",
+      "O conteúdo central é separar o que se sabe fazer (hard skills, como uma linguagem ou uma ferramenta) de como se trabalha com outras pessoas (soft skills, como comunicação, organização e lidar com pressão), e depois mostrar essas duas camadas com clareza. Os frameworks de soft skills servem para transformar características vagas em exemplos concretos, que podem ir para o currículo, o LinkedIn e a entrevista.",
+      "Os diferenciais destacados no material são a dinâmica do treinamento, o acompanhamento depois dele e a mentoria de carreira, além de uma plataforma online em que alunos e ex-alunos continuam conectados. Em outras palavras, a imersão é o começo de uma preparação, e não o fim.",
+      "Na carreira em tecnologia, esse tipo de imersão ajuda principalmente quem vem de outra área. Um profissional de suporte, atendimento ou vendas costuma ter soft skills fortes e não sabe nomeá-las; um iniciante em programação costuma listar tecnologias sem mostrar o que fez com elas. Organizar as duas coisas é o que separa um currículo genérico de um perfil que chama para entrevista.",
+      "É indicada para quem está em transição, recém-formados e pessoas que vão começar a disputar processos seletivos. No learnTECH, essa preparação aparece no programa 1003 (Processo Seletivo na Prática), que trata de currículo, testes, dinâmicas e entrevistas, e no 1005 (Hack Dev), que leva a mesma lógica para rotina de estudo, trilha técnica e portfólio da primeira vaga. O programa 1001 (Autoconhecimento em Ação) complementa a parte de reconhecer as próprias forças."
+    ],
+    "curriculum": [
+      "Introdução à imersão",
+      "Preparação inicial",
+      "Hard skills e soft skills",
+      "Frameworks de soft skills",
+      "Preparação para processos seletivos",
+      "Mentoria de carreira e pós-treinamento"
+    ],
+    "officialLink": "",
+    "links": [
+      {
+        "label": "Startupi: Escola DNC prevê faturamento de R$ 50 milhões em 2024",
+        "url": "https://startupi.com.br/escola-dnc-edtech-50-milhoes/"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Startupi: Escola DNC, edtech fundada em 2012 em São José dos Campos, cursos online de transição de carreira (26/07/2024)",
+        "url": "https://startupi.com.br/escola-dnc-edtech-50-milhoes/"
+      },
+      {
+        "label": "Startupi: startup de educação recebe aporte de R$ 1,1 milhão (22/06/2021)",
+        "url": "https://startupi.com.br/2021/06/startup-de-educacao-recebe-aporte-de-r-11-milhao/"
+      },
+      {
+        "label": "B2B Stack: Escola DNC, formações online e metodologia aprender, treinar, praticar e mentoria",
+        "url": "https://www.b2bstack.com.br/product/dnc"
+      }
+    ],
+    "videoUrl": "",
+    "gallery": [],
+    "relacionados": [
+      {
+        "tipo": "programas",
+        "id": "1002"
+      },
+      {
+        "tipo": "programas",
+        "id": "1003"
+      }
+    ]
+  }
+}
