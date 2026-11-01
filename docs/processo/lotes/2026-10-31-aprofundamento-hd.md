@@ -73,3 +73,20 @@ Corrigido:
 Conferido e correto: números do CAU/Datafolha, ABF 2025, Lei 13.966/2019, Decreto 5.903/2006, Lei 13.543/2017, preços e categorias da Meta (2025 e 2026), limites de envio, opt-in, números da Taak e da ABC, RD Station 2026, LWC/Jest. Não há cópia de trechos das fontes.
 
 Fica para o autor decidir: a página da ABC descreve rituais e stack a partir da experiência do autor, sem fonte pública (é o "como é trabalhar" que o autor pediu). "Grupo MYSA" e "Experience Summit" seguem sem fonte pública.
+
+## Ajustes de 31/10, à noite (orientações do autor)
+- Hackathon (HD-0010): o autor confirmou que participou da organização. A página ganhou os bastidores, a partir dos registros dele:
+  - preparação desde outubro de 2022;
+  - identidade visual do crachá "LOGIN:" e aprovação de arte do cordão;
+  - encontro de dezembro para ler os desafios;
+  - data remarcada e regras de formação de times;
+  - kits, compras e café vendido a R$ 3 com o lucro doado a uma ONG;
+  - abertura no megafone, cerca de 30 horas de atividades da equipe de apoio, álbum compartilhado e divulgação pelo Sebrae Minas;
+  - o que organizar um hackathon ensina.
+
+  Sem nomes de outras pessoas e sem a chave Pix que aparece na foto.
+- ABC da Construção (career): a página foi reescrita para contar a experiência do autor e expor o conteúdo técnico como aprendizado, sem detalhes internos. Saíram o nome da holding (sem fonte pública), o Experience Summit, os detalhes de rituais (minutos, notas de valor), as ferramentas internas de chamados e o histórico de migração da empresa. Continuam os fatos públicos com fonte e a stack descrita como experiência do autor.
+- TDC (HD-0013): galeria passou de 8 para 10 fotos. GDG (HD-0009): as fotos que restam são capturas de Instagram com nomes de terceiros e não entraram.
+- Áudio (HD-0006): não foi transcrito. Não há ferramenta de transcrição no ambiente do Claude nem na máquina do autor, e o download de modelos é bloqueado. Orientação: transcrever com o recurso "Transcrever" do Word na web (Microsoft 365) ou com a digitação por voz do Google Docs e colocar o .txt em hd/3-soft_skills/geronimo-theml - performance/.
+- Vídeos de campanha do ex-empregador (HD-0017, 25 vídeos, cerca de 63 minutos): não foram analisados quadro a quadro. São peças de marca de terceiros, e o conhecimento sobre vídeo em campanhas já está no 1103, no 1106 e na ficha do VEED. Ficam como referência.
+- Validação: a checagem completa (`rodar.js`) não pôde rodar porque o acesso à pasta do autor ficou muito lento à noite (carregar o zod levava mais de 60 s). Foram conferidos JSON válido, frases proibidas e mídias existentes nos arquivos alterados, e as cópias de reserva estão em dia. O autor deve rodar `npm run verificar` antes do commit.
