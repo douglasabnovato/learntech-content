@@ -91,6 +91,7 @@ O conteúdo de cada item deve aparecer no máximo de projetos que o tema permiti
   - as divergências encontradas;
   - as pendências que dependem do autor.
 - O `acervo.json` é atualizado com estado e destinos.
+- **Placar de 0 a 100** (`npm run progresso`): ao fim de cada fluxo de trabalho, o relatório no chat traz o estado dos cinco repositórios, as pendências (do autor e do backlog de engenharia em `docs/engenharia/backlog.md`) e o placar. O placar é calculado pelo script, nunca estimado: conteúdo do acervo (peso 45), engenharia do MVP (30), pendências do autor (15) e publicação (10).
 - **`PROXIMOS-PASSOS.md`** (raiz da API) é atualizado: tarefas do autor numeradas, em ordem de prioridade, com a data em que foram identificadas e como fazer. As concluídas vão para "Concluídas", com a data. A mesma lista é apresentada no chat ao fim de cada entrega.
 
 ◆ **A2:** o autor roda `npm run verificar` e os builds, faz commit, push e merge (feature → developer → main) e o deploy da API. O deploy é automático se os segredos da Cloudflare estiverem no GitHub; senão, é manual com `npm run deploy`.
@@ -141,6 +142,7 @@ hd ──(etapas 1-5)──► content/*.json ──(build: Zod + integridade)�
 | `npm run hd:inventariar [-- --registrar]` | Inventário do hd com hash |
 | `npm run leva:status [-- AAAA-MM-DD]` | Diz se a leva pode ser fechada e o hd liberado (◆A3) |
 | `npm run cobertura [-- AAAA-MM-DD]` | Quantos projetos cada item do acervo alcança; acusa destino inexistente |
+| `npm run progresso` | Placar de 0 a 100 e estado dos cinco repositórios |
 | `npm run validar` | Schema, integridade e regras editoriais (rápido) |
 | `npm run verificar` | Typecheck, testes e build completo |
 | `npm run copias` / `npm run copias:conferir` | Gera ou confere as cópias de reserva dos sites |
@@ -163,3 +165,4 @@ Ao fim de cada remessa, o Claude registra na retrospectiva do lote o que falhou 
 - 31/10: regra de fechamento de leva, `leva:status` e o campo `pendencias` (catalogar não é concluir).
 - 31/10: revisão independente por amostra pegou uma anonimização quebrada por frases que ligavam a empresa fictícia à real; a varredura passou a procurar essas ligações.
 - 01/11: cobertura entre projetos (`cobertura`) e lista única de próximos passos do autor.
+- 01/11: placar de 0 a 100 (`progresso`) e backlog de engenharia com evidências.

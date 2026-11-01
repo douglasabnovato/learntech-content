@@ -21,7 +21,8 @@
     "midia:externa": "node scripts/baixar-imagens-externas.mjs",
     "hd:inventariar": "node scripts/hd-inventariar.mjs",
     "leva:status": "node scripts/leva-status.mjs",
-    "cobertura": "node scripts/cobertura-projetos.mjs"
+    "cobertura": "node scripts/cobertura-projetos.mjs",
+    "progresso": "node scripts/progresso.mjs"
   },
   "dependencies": {
     "hono": "^4.13.9",
