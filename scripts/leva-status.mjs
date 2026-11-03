@@ -55,7 +55,8 @@ if (fs.existsSync(mapaLocal) && fs.existsSync(cache)) {
     for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
       if ((dir === HD && e.name.startsWith(".")) || ["desktop.ini", ".ds_store", "thumbs.db"].includes(e.name.toLowerCase())) continue; /* arquivos de sistema */
       const p = path.join(dir, e.name);
-      e.isDirectory() ? andar(p) : todos.push(path.relative(HD, p).split(path.sep).join("/"));
+      if (e.isDirectory()) andar(p);
+      else todos.push(path.relative(HD, p).split(path.sep).join("/"));
     }
   })(HD);
   const fora = todos.filter((p) => !mapeados.has(p) && !hashesMapeados.has(hashPorCaminho.get(p)));

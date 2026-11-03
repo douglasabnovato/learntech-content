@@ -96,7 +96,7 @@ console.log(`\nItens do acervo cujos arquivos já saíram do hd (baixa concluíd
 
 /* Mapa local ID → caminhos (fica no hd, fora do git). */
 const mapaLocal = ler(path.join(HD, ".acervo-local.json"), {});
-for (const a of arquivos) { const it = porHash.get(a.sha256); if (it) (mapaLocal[it.id] ??= []).includes(a.rel) || mapaLocal[it.id].push(a.rel); }
+for (const a of arquivos) { const it = porHash.get(a.sha256); if (!it) continue; const lista = (mapaLocal[it.id] ??= []); if (!lista.includes(a.rel)) lista.push(a.rel); }
 
 if (registrar && novos.size) {
   const hoje = new Date().toISOString().slice(0, 10);

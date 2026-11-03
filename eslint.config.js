@@ -9,6 +9,10 @@ export default tseslint.config(
   ...tseslint.configs.recommended,
   {
     languageOptions: { ecmaVersion: 2022, sourceType: "module", globals: { ...globals.node, ...globals.serviceworker } },
-    rules: { "@typescript-eslint/no-explicit-any": "warn" },
+    rules: {
+      "@typescript-eslint/no-explicit-any": "warn",
+      /* Variável com _ na frente, ou descartada ao separar o resto de um objeto, é intencional. */
+      "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_", varsIgnorePattern: "^_", ignoreRestSiblings: true }],
+    },
   },
 );
