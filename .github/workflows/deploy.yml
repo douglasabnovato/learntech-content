@@ -18,9 +18,9 @@ jobs:
         id: segredos
         run: |
           if [ -n "$CLOUDFLARE_API_TOKEN" ] && [ -n "$CLOUDFLARE_ACCOUNT_ID" ]; then echo "ok=true" >> "$GITHUB_OUTPUT"; else echo "Segredos da Cloudflare ausentes: deploy manual (npm run deploy)."; fi
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         if: steps.segredos.outputs.ok == 'true'
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         if: steps.segredos.outputs.ok == 'true'
         with: { node-version: 22, cache: npm }
       - if: steps.segredos.outputs.ok == 'true'
