@@ -695,6 +695,18 @@
     {
       "label": "VisuAlg 3.0 — interpretador de pseudocódigo em português",
       "url": "https://sourceforge.net/projects/visualg30/"
+    },
+    {
+      "label": "Harvard: CS50 Introduction to Computer Science",
+      "url": "https://pll.harvard.edu/course/cs50-introduction-computer-science"
+    },
+    {
+      "label": "Fundação Estudar: CC50, o curso de ciência da computação de Harvard em português",
+      "url": "https://www.estudarfora.org.br/cc50-v2/"
+    },
+    {
+      "label": "MIT OpenCourseWare: Introductory Programming (coleção de cursos introdutórios)",
+      "url": "https://ocw.mit.edu/collections/introductory-programming/"
     }
   ]
 }

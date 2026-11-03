@@ -5547,5 +5547,434 @@
       ],
       "atualizadoEm": "2026-10-31"
     }
+  },
+  {
+    "title": "Trailhead",
+    "description": "Plataforma gratuita de aprendizado da Salesforce, com módulos, trilhas, emblemas e ambientes de prática para treinar CRM e desenvolvimento.",
+    "category": "Produtividade",
+    "pricing": "Gratuito",
+    "thumb": "https://www.google.com/s2/favicons?domain=trailhead.salesforce.com&sz=128",
+    "thumbFit": "contain",
+    "site_url": "https://trailhead.salesforce.com/",
+    "slug": "trailhead",
+    "detalhe": {
+      "resumo": "Plataforma de aprendizado online e gratuita da Salesforce, lançada em 2014, que ensina os produtos da empresa e temas de tecnologia em módulos curtos com desafios práticos. É o caminho mais comum para quem quer aprender Salesforce sem ter acesso a uma conta paga da empresa.",
+      "paragrafos": [
+        "O conteúdo do Trailhead é organizado em camadas. Unidades curtas formam módulos sobre um tema, ferramenta ou produto, e cada módulo termina com um quiz ou um desafio prático. Trilhas são caminhos guiados, montados e endossados pela Salesforce, que juntam módulos e projetos; trailmixes são listas personalizadas que qualquer pessoa pode montar. Ao concluir um módulo, a pessoa ganha um emblema (badge) e pontos, que fazem subir de nível, de Scout a Ranger e adiante.",
+        "A parte prática acontece no Trailhead Playground, uma instância gratuita da Salesforce com dados de exemplo, onde se fazem os desafios e os projetos passo a passo. Os superbadges vão além: são avaliações práticas em que se resolve um problema de negócio completo. Quem quer uma credencial formal parte para as certificações da Salesforce, que são pagas e reconhecidas no mercado; segundo artigo da TechTarget consultado em novembro de 2026, os exames custavam de 200 a 400 dólares.",
+        "O Trailhead aparece no mercado como porta de entrada para vagas que usam o ecossistema Salesforce: administração de CRM, Marketing Cloud, desenvolvimento em Apex e Lightning Web Components. Emblemas e superbadges ficam visíveis no perfil público e podem ser citados no LinkedIn, o que ajuda quem ainda não tem experiência profissional com a ferramenta. Em novembro de 2026, a própria Salesforce informava que a comunidade Trailblazer reunia mais de 18 milhões de membros em mais de 100 países.",
+        "Para começar, basta criar uma conta gratuita, sem precisar de licença da Salesforce, e escolher uma trilha introdutória da área de interesse. Alguns módulos dependem do trabalho feito em módulos anteriores, então use o mesmo Playground nesses casos. Vale lembrar que emblemas mostram estudo, não experiência: em entrevistas, conte o que foi construído nos projetos e superbadges, não só a quantidade de emblemas.",
+        "No ecossistema LearnTECH, o Trailhead é citado no programa CRM na Prática como fonte de estudo sobre jornadas e automação, e é o caminho indicado na ficha do Salesforce Marketing Cloud para aprender AMPscript, Journey Builder e CloudPages. Também se liga à ficha de Salesforce LWC e ao programa de e-mail HTML e landing pages integrados ao CRM. Nesses programas, o Trailhead serve como laboratório gratuito para praticar o que a aula apresenta em uma conta real da Salesforce."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://trailhead.salesforce.com/"
+        },
+        {
+          "label": "Trailhead: Kick Off Learning with Trailhead (pt-BR)",
+          "url": "https://trailhead.salesforce.com/pt-BR/content/learn/modules/salesforce-in-the-classroom/kick-off-learning-with-trailhead"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Trailhead: Kick Off Learning with Trailhead",
+          "url": "https://trailhead.salesforce.com/pt-BR/content/learn/modules/salesforce-in-the-classroom/kick-off-learning-with-trailhead"
+        },
+        {
+          "label": "TechTarget: What is Salesforce Trailhead?",
+          "url": "https://www.techtarget.com/enterprise-software/definition/Salesforce-Trailhead"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "ferramentas",
+          "id": "salesforce-marketing-cloud"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "salesforce-lwc"
+        },
+        {
+          "tipo": "programas",
+          "id": "1101"
+        },
+        {
+          "tipo": "programas",
+          "id": "1102"
+        }
+      ],
+      "atualizadoEm": "2026-11-03"
+    }
+  },
+  {
+    "title": "Hotmart",
+    "description": "Plataforma brasileira para criar, hospedar e vender cursos online, e-books, mentorias e outros produtos digitais, com área de membros e checkout.",
+    "category": "Marca e Site",
+    "pricing": "Freemium",
+    "thumb": "https://www.google.com/s2/favicons?domain=hotmart.com&sz=128",
+    "thumbFit": "contain",
+    "site_url": "https://hotmart.com/pt-BR",
+    "slug": "hotmart",
+    "detalhe": {
+      "resumo": "Plataforma para vender e distribuir produtos digitais, principalmente cursos online e e-books. Reúne em um só lugar a página de venda, o checkout, a área de membros onde o aluno assiste às aulas e um programa de afiliados.",
+      "paragrafos": [
+        "Na Hotmart, quem cria o produto se cadastra como produtor, sobe o conteúdo e define o preço. O comprador paga pelo checkout da plataforma e passa a acessar o material na área de membros, que organiza aulas e alunos. Afiliados podem divulgar produtos de terceiros e ganhar comissão por venda, e o produtor decide se aprova ou não cada afiliado. Além de cursos e e-books, a plataforma trabalha com mentorias, comunidades, clubes de assinatura, eventos online e, mais recentemente, produtos físicos.",
+        "O modelo de cobrança é por venda, sem mensalidade nem taxa de adesão. Em novembro de 2026, a página oficial informava taxa de 9,9% mais R$ 2,49 por venda realizada, com faixas menores para quem fatura mais. Como produtos sem venda não geram cobrança, a plataforma é usada tanto por quem está testando o primeiro curso quanto por negócios de educação já estabelecidos.",
+        "A Hotmart é uma das plataformas mais conhecidas do mercado de infoprodutos no Brasil, com escritório em Belo Horizonte e unidades em outros países. Para quem trabalha com tecnologia, ela aparece em projetos de marketing digital, landing pages de lançamento e integrações com ferramentas de e-mail e CRM, além de ser uma opção para quem quer vender o próprio curso ou material técnico. Conhecer o fluxo de produtor, afiliado e comprador ajuda a entender relatórios de venda, comissões e reembolsos que aparecem no dia a dia dessas equipes.",
+        "Para começar, crie a conta, cadastre o produto e monte a página de venda antes de investir em divulgação. Teste a compra e o acesso à área de membros com um pedido de teste, para ver a experiência do aluno do começo ao fim. Cuide da LGPD ao usar os dados dos compradores em campanhas, e descreva o produto com clareza: prometer resultado garantido é um problema ético e pode gerar reembolsos e reclamações.",
+        "No ecossistema LearnTECH, a Hotmart se liga ao programa Produtos Digitais, que vai do problema ao lançamento, e ao programa de landing page, que ensina a construir a página que leva até o checkout. O programa de e-commerce também ajuda a comparar a venda de produto digital com a de uma loja virtual. Nesses programas, a plataforma entra como exemplo de canal de venda, e não como etapa obrigatória do projeto."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://hotmart.com/pt-BR"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Hotmart: página oficial (pt-BR)",
+          "url": "https://hotmart.com/pt-BR"
+        },
+        {
+          "label": "Canaltech: O que é e como funciona a Hotmart",
+          "url": "https://canaltech.com.br/mercado/o-que-e-e-como-funciona-a-hotmart/"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "501"
+        },
+        {
+          "tipo": "programas",
+          "id": "1"
+        },
+        {
+          "tipo": "programas",
+          "id": "105"
+        }
+      ],
+      "atualizadoEm": "2026-11-03"
+    }
+  },
+  {
+    "title": "RD Station",
+    "description": "Plataforma brasileira de automação de marketing, CRM de vendas e atendimento, com e-mail, landing pages, formulários e fluxos de nutrição de leads.",
+    "category": "Marketing e CRM",
+    "pricing": "Freemium",
+    "thumb": "https://www.google.com/s2/favicons?domain=rdstation.com&sz=128",
+    "thumbFit": "contain",
+    "site_url": "https://www.rdstation.com/",
+    "slug": "rd-station",
+    "detalhe": {
+      "resumo": "Conjunto de ferramentas brasileiro para marketing, vendas e atendimento, criado em 2011 em Florianópolis com o nome Resultados Digitais. Reúne automação de marketing, um CRM de vendas com plano gratuito e uma ferramenta de atendimento.",
+      "paragrafos": [
+        "Em novembro de 2026, a RD Station organizava seus produtos em três frentes: RD Marketing, para automação e gestão do marketing digital; RD Vendas, o CRM de vendas (antes chamado RD Station CRM); e RD Atendimento, para atendimento e chatbot. No produto de marketing, a pessoa cria landing pages e formulários para captar contatos, envia e-mails com modelos e teste A/B e monta automações que levam o lead por uma sequência de mensagens. Nos planos mais altos entram automações com caminhos diferentes, pontuação de leads (lead scoring) e rastreamento de navegação.",
+        "Os planos do RD Marketing, em novembro de 2026, eram Light, Basic, Pro e Advanced. O blog oficial listava o Basic a partir de R$ 309 por mês, o Pro a partir de R$ 1.121 e o Advanced a partir de R$ 1.699, com implementação obrigatória cobrada à parte nos dois últimos, e um teste gratuito de 10 dias nos planos de entrada. O CRM tinha um plano Free, além de planos pagos.",
+        "A RD Station é muito usada por pequenas e médias empresas brasileiras e por agências de marketing, e aparece com frequência em vagas de marketing digital, CRM e growth. Em março de 2021, a TOTVS anunciou a compra de 92% da empresa por R$ 1,86 bilhão; na época, a RD tinha mais de 25 mil clientes em mais de 20 países, segundo o Olhar Digital. Por isso, é comum encontrar a ferramenta integrada a sistemas de gestão e de vendas em empresas de vários portes.",
+        "Para aprender, o teste gratuito do plano de entrada permite criar uma landing page, um formulário e um fluxo simples de e-mails. Defina antes os campos que o formulário vai coletar e como eles chegam ao CRM, porque é aí que a maior parte das integrações quebra. Respeite a LGPD em toda captura: deixe claro para que o dado será usado, mantenha o descadastro funcionando e não importe listas compradas.",
+        "No ecossistema LearnTECH, a RD Station se liga ao programa CRM na Prática, que trata de jornadas e réguas de relacionamento, e ao programa de migração de landing pages entre plataformas, que trabalha formulários, dicionário de dados e integração com o CRM. O artigo sobre LGPD nas comunicações de CRM complementa a parte de consentimento e descadastro. Juntos, esses conteúdos mostram o caminho do lead desde o formulário até a régua de e-mails e o registro no CRM."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.rdstation.com/"
+        },
+        {
+          "label": "Planos da RD Station",
+          "url": "https://www.rdstation.com/planos/"
+        },
+        {
+          "label": "Planos e preços do RD Station Marketing",
+          "url": "https://www.rdstation.com/blog/marketing/planos-precos-rd-station-marketing/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "RD Station: Planos",
+          "url": "https://www.rdstation.com/planos/"
+        },
+        {
+          "label": "RD Station Blog: Planos e preços do RD Station Marketing",
+          "url": "https://www.rdstation.com/blog/marketing/planos-precos-rd-station-marketing/"
+        },
+        {
+          "label": "Olhar Digital: TOTVS compra desenvolvedora de softwares RD Station por R$ 1,86 bilhão (10/03/2021)",
+          "url": "https://olhardigital.com.br/2021/03/10/pro/totvs-compra-rd-station/"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "1101"
+        },
+        {
+          "tipo": "programas",
+          "id": "106"
+        },
+        {
+          "tipo": "programas",
+          "id": "1102"
+        },
+        {
+          "tipo": "blog",
+          "id": "lgpd-nas-comunicacoes-de-crm"
+        }
+      ],
+      "atualizadoEm": "2026-11-03"
+    }
+  },
+  {
+    "title": "Google Analytics",
+    "description": "Ferramenta gratuita do Google para medir o uso de sites e aplicativos, com modelo baseado em eventos no Google Analytics 4 (GA4).",
+    "category": "Dados",
+    "pricing": "Gratuito",
+    "thumb": "https://www.google.com/s2/favicons?domain=analytics.google.com&sz=128",
+    "thumbFit": "contain",
+    "site_url": "https://marketingplatform.google.com/intl/pt-BR/about/analytics/",
+    "slug": "google-analytics",
+    "detalhe": {
+      "resumo": "Serviço de análise de audiência do Google, lançado em novembro de 2005 a partir da compra da Urchin. A versão atual, o Google Analytics 4 (GA4), mede site e aplicativo na mesma propriedade, com dados organizados em eventos.",
+      "paragrafos": [
+        "No GA4, toda interação vira um evento: a visualização de uma página, um clique, o envio de um formulário ou uma compra. Os eventos chegam por uma tag instalada no site, como a gtag.js ou o Google Tag Manager, ou pelo SDK do aplicativo, e são agrupados em uma propriedade. A diretiva config da gtag ativa a coleta básica, que já registra automaticamente o evento page_view. A partir daí, relatórios e explorações mostram de onde vêm os visitantes, o que fazem e quais ações importam para o negócio.",
+        "O GA4 foi lançado em outubro de 2020 e substituiu o Universal Analytics, cujas propriedades padrão pararam de processar dados em 1º de julho de 2023. A mudança trocou o modelo de sessões pelo de eventos e trouxe recursos de privacidade, como modelagem de comportamento e medição sem cookies, além de recursos preditivos. Para grandes empresas existe a versão Analytics 360, com mais recursos.",
+        "O Google Analytics é o serviço de análise web mais usado no mundo, segundo a Wikipédia, e aparece em vagas de marketing digital, produto, growth, SEO e front-end. Quem desenvolve costuma ser chamado para instalar a tag, configurar eventos personalizados e conferir se os dados chegam corretos. Quem trabalha com produto usa os relatórios para acompanhar conversão e retenção.",
+        "Para começar, crie uma propriedade GA4, adicione um fluxo de dados para o site e instale a tag, diretamente ou por uma plataforma como WordPress, Wix ou Shopify. Antes de criar eventos, liste as perguntas que os dados precisam responder e dê nomes consistentes aos eventos. Cuide da privacidade: use banner de consentimento, não envie dados pessoais nos parâmetros e acompanhe as regras locais, já que reguladores de países como Áustria, França e Itália apontaram problemas de conformidade com o GDPR no começo dos anos 2020.",
+        "No ecossistema LearnTECH, o Google Analytics se liga ao programa Métricas de Produto, que trata de North Star, OMTM e retenção, e ao programa de landing page, em que medir conversões é o passo seguinte à publicação. A ficha do Data Studio (Looker Studio) mostra como montar painéis com esses dados, e o programa de Segurança de Dados e LGPD cobre o consentimento. Juntos, esses conteúdos mostram o ciclo completo: coletar o dado, transformar em indicador e apresentar em um painel."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://marketingplatform.google.com/intl/pt-BR/about/analytics/"
+        },
+        {
+          "label": "Central de Ajuda: apresentação do Google Analytics 4",
+          "url": "https://support.google.com/analytics/answer/10089681"
+        },
+        {
+          "label": "Central de Ajuda: sobre o snippet da gtag.js",
+          "url": "https://support.google.com/analytics/answer/10271001?hl=pt-BR"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Google Analytics Help: Introducing the next generation of Analytics, Google Analytics 4",
+          "url": "https://support.google.com/analytics/answer/10089681"
+        },
+        {
+          "label": "Ajuda do Google Analytics: Sobre o snippet da gtag.js",
+          "url": "https://support.google.com/analytics/answer/10271001?hl=pt-BR"
+        },
+        {
+          "label": "Wikipédia: Google Analytics",
+          "url": "https://en.wikipedia.org/wiki/Google_Analytics"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "504"
+        },
+        {
+          "tipo": "programas",
+          "id": "1"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "data-studio"
+        },
+        {
+          "tipo": "programas",
+          "id": "404"
+        }
+      ],
+      "atualizadoEm": "2026-11-03"
+    }
+  },
+  {
+    "title": "GitHub Copilot",
+    "description": "Assistente de código com IA do GitHub: sugestões enquanto você digita, chat, modo agente e revisão de código no editor e no GitHub.",
+    "category": "Código",
+    "pricing": "Freemium",
+    "thumb": "https://www.google.com/s2/favicons?domain=github.com&sz=128",
+    "thumbFit": "contain",
+    "site_url": "https://github.com/features/copilot",
+    "slug": "github-copilot",
+    "detalhe": {
+      "resumo": "Assistente de programação com IA do GitHub, anunciado em junho de 2021 em parceria com a OpenAI. Sugere código no editor, responde perguntas no chat e, nos planos mais completos, executa tarefas como agente e revisa pull requests.",
+      "paragrafos": [
+        "O Copilot lê o contexto do arquivo e do projeto e sugere desde uma linha até funções inteiras enquanto a pessoa digita. O Copilot Chat responde perguntas sobre o código no editor, no GitHub.com, no GitHub Mobile e no Windows Terminal. No modo agente, ele faz alterações em vários arquivos a partir de um pedido em linguagem natural, e o agente na nuvem trabalha em uma tarefa e abre um pull request para revisão. Há também revisão de código feita pela IA.",
+        "Quando foi anunciado, em 29 de junho de 2021, o Copilot rodava sobre o OpenAI Codex e funcionava melhor com Python, JavaScript, TypeScript, Ruby e Go. Hoje ele permite escolher entre vários modelos de IA, conforme o plano. É um dos assistentes de código mais conhecidos e aparece em vagas de desenvolvimento como ferramenta do dia a dia, ao lado do Git e do GitHub.",
+        "Em novembro de 2026, a documentação do GitHub listava os planos individuais Free, Student, Pro, Pro+ e Max. O Copilot Free é gratuito, com até 2.000 sugestões de código por mês e agentes limitados; o Pro custava 10 dólares por mês, o Pro+ 39 dólares e o Max 100 dólares. Estudantes verificados têm o plano Student sem custo, e professores verificados e mantenedores de projetos de código aberto populares podem receber o Pro de graça.",
+        "Para começar, ative o Copilot Free na conta do GitHub e instale a extensão no editor, como o Visual Studio Code. Trate cada sugestão como código de outra pessoa: leia, entenda, teste e só então aceite. Não cole segredos, senhas ou dados de clientes no chat, e confira a política da empresa sobre uso de IA antes de usar em código de trabalho.",
+        "No ecossistema LearnTECH, o Copilot se liga ao programa Programar com IA sem Perder o Aprendizado, que ensina a usar o assistente sem deixar de formar a habilidade, e ao programa Git e GitHub, porque o agente e a revisão de código trabalham com branches e pull requests. As fichas do GitHub e do Visual Studio Code completam o ambiente. Em todos eles, a ideia é a mesma: a IA acelera a escrita, mas a revisão e o entendimento continuam com quem programa."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://github.com/features/copilot"
+        },
+        {
+          "label": "Documentação: planos individuais do Copilot",
+          "url": "https://docs.github.com/en/copilot/concepts/billing/individual-plans"
+        },
+        {
+          "label": "Documentação: planos do Copilot (pt)",
+          "url": "https://docs.github.com/pt/copilot/get-started/plans-for-github-copilot"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "GitHub Docs: Individual plans",
+          "url": "https://docs.github.com/en/copilot/concepts/billing/individual-plans"
+        },
+        {
+          "label": "GitHub Blog: Introducing GitHub Copilot, your AI pair programmer (29/06/2021)",
+          "url": "https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "801"
+        },
+        {
+          "tipo": "programas",
+          "id": "604"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "github"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "visual-studio-code"
+        }
+      ],
+      "atualizadoEm": "2026-11-03"
+    }
+  },
+  {
+    "title": "Cursor",
+    "description": "Editor de código com IA baseado no VS Code, com sugestões, chat e agente que edita vários arquivos e roda comandos no projeto.",
+    "category": "Código",
+    "pricing": "Freemium",
+    "thumb": "https://www.google.com/s2/favicons?domain=cursor.com&sz=128",
+    "thumbFit": "contain",
+    "site_url": "https://cursor.com/",
+    "slug": "cursor",
+    "detalhe": {
+      "resumo": "Editor de código com inteligência artificial criado pela Anysphere, empresa fundada em 2022 por quatro colegas do MIT. É um fork do Visual Studio Code, então mantém a aparência, os atalhos e as extensões do VS Code e acrescenta recursos de IA.",
+      "paragrafos": [
+        "O Cursor junta três formas de usar IA no editor. O Tab sugere a próxima edição enquanto a pessoa digita; a edição inline altera um trecho selecionado a partir de um pedido; e o Agent recebe uma tarefa em linguagem natural, procura no código, edita vários arquivos e roda comandos no terminal. Também há agentes na nuvem, que trabalham em paralelo fora da máquina, e uma interface de linha de comando.",
+        "As regras (rules) dão ao agente um contexto fixo sobre o projeto. Elas ficam na pasta .cursor/rules, em arquivos versionados com o código, ou em um arquivo AGENTS.md na raiz, e podem valer sempre, só para certos arquivos ou só quando mencionadas. A documentação recomenda regras curtas e objetivas, com menos de 500 linhas, que apontem para arquivos do projeto em vez de copiar o conteúdo deles. As regras não afetam o Tab.",
+        "Por ser baseado no VS Code, o Cursor é fácil de adotar para quem já usa esse editor: na instalação, ele oferece importar configurações e extensões. Ele se tornou um dos editores com IA mais citados entre pessoas desenvolvedoras e aparece em vagas e equipes que adotaram assistentes de código. Há um plano gratuito com uso limitado de IA e planos pagos individuais e para equipes.",
+        "Para começar, instale o editor, importe as configurações do VS Code e use primeiro o Tab e a edição inline em tarefas pequenas, antes de passar tarefas maiores ao agente. Revise cada alteração no diff antes de aceitar e mantenha o projeto no Git, para poder desfazer o que não funcionou. Não coloque segredos e dados de clientes nos pedidos e confira se a empresa permite o uso da ferramenta no código de trabalho.",
+        "No ecossistema LearnTECH, o Cursor se liga ao programa Programar com IA sem Perder o Aprendizado, que trata de como revisar código gerado e manter o estudo ativo, e ao programa Git e GitHub, base para trabalhar com segurança junto de um agente. A ficha do Visual Studio Code explica o editor de onde o Cursor partiu. A comparação com o GitHub Copilot e o Claude Code ajuda a escolher a ferramenta pelo jeito de trabalhar, e não pela novidade."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://cursor.com/"
+        },
+        {
+          "label": "Documentação: Rules",
+          "url": "https://cursor.com/docs/rules"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Cursor Docs: Rules",
+          "url": "https://cursor.com/docs/rules"
+        },
+        {
+          "label": "TechCrunch: Anysphere raises $8M from OpenAI to build an AI-powered IDE (11/10/2023)",
+          "url": "https://techcrunch.com/2023/10/11/anysphere-raises-8m-from-openai-to-build-an-ai-powered-ide"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "801"
+        },
+        {
+          "tipo": "programas",
+          "id": "604"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "visual-studio-code"
+        }
+      ],
+      "atualizadoEm": "2026-11-03"
+    }
+  },
+  {
+    "title": "Claude Code",
+    "description": "Assistente de programação da Anthropic que lê o projeto, edita arquivos, roda comandos e trabalha com Git, no terminal, na IDE, no desktop e na web.",
+    "category": "Código",
+    "pricing": "Pago",
+    "thumb": "https://www.google.com/s2/favicons?domain=claude.com&sz=128",
+    "thumbFit": "contain",
+    "site_url": "https://code.claude.com/",
+    "slug": "claude-code",
+    "detalhe": {
+      "resumo": "Ferramenta de programação agêntica da Anthropic, lançada em fevereiro de 2025 e disponível para todos desde maio de 2025. Lê a base de código, edita arquivos, executa comandos e se integra a Git e outras ferramentas, a partir do terminal, de extensões de IDE, do aplicativo de desktop ou do navegador.",
+      "paragrafos": [
+        "A pessoa descreve em linguagem natural o que quer, e o Claude Code planeja a abordagem, lê os arquivos relevantes, escreve o código em vários arquivos e roda comandos para verificar se funciona. Com o Git, ele cuida do ciclo de entrega: separa o que mudou, sugere a mensagem de cada commit, abre um branch novo e chega até o pull request. O arquivo CLAUDE.md, na raiz do projeto, guarda padrões de código e decisões de arquitetura que ele lê no início de cada sessão, e o Model Context Protocol (MCP) conecta ferramentas externas, como documentos, tickets e chats.",
+        "A mesma ferramenta aparece em várias superfícies: a CLI no terminal, extensões para VS Code e IDEs JetBrains, um aplicativo de desktop para revisar diffs e rodar sessões em paralelo, e uma versão web em claude.ai/code, lançada em outubro de 2025, que roda tarefas na nuvem. Também pode ser usada em CI, com GitHub Actions ou GitLab CI/CD, para revisão de código e triagem de issues. Segundo a Wikipédia, empresas como Microsoft e Google usam o Claude Code.",
+        "O uso exige uma assinatura do Claude ou uma conta do Anthropic Console; o aplicativo de desktop pede assinatura paga, e a CLI e as extensões de IDE também aceitam provedores de terceiros. No terminal, a instalação é feita por um comando da documentação oficial, e depois basta entrar na pasta do projeto e rodar claude. A Anthropic oferece cursos gratuitos na Claude Academy, como o Claude Code 101.",
+        "Comece com tarefas pequenas e bem descritas, como explicar uma parte do código ou escrever testes para uma função, e revise cada alteração antes de aceitar. Mantenha o projeto no Git, para poder comparar e desfazer mudanças, e use as permissões para controlar quais comandos ele pode rodar sem perguntar. Não exponha segredos nem dados de clientes, e lembre que entender o código continua sendo responsabilidade de quem o entrega.",
+        "No ecossistema LearnTECH, o Claude Code se liga ao programa Programar com IA sem Perder o Aprendizado, que ensina a usar assistentes de IA sem perder a formação, e ao programa Git e GitHub, já que o trabalho do agente passa por commits, branches e pull requests. As fichas do Git e do Visual Studio Code completam o ambiente de trabalho. As fichas do GitHub Copilot e do Cursor ajudam a comparar assistentes que trabalham dentro do editor com um que também roda no terminal."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://code.claude.com/"
+        },
+        {
+          "label": "Documentação: visão geral (pt)",
+          "url": "https://code.claude.com/docs/pt/overview"
+        },
+        {
+          "label": "Claude Academy: cursos gratuitos",
+          "url": "https://academy.claude.com/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Claude Code Docs: Visão geral",
+          "url": "https://code.claude.com/docs/pt/overview"
+        },
+        {
+          "label": "Wikipédia: Claude (language model)",
+          "url": "https://en.wikipedia.org/wiki/Claude_(language_model)"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "801"
+        },
+        {
+          "tipo": "programas",
+          "id": "604"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "git"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "github-copilot"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "cursor"
+        }
+      ],
+      "atualizadoEm": "2026-11-03"
+    }
   }
 ]

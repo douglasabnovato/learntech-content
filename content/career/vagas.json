@@ -1120,5 +1120,249 @@
       ],
       "atualizadoEm": "2026-10-29"
     }
+  },
+  {
+    "title": "Catho",
+    "duration": "Brasil",
+    "thumb": "https://www.google.com/s2/favicons?domain=catho.com.br&sz=128",
+    "site_url": "https://www.catho.com.br/",
+    "category": "General Jobs",
+    "slug": "catho",
+    "detalhe": {
+      "resumo": "A Catho é um dos portais de emprego mais antigos do Brasil, com vagas de todas as áreas, inclusive tecnologia. Desde outubro de 2021, o candidato pode criar o currículo e se candidatar sem pagar, e os planos pagos ficaram como recursos extras.",
+      "paragrafos": [
+        "A Catho nasceu em 1977 como consultoria de recursos humanos e passou a operar 100% online em 2000, segundo a Baguete. O candidato monta um currículo dentro da plataforma, dividido em campos, e usa esse currículo para se candidatar às vagas publicadas pelas empresas. A busca tem filtros por cargo, cidade, estado, faixa salarial, área e tipo de contrato, como CLT e PJ. Também é possível criar avisos de vagas que chegam por e-mail e pelo aplicativo, disponível para Android e iOS.",
+        "Por ser um portal generalista, a Catho reúne vagas de todos os setores, do comércio à indústria, e as de tecnologia aparecem misturadas às demais. Por isso ela costuma ser mais útil para vagas em empresas tradicionais, que contratam desenvolvedores, analistas de suporte e de sistemas, do que para startups. Em 2013, a Catho passou a ser controlada pelo grupo australiano Seek, e em junho de 2024 foi comprada pela Redarbor, dona do Infojobs, que manteve a marca e o site separados, segundo a Baguete. Até 2021, a maior parte da receita vinha de candidatos que pagavam mensalidade para buscar vagas, modelo que a empresa abandonou naquele ano.",
+        "Para começar, faça o cadastro de candidato e preencha o currículo com calma, campo por campo, usando os nomes das tecnologias que você conhece de verdade. Depois, crie avisos de vagas com o cargo e a cidade que interessam, para não depender de buscas manuais todos os dias. A Catho oferece gratuitamente testes de inglês, raciocínio lógico, Excel e interpretação de texto, e você pode ocultar os resultados do perfil. A própria Catho recomenda atualizar o currículo pelo menos a cada três meses.",
+        "Os planos pagos prometem destacar o currículo, mas não são necessários para buscar vagas e se candidatar, então avalie com cuidado antes de assinar. Leia a vaga inteira antes de enviar a candidatura: o tipo de contrato, o regime (presencial, híbrido ou remoto) e a faixa salarial mudam muito de uma vaga para outra. Desconfie de anúncios que pedem pagamento, depósito ou documentos pessoais antes de qualquer entrevista, porque processos seletivos legítimos não cobram do candidato. Acompanhe também as candidaturas enviadas na área \"Meus CVs enviados\" para não se candidatar duas vezes à mesma vaga.",
+        "No blog do learnTECH, o artigo \"Como ler uma vaga e reconhecer uma boa empresa\" ajuda a filtrar os anúncios de um portal tão amplo quanto a Catho. Já \"Seus dados quando você se candidata: LGPD para quem procura emprego\" explica o que acontece com as informações do currículo depois do envio. Para comparar com outros portais, a área de vagas do learnTECH também tem as páginas da Vagas.com e do LinkedIn."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.catho.com.br/"
+        },
+        {
+          "label": "Catho grátis: como se cadastrar",
+          "url": "https://www.catho.com.br/carreira-sucesso/catho-gratis-tempo-ilimitado/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Catho: Catho grátis, saiba como se cadastrar para buscar vaga de emprego (atualizado em 12/09/2025)",
+          "url": "https://www.catho.com.br/carreira-sucesso/catho-gratis-tempo-ilimitado/"
+        },
+        {
+          "label": "Baguete: Dona do Infojobs compra Catho (25/06/2024)",
+          "url": "https://www.baguete.com.br/noticias/dona-do-infojobs-compra-catho"
+        },
+        {
+          "label": "Baguete: Catho agora é gratuito para quem busca emprego (11/11/2021)",
+          "url": "https://www.baguete.com.br/noticias/catho-agora-e-gratuito-para-quem-busca-emprego"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "como-ler-uma-vaga"
+        },
+        {
+          "tipo": "blog",
+          "id": "lgpd-seus-dados-ao-se-candidatar"
+        },
+        {
+          "tipo": "blog",
+          "id": "processo-seletivo-como-se-preparar"
+        },
+        {
+          "tipo": "vagas",
+          "id": "vagas-com"
+        },
+        {
+          "tipo": "vagas",
+          "id": "linkedin"
+        }
+      ],
+      "atualizadoEm": "2026-11-03"
+    }
+  },
+  {
+    "title": "frontendbr/vagas",
+    "duration": "Comunidade",
+    "thumb": "https://www.google.com/s2/favicons?domain=github.com&sz=128",
+    "site_url": "https://github.com/frontendbr/vagas",
+    "category": "Community",
+    "slug": "frontendbr-vagas",
+    "detalhe": {
+      "resumo": "O frontendbr/vagas é um repositório do GitHub mantido pela comunidade Front-End Brasil, em que as vagas de front-end são publicadas como issues. Qualquer empresa pode divulgar uma vaga seguindo um modelo, e qualquer pessoa pode acompanhar as novas publicações pelas notificações do GitHub.",
+      "paragrafos": [
+        "Cada vaga é uma issue do repositório, com um título no formato \"[Cidade] Cargo na Empresa\" e labels que indicam o nível de experiência e a forma de contratação. Quem publica precisa seguir o modelo de issue do repositório e informar o nome da empresa contratante, porque vagas sem empresa ou com informações faltando não são aceitas. Segundo o README, em novembro de 2026 cada empresa pode publicar até 3 vagas por mês, e a issue precisa de manutenção a cada 3 meses, com um comentário dizendo que a vaga continua aberta ou com o fechamento informando a contratação. A moderação pode apagar issues ou banir usuários que não sigam as regras.",
+        "A Front-End Brasil nasceu como um fórum no GitHub para reunir dúvidas que se perdiam em redes sociais, e o repositório de vagas é uma das frentes da comunidade, ao lado do fórum e da lista de eventos, segundo a Alura. Em novembro de 2026, o repositório tinha cerca de 15,5 mil estrelas no GitHub. O modelo inspirou repositórios parecidos para outras stacks e regiões, como o backend-br/vagas, e o próprio README lista vários deles. As vagas também são compartilhadas automaticamente no X (antigo Twitter), no perfil @frontendbrvagas.",
+        "Para acompanhar, entre no repositório, clique em Watch e escolha receber as atualizações por e-mail ou pelas notificações do GitHub. Use os filtros da aba Issues para ver só as vagas abertas e combine as labels de nível e de contratação, por exemplo júnior e remoto. Antes de comentar ou se candidatar, leia o texto da issue até o fim, porque o caminho de candidatura costuma ser um link ou um e-mail da empresa, e não um comentário na issue. Ter uma conta no GitHub com alguns projetos públicos ajuda, já que muitas empresas que publicam ali vão olhar o seu perfil.",
+        "Repare na data de abertura e no último comentário da issue: vagas antigas sem manutenção podem já ter sido preenchidas. Pesquise a empresa por fora antes de enviar dados pessoais, porque o repositório é aberto e a moderação não garante que todo anúncio seja legítimo. Não publique seu telefone, documentos ou endereço em comentários, já que tudo o que é escrito numa issue fica público. Se encontrar um anúncio suspeito ou fora das regras, avise a moderação em vez de responder diretamente.",
+        "O programa \"Git e GitHub: Fluxo de Trabalho em Equipe e Contribuição em Código Aberto\", do learnTECH, ensina a usar issues, labels e notificações, o mesmo fluxo usado neste repositório. A página do GitHub, na área de ferramentas, explica a plataforma em si. Para avaliar cada anúncio, o artigo \"Como ler uma vaga e reconhecer uma boa empresa\" ajuda a separar uma boa oportunidade de uma vaga mal descrita."
+      ],
+      "links": [
+        {
+          "label": "Repositório oficial",
+          "url": "https://github.com/frontendbr/vagas"
+        },
+        {
+          "label": "Vagas abertas (issues)",
+          "url": "https://github.com/frontendbr/vagas/issues"
+        },
+        {
+          "label": "Repositório backend-br/vagas",
+          "url": "https://github.com/backend-br/vagas"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "GitHub: frontendbr/vagas (README)",
+          "url": "https://github.com/frontendbr/vagas"
+        },
+        {
+          "label": "Alura: Principais comunidades de Front-end (11/05/2022)",
+          "url": "https://www.alura.com.br/artigos/principais-comunidades-front-end"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "ferramentas",
+          "id": "github"
+        },
+        {
+          "tipo": "programas",
+          "id": "604"
+        },
+        {
+          "tipo": "blog",
+          "id": "como-ler-uma-vaga"
+        },
+        {
+          "tipo": "vagas",
+          "id": "programathor"
+        }
+      ],
+      "atualizadoEm": "2026-11-03"
+    }
+  },
+  {
+    "title": "Sólides Vagas",
+    "duration": "Brasil",
+    "thumb": "https://www.google.com/s2/favicons?domain=solides.com.br&sz=128",
+    "site_url": "https://vagas.solides.com.br/",
+    "category": "ATS",
+    "slug": "solides",
+    "detalhe": {
+      "resumo": "A Sólides é uma empresa mineira de software de recursos humanos, voltada principalmente a pequenas e médias empresas, e o Sólides Vagas é o portal em que aparecem as vagas abertas por essas empresas no sistema de recrutamento da Sólides. Para o candidato, o acesso é gratuito.",
+      "paragrafos": [
+        "As empresas clientes da Sólides usam o sistema de recrutamento (ATS) da plataforma para abrir vagas e acompanhar candidatos, e essas vagas aparecem no portal Sólides Vagas. O candidato preenche um currículo dentro da plataforma, que pode importar a experiência profissional do LinkedIn e incluir perguntas específicas de cada vaga. A busca permite escolher a localidade e combinar filtros como modalidade de trabalho, tipo de contrato e vagas afirmativas. Uma assistente virtual, a Sol, responde dúvidas nas páginas de vagas, e há uma central de ajuda com artigos na guia \"Sou candidato\".",
+        "O portal foi lançado em junho de 2023 com cerca de 28 mil vagas em áreas como comercial, administrativo, financeiro, jurídico e tecnologia, do estágio a cargos especializados, segundo o NeoFeed. Como a carteira da Sólides é formada sobretudo por pequenas e médias empresas, muitas vagas são de empresas regionais que não costumam anunciar em portais de tecnologia. Na área de TI, isso inclui vagas de suporte, infraestrutura e desenvolvimento em empresas de outros setores. Também é comum que uma vaga encontrada no site de uma empresa leve ao formulário da Sólides, porque o mesmo sistema alimenta as páginas de carreira dessas empresas.",
+        "Para começar, crie o cadastro gratuito no portal e preencha o currículo inteiro, porque ele é reaproveitado nas próximas candidaturas. A Sólides oferece o Profiler, um questionário de perfil comportamental que gera um relatório, e algumas empresas pedem esse teste durante o processo. Responda com calma e com sinceridade, já que o resultado descreve preferências de comportamento e não mede conhecimento técnico. Depois, use os filtros de localidade e modalidade para montar uma lista curta de vagas que combinam com o seu momento.",
+        "Leia a descrição completa antes de se candidatar e confira se a vaga informa empresa, cidade, regime e tipo de contrato. A Sólides não cobra do candidato, então qualquer pedido de pagamento em nome de uma vaga é sinal de golpe. Ao preencher o currículo e o Profiler, lembre que esses dados ficam disponíveis para as empresas a que você se candidata, por isso vale ler a política de privacidade da plataforma. Se a vaga levar a um contato por WhatsApp, confirme que o número pertence mesmo à empresa antes de enviar documentos.",
+        "No blog do learnTECH, o artigo \"Como é um processo seletivo em tecnologia e como se preparar em cada etapa\" explica as fases que costumam aparecer depois da candidatura, incluindo testes comportamentais. Já \"Seus dados quando você se candidata: LGPD para quem procura emprego\" ajuda a entender o que acontece com o currículo e os resultados de testes. Para comparar com outro portal amplo, a área de vagas tem a página da Vagas.com."
+      ],
+      "links": [
+        {
+          "label": "Portal Sólides Vagas",
+          "url": "https://vagas.solides.com.br/"
+        },
+        {
+          "label": "Site da Sólides",
+          "url": "https://solides.com.br/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Sólides Blog: Experiência da pessoa candidata na Sólides (11/05/2026)",
+          "url": "https://solides.com.br/blog/experiencia-da-pessoa-candidata-solides/"
+        },
+        {
+          "label": "NeoFeed: Na startup de RH Sólides, agora tem vagas (06/2023)",
+          "url": "https://neofeed.com.br/startups/na-startup-de-rh-solides-agora-tem-vagas/"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "processo-seletivo-como-se-preparar"
+        },
+        {
+          "tipo": "blog",
+          "id": "lgpd-seus-dados-ao-se-candidatar"
+        },
+        {
+          "tipo": "blog",
+          "id": "como-ler-uma-vaga"
+        },
+        {
+          "tipo": "vagas",
+          "id": "vagas-com"
+        }
+      ],
+      "atualizadoEm": "2026-11-03"
+    }
+  },
+  {
+    "title": "Estágio Trainee",
+    "duration": "Brasil",
+    "thumb": "https://www.google.com/s2/favicons?domain=estagiotrainee.com&sz=128",
+    "site_url": "https://www.estagiotrainee.com/",
+    "category": "General Jobs",
+    "slug": "estagio-trainee",
+    "detalhe": {
+      "resumo": "O EstágioTrainee.com é um portal brasileiro que divulga programas de estágio e trainee de grandes empresas de vários setores. Funciona como um mural: o portal reúne os programas abertos, e a inscrição é feita no processo seletivo de cada empresa.",
+      "paragrafos": [
+        "O site organiza os programas em duas seções principais, Estágio e Trainee, com cards que levam ao processo seletivo de cada empresa. Em novembro de 2026, o portal informava atuar nesse mercado desde 2013 e divulgar mais de 400 processos seletivos de estágio e trainee por ano. Também tem uma seção com modelos de currículo e uma área para empresas, que podem contratar o portal para divulgar seus programas.",
+        "O portal não é específico de tecnologia: reúne programas de bancos, varejo, indústria, energia e outras áreas, e os programas de TI aparecem junto com os demais. Programas de estágio e trainee costumam ter calendário fixo, com inscrições abertas em certas épocas do ano e várias etapas, como testes online, dinâmicas e entrevistas. Por isso o portal é útil para quem está na faculdade ou acabou de se formar e quer acompanhar esses calendários num lugar só. Para vagas de desenvolvimento em startups, portais especializados em tecnologia tendem a ter mais opções.",
+        "Para começar, visite as seções de Estágio e Trainee e anote os programas que aceitam o seu curso e o seu ano de formação, porque cada um tem requisitos próprios. Em cada programa, siga o link até a página oficial da empresa e confira o prazo de inscrição e as etapas previstas. Montar uma planilha com empresa, prazo e etapa ajuda a não perder datas quando vários processos correm ao mesmo tempo. Se ainda não tem currículo, os modelos do portal servem de ponto de partida, mas ajuste o texto às suas experiências reais.",
+        "No estágio, a Lei 11.788, de 2008, garante regras que valem para qualquer empresa: termo de compromisso assinado entre estudante, empresa e instituição de ensino, jornada de até 6 horas diárias e 30 semanais no ensino superior, bolsa e auxílio-transporte obrigatórios no estágio não obrigatório, recesso de 30 dias quando o estágio dura um ano ou mais (proporcional quando dura menos) e duração máxima de 2 anos na mesma empresa, salvo para estagiário com deficiência. Confira se o programa respeita essas regras antes de aceitar. Faça a inscrição sempre na página oficial da empresa e desconfie de quem cobra taxa para participar de um processo seletivo.",
+        "O programa \"Processo Seletivo na Prática: da Inscrição à Decisão da Proposta\", do learnTECH, acompanha as etapas que esses programas costumam ter, da inscrição à proposta. Para quem ainda está montando a base, o \"Hack Dev: Rotina, Trilha e Portfólio para a Primeira Vaga\" e o artigo \"Hack Dev: uma rotina diária e uma trilha para chegar à primeira vaga de dev\" ajudam a organizar o estudo até a primeira oportunidade. O artigo \"Como é um processo seletivo em tecnologia e como se preparar em cada etapa\" complementa a preparação."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.estagiotrainee.com/"
+        },
+        {
+          "label": "Lei do Estágio (Lei 11.788/2008)",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/lei/l11788.htm"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "EstágioTrainee.com: página inicial",
+          "url": "https://www.estagiotrainee.com/home"
+        },
+        {
+          "label": "Planalto: Lei nº 11.788, de 25 de setembro de 2008 (Lei do Estágio)",
+          "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/lei/l11788.htm"
+        },
+        {
+          "label": "Infojobs: Portal EstágioTrainee.com (perfil da empresa)",
+          "url": "https://www.infojobs.com.br/empresa-portal-estagiotrainee-com__958686.aspx"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "1003"
+        },
+        {
+          "tipo": "programas",
+          "id": "1005"
+        },
+        {
+          "tipo": "blog",
+          "id": "hack-dev-rotina-e-trilha-para-a-primeira-vaga"
+        },
+        {
+          "tipo": "blog",
+          "id": "processo-seletivo-como-se-preparar"
+        }
+      ],
+      "atualizadoEm": "2026-11-03"
+    }
   }
 ]

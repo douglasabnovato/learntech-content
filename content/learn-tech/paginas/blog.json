@@ -411,7 +411,7 @@
         "Cada tipo serve a um público. Startup com CNPJ e alguma receita é o alvo de aceleração corporativa (Agrostart, Tetra Pak, Google), de desafios de inovação aberta (Sanepar, Fiocruz) e de subvenção ou investimento (Finep Startup, UNICEF). Pesquisador vinculado a uma ICT entra por chamadas de P&D e por projetos em parceria com empresas, como o AGEUNI. MEI e pequena empresa precisam olhar o tipo societário com lupa: a Sanepar excluía MEI, a Fermenta aceitava; para elas, o caminho mais frequente é crédito orientado e consultoria do Sebrae. Estudante raramente é proponente; entra como membro de equipe, bolsista ou em hackathons e desafios sem pré-requisito, como o da Fiocruz. ONG e coletivo cabem em editais sociais e culturais com recorte de diversidade, como os dois da Ambev. Organizações privadas ofertam por interesse estratégico, e o dinheiro costuma vir com contrato, prova de conceito ou participação no negócio. Leia isso como parte do preço.",
         "Para ler um edital, siga esta ordem. 1) Elegibilidade: porte, faturamento, tempo de CNPJ, tipo societário, CNAE, estado e vínculo do coordenador. Se não passar aqui, pare. 2) Contrapartida: quanto você precisa aportar, em dinheiro ou em horas e estrutura mensuráveis. 3) Maturidade tecnológica, a escala TRL de 1 (ideia) a 9 (produto em operação): muitos editais exigem faixa de 3 a 9, ou seja, prova de conceito pronta. 4) Itens financiáveis e vedados, porque orçamento incompatível derruba projeto bom. 5) Prazos: submissão, impugnação, recurso, resultado e execução. 6) Documentos: certidões negativas, contrato social, currículo Lattes, plano de trabalho, cartas de parceiros. 7) Critérios de avaliação e pesos, que dizem onde gastar mais texto. Em agosto de 2026, especialistas ouvidos pelo Hoje em Dia relataram que a demanda em Minas já supera em cerca de dez vezes os recursos disponíveis, o que deixa pouco espaço para erro formal.",
         "O que está valendo agora. A Finep segue com o programa Mais Inovação: em fevereiro de 2026 lançou subvenção regional de R$ 300 milhões para Norte, Nordeste e Centro-Oeste, com projetos de R$ 2 milhões a R$ 5 milhões, faixa TRL 3 a 9 e reserva de 30% para micro e pequenas empresas; o Inovacred continua como crédito via agentes parceiros. O CNPq abriu a chamada 29/2026, RHAE IA, com R$ 50 milhões para inserir mestres e doutores em pequenas empresas e startups, até R$ 300 mil em bolsas por proposta e contrapartida mínima de 20%. A FAPEMIG tinha, em agosto de 2026, chamadas como Pesquisador na Empresa (R$ 5 milhões), Cientista Empreendedor (R$ 10 milhões) e o Novo Seed (R$ 15 milhões, até R$ 100 mil por startup); as outras FAPs têm programas equivalentes. O Programa Centelha, de MCTI, Finep, CNPq e Confap, chegou à terceira fase com todos os estados e 9.754 ideias submetidas em 2025. Sebrae e Embrapii mantêm até janeiro de 2027 o modelo em que Embrapii cobre até 50% do projeto e o Sebrae até 70% da contrapartida da pequena empresa, para projetos TRL 3 a 9. A Lei do Bem, para empresas do lucro real, beneficiou 4.598 empresas no ano-base 2025. E os contratos públicos para solução inovadora (CPSI), criados pelo Marco Legal das Startups, somavam 293 até junho de 2026, com média de R$ 807,7 mil por contrato. Completam o mapa o Catalisa ICT, do Sebrae, para mestres e doutores que querem transformar pesquisa em negócio, e o BNDES Garagem, aceleração gratuita para startups.",
-        "Onde acompanhar: as páginas de chamadas abertas da Finep, do CNPq e da sua FAP; o Diário Oficial; os portais do Sebrae da sua UF; os núcleos de inovação tecnológica das universidades (em Juiz de Fora, o Critt da UFJF divulga chamadas da FAPEMIG há anos); plataformas como Prosas, onde vários editais privados do boletim eram publicados; e os boletins de federações das indústrias. Monte uma planilha com prazo, elegibilidade e contrapartida e revise toda semana.",
+        "Onde acompanhar: as páginas de chamadas abertas da Finep, do CNPq e da sua FAP; o Diário Oficial; os portais do Sebrae da sua UF; os núcleos de inovação tecnológica das universidades (em Juiz de Fora, o Critt da UFJF divulga chamadas da FAPEMIG há anos); plataformas como Prosas, onde vários editais privados do boletim eram publicados; e os boletins de federações das indústrias. Dois exemplos mineiros ajudam a ver a diferença entre os formatos. A Incubadora de Empresas de Base Tecnológica do Critt recebe propostas de incubação em fluxo contínuo, com seleção por plano de negócios simplificado e Demo Day, enquanto o Compete Minas, da FAPEMIG com a Secretaria de Desenvolvimento Econômico, é uma chamada com prazo que financia projetos de inovação de instituições de pesquisa em parceria com empresas e de empresas, startups e cooperativas do estado. Monte uma planilha com prazo, elegibilidade e contrapartida e revise toda semana.",
         "Isso conversa com a trajetória de quem construiu este ecossistema. Em Juiz de Fora, o Moinho transformou um antigo moinho de farinha em hub de inovação; o Fator S Challenge, em maio de 2023, e o hackathon de inovação social de janeiro do mesmo ano funcionaram como portas de entrada; e a Volta Express nasceu justamente num hackathon. É o caminho que o boletim desenha sem dizer: o desafio sem pré-requisito valida a ideia, a aceleração organiza o negócio, o Centelha ou a FAP financia a primeira versão, e só depois fazem sentido subvenção, crédito e compra pública. Pular etapas costuma sair caro. Comece pelo degrau em que você realmente está."
       ],
       "sources": [
@@ -442,6 +442,14 @@
         {
           "label": "Contratos públicos de inovação chegam a quase 300 no Brasil — Agência Sebrae (28/08/2026)",
           "url": "https://agenciasebrae.com.br/inovacao-e-tecnologia/contratos-publicos-de-inovacao-chegam-a-quase-300-no-brasil-aponta-pesquisa/"
+        },
+        {
+          "label": "Critt/UFJF: Incubadora de Empresas de Base Tecnológica",
+          "url": "https://www2.ufjf.br/critt/incubadora-de-empresas/incubacao/ibt-6/incubadora-de-empresas-de-base-tecnologica-do-critt/"
+        },
+        {
+          "label": "Agência Minas: novo edital do Compete Minas (10/06/2026)",
+          "url": "https://www.agenciaminas.mg.gov.br/noticia/novo-edital-do-compete-minas-oferece-r-50-milhoes-para-impulsionar-a-inovacao-tecnologica-no-setor-produtivo-130257"
         }
       ]
     },
@@ -2109,6 +2117,289 @@
         {
           "label": "Learn How to Use the Best Ideation Methods: SCAMPER — Interaction Design Foundation",
           "url": "https://ixdf.org/literature/article/learn-how-to-use-the-best-ideation-methods-scamper"
+        }
+      ]
+    },
+    {
+      "id": "benchmarking-de-ux-como-analisar-um-app",
+      "blogURL": "/blog/benchmarking-de-ux-como-analisar-um-app",
+      "img": "/media/learn-tech/blog/benchmarking-de-ux-como-analisar-um-app.webp",
+      "title": "Benchmarking de UX: como analisar a experiência de um app antes de criar o seu",
+      "tag": "UX/UI",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-11-03",
+      "readingTime": "5 min",
+      "lead": "Antes de desenhar a primeira tela, vale olhar com atenção para o que já existe. Benchmarking de UX é percorrer apps concorrentes e de referência com tarefas definidas, registrar o que acontece em cada passo e comparar os resultados com critérios claros. O objetivo não é copiar quem está no mercado, e sim entender o que funciona, o que atrapalha e onde ninguém resolveu bem o problema.",
+      "highlights": [
+        {
+          "label": "Escolha com critério",
+          "description": "De dois a quatro concorrentes diretos, mais uma ou duas referências de fora do setor que resolvem uma tarefa parecida."
+        },
+        {
+          "label": "Tarefas, não impressões",
+          "description": "Fazer um pedido, encontrar um produto, pagar: cada app é avaliado pela mesma tarefa, passo a passo."
+        },
+        {
+          "label": "Da tabela à decisão",
+          "description": "Os atritos registrados viram uma comparação lado a lado e, no fim, uma lista curta do que o seu produto vai fazer diferente."
+        }
+      ],
+      "body": [
+        "Comece pelo objetivo. Um benchmarking sem pergunta vira uma coleção de prints. Defina o que você quer descobrir: como os apps resolvem a busca, como conduzem o pagamento, como mostram o andamento de um pedido. A Nielsen Norman Group recomenda começar olhando vários candidatos e depois reduzir a lista para algo entre dois e quatro produtos, priorizando os que têm funções parecidas com a sua, os que têm boa experiência e os que o seu público costuma comparar com você.",
+        "Inclua também referências fora do setor. A pergunta certa é: com o que o usuário compara a minha solução? Se você vai criar um app de entrega para uma farmácia de bairro, iFood e Mercado Livre são referências óbvias para catálogo, carrinho e entrega. Mas o acompanhamento em tempo real do Uber, com o mapa e a previsão de chegada do motorista, ensina muito sobre manter a pessoa informada enquanto ela espera. E o Airbnb é um bom estudo de como apresentar opções com fotos, filtros e avaliações antes de uma decisão de compra mais pensada.",
+        "Depois, escreva as tarefas. Elas devem ser representativas do que o usuário realmente faz e iguais para todos os apps: encontrar um produto específico, montar um pedido com dois itens, alterar o endereço de entrega, chegar à tela de pagamento, cancelar algo. Escreva cada tarefa como uma frase com começo e fim claros, por exemplo \"encontrar um analgésico, adicionar ao carrinho e chegar à confirmação do pedido sem finalizar a compra\". Inclua pelo menos uma tarefa em que os apps seguem caminhos diferentes, porque é ali que aparecem as comparações mais úteis.",
+        "Agora percorra e registre. Para cada app e cada tarefa, anote o número de passos, faça um print das telas decisivas e marque cada atrito: um botão que não parece clicável, um custo que só aparece no fim, um campo que pede a mesma informação duas vezes, uma mensagem de erro que não diz o que fazer. Faça isso no celular, como o usuário faria, e com uma conta nova sempre que possível, para enxergar o caminho de quem chega pela primeira vez."
+      ],
+      "quote": "Benchmarking não serve para descobrir quem venceu. Serve para entender por que uma solução funciona e se ela faz sentido no seu contexto.",
+      "bodyContinued": [
+        "Para não comparar por gosto pessoal, use uma lente. As dez heurísticas de usabilidade de Jakob Nielsen funcionam bem aqui: visibilidade do status do sistema, correspondência com o mundo real, controle e liberdade do usuário, consistência e padrões, prevenção de erros, reconhecimento em vez de memorização, flexibilidade e eficiência, design estético e minimalista, ajuda para reconhecer e corrigir erros, e ajuda e documentação. Cada atrito registrado ganha a heurística que ele fere. Um pedido sem confirmação clara de que foi enviado fere a visibilidade do status; um checkout que apaga o carrinho ao voltar uma tela fere o controle do usuário.",
+        "Organize tudo numa tabela. Nas linhas, as tarefas; nas colunas, os apps. Em cada célula, o número de passos, os principais atritos e a heurística ligada a cada um. Uma última coluna registra a ideia que vale levar para o seu produto. Para tarefas de carrinho e pagamento, as pesquisas do Baymard Institute ajudam a calibrar o olhar: em testes de usabilidade, o instituto observa que o desenho e o fluxo do checkout muitas vezes são, sozinhos, o motivo de a pessoa desistir da compra, por exemplo quando ela não entende como preencher um campo.",
+        "Por fim, transforme a tabela em decisões. Separe três listas: o que é padrão de mercado e o seu app precisa ter, porque o usuário já espera; o que os concorrentes fazem mal e é uma oportunidade; e o que funciona para eles mas não serve para o seu público. A Interaction Design Foundation dá um exemplo do terceiro caso: o menu hambúrguer se espalhou porque grandes apps o usavam, e testes A/B posteriores mostraram problemas de usabilidade em comparação com barras de abas e outras navegações. Padrão popular ainda precisa ser testado.",
+        "Lembre que essa análise é uma revisão feita por você, não um teste com usuários. Ela levanta hipóteses rápidas e baratas; a confirmação vem quando pessoas reais tentam as mesmas tarefas. O programa 201, Fundamentos de UX/UI: do Problema do Usuário ao Wireframe Testado, mostra como levar essas decisões para o wireframe, e o 204, UX Research: Métodos de Pesquisa para Validar Ideias, aprofunda o teste de usabilidade. Para acompanhar se as mudanças funcionaram depois do lançamento, o 504, Métricas de Produto: North Star, OMTM e Retenção, ajuda a escolher o que medir."
+      ],
+      "sources": [
+        {
+          "label": "Competitive Usability Evaluations — Nielsen Norman Group (Tim Neusesser, janeiro de 2024)",
+          "url": "https://www.nngroup.com/articles/competitive-usability-evaluations/"
+        },
+        {
+          "label": "10 Usability Heuristics for User Interface Design — Nielsen Norman Group (Jakob Nielsen, revisado em janeiro de 2024)",
+          "url": "https://www.nngroup.com/articles/ten-usability-heuristics/"
+        },
+        {
+          "label": "Why You Should Analyze Your Competition to Design Better Solutions and How to Do It — Interaction Design Foundation",
+          "url": "https://ixdf.org/literature/article/why-you-should-analyze-your-competition-to-design-better-solutions-and-how-to-do-it"
+        },
+        {
+          "label": "Cart & Checkout Usability Research — Baymard Institute",
+          "url": "https://baymard.com/research/checkout-usability"
+        }
+      ]
+    },
+    {
+      "id": "transicao-de-carreira-para-tecnologia",
+      "blogURL": "/blog/transicao-de-carreira-para-tecnologia",
+      "img": "/media/learn-tech/blog/transicao-de-carreira-para-tecnologia.webp",
+      "title": "Transição de carreira para tecnologia: como planejar a mudança sem largar tudo de uma vez",
+      "tag": "Carreira",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-11-03",
+      "readingTime": "5 min",
+      "lead": "Mudar de área não precisa começar com um pedido de demissão. Para a maioria das pessoas, a transição para tecnologia funciona melhor como um projeto com etapas: entender o que você já sabe fazer, escolher uma área pelo dia a dia de trabalho, estudar em paralelo ao emprego atual e só trocar de lado quando houver portfólio, contatos e uma reserva financeira para atravessar o período.",
+      "highlights": [
+        {
+          "label": "Você não começa do zero",
+          "description": "Atendimento, vendas, ensino e gestão deixam habilidades que têm lugar em suporte, customer success, pré-vendas, produto e instrução técnica."
+        },
+        {
+          "label": "Plano com prazos",
+          "description": "Etapas curtas, estudo em paralelo ao trabalho e projetos de portfólio que conectam a experiência anterior à área nova."
+        },
+        {
+          "label": "Cuidado com promessas",
+          "description": "Curso que garante emprego é sinal de alerta: o Procon-MG tratou essa promessa como publicidade enganosa."
+        }
+      ],
+      "body": [
+        "O primeiro passo é um inventário honesto. Liste o que você faz bem no trabalho atual e traduza para a linguagem da área nova. Quem trabalha com atendimento sabe ouvir uma reclamação, investigar o problema e explicar a solução com calma: isso é a base de suporte técnico e de customer success. Quem vem de vendas sabe entender a necessidade do cliente e apresentar uma proposta, o que conversa com pré-vendas e com gestão de produto. Professores planejam aulas, avaliam aprendizado e explicam o difícil de forma simples, habilidades valiosas em instrução técnica, documentação e treinamento de produto. Quem cuidou de estoque, planilhas e indicadores já pensa em dados.",
+        "Com esse mapa, escolha uma área pelo que se faz nela todos os dias, não pelo que está em alta. Desenvolvimento pede horas de concentração resolvendo problemas em código. UX passa boa parte do tempo em pesquisa, conversa com usuários e protótipos. Dados exige gosto por perguntas, números e limpeza de informação. Suporte e customer success envolvem contato constante com pessoas. Uma forma prática de decidir é conversar com duas ou três pessoas de cada área e perguntar como foi a última semana de trabalho delas. O programa 1001, Autoconhecimento em Ação: Valores, Forças e Histórias para Decidir Melhor, ajuda a fazer esse inventário com método.",
+        "Escolhida a direção, transforme-a em plano. Divida a transição em etapas de dois a três meses, cada uma com um objetivo verificável: terminar os fundamentos, publicar o primeiro projeto, fazer cinco conversas com profissionais da área, candidatar-se às primeiras vagas. Reserve horários fixos na semana, mesmo que curtos, e trate esses blocos como compromisso. O programa 1002, Decisão e Plano de Carreira: das Opções ao Plano de Ação, trabalha esse desenho de opções e prazos, e o 1005, Hack Dev: Rotina, Trilha e Portfólio para a Primeira Vaga, mostra como manter uma rotina diária de estudo e prática para quem escolhe desenvolvimento."
+      ],
+      "quote": "A experiência anterior não é um peso a esconder. Bem traduzida, ela é o que diferencia você de quem tem só o curso.",
+      "bodyContinued": [
+        "Não dependa só de cursos. Na Stack Overflow Developer Survey de 2025, com cerca de 49 mil respondentes, a documentação técnica foi o recurso de aprendizado mais citado (67,8%), à frente de recursos online como fóruns e buscas (58,7%), enquanto a escola apareceu em 16,6%. Aprender a ler documentação cedo é uma vantagem para quem estuda em paralelo ao trabalho.",
+        "O portfólio é onde a transição fica visível. Em vez de repetir os projetos que todo iniciante faz, construa algo que conecte a sua experiência anterior à área nova: um painel de indicadores para o tipo de loja em que você trabalhou, um protótipo de app para agendar atendimentos na clínica onde você foi recepcionista, um material de treinamento sobre uma ferramenta técnica escrito com a sua didática de professor. Projetos assim respondem à pergunta que todo recrutador faz a quem muda de área: por que você e por que agora.",
+        "Contatos aceleram a transição. Participe de comunidades da área escolhida, vá a meetups e eventos, ajude em projetos coletivos e mostre o que está aprendendo. Muitas vezes o primeiro trabalho surge dentro da própria empresa em que você já está: um projeto interno, uma vaga no time de suporte ou de dados, uma ponte entre a sua área e a tecnologia.",
+        "Planeje também as finanças. A troca costuma vir com um período de salário menor, de entrada no nível júnior ou de contratos diferentes do atual. O relatório Perspectivas do Mercado de Trabalho do Macrossetor TIC, da Brasscom, de maio de 2026, aponta que o setor ganhou 111,1 mil profissionais entre 2023 e 2025, mas 55,6% desse acréscimo veio de MEIs e trabalho informal, e não de empregos com carteira assinada. Antes de sair, monte uma reserva que cubra alguns meses de despesas e entenda a diferença entre CLT e PJ. O artigo Finanças pessoais para o primeiro salário em tecnologia, aqui no blog, ajuda a organizar essa conta.",
+        "Por último, desconfie de atalhos. Em parecer de março de 2025, o Procon-MG, ligado ao Ministério Público de Minas Gerais, tratou como publicidade enganosa a venda de cursos com a promessa de que o aluno vai conseguir emprego ao terminar, e lembrou que uma cláusula no contrato dizendo o contrário não corrige a oferta. Sinais de alerta: garantia de vaga, salário alto prometido em poucas semanas, pressão para pagar no mesmo dia e curso apresentado como condição para uma vaga. Prefira formações com conteúdo público, professores identificáveis e ex-alunos com quem você possa conversar."
+      ],
+      "sources": [
+        {
+          "label": "Relatório Perspectivas do Mercado de Trabalho do Macrossetor TIC — Brasscom (maio de 2026)",
+          "url": "https://brasscom.org.br/wp-content/uploads/2026/07/Relatorio-Pespectivas-do-Mercado-de-Trabalho-Apresentacao-v9.pdf"
+        },
+        {
+          "label": "Parecer nº 01/2025 sobre cursos de capacitação sob falsa garantia de emprego — Procon-MG / MPMG (06/03/2025)",
+          "url": "https://mpmg.mp.br/data/files/3C/13/5C/7F/5A08591061202D49760849A8/Par%20n1-Comercializar%20cursos%20capacitacao%20sob%20falsa%20garantia%20de%20obtencao%20de%20emprego-Procon-MPMG-06mar2025.pdf"
+        },
+        {
+          "label": "2025 Stack Overflow Developer Survey: Developers — Stack Overflow",
+          "url": "https://survey.stackoverflow.co/2025/developers"
+        }
+      ]
+    },
+    {
+      "id": "pilulas-de-html-e-css",
+      "blogURL": "/blog/pilulas-de-html-e-css",
+      "img": "/media/learn-tech/blog/pilulas-de-html-e-css.webp",
+      "title": "Pílulas de HTML e CSS: 12 problemas do dia a dia e o jeito certo de resolver",
+      "tag": "Tecnologia",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-11-03",
+      "readingTime": "6 min",
+      "lead": "Boa parte das dúvidas de quem começa no front-end se repete: o espaço que some, o layout que não quebra no celular, o fundo transparente que deixa o texto apagado. Reunimos 12 problemas comuns de HTML e CSS, cada um com a solução e a pegadinha que costuma aparecer logo depois.",
+      "highlights": [
+        {
+          "label": "Semântica",
+          "description": "Entidades corretas, figure e figcaption ajudam leitores de tela e buscadores a entender a página."
+        },
+        {
+          "label": "Flexbox",
+          "description": "Separar o que é do contêiner e o que é dos itens resolve boa parte dos layouts."
+        },
+        {
+          "label": "Transparência",
+          "description": "rgba no fundo e opacity no elemento têm efeitos bem diferentes sobre o conteúdo."
+        }
+      ],
+      "body": [
+        "1. Espaços que somem. O navegador junta vários espaços seguidos em um só, então digitar dez espaços no código não move nada na tela. Para manter duas palavras sempre na mesma linha, como \"10 km\" ou \"Seção 2\", use a entidade &nbsp;, o espaço não separável. Quando o espaçamento faz parte do conteúdo, como um trecho de código ou um poema com recuos, o elemento <pre> preserva espaços e quebras de linha. A pegadinha: usar sequências de &nbsp; para recuar texto, o que quebra em telas menores e é trabalho do CSS. E caracteres reservados, como < e &, precisam virar &lt; e &amp;.",
+        "2. Layout que não se adapta. Com display: flex, os itens ficam lado a lado numa única linha, porque o valor inicial de flex-wrap é nowrap. Numa tela estreita, encolhem e, se não couberem, transbordam. A solução é flex-wrap: wrap, que leva para a linha seguinte o que não cabe, junto com uma base de tamanho nos itens, como flex: 1 1 250px. A pegadinha: cada linha quebrada se comporta como um contêiner flex separado, então os itens da última linha podem ficar mais largos que os de cima. Para alinhar linhas e colunas ao mesmo tempo, use CSS Grid.",
+        "3. O mapa do Flexbox. No contêiner, o elemento com display: flex, ficam flex-direction, flex-wrap, o atalho flex-flow, justify-content, align-items, align-content e gap. Nos itens, os filhos diretos, ficam flex-grow, flex-shrink, flex-basis, o atalho flex, order e align-self. Os valores iniciais dos itens equivalem a flex: 0 1 auto: não crescem, podem encolher e partem do tamanho do conteúdo. A pegadinha: propriedade de contêiner aplicada no item, ou o contrário, simplesmente não faz nada. E order muda só a ordem visual, não a ordem em que o teclado e o leitor de tela percorrem a página.",
+        "4. Gradientes. Gradiente em CSS é uma imagem, por isso vai em background-image (ou no atalho background), e não em background-color. linear-gradient() faz a transição em linha reta e, sem direção informada, vai de cima para baixo; dá para usar palavras como to right ou ângulos como 90deg. radial-gradient() parte de um ponto central para fora, em forma de elipse ou círculo. A pegadinha: texto sobre gradiente pode ter bom contraste numa ponta e ruim na outra; confira as duas extremidades e declare uma background-color sólida como reserva.",
+        "5. Imagens com transparência. Para um logotipo que vai sobre fundos diferentes, use um formato com canal alfa, como PNG, WebP ou SVG; o JPEG não guarda transparência e sempre traz um fundo. A pegadinha: um PNG transparente com traço escuro desaparece num tema escuro, então teste a imagem nos fundos em que ela vai aparecer. Se ela informa algo, descreva-a no alt; se é decoração, use alt vazio.",
+        "6. Cor de fundo com hex, rgb e rgba. #1e90ff, rgb(30, 144, 255) e o nome dodgerblue descrevem a mesma cor. O hexadecimal usa dois dígitos por canal (vermelho, verde e azul), e rgb() usa valores de 0 a 255. Para transparência, rgba() acrescenta um quarto valor, o alfa, que vai de 0 (transparente) a 1 (sólido); o hexadecimal de oito dígitos faz o mesmo. A pegadinha: notações misturadas dificultam a manutenção; defina as cores uma vez em variáveis CSS, como --cor-primaria."
+      ],
+      "quote": "Quase todo bug de CSS é uma propriedade no lugar errado: no item em vez do contêiner, no elemento inteiro em vez de só no fundo.",
+      "bodyContinued": [
+        "7. opacity na prática. Vai de 0 a 1 e esmaece o elemento inteiro, como num botão desativado ou numa entrada suave com transition. A pegadinha: um elemento com opacity: 0 fica invisível, mas continua ocupando espaço, recebendo cliques e sendo lido por leitores de tela. Para esconder de verdade, use display: none ou o atributo hidden.",
+        "8. Fundo transparente sem apagar o texto. Pense numa faixa escura sobre uma foto. Se você aplica opacity: 0.5 na faixa, o texto dentro dela também fica pela metade, porque opacity vale para o elemento com todo o seu conteúdo. A solução é deixar o elemento opaco e pôr a transparência só na cor do fundo: background-color: rgba(0, 0, 0, 0.5). A pegadinha: colocar opacity: 1 no filho não desfaz o efeito, já que ele é desenhado dentro de um pai que já está semitransparente.",
+        "9. text-align. Alinha o conteúdo em linha (texto, links, imagens inline) dentro de um bloco, com left, right, center, justify, start e end. start e end respeitam a direção do idioma. A pegadinha: text-align: center não centraliza uma div; para isso use margin-inline: auto com largura definida, ou Flexbox. E justify em colunas estreitas abre buracos entre as palavras que atrapalham a leitura.",
+        "10. figure e figcaption. O elemento <figure> marca um conteúdo autocontido, como uma imagem, um gráfico ou um trecho de código, que o texto referencia mas que poderia mudar de lugar sem prejudicar o fluxo. A legenda fica em <figcaption>, como primeiro ou último filho. A pegadinha: repetir no alt o texto da legenda. O alt descreve o que a imagem mostra para quem não a vê; a legenda complementa com crédito, contexto ou data.",
+        "11. opacity e o contexto de empilhamento. Qualquer opacity diferente de 1 cria um novo contexto de empilhamento: o elemento e seus filhos passam a ser empilhados como um bloco único. Um z-index alto num filho só vale dentro desse grupo. Por isso, um menu suspenso dentro de um elemento semitransparente pode ficar atrás de uma seção vizinha, por mais que você aumente o z-index dele. Procure opacity, transform ou filter nos ancestrais.",
+        "12. align-items no eixo transversal. justify-content distribui os itens no eixo principal; align-items alinha no eixo transversal, perpendicular a ele. Com flex-direction: row, o eixo principal é horizontal e align-items: center centraliza na vertical; com column, os papéis se invertem. O valor inicial é stretch, que estica os itens até a altura da linha, e é por isso que colunas lado a lado ficam com a mesma altura. A pegadinha: confundir align-items com align-content, que só tem efeito quando há mais de uma linha.",
+        "Esses temas aparecem nos programas HTML5 e CSS3 Moderno: do Zero ao Currículo Publicado, com semântica, box model, Flexbox e Grid, e Web Design Responsivo: do Celular ao Monitor com CSS Moderno, com mobile first, imagens responsivas e testes de acessibilidade."
+      ],
+      "sources": [
+        {
+          "label": "Conceitos básicos de flexbox — MDN Web Docs",
+          "url": "https://developer.mozilla.org/pt-BR/docs/Web/CSS/Guides/Flexible_box_layout/Basic_concepts"
+        },
+        {
+          "label": "opacity — MDN Web Docs",
+          "url": "https://developer.mozilla.org/pt-BR/docs/Web/CSS/Reference/Properties/opacity"
+        },
+        {
+          "label": "<figure>: o elemento de figura com legenda opcional — MDN Web Docs",
+          "url": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements/figure"
+        },
+        {
+          "label": "CSS Gradients — W3Schools",
+          "url": "https://www.w3schools.com/css/css3_gradients.asp"
+        },
+        {
+          "label": "HTML Entities — W3Schools",
+          "url": "https://www.w3schools.com/html/html_entities.asp"
+        }
+      ]
+    },
+    {
+      "id": "copy-e-ux-writing-para-devs",
+      "blogURL": "/blog/copy-e-ux-writing-para-devs",
+      "img": "/media/learn-tech/blog/copy-e-ux-writing-para-devs.webp",
+      "title": "Copy e UX writing para quem desenvolve: texto de botão, erro, e-mail e landing page",
+      "tag": "UX/UI",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-11-03",
+      "readingTime": "5 min",
+      "lead": "Texto de interface também faz parte do produto: ele decide se a pessoa entende o que fazer, se confia no formulário e se consegue seguir depois de um erro. Quem desenvolve escreve muito desse texto sem perceber, no rótulo do botão, no aviso de validação, no assunto do e-mail de confirmação. Veja como separar copy de UX writing e como escrever, revisar e testar cada peça.",
+      "highlights": [
+        {
+          "label": "Microcopy",
+          "description": "Botões, erros e estados vazios dizem o que acontece e o que fazer em seguida."
+        },
+        {
+          "label": "Tom de voz",
+          "description": "A voz do produto é fixa; o tom muda conforme o momento de quem lê."
+        },
+        {
+          "label": "Acessibilidade",
+          "description": "Rótulo visível, texto alternativo e linguagem simples beneficiam todo mundo."
+        }
+      ],
+      "body": [
+        "Copywriting é o texto feito para convencer: chamar atenção, apresentar um benefício e levar a uma ação, como se inscrever ou comprar. Aparece em anúncios, landing pages e campanhas de e-mail. UX writing é o texto que ajuda a pessoa a usar o produto: rótulos, instruções, mensagens do sistema e confirmações. O primeiro trabalha a decisão; o segundo, a tarefa. As fronteiras se cruzam, porque o botão de uma landing page é copy e microcopy ao mesmo tempo. O que muda é a pergunta que guia a escrita: no copy, \"por que alguém faria isso?\"; no UX writing, \"o que essa pessoa precisa saber agora para seguir?\".",
+        "Botões. O rótulo diz o que acontece ao clicar, com um verbo e, se ajudar, o objeto: \"Salvar alterações\", \"Enviar inscrição\", \"Baixar boleto\". Rótulos genéricos como \"OK\" ou \"Clique aqui\" obrigam a pessoa a ler o resto da tela para entender. Em diálogos de confirmação, repita a ação nos botões (\"Excluir projeto\" e \"Manter projeto\") em vez de \"Sim\" e \"Não\". Links seguem a mesma regra: o texto precisa fazer sentido sozinho, porque leitores de tela costumam listar os links fora do contexto.",
+        "Mensagens de erro. A Nielsen Norman Group organiza as boas práticas em três frentes. Visibilidade: a mensagem aparece perto do campo com problema e não depende só da cor vermelha; um ícone e um texto reforçam o aviso. Comunicação: linguagem simples, sem código técnico, descrevendo o problema com precisão, indicando a correção e sem culpar a pessoa. Eficiência: preservar o que já foi digitado e, quando possível, sugerir a correção mais provável. Compare \"Dados inválidos\" com \"Informe o CEP com 8 números, sem traço\". A segunda diz o que houve e como resolver.",
+        "Estados vazios. A tela sem dados, como a lista de pedidos de quem ainda não comprou ou a busca sem resultado, é muito vista e pouco escrita. Em vez de \"Nenhum registro encontrado\", explique o que deveria aparecer ali e ofereça o próximo passo: \"Você ainda não criou nenhum projeto. Crie o primeiro para acompanhar os prazos aqui\", com o botão \"Criar projeto\". Numa busca vazia, sugira revisar a grafia ou limpar os filtros."
+      ],
+      "quote": "Se a pessoa precisa adivinhar o que o botão faz, o problema não está nela, está no texto.",
+      "bodyContinued": [
+        "Landing page. A estrutura mínima tem três partes. O título diz qual é a oferta na linguagem do público, não na do time interno. O benefício explica o que muda para quem aceita, com algo concreto (\"receba as vagas da semana toda segunda-feira\") em vez de adjetivos. A chamada para ação repete a promessa no botão (\"Quero receber as vagas\") e volta a aparecer em páginas longas. No formulário, peça só o necessário e diga para que cada dado será usado, o que também conversa com a LGPD.",
+        "E-mail. O assunto e o texto de pré-visualização funcionam como título e subtítulo: dizem do que se trata antes de a mensagem ser aberta. E-mails transacionais, como confirmação de cadastro ou redefinição de senha, pedem clareza acima de tudo, com a ação principal num botão e o mesmo destino num link em texto. Escreva para funcionar também sem imagens: se todo o conteúdo está numa arte, quem não a carrega não recebe nada.",
+        "Tom de voz. O guia de conteúdo da Mailchimp, aberto ao público, separa a voz, a personalidade que se mantém, do tom, que muda conforme o estado de quem lê. Uma mensagem de boas-vindas pode ser leve; o aviso de um pagamento recusado pede objetividade e nenhuma piada. Registre a voz do seu produto em três ou quatro características, com exemplos do que fazer e do que evitar, e consulte essa lista ao escrever mensagens novas.",
+        "Acessibilidade. Todo campo de formulário precisa de rótulo visível, e não só de placeholder, que some quando a pessoa começa a digitar. Imagens que informam levam texto alternativo que descreve o conteúdo ou a função; imagens decorativas, alt vazio. Linguagem simples significa frases curtas, palavras do dia a dia, a informação mais importante primeiro e siglas explicadas na primeira vez em que aparecem. No Brasil, o serviço público tem orientações próprias sobre o assunto, como as do portal gov.br para quem escreve a página de um serviço.",
+        "Como testar texto. Leia em voz alta: a frase que trava na leitura trava na tela. Mostre a tela por alguns segundos a alguém de fora do projeto e pergunte o que essa pessoa faria em seguida. Em testes de usabilidade, observe onde as pessoas hesitam ou releem e anote as palavras que usam para descrever a tarefa, que costumam ser melhores que as do time. Com tráfego suficiente, um teste A/B compara duas versões de um título ou botão. E provoque cada erro de propósito para revisar as mensagens.",
+        "O programa Fundamentos de UX/UI: do Problema do Usuário ao Wireframe Testado trabalha heurísticas, fluxos e teste com usuário, em que o texto da tela é avaliado junto com o layout. Desenvolver uma Landing Page Moderna leva a estrutura semântica até a página publicada, e E-mail HTML e Landing Pages Integradas ao CRM trata de e-mails que funcionam nos principais clientes, personalização com dados e formulários ligados ao CRM."
+      ],
+      "sources": [
+        {
+          "label": "Error-Message Guidelines — Nielsen Norman Group",
+          "url": "https://www.nngroup.com/articles/error-message-guidelines/"
+        },
+        {
+          "label": "Voice and Tone — Mailchimp Content Style Guide",
+          "url": "https://styleguide.mailchimp.com/voice-and-tone/"
+        },
+        {
+          "label": "Writing for Accessibility — Mailchimp Content Style Guide",
+          "url": "https://styleguide.mailchimp.com/writing-for-accessibility/"
+        },
+        {
+          "label": "Escrevendo para o seu usuário — Guia de Edição de Serviços do gov.br",
+          "url": "https://www.gov.br/pt-br/guia-de-edicao-de-servicos-do-gov.br/escrevendo-para-o-seu-usuario"
+        }
+      ]
+    },
+    {
+      "id": "levantamento-de-requisitos-site-institucional",
+      "blogURL": "/blog/levantamento-de-requisitos-site-institucional",
+      "img": "/media/learn-tech/blog/levantamento-de-requisitos-site-institucional.webp",
+      "title": "Do briefing à proposta: como levantar requisitos de um site institucional",
+      "tag": "Produtos Digitais",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-11-03",
+      "readingTime": "4 min",
+      "lead": "Um site institucional parece simples até a primeira reunião, quando cada pessoa da empresa descreve um site diferente. Levantar requisitos é transformar essas expectativas numa lista que dá para estimar, construir e entregar. Este roteiro serve para pequenos negócios em geral e vai do briefing à proposta, passando pelo que o cliente raramente lembra de pedir.",
+      "highlights": [
+        {
+          "label": "Briefing",
+          "description": "Perguntas sobre empresa, objetivo, público, conteúdo, referências, prazo e orçamento."
+        },
+        {
+          "label": "Levantamento interno",
+          "description": "Páginas, integrações, domínio, LGPD, acessibilidade e SEO entram antes do preço."
+        },
+        {
+          "label": "Proposta em níveis",
+          "description": "Essencial, profissional e premium deixam claro o que cada valor inclui."
+        }
+      ],
+      "body": [
+        "Etapa 1: o briefing. A primeira conversa é para ouvir. Leve um roteiro de perguntas e anote as respostas com as palavras do cliente. Sobre a empresa: o que faz, há quanto tempo, o que a diferencia e como os clientes a descrevem. Sobre o objetivo do site: gerar contatos, apresentar serviços, receber inscrições ou dar credibilidade a quem já ouviu falar da empresa. Escolher um objetivo principal ajuda a decidir o que fica em destaque. Sobre o público: quem visita, de onde, em que dispositivo e com que dúvida chega.",
+        "Continue pelo conteúdo: quem vai escrever os textos, se há fotos próprias, logotipo em boa resolução e manual de marca. Conteúdo que atrasa costuma travar o cronograma inteiro, então combine desde já quem entrega o quê e até quando. Peça referências: dois ou três sites de que o cliente gosta e um de que não gosta, sempre com o motivo. Feche com prazo e orçamento. Existe uma data que não pode passar, como um lançamento? Há uma faixa de investimento prevista? Saber isso cedo evita desenhar uma solução que não cabe.",
+        "Etapa 2: o levantamento interno. Com o briefing em mãos, traduza as respostas em requisitos. Liste as páginas (início, sobre, serviços, contato, política de privacidade) e as funcionalidades de cada uma: formulário, mapa, galeria, blog, botão de mensagem. Anote as integrações, como e-mail marketing, CRM, agenda on-line ou pagamento, porque cada uma tem conta, configuração e às vezes custo próprios. Verifique domínio e hospedagem: o cliente já tem? Em nome de quem estão registrados? O ideal é que fiquem no nome da empresa, com acesso compartilhado com quem desenvolve."
+      ],
+      "quote": "Requisito que não foi escrito no começo vira discussão no fim do projeto.",
+      "bodyContinued": [
+        "Alguns requisitos não aparecem no briefing, mas precisam estar no levantamento. LGPD: todo formulário coleta dados pessoais, então defina para que serão usados, onde ficam guardados e quem tem acesso, e coloque o link da política de privacidade perto do botão de envio. Se o site usar cookies de análise ou de publicidade, planeje como informar o visitante e como obter o consentimento quando ele for necessário; o guia orientativo da ANPD sobre cookies ajuda nessa decisão. Acessibilidade: as diretrizes WCAG, do W3C, são a referência internacional, e contraste, texto alternativo, navegação por teclado e rótulos de formulário entram como requisito, não como extra. SEO: título e descrição únicos por página, endereços legíveis, conteúdo útil e o site cadastrado no Google Search Console.",
+        "Etapa 3: a proposta em níveis. Em vez de um preço único, apresente três pacotes com escopo crescente. O essencial cobre o que resolve o objetivo principal: poucas páginas, formulário de contato, layout responsivo, política de privacidade e configuração básica de SEO. O profissional acrescenta, por exemplo, mais páginas, blog, integração com e-mail marketing ou CRM e uma rodada extra de revisão. O premium pode incluir produção de textos, fotos com profissional contratado, área restrita ou treinamento para a equipe atualizar o site. O preço de cada nível sai das horas estimadas para o que ele inclui; o importante é que o cliente veja o que muda de um para outro e escolha com informação.",
+        "Em todos os níveis, escreva o que fica fora do escopo, quantas rodadas de revisão estão incluídas, quem paga domínio e hospedagem, como o prazo conta a partir da entrega do conteúdo e qual é a validade da proposta. O artigo Proposta de freelancer: escopo, prazo e preço para um pequeno cliente mostra uma proposta desse tipo seção por seção.",
+        "Etapa 4: o acompanhamento. Depois de enviar, combine uma data de retorno e faça o follow-up. Com a proposta aprovada, transforme os requisitos num cronograma com marcos de validação: mapa de páginas, layout, versão de testes e publicação. Cada pedido novo passa pela mesma pergunta: entra no nível contratado, vira um aditivo ou fica para uma segunda fase? Registrar a resposta por escrito protege os dois lados.",
+        "O programa MVP na Prática: Do Briefing à Validação com Baixo Custo aplica este roteiro a um site institucional real, com o cliente anonimizado, do levantamento de requisitos à proposta de escopo. Fundamentos de Projetos Tech: do Escopo à Entrega trabalha escopo, prazo, custo, stakeholders e riscos num projeto pequeno, do termo de abertura à retrospectiva."
+      ],
+      "sources": [
+        {
+          "label": "Guia orientativo: cookies e proteção de dados pessoais — ANPD",
+          "url": "https://www.gov.br/anpd/pt-br/documentos-e-publicacoes/guia-orientativo-cookies-e-protecao-de-dados-pessoais.pdf"
+        },
+        {
+          "label": "Introdução à acessibilidade web — W3C WAI",
+          "url": "https://www.w3.org/WAI/fundamentals/accessibility-intro/pt-BR"
+        },
+        {
+          "label": "Guia de otimização de mecanismos de pesquisa (SEO) para iniciantes — Google Search Central",
+          "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=pt-BR"
         }
       ]
     }

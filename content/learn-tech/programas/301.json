@@ -804,6 +804,10 @@
     {
       "label": "Business Wire — Postman 2025 State of the API Report",
       "url": "https://www.businesswire.com/news/home/20251008162423/en"
+    },
+    {
+      "label": "Microsoft Learn: Práticas recomendadas de design de API Web RESTful",
+      "url": "https://learn.microsoft.com/pt-br/azure/architecture/best-practices/api-design"
     }
   ]
 }

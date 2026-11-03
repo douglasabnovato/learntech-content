@@ -607,5 +607,78 @@
       ],
       "atualizadoEm": "2026-10-30"
     }
+  },
+  {
+    "title": "Sujeito Programador",
+    "duration": "Fullstack",
+    "thumb": "https://www.google.com/s2/favicons?domain=sujeitoprogramador.com&sz=128",
+    "site_url": "https://sujeitoprogramador.com/",
+    "category": "Tech Education",
+    "slug": "sujeito-programador",
+    "detalhe": {
+      "resumo": "Sujeito Programador é o canal e a plataforma de cursos de Matheus Fraga, desenvolvedor formado em Análise e Desenvolvimento de Sistemas, sobre desenvolvimento web e mobile. O conteúdo vai de HTML, CSS e JavaScript a React, React Native, Next.js e Node.js, com vídeos gratuitos no YouTube e cursos pagos no site.",
+      "paragrafos": [
+        "O trabalho se divide em três frentes: o canal no YouTube, com vídeos práticos de programação; o blog no site, com dicas e tutoriais; e os cursos pagos. Segundo a página do curso, Matheus Fraga trabalhou como freelancer criando sites e aplicativos e, depois da faculdade, criou o Sujeito Programador para ajudar iniciantes a entrar na área. No blog, os posts de 2026 tratam de assuntos como Docker, Node.js e PostgreSQL, agentes de IA e ferramentas para programar com IA, como Claude Code, Cursor e GitHub Copilot. Há ainda um grupo no Telegram ligado ao canal.",
+        "Os vídeos do canal costumam construir interfaces e aplicativos completos do começo ao fim. No GitHub, a organização sujeitoprogramador reúne 13 repositórios públicos em novembro de 2026, com o código de projetos mostrados nos vídeos, como a interface de um app de aluguel e de uma loja de tênis em React Native. Esses repositórios servem para comparar o seu código com o da aula quando algo não funciona. O foco em projetos visuais e em aplicativos mobile diferencia o canal de outros que tratam mais de teoria.",
+        "O caminho gratuito é começar pelos vídeos do YouTube, escolhendo um projeto curto e refazendo-o sozinho, sem pausar a cada linha. Um bom primeiro exercício é clonar um dos repositórios do GitHub, rodar o projeto na sua máquina e mudar uma tela ou uma regra para ver o efeito. Para quem quer uma trilha organizada, o curso Fullstack PRO, segundo a página oficial em novembro de 2026, vai de HTML, CSS e JavaScript a React, TypeScript, Next.js, Node.js, Prisma, PostgreSQL e NestJS, com um módulo de carreira. O site também oferece cursos separados de Git, Electron, desenvolvimento de aplicativos e design de interfaces.",
+        "Antes de comprar um curso, assista a alguns vídeos gratuitos para ver se o estilo de ensino combina com você e confira na página oficial o conteúdo de cada módulo. Páginas de venda costumam usar contagem regressiva e lotes, então decida com base no conteúdo, não na pressa. Tutoriais em vídeo ajudam muito no começo, mas o aprendizado se firma quando você constrói um projeto próprio, sem seguir a aula. Versões de bibliotecas mudam com o tempo, por isso consulte a documentação oficial quando um código antigo der erro.",
+        "No learnTECH, os programas \"JavaScript para Iniciantes: A Base da Web Moderna\" e \"React: Componentes, Estado e a Primeira Aplicação\" cobrem a mesma base que os vídeos do canal. O programa \"Git e GitHub: Fluxo de Trabalho em Equipe e Contribuição em Código Aberto\" ajuda a clonar e versionar os projetos dos repositórios. O artigo \"Construa interfaces modernas e escaláveis dominando os conceitos do React JS\" complementa o estudo de interfaces."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://sujeitoprogramador.com/"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/c/Sujeitoprogramador/"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/sujeitoprogramador"
+        },
+        {
+          "label": "Curso Fullstack PRO",
+          "url": "https://sujeitoprogramador.com/fullstackpro/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Sujeito Programador: Curso Fullstack PRO",
+          "url": "https://sujeitoprogramador.com/fullstackpro/"
+        },
+        {
+          "label": "Sujeito Programador: blog",
+          "url": "https://sujeitoprogramador.com/"
+        },
+        {
+          "label": "GitHub: organização sujeitoprogramador",
+          "url": "https://github.com/sujeitoprogramador"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "4"
+        },
+        {
+          "tipo": "programas",
+          "id": "101"
+        },
+        {
+          "tipo": "programas",
+          "id": "604"
+        },
+        {
+          "tipo": "blog",
+          "id": "react-interfaces-modernas"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "github"
+        }
+      ],
+      "atualizadoEm": "2026-11-03"
+    }
   }
 ]

@@ -823,6 +823,10 @@
     {
       "label": "GitHub Blog — Announcing Open Source Guides (opensource.guide)",
       "url": "https://github.blog/news-insights/announcing-open-source-guides/"
+    },
+    {
+      "label": "curso.dev (Filipe Deschamps): curso de programação web com a recriação do TabNews",
+      "url": "https://curso.dev/web"
     }
   ]
 }

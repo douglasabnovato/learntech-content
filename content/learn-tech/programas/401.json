@@ -795,6 +795,10 @@
     {
       "label": "EDB — PostgreSQL's incredible trip to the top with developers (2025)",
       "url": "https://enterprisedb.com/blog/postgresqls-incredible-trip-top-developers-0"
+    },
+    {
+      "label": "Microsoft Learn: Explorar conceitos fundamentais de dados relacionais",
+      "url": "https://learn.microsoft.com/pt-br/training/modules/explore-relational-data-offerings/"
     }
   ]
 }
