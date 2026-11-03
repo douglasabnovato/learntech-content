@@ -1,6 +1,6 @@
 # Estado do ecossistema: comece por aqui
 
-Ponto de entrada de toda conversa nova com o Claude. Atualizado ao fim de cada conversa. **Última atualização: 01/11/2026, 23h.**
+Ponto de entrada de toda conversa nova com o Claude. Atualizado ao fim de cada conversa. **Última atualização: 03/11/2026, 10h.**
 
 ## O que é
 O learnTECH treina pessoas para o ecossistema de tecnologia com o que o autor fez e com o que ele quer fazer. Uma API de conteúdo alimenta quatro sites:
@@ -23,7 +23,24 @@ Pasta local: `C:\douglasabnovato-github\mundo-learn-tech\`. O acervo bruto fica 
 - **Histórico por lote:** `docs/processo/lotes/`. Histórico por conversa: `docs/processo/conversas/`.
 - **Medição:** `npm run progresso` (placar), `npm run cobertura`, `npm run leva:status`.
 
-## Situação em 01/11/2026
+## Situação em 03/11/2026
+- **Publicado:** a branch `feature/tasks-01-11-2026-c` subiu nos cinco repositórios e a API foi publicada (versão `950f63cb`). Placar: 76/100, com Publicação em 100%.
+- **Protegido:** ruleset `main protegida` ativo nos cinco (check `verificar` obrigatório, sem force push, sem apagar a `main`). O merge passa a ser `--ff-only` depois da CI verde na branch (`docs/processo/README.md`).
+- **Branch do dia:** `feature/tasks-03-11-2026` nos cinco, sem commit. Contém:
+  - ações da CI em `@v5` nos cinco;
+  - lint do learn-tech zerado (70 → 0) e obrigatório na CI;
+  - `verificar.ps1` da career com `/`, sem `continue-on-error`;
+  - lint na CI da API;
+  - backlog, guia, processo e próximos passos atualizados.
+- **Falta para o critério "estável e público":**
+  - conferir os quatro sites no ar;
+  - rodar e2e e Lighthouse;
+  - o primeiro Run workflow do monitor de disponibilidade.
+
+  Plano: `docs/engenharia/plano-estabilidade-2026-11-03.md`.
+- **Alerta novo:** `hd/7-abc-projetos/` tem cerca de 3.150 arquivos fora do inventário (material do ex-empregador). Será uma remessa própria, com a seção 7 das regras editoriais.
+
+## Situação em 01/11/2026 (histórico)
 - **Placar:** 64/100 (conteúdo 84%, engenharia 66%, pendências do autor 6 concluídas e 8 em aberto, publicação 0% enquanto a branch do dia não sobe). Previsão: cerca de 74 depois do merge.
 - **Branch em aberto:** `feature/tasks-01-11-2026-c` nos cinco repositórios, sem commit. Contém a leva 1 (fase 1), os documentos de engenharia, os testes, a CI, os scripts de e2e e UX, SEO, os cabeçalhos de segurança, o monitoramento e os documentos de colaboração. Para subir: `docs/engenharia/guia-etapas-manuais.md`.
 - **Lotes:**

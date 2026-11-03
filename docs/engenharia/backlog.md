@@ -4,6 +4,8 @@ Itens mapeados em 30/10/2026 para levar a API e os quatro sites ao nível de MVP
 
 Regra: um item só é marcado com evidência (arquivo, script, relatório). O diagnóstico com notas de 0 a 10 refina esta lista.
 
+Regra (03/11/2026): teste ou script que o Claude escreve sem conseguir rodar fica descrito como "escrito, não executado" até o autor rodar e ver verde. Lição dos 2 testes do bootcamps que falharam na primeira execução por comparar referência (`toBe`) em vez de conteúdo (`toStrictEqual`).
+
 ## Base já existente
 - [x] API: schemas Zod e regras de integridade no build (learntech-content)
 - [x] API: testes automatizados com Vitest (learntech-content)
@@ -21,12 +23,14 @@ Regra: um item só é marcado com evidência (arquivo, script, relatório). O di
 - [x] Pasta `docs/` em cada site: setup do zero, arquitetura e decisões (learn-tech, bootcamps, career, tools) (`<site>/docs/README.md`)
 
 ## Qualidade de código e testes
-- [ ] Lint e formatação padronizados nos cinco projetos (incluir career e tools). Configurado em 01/11 (`eslint.config.js`, `.prettierrc.json`); falta instalar e rodar (guia, etapas 1 e 2)
-- [ ] Testes unitários no bootcamps. Escritos em 01/11 (`eventApi.test.ts`, `events.data.test.ts`); falta instalar o Vitest e ver verde
+- [x] Lint padronizado nos cinco projetos, com 0 erros (03/11: API, bootcamps, career e tools rodados pelo autor; learn-tech zerado de 70 para 0 na branch `feature/tasks-03-11-2026`). Lint obrigatório na CI da API e do learn-tech. A formatação geral com Prettier fica para uma rodada própria
+- [x] Testes unitários no bootcamps (`eventApi.test.ts`, `events.data.test.ts`: 7 de 7 verdes em 03/11, na máquina do autor e na CI)
 - [x] Testes nos sites estáticos career e tools (`tests/*.test.js`: 12 e 7 testes passando com `node --test` em 01/11)
 - [ ] Testes de ponta a ponta dos fluxos principais (abrir card, página de detalhe, filtros) com Playwright. Escritos em `e2e/`; falta rodar (guia, etapa 3)
 - [x] CI na career (`.github/workflows/ci.yml`) e testes na CI do tools e do bootcamps
-- [ ] Checagem da CI obrigatória antes do merge nos cinco repositórios (configuração no GitHub; guia, etapa 6)
+- [x] Checagem da CI obrigatória antes do merge nos cinco repositórios (ruleset `main protegida` ativo em 03/11: check `verificar`, sem force push e sem apagar a `main`)
+- [x] Ações da CI atualizadas para `checkout@v5` e `setup-node@v5` (Node 24) nos cinco repositórios (03/11)
+- [x] Verificação estática da career rodando no Linux da CI, sem `continue-on-error` (barras do `verificar.ps1` corrigidas em 03/11)
 
 ## Experiência, performance e acessibilidade
 - [ ] Metas de performance (Core Web Vitals, tamanho de bundle) medidas com Lighthouse nos quatro sites. Script `npm run ux:lighthouse` pronto; falta rodar (guia, etapa 4)

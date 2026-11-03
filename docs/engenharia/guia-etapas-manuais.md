@@ -2,7 +2,9 @@
 
 O Claude escreveu o código, as configurações e os testes. Estas etapas pedem a sua máquina (instalar dependências, rodar o navegador) ou a sua conta no GitHub. Faça em ordem. Cada etapa diz o que conferir e o que mandar de volta.
 
-Antes de tudo, as alterações estão na branch `feature/tasks-01-11-2026-c` dos cinco repositórios.
+**Situação em 03/11/2026:** as etapas 1, 2, 5 e 6 foram feitas pelo autor (branch `feature/tasks-01-11-2026-c` publicada nos cinco repositórios e ruleset ativo). Faltam as etapas 3, 4, 7 e 9. A etapa 8 foi resolvida pelo Claude na branch `feature/tasks-03-11-2026`.
+
+**Atenção:** com o ruleset ativo, o merge passa a ser `--ff-only` (etapa 5).
 
 ## 1. Instalar as dependências novas (atualiza o package-lock.json)
 A CI usa `npm ci`, que falha se o `package-lock.json` não acompanhar o `package.json`. Por isso este passo vem antes do commit.
@@ -59,11 +61,16 @@ npm run ux:lighthouse   # gera docs/engenharia/relatorios/lighthouse-AAAA-MM-DD.
 - O resumo fica na pasta e eu leio. As páginas que não baterem as metas viram tarefas de correção.
 
 ## 5. Commit, merge e deploy
-Siga o fluxo de sempre nos cinco repositórios, na branch `feature/tasks-01-11-2026-c`:
+Fluxo nos cinco repositórios, na branch do dia (`feature/tasks-DD-MM-AAAA`). Com o ruleset da etapa 6 ativo, a `main` só aceita commit que já passou na CI, por isso o merge é `--ff-only`:
 1. `git add -A` e `git commit`;
-2. `git push -u origin feature/tasks-01-11-2026-c`;
-3. merge na `main` e `git push origin main`;
-4. na API, `npm run deploy`.
+2. `git push -u origin feature/tasks-DD-MM-AAAA`;
+3. esperar o `verificar` ficar verde em Actions;
+4. `git checkout main && git pull origin main`;
+5. `git merge --ff-only feature/tasks-DD-MM-AAAA` e `git push origin main`;
+6. na API, `npm run deploy` (o `deploy.yml` só publica sozinho se os segredos da Cloudflare estiverem cadastrados);
+7. `git status` deve mostrar `nothing to commit, working tree clean`.
+
+Se o `--ff-only` recusar, a `main` andou depois da criação da branch: peça ao Claude os comandos para atualizar a branch.
 
 O que muda em cada repositório:
 - **API:** artigos e acervo da leva 1, `relacionados` nos eventos, lint e formato, e2e, scripts de UX, sitemaps, monitoramento de disponibilidade e documentos de engenharia.
@@ -76,7 +83,8 @@ O que muda em cada repositório:
 Em cada repositório (learntech-content, learn-tech, bootcamps, career, tools), no GitHub:
 1. **Settings** → **Branches** (ou **Rules** → **Rulesets**) → **Add branch ruleset** (ou "Add rule") para `main`.
 2. Marque **Require status checks to pass** e escolha o check da CI (`ci` / o job `verificar` ou `build`). Ele só aparece na lista depois da primeira execução da CI na branch nova.
-3. Se quiser manter o merge local pelo Git Bash, não marque "Require a pull request". O bloqueio continua valendo para push direto de código que não passou na CI, desde que a regra esteja ativa e você não esteja em "bypass".
+3. Para manter o merge pelo Git Bash, não marque "Require a pull request", deixe a bypass list vazia e use `git merge --ff-only` (etapa 5). Correção de 03/11: o `--no-ff` cria um commit de merge que nunca passou na CI, e o push dele é recusado.
+4. Configuração usada em 03/11 nos cinco: nome `main protegida`, Active, alvo Default, Restrict deletions, Block force pushes, Require status checks com o check `verificar` ("Do not require status checks on creation" marcado; "up to date" desmarcado).
 
 ## 7. Monitoramento de disponibilidade
 Depois do merge, na API, abra **Actions** → **disponibilidade** → **Run workflow** para testar. Depois ele roda sozinho a cada 6 horas. Se a API ou algum site cair, o GitHub avisa por e-mail.

@@ -21,7 +21,7 @@ Referência da colaboração entre o autor (Douglas) e o Claude para desenvolver
 |---|---|---|---|
 | 1 | Entregas enormes (mais de 160 arquivos num commit, mensagens genéricas, dias sem commit) | Commits por tema, com mensagem descritiva. O Claude entrega a lista de commits sugeridos | Nenhum commit com mais de cerca de 40 arquivos fora de conteúdo gerado |
 | 2 | Publicar sem revisar ("eu não conferi") | Pull request com pré-visualização: a CI roda, o Vercel gera o link e o autor olha antes do merge | Todo merge tem PR com CI verde |
-| 3 | Merge local direto na `main` | CI obrigatória na `main` (regra no GitHub) e merge pelo PR | Regra ativa nos 5 repositórios |
+| 3 | Merge local direto na `main` | CI obrigatória na `main` (regra no GitHub) e merge `--ff-only` depois da CI verde na branch | Regra ativa nos 5 repositórios (feito em 03/11/2026) |
 | 4 | Sessões gigantes misturando conteúdo, engenharia, processo e Git, com o contexto resumido no meio | Uma conversa por frente, com registro de passagem (`conversas/`) | Cada conversa termina com o registro preenchido |
 | 5 | Testes escritos pelo Claude, mas só executados na máquina do autor (`node_modules` de Windows) | Dar ao Claude acesso ao GitHub: a CI do PR vira a verificação, sem depender do notebook | O Claude lê o resultado da CI e corrige antes de pedir revisão |
 | 6 | Acreditar no "terminei" sem prova (o hd foi apagado antes da hora) | Toda conclusão vem com evidência: saída do script, teste verde, link da CI | Relatórios sempre com a saída de `progresso`, `leva:status` e `cobertura` |
