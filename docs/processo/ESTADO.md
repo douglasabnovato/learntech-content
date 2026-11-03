@@ -47,6 +47,7 @@ Pasta local: `C:\douglasabnovato-github\mundo-learn-tech\`. O acervo bruto fica 
 2. **Conteúdo, lote 2026-10-30:** fechar com os vídeos, a transcrição e a aprovação.
 3. **Conteúdo, leva 1:** 16 itens dependem do autor.
 4. **Remessa nova do hd:** quando o autor trouxer arquivos, seguir `docs/processo/README.md` desde a recepção.
+5. **Conteúdo a partir das issues (lote 2026-11-03):** fichas, artigos e fontes produzidos e aguardando A2. Perguntas ao autor postadas em 30 issues. Relatório e log de escolhas: `docs/processo/lotes/2026-11-03-issues.md`.
 
 ## Como abrir uma conversa nova
 Cole no início:
