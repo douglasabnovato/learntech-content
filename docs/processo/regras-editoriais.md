@@ -40,3 +40,13 @@ Claro, didático e direto, sem marketing e sem promessa ("passe na entrevista", 
 - Arquivos com dados de terceiros, marca de cliente ou credenciais não saem do hd. Mas o conhecimento que eles mostram (método, ferramenta, processo) vira conteúdo. No acervo, esses itens ficam como `referencia` e trazem os destinos onde o conhecimento foi usado.
 - Mesmo conteúdo estático ou curto já mapeado deve ganhar informação nova: contexto, fontes, relação com outros projetos.
 - Imagens parecidas e textos repetidos: publique só uma versão. Para imagens, use `python scripts/imagens-parecidas.py <pasta>`.
+
+## 7. Material de ex-empregadores (consolidado em 01/11/2026)
+Decisões do autor ao longo das levas 2 a 4, reunidas num lugar só:
+- **learn-tech (programas e artigos):** só o conhecimento, com empresa fictícia ("Rede Construir+"). Nada de marca, cliente, campanha nominal, número interno, nome de pessoa, telefone ou ID. Nunca escrever que a empresa fictícia é a real, nem que um programa "vem" da empresa real.
+- **career (página da empresa):** o nome real é permitido, contando a experiência do autor e o conteúdo técnico como aprendizado. Fatos públicos entram só com fonte. Processos internos, rituais com números, ferramentas internas, histórico de migração, nomes de holding sem fonte pública e eventos corporativos não entram.
+- **tools (fichas):** ferramentas públicas pelo nome; o uso no dia a dia descrito de forma genérica ("numa rede de varejo"), sem ligar a rede ao nome real nem a contratos e propostas de fornecedores.
+- **bootcamps:** eventos corporativos internos não viram página.
+- **Arquivos:** bases de clientes, credenciais, peças de marca e documentos internos nunca saem do hd. No acervo, ficam como `referencia`, com o destino onde o conhecimento foi usado.
+- **Pendente do autor:** reler as cláusulas de confidencialidade do contrato e confirmar ou ajustar esta seção.
+- **Checagem:** a revisão independente por amostra procura marcas, nomes e ligações entre a empresa fictícia e a real.

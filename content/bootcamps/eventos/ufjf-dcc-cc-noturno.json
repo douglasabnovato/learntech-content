@@ -70,6 +70,24 @@
         "label": "UFJF Ciência da Computação: Corpo docente noturno",
         "url": "https://www2.ufjf.br/cursocomputacao/noturno/"
       }
+    ],
+    "relacionados": [
+      {
+        "tipo": "programas",
+        "id": "901"
+      },
+      {
+        "tipo": "programas",
+        "id": "401"
+      },
+      {
+        "tipo": "eventos",
+        "id": "smc-2012"
+      },
+      {
+        "tipo": "eventos",
+        "id": "jogos-universitarios-juiz-de-fora"
+      }
     ]
   }
 }

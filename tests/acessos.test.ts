@@ -45,6 +45,24 @@ describe("GET /v1/saude", () => {
   });
 });
 
+describe("cabeçalhos das rotas dinâmicas", () => {
+  it("saúde e 404 saem com cabeçalhos de segurança e sem cache", async () => {
+    for (const caminho of ["/v1/saude", "/v1/nao-existe"]) {
+      const r = await app.request(caminho, {}, env);
+      expect(r.headers.get("X-Content-Type-Options")).toBe("nosniff");
+      expect(r.headers.get("Referrer-Policy")).toBe("no-referrer");
+      expect(r.headers.get("X-Frame-Options")).toBe("DENY");
+      expect(r.headers.get("Cache-Control")).toBe("no-store");
+    }
+  });
+
+  it("exportação de acessos (dados pessoais) não fica em cache", async () => {
+    const r = await admin("/v1/acessos?formato=csv");
+    expect(r.status).toBe(200);
+    expect(r.headers.get("Cache-Control")).toBe("no-store");
+  });
+});
+
 describe("POST /v1/acessos", () => {
   it("registra nome, e-mail normalizado, projeto, página e horário", async () => {
     const r = await postar(valido);

@@ -47,6 +47,16 @@
         "label": "DIO: Canais de vídeo-aulas voltados para TI (Curso em Vídeo)",
         "url": "https://www.dio.me/articles/canais-de-video-aulas-voltado-para-tecnologia-da-informacao"
       }
+    ],
+    "relacionados": [
+      {
+        "tipo": "programas",
+        "id": "901"
+      },
+      {
+        "tipo": "programas",
+        "id": "4"
+      }
     ]
   }
 }

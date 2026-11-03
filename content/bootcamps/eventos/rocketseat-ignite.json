@@ -58,6 +58,20 @@
         "label": "IT Forum: Rocketseat lança faculdade de tecnologia com pós em IA para devs",
         "url": "https://itforum.com.br/?p=9592600"
       }
+    ],
+    "relacionados": [
+      {
+        "tipo": "programas",
+        "id": "101"
+      },
+      {
+        "tipo": "programas",
+        "id": "104"
+      },
+      {
+        "tipo": "programas",
+        "id": "102"
+      }
     ]
   }
 }

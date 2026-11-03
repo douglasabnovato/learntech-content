@@ -53,6 +53,20 @@
         "label": "TabNews: Experiência no processo seletivo e formação da 42 SP",
         "url": "https://www.tabnews.com.br/iaurg/experiencia-no-processo-seletivo-e-formacao-da-42-sp"
       }
+    ],
+    "relacionados": [
+      {
+        "tipo": "programas",
+        "id": "901"
+      },
+      {
+        "tipo": "programas",
+        "id": "4"
+      },
+      {
+        "tipo": "blog",
+        "id": "escolher-formacao-dev"
+      }
     ]
   }
 }

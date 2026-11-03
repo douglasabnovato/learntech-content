@@ -21,7 +21,9 @@ Este documento é o roteiro de toda leva. Leia-o, junto com `regras-editoriais.m
 
 ### 1. Recepção
 - Confere se a `main` local de cada repositório é igual à do GitHub (`git ls-remote`) e se há commits fora da `main`, como uma developer à frente.
-- Cria `feature/tasks-DD-MM-AAAA` a partir da `main` nos 5 repositórios. Se a branch do dia já existir, trabalha nela.
+- **Regra de branches (01/11/2026):** cada dia de trabalho num repositório ganha uma branch nova, `feature/tasks-DD-MM-AAAA`, criada sempre a partir da `main`, que é a branch de produção e a mais atualizada. Antes, `git checkout main && git pull origin main`. As tarefas do dia ficam nessa branch. Se no mesmo dia já houve merge, a nova branch leva sufixo (`-b`, `-c`).
+- **Branch com pendência de um dia para o outro:** depende do contexto e do que for possível. Ou ela é terminada (commit, merge na `main`) antes de abrir a do dia novo, ou o dia novo começa numa branch nova a partir da `main` e a pendente é terminada depois, com merge próprio. Nunca se acumula trabalho de dias diferentes numa branch sem registrar no relatório do lote.
+- O Claude cria as branches localmente e não faz commit nem push. Quem envia é o autor.
 
 ### 2. Inventário
 - `npm run hd:inventariar` lista o que é **novo**, o que **já está registrado** e o que **já saiu do hd**.
@@ -155,6 +157,9 @@ hd ──(etapas 1-5)──► content/*.json ──(build: Zod + integridade)�
 - `checklists.md`: pronto para produzir, pronto para publicar e checklist do lote.
 - `pesquisa.md`: método de pesquisa, fontes confiáveis, números e orçamento.
 - `seguranca-privacidade.md`: LGPD, dados pessoais, imagens, segredos.
+- `ESTADO.md`: ponto de entrada de toda conversa nova (estado atual e frentes abertas).
+- `como-trabalhamos.md`: papéis, acertos, ajustes com métrica, fluxo de entrega e conversas múltiplas.
+- `conversas/`: registro de cada conversa (modelo no README da pasta).
 - `lotes/`: plano e relatório de cada leva.
 - `../../PROXIMOS-PASSOS.md`: tarefas pendentes do autor, numeradas, em ordem e com data.
 

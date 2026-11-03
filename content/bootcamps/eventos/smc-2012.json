@@ -30,6 +30,16 @@
         "label": "SBC: Escolas Regionais",
         "url": "https://www.sbc.org.br/escolas-regionais"
       }
+    ],
+    "relacionados": [
+      {
+        "tipo": "eventos",
+        "id": "ufjf-dcc-cc-noturno"
+      },
+      {
+        "tipo": "programas",
+        "id": "901"
+      }
     ]
   }
 }

@@ -72,6 +72,16 @@ export function criarApp(dep: Dependencias) {
     return null;
   };
 
+  /* Cabeçalhos de segurança em toda resposta dinâmica. Dados pessoais e administrativos não ficam em cache
+     (a política de cache do conteúdo estático está em public/_headers e em docs/engenharia/cache-e-versionamento.md). */
+  app.use("*", async (c, next) => {
+    await next();
+    c.res.headers.set("X-Content-Type-Options", "nosniff");
+    c.res.headers.set("Referrer-Policy", "no-referrer");
+    c.res.headers.set("X-Frame-Options", "DENY");
+    if (!c.res.headers.has("Cache-Control")) c.res.headers.set("Cache-Control", "no-store");
+  });
+
   app.get("/v1/saude", (c) => c.json({ status: "ok", versao: dep.versao ?? "dev", horario: agora().toISOString() }));
 
   app.options("/v1/acessos", (c) => {
@@ -208,8 +218,16 @@ export function criarApp(dep: Dependencias) {
   app.all("/v1/acessos", (c) => c.json({ erro: "método não permitido" }, 405));
   app.all("/v1/mensagens", (c) => c.json({ erro: "método não permitido" }, 405));
   app.notFound((c) => c.json({ erro: "não encontrado" }, 404));
+  /* Log estruturado (uma linha JSON) para filtrar no painel de observabilidade da Cloudflare (Workers Logs). */
   app.onError((e, c) => {
-    console.error("erro não tratado", e);
+    console.error(JSON.stringify({
+      nivel: "erro",
+      mensagem: e instanceof Error ? e.message : String(e),
+      metodo: c.req.method,
+      caminho: new URL(c.req.url).pathname,
+      ray: c.req.header("cf-ray") ?? null,
+      pilha: e instanceof Error ? e.stack?.split("\n").slice(0, 5).join(" | ") : undefined,
+    }));
     return c.json({ erro: "erro interno" }, 500);
   });
 

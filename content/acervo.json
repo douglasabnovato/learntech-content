@@ -96,9 +96,10 @@
       "origem": "documentos",
       "descricao": "Relatório de mercado sobre deep tech na América Latina (terceiro)",
       "direitos": "terceiro-citavel",
-      "estado": "planejado",
-      "destinos": [],
-      "proximaAcao": "Artigo \"Deep tech: do laboratório ao produto\" com citação e link oficial; referência nos programas 501 e 504",
+      "estado": "publicado",
+      "destinos": [
+        "learn-tech/blog/deep-tech-do-laboratorio-ao-produto"
+      ],
       "arquivos": [],
       "registradoSemHash": true
     },
@@ -121,10 +122,12 @@
       "lote": "2026-10-27",
       "origem": "documentos",
       "descricao": "Log técnico de driver de áudio",
-      "direitos": "descartar",
-      "estado": "nao-publicavel",
-      "destinos": [],
-      "proximaAcao": "Nenhuma (descartar)",
+      "direitos": "terceiro-citavel",
+      "estado": "referencia",
+      "destinos": [
+        "learn-tech/blog/comunicacao-nao-verbal-entrevistas"
+      ],
+      "proximaAcao": "O log não é publicado; virou dica de supressão de ruído em entrevistas online.",
       "arquivos": [],
       "registradoSemHash": true
     },
@@ -246,9 +249,11 @@
       "origem": "documentos",
       "descricao": "Slides de palestra sobre marketing digital para arquitetura e design",
       "direitos": "terceiro-citavel",
-      "estado": "planejado",
-      "destinos": [],
-      "proximaAcao": "Artigo sobre personas e funil com citação; evento só se assistiu",
+      "estado": "referencia",
+      "destinos": [
+        "learn-tech/blog/marketing-digital-para-arquitetura-e-design"
+      ],
+      "proximaAcao": "Slides da palestra não saem do acervo; o tema virou artigo próprio com pesquisa atual.",
       "arquivos": [],
       "registradoSemHash": true
     },
@@ -314,9 +319,11 @@
       "origem": "documentos",
       "descricao": "Apostila sobre criatividade e geração de ideias (terceiro)",
       "direitos": "terceiro-citavel",
-      "estado": "planejado",
-      "destinos": [],
-      "proximaAcao": "Artigo curto com resumo e citação",
+      "estado": "referencia",
+      "destinos": [
+        "learn-tech/blog/criatividade-e-geracao-de-ideias-para-devs"
+      ],
+      "proximaAcao": "Apostila de terceiro não é publicada; o tema virou artigo próprio com pesquisa atual.",
       "arquivos": [],
       "registradoSemHash": true
     },
@@ -441,9 +448,11 @@
       "origem": "documentos",
       "descricao": "Lista de obras em domínio público",
       "direitos": "terceiro-citavel",
-      "estado": "nao-publicavel",
-      "destinos": [],
-      "proximaAcao": "Nenhuma; no máximo link para o portal oficial",
+      "estado": "referencia",
+      "destinos": [
+        "learn-tech/blog/videoteca-e-leituras-para-autoconhecimento-e-carreira"
+      ],
+      "proximaAcao": "A lista não é publicada; o artigo indica o portal oficial Domínio Público.",
       "arquivos": [],
       "registradoSemHash": true
     },
@@ -496,8 +505,10 @@
       "descricao": "Livro sobre metas (Paulo Vieira)",
       "direitos": "terceiro-citavel",
       "estado": "referencia",
-      "destinos": [],
-      "proximaAcao": "Citação opcional num artigo de metas",
+      "destinos": [
+        "learn-tech/blog/videoteca-e-leituras-para-autoconhecimento-e-carreira"
+      ],
+      "proximaAcao": "Livro citado na estante do autor; o arquivo não é publicado.",
       "arquivos": [],
       "registradoSemHash": true
     },
@@ -535,9 +546,11 @@
       "origem": "documentos",
       "descricao": "Trechos de livro de reflexões pessoais",
       "direitos": "terceiro-citavel",
-      "estado": "nao-publicavel",
-      "destinos": [],
-      "proximaAcao": "Nenhuma (fora do escopo)",
+      "estado": "referencia",
+      "destinos": [
+        "learn-tech/blog/videoteca-e-leituras-para-autoconhecimento-e-carreira"
+      ],
+      "proximaAcao": "Livro citado na estante do autor; o arquivo não é publicado.",
       "arquivos": [],
       "registradoSemHash": true
     },
@@ -561,9 +574,11 @@
       "origem": "documentos",
       "descricao": "Romance de ficção",
       "direitos": "terceiro-citavel",
-      "estado": "nao-publicavel",
-      "destinos": [],
-      "proximaAcao": "Nenhuma (fora do escopo)",
+      "estado": "referencia",
+      "destinos": [
+        "learn-tech/blog/videoteca-e-leituras-para-autoconhecimento-e-carreira"
+      ],
+      "proximaAcao": "Livro citado na estante do autor; o arquivo não é publicado.",
       "arquivos": [],
       "registradoSemHash": true
     },
@@ -616,8 +631,10 @@
       "descricao": "Livro de filosofia e autoconhecimento",
       "direitos": "terceiro-citavel",
       "estado": "referencia",
-      "destinos": [],
-      "proximaAcao": "Citação opcional em artigo de soft skills",
+      "destinos": [
+        "learn-tech/blog/videoteca-e-leituras-para-autoconhecimento-e-carreira"
+      ],
+      "proximaAcao": "Livro citado na estante do autor; o arquivo não é publicado.",
       "arquivos": [],
       "registradoSemHash": true
     },
@@ -627,9 +644,11 @@
       "origem": "documentos",
       "descricao": "Livro sobre felicidade",
       "direitos": "terceiro-citavel",
-      "estado": "nao-publicavel",
-      "destinos": [],
-      "proximaAcao": "Nenhuma (fora do escopo)",
+      "estado": "referencia",
+      "destinos": [
+        "learn-tech/blog/videoteca-e-leituras-para-autoconhecimento-e-carreira"
+      ],
+      "proximaAcao": "Livro citado na estante do autor; o arquivo não é publicado.",
       "arquivos": [],
       "registradoSemHash": true
     },
@@ -654,8 +673,10 @@
       "descricao": "Livro sobre ansiedade",
       "direitos": "terceiro-citavel",
       "estado": "referencia",
-      "destinos": [],
-      "proximaAcao": "Só com indicação de ajuda profissional, num artigo de saúde mental na carreira",
+      "destinos": [
+        "learn-tech/blog/videoteca-e-leituras-para-autoconhecimento-e-carreira"
+      ],
+      "proximaAcao": "Livro citado com ressalva de saúde mental e indicação do CVV; o arquivo não é publicado.",
       "arquivos": [],
       "registradoSemHash": true
     },
@@ -896,10 +917,12 @@
       "lote": "2026-10-27",
       "origem": "eventos",
       "descricao": "Material de marca de um ex-empregador do varejo",
-      "direitos": "descartar",
-      "estado": "nao-publicavel",
-      "destinos": [],
-      "proximaAcao": "Nenhuma (marca de terceiros)",
+      "direitos": "sensivel-anonimizar",
+      "estado": "referencia",
+      "destinos": [
+        "career/empresas/abc-da-construcao"
+      ],
+      "proximaAcao": "Material de marca de terceiro: não é publicado; pertence à trajetória do autor na empresa.",
       "arquivos": [],
       "registradoSemHash": true
     },
