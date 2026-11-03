@@ -39,6 +39,16 @@
         "label": "InfoMoney: Faculdade XP, graduação EAD em Investimentos e Mercado Financeiro (2025)",
         "url": "https://www.infomoney.com.br/?p=2981906"
       }
+    ],
+    "relacionados": [
+      {
+        "tipo": "programas",
+        "id": "901"
+      },
+      {
+        "tipo": "blog",
+        "id": "escolher-formacao-dev"
+      }
     ]
   }
 }

@@ -194,6 +194,16 @@
         "tipo": "eventos",
         "id": "gdg-jf"
       }
+    ],
+    "sources": [
+      {
+        "label": "Sympla: CodeXperience Zona da Mata 2024 (9/11/2024, UniAcademia)",
+        "url": "https://www.sympla.com.br/evento/codexperience-zona-da-mata-2024/2600648"
+      },
+      {
+        "label": "Repórter Kadu Fontana: Felipe Rodrigues representa SJN no maior evento de profissionais T.I. da Zona da Mata (11/08/2023)",
+        "url": "https://reporterkadufontana.jor.br/2023/08/11/felipe-rodrigues-representa-sjn-no-maior-evento-de-profissionais-t-i-da-zona-da-mata/"
+      }
     ]
   }
 }

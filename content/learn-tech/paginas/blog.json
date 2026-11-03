@@ -4,12 +4,12 @@
       "id": "videoteca-e-leituras-para-autoconhecimento-e-carreira",
       "blogURL": "/blog/videoteca-e-leituras-para-autoconhecimento-e-carreira",
       "img": "https://cdn.pixabay.com/photo/2016/09/15/16/28/tree-1671079_1280.jpg",
-      "title": "Videoteca do autoconhecimento: palestras, livros e filmes para pensar a carreira",
+      "title": "Videoteca e estante do autoconhecimento: palestras, livros e filmes para pensar a carreira",
       "tag": "Carreira",
       "author": "Equipe learnTECH",
       "publishedAt": "2026-10-30",
-      "readingTime": "5 min",
-      "lead": "Antes de escolher entre front-end, dados ou produto, vale uma pergunta mais difícil: o que você quer da sua carreira e por quê? Reunimos a videoteca e as leituras de um curso de autoconhecimento e organizamos tudo por tema, com uma frase sobre o porquê de cada item. Não é para maratonar: escolha um tema, assista, anote o que mexeu com você e só então passe ao próximo.",
+      "readingTime": "7 min",
+      "lead": "Antes de escolher entre front-end, dados ou produto, vale uma pergunta mais difícil: o que você quer da sua carreira e por quê? Reunimos a videoteca e as leituras de um curso de autoconhecimento, somamos os livros que o autor do learnTECH guarda na própria estante e organizamos tudo por tema, com uma frase sobre o porquê de cada item. Não é para maratonar: escolha um tema, assista ou leia, anote o que mexeu com você e só então passe ao próximo.",
       "highlights": [
         {
           "label": "Contar a própria história",
@@ -20,8 +20,8 @@
           "description": "Ideias sobre excesso de opções, escolhas difíceis e múltiplos interesses."
         },
         {
-          "label": "Mentalidade e hábitos",
-          "description": "Livros e vídeos sobre crescimento, perspectiva e pequenas mudanças que se acumulam."
+          "label": "Mentalidade, metas e estante",
+          "description": "Livros e vídeos sobre crescimento, hábitos e metas, mais a biblioteca pessoal do autor, da filosofia à ficção."
         }
       ],
       "body": [
@@ -34,7 +34,8 @@
         "Tema 4, sentido e resiliência. Em Busca de Sentido, de Viktor Frankl, é a leitura de base: escrito por um psiquiatra que sobreviveu a campos de concentração, sustenta que sempre resta a liberdade de escolher como responder ao que acontece. 3 things I learned while my plane crashed, de Ric Elias, passageiro de um avião que fez um pouso forçado, é um lembrete curto sobre não adiar o que importa. Embrace the shake, do artista Phil Hansen, conta como um tremor nas mãos virou ponto de partida criativo, uma boa analogia para limitações de prazo, orçamento ou tecnologia.",
         "Tema 5, escolhas e carreira. The paradox of choice, de Barry Schwartz, mostra por que opções demais geram ansiedade e frustração, sensação conhecida de quem olha a lista infinita de linguagens e frameworks. How to make hard choices, da filósofa Ruth Chang, propõe decidir com base nos seus valores quando nenhuma opção é claramente melhor. What makes us feel good about our work?, de Dan Ariely, mostra que sentido e reconhecimento pesam tanto quanto dinheiro na motivação. How to find work you love, de Scott Dinsmore, dá passos práticos para conectar paixões e trabalho. Why some of us don't have one true calling, de Emilie Wapnick, acolhe quem gosta de muitas coisas e mostra como isso pode ser vantagem, algo comum em quem transita entre design, código e produto. How to know your life purpose in 5 minutes, de Adam Leipzig (TEDxMalibu), resume propósito em perguntas simples sobre quem você é e a quem serve. Para fechar com provocação, Why you will fail to have a great career, de Larry Smith, desmonta uma a uma as desculpas para não perseguir o que você quer. O curso também indica um vídeo da agência de tendências Box1824 sobre como as motivações mudaram entre gerações.",
         "Tema 6, futuro e hábitos. The psychology of your future self, de Dan Gilbert, explica por que subestimamos o quanto ainda vamos mudar, um bom argumento contra decisões de carreira definitivas aos vinte anos. Try something new for 30 days, de Matt Cutts, sugere experimentos de 30 dias, ótimo formato para testar uma nova linguagem ou rotina de estudos. Are you human?, de Ze Frank, é uma sequência bem-humorada de perguntas sobre o que temos em comum. Nos livros, O Poder do Hábito, de Charles Duhigg, explica o ciclo gatilho, rotina e recompensa; Inteligência Positiva, de Shirzad Chamine, ajuda a reconhecer as vozes internas que sabotam seu desempenho; e Metas que Desafiam, de Mark Murphy, discute como definir objetivos ambiciosos que realmente engajam.",
-        "Como usar esta lista: escolha um tema por semana, assista a uma palestra e leia um capítulo, e registre três coisas, o que você aprendeu sobre si, o que quer mudar e qual é o primeiro passo. A maioria das palestras do TED tem legendas em português no próprio site. Se você está em transição para tecnologia, esse exercício vale tanto quanto o próximo curso técnico: saber por que você quer estar na área é o que te segura quando o primeiro projeto der errado."
+        "Estante do autor. Quem criou o learnTECH passou por faculdade interrompida, contact center, suporte técnico, startup própria e CRM, e alguns livros acompanharam essas viradas. As 6 Chaves para Conquistar suas Metas, de Paulo Vieira, entra pela parte prática: transformar um desejo vago, como mudar para tecnologia, em metas com prazo e plano; a ressalva é ler com senso crítico a promessa de resultado rápido comum no gênero de desenvolvimento pessoal e testar o método no seu ritmo. Em Busca de Nós Mesmos, diálogo do filósofo Clóvis de Barros Filho com o pesquisador Pedro Calabrez, percorre como a filosofia e a neurociência responderam às grandes perguntas da existência, um contrapeso para quem passa o dia resolvendo só perguntas técnicas. A Arte da Felicidade, conversas do Dalai Lama com o psiquiatra Howard Cutler, junta ensinamentos budistas e psicologia para tratar bem-estar como algo que também se cultiva por dentro, útil quando o ambiente de trabalho é acelerado e cheio de cobrança. Cartas entre Amigos: Sobre Ganhar e Perder, troca de cartas entre Fábio de Melo e Gabriel Chalita, ajuda a pensar vitórias e derrotas, como o processo seletivo que não deu certo ou o projeto que foi descontinuado. E O Caçador de Pipas, de Khaled Hosseini, lembra que ler ficção fora da tecnologia descansa a mente, treina empatia para entender usuários e colegas e melhora a escrita, habilidade que pesa em documentação, e-mails e apresentações.",
+        "Ansiedade: Como Enfrentar o Mal do Século, de Augusto Cury, também está na estante, porque prazos, entrevistas e aprendizado constante pressionam a cabeça de quem trabalha com tecnologia. Ressalva clara: livro ajuda a refletir, mas não substitui cuidado profissional. Se a ansiedade atrapalha o sono, o trabalho ou os estudos, procure um psicólogo, um psiquiatra ou a unidade de saúde mais próxima; em momentos de crise, o CVV (Centro de Valorização da Vida) atende gratuitamente pelo telefone 188 e pelo site cvv.org.br. Para os clássicos, o caminho legal e gratuito é o portal Domínio Público (www.dominiopublico.gov.br), biblioteca virtual mantida pelo Ministério da Educação desde 2004, onde estão obras de Machado de Assis, como Dom Casmurro, de Fernando Pessoa, como Mensagem, e de Shakespeare, como Romeu e Julieta. Como usar esta lista: escolha um tema por semana, assista a uma palestra e leia um capítulo, e registre três coisas, o que você aprendeu sobre si, o que quer mudar e qual é o primeiro passo. A maioria das palestras do TED tem legendas em português no próprio site. Se você está em transição para tecnologia, esse exercício vale tanto quanto o próximo curso técnico: saber por que você quer estar na área é o que te segura quando o primeiro projeto der errado."
       ],
       "sources": [
         {
@@ -64,6 +65,30 @@
         {
           "label": "Matt Cutts: Try something new for 30 days — TED",
           "url": "https://www.ted.com/talks/matt_cutts_try_something_new_for_30_days"
+        },
+        {
+          "label": "Em busca de nós mesmos — e de respostas (Clóvis de Barros Filho e Pedro Calabrez) — Correio Braziliense",
+          "url": "https://blogs.correiobraziliense.com.br/servidor/em-busca-de-nos-mesmos-e-de-respostas/"
+        },
+        {
+          "label": "Estes 7 livros sobre felicidade podem transformar seu dia a dia (A Arte da Felicidade, Dalai Lama e Howard Cutler) — Fast Company Brasil",
+          "url": "https://fastcompanybrasil.com/worklife/estes-7-livros-sobre-felicidade-podem-transformar-seu-dia-a-dia/"
+        },
+        {
+          "label": "Ansiedade: como enfrentar o mal do século, de Augusto Cury (Saraiva, 2015) — catálogo da Biblioteca do IFAC",
+          "url": "https://biblioteca.ifac.edu.br//bib/34463"
+        },
+        {
+          "label": "Cartas entre amigos: sobre ganhar e perder, de Fábio de Melo e Gabriel Chalita (Globo, 2010) — catálogo da Biblioteca do IFAC",
+          "url": "https://biblioteca.ifac.edu.br//bib/34362"
+        },
+        {
+          "label": "De Machado de Assis a Fernando Pessoa: os 10 livros em domínio público mais baixados do Brasil (23/04/2026) — Folha de Pernambuco",
+          "url": "https://www.folhape.com.br/cultura/de-machado-de-assis-a-fernando-pessoa-os-10-livros-em-dominio-publico/482611/"
+        },
+        {
+          "label": "Dia Mundial do Livro: como baixar gratuitamente obras no portal Domínio Público — Hoje em Dia",
+          "url": "https://www.hojeemdia.com.br/primeiro-plano/dia-mundial-do-livro-saiba-como-baixar-gratuitamente-mais-de-100-mil-obras-na-internet-1.709397"
         }
       ]
     },
@@ -130,7 +155,7 @@
     {
       "id": "gestao-de-growth-em-ciclos-semanais",
       "blogURL": "/blog/gestao-de-growth-em-ciclos-semanais",
-      "img": "https://cdn.pixabay.com/photo/2020/12/03/23/35/work-5801876_1280.jpg",
+      "img": "/media/learn-tech/blog/gestao-de-growth-em-ciclos-semanais.webp",
       "title": "Gestão de growth em ciclos semanais: uma planilha, cinco dias e nenhuma desculpa",
       "tag": "Carreira",
       "author": "Equipe learnTECH",
@@ -298,7 +323,7 @@
     {
       "id": "marketing-com-clubes-de-futebol-no-varejo",
       "blogURL": "/blog/marketing-com-clubes-de-futebol-no-varejo",
-      "img": "https://cdn.pixabay.com/photo/2019/09/23/12/02/rugby-4498375_1280.jpg",
+      "img": "/media/learn-tech/blog/marketing-com-clubes-de-futebol-no-varejo.webp",
       "title": "Marketing com clubes de futebol no varejo: da camisa ao relatório de leads",
       "tag": "Tecnologia",
       "author": "Equipe learnTECH",
@@ -356,7 +381,7 @@
     {
       "id": "editais-de-fomento-a-inovacao-como-ler-e-onde-encontrar",
       "blogURL": "/blog/editais-de-fomento-a-inovacao-como-ler-e-onde-encontrar",
-      "img": "https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_1280.jpg",
+      "img": "/media/learn-tech/blog/editais-de-fomento-a-inovacao-como-ler-e-onde-encontrar.webp",
       "title": "Editais de fomento à inovação: como ler e onde encontrar",
       "tag": "Carreira",
       "author": "Equipe learnTECH",
@@ -423,7 +448,7 @@
     {
       "id": "atleticas-universitarias-esporte-e-universidade",
       "blogURL": "/blog/atleticas-universitarias-esporte-e-universidade",
-      "img": "https://cdn.pixabay.com/photo/2019/09/23/12/02/rugby-4498375_1280.jpg",
+      "img": "/media/learn-tech/blog/atleticas-universitarias-esporte-e-universidade.webp",
       "title": "Atléticas e esporte universitário: um motivo a mais para entrar (e ficar) na universidade",
       "tag": "Carreira",
       "author": "Equipe learnTECH",
@@ -663,7 +688,7 @@
     {
       "id": "lgpd-nas-comunicacoes-de-crm",
       "blogURL": "/blog/lgpd-nas-comunicacoes-de-crm",
-      "img": "https://cdn.pixabay.com/photo/2019/10/03/12/12/hacker-4523097_1280.jpg",
+      "img": "/media/learn-tech/blog/lgpd-nas-comunicacoes-de-crm.webp",
       "title": "LGPD nas comunicações de CRM: base legal, descadastro e registro em e-mail, SMS e WhatsApp",
       "tag": "Tecnologia",
       "author": "Equipe learnTECH",
@@ -874,6 +899,14 @@
         {
           "label": "The STAR Method — SuccessWorks, University of Wisconsin–Madison",
           "url": "https://successworks.wisc.edu/the-basics/preparing-for-your-interview-2/the-star-method/"
+        },
+        {
+          "label": "Na Prática (Fundação Estudar): Descubra para que serve cada uma das etapas de um processo seletivo (29/03/2021)",
+          "url": "https://www.napratica.org.br/etapas-de-um-processo-seletivo/"
+        },
+        {
+          "label": "University of Washington Career & Internship Center: STAR Method of Interviewing (22/05/2020, atualizado em 08/08/2025)",
+          "url": "https://careers.uw.edu/resources/star-method-of-interviewing/"
         }
       ]
     },
@@ -915,6 +948,10 @@
         {
           "label": "AMPscript Guide — Salesforce Developers",
           "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud-ampscript/guide"
+        },
+        {
+          "label": "eduCAPES / IFSul (ProfEPT): Revista digital Noções de direitos trabalhistas para a EJA (maio/2025)",
+          "url": "https://educapes.capes.gov.br/bitstream/capes/1131616/4/REVISTA_No%c3%a7%c3%b5es_de_Direitos_Trabalhistas_para%20EJA_final.pdf"
         }
       ]
     },
@@ -1047,6 +1084,14 @@
         {
           "label": "CodeXperience Zona da Mata 2023 (Sympla)",
           "url": "https://www.sympla.com.br/evento/codexperience-zona-da-mata-2023/2056505"
+        },
+        {
+          "label": "Princeton University Center for Career Development: Developing Your Elevator Pitch",
+          "url": "https://careerdevelopment.princeton.edu/node/887"
+        },
+        {
+          "label": "Repórter Kadu Fontana: Felipe Rodrigues representa SJN no maior evento de profissionais T.I. da Zona da Mata (11/08/2023)",
+          "url": "https://reporterkadufontana.jor.br/2023/08/11/felipe-rodrigues-representa-sjn-no-maior-evento-de-profissionais-t-i-da-zona-da-mata/"
         }
       ]
     },
@@ -1175,6 +1220,10 @@
         {
           "label": "Banco Central do Brasil: programa de educação financeira e Caderno de Educação Financeira",
           "url": "https://www.bcb.gov.br/pre/surel/reladmbc/2013/o-banco-central-do-brasil-e-a-sociedade/cidadania-e-sistema-financeiro/educacao-financeira.html"
+        },
+        {
+          "label": "Correio Braziliense: A regra orçamentária 50/30/20 ainda funciona? (26/10/2025)",
+          "url": "https://www.correiobraziliense.com.br/cbradar/a-regra-orcamentaria-50-30-20-ainda-funciona/"
         }
       ]
     },
@@ -1209,13 +1258,17 @@
       "quote": "Ninguém contrata uma postura perfeita. Contrata alguém que parece presente na conversa.",
       "bodyContinued": [
         "Carnegie chega ao mesmo ponto pelo lado do relacionamento. Um dos princípios do livro é \"Seja um bom ouvinte. Incentive os outros a falar sobre eles mesmos.\" Na entrevista, isso significa ouvir a pergunta inteira, repetir com suas palavras o que entendeu e reservar o fim para perguntar sobre o time e o produto. Na daily, quando alguém relata um bloqueio, olhe para a câmera ou para a pessoa, não abra outra aba, e ofereça ajuda logo depois da reunião.",
-        "No remoto, o corpo aparece em um retângulo pequeno, então os detalhes pesam mais. Deixe a câmera na altura dos olhos, a luz de frente para o rosto e um fundo simples. Use fone para evitar eco, olhe para a câmera ao dizer algo importante e reaja com acenos visíveis quando o microfone estiver desligado. Em apresentações, compartilhe só a janela necessária, aumente a fonte do editor e faça pausas curtas para perguntas.",
+        "No remoto, o corpo aparece em um retângulo pequeno, então os detalhes pesam mais. Deixe a câmera na altura dos olhos, a luz de frente para o rosto e um fundo simples. Use fone para evitar eco e ative a supressão de ruído, seja a do driver de áudio do notebook, seja a da própria ferramenta (no Teams, fica em Configurações, Dispositivos), olhe para a câmera ao dizer algo importante e reaja com acenos visíveis quando o microfone estiver desligado. Em apresentações, compartilhe só a janela necessária, aumente a fonte do editor e faça pausas curtas para perguntas.",
         "Cuidado com o exagero. Linguagem corporal usada como truque soa artificial, e diferenças culturais ou de neurodivergência mudam muito o contato visual e os gestos de cada pessoa. O objetivo é tirar ruído da conversa, não interpretar um papel. Um treino simples: grave uma simulação de entrevista de dez minutos, assista primeiro sem som e depois só ouça. Você vai notar o que comunica sem perceber."
       ],
       "sources": [
         {
           "label": "Dale Carnegie: página oficial do livro How to Win Friends and Influence People",
           "url": "https://dalecarnegie.com/en/books/how-to-win-friends-influence-people"
+        },
+        {
+          "label": "Microsoft Support: Reduce background noise in Teams meetings",
+          "url": "https://support.microsoft.com/en-us/office/reduce-background-noise-in-teams-meetings-1a9c6819-137d-4b3b-a1c8-4ab20b234c0d"
         }
       ]
     },
@@ -1391,6 +1444,10 @@
         {
           "label": "MDN Web Docs — JavaScript",
           "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+        },
+        {
+          "label": "Library of Congress (Sustainability of Digital Formats): ECMAScript Language (ECMA-262), including JavaScript (atualizado em 28/10/2019)",
+          "url": "https://loc.gov/preservation/digital/formats/fdd/fdd000443.shtml"
         }
       ]
     },
@@ -1404,7 +1461,7 @@
       "author": "Equipe learnTECH",
       "publishedAt": "2026-07-15",
       "readingTime": "2 min",
-      "lead": "React é a biblioteca JavaScript mais usada do mundo para construir interfaces — mantida pela Meta e adotada por empresas de todos os portes. Mas o que faz ela valer a pena não é popularidade: é uma forma diferente de pensar a tela, dividida em pedaços pequenos e reutilizáveis, em vez de um documento único e monolítico.",
+      "lead": "React é a biblioteca JavaScript mais usada do mundo para construir interfaces — criada pela Meta e, desde outubro de 2025, mantida pela React Foundation, da Linux Foundation e adotada por empresas de todos os portes. Mas o que faz ela valer a pena não é popularidade: é uma forma diferente de pensar a tela, dividida em pedaços pequenos e reutilizáveis, em vez de um documento único e monolítico.",
       "highlights": [
         {
           "label": "Componentes",
@@ -1432,6 +1489,10 @@
         {
           "label": "React — Documentação oficial (react.dev)",
           "url": "https://react.dev/"
+        },
+        {
+          "label": "Linux Foundation: Linux Foundation Announces Intent to Launch the React Foundation (07/10/2025)",
+          "url": "https://www.linuxfoundation.org/press/linux-foundation-announces-intent-to-launch-the-react-foundation"
         }
       ]
     },
@@ -1494,7 +1555,7 @@
         },
         {
           "label": "Papéis",
-          "description": "Product Owner (prioriza o quê fazer), Scrum Master (remove obstáculo), Time de Desenvolvimento (faz o trabalho)."
+          "description": "Product Owner (prioriza o quê fazer), Scrum Master (remove obstáculo), Developers (no Scrum Guide anterior a 2020, Time de Desenvolvimento) (faz o trabalho)."
         },
         {
           "label": "Cerimônias",
@@ -1514,6 +1575,10 @@
         {
           "label": "The Scrum Guide — Ken Schwaber e Jeff Sutherland",
           "url": "https://scrumguides.org/"
+        },
+        {
+          "label": "Scrum Alliance: How Scrum & Scrum Teams Work",
+          "url": "https://resources.scrumalliance.org/Article/how-scrum-scrum-teams-work"
         }
       ]
     },
@@ -1804,7 +1869,7 @@
       "bodyContinued": [
         "A véspera é uma operação de compras. Retirar material com fornecedores, guardar as notas fiscais de cada compra para a prestação de contas, separar kits, camisetas e cordões por participante e passar no supermercado com uma lista em post-it: 15 pacotes de macarrão instantâneo, 15 de pipoca de micro-ondas, energético, cafeteira e cápsulas. O espaço também conta: mesas para os times, um auditório com arquibancada para abertura e pitches e até uma piscina de bolinhas para quem precisava desligar por alguns minutos. Guias de organização como o da Major League Hacking tratam fornecedores de comida, restrições alimentares, distribuição de refeições e plano de emergência como capítulos próprios, e a experiência confirma: de madrugada, quem está com fome ou sem lugar para descansar não programa.",
         "A abertura foi no megafone, chamando os participantes para o auditório, com um slide que explicava o que era esperado no dia seguinte. Expectativa clara na abertura evita metade das dúvidas da madrugada. Durante a noite, os times trabalharam enquanto parte das pessoas dormia em pufes, e a equipe de apoio se revezava para manter café, comida e respostas. Um detalhe de ética merece registro: o café expresso foi vendido a R$ 3, com caixinha ou Pix, e o anúncio deixava claro que o lucro seria doado para uma ONG da cidade. Num evento de inovação social, transparência sobre para onde vai o dinheiro faz parte da mensagem.",
-        "O encerramento teve pitches no auditório, foto oficial e anúncio do primeiro lugar, que levou seis meses de acesso ao hub do Moinho. Depois vieram o álbum de fotos compartilhado com os participantes, a divulgação pelo Sebrae Minas e uma mensagem no grupo que resume o espírito: fim da maratona, ganhou a cidade, ganhou o ecossistema de inovação de Juiz de Fora. Um dos organizadores lembrou que a equipe de apoio esteve do começo ao fim, depois de umas 30 horas de atividades intensas. Para quem está entrando no mercado, ser voluntário em algo assim ensina na prática gestão de fornecedores, comunicação, prazos e atendimento sob pressão, coisas que nenhum currículo prova tão bem quanto uma maratona que deu certo.",
+        "O encerramento teve pitches no auditório, foto oficial e anúncio das equipes premiadas, que receberam seis meses de acesso ao hub do Moinho. Depois vieram o álbum de fotos compartilhado com os participantes, a divulgação pelo Sebrae Minas e uma mensagem no grupo que resume o espírito: fim da maratona, ganhou a cidade, ganhou o ecossistema de inovação de Juiz de Fora. Um dos organizadores lembrou que a equipe de apoio esteve do começo ao fim, depois de umas 30 horas de atividades intensas. Para quem está entrando no mercado, ser voluntário em algo assim ensina na prática gestão de fornecedores, comunicação, prazos e atendimento sob pressão, coisas que nenhum currículo prova tão bem quanto uma maratona que deu certo.",
         "Checklist para ser voluntário ou organizar o primeiro hackathon: (1) comece com pelo menos três meses de antecedência e mobilize a comunidade antes de anunciar; (2) feche identidade visual, crachá e cordão cedo, porque fornecedor tem prazo de produção; (3) escreva regras de time inclusivas e ofereça mais de uma forma de entrar num grupo; (4) faça encontros online na semana anterior para formar times e apresentar os desafios; (5) tenha um plano de comunicação pronto para mudança de data; (6) monte a lista de compras da madrugada e guarde todas as notas fiscais; (7) prepare espaço de trabalho, de descanso e de apresentação; (8) deixe claro na abertura o que se espera de cada time no dia seguinte; (9) se vender algo durante o evento, diga para onde vai o dinheiro; (10) organize revezamento da equipe de apoio; (11) feche com foto, álbum compartilhado e agradecimento público aos apoiadores."
       ],
       "sources": [
@@ -1817,12 +1882,12 @@
           "url": "https://forbes.com.br/forbes-tech/2021/04/juiz-de-fora-ganha-hub-de-inovacao-e-empreendedorismo/"
         },
         {
-          "label": "I Festival de Inovação Social de Juiz de Fora acontece nesta quinta e sexta — Tribuna de Minas (nov/2022)",
-          "url": "https://tribunademinas.com.br/noticias/economia/01-11-2022/i-festival-de-inovacao-social-de-juiz-de-fora-acontece-nestas-quinta-e-sexta.html?amp=1"
-        },
-        {
           "label": "Maratona propõe soluções tecnológicas para JF — Critt/UFJF (jun/2018)",
           "url": "https://www2.ufjf.br/critt/?p=14957"
+        },
+        {
+          "label": "Tribuna de Minas: PJF e Moinho realizam hackathon para projetos de tecnologia nas áreas de saúde e educação (18/01/2023)",
+          "url": "https://tribunademinas.com.br/noticias/cidade/18-01-2023/pjf-e-moinho-realizam-hackathon-para-projetos-de-tecnologia-nas-areas-de-saude-e-educacao.html"
         }
       ]
     },
@@ -1851,14 +1916,14 @@
         }
       ],
       "body": [
-        "O Fator S Challenge 2023 aconteceu de 19 a 21 de maio no Moinho, em Juiz de Fora, como um ideathon do Sebrae Minas com a Wabtec e a Mhark, sobre o futuro do transporte ferroviário de carga. O roteiro é típico desse formato: abertura e palestra sobre tecnologia, inovação e sustentabilidade, workshop de definição do problema com quadro de post-its, mentoria de pitch, esboços da solução em papel, Business Model Canvas preenchido em grupo e, no último dia, pitches no palco e premiação. Participamos com uma equipe multidisciplinar e o projeto Fuser. Na mesma temporada, o Startup Way Challenge 2023, com regulamento e cronograma próprios, pediu a mesma disciplina: entender o problema antes de se apaixonar pela solução.",
-        "A primeira ferramenta é a Matriz CSD, um quadro de três colunas. Em Certezas vai o que a equipe já sabe com base em dados; em Suposições, as hipóteses que fazem sentido mas ainda precisam ser testadas; em Dúvidas, as perguntas para as quais ainda não há informação. No Fuser, uma certeza era pública: a concessionária que opera a ligação entre o porto de Itaguaí e São Paulo informa que 20% das exportações brasileiras passam por seus trilhos, numa malha de 1.643 km entre Minas Gerais, Rio de Janeiro e São Paulo, com investimentos previstos até 2056 depois da renovação antecipada da concessão. Uma suposição era que composições voltam vazias em parte dos trechos. Uma dúvida era se pequenos embarcadores aceitariam trocar o caminhão pelo trem. A matriz deixa claro o que o pitch pode afirmar e o que precisa ser apresentado como hipótese.",
+        "Em maio de 2023, participamos do Fator S Challenge, um ideathon do Sebrae Minas no Moinho, em Juiz de Fora, sobre o futuro do transporte ferroviário de carga. O roteiro é típico desse formato: abertura e palestra sobre tecnologia, inovação e sustentabilidade, workshop de definição do problema com quadro de post-its, mentoria de pitch, esboços da solução em papel, Business Model Canvas preenchido em grupo e, no último dia, pitches no palco e premiação. Participamos com uma equipe multidisciplinar e o projeto Fuser. Na mesma temporada, a participação do autor no Startup Way Challenge 2023 pediu a mesma disciplina: entender o problema antes de se apaixonar pela solução.",
+        "A primeira ferramenta é a Matriz CSD, um quadro de três colunas. Em Certezas vai o que a equipe já sabe com base em dados; em Suposições, as hipóteses que fazem sentido mas ainda precisam ser testadas; em Dúvidas, as perguntas para as quais ainda não há informação. No Fuser, uma certeza era pública: a concessionária que opera a principal malha ferroviária de carga do Sudeste informa que 20% das exportações brasileiras passam por seus trilhos, numa malha de 1.643 km entre Minas Gerais, Rio de Janeiro e São Paulo, com investimentos previstos até 2056 depois da renovação antecipada da concessão. Uma suposição era que composições voltam vazias em parte dos trechos. Uma dúvida era se pequenos embarcadores aceitariam trocar o caminhão pelo trem. A matriz deixa claro o que o pitch pode afirmar e o que precisa ser apresentado como hipótese.",
         "O problema foi desenhado dos dois lados. De um lado, um empreendedor de triagem de resíduos que sofre com acidentes rodoviários e com produtos leves que ocupam muito espaço no caminhão. Do outro, a concessionária ferroviária, que tem custo rodando vazia. O mercado escolhido foi a carga geral entre São Paulo e Rio de Janeiro, os dois maiores PIBs do país: segundo as Contas Regionais do IBGE divulgadas em novembro de 2024, o Sudeste concentrou 53,3% do PIB nacional em 2022, com São Paulo perto de 31% e o Rio de Janeiro com 11,4%. Dado de mercado entra no pitch sempre com fonte e ano, e vale conferir na véspera, porque séries do IBGE são revistas."
       ],
       "quote": "Matriz CSD bem feita não serve para parecer certo. Serve para mostrar à banca exatamente o que você ainda precisa testar.",
       "bodyContinued": [
         "A segunda ferramenta é o Canvas. O Business Model Canvas, de Alexander Osterwalder e Yves Pigneur, tem nove blocos: proposta de valor, segmentos de clientes, canais, relacionamento com clientes, fluxos de receita, recursos-chave, atividades-chave, parcerias-chave e estrutura de custos. O Lean Canvas, de Ash Maurya, troca parte desses blocos por problema, solução, métricas-chave e vantagem injusta, e por isso costuma encaixar melhor em ideias de startup com muita incerteza. No Fuser, o BMC foi preenchido com post-its: proposta de valor como app que ocupa a capacidade ociosa das composições que voltam vazias no trecho Itaguaí–São Paulo; segmentos com embarcadores de carga geral e a própria concessionária; receita com taxa de uso do app e percentual por transporte; parcerias-chave com a operadora ferroviária. Um bom teste é ler o canvas em voz alta: se um bloco não conversa com o outro, a banca vai perceber.",
-        "Para dimensionar o problema, a equipe fez uma estimativa simples do custo de uma composição rodando vazia, só com combustível. A fórmula é custo por viagem = consumo médio (L/km) × distância (km) × preço do diesel (R$/L). Com as premissas da equipe, 9 L/km, 382 km de trecho e diesel a R$ 5,57, o resultado é 9 × 382 × 5,57 ≈ R$ 19,1 mil por viagem a vazio; considerando uma viagem por dia, cerca de R$ 7 milhões por ano. Para referência, a ANP registrou média nacional do diesel de R$ 5,73 por litro na semana de 16 a 22 de abril de 2023, o que levaria a conta para perto de R$ 19,7 mil. É um exercício de dimensionamento, não um dado da operadora: o consumo por quilômetro e a frequência de viagens vazias são suposições e moram na coluna do meio da Matriz CSD.",
+        "Para dimensionar o problema, a equipe fez uma estimativa simples do custo de uma composição rodando vazia, só com combustível. A fórmula é custo por viagem = consumo médio (L/km) × distância (km) × preço do diesel (R$/L). Com as premissas da equipe, 9 L/km, 382 km no trecho considerado pela equipe (premissa do pitch, não a extensão total da ligação até o porto) e diesel a R$ 5,57, o resultado é 9 × 382 × 5,57 ≈ R$ 19,1 mil por viagem a vazio; considerando uma viagem por dia, cerca de R$ 7 milhões por ano. Para referência, a ANP registrou média nacional do diesel de R$ 5,73 por litro na semana de 16 a 22 de abril de 2023, o que levaria a conta para perto de R$ 19,7 mil. É um exercício de dimensionamento, não um dado da operadora: o consumo por quilômetro e a frequência de viagens vazias são suposições e moram na coluna do meio da Matriz CSD.",
         "A terceira ferramenta é a estrutura do pitch. A mentoria do evento passou por três perguntas: o que é um pitch, quais os passos de um pitch de sucesso e quais os tipos de pitch, do elevador ao de banca. Um roteiro que funciona em ideathon: problema com personagem real; tamanho do problema com número e fonte; solução em uma frase; modelo de receita; concorrência e benchmark, que no Fuser era a comparação entre transporte rodoviário e ferroviário; e equipe, mostrando por que aquele grupo multidisciplinar consegue executar. Cada slide responde a um bloco do canvas ou a uma linha da matriz.",
         "Para treinar antes do próximo ideathon: escolha um problema do seu bairro ou do seu trabalho, preencha uma Matriz CSD em 20 minutos, passe as certezas para um Lean Canvas, faça uma conta de dimensionamento com a fórmula à vista e grave um pitch de três minutos. Depois, peça para alguém de fora apontar qual suposição parece mais frágil. Essa é exatamente a pergunta que a banca vai fazer."
       ],
@@ -1886,6 +1951,164 @@
         {
           "label": "Preço médio do diesel cai pela décima semana consecutiva — O Povo (abr/2023)",
           "url": "https://mais.opovo.com.br/jornal/economia/2023/04/27/preco-medio-do-diesel-cai-pela-decima-semana-consecutiva.html"
+        }
+      ]
+    },
+    {
+      "id": "deep-tech-do-laboratorio-ao-produto",
+      "blogURL": "/blog/deep-tech-do-laboratorio-ao-produto",
+      "img": "/media/learn-tech/blog/deep-tech-do-laboratorio-ao-produto.webp",
+      "title": "Deep tech: do laboratório ao produto, e onde o dev entra nessa história",
+      "tag": "Produtos Digitais",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-11-01",
+      "readingTime": "5 min",
+      "lead": "Nem toda startup de tecnologia é deep tech. Um app de delivery resolve um problema com tecnologia que já existe; uma deep tech nasce de uma descoberta científica ou de engenharia que ainda precisa provar que funciona fora do laboratório. Esse caminho é longo, caro e cheio de patentes, e é justamente por isso que ele interessa a quem desenvolve software: boa parte do trabalho entre o experimento e o produto é código, dados e infraestrutura.",
+      "highlights": [
+        {
+          "label": "Ciência na base",
+          "description": "O produto depende de um avanço técnico real, difícil de copiar e muitas vezes protegido por patente."
+        },
+        {
+          "label": "TRL de 1 a 9",
+          "description": "Uma régua que mede o quanto a tecnologia está pronta, do princípio observado ao sistema provado em uso real."
+        },
+        {
+          "label": "Capital paciente",
+          "description": "Anos até o primeiro produto exigem dinheiro público e investidores dispostos a esperar."
+        }
+      ],
+      "body": [
+        "Em 2019, o BCG e a Hello Tomorrow descreveram as deep techs por três atributos: grande impacto potencial, muito tempo até a maturidade de mercado e necessidade alta de capital. O mesmo estudo lembra que a propriedade intelectual dessas empresas costuma ser difícil de copiar ou bem protegida, o que vira vantagem competitiva. Os números dão a escala: em biotecnologia, levava-se em média cerca de 1,8 ano da fundação ao primeiro protótipo e mais 2,2 anos até o mercado, e o primeiro protótipo custava quase US$ 1,3 milhão. Em blockchain, o protótipo saía por cerca de US$ 200 mil.",
+        "Para conversar sobre esse caminho, o mercado usa a escala TRL (Technology Readiness Level), criada na NASA. No TRL 1 a pesquisa básica começa; no 2 os princípios são estudados e surgem aplicações possíveis, ainda especulativas; no 3 vêm os estudos de laboratório e a prova de conceito; no 4 os componentes são testados juntos; no 5 os testes ficam mais rigorosos, em condições que simulam o uso real; no 6 existe um protótipo completo; no 7 ele é demonstrado no ambiente real; no 8 a tecnologia está qualificada para entrar num sistema; e no 9 ela foi provada em operação. Traduzindo para um exemplo fora do espaço: um sensor agrícola que detecta praga pela folha está em TRL 3 quando funciona na bancada, em TRL 6 quando há um protótipo no campo experimental e em TRL 9 quando roda em fazendas de clientes, safra após safra."
+      ],
+      "quote": "Deep tech não é uma tecnologia mais difícil. É uma aposta de anos em algo que ainda não existe, e cada degrau da escala TRL precisa de gente que transforme experimento em sistema confiável.",
+      "bodyContinued": [
+        "A América Latina já tem um mapa desse ecossistema. O Deep Tech Radar Latam 2025, da consultoria Emerge com o Cubo Itaú, apresentado em setembro de 2025 e noticiado pela Agência FAPESP, mapeou 1.316 deeptechs na região, 952 delas no Brasil (72,3%), sendo 467 no estado de São Paulo. Mas quantidade não é capital: 47% das brasileiras não tinham recebido investimento, 36% contavam apenas com recursos públicos e só 7% tinham capital privado. No volume investido, segundo a cobertura da Bloomberg Línea em outubro de 2025, o Brasil ficou em terceiro, com US$ 216,2 milhões, atrás do Chile (US$ 607 milhões) e da Argentina (US$ 486 milhões), países em que poucas empresas concentram quase todo o valor.",
+        "Por isso a palavra-chave é capital paciente. Fundos de venture capital tradicionais esperam retorno em ciclos mais curtos do que o tempo de maturação de uma deep tech, e uma deep tech pode passar boa parte desse tempo entre o TRL 3 e o 6. No Brasil, quem costuma bancar essa travessia são instrumentos públicos de fomento, como o programa PIPE da FAPESP, citado no relatório como apoio relevante para empresas de saúde, fármacos e agro, além das linhas de subvenção e investimento da Finep. O mesmo estudo aponta a falta de fundos especializados e de ambição global como gargalos, e coloca biotecnologia (saúde e agricultura) na liderança, com inteligência artificial e computação aparecendo como tecnologias transversais.",
+        "E o dev nessa história? Quase toda deep tech precisa de software para sair da bancada: pipelines de dados de sensores e experimentos, modelos de machine learning, sistemas embarcados, simulação, dashboards para pesquisadores e, mais adiante, o produto que o cliente usa. As habilidades que mais aparecem são Python e bibliotecas científicas, engenharia de dados, nuvem, C ou C++ para hardware, testes e documentação rigorosos (porque um resultado precisa ser reproduzível) e a capacidade de conversar com quem fala a língua da biologia, da química ou da física.",
+        "Para encontrar essas vagas, olhe para spin-offs de universidades, parques tecnológicos, incubadoras ligadas a núcleos de inovação, empresas apoiadas por programas de fomento e laboratórios que contratam bolsistas de desenvolvimento. O salário nem sempre compete com o de uma fintech no curto prazo, e o risco de a empresa não chegar ao mercado é real. Em troca, você aprende a construir produto sob incerteza técnica de verdade, uma experiência rara e cada vez mais valorizada."
+      ],
+      "sources": [
+        {
+          "label": "Brasil tem o maior número de deeptechs na América Latina, mas é o terceiro em investimento privado — Agência FAPESP (24/09/2025)",
+          "url": "https://agencia.fapesp.br/brasil-tem-o-maior-numero-de-deeptechs-na-america-latina-mas-e-o-terceiro-em-investimento-privado/55955"
+        },
+        {
+          "label": "Chile ultrapassa o Brasil em captação para startups de deep tech na América Latina — Bloomberg Línea (10/2025)",
+          "url": "https://www.bloomberglinea.com.br/startups/chile-ultrapassa-o-brasil-em-captacao-para-startups-de-deep-tech-na-america-latina/"
+        },
+        {
+          "label": "Technology Readiness Levels — NASA",
+          "url": "https://www.nasa.gov/directorates/headquarters/technology-readiness-levels/"
+        },
+        {
+          "label": "The Dawn of the Deep Tech Ecosystem — BCG e Hello Tomorrow (2019)",
+          "url": "https://media-publications.bcg.com/BCG-The-Dawn-of-the-Deep-Tech-Ecosystem-Mar-2019.pdf"
+        }
+      ]
+    },
+    {
+      "id": "marketing-digital-para-arquitetura-e-design",
+      "blogURL": "/blog/marketing-digital-para-arquitetura-e-design",
+      "img": "/media/learn-tech/blog/marketing-digital-para-arquitetura-e-design.webp",
+      "title": "Marketing digital para arquitetura e design: da inspiração à conversão",
+      "tag": "Marketing e CRM",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-11-01",
+      "readingTime": "4 min",
+      "lead": "Ninguém acorda decidido a comprar um porcelanato. A pessoa salva fotos de cozinhas, mostra para a família, conversa com uma arquiteta, visita uma loja e só então pede orçamento. Em arquitetura e design, o marketing digital funciona quando acompanha esse caminho longo, que começa na inspiração e termina numa visita ao showroom, e quando entende que há pelo menos três públicos diferentes decidindo juntos.",
+      "highlights": [
+        {
+          "label": "Três personas",
+          "description": "Arquiteto, designer de interiores e cliente final de reforma decidem juntos, mas com motivações distintas."
+        },
+        {
+          "label": "Funil visual",
+          "description": "A jornada começa em imagens no Pinterest e no Instagram e termina em orçamento ou visita à loja."
+        },
+        {
+          "label": "Métrica por etapa",
+          "description": "Salvamentos medem inspiração; pedidos de orçamento e visitas agendadas medem conversão."
+        }
+      ],
+      "body": [
+        "Comece pelas personas. A primeira é a de quem especifica: arquitetos e designers de interiores, que escolhem materiais para vários projetos por ano e precisam de ficha técnica, prazo de entrega, amostra e um contato que responda rápido. O Anuário de Arquitetura e Urbanismo do CAU/BR de 2019 contava 166.194 profissionais registrados, 63% mulheres, chegando a 75% entre quem tinha até 30 anos. A segunda é o cliente final de reforma, que decide uma vez a cada muitos anos, compara preço, tem medo de errar e quer ver o resultado pronto. A terceira, muitas vezes esquecida, é quem reforma sem profissional nenhum: numa pesquisa do CAU/BR com o Datafolha divulgada em 2015, 54% da população economicamente ativa disse já ter construído ou reformado, e 85,4% dessas pessoas fizeram a obra sem arquiteto ou engenheiro.",
+        "Renda entra na persona como contexto, não como rótulo. Para o cliente final, ela define o tamanho da obra, o prazo de decisão e o peso das condições de pagamento: quem reforma um banheiro com orçamento apertado precisa de simulação de parcelas e de opções equivalentes mais baratas; quem faz um projeto completo de interiores quer exclusividade e atendimento consultivo. Para o especificador, o que pesa é a renda dos clientes dele, porque é ela que define a linha de produto que ele vai propor. Na hora de escrever cada persona, registre dor, objetivo, canal preferido, objeção mais comum e o que faria essa pessoa dar o próximo passo."
+      ],
+      "quote": "Em arquitetura e design, a venda começa meses antes do orçamento, numa imagem salva às onze da noite. Quem só mede o clique final não enxerga de onde a compra veio.",
+      "bodyContinued": [
+        "O funil tem quatro etapas. Na inspiração, o público ainda não procura marca, procura ideia: é a fase do Pinterest e do Instagram. Uma reportagem do Meio & Mensagem de janeiro de 2026 informou que mais da metade de quem usa o Pinterest no Brasil tem intenção de compra e que casa e decoração está entre as três categorias mais fortes da plataforma no país. Aqui funcionam ambientes reais fotografados, antes e depois, paletas e tendências da estação, com descrição rica em palavras de busca (cozinha pequena, banheiro com porcelanato amadeirado, varanda gourmet).",
+        "Na consideração, a pessoa começa a comparar. Conteúdos que ajudam: guias de escolha (qual piso para área externa), calculadoras de quantidade, vídeos curtos com especificador explicando por que escolheu um material, catálogos com ficha técnica para o profissional baixar. Na conversão, o objetivo é tirar o atrito do pedido de orçamento e da visita ao showroom: formulário curto, WhatsApp com resposta rápida, agendamento online e lembrete antes da visita. Na fidelização, o especificador recebe novidades, amostras e convites, e o cliente final recebe orientação de uso e manutenção e um pedido de avaliação com foto da obra pronta, que volta a alimentar a etapa de inspiração.",
+        "Cada etapa tem a sua métrica. Na inspiração, alcance, salvamentos e compartilhamentos valem mais que curtidas, porque salvar é planejar. Na consideração, acompanhe downloads de catálogo, tempo em páginas de produto e cliques para falar com um consultor. Na conversão, conte pedidos de orçamento, visitas agendadas e realizadas, taxa de comparecimento e taxa de orçamento aprovado. Na fidelização, olhe recompra, número de projetos por especificador e indicações. Ligar essas pontas exige marcar a origem de cada lead no CRM: sem isso, a campanha de inspiração parece cara e a loja parece vender sozinha.",
+        "Para aprofundar, dois textos do blog complementam este: o que trata do programa de relacionamento com especificadores no varejo, sobre como manter arquitetos e designers ativos ao longo do ano, e o de personas e estudo de mercado na prática, que detalha como pesquisar e validar uma persona antes de produzir conteúdo para ela."
+      ],
+      "sources": [
+        {
+          "label": "Anuário de Arquitetura e Urbanismo 2019 — CAU/BR (PDF)",
+          "url": "https://static.poder360.com.br/2023/05/ANUARIO-FINAL-WEB.pdf"
+        },
+        {
+          "label": "Maioria das obras é feita sem acompanhamento técnico — Gazeta do Povo (20/10/2015), pesquisa CAU/BR e Datafolha",
+          "url": "https://www.gazetadopovo.com.br/imoveis/maioria-das-obras-e-feita-sem-acompanhamento-tecnico-brrq8cjo6sdxlhrzc8xvvq8rk"
+        },
+        {
+          "label": "Como o Pinterest transforma busca visual em negócios — Meio & Mensagem (20/01/2026)",
+          "url": "https://www.meioemensagem.com.br/nrf/como-o-pinterest-transforma-busca-visual-em-negocios"
+        }
+      ]
+    },
+    {
+      "id": "criatividade-e-geracao-de-ideias-para-devs",
+      "blogURL": "/blog/criatividade-e-geracao-de-ideias-para-devs",
+      "img": "/media/learn-tech/blog/criatividade-e-geracao-de-ideias-para-devs.webp",
+      "title": "Criatividade para devs: como gerar ideias sem esperar a inspiração",
+      "tag": "Carreira",
+      "author": "Equipe learnTECH",
+      "publishedAt": "2026-11-01",
+      "readingTime": "4 min",
+      "lead": "Criatividade não é um dom de quem trabalha com design. É uma habilidade treinável, e quem desenvolve software usa o tempo todo: para achar a causa de um bug, propor uma arquitetura ou imaginar uma funcionalidade que o usuário nem sabia que queria. O problema é que a rotina de tickets e sprints empurra todo mundo para a primeira solução que aparece. Este texto mostra a diferença entre criatividade e inovação, como transformar problemas em perguntas e três métodos para gerar ideias de propósito.",
+      "highlights": [
+        {
+          "label": "Criatividade x inovação",
+          "description": "Criar é gerar ideias novas; inovar é levar uma delas até gerar valor real para alguém."
+        },
+        {
+          "label": "Problema vira pergunta",
+          "description": "\"Como poderíamos...?\" abre espaço para várias respostas em vez de uma só."
+        },
+        {
+          "label": "Método, não musa",
+          "description": "Regras de brainstorming, SCAMPER e Crazy 8s produzem ideias com hora marcada."
+        }
+      ],
+      "body": [
+        "Criatividade é a capacidade de gerar ideias novas e úteis. Inovação é o que acontece quando uma dessas ideias é implementada, testada e passa a gerar valor: um usuário que resolve o problema dele, um custo que cai, um processo que fica mais rápido. Dá para ser muito criativo sem inovar nada (a gaveta cheia de ideias nunca testadas) e dá para inovar com uma ideia simples, bem executada. Para quem é dev, a lição é dupla: gerar opções é metade do trabalho, e a outra metade é escolher, prototipar e medir.",
+        "A rotina é o maior inimigo das ideias porque ela é eficiente. Repetir o mesmo caminho economiza energia, e o cérebro aprende a pular direto para a solução conhecida: mais um campo no formulário, mais um filtro na tela, mais uma notificação. Por isso os problemas são o melhor combustível da criatividade, desde que sejam tratados como perguntas e não como reclamações. O método How Might We, documentado pelo IDEO.org no Design Kit, propõe reescrever cada percepção sobre o usuário como uma pergunta que começa com \"Como poderíamos...\". A pergunta precisa permitir várias soluções: estreita demais, ela já traz a resposta; ampla demais, ninguém sabe por onde começar."
+      ],
+      "quote": "A primeira ideia quase nunca é a melhor; ela só é a mais próxima. Método de criatividade serve para obrigar você a passar dela.",
+      "bodyContinued": [
+        "Primeiro método: brainstorming com regras. O IDEO.org lista sete: adiar o julgamento, encorajar ideias malucas, construir sobre a ideia do outro (usando \"e\" em vez de \"mas\"), manter o foco no tema, uma conversa de cada vez, ser visual com post-its e rascunhos e buscar quantidade. Segundo o próprio Design Kit, uma boa sessão pode chegar a cerca de 100 ideias em 60 minutos. Para times de tecnologia, a regra mais difícil costuma ser a primeira: a vontade de dizer \"isso não escala\" aparece cedo. Deixe a avaliação para depois.",
+        "Segundo método: SCAMPER. É uma lista de perguntas para mexer em algo que já existe, organizada por Bob Eberle a partir de perguntas de Alex Osborn, o criador do brainstorming. Cada letra é um verbo: Substituir, Combinar, Adaptar, Modificar (aumentar ou diminuir), Propor outro uso, Eliminar e Reorganizar. Funciona muito bem com funcionalidades existentes: o que acontece se eu eliminar esta etapa do cadastro? E se eu combinar a busca com o histórico de pedidos?",
+        "Terceiro método: Crazy 8s, do kit de Design Sprint do Google. Cada pessoa dobra uma folha em oito partes, liga um cronômetro de oito minutos e desenha uma ideia diferente em cada quadro. O objetivo é passar da primeira ideia e calar o crítico interno; desenhar mal não é problema, porque o rascunho só precisa ser entendido pelo time na hora de compartilhar e votar.",
+        "Exercício para fazer hoje. Problema de produto: muitos usuários abandonam um app de agendamento de consultas antes de confirmar o horário. Reescreva como pergunta: como poderíamos fazer a pessoa confirmar o agendamento em menos passos, sem perder informações importantes? Rode 15 minutos de brainstorming com as regras acima, aplique o SCAMPER sobre o fluxo atual (eliminar o login obrigatório, combinar escolha de horário e confirmação numa tela, substituir o formulário por dados já salvos) e feche com um Crazy 8s para desenhar as telas. Escolha duas ideias, prototipe e meça a taxa de confirmação. É aí que criatividade começa a virar inovação."
+      ],
+      "sources": [
+        {
+          "label": "Brainstorm Rules — IDEO.org Design Kit",
+          "url": "https://www.designkit.org/methods/brainstorm-rules.html"
+        },
+        {
+          "label": "How Might We — IDEO.org Design Kit",
+          "url": "https://designkit.org/methods/3.html"
+        },
+        {
+          "label": "Crazy 8's — Design Sprint Kit (Google)",
+          "url": "https://conference-pages-dot-designsprintkit.appspot.com/methods/sketch/crazy-8s"
+        },
+        {
+          "label": "Learn How to Use the Best Ideation Methods: SCAMPER — Interaction Design Foundation",
+          "url": "https://ixdf.org/literature/article/learn-how-to-use-the-best-ideation-methods-scamper"
         }
       ]
     }

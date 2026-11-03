@@ -69,6 +69,18 @@ function saidas() {
 
   const blog = ler("learn-tech/paginas/blog.json").itens;
   r.push({ site: "learn-tech", arquivo: "src/constants/blogData.js", texto: CABECALHO("content/learn-tech/paginas/blog.json") + `const blogData = ${json(absolutizar(blog))};\n\nexport default blogData;\n` });
+  /* Catálogo de programas do learn-tech (só os campos de card, como /v1/learn-tech/programas.json):
+     completa a reserva manual programsData.js com os programas novos, para listas e cards funcionarem sem API. */
+  const CAMPOS_RESUMO = ["id", "image", "video", "videoPoster", "category", "categoryFilter", "title", "lessons", "duration", "access", "accessType", "level", "description"];
+  const catalogo = lerPasta("learn-tech/programas")
+    .map((p) => ({ ...Object.fromEntries(CAMPOS_RESUMO.filter((c) => c in p).map((c) => [c, p[c]])), modulesCount: p.modules?.length ?? 0, hasQuiz: Array.isArray(p.quiz) && p.quiz.length > 0 }))
+    .sort((a, b) => a.id - b.id);
+  r.push({ site: "learn-tech", arquivo: "src/constants/programasCatalogo.js", texto: CABECALHO("content/learn-tech/programas/*.json") + `const programasCatalogo = ${json(absolutizar(catalogo))};\n\nexport default programasCatalogo;\n` });
+
+  /* Categorias do learn-tech: ícones vão por nome ("FaCode"); o site hidrata com src/constants/icones.js. */
+  const categorias = ler("learn-tech/paginas/categorias.json").itens;
+  r.push({ site: "learn-tech", arquivo: "src/constants/categoriesData.js", texto: CABECALHO("content/learn-tech/paginas/categorias.json") + `const categoriesData = ${json(absolutizar(categorias))};\n\nexport default categoriesData;\n` });
+
   if (fs.existsSync(path.join(CONTENT, "learn-tech/areas.json"))) {
     r.push({ site: "learn-tech", arquivo: "src/constants/areasData.js", texto: CABECALHO("content/learn-tech/areas.json") + `const areasData = ${json(absolutizar(ler("learn-tech/areas.json")))};\n\nexport default areasData;\n` });
   }

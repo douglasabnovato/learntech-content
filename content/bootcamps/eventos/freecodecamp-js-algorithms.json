@@ -54,6 +54,16 @@
         "label": "freeCodeCamp News: freeCodeCamp's new JavaScript certification is now live (2025)",
         "url": "https://freecodecamp.org/news/freecodecamps-new-javascript-certification-is-now-live"
       }
+    ],
+    "relacionados": [
+      {
+        "tipo": "programas",
+        "id": "4"
+      },
+      {
+        "tipo": "programas",
+        "id": "901"
+      }
     ]
   }
 }

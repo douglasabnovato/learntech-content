@@ -15,27 +15,32 @@ Regra: um item só é marcado com evidência (arquivo, script, relatório). O di
 - [x] Testes de dados no learn-tech (`dados.test.js`)
 
 ## Diagnóstico e arquitetura
-- [ ] Diagnóstico de engenharia com notas de 0 a 10 por critério e por projeto, com evidências
-- [ ] Documento de arquitetura do ecossistema: diagramas de contexto e de containers, contratos API ↔ sites
-- [ ] Registro de decisões de arquitetura (ADRs) para as escolhas já feitas (API única, cópias de reserva, D1, Workers)
-- [ ] Pasta `docs/` em cada site: setup do zero, arquitetura e decisões (learn-tech, bootcamps, career, tools)
+- [x] Diagnóstico de engenharia com notas de 0 a 10 por critério e por projeto, com evidências (`diagnostico-2026-11-01.md`)
+- [x] Documento de arquitetura do ecossistema: diagramas de contexto e de containers, contratos API ↔ sites (`arquitetura-ecossistema.md`)
+- [x] Registro de decisões de arquitetura (ADRs) para as escolhas já feitas (API única, cópias de reserva, D1, Workers) (`docs/DECISOES.md`, ADRs 1 a 8)
+- [x] Pasta `docs/` em cada site: setup do zero, arquitetura e decisões (learn-tech, bootcamps, career, tools) (`<site>/docs/README.md`)
 
 ## Qualidade de código e testes
-- [ ] Lint e formatação padronizados nos cinco projetos (incluir career e tools)
-- [ ] Testes unitários no bootcamps
-- [ ] Testes nos sites estáticos career e tools
-- [ ] Testes de ponta a ponta dos fluxos principais (abrir card, página de detalhe, filtros) com Playwright
-- [ ] CI na career e checagem de build e teste obrigatória antes do merge nos cinco repositórios
+- [ ] Lint e formatação padronizados nos cinco projetos (incluir career e tools). Configurado em 01/11 (`eslint.config.js`, `.prettierrc.json`); falta instalar e rodar (guia, etapas 1 e 2)
+- [ ] Testes unitários no bootcamps. Escritos em 01/11 (`eventApi.test.ts`, `events.data.test.ts`); falta instalar o Vitest e ver verde
+- [x] Testes nos sites estáticos career e tools (`tests/*.test.js`: 12 e 7 testes passando com `node --test` em 01/11)
+- [ ] Testes de ponta a ponta dos fluxos principais (abrir card, página de detalhe, filtros) com Playwright. Escritos em `e2e/`; falta rodar (guia, etapa 3)
+- [x] CI na career (`.github/workflows/ci.yml`) e testes na CI do tools e do bootcamps
+- [ ] Checagem da CI obrigatória antes do merge nos cinco repositórios (configuração no GitHub; guia, etapa 6)
 
 ## Experiência, performance e acessibilidade
-- [ ] Metas de performance (Core Web Vitals, tamanho de bundle) medidas com Lighthouse nos quatro sites
-- [ ] Acessibilidade WCAG 2.2 AA verificada (contraste, teclado, textos alternativos, rótulos)
-- [ ] Responsividade testada nos breakpoints principais, com registro
-- [ ] Design system mínimo documentado (cores, tipografia, componentes) e consistente entre os sites
-- [ ] SEO e compartilhamento: metadados, sitemap e Open Graph
+- [ ] Metas de performance (Core Web Vitals, tamanho de bundle) medidas com Lighthouse nos quatro sites. Script `npm run ux:lighthouse` pronto; falta rodar (guia, etapa 4)
+- [ ] Acessibilidade WCAG 2.2 AA verificada (contraste, teclado, textos alternativos, rótulos). Teste axe em `e2e/acessibilidade.spec.mjs`; falta rodar
+- [ ] Responsividade testada nos breakpoints principais, com registro. Capturas em `e2e/capturas.spec.mjs`; falta rodar
+- [x] Design system mínimo documentado (cores, tipografia, componentes) e consistente entre os sites (`design-system.md`)
+- [x] SEO e compartilhamento: metadados, sitemap e Open Graph (Open Graph e canonical nos 4 `index.html`; `npm run sitemaps`; robots nos sites do Vercel)
 
 ## Dados, segurança e operação
-- [ ] Cópia de reserva das categorias do learn-tech gerada pelo `exportar-copias`
-- [ ] Versionamento e política de cache da API documentados
-- [ ] Cabeçalhos de segurança e auditoria de dependências (npm audit) nos projetos com Node
-- [ ] Observabilidade: logs e erros da API e monitoramento de disponibilidade dos sites
+- [x] Cópia de reserva do catálogo de programas do learn-tech gerada pelo `exportar-copias` (`programasCatalogo.js`, com teste); o detalhe dos programas novos continua exigindo a API
+- [x] Cópia de reserva das categorias do learn-tech gerada pelo `exportar-copias` (com teste `categorias.test.js`)
+- [x] Versionamento e política de cache da API documentados (`cache-e-versionamento.md`; cache em `public/_headers` e `no-store` nas rotas dinâmicas)
+- [x] Cabeçalhos de segurança nos sites do Vercel (`vercel.json` do learn-tech e do bootcamps)
+- [x] Cabeçalhos de segurança na API (`public/_headers` e middleware em `src/app.ts`, com teste)
+- [ ] Auditoria de dependências (`npm audit`) com relatório nos projetos com Node
+- [x] Monitoramento de disponibilidade da API e dos sites (`.github/workflows/disponibilidade.yml`, a cada 6 horas)
+- [x] Observabilidade: logs e erros da API (Workers Logs ligado em `wrangler.jsonc`, `onError` com log JSON estruturado, `/v1/saude`)

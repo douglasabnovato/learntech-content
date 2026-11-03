@@ -38,6 +38,20 @@
         "label": "Wikipédia: W3Schools",
         "url": "https://en.wikipedia.org/wiki/W3Schools"
       }
+    ],
+    "relacionados": [
+      {
+        "tipo": "programas",
+        "id": "2"
+      },
+      {
+        "tipo": "programas",
+        "id": "3"
+      },
+      {
+        "tipo": "programas",
+        "id": "4"
+      }
     ]
   }
 }

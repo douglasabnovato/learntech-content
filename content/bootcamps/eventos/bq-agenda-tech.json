@@ -28,6 +28,26 @@
       "O formato planejado reúne palestras com convidados do ecossistema local, uma rodada de apresentação de apoiadores e parceiros e tempo dedicado ao networking entre participantes. As inscrições estão previstas como gratuitas e com vagas limitadas. O local previsto é a BQ Spazio Coworking, no Shopping Spazio Design (Ladeira Alexandre Leonel, 113, São Mateus, Juiz de Fora - MG).",
       "A primeira edição ainda está em fase de organização. Data, palestrantes, temas e canais de inscrição serão publicados quando forem confirmados, e esta página será atualizada com essas informações.",
       "Encontros curtos e locais como este funcionam como porta de entrada para o ecossistema de tecnologia de uma cidade: permitem conhecer profissionais e empresas da região, entender que problemas os negócios tradicionais enfrentam e encontrar oportunidades de projeto ou parceria que dificilmente surgem em eventos online."
+    ],
+    "relacionados": [
+      {
+        "tipo": "blog",
+        "id": "eventos-de-comunidade-tech"
+      },
+      {
+        "tipo": "eventos",
+        "id": "capivara-tech-juiz-de-fora"
+      },
+      {
+        "tipo": "eventos",
+        "id": "gdg-jf"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Sympla: perfil do produtor BQ Escritórios (unidade Juiz de Fora no Shopping Spazio Design)",
+        "url": "https://www.sympla.com.br/produtor/bqescritorios"
+      }
     ]
   }
 }

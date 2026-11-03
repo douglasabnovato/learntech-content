@@ -56,6 +56,28 @@
       {
         "label": "Alura: carreira Desenvolvimento Back-End Java",
         "url": "https://www.alura.com.br/carreiras/desenvolvimento-backend-java"
+      },
+      {
+        "label": "Money Times: Caelum, como o ensino online em TI se desenvolve a passos largos (05/06/2017)",
+        "url": "https://www.moneytimes.com.br/caelum-como-o-ensino-online-em-ti-se-desenvolve-a-passos-largos/"
+      },
+      {
+        "label": "Bloomberg Línea: Professor cria gigante em edtech no país com aquisição de faculdade (18/08/2022)",
+        "url": "https://www.bloomberglinea.com.br/2022/08/18/aquisicao-de-cientista-da-computacao-cria-um-gigante-no-ensino-da-tecnologia/"
+      }
+    ],
+    "relacionados": [
+      {
+        "tipo": "programas",
+        "id": "301"
+      },
+      {
+        "tipo": "programas",
+        "id": "401"
+      },
+      {
+        "tipo": "blog",
+        "id": "escolher-formacao-dev"
       }
     ]
   }

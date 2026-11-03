@@ -44,6 +44,20 @@
         "label": "DIO (artigo da comunidade): conclusão do Santander Bootcamp 2023 – Ciência de Dados com Python",
         "url": "https://www.dio.me/articles/santander-bootcamp-2023-ciencia-de-dados-com-python-pela-dio-ACJTM6"
       }
+    ],
+    "relacionados": [
+      {
+        "tipo": "programas",
+        "id": "304"
+      },
+      {
+        "tipo": "programas",
+        "id": "401"
+      },
+      {
+        "tipo": "blog",
+        "id": "bolsas-universidade-como-ler-edital"
+      }
     ]
   }
 }

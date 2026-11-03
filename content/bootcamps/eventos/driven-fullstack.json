@@ -41,6 +41,20 @@
         "label": "Baguete: Driven capta R$ 16 milhões (2021)",
         "url": "https://www.baguete.com.br/noticias/driven-capta-r-16-milhoes"
       }
+    ],
+    "relacionados": [
+      {
+        "tipo": "programas",
+        "id": "101"
+      },
+      {
+        "tipo": "programas",
+        "id": "302"
+      },
+      {
+        "tipo": "programas",
+        "id": "401"
+      }
     ]
   }
 }

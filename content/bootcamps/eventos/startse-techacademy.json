@@ -37,6 +37,20 @@
         "label": "Tribuna do Sertão: Startup abre inscrições para curso gratuito sobre programação (2022)",
         "url": "https://www.tribunadosertao.com.br/brasil/2022/04/06/430514-startup-abre-inscricoes-para-curso-gratuito-sobre-programacao"
       }
+    ],
+    "relacionados": [
+      {
+        "tipo": "programas",
+        "id": "501"
+      },
+      {
+        "tipo": "programas",
+        "id": "801"
+      },
+      {
+        "tipo": "blog",
+        "id": "deep-tech-do-laboratorio-ao-produto"
+      }
     ]
   }
 }

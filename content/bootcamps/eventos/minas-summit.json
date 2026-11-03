@@ -71,6 +71,20 @@
         "label": "Estado de Minas: Minas Summit espera 11 mil participantes na maior edição do evento em BH (jun/2026)",
         "url": "https://www.em.com.br/economia/economia-digital/2026/06/7438814-minas-summit-espera-11-mil-participantes-na-maior-edicao-do-evento-em-bh.html"
       }
+    ],
+    "relacionados": [
+      {
+        "tipo": "blog",
+        "id": "editais-de-fomento-a-inovacao-como-ler-e-onde-encontrar"
+      },
+      {
+        "tipo": "blog",
+        "id": "deep-tech-do-laboratorio-ao-produto"
+      },
+      {
+        "tipo": "eventos",
+        "id": "startup-way-challenge-2023"
+      }
     ]
   }
 }

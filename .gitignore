@@ -7,3 +7,6 @@ dist/
 .env.*
 *.log
 .DS_Store
+
+# Relatórios brutos do Playwright e do Lighthouse (o resumo vai para docs/engenharia/relatorios/)
+e2e/relatorios/

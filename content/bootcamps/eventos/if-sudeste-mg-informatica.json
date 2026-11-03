@@ -46,6 +46,24 @@
       {
         "label": "IF Sudeste MG: Edital nº 32/2023, cursos técnicos 2024/1",
         "url": "https://www.ifsudestemg.edu.br/editais/reitoria/processo-seletivo/2024-1/cursos-tecnicos/2023-32-edital-dos-cursos-tecnicos-concomitantes-subsequentes-subsequentes-especializacao-tecnica-e-proeja/edital-cursos-tecnicos-multicampi-2024-1.pdf"
+      },
+      {
+        "label": "Acessa.com: IF Sudeste MG oferece 643 vagas para cursos técnicos, graduação e pós em Juiz de Fora (22/09/2026)",
+        "url": "https://www.acessa.com/educacao/2026/09/340482-if-sudeste-mg-oferece-643-vagas-para-cursos-tecnicos-graduacao-e-pos-em-juiz-de-fora.html"
+      }
+    ],
+    "relacionados": [
+      {
+        "tipo": "programas",
+        "id": "2"
+      },
+      {
+        "tipo": "programas",
+        "id": "4"
+      },
+      {
+        "tipo": "programas",
+        "id": "901"
       }
     ]
   }

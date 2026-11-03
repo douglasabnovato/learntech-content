@@ -3,14 +3,17 @@
   Access-Control-Allow-Origin: *
   Cache-Control: public, max-age=300, stale-while-revalidate=86400
   X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
 
 /media/*
   Access-Control-Allow-Origin: *
   Cache-Control: public, max-age=604800
   X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
 
 /sdk/*
   Access-Control-Allow-Origin: *
   Cache-Control: public, max-age=3600
   X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
 # Fim de _headers
