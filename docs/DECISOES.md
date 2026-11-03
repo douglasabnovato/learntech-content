@@ -49,3 +49,9 @@ Cada decisão tem contexto, escolha e consequência. Mudou de ideia? Acrescente 
 
 - TypeScript estrito, Vitest e CI no GitHub Actions.
 - As regras do `dados.test.js` do learn-tech (ids, módulos, passos, ícones e quiz) foram portadas para a validação do build. Elas continuam valendo para todo programa novo.
+
+## ADR 9 — Status do card de programa e votação de temas (proposta, 03/11/2026)
+
+- **Contexto:** a issue learn-tech #120 pede card colorido para programa lançado, card preto e branco para programa em construção e uma votação para escolher o tema dos cards ainda sem programa.
+- **Decisão (status):** o programa ganha o campo opcional `status` (`lancado` ou `novidade`), publicado no resumo de `/v1/learn-tech/programas.json`. O site já respeita esse campo (`statusDoPrograma` em `learn-tech/src/services/conteudo.js`); sem o campo, decide pelos módulos.
+- **Proposta (votação), ainda não implementada:** uma tabela `votos` no D1 (`tema`, `email`, `criadoEm`), `POST /v1/votos` aceito só a partir dos quatro domínios, um voto por e-mail e tema, Turnstile ligado e `GET /v1/votos/resumo` público só com contagens. A identificação reaproveita o `/sdk/identificacao.js` (ADR 6), e a política de privacidade ganha a finalidade "votação". Falta o autor aprovar e decidir a lista de temas.

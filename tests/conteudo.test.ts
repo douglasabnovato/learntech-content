@@ -181,6 +181,14 @@ describe("recursos gerados", () => {
     expect(lista[0]).toHaveProperty("modulesCount");
   });
 
+  it("o resumo de programas publica o status do card quando o programa tem", () => {
+    const c = structuredClone(conteudo);
+    const programa = c.programas[0]!;
+    programa.status = "novidade";
+    const lista = montarRecursos(c).find((r) => r.caminho === "learn-tech/programas.json")!.dados as Record<string, unknown>[];
+    expect(lista.find((p) => p.id === programa.id)).toHaveProperty("status", "novidade");
+  });
+
   it("cada programa e cada evento tem recurso próprio", () => {
     for (const p of conteudo.programas) expect(recursos.some((r) => r.caminho === `learn-tech/programas/${p.id}.json`)).toBe(true);
     for (const e of conteudo.eventos) expect(recursos.some((r) => r.caminho === `bootcamps/eventos/${e.slug}.json`)).toBe(true);

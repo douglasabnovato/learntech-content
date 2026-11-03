@@ -62,6 +62,8 @@ export const programaSchema = z.looseObject({
   accessType: z.string().optional(),
   level: z.string().nullable().optional(),
   description: z.string().optional(),
+  /* Card do site: "lancado" (colorido, "Aprenda") ou "novidade" (preto e branco, "Em breve"). Sem o campo, o site decide pelos módulos. */
+  status: z.enum(["lancado", "novidade"]).optional(),
   modules: z.array(moduloSchema).optional(),
   moduleContents: z.array(conteudoModuloSchema).optional(),
   quiz: z.array(questaoSchema).optional(),
@@ -72,7 +74,7 @@ export type Programa = z.infer<typeof programaSchema>;
 
 export const CAMPOS_RESUMO = [
   "id", "image", "video", "videoPoster", "category", "categoryFilter", "title",
-  "lessons", "duration", "access", "accessType", "level", "description",
+  "lessons", "duration", "access", "accessType", "level", "description", "status",
 ] as const;
 
 export const paginaSchema = z.record(z.string(), z.unknown());
