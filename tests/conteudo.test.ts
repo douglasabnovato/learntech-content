@@ -210,6 +210,17 @@ describe("recursos gerados", () => {
     expect(Object.keys(doc.paths)).toEqual(expect.arrayContaining(["/v1/acessos", "/v1/learn-tech/programas.json", "/v1/bootcamps/eventos.json"]));
     expect(() => JSON.stringify(doc)).not.toThrow();
   });
+
+  it("o OpenAPI documenta o 429 das escritas e o DELETE com e-mail no corpo (?email= obsoleto)", () => {
+    type Op = { responses: Record<string, unknown>; parameters?: { name: string; deprecated?: boolean }[]; requestBody?: unknown };
+    const doc = gerarOpenApi("teste") as { paths: Record<string, Record<string, Op>> };
+    for (const rota of ["/v1/acessos", "/v1/mensagens"]) {
+      expect(doc.paths[rota]!.post!.responses).toHaveProperty("429");
+      const del = doc.paths[rota]!.delete!;
+      expect(del.requestBody).toBeTruthy();
+      expect(del.parameters?.find((p) => p.name === "email")?.deprecated).toBe(true);
+    }
+  });
 });
 
 /* Fim de conteudo.test.ts */

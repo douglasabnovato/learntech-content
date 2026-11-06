@@ -23,6 +23,9 @@ export interface Dependencias {
   agora?: () => Date;
   versao?: string;
   buscar?: typeof fetch;
+  /* Limite de taxa das rotas de escrita: devolve false quando a chave (IP + rota) passou do limite.
+     Sem esta dependência (testes antigos, wrangler dev sem binding), não há limite. */
+  limitar?: (env: Ambiente, chave: string) => Promise<boolean>;
 }
 
 const MINUTO = 60_000;
@@ -48,6 +51,21 @@ function celulaCsv(valor: unknown): string {
   return `"${t.replace(/"/g, '""')}"`;
 }
 
+/* Lê o e-mail do titular num DELETE: no corpo JSON { "email": ... } (preferido, não vai para logs de URL)
+   ou, por compatibilidade temporária, em ?email= (legado, marcado como obsoleto no OpenAPI). */
+async function emailDoTitular(c: Context<{ Bindings: Ambiente }>): Promise<{ email: string | null; legado: boolean }> {
+  let corpo: unknown = null;
+  try { corpo = await c.req.json(); } catch { corpo = null; }
+  const doCorpo = corpo && typeof corpo === "object" && "email" in corpo && typeof corpo.email === "string" ? corpo.email : "";
+  if (doCorpo.trim()) return { email: doCorpo.trim().toLowerCase(), legado: false };
+  const daQuery = c.req.query("email")?.trim().toLowerCase();
+  return daQuery ? { email: daQuery, legado: true } : { email: null, legado: false };
+}
+
+/* Cabeçalho de aviso para quem ainda usa ?email= no DELETE (campo Deprecation, RFC 9745). */
+const AVISO_LEGADO = { Deprecation: "true" };
+const PECA_EMAIL = 'informe { "email": "..." } no corpo';
+
 /* Monta a aplicação com as dependências injetadas (repositório, relógio). */
 export function criarApp(dep: Dependencias) {
   const agora = dep.agora ?? (() => new Date());
@@ -72,6 +90,14 @@ export function criarApp(dep: Dependencias) {
     return null;
   };
 
+  /* Aplica o limite de taxa por IP e rota; devolve a resposta 429 quando excedido. */
+  const conferirLimite = async (c: Context<{ Bindings: Ambiente }>, rota: string, h: Record<string, string>): Promise<Response | null> => {
+    if (!dep.limitar) return null;
+    const ip = c.req.header("CF-Connecting-IP") ?? "sem-ip";
+    if (await dep.limitar(c.env, `${ip}:${rota}`)) return null;
+    return c.json({ erro: "muitas requisições; tente de novo em 1 minuto" }, 429, { ...h, "Retry-After": "60" });
+  };
+
   /* Cabeçalhos de segurança em toda resposta dinâmica. Dados pessoais e administrativos não ficam em cache
      (a política de cache do conteúdo estático está em public/_headers e em docs/engenharia/cache-e-versionamento.md). */
   app.use("*", async (c, next) => {
@@ -94,6 +120,8 @@ export function criarApp(dep: Dependencias) {
     const origem = c.req.header("Origin");
     if (!origemPermitida(origem, lerOrigens(c.env.ALLOWED_ORIGINS))) return c.json({ erro: "origem não permitida" }, 403);
     const h = cors(origem!);
+    const limitado = await conferirLimite(c, "acessos", h);
+    if (limitado) return limitado;
 
     let bruto: unknown;
     try { bruto = await c.req.json(); } catch { return c.json({ erro: "JSON inválido" }, 400, h); }
@@ -141,12 +169,12 @@ export function criarApp(dep: Dependencias) {
   app.delete("/v1/acessos", async (c) => {
     const negado = await exigirAdmin(c);
     if (negado) return negado;
-    const email = c.req.query("email")?.trim().toLowerCase();
-    if (!email) return c.json({ erro: "informe ?email=" }, 400);
+    const { email, legado } = await emailDoTitular(c);
+    if (!email) return c.json({ erro: PECA_EMAIL }, 400);
     /* Pedido do titular (LGPD): apaga os acessos e também as mensagens do "Fala aê" desse e-mail. */
     const apagados = await dep.repositorio(c.env).apagarPorEmail(email);
     const mensagens = dep.mensagens ? await dep.mensagens(c.env).apagarPorEmail(email) : 0;
-    return c.json({ apagados, mensagens });
+    return c.json({ apagados, mensagens }, 200, legado ? AVISO_LEGADO : {});
   });
 
   app.options("/v1/mensagens", (c) => {
@@ -160,6 +188,8 @@ export function criarApp(dep: Dependencias) {
     if (!origemPermitida(origem, lerOrigens(c.env.ALLOWED_ORIGINS))) return c.json({ erro: "origem não permitida" }, 403);
     const h = cors(origem!);
     if (!dep.mensagens) return c.json({ erro: "mensagens indisponíveis" }, 503, h);
+    const limitado = await conferirLimite(c, "mensagens", h);
+    if (limitado) return limitado;
 
     let bruto: unknown;
     try { bruto = await c.req.json(); } catch { return c.json({ erro: "JSON inválido" }, 400, h); }
@@ -210,9 +240,9 @@ export function criarApp(dep: Dependencias) {
     const negado = await exigirAdmin(c);
     if (negado) return negado;
     if (!dep.mensagens) return c.json({ erro: "mensagens indisponíveis" }, 503);
-    const email = c.req.query("email")?.trim().toLowerCase();
-    if (!email) return c.json({ erro: "informe ?email=" }, 400);
-    return c.json({ apagadas: await dep.mensagens(c.env).apagarPorEmail(email) });
+    const { email, legado } = await emailDoTitular(c);
+    if (!email) return c.json({ erro: PECA_EMAIL }, 400);
+    return c.json({ apagadas: await dep.mensagens(c.env).apagarPorEmail(email) }, 200, legado ? AVISO_LEGADO : {});
   });
 
   app.all("/v1/acessos", (c) => c.json({ erro: "método não permitido" }, 405));

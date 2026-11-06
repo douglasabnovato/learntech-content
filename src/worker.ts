@@ -7,22 +7,45 @@ import pacote from "../package.json";
 interface Env extends Ambiente {
   DB: D1Database;
   ASSETS: Fetcher;
+  /* Binding "ratelimits" do wrangler.jsonc (gratuito, contagem por localização da Cloudflare). Opcional. */
+  LIMITADOR_ESCRITA?: RateLimit;
+}
+
+/* Consulta o binding de limite de taxa. Sem binding, ou se ele falhar, deixa passar (o Turnstile e a
+   deduplicação continuam valendo) e registra o erro, para o limite nunca derrubar o registro legítimo. */
+async function limitarEscrita(env: Ambiente, chave: string): Promise<boolean> {
+  const limitador = (env as Env).LIMITADOR_ESCRITA;
+  if (!limitador) return true;
+  try {
+    return (await limitador.limit({ key: chave })).success;
+  } catch (e) {
+    console.error(JSON.stringify({ nivel: "erro", mensagem: `limite de taxa indisponível: ${e instanceof Error ? e.message : String(e)}` }));
+    return true;
+  }
 }
 
 const app = criarApp({
   repositorio: (env) => repositorioD1((env as Env).DB),
   mensagens: (env) => repositorioMensagensD1((env as Env).DB),
   versao: pacote.version,
+  limitar: limitarEscrita,
 });
 
-/* Caminhos atendidos pelo Hono (os mesmos de run_worker_first em wrangler.jsonc). */
-const DINAMICOS = new Set(["/v1/saude", "/v1/acessos", "/v1/mensagens"]);
+/* Caminhos atendidos pelo Hono (os mesmos de run_worker_first em wrangler.jsonc; tests/worker.test.ts confere as duas listas). */
+export const DINAMICOS = new Set(["/v1/saude", "/v1/acessos", "/v1/mensagens"]);
+/* Prefixos com subcaminhos dinâmicos (em run_worker_first aparecem como "/v1/acessos/*"). */
+export const PREFIXOS_DINAMICOS = ["/v1/acessos/"];
+
+/* O caminho vai para o Hono (true) ou para os arquivos estáticos (false)? */
+export function ehDinamico(pathname: string): boolean {
+  return DINAMICOS.has(pathname) || PREFIXOS_DINAMICOS.some((p) => pathname.startsWith(p));
+}
 
 export default {
   /* Rotas dinâmicas passam pelo Hono; qualquer outra coisa vai para os arquivos estáticos. */
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
     const { pathname } = new URL(request.url);
-    if (DINAMICOS.has(pathname) || pathname.startsWith("/v1/acessos/")) {
+    if (ehDinamico(pathname)) {
       return app.fetch(request, env, ctx);
     }
     return env.ASSETS.fetch(request);

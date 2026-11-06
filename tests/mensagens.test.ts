@@ -190,4 +190,38 @@ describe("retenção de mensagens", () => {
   });
 });
 
+describe("DELETE /v1/mensagens com e-mail no corpo e limite de taxa", () => {
+  beforeEach(async () => {
+    await postar(valida);
+    await postar({ nome: "João Souza", email: "joao@exemplo.com", motivo: "outro", mensagem: "Oi", projeto: "tools" });
+  });
+
+  it("DELETE com { email } no corpo apaga só as mensagens desse e-mail", async () => {
+    const r = await app.request("/v1/mensagens", { method: "DELETE", headers: { Authorization: `Bearer ${TOKEN}`, "Content-Type": "application/json" }, body: JSON.stringify({ email: "MARIA@exemplo.com" }) }, env);
+    expect(await r.json()).toEqual({ apagadas: 1 });
+    expect(r.headers.get("Deprecation")).toBeNull();
+    expect(repo.linhas.map((l) => l.email)).toEqual(["joao@exemplo.com"]);
+  });
+
+  it("DELETE /v1/acessos com corpo apaga também as mensagens", async () => {
+    const r = await app.request("/v1/acessos", { method: "DELETE", headers: { Authorization: `Bearer ${TOKEN}`, "Content-Type": "application/json" }, body: JSON.stringify({ email: "joao@exemplo.com" }) }, env);
+    expect(await r.json()).toEqual({ apagados: 0, mensagens: 1 });
+  });
+
+  it("?email= legado responde com Deprecation: true", async () => {
+    const r = await admin("/v1/mensagens?email=maria@exemplo.com", "DELETE");
+    expect(r.headers.get("Deprecation")).toBe("true");
+  });
+
+  it("POST acima do limite responde 429 sem gravar; a chave separa a rota de mensagens", async () => {
+    const chaves: string[] = [];
+    app = criarApp({ repositorio: () => acessos, mensagens: () => repo, agora: () => agora, limitar: async (_e, chave) => { chaves.push(chave); return false; } });
+    const r = await app.request("/v1/mensagens", { method: "POST", headers: { "Content-Type": "application/json", Origin: ORIGEM, "CF-Connecting-IP": "203.0.113.7" }, body: JSON.stringify({ ...valida, mensagem: "nova" }) }, env);
+    expect(r.status).toBe(429);
+    expect(r.headers.get("Retry-After")).toBe("60");
+    expect(chaves).toEqual(["203.0.113.7:mensagens"]);
+    expect(repo.linhas).toHaveLength(2);
+  });
+});
+
 /* Fim de mensagens.test.ts */

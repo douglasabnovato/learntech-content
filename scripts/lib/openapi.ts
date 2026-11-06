@@ -18,6 +18,11 @@ function leitura(descricao: string, ref: string, lista = false) {
   return { get: { summary: descricao, responses: { "200": { description: "OK", content: { "application/json": { schema } } } } } };
 }
 
+/* Parâmetro ?email= legado dos DELETE: mantido por compatibilidade temporária, use o corpo JSON. */
+const emailLegado = { name: "email", in: "query", required: false, deprecated: true, description: "Obsoleto: e-mail em URL pode ir para logs. Use o corpo { \"email\": ... }. A resposta traz o cabeçalho Deprecation: true.", schema: { type: "string", format: "email" } };
+const corpoEmail = { required: false, description: "E-mail do titular (preferido em vez de ?email=)", content: { "application/json": { schema: { type: "object", required: ["email"], properties: { email: { type: "string", format: "email" } } } } } };
+const limiteTaxa = { description: "Limite de taxa por IP excedido (30 por minuto por rota); cabeçalho Retry-After em segundos" };
+
 /* Monta o documento completo. */
 export function gerarOpenApi(versao: string): Record<string, unknown> {
   const admin = [{ bearer: [] }];
@@ -56,6 +61,7 @@ export function gerarOpenApi(versao: string): Record<string, unknown> {
             "200": { description: "Já registrado nos últimos minutos (sem nova linha)" },
             "400": { description: "Dados inválidos" },
             "403": { description: "Origem não permitida ou verificação anti-robô falhou" },
+            "429": limiteTaxa,
           },
         },
         get: {
@@ -70,8 +76,9 @@ export function gerarOpenApi(versao: string): Record<string, unknown> {
         },
         delete: {
           summary: "Apaga todos os acessos e mensagens de um e-mail (pedido do titular, LGPD)", security: admin,
-          parameters: [{ name: "email", in: "query", required: true, schema: { type: "string", format: "email" } }],
-          responses: { "200": { description: "Quantidade apagada: { apagados (acessos), mensagens }" }, "401": { description: "Token ausente ou inválido" } },
+          parameters: [emailLegado],
+          requestBody: corpoEmail,
+          responses: { "200": { description: "Quantidade apagada: { apagados (acessos), mensagens }" }, "400": { description: "E-mail ausente" }, "401": { description: "Token ausente ou inválido" } },
         },
       },
       "/v1/mensagens": {
@@ -84,6 +91,7 @@ export function gerarOpenApi(versao: string): Record<string, unknown> {
             "400": { description: "Dados inválidos: { erro, campos: [{ campo, mensagem }] }" },
             "403": { description: "Origem não permitida ou verificação anti-robô falhou" },
             "413": { description: "Corpo maior que 24 KiB" },
+            "429": limiteTaxa,
           },
         },
         get: {
@@ -100,8 +108,9 @@ export function gerarOpenApi(versao: string): Record<string, unknown> {
         },
         delete: {
           summary: "Apaga todas as mensagens de um e-mail (pedido do titular, LGPD)", security: admin,
-          parameters: [{ name: "email", in: "query", required: true, schema: { type: "string", format: "email" } }],
-          responses: { "200": { description: "Quantidade apagada: { apagadas }" }, "401": { description: "Token ausente ou inválido" } },
+          parameters: [emailLegado],
+          requestBody: corpoEmail,
+          responses: { "200": { description: "Quantidade apagada: { apagadas }" }, "400": { description: "E-mail ausente" }, "401": { description: "Token ausente ou inválido" } },
         },
       },
       "/v1/acessos/resumo": { get: { summary: "Totais por projeto e por dia (administração)", security: admin, responses: { "200": { description: "OK" } } } },

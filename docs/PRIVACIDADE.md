@@ -28,7 +28,7 @@ A finalidade é informada no formulário: "essa identificação nos ajuda a aper
 ## Retenção e exclusão
 
 - Acessos e mensagens são apagados automaticamente após 365 dias (`RETENCAO_DIAS`, o mesmo cron diário apaga as duas tabelas).
-- Quem pedir a exclusão tem todos os acessos **e todas as mensagens** do e-mail apagados com `DELETE /v1/acessos?email=` (ver [DEPLOY.md](DEPLOY.md)). `DELETE /v1/mensagens?email=` apaga só as mensagens.
+- Quem pedir a exclusão tem todos os acessos **e todas as mensagens** do e-mail apagados com `DELETE /v1/acessos`, com o e-mail no corpo JSON (ver [DEPLOY.md](DEPLOY.md)). `DELETE /v1/mensagens` apaga só as mensagens. O e-mail vai no corpo para não ficar na URL nem nos logs; `?email=` ainda é aceito por compatibilidade temporária.
 - O pedido chega pelo próprio "Fala aê", com o motivo `privacidade`. Depois de atender, apague o e-mail com o comando acima; a mensagem do pedido sai junto.
 - A própria pessoa pode apagar o que está no navegador executando `LearnTECH.esquecer()` no console, ou limpando os dados do site.
 

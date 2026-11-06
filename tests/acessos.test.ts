@@ -206,4 +206,98 @@ describe("cors", () => {
   });
 });
 
+describe("DELETE /v1/acessos com e-mail no corpo", () => {
+  /* DELETE de administração com corpo JSON. */
+  const apagar = (corpo: unknown, caminho = "/v1/acessos") =>
+    app.request(caminho, { method: "DELETE", headers: { Authorization: `Bearer ${TOKEN}`, "Content-Type": "application/json" }, body: JSON.stringify(corpo) }, env);
+
+  beforeEach(async () => {
+    await postar(valido);
+    await postar({ ...valido, email: "joao@exemplo.com", nome: "João Souza" });
+  });
+
+  it("apaga pelo e-mail do corpo, normalizado, sem aviso de obsoleto", async () => {
+    const r = await apagar({ email: " MARIA@exemplo.com " });
+    expect(r.status).toBe(200);
+    expect(await r.json()).toEqual({ apagados: 1, mensagens: 0 });
+    expect(r.headers.get("Deprecation")).toBeNull();
+    expect(repo.linhas.map((l) => l.email)).toEqual(["joao@exemplo.com"]);
+  });
+
+  it("?email= ainda funciona (compatibilidade temporária), com Deprecation: true", async () => {
+    const r = await admin("/v1/acessos?email=maria@exemplo.com", "DELETE");
+    expect(await r.json()).toEqual({ apagados: 1, mensagens: 0 });
+    expect(r.headers.get("Deprecation")).toBe("true");
+  });
+
+  it("o corpo tem precedência sobre a query", async () => {
+    const r = await apagar({ email: "joao@exemplo.com" }, "/v1/acessos?email=maria@exemplo.com");
+    expect(await r.json()).toEqual({ apagados: 1, mensagens: 0 });
+    expect(repo.linhas.map((l) => l.email)).toEqual(["maria@exemplo.com"]);
+  });
+
+  it("sem e-mail (nem corpo nem query) responde 400 e não apaga nada", async () => {
+    expect((await apagar({})).status).toBe(400);
+    expect((await apagar({ email: 42 })).status).toBe(400);
+    expect((await admin("/v1/acessos", "DELETE")).status).toBe(400);
+    expect(repo.linhas).toHaveLength(2);
+  });
+
+  it("exige token também com corpo", async () => {
+    const r = await app.request("/v1/acessos", { method: "DELETE", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: "maria@exemplo.com" }) }, env);
+    expect(r.status).toBe(401);
+    expect(repo.linhas).toHaveLength(2);
+  });
+});
+
+describe("limite de taxa no POST /v1/acessos", () => {
+  /* Limitador falso: permite `max` chamadas por chave e guarda as chaves recebidas. */
+  function limitador(max: number) {
+    const contagem = new Map<string, number>();
+    const chaves: string[] = [];
+    const limitar = async (_env: Ambiente, chave: string) => {
+      chaves.push(chave);
+      contagem.set(chave, (contagem.get(chave) ?? 0) + 1);
+      return contagem.get(chave)! <= max;
+    };
+    return { limitar, chaves };
+  }
+
+  /* POST com IP de origem informado pela Cloudflare. */
+  const postarDoIp = (ip: string, corpo: unknown = valido) =>
+    app.request("/v1/acessos", { method: "POST", headers: { "Content-Type": "application/json", Origin: ORIGEM, "CF-Connecting-IP": ip }, body: JSON.stringify(corpo) }, env);
+
+  it("responde 429 com Retry-After e CORS quando o IP passa do limite, sem gravar", async () => {
+    const l = limitador(2);
+    app = criarApp({ repositorio: () => repo, agora: () => agora, limitar: l.limitar });
+    expect((await postarDoIp("203.0.113.7")).status).toBe(201);
+    expect((await postarDoIp("203.0.113.7", { ...valido, email: "b@exemplo.com" })).status).toBe(201);
+    const r = await postarDoIp("203.0.113.7", { ...valido, email: "c@exemplo.com" });
+    expect(r.status).toBe(429);
+    expect(r.headers.get("Retry-After")).toBe("60");
+    expect(r.headers.get("Access-Control-Allow-Origin")).toBe(ORIGEM);
+    expect(repo.linhas).toHaveLength(2);
+    expect(l.chaves[0]).toBe("203.0.113.7:acessos");
+  });
+
+  it("conta cada IP separadamente", async () => {
+    const l = limitador(1);
+    app = criarApp({ repositorio: () => repo, agora: () => agora, limitar: l.limitar });
+    expect((await postarDoIp("203.0.113.7")).status).toBe(201);
+    expect((await postarDoIp("198.51.100.9", { ...valido, email: "b@exemplo.com" })).status).toBe(201);
+  });
+
+  it("origem não permitida é recusada antes de consumir o limite", async () => {
+    const l = limitador(1);
+    app = criarApp({ repositorio: () => repo, agora: () => agora, limitar: l.limitar });
+    const r = await app.request("/v1/acessos", { method: "POST", headers: { "Content-Type": "application/json", Origin: "https://malicioso.exemplo" }, body: JSON.stringify(valido) }, env);
+    expect(r.status).toBe(403);
+    expect(l.chaves).toEqual([]);
+  });
+
+  it("sem limitador configurado, o comportamento é o de antes (sem 429)", async () => {
+    for (let i = 0; i < 40; i++) expect((await postarDoIp("203.0.113.7", { ...valido, email: `p${i}@exemplo.com` })).status).toBe(201);
+  });
+});
+
 /* Fim de acessos.test.ts */
