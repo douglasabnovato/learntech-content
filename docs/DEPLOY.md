@@ -68,12 +68,14 @@ TOKEN=...  API=https://learntech-content.<sub>.workers.dev
 curl -H "Authorization: Bearer $TOKEN" "$API/v1/acessos/resumo"
 curl -H "Authorization: Bearer $TOKEN" "$API/v1/acessos?projeto=tools&desde=2026-10-01"
 curl -H "Authorization: Bearer $TOKEN" "$API/v1/acessos?formato=csv&limite=1000" -o acessos.csv
-curl -X DELETE -H "Authorization: Bearer $TOKEN" "$API/v1/acessos?email=pessoa@exemplo.com"
+curl -X DELETE -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" -d '{"email":"pessoa@exemplo.com"}' "$API/v1/acessos"
 ```
 
 Também dá para ver a tabela no painel: Cloudflare → Storage & Databases → D1 → learntech-acessos → Console.
 
-O `DELETE /v1/acessos?email=` apaga **também as mensagens** do "Fala aê" desse e-mail e responde `{ "apagados": <acessos>, "mensagens": <mensagens> }`. Use-o para pedidos de exclusão (LGPD).
+O `DELETE /v1/acessos` (e-mail no corpo JSON) apaga **também as mensagens** do "Fala aê" desse e-mail e responde `{ "apagados": <acessos>, "mensagens": <mensagens> }`. Use-o para pedidos de exclusão (LGPD).
+
+O e-mail vai no corpo, e não na URL, para não aparecer nos logs do Workers. A forma antiga, `?email=`, ainda funciona por compatibilidade temporária, mas responde com o cabeçalho `Deprecation: true` e sai numa versão futura.
 
 ## 7. Mensagens do "Fala aê"
 
@@ -94,7 +96,7 @@ curl -H "Authorization: Bearer $TOKEN" "$API/v1/mensagens"                      
 curl -H "Authorization: Bearer $TOKEN" "$API/v1/mensagens?motivo=privacidade&desde=2026-10-01"
 curl -H "Authorization: Bearer $TOKEN" "$API/v1/mensagens?email=pessoa@exemplo.com"
 curl -H "Authorization: Bearer $TOKEN" "$API/v1/mensagens?formato=csv&limite=1000" -o mensagens.csv
-curl -X DELETE -H "Authorization: Bearer $TOKEN" "$API/v1/mensagens?email=pessoa@exemplo.com"   # só as mensagens
+curl -X DELETE -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" -d '{"email":"pessoa@exemplo.com"}' "$API/v1/mensagens"   # só as mensagens
 ```
 
 Filtros: `projeto`, `motivo` (`duvida-programa`, `sugestao-conteudo`, `problema-tecnico`, `privacidade`, `outro`), `email`, `desde` (AAAA-MM-DD), `limite` (até 1000) e `formato=csv`.

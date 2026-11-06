@@ -162,6 +162,8 @@ hd ──(etapas 1-5)──► content/*.json ──(build: Zod + integridade)�
 - `como-trabalhamos.md`: papéis, acertos, ajustes com métrica, fluxo de entrega e conversas múltiplas.
 - `conversas/`: registro de cada conversa (modelo no README da pasta).
 - `lotes/`: plano e relatório de cada leva.
+- `fluxo-git.md`: feature → developer → main nos cinco repositórios, com os nomes das branches de integração e a recusa transitória do ruleset.
+- `mvp-por-repositorio.md`: definição de MVP finalizado e as 9 etapas para levar um repositório até lá (diagnóstico, plano, execução, publicação, issues).
 - `../../PROXIMOS-PASSOS.md`: tarefas pendentes do autor, numeradas, em ordem e com data.
 
 ## Melhoria contínua (a cada remessa)

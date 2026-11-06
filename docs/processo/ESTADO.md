@@ -1,6 +1,6 @@
 # Estado do ecossistema: comece por aqui
 
-Ponto de entrada de toda conversa nova com o Claude. Atualizado ao fim de cada conversa. **Última atualização: 03/11/2026, 10h.**
+Ponto de entrada de toda conversa nova com o Claude. Atualizado ao fim de cada conversa. **Última atualização: 05/11/2026.**
 
 ## O que é
 O learnTECH treina pessoas para o ecossistema de tecnologia com o que o autor fez e com o que ele quer fazer. Uma API de conteúdo alimenta quatro sites:
@@ -22,6 +22,11 @@ Pasta local: `C:\douglasabnovato-github\mundo-learn-tech\`. O acervo bruto fica 
 - **Pendências do autor:** `PROXIMOS-PASSOS.md`.
 - **Histórico por lote:** `docs/processo/lotes/`. Histórico por conversa: `docs/processo/conversas/`.
 - **Medição:** `npm run progresso` (placar), `npm run cobertura`, `npm run leva:status`.
+
+## Situação em 05/11/2026
+- **Rodada de MVP dos cinco projetos** (03 a 05/11): diagnóstico, plano, execução, conteúdo do lote 4, processo (`fluxo-git.md`, `mvp-por-repositorio.md`) e issues `proximos-passos` em todos os repositórios. Registro: `conversas/2026-11-03-mvp-cinco-projetos.md`.
+- **Publicação:** branch `feature/tasks-03-11-2026-b` → developer → main nos cinco, e deploy da API em 05/11.
+- **Próximo passo:** executar as issues `proximos-passos` por prioridade e decidir as `decisao-do-autor`.
 
 ## Situação em 03/11/2026
 - **Publicado:** a branch `feature/tasks-01-11-2026-c` subiu nos cinco repositórios e a API foi publicada (versão `950f63cb`). Placar: 76/100, com Publicação em 100%.
