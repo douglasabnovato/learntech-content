@@ -26,6 +26,7 @@ Pasta local: `C:\douglasabnovato-github\mundo-learn-tech\`. O acervo bruto fica 
 ## Situação em 05/11/2026
 - **Rodada de MVP dos cinco projetos** (03 a 05/11): diagnóstico, plano, execução, conteúdo do lote 4, processo (`fluxo-git.md`, `mvp-por-repositorio.md`) e issues `proximos-passos` em todos os repositórios. Registro: `conversas/2026-11-03-mvp-cinco-projetos.md`.
 - **Publicação:** branch `feature/tasks-03-11-2026-b` → developer → main nos cinco, e deploy da API em 05/11.
+- **Estabilidade (05/11):** e2e contra produção com 19 de 19 testes (fluxos e acessibilidade sem violação crítica); Deploy automático só com `DEPLOY_AUTOMATICO = sim`, sem ficar vermelho a cada push; `docs/COMO-EVOLUIR.md` em cada um dos cinco repositórios.
 - **Próximo passo:** executar as issues `proximos-passos` por prioridade e decidir as `decisao-do-autor`.
 
 ## Situação em 03/11/2026

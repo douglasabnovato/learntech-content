@@ -46,7 +46,7 @@ Formato: número, tarefa, projeto, **identificada em** (data em que surgiu) e co
 14. **Decidir o leia-me duplicado da career** (career). Identificada em 2026-11-03.
    O Git guarda `README.md` e `Readme.md`, que diferem só pela maiúscula; no Windows aparece um só. Peça ao Claude a comparação dos dois e decida como juntar, sem perder texto.
 15. **Opcional: deploy automático da API** (learntech-content). Identificada em 2026-11-03.
-   Cadastrar `CLOUDFLARE_API_TOKEN` e `CLOUDFLARE_ACCOUNT_ID` em Settings → Secrets and variables → Actions. Sem eles, o `deploy.yml` termina verde sem publicar, e o deploy continua manual. O Claude não lê nem cadastra segredos.
+   Cadastrar `CLOUDFLARE_API_TOKEN` e `CLOUDFLARE_ACCOUNT_ID` em Settings → Secrets and variables → Actions. Depois, crie a variável `DEPLOY_AUTOMATICO` = `sim` (aba Variables). Sem ela, o job Deploy aparece como pulado e o deploy continua manual (`npm run deploy`). Issue #9. O Claude não lê nem cadastra segredos.
 
 16. **Revisar o log de escolhas do lote de issues e responder às perguntas nas issues** (todos). Identificada em 2026-11-03.
    O log está em `docs/processo/lotes/2026-11-03-issues.md`, seção "Log de escolhas", com 21 itens. Corrija o que discordar. As 30 issues com perguntas (comentário "Perguntas para virar conteúdo") viram conteúdo assim que você responde. Depois do deploy, feche as 27 issues com comentário "Conteúdo produzido".

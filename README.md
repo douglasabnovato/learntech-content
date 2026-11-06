@@ -1,5 +1,7 @@
 # Learntech Content
 
+> **Vai evoluir o projeto ou trouxe arquivos novos?** Comece por [`docs/COMO-EVOLUIR.md`](docs/COMO-EVOLUIR.md): onde fica cada coisa, o que é gerado pela API, comandos e a checklist de estabilidade.
+
 API de conteúdo do ecossistema **LearnTECH**: um só lugar para os programas, eventos, empresas, vagas, perfis e ferramentas que alimentam os quatro sites. O projeto é gratuito e sem fins comerciais.
 
 | Site | O que consome |
