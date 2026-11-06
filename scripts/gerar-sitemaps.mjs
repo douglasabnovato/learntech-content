@@ -8,8 +8,10 @@
  *   bootcamps/public/sitemap.xml e robots.txt
  *   career/sitemap.xml e tools/sitemap.xml        (GitHub Pages de projeto: o robots.txt só valeria na raiz do domínio)
  * Páginas de detalhe da career e do tools usam ?tipo=&id= e ?id= (o # não é indexado; os dois sites aceitam a query).
+ * No tools, ferramentas e hospedagens usam o mesmo detalhe.html?id=<slug> (tools/js/detalhe.js procura nas duas listas).
  *
- * Uso: npm run sitemaps   (rode depois de mudar conteúdo, junto com npm run copias)
+ * Uso: npm run sitemaps                (rode depois de mudar conteúdo, junto com npm run copias)
+ *      npm run sitemaps -- --simular   (só mostra quantas URLs sairiam, sem gravar nos sites)
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -48,11 +50,17 @@ const saidas = {
     SITES.career + "/",
     ...["empresas", "vagas", "perfis"].flatMap((t) => comDetalhe(`career/${t}.json`).map((i) => `${SITES.career}/detalhe.html?tipo=${t}&id=${i.slug}`)),
   ],
-  tools: [SITES.tools + "/", ...comDetalhe("tools/ferramentas.json").map((i) => `${SITES.tools}/detalhe.html?id=${i.slug}`)],
+  /* Set: se uma ferramenta e uma hospedagem tiverem o mesmo slug, o detalhe.html abre a mesma página. */
+  tools: [...new Set([
+    SITES.tools + "/",
+    ...["ferramentas", "hospedagens"].flatMap((t) => comDetalhe(`tools/${t}.json`).map((i) => `${SITES.tools}/detalhe.html?id=${i.slug}`)),
+  ])],
 };
+const SIMULAR = process.argv.includes("--simular");
 
 for (const [pasta, urls] of Object.entries(saidas)) {
   const destino = path.join(VIZINHOS, pasta);
+  if (SIMULAR) { console.log(`~ ${pasta}/sitemap.xml (${urls.length} URLs, não gravado)`); continue; }
   if (!fs.existsSync(destino)) { console.warn(`- ${pasta} não encontrado, pulei`); continue; }
   fs.writeFileSync(path.join(destino, "sitemap.xml"), xml(urls));
   if (pasta.endsWith("/public")) fs.writeFileSync(path.join(destino, "robots.txt"), robots(SITES[pasta.split("/")[0]]));

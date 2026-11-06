@@ -167,7 +167,7 @@ export function indiceDoEcossistema(c: Conteudo): Map<string, Alvo> {
   for (const [tipo, itens, projeto] of listas) {
     for (const i of itens as { title: string; slug?: string; site_url: string; detalhe?: unknown }[]) {
       if (!i.slug) continue;
-      const pagina = projeto === "career" ? `${SITES.career}/detalhe.html#tipo=${tipo}&id=${i.slug}` : `${SITES.tools}/detalhe.html#id=${i.slug}`;
+      const pagina = projeto === "career" ? `${SITES.career}/detalhe.html?tipo=${tipo}&id=${i.slug}` : `${SITES.tools}/detalhe.html?id=${i.slug}`;
       m.set(`${tipo}:${i.slug}`, { projeto, titulo: i.title, url: i.detalhe ? pagina : i.site_url });
     }
   }

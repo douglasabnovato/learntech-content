@@ -5,17 +5,20 @@
  * dos arquivos gerados em cada site.
  *
  * Uso (na raiz do learntech-content, com os sites como pastas irmãs em mundo-learn-tech/):
- *   node scripts/exportar-copias.mjs            # gera
- *   node scripts/exportar-copias.mjs --conferir # só confere se as cópias estão em dia (sai com erro se não)
+ *   npm run copias           # gera
+ *   npm run copias:conferir  # só confere se as cópias estão em dia (sai com erro se não)
  *
  * Regras:
  * - Caminhos /media/... viram URL absoluta da API (API_PUBLICA), porque o site não serve /media.
  * - O campo `detalhe` fica fora da cópia: sem API, o card abre o site oficial (a página de detalhe exige a API).
- * - Sem dependências: só Node 20+.
+ * - Eventos e catálogo de programas saem de montarRecursos, o mesmo do build: relacionados chegam com
+ *   título e URL prontos, e o catálogo traz os mesmos campos de /v1/learn-tech/programas.json (inclusive status).
+ * - Roda com tsx (devDependency do build), porque importa scripts/lib/conteudo.ts.
  */
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { carregarConteudo, montarRecursos } from "./lib/conteudo.ts";
 
 const API_PUBLICA = "https://learntech-content.douglasabnovato.workers.dev";
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -24,8 +27,6 @@ const CONTENT = path.join(RAIZ, "content");
 const conferir = process.argv.includes("--conferir");
 
 const ler = (rel) => JSON.parse(fs.readFileSync(path.join(CONTENT, rel), "utf8"));
-const lerPasta = (rel) =>
-  fs.readdirSync(path.join(CONTENT, rel)).filter((f) => f.endsWith(".json")).sort().map((f) => ler(path.join(rel, f)));
 
 /* Troca /media/... pela URL absoluta da API, em qualquer profundidade. */
 function absolutizar(valor) {
@@ -60,7 +61,12 @@ function saidas() {
     career("js/curriculos.js", "curriculos", "content/career/modelos-curriculo.json", absolutizar(ler("career/modelos-curriculo.json")));
   }
 
-  const eventos = lerPasta("bootcamps/eventos").sort((a, b) => Number(a.id) - Number(b.id));
+  const { conteudo, erros } = carregarConteudo(CONTENT);
+  if (erros.length) throw new Error(`content/ inválido, rode npm run validar:\n${erros.join("\n")}`);
+  const recursos = montarRecursos(conteudo);
+  const recurso = (caminho) => recursos.find((x) => x.caminho === caminho).dados;
+
+  const eventos = [...recurso("bootcamps/eventos.json")].sort((a, b) => Number(a.id) - Number(b.id));
   r.push({
     site: "bootcamps",
     arquivo: "src/entities/event/api/events.data.ts",
@@ -71,10 +77,7 @@ function saidas() {
   r.push({ site: "learn-tech", arquivo: "src/constants/blogData.js", texto: CABECALHO("content/learn-tech/paginas/blog.json") + `const blogData = ${json(absolutizar(blog))};\n\nexport default blogData;\n` });
   /* Catálogo de programas do learn-tech (só os campos de card, como /v1/learn-tech/programas.json):
      completa a reserva manual programsData.js com os programas novos, para listas e cards funcionarem sem API. */
-  const CAMPOS_RESUMO = ["id", "image", "video", "videoPoster", "category", "categoryFilter", "title", "lessons", "duration", "access", "accessType", "level", "description"];
-  const catalogo = lerPasta("learn-tech/programas")
-    .map((p) => ({ ...Object.fromEntries(CAMPOS_RESUMO.filter((c) => c in p).map((c) => [c, p[c]])), modulesCount: p.modules?.length ?? 0, hasQuiz: Array.isArray(p.quiz) && p.quiz.length > 0 }))
-    .sort((a, b) => a.id - b.id);
+  const catalogo = [...recurso("learn-tech/programas.json")].sort((a, b) => a.id - b.id);
   r.push({ site: "learn-tech", arquivo: "src/constants/programasCatalogo.js", texto: CABECALHO("content/learn-tech/programas/*.json") + `const programasCatalogo = ${json(absolutizar(catalogo))};\n\nexport default programasCatalogo;\n` });
 
   /* Categorias do learn-tech: ícones vão por nome ("FaCode"); o site hidrata com src/constants/icones.js. */
@@ -98,6 +101,6 @@ for (const s of saidas()) {
   fs.writeFileSync(destino, texto);
   console.log(`+ ${s.site}/${s.arquivo}`);
 }
-if (conferir && divergentes) { console.error(`${divergentes} cópia(s) desatualizada(s): rode node scripts/exportar-copias.mjs`); process.exit(1); }
+if (conferir && divergentes) { console.error(`${divergentes} cópia(s) desatualizada(s): rode npm run copias`); process.exit(1); }
 
 /* Fim de exportar-copias.mjs */
