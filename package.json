@@ -5,7 +5,7 @@
   "description": "API de conteúdo do ecossistema LearnTECH: catálogo em JSON versionado e registro de acessos.",
   "type": "module",
   "engines": {
-    "node": ">=20"
+    "node": ">=22.13"
   },
   "scripts": {
     "build": "tsx scripts/build.ts",
@@ -18,8 +18,8 @@
     "db:migrar:local": "wrangler d1 migrations apply learntech-acessos --local",
     "db:migrar:remoto": "wrangler d1 migrations apply learntech-acessos --remote",
     "deploy": "npm run build && wrangler deploy",
-    "copias": "node scripts/exportar-copias.mjs",
-    "copias:conferir": "node scripts/exportar-copias.mjs --conferir",
+    "copias": "tsx scripts/exportar-copias.mjs",
+    "copias:conferir": "tsx scripts/exportar-copias.mjs --conferir",
     "midia:externa": "node scripts/baixar-imagens-externas.mjs",
     "hd:inventariar": "node scripts/hd-inventariar.mjs",
     "leva:status": "node scripts/leva-status.mjs",
@@ -34,8 +34,8 @@
     "auditar": "node scripts/auditar-dependencias.mjs"
   },
   "dependencies": {
-    "hono": "^4.13.9",
-    "zod": "^4.6.5"
+    "hono": "^4.13.16",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.10.2",
