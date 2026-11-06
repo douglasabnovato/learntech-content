@@ -1,5 +1,5 @@
 /* fluxos.spec.mjs — fluxos principais: abrir a home, abrir um card, ver o detalhe e usar a busca ou os filtros. */
-import { test, expect } from "@playwright/test";
+import { test, expect } from "./visitante.mjs";
 import { SITES } from "./sites.mjs";
 
 const base = (s) => SITES[s].replace(/\/$/, "");
