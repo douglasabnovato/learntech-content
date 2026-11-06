@@ -5,7 +5,9 @@
  *   - Conteúdo do acervo (45): itens fechados / todos os itens (fechado = publicado ou referência, com destino e sem pendências).
  *   - Engenharia do MVP (30): itens [x] / todos em docs/engenharia/backlog.md.
  *   - Pendências do autor (15): concluídas / (concluídas + em aberto) em PROXIMOS-PASSOS.md.
- *   - Publicação (10): repositórios com a main local igual à remota e sem alterações pendentes.
+ *   - Publicação (10): repositórios com a main local igual à remota, sem alterações pendentes e sem commits
+ *     de branches de trabalho (feature/*, developer etc.) fora da origin/main. Commit numa branch que ainda não
+ *     entrou na main não está publicado, mesmo com a main sincronizada.
  *
  * Uso: node scripts/progresso.mjs     (rode na raiz do learntech-content; os sites ficam na pasta vizinha)
  */
@@ -36,12 +38,18 @@ const concluidas = (concluido.match(/^- /gm) ?? []).length;
 const autor = abertas + concluidas ? concluidas / (abertas + concluidas) : 1;
 
 const git = (repo, cmd) => { try { return execSync(`git -C "${path.resolve(RAIZ, "..", repo)}" ${cmd}`, { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim(); } catch { return null; } };
+/* Commits de branches locais (inclusive a main) que ainda não estão na main publicada (origin/main; sem remota, a main local). */
+const pendentesDePublicar = (r) => {
+  const base = git(r, "rev-parse --verify --quiet origin/main") ? "origin/main" : "main";
+  return Number(git(r, `rev-list --count --branches --not ${base}`) ?? 0);
+};
 const estados = REPOS.map((r) => {
   const limpo = git(r, "status --porcelain") === "";
   const main = git(r, "rev-parse main"), remota = git(r, "rev-parse origin/main");
-  return { r, limpo, sincronizado: main !== null && main === remota, branch: git(r, "branch --show-current"), ultimo: git(r, 'log -1 --format="%h %s (%cr)" main') };
+  const foraDaMain = pendentesDePublicar(r);
+  return { r, limpo, foraDaMain, sincronizado: main !== null && main === remota, branch: git(r, "branch --show-current"), ultimo: git(r, 'log -1 --format="%h %s (%cr)" main') };
 });
-const publicacao = estados.filter((e) => e.limpo && e.sincronizado).length / REPOS.length;
+const publicacao = estados.filter((e) => e.limpo && e.sincronizado && e.foraDaMain === 0).length / REPOS.length;
 
 const pct = (x) => `${Math.round(x * 100)}%`;
 const placar = Math.round(conteudo * PESOS.conteudo + engenharia * PESOS.engenharia + autor * PESOS.autor + publicacao * PESOS.publicacao);
@@ -51,6 +59,9 @@ for (const [l, [f, t]] of Object.entries(porLote)) console.log(`   lote ${l}: ${
 console.log(`Engenharia do MVP    ${pct(engenharia).padStart(4)}  (peso ${PESOS.engenharia})  ${feitos}/${total} itens do backlog`);
 console.log(`Pendências do autor  ${pct(autor).padStart(4)}  (peso ${PESOS.autor})  ${concluidas} concluídas, ${abertas} em aberto`);
 console.log(`Publicação           ${pct(publicacao).padStart(4)}  (peso ${PESOS.publicacao})`);
-for (const e of estados) console.log(`   ${e.r.padEnd(18)} ${e.sincronizado ? "main = GitHub" : "main ≠ GitHub"} | ${e.limpo ? "limpo" : "com alterações"} | ${e.branch} | ${e.ultimo}`);
+for (const e of estados) {
+  const fora = e.foraDaMain ? `${e.foraDaMain} commit(s) fora da main` : "nada fora da main";
+  console.log(`   ${e.r.padEnd(18)} ${e.sincronizado ? "main = GitHub" : "main ≠ GitHub"} | ${e.limpo ? "limpo" : "com alterações"} | ${fora} | ${e.branch} | ${e.ultimo}`);
+}
 
 /* Fim de progresso.mjs */
