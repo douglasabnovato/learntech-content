@@ -68,7 +68,8 @@ Regra de cobertura: o mesmo material deve aparecer no máximo de projetos que o 
 - [ ] Workflow `disponibilidade` verde no GitHub.
 
 ## 7. Onde está cada documento
-- **Estado atual:** `processo/ESTADO.md`. **Pendências do autor:** `../PROXIMOS-PASSOS.md`.
+- **Estado do projeto** (o que fizemos e o que queremos fazer, com as issues em ordem): `ESTADO-DO-PROJETO.md`.
+- **Estado atual das conversas:** `processo/ESTADO.md`. **Pendências do autor:** `../PROXIMOS-PASSOS.md`.
 - **Arquitetura e decisões:** `ARQUITETURA.md`, `DECISOES.md`. **Conteúdo:** `CONTEUDO.md`. **Deploy:** `DEPLOY.md`. **Privacidade:** `PRIVACIDADE.md`.
 - **Processo:** `processo/` (levas, regras, modelos, pesquisa, fluxo Git, MVP por repositório).
 - **Engenharia:** `engenharia/` (backlog, diagnósticos, relatórios).

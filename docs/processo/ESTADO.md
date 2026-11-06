@@ -1,6 +1,6 @@
 # Estado do ecossistema: comece por aqui
 
-Ponto de entrada de toda conversa nova com o Claude. Atualizado ao fim de cada conversa. **Última atualização: 05/11/2026.**
+Ponto de entrada de toda conversa nova com o Claude. Atualizado ao fim de cada conversa. **Última atualização: 06/11/2026.**
 
 ## O que é
 O learnTECH treina pessoas para o ecossistema de tecnologia com o que o autor fez e com o que ele quer fazer. Uma API de conteúdo alimenta quatro sites:
@@ -22,6 +22,10 @@ Pasta local: `C:\douglasabnovato-github\mundo-learn-tech\`. O acervo bruto fica 
 - **Pendências do autor:** `PROXIMOS-PASSOS.md`.
 - **Histórico por lote:** `docs/processo/lotes/`. Histórico por conversa: `docs/processo/conversas/`.
 - **Medição:** `npm run progresso` (placar), `npm run cobertura`, `npm run leva:status`.
+
+## Situação em 06/11/2026
+- **Documentação do estado:** `docs/ESTADO-DO-PROJETO.md` em cada um dos cinco repositórios (o que fizemos, como está, o que queremos fazer) e seção "Estado do projeto" no README de cada um. As seções antigas de pendências dos READMEs passaram a apontar para as issues.
+- **Issues novas** (`proximos-passos`, com critérios de entrega): learntech-content #10 e #11, learn-tech #133 e #134, bootcamps #75, career #33 e tools #60. As novas de acessibilidade usam o relatório do e2e de 05/11.
 
 ## Situação em 05/11/2026
 - **Rodada de MVP dos cinco projetos** (03 a 05/11): diagnóstico, plano, execução, conteúdo do lote 4, processo (`fluxo-git.md`, `mvp-por-repositorio.md`) e issues `proximos-passos` em todos os repositórios. Registro: `conversas/2026-11-03-mvp-cinco-projetos.md`.
