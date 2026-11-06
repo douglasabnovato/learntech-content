@@ -5,7 +5,9 @@ name: Deploy
 #     O checkout usa exatamente o commit que a CI verificou (head_sha).
 #   - Manual: workflow_dispatch na main; roda typecheck, lint, testes e build antes de publicar.
 # Segredos obrigatórios em Settings → Secrets and variables → Actions: CLOUDFLARE_API_TOKEN e CLOUDFLARE_ACCOUNT_ID.
-# Sem eles o job FALHA (vermelho), para não parecer publicado quando não foi. Deploy manual: npm run deploy.
+# O automático só roda com a variável de repositório DEPLOY_AUTOMATICO = sim (Settings → Secrets and variables →
+# Actions → Variables), ligada depois de cadastrar os segredos. Sem ela, o job aparece como pulado, e não vermelho.
+# No disparo manual, sem os segredos o job FALHA, para não parecer publicado quando não foi. Deploy local: npm run deploy.
 on:
   workflow_run:
     workflows: [CI]
@@ -17,7 +19,8 @@ jobs:
   deploy:
     if: >-
       (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main') ||
-      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event == 'push')
+      (github.event_name == 'workflow_run' && vars.DEPLOY_AUTOMATICO == 'sim' &&
+       github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event == 'push')
     runs-on: ubuntu-latest
     env:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
