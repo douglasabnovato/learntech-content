@@ -842,5 +842,272 @@
       }
     ],
     "atualizadoEm": "2026-10-31"
+  },
+  {
+    "slug": "desenvolvedor-backend-senior",
+    "nivel": "senior",
+    "paraQuem": "Para quem já tem seis anos ou mais em desenvolvimento back-end e quer mostrar, num currículo de duas páginas, o que separa um perfil sênior de um pleno: decisões de arquitetura, confiabilidade em produção, impacto no negócio e apoio ao crescimento do time. Serve tanto para vagas de engenharia de produto quanto para times de plataforma.",
+    "ficticio": true,
+    "nome": "Marina Modelo Teixeira",
+    "titulo": "Desenvolvedora Back-end Sênior | Java, Kotlin, Spring Boot, Microsserviços e Mensageria",
+    "localizacao": "Belo Horizonte – MG",
+    "objetivo": "Atuar como Desenvolvedora Back-end Sênior em empresa de produto digital, desenhando e evoluindo serviços distribuídos com foco em confiabilidade, observabilidade e entrega contínua, e apoiando o crescimento técnico do time.",
+    "resumo": "Engenheira de software com nove anos em back-end, sendo os últimos cinco em produtos de pagamentos e logística com alto volume de transações. Projeto e mantenho microsserviços em Java e Kotlin com Spring Boot, mensageria com Kafka e bancos PostgreSQL e Redis, rodando em contêineres na AWS. Conduzi a divisão de um monólito em serviços por domínio, defini padrões de observabilidade e participo da escala de plantão. Escrevo documentos de decisão de arquitetura, faço revisão de código e mentoria de pessoas júnior e plena.",
+    "contato": {
+      "telefone": "(00) 00000-0000",
+      "email": "marina.modelo@example.com",
+      "linkedin": "https://www.example.com/linkedin/marina-modelo",
+      "github": "https://www.example.com/github/marina-modelo",
+      "portfolio": "https://www.example.com/portfolio/marina-modelo"
+    },
+    "competencias": [
+      {
+        "categoria": "Linguagens e frameworks",
+        "itens": [
+          "Java 17+ (avançado)",
+          "Kotlin (avançado)",
+          "Spring Boot, Spring Data e Spring Security (avançado)",
+          "Go (básico)"
+        ]
+      },
+      {
+        "categoria": "Arquitetura e integração",
+        "itens": [
+          "Microsserviços e Domain-Driven Design",
+          "APIs REST e gRPC",
+          "Mensageria com Apache Kafka e RabbitMQ",
+          "Padrões Outbox, Saga e idempotência"
+        ]
+      },
+      {
+        "categoria": "Dados",
+        "itens": [
+          "PostgreSQL: modelagem, índices e análise de planos de execução (avançado)",
+          "Redis para cache e controle de concorrência (intermediário)",
+          "Migrações com Flyway (avançado)"
+        ]
+      },
+      {
+        "categoria": "Infraestrutura e operação",
+        "itens": [
+          "Docker e Kubernetes (intermediário)",
+          "AWS: ECS, RDS, SQS e S3 (intermediário)",
+          "Terraform (básico)",
+          "CI/CD com GitHub Actions",
+          "Observabilidade com OpenTelemetry, Prometheus e Grafana"
+        ]
+      },
+      {
+        "categoria": "Qualidade",
+        "itens": [
+          "Testes unitários e de integração com JUnit 5 e Testcontainers",
+          "Testes de contrato",
+          "Testes de carga com k6"
+        ]
+      },
+      {
+        "categoria": "Competências comportamentais",
+        "itens": [
+          "Mentoria e revisão de código",
+          "Escrita de documentos de decisão técnica",
+          "Comunicação com produto e negócio",
+          "Condução de análises pós-incidente sem culpados"
+        ]
+      }
+    ],
+    "experiencias": [
+      {
+        "cargo": "Desenvolvedora Back-end Sênior",
+        "empresa": "Fintech Exemplo de Pagamentos",
+        "descricaoEmpresa": "Fintech de meios de pagamento para pequenos e médios lojistas, com maquininhas, link de pagamento e conta digital, e cerca de 300 pessoas em tecnologia. Empresa fictícia, usada como exemplo.",
+        "periodo": "Fev/2022 – atual",
+        "local": "Belo Horizonte – MG",
+        "modelo": "Remoto",
+        "atividades": [
+          "Liderei tecnicamente a extração do módulo de conciliação do monólito para três serviços por domínio, com migração gradual por feature flags e sem janela de indisponibilidade.",
+          "Implementei o padrão Outbox com Kafka para eventos de pagamento, eliminando a perda de eventos entre banco e fila observada em incidentes anteriores.",
+          "Defini o padrão de observabilidade do time (logs estruturados, métricas e rastreamento com OpenTelemetry), adotado depois por outros quatro times.",
+          "Reduzi o tempo de resposta do endpoint de extrato revisando consultas, índices e cache, com testes de carga antes e depois da mudança.",
+          "Escrevi documentos de decisão de arquitetura para escolhas como idempotência de cobranças e versionamento de APIs, revisados pela guilda de back-end.",
+          "Fui mentora de duas pessoas desenvolvedoras júnior e uma plena, com plano de estudos e pareamento semanal."
+        ],
+        "tecnologias": [
+          "Kotlin",
+          "Java",
+          "Spring Boot",
+          "Kafka",
+          "PostgreSQL",
+          "Redis",
+          "Kubernetes",
+          "AWS",
+          "OpenTelemetry",
+          "Grafana"
+        ]
+      },
+      {
+        "cargo": "Desenvolvedora Back-end Plena",
+        "empresa": "Plataforma Exemplo de Logística",
+        "descricaoEmpresa": "Plataforma de gestão de entregas para varejistas e transportadoras, com roteirização e rastreamento em tempo real. Empresa fictícia, usada como exemplo.",
+        "periodo": "Mar/2019 – Jan/2022",
+        "local": "São Paulo – SP",
+        "modelo": "Híbrido",
+        "atividades": [
+          "Desenvolvi a API de rastreamento de pedidos consumida pelo aplicativo do entregador e pelos sistemas dos clientes, com autenticação OAuth 2.0 e limites de uso por cliente.",
+          "Criei a integração assíncrona com transportadoras parceiras usando RabbitMQ, com reprocessamento automático e fila de mensagens com erro.",
+          "Introduzi testes de integração com Testcontainers no pipeline, o que reduziu falhas descobertas só depois do deploy.",
+          "Participei da escala de plantão e escrevi runbooks para os alertas mais frequentes do serviço de rastreamento."
+        ],
+        "tecnologias": [
+          "Java",
+          "Spring Boot",
+          "RabbitMQ",
+          "PostgreSQL",
+          "Docker",
+          "Testcontainers",
+          "Jenkins"
+        ]
+      },
+      {
+        "cargo": "Desenvolvedora Java Júnior",
+        "empresa": "Software House Exemplo",
+        "descricaoEmpresa": "Empresa de desenvolvimento sob demanda para clientes de saúde e educação. Empresa fictícia, usada como exemplo.",
+        "periodo": "Jan/2017 – Fev/2019",
+        "local": "Belo Horizonte – MG",
+        "modelo": "Presencial",
+        "atividades": [
+          "Desenvolvi APIs REST e telas administrativas para sistemas de agendamento e matrícula, do levantamento com o cliente à entrega.",
+          "Escrevi testes unitários e ajudei a padronizar a revisão de código por pull request no time."
+        ],
+        "tecnologias": [
+          "Java",
+          "Spring MVC",
+          "Hibernate",
+          "MySQL",
+          "Git"
+        ]
+      }
+    ],
+    "experienciaAnterior": [
+      {
+        "empresa": "Escritório Exemplo de Contabilidade",
+        "cargo": "Estagiária de Suporte de TI",
+        "periodo": "2015 – 2016"
+      }
+    ],
+    "projetos": [
+      {
+        "nome": "Serviço de pagamentos idempotente com dados fictícios",
+        "descricao": "API de cobrança de exemplo com chave de idempotência, padrão Outbox, eventos em Kafka e testes com Testcontainers. O repositório traz um documento de decisão explicando as escolhas e os limites da solução.",
+        "tecnologias": [
+          "Kotlin",
+          "Spring Boot",
+          "Kafka",
+          "PostgreSQL",
+          "Testcontainers"
+        ]
+      },
+      {
+        "nome": "Painel de observabilidade de um serviço de exemplo",
+        "descricao": "Ambiente local com Docker Compose que instrumenta um serviço com OpenTelemetry e mostra métricas, logs e rastreamento no Grafana, com um roteiro de investigação de um incidente simulado.",
+        "tecnologias": [
+          "OpenTelemetry",
+          "Prometheus",
+          "Grafana",
+          "Docker Compose"
+        ]
+      },
+      {
+        "nome": "Contribuição em biblioteca de código aberto",
+        "descricao": "Correções de documentação e de um teste instável numa biblioteca de validação para Spring, aceitas pelos mantenedores.",
+        "tecnologias": [
+          "Java",
+          "JUnit 5",
+          "GitHub"
+        ]
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Bacharelado em Sistemas de Informação",
+        "instituicao": "Universidade Exemplo",
+        "periodo": "2013 – 2016",
+        "status": "Concluído"
+      },
+      {
+        "curso": "Especialização em Arquitetura de Software Distribuído",
+        "instituicao": "Instituto Exemplo de Pós-Graduação",
+        "periodo": "2020 – 2021",
+        "status": "Concluído"
+      }
+    ],
+    "certificados": [
+      "AWS Certified Developer – Associate – exemplo de credencial; liste só se tiver",
+      "Curso de Kafka para desenvolvedores (20 h) – Escola Exemplo Online, 2023",
+      "Kubernetes para desenvolvedores (16 h) – Escola Exemplo Online, 2022"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Avançado — reuniões técnicas e escrita de documentação"
+      },
+      {
+        "idioma": "Espanhol",
+        "nivel": "Intermediário"
+      }
+    ],
+    "comunidade": [
+      "Palestra sobre padrão Outbox num meetup regional de Java (2024).",
+      "Mentoria voluntária de pessoas em transição de carreira para back-end (2023 – 2026).",
+      "Artigos técnicos sobre testes de integração no blog pessoal (2021 – 2026)."
+    ],
+    "dicas": [
+      {
+        "secao": "Título",
+        "texto": "Junte o cargo e as três ou quatro tecnologias centrais da vaga. Em back-end sênior, linguagem, framework e o tipo de sistema (microsserviços, mensageria) dizem mais do que uma lista longa de ferramentas."
+      },
+      {
+        "secao": "Resumo profissional",
+        "texto": "Mostre o que muda no sênior: o tipo de problema que você resolve sozinha, as decisões que toma e como apoia o time. Diga o domínio em que trabalhou (pagamentos, logística) porque ele ajuda quem lê a medir a complexidade."
+      },
+      {
+        "secao": "Competências",
+        "texto": "Agrupe por tema e indique o nível. Liste só o que você consegue discutir numa entrevista técnica: um item sem profundidade costuma virar pergunta difícil."
+      },
+      {
+        "secao": "Experiência profissional",
+        "texto": "Descreva cada empresa pelo setor, pelo produto e pelo porte do time, sem expor clientes, números internos ou informações confidenciais do empregador."
+      },
+      {
+        "secao": "Atividades",
+        "texto": "Comece com verbo de ação, diga o problema, a decisão técnica e o efeito. Use números só quando forem seus e puderem ser divulgados; um efeito qualitativo bem descrito ('eliminando a perda de eventos entre banco e fila') vale mais que um percentual inventado."
+      },
+      {
+        "secao": "Projetos",
+        "texto": "No nível sênior, um projeto pessoal vale pelo raciocínio: inclua no repositório um documento explicando as escolhas, as alternativas descartadas e os limites. Use sempre dados fictícios."
+      },
+      {
+        "secao": "Certificados",
+        "texto": "Certificações de nuvem ajudam em algumas triagens, mas não substituem a experiência descrita nas atividades. Nunca liste uma certificação que você ainda não tem."
+      },
+      {
+        "secao": "Tamanho",
+        "texto": "Com quase dez anos de carreira, duas páginas são suficientes. Detalhe os últimos cinco anos e resuma as experiências mais antigas em uma linha cada."
+      }
+    ],
+    "fontes": [
+      {
+        "label": "MIT Career Advising & Professional Development: Career toolkit: Crafting an effective resume",
+        "url": "https://capd.mit.edu/resources/career-toolkit-crafting-an-effective-resume/"
+      },
+      {
+        "label": "UNC Computer Science: Writing a Technical Resume",
+        "url": "https://cs.unc.edu/student-life/career/technical-resumes/"
+      },
+      {
+        "label": "Prefeitura de São Paulo (Secretaria de Desenvolvimento Econômico e Trabalho): Como preparar um currículo",
+        "url": "https://prefeitura.sp.gov.br/web/desenvolvimento/w/dicas/preparar_um_curriculo/619"
+      }
+    ],
+    "atualizadoEm": "2026-11-03"
   }
 ]

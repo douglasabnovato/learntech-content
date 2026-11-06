@@ -5976,5 +5976,289 @@
       ],
       "atualizadoEm": "2026-11-03"
     }
+  },
+  {
+    "title": "Supabase",
+    "description": "Plataforma de back-end sobre PostgreSQL, com autenticação, armazenamento de arquivos, tempo real e APIs geradas a partir do banco.",
+    "category": "Back-end",
+    "pricing": "Freemium",
+    "thumb": "https://www.google.com/s2/favicons?domain=supabase.com&sz=128",
+    "thumbFit": "contain",
+    "site_url": "https://supabase.com/",
+    "slug": "supabase",
+    "detalhe": {
+      "resumo": "Plataforma de desenvolvimento construída sobre o PostgreSQL: cada projeto é um banco Postgres completo, acompanhado de autenticação, armazenamento de arquivos, recursos de tempo real, funções na borda e APIs geradas automaticamente. O código principal é aberto, sob licença Apache-2.0.",
+      "paragrafos": [
+        "Ao criar um projeto no Supabase, você recebe um banco PostgreSQL dedicado. A partir das tabelas, a plataforma gera uma API REST (pelo PostgREST) e uma API GraphQL (pela extensão pg_graphql), então o front-end consegue ler e gravar dados sem que alguém escreva cada rota à mão. Em volta do banco ficam os outros serviços: Auth, para login por e-mail, telefone, link mágico, provedores sociais e autenticação em dois fatores; Storage, para guardar e servir arquivos, com transformação de imagens e compatibilidade com S3; Realtime, para transmitir mensagens entre usuários conectados e mudanças do banco; e Edge Functions, funções em TypeScript que rodam no Deno. O controle de acesso usa Row Level Security, regras escritas em SQL que dizem quem pode ver ou alterar cada linha.",
+        "Esse modelo, chamado de back-end como serviço, é usado por quem precisa de um back-end completo sem montar e manter servidores: protótipos, MVPs, aplicativos móveis, projetos de hackathon e equipes pequenas de front-end ou full stack. Como por baixo existe um Postgres comum, o conhecimento de SQL, modelagem e índices continua valendo, e o projeto pode ser migrado para outro lugar. O repositório principal fica no GitHub, escrito em TypeScript.",
+        "Em novembro de 2026, a página de preços lista um plano Free com banco de 500 MB, 1 GB de armazenamento de arquivos, 5 GB de tráfego de saída, 50.000 usuários ativos por mês e limite de 2 projetos ativos, e um plano Pro a partir de US$ 25 por mês. Para começar, crie um projeto no painel, monte uma tabela simples em SQL, ative a Row Level Security, escreva uma política de leitura e consulte os dados por uma das bibliotecas cliente oficiais, como a de JavaScript.",
+        "No plano Free, projetos são pausados depois de uma semana sem atividade, segundo a página de preços consultada em novembro de 2026; por isso ele serve para estudo e protótipo, não para um serviço que precisa ficar sempre no ar. Nunca deixe uma tabela exposta sem Row Level Security, porque a chave pública do projeto vai no código do front-end e qualquer pessoa pode usá-la. A chave de serviço, que ignora as políticas, fica só no servidor, em variável de ambiente. Recursos marcados como alfa ou beta na documentação merecem cuidado antes de ir para produção.",
+        "No ecossistema LearnTECH, o Supabase aparece no stack do evento ByteClass, ao lado de MySQL, PostgreSQL, Docker e Vercel. Para entender o que acontece por baixo dele, os programas Banco de Dados na Prática e PostgreSQL Avançado ensinam modelagem, SQL e performance no mesmo banco que o Supabase usa. As fichas do Prisma e do Postman ajudam a comparar com o caminho tradicional, em que a própria equipe escreve a API e o acesso ao banco."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://supabase.com/"
+        },
+        {
+          "label": "Documentação",
+          "url": "https://supabase.com/docs"
+        },
+        {
+          "label": "Recursos da plataforma",
+          "url": "https://supabase.com/docs/guides/getting-started/features"
+        },
+        {
+          "label": "Planos e preços",
+          "url": "https://supabase.com/pricing"
+        },
+        {
+          "label": "Organização no GitHub",
+          "url": "https://github.com/supabase"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Supabase Docs: Features",
+          "url": "https://supabase.com/docs/guides/getting-started/features"
+        },
+        {
+          "label": "Supabase: Pricing",
+          "url": "https://supabase.com/pricing"
+        },
+        {
+          "label": "GitHub: organização Supabase",
+          "url": "https://github.com/supabase"
+        },
+        {
+          "label": "Database of Databases: Supabase Inc.",
+          "url": "https://dbdb.io/org/supabase-inc"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "401"
+        },
+        {
+          "tipo": "programas",
+          "id": "402"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "prisma"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "postman"
+        },
+        {
+          "tipo": "eventos",
+          "id": "byteclass-dev"
+        }
+      ],
+      "atualizadoEm": "2026-11-03"
+    }
+  },
+  {
+    "title": "Google Search Console",
+    "description": "Serviço gratuito do Google para acompanhar como um site aparece na busca do Google: indexação, consultas, cliques e problemas técnicos.",
+    "category": "Dados",
+    "pricing": "Gratuito",
+    "thumb": "https://www.google.com/s2/favicons?domain=search.google.com&sz=128",
+    "thumbFit": "contain",
+    "site_url": "https://search.google.com/search-console/about",
+    "slug": "google-search-console",
+    "detalhe": {
+      "resumo": "Serviço gratuito do Google para monitorar, manter e corrigir a presença de um site nos resultados da busca do Google. Mostra se o Google consegue rastrear e indexar as páginas, por quais buscas o site aparece e quais problemas técnicos precisam de atenção.",
+      "paragrafos": [
+        "Depois de adicionar e verificar a propriedade do site, o Search Console passa a reunir dados que só o Google tem: o relatório de desempenho mostra as consultas que levaram o site aos resultados, com cliques, impressões, taxa de cliques e posição média; a inspeção de URL mostra se uma página está indexada, como foi rastreada e qual endereço o Google escolheu como canônico; e há envio de sitemaps XML, relatórios de links internos e externos, avisos de problemas de segurança e de ações manuais, e relatórios de experiência na página, incluindo as Core Web Vitals. Quando uma página nova ou atualizada precisa ser vista, dá para pedir uma nova indexação.",
+        "O serviço foi lançado em 2006 com o nome Google Webmaster Tools e passou a se chamar Google Search Console em 20 de maio de 2015. Ele é usado por perfis diferentes: pessoas de SEO e marketing acompanham tráfego e posições, administradores de site monitoram erros de servidor e invasões, e quem desenvolve confere problemas de marcação, como dados estruturados com erro. Em vagas de front-end que envolvem sites institucionais, landing pages ou e-commerce, saber ler esses relatórios ajuda a entregar um site que, além de funcionar, é encontrado.",
+        "Para usar, basta uma conta Google. Um site entra na busca do Google mesmo sem cadastro no Search Console, mas sem ele você não enxerga os dados nem os alertas. Para começar, adicione a propriedade, do tipo domínio, que junta as variações de protocolo e subdomínio, ou do tipo prefixo de URL; conclua a verificação por um dos métodos oferecidos; envie o sitemap; e, depois de alguns dias, abra o relatório de desempenho para ver as primeiras consultas.",
+        "Os números do Search Console são diferentes dos do Google Analytics, porque um mede a busca, antes do clique, e o outro mede o uso do site, depois do clique; os dois se completam. Use a inspeção de URL antes de concluir que uma página tem problema e lembre que mudanças de indexação levam tempo. Dê acesso a outras pessoas com o nível de permissão necessário e remova quem saiu do projeto. Desconfie de promessa de posição garantida: o Search Console mostra dados e problemas, não compra lugar nos resultados.",
+        "No ecossistema LearnTECH, o Search Console aparece no artigo Do briefing à proposta, sobre levantamento de requisitos de um site institucional, como parte do básico de SEO a combinar com o cliente, e na ficha do Ubersuggest, como referência para conferir estimativas de volume de busca. O artigo sobre SEO local trata de outra parte da presença no Google, o Perfil da Empresa. As fichas do Google Analytics e do PageSpeed Insights completam a medição: uso do site e desempenho das páginas."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://search.google.com/search-console/about"
+        },
+        {
+          "label": "Central de Ajuda: sobre o Search Console",
+          "url": "https://support.google.com/webmasters/answer/9128668"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Google Search Console Help: About Search Console",
+          "url": "https://support.google.com/webmasters/answer/9128668?hl=en"
+        },
+        {
+          "label": "Wikipédia: Google Search Console",
+          "url": "https://en.wikipedia.org/wiki/Google_Search_Console"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "ferramentas",
+          "id": "google-analytics"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "pagespeed-insights"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "ubersuggest"
+        },
+        {
+          "tipo": "blog",
+          "id": "levantamento-de-requisitos-site-institucional"
+        },
+        {
+          "tipo": "blog",
+          "id": "seo-local-perfil-de-empresa-no-google"
+        }
+      ],
+      "atualizadoEm": "2026-11-03"
+    }
+  },
+  {
+    "title": "GitHub Actions",
+    "description": "Automação de integração e entrega contínuas no GitHub: workflows em YAML que testam, publicam e organizam o repositório a cada evento.",
+    "category": "Versionamento",
+    "pricing": "Freemium",
+    "thumb": "https://www.google.com/s2/favicons?domain=github.com&sz=128",
+    "thumbFit": "contain",
+    "site_url": "https://github.com/features/actions",
+    "slug": "github-actions",
+    "detalhe": {
+      "resumo": "Recurso do GitHub para automatizar tarefas do repositório, como rodar testes a cada pull request e publicar uma aplicação. As automações são workflows escritos em YAML, disparados por eventos e executados em máquinas chamadas runners.",
+      "paragrafos": [
+        "Um workflow é um arquivo YAML guardado na pasta .github/workflows do repositório. A chave on define o gatilho: um push, a abertura de um pull request, uma issue nova, um horário agendado ou um disparo manual. O workflow tem um ou mais jobs, cada job roda em um runner, que é a máquina que executa o trabalho, e cada job é uma sequência de steps. Um step roda um comando escrito por você ou usa uma action, uma extensão reutilizável que empacota uma tarefa comum, como baixar o código do repositório ou instalar o Node.js. Um mesmo repositório pode ter vários workflows, cada um com sua função.",
+        "O GitHub Actions foi apresentado em beta no GitHub Universe de 2018 e, segundo a VentureBeat, ficaria disponível para todos em 13 de novembro de 2019, já com integração e entrega contínuas e runners Linux, Windows e macOS. Como fica no mesmo lugar do código, é uma forma comum de CI/CD em projetos de código aberto e em empresas que usam o GitHub. Em vagas de desenvolvimento, aparece como parte do fluxo de equipe: o pull request só é aprovado quando os testes do workflow passam.",
+        "Em novembro de 2026, a documentação de cobrança informa que o uso dos runners padrão hospedados pelo GitHub em repositórios públicos é gratuito e não consome a cota do plano; para repositórios privados, o plano GitHub Free inclui US$ 12 de computação por mês e 500 MB de armazenamento de artefatos. Um primeiro exercício é criar um workflow que, a cada push e pull request, baixa o código, instala as dependências e roda os testes. A aba Actions do repositório oferece modelos prontos para várias linguagens, e o resultado de cada execução aparece no próprio pull request.",
+        "Guarde tokens e senhas nos secrets do repositório, nunca no YAML, e dê ao workflow só as permissões de que ele precisa. Prefira actions oficiais ou bem mantidas e fixe a versão usada, porque uma action roda com acesso ao seu código. Workflows disparados por pull requests vindos de forks têm acesso restrito aos secrets justamente por segurança. Acompanhe o consumo em repositórios privados e use cache de dependências para deixar as execuções mais curtas.",
+        "No ecossistema LearnTECH, o GitHub Actions fecha o programa Git e GitHub, cujo último módulo, Código Aberto e GitHub Actions, termina com um workflow rodando os testes do projeto a cada mudança. O programa Node.js e Express, com testes automatizados em Vitest e supertest, é um bom candidato para o mesmo tipo de workflow. As fichas do GitHub e do Git explicam a base, e a do GitHub Pages mostra um destino de publicação que pode ser alimentado por um workflow próprio."
+      ],
+      "links": [
+        {
+          "label": "Página oficial",
+          "url": "https://github.com/features/actions"
+        },
+        {
+          "label": "Documentação: workflows",
+          "url": "https://docs.github.com/en/enterprise-cloud@latest/actions/concepts/workflows-and-actions/workflows"
+        },
+        {
+          "label": "Documentação: cobrança do GitHub Actions",
+          "url": "https://docs.github.com/en/billing/concepts/product-billing/github-actions"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "GitHub Docs: Workflows",
+          "url": "https://docs.github.com/en/enterprise-cloud@latest/actions/concepts/workflows-and-actions/workflows"
+        },
+        {
+          "label": "GitHub Docs: How use of GitHub Actions is measured",
+          "url": "https://docs.github.com/en/billing/concepts/product-billing/github-actions"
+        },
+        {
+          "label": "VentureBeat: GitHub's Actions gets continuous integration support and workflow suggestions (agosto de 2019)",
+          "url": "https://venturebeat.com/business/githubs-actions-gets-continuous-integration-support-and-workflow-suggestions"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "604"
+        },
+        {
+          "tipo": "programas",
+          "id": "302"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "github"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "git"
+        },
+        {
+          "tipo": "hospedagens",
+          "id": "github-pages"
+        }
+      ],
+      "atualizadoEm": "2026-11-03"
+    }
+  },
+  {
+    "title": "Playwright",
+    "description": "Framework de código aberto da Microsoft para testes de ponta a ponta em Chromium, Firefox e WebKit com uma única API.",
+    "category": "Código",
+    "pricing": "Gratuito",
+    "thumb": "https://www.google.com/s2/favicons?domain=playwright.dev&sz=128",
+    "thumbFit": "contain",
+    "site_url": "https://playwright.dev/",
+    "slug": "playwright",
+    "detalhe": {
+      "resumo": "Biblioteca de automação de navegadores e framework de testes de ponta a ponta, desenvolvido pela Microsoft e lançado em 31 de janeiro de 2020. Controla Chromium, Firefox e WebKit com a mesma API e é distribuído sob a licença Apache 2.0.",
+      "paragrafos": [
+        "Um teste de ponta a ponta abre a aplicação em um navegador de verdade e repete o que uma pessoa faria: acessar uma página, preencher um formulário, clicar em um botão e conferir o resultado na tela. O Playwright Test reúne o que é preciso para isso: executor de testes, asserções, isolamento entre testes e execução em paralelo. Os testes rodam por padrão sem janela (headless) e em vários navegadores, e também é possível emular o Chrome do Android e o Safari móvel. Além de JavaScript e TypeScript, há versões para Python, C# e Java.",
+        "Segundo a Wikipédia, a equipe que criou o Playwright incluiu engenheiros que antes trabalhavam no Puppeteer, no Google. Ele é usado por times de front-end e de qualidade (QA) para garantir que fluxos importantes, como login, cadastro e compra, continuam funcionando a cada mudança. Em vagas de QA automatizado e de front-end, aparece ao lado de ferramentas de teste unitário, como o Vitest: o teste unitário verifica uma função isolada, e o de ponta a ponta verifica o caminho completo do usuário.",
+        "Para começar em um projeto Node.js, rode npm init playwright@latest. O assistente pergunta se o projeto usa TypeScript ou JavaScript, o nome da pasta de testes, se deve criar um workflow do GitHub Actions e se deve instalar os navegadores. Depois, npx playwright test roda os testes, npx playwright test --ui abre o modo visual, com acompanhamento passo a passo e depuração, e npx playwright show-report abre o relatório em HTML. O gerador de código (codegen) ajuda a criar um teste inicial. Em novembro de 2026, a documentação pede Node.js 22, 24 ou 26.",
+        "Prefira localizar elementos pelo papel e pelo texto que a pessoa vê, como um botão chamado Enviar, em vez de classes CSS que mudam com o layout. Cada teste deve preparar os próprios dados e não depender da ordem dos outros. Testes de ponta a ponta são mais lentos que os unitários, então reserve-os para os fluxos críticos. Rode a suíte no CI a cada pull request e guarde o relatório das falhas. Use apenas dados fictícios e contas de teste.",
+        "No ecossistema LearnTECH, o Playwright aparece na trilha do Rocketseat Ignite, em que um sistema de gestão é testado com Vitest e Playwright. O programa Desenvolver uma Landing Page Moderna fecha com a entrega do projeto, incluindo testes, e o programa Node.js e Express mostra testes automatizados do lado do servidor. A ficha do Vitest cobre os testes unitários, e a do GitHub explica onde os workflows de CI rodam a suíte a cada mudança."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://playwright.dev/"
+        },
+        {
+          "label": "Documentação: instalação",
+          "url": "https://playwright.dev/docs/intro"
+        },
+        {
+          "label": "Repositório no GitHub",
+          "url": "https://github.com/microsoft/playwright"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Playwright Docs: Installation",
+          "url": "https://playwright.dev/docs/intro"
+        },
+        {
+          "label": "Wikipédia: Playwright (software)",
+          "url": "https://en.wikipedia.org/wiki/Playwright_(software)"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "ferramentas",
+          "id": "vitest"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "github"
+        },
+        {
+          "tipo": "programas",
+          "id": "1"
+        },
+        {
+          "tipo": "programas",
+          "id": "302"
+        },
+        {
+          "tipo": "eventos",
+          "id": "rocketseat-ignite"
+        }
+      ],
+      "atualizadoEm": "2026-11-03"
+    }
   }
 ]

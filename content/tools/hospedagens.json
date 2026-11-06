@@ -760,5 +760,72 @@
       ],
       "atualizadoEm": "2026-10-29"
     }
+  },
+  {
+    "title": "Render",
+    "description": "Nuvem para publicar sites estáticos, APIs e bancos Postgres a partir do repositório, com instâncias gratuitas para estudo.",
+    "category": "Aplicação",
+    "pricing": "Freemium",
+    "thumb": "https://www.google.com/s2/favicons?domain=render.com&sz=128",
+    "thumbFit": "contain",
+    "site_url": "https://render.com/",
+    "slug": "render",
+    "detalhe": {
+      "resumo": "Plataforma de nuvem para publicar sites estáticos, serviços web, bancos PostgreSQL e instâncias Key Value sem administrar servidores. Conectada a um repositório Git, ela faz o build e publica a aplicação, e oferece instâncias gratuitas para estudo e protótipo.",
+      "paragrafos": [
+        "No Render, cada parte da aplicação é um serviço: um site estático, um serviço web (uma API ou um servidor em Node.js, Python e outras linguagens), um banco Postgres ou uma instância Key Value. Você conecta o repositório, informa o comando de build e o de início, e a plataforma publica o serviço com um endereço público; novos pushes geram novos deploys. Também é possível publicar a partir de uma imagem Docker e descrever a infraestrutura em um arquivo render.yaml, guardado no repositório junto com o código.",
+        "O Render faz parte do grupo de plataformas como serviço (PaaS) que muita gente passou a usar como alternativa ao Heroku depois que ele encerrou o plano gratuito, em 2022. Aparece em projetos de estudantes, portfólios, protótipos e equipes pequenas que precisam colocar uma API ou um back-end no ar. Para vagas de back-end e full stack, o que se pratica aqui vale em qualquer plataforma: variáveis de ambiente, logs de build e de execução, ligação entre aplicação e banco e diferença entre ambiente de teste e de produção.",
+        "Em novembro de 2026, a documentação de instâncias gratuitas informa: sites estáticos gratuitos; serviços web gratuitos com 750 horas de instância por mês para cada workspace, que não acumulam de um mês para o outro; um banco Postgres gratuito por workspace, com 1 GB, que expira 30 dias depois de criado, com 14 dias de prazo para mudar de plano antes de ser apagado; e uma instância Key Value gratuita, só em memória. Segundo o comparativo de Flavio Copes, conferido em setembro de 2026, o serviço web pago mais simples custava US$ 7 por mês e o Postgres pago, US$ 6. Um primeiro exercício é publicar uma API simples em Node.js direto do GitHub e acompanhar os logs do primeiro deploy.",
+        "Um serviço web gratuito hiberna depois de 15 minutos sem receber tráfego e leva cerca de um minuto para voltar, e tudo o que foi gravado no disco local se perde ao hibernar, reiniciar ou fazer novo deploy; por isso, arquivos enviados por usuários precisam ir para um armazenamento externo. Segundo o mesmo comparativo, a documentação do Render recomenda não usar as instâncias gratuitas em produção. O banco gratuito não tem backup e expira, então não guarde nele nada que não possa perder. Senhas e chaves ficam nas variáveis de ambiente do serviço, nunca no repositório.",
+        "No ecossistema LearnTECH, o Render é uma opção para a etapa de deploy do programa Node.js e Express, que termina com a API publicada, e para ter um Postgres de estudo ao praticar o programa Banco de Dados na Prática. As fichas do Railway e do Heroku ajudam a comparar plataformas do mesmo tipo, e a da Vercel mostra a alternativa mais voltada para front-end."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://render.com/"
+        },
+        {
+          "label": "Documentação: instâncias gratuitas",
+          "url": "https://render.com/docs/free"
+        },
+        {
+          "label": "Preços",
+          "url": "https://render.com/pricing"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Render Docs: Deploy for Free",
+          "url": "https://render.com/docs/free"
+        },
+        {
+          "label": "Flavio Copes: Every hosting provider's free tier, side by side (checked September 2026)",
+          "url": "https://flaviocopes.com/hosting-free-tiers.md"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "hospedagens",
+          "id": "railway"
+        },
+        {
+          "tipo": "hospedagens",
+          "id": "heroku"
+        },
+        {
+          "tipo": "hospedagens",
+          "id": "vercel"
+        },
+        {
+          "tipo": "programas",
+          "id": "302"
+        },
+        {
+          "tipo": "programas",
+          "id": "401"
+        }
+      ],
+      "atualizadoEm": "2026-11-03"
+    }
   }
 ]

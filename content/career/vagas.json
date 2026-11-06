@@ -1364,5 +1364,78 @@
       ],
       "atualizadoEm": "2026-11-03"
     }
+  },
+  {
+    "title": "Remotar",
+    "duration": "Remoto",
+    "thumb": "https://www.google.com/s2/favicons?domain=remotar.com.br&sz=128",
+    "site_url": "https://remotar.com.br/",
+    "category": "General Jobs",
+    "slug": "remotar",
+    "detalhe": {
+      "resumo": "A Remotar é uma plataforma brasileira de vagas de trabalho remoto e híbrido, criada em 2020, com vagas de tecnologia e de outras áreas. Para quem procura emprego, o cadastro é gratuito; as empresas podem publicar algumas vagas sem custo e contratam planos mensais para recursos extras.",
+      "paragrafos": [
+        "A Remotar reúne vagas que permitem trabalhar de casa o tempo todo ou parte da semana: a página para empresas diz que não aceita vagas 100% presenciais. Na busca, é possível filtrar por área e por tags, mostrar só vagas com salário informado, ocultar empresas que não interessam e ver apenas vagas promovidas. No B2B Stack, a plataforma é descrita como um banco de vagas com curadoria, fundado em 2020. Ela também mantém um blog e uma newsletter.",
+        "As vagas não são só de tecnologia: aparecem também posições de marketing, atendimento, design e outras áreas que funcionam a distância. Em novembro de 2026, a página para empresas falava em mais de 15 mil vagas publicadas, mais de 1 milhão de pessoas atendidas e mais de 450 empresas com vagas remotas. As vagas são divulgadas também em parceiros de conteúdo, como TecMundo, IT Fórum e Mundo do Marketing, e em perfis no LinkedIn e no GitHub. Isso faz da Remotar um bom complemento aos portais gerais, que misturam vagas remotas com presenciais.",
+        "Segundo os termos de uso, a inscrição do candidato é gratuita. Do lado das empresas, a página oficial diz que é possível publicar de graça até 5 vagas por empresa que já estejam anunciadas em outra plataforma, e que há planos mensais, compra avulsa e projetos personalizados, sem multa de cancelamento. Os valores não aparecem no site: a página direciona para o contato com a equipe comercial. Para começar, crie sua conta, ative o filtro de salário informado e salve as buscas da sua área.",
+        "Vaga remota não é tudo igual, então leia cada anúncio com atenção. Nas híbridas, confira a cidade e quantos dias no escritório são esperados; em qualquer vaga, verifique o tipo de contrato (CLT ou PJ), a faixa salarial e o horário de trabalho. Pesquise a empresa antes de enviar dados pessoais e desconfie de anúncios que pedem pagamento, depósito ou compra de equipamento para participar do processo. Uma rotina de trabalho remoto também exige organização, comunicação por escrito e um bom espaço em casa.",
+        "No blog do learnTECH, o artigo \"Como ler uma vaga e reconhecer uma boa empresa\" ajuda a filtrar anúncios, e o artigo sobre cultura de empresa tech ajuda a avaliar como cada time lida com o trabalho a distância. O texto sobre LGPD para quem procura emprego explica o que acontece com seus dados depois da candidatura. Para comparar com outras plataformas, a área de vagas também tem as páginas do We Work Remotely, voltado a vagas remotas internacionais, e da Coodesh."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://remotar.com.br/"
+        },
+        {
+          "label": "Para empresas",
+          "url": "https://remotar.com.br/para-empresas"
+        },
+        {
+          "label": "Blog da Remotar",
+          "url": "https://blog.remotar.com.br/"
+        },
+        {
+          "label": "Termos de uso",
+          "url": "https://remotar.com.br/termos-de-uso"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Remotar: para empresas",
+          "url": "https://remotar.com.br/para-empresas"
+        },
+        {
+          "label": "Remotar: termos de uso",
+          "url": "https://remotar.com.br/termos-de-uso"
+        },
+        {
+          "label": "B2B Stack: Remotar.jobs",
+          "url": "https://www.b2bstack.com.br/product/remotar-jobs?cat=vagas"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "como-ler-uma-vaga"
+        },
+        {
+          "tipo": "blog",
+          "id": "cultura-de-empresa-tech"
+        },
+        {
+          "tipo": "blog",
+          "id": "lgpd-seus-dados-ao-se-candidatar"
+        },
+        {
+          "tipo": "vagas",
+          "id": "we-work-remotely"
+        },
+        {
+          "tipo": "vagas",
+          "id": "coodesh"
+        }
+      ],
+      "atualizadoEm": "2026-11-03"
+    }
   }
 ]

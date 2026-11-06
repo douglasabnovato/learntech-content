@@ -2757,5 +2757,143 @@
       ],
       "atualizadoEm": "2026-11-03"
     }
+  },
+  {
+    "title": "Zé Delivery",
+    "location": "São Paulo",
+    "thumb": "https://www.google.com/s2/favicons?domain=ze.delivery&sz=128",
+    "site_url": "https://www.ze.delivery/",
+    "category": "E-commerce",
+    "slug": "ze-delivery",
+    "detalhe": {
+      "resumo": "O Zé Delivery é o aplicativo de entrega de bebidas criado em 2016 dentro da Ambev, que liga consumidores a parceiros próximos para entregas em poucos minutos. Para quem trabalha com tecnologia, é uma empresa de produto digital com desafios de aplicativo, logística, catálogo e dados.",
+      "paragrafos": [
+        "O Zé Delivery nasceu em 2016 na ZX, centro de inovação da Ambev, segundo a Mercado & Consumo. O cliente escolhe bebidas, petiscos e itens de churrasco no aplicativo, e o pedido é atendido pelo parceiro mais próximo, que faz a entrega. Em agosto de 2021, o serviço estava em mais de 200 cidades e havia feito 29 milhões de entregas no primeiro semestre daquele ano, acima das 27 milhões de todo o ano de 2020, segundo a mesma reportagem. O site oficial lista cidades de todas as regiões do país.",
+        "Por trás do aplicativo há um produto digital com várias frentes técnicas: aplicativos Android e iOS, catálogo de produtos, pagamentos, roteamento de pedidos para os parceiros e análise de dados de consumo. Em novembro de 2020, a Exame informava 70 vagas abertas no time de tecnologia, com trabalho à distância mantido durante a pandemia, atendimento psicológico gratuito e auxílio para internet e equipamentos. Na época, as candidaturas eram feitas pelo LinkedIn.",
+        "Para acompanhar as oportunidades, siga a página da empresa no LinkedIn e confira as vagas publicadas ali, sempre lendo o modelo de trabalho e a cidade de cada uma. A empresa também já investiu na formação de pessoas: em abril de 2023, a Mercado & Consumo noticiou a formatura da primeira turma do Bora Zé Tech, curso online de três meses em Java Full Stack Jr feito com a ONG Generation Brasil. A turma teve 30 alunos, entre entregadores cadastrados no aplicativo e seus familiares. Para quem está começando, esse tipo de programa mostra que a empresa olha para formação técnica, além das vagas para profissionais experientes.",
+        "Antes de uma entrevista, entenda o modelo do negócio: um aplicativo que coordena consumidor, parceiro e entregador, em que tempo de entrega, estoque disponível e preço pesam na experiência. Pensar em como você resolveria um problema real desse fluxo, como um pedido que o parceiro não consegue atender, ajuda a mostrar raciocínio de produto. Reportagens antigas sobre vagas e plataformas de candidatura circulam com links que já não funcionam, então use apenas canais oficiais. Candidaturas legítimas não cobram nada da pessoa candidata.",
+        "No ecossistema learnTECH, o Zé Delivery se liga à página da Ambev Tech, que ajuda a entender o restante da área de tecnologia do grupo, e à do iFood, outra empresa de delivery com grande time de engenharia. O programa de processo seletivo percorre as etapas da inscrição à proposta, e o de fundamentos de back-end cobre APIs e regras de negócio parecidas com as de um aplicativo de pedidos. O artigo sobre como ler uma vaga ajuda a separar requisitos obrigatórios dos desejáveis."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.ze.delivery/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Mercado & Consumo: Zé Delivery, app de entrega da Ambev, tem recorde de vendas (28/08/2021)",
+          "url": "https://mercadoeconsumo.com.br/28/08/2021/economia/ze-delivery-app-de-entrega-ambev-tem-recorde-de-vendas/"
+        },
+        {
+          "label": "Exame: Zé Delivery tem 70 vagas em tecnologia com home office e terapia grátis (23/11/2020)",
+          "url": "https://exame.com/carreira/ze-delivery-tem-70-vagas-em-tecnologia-com-home-office-e-terapia-gratis"
+        },
+        {
+          "label": "Mercado & Consumo: Zé Delivery investe na capacitação de entregadores para o mercado de tecnologia (05/04/2023)",
+          "url": "https://mercadoeconsumo.com.br/05/04/2023/tecnologia/ze-delivery-investe-na-capacitacao-de-entregadores-para-o-mercado-de-tecnologia/"
+        },
+        {
+          "label": "Zé Delivery: site oficial",
+          "url": "https://www.ze.delivery/"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "empresas",
+          "id": "ambev-tech"
+        },
+        {
+          "tipo": "empresas",
+          "id": "ifood"
+        },
+        {
+          "tipo": "programas",
+          "id": "1003"
+        },
+        {
+          "tipo": "programas",
+          "id": "301"
+        },
+        {
+          "tipo": "blog",
+          "id": "como-ler-uma-vaga"
+        }
+      ],
+      "atualizadoEm": "2026-11-03"
+    }
+  },
+  {
+    "title": "Nubank",
+    "location": "São Paulo / Global",
+    "thumb": "https://www.google.com/s2/favicons?domain=nu.com&sz=128",
+    "site_url": "https://nu.com/pt/carreiras",
+    "category": "Fintech",
+    "slug": "nubank",
+    "detalhe": {
+      "resumo": "O Nubank é o banco digital fundado em São Paulo em 2013, com escritórios na América Latina, nos Estados Unidos, no Canadá e na Europa. Como empregador de tecnologia, é conhecido pelo uso de Clojure e Datomic em larga escala e por publicar o blog de engenharia Building Nubank.",
+      "paragrafos": [
+        "O Nubank começou em 2013, segundo a Cognitect, e hoje recruta pelo portal de carreiras do Nu. Em novembro de 2026, a página de carreiras falava em mais de 10 mil Nubankers de mais de 50 nacionalidades. Os escritórios listados ficam em São Paulo, Belo Horizonte, Rio de Janeiro e Campinas, no Brasil, e também em Buenos Aires, Bogotá, Cidade do México, Montevidéu, Toronto, Berlim e em cidades dos Estados Unidos, como Palo Alto e Miami. As vagas ficam num quadro único, com filtros por departamento e por local.",
+        "A marca técnica mais conhecida do Nubank é o uso de Clojure, linguagem funcional que roda na JVM, e do banco de dados Datomic. Em julho de 2020, quando o Nubank comprou a Cognitect, empresa responsável pelas duas tecnologias, o anúncio citava cerca de 600 desenvolvedores Clojure, 2,5 milhões de linhas de código em 500 microsserviços e mais de 2 mil servidores Datomic. O blog Building Nubank mostra que o tema continua presente: em outubro de 2026 foi publicado um artigo sobre contribuições do time à própria linguagem Clojure. O blog também tem seções de dados, machine learning, pesquisa em IA, segurança, produto e design.",
+        "Para começar, explore o quadro de vagas e filtre pelo departamento que combina com você; em novembro de 2026, a página listava 43 departamentos, de engenharia a análise de negócios. Há também uma newsletter de vagas para receber novas oportunidades por e-mail. Ler alguns artigos do Building Nubank antes de se candidatar ajuda a entender como os times falam de arquitetura, dados imutáveis, latência e interfaces com ClojureScript e React. Se você nunca programou numa linguagem funcional, um projeto pequeno em Clojure dá contexto para essas conversas.",
+        "Como a empresa contrata em vários países, confira em cada vaga a cidade, o modelo de trabalho e o idioma exigido, porque muitas descrições são publicadas em inglês. Reportagens sobre a quantidade de vagas abertas envelhecem rápido, então trate números de notícias antigas como retrato de uma época. As candidaturas são gratuitas e feitas pelo portal oficial; desconfie de mensagens que pedem pagamento ou dados bancários para participar de um processo seletivo.",
+        "No ecossistema learnTECH, o Nubank conversa com as páginas do Itaú Unibanco e da XP Inc., outras empresas do setor financeiro com grandes áreas de tecnologia. O programa de microsserviços com Docker e Kubernetes ajuda a entender a arquitetura distribuída citada nos artigos de engenharia. O programa de processo seletivo e o artigo sobre como se preparar para cada etapa completam a preparação."
+      ],
+      "links": [
+        {
+          "label": "Carreiras",
+          "url": "https://nu.com/pt/carreiras"
+        },
+        {
+          "label": "Quadro de vagas",
+          "url": "https://jobs.ashbyhq.com/nubank"
+        },
+        {
+          "label": "Building Nubank (blog de engenharia)",
+          "url": "https://building.nu.com/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Nu: carreiras",
+          "url": "https://nu.com/pt/carreiras"
+        },
+        {
+          "label": "Nu: departamentos",
+          "url": "https://nu.com/pt/carreiras/departamentos"
+        },
+        {
+          "label": "Cognitect: Cognitect Joins Nubank (23/07/2020)",
+          "url": "https://cognitect.com/blog/2020/07/23/Cognitect-Joins-Nubank"
+        },
+        {
+          "label": "Building Nubank: Software Engineering",
+          "url": "https://building.nu.com/engineering/software-engineering/"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "empresas",
+          "id": "itau-unibanco"
+        },
+        {
+          "tipo": "empresas",
+          "id": "xp-inc"
+        },
+        {
+          "tipo": "programas",
+          "id": "303"
+        },
+        {
+          "tipo": "programas",
+          "id": "1003"
+        },
+        {
+          "tipo": "blog",
+          "id": "processo-seletivo-como-se-preparar"
+        }
+      ],
+      "atualizadoEm": "2026-11-03"
+    }
   }
 ]

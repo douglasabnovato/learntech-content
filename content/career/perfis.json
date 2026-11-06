@@ -680,5 +680,74 @@
       ],
       "atualizadoEm": "2026-11-03"
     }
+  },
+  {
+    "title": "Loiane Groner",
+    "duration": "Java/Angular",
+    "thumb": "https://www.google.com/s2/favicons?domain=loiane.com&sz=128",
+    "site_url": "https://loiane.com/",
+    "category": "Tech Education",
+    "slug": "loiane-groner",
+    "detalhe": {
+      "resumo": "Loiane Groner é engenheira de software brasileira, na área desde 2006, conhecida pelos cursos gratuitos em português sobre Java, Angular e estruturas de dados. Escreve artigos técnicos no blog loiane.com, publica aulas no YouTube e no portal loiane.training e é autora de livros técnicos.",
+      "paragrafos": [
+        "Segundo a página \"sobre\" do blog, Loiane Groner atua como engenheira de software, com trabalho prático e de liderança, desde 2006, e mora na Flórida, nos Estados Unidos. Ela tem os títulos de Google Developer Expert, Microsoft MVP, Oracle ACE e Java Champion, concedidos a profissionais que compartilham conhecimento com a comunidade. Também dá palestras em conferências sobre Java, JavaScript, Angular, IA e desenvolvimento moderno. Em relato publicado pelo Google em dezembro de 2022, ela conta que desenvolveu aplicativos híbridos para Android e se especializou em desenvolvimento full stack, principalmente com Angular.",
+        "O conteúdo se divide entre artigos no blog, vídeos no YouTube e cursos organizados no loiane.training, todos em português e gratuitos. No mesmo relato de 2022, ela diz que o portal tinha passado da marca de 100 mil alunos, que recebem certificado ao concluir os cursos. No GitHub, em novembro de 2026, o perfil reunia 224 repositórios públicos e cerca de 20 mil seguidores. Entre os mais conhecidos estão o código do livro de estruturas de dados e algoritmos em JavaScript, com 4,9 mil estrelas, e projetos que unem Angular e Spring, como um CRUD completo com testes no back-end e no front-end.",
+        "Um caminho para começar é escolher um curso do loiane.training e acompanhar com o repositório correspondente aberto no GitHub. Quem vem do Java pode estudar o projeto crud-angular-spring, que mostra uma aplicação inteira com relacionamento entre entidades e testes nas duas pontas. Quem está começando em Angular encontra no repositório modern-angular o código de um curso com recursos mais recentes do framework. Rodar o projeto na sua máquina e mudar uma regra ou uma tela é um bom exercício para fixar o conteúdo.",
+        "Angular muda bastante entre versões, e cursos gravados há alguns anos podem usar APIs que já foram substituídas. O repositório do primeiro curso de Angular em português, por exemplo, está arquivado, enquanto o conteúdo novo trata de recursos como signals e o novo controle de fluxo nos templates. Por isso, veja a data de cada aula e consulte a documentação oficial do Angular e do Spring quando algo não funcionar. Depois de seguir um curso, construa um projeto próprio sem a aula aberta para medir o que você aprendeu.",
+        "No learnTECH, o programa de fundamentos de back-end cobre HTTP, APIs REST e regras de negócio, base para entender as aplicações Spring dos cursos. O programa de lógica de programação e algoritmos combina com o material de estruturas de dados, e o de Git e GitHub ajuda a clonar e versionar os repositórios. O artigo sobre fundamentos de JavaScript complementa o estudo para quem vai seguir pelo front-end com Angular."
+      ],
+      "links": [
+        {
+          "label": "Blog",
+          "url": "https://loiane.com/"
+        },
+        {
+          "label": "Cursos gratuitos (loiane.training)",
+          "url": "https://loiane.training/"
+        },
+        {
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@loianegroner"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/loiane"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Loiane Groner: sobre",
+          "url": "https://loiane.com/about/"
+        },
+        {
+          "label": "Google for Developers: Loiane's Journey (dezembro de 2022)",
+          "url": "https://developers.google.com/community/stories/developerjourney/202212-loiane"
+        },
+        {
+          "label": "GitHub: perfil loiane",
+          "url": "https://github.com/loiane"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "301"
+        },
+        {
+          "tipo": "programas",
+          "id": "901"
+        },
+        {
+          "tipo": "programas",
+          "id": "604"
+        },
+        {
+          "tipo": "blog",
+          "id": "javascript-fundamentos"
+        }
+      ],
+      "atualizadoEm": "2026-11-03"
+    }
   }
 ]
