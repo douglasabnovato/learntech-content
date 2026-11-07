@@ -2,7 +2,7 @@
  *
  * 0 = nada do que mapeamos foi feito; 100 = tudo feito. O placar é calculado a partir de dados do repositório,
  * nunca estimado à mão. Componentes e pesos:
- *   - Conteúdo do acervo (45): itens fechados / todos os itens (fechado = publicado ou referência, com destino e sem pendências).
+ *   - Conteúdo do acervo (45): itens fechados / todos os itens (fechado = publicado, exibido ou referência, com destino e sem pendências).
  *   - Engenharia do MVP (30): itens [x] / todos em docs/engenharia/backlog.md.
  *   - Pendências do autor (15): concluídas / (concluídas + em aberto) em PROXIMOS-PASSOS.md.
  *   - Publicação (10): repositórios com a main local igual à remota, sem alterações pendentes e sem commits
@@ -21,7 +21,7 @@ const PESOS = { conteudo: 45, engenharia: 30, autor: 15, publicacao: 10 };
 const REPOS = ["learntech-content", "learn-tech", "bootcamps", "career", "tools"];
 
 const acervo = JSON.parse(fs.readFileSync(path.join(RAIZ, "content", "acervo.json"), "utf8")).itens;
-const fechado = (i) => ["publicado", "referencia"].includes(i.estado) && i.destinos.length > 0 && !i.pendencias?.length;
+const fechado = (i) => ["publicado", "exibido", "referencia"].includes(i.estado) && i.destinos.length > 0 && !i.pendencias?.length;
 const porLote = {};
 for (const i of acervo) { porLote[i.lote] ??= [0, 0]; porLote[i.lote][1]++; if (fechado(i)) porLote[i.lote][0]++; }
 const conteudo = acervo.filter(fechado).length / acervo.length;

@@ -1,8 +1,8 @@
 /* leva-status.mjs — diz se uma leva de conteúdo pode ser fechada (e o hd liberado).
  *
  * Regra (docs/processo/README.md, ◆A3): o autor só remove arquivos do hd quando
- *   1. todo item do lote está fechado: estado "publicado" ou "referencia", com pelo menos um destino e sem `pendencias`;
- *      "planejado", "publicado-em-parte", "novo", "a-triar" e "nao-publicavel" contam como abertos;
+ *   1. todo item do lote está fechado: estado "publicado", "exibido" ou "referencia", com pelo menos um destino e sem `pendencias`;
+ *      os demais ("novo", "extraido", "triado", "planejado", "produzido", "publicado-em-parte", "nao-publicavel") contam como abertos;
  *   2. nenhum arquivo do hd está fora do inventário (cópia idêntica de arquivo inventariado conta como inventariada);
  *   3. o relatório do lote (docs/processo/lotes/<lote>*.md) tem a linha "Aprovado pelo autor em: AAAA-MM-DD".
  *
@@ -17,7 +17,7 @@ import { fileURLToPath } from "node:url";
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const HD = path.resolve(RAIZ, "..", "hd");
 const LOTES = path.join(RAIZ, "docs", "processo", "lotes");
-const FECHADOS = new Set(["publicado", "referencia"]);
+const FECHADOS = new Set(["publicado", "exibido", "referencia"]);
 const filtro = process.argv[2];
 
 const acervo = JSON.parse(fs.readFileSync(path.join(RAIZ, "content", "acervo.json"), "utf8"));
