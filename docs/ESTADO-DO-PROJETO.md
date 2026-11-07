@@ -8,7 +8,7 @@
 |---|---|
 | Produção | `https://learntech-content.douglasabnovato.workers.dev` (Cloudflare Workers + D1 + Static Assets). `GET /v1/saude` responde `ok` |
 | Repositório | `main` protegida (ruleset "main protegida": check `verificar` obrigatório, sem force push). Fluxo: `feature/tasks-DD-MM-AAAA` → `developer` → `main`, só fast-forward |
-| CI | `ci.yml` com typecheck, lint, 102 testes e build. `deploy.yml` só roda com a variável `DEPLOY_AUTOMATICO = sim` |
+| CI | `ci.yml` com typecheck, lint, 107 testes e build. `deploy.yml` só roda com a variável `DEPLOY_AUTOMATICO = sim` |
 | Deploy | Manual com `npm run deploy`, na máquina do autor, até os segredos da Cloudflare estarem no GitHub (#9) |
 | Conteúdo servido | 49 programas, 45 artigos, 27 eventos, 43 empresas, 24 vagas, 14 perfis, 91 ferramentas, 12 hospedagens |
 | Placar (`npm run progresso`) | 79/100, com Publicação em 100% |
@@ -24,6 +24,7 @@
 | 03/11 | Leva 1 publicada nos cinco repositórios, `main` protegida, actions em v5, lint obrigatório, lote de conteúdo a partir das issues dos quatro sites, `status` opcional no card de programa (ADR 9) |
 | 05/11, MVP | Limite de taxa nas escritas e `DELETE` com e-mail no corpo (ADR 10); testes do Worker e do D1 com as migrações; zod e hono sem vulnerabilidade; cópias geradas a partir de `montarRecursos`; sitemap com hospedagens; deploy só depois da CI verde; lote 4 de conteúdo (10 itens) e card de IA |
 | 05/11, estabilidade | e2e contra a produção sem flutuação (visitante já identificado, iframes de terceiros fora do axe); deploy automático sem ficar vermelho a cada push; `COMO-EVOLUIR.md` nos cinco repositórios |
+| 06/11, fluxo de agentes | Fase 0: estados `extraido`, `triado`, `produzido` e `exibido` no acervo, com `triagem` e `etapas`; `docs/processo/agentes.md`; contratos dos quatro sites em `docs/contratos/`; `CLAUDE.md` nos cinco repositórios; 107 testes |
 | 06/11 | Este documento em cada repositório, README com o estado e issues novas para as lacunas (#10 e #11) |
 
 Detalhes: `docs/engenharia/diagnostico-mvp-2026-11-03.md`, `docs/engenharia/mvp-2026-11-03.md` e `docs/processo/conversas/2026-11-03-mvp-cinco-projetos.md`.
@@ -44,7 +45,7 @@ Todas as issues têm o label `proximos-passos` e pelo menos três critérios de 
 | 8 | [#4](https://github.com/douglasabnovato/learntech-content/issues/4) | Votação de temas nos cards de programa (ADR 9) | produto, decisão do autor |
 
 ### Próximas remessas de conteúdo
-Os arquivos novos do `hd/` entram pelo processo de 10 etapas de `docs/processo/README.md`, com o resumo em `COMO-EVOLUIR.md`. Pendências de conteúdo e do autor: `PROXIMOS-PASSOS.md`.
+Os arquivos novos do `hd/` entram pelo fluxo de agentes de `docs/processo/agentes.md` (fase 0 concluída em 06/11; próximas: triador, produtores, verificador e piloto com `gdg_jf`), sobre o processo de 10 etapas de `docs/processo/README.md`. Resumo em `COMO-EVOLUIR.md`. Pendências de conteúdo e do autor: `PROXIMOS-PASSOS.md`.
 
 ## Decisões que dependem do autor
 - Cadastrar `CLOUDFLARE_API_TOKEN` e `CLOUDFLARE_ACCOUNT_ID` e criar `DEPLOY_AUTOMATICO = sim` (#9). O Claude não lê nem cadastra segredos.

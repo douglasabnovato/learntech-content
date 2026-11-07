@@ -24,6 +24,7 @@ Pasta local: `C:\douglasabnovato-github\mundo-learn-tech\`. O acervo bruto fica 
 - **Medição:** `npm run progresso` (placar), `npm run cobertura`, `npm run leva:status`.
 
 ## Situação em 06/11/2026
+- **Fluxo de agentes, fase 0** (branch `feature/tasks-06-11-2026-b`): estados novos no acervo (`extraido`, `triado`, `produzido`, `exibido`), campos `triagem` e `etapas`, `docs/processo/agentes.md`, contratos dos quatro sites em `docs/contratos/` e `CLAUDE.md` nos cinco repositórios. Próxima: fase 1, triador e `hd:extrair`, com avaliação por gabarito.
 - **Documentação do estado:** `docs/ESTADO-DO-PROJETO.md` em cada um dos cinco repositórios (o que fizemos, como está, o que queremos fazer) e seção "Estado do projeto" no README de cada um. As seções antigas de pendências dos READMEs passaram a apontar para as issues.
 - **Issues novas** (`proximos-passos`, com critérios de entrega): learntech-content #10 e #11, learn-tech #133 e #134, bootcamps #75, career #33 e tools #60. As novas de acessibilidade usam o relatório do e2e de 05/11.
 

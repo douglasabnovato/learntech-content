@@ -153,6 +153,8 @@ hd ──(etapas 1-5)──► content/*.json ──(build: Zod + integridade)�
 | `npm run deploy` | Publica a API, quando o deploy não for pelo CI |
 
 ## Documentos
+- `agentes.md`: o fluxo de agentes (triador, produtores, revisor e verificador), os estados do item no acervo, o formato do destino e as fases.
+- `../contratos/`: um contrato por site, com o que cada produtor gera e como o verificador confere.
 - `regras-editoriais.md`: o que preservar, nomes e marcas por site, troca de nomes, fontes.
 - `modelos.md`: campos e padrão de qualidade de programa, artigo, detalhe, evento e área.
 - `checklists.md`: pronto para produzir, pronto para publicar e checklist do lote.

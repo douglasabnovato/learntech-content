@@ -13,9 +13,10 @@ API de conteúdo do ecossistema **LearnTECH**: um só lugar para os programas, e
 
 ## 📍 Estado do projeto (06/11/2026)
 
-- **Onde está:** Em produção na Cloudflare, servindo os quatro sites. CI verde, 102 testes, e2e contra a produção com 19 de 19 e placar de 79/100.
+- **Onde está:** Em produção na Cloudflare, servindo os quatro sites. CI verde, 107 testes, e2e contra a produção com 19 de 19 e placar de 79/100.
 - **O que fizemos na rodada de MVP (03 a 05/11):** Limite de taxa nas escritas, testes do Worker e do D1, dependências sem vulnerabilidade, cópias geradas a partir dos recursos, deploy só depois da CI verde e o lote 4 de conteúdo.
 - **O que queremos fazer:** [#9](https://github.com/douglasabnovato/learntech-content/issues/9), [#10](https://github.com/douglasabnovato/learntech-content/issues/10), [#6](https://github.com/douglasabnovato/learntech-content/issues/6), [#7](https://github.com/douglasabnovato/learntech-content/issues/7), [#11](https://github.com/douglasabnovato/learntech-content/issues/11), [#8](https://github.com/douglasabnovato/learntech-content/issues/8) (deploy automático, e2e agendado, testes do SDK, verificador de links, Lighthouse 13 e mídia no R2). Todas com o label `proximos-passos` e critérios de entrega.
+- **Conteúdo novo do hd:** fluxo de agentes (triador, um produtor por site, revisor e verificador) em [`docs/processo/agentes.md`](docs/processo/agentes.md), com os contratos dos sites em [`docs/contratos/`](docs/contratos/). Fase 0 pronta em 06/11/2026.
 
 A linha do tempo completa, os números e a ordem sugerida estão em [`docs/ESTADO-DO-PROJETO.md`](docs/ESTADO-DO-PROJETO.md).
 

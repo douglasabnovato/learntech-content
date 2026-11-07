@@ -10,14 +10,16 @@ Guia curto para a próxima remessa de arquivos e para qualquer mudança na API. 
 Os sites nunca recebem conteúdo editado à mão. Todo conteúdo novo nasce aqui.
 
 ## 2. Quando chegar uma remessa nova de arquivos
+Desde 06/11/2026, cada passo tem um responsável fixo: um agente com papel único ou o autor (`processo/agentes.md`). O padrão de cada site está em `contratos/`.
+
 | Passo | Comando ou ação | Detalhe em |
 |---|---|---|
 | 1. Branch do dia | `git checkout main && git pull --ff-only && git checkout -b feature/tasks-DD-MM-AAAA` | `processo/fluxo-git.md` |
 | 2. Colocar os arquivos | na pasta `mundo-learn-tech/hd/`, nunca dentro do repositório | `processo/README.md` (Recepção) |
 | 3. Inventário | `npm run hd:inventariar`, depois `npm run hd:inventariar -- --registrar` | `processo/README.md` (Inventário) |
-| 4. Triagem | ficha de cada item no `content/acervo.json`: direitos, estado e destino | `processo/regras-editoriais.md` |
+| 4. Triagem | ficha de cada item no `content/acervo.json`: direitos, estado `triado`, destino `projeto/recurso/id` e `triagem` com confiança | `processo/agentes.md`, `processo/regras-editoriais.md` |
 | 5. Plano do lote (A1) | `processo/lotes/AAAA-MM-DD-*.md`, aprovado pelo autor | `processo/checklists.md` |
-| 6. Produção | um JSON por item no destino (tabela da seção 3) | `processo/modelos.md`, `processo/pesquisa.md` |
+| 6. Produção | um JSON por item no destino (tabela da seção 3), estado `produzido` | `contratos/<projeto>.md`, `processo/modelos.md`, `processo/pesquisa.md` |
 | 7. Validação | `npm run validar` e `npm run verificar`, mais a revisão independente por amostra | `processo/README.md` (Validação) |
 | 8. Integração | `npm run copias` e `npm run sitemaps`, depois os testes de cada site | seção 5 |
 | 9. Publicação | commits por tema → feature → developer → main → `npm run deploy` | `processo/fluxo-git.md`, `DEPLOY.md` |
@@ -68,6 +70,7 @@ Regra de cobertura: o mesmo material deve aparecer no máximo de projetos que o 
 - [ ] Workflow `disponibilidade` verde no GitHub.
 
 ## 7. Onde está cada documento
+- **Fluxo de agentes e contratos:** `processo/agentes.md` e `contratos/`. **Instruções para o Claude:** `../CLAUDE.md`.
 - **Estado do projeto** (o que fizemos e o que queremos fazer, com as issues em ordem): `ESTADO-DO-PROJETO.md`.
 - **Estado atual das conversas:** `processo/ESTADO.md`. **Pendências do autor:** `../PROXIMOS-PASSOS.md`.
 - **Arquitetura e decisões:** `ARQUITETURA.md`, `DECISOES.md`. **Conteúdo:** `CONTEUDO.md`. **Deploy:** `DEPLOY.md`. **Privacidade:** `PRIVACIDADE.md`.
