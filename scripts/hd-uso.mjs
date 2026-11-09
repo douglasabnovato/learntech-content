@@ -65,7 +65,14 @@ const arquivos = listar(HD).map((a) => {
   const ext = path.extname(a.rel).slice(1).toLowerCase().replace(/[^a-z0-9]/g, "") || "sem-extensao";
   return { rel: a.rel, ext, bytes: st.size, sha: cache[`${a.rel}|${st.size}|${Math.round(st.mtimeMs)}`] };
 });
-const { linhas, gravados, semHash } = classificar(arquivos, acervo, imagens, { aplicar });
+/* Pasta da galeria → slug do evento, lida das URLs de cada evento (ex.: tdc-innovation-2023 → tdc-innovation). */
+const DIR_EVENTOS = path.join(CONTENT, "bootcamps", "eventos");
+const pastas = {};
+for (const f of fs.readdirSync(DIR_EVENTOS).filter((n) => n.endsWith(".json"))) {
+  const ev = ler(path.join(DIR_EVENTOS, f), {});
+  for (const m of JSON.stringify(ev).matchAll(/\/media\/bootcamps\/eventos\/([^/"]+)\//g)) if (m[1] !== ev.slug) pastas[m[1]] ??= ev.slug;
+}
+const { linhas, gravados, semHash } = classificar(arquivos, acervo, imagens, { aplicar, pastas });
 
 if (aplicar && gravados) {
   acervo.atualizadoEm = new Date().toISOString().slice(0, 10);

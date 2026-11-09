@@ -4,7 +4,7 @@
   "category": "Carreira e Soft Skills",
   "categoryFilter": "carreira-soft-skills",
   "title": "Produtividade, Hábitos e Metas para Quem Estuda e Trabalha com Tecnologia",
-  "lessons": "18 passos",
+  "lessons": "19 passos",
   "duration": "10h estimadas",
   "access": "Acesso Livre",
   "accessType": "livre",
@@ -24,7 +24,8 @@
     "Ficha de troca de hábito em 5 passos",
     "Diagrama de decisão do GTD e modelo da Matriz de Eisenhower",
     "Grade horária diária com classificação importante, urgente e circunstancial",
-    "Planner de revisão: dia, semana, mês, trimestre e semestre"
+    "Planner de revisão: dia, semana, mês, trimestre e semestre",
+    "Modelo de dia ideal em blocos de tempo, com tipos de bloco e ligação entre agenda e notas"
   ],
   "modules": [
     {
@@ -48,7 +49,7 @@
     {
       "id": 3,
       "title": "Concentração: Foco, Execução e Revisão",
-      "lessonsCount": 4,
+      "lessonsCount": 5,
       "component": "ModuleRenderer"
     }
   ],
@@ -153,6 +154,10 @@
           {
             "label": "Revisão semanal",
             "description": "Fechar o ciclo: planejar, fazer, checar e ajustar."
+          },
+          {
+            "label": "Dia ideal em blocos",
+            "description": "Blocos de foco e de energia na agenda, conteúdo no app de notas e ajuste na revisão semanal."
           }
         ]
       }
@@ -412,8 +417,8 @@
       "id": 3,
       "icon": "bolt",
       "title": "Concentração: Foco, Execução e Revisão",
-      "shortDescription": "Pomodoro, interrupções, procrastinação e revisão semanal",
-      "introductionText": "Planejar bem e não conseguir executar é frustrante — e comum. Quem estuda e trabalha com tecnologia vive entre chat, e-mail, alertas e reuniões, e cada troca de contexto cobra um tempo de retomada. Este módulo traz técnicas para trabalhar em blocos de foco, reduzir interrupções, lidar com a procrastinação e, por fim, fechar o ciclo com uma revisão periódica que mantém metas, hábitos e listas vivos.",
+      "shortDescription": "Pomodoro, interrupções, procrastinação, revisão semanal e dia ideal em blocos",
+      "introductionText": "Planejar bem e não conseguir executar é frustrante — e comum. Quem estuda e trabalha com tecnologia vive entre chat, e-mail, alertas e reuniões, e cada troca de contexto cobra um tempo de retomada. Este módulo traz técnicas para trabalhar em blocos de foco, reduzir interrupções, lidar com a procrastinação e, por fim, fechar o ciclo com uma revisão periódica que mantém metas, hábitos e listas vivos e montar o seu dia ideal em blocos de tempo.",
       "sections": [
         {
           "title": "⚡ Executar com foco",
@@ -456,6 +461,17 @@
               "tips": [
                 "Refaça o exercício das esferas da vida uma vez por mês e compare com a primeira versão.",
                 "Revisão que não muda nada no planejamento seguinte é só leitura. Saia de cada revisão com pelo menos um ajuste concreto."
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Exercício: monte o seu dia ideal em blocos",
+              "code": "bloco · horário · tipo (foco, raso, energia, livre) · nota com o conteúdo",
+              "guidance": "Este exercício junta o programa. Pegue o dia perfeito do módulo 1, que é o norte, e a grade horária do módulo 2, que é a realidade, e monte no calendário digital um dia ideal possível para a próxima semana, em blocos de tempo: cada bloco reserva um período para uma tarefa ou para um grupo de tarefas parecidas. Comece pelos blocos de energia, que sustentam os outros: horário de dormir e de acordar que garanta pelo menos 7 horas de sono, o mínimo que o CDC recomenda para adultos, refeições sem tela, um bloco de movimento e pausas entre os blocos de foco. Depois, encaixe um ou dois blocos de foco profundo nos horários em que a sua tabela de rotina mostra que você rende mais, com a tarefa do quadrante 2 no título do evento. Agrupe o trabalho raso (e-mail, chat, burocracia) em um ou dois blocos e deixe um bloco de folga para imprevistos. A agenda guarda só os blocos; o conteúdo de cada um (a próxima ação, o link da aula, a lista do que levar) fica no app de notas, com o link da nota na descrição do evento. Viva o dia ideal por uma semana e, na revisão semanal, compare blocos planejados e cumpridos e ajuste um bloco por vez.",
+              "tips": [
+                "Use uma cor por tipo de bloco. Na revisão, uma olhada na semana mostra se o foco foi engolido por reuniões ou se o bloco de energia sumiu primeiro.",
+                "Tarefa que não coube no bloco não estica o bloco: vai para o próximo espaço livre. Esticar empurra o resto do dia e derruba os blocos de energia, que são os mais fáceis de sacrificar.",
+                "Monte duas versões, dia de trabalho e dia de estudo ou de folga. Um dia ideal só para os dias úteis faz o fim de semana virar o bloco de tudo o que sobrou."
               ]
             }
           ]
@@ -777,7 +793,7 @@
   ],
   "whatYouBuild": {
     "title": "O que você vai construir",
-    "description": "Um sistema pessoal de produtividade testado na sua própria semana: até três metas SMART ligadas às esferas da vida que você quer fortalecer, uma tabela de rotina real, um hábito em processo de troca, listas do GTD organizadas, uma Matriz de Eisenhower atualizada, uma grade horária do dia e um planner de revisão semanal.",
+    "description": "Um sistema pessoal de produtividade testado na sua própria semana: até três metas SMART ligadas às esferas da vida que você quer fortalecer, uma tabela de rotina real, um hábito em processo de troca, listas do GTD organizadas, uma Matriz de Eisenhower atualizada, uma grade horária do dia, um dia ideal em blocos no calendário e um planner de revisão semanal.",
     "highlights": [
       "Metas SMART escritas, com prazo e meta da meta",
       "Sistema de tarefas com GTD e Matriz de Eisenhower",
@@ -846,6 +862,14 @@
     {
       "label": "Atlassian — State of Developer Experience Report 2025 (julho de 2025)",
       "url": "https://www.atlassian.com/blog/developer/developer-experience-report-2025"
+    },
+    {
+      "label": "Todoist — Time blocking: guia do método de blocos de tempo (planejar, agrupar tarefas, folgas e revisão)",
+      "url": "https://www.todoist.com/productivity-methods/time-blocking"
+    },
+    {
+      "label": "CDC — FastStats: Sleep in Adults (recomendação de pelo menos 7 horas de sono por dia, maio de 2024)",
+      "url": "https://www.cdc.gov/sleep/data-and-statistics/adults.html"
     }
   ]
 }

@@ -4,7 +4,7 @@
   "category": "Frontend",
   "categoryFilter": "frontend",
   "title": "Migração de Landing Pages entre Plataformas: Formulários, Dicionário de Dados e Integração com o CRM",
-  "lessons": "21 passos",
+  "lessons": "22 passos",
   "duration": "10h estimadas",
   "access": "Acesso Livre",
   "accessType": "livre",
@@ -23,7 +23,8 @@
     "Modelo de dicionário de variáveis (LP, label, name, chave, API, status)",
     "Script de inventário que extrai título, inputs, scripts e frameworks de cada HTML",
     "Esqueleto de componente LWC de formulário e de CloudPage com AMPscript",
-    "Roteiro de teste e checklist de virada"
+    "Roteiro de teste e checklist de virada",
+    "Funções de máscara e validação de CPF, CNPJ (inclusive o alfanumérico), telefone e CEP"
   ],
   "modules": [
     {
@@ -41,7 +42,7 @@
     {
       "id": 2,
       "title": "Reconstrução: HTML Acessível, LWC e CloudPages",
-      "lessonsCount": 6,
+      "lessonsCount": 7,
       "component": "ModuleRenderer"
     },
     {
@@ -113,7 +114,7 @@
         "items": [
           {
             "label": "HTML, CSS e JS",
-            "description": "Formulário acessível, layout responsivo e envio sem jQuery."
+            "description": "Formulário acessível, máscaras de CPF, CNPJ, telefone e CEP, layout responsivo e envio sem jQuery."
           },
           {
             "label": "Componente LWC",
@@ -360,6 +361,17 @@
             },
             {
               "number": 4,
+              "title": "Máscara e validação de CPF, CNPJ, telefone e CEP",
+              "code": "<input id=\"cep\" name=\"cep\" inputmode=\"numeric\" autocomplete=\"postal-code\" pattern=\"\\d{5}-?\\d{3}\" maxlength=\"9\" aria-describedby=\"cep-ajuda\">",
+              "guidance": "O passo anterior definiu as regras; este escreve a camada que ajuda a pessoa a digitar certo antes de o dado ir para o CRM. Exercício: no Cadastro de Representantes, a LP que alterna CPF e CNPJ, crie para cada campo uma função de máscara, que formata enquanto a pessoa digita, e uma de validação, que roda ao sair do campo e no envio. CPF: 11 dígitos no formato 000.000.000-00, com os dois dígitos verificadores conferidos pelo cálculo de módulo 11 e recusa de sequências repetidas, que passam na conta mas não são CPF. CNPJ: 14 posições no formato 00.000.000/0000-00; a partir de julho de 2026 a Receita Federal passou a emitir CNPJ alfanumérico, com letras e números nas 12 primeiras posições e só os 2 dígitos verificadores numéricos, então a máscara precisa aceitar letras maiúsculas e o cálculo do dígito precisa tratá-las. Telefone: DDD com 2 dígitos e celular com 9 dígitos começando por 9, no formato (00) 90000-0000; aceite fixo com 8 dígitos só se a LP pedir. CEP: 8 dígitos, no formato 00000-000. Mostre o formato esperado em texto visível ligado ao campo por aria-describedby e use inputmode='numeric' em CPF e CEP (no CNPJ, não, por causa das letras). Na hora de montar o objeto do envio, tire a máscara e mande só os caracteres, com a chave do dicionário.",
+              "tips": [
+                "Teste com números de um gerador de documentos para teste, citado como tal no roteiro, nunca com o CPF de alguém da equipe. Nos exemplos escritos, mostre só o formato com dígitos fictícios, como 000.000.000-00. E lembre que passar no cálculo prova que o número é bem formado, não que pertence a alguém ou está regular.",
+                "Com setCustomValidity, a mensagem própria impede o envio enquanto não for limpa: chame setCustomValidity('') assim que o campo voltar a ser válido. O pattern precisa casar com o valor inteiro, e a regra deve aparecer em texto perto do campo, não só no title.",
+                "Máscara que joga o cursor para o fim a cada tecla atrapalha quem corrige um dígito no meio, e máscara que bloqueia colar irrita quem copia o CNPJ de um documento. Aceite o valor colado com ou sem pontuação e formate depois."
+              ]
+            },
+            {
+              "number": 5,
               "title": "Estrutura de um componente LWC",
               "code": "formLead/ formLead.html · formLead.js · formLead.js-meta.xml",
               "guidance": "No Experience Cloud, cada LP vira uma página montada com componentes Lightning Web Components. Um componente é uma pasta com o mesmo nome em três arquivos principais: o .html (template), o .js (classe que estende LightningElement) e o .js-meta.xml (apiVersion, isExposed e targets, como lightningCommunity__Page para aparecer no Experience Builder). O projeto original quebrou cada LP em menu, painéis do corpo e rodapé (menuLpTorcedor, bodyPainel2LpTorcedor... footerLpTorcedor). Faça o mesmo, mas extraia o formulário em um componente único, reutilizado por todas as LPs.",
@@ -369,7 +381,7 @@
               ]
             },
             {
-              "number": 5,
+              "number": 6,
               "title": "@api, wire e chamada imperativa ao Apex",
               "code": "import salvarLead from '@salesforce/apex/LeadLpController.salvarLead';",
               "guidance": "Torne o componente configurável: propriedades com @api (canalEntrada, urlObrigado) expostas no js-meta.xml por targetConfigs aparecem como campos no Experience Builder, e a mesma peça serve ao Catálogo e à Venda Corporativa. Para leitura de dados, como a lista de lojas por estado, use @wire com um método Apex cacheable. Para gravar o lead, importe o método de @salesforce/apex/ e chame de forma imperativa no submit, porque inserção não pode ser cacheable. Do lado do Apex, o método recebe um mapa com as chaves do dicionário e faz a atribuição campo a campo.",
@@ -379,7 +391,7 @@
               ]
             },
             {
-              "number": 6,
+              "number": 7,
               "title": "Alternativa: CloudPages com AMPscript",
               "code": "SET @id = CreateSalesforceObject(\"Lead\", 3, \"LastName\", @sobrenome, \"Email\", @email, \"CanalDeEntrada__c\", \"LP Catálogo\")",
               "guidance": "Quando a LP pertence a uma campanha de Marketing Cloud e não precisa de Experience Cloud, uma CloudPage resolve com menos peças. O mesmo HTML do passo 1 envia para a própria página; no topo, um bloco AMPscript lê os campos com RequestParameter, valida, procura lead existente pelo e-mail e cria o registro com CreateSalesforceObject('Lead', n, campo, valor, …), que exige o Marketing Cloud Connect e devolve o Id criado. Grave também em uma Data Extension para ter o histórico de envios da página.",
@@ -870,6 +882,14 @@
     {
       "label": "Gran Cursos Online — LGPD: consentimento e requisitos de validade (art. 8º)",
       "url": "https://blog.grancursosonline.com.br/lei-13-709-2018-lgpd-consentimento-e-requisitos-de-validade-art-8/amp/"
+    },
+    {
+      "label": "MDN Web Docs — HTML attribute: pattern (validação de formato no formulário)",
+      "url": "https://developer.mozilla.org/docs/Web/HTML/Reference/Attributes/pattern"
+    },
+    {
+      "label": "Agência Gov — Receita Federal anuncia que CNPJ terá letras e números a partir de julho de 2026 (16/10/2024)",
+      "url": "https://agenciagov.ebc.com.br/noticias/202410/receita-federal-anuncia-que-cnpj-tera-letras-e-numeros-a-partir-de-julho-de-2026"
     }
   ]
 }

@@ -4,7 +4,7 @@
   "category": "Marketing e CRM",
   "categoryFilter": "marketing-crm",
   "title": "CRM na Prática: Jornadas, Réguas de Relacionamento, Transacionais e LGPD",
-  "lessons": "22 passos",
+  "lessons": "23 passos",
   "duration": "14h estimadas",
   "access": "Acesso Livre",
   "accessType": "livre",
@@ -23,7 +23,8 @@
     "Modelo de cronograma de construção de jornadas",
     "Tabela de copies de reengajamento por motivo de perda",
     "As 10 copies transacionais (e-mail e WhatsApp) da Rede Construir+",
-    "Checklist de LGPD para e-mail e WhatsApp"
+    "Checklist de LGPD para e-mail e WhatsApp",
+    "Modelo de régua de fidelidade com parceiro de pontos (gatilhos, custo e consentimento)"
   ],
   "modules": [
     {
@@ -35,7 +36,7 @@
     {
       "id": 1,
       "title": "Réguas de Relacionamento e Reengajamento",
-      "lessonsCount": 6,
+      "lessonsCount": 7,
       "component": "ModuleRenderer"
     },
     {
@@ -104,6 +105,10 @@
           {
             "label": "Alertas, campanhas e métricas",
             "description": "WhatsApp para o franqueado, réguas de lançamento e janela de envio."
+          },
+          {
+            "label": "Fidelidade com parceiro de pontos",
+            "description": "Acúmulo, resgate, gatilhos da régua, custo do ponto e consentimento para compartilhar dados."
           }
         ]
       },
@@ -235,8 +240,8 @@
       "id": 1,
       "icon": "sync",
       "title": "Réguas de Relacionamento e Reengajamento",
-      "shortDescription": "Nutrição, reengajamento, alertas e janela de envio",
-      "introductionText": "Régua de relacionamento é a sequência de comunicações que acompanha uma pessoa ao longo de uma etapa: o lead que pediu uma visita técnica, o candidato a franquia que foi recusado, o franqueado que precisa atender um lead em minutos. Neste módulo você constrói essas réguas no Journey Builder, personaliza pelo que a pessoa declarou, escreve o reengajamento por motivo de perda e termina medindo em que dia e período cada público presta mais atenção.",
+      "shortDescription": "Nutrição, reengajamento, alertas, fidelidade com pontos e janela de envio",
+      "introductionText": "Régua de relacionamento é a sequência de comunicações que acompanha uma pessoa ao longo de uma etapa: o lead que pediu uma visita técnica, o candidato a franquia que foi recusado, o franqueado que precisa atender um lead em minutos. Neste módulo você constrói essas réguas no Journey Builder, personaliza pelo que a pessoa declarou, escreve o reengajamento por motivo de perda, mede em que dia e período cada público presta mais atenção e termina com uma régua de fidelidade ligada a um programa de pontos parceiro.",
       "sections": [
         {
           "title": "🔁 Réguas que acompanham cada público",
@@ -298,6 +303,22 @@
               "tips": [
                 "Compare segmento com ele mesmo ao longo do tempo. Comparar a abertura de e-mail com a leitura de WhatsApp mistura métricas de natureza diferente.",
                 "Abertura indica atenção, não resultado. Para cada régua, defina também a métrica de negócio: orçamento criado, venda, retorno do candidato."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "🎟️ Régua de fidelidade com parceiro de pontos",
+          "subsections": [
+            {
+              "number": 7,
+              "title": "Régua de fidelidade com programa de pontos de coalizão",
+              "code": "adesão → pontos creditados → saldo perto do resgate → pontos a vencer",
+              "guidance": "Programa de coalizão é o que reúne marcas diferentes em um mesmo sistema de pontos: o cliente acumula comprando em uma empresa e resgata em outra. É um formato conhecido do consumidor: no Panorama da Fidelização no Brasil, divulgado pela Abemf em outubro de 2025 com 2.313 entrevistados, 88,3% disseram usar programas de fidelidade e os de coalizão foram o tipo mais citado (61,4%). No exercício, a Rede Construir+ passa a creditar pontos de um programa parceiro fictício a cada compra na loja ou no e-commerce, numa proporção fixa definida em contrato (no exemplo, 1 ponto a cada R$ 5). Desenhe a régua com quatro gatilhos, cada um com público, canal, espera e copy: boas-vindas para quem informou o número de participante no cadastro; aviso de pontos creditados quando o pedido é entregue e o prazo de devolução termina; lembrete quando o saldo chega perto de um resgate do catálogo; e aviso de pontos a vencer, com antecedência suficiente para a pessoa agir. O resgate acontece no ambiente do parceiro; a régua da rede só informa e leva até lá. Registre a régua na planilha-mestra como qualquer outra jornada.",
+              "tips": [
+                "Ponto distribuído é custo: a marca paga ao programa parceiro por ponto creditado, no valor combinado em contrato. Credite só depois que o pedido não pode mais ser cancelado ou devolvido, defina com o financeiro um teto mensal (uma campanha de pontos em dobro sem teto estoura o orçamento) e acompanhe o realizado na matriz de métricas.",
+                "Mandar CPF ou e-mail do cliente ao parceiro é compartilhar dado pessoal com outro controlador. Quando a base legal é o consentimento, a LGPD (art. 7º, § 5º) exige consentimento específico para esse compartilhamento: peça a adesão em uma caixa própria, separada do aceite de comunicações, envie só o identificador que o parceiro precisa para creditar e informe com quem o dado é compartilhado, que é um direito do titular (art. 18, VII).",
+                "Quem cancela a adesão ao programa de pontos não pediu para sair das outras réguas, e quem se descadastra dos e-mails continua acumulando pontos. Trate os dois como campos separados no CRM."
               ]
             }
           ]
@@ -872,6 +893,10 @@
     {
       "label": "TELETIME — 72% dos brasileiros mandam SMS nunca ou quase nunca (Panorama Mobile Time/Opinion Box, março de 2025)",
       "url": "https://teletime.com.br/07/03/2025/72-dos-brasileiros-mandam-sms-nunca-ou-quase-nunca/"
+    },
+    {
+      "label": "PANROTAS — 88% dos brasileiros utilizam programas de fidelidade, diz pesquisa da Abemf (Panorama da Fidelização no Brasil, 17/10/2025)",
+      "url": "https://www.panrotas.com.br/mercado/pesquisas-e-estatisticas/2025/10/88-dos-brasileiros-utilizam-programas-de-fidelidade-diz-pesquisa-da-abemf_222537.html"
     }
   ]
 }

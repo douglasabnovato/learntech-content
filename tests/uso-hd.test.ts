@@ -52,6 +52,21 @@ describe("uso do hd", () => {
     expect(outra?.uso).toBeUndefined();
   });
 
+  it("marca técnico o metadado do macOS (__MACOSX e ._nome), mesmo com extensão de imagem", () => {
+    const acervo = novoAcervo();
+    const mac = [{ rel: "zip/__MACOSX/fotos/._1.jpg", sha: h("d"), ext: "jpg", bytes: 1 }];
+    classificar(mac, acervo, {}, { aplicar: true });
+    expect((acervo.itens[0]!.arquivos[3] as { uso?: string }).uso).toBe("tecnico");
+  });
+
+  it("marca exibido quando a pasta da galeria tem outro nome que o slug do evento", () => {
+    const acervo = novoAcervo();
+    acervo.itens[0]!.destinos = ["bootcamps/eventos/tdc-innovation"];
+    const fotos = { "ev/1.jpg": { dist: 0, publicada: "learntech-content/media/bootcamps/eventos/tdc-innovation-2023/1.webp" } };
+    classificar(arquivos, acervo, fotos, { aplicar: true, pastas: { "tdc-innovation-2023": "tdc-innovation" } });
+    expect(acervo.itens[0]!.arquivos[0]).toMatchObject({ uso: "exibido", destino: "bootcamps/eventos/tdc-innovation" });
+  });
+
   it("não marca exibido quando o evento da galeria não é destino do item", () => {
     const acervo = novoAcervo();
     acervo.itens[0]!.destinos = ["learn-tech/programas/101"];

@@ -50,7 +50,44 @@ Ficam de fora:
 
 **A1 das fotos:** o autor diz, por item, os números que vão para a galeria (`exibido`). Os parecidos de cada grupo escolhido viram `similar`, e o resto vira `descartado` com o motivo "fora da seleção da galeria". Fotos com documento, comprovante ou dado pessoal à vista vão para `descartado` mesmo se escolhidas.
 
+## 4. Produção (A1 de 09/11: "todos")
+
+O autor aprovou os oito temas e pediu que o Claude escolhesse pelo menos quatro fotos por item. Ele ajusta depois, trocando ou acrescentando.
+
+| # | Entrega |
+|---|---|
+| 1, 6 | Seis fichas novas em `tools/ferramentas` (91 → 97): `campaign-monitor`, `omnisend`, `getresponse`, `databox`, `rock-content`, `hackerrank` |
+| 2 | Artigo `cashback-e-ltv-no-varejo-quando-o-desconto-paga-a-recompra`, com capa gerada |
+| 3 | 1101: passo "Régua de fidelidade com programa de pontos de coalizão" |
+| 4 | 106: passo "Máscara e validação de CPF, CNPJ, telefone e CEP" |
+| 5 | 1102: passo "Guia de estilo tipográfico do e-mail" |
+| 6 | 1005: HackerRank citado no passo de testes técnicos |
+| 7 | 1004: passo "Exercício: monte o seu dia ideal em blocos" |
+| 8 | Artigo de editais: parágrafo "Rodadas e credenciamento" |
+
+### Fotos
+
+| Item | Escolhidas | Onde aparecem |
+|---|---|---|
+| HD-0010 (hackathon) | 6: foto oficial, encerramento, organizadores, salão, chegada com brindes, arte da nova data | galeria do evento, 28 a 33 |
+| HD-0011 (Fator S) | 6: abertura, equipe, pitch no palco, plateia, dois canvas | galeria do evento, 30 a 35 |
+| HD-0007 (hack dev) | 2: agenda da rotina (sem o painel de tarefas, que tinha nomes de terceiros) e favoritos da trilha | capa do programa 1005 e capa do artigo do hack dev |
+
+Também entraram:
+- **HD-0013 (TDC):** 13 fotos já estavam na galeria. O `hd:uso` não as via porque a pasta da galeria (`tdc-innovation-2023`) tem outro nome que o slug do evento. Isso foi corrigido no script, com teste.
+- **HD-0025:** 11 "imagens" eram metadado do macOS (`__MACOSX/._nome`) e viraram `tecnico`, com regra e teste.
+
+Ficaram de fora, com o motivo:
+- **HD-0009 (GDG):** as 4 pendentes são capturas do Instagram, com nomes e curtidas. A galeria já tem 7 fotos.
+- **HD-0013:** as pendentes são capturas do app do evento e de um formulário de inscrição.
+- **HD-0008:** são folhas e telas de cursos de terceiro, cujos direitos não são do autor.
+- **HD-0007:** programa e artigo têm só uma imagem de capa cada. Por isso, duas das quatro fotos escolhidas não têm lugar. Mostrar mais pede uma galeria no learn-tech.
+
+### Pontos para o autor
+- **Rock Content:** o site oficial redireciona para outro domínio, e a ficha está marcada "Página em revisão". Decidir o link e se a ficha fica.
+- **Preços sem confirmação:** os preços de Campaign Monitor, Databox e HackerRank não foram confirmados na página oficial, e as fichas não citam valores. Os da Omnisend e da GetResponse vieram com ressalvas.
+- **Teto do contrato:** o 106 ficou com 8 fontes, acima do máximo de 6, e o 1101 com 23 passos, acima do teto de 22. O build não confere esses limites.
+
 ## Próximos passos
-- O autor escolhe no A1 quais propostas da seção 2 seguem. Cada uma vira um lote de produção com o contrato do site.
 - O áudio do HD-0006 é transcrito e marcado.
-- Fotos (#13) e vídeos (#15) seguem nas suas issues.
+- As fotos que sobraram em cada item viram `descartado` quando o autor confirmar. Os vídeos seguem na #15.
