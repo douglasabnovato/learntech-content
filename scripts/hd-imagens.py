@@ -21,7 +21,7 @@ Image.MAX_IMAGE_PIXELS = None
 warnings.simplefilter("ignore")
 EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 REPOS = ["learntech-content", "learn-tech", "bootcamps", "career", "tools"]
-FORA = {"node_modules", "dist", ".git", "e2e", "relatorios", ".wrangler", "coverage"}
+FORA = {"node_modules", "dist", ".git", "e2e", "relatorios", ".wrangler", "coverage", ".extraido"}
 RAIZ = Path(__file__).resolve().parent.parent.parent
 
 

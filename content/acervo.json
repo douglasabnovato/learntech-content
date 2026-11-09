@@ -1119,7 +1119,9 @@
         {
           "sha256": "5a898feb6b9a57f68710e17064c2aa05f60e9c08827080f40abecf6fe51daaea",
           "ext": "mp3",
-          "bytes": 8975300
+          "bytes": 8975300,
+          "uso": "referencia",
+          "motivo": "áudio de terceiro transcrito: marca e valor intangível, tema fora dos destinos do item"
         },
         {
           "sha256": "233fc034d294f991ff7dc821fca970c79c94a6fb33aa8bb445a96dff23dae90d",

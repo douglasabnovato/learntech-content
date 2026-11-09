@@ -34,6 +34,7 @@ API de conteúdo do ecossistema learnTECH (Cloudflare Workers + D1 + Static Asse
 | `npm run validar` | só schemas e integridade do conteúdo |
 | `npm run lint` | ESLint |
 | `npm run hd:inventariar` | inventário do hd por hash (`-- --registrar` cria os itens) |
+| `npm run hd:extrair` / `npm run a1` / `npm run triador:gabarito` | extração para o triador (`hd/.extraido/`), tabela do A1 e acerto do triador contra o gabarito (fase 1) |
 | `npm run hd:imagens` / `npm run hd:uso` | uso de cada arquivo do hd (`-- --aplicar` marca o automático, `-- --relatorio` grava o relatório); 100% = zero pendentes |
 | `npm run leva:status` / `npm run cobertura` / `npm run progresso` | fechamento de leva, cobertura entre projetos e placar |
 | `npm run copias` / `npm run sitemaps` | atualizar as cópias e os sitemaps nos quatro sites |

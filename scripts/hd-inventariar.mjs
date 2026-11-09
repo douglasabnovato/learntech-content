@@ -35,7 +35,7 @@ if (!fs.existsSync(HD)) { console.error(`hd não encontrado em ${HD}`); process.
 function listar(pasta, base = pasta) {
   return fs.readdirSync(pasta, { withFileTypes: true }).flatMap((e) => {
     const p = path.join(pasta, e.name);
-    if (e.isDirectory()) return listar(p, base);
+    if (e.isDirectory()) return e.name === ".extraido" ? [] : listar(p, base); /* .extraido: saída do hd:extrair */
     if (IGNORAR.has(e.name)) return [];
     return [{ abs: p, rel: path.relative(base, p).split(path.sep).join("/").normalize("NFC") }];
   });
