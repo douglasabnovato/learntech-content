@@ -56,7 +56,7 @@ O estado é do item (a pasta). O uso é de cada arquivo dentro dele, no campo `u
 
 - Cópias idênticas no hd têm o mesmo hash e seguem o uso do original.
 - css, js e xml não são marcados como técnicos sozinhos: podem ser código do autor e ficam para o triador.
-- `npm run hd:imagens` compara as imagens do hd com as publicadas (dHash) e grava `hd/.imagens-publicadas.json`, fora do git. `npm run hd:uso` mostra o raio-x por uso e por item; `-- --aplicar` grava as marcações automáticas; `-- --relatorio` grava `relatorios/uso-do-hd-AAAA-MM-DD.md`, sem nomes de arquivo.
+- `npm run hd:imagens` compara as imagens do hd com as publicadas (dHash) e grava `hd/.imagens-publicadas.json`, fora do git (com cache do dHash em `hd/.dhash-cache.json`: só a primeira execução é lenta). `npm run hd:uso` mostra o raio-x por uso e por item; `-- --aplicar` grava as marcações automáticas; `-- --relatorio` grava `relatorios/uso-do-hd-AAAA-MM-DD.md`, sem nomes de arquivo. `-- --vivo` confere cada destino também na API publicada e na cópia do site.
 - `npm run leva:status` só fecha o lote com zero arquivos pendentes.
 
 ## Formato do destino

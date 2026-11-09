@@ -27,7 +27,7 @@ const argv = process.argv.slice(2);
 const registrar = argv.includes("--registrar");
 const iHd = argv.indexOf("--hd");
 const HD = path.resolve(iHd >= 0 ? argv[iHd + 1] : path.join(RAIZ, "..", "hd"));
-const IGNORAR = new Set([".acervo-local.json", ".hash-cache.json", "desktop.ini", "Thumbs.db", ".DS_Store"]);
+const IGNORAR = new Set([".acervo-local.json", ".hash-cache.json", ".imagens-publicadas.json", ".dhash-cache.json", "desktop.ini", "Thumbs.db", ".DS_Store"]);
 
 if (!fs.existsSync(HD)) { console.error(`hd não encontrado em ${HD}`); process.exit(1); }
 

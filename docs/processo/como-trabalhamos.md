@@ -30,6 +30,31 @@ Referência da colaboração entre o autor (Douglas) e o Claude para desenvolver
 | 9 | Comandos de Git colados a cada publicação | Script `scripts/publicar.sh` | Publicação com um comando, que para no primeiro erro |
 | 10 | O autor vira só executor | Revisão semanal de 20 minutos: placar, backlog e amostra do conteúdo publicado | Registro da revisão em `conversas/` |
 
+## Trabalho contínuo até terminar os cinco projetos (09/11/2026)
+Pedido do autor: o Claude trabalha sempre para terminar os cinco projetos, apresenta o andamento e transforma toda tarefa nova em issue.
+
+**Ciclo de cada sessão** (começa quando o autor abre a conversa ou diz "continue"):
+1. Ler `ESTADO.md`, as issues abertas dos cinco repositórios e a saída de `npm run progresso` e `npm run hd:uso`.
+2. Pegar a próxima issue que não depende do autor, na ordem de prioridade abaixo, e entregá-la: branch do dia, testes, CI verde, `developer` e `main` por `--ff-only`, e a issue fechada com a evidência.
+3. Ao achar uma tarefa nova, abrir a issue no repositório certo: contexto, critérios de entrega, origem, labels (`proximos-passos` mais o tema; `decisao-do-autor` quando depende do autor) e a assinatura.
+4. Terminar com o relatório de andamento (modelo abaixo) e o `ESTADO.md` atualizado.
+
+**Ordem de prioridade:**
+1. Uso do hd até zero pendentes e fluxo de agentes (learntech-content, label `acervo`): sem isso, a próxima remessa do hd não entra.
+2. Qualidade de MVP de cada site (`proximos-passos` com acessibilidade, SEO, performance, testes).
+3. Produto (busca, filtros, páginas novas).
+4. Issues antigas sem label (ideias e conteúdos do autor): só quando ele trouxer o material.
+
+**Relatório de andamento:**
+```
+Feito: <issue, o que mudou, evidência: teste, CI, saída do script>
+Em andamento: <issue e o que falta>
+Para você: <decisões e ações do autor, cada uma com a issue>
+Issues novas: <links>
+Próximo: <a próxima issue que o Claude vai pegar>
+Placar: <npm run progresso> · hd: <pendentes do npm run hd:uso>
+```
+
 ## Fluxo de entrega (alvo)
 1. **Início:** branch do dia nos repositórios tocados, sempre a partir da `main` atualizada (regra completa em `README.md`, Recepção).
 2. **Trabalho:** o Claude produz em entregas pequenas, roda validação, testes possíveis, `cobertura`, `leva:status` e `copias`.

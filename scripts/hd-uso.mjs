@@ -10,6 +10,7 @@
  *                                          #   tecnico: extensões sem conteúdo (ico, tmp, lnk, iqy, h2d...);
  *                                          #   exibido: imagem igual (dHash até 5) a uma foto publicada na galeria de um evento que é destino do item.
  *   node scripts/hd-uso.mjs --relatorio    # grava docs/processo/relatorios/uso-do-hd-AAAA-MM-DD.md (sem nomes de arquivo)
+ *   node scripts/hd-uso.mjs --vivo         # confere cada destino também na API publicada e na cópia do site
  *   node scripts/hd-uso.mjs --hd <pasta>
  *
  * Depende de `npm run hd:inventariar` (hash) e, para imagens, de `npm run hd:imagens` (<hd>/.imagens-publicadas.json).
@@ -18,6 +19,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { classificar, ORDEM, USADOS } from "./lib/uso-hd.mjs";
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const CONTENT = path.join(RAIZ, "content");
@@ -25,18 +27,10 @@ const ARQ_ACERVO = path.join(CONTENT, "acervo.json");
 const argv = process.argv.slice(2);
 const aplicar = argv.includes("--aplicar");
 const relatorio = argv.includes("--relatorio");
+const vivo = argv.includes("--vivo");
 const iHd = argv.indexOf("--hd");
 const HD = path.resolve(iHd >= 0 ? argv[iHd + 1] : path.join(RAIZ, "..", "hd"));
-const IGNORAR = new Set([".acervo-local.json", ".hash-cache.json", ".imagens-publicadas.json", "desktop.ini", "Thumbs.db", ".DS_Store"]);
-const TECNICO = new Set(["ico", "tmp", "lnk", "iqy", "h2d", "map", "url", "ini", "db", "dsstore", "ds_store"]);
-const IMAGEM = new Set(["jpg", "jpeg", "png", "webp"]);
-const USADOS = new Set(["exibido", "fonte", "similar"]);
-const ORDEM = ["exibido", "fonte", "similar", "tecnico", "bloqueado", "descartado", "pendente"];
-const DIST_EXIBIDA = 5;
-const DIST_PROVAVEL = 10;
-/* Ícones e capturas do próprio site batem com qualquer imagem simples: não contam como publicação. */
-const FALSO_POSITIVO = /favicon|android-chrome|apple-touch|og-image|[.]github[/]/;
-
+const IGNORAR = new Set([".acervo-local.json", ".hash-cache.json", ".imagens-publicadas.json", ".dhash-cache.json", "desktop.ini", "Thumbs.db", ".DS_Store"]);
 if (!fs.existsSync(HD)) { console.error(`hd não encontrado em ${HD}`); process.exit(1); }
 const ler = (p, padrao) => (fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, "utf8")) : padrao);
 const acervo = ler(ARQ_ACERVO, { itens: [] });
@@ -53,10 +47,6 @@ function listar(pasta, base = pasta) {
   });
 }
 
-/* Hash → { item, arquivo } do acervo. */
-const porHash = new Map();
-for (const it of acervo.itens) for (const f of it.arquivos ?? []) porHash.set(f.sha256, { it, f });
-
 /* Destino "projeto/recurso/id" existe no content/? */
 const listaDe = (arq) => { const j = ler(path.join(CONTENT, arq), []); return Array.isArray(j) ? j : Object.values(j).find(Array.isArray) ?? []; };
 const chaves = (arq) => new Set(listaDe(arq).flatMap((i) => [i.slug, i.id].filter((v) => v !== undefined).map(String)));
@@ -70,33 +60,12 @@ const RECURSOS = {
 };
 const existeDestino = (d) => { const p = d.split("/"); const rec = RECURSOS[`${p[0]}/${p[1]}`]; return rec ? rec.has(p.slice(2).join("/")) : null; };
 
-/* Imagem do hd igual a uma foto da galeria de um evento: devolve o destino "bootcamps/eventos/<slug>". */
-const destinoDaImagem = (pub) => { const m = pub?.match(/media\/bootcamps\/eventos\/([^/]+)\//); return m ? `bootcamps/eventos/${m[1]}` : null; };
-
-const arquivos = listar(HD);
-const linhas = [];
-const vistos = new Set();
-let semHash = 0;
-let gravados = 0;
-for (const a of arquivos) {
+const arquivos = listar(HD).map((a) => {
   const st = fs.statSync(a.abs);
-  const sha = cache[`${a.rel}|${st.size}|${Math.round(st.mtimeMs)}`];
-  if (!sha) { semHash++; continue; }
-  const reg = porHash.get(sha);
   const ext = path.extname(a.rel).slice(1).toLowerCase().replace(/[^a-z0-9]/g, "") || "sem-extensao";
-  const copia = vistos.has(sha);
-  vistos.add(sha);
-  if (!reg) { linhas.push({ a, ext, bytes: st.size, fora: true, copia }); continue; }
-  const achada = IMAGEM.has(ext) ? imagens[a.rel] : null;
-  const img = achada && !FALSO_POSITIVO.test(achada.publicada ?? "") ? achada : null;
-  if (aplicar && !copia && (!reg.f.uso || reg.f.uso === "pendente")) {
-    const dest = img && img.dist <= DIST_EXIBIDA ? destinoDaImagem(img.publicada) : null;
-    if (TECNICO.has(ext)) { reg.f.uso = "tecnico"; gravados++; }
-    else if (dest && reg.it.destinos.includes(dest)) { reg.f.uso = "exibido"; reg.f.destino = dest; gravados++; }
-  }
-  const provavel = img && img.dist <= DIST_PROVAVEL && (!reg.f.uso || reg.f.uso === "pendente");
-  linhas.push({ a, ext, bytes: st.size, it: reg.it, uso: reg.f.uso ?? "pendente", copia, provavel });
-}
+  return { rel: a.rel, ext, bytes: st.size, sha: cache[`${a.rel}|${st.size}|${Math.round(st.mtimeMs)}`] };
+});
+const { linhas, gravados, semHash } = classificar(arquivos, acervo, imagens, { aplicar });
 
 if (aplicar && gravados) {
   acervo.atualizadoEm = new Date().toISOString().slice(0, 10);
@@ -133,6 +102,52 @@ console.log("\nPor item (pendentes primeiro):");
 for (const p of itens) {
   const usos = ORDEM.filter((u) => p.usos[u]).map((u) => `${u} ${p.usos[u]}`).join(" · ");
   console.log(`  ${p.it.id} [${p.it.estado}] ${String(p.n).padStart(4)}  ${usos}${p.provaveis ? ` · imagem provável a conferir ${p.provaveis}` : ""}`);
+}
+/* --vivo: o destino está na API publicada e na cópia de reserva do site? (contratos, "Verificação na tela") */
+const API = "https://learntech-content.douglasabnovato.workers.dev/v1/";
+const VIVO = {
+  "learn-tech/programas": ["learn-tech/programas.json", "learn-tech/src/constants/programasCatalogo.js"],
+  "learn-tech/blog": ["learn-tech/paginas/blog.json", "learn-tech/src/constants/blogData.js"],
+  "learn-tech/areas": ["learn-tech/areas.json", "learn-tech/src/constants/areasData.js"],
+  "bootcamps/eventos": ["bootcamps/eventos.json", "bootcamps/src/entities/event/api/events.data.ts"],
+  "career/empresas": ["career/empresas.json", "career/js/good-companies.js"],
+  "career/vagas": ["career/vagas.json", "career/js/jobs.js"],
+  "career/perfis": ["career/perfis.json", "career/js/perfis-dev.js"],
+  "career/modelos-curriculo": ["career/modelos-curriculo.json", "career/js/curriculos.js"],
+  "tools/ferramentas": ["tools/ferramentas.json", "tools/data/tools.js"],
+  "tools/hospedagens": ["tools/hospedagens.json", "tools/data/host.js"],
+};
+/* Título do conteúdo do destino: é o que aparece na API e na cópia do site. */
+function tituloDe(rec, id) {
+  if (rec === "learn-tech/programas" || rec === "bootcamps/eventos") {
+    const j = ler(path.join(CONTENT, rec, `${id}.json`), null);
+    return j?.title ?? j?.titulo ?? null;
+  }
+  const arq = { "learn-tech/blog": "learn-tech/paginas/blog.json" }[rec] ?? `${rec}.json`;
+  const it = listaDe(arq).find((i) => String(i.slug) === id || String(i.id) === id);
+  return it?.title ?? it?.titulo ?? it?.nome ?? null;
+}
+if (vivo) {
+  const textos = {};
+  for (const [rec, [url, copia]] of Object.entries(VIVO)) {
+    let api = "";
+    try { api = await (await fetch(API + url)).text(); } catch { /* sem rede: conta como fora da API */ }
+    const arq = path.join(RAIZ, "..", copia);
+    textos[rec] = { api, copia: fs.existsSync(arq) ? fs.readFileSync(arq, "utf8") : "" };
+  }
+  const foraDoAr = [];
+  for (const d of new Set(itens.flatMap((p) => p.it.destinos))) {
+    const p = d.split("/");
+    const rec = `${p[0]}/${p[1]}`;
+    const id = p.slice(2).join("/");
+    if (!VIVO[rec] || existeDestino(d) !== true) continue;
+    const titulo = tituloDe(rec, id);
+    const tem = (txt) => !!titulo && [JSON.stringify(titulo), `'${titulo}'`].some((s) => txt.includes(s));
+    const naApi = tem(textos[rec].api) || textos[rec].api.includes(JSON.stringify(id));
+    const naCopia = tem(textos[rec].copia);
+    if (!naApi || !naCopia) foraDoAr.push(`${d}${naApi ? "" : " (fora da API publicada)"}${naCopia ? "" : " (fora da cópia do site)"}`);
+  }
+  console.log(foraDoAr.length ? `\nDestinos fora do ar: ${foraDoAr.length}\n  ${foraDoAr.join("\n  ")}` : "\n--vivo: todos os destinos estão na API publicada e nas cópias dos sites.");
 }
 console.log(destinosQuebrados.length ? `\nDestinos que não existem no content/: ${destinosQuebrados.join(", ")}` : "\nTodos os destinos existem no content/.");
 
