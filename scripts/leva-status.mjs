@@ -4,7 +4,8 @@
  *   1. todo item do lote está fechado: estado "publicado", "exibido" ou "referencia", com pelo menos um destino e sem `pendencias`;
  *      os demais ("novo", "extraido", "triado", "planejado", "produzido", "publicado-em-parte", "nao-publicavel") contam como abertos;
  *   2. nenhum arquivo do hd está fora do inventário (cópia idêntica de arquivo inventariado conta como inventariada);
- *   3. o relatório do lote (docs/processo/lotes/<lote>*.md) tem a linha "Aprovado pelo autor em: AAAA-MM-DD".
+ *   3. nenhum arquivo do lote está com uso "pendente" (campo uso de cada arquivo do acervo; ver npm run hd:uso);
+ *   4. o relatório do lote (docs/processo/lotes/<lote>*.md) tem a linha "Aprovado pelo autor em: AAAA-MM-DD".
  *
  * Uso:  node scripts/leva-status.mjs            # todos os lotes
  *       node scripts/leva-status.mjs 2026-10-30  # um lote
@@ -31,13 +32,15 @@ for (const lote of lotes) {
   const aprovacao = relatorios
     .map((f) => fs.readFileSync(path.join(LOTES, f), "utf8").match(/Aprovado pelo autor em:\s*(\d{4}-\d{2}-\d{2})/))
     .find(Boolean);
-  const fechado = abertos.length === 0 && aprovacao;
+  const pendentes = itens.flatMap((i) => i.arquivos ?? []).filter((f) => !f.uso || f.uso === "pendente").length;
+  const fechado = abertos.length === 0 && pendentes === 0 && aprovacao;
   if (!fechado) pendente = true;
   console.log(`\nLote ${lote}: ${itens.length} itens, ${itens.length - abertos.length} fechados, ${abertos.length} abertos`);
   for (const i of abertos) {
     console.log(`  aberto  ${i.id} [${i.estado}${i.destinos.length ? "" : ", sem destino"}] ${i.descricao.slice(0, 70)}`);
     for (const p of i.pendencias ?? []) console.log(`          pendência: ${p}`);
   }
+  if (pendentes) console.log(`  falta   decidir o uso de ${pendentes} arquivo(s) (npm run hd:uso)`);
   if (!relatorios.length) console.log("  falta   relatório do lote em docs/processo/lotes/");
   console.log(aprovacao ? `  aprovado pelo autor em ${aprovacao[1]}` : "  falta   aprovação do autor (linha \"Aprovado pelo autor em: AAAA-MM-DD\" no relatório)");
   console.log(fechado ? "  => LEVA FECHADA: os arquivos deste lote podem sair do hd." : "  => LEVA ABERTA: não remover arquivos do hd.");

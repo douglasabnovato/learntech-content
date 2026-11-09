@@ -23,11 +23,27 @@ const COM_DESTINO = ["produzido", "publicado", "publicado-em-parte", "exibido"];
 const TRIADOS = ["triado", "planejado", "produzido", "publicado", "publicado-em-parte", "exibido"];
 const data = z.string().regex(/^\d{4}-\d{2}-\d{2}$/);
 
+/* Uso de cada arquivo (relatório de uso do hd, 06/11/2026). 100% usado = nenhum arquivo "pendente".
+   Usado: exibido (aparece na tela), fonte (virou texto publicado), similar (quase igual a um exibido).
+   Resolvido sem uso, com justificativa: tecnico (sem conteúdo), bloqueado (regra impede), descartado (sem valor).
+   Arquivo sem o campo conta como pendente. Cópias idênticas no hd têm o mesmo hash: seguem o uso do original. */
+export const USOS_ARQUIVO = ["exibido", "fonte", "similar", "tecnico", "bloqueado", "descartado", "pendente"] as const;
+const sha = z.string().regex(/^[a-f0-9]{64}$/, "sha256 em hexadecimal minúsculo");
+
 const arquivoSchema = z.object({
-  sha256: z.string().regex(/^[a-f0-9]{64}$/, "sha256 em hexadecimal minúsculo"),
+  sha256: sha,
   ext: z.string().regex(/^[a-z0-9]+$|^sem-extensao$/),
   bytes: z.number().int().nonnegative(),
-});
+  uso: z.enum(USOS_ARQUIVO).optional(),
+  /* Para exibido e fonte: um dos destinos do item. */
+  destino: z.string().optional(),
+  /* Para similar: hash do arquivo exibido que o representa. */
+  similarA: sha.optional(),
+  /* Para bloqueado e descartado: a regra ou o motivo, sem nome de pessoa ou cliente. */
+  motivo: z.string().optional(),
+}).refine((f) => !["exibido", "fonte"].includes(f.uso ?? "") || !!f.destino, "arquivo exibido ou fonte precisa de destino")
+  .refine((f) => f.uso !== "similar" || !!f.similarA, "arquivo similar precisa de similarA (hash do exibido)")
+  .refine((f) => !["bloqueado", "descartado"].includes(f.uso ?? "") || !!f.motivo?.trim(), "arquivo bloqueado ou descartado precisa de motivo");
 
 /* Ficha do triador: a confiança decide se o item vai direto para a tabela do A1 ou vira pergunta ao autor. */
 const triagemSchema = z.object({
@@ -61,7 +77,8 @@ export const itemAcervoSchema = z.object({
 }).refine((i) => i.registradoSemHash || i.arquivos.length > 0, "item precisa de arquivos com hash (ou registradoSemHash: true)")
   .refine((i) => !COM_DESTINO.includes(i.estado) || i.destinos.length > 0, "item produzido, publicado ou exibido precisa de destino")
   .refine((i) => !TRIADOS.includes(i.estado) || i.direitos !== "a-triar", "item triado precisa de direitos definidos")
-  .refine((i) => !i.etapas?.length || i.etapas[i.etapas.length - 1]?.estado === i.estado, "a última etapa precisa ser o estado atual");
+  .refine((i) => !i.etapas?.length || i.etapas[i.etapas.length - 1]?.estado === i.estado, "a última etapa precisa ser o estado atual")
+  .refine((i) => i.arquivos.every((f) => !f.destino || i.destinos.includes(f.destino)), "o destino do arquivo precisa ser um dos destinos do item");
 
 export const acervoSchema = z.object({
   atualizadoEm: data,

@@ -323,6 +323,13 @@ export function verificarIntegridade(c: Conteudo, pastaMidia: string): string[] 
       donoDoHash.set(f.sha256, it.id);
     }
   }
+  /* Arquivo "similar" aponta para um arquivo "exibido" do acervo. */
+  const usoDoHash = new Map(c.acervo.itens.flatMap((it) => it.arquivos.map((f) => [f.sha256, f.uso] as const)));
+  for (const it of c.acervo.itens) {
+    for (const f of it.arquivos) {
+      if (f.similarA && usoDoHash.get(f.similarA) !== "exibido") erros.push(`acervo ${it.id}: arquivo ${f.sha256.slice(0, 12)}… é similar a um arquivo que não está exibido`);
+    }
+  }
 
   if (!c.vagas.some((v) => v.title === c.destaques.vaga)) erros.push(`destaques: vaga "${c.destaques.vaga}" não existe em vagas.json`);
   if (!c.empresas.some((v) => v.title === c.destaques.empresa)) erros.push(`destaques: empresa "${c.destaques.empresa}" não existe em empresas.json`);

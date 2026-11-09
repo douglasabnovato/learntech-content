@@ -41,6 +41,24 @@ Regras que o build confere (`src/schemas/acervo.ts`):
 
 `npm run leva:status` e `npm run progresso` contam `publicado`, `exibido` e `referencia` como fechados.
 
+## Uso de cada arquivo (09/11/2026)
+O estado é do item (a pasta). O uso é de cada arquivo dentro dele, no campo `uso` de `arquivos[]`. **100% usado = nenhum arquivo `pendente`.** Origem: `relatorios/uso-do-hd-2026-11-06.md`.
+
+| Uso | Significa | Campo obrigatório | Quem marca |
+|---|---|---|---|
+| `exibido` | Aparece na tela | `destino` (um dos destinos do item) | produtor; `hd:uso --aplicar` marca as fotos iguais às da galeria do evento; o verificador confirma |
+| `fonte` | Virou texto publicado, mas não aparece em si | `destino` | produtor |
+| `similar` | Quase igual a um arquivo exibido (rajada, outro ângulo) | `similarA` (hash do exibido) | produtor, com `imagens-parecidas.py` |
+| `tecnico` | Sem conteúdo (ico, tmp, lnk, iqy...) | — | `hd:uso --aplicar` |
+| `bloqueado` | Uma regra impede a exibição | `motivo` (ex.: "regras editoriais, seção 7") | triador propõe; autor confirma no A1 |
+| `descartado` | Poderia ser usado, mas não vale | `motivo` (ex.: "foto desfocada") | autor, no A1 |
+| `pendente` | Sem decisão (arquivo sem o campo também conta) | — | — |
+
+- Cópias idênticas no hd têm o mesmo hash e seguem o uso do original.
+- css, js e xml não são marcados como técnicos sozinhos: podem ser código do autor e ficam para o triador.
+- `npm run hd:imagens` compara as imagens do hd com as publicadas (dHash) e grava `hd/.imagens-publicadas.json`, fora do git. `npm run hd:uso` mostra o raio-x por uso e por item; `-- --aplicar` grava as marcações automáticas; `-- --relatorio` grava `relatorios/uso-do-hd-AAAA-MM-DD.md`, sem nomes de arquivo.
+- `npm run leva:status` só fecha o lote com zero arquivos pendentes.
+
 ## Formato do destino
 Para itens novos, o destino é sempre `projeto/recurso/id`:
 
@@ -57,7 +75,7 @@ Itens antigos têm destinos em texto livre (ex.: `empresas/Pitang`). Eles contin
 
 | Papel | Lê | Escreve | Nunca faz |
 |---|---|---|---|
-| Triador | `hd/.extraido/`, `regras-editoriais.md`, `trajetoria-do-autor.md`, `docs/contratos/README.md` | ficha no `acervo.json` (estado `triado`) | escrever em `content/`; copiar nome de pessoa ou cliente |
+| Triador (propõe o `uso` de cada arquivo) | `hd/.extraido/`, `regras-editoriais.md`, `trajetoria-do-autor.md`, `docs/contratos/README.md` | ficha no `acervo.json` (estado `triado`) | escrever em `content/`; copiar nome de pessoa ou cliente |
 | Produtor de cada projeto | o contrato do projeto em `docs/contratos/`, os itens `planejado` com destino no projeto | arquivos do recurso em `content/<projeto>/`, mídia em `media/<projeto>/`, estado `produzido` | mexer em outro projeto; mudar schema; publicar |
 | Revisor | o conteúdo produzido e o contrato | parecer com nota por critério no relatório do lote | reescrever o conteúdo |
 | Verificador | a API publicada e os quatro sites | relatório do lote, estado `exibido`, issue quando falha | mudar conteúdo |

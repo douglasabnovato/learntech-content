@@ -1,5 +1,5 @@
 {
-  "atualizadoEm": "2026-10-30",
+  "atualizadoEm": "2026-11-09",
   "observacao": "Registro permanente do acervo do hd. Guarda só hash, tipo, tamanho e a decisão editorial; nunca o nome nem o conteúdo dos arquivos. Itens DOC/EV foram catalogados em 27/10/2026, antes do controle por hash.",
   "itens": [
     {
@@ -1400,37 +1400,51 @@
         {
           "sha256": "a2fa500a7e16d5bb6b4de923775adf3932c289919924350199475407d87b6aa7",
           "ext": "jpg",
-          "bytes": 161795
+          "bytes": 161795,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/gdg-jf"
         },
         {
           "sha256": "90d7eb02fb4eecc822476972bcca53f600b83a8b9f738233de888908608e330d",
           "ext": "jpg",
-          "bytes": 158423
+          "bytes": 158423,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/gdg-jf"
         },
         {
           "sha256": "9ce628e459e1e0e9826ddeecf1e4e6e32cc27c9f17165e98c34f13d665b5335f",
           "ext": "jpg",
-          "bytes": 135558
+          "bytes": 135558,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/gdg-jf"
         },
         {
           "sha256": "cd4bee5fb49fee51a1216029f2067a451bb8ae156660c898d8fe9692c0800b64",
           "ext": "jpg",
-          "bytes": 290978
+          "bytes": 290978,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/gdg-jf"
         },
         {
           "sha256": "5dbc8002b93e376a8da31f1601c1642d57c0ee778710270c6297b599db7e932b",
           "ext": "jpg",
-          "bytes": 166419
+          "bytes": 166419,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/gdg-jf"
         },
         {
           "sha256": "187b10ceedf55894a46e2bd4745d6093f819c7e003e86df4018e65eb6866b82c",
           "ext": "jpg",
-          "bytes": 140327
+          "bytes": 140327,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/gdg-jf"
         },
         {
           "sha256": "a64df01c798d64b451122dc5227a036f8b6940a7dcf147106b5531724e2266cd",
           "ext": "jpg",
-          "bytes": 143832
+          "bytes": 143832,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/gdg-jf"
         },
         {
           "sha256": "29e45f8aeb64f060fe5ac861c6d5cd8e56cde6156685d526bfad3073a636d4c0",
@@ -1524,7 +1538,9 @@
         {
           "sha256": "f8e5a6587d9e1224911476203c3f197fd18b953fcfddf33d56e1975d21dd3aa3",
           "ext": "jpg",
-          "bytes": 2385928
+          "bytes": 2385928,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "39f82fedb2250d4ad27840e614ae4da6cb86a278a8affa6ab1f749c24527de56",
@@ -1534,7 +1550,9 @@
         {
           "sha256": "5da9cd4c59d97c7241a445512d92ec3cbd2ab447ca165d10b4e0ff5a4a142d77",
           "ext": "jpg",
-          "bytes": 2181946
+          "bytes": 2181946,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "4718291c014c1a7eebb3abc92a90ca24ee6773413f9480eff45b252b121e798d",
@@ -1569,7 +1587,9 @@
         {
           "sha256": "5ccefe6c503eca84e87c360f248c38ba26374414fd687819588105fb7b7e7a94",
           "ext": "jpg",
-          "bytes": 2746954
+          "bytes": 2746954,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "9920515fc70554d6c80deea879c6e5127e1c77c9fb2e70b149f40645b2dd86ef",
@@ -1579,7 +1599,9 @@
         {
           "sha256": "7fb7554df16bfb8ff3c2b4b7860f675a69309337fc2415f7bedfad6f258187b5",
           "ext": "jpg",
-          "bytes": 1789658
+          "bytes": 1789658,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "42b30f3f082c735cd7c4468597f387ad7af26c6c5af0348b44ab615ecd5e794e",
@@ -1589,7 +1611,9 @@
         {
           "sha256": "d883ddab8368c2b4d73120913df80691f3b29fa2baf9bc33967936ff4fd3643d",
           "ext": "jpg",
-          "bytes": 1623624
+          "bytes": 1623624,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "a86af08931ebc7e4cc5f958e5a2ef59c2f3076ab822ae9b98c7351e779c51fe1",
@@ -1599,7 +1623,9 @@
         {
           "sha256": "68a4b930bf97d06297d0480fafa5c6097b9790a837a42d0c039051b5decc02e3",
           "ext": "jpg",
-          "bytes": 970048
+          "bytes": 970048,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "4c3517a8822a8778638629bd70b58a14ab45abdd074b604826e028581cf18788",
@@ -1684,7 +1710,9 @@
         {
           "sha256": "9abec806836bf99b5a859cbd0dd1e7a95c67ea76b3d1bb0cbc908616a50f2016",
           "ext": "jpg",
-          "bytes": 3325750
+          "bytes": 3325750,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "7e932a4e0ab785c975e5f5bda786cc357d7153eda2585c8bfa596f49e6f2b722",
@@ -1719,12 +1747,16 @@
         {
           "sha256": "0c47a4d1b1b88e4f1a29f6ef304529cd9145a44d25d9294d72452a68fdadef7a",
           "ext": "jpg",
-          "bytes": 1037375
+          "bytes": 1037375,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "6f1d1798c3d87786ab1884bd3824c61a1c00c6717de61537c4fb45808d33c9d8",
           "ext": "jpg",
-          "bytes": 1723022
+          "bytes": 1723022,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "4fb9cf9477cd287f31aca043bf117c8b2e326e170a44bdf393ce907c4e3f07ac",
@@ -1734,17 +1766,23 @@
         {
           "sha256": "ecf676e3a6664439c9911746c78d04dd92d2a953a9619c31ce9ed772c07f349f",
           "ext": "jpg",
-          "bytes": 878214
+          "bytes": 878214,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "96bdcd55cc59104a29e36816df810d284f41c696615e6a195918469ad42acad1",
           "ext": "jpg",
-          "bytes": 1693659
+          "bytes": 1693659,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "1853be307f20fb6b6a71b0346e8da9cc5db43d448072d1edbdefdda1e636e699",
           "ext": "jpg",
-          "bytes": 1509105
+          "bytes": 1509105,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "7f6fb5d5a3c0f7e117996d914d9ebc0e0b2abfacb09779eddea3c4cc2695a0c7",
@@ -1754,7 +1792,9 @@
         {
           "sha256": "9ca7a829a67912f6f85b0a3d169599e1f95968479109d45fef144d4e16daf2a6",
           "ext": "jpg",
-          "bytes": 1456220
+          "bytes": 1456220,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "b686c0640e0f20931c5ccc3789d42d1a685a25701871c4542f656332a57484d8",
@@ -1789,7 +1829,9 @@
         {
           "sha256": "a74a914b1e3657d016d08b880061baaa862738669ce289e26449ed8ff7f0ce73",
           "ext": "jpg",
-          "bytes": 95661
+          "bytes": 95661,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "1bc18ee6eee72cf9557ad9ea1dac99dc8cd8236f84b71e55fe08b1085ab43f91",
@@ -1829,17 +1871,23 @@
         {
           "sha256": "66b0fd3e5c461196170a65381287e099b8a6da394f8010a6cc38b6623a64c935",
           "ext": "jpg",
-          "bytes": 191036
+          "bytes": 191036,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "fd33080bf7ab47d62e47018676cd0d64908bc923f30b3eac8bbe166891523447",
           "ext": "jpg",
-          "bytes": 133048
+          "bytes": 133048,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "603eab9dfdfbff3f997572afb30e6abbed247c328c2f859ff65a1919debc5a32",
           "ext": "jpg",
-          "bytes": 110834
+          "bytes": 110834,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "38904104b5094788b63770a49288f236c1b0bf26a8b6df44c4f0f90bd9bdab2c",
@@ -1889,7 +1937,9 @@
         {
           "sha256": "cb2dca88396c84b9f6d731f7230826f2a6a05381c33750c3a627c93d03ed8371",
           "ext": "jpg",
-          "bytes": 207783
+          "bytes": 207783,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "a09bb1506f2342a67e97aa1658e5df36359f7b6193363daf30cbf0a0ef24142d",
@@ -1919,12 +1969,16 @@
         {
           "sha256": "6c279c3383aeee5aa0c384faee67b90b5a373f72d71648a6967846ede2e8827d",
           "ext": "jpeg",
-          "bytes": 1380190
+          "bytes": 1380190,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "58c057ae08b686be717ddc5a591889539f61b860d259759572c5ecc04193a109",
           "ext": "jpg",
-          "bytes": 104442
+          "bytes": 104442,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "ad7b9907914b67a33fae565605213fde964af5788e4478c0cbce653c8f057424",
@@ -1959,7 +2013,9 @@
         {
           "sha256": "7aec600e707b916dc446322187ad38fc5682d9beb4e94726b67742cc934cfd8e",
           "ext": "jpeg",
-          "bytes": 1149685
+          "bytes": 1149685,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "d17d86cd3cf2f1d11430c71fb4bcf63812538e9835e3c154ae83decc982ab8fc",
@@ -1979,7 +2035,9 @@
         {
           "sha256": "8307a074d47911ad08aefc066cea382fe907fefc871c8312abbcbc6f45ebc686",
           "ext": "jpeg",
-          "bytes": 1467836
+          "bytes": 1467836,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "46278779e354e0cb0a83164ca67a2fea176314c77709c04ddfb73655eda6bb77",
@@ -2014,12 +2072,16 @@
         {
           "sha256": "d455da3cf649f2c982ed8bd3a4c8a0ccbbd432d0ac256a45fa55eac26ce91ee2",
           "ext": "jpg",
-          "bytes": 1132189
+          "bytes": 1132189,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "96e34eb49fe64d0c9b8d43ebaa5cef61042cfff8a005881c0d32fed3750e9d5a",
           "ext": "jpg",
-          "bytes": 376280
+          "bytes": 376280,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "749b5cdb4db9a845425960c1377b1a21481db1562092b97b48d459a2bc02ae14",
@@ -2079,7 +2141,9 @@
         {
           "sha256": "2607a29d248def803cdaff36db16d2fdcd4f4f0d32280f84e4ddecdddc403286",
           "ext": "jpg",
-          "bytes": 122167
+          "bytes": 122167,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "d57ec5f8ccec89d3da9862d29979657b9cd8673b06eb9777edc9b9d8e10e1211",
@@ -2104,7 +2168,9 @@
         {
           "sha256": "96a0f193b8774b04b0e177f894c5932b62ac16842d311523629a98d75def4858",
           "ext": "jpg",
-          "bytes": 207795
+          "bytes": 207795,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "e78014d1d135585b1d942ef1c442e66223dfb463c34b2849871c30f21f5e85ed",
@@ -2129,12 +2195,16 @@
         {
           "sha256": "5382ee42b6a896a346dbbd1bcd165ba393435f05a6fd666dbc0a3a7e45d03fa2",
           "ext": "jpg",
-          "bytes": 111420
+          "bytes": 111420,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "62ba3a0d0241b074e432040020a9a368b8d14bb05eb9fd31bace7e49d0ba48c4",
           "ext": "jpg",
-          "bytes": 157196
+          "bytes": 157196,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "f8418e2ec66c4165bd8b37bf69da831564217ee3a69655ce3befa1beaf91e9cc",
@@ -2144,7 +2214,9 @@
         {
           "sha256": "64101f5b2c98e87fb55eadd2519c6ca79bbdc54587691b6d02c2a0db93094adc",
           "ext": "jpg",
-          "bytes": 129320
+          "bytes": 129320,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "48c02ae4285acae1394e6d5ace3cf313fd8408a4722deee24697a23f31c72a44",
@@ -2446,7 +2518,9 @@
         {
           "sha256": "ee3a26ec72bc58e1e111fba73ca3fc8e7979b8c021cb4351192a03c1d46ac609",
           "ext": "jpg",
-          "bytes": 2268058
+          "bytes": 2268058,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "f24ec26a2f8a28bfa43b4d52449f914f33eb8b424b447795053f55dd1ad23e38",
@@ -2471,7 +2545,9 @@
         {
           "sha256": "2825c95328b9794d1ca54e6d0f7519be3e5fba5aaece16705fee6c7ab5f2ab16",
           "ext": "jpg",
-          "bytes": 1906112
+          "bytes": 1906112,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "8af71f6220162caad939f390710d3cffeb8ede20f7837a2aa0c78add0acbd9cd",
@@ -2481,7 +2557,9 @@
         {
           "sha256": "45c0bda25faa6d74c1f86ccf18c5a8738d741a974d1868dd2e8547217b3f830b",
           "ext": "jpg",
-          "bytes": 929023
+          "bytes": 929023,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "a53bb53f6f701a46c1140425dc5225552ad3b4b0fd8ee9b1e2f684c46236e3c2",
@@ -2506,12 +2584,16 @@
         {
           "sha256": "106c5004078d8d35b876bffce81251d78a02b57dfdc519c5d9afed933b06b511",
           "ext": "jpg",
-          "bytes": 1830948
+          "bytes": 1830948,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "bd2f5ff88acefa3384ce157fcb934a4a2dda3cc3b344b63325e9fb467492150c",
           "ext": "jpg",
-          "bytes": 1843602
+          "bytes": 1843602,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "a34fede329aa2ba75cdaadbc03699b3664ea7c6f083bd0af7a257c50c43c5582",
@@ -2561,7 +2643,9 @@
         {
           "sha256": "ea0d911e66cc63a2f2c52506c4a89cb3dd8492e6d73e8e88ddce28316bdca2d9",
           "ext": "jpg",
-          "bytes": 1709674
+          "bytes": 1709674,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "cca866e36f91e81571ad08a95006725ed3c79ca2ad432ae5c186b499e793999c",
@@ -2611,7 +2695,9 @@
         {
           "sha256": "1b9122db0ee614088d9e034dbda21951c8be0e135fe84d351954eaf38000e7c0",
           "ext": "jpg",
-          "bytes": 1924802
+          "bytes": 1924802,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "3a3376a18be815a60c1ea26b8f7467464ea18a1003663f8108efc4ac252b6a9f",
@@ -2661,7 +2747,9 @@
         {
           "sha256": "5c5d62407aaf66ad253fbb7b8e846bad2505ab67bd1d7bc3c4e6d9ce79face35",
           "ext": "jpg",
-          "bytes": 966533
+          "bytes": 966533,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "78ab48e11793b6bdb0c9e2a909659ea4e77e7044a11cd932fe2b790eefdfaa2a",
@@ -2686,7 +2774,9 @@
         {
           "sha256": "dbcef91403562bfd226ce8b354d6ebdde0d77b7f232170200c37f75f4e681669",
           "ext": "jpg",
-          "bytes": 2294521
+          "bytes": 2294521,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "d1d668c5bd287fbcdbb94ab9d1c2244a4e1fc7a091397942a54c0b73acb0b3e8",
@@ -2711,7 +2801,9 @@
         {
           "sha256": "2119024c94126371f918370901a6caa897d3ac3bcae2deefc4f9aae43be103da",
           "ext": "jpg",
-          "bytes": 2195673
+          "bytes": 2195673,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "0cca08325f431257cee75adef97ccb03eb2eb3a16e214364ada6a9cfceec330a",
@@ -2821,12 +2913,16 @@
         {
           "sha256": "7a2706efea5aaf068cda2d3949e3fbddfd5c0d70324251c138bd0d8f2cfc2734",
           "ext": "jpg",
-          "bytes": 1627368
+          "bytes": 1627368,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "eb1276584d01a1cd81eaf3c028e9f43c84099f7c14f58ea065c249b4ddd489da",
           "ext": "jpg",
-          "bytes": 1515538
+          "bytes": 1515538,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "2cd860573421ab46f3f03b16bda649be61a58247ed29538bc1c2d0fc3d700e40",
@@ -2851,7 +2947,9 @@
         {
           "sha256": "f3a73e9f3abbdba127ece28076f159c2b7fe808b709080d74d85ab4c73f6305a",
           "ext": "jpg",
-          "bytes": 974325
+          "bytes": 974325,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "0856bd3cbf53d0a7fc4cb30f09c516c3a278028911cba2e91bd01cb5ed5f2853",
@@ -2866,7 +2964,9 @@
         {
           "sha256": "9342516c361e7126544c81ad6dc12565da3f4ca6ed9013cfa52492e5858384aa",
           "ext": "jpg",
-          "bytes": 818596
+          "bytes": 818596,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "0be042cad3bd21049979394e8bb21730399e77aa163a7c2abb5b000664b8125a",
@@ -2921,7 +3021,9 @@
         {
           "sha256": "e89729879ee789b7bfc86de148232172a3b2bdf79ed1f0ffcffee28eba77c817",
           "ext": "jpg",
-          "bytes": 379612
+          "bytes": 379612,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "8aa107a94e12c10266fb5edf56f792d378e470b267bb692ff4354b3223ff009c",
@@ -2956,7 +3058,9 @@
         {
           "sha256": "8703026efb054bb574f9ba5452910c7f7b7551440de48fe49b9b72a91a4fbd81",
           "ext": "jpeg",
-          "bytes": 1070577
+          "bytes": 1070577,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "4147b44042e27d2b821cc1433ed4b1edc1757408d67ba7b63e8e11dbd9ebde13",
@@ -2991,7 +3095,9 @@
         {
           "sha256": "8ecc89340a359103f02dc45e3fab6acbe1a4512340b6c6636c60e9052941d02a",
           "ext": "jpg",
-          "bytes": 52916
+          "bytes": 52916,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "def6b597af2d92ef67ccace219c4cdf2e27b86472acb7730b1f1b118984ecad0",
@@ -3021,7 +3127,9 @@
         {
           "sha256": "056fbf5e8523ed39d7d496702112be1fbac900855d3213b00b6bc63c1d61d675",
           "ext": "jpg",
-          "bytes": 205093
+          "bytes": 205093,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "c4dac293ca8f6dac92bcf31b852391ef6781dfa8d733e41626f766ced0775a9e",
@@ -3041,7 +3149,9 @@
         {
           "sha256": "f0a795b997b30cb56edfe8692b2b3d214f392102bfdb5d21e7e0cb73ceba0fe3",
           "ext": "jpg",
-          "bytes": 87178
+          "bytes": 87178,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "b6315a6d188e02815603031483b27be05322734b103161544ad4a75372a2b5de",
@@ -3101,7 +3211,9 @@
         {
           "sha256": "c4f5cd9dfc9cf2181b09235c418c067fb4422a1e252a514dbc8b5c2914c65fdc",
           "ext": "jpg",
-          "bytes": 219849
+          "bytes": 219849,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "83cb9ef5c973feba553597fe7734f74d83c5807e06079f1afd36850b7a15337f",
@@ -3121,12 +3233,16 @@
         {
           "sha256": "e1152ddae17411c2e88beae08b0acff3985e428a2b7a5e5d79e21edd398a796c",
           "ext": "jpg",
-          "bytes": 251968
+          "bytes": 251968,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "b7baa74ecb7bb3677183ef1ff6bc9993c00198a1acb36b1869694e62fe4ea8f5",
           "ext": "jpg",
-          "bytes": 246950
+          "bytes": 246950,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "3b61f15fbc1218bbb59204a9022777e7981482491d564e09e76c664fa5ebf663",
@@ -3166,7 +3282,9 @@
         {
           "sha256": "c9e048e353240d69e12fa7d6f798e7ef108d50aeca6d4c73004bc39aaa66563b",
           "ext": "jpg",
-          "bytes": 152379
+          "bytes": 152379,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "9751b6eb532c50327ad8f9aa5e5894b9fbb6cc666de72ce3f3200213b578043a",
@@ -3231,7 +3349,9 @@
         {
           "sha256": "cfa5054a54418298857753adeacef6e36e9b90d6989f0a7d000781f593274b00",
           "ext": "jpg",
-          "bytes": 267035
+          "bytes": 267035,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "fb842f60a2556cb3478d68d28d901e871d467eb4c14c16b92e7f8ca675e0cc4c",
@@ -3271,12 +3391,16 @@
         {
           "sha256": "935d76b9c5dd456469cce36fb254048310e18bb5b14e03e6efb517bf313c3764",
           "ext": "jpg",
-          "bytes": 98003
+          "bytes": 98003,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "1d6b4324352b8c34d4a6b3eda1e5b47d271f3ead5379a8aa6b8178ea52c511f1",
           "ext": "jpg",
-          "bytes": 117416
+          "bytes": 117416,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "a5550a83f0ef808752bc288bb5912ca0b2eb7cab33e1e50bd0350949e3f50ea9",
@@ -3286,7 +3410,9 @@
         {
           "sha256": "24a656cf0832b5f141cd5e8291fcb6dd7b6f8135d239b25ae52849396de4f4fe",
           "ext": "jpg",
-          "bytes": 137340
+          "bytes": 137340,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "e56c9c7fe9271671c483f14fb397493d317549d097f27ce323fd65290637761f",
@@ -3301,12 +3427,16 @@
         {
           "sha256": "e242d7745eb61965550116bba59eab38b60d8a91f4c9489c6113d960d87bcfb1",
           "ext": "jpg",
-          "bytes": 145249
+          "bytes": 145249,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "bdaeaadcd58c540fdb5fdbbc84ee95c7e53c8e766778005348ea538a9d3f6d93",
           "ext": "jpg",
-          "bytes": 11922021
+          "bytes": 11922021,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "18c5c912f7a008c1e79a93550f21454174823f2e446a3c6962d15a89b00db807",
@@ -3351,7 +3481,9 @@
         {
           "sha256": "7a593cf0596698cb12f0a5805fc5ae2e48867b5eacc07529932a52f10846dbb1",
           "ext": "jpg",
-          "bytes": 519018
+          "bytes": 519018,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "8509fea407dec0f4440de9f99c0ec1eb1cde6f356e5ad5d1ed5727045614d0c7",
@@ -3649,7 +3781,8 @@
         {
           "sha256": "4edb5dfc01eb718e3e38a40157035e38247becc1a377775216474e6a1ad23a8a",
           "ext": "h2d",
-          "bytes": 1149556
+          "bytes": 1149556,
+          "uso": "tecnico"
         }
       ]
     },
@@ -5478,12 +5611,14 @@
         {
           "sha256": "f083a7911e7a7586ad42f5e333c2cba22f118197b283405d73336b5b1f533986",
           "ext": "iqy",
-          "bytes": 686
+          "bytes": 686,
+          "uso": "tecnico"
         },
         {
           "sha256": "9b9a4553179807f48fa80ba0306442eccf3405bbb53ab254a214691c3aa9b55d",
           "ext": "iqy",
-          "bytes": 676
+          "bytes": 676,
+          "uso": "tecnico"
         },
         {
           "sha256": "982f82813f6e3d479ba6f0f6b08046dfef91c2a3a5385978f28e784ac7dcdc01",
@@ -5688,7 +5823,8 @@
         {
           "sha256": "efe503d895599270c62e7fd85f173068568d44ed82c7f056b290ec11356cfe5f",
           "ext": "lnk",
-          "bytes": 1265
+          "bytes": 1265,
+          "uso": "tecnico"
         },
         {
           "sha256": "a4321a874319147a209a7bf77072ab7994169eaa6c5fb3be975189e6c63d6fb8",
@@ -6090,7 +6226,8 @@
         {
           "sha256": "a2e199f259e4c492c2cb69b7098cfb25c0efb168353a08ff7f78e35d9759e87e",
           "ext": "ico",
-          "bytes": 1150
+          "bytes": 1150,
+          "uso": "tecnico"
         },
         {
           "sha256": "b2c669006fa50dba5b7c245fc1c81913e59a591cf80a0aa717f22c45d28e10d5",
@@ -7810,7 +7947,8 @@
         {
           "sha256": "2f380f4a3d05a8d90c2106f50da75064e9ce57a598599dc5404f8f69a0223aa9",
           "ext": "dsstore",
-          "bytes": 120
+          "bytes": 120,
+          "uso": "tecnico"
         },
         {
           "sha256": "84fe835252f489ba23ff998d4eebc1f3411d652bb38211239860d9ee89a4e143",
@@ -9295,7 +9433,8 @@
         {
           "sha256": "8f8e8ccdc57229d943760d78263756947d4c12b2a9ece61fcf32260edd9d7b86",
           "ext": "tmp",
-          "bytes": 2893078
+          "bytes": 2893078,
+          "uso": "tecnico"
         }
       ]
     },
@@ -9615,7 +9754,8 @@
         {
           "sha256": "e6a624244185f9112a49f242058623f86ef82a652d15e6e1541921d3e3a699a5",
           "ext": "ico",
-          "bytes": 1150
+          "bytes": 1150,
+          "uso": "tecnico"
         },
         {
           "sha256": "0c706cf53595d3e5d18fd515711823b6b6a74a5bd4c434ebdb3e3bd54c34b60e",
@@ -10850,7 +10990,8 @@
         {
           "sha256": "bb9e802a5d6b53284530d8cb10889c0df6d1feafd65c2af3978344469d5df67c",
           "ext": "ico",
-          "bytes": 1150
+          "bytes": 1150,
+          "uso": "tecnico"
         },
         {
           "sha256": "bb458ff0f805e761112fe67705e5f51a9ef956006d03b23e772a2f090ba6a1dc",

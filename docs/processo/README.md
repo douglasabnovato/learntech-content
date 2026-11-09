@@ -104,7 +104,8 @@ O conteúdo de cada item deve aparecer no máximo de projetos que o tema permiti
 
 1. **Checagem:** `npm run leva:status`. Ela só fecha a leva quando:
    - todo item do lote está como `publicado` ou `referencia`, com pelo menos um destino e sem `pendencias` (vídeo a subir, áudio a transcrever etc.) (`planejado`, `publicado-em-parte`, `novo`, `a-triar` e `nao-publicavel` contam como abertos);
-   - nenhum arquivo do hd está fora do inventário.
+   - nenhum arquivo do hd está fora do inventário;
+   - nenhum arquivo do lote está com uso `pendente` (09/11/2026; usos em `agentes.md`, raio-x com `npm run hd:uso`).
 2. **Relatório de fechamento**, apresentado ao autor com a saída da checagem:
    - o que foi materializado em cada projeto;
    - os itens em `referencia`, explicando por que o arquivo não é publicado e onde o conhecimento foi usado;
@@ -143,6 +144,8 @@ hd ──(etapas 1-5)──► content/*.json ──(build: Zod + integridade)�
 | Comando | Para quê |
 |---|---|
 | `npm run hd:inventariar [-- --registrar]` | Inventário do hd com hash |
+| `npm run hd:imagens` | Compara as imagens do hd com as publicadas (dHash), para o `hd:uso` |
+| `npm run hd:uso [-- --aplicar] [-- --relatorio]` | Uso de cada arquivo do hd; 100% = zero pendentes |
 | `npm run leva:status [-- AAAA-MM-DD]` | Diz se a leva pode ser fechada e o hd liberado (◆A3) |
 | `npm run cobertura [-- AAAA-MM-DD]` | Quantos projetos cada item do acervo alcança; acusa destino inexistente |
 | `npm run progresso` | Placar de 0 a 100 e estado dos cinco repositórios |

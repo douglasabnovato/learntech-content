@@ -43,3 +43,30 @@ describe("acervo: estados do fluxo", () => {
     expect(valido({ estado: "triado", etapas: [{ estado: "triado", em: "2026-11-06", por: "estagiario" }] })).toBe(false);
   });
 });
+
+describe("acervo: uso de cada arquivo", () => {
+  const destino = "bootcamps/eventos/gdg-jf";
+  const comArquivo = (f: object, extra: object = {}) =>
+    valido({ estado: "publicado", destinos: [destino], ...extra, arquivos: [{ ...base.arquivos[0], ...f }] });
+
+  it("aceita arquivo sem uso (pendente) e os usos com seus campos", () => {
+    expect(comArquivo({})).toBe(true);
+    expect(comArquivo({ uso: "exibido", destino })).toBe(true);
+    expect(comArquivo({ uso: "fonte", destino })).toBe(true);
+    expect(comArquivo({ uso: "similar", similarA: "b".repeat(64) })).toBe(true);
+    expect(comArquivo({ uso: "tecnico" })).toBe(true);
+    expect(comArquivo({ uso: "bloqueado", motivo: "regras editoriais, seção 7" })).toBe(true);
+  });
+
+  it("recusa exibido ou fonte sem destino, ou com destino fora do item", () => {
+    expect(comArquivo({ uso: "exibido" })).toBe(false);
+    expect(comArquivo({ uso: "fonte" })).toBe(false);
+    expect(comArquivo({ uso: "exibido", destino: "bootcamps/eventos/outro" })).toBe(false);
+  });
+
+  it("recusa similar sem hash e bloqueado ou descartado sem motivo", () => {
+    expect(comArquivo({ uso: "similar" })).toBe(false);
+    expect(comArquivo({ uso: "bloqueado" })).toBe(false);
+    expect(comArquivo({ uso: "descartado", motivo: " " })).toBe(false);
+  });
+});

@@ -22,6 +22,8 @@
     "copias:conferir": "tsx scripts/exportar-copias.mjs --conferir",
     "midia:externa": "node scripts/baixar-imagens-externas.mjs",
     "hd:inventariar": "node scripts/hd-inventariar.mjs",
+    "hd:imagens": "python scripts/hd-imagens.py",
+    "hd:uso": "node scripts/hd-uso.mjs",
     "leva:status": "node scripts/leva-status.mjs",
     "cobertura": "node scripts/cobertura-projetos.mjs",
     "progresso": "node scripts/progresso.mjs",

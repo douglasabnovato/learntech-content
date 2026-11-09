@@ -1,6 +1,6 @@
 # Estado do ecossistema: comece por aqui
 
-Ponto de entrada de toda conversa nova com o Claude. Atualizado ao fim de cada conversa. **Última atualização: 06/11/2026.**
+Ponto de entrada de toda conversa nova com o Claude. Atualizado ao fim de cada conversa. **Última atualização: 09/11/2026.**
 
 ## O que é
 O learnTECH treina pessoas para o ecossistema de tecnologia com o que o autor fez e com o que ele quer fazer. Uma API de conteúdo alimenta quatro sites:
@@ -22,6 +22,10 @@ Pasta local: `C:\douglasabnovato-github\mundo-learn-tech\`. O acervo bruto fica 
 - **Pendências do autor:** `PROXIMOS-PASSOS.md`.
 - **Histórico por lote:** `docs/processo/lotes/`. Histórico por conversa: `docs/processo/conversas/`.
 - **Medição:** `npm run progresso` (placar), `npm run cobertura`, `npm run leva:status`.
+
+## Situação em 09/11/2026
+- **Uso por arquivo** (branch `feature/tasks-09-11-2026`): campo `uso` em cada arquivo do acervo (`exibido`, `fonte`, `similar`, `tecnico`, `bloqueado`, `descartado`, `pendente`), comandos `hd:imagens` e `hd:uso`, e `leva:status` exigindo zero pendentes. Primeira aplicação automática: 66 fotos `exibido` e 9 arquivos `tecnico`. Relatórios em `docs/processo/relatorios/` (06/11 e 09/11).
+- **Próximos passos do uso:** bloquear o material do ex-empregador (amostra para o autor), selecionar as fotos de evento, reler os documentos de fonte e decidir os vídeos.
 
 ## Situação em 06/11/2026
 - **Fluxo de agentes, fase 0** (branch `feature/tasks-06-11-2026-b`): estados novos no acervo (`extraido`, `triado`, `produzido`, `exibido`), campos `triagem` e `etapas`, `docs/processo/agentes.md`, contratos dos quatro sites em `docs/contratos/` e `CLAUDE.md` nos cinco repositórios. Próxima: fase 1, triador e `hd:extrair`, com avaliação por gabarito.

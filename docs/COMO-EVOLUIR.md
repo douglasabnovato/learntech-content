@@ -17,13 +17,13 @@ Desde 06/11/2026, cada passo tem um responsável fixo: um agente com papel únic
 | 1. Branch do dia | `git checkout main && git pull --ff-only && git checkout -b feature/tasks-DD-MM-AAAA` | `processo/fluxo-git.md` |
 | 2. Colocar os arquivos | na pasta `mundo-learn-tech/hd/`, nunca dentro do repositório | `processo/README.md` (Recepção) |
 | 3. Inventário | `npm run hd:inventariar`, depois `npm run hd:inventariar -- --registrar` | `processo/README.md` (Inventário) |
-| 4. Triagem | ficha de cada item no `content/acervo.json`: direitos, estado `triado`, destino `projeto/recurso/id` e `triagem` com confiança | `processo/agentes.md`, `processo/regras-editoriais.md` |
+| 4. Triagem | ficha de cada item no `content/acervo.json`: direitos, estado `triado`, destino `projeto/recurso/id`, `triagem` com confiança e o `uso` proposto de cada arquivo (`npm run hd:imagens` e `npm run hd:uso -- --aplicar` adiantam o automático) | `processo/agentes.md`, `processo/regras-editoriais.md` |
 | 5. Plano do lote (A1) | `processo/lotes/AAAA-MM-DD-*.md`, aprovado pelo autor | `processo/checklists.md` |
 | 6. Produção | um JSON por item no destino (tabela da seção 3), estado `produzido` | `contratos/<projeto>.md`, `processo/modelos.md`, `processo/pesquisa.md` |
 | 7. Validação | `npm run validar` e `npm run verificar`, mais a revisão independente por amostra | `processo/README.md` (Validação) |
 | 8. Integração | `npm run copias` e `npm run sitemaps`, depois os testes de cada site | seção 5 |
 | 9. Publicação | commits por tema → feature → developer → main → `npm run deploy` | `processo/fluxo-git.md`, `DEPLOY.md` |
-| 10. Fechamento | `npm run leva:status`, `npm run progresso`, relatório do lote e `PROXIMOS-PASSOS.md` | `processo/README.md` (Fechamento) |
+| 10. Fechamento | `npm run hd:uso -- --relatorio` (zero pendentes), `npm run leva:status`, `npm run progresso`, relatório do lote e `PROXIMOS-PASSOS.md` | `processo/README.md` (Fechamento) |
 
 ## 3. Para onde vai cada tipo de material
 | Material recebido | Destino | Exemplo de referência |
