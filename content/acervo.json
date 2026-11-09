@@ -38,9 +38,9 @@
       "direitos": "sensivel-anonimizar",
       "estado": "publicado",
       "destinos": [
-        "programas/602",
-        "blog/rotina-desenvolvedor",
-        "ferramentas/GitHub (ampliada)"
+        "learn-tech/programas/602",
+        "learn-tech/blog/rotina-desenvolvedor",
+        "tools/ferramentas/github"
       ],
       "proximaAcao": "Extrair a lista de eventos citados e confirmar quais viram evento; artigo de prompts de mentoria",
       "arquivos": [],
@@ -54,8 +54,8 @@
       "direitos": "sensivel-anonimizar",
       "estado": "publicado",
       "destinos": [
-        "programas/503",
-        "blog/proposta-freelancer-escopo-prazo-preco"
+        "learn-tech/programas/503",
+        "learn-tech/blog/proposta-freelancer-escopo-prazo-preco"
       ],
       "proximaAcao": "Nenhuma urgente; reaproveitar como projeto final do programa 501",
       "arquivos": [],
@@ -69,7 +69,7 @@
       "direitos": "terceiro-citavel",
       "estado": "publicado",
       "destinos": [
-        "blog/perfil-encontravel-linkedin"
+        "learn-tech/blog/perfil-encontravel-linkedin"
       ],
       "proximaAcao": "Nenhuma",
       "arquivos": [],
@@ -83,8 +83,8 @@
       "direitos": "sensivel-anonimizar",
       "estado": "publicado",
       "destinos": [
-        "programas/503",
-        "blog/proposta-freelancer-escopo-prazo-preco"
+        "learn-tech/programas/503",
+        "learn-tech/blog/proposta-freelancer-escopo-prazo-preco"
       ],
       "proximaAcao": "Nenhuma; manter junto do DOC-004",
       "arquivos": [],
@@ -111,7 +111,7 @@
       "direitos": "sensivel-anonimizar",
       "estado": "publicado",
       "destinos": [
-        "blog/processo-seletivo-como-se-preparar"
+        "learn-tech/blog/processo-seletivo-como-se-preparar"
       ],
       "proximaAcao": "Nenhuma; manter o banco anonimizado",
       "arquivos": [],
@@ -139,8 +139,8 @@
       "direitos": "terceiro-citavel",
       "estado": "publicado",
       "destinos": [
-        "blog/lgpd-seus-dados-ao-se-candidatar",
-        "programas/404"
+        "learn-tech/blog/lgpd-seus-dados-ao-se-candidatar",
+        "learn-tech/programas/404"
       ],
       "proximaAcao": "Nenhuma",
       "arquivos": [],
@@ -154,8 +154,8 @@
       "direitos": "terceiro-citavel",
       "estado": "publicado",
       "destinos": [
-        "programas/404",
-        "ferramentas/CryptoJS"
+        "learn-tech/programas/404",
+        "tools/ferramentas/cryptojs"
       ],
       "proximaAcao": "Quiz próprio para um futuro programa mobile; enriquecer a página de detalhe do CryptoJS",
       "arquivos": [],
@@ -169,7 +169,7 @@
       "direitos": "sensivel-anonimizar",
       "estado": "publicado",
       "destinos": [
-        "blog/networking-pitch-60-segundos"
+        "learn-tech/blog/networking-pitch-60-segundos"
       ],
       "proximaAcao": "Evento só se a participação for confirmada e sem participantes",
       "arquivos": [],
@@ -195,8 +195,8 @@
       "direitos": "terceiro-citavel",
       "estado": "publicado",
       "destinos": [
-        "empresas/Digital House",
-        "blog/escolher-formacao-dev"
+        "career/empresas/digital-house",
+        "learn-tech/blog/escolher-formacao-dev"
       ],
       "proximaAcao": "Conferir o site oficial da Digital House; ementa como texto na página de detalhe da empresa",
       "arquivos": [],
@@ -210,8 +210,8 @@
       "direitos": "terceiro-citavel",
       "estado": "publicado",
       "destinos": [
-        "empresas/Digital House",
-        "blog/escolher-formacao-dev"
+        "career/empresas/digital-house",
+        "learn-tech/blog/escolher-formacao-dev"
       ],
       "proximaAcao": "Junto com o DOC-014 na página de detalhe",
       "arquivos": [],
@@ -237,7 +237,7 @@
       "direitos": "terceiro-citavel",
       "estado": "publicado",
       "destinos": [
-        "blog/bolsas-universidade-como-ler-edital"
+        "learn-tech/blog/bolsas-universidade-como-ler-edital"
       ],
       "proximaAcao": "Conferir se o programa de bolsas TP ainda existe; se sim, item em vagas",
       "arquivos": [],
@@ -265,8 +265,8 @@
       "direitos": "terceiro-citavel",
       "estado": "publicado",
       "destinos": [
-        "empresas/Netuno",
-        "blog/escolher-formacao-dev"
+        "career/empresas/netuno",
+        "learn-tech/blog/escolher-formacao-dev"
       ],
       "proximaAcao": "Evento se a participação for confirmada; página de detalhe da Netuno com a stack do bootcamp",
       "arquivos": [],
@@ -280,7 +280,7 @@
       "direitos": "terceiro-citavel",
       "estado": "publicado",
       "destinos": [
-        "blog/escolher-formacao-dev"
+        "learn-tech/blog/escolher-formacao-dev"
       ],
       "proximaAcao": "Atualizar dados de 2022 na próxima revisão do artigo",
       "arquivos": [],
@@ -306,8 +306,8 @@
       "direitos": "sensivel-anonimizar",
       "estado": "publicado",
       "destinos": [
-        "programas/602",
-        "blog/rotina-desenvolvedor"
+        "learn-tech/programas/602",
+        "learn-tech/blog/rotina-desenvolvedor"
       ],
       "proximaAcao": "Template de planilha com rótulos genéricos para download",
       "arquivos": [],
@@ -335,8 +335,8 @@
       "direitos": "terceiro-citavel",
       "estado": "publicado-em-parte",
       "destinos": [
-        "blog/bolsas-universidade-como-ler-edital",
-        "ferramentas/GLPI"
+        "learn-tech/blog/bolsas-universidade-como-ler-edital",
+        "tools/ferramentas/glpi"
       ],
       "proximaAcao": "Evento de formação se o Douglas foi bolsista; enriquecer a página de detalhe do GLPI",
       "arquivos": [],
@@ -350,7 +350,7 @@
       "direitos": "sensivel-anonimizar",
       "estado": "publicado",
       "destinos": [
-        "blog/testes-tecnicos-online"
+        "learn-tech/blog/testes-tecnicos-online"
       ],
       "proximaAcao": "Nenhuma (capturas não saem)",
       "arquivos": [],
@@ -364,8 +364,8 @@
       "direitos": "sensivel-anonimizar",
       "estado": "publicado",
       "destinos": [
-        "blog/como-ler-uma-vaga",
-        "blog/processo-seletivo-como-se-preparar"
+        "learn-tech/blog/como-ler-uma-vaga",
+        "learn-tech/blog/processo-seletivo-como-se-preparar"
       ],
       "proximaAcao": "Template baixável de pipeline sem dados reais; pistas para empresas novas",
       "arquivos": [],
@@ -379,8 +379,8 @@
       "direitos": "sensivel-anonimizar",
       "estado": "publicado",
       "destinos": [
-        "blog/como-ler-uma-vaga",
-        "ferramentas/Salesforce Marketing Cloud"
+        "learn-tech/blog/como-ler-uma-vaga",
+        "tools/ferramentas/salesforce-marketing-cloud"
       ],
       "proximaAcao": "Usar a lista de requisitos na página de detalhe do Salesforce Marketing Cloud",
       "arquivos": [],
@@ -394,8 +394,8 @@
       "direitos": "sensivel-anonimizar",
       "estado": "publicado",
       "destinos": [
-        "programas/404",
-        "blog/lgpd-seus-dados-ao-se-candidatar"
+        "learn-tech/programas/404",
+        "learn-tech/blog/lgpd-seus-dados-ao-se-candidatar"
       ],
       "proximaAcao": "Nenhuma (a fonte publicada é a lei)",
       "arquivos": [],
@@ -409,8 +409,8 @@
       "direitos": "terceiro-citavel",
       "estado": "publicado",
       "destinos": [
-        "empresas/Le Wagon",
-        "blog/escolher-formacao-dev"
+        "career/empresas/le-wagon",
+        "learn-tech/blog/escolher-formacao-dev"
       ],
       "proximaAcao": "Evento só se participou; programa gratuito como texto na página de detalhe da empresa",
       "arquivos": [],
@@ -424,7 +424,7 @@
       "direitos": "proprio",
       "estado": "publicado",
       "destinos": [
-        "ferramentas/Salesforce Marketing Cloud"
+        "tools/ferramentas/salesforce-marketing-cloud"
       ],
       "proximaAcao": "Página de detalhe completa (studios, Journey Builder, AMPscript); avaliar programa de CRM com empresa fictícia",
       "arquivos": [],
@@ -464,7 +464,7 @@
       "direitos": "terceiro-citavel",
       "estado": "publicado",
       "destinos": [
-        "blog/comunicacao-nao-verbal-entrevistas"
+        "learn-tech/blog/comunicacao-nao-verbal-entrevistas"
       ],
       "proximaAcao": "Nenhuma (só citação)",
       "arquivos": [],
@@ -478,7 +478,7 @@
       "direitos": "terceiro-citavel",
       "estado": "publicado",
       "destinos": [
-        "blog/financas-primeiro-salario-tech"
+        "learn-tech/blog/financas-primeiro-salario-tech"
       ],
       "proximaAcao": "Nenhuma (só citação)",
       "arquivos": [],
@@ -520,7 +520,7 @@
       "direitos": "terceiro-citavel",
       "estado": "publicado",
       "destinos": [
-        "blog/financas-primeiro-salario-tech"
+        "learn-tech/blog/financas-primeiro-salario-tech"
       ],
       "proximaAcao": "Nenhuma",
       "arquivos": [],
@@ -534,7 +534,7 @@
       "direitos": "terceiro-citavel",
       "estado": "publicado",
       "destinos": [
-        "blog/cultura-de-empresa-tech"
+        "learn-tech/blog/cultura-de-empresa-tech"
       ],
       "proximaAcao": "Nenhuma",
       "arquivos": [],
@@ -562,7 +562,7 @@
       "direitos": "terceiro-citavel",
       "estado": "publicado",
       "destinos": [
-        "blog/financas-primeiro-salario-tech"
+        "learn-tech/blog/financas-primeiro-salario-tech"
       ],
       "proximaAcao": "Nenhuma",
       "arquivos": [],
@@ -590,7 +590,7 @@
       "direitos": "terceiro-citavel",
       "estado": "publicado",
       "destinos": [
-        "blog/comunicacao-nao-verbal-entrevistas"
+        "learn-tech/blog/comunicacao-nao-verbal-entrevistas"
       ],
       "proximaAcao": "Nenhuma",
       "arquivos": [],
@@ -604,7 +604,7 @@
       "direitos": "terceiro-citavel",
       "estado": "publicado",
       "destinos": [
-        "blog/cultura-de-empresa-tech"
+        "learn-tech/blog/cultura-de-empresa-tech"
       ],
       "proximaAcao": "Resumo histórico com citação na página de detalhe de Google Careers",
       "arquivos": [],
@@ -618,7 +618,7 @@
       "direitos": "terceiro-citavel",
       "estado": "publicado",
       "destinos": [
-        "blog/rotina-desenvolvedor"
+        "learn-tech/blog/rotina-desenvolvedor"
       ],
       "proximaAcao": "Nenhuma",
       "arquivos": [],
@@ -660,7 +660,7 @@
       "direitos": "terceiro-citavel",
       "estado": "publicado",
       "destinos": [
-        "blog/rotina-desenvolvedor"
+        "learn-tech/blog/rotina-desenvolvedor"
       ],
       "proximaAcao": "Nenhuma",
       "arquivos": [],
@@ -688,7 +688,7 @@
       "direitos": "terceiro-citavel",
       "estado": "publicado",
       "destinos": [
-        "blog/rotina-desenvolvedor"
+        "learn-tech/blog/rotina-desenvolvedor"
       ],
       "proximaAcao": "Nenhuma",
       "arquivos": [],
@@ -702,7 +702,7 @@
       "direitos": "sensivel-anonimizar",
       "estado": "publicado",
       "destinos": [
-        "ferramentas/Microsoft Excel",
+        "tools/ferramentas/microsoft-excel",
         "learn-tech/programas/405"
       ],
       "proximaAcao": "Recriar como exercício com dados fictícios no programa \"Excel para indicadores\"",
@@ -717,7 +717,7 @@
       "direitos": "sensivel-anonimizar",
       "estado": "publicado",
       "destinos": [
-        "blog/processo-seletivo-como-se-preparar"
+        "learn-tech/blog/processo-seletivo-como-se-preparar"
       ],
       "proximaAcao": "Nenhuma",
       "arquivos": [],
@@ -731,8 +731,8 @@
       "direitos": "sensivel-anonimizar",
       "estado": "publicado",
       "destinos": [
-        "ferramentas/Microsoft Excel",
-        "ferramentas/Google Planilhas",
+        "tools/ferramentas/microsoft-excel",
+        "tools/ferramentas/google-planilhas",
         "learn-tech/programas/405"
       ],
       "proximaAcao": "Programa \"Excel para indicadores operacionais\" com exercícios reescritos; páginas de detalhe de Excel e Planilhas",
@@ -797,7 +797,7 @@
       "direitos": "terceiro-citavel",
       "estado": "publicado",
       "destinos": [
-        "blog/perfil-encontravel-linkedin"
+        "learn-tech/blog/perfil-encontravel-linkedin"
       ],
       "proximaAcao": "Nenhuma",
       "arquivos": [],
@@ -823,7 +823,7 @@
       "direitos": "proprio",
       "estado": "publicado-em-parte",
       "destinos": [
-        "empresas/Pitang"
+        "career/empresas/pitang"
       ],
       "proximaAcao": "Subir no YouTube do Douglas; vídeo na página de detalhe da Pitang; evento se a participação for confirmada",
       "arquivos": [],
@@ -837,7 +837,7 @@
       "direitos": "terceiro-citavel",
       "estado": "publicado",
       "destinos": [
-        "blog/bolsas-universidade-como-ler-edital"
+        "learn-tech/blog/bolsas-universidade-como-ler-edital"
       ],
       "proximaAcao": "Evento de formação UFJF se confirmado; estudo de caso de projetos de TI na universidade",
       "arquivos": [],
@@ -851,8 +851,8 @@
       "direitos": "proprio",
       "estado": "publicado-em-parte",
       "destinos": [
-        "eventos/codexperience (galeria 16)",
-        "blog/eventos-de-comunidade-tech"
+        "bootcamps/eventos/codexperience",
+        "learn-tech/blog/eventos-de-comunidade-tech"
       ],
       "proximaAcao": "Vídeo MVI_5108 no YouTube em content.videoUrl; trocar o vídeo provisório",
       "arquivos": [],
@@ -866,7 +866,7 @@
       "direitos": "sensivel-anonimizar",
       "estado": "planejado",
       "destinos": [
-        "eventos/minas-summit (sem material do hd)"
+        "bootcamps/eventos/minas-summit"
       ],
       "proximaAcao": "Publicar o certificado de 2024 como link (o de 2025 está correto), texto da edição 2024 na página de detalhe",
       "arquivos": [],
@@ -880,7 +880,7 @@
       "direitos": "proprio",
       "estado": "publicado-em-parte",
       "destinos": [
-        "eventos/codexperience (arte 2025 e textos das edições)"
+        "bootcamps/eventos/codexperience"
       ],
       "proximaAcao": "Seções 2024 e 2025 com 2 a 4 slides; artigo \"Como organizar um evento de comunidade\"",
       "arquivos": [],
@@ -906,7 +906,7 @@
       "direitos": "sensivel-anonimizar",
       "estado": "publicado-em-parte",
       "destinos": [
-        "vagas/Santander Open Academy"
+        "career/vagas/santander-open-academy"
       ],
       "proximaAcao": "Evento se o programa foi concluído; empresa Ada Tech quando o site oficial for conferido",
       "arquivos": [],
@@ -934,7 +934,7 @@
       "direitos": "sensivel-anonimizar",
       "estado": "publicado-em-parte",
       "destinos": [
-        "eventos/startup-way-challenge-2023",
+        "bootcamps/eventos/startup-way-challenge-2023",
         "learn-tech/blog/do-problema-ao-pitch-canvas-em-ideathon"
       ],
       "proximaAcao": "Ideia da equipe, fase alcançada e pitch do Startup Way ainda dependem do autor; o artigo sobre Matriz CSD e Canvas foi publicado.",

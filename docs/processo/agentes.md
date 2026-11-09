@@ -69,7 +69,7 @@ Para itens novos, o destino é sempre `projeto/recurso/id`:
 | career | `empresas`, `vagas`, `perfis`, `modelos-curriculo` | slug |
 | tools | `ferramentas`, `hospedagens` | slug |
 
-Itens antigos têm destinos em texto livre (ex.: `empresas/Pitang`). Eles continuam válidos e são migrados quando forem tocados.
+Todo destino segue `projeto/recurso/id`, com o id real do conteúdo (ex.: `career/empresas/pitang`). O `npm run validar` falha com destino curto ou inexistente (issue #18, 09/11/2026).
 
 ## Os papéis
 

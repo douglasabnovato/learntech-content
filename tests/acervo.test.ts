@@ -1,6 +1,8 @@
 /* acervo.test.ts — estados do fluxo de agentes e regras de cada estado no registro do hd. */
 import { describe, it, expect } from "vitest";
+import path from "node:path";
 import { itemAcervoSchema } from "../src/schemas/acervo";
+import { carregarConteudo, errosDestinos } from "../scripts/lib/conteudo";
 
 const base = {
   id: "HD-9001", lote: "2026-11-06", origem: "hd/entrada/teste", descricao: "Item de teste",
@@ -70,5 +72,21 @@ describe("acervo: uso de cada arquivo", () => {
     expect(comArquivo({ uso: "similar" })).toBe(false);
     expect(comArquivo({ uso: "bloqueado", motivo: "regra" })).toBe(false);
     expect(comArquivo({ uso: "descartado", motivo: " " })).toBe(false);
+  });
+});
+
+describe("acervo: destinos no formato projeto/recurso/id (#18)", () => {
+  const { conteudo } = carregarConteudo(path.resolve(__dirname, "..", "content"));
+  const comDestinos = (destinos: string[]) => ({ ...conteudo, acervo: { ...conteudo.acervo, itens: [{ ...base, id: "HD-9002", destinos } as never] } });
+
+  it("o acervo publicado não tem destino curto nem inexistente", () => {
+    expect(errosDestinos(conteudo)).toEqual([]);
+  });
+
+  it("recusa destino curto, recurso desconhecido e id que não existe", () => {
+    expect(errosDestinos(comDestinos(["programas/404"]))[0]).toMatch(/fora do formato/);
+    expect(errosDestinos(comDestinos(["learn-tech/podcasts/1"]))[0]).toMatch(/fora do formato/);
+    expect(errosDestinos(comDestinos(["career/empresas/nao-existe"]))[0]).toMatch(/não existe/);
+    expect(errosDestinos(comDestinos(["learn-tech/programas/404", "bootcamps/eventos/gdg-jf"]))).toEqual([]);
   });
 });
