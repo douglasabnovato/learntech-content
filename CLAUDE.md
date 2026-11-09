@@ -21,7 +21,8 @@ API de conteúdo do ecossistema learnTECH (Cloudflare Workers + D1 + Static Asse
 - **Regra editorial nova:** só o autor cria. O Claude propõe.
 
 ## Git
-- Branch do dia `feature/tasks-DD-MM-AAAA`, criada da `main` (sufixo `-b`, `-c` no mesmo dia). Depois: push, CI verde, `developer` e `main` por `--ff-only` (`docs/processo/fluxo-git.md`).
+- Branch do dia `feature/tasks-DD-MM-AAAA`, criada da `main` (sufixo `-b`, `-c` no mesmo dia). Depois: push, CI verde e `developer` por `--ff-only` (`docs/processo/fluxo-git.md`).
+- **O Claude para na `developer`.** A `main` é produção: quem leva a `developer` para a `main` é o autor (09/11/2026).
 - A `main` é protegida: check `verificar` obrigatório e sem force push. Nunca commit direto na `main` e nunca `--no-ff`.
 - Não usar `git add -A` quando houver trabalho de outra frente na árvore.
 - Comentários e issues no GitHub terminam com `<sub>por douglas ciborgue</sub>`.
