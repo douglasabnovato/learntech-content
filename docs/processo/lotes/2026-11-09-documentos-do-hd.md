@@ -114,3 +114,21 @@ Se o autor discordar de uma decisão, basta trocar o `uso` do arquivo. Uma foto 
 ## Próximos passos
 - O áudio do HD-0006 é transcrito e marcado.
 - Os vídeos seguem na #15.
+
+## 6. Verificação na tela (09/11)
+
+Feita com a API local (`wrangler dev`, conteúdo da `developer`) e os sites locais apontando para ela. A identificação de teste ("Teste Local", `teste@learntech.test`) ficou só no D1 local.
+
+| Site | Página | Conferido | Resultado |
+|---|---|---|---|
+| bootcamps | Fator S Challenge | galeria 30 a 48 | 19 fotos novas carregam, nenhuma quebrada |
+| bootcamps | Hackathon de Inovação Social | galeria 28 a 42 | 15 carregam; a ampliação mostra a legenda ("41 de 42 · Equipe reunida para foto") |
+| bootcamps | GDG Juiz de Fora | galeria 7 a 10 | 4 carregam, já recortadas, sem a interface do Instagram |
+| bootcamps | TDC Innovation | galeria 11 | carrega |
+| learn-tech | Programa 1005 | capa | agenda da rotina, 1600 px |
+| learn-tech | Artigos hack dev e cashback | capas | carregam |
+| learn-tech | Artigo de editais | parágrafo "Rodadas e credenciamento" | aparece |
+| learn-tech | Programas 1101, 106, 1102, 1004 e 1005 | passos novos | aparecem no modo de estudo |
+| tools | 6 fichas novas | página de detalhe | título e 8 parágrafos em cada; a Rock Content mostra "em revisão" |
+
+**Observação:** na produção, as fichas novas do tools só aparecem depois do deploy da API. A página de detalhe busca a ficha na API, e a lista local (`data/tools.js`) não basta. O mesmo vale para as fotos e capas novas, que são servidas pela API.
