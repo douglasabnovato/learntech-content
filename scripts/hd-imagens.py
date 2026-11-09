@@ -11,6 +11,7 @@ Cache do dHash em <hd>/.dhash-cache.json (caminho + tamanho + data): só recalcu
 Requer Pillow.
 """
 import json
+import os
 import warnings
 import sys
 from pathlib import Path
@@ -47,9 +48,12 @@ def com_cache(antigo: dict, novo: dict, caminho: Path):
 
 
 def listar(base: Path):
-    for p in base.rglob("*"):
-        if p.is_file() and p.suffix.lower() in EXTS and not (FORA & set(p.parts)):
-            yield p
+    """Imagens da pasta, sem entrar em node_modules, dist e afins (o rglob entrava e gastava quase todo o tempo)."""
+    for raiz, pastas, arquivos in os.walk(base):
+        pastas[:] = [d for d in pastas if d not in FORA]
+        for nome in arquivos:
+            if Path(nome).suffix.lower() in EXTS:
+                yield Path(raiz) / nome
 
 
 def main() -> None:
