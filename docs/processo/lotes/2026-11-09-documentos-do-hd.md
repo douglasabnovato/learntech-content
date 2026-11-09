@@ -88,6 +88,29 @@ Ficaram de fora, com o motivo:
 - **Preços sem confirmação:** os preços de Campaign Monitor, Databox e HackerRank não foram confirmados na página oficial, e as fichas não citam valores. Os da Omnisend e da GetResponse vieram com ressalvas.
 - **Teto do contrato:** o 106 ficou com 8 fontes, acima do máximo de 6, e o 1101 com 23 passos, acima do teto de 22. O build não confere esses limites.
 
+## 5. Todas as fotos com critério (09/11, segunda rodada)
+
+O autor pediu que cada foto não usada tivesse uma justificativa. Cada grupo da folha de contato recebeu uma decisão, e os parecidos do grupo seguem a mesma decisão.
+
+| Decisão | Critério |
+|---|---|
+| `exibido` | Mostra o evento acontecendo (pessoas, equipe, palco, pitch, canvas, programação), está nítida e não repete uma foto já exibida |
+| `similar` | Mesma cena de uma exibida, em rajada ou de outro ângulo: as fotos dos slides da mesma palestra, as do mesmo palco, as da mesma plateia |
+| `descartado` | Um dos motivos gravados no acervo: documento ou comprovante à vista; crachás com nomes; captura de rede social ou app com nomes de terceiros; cartão de contato; selfie do autor sem a atividade do evento; foto pessoal fora do tema; ambiente vazio; foto escura; slide ilegível; arte repetida; divulgação de outro evento; retrato de terceiro sem contexto |
+| `referencia` | Material de terceiro sem direito de exibição (HD-0008), imagem do ex-empregador (HD-0025) e capturas do hack dev que não têm espaço de imagem (HD-0007) |
+
+| Item | Exibidas novas | Similar | Descartadas | Referência |
+|---|---|---|---|---|
+| HD-0010 hackathon | 9, galeria 34 a 42 | 8 grupos | 101 grupos | — |
+| HD-0011 Fator S | 13, galeria 36 a 48 | 89 grupos | 20 grupos | — |
+| HD-0009 GDG | 4, galeria 7 a 10 (foto recortada da captura, sem a parte do Instagram) | — | — | — |
+| HD-0013 TDC | 1, galeria 11 | 1 | 2 | — |
+| HD-0007, HD-0008, HD-0025 | — | — | 1 | 11 |
+
+Resultado: o hd fica **93,0% usado**. Os 38 pendentes são os 37 vídeos (#15, que ficam com o autor) e o áudio do HD-0006.
+
+Se o autor discordar de uma decisão, basta trocar o `uso` do arquivo. Uma foto descartada pode virar `exibido` sem perder nada.
+
 ## Próximos passos
 - O áudio do HD-0006 é transcrito e marcado.
-- As fotos que sobraram em cada item viram `descartado` quando o autor confirmar. Os vídeos seguem na #15.
+- Os vídeos seguem na #15.

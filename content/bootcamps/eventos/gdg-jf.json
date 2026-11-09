@@ -47,6 +47,30 @@
         "url": "/media/bootcamps/eventos/gdg-jf/6.webp",
         "type": "image",
         "alt": "Confraternização da comunidade após um encontro do GDG Juiz de Fora"
+      },
+      {
+        "id": "gdg-jf-7",
+        "url": "/media/bootcamps/eventos/gdg-jf/7.webp",
+        "type": "image",
+        "alt": "Palestra sobre Docker e containers em um encontro do GDG Juiz de Fora (2019)"
+      },
+      {
+        "id": "gdg-jf-8",
+        "url": "/media/bootcamps/eventos/gdg-jf/8.webp",
+        "type": "image",
+        "alt": "Participantes de um encontro do GDG Juiz de Fora (2019)"
+      },
+      {
+        "id": "gdg-jf-9",
+        "url": "/media/bootcamps/eventos/gdg-jf/9.webp",
+        "type": "image",
+        "alt": "Turma do segundo encontro UX na Prática do GDG Juiz de Fora (2019)"
+      },
+      {
+        "id": "gdg-jf-10",
+        "url": "/media/bootcamps/eventos/gdg-jf/10.webp",
+        "type": "image",
+        "alt": "Palestra sobre Firebase no Google I/O Extended Juiz de Fora"
       }
     ],
     "curriculum": [

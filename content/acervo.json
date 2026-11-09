@@ -1177,22 +1177,30 @@
         {
           "sha256": "1b8c71054e93cbb266a9b708c340636ec7eb8a2e69455c888cb4df059c1aa6de",
           "ext": "jpg",
-          "bytes": 94187
+          "bytes": 94187,
+          "uso": "referencia",
+          "motivo": "captura do organizador do autor: base do programa 1005; programa e artigo têm uma imagem só"
         },
         {
           "sha256": "2ee1953569deb83a0bc25fd852bf36adfda1cd2012d94f481c8e488fb7b9099d",
           "ext": "jpg",
-          "bytes": 69337
+          "bytes": 69337,
+          "uso": "referencia",
+          "motivo": "captura do organizador do autor: base do programa 1005; programa e artigo têm uma imagem só"
         },
         {
           "sha256": "0587bd3831cb6f6f1b28ca146b2bc5eb7b132226428ccc9842c6bae036905e8d",
           "ext": "jpg",
-          "bytes": 89587
+          "bytes": 89587,
+          "uso": "descartado",
+          "motivo": "nomes de terceiros à vista (privacidade)"
         },
         {
           "sha256": "81211c6e29f441eb43e130ebdbd18543f32dcb17189de258acd126fac10e91d9",
           "ext": "jpg",
-          "bytes": 12990
+          "bytes": 12990,
+          "uso": "referencia",
+          "motivo": "captura do organizador do autor: base do programa 1005; programa e artigo têm uma imagem só"
         },
         {
           "sha256": "54b09618c174b990a78f1fd46908008e888c5a1fdbe1d0851fc844363be83bc4",
@@ -1204,17 +1212,23 @@
         {
           "sha256": "7e7e8e4121a970e2ec032d3adb29dc37fbac17b99778bb6f541b13986c9deb24",
           "ext": "jpg",
-          "bytes": 98720
+          "bytes": 98720,
+          "uso": "referencia",
+          "motivo": "captura do organizador do autor: base do programa 1005; programa e artigo têm uma imagem só"
         },
         {
           "sha256": "93247f0cdcbe648cf2e8f8f18a9e595060b0c77bf214d25bcb9b02d3703105ad",
           "ext": "jpg",
-          "bytes": 50728
+          "bytes": 50728,
+          "uso": "referencia",
+          "motivo": "captura do organizador do autor: base do programa 1005; programa e artigo têm uma imagem só"
         },
         {
           "sha256": "711e4044ce73c8fa0595c594be6cfe5c98e575aa639ce0d6f3e5e4e1551104fc",
           "ext": "jpg",
-          "bytes": 299327
+          "bytes": 299327,
+          "uso": "referencia",
+          "motivo": "captura do organizador do autor: base do programa 1005; programa e artigo têm uma imagem só"
         },
         {
           "sha256": "99270c0c8294a65e477431df51ba1053f01e80602bd5bb3e0293b5f541078dd0",
@@ -1343,17 +1357,23 @@
         {
           "sha256": "cbc2ac1b61b08e7d175c1fc190343ee7ddff2dcc2e5730e7048befb74d0bc50a",
           "ext": "jpg",
-          "bytes": 167863
+          "bytes": 167863,
+          "uso": "referencia",
+          "motivo": "material de curso de terceiro: base dos programas 1001 a 1004, sem direito de exibição"
         },
         {
           "sha256": "a89ee52a148e5232891b1539f520ca5f0d7bc6085f755f5afdc7b2f39edd948a",
           "ext": "jpg",
-          "bytes": 131217
+          "bytes": 131217,
+          "uso": "referencia",
+          "motivo": "material de curso de terceiro: base dos programas 1001 a 1004, sem direito de exibição"
         },
         {
           "sha256": "99894fe90703197147bfa73efdbc5031e01e27631c998659aa28d6da901a677a",
           "ext": "jpg",
-          "bytes": 73765
+          "bytes": 73765,
+          "uso": "referencia",
+          "motivo": "material de curso de terceiro: base dos programas 1001 a 1004, sem direito de exibição"
         },
         {
           "sha256": "d3861068ff83e2fe2272e1c1023cca3f60ac2bd8f5a916ba91ea13f87f060f63",
@@ -1365,7 +1385,9 @@
         {
           "sha256": "01e49b1090c81e28783cde7faa4f5a2ffd4fb371e9fc2b96d22a7576c3e65399",
           "ext": "jpg",
-          "bytes": 94233
+          "bytes": 94233,
+          "uso": "referencia",
+          "motivo": "material de curso de terceiro: base dos programas 1001 a 1004, sem direito de exibição"
         },
         {
           "sha256": "eff415f24a7cdd7ac6d39b4be425100ccae99cbf49a4fa28eee37641afeb41b4",
@@ -1551,22 +1573,30 @@
         {
           "sha256": "29e45f8aeb64f060fe5ac861c6d5cd8e56cde6156685d526bfad3073a636d4c0",
           "ext": "jpg",
-          "bytes": 728755
+          "bytes": 728755,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/gdg-jf"
         },
         {
           "sha256": "d6506e5f65b1a86922a0532de7ceb2e39eefde14d341171e5d088d628449de7f",
           "ext": "jpg",
-          "bytes": 640329
+          "bytes": 640329,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/gdg-jf"
         },
         {
           "sha256": "e0505c3dfc72005b636d48821862273ee56cb7c3604ebb6815ea7b969d775eb1",
           "ext": "jpg",
-          "bytes": 900439
+          "bytes": 900439,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/gdg-jf"
         },
         {
           "sha256": "cd07a984c1b796ac94bc790ece122a48476e5a22062d95032df27d06857d4b81",
           "ext": "jpg",
-          "bytes": 634665
+          "bytes": 634665,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/gdg-jf"
         }
       ]
     },
@@ -1585,42 +1615,58 @@
         {
           "sha256": "d941c40e62df1e79fa972f702c55f53168c72a5af1198ace0a4d129f909ca63b",
           "ext": "jpg",
-          "bytes": 824261
+          "bytes": 824261,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "e1fb08f6a4812e1bff881db446d5c97adb5e6e7d17418694d7d72f2e0dc05ed6",
           "ext": "jpg",
-          "bytes": 924220
+          "bytes": 924220,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "f609c9370a65573e0ea5b3e59a4823b6c6c9bea91de2fc65b9754ca070887354",
           "ext": "jpg",
-          "bytes": 799688
+          "bytes": 799688,
+          "uso": "descartado",
+          "motivo": "foto escura ou sem foco"
         },
         {
           "sha256": "e46b99049ea500317a1fc9853ef73b522936735368a0f8f03cedb8337f4c1ad1",
           "ext": "jpg",
-          "bytes": 2577696
+          "bytes": 2577696,
+          "uso": "descartado",
+          "motivo": "foto pessoal fora do tema do evento (rua, mercado, carro, objeto)"
         },
         {
           "sha256": "36cd96abedb859708743eb0e9c0cf2b7386ccd79b649dd76ada5f0cadbedb75e",
           "ext": "jpg",
-          "bytes": 2082544
+          "bytes": 2082544,
+          "uso": "descartado",
+          "motivo": "ambiente vazio ou detalhe sem pessoas nem atividade"
         },
         {
           "sha256": "a49433185498d523a989f26e0ec2479b70971a190f6499019c5dcc94844bf579",
           "ext": "jpg",
-          "bytes": 1668746
+          "bytes": 1668746,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "cad9bd6e81edc42e2d571821e26568e63018f1d60e735c9417eaf8687532ebe1",
           "ext": "jpg",
-          "bytes": 1745322
+          "bytes": 1745322,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "31b7b242d8508315ba315ff433b43917701e705b55084da317c25bb1d107533e",
           "ext": "jpg",
-          "bytes": 892932
+          "bytes": 892932,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "2fc6bcb6f1d1ce955cffeb0a785ffa92e648a5b269d07954bcf043cee168dec9",
@@ -1635,7 +1681,9 @@
         {
           "sha256": "ba04b9bf76dc5bdc61245acc79bd1af9e432cba78e9bab6e1ef59cd16f847c1f",
           "ext": "jpg",
-          "bytes": 2893852
+          "bytes": 2893852,
+          "uso": "descartado",
+          "motivo": "ambiente vazio ou detalhe sem pessoas nem atividade"
         },
         {
           "sha256": "f8e5a6587d9e1224911476203c3f197fd18b953fcfddf33d56e1975d21dd3aa3",
@@ -1647,7 +1695,9 @@
         {
           "sha256": "39f82fedb2250d4ad27840e614ae4da6cb86a278a8affa6ab1f749c24527de56",
           "ext": "jpg",
-          "bytes": 2469619
+          "bytes": 2469619,
+          "uso": "descartado",
+          "motivo": "ambiente vazio ou detalhe sem pessoas nem atividade"
         },
         {
           "sha256": "5da9cd4c59d97c7241a445512d92ec3cbd2ab447ca165d10b4e0ff5a4a142d77",
@@ -1659,32 +1709,44 @@
         {
           "sha256": "4718291c014c1a7eebb3abc92a90ca24ee6773413f9480eff45b252b121e798d",
           "ext": "jpg",
-          "bytes": 2228868
+          "bytes": 2228868,
+          "uso": "descartado",
+          "motivo": "ambiente vazio ou detalhe sem pessoas nem atividade"
         },
         {
           "sha256": "367f7c825089c83dd371485bad2a13768f7ff66cdf8ede3128782e1f4ddc31bf",
           "ext": "jpg",
-          "bytes": 1406591
+          "bytes": 1406591,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "2d2a260348101b3938811ffbc266856d8f273e9676d84f78851cf402ef8d7aa9",
           "ext": "jpg",
-          "bytes": 1611939
+          "bytes": 1611939,
+          "uso": "descartado",
+          "motivo": "documento, comprovante ou anotação à vista (privacidade)"
         },
         {
           "sha256": "fc124312bdcbec3171cbbf0a5e0c75ce925f777c57a0d006df5bff2abd63cbc1",
           "ext": "jpg",
-          "bytes": 2609142
+          "bytes": 2609142,
+          "uso": "descartado",
+          "motivo": "documento, comprovante ou anotação à vista (privacidade)"
         },
         {
           "sha256": "a09e56f48b0cd57f35467455c0abdaa3411beb298549495a691909a4724b9c08",
           "ext": "jpg",
-          "bytes": 2239874
+          "bytes": 2239874,
+          "uso": "descartado",
+          "motivo": "documento, comprovante ou anotação à vista (privacidade)"
         },
         {
           "sha256": "ced95522384edb1f587730437f4ff14c8604c661e6505850bce51468ec1b4dbb",
           "ext": "jpg",
-          "bytes": 402354
+          "bytes": 402354,
+          "uso": "descartado",
+          "motivo": "ambiente vazio ou detalhe sem pessoas nem atividade"
         },
         {
           "sha256": "5ccefe6c503eca84e87c360f248c38ba26374414fd687819588105fb7b7e7a94",
@@ -1696,7 +1758,9 @@
         {
           "sha256": "9920515fc70554d6c80deea879c6e5127e1c77c9fb2e70b149f40645b2dd86ef",
           "ext": "jpg",
-          "bytes": 3038747
+          "bytes": 3038747,
+          "uso": "descartado",
+          "motivo": "ambiente vazio ou detalhe sem pessoas nem atividade"
         },
         {
           "sha256": "7fb7554df16bfb8ff3c2b4b7860f675a69309337fc2415f7bedfad6f258187b5",
@@ -1722,7 +1786,9 @@
         {
           "sha256": "a86af08931ebc7e4cc5f958e5a2ef59c2f3076ab822ae9b98c7351e779c51fe1",
           "ext": "jpg",
-          "bytes": 2089310
+          "bytes": 2089310,
+          "uso": "descartado",
+          "motivo": "ambiente vazio ou detalhe sem pessoas nem atividade"
         },
         {
           "sha256": "68a4b930bf97d06297d0480fafa5c6097b9790a837a42d0c039051b5decc02e3",
@@ -1734,12 +1800,16 @@
         {
           "sha256": "4c3517a8822a8778638629bd70b58a14ab45abdd074b604826e028581cf18788",
           "ext": "jpg",
-          "bytes": 2539311
+          "bytes": 2539311,
+          "uso": "descartado",
+          "motivo": "ambiente vazio ou detalhe sem pessoas nem atividade"
         },
         {
           "sha256": "3daa188a1247347fa349d9a37d8c56cf594d41eae647672848f34e0f7820d617",
           "ext": "jpg",
-          "bytes": 1966135
+          "bytes": 1966135,
+          "uso": "descartado",
+          "motivo": "ambiente vazio ou detalhe sem pessoas nem atividade"
         },
         {
           "sha256": "cc5b66e2e46ec52e1c119cc889d3bff485d2734792b5bcdee959efd695bf3762",
@@ -1749,62 +1819,86 @@
         {
           "sha256": "122466b6cc69aab8b8a8b39c9635d6dd51215b1bdb26ae8cf3307d656ec0faed",
           "ext": "jpg",
-          "bytes": 877919
+          "bytes": 877919,
+          "uso": "similar",
+          "similarA": "a615b5ba085b51bf125f4e048c6521ca115b329f817f5c652f9a8561b733c51a"
         },
         {
           "sha256": "f227e064ce97291cb2527d9c489f5289d401a253e0b1bf35e5d490f0875c9ef9",
           "ext": "jpg",
-          "bytes": 849859
+          "bytes": 849859,
+          "uso": "similar",
+          "similarA": "a615b5ba085b51bf125f4e048c6521ca115b329f817f5c652f9a8561b733c51a"
         },
         {
           "sha256": "d371d17232f99a224c5eccc632834ac1c704728ef7925b5c93aa11ecf4011179",
           "ext": "jpg",
-          "bytes": 826769
+          "bytes": 826769,
+          "uso": "similar",
+          "similarA": "a615b5ba085b51bf125f4e048c6521ca115b329f817f5c652f9a8561b733c51a"
         },
         {
           "sha256": "a6f0ab4a8f33d80b902d50678330ed7097773a460d66d6c2f65512b85ba7be8e",
           "ext": "jpg",
-          "bytes": 1471018
+          "bytes": 1471018,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "c0ee289ce0e5c9fc28b07a09441ec8d5fcd1c3d8b6ce5ca372b3b281eca73d83",
           "ext": "jpg",
-          "bytes": 1890019
+          "bytes": 1890019,
+          "uso": "descartado",
+          "motivo": "documento, comprovante ou anotação à vista (privacidade)"
         },
         {
           "sha256": "657483817a382ce25b0b4d7310fd0becf5a61eda8093f1a9e3c72be09a1d1c3c",
           "ext": "jpg",
-          "bytes": 2588981
+          "bytes": 2588981,
+          "uso": "descartado",
+          "motivo": "ambiente vazio ou detalhe sem pessoas nem atividade"
         },
         {
           "sha256": "6394f668bfdee4010fe83561e17f6d34f3ac17989a266248a0712261d35e40bc",
           "ext": "jpg",
-          "bytes": 1325920
+          "bytes": 1325920,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "a4296688ffcc298780b00b04cf3b8c2b69df01f8a326913de6160ea7ac2c2865",
           "ext": "jpg",
-          "bytes": 2515518
+          "bytes": 2515518,
+          "uso": "descartado",
+          "motivo": "ambiente vazio ou detalhe sem pessoas nem atividade"
         },
         {
           "sha256": "1f7142f3aef26c55abb2d8dd27014d685eb70e3202e8f43be13ef68a6b161489",
           "ext": "jpg",
-          "bytes": 2526235
+          "bytes": 2526235,
+          "uso": "descartado",
+          "motivo": "ambiente vazio ou detalhe sem pessoas nem atividade"
         },
         {
           "sha256": "91f8961a7f3126edc02acccd0efab2efe617f9809a7f62f34e573c0179adabef",
           "ext": "jpg",
-          "bytes": 810197
+          "bytes": 810197,
+          "uso": "similar",
+          "similarA": "a615b5ba085b51bf125f4e048c6521ca115b329f817f5c652f9a8561b733c51a"
         },
         {
           "sha256": "8cf5a03379eedb63bd8c00422c950e9222b0544b6d5d38cb6f903d9d640b3bb9",
           "ext": "jpg",
-          "bytes": 1729874
+          "bytes": 1729874,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "9a81420c50f97cb3bb82666c0e87a13f415afadb769b462e78f23f3ca34512ae",
           "ext": "jpg",
-          "bytes": 1720458
+          "bytes": 1720458,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "a615b5ba085b51bf125f4e048c6521ca115b329f817f5c652f9a8561b733c51a",
@@ -1823,32 +1917,44 @@
         {
           "sha256": "7e932a4e0ab785c975e5f5bda786cc357d7153eda2585c8bfa596f49e6f2b722",
           "ext": "jpg",
-          "bytes": 1093578
+          "bytes": 1093578,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "794bb1bd8337b0df38676a5540e8dea88ff085b81666da3f9bd9dcfa8f39de84",
           "ext": "jpg",
-          "bytes": 1123402
+          "bytes": 1123402,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "abf80941c2871bb6b5b4b8d62bdd0744b42e9ca3b68d10bb2ea77d971f7fd8dd",
           "ext": "jpg",
-          "bytes": 1053908
+          "bytes": 1053908,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "0f2ba4c0ec5d75ef05a58ae92a9d270b27a172f1c029f6e5fd0786f86c9f2427",
           "ext": "jpg",
-          "bytes": 1676442
+          "bytes": 1676442,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "28ee3d518dcb2e5e434472275d040e6f805f5cd50acd7ca9caed7e5083b6d696",
           "ext": "jpg",
-          "bytes": 1772438
+          "bytes": 1772438,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "81f4f220f63641cb3a00fa6ec5ff3f302f27acc4912752839b84fbb18f2bb440",
           "ext": "jpg",
-          "bytes": 770645
+          "bytes": 770645,
+          "uso": "descartado",
+          "motivo": "ambiente vazio ou detalhe sem pessoas nem atividade"
         },
         {
           "sha256": "0c47a4d1b1b88e4f1a29f6ef304529cd9145a44d25d9294d72452a68fdadef7a",
@@ -1867,7 +1973,9 @@
         {
           "sha256": "4fb9cf9477cd287f31aca043bf117c8b2e326e170a44bdf393ce907c4e3f07ac",
           "ext": "jpg",
-          "bytes": 1673916
+          "bytes": 1673916,
+          "uso": "descartado",
+          "motivo": "ambiente vazio ou detalhe sem pessoas nem atividade"
         },
         {
           "sha256": "ecf676e3a6664439c9911746c78d04dd92d2a953a9619c31ce9ed772c07f349f",
@@ -1893,7 +2001,9 @@
         {
           "sha256": "7f6fb5d5a3c0f7e117996d914d9ebc0e0b2abfacb09779eddea3c4cc2695a0c7",
           "ext": "jpg",
-          "bytes": 3527130
+          "bytes": 3527130,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "9ca7a829a67912f6f85b0a3d169599e1f95968479109d45fef144d4e16daf2a6",
@@ -1905,27 +2015,37 @@
         {
           "sha256": "b686c0640e0f20931c5ccc3789d42d1a685a25701871c4542f656332a57484d8",
           "ext": "jpg",
-          "bytes": 174035
+          "bytes": 174035,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "64b2fc6a2dba3283e10803887f8c80b2e0f29c4afe38e21f3293bf55df94545c",
           "ext": "jpg",
-          "bytes": 164945
+          "bytes": 164945,
+          "uso": "similar",
+          "similarA": "cf042d43d3e19369f4fbf6032d718608f1848b886812e7c0be5a4f8f5f0c53a7"
         },
         {
           "sha256": "d71521c1203c4c49fb80e802e7784b3a2246896be764fa09369f72c1eb049a73",
           "ext": "jpg",
-          "bytes": 134153
+          "bytes": 134153,
+          "uso": "descartado",
+          "motivo": "arte de divulgação: a versão principal já está na galeria"
         },
         {
           "sha256": "c2aa47902c6b2df298f5cbdc5a530c17a0a7ceafdb036dddf038f765b7a55882",
           "ext": "jpg",
-          "bytes": 95249
+          "bytes": 95249,
+          "uso": "descartado",
+          "motivo": "arte de divulgação: a versão principal já está na galeria"
         },
         {
           "sha256": "a0fa5a8b62109fcde9c130bf5749aba760d01f99883eae0150bff45bd7583709",
           "ext": "jpg",
-          "bytes": 121649
+          "bytes": 121649,
+          "uso": "similar",
+          "similarA": "25f8238eb3e8c368034642829e743f2535f95ea00184987e76b72f1a0bfd3bf9"
         },
         {
           "sha256": "25f8238eb3e8c368034642829e743f2535f95ea00184987e76b72f1a0bfd3bf9",
@@ -1944,37 +2064,51 @@
         {
           "sha256": "1bc18ee6eee72cf9557ad9ea1dac99dc8cd8236f84b71e55fe08b1085ab43f91",
           "ext": "jpg",
-          "bytes": 20709
+          "bytes": 20709,
+          "uso": "descartado",
+          "motivo": "ambiente vazio ou detalhe sem pessoas nem atividade"
         },
         {
           "sha256": "040d67d2e0ab5684026a89893b95217791637a334925241946704bc6ff9f868b",
           "ext": "jpg",
-          "bytes": 85677
+          "bytes": 85677,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "d7cfae51c990279ef2873421b95fd8aff110a6bf1e133bb8d1721e69d3465c55",
           "ext": "jpeg",
-          "bytes": 1482329
+          "bytes": 1482329,
+          "uso": "descartado",
+          "motivo": "foto pessoal fora do tema do evento (rua, mercado, carro, objeto)"
         },
         {
           "sha256": "fe4d96b9d41c5797b7c7cc7a20dda1622fd8ec506078915fbd9758b356f772c7",
           "ext": "jpeg",
-          "bytes": 1315651
+          "bytes": 1315651,
+          "uso": "descartado",
+          "motivo": "foto pessoal fora do tema do evento (rua, mercado, carro, objeto)"
         },
         {
           "sha256": "ac7c18127da7299eb95501fd90bd1862a4edb4b0de7624740a8f8ee0452d769f",
           "ext": "jpeg",
-          "bytes": 1412257
+          "bytes": 1412257,
+          "uso": "descartado",
+          "motivo": "documento, comprovante ou anotação à vista (privacidade)"
         },
         {
           "sha256": "ffe1df8e1b851fa953bda9180fc4921a1deaaefd9ae858d2aaff139c4c502127",
           "ext": "jpeg",
-          "bytes": 1308130
+          "bytes": 1308130,
+          "uso": "descartado",
+          "motivo": "documento, comprovante ou anotação à vista (privacidade)"
         },
         {
           "sha256": "d0704064bf78205f0b3e4fc762436f6f1ede27be056d96395c8213acca3aab58",
           "ext": "jpg",
-          "bytes": 219632
+          "bytes": 219632,
+          "uso": "descartado",
+          "motivo": "arte de divulgação: a versão principal já está na galeria"
         },
         {
           "sha256": "66b0fd3e5c461196170a65381287e099b8a6da394f8010a6cc38b6623a64c935",
@@ -2000,47 +2134,65 @@
         {
           "sha256": "38904104b5094788b63770a49288f236c1b0bf26a8b6df44c4f0f90bd9bdab2c",
           "ext": "jpg",
-          "bytes": 186903
+          "bytes": 186903,
+          "uso": "descartado",
+          "motivo": "crachás com nomes à vista (privacidade)"
         },
         {
           "sha256": "7f62116d4e17b985571696722faaf7981fc59afe3d206167d4e2170eb34025d8",
           "ext": "jpg",
-          "bytes": 167704
+          "bytes": 167704,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "b422d7419d9d27c6c4620dcb6051f727ca06dc01717b7a7960f51a36ce8ddd7c",
           "ext": "jpeg",
-          "bytes": 1804077
+          "bytes": 1804077,
+          "uso": "descartado",
+          "motivo": "foto pessoal fora do tema do evento (rua, mercado, carro, objeto)"
         },
         {
           "sha256": "d4ad5e1dc5406764dd74b320cf80ead5146bbcc97ed4cad084e66584dec48e51",
           "ext": "jpeg",
-          "bytes": 2410692
+          "bytes": 2410692,
+          "uso": "descartado",
+          "motivo": "foto pessoal fora do tema do evento (rua, mercado, carro, objeto)"
         },
         {
           "sha256": "bba53b7c817cc2ae87ac3b5913d8972cd065838ed43b6e3fdaefe55ffcb10c83",
           "ext": "jpeg",
-          "bytes": 2376491
+          "bytes": 2376491,
+          "uso": "descartado",
+          "motivo": "foto pessoal fora do tema do evento (rua, mercado, carro, objeto)"
         },
         {
           "sha256": "5975ca6e70847cced8486b0fc08ba59f2eabeb51dfe13fd980b712a302250043",
           "ext": "jpeg",
-          "bytes": 1571155
+          "bytes": 1571155,
+          "uso": "descartado",
+          "motivo": "foto pessoal fora do tema do evento (rua, mercado, carro, objeto)"
         },
         {
           "sha256": "df76bb0487a108b015d662e86b7ebcf61405507679821fd95939a2588b773a57",
           "ext": "jpeg",
-          "bytes": 1519712
+          "bytes": 1519712,
+          "uso": "descartado",
+          "motivo": "foto pessoal fora do tema do evento (rua, mercado, carro, objeto)"
         },
         {
           "sha256": "b8235ed52f31eff52093b3452f74655cd0be642f458211d084ecf9c0db76c14b",
           "ext": "jpeg",
-          "bytes": 1770631
+          "bytes": 1770631,
+          "uso": "descartado",
+          "motivo": "foto pessoal fora do tema do evento (rua, mercado, carro, objeto)"
         },
         {
           "sha256": "ef8c8adb1c52767e29625d0dfef0ba213857c96add6a1a39a02346e373bad8d7",
           "ext": "jpeg",
-          "bytes": 1088507
+          "bytes": 1088507,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "cb2dca88396c84b9f6d731f7230826f2a6a05381c33750c3a627c93d03ed8371",
@@ -2052,27 +2204,37 @@
         {
           "sha256": "a09bb1506f2342a67e97aa1658e5df36359f7b6193363daf30cbf0a0ef24142d",
           "ext": "jpeg",
-          "bytes": 1339412
+          "bytes": 1339412,
+          "uso": "descartado",
+          "motivo": "ambiente vazio ou detalhe sem pessoas nem atividade"
         },
         {
           "sha256": "695e24817ffab4b4f0019c055a97c61fed8fa78a6e28e17cc5424bd3a0bbae49",
           "ext": "jpeg",
-          "bytes": 1282415
+          "bytes": 1282415,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "38433cb414309ad5fd4b40db963148d14917be77bcb2cdeee61cc36bdeaacc5b",
           "ext": "jpeg",
-          "bytes": 680875
+          "bytes": 680875,
+          "uso": "descartado",
+          "motivo": "foto escura ou sem foco"
         },
         {
           "sha256": "d597502f87df46026f59587d3374ae821e70212cfff9be8e67f408c1cb3c998b",
           "ext": "jpeg",
-          "bytes": 1304127
+          "bytes": 1304127,
+          "uso": "descartado",
+          "motivo": "ambiente vazio ou detalhe sem pessoas nem atividade"
         },
         {
           "sha256": "8269cd161d20d663c5e8a90947d7c1c558f879db85e9fbb3a10671b7421d7c63",
           "ext": "jpg",
-          "bytes": 156437
+          "bytes": 156437,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "6c279c3383aeee5aa0c384faee67b90b5a373f72d71648a6967846ede2e8827d",
@@ -2091,32 +2253,44 @@
         {
           "sha256": "ad7b9907914b67a33fae565605213fde964af5788e4478c0cbce653c8f057424",
           "ext": "jpg",
-          "bytes": 124016
+          "bytes": 124016,
+          "uso": "descartado",
+          "motivo": "slide sem legibilidade ou sem contexto"
         },
         {
           "sha256": "889134e843716e1a814bb8185d17eb35cbae1d8ec59c34a86325bc2520cf69a9",
           "ext": "jpeg",
-          "bytes": 1328553
+          "bytes": 1328553,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "2fb33bf73230da1ace0255fb9629138cbb473cdc879e37635a0ddd692fe3669e",
           "ext": "jpeg",
-          "bytes": 1537417
+          "bytes": 1537417,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "7f26bff6b03a978f0f844fe98c538dab447b4f8feba455da00cbd0007c55ae91",
           "ext": "jpeg",
-          "bytes": 1474133
+          "bytes": 1474133,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "07e7e47f9a88ef7a3f1f049b7794798148760835cccab7cfd8f4dd6a8cd26b32",
           "ext": "jpeg",
-          "bytes": 1120393
+          "bytes": 1120393,
+          "uso": "descartado",
+          "motivo": "ambiente vazio ou detalhe sem pessoas nem atividade"
         },
         {
           "sha256": "4194a700a36a1fbb556490aa26201f17861b6cb1c6398b847bc763e6058a48ec",
           "ext": "jpeg",
-          "bytes": 1408475
+          "bytes": 1408475,
+          "uso": "descartado",
+          "motivo": "ambiente vazio ou detalhe sem pessoas nem atividade"
         },
         {
           "sha256": "7aec600e707b916dc446322187ad38fc5682d9beb4e94726b67742cc934cfd8e",
@@ -2128,17 +2302,23 @@
         {
           "sha256": "d17d86cd3cf2f1d11430c71fb4bcf63812538e9835e3c154ae83decc982ab8fc",
           "ext": "jpeg",
-          "bytes": 959556
+          "bytes": 959556,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "b241d72fcd7dccb492beea54d6397a98685ead59cbf557c32576c06624561e4b",
           "ext": "jpeg",
-          "bytes": 1529534
+          "bytes": 1529534,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "8762dcaec2c5cc3ba7e80429335f809996083999e603672a23e035855eeac9ad",
           "ext": "jpeg",
-          "bytes": 1349702
+          "bytes": 1349702,
+          "uso": "descartado",
+          "motivo": "ambiente vazio ou detalhe sem pessoas nem atividade"
         },
         {
           "sha256": "8307a074d47911ad08aefc066cea382fe907fefc871c8312abbcbc6f45ebc686",
@@ -2150,32 +2330,44 @@
         {
           "sha256": "46278779e354e0cb0a83164ca67a2fea176314c77709c04ddfb73655eda6bb77",
           "ext": "jpeg",
-          "bytes": 1351377
+          "bytes": 1351377,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "054df5e6cd997e704829586fb0825a73a2ca380c0eca0ac976d729b475436b22",
           "ext": "jpeg",
-          "bytes": 1314992
+          "bytes": 1314992,
+          "uso": "descartado",
+          "motivo": "ambiente vazio ou detalhe sem pessoas nem atividade"
         },
         {
           "sha256": "0de5fb78b6ef3c7d239bccc263387778d59a5686a38a77ce0e9abf7c8c1150b9",
           "ext": "jpeg",
-          "bytes": 1424292
+          "bytes": 1424292,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "4b2aac0a1ebd01146b94b2d965f50dc886756fca2174ae871e06176bed25e84a",
           "ext": "jpg",
-          "bytes": 220385
+          "bytes": 220385,
+          "uso": "similar",
+          "similarA": "1e12b656d4f2f60f7e72ba5973f1f9c567c60b2395ece8ea3065054428fb1ba2"
         },
         {
           "sha256": "fb8a8e670f53ec8b1d57bbb799644d4e490fb9cf0c335a2ae904eb80d63ee7e7",
           "ext": "jpg",
-          "bytes": 109183
+          "bytes": 109183,
+          "uso": "descartado",
+          "motivo": "retrato individual de terceiro, sem a atividade do evento"
         },
         {
           "sha256": "ee50285ce855a21676687fca8c10c54a74daeac24efcc7a9468dfe39773a4200",
           "ext": "jpg",
-          "bytes": 264365
+          "bytes": 264365,
+          "uso": "similar",
+          "similarA": "1e12b656d4f2f60f7e72ba5973f1f9c567c60b2395ece8ea3065054428fb1ba2"
         },
         {
           "sha256": "d455da3cf649f2c982ed8bd3a4c8a0ccbbd432d0ac256a45fa55eac26ce91ee2",
@@ -2194,27 +2386,37 @@
         {
           "sha256": "749b5cdb4db9a845425960c1377b1a21481db1562092b97b48d459a2bc02ae14",
           "ext": "jpg",
-          "bytes": 68892
+          "bytes": 68892,
+          "uso": "descartado",
+          "motivo": "slide sem legibilidade ou sem contexto"
         },
         {
           "sha256": "38910d01fd949012f04bc886398463aa34f9be068ea57c90406bb4d5d1e7ff7b",
           "ext": "jpg",
-          "bytes": 81293
+          "bytes": 81293,
+          "uso": "descartado",
+          "motivo": "slide sem legibilidade ou sem contexto"
         },
         {
           "sha256": "dc8f75b8724ea138e8c64df0897b49800a2038beb35275f0fcac7159b06a99bb",
           "ext": "jpg",
-          "bytes": 124779
+          "bytes": 124779,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "bdae9b6ed887fa3be19c06e3b8496e0b313c2cdc044af908252e53549627cd49",
           "ext": "jpg",
-          "bytes": 174830
+          "bytes": 174830,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "fe2eed494c761f0040bddf8c8c633897a8aa8d7aa65c60d0f89d14e585b9f05a",
           "ext": "jpg",
-          "bytes": 256297
+          "bytes": 256297,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "cf042d43d3e19369f4fbf6032d718608f1848b886812e7c0be5a4f8f5f0c53a7",
@@ -2226,27 +2428,37 @@
         {
           "sha256": "e8a1f8319b0e94cfff1919610ce57399f9be1b42dc1544acaa7724f3c933448d",
           "ext": "jpg",
-          "bytes": 2803526
+          "bytes": 2803526,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "9d62a5d0f05fb54ebfaf54d7130528991171fe5f14470150b002c04fa5352384",
           "ext": "jpg",
-          "bytes": 2638275
+          "bytes": 2638275,
+          "uso": "similar",
+          "similarA": "e8a1f8319b0e94cfff1919610ce57399f9be1b42dc1544acaa7724f3c933448d"
         },
         {
           "sha256": "99eec4a77dcfd0953856399c9090c2cd9df7228a15d24834fc836c8900dba22c",
           "ext": "jpg",
-          "bytes": 137389
+          "bytes": 137389,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "5964a21bb1b563a7465d6d7933010e16304c5ac070ee5f075a022e62b9dd2597",
           "ext": "jpg",
-          "bytes": 167968
+          "bytes": 167968,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "70e3ae49b34b7f2888ea0302095b5d84bb7a6c6f753aa67bf1419aaeca91caa8",
           "ext": "jpg",
-          "bytes": 104837
+          "bytes": 104837,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "2607a29d248def803cdaff36db16d2fdcd4f4f0d32280f84e4ddecdddc403286",
@@ -2258,22 +2470,30 @@
         {
           "sha256": "d57ec5f8ccec89d3da9862d29979657b9cd8673b06eb9777edc9b9d8e10e1211",
           "ext": "jpg",
-          "bytes": 309781
+          "bytes": 309781,
+          "uso": "descartado",
+          "motivo": "crachás com nomes à vista (privacidade)"
         },
         {
           "sha256": "6ef1ab6fc9cdaddaed6084855a290aa68a115fb0708e417363e898e2273ce282",
           "ext": "jpg",
-          "bytes": 105259
+          "bytes": 105259,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "d7c3f254aed8409215b32bedce1d9e59eb75311970bffb17c511d7a9ba7a4a50",
           "ext": "jpg",
-          "bytes": 155417
+          "bytes": 155417,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "8b631b3c9a941028361949a1dc52bd29d03f141062768048ac806771cc6f8a64",
           "ext": "jpg",
-          "bytes": 209504
+          "bytes": 209504,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "96a0f193b8774b04b0e177f894c5932b62ac16842d311523629a98d75def4858",
@@ -2285,17 +2505,23 @@
         {
           "sha256": "e78014d1d135585b1d942ef1c442e66223dfb463c34b2849871c30f21f5e85ed",
           "ext": "jpg",
-          "bytes": 179961
+          "bytes": 179961,
+          "uso": "descartado",
+          "motivo": "ambiente vazio ou detalhe sem pessoas nem atividade"
         },
         {
           "sha256": "a346b014be84f679c626d910522a8490d63e3e64f7872f87b50ebf13f43d5098",
           "ext": "jpg",
-          "bytes": 1651347
+          "bytes": 1651347,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/hackathon-inovacao-social-jf"
         },
         {
           "sha256": "6dd6cdf113db3280d44d895d651ce0d4124f4270645fd4c42c2542169ac32739",
           "ext": "jpg",
-          "bytes": 227252
+          "bytes": 227252,
+          "uso": "descartado",
+          "motivo": "slide sem legibilidade ou sem contexto"
         },
         {
           "sha256": "a49f728248dd63e04a4be532fc6e41afcca8d39201ff8ea86ac2ac048b0e9628",
@@ -2321,7 +2547,9 @@
         {
           "sha256": "f8418e2ec66c4165bd8b37bf69da831564217ee3a69655ce3befa1beaf91e9cc",
           "ext": "jpg",
-          "bytes": 96952
+          "bytes": 96952,
+          "uso": "similar",
+          "similarA": "7f6fb5d5a3c0f7e117996d914d9ebc0e0b2abfacb09779eddea3c4cc2695a0c7"
         },
         {
           "sha256": "64101f5b2c98e87fb55eadd2519c6ca79bbdc54587691b6d02c2a0db93094adc",
@@ -2333,112 +2561,156 @@
         {
           "sha256": "48c02ae4285acae1394e6d5ace3cf313fd8408a4722deee24697a23f31c72a44",
           "ext": "jpg",
-          "bytes": 164632
+          "bytes": 164632,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "4d46bfa37046a3bad293d58d905110dfa49a3fa8e02e039c2843d189f0a43dce",
           "ext": "jpg",
-          "bytes": 178619
+          "bytes": 178619,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "5324013bf07b7313b737353db197d24cfba67b84f6c3d73bbac08d18595279cc",
           "ext": "jpg",
-          "bytes": 205612
+          "bytes": 205612,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "a8c4de9db406b289a49a8bd8b1083ac896c09a122c819a4b46725a1a0c71fc68",
           "ext": "jpg",
-          "bytes": 126766
+          "bytes": 126766,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "b5488c0c711bee7643b9564cd7f0090d25f723322c7c06d3bbfa3b1628921c57",
           "ext": "jpg",
-          "bytes": 677934
+          "bytes": 677934,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "c8174a85937a3c273515bdc4ed6578f8314ffc11bc98f3a3630e8cf87421e1fc",
           "ext": "jpg",
-          "bytes": 619279
+          "bytes": 619279,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "e02ed871e13ae02abd92a6bf79203b96e6ad1a2c1a367ed66ddcb14a108e2cd0",
           "ext": "jpg",
-          "bytes": 629023
+          "bytes": 629023,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "245bcdea654b85e10e06da0db46d8255514b8586530726136cf90e8edc620e4f",
           "ext": "jpg",
-          "bytes": 616457
+          "bytes": 616457,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "cfa3ecff38fdb78f6250353636d91b204f85c927fe4f142545d6f22e846aa586",
           "ext": "jpg",
-          "bytes": 243797
+          "bytes": 243797,
+          "uso": "descartado",
+          "motivo": "documento, comprovante ou anotação à vista (privacidade)"
         },
         {
           "sha256": "72d2eacff1dbf0a5a94398ff7f6fa1b09367ecb8e66e2f6bfa5ed846f8a61ec3",
           "ext": "jpg",
-          "bytes": 178989
+          "bytes": 178989,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "31a15963edeeac25ec8bc3a45427e6e2c77e563ccb0d392d5edc2fe107a0e854",
           "ext": "jpg",
-          "bytes": 544317
+          "bytes": 544317,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "3b8757daf6d6161e69847eeb69c0c09770a3308c903fb8b62ce3355f998defe1",
           "ext": "jpg",
-          "bytes": 724071
+          "bytes": 724071,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "c1caf891dee12b8a39b9449a2a44c61b55143cfce29b4f0b010488f20ee1d618",
           "ext": "jpg",
-          "bytes": 611954
+          "bytes": 611954,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "fb4022a51d6c0f48e54fff05d74a29931859aba8b8f075c0057edc4cded1f7e0",
           "ext": "jpg",
-          "bytes": 753613
+          "bytes": 753613,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "3655ee4981cf7bb534d729724f4017e54431006af1bfb69494cea533eb0e988b",
           "ext": "jpg",
-          "bytes": 709434
+          "bytes": 709434,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "995232c98567c22a19218cc8d780f6aea2e78e1547532a431a3083d37686ba99",
           "ext": "jpg",
-          "bytes": 611294
+          "bytes": 611294,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "c7b3d36ef62da2b18266c3d7abfc917c17390ba9bd9e4a5a1c9d199c22e6376d",
           "ext": "jpg",
-          "bytes": 372035
+          "bytes": 372035,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "f8f185d1013479515854045d90be3c8d726dd5450fe2484025b82d2b3b102f5c",
           "ext": "jpg",
-          "bytes": 814704
+          "bytes": 814704,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "f23275b96a0a4899548800a67ecbc1c976389e4d2112bba8fc57d4f89704bba2",
           "ext": "jpg",
-          "bytes": 694459
+          "bytes": 694459,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "2e7c1f844de4d9a9e70c49465d0337373e175daffb9db7b6aaa25eebe76de9a6",
           "ext": "jpg",
-          "bytes": 852179
+          "bytes": 852179,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "7e328d0f802d256347ef3b78dc24feed69b6fce8d81a5220c76291055bf816a2",
           "ext": "jpg",
-          "bytes": 619389
+          "bytes": 619389,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "9cc7bcc3f920bab1474aa3a1bb8c2f620a4b6b766d4316caf4ea0fde0235451b",
           "ext": "jpg",
-          "bytes": 711413
+          "bytes": 711413,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "73a8e2ac311e660551733d74139138053df2de771703bbcc2930c4448e80196c",
@@ -2583,17 +2855,23 @@
         {
           "sha256": "4ba50ad94abaaae7410afd5a295a8c569774ed016cf689db6a707d14996ee527",
           "ext": "jpg",
-          "bytes": 321915
+          "bytes": 321915,
+          "uso": "descartado",
+          "motivo": "ambiente vazio ou detalhe sem pessoas nem atividade"
         },
         {
           "sha256": "b3811f96d0bbfd5b566272b2302d227b738b92cc2f4e27aca82a956ea430385d",
           "ext": "jpg",
-          "bytes": 295325
+          "bytes": 295325,
+          "uso": "descartado",
+          "motivo": "ambiente vazio ou detalhe sem pessoas nem atividade"
         },
         {
           "sha256": "d728d5ee3ce461c51797ba1762c9278cd1be97daf72273c5f0479e8e69dd8f54",
           "ext": "jpg",
-          "bytes": 276709
+          "bytes": 276709,
+          "uso": "descartado",
+          "motivo": "ambiente vazio ou detalhe sem pessoas nem atividade"
         },
         {
           "sha256": "a0800b1334d3b1ffad44b4e4055d8b42256b856eeb2bb06388f4d9369a608071",
@@ -2612,7 +2890,9 @@
         {
           "sha256": "46afa5f48d5513539ecae1e13677c9945da82b54aca8186578b5bdce2d119053",
           "ext": "jpg",
-          "bytes": 335613
+          "bytes": 335613,
+          "uso": "descartado",
+          "motivo": "cena sem relação clara com o evento"
         }
       ],
       "pendencias": [
@@ -2641,22 +2921,30 @@
         {
           "sha256": "f24ec26a2f8a28bfa43b4d52449f914f33eb8b424b447795053f55dd1ad23e38",
           "ext": "jpg",
-          "bytes": 1721627
+          "bytes": 1721627,
+          "uso": "similar",
+          "similarA": "a34fede329aa2ba75cdaadbc03699b3664ea7c6f083bd0af7a257c50c43c5582"
         },
         {
           "sha256": "2cd32627e5239a053cd9140694eec3d21a47f0c9524b05cabf1e1a914d5ec460",
           "ext": "jpg",
-          "bytes": 1771981
+          "bytes": 1771981,
+          "uso": "similar",
+          "similarA": "a34fede329aa2ba75cdaadbc03699b3664ea7c6f083bd0af7a257c50c43c5582"
         },
         {
           "sha256": "b8bcfc34404dcaf9b4e8a992a36cffecc04b8f58535cb31784c9e4c7aa5edf68",
           "ext": "jpg",
-          "bytes": 1813103
+          "bytes": 1813103,
+          "uso": "similar",
+          "similarA": "a34fede329aa2ba75cdaadbc03699b3664ea7c6f083bd0af7a257c50c43c5582"
         },
         {
           "sha256": "941babcaf3f800ed26ce204f2e5cf10e4ec93e8d7cd2a4da101ed3e26068d55d",
           "ext": "jpg",
-          "bytes": 1755857
+          "bytes": 1755857,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "2825c95328b9794d1ca54e6d0f7519be3e5fba5aaece16705fee6c7ab5f2ab16",
@@ -2668,7 +2956,9 @@
         {
           "sha256": "8af71f6220162caad939f390710d3cffeb8ede20f7837a2aa0c78add0acbd9cd",
           "ext": "jpg",
-          "bytes": 936597
+          "bytes": 936597,
+          "uso": "similar",
+          "similarA": "a34fede329aa2ba75cdaadbc03699b3664ea7c6f083bd0af7a257c50c43c5582"
         },
         {
           "sha256": "45c0bda25faa6d74c1f86ccf18c5a8738d741a974d1868dd2e8547217b3f830b",
@@ -2680,22 +2970,30 @@
         {
           "sha256": "a53bb53f6f701a46c1140425dc5225552ad3b4b0fd8ee9b1e2f684c46236e3c2",
           "ext": "jpg",
-          "bytes": 1540435
+          "bytes": 1540435,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "4b48cd7f8c76703795e631218059f3ff3e098013540f451b58dfcd260d1b2eb4",
           "ext": "jpg",
-          "bytes": 1538934
+          "bytes": 1538934,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "b827ce97906465576c50621a674f6128d0c15bd44b7f1068b4bd3456056c8246",
           "ext": "jpg",
-          "bytes": 1048756
+          "bytes": 1048756,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "45b5a2b6164d5028721b53540cc592efc41821cd57bdcd4dbb1199ddcdda45a9",
           "ext": "jpg",
-          "bytes": 1904590
+          "bytes": 1904590,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "106c5004078d8d35b876bffce81251d78a02b57dfdc519c5d9afed933b06b511",
@@ -2721,27 +3019,37 @@
         {
           "sha256": "b31525efa604054071a524f052094a7f2350bf69643d0998d6856a8a2a03a082",
           "ext": "jpg",
-          "bytes": 1521131
+          "bytes": 1521131,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "0b698f02efdd31dc8218e032388def6ecb8a1ea2c28e53adf48058fd631d412e",
           "ext": "jpg",
-          "bytes": 1413139
+          "bytes": 1413139,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "65826106c5279a8df41b0d358c922f466577dada41ba57071ef13e97050234d4",
           "ext": "jpg",
-          "bytes": 1480084
+          "bytes": 1480084,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "71347aa7c94ce68f6c5b2d19792123bd83aeb954cccc71fb2b353f201cf5cf8b",
           "ext": "jpg",
-          "bytes": 950866
+          "bytes": 950866,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "258a1297b4e6d2851918764c01beff187c88678501d46e97894c0554006295cb",
           "ext": "jpg",
-          "bytes": 911056
+          "bytes": 911056,
+          "uso": "similar",
+          "similarA": "a34fede329aa2ba75cdaadbc03699b3664ea7c6f083bd0af7a257c50c43c5582"
         },
         {
           "sha256": "3ab005c322c04e4aabe663a6cf760f9b7554c77ba0e10a917bdf6c440f1335db",
@@ -2753,12 +3061,16 @@
         {
           "sha256": "d3ea1d954c12f921a45d6031a16b62a7a7700fe6aebc66620072b908f5a995f0",
           "ext": "jpg",
-          "bytes": 2452858
+          "bytes": 2452858,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "2b09af8213bac868eef41e45c7ee49e0bfae012a29b1517bbd1d100e29bc291d",
           "ext": "jpg",
-          "bytes": 1943357
+          "bytes": 1943357,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "ea0d911e66cc63a2f2c52506c4a89cb3dd8492e6d73e8e88ddce28316bdca2d9",
@@ -2770,32 +3082,44 @@
         {
           "sha256": "cca866e36f91e81571ad08a95006725ed3c79ca2ad432ae5c186b499e793999c",
           "ext": "jpg",
-          "bytes": 1825848
+          "bytes": 1825848,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "eb0a71b8411517321fe8c01a5ef22a49e57ca1738a7c33058417475b88f39c20",
           "ext": "jpg",
-          "bytes": 1998137
+          "bytes": 1998137,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "06043cc33092dd059ec79ce657564e8a0d1f4525a8f9ccc36f80597053a973d8",
           "ext": "jpg",
-          "bytes": 1618047
+          "bytes": 1618047,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "dc654e4a75a66c40b851504b35b4aacd85c7ce60db20574bde8797fc3c8e0227",
           "ext": "jpg",
-          "bytes": 1625791
+          "bytes": 1625791,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "c3d8023936f77bf8fa3489cd7b28e39955bcfd6d1d6a6d3053daf64c4959b4d8",
           "ext": "jpg",
-          "bytes": 1888991
+          "bytes": 1888991,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "68348c0296390e24cb19ed6504510a40d8ad85bc67fc85a1c2822ba287ab24e2",
           "ext": "jpg",
-          "bytes": 1849930
+          "bytes": 1849930,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "a3a41f916c9b66313060e85b91873ed205e33791064bcd052fc2d3bad137be80",
@@ -2807,12 +3131,16 @@
         {
           "sha256": "7cc34ca6c7dae298e8ed25461b2fd496755ec4ac6ce95fdab47fb6b2473fd1a8",
           "ext": "jpg",
-          "bytes": 1651972
+          "bytes": 1651972,
+          "uso": "similar",
+          "similarA": "a3a41f916c9b66313060e85b91873ed205e33791064bcd052fc2d3bad137be80"
         },
         {
           "sha256": "a32e0f74b410ac1b22511b057c8a720407eb98070354433fdfc5205c953d1fae",
           "ext": "jpg",
-          "bytes": 1828037
+          "bytes": 1828037,
+          "uso": "descartado",
+          "motivo": "documento, comprovante ou anotação à vista (privacidade)"
         },
         {
           "sha256": "1b9122db0ee614088d9e034dbda21951c8be0e135fe84d351954eaf38000e7c0",
@@ -2824,47 +3152,65 @@
         {
           "sha256": "3a3376a18be815a60c1ea26b8f7467464ea18a1003663f8108efc4ac252b6a9f",
           "ext": "jpg",
-          "bytes": 2053158
+          "bytes": 2053158,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "6b7eb62b422a0299fc68e79aec4dde1cc6b68da88820665d9ec9cc91d7f83c21",
           "ext": "jpg",
-          "bytes": 1976260
+          "bytes": 1976260,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "1fd9fab42b33661d352a5c69e92d74cce2d5d4d8bf0d7615bc8caf0cb5ec1bdd",
           "ext": "jpg",
-          "bytes": 2042028
+          "bytes": 2042028,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "7f6b84341e59d8f5a4978751a83c4c319d2f95b14b0df3691af697741b892e95",
           "ext": "jpg",
-          "bytes": 1949761
+          "bytes": 1949761,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "2f5ea3c769454edce836605e4eb43c9a4c3e21b7d9bdcb691c81e4a2db8fc8b2",
           "ext": "jpg",
-          "bytes": 1831789
+          "bytes": 1831789,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "636b2e705cfb1581f4c51095e68246a6f55a6c2d9226d730ca2ce7e750eeba5b",
           "ext": "jpg",
-          "bytes": 1915724
+          "bytes": 1915724,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "0deb64c1cd64529f58c7dd8a7ea7b94e0c25f4508690b8ddccd4f6f32ecf38e3",
           "ext": "jpg",
-          "bytes": 1949504
+          "bytes": 1949504,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "e7d5ea907f4ba2d35debaba2359dba0286a53cbcf4b00b05bb9bd3f9e91be24b",
           "ext": "jpg",
-          "bytes": 971596
+          "bytes": 971596,
+          "uso": "similar",
+          "similarA": "a34fede329aa2ba75cdaadbc03699b3664ea7c6f083bd0af7a257c50c43c5582"
         },
         {
           "sha256": "af151aac450697c4071c103db2d5f0cde8180b2f5d1c9ec8cab27fc7630f9401",
           "ext": "jpg",
-          "bytes": 945778
+          "bytes": 945778,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "5c5d62407aaf66ad253fbb7b8e846bad2505ab67bd1d7bc3c4e6d9ce79face35",
@@ -2876,22 +3222,30 @@
         {
           "sha256": "78ab48e11793b6bdb0c9e2a909659ea4e77e7044a11cd932fe2b790eefdfaa2a",
           "ext": "jpg",
-          "bytes": 938644
+          "bytes": 938644,
+          "uso": "similar",
+          "similarA": "af151aac450697c4071c103db2d5f0cde8180b2f5d1c9ec8cab27fc7630f9401"
         },
         {
           "sha256": "ae81c4e69a47ab0b3e46d04ab2ebe32513514c092c00ab32ce98d04fcc0f9be1",
           "ext": "jpg",
-          "bytes": 2514706
+          "bytes": 2514706,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "223c3311054d927771a0a123521c23d79b4edba5ef5e79cabecc8e5916c4c895",
           "ext": "jpg",
-          "bytes": 2570976
+          "bytes": 2570976,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "fb168345868b061c2bd4ced66f4c9bd89cda38dda2ceae4492c5227728b9f175",
           "ext": "jpg",
-          "bytes": 1996335
+          "bytes": 1996335,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "dbcef91403562bfd226ce8b354d6ebdde0d77b7f232170200c37f75f4e681669",
@@ -2910,17 +3264,23 @@
         {
           "sha256": "b732faa34b41d3cccb342edd8721840bb350c32adecd98e53d891814c653f0fb",
           "ext": "jpg",
-          "bytes": 2144065
+          "bytes": 2144065,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "29cf73e27c83d9017ab19aad4490f47425f42bddb74ca3af24cd6aabcb3c4791",
           "ext": "jpg",
-          "bytes": 2196658
+          "bytes": 2196658,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "b92326c7ce65825c9f91f8bc9ef40f5a5525c16e063c7ec9a06cf1444af96cf2",
           "ext": "jpg",
-          "bytes": 772973
+          "bytes": 772973,
+          "uso": "similar",
+          "similarA": "af151aac450697c4071c103db2d5f0cde8180b2f5d1c9ec8cab27fc7630f9401"
         },
         {
           "sha256": "2119024c94126371f918370901a6caa897d3ac3bcae2deefc4f9aae43be103da",
@@ -2932,7 +3292,9 @@
         {
           "sha256": "0cca08325f431257cee75adef97ccb03eb2eb3a16e214364ada6a9cfceec330a",
           "ext": "jpg",
-          "bytes": 887049
+          "bytes": 887049,
+          "uso": "similar",
+          "similarA": "af151aac450697c4071c103db2d5f0cde8180b2f5d1c9ec8cab27fc7630f9401"
         },
         {
           "sha256": "d1462e4aae564bbdf3739af766bd5af669598a993b711ac1b158c8ad21446817",
@@ -2944,97 +3306,135 @@
         {
           "sha256": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142",
           "ext": "jpg",
-          "bytes": 2499718
+          "bytes": 2499718,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "ea266d5d790faa73aab30d8e262a63b882127b45593d8b5663d02649189cc71d",
           "ext": "jpg",
-          "bytes": 2458609
+          "bytes": 2458609,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "f8e9eb977a3e5aa81385f2630fd5070a2e856b9aa28bca37bf56f1ba43385c5a",
           "ext": "jpg",
-          "bytes": 2110487
+          "bytes": 2110487,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "85e946d0440b0551784a3c1aed4e260d60483b2cbf1251a0536413045593a443",
           "ext": "jpg",
-          "bytes": 1887290
+          "bytes": 1887290,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "f5da8f729d9de6b9df86c57bf5b9fd91818943636ab5ba6cc485f4ba009d9874",
           "ext": "jpg",
-          "bytes": 1945525
+          "bytes": 1945525,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "6eed544f7cfc49fdd208e2c9fea1ad19ac9a0d8de672df1773ee89cae17a4950",
           "ext": "jpg",
-          "bytes": 847062
+          "bytes": 847062,
+          "uso": "similar",
+          "similarA": "af151aac450697c4071c103db2d5f0cde8180b2f5d1c9ec8cab27fc7630f9401"
         },
         {
           "sha256": "2b29eb09069c60afd971f654844e0aa25d7254014d1ff39029f96e8dc8de9956",
           "ext": "jpg",
-          "bytes": 790006
+          "bytes": 790006,
+          "uso": "similar",
+          "similarA": "af151aac450697c4071c103db2d5f0cde8180b2f5d1c9ec8cab27fc7630f9401"
         },
         {
           "sha256": "419f0df55cee666faee4ea5af53e544f04ee291b3989035014f1292ecf504a84",
           "ext": "jpg",
-          "bytes": 1914800
+          "bytes": 1914800,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "da1d4c368be6ff23aa7b7687a67359a9b05ffdd7e8c96b0518cba239a835f5e4",
           "ext": "jpg",
-          "bytes": 1881403
+          "bytes": 1881403,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "fe30c929e7e147018155d6fcdd9235f7880f003f93e6930fe14cea3b3e6dcc07",
           "ext": "jpg",
-          "bytes": 1959889
+          "bytes": 1959889,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "78d28b37a78de53f2a0b6f85f4dc898370546c48d42500a71c3562682fcc5b50",
           "ext": "jpg",
-          "bytes": 1710664
+          "bytes": 1710664,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "1f45f8a2bdac392711329e440621ad7086d2fff6c4c78fbec73dec4dfe98b309",
           "ext": "jpg",
-          "bytes": 1715834
+          "bytes": 1715834,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "9eb378f83c6e606bae9586464566d26dbae1c1623cdd41bf6d5a664668b87615",
           "ext": "jpg",
-          "bytes": 1884535
+          "bytes": 1884535,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "0697cb620920335732333dff186469570a7bb968fc98974da7854860885f4bac",
           "ext": "jpg",
-          "bytes": 1751062
+          "bytes": 1751062,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "a86a04738f76ce581ba4d6655e97b3e8c8ba440aff34b23e03dd6c596b605767",
           "ext": "jpg",
-          "bytes": 1918220
+          "bytes": 1918220,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "4cf750198273bd0d947b70dba8e9aa9f4f2ff49203592ed58e3ab3adc7cc9742",
           "ext": "jpg",
-          "bytes": 1655652
+          "bytes": 1655652,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "4c7f48308235dc3cb12d48dcd5d95585c82a439eb96d9329eb461193c4fa0f03",
           "ext": "jpg",
-          "bytes": 1918105
+          "bytes": 1918105,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "53af5ce6fea03a369cecd46d2518a15e568f1118de5163e0ed96247baec014e5",
           "ext": "jpg",
-          "bytes": 727733
+          "bytes": 727733,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "4ed10aedac436d553e0bd423c057b64f70dcdec8f24714f8ba5722a3e41afaf9",
           "ext": "jpg",
-          "bytes": 1427317
+          "bytes": 1427317,
+          "uso": "descartado",
+          "motivo": "documento, comprovante ou anotação à vista (privacidade)"
         },
         {
           "sha256": "7a2706efea5aaf068cda2d3949e3fbddfd5c0d70324251c138bd0d8f2cfc2734",
@@ -3053,17 +3453,23 @@
         {
           "sha256": "2cd860573421ab46f3f03b16bda649be61a58247ed29538bc1c2d0fc3d700e40",
           "ext": "jpg",
-          "bytes": 1563068
+          "bytes": 1563068,
+          "uso": "descartado",
+          "motivo": "documento, comprovante ou anotação à vista (privacidade)"
         },
         {
           "sha256": "ac3759acd01972ff10f8bf7eb8012b1294f29046d2be1abdf8d5860b3cb7f59c",
           "ext": "jpg",
-          "bytes": 1541300
+          "bytes": 1541300,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "c492870e75e1d3e79ede5f5db842cd4fd2772e9a8980c49c4ef69cb09de9cf1a",
           "ext": "jpg",
-          "bytes": 784457
+          "bytes": 784457,
+          "uso": "similar",
+          "similarA": "a34fede329aa2ba75cdaadbc03699b3664ea7c6f083bd0af7a257c50c43c5582"
         },
         {
           "sha256": "362953715a8796ec15221b306cf2315c47ee5cc5f57e3fbab14cc08fc944e638",
@@ -3082,12 +3488,16 @@
         {
           "sha256": "0856bd3cbf53d0a7fc4cb30f09c516c3a278028911cba2e91bd01cb5ed5f2853",
           "ext": "jpg",
-          "bytes": 1856195
+          "bytes": 1856195,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "21a7616fde3296bf088ae38e2bb2b7e8a91f938a6aa5a9655e8ce265f10181b0",
           "ext": "jpg",
-          "bytes": 1760013
+          "bytes": 1760013,
+          "uso": "similar",
+          "similarA": "a34fede329aa2ba75cdaadbc03699b3664ea7c6f083bd0af7a257c50c43c5582"
         },
         {
           "sha256": "9342516c361e7126544c81ad6dc12565da3f4ca6ed9013cfa52492e5858384aa",
@@ -3113,37 +3523,51 @@
         {
           "sha256": "c8155adb5fdb3b6237d9fea77201f29ee89a338ff1f36dcfac590a1ed32277c8",
           "ext": "jpg",
-          "bytes": 1768067
+          "bytes": 1768067,
+          "uso": "similar",
+          "similarA": "a34fede329aa2ba75cdaadbc03699b3664ea7c6f083bd0af7a257c50c43c5582"
         },
         {
           "sha256": "d0985d1a469b49de6a6aea5f8da2fc657b5cb1fe8539936feb3916b44103d661",
           "ext": "jpg",
-          "bytes": 933042
+          "bytes": 933042,
+          "uso": "similar",
+          "similarA": "a34fede329aa2ba75cdaadbc03699b3664ea7c6f083bd0af7a257c50c43c5582"
         },
         {
           "sha256": "1fe966d96e6816f390dc9b528cb3a9ade30254c0017168a7857ca041b9caeaf3",
           "ext": "jpg",
-          "bytes": 874137
+          "bytes": 874137,
+          "uso": "similar",
+          "similarA": "a34fede329aa2ba75cdaadbc03699b3664ea7c6f083bd0af7a257c50c43c5582"
         },
         {
           "sha256": "7dc75a5737eccfb2b09ae7c65fe2c8a1ba13d73a0c769e71208e5caa66ae7f54",
           "ext": "jpg",
-          "bytes": 1777074
+          "bytes": 1777074,
+          "uso": "similar",
+          "similarA": "a34fede329aa2ba75cdaadbc03699b3664ea7c6f083bd0af7a257c50c43c5582"
         },
         {
           "sha256": "6849c2d5609a2111cfe1c084119963a784253143d4a30111c02d19f85e05bfcd",
           "ext": "jpg",
-          "bytes": 1799637
+          "bytes": 1799637,
+          "uso": "similar",
+          "similarA": "a34fede329aa2ba75cdaadbc03699b3664ea7c6f083bd0af7a257c50c43c5582"
         },
         {
           "sha256": "9e1c8c81f18f02c52de7d09d704f0419fd28401465d0723d8eef63a191f73903",
           "ext": "jpg",
-          "bytes": 1837987
+          "bytes": 1837987,
+          "uso": "similar",
+          "similarA": "a34fede329aa2ba75cdaadbc03699b3664ea7c6f083bd0af7a257c50c43c5582"
         },
         {
           "sha256": "a03137320b828540331ac3e98db0b20411c8548b51fecc15feddda675f9b2077",
           "ext": "jpg",
-          "bytes": 1007794
+          "bytes": 1007794,
+          "uso": "similar",
+          "similarA": "a34fede329aa2ba75cdaadbc03699b3664ea7c6f083bd0af7a257c50c43c5582"
         },
         {
           "sha256": "f325eeeee0effcec2920bf33d74e7dcb97f7dc591e8665bb5b9508ecd5ea3e9e",
@@ -3162,32 +3586,44 @@
         {
           "sha256": "8aa107a94e12c10266fb5edf56f792d378e470b267bb692ff4354b3223ff009c",
           "ext": "jpg",
-          "bytes": 139859
+          "bytes": 139859,
+          "uso": "descartado",
+          "motivo": "divulgação de outro evento"
         },
         {
           "sha256": "885a910af38b01f33458c750b562b7e4ee4d8eb4e48343dfc1b93a80e6d5c233",
           "ext": "jpeg",
-          "bytes": 1291231
+          "bytes": 1291231,
+          "uso": "similar",
+          "similarA": "a34fede329aa2ba75cdaadbc03699b3664ea7c6f083bd0af7a257c50c43c5582"
         },
         {
           "sha256": "3247b6a9ffa5cf70f37bbf376777d0447034a6d7f8c5e3a8f477b7f43ad1a64d",
           "ext": "jpeg",
-          "bytes": 1311832
+          "bytes": 1311832,
+          "uso": "similar",
+          "similarA": "a34fede329aa2ba75cdaadbc03699b3664ea7c6f083bd0af7a257c50c43c5582"
         },
         {
           "sha256": "e981f6d403ec51ffcccb0e062b6ae3799f10d726826f1d0da371e1aa42198bd9",
           "ext": "jpeg",
-          "bytes": 1172058
+          "bytes": 1172058,
+          "uso": "similar",
+          "similarA": "a34fede329aa2ba75cdaadbc03699b3664ea7c6f083bd0af7a257c50c43c5582"
         },
         {
           "sha256": "43cb50da8c57d08164959bdb3a8299c12c3c9e0761a5a52d37d43a441f061c5b",
           "ext": "jpeg",
-          "bytes": 1133669
+          "bytes": 1133669,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "a6bbe025b868c9b5327375fa113c3e6965fb53d7805ff5f81a6d360bdb22458f",
           "ext": "jpeg",
-          "bytes": 1534518
+          "bytes": 1534518,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "8703026efb054bb574f9ba5452910c7f7b7551440de48fe49b9b72a91a4fbd81",
@@ -3199,22 +3635,30 @@
         {
           "sha256": "4147b44042e27d2b821cc1433ed4b1edc1757408d67ba7b63e8e11dbd9ebde13",
           "ext": "jpeg",
-          "bytes": 1149601
+          "bytes": 1149601,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "0a7c18e94a90b244694cf3b592ddb2227c7eea3637f2c43fdc112e23e159dea4",
           "ext": "jpeg",
-          "bytes": 1498911
+          "bytes": 1498911,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "d45a9d5b91c8ced1cda32eda2a6b58fca53a0e0968235b2f72c045022529e890",
           "ext": "jpeg",
-          "bytes": 1300131
+          "bytes": 1300131,
+          "uso": "similar",
+          "similarA": "cf968c53e29ddf25282aaa429bdd6db26d6b803b483d3c3c7dc29077387f9142"
         },
         {
           "sha256": "956ac56b229709d775297654a026d90883f2eaca6727335668be2a2d0f39bcc8",
           "ext": "jpeg",
-          "bytes": 1339998
+          "bytes": 1339998,
+          "uso": "descartado",
+          "motivo": "selfie do autor sem a atividade do evento"
         },
         {
           "sha256": "1a30bacf86e3e9bf707117323fffdac7a3f540062f621a7c0f7692d1e86c4e8d",
@@ -3226,7 +3670,9 @@
         {
           "sha256": "b46afaf9a206b1376d301632a68d9db16cf949f9e679d16772d3567f3a2393bc",
           "ext": "jpg",
-          "bytes": 2011
+          "bytes": 2011,
+          "uso": "descartado",
+          "motivo": "ícone sem conteúdo"
         },
         {
           "sha256": "8ecc89340a359103f02dc45e3fab6acbe1a4512340b6c6636c60e9052941d02a",
@@ -3238,27 +3684,37 @@
         {
           "sha256": "def6b597af2d92ef67ccace219c4cdf2e27b86472acb7730b1f1b118984ecad0",
           "ext": "jpg",
-          "bytes": 245956
+          "bytes": 245956,
+          "uso": "similar",
+          "similarA": "b2ede956b898b48502cb7432adf0b94213136c64184c6b851aa4e7cc465d733b"
         },
         {
           "sha256": "1706bbc04d6790e81a48a08649dcd686ca6b6ebcaa5ac8e828525066d381258c",
           "ext": "jpg",
-          "bytes": 210148
+          "bytes": 210148,
+          "uso": "similar",
+          "similarA": "9fc312e9adc043f9e7a9be8f8da69e3a448eec845801ebc8ab1712b78a293ff3"
         },
         {
           "sha256": "87e3f387fd8270df16ae9c8b0070ec59a73b4c996e90d1d7ad48db501f623512",
           "ext": "jpg",
-          "bytes": 201410
+          "bytes": 201410,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "cdab9ba49752469dd891528ffbc36476538d4ab584cf25942e9410ca392273ba",
           "ext": "jpg",
-          "bytes": 234022
+          "bytes": 234022,
+          "uso": "similar",
+          "similarA": "9fc312e9adc043f9e7a9be8f8da69e3a448eec845801ebc8ab1712b78a293ff3"
         },
         {
           "sha256": "9257e62bd0bb521d5fa7c88bfd45f1728a6973411df05d2b32182a6f85463472",
           "ext": "jpg",
-          "bytes": 224461
+          "bytes": 224461,
+          "uso": "similar",
+          "similarA": "fac2df22f8d2262cb167299d24fb02d330ae35bc13811a7ea9f78b1ad85ddf75"
         },
         {
           "sha256": "056fbf5e8523ed39d7d496702112be1fbac900855d3213b00b6bc63c1d61d675",
@@ -3270,17 +3726,23 @@
         {
           "sha256": "c4dac293ca8f6dac92bcf31b852391ef6781dfa8d733e41626f766ced0775a9e",
           "ext": "jpg",
-          "bytes": 203879
+          "bytes": 203879,
+          "uso": "similar",
+          "similarA": "fac2df22f8d2262cb167299d24fb02d330ae35bc13811a7ea9f78b1ad85ddf75"
         },
         {
           "sha256": "f813b17f3a99158ee4d302cf3ea7fd60f6cd72d0cf01e586ce9f380566d7a8ce",
           "ext": "jpeg",
-          "bytes": 1143190
+          "bytes": 1143190,
+          "uso": "similar",
+          "similarA": "a34fede329aa2ba75cdaadbc03699b3664ea7c6f083bd0af7a257c50c43c5582"
         },
         {
           "sha256": "ae03bd1438a2a4f2976e41a278a4ad540d6ddbd0a67c7ddc3afceecc02d729e7",
           "ext": "jpg",
-          "bytes": 79603
+          "bytes": 79603,
+          "uso": "similar",
+          "similarA": "9fc312e9adc043f9e7a9be8f8da69e3a448eec845801ebc8ab1712b78a293ff3"
         },
         {
           "sha256": "f0a795b997b30cb56edfe8692b2b3d214f392102bfdb5d21e7e0cb73ceba0fe3",
@@ -3292,37 +3754,51 @@
         {
           "sha256": "b6315a6d188e02815603031483b27be05322734b103161544ad4a75372a2b5de",
           "ext": "jpg",
-          "bytes": 88468
+          "bytes": 88468,
+          "uso": "similar",
+          "similarA": "b2ede956b898b48502cb7432adf0b94213136c64184c6b851aa4e7cc465d733b"
         },
         {
           "sha256": "08c8053502a6a941f9426e238c5069b5f5027cc971e632b7557b548cd6ee83c2",
           "ext": "jpg",
-          "bytes": 95171
+          "bytes": 95171,
+          "uso": "similar",
+          "similarA": "fac2df22f8d2262cb167299d24fb02d330ae35bc13811a7ea9f78b1ad85ddf75"
         },
         {
           "sha256": "f24e0bbd87194362a28839e7098ebac02e548eb860cab040fbaad1104402a502",
           "ext": "jpg",
-          "bytes": 199631
+          "bytes": 199631,
+          "uso": "similar",
+          "similarA": "b2ede956b898b48502cb7432adf0b94213136c64184c6b851aa4e7cc465d733b"
         },
         {
           "sha256": "9a247b8884c6f3b39ef453e9d76509841c16d093438e3434df885e4a7d0800fd",
           "ext": "jpg",
-          "bytes": 218869
+          "bytes": 218869,
+          "uso": "similar",
+          "similarA": "9fc312e9adc043f9e7a9be8f8da69e3a448eec845801ebc8ab1712b78a293ff3"
         },
         {
           "sha256": "047dfc8ee17f0cd175abb9df18cfc83e945fd0d8e30e1bf720a6e43a768fb312",
           "ext": "jpg",
-          "bytes": 199968
+          "bytes": 199968,
+          "uso": "similar",
+          "similarA": "9fc312e9adc043f9e7a9be8f8da69e3a448eec845801ebc8ab1712b78a293ff3"
         },
         {
           "sha256": "246a81fb4279f7e944661a9a3689400047552821461476e1a0136c1f0d7a0c27",
           "ext": "jpg",
-          "bytes": 192647
+          "bytes": 192647,
+          "uso": "similar",
+          "similarA": "9fc312e9adc043f9e7a9be8f8da69e3a448eec845801ebc8ab1712b78a293ff3"
         },
         {
           "sha256": "c10bcf8c0f2139fc564d73ea29b4812fb8ea9824718849ee1939128675f0b2fe",
           "ext": "jpg",
-          "bytes": 211170
+          "bytes": 211170,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "fac2df22f8d2262cb167299d24fb02d330ae35bc13811a7ea9f78b1ad85ddf75",
@@ -3334,17 +3810,23 @@
         {
           "sha256": "3f77368075ce91072188d22a2950975eff6f22be97769bc8e964592524b3a145",
           "ext": "jpg",
-          "bytes": 199315
+          "bytes": 199315,
+          "uso": "similar",
+          "similarA": "fac2df22f8d2262cb167299d24fb02d330ae35bc13811a7ea9f78b1ad85ddf75"
         },
         {
           "sha256": "105b52f31851fb9485ecb4412f10efe45f6391483bd6a2e4545a2642ef2d7ed1",
           "ext": "jpg",
-          "bytes": 169423
+          "bytes": 169423,
+          "uso": "similar",
+          "similarA": "9fc312e9adc043f9e7a9be8f8da69e3a448eec845801ebc8ab1712b78a293ff3"
         },
         {
           "sha256": "b2ede956b898b48502cb7432adf0b94213136c64184c6b851aa4e7cc465d733b",
           "ext": "jpg",
-          "bytes": 250144
+          "bytes": 250144,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "c4f5cd9dfc9cf2181b09235c418c067fb4422a1e252a514dbc8b5c2914c65fdc",
@@ -3356,17 +3838,23 @@
         {
           "sha256": "83cb9ef5c973feba553597fe7734f74d83c5807e06079f1afd36850b7a15337f",
           "ext": "jpg",
-          "bytes": 230473
+          "bytes": 230473,
+          "uso": "similar",
+          "similarA": "9fc312e9adc043f9e7a9be8f8da69e3a448eec845801ebc8ab1712b78a293ff3"
         },
         {
           "sha256": "6d44b356b216494ed2c487260b53af3798c7f342e22705eb7d7a35ecac15f5b5",
           "ext": "jpg",
-          "bytes": 215858
+          "bytes": 215858,
+          "uso": "similar",
+          "similarA": "9fc312e9adc043f9e7a9be8f8da69e3a448eec845801ebc8ab1712b78a293ff3"
         },
         {
           "sha256": "760d709a3c158aa1626feb070026c18caf887b9ce634192623f21b9a33d210c3",
           "ext": "jpg",
-          "bytes": 228183
+          "bytes": 228183,
+          "uso": "similar",
+          "similarA": "fac2df22f8d2262cb167299d24fb02d330ae35bc13811a7ea9f78b1ad85ddf75"
         },
         {
           "sha256": "e1152ddae17411c2e88beae08b0acff3985e428a2b7a5e5d79e21edd398a796c",
@@ -3385,37 +3873,51 @@
         {
           "sha256": "3b61f15fbc1218bbb59204a9022777e7981482491d564e09e76c664fa5ebf663",
           "ext": "jpg",
-          "bytes": 230934
+          "bytes": 230934,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "ee2371161ac0f865aad0650a9c7223d10678cc27418af0a381a6b5eac423059e",
           "ext": "jpg",
-          "bytes": 232695
+          "bytes": 232695,
+          "uso": "similar",
+          "similarA": "9fc312e9adc043f9e7a9be8f8da69e3a448eec845801ebc8ab1712b78a293ff3"
         },
         {
           "sha256": "bf5001d909e4fb7307d050def6b64bf8502e85315baa53b963f287cc0dbd6090",
           "ext": "jpg",
-          "bytes": 170348
+          "bytes": 170348,
+          "uso": "similar",
+          "similarA": "b2ede956b898b48502cb7432adf0b94213136c64184c6b851aa4e7cc465d733b"
         },
         {
           "sha256": "f625ffb6bc2474d5d8b17d36f6d8f46121e597e5710f7d0cd3f10030f5a66332",
           "ext": "jpg",
-          "bytes": 245891
+          "bytes": 245891,
+          "uso": "similar",
+          "similarA": "fac2df22f8d2262cb167299d24fb02d330ae35bc13811a7ea9f78b1ad85ddf75"
         },
         {
           "sha256": "7ab0e4316375370f409633e1d32b86bf67983d162d3449b6fef496291aea17a0",
           "ext": "jpg",
-          "bytes": 163903
+          "bytes": 163903,
+          "uso": "similar",
+          "similarA": "b2ede956b898b48502cb7432adf0b94213136c64184c6b851aa4e7cc465d733b"
         },
         {
           "sha256": "85d26c773ac1f88b8b6afc0c5e684cd90581ebf797d4db97e118ffbee65b6bcf",
           "ext": "jpg",
-          "bytes": 163273
+          "bytes": 163273,
+          "uso": "similar",
+          "similarA": "b2ede956b898b48502cb7432adf0b94213136c64184c6b851aa4e7cc465d733b"
         },
         {
           "sha256": "daf7fb0bbe107f3975b6cfecef91f4cc4f4432681688ada9f95726e3175a6a7a",
           "ext": "jpg",
-          "bytes": 155950
+          "bytes": 155950,
+          "uso": "similar",
+          "similarA": "b2ede956b898b48502cb7432adf0b94213136c64184c6b851aa4e7cc465d733b"
         },
         {
           "sha256": "c9e048e353240d69e12fa7d6f798e7ef108d50aeca6d4c73004bc39aaa66563b",
@@ -3434,57 +3936,79 @@
         {
           "sha256": "22d13ef926120f6919c8cc41a132f2b44841fca504ccc1a589b7f858f0f5f94a",
           "ext": "jpg",
-          "bytes": 157974
+          "bytes": 157974,
+          "uso": "similar",
+          "similarA": "b2ede956b898b48502cb7432adf0b94213136c64184c6b851aa4e7cc465d733b"
         },
         {
           "sha256": "68fdf4e77113811f93caab8843532e62a9af573b1b1b2bb2a58130ddc3b22a11",
           "ext": "jpg",
-          "bytes": 154142
+          "bytes": 154142,
+          "uso": "similar",
+          "similarA": "b2ede956b898b48502cb7432adf0b94213136c64184c6b851aa4e7cc465d733b"
         },
         {
           "sha256": "a8efc29a3ff71907bf3c50d07c86c9811548255d29135e965720ad38d0cbe488",
           "ext": "jpg",
-          "bytes": 147603
+          "bytes": 147603,
+          "uso": "similar",
+          "similarA": "b2ede956b898b48502cb7432adf0b94213136c64184c6b851aa4e7cc465d733b"
         },
         {
           "sha256": "b0127cc5789309d97236b5205cfc7f5ae3a09c0f4a5f7d90190804a43cf72826",
           "ext": "jpg",
-          "bytes": 146113
+          "bytes": 146113,
+          "uso": "similar",
+          "similarA": "b2ede956b898b48502cb7432adf0b94213136c64184c6b851aa4e7cc465d733b"
         },
         {
           "sha256": "44e5c2d7297ab24f440e115b6d37367c4a6cd26767b1ef9ea4601ba0df2ee2f1",
           "ext": "jpg",
-          "bytes": 153737
+          "bytes": 153737,
+          "uso": "similar",
+          "similarA": "b2ede956b898b48502cb7432adf0b94213136c64184c6b851aa4e7cc465d733b"
         },
         {
           "sha256": "5f3c8b827c99ac2565946ae5e3dd66f616024453b2405d55260b96d505c5b1d9",
           "ext": "jpg",
-          "bytes": 163639
+          "bytes": 163639,
+          "uso": "similar",
+          "similarA": "b2ede956b898b48502cb7432adf0b94213136c64184c6b851aa4e7cc465d733b"
         },
         {
           "sha256": "687e730251af985dd0a11aefbf2e9ac67f5dc3a02cc01e9ffa2c9d1d334f44df",
           "ext": "jpg",
-          "bytes": 148486
+          "bytes": 148486,
+          "uso": "similar",
+          "similarA": "b2ede956b898b48502cb7432adf0b94213136c64184c6b851aa4e7cc465d733b"
         },
         {
           "sha256": "f55bfcc8930b98965bbb2ef162d1546ef608796b3bb8fc5c360cdbff76ebce1d",
           "ext": "jpg",
-          "bytes": 154119
+          "bytes": 154119,
+          "uso": "similar",
+          "similarA": "b2ede956b898b48502cb7432adf0b94213136c64184c6b851aa4e7cc465d733b"
         },
         {
           "sha256": "4ee6ee310dcb297214769e3ab6c32037ea653c9e368717e4db3fd1723b4ee8d1",
           "ext": "jpg",
-          "bytes": 149453
+          "bytes": 149453,
+          "uso": "similar",
+          "similarA": "9fc312e9adc043f9e7a9be8f8da69e3a448eec845801ebc8ab1712b78a293ff3"
         },
         {
           "sha256": "bac8a2303bc33e3b30f28d3212368796d3722f121154c43f341dcba73f010ea6",
           "ext": "jpg",
-          "bytes": 206175
+          "bytes": 206175,
+          "uso": "similar",
+          "similarA": "fac2df22f8d2262cb167299d24fb02d330ae35bc13811a7ea9f78b1ad85ddf75"
         },
         {
           "sha256": "ccf25d996fedfe6365d4badeca2a847b0fc8c388c565a32211686266a8d257ea",
           "ext": "jpg",
-          "bytes": 222789
+          "bytes": 222789,
+          "uso": "similar",
+          "similarA": "fac2df22f8d2262cb167299d24fb02d330ae35bc13811a7ea9f78b1ad85ddf75"
         },
         {
           "sha256": "cfa5054a54418298857753adeacef6e36e9b90d6989f0a7d000781f593274b00",
@@ -3496,7 +4020,9 @@
         {
           "sha256": "fb842f60a2556cb3478d68d28d901e871d467eb4c14c16b92e7f8ca675e0cc4c",
           "ext": "jpg",
-          "bytes": 229769
+          "bytes": 229769,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "9fc312e9adc043f9e7a9be8f8da69e3a448eec845801ebc8ab1712b78a293ff3",
@@ -3508,27 +4034,37 @@
         {
           "sha256": "bca24d8eae79c404754a31f770e872a65fd8a02e5bf0e86f856c60255d811013",
           "ext": "jpg",
-          "bytes": 140111
+          "bytes": 140111,
+          "uso": "similar",
+          "similarA": "9fc312e9adc043f9e7a9be8f8da69e3a448eec845801ebc8ab1712b78a293ff3"
         },
         {
           "sha256": "ed0ff9f7c11d2a34365306b0da758411f7492a71fdfe0a27a447411c6e2b53c5",
           "ext": "jpg",
-          "bytes": 163158
+          "bytes": 163158,
+          "uso": "similar",
+          "similarA": "9fc312e9adc043f9e7a9be8f8da69e3a448eec845801ebc8ab1712b78a293ff3"
         },
         {
           "sha256": "e09215e5af9ce154d82e1f07683ddcd7a8fafa69475dff0ae9a937d9cbffb7ce",
           "ext": "jpg",
-          "bytes": 169648
+          "bytes": 169648,
+          "uso": "similar",
+          "similarA": "9fc312e9adc043f9e7a9be8f8da69e3a448eec845801ebc8ab1712b78a293ff3"
         },
         {
           "sha256": "8bc17501de0871d04f884b6c18005519290c35be0b1a0e770cfff6037c1ccb5a",
           "ext": "jpg",
-          "bytes": 174248
+          "bytes": 174248,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "9c3996627996c989c4d0b933dcd9af98156645ac595d975675a00853b1bc8d58",
           "ext": "jpg",
-          "bytes": 161805
+          "bytes": 161805,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "935d76b9c5dd456469cce36fb254048310e18bb5b14e03e6efb517bf313c3764",
@@ -3561,7 +4097,9 @@
         {
           "sha256": "e56c9c7fe9271671c483f14fb397493d317549d097f27ce323fd65290637761f",
           "ext": "jpg",
-          "bytes": 86935
+          "bytes": 86935,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/fator-s-challenge"
         },
         {
           "sha256": "df42d96d9f1a3ba89ace889b92993a00ec4daa820278aea20be6980c9c4f6204",
@@ -3594,27 +4132,37 @@
         {
           "sha256": "d27b7ed5fb68d337b89935647a13b7bd530205051c614c295f97161e56a376f3",
           "ext": "webp",
-          "bytes": 83058
+          "bytes": 83058,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "9eff1909bdbf025bd2a401fa1bb964fd5ba42fd1a65c679b1b43e6592555ee6a",
           "ext": "webp",
-          "bytes": 77776
+          "bytes": 77776,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "b8e625ba84e1c8854745ba1c1ab465eea28fb1ec7d0cbb63d230b4bbc3f3ea8e",
           "ext": "webp",
-          "bytes": 68522
+          "bytes": 68522,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "26851f5e7be3a4b835025801f1dcba68c6a7a1ee0972a1fdbd9c0992efa655eb",
           "ext": "webp",
-          "bytes": 77972
+          "bytes": 77972,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "2f16c8c6e5da8c76fe1e0f9039beeeb375bf347d4c72d2c124b985014f029739",
           "ext": "webp",
-          "bytes": 40232
+          "bytes": 40232,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "42e50ceb3b8ac5d15c2ad12c7990058eca591389ae844c0d809ff8cdf26859a3",
@@ -3626,7 +4174,9 @@
         {
           "sha256": "edf4c13e4d18adc78b31faa9b6dedf8c8e848b9d01377c23cb8cb402cbfd358b",
           "ext": "jpg",
-          "bytes": 500573
+          "bytes": 500573,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "7a593cf0596698cb12f0a5805fc5ae2e48867b5eacc07529932a52f10846dbb1",
@@ -3638,22 +4188,30 @@
         {
           "sha256": "8509fea407dec0f4440de9f99c0ec1eb1cde6f356e5ad5d1ed5727045614d0c7",
           "ext": "jpg",
-          "bytes": 644733
+          "bytes": 644733,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "d7a26b8f7f531bf860488a71b4293151eb19a203b57b302435a32f5d4de1370f",
           "ext": "jpg",
-          "bytes": 237227
+          "bytes": 237227,
+          "uso": "descartado",
+          "motivo": "cartão de contato de terceiro (privacidade)"
         },
         {
           "sha256": "86f2fab5c311715ad707c27a85120c367bf536cb22d3c352e879f459a3a91963",
           "ext": "jpg",
-          "bytes": 1110269
+          "bytes": 1110269,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "9c77324001978ea1cf6efea5f30a1e3a31c10bf0799d1f3dbe36b3dfe879a7a6",
           "ext": "jpg",
-          "bytes": 398165
+          "bytes": 398165,
+          "uso": "descartado",
+          "motivo": "captura de tela de rede social ou app, com nomes de terceiros"
         },
         {
           "sha256": "b8dfe2e87f6077a98723d880a805a9bcaea1d9d09a42744d9c467563d488ad2b",
@@ -3780,17 +4338,23 @@
         {
           "sha256": "e0d0128d389c9507f0d5fe034b2f9deb7b81cbf6618bd13874842c0042b29979",
           "ext": "jpg",
-          "bytes": 2127835
+          "bytes": 2127835,
+          "uso": "exibido",
+          "destino": "bootcamps/eventos/tdc-innovation"
         },
         {
           "sha256": "34dd876ff2fd012e82ff3c2356e7cdb04c910277c7700f688353fa176d5cccad",
           "ext": "jpg",
-          "bytes": 654386
+          "bytes": 654386,
+          "uso": "similar",
+          "similarA": "eb3e94b2f55cc04616c25ec00bfb437612cf92771614c19c5527587d4f8fb859"
         },
         {
           "sha256": "16f405d7991b8c8e617c200def80518efd3540ec637db781cbdba0aa6ff7f1b2",
           "ext": "jpg",
-          "bytes": 662665
+          "bytes": 662665,
+          "uso": "similar",
+          "similarA": "eb3e94b2f55cc04616c25ec00bfb437612cf92771614c19c5527587d4f8fb859"
         },
         {
           "sha256": "eb3e94b2f55cc04616c25ec00bfb437612cf92771614c19c5527587d4f8fb859",
@@ -3830,7 +4394,9 @@
         {
           "sha256": "de2a6df45ae632bf3a40e1d294f4652b1074cae3db593f5cd4f2f31f77742404",
           "ext": "jpg",
-          "bytes": 410716
+          "bytes": 410716,
+          "uso": "descartado",
+          "motivo": "mapa com endereço"
         },
         {
           "sha256": "251792ed4f78ba5808976b0e9fcb8e1ccff372f0c010b512bff095a519313ffd",
@@ -3842,7 +4408,9 @@
         {
           "sha256": "80b44ca96c2cd2c3c4e3726ecb131738ffec2c4e1490543b9908745fd255cd88",
           "ext": "jpg",
-          "bytes": 158703
+          "bytes": 158703,
+          "uso": "descartado",
+          "motivo": "formulário de inscrição de empresa patrocinadora"
         },
         {
           "sha256": "50a4eb7b096967392cf170b1e43edc0558365680bd872e88f3504d0c36e2bb0b",
@@ -10547,7 +11115,9 @@
         {
           "sha256": "c35e7b7f715027b36e0e7788c5ad5c4c2558dac3cf7709290d171b160bfb9a31",
           "ext": "avif",
-          "bytes": 10388
+          "bytes": 10388,
+          "uso": "referencia",
+          "motivo": "imagem do e-commerce do ex-empregador"
         },
         {
           "sha256": "dc02b498bdfcfdd735ad9d1fecd22cd858651a846410cac5b394f4e9ff34a764",
