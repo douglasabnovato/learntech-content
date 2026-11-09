@@ -25,7 +25,8 @@ Pasta local: `C:\douglasabnovato-github\mundo-learn-tech\`. O acervo bruto fica 
 
 ## Situação em 09/11/2026
 - **Uso por arquivo** (branch `feature/tasks-09-11-2026`): campo `uso` em cada arquivo do acervo (`exibido`, `fonte`, `similar`, `tecnico`, `bloqueado`, `descartado`, `pendente`), comandos `hd:imagens` e `hd:uso`, e `leva:status` exigindo zero pendentes. Primeira aplicação automática: 66 fotos `exibido` e 9 arquivos `tecnico`. Relatórios em `docs/processo/relatorios/` (06/11 e 09/11).
-- **Próximos passos do uso:** bloquear o material do ex-empregador (amostra para o autor), selecionar as fotos de evento, reler os documentos de fonte e decidir os vídeos.
+- **Issues do uso do hd** (label `acervo`): #12 bloqueio do ex-empregador (decisão do autor, 1.734 arquivos), #13 fotos de evento, #14 documentos de fonte, #15 vídeos (decisão do autor), #16 fase 1 do fluxo de agentes. #17 entregue: `hd:uso --vivo`, testes e cache do `hd:imagens` (12 s).
+- **Trabalho contínuo:** ciclo de cada sessão, prioridade e modelo do relatório de andamento em `como-trabalhamos.md`. Próxima issue sem dependência do autor: #16 (fase 1) e #13 (fotos de evento, com a seleção levada ao autor).
 
 ## Situação em 06/11/2026
 - **Fluxo de agentes, fase 0** (branch `feature/tasks-06-11-2026-b`): estados novos no acervo (`extraido`, `triado`, `produzido`, `exibido`), campos `triagem` e `etapas`, `docs/processo/agentes.md`, contratos dos quatro sites em `docs/contratos/` e `CLAUDE.md` nos cinco repositórios. Próxima: fase 1, triador e `hd:extrair`, com avaliação por gabarito.
