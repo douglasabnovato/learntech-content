@@ -2,7 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import type { z } from "zod";
-import { programaSchema, paginaSchema, PAGINAS, CAMPOS_RESUMO, areaSchema, type Programa, type Area } from "../../src/schemas/learn-tech";
+import { programaSchema, paginaSchema, PAGINAS, CAMPOS_RESUMO, areaSchema, fotoGaleriaSchema, type Programa, type Area } from "../../src/schemas/learn-tech";
 import { eventoSchema, type Evento } from "../../src/schemas/bootcamps";
 import { empresaSchema, vagaOuPerfilSchema, destaquesSchema, ferramentaSchema, modeloCurriculoSchema } from "../../src/schemas/career-tools";
 import { coberturaSchema, type Cobertura } from "../../src/schemas/cobertura";
@@ -141,7 +141,7 @@ function referenciasMidia(valor: unknown, achados: Set<string> = new Set()): Set
   return achados;
 }
 
-interface ItemBlog { id: string; title: string; blogURL?: string; tag?: string; readingTime?: string; lead?: string; body?: string[]; quote?: string; bodyContinued?: string[]; highlights?: { label?: string; description?: string }[] }
+interface ItemBlog { id: string; title: string; blogURL?: string; tag?: string; readingTime?: string; lead?: string; body?: string[]; quote?: string; bodyContinued?: string[]; highlights?: { label?: string; description?: string }[]; galeria?: unknown[] }
 
 /* Itens do blog (paginas/blog.json). */
 export function itensBlog(c: Conteudo): ItemBlog[] {
@@ -287,6 +287,10 @@ export function verificarIntegridade(c: Conteudo, pastaMidia: string): string[] 
   for (const b of itensBlog(c)) {
     const esperado = tempoDeLeitura(b);
     if (b.readingTime !== esperado) erros.push(`blog ${b.id}: readingTime "${b.readingTime}" deveria ser "${esperado}" (${PALAVRAS_POR_MINUTO} palavras/min)`);
+    /* Galeria do artigo (ADR 12): mesmo formato da do programa, com texto alternativo obrigatório. */
+    (b.galeria ?? []).forEach((foto, i) => {
+      if (!fotoGaleriaSchema.safeParse(foto).success) erros.push(`blog ${b.id}: foto ${i + 1} da galeria precisa de url e alt`);
+    });
   }
 
   /* Qualidade editorial do que é publicado. */

@@ -1,6 +1,16 @@
 {
   "id": 1005,
   "image": "/media/learn-tech/programas/1005.webp",
+  "galeria": [
+    {
+      "url": "/media/learn-tech/programas/1005-galeria-1.webp",
+      "alt": "Favoritos da trilha de conteúdo: anotar, questões de entrevista e testes técnicos"
+    },
+    {
+      "url": "/media/learn-tech/programas/1005-galeria-2.webp",
+      "alt": "Pastas de favoritos do Hack Dev: tarefas, faculdades, cursos, vagas, documentação, ferramentas e hospedagem"
+    }
+  ],
   "category": "Carreira e Soft Skills",
   "categoryFilter": "carreira-soft-skills",
   "title": "Hack Dev: Rotina, Trilha e Portfólio para a Primeira Vaga",

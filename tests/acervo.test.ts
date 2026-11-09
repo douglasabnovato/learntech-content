@@ -90,3 +90,20 @@ describe("acervo: destinos no formato projeto/recurso/id (#18)", () => {
     expect(errosDestinos(comDestinos(["learn-tech/programas/404", "bootcamps/eventos/gdg-jf"]))).toEqual([]);
   });
 });
+
+describe("galeria do programa e do artigo (ADR 12)", () => {
+  const { conteudo } = carregarConteudo(path.resolve(__dirname, "..", "content"));
+
+  it("aceita foto com alt e recusa foto sem alt", async () => {
+    const { fotoGaleriaSchema } = await import("../src/schemas/learn-tech");
+    expect(fotoGaleriaSchema.safeParse({ url: "/media/learn-tech/programas/1005-galeria-1.webp", alt: "Favoritos" }).success).toBe(true);
+    expect(fotoGaleriaSchema.safeParse({ url: "/media/x.webp", alt: "" }).success).toBe(false);
+  });
+
+  it("o programa 1005 e o artigo do Hack Dev têm galeria", () => {
+    const p = conteudo.programas.find((x) => x.id === 1005) as { galeria?: unknown[] } | undefined;
+    const b = (conteudo.paginas.blog as { itens: { id: string; galeria?: unknown[] }[] }).itens.find((x) => x.id === "hack-dev-rotina-e-trilha-para-a-primeira-vaga");
+    expect(p?.galeria?.length).toBe(2);
+    expect(b?.galeria?.length).toBe(1);
+  });
+});

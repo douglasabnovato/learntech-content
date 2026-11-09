@@ -1178,15 +1178,15 @@
           "sha256": "1b8c71054e93cbb266a9b708c340636ec7eb8a2e69455c888cb4df059c1aa6de",
           "ext": "jpg",
           "bytes": 94187,
-          "uso": "referencia",
-          "motivo": "captura do organizador do autor: base do programa 1005; programa e artigo têm uma imagem só"
+          "uso": "exibido",
+          "destino": "learn-tech/programas/1005"
         },
         {
           "sha256": "2ee1953569deb83a0bc25fd852bf36adfda1cd2012d94f481c8e488fb7b9099d",
           "ext": "jpg",
           "bytes": 69337,
-          "uso": "referencia",
-          "motivo": "captura do organizador do autor: base do programa 1005; programa e artigo têm uma imagem só"
+          "uso": "similar",
+          "similarA": "1b8c71054e93cbb266a9b708c340636ec7eb8a2e69455c888cb4df059c1aa6de"
         },
         {
           "sha256": "0587bd3831cb6f6f1b28ca146b2bc5eb7b132226428ccc9842c6bae036905e8d",
@@ -1199,8 +1199,8 @@
           "sha256": "81211c6e29f441eb43e130ebdbd18543f32dcb17189de258acd126fac10e91d9",
           "ext": "jpg",
           "bytes": 12990,
-          "uso": "referencia",
-          "motivo": "captura do organizador do autor: base do programa 1005; programa e artigo têm uma imagem só"
+          "uso": "exibido",
+          "destino": "learn-tech/programas/1005"
         },
         {
           "sha256": "54b09618c174b990a78f1fd46908008e888c5a1fdbe1d0851fc844363be83bc4",
@@ -1213,22 +1213,22 @@
           "sha256": "7e7e8e4121a970e2ec032d3adb29dc37fbac17b99778bb6f541b13986c9deb24",
           "ext": "jpg",
           "bytes": 98720,
-          "uso": "referencia",
-          "motivo": "captura do organizador do autor: base do programa 1005; programa e artigo têm uma imagem só"
+          "uso": "descartado",
+          "motivo": "dados de contato à vista (privacidade)"
         },
         {
           "sha256": "93247f0cdcbe648cf2e8f8f18a9e595060b0c77bf214d25bcb9b02d3703105ad",
           "ext": "jpg",
           "bytes": 50728,
-          "uso": "referencia",
-          "motivo": "captura do organizador do autor: base do programa 1005; programa e artigo têm uma imagem só"
+          "uso": "exibido",
+          "destino": "learn-tech/blog/hack-dev-rotina-e-trilha-para-a-primeira-vaga"
         },
         {
           "sha256": "711e4044ce73c8fa0595c594be6cfe5c98e575aa639ce0d6f3e5e4e1551104fc",
           "ext": "jpg",
           "bytes": 299327,
-          "uso": "referencia",
-          "motivo": "captura do organizador do autor: base do programa 1005; programa e artigo têm uma imagem só"
+          "uso": "descartado",
+          "motivo": "nome de terceiro à vista (privacidade)"
         },
         {
           "sha256": "99270c0c8294a65e477431df51ba1053f01e80602bd5bb3e0293b5f541078dd0",
