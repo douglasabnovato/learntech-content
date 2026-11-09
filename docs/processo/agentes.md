@@ -88,13 +88,15 @@ Cada produtor carrega só o contrato do seu projeto. Assim o tom de um site não
 | Fase | Entrega | Pronto quando |
 |---|---|---|
 | 0. Contratos (06/11/2026) | Estados novos no schema, `docs/contratos/`, `CLAUDE.md` nos cinco repositórios | `validar` e testes verdes |
-| 1. Triador | `hd:extrair`, agente triador e avaliação com gabarito (itens já triados do acervo) | Acerto de pelo menos 80% em direitos e destinos |
+| 1. Triador | `hd:extrair`, agente triador e avaliação com gabarito (itens já triados do acervo) | Entregue em 09/11/2026: o triador é **proponente** e o A1 corrige (decisão do autor). O gabarito continua como métrica por lote |
 
 ### Fase 1 na prática (09/11/2026)
 1. `npm run hd:extrair`: texto e metadados de cada arquivo em `hd/.extraido/`, fora do git. O EXIF sai sem GPS. Com `-- --marcar`, itens `novo` passam a `extraido`.
 2. O agente `triador` (`.claude/agents/triador.md`) lê a extração e as regras, e grava uma proposta por item em `hd/.extraido/propostas/<id>.json`.
 3. `npm run a1`: tabela do A1 com as propostas. Confiança abaixo de 0,7 vira pergunta ao autor.
 4. `npm run triador:gabarito`: mede o acerto contra os itens já decididos. O triador roda sem ler o `acervo.json`. Regras em `scripts/lib/gabarito.mjs`; relatório com `-- --relatorio`.
+
+**Decisão do autor (09/11/2026): o triador é proponente.** Em três rodadas (42 itens), o acerto foi de 76% em direitos e 67% em destinos, abaixo da meta inicial de 80% (`relatorios/triador-gabarito-2026-11-09-rodada-3.md`). A ficha do triador nunca vai direto para o acervo: o autor a confirma ou corrige no A1, e as fichas com confiança abaixo de 0,7 viram pergunta. O acerto contra o gabarito segue como métrica por lote, para acompanhar a evolução, e não bloqueia a fase.
 | 2. Produtores | Primeiro o do bootcamps, depois os outros três e o revisor | Um item de cada site aprovado no A2 |
 | 3. Verificador | Script de exibição e CI agendada (issue #10) | Relatório "N de N visíveis" gerado sozinho |
 | 4. Piloto | `6-tech_community/gdg_jf` de ponta a ponta | Itens `exibido`, métricas medidas, retrospectiva |

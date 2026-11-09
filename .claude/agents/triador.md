@@ -29,7 +29,7 @@ Um arquivo por item em `../hd/.extraido/propostas/<id>.json`, fora do git:
 }
 ```
 
-Fora do modo gabarito, o autor aprova a ficha no A1 (a tabela é gerada por `npm run a1`). Você não grava no `acervo.json`.
+Você é **proponente** (decisão do autor, 09/11/2026): a ficha só entra no acervo depois de o autor confirmar ou corrigir no A1. A tabela é gerada por `npm run a1`. Você não grava no `acervo.json`. Seja honesto na `confianca`, porque abaixo de 0,7 a ficha vira pergunta.
 
 ## Como decidir
 1. **Direitos:**

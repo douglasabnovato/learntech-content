@@ -33,7 +33,7 @@ Pasta local: `C:\douglasabnovato-github\mundo-learn-tech\`. O acervo bruto fica 
   - **#13:** cada foto teve decisão com critério. 41 fotos novas nas galerias, mais 3 no learn-tech. Verificação na tela registrada no lote `2026-11-09-documentos-do-hd.md`.
   - **#18:** destino em formato único, conferido no build.
   - **learn-tech#136:** galeria no programa e no artigo (ADR 12).
-  - **#16:** `hd:extrair`, triador, `a1` e gabarito prontos. O gabarito deu direitos 80% e destinos 73%, e a meta de 80% em destinos ainda falta. Próximo passo: rodada 3 com itens novos.
+  - **#16:** `hd:extrair`, triador, `a1` e gabarito prontos. Em três rodadas (42 itens), o acerto foi de 76% em direitos e 67% em destinos. Decisão do autor: o triador é proponente e o A1 corrige. A fase 1 está entregue, e a próxima é a fase 2 (produtores).
   - **Do autor:**
     - levar as `developer` para a `main` e fazer o deploy da API. Sem o deploy, as fichas, fotos e capas novas não aparecem na produção;
     - decidir a ficha da Rock Content;
