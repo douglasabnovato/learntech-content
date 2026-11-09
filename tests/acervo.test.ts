@@ -55,7 +55,9 @@ describe("acervo: uso de cada arquivo", () => {
     expect(comArquivo({ uso: "fonte", destino })).toBe(true);
     expect(comArquivo({ uso: "similar", similarA: "b".repeat(64) })).toBe(true);
     expect(comArquivo({ uso: "tecnico" })).toBe(true);
-    expect(comArquivo({ uso: "bloqueado", motivo: "regras editoriais, seção 7" })).toBe(true);
+    expect(comArquivo({ uso: "referencia" })).toBe(true);
+    expect(comArquivo({ uso: "referencia", motivo: "regras editoriais, seção 7" })).toBe(true);
+    expect(comArquivo({ uso: "descartado", motivo: "foto desfocada" })).toBe(true);
   });
 
   it("recusa exibido ou fonte sem destino, ou com destino fora do item", () => {
@@ -64,9 +66,9 @@ describe("acervo: uso de cada arquivo", () => {
     expect(comArquivo({ uso: "exibido", destino: "bootcamps/eventos/outro" })).toBe(false);
   });
 
-  it("recusa similar sem hash e bloqueado ou descartado sem motivo", () => {
+  it("recusa similar sem hash, descartado sem motivo e o uso antigo bloqueado", () => {
     expect(comArquivo({ uso: "similar" })).toBe(false);
-    expect(comArquivo({ uso: "bloqueado" })).toBe(false);
+    expect(comArquivo({ uso: "bloqueado", motivo: "regra" })).toBe(false);
     expect(comArquivo({ uso: "descartado", motivo: " " })).toBe(false);
   });
 });

@@ -50,7 +50,7 @@ O estado é do item (a pasta). O uso é de cada arquivo dentro dele, no campo `u
 | `fonte` | Virou texto publicado, mas não aparece em si | `destino` | produtor |
 | `similar` | Quase igual a um arquivo exibido (rajada, outro ângulo) | `similarA` (hash do exibido) | produtor, com `imagens-parecidas.py` |
 | `tecnico` | Sem conteúdo (ico, tmp, lnk, iqy...) | — | `hd:uso --aplicar` |
-| `bloqueado` | Uma regra impede a exibição | `motivo` (ex.: "regras editoriais, seção 7") | triador propõe; autor confirma no A1 |
+| `referencia` | Base de conhecimento do texto, sem exibição (ex.: material do ex-empregador, regras editoriais seção 7) | `motivo` opcional | triador propõe; autor confirma no A1 |
 | `descartado` | Poderia ser usado, mas não vale | `motivo` (ex.: "foto desfocada") | autor, no A1 |
 | `pendente` | Sem decisão (arquivo sem o campo também conta) | — | — |
 

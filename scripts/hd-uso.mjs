@@ -162,7 +162,7 @@ if (relatorio) {
     `| No hd | ${n(arquivos.length)} |`, `| Únicos (por hash) | ${n(unicos.length)} |`, `| Cópias idênticas (seguem o original) | ${n(copias)} |`,
     ...(fora ? [`| Fora do acervo | ${n(fora)} |`] : []),
     ...ORDEM.map((u) => `| ${u} | ${n(total[u])} |`),
-    `| **Usados** (exibido, fonte, similar) | **${n(usados)} (${pct(usados)}%)** |`,
+    `| **Usados** (exibido, fonte, similar, referência) | **${n(usados)} (${pct(usados)}%)** |`,
     `| **Pendentes** | **${n(total.pendente)} (${pct(total.pendente)}%)** |`, "",
     "## Por item", "",
     "| Item | Estado | Origem | Arquivos | Usos | Imagem provável |", "|---|---|---|---|---|---|",

@@ -24,10 +24,11 @@ const TRIADOS = ["triado", "planejado", "produzido", "publicado", "publicado-em-
 const data = z.string().regex(/^\d{4}-\d{2}-\d{2}$/);
 
 /* Uso de cada arquivo (relatório de uso do hd, 06/11/2026). 100% usado = nenhum arquivo "pendente".
-   Usado: exibido (aparece na tela), fonte (virou texto publicado), similar (quase igual a um exibido).
-   Resolvido sem uso, com justificativa: tecnico (sem conteúdo), bloqueado (regra impede), descartado (sem valor).
+   Usado: exibido (aparece na tela), fonte (virou texto publicado), similar (quase igual a um exibido),
+   referencia (base de conhecimento do texto, sem exibição: ex.: material do ex-empregador, regras editoriais seção 7).
+   Resolvido sem uso, com justificativa: tecnico (sem conteúdo), descartado (sem valor).
    Arquivo sem o campo conta como pendente. Cópias idênticas no hd têm o mesmo hash: seguem o uso do original. */
-export const USOS_ARQUIVO = ["exibido", "fonte", "similar", "tecnico", "bloqueado", "descartado", "pendente"] as const;
+export const USOS_ARQUIVO = ["exibido", "fonte", "similar", "referencia", "tecnico", "descartado", "pendente"] as const;
 const sha = z.string().regex(/^[a-f0-9]{64}$/, "sha256 em hexadecimal minúsculo");
 
 const arquivoSchema = z.object({
@@ -39,11 +40,11 @@ const arquivoSchema = z.object({
   destino: z.string().optional(),
   /* Para similar: hash do arquivo exibido que o representa. */
   similarA: sha.optional(),
-  /* Para bloqueado e descartado: a regra ou o motivo, sem nome de pessoa ou cliente. */
+  /* Para descartado (obrigatório) e referencia (opcional): o motivo, sem nome de pessoa ou cliente. */
   motivo: z.string().optional(),
 }).refine((f) => !["exibido", "fonte"].includes(f.uso ?? "") || !!f.destino, "arquivo exibido ou fonte precisa de destino")
   .refine((f) => f.uso !== "similar" || !!f.similarA, "arquivo similar precisa de similarA (hash do exibido)")
-  .refine((f) => !["bloqueado", "descartado"].includes(f.uso ?? "") || !!f.motivo?.trim(), "arquivo bloqueado ou descartado precisa de motivo");
+  .refine((f) => f.uso !== "descartado" || !!f.motivo?.trim(), "arquivo descartado precisa de motivo");
 
 /* Ficha do triador: a confiança decide se o item vai direto para a tabela do A1 ou vira pergunta ao autor. */
 const triagemSchema = z.object({

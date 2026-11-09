@@ -12,8 +12,8 @@
  */
 export const TECNICO = new Set(["ico", "tmp", "lnk", "iqy", "h2d", "map", "url", "ini", "db", "dsstore", "ds_store"]);
 export const IMAGEM = new Set(["jpg", "jpeg", "png", "webp"]);
-export const USADOS = new Set(["exibido", "fonte", "similar"]);
-export const ORDEM = ["exibido", "fonte", "similar", "tecnico", "bloqueado", "descartado", "pendente"];
+export const USADOS = new Set(["exibido", "fonte", "similar", "referencia"]);
+export const ORDEM = ["exibido", "fonte", "similar", "referencia", "tecnico", "descartado", "pendente"];
 export const DIST_EXIBIDA = 5;
 export const DIST_PROVAVEL = 10;
 /* Ícones e capturas do próprio site batem com qualquer imagem simples: não contam como publicação. */

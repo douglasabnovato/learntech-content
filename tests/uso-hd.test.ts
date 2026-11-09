@@ -11,7 +11,7 @@ const novoAcervo = () => ({
       arquivos: [
         { sha256: h("a"), ext: "jpg", bytes: 1 },
         { sha256: h("b"), ext: "ico", bytes: 1 },
-        { sha256: h("c"), ext: "pdf", bytes: 1, uso: "bloqueado", motivo: "regra" },
+        { sha256: h("c"), ext: "pdf", bytes: 1, uso: "referencia" },
         { sha256: h("d"), ext: "jpg", bytes: 1 },
       ],
     },
@@ -36,7 +36,7 @@ describe("uso do hd", () => {
     const unicos = linhas.filter((l: { copia: boolean }) => !l.copia);
     expect(semHash).toBe(1);
     expect(gravados).toBe(0);
-    expect(unicos.map((l: { uso: string }) => l.uso)).toEqual(["pendente", "pendente", "bloqueado", "pendente"]);
+    expect(unicos.map((l: { uso: string }) => l.uso)).toEqual(["pendente", "pendente", "referencia", "pendente"]);
     expect(linhas.filter((l: { copia: boolean }) => l.copia)).toHaveLength(1);
   });
 
@@ -47,7 +47,7 @@ describe("uso do hd", () => {
     expect(gravados).toBe(2);
     expect(foto).toMatchObject({ uso: "exibido", destino: "bootcamps/eventos/gdg-jf" });
     expect(icone?.uso).toBe("tecnico");
-    expect(doc).toMatchObject({ uso: "bloqueado", motivo: "regra" });
+    expect(doc).toMatchObject({ uso: "referencia" });
     /* parecida só com um ícone do site: falso positivo, continua pendente */
     expect(outra?.uso).toBeUndefined();
   });

@@ -24,8 +24,8 @@ Pasta local: `C:\douglasabnovato-github\mundo-learn-tech\`. O acervo bruto fica 
 - **Medição:** `npm run progresso` (placar), `npm run cobertura`, `npm run leva:status`.
 
 ## Situação em 09/11/2026
-- **Uso por arquivo** (branch `feature/tasks-09-11-2026`): campo `uso` em cada arquivo do acervo (`exibido`, `fonte`, `similar`, `tecnico`, `bloqueado`, `descartado`, `pendente`), comandos `hd:imagens` e `hd:uso`, e `leva:status` exigindo zero pendentes. Primeira aplicação automática: 66 fotos `exibido` e 9 arquivos `tecnico`. Relatórios em `docs/processo/relatorios/` (06/11 e 09/11).
-- **Issues do uso do hd** (label `acervo`): #12 bloqueio do ex-empregador (decisão do autor, 1.734 arquivos), #13 fotos de evento, #14 documentos de fonte, #15 vídeos (decisão do autor), #16 fase 1 do fluxo de agentes. #17 entregue: `hd:uso --vivo`, testes e cache do `hd:imagens` (12 s).
+- **Uso por arquivo** (branch `feature/tasks-09-11-2026`): campo `uso` em cada arquivo do acervo (`exibido`, `fonte`, `similar`, `referencia`, `tecnico`, `descartado`, `pendente`), comandos `hd:imagens` e `hd:uso`, e `leva:status` exigindo zero pendentes. Primeira aplicação automática: 66 fotos `exibido` e 9 arquivos `tecnico`. Relatórios em `docs/processo/relatorios/` (06/11 e 09/11).
+- **Issues do uso do hd** (label `acervo`): #12 material do ex-empregador marcado como `referencia` (1.734 arquivos, aprovado pelo autor em 09/11; pendentes caíram de 2.608 para 874), #13 fotos de evento, #14 documentos de fonte, #15 vídeos (decisão do autor), #16 fase 1 do fluxo de agentes. #17 entregue: `hd:uso --vivo`, testes e cache do `hd:imagens` (12 s).
 - **Trabalho contínuo:** ciclo de cada sessão, prioridade e modelo do relatório de andamento em `como-trabalhamos.md`. Próxima issue sem dependência do autor: #16 (fase 1) e #13 (fotos de evento, com a seleção levada ao autor).
 
 ## Situação em 06/11/2026
