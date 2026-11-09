@@ -955,7 +955,9 @@
         {
           "sha256": "795646a33ea597f3b0d6fc3cb77beb2dd3a6bf5ee1404a035b68d26b32087bae",
           "ext": "xls",
-          "bytes": 38400
+          "bytes": 38400,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1004"
         }
       ]
     },
@@ -974,7 +976,9 @@
         {
           "sha256": "b2baac651b5aac7fce30c93cfdae6fe9827c0109bc012bfedf302bf4a19d8e4b",
           "ext": "txt",
-          "bytes": 3515
+          "bytes": 3515,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1001"
         }
       ]
     },
@@ -993,12 +997,16 @@
         {
           "sha256": "be0ae5c67f4168c20b98ec0471c5773044255a4eddf4ab0ad397bf7257a0d6a5",
           "ext": "pdf",
-          "bytes": 62155
+          "bytes": 62155,
+          "uso": "fonte",
+          "destino": "bootcamps/eventos/jogos-universitarios-juiz-de-fora"
         },
         {
           "sha256": "ee62560a30c032f5f4d730f52d5ca3170362957050f4c2dc00df453f0d2e1d81",
           "ext": "txt",
-          "bytes": 3427
+          "bytes": 3427,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         }
       ]
     },
@@ -1017,12 +1025,14 @@
         {
           "sha256": "37e48ddcbe8346394e6be5b25a86a30142e237c12fd004c948f896c87b78c5ff",
           "ext": "pdf",
-          "bytes": 1635180
+          "bytes": 1635180,
+          "uso": "referencia"
         },
         {
           "sha256": "de1265720ce4e19347d21cfb78c119d2b062df4a7c05f86c874ea645bfc20c56",
           "ext": "pdf",
-          "bytes": 2400569
+          "bytes": 2400569,
+          "uso": "referencia"
         }
       ]
     },
@@ -1041,12 +1051,14 @@
         {
           "sha256": "f8ba792a487da2e38148c6f2a276310d65a78b0ffebdaaec447ddad5e4fda7fe",
           "ext": "pdf",
-          "bytes": 4416285
+          "bytes": 4416285,
+          "uso": "referencia"
         },
         {
           "sha256": "88dadd05af1cafdbca3a09f388f55b7c352746f04ffb0cdc2032dbee5ed7947c",
           "ext": "pdf",
-          "bytes": 328085
+          "bytes": 328085,
+          "uso": "referencia"
         }
       ]
     },
@@ -1065,32 +1077,44 @@
         {
           "sha256": "376a2d98506a2712f46b1b6e0b23ab37482ccdfc05090f41134f999c70411ad1",
           "ext": "docx",
-          "bytes": 7094
+          "bytes": 7094,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1004"
         },
         {
           "sha256": "2a1a0ea39467d3b07099f050b630d39f4613a7aef8bb62040b2408962b5e52b1",
           "ext": "docx",
-          "bytes": 6684
+          "bytes": 6684,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1004"
         },
         {
           "sha256": "8942e92a7869b63b9237436d977fbc320b9b2565f4a2920546fc54e376c75084",
           "ext": "pdf",
-          "bytes": 241177
+          "bytes": 241177,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "2abcc7d382d2943a775fb58c07c05fdba1ed392c28de8f3190c4f3e6b8d2b4d8",
           "ext": "pdf",
-          "bytes": 29384
+          "bytes": 29384,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1004"
         },
         {
           "sha256": "417e308e7c212baeeed4a4998fda2b4a54ea9de2a24f6c6f0a074a3dff1822ee",
           "ext": "pdf",
-          "bytes": 39411
+          "bytes": 39411,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "4f98cd05d1515b6fc64b969262fd8efd62a60a22afee57d912121be059d50613",
           "ext": "xlsx",
-          "bytes": 28464
+          "bytes": 28464,
+          "uso": "fonte",
+          "destino": "bootcamps/eventos/geronimo-theml-alta-performance"
         },
         {
           "sha256": "5a898feb6b9a57f68710e17064c2aa05f60e9c08827080f40abecf6fe51daaea",
@@ -1100,7 +1124,9 @@
         {
           "sha256": "233fc034d294f991ff7dc821fca970c79c94a6fb33aa8bb445a96dff23dae90d",
           "ext": "xlsx",
-          "bytes": 5888
+          "bytes": 5888,
+          "uso": "fonte",
+          "destino": "bootcamps/eventos/geronimo-theml-alta-performance"
         }
       ],
       "pendencias": [
@@ -1123,17 +1149,23 @@
         {
           "sha256": "de766ff58b2d89e39876ccac068591c1070318aaa9ef43b61cb698637dd8c682",
           "ext": "txt",
-          "bytes": 1523
+          "bytes": 1523,
+          "uso": "fonte",
+          "destino": "learn-tech/blog/hack-dev-rotina-e-trilha-para-a-primeira-vaga"
         },
         {
           "sha256": "47c983a359af417c50dfc794e93375e1548fac7018c9bcb0481d7e9ee4418a81",
           "ext": "pdf",
-          "bytes": 1155724
+          "bytes": 1155724,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1005"
         },
         {
           "sha256": "e8af9fe207e60eb101c97d000140ccf31df4d107c7b605672063d965469b4269",
           "ext": "txt",
-          "bytes": 1308
+          "bytes": 1308,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1005"
         },
         {
           "sha256": "76c3cdaf119d05635a9231e4e2193d2789e694523728b6d1c8ba91b95094bcce",
@@ -1183,27 +1215,37 @@
         {
           "sha256": "99270c0c8294a65e477431df51ba1053f01e80602bd5bb3e0293b5f541078dd0",
           "ext": "txt",
-          "bytes": 657
+          "bytes": 657,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1005"
         },
         {
           "sha256": "490179f9028ddff405d1a760bdb4b2856c39500e15e41fdceed65dc9d5c38004",
           "ext": "txt",
-          "bytes": 420
+          "bytes": 420,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1005"
         },
         {
           "sha256": "99596aa72a0e0005981731c6965eda5a49fd6b64f48bbcbe1ca5e442b0a7219e",
           "ext": "txt",
-          "bytes": 752
+          "bytes": 752,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1005"
         },
         {
           "sha256": "594a6178876f705e12a6789964163dd46766857517c49402b3dcc179663dbd00",
           "ext": "txt",
-          "bytes": 102
+          "bytes": 102,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1005"
         },
         {
           "sha256": "a7d21fd0eba2abaaa48650c130c90edd7542b360baf851ad793928fdc92cc80b",
           "ext": "txt",
-          "bytes": 601
+          "bytes": 601,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1005"
         }
       ]
     },
@@ -1227,52 +1269,72 @@
         {
           "sha256": "7ca7fd0cbd61ce281855f702025033ec6d7e85087e767c6701c21dd17b44fe1b",
           "ext": "pdf",
-          "bytes": 790485
+          "bytes": 790485,
+          "uso": "fonte",
+          "destino": "learn-tech/blog/tecnicas-de-lideranca-e-equipes-produtivas"
         },
         {
           "sha256": "66c3da65766dec0c6faa85dc4b8e22881147d841285942fc95a75130d2dd180d",
           "ext": "pdf",
-          "bytes": 2524011
+          "bytes": 2524011,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1001"
         },
         {
           "sha256": "452fd75113fc2c8849b4d7846de8345317a1eda7d75efe3d3d6cf31c76690e7d",
           "ext": "pdf",
-          "bytes": 649675
+          "bytes": 649675,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "694907c256552792f5c197b7ef8ff89a9da4259c9e65e5c306e96607651e4891",
           "ext": "docx",
-          "bytes": 88551
+          "bytes": 88551,
+          "uso": "fonte",
+          "destino": "learn-tech/blog/videoteca-e-leituras-para-autoconhecimento-e-carreira"
         },
         {
           "sha256": "37a981d9f9b79f2ae5fd84c99510db0a0e73c3489c6ef62002e8a03726da8b2e",
           "ext": "docx",
-          "bytes": 84011
+          "bytes": 84011,
+          "uso": "fonte",
+          "destino": "learn-tech/blog/videoteca-e-leituras-para-autoconhecimento-e-carreira"
         },
         {
           "sha256": "9dda9dcf9d94dfc18fc7e8e2e3d3800dd8287a780bd6ec70b94752d39c52ea22",
           "ext": "pdf",
-          "bytes": 208311
+          "bytes": 208311,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1001"
         },
         {
           "sha256": "e02b89c83e7304bc456304314b6948e32d9300b06da2fa04cd1eb709586b2848",
           "ext": "pdf",
-          "bytes": 880951
+          "bytes": 880951,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1001"
         },
         {
           "sha256": "7bce198152cafeea724ac0dd2e0369fd50101cf0d01616a70c34cdd76bb80b09",
           "ext": "pdf",
-          "bytes": 757720
+          "bytes": 757720,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "a80bbfd16ce9cb227203a1a1cda3c7efa96125c24da800dff2ee7ea977eaf7b1",
           "ext": "pdf",
-          "bytes": 179579
+          "bytes": 179579,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1002"
         },
         {
           "sha256": "91f96dc4e1ba751c583edfdbf6289b593aa31ea3b9d3871cc5fcfb2943624f30",
           "ext": "pdf",
-          "bytes": 3063030
+          "bytes": 3063030,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "cbc2ac1b61b08e7d175c1fc190343ee7ddff2dcc2e5730e7048befb74d0bc50a",
@@ -1292,7 +1354,9 @@
         {
           "sha256": "d3861068ff83e2fe2272e1c1023cca3f60ac2bd8f5a916ba91ea13f87f060f63",
           "ext": "xlsx",
-          "bytes": 5116
+          "bytes": 5116,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "01e49b1090c81e28783cde7faa4f5a2ffd4fb371e9fc2b96d22a7576c3e65399",
@@ -1302,87 +1366,121 @@
         {
           "sha256": "eff415f24a7cdd7ac6d39b4be425100ccae99cbf49a4fa28eee37641afeb41b4",
           "ext": "pdf",
-          "bytes": 601309
+          "bytes": 601309,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1003"
         },
         {
           "sha256": "2dd36d37457d922e81a744dbc42b0f9cf1f9b64bf1234bc98aeb1bbaac77480f",
           "ext": "pdf",
-          "bytes": 128231
+          "bytes": 128231,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1003"
         },
         {
           "sha256": "9052361fae94d7c6359492e2bcde9ac5bb177b0cef45746663db79421c97b830",
           "ext": "pdf",
-          "bytes": 84020
+          "bytes": 84020,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1004"
         },
         {
           "sha256": "ba02e9c2437b4d4f5dfd9a1381dd4375c4ff5248a46fb706ba4802f98a99c3a1",
           "ext": "pdf",
-          "bytes": 398301
+          "bytes": 398301,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "1033c13e7a2c2576aa1706c84a515fb13c620de91c3d979d43a981c1d36a7567",
           "ext": "pdf",
-          "bytes": 3694503
+          "bytes": 3694503,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "9b7c1f0a0767ec25321d64c79cbcf85cf3586cdbeb5bacfd3600b6c3d836b43b",
           "ext": "pdf",
-          "bytes": 70634
+          "bytes": 70634,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1004"
         },
         {
           "sha256": "6ff822b5e167c209a4bc18d75f065e36c0f68677cc106323519729d3dec8c01c",
           "ext": "pdf",
-          "bytes": 113682
+          "bytes": 113682,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1004"
         },
         {
           "sha256": "d0bb3b7b422eb2b64c937203de80ed0ea3b2ae33a988a3147f390514858da670",
           "ext": "pdf",
-          "bytes": 143268
+          "bytes": 143268,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1004"
         },
         {
           "sha256": "47d724dba40c466b210b26d5624479db29bacde16170cb00623588fc4a8efd38",
           "ext": "pdf",
-          "bytes": 968793
+          "bytes": 968793,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "f593d31b6832ae45a36b96e0e64102330807dc1b39b949ef118a138b25955053",
           "ext": "pdf",
-          "bytes": 217668
+          "bytes": 217668,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "6e6d29e5dce8bf38d697ca3022dafdd25151fb3d3680e263c24f8f687d10f809",
           "ext": "pdf",
-          "bytes": 47245
+          "bytes": 47245,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "1f6ba08ff216c88f3f52b6d9c832464e807e196bf26dcc7d8ea86fd95b252cf1",
           "ext": "pdf",
-          "bytes": 47349
+          "bytes": 47349,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "1322e90e8738464a22a28c4e1cfb066db284f70ef6ece9a353cb280bb452e50b",
           "ext": "pdf",
-          "bytes": 47265
+          "bytes": 47265,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "616f32ccd6152ca8a459903941fc35224621895946835319506415e0c184293c",
           "ext": "pdf",
-          "bytes": 46675
+          "bytes": 46675,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "90a53e116b74e2c5410bcca766fe7c300563a799506581a408ee2425a9fd510e",
           "ext": "pdf",
-          "bytes": 47775
+          "bytes": 47775,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "7659cb687635f124fdc06adfa2b949de9220e759cfb9defae1fe0375a81c09bb",
           "ext": "pdf",
-          "bytes": 71694
+          "bytes": 71694,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1004"
         },
         {
           "sha256": "41c17cff4fcf2a9cc18c24c2f5963410c6d93cc3356ebd2bcd3a3a04372638b5",
           "ext": "pdf",
-          "bytes": 102547
+          "bytes": 102547,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1004"
         }
       ]
     },
@@ -3016,7 +3114,9 @@
         {
           "sha256": "f325eeeee0effcec2920bf33d74e7dcb97f7dc591e8665bb5b9508ecd5ea3e9e",
           "ext": "pdf",
-          "bytes": 11423964
+          "bytes": 11423964,
+          "uso": "fonte",
+          "destino": "learn-tech/blog/do-problema-ao-pitch-canvas-em-ideathon"
         },
         {
           "sha256": "e89729879ee789b7bfc86de148232172a3b2bdf79ed1f0ffcffee28eba77c817",
@@ -3471,7 +3571,9 @@
         {
           "sha256": "42e50ceb3b8ac5d15c2ad12c7990058eca591389ae844c0d809ff8cdf26859a3",
           "ext": "pdf",
-          "bytes": 550805
+          "bytes": 550805,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "edf4c13e4d18adc78b31faa9b6dedf8c8e848b9d01377c23cb8cb402cbfd358b",
@@ -3554,7 +3656,9 @@
         {
           "sha256": "fc1bcd3feab7429911e53edf16bb7d0e1691fc75dd8b94e6e899250633f5d1d1",
           "ext": "pdf",
-          "bytes": 2005521
+          "bytes": 2005521,
+          "uso": "fonte",
+          "destino": "learn-tech/blog/editais-de-fomento-a-inovacao-como-ler-e-onde-encontrar"
         }
       ]
     },
@@ -3657,7 +3761,9 @@
         {
           "sha256": "251792ed4f78ba5808976b0e9fcb8e1ccff372f0c010b512bff095a519313ffd",
           "ext": "docx",
-          "bytes": 9965207
+          "bytes": 9965207,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "80b44ca96c2cd2c3c4e3726ecb131738ffec2c4e1490543b9908745fd255cd88",
@@ -3667,7 +3773,9 @@
         {
           "sha256": "50a4eb7b096967392cf170b1e43edc0558365680bd872e88f3504d0c36e2bb0b",
           "ext": "pdf",
-          "bytes": 2965084
+          "bytes": 2965084,
+          "uso": "fonte",
+          "destino": "bootcamps/eventos/tdc-innovation"
         },
         {
           "sha256": "3d8f1b7d3c75010b503111bfe145b1bab36d46ccf96fd7ebd0a7967f36ac93a2",
@@ -3697,7 +3805,8 @@
         {
           "sha256": "0c1006c879c06cd687937836c91747cca87046500ce4cf1a6a65268db5b271ef",
           "ext": "docx",
-          "bytes": 374200
+          "bytes": 374200,
+          "uso": "referencia"
         }
       ],
       "proximaAcao": "Arquivos não saem do hd (dados, marca ou credenciais); o conhecimento foi usado nos destinos."
@@ -3716,67 +3825,93 @@
         {
           "sha256": "ea40db9fd4afa3763ed5de93feb4b94f69b5fb6192734c0e57b2fbf16c9f7b68",
           "ext": "pdf",
-          "bytes": 7823353
+          "bytes": 7823353,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "a8bbac7331306a004f0c792542a11e2b625fe5320bcebe31e4d2512ef36255cb",
           "ext": "html",
-          "bytes": 18643
+          "bytes": 18643,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "56d206b7233530c28d8b3aeebe64c8a988f54af5de2eba227aa0b835a09b50a7",
           "ext": "html",
-          "bytes": 18322
+          "bytes": 18322,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "232273257a5f7fdb0670aebfc208bc0ee2146200e6c7c31b0440f5e73a6b35b0",
           "ext": "html",
-          "bytes": 18063
+          "bytes": 18063,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "26f561db002a8b28fda13a5f984427d62322beb4b4f01a8c933b54119954fc21",
           "ext": "html",
-          "bytes": 18819
+          "bytes": 18819,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "2a78759832edad49a9d7d1bff98b12c25b828de636119dadf7ab92b73aef8d3f",
           "ext": "html",
-          "bytes": 11544
+          "bytes": 11544,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "e3885f6b8cea986c2074c1130a726a097e39b1081bbe9c941c7e3fe94b2a64d5",
           "ext": "html",
-          "bytes": 11531
+          "bytes": 11531,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "f6d13c52f28d8756f3446b0635b2575531788f54a25e5b83bff4c144cd59ecb0",
           "ext": "txt",
-          "bytes": 85
+          "bytes": 85,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "656e3be3178acd7243031ee8c9a2d5877fb7e4292bebbc8ce63c658465a504d4",
           "ext": "html",
-          "bytes": 20606
+          "bytes": 20606,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "ca991e6ffdbc40b60c79aeaf09c5dc714d0421ab57e3a3cc828a6bb758a2e137",
           "ext": "html",
-          "bytes": 15986
+          "bytes": 15986,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "73960f93d0ab424f5253db0087152cad4966f13fcd496aaf60ff3bc8d7c4c164",
           "ext": "html",
-          "bytes": 18519
+          "bytes": 18519,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "e4efa1c0af9852035a60aa334b64c36e6d2605ac70766eb956a60ba5d9d6bb05",
           "ext": "html",
-          "bytes": 19156
+          "bytes": 19156,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "54fbba27d9334536ddfeac8e822fd41be2d7372088ebbe0694f0504c459aacd2",
           "ext": "html",
-          "bytes": 17878
+          "bytes": 17878,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "4edb5dfc01eb718e3e38a40157035e38247becc1a377775216474e6a1ad23a8a",
@@ -3800,7 +3935,8 @@
         {
           "sha256": "e2e8c7bc2be4c08e2bd9a29701ed54ea302a1f8aa9806901203476ce4a00906c",
           "ext": "xlsx",
-          "bytes": 7990
+          "bytes": 7990,
+          "uso": "referencia"
         }
       ],
       "proximaAcao": "Arquivos não saem do hd (dados, marca ou credenciais); o conhecimento foi usado nos destinos."
@@ -3819,42 +3955,50 @@
         {
           "sha256": "50bfbfdca6a214169306d35ba7c85c4eeaafaec0fb55da0b2bb86ef63e41f768",
           "ext": "xlsx",
-          "bytes": 650871
+          "bytes": 650871,
+          "uso": "referencia"
         },
         {
           "sha256": "dc83ede1bb7c072f5cc139f832e3802e1316af259dd571812882f2d4caffb4f9",
           "ext": "xlsx",
-          "bytes": 18577891
+          "bytes": 18577891,
+          "uso": "referencia"
         },
         {
           "sha256": "ac59a5d5868a9b6cf40677147a24172fbbe75d0e7c78306be76bb06cc77f1a5c",
           "ext": "xlsx",
-          "bytes": 304956
+          "bytes": 304956,
+          "uso": "referencia"
         },
         {
           "sha256": "e7ee01ad1820bdab28251fd047dca07d9f222a678f14b6c8655559fd707ee2f5",
           "ext": "xlsx",
-          "bytes": 307516
+          "bytes": 307516,
+          "uso": "referencia"
         },
         {
           "sha256": "00dca711cfa2b8db3a302003d3f429939963d52862f5c685ddc92d06abb67cae",
           "ext": "xlsx",
-          "bytes": 304661
+          "bytes": 304661,
+          "uso": "referencia"
         },
         {
           "sha256": "ef88d36414e2c3e4bb6f7f8c8e1e6a44fdbfbe0c50af0f5d7722ee344abc60a4",
           "ext": "xlsx",
-          "bytes": 304901
+          "bytes": 304901,
+          "uso": "referencia"
         },
         {
           "sha256": "7b147646a045c49aaff5f9e2d601382ba6b3d870dfde9311d7b09c7ab74c0bda",
           "ext": "xlsx",
-          "bytes": 306347
+          "bytes": 306347,
+          "uso": "referencia"
         },
         {
           "sha256": "8c2daedef6acd6e74526fee9604d79ea202564f5e0fd0f498e5b2d87448026cc",
           "ext": "docx",
-          "bytes": 16721
+          "bytes": 16721,
+          "uso": "referencia"
         },
         {
           "sha256": "c8b58487ce736f6bbffa7d14638758c41b20f4dd293c9413bce9af1459fef5a5",
@@ -3925,17 +4069,20 @@
         {
           "sha256": "12699d20dbc1f13909d168710d993a542b4432a7ad9a411e31d798dded4a8544",
           "ext": "csv",
-          "bytes": 2053069
+          "bytes": 2053069,
+          "uso": "referencia"
         },
         {
           "sha256": "1909208e57ad096558d9d6f22a29bf7e794cf14fd86c23674048332e272b2585",
           "ext": "xls",
-          "bytes": 2674176
+          "bytes": 2674176,
+          "uso": "referencia"
         },
         {
           "sha256": "874efe8ad8170e1b62ea5426f3d623ee8de960a3f80fc98068de5309e9a97e6c",
           "ext": "csv",
-          "bytes": 2052985
+          "bytes": 2052985,
+          "uso": "referencia"
         },
         {
           "sha256": "0bf57c5df60e9efac801c46ac90ac389b1ec40138435c7aeb058b1243c2542ff",
@@ -3952,7 +4099,8 @@
         {
           "sha256": "c99b185b8ea29386916d06d62f707d94b488d64a5c4da5e38b3db49d3ba7be7e",
           "ext": "txt",
-          "bytes": 21
+          "bytes": 21,
+          "uso": "referencia"
         },
         {
           "sha256": "3b844c49b326078a58f13fe19df3047c25f2e88d15ddebc196cfe446ecaec937",
@@ -4065,47 +4213,56 @@
         {
           "sha256": "5dc62d8154c951c482d3109507403433ba6e82f32bf060b9623ab8e376fe2812",
           "ext": "xlsx",
-          "bytes": 453742
+          "bytes": 453742,
+          "uso": "referencia"
         },
         {
           "sha256": "981df51fd36784bcf83c70bffc3ef5ed0a8a197210c869c9569894d3f6ef6f13",
           "ext": "xlsx",
-          "bytes": 170684
+          "bytes": 170684,
+          "uso": "referencia"
         },
         {
           "sha256": "28a20b17a656cfeb1caf87ad7cc2f9d2519ab3072369ce09e2544839e8e05fe6",
           "ext": "xlsx",
-          "bytes": 149370
+          "bytes": 149370,
+          "uso": "referencia"
         },
         {
           "sha256": "fd55edbc68abbfbe6026dcdd856acb5621f88dca7bd3625403f59c2931b2ba1d",
           "ext": "xlsx",
-          "bytes": 85115
+          "bytes": 85115,
+          "uso": "referencia"
         },
         {
           "sha256": "d7030dda80c4aab5c3188e22a473ea6e0a9d9cc8c760d30a5cd1ff2cf847a745",
           "ext": "csv",
-          "bytes": 569362
+          "bytes": 569362,
+          "uso": "referencia"
         },
         {
           "sha256": "c477f4f09d30998450171cfa29f1627fe6d5899e4a3a7380584115bc700a7aab",
           "ext": "csv",
-          "bytes": 327554
+          "bytes": 327554,
+          "uso": "referencia"
         },
         {
           "sha256": "eba23c228a034a458d1e770f92e9597c87c39b7533a761a5c5bdbced9f2940ee",
           "ext": "csv",
-          "bytes": 283643
+          "bytes": 283643,
+          "uso": "referencia"
         },
         {
           "sha256": "2ae13437acc666606b437d05f9cde43ad08faf192c96d5c54c95693808957d0b",
           "ext": "csv",
-          "bytes": 149557
+          "bytes": 149557,
+          "uso": "referencia"
         },
         {
           "sha256": "2959257b30af264340ab358f07cd704566206357661485dc1722f065e41e2157",
           "ext": "xlsx",
-          "bytes": 850837
+          "bytes": 850837,
+          "uso": "referencia"
         },
         {
           "sha256": "f81723cab2f56ae972bfa6f411d0f320bf96c66ca4230869651658fc68c5a4ec",
@@ -4632,12 +4789,14 @@
         {
           "sha256": "cf1f801e56e63a05599873f8a0e14af3e6ca75ba3f446aacf3712a2aefff3a4f",
           "ext": "xlsx",
-          "bytes": 205002
+          "bytes": 205002,
+          "uso": "referencia"
         },
         {
           "sha256": "ce2baa9d35084470811387b6300253f54e845497d017414be2a63de49726e41f",
           "ext": "xlsx",
-          "bytes": 358601
+          "bytes": 358601,
+          "uso": "referencia"
         },
         {
           "sha256": "e26683918558606c1a5fb5b3c21efb209afdf6d5f3ee3f21aa62c53a8babb160",
@@ -4714,7 +4873,8 @@
         {
           "sha256": "e48c613e08e3507ba19f455600bc1cc4a3976485adf8cf890f8e45774c9cc95c",
           "ext": "pdf",
-          "bytes": 10632771
+          "bytes": 10632771,
+          "uso": "referencia"
         },
         {
           "sha256": "549ab3af1f1dafe3451e6d619b01abd39b07b8d457ae27789a513bede4f72e79",
@@ -5121,7 +5281,9 @@
         {
           "sha256": "4a1a6075bba6d43c416d7d8c05f77bb3c7090e436f10681a02a1eb0368535fd5",
           "ext": "docx",
-          "bytes": 7250
+          "bytes": 7250,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "374211189c520553f6b94828a72a18a00ae71529c19d86fb1f9217506be80cba",
@@ -5165,7 +5327,9 @@
         {
           "sha256": "8ffa32b3683e3c3921327d4cf9e3deffe1faab86f9b9eb4ba5f76bad22e9a2e5",
           "ext": "docx",
-          "bytes": 150333
+          "bytes": 150333,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1101"
         }
       ]
     },
@@ -5185,17 +5349,23 @@
         {
           "sha256": "67429594eb9250f313ca2df9911c167f4a0b26fd6aba311fd981ffc28e757711",
           "ext": "xlsx",
-          "bytes": 1015931
+          "bytes": 1015931,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1101"
         },
         {
           "sha256": "52932d3181f1e9ee22551c5023409fe1ee905924acc1bd7eefb3f1a836a45913",
           "ext": "xlsx",
-          "bytes": 31588
+          "bytes": 31588,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1101"
         },
         {
           "sha256": "2de9662274558efc01adf8d8931f1606374b12308423955fc44a458dcdbd6745",
           "ext": "docx",
-          "bytes": 7347
+          "bytes": 7347,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         }
       ]
     },
@@ -5215,22 +5385,30 @@
         {
           "sha256": "f0fe84353035e93d89193c4e1021a4c2ef80a9c4ddefd11cf7689159e804caab",
           "ext": "xlsx",
-          "bytes": 154737
+          "bytes": 154737,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1104"
         },
         {
           "sha256": "fcb01a7e3c6cfe9d813ee6ccb8fe4e28e766705cf6190102b18cc34866e0ac9e",
           "ext": "xlsx",
-          "bytes": 15864
+          "bytes": 15864,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "237ce537a082d57c15e0b4cf6c8d1ca2ad1a356e5942842f2b0fc3175c72852b",
           "ext": "xlsx",
-          "bytes": 23957
+          "bytes": 23957,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "3cc9a4d98846a25d7c0e64cf17ee55e0dc557482ca9f1fde64e6a52fe263a283",
           "ext": "xlsx",
-          "bytes": 38853
+          "bytes": 38853,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         }
       ]
     },
@@ -5258,7 +5436,8 @@
         {
           "sha256": "72acdecb0ccb586b10ea82fa74c72bda028dbc0323aee3eef593e5c83dbb43d5",
           "ext": "psd",
-          "bytes": 498143482
+          "bytes": 498143482,
+          "uso": "referencia"
         },
         {
           "sha256": "f8647c0d5bae7b12ce160d3002e767b48dbf4ee71a583c888c5eae59070cf051",
@@ -5383,7 +5562,8 @@
         {
           "sha256": "ec41c63dbaee2b9674e526ef669325696883975e03f52d89ea132c2f897db736",
           "ext": "txt",
-          "bytes": 350
+          "bytes": 350,
+          "uso": "referencia"
         },
         {
           "sha256": "f39750d3d13a8c0859ef073ae856fca804d6b7427a693dce7591508325fa6ca3",
@@ -5394,7 +5574,8 @@
         {
           "sha256": "da6ef57fbe74ad3a58930058cad01100d71846aaab091f8c1459ed10972a8863",
           "ext": "txt",
-          "bytes": 668
+          "bytes": 668,
+          "uso": "referencia"
         },
         {
           "sha256": "2b0893a5e78667dd77fd409523add01c2789d0bcc250cd96230d29a6b67c7fcc",
@@ -5411,62 +5592,74 @@
         {
           "sha256": "88af1a42ac58b6d3f385df1a9942c82a75ea5bdb7ec1ae6ef7901d3e25a6d216",
           "ext": "docx",
-          "bytes": 17967
+          "bytes": 17967,
+          "uso": "referencia"
         },
         {
           "sha256": "538258d42ec11d4a76756533cb6ffa574797393ec2515e6e14574fdd3b55e3ad",
           "ext": "pdf",
-          "bytes": 100741152
+          "bytes": 100741152,
+          "uso": "referencia"
         },
         {
           "sha256": "ce900199e4c9d66b239bcf7d92d5313393a8d91ec3e4b0b70996578124342863",
           "ext": "xlsx",
-          "bytes": 35463
+          "bytes": 35463,
+          "uso": "referencia"
         },
         {
           "sha256": "108d68c511c59ee0124406bf268b33d14ca35b9b8227dab4859229002e3b3cc3",
           "ext": "csv",
-          "bytes": 143
+          "bytes": 143,
+          "uso": "referencia"
         },
         {
           "sha256": "065f20c73b9662ffdcf3d898b8e36bf70338c42a0b488be6953adf6b698d6a99",
           "ext": "csv",
-          "bytes": 3984
+          "bytes": 3984,
+          "uso": "referencia"
         },
         {
           "sha256": "c1e6cb5750db70bd79c9046fbfc81009e937acd4f29a9ffdfbe1328e4e11e402",
           "ext": "pdf",
-          "bytes": 5190176
+          "bytes": 5190176,
+          "uso": "referencia"
         },
         {
           "sha256": "a904f67a44f96440efe31ede994c4900698a3b44691ae35bb22710dfcfd3ad1a",
           "ext": "csv",
-          "bytes": 218
+          "bytes": 218,
+          "uso": "referencia"
         },
         {
           "sha256": "cb81d7316ca28faacba483f7551b4c99a8768cee3fbf02fc5f7724d982dfc302",
           "ext": "pdf",
-          "bytes": 1676587
+          "bytes": 1676587,
+          "uso": "referencia"
         },
         {
           "sha256": "981e847b0fe12e67968624dd7fe26b850e62e3e39eacb5dc2ccb508e6489035f",
           "ext": "pdf",
-          "bytes": 28214425
+          "bytes": 28214425,
+          "uso": "referencia"
         },
         {
           "sha256": "dffc434a6dc700a0c77eb173172f801d34e175fb62de5bed8794cd7d233a0bea",
           "ext": "docx",
-          "bytes": 16304
+          "bytes": 16304,
+          "uso": "referencia"
         },
         {
           "sha256": "cd8f9ecbb79544cd47986c7c5ac2ab6a79974822396b080913d0847dacbf1a90",
           "ext": "pdf",
-          "bytes": 296729
+          "bytes": 296729,
+          "uso": "referencia"
         },
         {
           "sha256": "f058707dbc05694c5481e56bb1f190888fa87657cad19fff3c14906dce7863d9",
           "ext": "pdf",
-          "bytes": 309050
+          "bytes": 309050,
+          "uso": "referencia"
         },
         {
           "sha256": "c4f754345a6de8f0a3400f0c4cd5c6510cda38dae09147d739f7f73e8c4d9975",
@@ -5489,27 +5682,32 @@
         {
           "sha256": "cb9403efe49bbe0f669bbc8807234a5e6c7544a12444207097321c2aa580128e",
           "ext": "xlsx",
-          "bytes": 26129
+          "bytes": 26129,
+          "uso": "referencia"
         },
         {
           "sha256": "e205ae3a56358273a2fed9698c6f66b70385eeca2b1560a914d8d5cf46a0cf7f",
           "ext": "xlsx",
-          "bytes": 20699
+          "bytes": 20699,
+          "uso": "referencia"
         },
         {
           "sha256": "ee52eef3e927a828570dbfc3d83a087b8ca8277f3c90499e246156ea530b85e8",
           "ext": "csv",
-          "bytes": 713
+          "bytes": 713,
+          "uso": "referencia"
         },
         {
           "sha256": "53d01cb930e97ff0ba7113efeb76e6f498b59429dded23c078008d457645f117",
           "ext": "pdf",
-          "bytes": 3661305
+          "bytes": 3661305,
+          "uso": "referencia"
         },
         {
           "sha256": "f3ac5abee4754bcca0c73436eafe9bffd693b145f49b21a412bda6cc75afeb68",
           "ext": "pdf",
-          "bytes": 1950571
+          "bytes": 1950571,
+          "uso": "referencia"
         },
         {
           "sha256": "33f28999593ecc50b57a23657b3df5c5150fbdde23eb7dc36222b1aa2b0433e1",
@@ -5520,22 +5718,26 @@
         {
           "sha256": "d242242b8df81fc37f47744b49b3e9fd429b70f4a9b48a5571b0fe1501bcabe5",
           "ext": "pdf",
-          "bytes": 2404135
+          "bytes": 2404135,
+          "uso": "referencia"
         },
         {
           "sha256": "1e2436f0f6cc5b5201e2363c3560c06d640ece5b2573af403d2f9ddde225b3d2",
           "ext": "pdf",
-          "bytes": 2461816
+          "bytes": 2461816,
+          "uso": "referencia"
         },
         {
           "sha256": "aa4c8a02797dcb2972875b9220d4d417b16525d547abdd576bc492d019e58884",
           "ext": "pdf",
-          "bytes": 9537271
+          "bytes": 9537271,
+          "uso": "referencia"
         },
         {
           "sha256": "286476f912be54005caa50fc8e294e030b9df38d265186670143fd9bbc0b732d",
           "ext": "pdf",
-          "bytes": 6114399
+          "bytes": 6114399,
+          "uso": "referencia"
         },
         {
           "sha256": "c069e051e5fb2a759e42f2341af113adfce278437715ccd4d9361b309bb5b8b8",
@@ -5762,7 +5964,8 @@
         {
           "sha256": "ae4defda52ef9381f154690a8dfeadf8d1d37103ea19ed00fc31b838d1516e7c",
           "ext": "pdf",
-          "bytes": 3642085
+          "bytes": 3642085,
+          "uso": "referencia"
         },
         {
           "sha256": "e9433c6f111a530db84c35bd006de3a0cb34583c1ae9bd9f87797519f211bc69",
@@ -5809,12 +6012,14 @@
         {
           "sha256": "a9a720da8745ae9f0ff2c8998c1b213395a6f4804175f203e4c068c53421e6c6",
           "ext": "vsdx",
-          "bytes": 30972
+          "bytes": 30972,
+          "uso": "referencia"
         },
         {
           "sha256": "e85363532678978d43aaf11f9b4d079898c35616158bc0829e6e6843cff1d4c7",
           "ext": "xlsx",
-          "bytes": 15184
+          "bytes": 15184,
+          "uso": "referencia"
         },
         {
           "sha256": "963c7b531d8589c847cf12f60f4b32b4beb201bd240624f4415fb17623633c5f",
@@ -5843,42 +6048,50 @@
         {
           "sha256": "37a71ffc67c6b6d9a1fbdc2f093000d9d8b3773be8f3a22111c2135df897bd65",
           "ext": "xlsx",
-          "bytes": 209681
+          "bytes": 209681,
+          "uso": "referencia"
         },
         {
           "sha256": "c5db27ac65be3ff3e055fc4ee15e5893443f7f9d6a876cea1c71580b52c1a8b1",
           "ext": "xlsx",
-          "bytes": 16787
+          "bytes": 16787,
+          "uso": "referencia"
         },
         {
           "sha256": "f4e0d29bb1d5b45430ace8ae2da7320d3c58b03729f5f30173f07959bbb017e2",
           "ext": "xlsx",
-          "bytes": 76976
+          "bytes": 76976,
+          "uso": "referencia"
         },
         {
           "sha256": "10b1869d988f821149dc6ecb303bbeb06400263c830fce633b881b151feaef6e",
           "ext": "xlsx",
-          "bytes": 102333
+          "bytes": 102333,
+          "uso": "referencia"
         },
         {
           "sha256": "dd276e0af9364e68201c24e5ea6d211673d1c10d7869de428e3be8d1a47b77e9",
           "ext": "xlsx",
-          "bytes": 409305
+          "bytes": 409305,
+          "uso": "referencia"
         },
         {
           "sha256": "31aebf509b08ac8b20576c350390bc50aa965bfced25523f934f28787f5dfe01",
           "ext": "xlsx",
-          "bytes": 296425
+          "bytes": 296425,
+          "uso": "referencia"
         },
         {
           "sha256": "8e827c161269c4cb9365ea3e24d91c20f0494cbc7bee59edf82e19579faafa62",
           "ext": "xlsx",
-          "bytes": 31491
+          "bytes": 31491,
+          "uso": "referencia"
         },
         {
           "sha256": "5fc9f6f4269b70b74af9272692f0769af1a950e1cda76fdfef49bc8e7c8ed8fa",
           "ext": "xlsx",
-          "bytes": 71192
+          "bytes": 71192,
+          "uso": "referencia"
         },
         {
           "sha256": "f083a7911e7a7586ad42f5e333c2cba22f118197b283405d73336b5b1f533986",
@@ -5895,57 +6108,68 @@
         {
           "sha256": "982f82813f6e3d479ba6f0f6b08046dfef91c2a3a5385978f28e784ac7dcdc01",
           "ext": "txt",
-          "bytes": 741
+          "bytes": 741,
+          "uso": "referencia"
         },
         {
           "sha256": "e5ab9f29ea3d17310d2d4c02e8f3fe969a58a873b5bbcf683bf28b8f620b12b5",
           "ext": "txt",
-          "bytes": 125
+          "bytes": 125,
+          "uso": "referencia"
         },
         {
           "sha256": "3c301fa9e8318b193bc41ae8e71b8fd5c401d0b6dda38fdb5fa3ed7559d6d3fa",
           "ext": "txt",
-          "bytes": 136
+          "bytes": 136,
+          "uso": "referencia"
         },
         {
           "sha256": "048c61d427276b1675c00c260eec628f8f3882df4843e09d922ec8a1fe095558",
           "ext": "txt",
-          "bytes": 37
+          "bytes": 37,
+          "uso": "referencia"
         },
         {
           "sha256": "730b71402dda7f2cc295be992dd58abe1f4372e6ee411634d63a7580dd90788d",
           "ext": "txt",
-          "bytes": 71
+          "bytes": 71,
+          "uso": "referencia"
         },
         {
           "sha256": "4c0bd0da9f082d080f449117d04be0bc60fc10fad684eb74edc0a82e6aa01bae",
           "ext": "xlsx",
-          "bytes": 26622
+          "bytes": 26622,
+          "uso": "referencia"
         },
         {
           "sha256": "c0bb5e56e29c9f9322624bd61f90c7ba87280774a2f5ed5211645bd7bf343d51",
           "ext": "txt",
-          "bytes": 96
+          "bytes": 96,
+          "uso": "referencia"
         },
         {
           "sha256": "29907a0fab138b5bcc6269d1310776208994a0b81dd681f8923fab741c351278",
           "ext": "docx",
-          "bytes": 18413
+          "bytes": 18413,
+          "uso": "referencia"
         },
         {
           "sha256": "25524fd4e25f8af275409091d792cdfb13d5fc48713d5608ba9be88bd36c490b",
           "ext": "csv",
-          "bytes": 267099
+          "bytes": 267099,
+          "uso": "referencia"
         },
         {
           "sha256": "0716c8e7ef52d7cb9784518aab497f5c5f7da0ccbbe2b89f0a60884ec000f53f",
           "ext": "csv",
-          "bytes": 321607
+          "bytes": 321607,
+          "uso": "referencia"
         },
         {
           "sha256": "ea99dc1b9e1ad9724de3f672bbf9c3d5c0c9bc140380aa54b57b6bf108ddf73b",
           "ext": "csv",
-          "bytes": 166506
+          "bytes": 166506,
+          "uso": "referencia"
         },
         {
           "sha256": "b4c673d45379d21c8a57d725e6e1ce66f7798ac29f7ae5fd03668f134cf6c283",
@@ -6136,7 +6360,8 @@
         {
           "sha256": "f3ab85e47ea98538acbaf5176ffb5c23d9fc4765c7486fff27e200eb879cde53",
           "ext": "xlsx",
-          "bytes": 305719
+          "bytes": 305719,
+          "uso": "referencia"
         },
         {
           "sha256": "c16a47adb2c542a43cf1a8540ea194a922d2381cde50002720858caa4a1296af",
@@ -6153,17 +6378,20 @@
         {
           "sha256": "a59cf08ff9c4ad1d1ed8f97f9f26733b4ded10a7058c275a2a64e4c85530b3c7",
           "ext": "xlsx",
-          "bytes": 17792
+          "bytes": 17792,
+          "uso": "referencia"
         },
         {
           "sha256": "dcf74dc22529aec45024981220a65972f8f330288e7b6697c1369760db7dbab3",
           "ext": "docx",
-          "bytes": 102124
+          "bytes": 102124,
+          "uso": "referencia"
         },
         {
           "sha256": "c43fd0092116e1fc1a4dbee0b250591dc44c42dfb4a52c17f1886b29d6af1260",
           "ext": "txt",
-          "bytes": 239
+          "bytes": 239,
+          "uso": "referencia"
         },
         {
           "sha256": "219e500633cba506b1f5399fb2a27fa185984521134f45d26c1b6c9cd3a915dc",
@@ -6174,67 +6402,80 @@
         {
           "sha256": "b88b60a540389b7806fb4ec5fa8818714f160281cd83053b070cb4e5cb8b4b58",
           "ext": "txt",
-          "bytes": 987
+          "bytes": 987,
+          "uso": "referencia"
         },
         {
           "sha256": "6aced176a757f9a78f785ea3ddb808de29a7feff1b9033c80477915b8362d68c",
           "ext": "txt",
-          "bytes": 376
+          "bytes": 376,
+          "uso": "referencia"
         },
         {
           "sha256": "c31bfe08c4e929ed4224c4669f7a638b7254798f8d03ce3ca9199f519873568d",
           "ext": "txt",
-          "bytes": 255
+          "bytes": 255,
+          "uso": "referencia"
         },
         {
           "sha256": "c4e57c69a5b160b54a909e339217963139c6c9b4cd3a2f59004641ecc2d3db1a",
           "ext": "xlsx",
-          "bytes": 24397
+          "bytes": 24397,
+          "uso": "referencia"
         },
         {
           "sha256": "ba9b4332bf1a02782cf2127c204509e00cdceb1c6c2ce6dc0eb50253029e15e5",
           "ext": "xlsx",
-          "bytes": 98678
+          "bytes": 98678,
+          "uso": "referencia"
         },
         {
           "sha256": "cd7e234a352c43794f4f6158a754a31ed0c1efa479721a79b4a500df4054a9e5",
           "ext": "xlsx",
-          "bytes": 1248840
+          "bytes": 1248840,
+          "uso": "referencia"
         },
         {
           "sha256": "c35a844e2dbfdc59b152c7b63929ff390b048cf341ba0843b55cda541b28e2a7",
           "ext": "xlsx",
-          "bytes": 18741
+          "bytes": 18741,
+          "uso": "referencia"
         },
         {
           "sha256": "a28d41e71c62d4a9f56200f2eef0577075e3b14cb782e581572d5cae786da993",
           "ext": "xlsx",
-          "bytes": 2847132
+          "bytes": 2847132,
+          "uso": "referencia"
         },
         {
           "sha256": "89e1206fe29cf04662d8c490bf573b7095ba8ccb6bdb943b7d2e68418f3d6063",
           "ext": "xlsx",
-          "bytes": 536093
+          "bytes": 536093,
+          "uso": "referencia"
         },
         {
           "sha256": "a237d76bb95c1430fa437b09d67379e26cbc83609b0200cbbe90b50fa7d4a32d",
           "ext": "xlsx",
-          "bytes": 27627797
+          "bytes": 27627797,
+          "uso": "referencia"
         },
         {
           "sha256": "fcbd27bb7cbdbb207a8188a3f20d58d80e06f88532fb002da2c4427e9082bb39",
           "ext": "xlsx",
-          "bytes": 39690232
+          "bytes": 39690232,
+          "uso": "referencia"
         },
         {
           "sha256": "3663a5c17601bd29761fd4fd4bae058422a949d0232309be1fc7b5d9e8c7f868",
           "ext": "xlsx",
-          "bytes": 25198
+          "bytes": 25198,
+          "uso": "referencia"
         },
         {
           "sha256": "41195e79d879d7c386e3a726aefdba6c290b90ef8c2f11ce0d8c8f10ec9a8aff",
           "ext": "xlsx",
-          "bytes": 74875
+          "bytes": 74875,
+          "uso": "referencia"
         },
         {
           "sha256": "e8613fd8ee2f5c907b4e071dd6178872b0e978dbd91a8df1d6859ac6f2915344",
@@ -6245,107 +6486,128 @@
         {
           "sha256": "ddbb67a8a72216642e2a9341248bf93e7e2bae0abb0f51da233377a3ac3b854c",
           "ext": "docx",
-          "bytes": 25375
+          "bytes": 25375,
+          "uso": "referencia"
         },
         {
           "sha256": "87cf4b0b1a0316cbf7e28d195d0718751d7a274c674a9e9b91b80a06d8462e1a",
           "ext": "xlsx",
-          "bytes": 1387996
+          "bytes": 1387996,
+          "uso": "referencia"
         },
         {
           "sha256": "dabb4b73de84823d3296ceabf3209986c06cb36605cf122ebff6f906e9c06309",
           "ext": "xlsx",
-          "bytes": 25611
+          "bytes": 25611,
+          "uso": "referencia"
         },
         {
           "sha256": "6f05b819404c3253ee80dbaf4970a9d9de1eb9cf3c580af280d2f4dd3e6c441a",
           "ext": "docx",
-          "bytes": 49842
+          "bytes": 49842,
+          "uso": "referencia"
         },
         {
           "sha256": "48f89dfb8c1dc51c795deaefa56b3e09efc0cb8d4832585aecc15bc6d03e21e3",
           "ext": "xlsx",
-          "bytes": 21068
+          "bytes": 21068,
+          "uso": "referencia"
         },
         {
           "sha256": "0d983b6c59a001eddea0a51363d1e6ae8a3fc18a4f512e23cb86ebc80ec3177d",
           "ext": "xlsx",
-          "bytes": 20398
+          "bytes": 20398,
+          "uso": "referencia"
         },
         {
           "sha256": "9e900802f36e7425132c0cc530f718028cc73e322ac189242ec4042ac7592e4c",
           "ext": "docx",
-          "bytes": 23275
+          "bytes": 23275,
+          "uso": "referencia"
         },
         {
           "sha256": "ffe9c10aa89a659bb00e44c3054c3df2b6a904cc7d35248e7ebc34f6bb3380b6",
           "ext": "xlsx",
-          "bytes": 2550113
+          "bytes": 2550113,
+          "uso": "referencia"
         },
         {
           "sha256": "c7e0624d5910e7863d56b7669dd875d2492e26cae5dafc73d4cb2cf8c159663d",
           "ext": "docx",
-          "bytes": 25289
+          "bytes": 25289,
+          "uso": "referencia"
         },
         {
           "sha256": "2e84b530a57e2fef894a254353283ff2c164977fa88e22ee5084e8e7b8dfa298",
           "ext": "xlsx",
-          "bytes": 19105
+          "bytes": 19105,
+          "uso": "referencia"
         },
         {
           "sha256": "d134c4d77ec05653008f58a915f42c25bddb6aa8c743173185f85437b473eb80",
           "ext": "xlsx",
-          "bytes": 21235
+          "bytes": 21235,
+          "uso": "referencia"
         },
         {
           "sha256": "a234283409dae5704fc231d352abd29e1cfa0b7afafe4c9de1ed1af356a7bd05",
           "ext": "xlsx",
-          "bytes": 23788
+          "bytes": 23788,
+          "uso": "referencia"
         },
         {
           "sha256": "e00a556f5a2908a046235cb3eaad242b5280d46900cb2585d5169684fca5cc47",
           "ext": "xlsx",
-          "bytes": 25762
+          "bytes": 25762,
+          "uso": "referencia"
         },
         {
           "sha256": "4c18230ef715e1a6ca63af5a94e84f5f87c5d546184535b97133ebbbf17c1036",
           "ext": "xlsx",
-          "bytes": 11207742
+          "bytes": 11207742,
+          "uso": "referencia"
         },
         {
           "sha256": "a8ccdef0b8ec00397583e1457481215e5c537c53e32f630aaddc196097d05360",
           "ext": "docx",
-          "bytes": 22218
+          "bytes": 22218,
+          "uso": "referencia"
         },
         {
           "sha256": "b6ea41ecc72011b89cd180b6547243741cd649cfed6dd51945319f17a8df0b34",
           "ext": "docx",
-          "bytes": 22659
+          "bytes": 22659,
+          "uso": "referencia"
         },
         {
           "sha256": "6769a8a311585f7727e9194489d4d9d755668d11ad191f56549a2092c1fa76db",
           "ext": "xlsx",
-          "bytes": 24636
+          "bytes": 24636,
+          "uso": "referencia"
         },
         {
           "sha256": "63d4760f15d2f7ff51b332d187b9fb2e10a2a2e77b69342b720e077e4969fb7f",
           "ext": "xlsx",
-          "bytes": 19943
+          "bytes": 19943,
+          "uso": "referencia"
         },
         {
           "sha256": "ba7bf096a22abfe26323d5d22cb370aca1f06e3e794dea668927d41c2e8a2967",
           "ext": "txt",
-          "bytes": 163
+          "bytes": 163,
+          "uso": "referencia"
         },
         {
           "sha256": "48e15cdf71be5ea3ec6848c3dc1e6df45b7c9746489fbf7516710a085bb984eb",
           "ext": "xlsx",
-          "bytes": 24752
+          "bytes": 24752,
+          "uso": "referencia"
         },
         {
           "sha256": "7076a316c446f0c888bcae7718e41e2cc226f2ab28e2b4482abb4c5e2560953a",
           "ext": "docx",
-          "bytes": 78536
+          "bytes": 78536,
+          "uso": "referencia"
         },
         {
           "sha256": "43eca7bf278e1c2dc758da03c8ce9934c31f0a34a19c139bbd1de94386119ef8",
@@ -6356,22 +6618,26 @@
         {
           "sha256": "9dd6f46220eb8609a4d8b633310f56fd1fcbd3e0c9c17d1b355fa055fa9839b3",
           "ext": "csv",
-          "bytes": 253165
+          "bytes": 253165,
+          "uso": "referencia"
         },
         {
           "sha256": "4be959eece590686e5c3d63b856791a2c7fe7396ca437db138378f9f8f562fa6",
           "ext": "docx",
-          "bytes": 35469
+          "bytes": 35469,
+          "uso": "referencia"
         },
         {
           "sha256": "f31ac1244cdd2218a7837c8f48ea8f606e4bf844f7be0d53e6993b43c4762009",
           "ext": "docx",
-          "bytes": 30595
+          "bytes": 30595,
+          "uso": "referencia"
         },
         {
           "sha256": "27c1416e3807225545ddf89b3168ecab56f2af422776b973cf1b7bfbe012c19c",
           "ext": "docx",
-          "bytes": 27981
+          "bytes": 27981,
+          "uso": "referencia"
         }
       ],
       "proximaAcao": "Arquivos não saem do hd (dados, marca ou credenciais); o conhecimento foi usado nos destinos."
@@ -6392,47 +6658,65 @@
         {
           "sha256": "4249cb408ac7ac659ffef16fa31de6db2a49093868b084d7253f033f935ac6ea",
           "ext": "xlsx",
-          "bytes": 1519514
+          "bytes": 1519514,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1101"
         },
         {
           "sha256": "5cc42e4ba32ebf4d3d52485b2e5930e029cd9fba2866bd060f181fd887b26d6c",
           "ext": "xlsx",
-          "bytes": 29244
+          "bytes": 29244,
+          "uso": "fonte",
+          "destino": "career/empresas/abc-da-construcao"
         },
         {
           "sha256": "ee59658e3fc69b81bd8846b9a7ddfef96bd2c4aaa088cf14dd5d8ad68e320287",
           "ext": "xlsx",
-          "bytes": 23119
+          "bytes": 23119,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1101"
         },
         {
           "sha256": "8798e2b2052da177ea202b01d4b568c3df45e32314cfa2e4db58edfa832b5b2f",
           "ext": "xlsx",
-          "bytes": 45497
+          "bytes": 45497,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1104"
         },
         {
           "sha256": "6b9383ecbe6f83cf6e31155aa289d74ae32543919e3330d919eb775293fdea37",
           "ext": "xlsx",
-          "bytes": 24468
+          "bytes": 24468,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1101"
         },
         {
           "sha256": "d0c863e33d43e19b0a1845bf8bddd26fca0761cc52832769f82a02830c93e667",
           "ext": "xlsx",
-          "bytes": 2308780
+          "bytes": 2308780,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1101"
         },
         {
           "sha256": "cf4ba7e68dd9ae4df7acc901204e31a6455c464d1171fef14a39585dde02d744",
           "ext": "xlsx",
-          "bytes": 13184
+          "bytes": 13184,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "96ff91701a819ef6139f9f2d4d1d98b84a426867fad7fe8fa0261dbf6eebd6f5",
           "ext": "xlsx",
-          "bytes": 25906
+          "bytes": 25906,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1101"
         },
         {
           "sha256": "3e3e4794c515a0dd1ef8c2719948013509b60ed3297730c91703868219fff708",
           "ext": "xlsx",
-          "bytes": 75730
+          "bytes": 75730,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "4e6d3177bfe03581c4b4c6d8dd87ecd74850784126288b3c7bb3a05f55d1e658",
@@ -6449,12 +6733,16 @@
         {
           "sha256": "94e80333e8b82a4dcc991f2d6a78a057c45e358e82fff007917b674b7786b69d",
           "ext": "xlsx",
-          "bytes": 18776
+          "bytes": 18776,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1101"
         },
         {
           "sha256": "362c159ebb2689fd53508088673d627f1066cca4c22113fcd183a120109f17ca",
           "ext": "xlsx",
-          "bytes": 10394
+          "bytes": 10394,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "67e10d241c2a91890f7771600af165bf4c323342dd9047b9a1be5a3f2e7664f6",
@@ -6541,7 +6829,9 @@
         {
           "sha256": "bc60bf0436230bcec9c61f7107fdcdf995af653cd2fd468ddc202eb59f015b52",
           "ext": "xlsx",
-          "bytes": 21350
+          "bytes": 21350,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "a2e199f259e4c492c2cb69b7098cfb25c0efb168353a08ff7f78e35d9759e87e",
@@ -6792,17 +7082,23 @@
         {
           "sha256": "5f140c414fb47dde858ed6c9e8e8624c457b88f96e4d8672c1762e28a124c594",
           "ext": "html",
-          "bytes": 106727
+          "bytes": 106727,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "e1973a36fe692995d2a9dc301ef8405a63a1722762933f151db1fffc270f36c1",
           "ext": "html",
-          "bytes": 134517
+          "bytes": 134517,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "f9813d05e10700b66fb9b5ac74f3b5dd469c7b811127615bd984e82a14f5312b",
           "ext": "html",
-          "bytes": 33814
+          "bytes": 33814,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "894d23c6b7e0959b7171f3dba1fd7c72d66a3d0b6ddc501121ecc0fa16c0801e",
@@ -6819,32 +7115,44 @@
         {
           "sha256": "681a6c841670189587229939d2ec666549bee32d58a194f94a0114e4bb1f701b",
           "ext": "html",
-          "bytes": 209603
+          "bytes": 209603,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "6e3e5d05fa2018faab82460bd56608f04511ccccab0b0f103dc4c51a82424fc2",
           "ext": "html",
-          "bytes": 50573
+          "bytes": 50573,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "d1d3d3b45debaa6590097d5c98ebdee65699b91c2be51a553bd86f7cef47fc7a",
           "ext": "html",
-          "bytes": 50529
+          "bytes": 50529,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "53067578aec9442121a891ee78dfa4203944c73006e8101824bf3c118b812037",
           "ext": "html",
-          "bytes": 67155
+          "bytes": 67155,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "8834ac189c8d7db08af635f823c4ae7ee4085eae5fa0a7f2dadb098bd9c64a09",
           "ext": "html",
-          "bytes": 50421
+          "bytes": 50421,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "ea14b36c31446afac824f18442909dac1dc359900ca70c3a81d48b025bf10a22",
           "ext": "html",
-          "bytes": 67128
+          "bytes": 67128,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "2d25d2a69094d448a2228b6ad6a74467ade62996c22e54a87dabf47daf90534c",
@@ -6933,7 +7241,9 @@
         {
           "sha256": "2856d5f768ff95242228e3ec4af5e2f25e93e70abc4dbd0b236f596a8be068e2",
           "ext": "html",
-          "bytes": 13324558
+          "bytes": 13324558,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "a0a3df084ee266554f214fbc0692f58370f47604e865c0c932580fe40960d78d",
@@ -6974,12 +7284,16 @@
         {
           "sha256": "b871f0ca7dd127d44b4a71c05189fd9cb39108dab17058e63ea9f5a0cb7b4981",
           "ext": "html",
-          "bytes": 55405
+          "bytes": 55405,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "2a7565eb72dc3249b08da0688b64c4d83acf71c28317c4e2c294b828378d5f4c",
           "ext": "html",
-          "bytes": 12928720
+          "bytes": 12928720,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "22fff74b84eaf757d4bc678ee3aa7a73e80ac0e6845b1f1d26c62ce7fb45a172",
@@ -6990,12 +7304,16 @@
         {
           "sha256": "7c948a475f464a9167bfdc2684141e99eca858d6ee4f0ee1e824c2056c34db0f",
           "ext": "html",
-          "bytes": 55503
+          "bytes": 55503,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "5bf9c7deb26358ecf2a69db74b9fd5d17a28fd86fc2c2cc91b90b1854967567e",
           "ext": "html",
-          "bytes": 13010966
+          "bytes": 13010966,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "5b4c1a4014c6d5d320f4788614a7d6518732798ef10d4b4c7fef892b7ba8578a",
@@ -7012,37 +7330,51 @@
         {
           "sha256": "63c7e04e6d712e19b8bfd1bb340da477267a53faa2693fc472f6be91f0445bce",
           "ext": "html",
-          "bytes": 41062
+          "bytes": 41062,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "cfc365b2a72e644abff402a394865d116e0cdf05e2136adeb223c921b469215a",
           "ext": "html",
-          "bytes": 50361
+          "bytes": 50361,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "9b830b730c6549d9f8c6a2b6f4bea615a260eb3513679c28ad7e9e736f8608e8",
           "ext": "html",
-          "bytes": 68969
+          "bytes": 68969,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
           "ext": "html",
-          "bytes": 0
+          "bytes": 0,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "5899d8e17005483b4c895b53b5eb08cc6f8137f872390d3458275d8cd1cd4be6",
           "ext": "html",
-          "bytes": 2903
+          "bytes": 2903,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "004454aeb0b1144d221eef5a632eafe15895bc414522810c9b1db9d07e527924",
           "ext": "html",
-          "bytes": 2710
+          "bytes": 2710,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "17c016eab8de0c0cfba1c1f477bb7e559f20bd2eb9b34c84d3e8975f405cb74b",
           "ext": "html",
-          "bytes": 2664
+          "bytes": 2664,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "061ced9d966b4d47e3fe3ffc125e6e676eaac2ef7a9f6ae932de9ec66b73634c",
@@ -7329,62 +7661,86 @@
         {
           "sha256": "3b8493e29e2218cbdf01b76890d7557e47d25537ca87e1b76d1eff7a87c3292b",
           "ext": "html",
-          "bytes": 347870
+          "bytes": 347870,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "85fc9a569deb2f92d94659ac98f44875d29bb208d1c42255de43493d7561f67a",
           "ext": "html",
-          "bytes": 227680
+          "bytes": 227680,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "88d13ec653641327e670b2f7cae06b4fd4497b541031d695342deb4cafd4a7ae",
           "ext": "html",
-          "bytes": 318973
+          "bytes": 318973,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "a328e2f11b6ca3507dd3b27c83771cc4a92980e80c9a50df6cc2e709b2e1f52e",
           "ext": "html",
-          "bytes": 13017247
+          "bytes": 13017247,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "0ce94d93fb410688d979733c59b9ecbe6d5de92fd1a3c4d562ec7d6edd4feb71",
           "ext": "html",
-          "bytes": 236241
+          "bytes": 236241,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "01f495a8a172ce8a779fe159e21acd97d82d729cf2b3ab707a9eb02359958502",
           "ext": "html",
-          "bytes": 327868
+          "bytes": 327868,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "dc3c960183f642409042431602b26203c4e1e5c987b7718ae89741340074c263",
           "ext": "html",
-          "bytes": 327876
+          "bytes": 327876,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "ff7c031525ec42adeb47dcde8280f412bba1df2eb4dda1ea9ac4073270e941f3",
           "ext": "html",
-          "bytes": 14664529
+          "bytes": 14664529,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "bbaea966aa6ca176cfc89f6800753228de1c34c234c3279ed857328045fc808a",
           "ext": "html",
-          "bytes": 23345
+          "bytes": 23345,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "a8c16f56efe66c7a5546470283e8795194d2eac3ebe008c322a958e85e48dea6",
           "ext": "html",
-          "bytes": 31732
+          "bytes": 31732,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "802326f1705b04c1621f9193d6a5722e6d51f999a8de86d436cdef01f4d23ae7",
           "ext": "html",
-          "bytes": 31738
+          "bytes": 31738,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "414814c155e13b46d1c7a6b97a98680c6d9c97700b2b743e14d9f63aa0b029a3",
           "ext": "html",
-          "bytes": 4178673
+          "bytes": 4178673,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "516bfd5b54bc6a251aceee1c9a09f4cbed6215a3559b45e1ae8459609ca1d1f1",
@@ -7407,27 +7763,37 @@
         {
           "sha256": "d66288b113f028bd50ae05657bf1258fae3519515f1437b9808bdaee2aba4b81",
           "ext": "html",
-          "bytes": 21008
+          "bytes": 21008,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "f4aee3c6f9325eef23a9b421aa222d87e200aad395392cffffa7f3f287165057",
           "ext": "html",
-          "bytes": 27179
+          "bytes": 27179,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "def95697d7b11c6ee41f82d5646bd6f20307915707af1db35ddbec4dbdc3e49c",
           "ext": "html",
-          "bytes": 27185
+          "bytes": 27185,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "3f58f844396de257a8b9749946e5f7c382ae270955afc2e00ceccd1e5d59878f",
           "ext": "html",
-          "bytes": 27187
+          "bytes": 27187,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "902c0667f303f8ea31b6e9b1d341825e89b38195f6e0db5d9904228f7879cf96",
           "ext": "html",
-          "bytes": 4176677
+          "bytes": 4176677,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "6fb644a25f192cdeee4699ecb0f708880bd5d90433910fe3a5e71d5523d5d575",
@@ -7444,32 +7810,44 @@
         {
           "sha256": "d56b0830219e777c6cad1c1c23cecfca498450096df1f0b875a388ce4e08666e",
           "ext": "html",
-          "bytes": 23131
+          "bytes": 23131,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "6288b2c94e6fa7ec22ebb3d7460b70173f9d9a4ebf2b784bc4cb3a3f6c4cebc0",
           "ext": "html",
-          "bytes": 30387
+          "bytes": 30387,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "64d62cb0523d9854a9f59375287e071f95d768bc0e8d84cc8473a4eb3264c450",
           "ext": "html",
-          "bytes": 30393
+          "bytes": 30393,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "ed8894edae921a48b269a23b9b7310d6e06cdc08ac66e3e57391e37071c4047f",
           "ext": "html",
-          "bytes": 30395
+          "bytes": 30395,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "65ad393370f116b9ea06d959c5783e5dc5944b3be04d335e8f7ef96449045a46",
           "ext": "html",
-          "bytes": 30401
+          "bytes": 30401,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "75d7021e49cf920d07b4c543f7391851399b13a06ac3dd9795fec2fade273cc7",
           "ext": "html",
-          "bytes": 4178475
+          "bytes": 4178475,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "de6d0a76da6c49708ced344dc51418f4ac0cb46f56063dde063b2f611fadb687",
@@ -7486,27 +7864,37 @@
         {
           "sha256": "17d9a8c5933bec0464451e0e896eacdb9403c8c67320f856db6159372461fba5",
           "ext": "html",
-          "bytes": 106176
+          "bytes": 106176,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "a0c01f19f40966f357f060515a3bac2f04c1738c0136efa55cb657b1c914f9a6",
           "ext": "html",
-          "bytes": 132910
+          "bytes": 132910,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "3e0d5a65118bd418152580c0c4bbcf67523700d19424694a81f29efff5ae5087",
           "ext": "html",
-          "bytes": 132926
+          "bytes": 132926,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "f2e12f2e2786bb912d8352ea865549935d11c08ad268424d0b690113af85dc07",
           "ext": "html",
-          "bytes": 132924
+          "bytes": 132924,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "75044a11bb194206d0a6158985c9d43ac1341c3837f5ae5978e4dc6027129a87",
           "ext": "html",
-          "bytes": 4535540
+          "bytes": 4535540,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "4adf3e00b4ca9cc0908405e728d9036ef46d7be31b31babdac3d94822ffc64cb",
@@ -7523,67 +7911,93 @@
         {
           "sha256": "ef6ccdd88f9d5ff9ebb31c37f2e353ca75fcdaa76ca1250de54229801ae64d7a",
           "ext": "html",
-          "bytes": 25520
+          "bytes": 25520,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "bbffce79074b07ce3ef9686d45c3ded000889611d8b41faf149baa34599aa7c2",
           "ext": "html",
-          "bytes": 33812
+          "bytes": 33812,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "05f9e099bf78aabff7d02a8754b02ee76f73de8e6b5800b1afedbd463c5bdea7",
           "ext": "html",
-          "bytes": 3087
+          "bytes": 3087,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "c25fdc2095757821936dd50dac84e6b6afe100f7aff7926c156d79ce607759ba",
           "ext": "html",
-          "bytes": 3114
+          "bytes": 3114,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "16477ca147d8f20377cc40b92d9fb66aaec94a9aa57f87b02cd87b506eaa73fc",
           "ext": "html",
-          "bytes": 9523134
+          "bytes": 9523134,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "86e08b105f26bcf9b51d01ec5fa7f2ca3ea27c6fddc74612fe4616392b17350a",
           "ext": "html",
-          "bytes": 22312917
+          "bytes": 22312917,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "caf19deb226168870015e43b5c631f222033d5602f1a9540c300f49d785452fe",
           "ext": "html",
-          "bytes": 312211
+          "bytes": 312211,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "b3fd01f61cc283f402f6645e0a7004233a60cb96612284fa1b3bc44b75ece412",
           "ext": "css",
-          "bytes": 3980
+          "bytes": 3980,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "9b4a9916bbfcada94e86a508f2f471ad8caba6220d8a08632b0508a306e6ac8d",
           "ext": "css",
-          "bytes": 1507
+          "bytes": 1507,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "3ce55abaff4f48eecd538da33608b9f1151c7c45f06166409bfe0ed902163aa7",
           "ext": "html",
-          "bytes": 1022
+          "bytes": 1022,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "68de9a2427cf729f2b3405b3acd15c8cc1e887eaf184ed4332a1bd019269ce6d",
           "ext": "css",
-          "bytes": 3191
+          "bytes": 3191,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "c224391e8171d481aa7e00e0979aadf5f2fe457ed2dd25531583f63fbd346996",
           "ext": "css",
-          "bytes": 2313
+          "bytes": 2313,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "27e3d9ca7d9e09125bd4e99147e5bdabc49187dda704b5fcd5014a488f61e34e",
           "ext": "html",
-          "bytes": 860
+          "bytes": 860,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "dc44dca2a4a530607bcbb8bf092951f434a6c2a8f8cef6b83b2e91474c30aaf5",
@@ -7666,92 +8080,128 @@
         {
           "sha256": "60488b01cdf562546826f7ed4616b6e185466c8cf2598ebd7d96b9c1ab9ae0b5",
           "ext": "js",
-          "bytes": 793
+          "bytes": 793,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "08264a150c00a660b025fe4c24310f9ba63729c1bbff4cfabc3f58ac0dee6ec6",
           "ext": "css",
-          "bytes": 6871
+          "bytes": 6871,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "c0937b7b458f5438a9f3f992e50f7dc0f9da56124bd23044e5b70d1bae5f8df3",
           "ext": "html",
-          "bytes": 2725
+          "bytes": 2725,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "533519128df596f65c5ad40c170a00bc3fd156f752048f59623b9b902aea72b0",
           "ext": "js",
-          "bytes": 111
+          "bytes": 111,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "4857600cbb1fdaf310e3594b6f0df7512a942b824309c7bff6ecd4ab1a87afff",
           "ext": "xml",
-          "bytes": 477
+          "bytes": 477,
+          "uso": "fonte",
+          "destino": "tools/ferramentas/salesforce-lwc"
         },
         {
           "sha256": "c40b5c48f914d1ac21eb858df0b7703dbe905771a803581039cf9a7d7746b781",
           "ext": "js",
-          "bytes": 793
+          "bytes": 793,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "08a4f0d50e4426b7755c0b7c1de822062644e2ed380412c54f7ee0ae555ef06a",
           "ext": "html",
-          "bytes": 3473
+          "bytes": 3473,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "1ed2d6d73ecf4a6d445a9c584058ceb09d4af3e4c1f1418ff405eb885f82f3b3",
           "ext": "js",
-          "bytes": 793
+          "bytes": 793,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "698821815395cc26614c8871a8fdf84300f44541301f4b5246519c6519db5c38",
           "ext": "js",
-          "bytes": 1965
+          "bytes": 1965,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "60bf2f535961c4846a03524f134c9f9e5a7863e822828de7bc63b79a8a59c121",
           "ext": "js",
-          "bytes": 766
+          "bytes": 766,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "784b5257ebc4345cd86e55024e831630d62ad15a5c56909cc8f3b587011c97b5",
           "ext": "html",
-          "bytes": 3189
+          "bytes": 3189,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "1ae06380ec9de39cde88e0dfaff30857ce11fe873560268e27d5a5cd9c56730c",
           "ext": "js",
-          "bytes": 106
+          "bytes": 106,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "86719f9379886a060f9ffb10623f8afced789966b90f9175078ffe1e0b00c454",
           "ext": "js",
-          "bytes": 766
+          "bytes": 766,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "c39c60a224acd3041447a207ef35809b720994bea87a221ba99ac4b1c5dde8b8",
           "ext": "js",
-          "bytes": 106
+          "bytes": 106,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "2b6e80f582d6838ae60c4963bf7023c2d30822947fe5e3ae766f0b3a3a29ec9a",
           "ext": "js",
-          "bytes": 756
+          "bytes": 756,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "32661de8a7e5049331c70d0a86a5a09c28e896dda84209e4d64bfde4710db1ce",
           "ext": "css",
-          "bytes": 2046
+          "bytes": 2046,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "5e06abb2a1afae731584728183892ea1303104a06685d00b605bc80e1c074bc3",
           "ext": "html",
-          "bytes": 540
+          "bytes": 540,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "4abb3850bb52beb8da9349d8f575674898aaaa87b64240b32f6c228a44812dc7",
           "ext": "js",
-          "bytes": 104
+          "bytes": 104,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "56cda2b68617f7463e2be928b423f57dc12b76360ce84c6f03a3105838a671d8",
@@ -7846,147 +8296,205 @@
         {
           "sha256": "a3d4a78656907c244e9dbf82b197b25d53f58fd9cf28340562857a0052b704e0",
           "ext": "css",
-          "bytes": 11601
+          "bytes": 11601,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "c859ce051a723b70d25eac8a52abcf97660e961655ace2060fac35aefd552c10",
           "ext": "html",
-          "bytes": 7496
+          "bytes": 7496,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "014d28f16362125df117d91cd92ce8fcecc289fc897f916f5aaa6d26e60acdac",
           "ext": "js",
-          "bytes": 4033
+          "bytes": 4033,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "65c5e507601bce108d6b52add292f74f8c023a6f1960f760b11903c2ddb0900f",
           "ext": "xml",
-          "bytes": 578
+          "bytes": 578,
+          "uso": "fonte",
+          "destino": "tools/ferramentas/salesforce-lwc"
         },
         {
           "sha256": "5619ff7c341a91aaade0be64077e9f4ab720edd99f0545840fefc7178d0e1a12",
           "ext": "css",
-          "bytes": 4609
+          "bytes": 4609,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "46287cdad7e4214f2cce1b088b88b8088523cc7a74b03562c713284b232c0fe1",
           "ext": "html",
-          "bytes": 3930
+          "bytes": 3930,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "8cb98181cdc41c8dddc059177e2d12d191873734d85183d7f73989c88cbc2520",
           "ext": "js",
-          "bytes": 1553
+          "bytes": 1553,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "6737c7b2d4c06c92e27c995422c2b7082f36e494d90cc9c37d2fdb01a3ca6869",
           "ext": "xml",
-          "bytes": 580
+          "bytes": 580,
+          "uso": "fonte",
+          "destino": "tools/ferramentas/salesforce-lwc"
         },
         {
           "sha256": "64879f13ecc723c69b5a1e9b1718e91a8996da0688838f0d5b4ce4ee6705f5a3",
           "ext": "css",
-          "bytes": 3277
+          "bytes": 3277,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "ed1e9f14c5d7b0e461c15b197707ee6e82448abaab22fdfbdb038d2936b54441",
           "ext": "html",
-          "bytes": 2091
+          "bytes": 2091,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "4af5c0d466d28795381f143d43268ed3657f1ee7c3cdad8de7fd846b0d1a9deb",
           "ext": "xml",
-          "bytes": 580
+          "bytes": 580,
+          "uso": "fonte",
+          "destino": "tools/ferramentas/salesforce-lwc"
         },
         {
           "sha256": "d22562de46b996fcf2b1a708e056810ec370624165377635806d8611db450bce",
           "ext": "css",
-          "bytes": 4909
+          "bytes": 4909,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "4184cd8a758aad899339508bbc7e851e6cb8ad77a2f583edc06932e583a11d8b",
           "ext": "html",
-          "bytes": 3921
+          "bytes": 3921,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "eb9bde650133f1e3d569101038a1ddc11b5df3f81e187dad1a87ad294dec6c02",
           "ext": "js",
-          "bytes": 3163
+          "bytes": 3163,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "75e4cf4b0e76f9af710ac5c621d2cb615eb065b973eb56efc2718580d987eea9",
           "ext": "xml",
-          "bytes": 586
+          "bytes": 586,
+          "uso": "fonte",
+          "destino": "tools/ferramentas/salesforce-lwc"
         },
         {
           "sha256": "bd4506c5799b10e3d8e58f3e4314a685bc2dca4385c55e187abc57a9d511537d",
           "ext": "css",
-          "bytes": 4945
+          "bytes": 4945,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "c83bf9b0ed01fc1d73896c4ddd20386c226979ef87fb2d48aaf17b55ffee8b2b",
           "ext": "html",
-          "bytes": 5873
+          "bytes": 5873,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "8aefa9e455eada46b4a81b8a8f1da8c5ba5a2a668b172887921220db85cb36d7",
           "ext": "js",
-          "bytes": 97806
+          "bytes": 97806,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "27936f127d67a84b6dec9f0876ba35cd46162ec454d0b44cec7da849163628fa",
           "ext": "xml",
-          "bytes": 576
+          "bytes": 576,
+          "uso": "fonte",
+          "destino": "tools/ferramentas/salesforce-lwc"
         },
         {
           "sha256": "770b601220cc2f05265be88fd68e58c8e671dea5e80c05a6537397e8f474a811",
           "ext": "txt",
-          "bytes": 142
+          "bytes": 142,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "e7f00272a44879c0ca510c469d8a90565379c2aa3f480d8402cf41b0fd2ba213",
           "ext": "html",
-          "bytes": 85128
+          "bytes": 85128,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "a1b14b1cace2050db461b1b23eae2dadbbe4242fcd837f97770dee9eb1da5035",
           "ext": "html",
-          "bytes": 96047
+          "bytes": 96047,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "3a96e0afa9c1cd26cec7a9d32e22b569322d314948f1bb89befea8e3ed5ad98b",
           "ext": "html",
-          "bytes": 6250510
+          "bytes": 6250510,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "5325a6c295c3513d46226fed02b4d8fc0c8bf0b2f44c015c457a2eb83879fa5c",
           "ext": "html",
-          "bytes": 10797337
+          "bytes": 10797337,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "551788e5d1669a2282dfcc622df27383e92cecab91c8c117b6d2207a604ce326",
           "ext": "html",
-          "bytes": 92499
+          "bytes": 92499,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "d51f47826f6052386ebbd5f49ddae8dd8a9915e141a1604614d2a303400e01fc",
           "ext": "html",
-          "bytes": 108146
+          "bytes": 108146,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "3ba0d6b115ef66de13f626ef6a6ad4d682f084edfc228c8936c75fc6ebff6c91",
           "ext": "html",
-          "bytes": 109749
+          "bytes": 109749,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "8b1f02f187bccab6301d957f1449430357fd2a5b6376e33ba96dbab9c6f0596e",
           "ext": "html",
-          "bytes": 100790
+          "bytes": 100790,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "6c3c3c1d42287da07c3b3dbfd6cb28a6467401775a649d8d233fa5df571e5c3f",
           "ext": "html",
-          "bytes": 47689482
+          "bytes": 47689482,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "6e558d83a85a6464a50b20cec2483c4fe27ffd0f077867baf4167fa7beaf9b3c",
@@ -8159,27 +8667,37 @@
         {
           "sha256": "8054e5e04f3d1e5073f644b7cd3bffcf885085aa36c9a816360408678aa0f28a",
           "ext": "html",
-          "bytes": 8454931
+          "bytes": 8454931,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "dc04f1d00e8ce78b9b080c22966a50d4a4c9654b287e286a4a5a994260098482",
           "ext": "html",
-          "bytes": 10312
+          "bytes": 10312,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "a6b5ee9dda5255fa70567fa658e35ad2cd73c249a4e55c5f6d1252ddd6084bde",
           "ext": "js",
-          "bytes": 16345
+          "bytes": 16345,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "143a3a47150ed6231a6b7dd25ba331a6abafb4d6b0f4eddd587ca9bcb9009efd",
           "ext": "js",
-          "bytes": 16344
+          "bytes": 16344,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "20e1c394a921abd242de11df0ac050ef8389995749c1cfffda4a834a221618cb",
           "ext": "css",
-          "bytes": 14124
+          "bytes": 14124,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "e7b10909341c16051fc99c06f890fc37d5866b54650d3123231d6ccc002dbf9c",
@@ -8346,82 +8864,114 @@
         {
           "sha256": "64157982348bd9ba174126fdcb87273a7f738dc384e99ab0e4cf5e4ab535f573",
           "ext": "html",
-          "bytes": 136799
+          "bytes": 136799,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "53a63c9a6224f799020633a4aa505b8d2bcbe2fd25eca38a4825fd385a349162",
           "ext": "html",
-          "bytes": 67613
+          "bytes": 67613,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "993375371e6135c7c9ba5e92ab6184348d589819a681ebe7617a9307f3df52c4",
           "ext": "html",
-          "bytes": 96607
+          "bytes": 96607,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "338b3df0dbbcc85e3af08169a6b3abfd570cb942334a14d8b223a118d2c24ed8",
           "ext": "html",
-          "bytes": 108062
+          "bytes": 108062,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "cf04da160fe61dc7875ae72f2470bbc1025dc63a84a4c84640772349fe368074",
           "ext": "html",
-          "bytes": 97160
+          "bytes": 97160,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "7edb727a01fbdb729da2540fa2d268f7bd7792f3a470b3020c6213765cac9a0f",
           "ext": "html",
-          "bytes": 29577
+          "bytes": 29577,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "ed1ab50b82824ead8d09f63801106beb5b2f637014bbd87e80efd5a5dd980c50",
           "ext": "html",
-          "bytes": 10278
+          "bytes": 10278,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "1acb79997f3c4bd881f555ddde48b9639930aa07d1ec8c676eddac5b86e3de0d",
           "ext": "js",
-          "bytes": 16724
+          "bytes": 16724,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "27a61470bb83a10e3b76e5b58b807a4b5da06f368ffebe99b3bd4cf62c7b4b99",
           "ext": "html",
-          "bytes": 92683
+          "bytes": 92683,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "5cbc34cc039e0bae4b2e2b4b84c36c43fb64e54871caf0b6f66c7e066efcc38b",
           "ext": "html",
-          "bytes": 126822
+          "bytes": 126822,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "9abf89bf5c8c3809da4837ada310d1d34a342047d3321e6771b9cf24adce4aa1",
           "ext": "md",
-          "bytes": 1863
+          "bytes": 1863,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/105"
         },
         {
           "sha256": "13df11d40b9d1b433dd87afcf15052af03dfa612891ed191fb6d9b698022adfd",
           "ext": "html",
-          "bytes": 149382
+          "bytes": 149382,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "cd3ad08897d412051d432f018efa5ee4d87d7e003441c563095d382d328ad807",
           "ext": "html",
-          "bytes": 147668
+          "bytes": 147668,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "8dfad96ec0625c91190b0bad4fe903f4c7855dd9f8201b934f0f131db1cbebe6",
           "ext": "html",
-          "bytes": 149334
+          "bytes": 149334,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "dd6dfeb038a3caf912ae4958b328a42f23b5c5daf14de2788c1f41dbe4a50745",
           "ext": "md",
-          "bytes": 795
+          "bytes": 795,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "127abaa663609c4ba1c5ac1315661e4484e449727b574995318ec37fd70d563a",
           "ext": "md",
-          "bytes": 2166
+          "bytes": 2166,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "6e152a80cd6ad86d8e48877476dadee0d9e3609fdbfeae25d721b7eabe98dadc",
@@ -8474,7 +9024,9 @@
         {
           "sha256": "ebe716c9084e430cf2b1691e7c2d17e6f0879c6b6998bfe82aa69715e91a3127",
           "ext": "sem-extensao",
-          "bytes": 210
+          "bytes": 210,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "2f380f4a3d05a8d90c2106f50da75064e9ce57a598599dc5404f8f69a0223aa9",
@@ -8642,172 +9194,240 @@
         {
           "sha256": "1f604dbad6aef6472e7d82ff89e658b7e9eb78de2709a09639c2e6e1a51680c5",
           "ext": "html",
-          "bytes": 150590
+          "bytes": 150590,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "c95c55ad049431bbd12469cbc15b7f1e288a6addb02f88b83c6094eb9a0323f2",
           "ext": "html",
-          "bytes": 100857
+          "bytes": 100857,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "18acdedebd7a8d3cd5a9e97fee8168eb62478a847b0ec25786fd200c423ff761",
           "ext": "html",
-          "bytes": 109245
+          "bytes": 109245,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "f7215e5cfc9dc414b8576f31ff06fe121936e209ce4373d313da210e00abc7b8",
           "ext": "html",
-          "bytes": 109453
+          "bytes": 109453,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "83125f115b7935afbf1c6e0e86d1a4b5f14678b01015ab5a9b22d844d73c0c62",
           "ext": "html",
-          "bytes": 115964
+          "bytes": 115964,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "96b90581d8e3279df701b119ad1d6597f4acd6472d8c4dd18f6e103c07d9fc8c",
           "ext": "html",
-          "bytes": 110931
+          "bytes": 110931,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "785f067b11662d2e83c2227376bcd5ca0547ffae59d72aace95bdf4ccdf1465d",
           "ext": "html",
-          "bytes": 117069
+          "bytes": 117069,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "2fbfeb830d65bac61af1978a49e3597e3d3da117c418e9337e8176715f367ca5",
           "ext": "html",
-          "bytes": 117366
+          "bytes": 117366,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "5a8b21aea07ac1675a2f44d63aaafc25abb4d2cd6baa832b4b5a8f2b934ead9c",
           "ext": "html",
-          "bytes": 140361
+          "bytes": 140361,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "328029a48dd6774a9b77fdd5a37b4d02ba5c76960a0242c2968b29bd75a0d9f0",
           "ext": "html",
-          "bytes": 139916
+          "bytes": 139916,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "521aad6bbace8b44bfa7ea69711c9722fef8ecc233482f466020e90f1e9be683",
           "ext": "html",
-          "bytes": 24852
+          "bytes": 24852,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "e8b5ac8bc1e5f56ed4af8f24e74e805d46e85931b8efa55343f16090ecfd22ec",
           "ext": "md",
-          "bytes": 352
+          "bytes": 352,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "3a3c5f22e38ea0381e2f053789037b3113266cd0adcdbd29dc6e7ed05a70e2c4",
           "ext": "html",
-          "bytes": 247922
+          "bytes": 247922,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "6b4c9c7fd4a6f45290df757d41ff3a0f3948d82ee81d3c2e1ab09c45e4d0d33c",
           "ext": "md",
-          "bytes": 491
+          "bytes": 491,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "35fdc3289cec68b93a86bc70e8c24430fc8fc4225fd39b4817a5c0a410303a2d",
           "ext": "txt",
-          "bytes": 763
+          "bytes": 763,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "225ad068202e26b9de297465bae13ba1961f07ef52a15a8d4ce19954f970a985",
           "ext": "html",
-          "bytes": 45444
+          "bytes": 45444,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "b5ff0bbff603ff45a9d1905ab793231fcd7db95e4bf49f2e99066067601341af",
           "ext": "html",
-          "bytes": 9660
+          "bytes": 9660,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "0a3bf60de6a1f229881c9d80d74047bb346deb8fddb46405f031be9b9677db6c",
           "ext": "html",
-          "bytes": 71129
+          "bytes": 71129,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "cd5fa747551dfd75c8f15974e377aa3a61a23fc58a49dc1162a052a8fa86fbb2",
           "ext": "html",
-          "bytes": 8495
+          "bytes": 8495,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "f70b5a9da85f8162da5b2232b91bc7aabb23780f215803988b4e81719bcb3020",
           "ext": "html",
-          "bytes": 126581
+          "bytes": 126581,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "7af0a5be36530b1a2dffe495fb82374de3293e00917baf270a4d59358d71ec2c",
           "ext": "html",
-          "bytes": 19918
+          "bytes": 19918,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "2b716ef66ff4811d6a4543cbcccba8c793c34dcdea6737d7ab931b905458aa7b",
           "ext": "html",
-          "bytes": 37214
+          "bytes": 37214,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "7ff41448baca260e23fed3c075249f6c5e8243f0c39055a609b719e2b3664ac0",
           "ext": "html",
-          "bytes": 43339
+          "bytes": 43339,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "e02fbbe8f58314e5306ebd40bee6ab89980d043c582a91219c0bf331411cbdb4",
           "ext": "html",
-          "bytes": 48065
+          "bytes": 48065,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "e24fae7b31d4ef18be818c4b294b268351486d5c6c3a69164c8a7e7b12576928",
           "ext": "html",
-          "bytes": 58084
+          "bytes": 58084,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "78b4c687757c307a93a127fffbd6236af33ff1d41b1132284669526bda2f5d78",
           "ext": "html",
-          "bytes": 58735
+          "bytes": 58735,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "75be4d96a8cf52dcc3112b1f30b516221f6fe2f0c559740af7070efa5a4ad766",
           "ext": "html",
-          "bytes": 75716
+          "bytes": 75716,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "8d2b8a5ada7b00f40c4a144172b7446b8935f9f8a9260d83f1dc4d949c0bfeb5",
           "ext": "html",
-          "bytes": 71121
+          "bytes": 71121,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "3db71c58e269b27355ed66d56f1461406022a0d0b38d116708bc4daaa4f064cc",
           "ext": "html",
-          "bytes": 76045
+          "bytes": 76045,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "e9ff45acbe6f46c427c953abb169ba0c4e68064532b0ba308f0bd718e5b251ed",
           "ext": "html",
-          "bytes": 110640
+          "bytes": 110640,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "b46297760638e0c9762717a988d07a6826cb09b98c357a9ad63b016238efd804",
           "ext": "html",
-          "bytes": 97416
+          "bytes": 97416,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/106"
         },
         {
           "sha256": "29b4213dc665ba57e02eead66b27e7db604b8177feef27f7c182ae42f4fab8d0",
           "ext": "md",
-          "bytes": 3993
+          "bytes": 3993,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1102"
         },
         {
           "sha256": "c2af2c00b9540c25eb9ddd99a3f0f26037423601dc7b1c38a6f155f86669cec7",
           "ext": "docx",
-          "bytes": 24392
+          "bytes": 24392,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/105"
         },
         {
           "sha256": "82509402b1512dee785ecb24353ad76e6ff5721bccb189fd30dff617e6ec7d14",
           "ext": "docx",
-          "bytes": 3394150
+          "bytes": 3394150,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/105"
         },
         {
           "sha256": "195aa44b41b35b0ac7037dde58360f2a522215168a8e118d149b066ebe31360e",
@@ -10203,12 +10823,16 @@
         {
           "sha256": "62219fb1248db1a2513699570f06d33749e67b06bfced9980ddd683079a3edf9",
           "ext": "docx",
-          "bytes": 162
+          "bytes": 162,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "a4cab5fe6a0cf6e59ee8060b5100debfe37e3c5d2a7e5d2aa446b99a94852846",
           "ext": "docx",
-          "bytes": 162
+          "bytes": 162,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "8f8e8ccdc57229d943760d78263756947d4c12b2a9ece61fcf32260edd9d7b86",
@@ -12241,17 +12865,20 @@
         {
           "sha256": "8e8022b8a60dcdae3c419da711f704ba776b70ce27faffb89bea22230b87c92e",
           "ext": "docx",
-          "bytes": 97858
+          "bytes": 97858,
+          "uso": "referencia"
         },
         {
           "sha256": "62fbaa09c91f61736e08079dd4012f60d2f04dae6afbce7c6f5a187e275ad365",
           "ext": "pdf",
-          "bytes": 2250955
+          "bytes": 2250955,
+          "uso": "referencia"
         },
         {
           "sha256": "59f04611e77ad34c0afc27d95009e18122ee9c09d947dee4840f8c79f4d94e2d",
           "ext": "docx",
-          "bytes": 1269982
+          "bytes": 1269982,
+          "uso": "referencia"
         },
         {
           "sha256": "922ca38b361528fc5de470b0eefb178a8c16e366fff4026ff609eba798246a5f",
@@ -12310,7 +12937,8 @@
         {
           "sha256": "9b8a0f27e27a4e2ba0fd2558b7da6d9005a38f6852c0a8e9ec58d989c0ae3084",
           "ext": "pdf",
-          "bytes": 18452
+          "bytes": 18452,
+          "uso": "referencia"
         },
         {
           "sha256": "cf5e1e355db4cfd9b2581b880314c4302768371bdb86c0afd176562bd60e1bda",
@@ -12369,7 +12997,8 @@
         {
           "sha256": "89ad1ce7c6b3eac770bc3fc50251cb205c2bd08ffb1d49a5b04cd00f41f58863",
           "ext": "xlsx",
-          "bytes": 11591
+          "bytes": 11591,
+          "uso": "referencia"
         }
       ],
       "proximaAcao": "Arquivos não saem do hd (dados, marca ou credenciais); o conhecimento foi usado nos destinos."
@@ -12390,12 +13019,14 @@
         {
           "sha256": "8ab739248a38ae480b80c625a4709667ea8058da869e9ab91a7245c59685333a",
           "ext": "html",
-          "bytes": 10783
+          "bytes": 10783,
+          "uso": "referencia"
         },
         {
           "sha256": "38164b2a7caf9c1ab2c75b59a25e023caf5862203f73fa1c91c590a3246a6164",
           "ext": "pdf",
-          "bytes": 679986
+          "bytes": 679986,
+          "uso": "referencia"
         },
         {
           "sha256": "a90ccee1c1e6ccbbe400cf8c695345bdae6911812460aec4d729ebcdc638de9f",
@@ -12460,17 +13091,20 @@
         {
           "sha256": "ea6919882cf5efffb92e55c11133ecc0468119771669e97404fe8ddf6ffda417",
           "ext": "pdf",
-          "bytes": 2759636
+          "bytes": 2759636,
+          "uso": "referencia"
         },
         {
           "sha256": "61f6feb446f93bee0695d0d81addae63f06867e1a9e393de635a5bdad248592f",
           "ext": "pdf",
-          "bytes": 2491504
+          "bytes": 2491504,
+          "uso": "referencia"
         },
         {
           "sha256": "0ef190c2e21d30716226466b1bacec9d285d60dc12d502ee31ef0052ef7951bd",
           "ext": "pdf",
-          "bytes": 1486609
+          "bytes": 1486609,
+          "uso": "referencia"
         },
         {
           "sha256": "9fb28c4aa64f13fc3832acc4f872bc7ba99a1071ac509f5ff85c8b9d1cdd6a3a",
@@ -13104,62 +13738,74 @@
         {
           "sha256": "0c2707ea159a600d90f6cdb222ad317544a19aa5933196a1dbe2bbcdb5dafe3a",
           "ext": "docx",
-          "bytes": 651681
+          "bytes": 651681,
+          "uso": "referencia"
         },
         {
           "sha256": "7c612c8e886ef3e178e52556618a0dddc9cd251789fe447db21745edbb59858e",
           "ext": "pdf",
-          "bytes": 92456767
+          "bytes": 92456767,
+          "uso": "referencia"
         },
         {
           "sha256": "f3dcdb8133f25172debff6d628f70900659a2c648bf07a5a1ca1284b340c382e",
           "ext": "pdf",
-          "bytes": 92457510
+          "bytes": 92457510,
+          "uso": "referencia"
         },
         {
           "sha256": "70260519343341c3d557f49c3bdc3401689bb1bf0c56a9a4fc0d798b45e7175a",
           "ext": "pdf",
-          "bytes": 92465996
+          "bytes": 92465996,
+          "uso": "referencia"
         },
         {
           "sha256": "753c8359603ba5737afaf8cdc3329738e670b21dd9dc809e261d3a9f5e728895",
           "ext": "pdf",
-          "bytes": 92466052
+          "bytes": 92466052,
+          "uso": "referencia"
         },
         {
           "sha256": "9b4f710d47cce9e20f2d8dcfc83638678fa9e885bec9a8128e32a5067779f83f",
           "ext": "pdf",
-          "bytes": 92467631
+          "bytes": 92467631,
+          "uso": "referencia"
         },
         {
           "sha256": "834596dd92e8fe2b552cf48f2e3f58cc69dcd92b0887173d8193b0790928b44b",
           "ext": "pdf",
-          "bytes": 92466266
+          "bytes": 92466266,
+          "uso": "referencia"
         },
         {
           "sha256": "c40fd85df5bb716941e5ff9b8bdde123c8331641df933c3c82fa319ab6ea1a08",
           "ext": "pdf",
-          "bytes": 92468010
+          "bytes": 92468010,
+          "uso": "referencia"
         },
         {
           "sha256": "10bce1ebb240ba97d573722c7419e1f373fc50b3dac694b938e6697ec1487ebb",
           "ext": "pdf",
-          "bytes": 92806261
+          "bytes": 92806261,
+          "uso": "referencia"
         },
         {
           "sha256": "c5cb767c840afdce555dc21e615be6a28c3f639c21799db49d107201ee780abe",
           "ext": "pdf",
-          "bytes": 92467701
+          "bytes": 92467701,
+          "uso": "referencia"
         },
         {
           "sha256": "9737f193641efaf8c1e81d35695250b426af57d2447519e182a55d7ad6952fe8",
           "ext": "pdf",
-          "bytes": 92451983
+          "bytes": 92451983,
+          "uso": "referencia"
         },
         {
           "sha256": "68d5cafab6d762de0acd66a3eef8eccb4a53a2755a0851e3eff586eb01d8a852",
           "ext": "pdf",
-          "bytes": 92465912
+          "bytes": 92465912,
+          "uso": "referencia"
         },
         {
           "sha256": "b1bb4ec2b7438a8e14a5d3615c6f22214fb7b241b3e5c3d77389b1f29cd972df",
@@ -13176,62 +13822,74 @@
         {
           "sha256": "7dcfb8070cab379bf76c955d2e373d876f6d148db29862c8aacd5e3695962c23",
           "ext": "pdf",
-          "bytes": 1790074
+          "bytes": 1790074,
+          "uso": "referencia"
         },
         {
           "sha256": "a87b2134dc7b076e5a46d53b553c6174d83cfaabdb1d459e095cf49a10a12588",
           "ext": "pdf",
-          "bytes": 1789934
+          "bytes": 1789934,
+          "uso": "referencia"
         },
         {
           "sha256": "fe649047b5ba809a5fd51c3ec030a3b4934d265523799684fadda422c3192fc2",
           "ext": "pdf",
-          "bytes": 1790455
+          "bytes": 1790455,
+          "uso": "referencia"
         },
         {
           "sha256": "685218986d7a68951ba5c1a7fe1ca2b400d8867e5f8144be22ca08a8a5e180e1",
           "ext": "pdf",
-          "bytes": 1789962
+          "bytes": 1789962,
+          "uso": "referencia"
         },
         {
           "sha256": "699d93f3b65ae8e61811a49411a5e1f3aef45b932d96ed5e69e71b018fa6d29e",
           "ext": "pdf",
-          "bytes": 1790265
+          "bytes": 1790265,
+          "uso": "referencia"
         },
         {
           "sha256": "89a3164eb1351fdb1fead4576b292fd315dc5245a5e4c85f36729db72978590c",
           "ext": "pdf",
-          "bytes": 1790487
+          "bytes": 1790487,
+          "uso": "referencia"
         },
         {
           "sha256": "25bbd137acc5dd9f48827b0da3d2d2c934951ed20b5a1e66133629f18f18f7f1",
           "ext": "pdf",
-          "bytes": 1790449
+          "bytes": 1790449,
+          "uso": "referencia"
         },
         {
           "sha256": "15990c0ad00e5f32d179593acd8594ec08f9298d2f507697c2f2e8d984cd40f0",
           "ext": "pdf",
-          "bytes": 1790359
+          "bytes": 1790359,
+          "uso": "referencia"
         },
         {
           "sha256": "9317ffb7b7e77f0582d0a3343b374fdf4915f728bd4a8f70200c832abbb88af4",
           "ext": "pdf",
-          "bytes": 1790593
+          "bytes": 1790593,
+          "uso": "referencia"
         },
         {
           "sha256": "91a349acf416d3da714711e291dc5e459211aca88a91419b2afb76bf901f6820",
           "ext": "pdf",
-          "bytes": 1790568
+          "bytes": 1790568,
+          "uso": "referencia"
         },
         {
           "sha256": "4cd457b018d1bc35a83c429bbb0420254197ea36bd14a6f59758d9450ac24935",
           "ext": "pdf",
-          "bytes": 1790521
+          "bytes": 1790521,
+          "uso": "referencia"
         },
         {
           "sha256": "3a5fb1a567c4313b2392bcde4a7aaaf8a6a4f58570cc2f3858557427c8615eee",
           "ext": "pdf",
-          "bytes": 924735
+          "bytes": 924735,
+          "uso": "referencia"
         }
       ],
       "proximaAcao": "Arquivos não saem do hd (dados, marca ou credenciais); o conhecimento foi usado nos destinos."
@@ -13250,67 +13908,80 @@
         {
           "sha256": "97de1f3d89c7197dc5aa281dc2780806d580e59a1b8cb5618461b3f690e22826",
           "ext": "xlsx",
-          "bytes": 25074
+          "bytes": 25074,
+          "uso": "referencia"
         },
         {
           "sha256": "d50273d92e6b7db8e7b18a4cc3fdd6bd16519bd31bdc69254efac813c5b147b3",
           "ext": "xlsx",
-          "bytes": 26614
+          "bytes": 26614,
+          "uso": "referencia"
         },
         {
           "sha256": "77a183b625bd9ffc2b4a4e157490924a585dc8780dfa3dd679dd92551e89558c",
           "ext": "docx",
-          "bytes": 22748
+          "bytes": 22748,
+          "uso": "referencia"
         },
         {
           "sha256": "8ce760cedfc4cce973b75c8d0368f24c6fdc2956fb1ef2920569713e969c1638",
           "ext": "csv",
-          "bytes": 14592
+          "bytes": 14592,
+          "uso": "referencia"
         },
         {
           "sha256": "cf4afaabcfe045f871201d76566102dd0c51f344d1a285e41a9468ddd7b511c5",
           "ext": "xlsx",
-          "bytes": 145187
+          "bytes": 145187,
+          "uso": "referencia"
         },
         {
           "sha256": "9c7cc0cd1fc3ffcd173a32aaf4641b0f668dc2817b87fe6141868ef552e67f56",
           "ext": "xlsx",
-          "bytes": 9261
+          "bytes": 9261,
+          "uso": "referencia"
         },
         {
           "sha256": "d1da8a40e9a68b6574810f19410ef578ce676c0df10f7dbf1d76f63274a15ad4",
           "ext": "csv",
-          "bytes": 14383
+          "bytes": 14383,
+          "uso": "referencia"
         },
         {
           "sha256": "d33de6ddb63eabaa5bf477679e03aa6eb51b588d5c14cbba87c3e995d1598787",
           "ext": "csv",
-          "bytes": 14387
+          "bytes": 14387,
+          "uso": "referencia"
         },
         {
           "sha256": "6e4bd085e3b85cbc88488646b5a7f7e087c815a0ab5c92c52d43a74527326830",
           "ext": "xlsx",
-          "bytes": 20312
+          "bytes": 20312,
+          "uso": "referencia"
         },
         {
           "sha256": "9ca5144d26b8618aede6f507a272dbc16bae8d5e6f36e86eb041147b98491e2a",
           "ext": "xlsx",
-          "bytes": 20315
+          "bytes": 20315,
+          "uso": "referencia"
         },
         {
           "sha256": "329df89d3f65b937005660a3bb622242e2397748961db7317250b55edea385a5",
           "ext": "csv",
-          "bytes": 217
+          "bytes": 217,
+          "uso": "referencia"
         },
         {
           "sha256": "7959fc8174c036cfe9f59d2be5af56d7c4c2f8dd567b95345821a2bf20ff9bc2",
           "ext": "csv",
-          "bytes": 217
+          "bytes": 217,
+          "uso": "referencia"
         },
         {
           "sha256": "cab6ed519865d6fafdb3cd4bbced3ec2998012607681cf26474ccc526ea047eb",
           "ext": "xlsx",
-          "bytes": 15111
+          "bytes": 15111,
+          "uso": "referencia"
         }
       ],
       "proximaAcao": "Arquivos não saem do hd (dados, marca ou credenciais); o conhecimento foi usado nos destinos."
@@ -13330,27 +14001,37 @@
         {
           "sha256": "37732f6e1165a7a8a106be41e5c4ce548bec90abd1a7aabdce09eef7dcdeb5ed",
           "ext": "docx",
-          "bytes": 352153
+          "bytes": 352153,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "f6334eeb0de9bd5e53038df25162453574cea37581cbbd2328c3c9b1a594799c",
           "ext": "docx",
-          "bytes": 121261
+          "bytes": 121261,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "e77d0447dc4d7fc114ef00f3136d2c1c4cf7a2c80c756e9bab799d4a09116d3f",
           "ext": "xlsx",
-          "bytes": 19048
+          "bytes": 19048,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1101"
         },
         {
           "sha256": "e55fd90834fd5c5f77d7bc8b11901dbf90217fb2a334f88b63f4d023c0b16046",
           "ext": "docx",
-          "bytes": 142418
+          "bytes": 142418,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1101"
         },
         {
           "sha256": "916c072bd0a2b50ba36da7ad5b46a2f3c3adc9f88281b8a459a955e84549a076",
           "ext": "docx",
-          "bytes": 6509786
+          "bytes": 6509786,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1104"
         }
       ]
     },
@@ -13370,7 +14051,8 @@
         {
           "sha256": "c3b82c0887962a03d15685de70e9125a67256a817cfd59306ea31d0b1a72065b",
           "ext": "docx",
-          "bytes": 2373906
+          "bytes": 2373906,
+          "uso": "referencia"
         }
       ],
       "proximaAcao": "Arquivos não saem do hd (dados, marca ou credenciais); o conhecimento foi usado nos destinos."
@@ -13389,37 +14071,44 @@
         {
           "sha256": "a297e35b254535eaed39207c807ae2013662bbd469a15a0457aa61d83f38859a",
           "ext": "pdf",
-          "bytes": 6222078
+          "bytes": 6222078,
+          "uso": "referencia"
         },
         {
           "sha256": "0b2f262b559f4a1eddbb0b7d1d59f53f3f644b5a32bf1278f3b3acd868b931cb",
           "ext": "pdf",
-          "bytes": 6221074
+          "bytes": 6221074,
+          "uso": "referencia"
         },
         {
           "sha256": "1241351ce3ec20b8a1ef39a872e8a16101505fd8c1762928c64f6d5d21f47995",
           "ext": "pdf",
-          "bytes": 6214961
+          "bytes": 6214961,
+          "uso": "referencia"
         },
         {
           "sha256": "96a24badd444d25342b8be4b0aef7e781465a105c25deba0d82451f655fc2370",
           "ext": "pdf",
-          "bytes": 5637808
+          "bytes": 5637808,
+          "uso": "referencia"
         },
         {
           "sha256": "11d3ac32009f710b46da10923f0d5c696ede71c95060235db577bc4e3551d596",
           "ext": "pdf",
-          "bytes": 5640026
+          "bytes": 5640026,
+          "uso": "referencia"
         },
         {
           "sha256": "4c6b9dd1ea7159ca8fae1e17577410507fac3ab1941835748a3ba19e60e981b3",
           "ext": "pdf",
-          "bytes": 5805262
+          "bytes": 5805262,
+          "uso": "referencia"
         },
         {
           "sha256": "1aff4b0fb9f04fc9a72e67a71d580d224601a9a0d4828631384557b9cff25bff",
           "ext": "docx",
-          "bytes": 65776478
+          "bytes": 65776478,
+          "uso": "referencia"
         }
       ],
       "proximaAcao": "Arquivos não saem do hd (dados, marca ou credenciais); o conhecimento foi usado nos destinos."
@@ -13443,47 +14132,65 @@
         {
           "sha256": "b9a30b1afc7cb81b41417d1d86e79cafbc8c5092ad0b8d357330ef7e8a6bffbc",
           "ext": "docx",
-          "bytes": 38248
+          "bytes": 38248,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1101"
         },
         {
           "sha256": "d871f3ecbc64550d0d5f92997fc6933b727e331c8c4fa66e3657d24994369ab5",
           "ext": "xlsx",
-          "bytes": 17412
+          "bytes": 17412,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1101"
         },
         {
           "sha256": "e258fb13ba76ba26e1e42d81be4f843e609ee97d5db0d066f940ce1f5860809f",
           "ext": "docx",
-          "bytes": 12847
+          "bytes": 12847,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1101"
         },
         {
           "sha256": "b422d8977e79f7c9aa22da635d595e111884f3d7457981e0630aefbcd04b1dfd",
           "ext": "xlsx",
-          "bytes": 22009
+          "bytes": 22009,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1104"
         },
         {
           "sha256": "5c0f6096525224a3d6ccdfbce798d9cbb46b25c5b1796f4eeb06f61201f394da",
           "ext": "txt",
-          "bytes": 73931
+          "bytes": 73931,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1104"
         },
         {
           "sha256": "34d971481dda2bb908bd96b5edc8819d4e0d8761df57cb8db4bebfd008853ca8",
           "ext": "txt",
-          "bytes": 320733
+          "bytes": 320733,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1104"
         },
         {
           "sha256": "6e08a092f2c330d54a461637f98badf5696cc3c39118e0230f5b546e12383045",
           "ext": "txt",
-          "bytes": 38932
+          "bytes": 38932,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1104"
         },
         {
           "sha256": "243263221c24b31bef2082bf50c6070d0a3d80564ca1f4fdac1814239a6b74a5",
           "ext": "docx",
-          "bytes": 77209
+          "bytes": 77209,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1104"
         },
         {
           "sha256": "86904e39ae383455b4c7224132c37503e0e169c266fd585d4296f20d79cdd8b0",
           "ext": "xlsx",
-          "bytes": 197223
+          "bytes": 197223,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1104"
         }
       ]
     },
@@ -13506,27 +14213,37 @@
         {
           "sha256": "d19caee4dbed091df6f32829cdd9fdc8b7d81be6b3da77dd45f20e918fb454fe",
           "ext": "pdf",
-          "bytes": 2357153
+          "bytes": 2357153,
+          "uso": "fonte",
+          "destino": "learn-tech/blog/personas-e-estudo-de-mercado-na-pratica"
         },
         {
           "sha256": "02d27c59f53319a52a864878d53fc45f0edad95ee6b71c3609a436e5e089a5e2",
           "ext": "pdf",
-          "bytes": 10906641
+          "bytes": 10906641,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "2141c7be40f4e9945a993d89d5ed7a05058f50da9c7dcb112e14fd0367f13161",
           "ext": "pptx",
-          "bytes": 6484268
+          "bytes": 6484268,
+          "uso": "fonte",
+          "destino": "career/empresas/abc-da-construcao"
         },
         {
           "sha256": "f538845e34c68286d63d78efcd8efb3944a309c42c49eaab33e4c4a741004979",
           "ext": "pdf",
-          "bytes": 163507615
+          "bytes": 163507615,
+          "uso": "fonte",
+          "destino": "learn-tech/blog/personas-e-estudo-de-mercado-na-pratica"
         },
         {
           "sha256": "8daac2402bf94e1cad6e0596cc5045f8d70c8ce87ce3a490f374b7ce764ef21b",
           "ext": "pptx",
-          "bytes": 59206
+          "bytes": 59206,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "23516c0ec5d8d788751ecaf92ea1fc8858b4ed9b0b6d63a4d44c91987b29aec4",
@@ -13537,7 +14254,9 @@
         {
           "sha256": "f76bd66534a073e209fea23314b30fa153ae8f05843cfe68c95b0d6ac4243a00",
           "ext": "pdf",
-          "bytes": 2638126
+          "bytes": 2638126,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "4df7ca07a51387c9977b10a3ccc726a2570808c61caa592214d3bc1ab2e1ca5f",
@@ -13548,37 +14267,51 @@
         {
           "sha256": "be77c93b6c8878bde14c9a0a840e4f84182533bbb6483d9c15617d619172b244",
           "ext": "pptx",
-          "bytes": 71860992
+          "bytes": 71860992,
+          "uso": "fonte",
+          "destino": "learn-tech/blog/programa-de-relacionamento-com-especificadores-no-varejo"
         },
         {
           "sha256": "9312d7ac416f7933f8abdf4e038ade61c78d32c7b0e204d02df04a15d6bf9606",
           "ext": "pptx",
-          "bytes": 19559980
+          "bytes": 19559980,
+          "uso": "fonte",
+          "destino": "learn-tech/blog/okrs-e-report-executivo-de-growth"
         },
         {
           "sha256": "f76c3968a77f8a7fe862be4399f386a38f6b7e18e61a4f45a47cd80158e928bb",
           "ext": "pptx",
-          "bytes": 673884
+          "bytes": 673884,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "b4dc048eac0f0784ee46da29939c4f845f422a5e3cf186d8746139335e153aa6",
           "ext": "pptx",
-          "bytes": 3789369
+          "bytes": 3789369,
+          "uso": "fonte",
+          "destino": "learn-tech/blog/programa-de-relacionamento-com-especificadores-no-varejo"
         },
         {
           "sha256": "a2bd619882bd45d55b4aa06bcfb15a8d5b2cd692ad48bc5d7738728fc946c9da",
           "ext": "pptx",
-          "bytes": 6592717
+          "bytes": 6592717,
+          "uso": "fonte",
+          "destino": "career/empresas/abc-da-construcao"
         },
         {
           "sha256": "8cdf1f4a3910475125641f9e1fcb0dcb36366222f84728aee2c34b7ee838d62d",
           "ext": "pptx",
-          "bytes": 6583141
+          "bytes": 6583141,
+          "uso": "fonte",
+          "destino": "career/empresas/abc-da-construcao"
         },
         {
           "sha256": "eef956a1db5379503333d63eba6c70adbd91303d62ba2c5a8a4504295018555b",
           "ext": "pptx",
-          "bytes": 3786081
+          "bytes": 3786081,
+          "uso": "fonte",
+          "destino": "learn-tech/blog/programa-de-relacionamento-com-especificadores-no-varejo"
         },
         {
           "sha256": "b75605deffbc7b09a4b8613dbc6849306be0681ff7244b9f23785ff2aebd7adb",
@@ -13606,7 +14339,8 @@
         {
           "sha256": "639362b9bfacdb5fc00ab9e7c9e4c47cb3552bc727de87d731a58d15364b4a18",
           "ext": "html",
-          "bytes": 519648
+          "bytes": 519648,
+          "uso": "referencia"
         },
         {
           "sha256": "9f5a63a61308174f476bb653bf8da12c5e7df2ca27f76c3c4a49f83704329dfd",
@@ -13631,7 +14365,8 @@
         {
           "sha256": "ab0aa150d19a4a13fe04d22214ee7302e2d4b2019299e26d7be244095649e301",
           "ext": "xlsx",
-          "bytes": 41231698
+          "bytes": 41231698,
+          "uso": "referencia"
         },
         {
           "sha256": "7c9fab693560fa9ff3e97af7097ef5f5a45f50f59951a1e5a14da69a2eb9102e",
@@ -13658,12 +14393,16 @@
         {
           "sha256": "1066a3dae8876348ebf326d4a631302ba153e4b26c6518890f42bbf1def4d582",
           "ext": "docx",
-          "bytes": 23880
+          "bytes": 23880,
+          "uso": "fonte",
+          "destino": "learn-tech/blog/lgpd-nas-comunicacoes-de-crm"
         },
         {
           "sha256": "1e15c61f129f6d3c96e3c23417d07b4c6fc6b0d1890b7ce02e66e6a0cc9f22d0",
           "ext": "docx",
-          "bytes": 2493042
+          "bytes": 2493042,
+          "uso": "fonte",
+          "destino": "learn-tech/blog/lgpd-nas-comunicacoes-de-crm"
         }
       ]
     },
@@ -13710,12 +14449,16 @@
         {
           "sha256": "c8cf009d1e67902812005f5d0a3cfb8a67d231de827f9bedf02751b7d73c4d91",
           "ext": "docx",
-          "bytes": 566282
+          "bytes": 566282,
+          "uso": "fonte",
+          "destino": "tools/ferramentas/whatsapp-business-platform"
         },
         {
           "sha256": "36e821312900e6f350b5265e5cf5e9f28b7bee55fcd13b6a8a5f22c6ee932a49",
           "ext": "docx",
-          "bytes": 184045
+          "bytes": 184045,
+          "uso": "fonte",
+          "destino": "tools/ferramentas/meta-business-suite"
         }
       ]
     },
@@ -13735,12 +14478,14 @@
         {
           "sha256": "7c1c67718974af6001e05fb0ad484d13a47b82ca1e42d99980b2de1e7f1e2357",
           "ext": "docx",
-          "bytes": 18300
+          "bytes": 18300,
+          "uso": "referencia"
         },
         {
           "sha256": "6b0a710ba1403c78afcaef53d02e40c096e548d2cffc778596e6899446412027",
           "ext": "xlsx",
-          "bytes": 21424
+          "bytes": 21424,
+          "uso": "referencia"
         },
         {
           "sha256": "d7885afeea3f7cb3a750ead84d62266ed55f3a93c8ff6d3dd3836400876da066",
@@ -13781,12 +14526,14 @@
         {
           "sha256": "255899919b8e028cf7108c1fd7426cab7df937f46251f46bdc0def46d18cb4aa",
           "ext": "pptx",
-          "bytes": 822196
+          "bytes": 822196,
+          "uso": "referencia"
         },
         {
           "sha256": "3917b4233bb2bfa9baebdfc623e83a4344bc82777623adda1dcd615442e285d2",
           "ext": "pptx",
-          "bytes": 68089204
+          "bytes": 68089204,
+          "uso": "referencia"
         },
         {
           "sha256": "a3e0d704c1e18178f09805486e1a0272cdcacd04ac9cf2facdcc2937c532bf70",
@@ -13917,7 +14664,8 @@
         {
           "sha256": "5d41209202f90c3e9a68bb99baa1859b57ab77265b111843618a6a7192c24377",
           "ext": "pptx",
-          "bytes": 905759
+          "bytes": 905759,
+          "uso": "referencia"
         },
         {
           "sha256": "168f1f7588561505e2324538e90df8f834c963bc16bfcddbb2168c6015f7d425",
@@ -14240,7 +14988,8 @@
         {
           "sha256": "fa0656a41fb452b3e13b091c0e9789ae86691c65962977a2f12c7052807f883b",
           "ext": "pptx",
-          "bytes": 1782830
+          "bytes": 1782830,
+          "uso": "referencia"
         },
         {
           "sha256": "0d805363b3cdc0aa3ba63c5e8770a1343728bf29d078d8dbb5fc003497c1342b",
@@ -14392,7 +15141,9 @@
         {
           "sha256": "6b10537e0ebd4f18d5fd64545f3187d92e3f20054c86130bdea0f1a5f35fee80",
           "ext": "docx",
-          "bytes": 1586131
+          "bytes": 1586131,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1101"
         }
       ]
     },
@@ -14410,12 +15161,14 @@
         {
           "sha256": "94ef2bd1059b6f9220fb304101a9d04406f3ccc0bbb701ccd0affdc877e92618",
           "ext": "pptx",
-          "bytes": 225860
+          "bytes": 225860,
+          "uso": "referencia"
         },
         {
           "sha256": "97773cd96d9e70ca3ca06e14c6b6d8e439abe7d95185b99c8fa4f9c41cff8c88",
           "ext": "pptx",
-          "bytes": 365939
+          "bytes": 365939,
+          "uso": "referencia"
         },
         {
           "sha256": "6e2ae5122ae7ed073eccb5361ed70c927621c5ff8f2e42f663184a3641bfac8a",
@@ -16501,12 +17254,14 @@
         {
           "sha256": "813d0243b221812044c42d732c748d8eed880601114bfc29ea28780c8ae837f8",
           "ext": "xlsx",
-          "bytes": 20764
+          "bytes": 20764,
+          "uso": "referencia"
         },
         {
           "sha256": "da13d9377ee02345965d4156e7ea3fba86c5a9a92e9bdbe74b8f79723cc7aadb",
           "ext": "xlsx",
-          "bytes": 14112
+          "bytes": 14112,
+          "uso": "referencia"
         }
       ],
       "proximaAcao": "Arquivos não saem do hd (dados, marca ou credenciais); o conhecimento foi usado nos destinos."
@@ -16678,17 +17433,23 @@
         {
           "sha256": "97ade9d97d1763316fdd05cdd643497a61eb5cfaf7f242b3ebf02d6b04955e9f",
           "ext": "xlsx",
-          "bytes": 16881
+          "bytes": 16881,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "6cfada2eab83c10787263001ed6ec4599f1776a2dacbe419cc69aa6d4f8bc647",
           "ext": "docx",
-          "bytes": 114017
+          "bytes": 114017,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "12a33c94a00c218e7ab04fa31f97ad96d0fcaaa2cc53ea423903a2e34f947825",
           "ext": "docx",
-          "bytes": 44385
+          "bytes": 44385,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         }
       ]
     },
@@ -16775,7 +17536,8 @@
         {
           "sha256": "657aa6618ddfbb75bdff6cf13017ab43aa2eb3b0c2b634281f5dbb9a874c3384",
           "ext": "txt",
-          "bytes": 681
+          "bytes": 681,
+          "uso": "referencia"
         },
         {
           "sha256": "550a866cac0fdc086bc794d162b959e92aa284117592a3df1d05c20bb7e0ae97",
@@ -16804,17 +17566,20 @@
         {
           "sha256": "68e595f2f79e52b3f842cfb6bd098e743aa4dfe241d5163c30eb080ce5f04ad6",
           "ext": "xlsx",
-          "bytes": 32393
+          "bytes": 32393,
+          "uso": "referencia"
         },
         {
           "sha256": "a157b81422e3d69834b8a28ad9cd00fca2cf7d632c85fa10afd811942e477047",
           "ext": "csv",
-          "bytes": 4605
+          "bytes": 4605,
+          "uso": "referencia"
         },
         {
           "sha256": "6abdea9b735559774764f09d7aed44d7f3ae8f84fb7df2dca9558f0141e6da9a",
           "ext": "xlsx",
-          "bytes": 18882
+          "bytes": 18882,
+          "uso": "referencia"
         },
         {
           "sha256": "3eb3155263d3804d6f6993b954b2dafa43bcc98ab078a52586efa231329ed091",
@@ -16840,22 +17605,26 @@
         {
           "sha256": "0075a207bd1aa0344a54dc1d77a26d76732b21158cc0b52c74c02ab760598127",
           "ext": "pdf",
-          "bytes": 17262509
+          "bytes": 17262509,
+          "uso": "referencia"
         },
         {
           "sha256": "4b8aa18d2972c88d1a24674982787e9548fdf7c31313e4ce952e611855b9f80e",
           "ext": "docx",
-          "bytes": 795882
+          "bytes": 795882,
+          "uso": "referencia"
         },
         {
           "sha256": "d2ee23e675eb5775e092b2f195a30b7a4652088ae5dfe7d81d67a9eff7151044",
           "ext": "pdf",
-          "bytes": 248926
+          "bytes": 248926,
+          "uso": "referencia"
         },
         {
           "sha256": "b21984e9352cb678b8e0c0e6a45eb5a4f6d5253bb3356229aa6f42741477c906",
           "ext": "xlsx",
-          "bytes": 37326
+          "bytes": 37326,
+          "uso": "referencia"
         }
       ]
     },
@@ -16876,7 +17645,9 @@
         {
           "sha256": "3c73563f947de2b939b9344c8fe811ca84c01d0e341b418220b2ee30346c24f7",
           "ext": "docx",
-          "bytes": 5509828
+          "bytes": 5509828,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1105"
         },
         {
           "sha256": "31563f1f364867d0af8cc9281532dc793a32ad5155dbccd846dba4a81d09f0e8",
@@ -16915,82 +17686,114 @@
         {
           "sha256": "1aca8a61b9420741df4cee3a6036999b100f4d698815dc2c0536f3e7ec19643c",
           "ext": "docx",
-          "bytes": 10482
+          "bytes": 10482,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1101"
         },
         {
           "sha256": "7a3915f6c659c2faa4708a4e0ec7aa707732b060301d497159b2b4303b6f645e",
           "ext": "docx",
-          "bytes": 867757
+          "bytes": 867757,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1105"
         },
         {
           "sha256": "86a475959223c3abf8a074f557126eeb407c7dcb7abde1f54bf44c9a254e0993",
           "ext": "docx",
-          "bytes": 106394
+          "bytes": 106394,
+          "uso": "referencia",
+          "motivo": "material do item sem trecho próprio no texto publicado; serviu de base"
         },
         {
           "sha256": "e60d5ded7162ba7cb4ce4036946000976d93da0f704e536456e1f16a1810abf1",
           "ext": "pdf",
-          "bytes": 975732
+          "bytes": 975732,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1105"
         },
         {
           "sha256": "e2f6a1104476b2a873536416452bb290abfb0bde5af277234679c604b163a95c",
           "ext": "docx",
-          "bytes": 294296
+          "bytes": 294296,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1105"
         },
         {
           "sha256": "435d5bab24564874d9ebea81e2b6167d2c2abc35778c75ded682d97b03b0d043",
           "ext": "docx",
-          "bytes": 1335059
+          "bytes": 1335059,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1105"
         },
         {
           "sha256": "856b99944074ca09a3cf4e4aec8006bef32f01faeff9d3bd3887ff6a410580a1",
           "ext": "pdf",
-          "bytes": 3831470
+          "bytes": 3831470,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1105"
         },
         {
           "sha256": "b75ba9535b1469e880eda06f54bc367fd991569b66be9b247ee5c5f9ab2612da",
           "ext": "pdf",
-          "bytes": 3821489
+          "bytes": 3821489,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1101"
         },
         {
           "sha256": "3d1762fe4ed6444de6285fa4bbbdfcd3b19b27e8af8e0eff0475d3eba043dfaf",
           "ext": "pdf",
-          "bytes": 42724
+          "bytes": 42724,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1105"
         },
         {
           "sha256": "bceb12b4a071d7c827d467a2ef988a71d3a69ca4fc212e3a4a897372d306de7c",
           "ext": "pdf",
-          "bytes": 38531
+          "bytes": 38531,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1105"
         },
         {
           "sha256": "7601777dbe062914be761f47ddbd759405d9c8f13c5ce352182bfb0fd721aadf",
           "ext": "pdf",
-          "bytes": 3844913
+          "bytes": 3844913,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1105"
         },
         {
           "sha256": "cb1c8a7658116353fa37585072c2b503fb52059506f78c973ae2d72dfe39092e",
           "ext": "pdf",
-          "bytes": 34843
+          "bytes": 34843,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1105"
         },
         {
           "sha256": "566bca2bcdeb709a6843624ed97dc7baaa3bc7aeea882c5264a008f314fbe415",
           "ext": "pdf",
-          "bytes": 3844734
+          "bytes": 3844734,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1105"
         },
         {
           "sha256": "ee4a39725d6d3718dd67724e85b8a6b9ed043c57164be9b8d34248a37d14ec03",
           "ext": "pdf",
-          "bytes": 34416
+          "bytes": 34416,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1105"
         },
         {
           "sha256": "c1ba5d44d37233b89d27a3cfccdbd1b54fe2ab75d08a2ad99164b89c3306557f",
           "ext": "pdf",
-          "bytes": 3846174
+          "bytes": 3846174,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1105"
         },
         {
           "sha256": "4f2e87ab0c0a7f80b30e5d990e5c84b851dc552e70950db445ffcf79b258c2fc",
           "ext": "pdf",
-          "bytes": 34336
+          "bytes": 34336,
+          "uso": "fonte",
+          "destino": "learn-tech/programas/1105"
         }
       ]
     },
@@ -17044,17 +17847,20 @@
         {
           "sha256": "b48408c90f5021d00bbcb960573d1df207287858ce9ae54b290939dd8c9e4f3e",
           "ext": "txt",
-          "bytes": 6797
+          "bytes": 6797,
+          "uso": "referencia"
         },
         {
           "sha256": "5a55a66ccb75606a6077e1844b40e092596bf1cabd681d7761eb4c1dd409f139",
           "ext": "xlsx",
-          "bytes": 34524
+          "bytes": 34524,
+          "uso": "referencia"
         },
         {
           "sha256": "9b1ed765f6490a9c551002eb043b353be6a061ff65b73e30121cecaced7cf5e0",
           "ext": "txt",
-          "bytes": 51605
+          "bytes": 51605,
+          "uso": "referencia"
         }
       ],
       "proximaAcao": "Arquivos não saem do hd (dados, marca ou credenciais); o conhecimento foi usado nos destinos."
