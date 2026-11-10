@@ -26,16 +26,16 @@ Regra (03/11/2026): teste ou script que o Claude escreve sem conseguir rodar fic
 - [x] Lint padronizado nos cinco projetos, com 0 erros (03/11: API, bootcamps, career e tools rodados pelo autor; learn-tech zerado de 70 para 0 na branch `feature/tasks-03-11-2026`). Lint obrigatório na CI da API e do learn-tech. A formatação geral com Prettier fica para uma rodada própria
 - [x] Testes unitários no bootcamps (`eventApi.test.ts`, `events.data.test.ts`: 7 de 7 verdes em 03/11, na máquina do autor e na CI)
 - [x] Testes nos sites estáticos career e tools (`tests/*.test.js`: 12 e 7 testes passando com `node --test` em 01/11)
-- [ ] Testes de ponta a ponta dos fluxos principais (abrir card, página de detalhe, filtros) com Playwright. Escritos em `e2e/`; falta rodar (guia, etapa 3)
+- [x] Testes de ponta a ponta dos fluxos principais (abrir card, página de detalhe, filtros) com Playwright: `npm run e2e` contra a produção em 10/11/2026, 10 de 10 fluxos nos quatro sites. Rodar na CI fica na #10
 - [x] CI na career (`.github/workflows/ci.yml`) e testes na CI do tools e do bootcamps
 - [x] Checagem da CI obrigatória antes do merge nos cinco repositórios (ruleset `main protegida` ativo em 03/11: check `verificar`, sem force push e sem apagar a `main`)
 - [x] Ações da CI atualizadas para `checkout@v5` e `setup-node@v5` (Node 24) nos cinco repositórios (03/11)
 - [x] Verificação estática da career rodando no Linux da CI, sem `continue-on-error` (barras do `verificar.ps1` corrigidas em 03/11)
 
 ## Experiência, performance e acessibilidade
-- [ ] Metas de performance (Core Web Vitals, tamanho de bundle) medidas com Lighthouse nos quatro sites. Script `npm run ux:lighthouse` pronto; falta rodar (guia, etapa 4)
-- [ ] Acessibilidade WCAG 2.2 AA verificada (contraste, teclado, textos alternativos, rótulos). Teste axe em `e2e/acessibilidade.spec.mjs`; falta rodar
-- [ ] Responsividade testada nos breakpoints principais, com registro. Capturas em `e2e/capturas.spec.mjs`; falta rodar
+- [x] Metas de performance (Core Web Vitals, tamanho de bundle) medidas com Lighthouse nos quatro sites: `npm run ux:lighthouse`, 3 execuções contra a produção em 10/11/2026 (`docs/engenharia/relatorios/medicao-2026-11-10.md`). As metas não foram atingidas: LCP mediano de 4 a 12 s no celular (bootcamps#73, tools#58, career#36)
+- [ ] Acessibilidade WCAG 2.2 AA verificada (contraste, teclado, textos alternativos, rótulos). axe contra a produção em 10/11/2026: nenhuma violação crítica, mas contraste e nome acessível nos quatro sites. Corrigidos nas integrações (axe local zerado: learn-tech#130, bootcamps#75, career#33, tools#60); falta confirmar na produção
+- [x] Responsividade testada nos breakpoints principais, com registro: `capturas.spec.mjs` em 360, 768, 1024 e 1440 px contra a produção em 10/11/2026, 33 de 36. As 3 falhas (rolagem horizontal na home do learn-tech) viraram learn-tech#139, corrigida na integração
 - [x] Design system mínimo documentado (cores, tipografia, componentes) e consistente entre os sites (`design-system.md`)
 - [x] SEO e compartilhamento: metadados, sitemap e Open Graph (Open Graph e canonical nos 4 `index.html`; `npm run sitemaps`; robots nos sites do Vercel)
 
@@ -45,6 +45,6 @@ Regra (03/11/2026): teste ou script que o Claude escreve sem conseguir rodar fic
 - [x] Versionamento e política de cache da API documentados (`cache-e-versionamento.md`; cache em `public/_headers` e `no-store` nas rotas dinâmicas)
 - [x] Cabeçalhos de segurança nos sites do Vercel (`vercel.json` do learn-tech e do bootcamps)
 - [x] Cabeçalhos de segurança na API (`public/_headers` e middleware em `src/app.ts`, com teste)
-- [ ] Auditoria de dependências (`npm audit`) com relatório nos projetos com Node
+- [x] Auditoria de dependências (`npm audit`) com relatório nos projetos com Node: `npm audit --omit=dev` em 10/11/2026 com 0 vulnerabilidades na API, no bootcamps, na career e no tools (`docs/engenharia/relatorios/medicao-2026-11-10.md`). O learn-tech não tem lockfile (learn-tech#127, decisão do autor)
 - [x] Monitoramento de disponibilidade da API e dos sites (`.github/workflows/disponibilidade.yml`, a cada 6 horas)
 - [x] Observabilidade: logs e erros da API (Workers Logs ligado em `wrangler.jsonc`, `onError` com log JSON estruturado, `/v1/saude`)
