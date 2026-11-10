@@ -168,7 +168,7 @@
   {
     "title": "Handcom",
     "location": "Juiz de Fora",
-    "thumb": "./assets/thumb_good-companies/handcom.jpg",
+    "thumb": "/media/career/handcom.webp",
     "site_url": "https://handcom.com.br/",
     "category": "Software House",
     "slug": "handcom",
