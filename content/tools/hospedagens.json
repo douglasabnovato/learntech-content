@@ -4,7 +4,7 @@
     "description": "Hospedagem otimizada para front-end, com preview por branch e CDN global.",
     "category": "Site Estático",
     "pricing": "Freemium",
-    "thumb": "./assets/thumb_host/vercel.jpg",
+    "thumb": "/media/tools/vercel.webp",
     "site_url": "https://vercel.com/",
     "slug": "vercel",
     "detalhe": {
@@ -74,7 +74,7 @@
     "description": "Deploy contínuo de site estático, com preview por pull request e redirects.",
     "category": "Site Estático",
     "pricing": "Freemium",
-    "thumb": "./assets/thumb_host/netlify.jpg",
+    "thumb": "/media/tools/netlify.webp",
     "site_url": "https://www.netlify.com/",
     "slug": "netlify",
     "detalhe": {
@@ -210,7 +210,7 @@
     "description": "Site estático servido direto do repositório, sem configuração e sem custo.",
     "category": "Site Estático",
     "pricing": "Gratuito",
-    "thumb": "./assets/thumb_host/github-pages.jpg",
+    "thumb": "/media/tools/github-pages.webp",
     "site_url": "https://pages.github.com/",
     "slug": "github-pages",
     "detalhe": {
@@ -284,7 +284,7 @@
     "description": "Site estático publicado pelo pipeline do próprio repositório GitLab.",
     "category": "Site Estático",
     "pricing": "Gratuito",
-    "thumb": "./assets/thumb_host/gitlab-pages.jpg",
+    "thumb": "/media/tools/gitlab-pages.webp",
     "site_url": "https://docs.gitlab.com/user/project/pages/",
     "slug": "gitlab-pages",
     "detalhe": {
@@ -349,7 +349,7 @@
     "description": "Publica um site estático pela linha de comando, em um comando só.",
     "category": "Site Estático",
     "pricing": "Freemium",
-    "thumb": "./assets/thumb_host/surge.jpg",
+    "thumb": "/media/tools/surge.webp",
     "site_url": "https://surge.sh/",
     "slug": "surge",
     "detalhe": {
@@ -423,7 +423,7 @@
     "description": "Hospedagem estática com CDN, SSL automático e rollback de versão.",
     "category": "Site Estático",
     "pricing": "Freemium",
-    "thumb": "./assets/thumb_host/firebase.jpg",
+    "thumb": "/media/tools/firebase.webp",
     "site_url": "https://firebase.google.com/docs/hosting?hl=pt-br",
     "slug": "firebase-hosting",
     "detalhe": {
@@ -484,7 +484,7 @@
     "description": "Deploy de aplicação e banco a partir do repositório; o plano Free dá US$ 1 de crédito por mês (out/2026).",
     "category": "Aplicação",
     "pricing": "Freemium",
-    "thumb": "./assets/thumb_host/railway.jpg",
+    "thumb": "/media/tools/railway.webp",
     "site_url": "https://railway.app/",
     "slug": "railway",
     "detalhe": {
@@ -549,7 +549,7 @@
     "description": "PaaS para aplicação com banco gerenciado; o plano gratuito foi encerrado em 2022.",
     "category": "Aplicação",
     "pricing": "Pago",
-    "thumb": "./assets/thumb_host/heroku.jpg",
+    "thumb": "/media/tools/heroku.webp",
     "site_url": "https://www.heroku.com/",
     "slug": "heroku",
     "detalhe": {
@@ -622,7 +622,7 @@
     "description": "Canais de tempo real por WebSocket para notificação, chat e presença.",
     "category": "Tempo Real",
     "pricing": "Freemium",
-    "thumb": "./assets/thumb_host/pusher.jpg",
+    "thumb": "/media/tools/pusher.webp",
     "site_url": "https://pusher.com/",
     "slug": "pusher",
     "detalhe": {
