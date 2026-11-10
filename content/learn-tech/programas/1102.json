@@ -4,7 +4,7 @@
   "category": "Marketing e CRM",
   "categoryFilter": "marketing-crm",
   "title": "E-mail HTML e Landing Pages Integradas ao CRM",
-  "lessons": "20 passos",
+  "lessons": "21 passos",
   "duration": "10h estimadas",
   "access": "Acesso Livre",
   "accessType": "livre",
@@ -22,13 +22,14 @@
     "Template base de e-mail transacional em HTML (tabelas e CSS inline)",
     "Dicionário de variáveis de personalização da Rede Construir+ (fictícia)",
     "Modelos de landing page: franqueado, store in store, representantes, indicação e campanha com clube",
-    "Checklist de QA de comunicação para imprimir e usar a cada envio"
+    "Checklist de QA de comunicação para imprimir e usar a cada envio",
+    "Guia de estilo tipográfico de e-mail: pilhas de fonte, pesos, tamanhos, altura de linha e cores no modo escuro"
   ],
   "modules": [
     {
       "id": 0,
       "title": "HTML de E-mail que Sobrevive aos Clientes",
-      "lessonsCount": 5,
+      "lessonsCount": 6,
       "component": "ModuleRenderer"
     },
     {
@@ -81,6 +82,10 @@
           {
             "label": "CSS inline",
             "description": "O que vai no atributo style, o que fica no head e o que nenhum dos dois salva."
+          },
+          {
+            "label": "Guia tipográfico",
+            "description": "Fontes seguras e fallback, pesos, tamanhos mínimos, altura de linha, espaçamento e modo escuro."
           },
           {
             "label": "Assunto e pré-header",
@@ -150,7 +155,7 @@
       "id": 0,
       "icon": "laptop",
       "title": "HTML de E-mail que Sobrevive aos Clientes",
-      "shortDescription": "Tabelas, CSS inline, assunto e pré-header",
+      "shortDescription": "Tabelas, CSS inline, tipografia, assunto e pré-header",
       "introductionText": "O mesmo arquivo HTML será aberto no aplicativo de e-mail do celular, no webmail e num Outlook de desktop que usa o Word como motor de renderização. Cada um ignora uma parte diferente do seu código. Neste módulo você monta o template base da Rede Construir+ — o e-mail de pedido confirmado — com a estrutura que funciona em todos eles, e aprende a consultar o suporte de cada recurso antes de usá-lo, em vez de descobrir no envio.",
       "sections": [
         {
@@ -177,6 +182,17 @@
             },
             {
               "number": 3,
+              "title": "Guia de estilo tipográfico do e-mail",
+              "code": "<td style='font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:400;line-height:24px;mso-line-height-rule:exactly;color:#333333'>",
+              "guidance": "Escreva uma página de guia de estilo para a régua da Rede Construir+ e aplique em todos os templates. Fontes: cada pilha termina em fontes seguras, instaladas em quase todos os sistemas (Arial, Helvetica, Verdana, Tahoma e Trebuchet MS entre as sem serifa; Georgia e Times New Roman entre as serifadas), e na família genérica, sans-serif ou serif. A fonte da marca carregada por @font-face entra só como primeira opção: segundo o Can I Email, o Gmail no navegador de desktop não carrega fontes externas e o Outlook do Windows tem suporte parcial, com falhas no fallback que podem levar o texto para Times New Roman; repetir a pilha segura num bloco condicional para o Outlook evita isso. Pesos: só regular (400) e negrito (700), porque um peso intermediário só aparece se aquela variação da fonte existir no aparelho. Tamanhos: corpo com 16 px, títulos entre 22 e 28 px e nada abaixo de 14 px, nem no rodapé legal. Altura de linha em pixels, por volta de 1,5 vez o tamanho (24 px para 16 px), com mso-line-height-rule:exactly para o Outlook obedecer. Espaçamento: distância entre blocos com padding na célula, porque cada cliente aplica uma margem padrão diferente ao parágrafo. Modo escuro: declare cor de texto e de fundo em todo bloco, use cinza-escuro em vez de preto puro e confira o contraste depois da inversão.",
+              "tips": [
+                "Monte o guia como tabela: elemento (título, corpo, botão, rodapé), pilha, peso, tamanho, altura de linha e cor no tema claro e no escuro. Quem monta o próximo template copia a linha em vez de adivinhar.",
+                "Há clientes que não mexem nas cores, clientes que invertem só os fundos claros e clientes que invertem quase tudo. Texto cinza-claro e fino é o primeiro a ficar ilegível em algum desses casos: teste o guia nos três.",
+                "Texto do botão segue o guia como o resto: mesma pilha, negrito e tamanho de corpo. Botão com fonte diferente da do texto denuncia o template montado aos pedaços."
+              ]
+            },
+            {
+              "number": 4,
               "title": "Consultar o suporte antes de usar",
               "code": "caniemail.com",
               "guidance": "Antes de usar flexbox, grid, background-image ou border-radius, consulte o recurso no Can I Email. Ele mostra, cliente por cliente, se há suporte total, parcial ou nenhum. A decisão não é usar ou não usar: é saber qual será a aparência no cliente que não suporta e se ela é aceitável.",
@@ -186,7 +202,7 @@
               ]
             },
             {
-              "number": 4,
+              "number": 5,
               "title": "Botão à prova de cliente",
               "code": "<a href='...' style='display:inline-block;padding:14px 24px'>",
               "guidance": "Faça o botão de chamada para ação com texto HTML dentro de uma célula com cor de fundo, nunca como imagem. Assim ele aparece mesmo com imagens bloqueadas, pode ser lido por leitor de tela e mantém área de toque confortável no celular. No e-mail de pedido confirmado, o botão principal é Ver detalhes do pedido; contato com atendimento vira link secundário.",
@@ -195,7 +211,7 @@
               ]
             },
             {
-              "number": 5,
+              "number": 6,
               "title": "Assunto e pré-header como par",
               "code": "<div style='display:none;max-height:0;overflow:hidden'>",
               "guidance": "O pré-header é o texto que aparece logo depois do assunto na caixa de entrada. Escreva os dois juntos: o assunto diz o que aconteceu, o pré-header completa. Exemplo da régua: assunto Seu pedido 48213 foi confirmado!, pré-header A Rede Construir+ agradece a preferência. Coloque o pré-header como primeiro conteúdo do body, oculto visualmente, para que o cliente não pesque a primeira frase do corpo no lugar dele.",
@@ -841,6 +857,10 @@
     {
       "label": "Webkul — Cloud Page to save input into Data Extension (RequestParameter e UpsertData)",
       "url": "https://webkul.com/blog/cloud-page-to-save-input-into-data-extension/"
+    },
+    {
+      "label": "Can I email — @font-face: suporte a fontes externas nos clientes de e-mail (testado em dezembro de 2023)",
+      "url": "https://www.caniemail.com/features/css-at-font-face/"
     }
   ]
 }

@@ -11,7 +11,7 @@ const novoAcervo = () => ({
       arquivos: [
         { sha256: h("a"), ext: "jpg", bytes: 1 },
         { sha256: h("b"), ext: "ico", bytes: 1 },
-        { sha256: h("c"), ext: "pdf", bytes: 1, uso: "bloqueado", motivo: "regra" },
+        { sha256: h("c"), ext: "pdf", bytes: 1, uso: "referencia" },
         { sha256: h("d"), ext: "jpg", bytes: 1 },
       ],
     },
@@ -36,7 +36,7 @@ describe("uso do hd", () => {
     const unicos = linhas.filter((l: { copia: boolean }) => !l.copia);
     expect(semHash).toBe(1);
     expect(gravados).toBe(0);
-    expect(unicos.map((l: { uso: string }) => l.uso)).toEqual(["pendente", "pendente", "bloqueado", "pendente"]);
+    expect(unicos.map((l: { uso: string }) => l.uso)).toEqual(["pendente", "pendente", "referencia", "pendente"]);
     expect(linhas.filter((l: { copia: boolean }) => l.copia)).toHaveLength(1);
   });
 
@@ -47,9 +47,24 @@ describe("uso do hd", () => {
     expect(gravados).toBe(2);
     expect(foto).toMatchObject({ uso: "exibido", destino: "bootcamps/eventos/gdg-jf" });
     expect(icone?.uso).toBe("tecnico");
-    expect(doc).toMatchObject({ uso: "bloqueado", motivo: "regra" });
+    expect(doc).toMatchObject({ uso: "referencia" });
     /* parecida só com um ícone do site: falso positivo, continua pendente */
     expect(outra?.uso).toBeUndefined();
+  });
+
+  it("marca técnico o metadado do macOS (__MACOSX e ._nome), mesmo com extensão de imagem", () => {
+    const acervo = novoAcervo();
+    const mac = [{ rel: "zip/__MACOSX/fotos/._1.jpg", sha: h("d"), ext: "jpg", bytes: 1 }];
+    classificar(mac, acervo, {}, { aplicar: true });
+    expect((acervo.itens[0]!.arquivos[3] as { uso?: string }).uso).toBe("tecnico");
+  });
+
+  it("marca exibido quando a pasta da galeria tem outro nome que o slug do evento", () => {
+    const acervo = novoAcervo();
+    acervo.itens[0]!.destinos = ["bootcamps/eventos/tdc-innovation"];
+    const fotos = { "ev/1.jpg": { dist: 0, publicada: "learntech-content/media/bootcamps/eventos/tdc-innovation-2023/1.webp" } };
+    classificar(arquivos, acervo, fotos, { aplicar: true, pastas: { "tdc-innovation-2023": "tdc-innovation" } });
+    expect(acervo.itens[0]!.arquivos[0]).toMatchObject({ uso: "exibido", destino: "bootcamps/eventos/tdc-innovation" });
   });
 
   it("não marca exibido quando o evento da galeria não é destino do item", () => {

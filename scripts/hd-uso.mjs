@@ -41,7 +41,7 @@ const temImagens = fs.existsSync(path.join(HD, ".imagens-publicadas.json"));
 function listar(pasta, base = pasta) {
   return fs.readdirSync(pasta, { withFileTypes: true }).flatMap((e) => {
     const p = path.join(pasta, e.name);
-    if (e.isDirectory()) return listar(p, base);
+    if (e.isDirectory()) return e.name === ".extraido" ? [] : listar(p, base); /* .extraido: saída do hd:extrair */
     if (IGNORAR.has(e.name)) return [];
     return [{ abs: p, rel: path.relative(base, p).split(path.sep).join("/").normalize("NFC") }];
   });
@@ -65,7 +65,14 @@ const arquivos = listar(HD).map((a) => {
   const ext = path.extname(a.rel).slice(1).toLowerCase().replace(/[^a-z0-9]/g, "") || "sem-extensao";
   return { rel: a.rel, ext, bytes: st.size, sha: cache[`${a.rel}|${st.size}|${Math.round(st.mtimeMs)}`] };
 });
-const { linhas, gravados, semHash } = classificar(arquivos, acervo, imagens, { aplicar });
+/* Pasta da galeria → slug do evento, lida das URLs de cada evento (ex.: tdc-innovation-2023 → tdc-innovation). */
+const DIR_EVENTOS = path.join(CONTENT, "bootcamps", "eventos");
+const pastas = {};
+for (const f of fs.readdirSync(DIR_EVENTOS).filter((n) => n.endsWith(".json"))) {
+  const ev = ler(path.join(DIR_EVENTOS, f), {});
+  for (const m of JSON.stringify(ev).matchAll(/\/media\/bootcamps\/eventos\/([^/"]+)\//g)) if (m[1] !== ev.slug) pastas[m[1]] ??= ev.slug;
+}
+const { linhas, gravados, semHash } = classificar(arquivos, acervo, imagens, { aplicar, pastas });
 
 if (aplicar && gravados) {
   acervo.atualizadoEm = new Date().toISOString().slice(0, 10);
@@ -162,7 +169,7 @@ if (relatorio) {
     `| No hd | ${n(arquivos.length)} |`, `| Únicos (por hash) | ${n(unicos.length)} |`, `| Cópias idênticas (seguem o original) | ${n(copias)} |`,
     ...(fora ? [`| Fora do acervo | ${n(fora)} |`] : []),
     ...ORDEM.map((u) => `| ${u} | ${n(total[u])} |`),
-    `| **Usados** (exibido, fonte, similar) | **${n(usados)} (${pct(usados)}%)** |`,
+    `| **Usados** (exibido, fonte, similar, referência) | **${n(usados)} (${pct(usados)}%)** |`,
     `| **Pendentes** | **${n(total.pendente)} (${pct(total.pendente)}%)** |`, "",
     "## Por item", "",
     "| Item | Estado | Origem | Arquivos | Usos | Imagem provável |", "|---|---|---|---|---|---|",

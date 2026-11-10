@@ -2,7 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { carregarConteudo, verificarIntegridade, montarRecursos } from "./lib/conteudo";
+import { carregarConteudo, verificarIntegridade, montarRecursos, contarItens } from "./lib/conteudo";
 import { gerarOpenApi } from "./lib/openapi";
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -44,7 +44,7 @@ function main(): void {
     documentacao: "/v1/openapi.json",
     recursos: recursos
       .filter((r) => !/\/(programas|eventos)\/[^/]+\.json$/.test(r.caminho))
-      .map((r) => ({ caminho: `/v1/${r.caminho}`, descricao: r.descricao, itens: Array.isArray(r.dados) ? r.dados.length : undefined })),
+      .map((r) => ({ caminho: `/v1/${r.caminho}`, descricao: r.descricao, itens: contarItens(r.dados) })),
   });
 
   fs.cpSync(path.join(RAIZ, "media"), path.join(DIST, "media"), { recursive: true });

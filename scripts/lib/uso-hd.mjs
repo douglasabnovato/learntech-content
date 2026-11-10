@@ -3,7 +3,8 @@
  * classificar(arquivos, acervo, imagens, { aplicar })
  *   arquivos: [{ rel, sha, ext, bytes }] na ordem do hd (sha ausente = arquivo sem inventário);
  *   acervo:   o content/acervo.json lido (é alterado quando aplicar = true);
- *   imagens:  { rel: { dist, publicada } } de hd/.imagens-publicadas.json.
+ *   imagens:  { rel: { dist, publicada } } de hd/.imagens-publicadas.json;
+ *   pastas:   { pasta da galeria: slug do evento }, quando os dois diferem.
  * Regras:
  *   - cópia idêntica (hash já visto) segue o uso do original e não conta duas vezes;
  *   - arquivo sem `uso` é pendente;
@@ -11,23 +12,26 @@
  *     a uma foto da galeria de um evento que é destino do item. Nunca sobrescreve decisão tomada.
  */
 export const TECNICO = new Set(["ico", "tmp", "lnk", "iqy", "h2d", "map", "url", "ini", "db", "dsstore", "ds_store"]);
+/* Metadado do macOS em zip (__MACOSX/ e arquivos "._nome"): tem extensão de imagem, mas não é imagem. */
+export const METADADO_MAC = /(^|\/)__MACOSX\/|(^|\/)\._[^/]*$/;
 export const IMAGEM = new Set(["jpg", "jpeg", "png", "webp"]);
-export const USADOS = new Set(["exibido", "fonte", "similar"]);
-export const ORDEM = ["exibido", "fonte", "similar", "tecnico", "bloqueado", "descartado", "pendente"];
+export const USADOS = new Set(["exibido", "fonte", "similar", "referencia"]);
+export const ORDEM = ["exibido", "fonte", "similar", "referencia", "tecnico", "descartado", "pendente"];
 export const DIST_EXIBIDA = 5;
 export const DIST_PROVAVEL = 10;
 /* Ícones e capturas do próprio site batem com qualquer imagem simples: não contam como publicação. */
 export const FALSO_POSITIVO = /favicon|android-chrome|apple-touch|og-image|[.]github[/]/;
 
 /* Imagem publicada na galeria de um evento: devolve o destino "bootcamps/eventos/<slug>". */
-export const destinoDaImagem = (pub) => {
+/* A pasta da galeria pode ter outro nome que o slug (ex.: tdc-innovation-2023 → tdc-innovation): `pastas` faz a ponte. */
+export const destinoDaImagem = (pub, pastas = {}) => {
   const m = pub?.match(/media\/bootcamps\/eventos\/([^/]+)\//);
-  return m ? `bootcamps/eventos/${m[1]}` : null;
+  return m ? `bootcamps/eventos/${pastas[m[1]] ?? m[1]}` : null;
 };
 
 const pendente = (f) => !f.uso || f.uso === "pendente";
 
-export function classificar(arquivos, acervo, imagens = {}, { aplicar = false } = {}) {
+export function classificar(arquivos, acervo, imagens = {}, { aplicar = false, pastas = {} } = {}) {
   const porHash = new Map();
   for (const it of acervo.itens) for (const f of it.arquivos ?? []) porHash.set(f.sha256, { it, f });
   const linhas = [];
@@ -43,8 +47,8 @@ export function classificar(arquivos, acervo, imagens = {}, { aplicar = false } 
     const achada = IMAGEM.has(a.ext) ? imagens[a.rel] : null;
     const img = achada && !FALSO_POSITIVO.test(achada.publicada ?? "") ? achada : null;
     if (aplicar && !copia && pendente(reg.f)) {
-      const dest = img && img.dist <= DIST_EXIBIDA ? destinoDaImagem(img.publicada) : null;
-      if (TECNICO.has(a.ext)) { reg.f.uso = "tecnico"; gravados++; }
+      const dest = img && img.dist <= DIST_EXIBIDA ? destinoDaImagem(img.publicada, pastas) : null;
+      if (TECNICO.has(a.ext) || METADADO_MAC.test(a.rel)) { reg.f.uso = "tecnico"; gravados++; }
       else if (dest && reg.it.destinos.includes(dest)) { reg.f.uso = "exibido"; reg.f.destino = dest; gravados++; }
     }
     const provavel = !!img && img.dist <= DIST_PROVAVEL && pendente(reg.f);

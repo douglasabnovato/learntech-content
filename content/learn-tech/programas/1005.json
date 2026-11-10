@@ -1,6 +1,16 @@
 {
   "id": 1005,
-  "image": "https://cdn.pixabay.com/photo/2019/10/03/12/12/hacker-4523097_1280.jpg",
+  "image": "/media/learn-tech/programas/1005.webp",
+  "galeria": [
+    {
+      "url": "/media/learn-tech/programas/1005-galeria-1.webp",
+      "alt": "Favoritos da trilha de conteúdo: anotar, questões de entrevista e testes técnicos"
+    },
+    {
+      "url": "/media/learn-tech/programas/1005-galeria-2.webp",
+      "alt": "Pastas de favoritos do Hack Dev: tarefas, faculdades, cursos, vagas, documentação, ferramentas e hospedagem"
+    }
+  ],
   "category": "Carreira e Soft Skills",
   "categoryFilter": "carreira-soft-skills",
   "title": "Hack Dev: Rotina, Trilha e Portfólio para a Primeira Vaga",
@@ -256,10 +266,11 @@
               "number": 3,
               "title": "A1.b e A1.c: questões de entrevista e testes de competência",
               "code": "requisito da vaga → pergunta → resposta",
-              "guidance": "Leia os requisitos das vagas que você salvou e transforme cada um em pergunta de entrevista técnica: se a vaga pede Git, a pergunta é qual a diferença entre merge e rebase. Responda uma por dia. Uma vez por semana, faça um teste de competência em uma plataforma de testes técnicos ou na avaliação de habilidades de uma rede profissional, e anote a data e o resultado.",
+              "guidance": "Leia os requisitos das vagas que você salvou e transforme cada um em pergunta de entrevista técnica: se a vaga pede Git, a pergunta é qual a diferença entre merge e rebase. Responda uma por dia. Uma vez por semana, faça um teste de competência em uma plataforma de prática e testes técnicos, como o HackerRank, ou na avaliação de habilidades de uma rede profissional, e anote a data e o resultado.",
               "tips": [
                 "Questões montadas a partir de vagas reais treinam exatamente o que vai ser perguntado, em vez de um banco genérico.",
-                "Resultado ruim em teste é informação: leve a habilidade para a tabela de 1 a 4 e ajuste a nota."
+                "Resultado ruim em teste é informação: leve a habilidade para a tabela de 1 a 4 e ajuste a nota.",
+                "No HackerRank, os testes de certificação são por habilidade e duram de 60 a 90 minutos, e a própria plataforma indica o Interview Preparation Kit para se preparar. Muitas empresas aplicam a triagem técnica em plataformas desse tipo, então treinar no mesmo formato (editor no navegador, casos de teste ocultos e tempo correndo) tira a surpresa do dia do processo."
               ]
             },
             {
@@ -852,6 +863,10 @@
     {
       "label": "Catraca Livre — Curso gratuito 100% online ensina a programar do zero (trilha de fundamentos Discover, Rocketseat, 04/04/2024)",
       "url": "https://catracalivre.com.br/educacao/curso-gratuito-100-online-ensina-a-programar-do-zero/"
+    },
+    {
+      "label": "HackerRank — Skills Certification: perguntas frequentes sobre os testes de certificação e a preparação",
+      "url": "https://www.hackerrank.com/skills-verification/faq"
     }
   ]
 }

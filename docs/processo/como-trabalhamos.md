@@ -35,7 +35,7 @@ Pedido do autor: o Claude trabalha sempre para terminar os cinco projetos, apres
 
 **Ciclo de cada sessão** (começa quando o autor abre a conversa ou diz "continue"):
 1. Ler `ESTADO.md`, as issues abertas dos cinco repositórios e a saída de `npm run progresso` e `npm run hd:uso`.
-2. Pegar a próxima issue que não depende do autor, na ordem de prioridade abaixo, e entregá-la: branch do dia, testes, CI verde, `developer` e `main` por `--ff-only`, e a issue fechada com a evidência.
+2. Pegar a próxima issue que não depende do autor, na ordem de prioridade abaixo, e entregá-la: branch do dia, testes, push, CI verde e `developer` por `--ff-only`, com a evidência comentada na issue. **O Claude não leva nada para a `main`** (produção): o autor revisa a `developer` e faz o `--ff-only` para a `main` (decisão do autor em 09/11/2026). A issue fecha quando o trabalho chega à `main`.
 3. Ao achar uma tarefa nova, abrir a issue no repositório certo: contexto, critérios de entrega, origem, labels (`proximos-passos` mais o tema; `decisao-do-autor` quando depende do autor) e a assinatura.
 4. Terminar com o relatório de andamento (modelo abaixo) e o `ESTADO.md` atualizado.
 

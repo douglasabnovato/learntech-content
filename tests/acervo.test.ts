@@ -1,6 +1,8 @@
 /* acervo.test.ts — estados do fluxo de agentes e regras de cada estado no registro do hd. */
 import { describe, it, expect } from "vitest";
+import path from "node:path";
 import { itemAcervoSchema } from "../src/schemas/acervo";
+import { carregarConteudo, errosDestinos } from "../scripts/lib/conteudo";
 
 const base = {
   id: "HD-9001", lote: "2026-11-06", origem: "hd/entrada/teste", descricao: "Item de teste",
@@ -55,7 +57,9 @@ describe("acervo: uso de cada arquivo", () => {
     expect(comArquivo({ uso: "fonte", destino })).toBe(true);
     expect(comArquivo({ uso: "similar", similarA: "b".repeat(64) })).toBe(true);
     expect(comArquivo({ uso: "tecnico" })).toBe(true);
-    expect(comArquivo({ uso: "bloqueado", motivo: "regras editoriais, seção 7" })).toBe(true);
+    expect(comArquivo({ uso: "referencia" })).toBe(true);
+    expect(comArquivo({ uso: "referencia", motivo: "regras editoriais, seção 7" })).toBe(true);
+    expect(comArquivo({ uso: "descartado", motivo: "foto desfocada" })).toBe(true);
   });
 
   it("recusa exibido ou fonte sem destino, ou com destino fora do item", () => {
@@ -64,9 +68,42 @@ describe("acervo: uso de cada arquivo", () => {
     expect(comArquivo({ uso: "exibido", destino: "bootcamps/eventos/outro" })).toBe(false);
   });
 
-  it("recusa similar sem hash e bloqueado ou descartado sem motivo", () => {
+  it("recusa similar sem hash, descartado sem motivo e o uso antigo bloqueado", () => {
     expect(comArquivo({ uso: "similar" })).toBe(false);
-    expect(comArquivo({ uso: "bloqueado" })).toBe(false);
+    expect(comArquivo({ uso: "bloqueado", motivo: "regra" })).toBe(false);
     expect(comArquivo({ uso: "descartado", motivo: " " })).toBe(false);
+  });
+});
+
+describe("acervo: destinos no formato projeto/recurso/id (#18)", () => {
+  const { conteudo } = carregarConteudo(path.resolve(__dirname, "..", "content"));
+  const comDestinos = (destinos: string[]) => ({ ...conteudo, acervo: { ...conteudo.acervo, itens: [{ ...base, id: "HD-9002", destinos } as never] } });
+
+  it("o acervo publicado não tem destino curto nem inexistente", () => {
+    expect(errosDestinos(conteudo)).toEqual([]);
+  });
+
+  it("recusa destino curto, recurso desconhecido e id que não existe", () => {
+    expect(errosDestinos(comDestinos(["programas/404"]))[0]).toMatch(/fora do formato/);
+    expect(errosDestinos(comDestinos(["learn-tech/podcasts/1"]))[0]).toMatch(/fora do formato/);
+    expect(errosDestinos(comDestinos(["career/empresas/nao-existe"]))[0]).toMatch(/não existe/);
+    expect(errosDestinos(comDestinos(["learn-tech/programas/404", "bootcamps/eventos/gdg-jf"]))).toEqual([]);
+  });
+});
+
+describe("galeria do programa e do artigo (ADR 12)", () => {
+  const { conteudo } = carregarConteudo(path.resolve(__dirname, "..", "content"));
+
+  it("aceita foto com alt e recusa foto sem alt", async () => {
+    const { fotoGaleriaSchema } = await import("../src/schemas/learn-tech");
+    expect(fotoGaleriaSchema.safeParse({ url: "/media/learn-tech/programas/1005-galeria-1.webp", alt: "Favoritos" }).success).toBe(true);
+    expect(fotoGaleriaSchema.safeParse({ url: "/media/x.webp", alt: "" }).success).toBe(false);
+  });
+
+  it("o programa 1005 e o artigo do Hack Dev têm galeria", () => {
+    const p = conteudo.programas.find((x) => x.id === 1005) as { galeria?: unknown[] } | undefined;
+    const b = (conteudo.paginas.blog as { itens: { id: string; galeria?: unknown[] }[] }).itens.find((x) => x.id === "hack-dev-rotina-e-trilha-para-a-primeira-vaga");
+    expect(p?.galeria?.length).toBe(2);
+    expect(b?.galeria?.length).toBe(1);
   });
 });

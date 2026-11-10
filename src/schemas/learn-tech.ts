@@ -48,9 +48,13 @@ export const moduloSchema = z.object({
   component: z.string(),
 });
 
+/* Foto de galeria do programa ou do artigo do blog (ADR 12): a imagem, o texto alternativo e uma legenda opcional. */
+export const fotoGaleriaSchema = z.object({ url: urlOuMidia, alt: textoObrigatorio, legenda: z.string().optional() });
+
 export const programaSchema = z.looseObject({
   id: z.number().int().positive(),
   image: urlOuMidia.nullable().optional(),
+  galeria: z.array(fotoGaleriaSchema).optional(),
   video: urlOuMidia.nullable().optional(),
   videoPoster: urlOuMidia.nullable().optional(),
   category: textoObrigatorio,
@@ -107,7 +111,7 @@ export type Area = z.infer<typeof areaSchema>;
 
 export const PAGINAS = [
   "sobre", "aprender", "carreira", "categorias", "blog", "faq",
-  "navegacao", "mentorias", "privacidade", "termos", "estatisticas",
+  "navegacao", "mentorias", "privacidade", "termos", "estatisticas", "conheca",
 ] as const;
 
 /* Fim de learn-tech.ts */

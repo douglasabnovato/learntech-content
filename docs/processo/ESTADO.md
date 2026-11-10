@@ -24,9 +24,20 @@ Pasta local: `C:\douglasabnovato-github\mundo-learn-tech\`. O acervo bruto fica 
 - **Medição:** `npm run progresso` (placar), `npm run cobertura`, `npm run leva:status`.
 
 ## Situação em 09/11/2026
-- **Uso por arquivo** (branch `feature/tasks-09-11-2026`): campo `uso` em cada arquivo do acervo (`exibido`, `fonte`, `similar`, `tecnico`, `bloqueado`, `descartado`, `pendente`), comandos `hd:imagens` e `hd:uso`, e `leva:status` exigindo zero pendentes. Primeira aplicação automática: 66 fotos `exibido` e 9 arquivos `tecnico`. Relatórios em `docs/processo/relatorios/` (06/11 e 09/11).
-- **Issues do uso do hd** (label `acervo`): #12 bloqueio do ex-empregador (decisão do autor, 1.734 arquivos), #13 fotos de evento, #14 documentos de fonte, #15 vídeos (decisão do autor), #16 fase 1 do fluxo de agentes. #17 entregue: `hd:uso --vivo`, testes e cache do `hd:imagens` (12 s).
+- **Uso por arquivo** (branch `feature/tasks-09-11-2026`): campo `uso` em cada arquivo do acervo (`exibido`, `fonte`, `similar`, `referencia`, `tecnico`, `descartado`, `pendente`), comandos `hd:imagens` e `hd:uso`, e `leva:status` exigindo zero pendentes. Primeira aplicação automática: 66 fotos `exibido` e 9 arquivos `tecnico`. Relatórios em `docs/processo/relatorios/` (06/11 e 09/11).
+- **Issues do uso do hd** (label `acervo`): #12 material do ex-empregador marcado como `referencia` (1.734 arquivos, aprovado pelo autor em 09/11; pendentes caíram de 2.608 para 874), #13 fotos de evento, #14 documentos de fonte, #15 vídeos (decisão do autor), #16 fase 1 do fluxo de agentes. #17 entregue: `hd:uso --vivo`, testes e cache do `hd:imagens` (12 s).
 - **Trabalho contínuo:** ciclo de cada sessão, prioridade e modelo do relatório de andamento em `como-trabalhamos.md`. Próxima issue sem dependência do autor: #16 (fase 1) e #13 (fotos de evento, com a seleção levada ao autor).
+- **Fim do dia (na `developer`, o autor leva para a `main`):**
+  - **hd 93,0% usado.** Os 37 pendentes são vídeos (#15, que ficam com o autor).
+  - **#14:** 502 documentos receberam uso; 8 temas novos foram aprovados no A1 e produzidos (6 fichas no tools, artigo de cashback e LTV, passos nos programas 1101, 106, 1102 e 1004); o áudio do HD-0006 foi transcrito.
+  - **#13:** cada foto teve decisão com critério. 41 fotos novas nas galerias, mais 3 no learn-tech. Verificação na tela registrada no lote `2026-11-09-documentos-do-hd.md`.
+  - **#18:** destino em formato único, conferido no build.
+  - **learn-tech#136:** galeria no programa e no artigo (ADR 12).
+  - **#16:** `hd:extrair`, triador, `a1` e gabarito prontos. Em três rodadas (42 itens), o acerto foi de 76% em direitos e 67% em destinos. Decisão do autor: o triador é proponente e o A1 corrige. A fase 1 está entregue, e a próxima é a fase 2 (produtores).
+  - **Do autor:**
+    - levar as `developer` para a `main` e fazer o deploy da API. Sem o deploy, as fichas, fotos e capas novas não aparecem na produção;
+    - decidir a ficha da Rock Content;
+    - subir os vídeos.
 
 ## Situação em 06/11/2026
 - **Fluxo de agentes, fase 0** (branch `feature/tasks-06-11-2026-b`): estados novos no acervo (`extraido`, `triado`, `produzido`, `exibido`), campos `triagem` e `etapas`, `docs/processo/agentes.md`, contratos dos quatro sites em `docs/contratos/` e `CLAUDE.md` nos cinco repositórios. Próxima: fase 1, triador e `hd:extrair`, com avaliação por gabarito.

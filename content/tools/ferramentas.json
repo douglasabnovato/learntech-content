@@ -6260,5 +6260,411 @@
       ],
       "atualizadoEm": "2026-11-03"
     }
+  },
+  {
+    "title": "Campaign Monitor",
+    "description": "E-mail marketing com editor de arrastar e soltar, modelos, segmentação e automações, voltado a pequenas empresas e agências.",
+    "category": "Marketing e CRM",
+    "pricing": "Pago",
+    "thumb": "https://www.google.com/s2/favicons?domain=campaignmonitor.com&sz=128",
+    "thumbFit": "contain",
+    "site_url": "https://www.campaignmonitor.com/",
+    "slug": "campaign-monitor",
+    "detalhe": {
+      "resumo": "Ferramenta de e-mail marketing que hoje faz parte da Marigold, ao lado das marcas Emma e Vuture. Reúne editor visual, modelos, formulários de cadastro, segmentação, automações e e-mails transacionais, com planos pagos que variam pelo número de contatos.",
+      "paragrafos": [
+        "O trabalho no Campaign Monitor segue o roteiro clássico do e-mail marketing: montar a lista com formulários de cadastro ou importação, separar segmentos, escolher um modelo pronto ou um código próprio, editar a peça e agendar o envio. Por cima disso, a ferramenta oferece jornadas prontas e e-mails automáticos (boas-vindas, aniversário, sequências de nutrição), um assistente de texto com IA e e-mails transacionais. Nos planos mais altos entram segmentos por engajamento, otimização do horário de envio, travamento de seções do modelo para a equipe não quebrar o layout e rastreamento avançado de links.",
+        "Em novembro de 2026, a página oficial de preços listava os planos Lite, Essentials, Premier e Enterprise, além de um teste gratuito de 30 dias limitado a 500 contatos e 500 e-mails. O Lite tinha limite de envios mensais; Essentials e Premier tinham envios ilimitados, com o preço definido pelo tamanho da base; o Enterprise era negociado em contrato anual, com gerente de conta e gestão de várias marcas. A mesma página informava 10% de desconto no pagamento anual e 15% para organizações sem fins lucrativos, e o construtor de sites entrava como adicional nos planos de entrada.",
+        "A Marigold descreve o Campaign Monitor como e-mail simples e poderoso, feito para pequenas empresas e para as agências que as atendem. Por isso ele faz sentido em pequenas equipes de marketing e em agências que cuidam de vários clientes ao mesmo tempo. A empresa-mãe, que se chamava CM Group, passou a usar a marca Marigold em 2023, e as linhas voltadas a grandes empresas foram vendidas para a Zeta Global, segundo o FAQ oficial de clientes.",
+        "Para aprender, o teste de 30 dias basta para montar uma lista pequena com contatos de teste, criar um modelo, mandar um e-mail de boas-vindas automático e comparar duas linhas de assunto. Antes de assinar, simule o custo com o tamanho real da base, porque a cobrança é em dólar e cresce com os contatos. Os cuidados são os de sempre: só envie para quem pediu, mantenha o descadastro visível, registre a origem do consentimento e não importe listas compradas, por causa da entregabilidade e da LGPD.",
+        "O Campaign Monitor apareceu como referência de mercado no trabalho de CRM e growth do autor numa rede de varejo, na hora de comparar ferramentas de e-mail. No ecossistema LearnTECH, ele se liga ao programa CRM na Prática, que trata de réguas e jornadas, ao programa de e-mail HTML integrado ao CRM e ao artigo sobre LGPD nas comunicações de CRM."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.campaignmonitor.com/"
+        },
+        {
+          "label": "Preços e planos",
+          "url": "https://www.campaignmonitor.com/pricing/"
+        },
+        {
+          "label": "Central de ajuda: planos do Campaign Monitor",
+          "url": "https://www.campaignmonitor.com/resources/knowledge-base/what-are-the-campaign-monitor-pricing-tiers"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Campaign Monitor: página de preços (consultada em novembro de 2026)",
+          "url": "https://www.campaignmonitor.com/pricing/"
+        },
+        {
+          "label": "Campaign Monitor Knowledge Base: What are the Campaign Monitor pricing tiers",
+          "url": "https://www.campaignmonitor.com/resources/knowledge-base/what-are-the-campaign-monitor-pricing-tiers"
+        },
+        {
+          "label": "Marigold: Customer FAQs (consultado em novembro de 2026)",
+          "url": "https://meetmarigold.com/customer-faqs/"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "1101"
+        },
+        {
+          "tipo": "programas",
+          "id": "1102"
+        },
+        {
+          "tipo": "blog",
+          "id": "lgpd-nas-comunicacoes-de-crm"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "constant-contact"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "omnisend"
+        }
+      ],
+      "atualizadoEm": "2026-11-09"
+    }
+  },
+  {
+    "title": "Omnisend",
+    "description": "E-mail, SMS e notificações web para lojas virtuais, com automações de carrinho abandonado e integração com Shopify e outras plataformas.",
+    "category": "Marketing e CRM",
+    "pricing": "Freemium",
+    "thumb": "https://www.google.com/s2/favicons?domain=omnisend.com&sz=128",
+    "thumbFit": "contain",
+    "site_url": "https://www.omnisend.com/",
+    "slug": "omnisend",
+    "detalhe": {
+      "resumo": "Plataforma de automação de marketing feita para e-commerce, criada em 2014 com o nome Soundest e rebatizada de Omnisend em 2017. Junta e-mail, SMS e notificações web num só lugar, com plano gratuito e planos pagos que crescem com o número de contatos.",
+      "paragrafos": [
+        "A Omnisend se conecta à loja virtual e puxa clientes, produtos e pedidos. Com isso, monta automações que dependem do comportamento de compra: boas-vindas para quem se cadastra, lembrete de carrinho abandonado, recomendação de produtos e mensagens depois da compra. Pop-ups e formulários captam contatos no site, e as campanhas podem sair por e-mail, SMS ou notificação no navegador. A página no Shopify App Store cita mais de 250 integrações, como Shopify Flow, Gorgias, Yotpo e Recharge.",
+        "Em novembro de 2026, a página oficial de preços mostrava um plano Free com até 250 contatos, 500 e-mails e 500 notificações web por mês, sem SMS. O Standard aparecia a partir de US$ 11,20 por mês para 500 contatos e o Pro a partir de US$ 41,30 por mês para 2.500 contatos, com e-mails ilimitados e SMS a partir de US$ 0,007 por mensagem; o Shopify App Store explicava que os planos pagos começam com 30% de desconto nos três primeiros meses. Acima de 150 mil perfis ativos, o plano Custom é negociado com a equipe comercial.",
+        "A empresa diz atender mais de 150 mil lojas virtuais (página Sobre, dados de 2025) e funciona com Shopify, BigCommerce, WooCommerce, Wix e Ecwid. Por ter nascido para o varejo online, ela aparece em comparativos de ferramentas de e-mail para e-commerce e em equipes de growth que precisam de réguas de compra sem depender de desenvolvedor. No Shopify App Store, o app tinha nota 4,7 de 5 em cerca de 3.200 avaliações em novembro de 2026.",
+        "Para começar, o plano gratuito permite ligar uma loja de teste, criar um pop-up de cadastro e ativar a automação de carrinho abandonado. Teste cada fluxo com um pedido fictício antes de ligar para clientes reais. Cuidado com o SMS: ele é cobrado por mensagem, precisa de consentimento específico e incomoda mais do que o e-mail quando chega fora de hora. Como a cobrança é em dólar e cresce com a base, revise contatos inativos antes de mudar de faixa.",
+        "A Omnisend apareceu como referência de mercado no trabalho de CRM e growth do autor numa rede de varejo, como exemplo de ferramenta feita para e-commerce. No ecossistema LearnTECH, ela conversa com o programa de e-commerce na prática, com o programa de jornadas transacionais de pedido e com o artigo sobre LGPD nas comunicações de CRM."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.omnisend.com/"
+        },
+        {
+          "label": "Preços e planos",
+          "url": "https://www.omnisend.com/pricing/"
+        },
+        {
+          "label": "Sobre a Omnisend",
+          "url": "https://www.omnisend.com/about/"
+        },
+        {
+          "label": "Omnisend no Shopify App Store",
+          "url": "https://apps.shopify.com/omnisend"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Omnisend: página de preços (consultada em novembro de 2026)",
+          "url": "https://www.omnisend.com/pricing/"
+        },
+        {
+          "label": "Omnisend: About us",
+          "url": "https://www.omnisend.com/about/"
+        },
+        {
+          "label": "Shopify App Store: Omnisend Email Marketing & SMS (consultado em novembro de 2026)",
+          "url": "https://apps.shopify.com/omnisend"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "105"
+        },
+        {
+          "tipo": "programas",
+          "id": "1105"
+        },
+        {
+          "tipo": "blog",
+          "id": "lgpd-nas-comunicacoes-de-crm"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "wake-commerce"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "campaign-monitor"
+        }
+      ],
+      "atualizadoEm": "2026-11-09"
+    }
+  },
+  {
+    "title": "GetResponse",
+    "description": "E-mail marketing e automação com landing pages, formulários, webinars e criador de cursos, com conta gratuita e planos pagos por contatos.",
+    "category": "Marketing e CRM",
+    "pricing": "Freemium",
+    "thumb": "https://www.google.com/s2/favicons?domain=getresponse.com&sz=128",
+    "thumbFit": "contain",
+    "site_url": "https://www.getresponse.com/",
+    "slug": "getresponse",
+    "detalhe": {
+      "resumo": "Plataforma polonesa de e-mail marketing e automação, fundada em 1998 por Szymon Grabowski e sediada em Gdańsk. Além do e-mail, oferece landing pages, formulários, webinars, construtor de sites e ferramentas para vender cursos e newsletters pagas.",
+      "paragrafos": [
+        "O coração da GetResponse é o e-mail com automação: a pessoa entra por um formulário ou uma landing page, recebe uma série de boas-vindas e segue por fluxos montados num editor visual, que reagem a cliques, compras ou carrinho abandonado. Nos planos mais altos entram segmentação avançada, funis de venda, cupons, relatórios de receita, teste A/B e notificações web. O plano Creator acrescenta webinars, construtor de sites e criador de cursos, e o Enterprise inclui SMS, e-mails transacionais e domínio e IP de envio dedicados.",
+        "Em novembro de 2026, a página oficial de preços mostrava valores em euros para 1.000 contatos: Starter a partir de € 16 por mês, Marketer a partir de € 54 e Creator a partir de € 62, com Enterprise sob consulta e 18% de desconto no pagamento anual. Os recursos pagos podiam ser testados por 14 dias sem cartão; depois do teste, a conta seguia na versão gratuita, que a Wikipédia descreve como limitada a 500 contatos. A cobrança sai em dólar ou euro, então o valor em reais muda com o câmbio.",
+        "A empresa começou em Gdynia, na Polônia, e chegou a 400 mil clientes em mais de 180 mercados em novembro de 2023, segundo a Wikipédia. Ela é comum em pequenas empresas, produtores de conteúdo e infoprodutores, justamente pela combinação de e-mail com landing page, webinar e curso no mesmo lugar.",
+        "Para aprender, use os 14 dias de teste para montar o caminho completo: uma landing page com formulário, uma série de três e-mails de boas-vindas e um relatório de abertura e clique. Desenhe o fluxo no papel antes de abrir o editor, para não criar automações que se cruzam. Respeite a LGPD em toda captura, mantenha o descadastro funcionando e acompanhe o limite de contatos do plano, porque passar dele muda a faixa de preço.",
+        "A GetResponse apareceu como referência de mercado no trabalho de CRM e growth do autor numa rede de varejo, na comparação entre ferramentas de e-mail e automação. No ecossistema LearnTECH, ela se liga ao programa CRM na Prática, ao programa de migração de landing pages entre plataformas e às fichas da RD Station e da Constant Contact."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.getresponse.com/"
+        },
+        {
+          "label": "Preços e planos",
+          "url": "https://www.getresponse.com/pricing"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "GetResponse: página de preços (consultada em novembro de 2026)",
+          "url": "https://www.getresponse.com/pricing"
+        },
+        {
+          "label": "Wikipédia: GetResponse",
+          "url": "https://en.wikipedia.org/wiki/GetResponse"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "programas",
+          "id": "1101"
+        },
+        {
+          "tipo": "programas",
+          "id": "106"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "rd-station"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "constant-contact"
+        },
+        {
+          "tipo": "blog",
+          "id": "lgpd-nas-comunicacoes-de-crm"
+        }
+      ],
+      "atualizadoEm": "2026-11-09"
+    }
+  },
+  {
+    "title": "Databox",
+    "description": "Painéis e relatórios de desempenho que juntam dados de marketing, vendas e finanças de mais de 130 fontes, com metas e análise por IA.",
+    "category": "Dados",
+    "pricing": "Freemium",
+    "thumb": "https://www.google.com/s2/favicons?domain=databox.com&sz=128",
+    "thumbFit": "contain",
+    "site_url": "https://databox.com/",
+    "slug": "databox",
+    "detalhe": {
+      "resumo": "Plataforma de análise de desempenho com sede em Boston que conecta ferramentas como HubSpot, Google Analytics 4, Meta Ads e Stripe para montar painéis, relatórios, metas e alertas. Tem plano gratuito e planos pagos para equipes e agências.",
+      "paragrafos": [
+        "O Databox funciona em três passos: conectar as fontes de dados, escolher ou criar métricas e montar painéis e relatórios. A página oficial fala em mais de 130 integrações e mais de 4 mil métricas prontas, além de planilhas, bancos de dados e API. Com as métricas no lugar, dá para definir metas, receber alertas de anomalia, enviar resumos agendados por e-mail ou Slack e perguntar em linguagem natural ao Genie, o analista com IA da ferramenta.",
+        "Em novembro de 2026, a página de preços listava os planos Free, Analyst, Team Core, Team Scale, Agency e Custom. O Free incluía 1 usuário, 3 fontes de dados, 1 painel ou relatório, 10 métricas personalizadas e sincronização no máximo diária; os planos pagos acrescentam integrações personalizadas, API, sincronização de hora em hora, compartilhamento e, no Agency, relatórios entre várias contas de clientes. Os valores dos planos pagos mudam com o ciclo de cobrança, então confira a página oficial antes de assinar.",
+        "O Databox é comum em agências de marketing e em times de growth que precisam mostrar resultados de várias ferramentas num lugar só, sem montar um projeto de BI. No HubSpot Marketplace, onde é parceiro Premier, o app tinha cerca de 16 mil instalações e nota 4,3 em 58 avaliações em novembro de 2026. Ele ocupa um espaço entre o painel nativo de cada ferramenta e soluções de BI como Power BI e Data Studio (Looker Studio).",
+        "Para começar, o plano gratuito basta para ligar três fontes, como Google Analytics, uma conta de anúncios e uma planilha, e montar um painel semanal com poucos indicadores. Escolha as métricas antes de abrir a ferramenta: um painel com 40 números não ajuda ninguém a decidir. Cuidado com acessos: cada integração usa a conta de alguém, então prefira contas da empresa, revise permissões quando alguém sai da equipe e não compartilhe painel com dado pessoal de cliente por link aberto.",
+        "O Databox apareceu como referência de mercado no trabalho de CRM e growth do autor numa rede de varejo, como opção para reunir indicadores de várias ferramentas. No ecossistema LearnTECH, ele se liga ao artigo sobre OKRs e report executivo de growth, ao programa de métricas de produto e às fichas do Power BI e do Data Studio."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://databox.com/"
+        },
+        {
+          "label": "Preços e planos",
+          "url": "https://databox.com/pricing"
+        },
+        {
+          "label": "Databox no HubSpot Marketplace",
+          "url": "https://ecosystem.hubspot.com/marketplace/apps/databox"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Databox: página de preços (consultada em novembro de 2026)",
+          "url": "https://databox.com/pricing"
+        },
+        {
+          "label": "Databox: About us",
+          "url": "https://databox.com/about-us"
+        },
+        {
+          "label": "HubSpot Marketplace: Databox (consultado em novembro de 2026)",
+          "url": "https://ecosystem.hubspot.com/marketplace/apps/databox"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "okrs-e-report-executivo-de-growth"
+        },
+        {
+          "tipo": "programas",
+          "id": "504"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "power-bi"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "data-studio"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "google-analytics"
+        }
+      ],
+      "atualizadoEm": "2026-11-09"
+    }
+  },
+  {
+    "title": "Rock Content",
+    "description": "Empresa brasileira de marketing de conteúdo, conhecida pelo blog e pelos cursos gratuitos e por soluções como WriterAccess, Ion e Stage.",
+    "category": "Marketing e CRM",
+    "pricing": "Pago",
+    "thumb": "https://www.google.com/s2/favicons?domain=rockcontent.com&sz=128",
+    "thumbFit": "contain",
+    "site_url": "https://rockcontent.com/br/",
+    "slug": "rock-content",
+    "detalhe": {
+      "resumo": "Empresa de marketing de conteúdo nascida em Minas Gerais, que ficou conhecida no Brasil pelo blog, pelos materiais educativos e pela Rock University. Em 2022, comprou a norte-americana WriterAccess, um marketplace que liga empresas a redatores e produtores de conteúdo.",
+      "paragrafos": [
+        "A proposta da Rock Content era ajudar empresas a produzir conteúdo em escala: artigos, materiais ricos, conteúdo interativo e sites. Em abril de 2022, o portal Startups listava entre os produtos da empresa o Visually, para conteúdo gráfico, o Ion, para conteúdo interativo, e o Stage, para gestão de hospedagem WordPress, além da plataforma de cursos Rock University. Segundo a mesma reportagem, cerca de 60% da receita vinha dos Estados Unidos.",
+        "A WriterAccess, comprada em 2022 na segunda aquisição internacional da empresa (a primeira foi a ScribbleLive, em 2019), trouxe cerca de 2 mil clientes e mais de 500 agências. Em novembro de 2026, o site da WriterAccess mostrava planos de autoatendimento Basic (US$ 49 por mês) e Pro (US$ 79 por mês) e serviços gerenciados a partir de US$ 449 por mês, com o texto cobrado à parte por palavra.",
+        "Para quem trabalha com marketing digital no Brasil, a Rock Content é mais lembrada como escola do que como ferramenta: muita gente aprendeu marketing de conteúdo, SEO e funil de vendas pelo blog e pelos e-books da empresa. Ao usar qualquer serviço de produção terceirizada de conteúdo, defina antes o briefing, o tom de voz e o processo de revisão, e confira as informações técnicas e os números de cada texto antes de publicar.",
+        "A Rock Content apareceu como referência de mercado no trabalho de CRM e growth do autor numa rede de varejo, como fonte de estudo sobre marketing de conteúdo. No ecossistema LearnTECH, ela se liga ao artigo sobre marketing digital para arquitetura e design, ao artigo de copy e UX writing e às fichas do WordPress e do Ubersuggest.",
+        "Página em revisão: as informações acima são básicas e serão completadas em breve."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://rockcontent.com/br/"
+        },
+        {
+          "label": "WriterAccess",
+          "url": "https://writeraccess.com/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "Startups: Rock Content compra a WriterAccess em sua segunda aquisição internacional (18/04/2022)",
+          "url": "https://startups.com.br/noticias/brazils-rock-content-buys-writeraccess-in-second-international-acquisition"
+        },
+        {
+          "label": "WriterAccess: planos e preços (consultado em novembro de 2026)",
+          "url": "https://writeraccess.com/"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "marketing-digital-para-arquitetura-e-design"
+        },
+        {
+          "tipo": "blog",
+          "id": "copy-e-ux-writing-para-devs"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "wordpress"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "ubersuggest"
+        }
+      ],
+      "atualizadoEm": "2026-11-09"
+    }
+  },
+  {
+    "title": "HackerRank",
+    "description": "Desafios de programação e testes técnicos usados por empresas para avaliar e entrevistar pessoas desenvolvedoras, com prática gratuita.",
+    "category": "Código",
+    "pricing": "Freemium",
+    "thumb": "https://www.google.com/s2/favicons?domain=hackerrank.com&sz=128",
+    "thumbFit": "contain",
+    "site_url": "https://www.hackerrank.com/",
+    "slug": "hackerrank",
+    "detalhe": {
+      "resumo": "Plataforma norte-americana de desafios de programação e de avaliação técnica, fundada em 2012 por Vivek Ravisankar e Hari Karunanidhi. A prática é gratuita para quem programa; as empresas pagam pelos produtos de triagem e entrevista técnica.",
+      "paragrafos": [
+        "O HackerRank tem dois lados. Para quem programa, há desafios em várias linguagens, organizados por área (algoritmos, estruturas de dados, SQL, entre outras), corrigidos automaticamente, com ranking e competições com tempo. Para as empresas, há produtos pagos como Screen, para testes técnicos online na triagem, Interview, para entrevistas com editor de código compartilhado, e Chakra, para entrevistas iniciais conduzidas por IA. Os testes são corrigidos por casos de teste e vêm com detecção de plágio.",
+        "A empresa começou como Interview Street e foi a primeira empresa indiana aceita na Y Combinator, em 2011; hoje tem sede em Mountain View, na Califórnia (Wikipédia). Na página Sobre, consultada em novembro de 2026, o HackerRank falava em mais de 26 milhões de pessoas desenvolvedoras na comunidade e 2.500 empresas clientes. Por isso é comum receber um link do HackerRank em processos seletivos de tecnologia.",
+        "Para treinar, crie uma conta gratuita e resolva desafios na linguagem que a vaga pede, começando pelos fáceis e cronometrando o tempo. Leia o enunciado inteiro, rode os exemplos antes de enviar e pense nos casos de borda (lista vazia, número negativo, entrada grande), porque a correção usa casos de teste escondidos. Os preços dos planos para empresas mudam com frequência e ficam na página oficial de preços.",
+        "Cuidados: num teste de seleção, copiar soluções prontas ou usar ajuda não permitida costuma ser detectado e elimina a candidatura. Leia as regras de cada teste (se pode consultar documentação, se a câmera fica ligada, quanto tempo há) e faça o teste num lugar tranquilo e com internet estável. Ranking alto no site ajuda a treinar, mas o que pesa na contratação é saber explicar a solução.",
+        "O HackerRank apareceu como referência de mercado no trabalho de CRM e growth do autor numa rede de varejo, como exemplo de plataforma de avaliação técnica. No ecossistema LearnTECH, ele se liga ao artigo sobre testes técnicos online, ao artigo sobre processo seletivo em tecnologia, ao programa de lógica de programação e algoritmos e ao programa de entrevistas de TI em inglês."
+      ],
+      "links": [
+        {
+          "label": "Site oficial",
+          "url": "https://www.hackerrank.com/"
+        },
+        {
+          "label": "Sobre o HackerRank",
+          "url": "https://www.hackerrank.com/about-us/"
+        },
+        {
+          "label": "Central de ajuda",
+          "url": "https://support.hackerrank.com/"
+        }
+      ],
+      "fontes": [
+        {
+          "label": "HackerRank: About us (consultado em novembro de 2026)",
+          "url": "https://www.hackerrank.com/about-us/"
+        },
+        {
+          "label": "Wikipédia: HackerRank",
+          "url": "https://en.wikipedia.org/wiki/HackerRank"
+        }
+      ],
+      "relacionados": [
+        {
+          "tipo": "blog",
+          "id": "testes-tecnicos-online"
+        },
+        {
+          "tipo": "blog",
+          "id": "processo-seletivo-como-se-preparar"
+        },
+        {
+          "tipo": "programas",
+          "id": "901"
+        },
+        {
+          "tipo": "programas",
+          "id": "703"
+        },
+        {
+          "tipo": "ferramentas",
+          "id": "stack-overflow"
+        }
+      ],
+      "atualizadoEm": "2026-11-09"
+    }
   }
 ]

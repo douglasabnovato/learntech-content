@@ -2,7 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import type { z } from "zod";
-import { programaSchema, paginaSchema, PAGINAS, CAMPOS_RESUMO, areaSchema, type Programa, type Area } from "../../src/schemas/learn-tech";
+import { programaSchema, paginaSchema, PAGINAS, CAMPOS_RESUMO, areaSchema, fotoGaleriaSchema, type Programa, type Area } from "../../src/schemas/learn-tech";
 import { eventoSchema, type Evento } from "../../src/schemas/bootcamps";
 import { empresaSchema, vagaOuPerfilSchema, destaquesSchema, ferramentaSchema, modeloCurriculoSchema } from "../../src/schemas/career-tools";
 import { coberturaSchema, type Cobertura } from "../../src/schemas/cobertura";
@@ -141,7 +141,7 @@ function referenciasMidia(valor: unknown, achados: Set<string> = new Set()): Set
   return achados;
 }
 
-interface ItemBlog { id: string; title: string; blogURL?: string; tag?: string; readingTime?: string; lead?: string; body?: string[]; quote?: string; bodyContinued?: string[]; highlights?: { label?: string; description?: string }[] }
+interface ItemBlog { id: string; title: string; blogURL?: string; tag?: string; readingTime?: string; lead?: string; body?: string[]; quote?: string; bodyContinued?: string[]; highlights?: { label?: string; description?: string }[]; galeria?: unknown[] }
 
 /* Itens do blog (paginas/blog.json). */
 export function itensBlog(c: Conteudo): ItemBlog[] {
@@ -287,6 +287,10 @@ export function verificarIntegridade(c: Conteudo, pastaMidia: string): string[] 
   for (const b of itensBlog(c)) {
     const esperado = tempoDeLeitura(b);
     if (b.readingTime !== esperado) erros.push(`blog ${b.id}: readingTime "${b.readingTime}" deveria ser "${esperado}" (${PALAVRAS_POR_MINUTO} palavras/min)`);
+    /* Galeria do artigo (ADR 12): mesmo formato da do programa, com texto alternativo obrigatório. */
+    (b.galeria ?? []).forEach((foto, i) => {
+      if (!fotoGaleriaSchema.safeParse(foto).success) erros.push(`blog ${b.id}: foto ${i + 1} da galeria precisa de url e alt`);
+    });
   }
 
   /* Qualidade editorial do que é publicado. */
@@ -331,6 +335,9 @@ export function verificarIntegridade(c: Conteudo, pastaMidia: string): string[] 
     }
   }
 
+  /* Destino do acervo: sempre "projeto/recurso/id", e o id existe no content/ (ADR 11, issue #18). */
+  for (const e of errosDestinos(c)) erros.push(e);
+
   if (!c.vagas.some((v) => v.title === c.destaques.vaga)) erros.push(`destaques: vaga "${c.destaques.vaga}" não existe em vagas.json`);
   if (!c.empresas.some((v) => v.title === c.destaques.empresa)) erros.push(`destaques: empresa "${c.destaques.empresa}" não existe em empresas.json`);
   if (!c.perfis.some((v) => v.title === c.destaques.perfil)) erros.push(`destaques: perfil "${c.destaques.perfil}" não existe em perfis.json`);
@@ -356,6 +363,38 @@ export function verificarIntegridade(c: Conteudo, pastaMidia: string): string[] 
       for (const id of d.ids ?? []) {
         if (!conhecidos.has(id)) erros.push(`cobertura "${item.pasta}": ${d.recurso} "${id}" não existe`);
       }
+    }
+  }
+  return erros;
+}
+
+/* Ids de cada recurso, na forma usada pelos destinos do acervo ("projeto/recurso/id"). */
+function idsPorRecurso(c: Conteudo): Record<string, Set<string>> {
+  const chave = (x: { slug?: string; id?: string | number }) => String(x.slug ?? x.id ?? "");
+  return {
+    "learn-tech/programas": new Set(c.programas.map((p) => String(p.id))),
+    "learn-tech/blog": new Set(itensBlog(c).map((b) => b.id)),
+    "learn-tech/areas": new Set(c.areas.map((a) => a.id)),
+    "bootcamps/eventos": new Set(c.eventos.map((e) => e.slug)),
+    "career/empresas": new Set(c.empresas.map(chave)),
+    "career/vagas": new Set(c.vagas.map(chave)),
+    "career/perfis": new Set(c.perfis.map(chave)),
+    "career/modelos-curriculo": new Set(c.modelosCurriculo.map((m) => m.slug)),
+    "tools/ferramentas": new Set(c.ferramentas.map(chave)),
+    "tools/hospedagens": new Set(c.hospedagens.map(chave)),
+  };
+}
+
+/* Confere cada destino dos itens do acervo: formato completo e alvo existente. */
+export function errosDestinos(c: Conteudo): string[] {
+  const ids = idsPorRecurso(c);
+  const erros: string[] = [];
+  for (const it of c.acervo.itens) {
+    for (const d of it.destinos) {
+      const m = /^([a-z-]+\/[a-z-]+)\/(.+)$/.exec(d);
+      const conhecidos = m ? ids[m[1]!] : undefined;
+      if (!m || !conhecidos) erros.push(`acervo ${it.id}: destino "${d}" fora do formato projeto/recurso/id`);
+      else if (!conhecidos.has(m[2]!)) erros.push(`acervo ${it.id}: destino "${d}" não existe no content/`);
     }
   }
   return erros;
@@ -418,6 +457,13 @@ export function montarRecursos(conteudoBruto: Conteudo): Recurso[] {
     { caminho: "cobertura.json", descricao: "Matriz de cobertura do acervo", dados: c.cobertura },
   ];
   return r;
+}
+
+/* Itens de um recurso para o índice: lista direta ou objeto { itens: [] } (como o blog). */
+export function contarItens(dados: unknown): number | undefined {
+  if (Array.isArray(dados)) return dados.length;
+  const itens = (dados as { itens?: unknown } | null)?.itens;
+  return Array.isArray(itens) ? itens.length : undefined;
 }
 
 /* Fim de conteudo.ts */

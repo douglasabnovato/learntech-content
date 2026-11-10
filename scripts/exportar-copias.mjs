@@ -80,6 +80,9 @@ function saidas() {
   const catalogo = [...recurso("learn-tech/programas.json")].sort((a, b) => a.id - b.id);
   r.push({ site: "learn-tech", arquivo: "src/constants/programasCatalogo.js", texto: CABECALHO("content/learn-tech/programas/*.json") + `const programasCatalogo = ${json(absolutizar(catalogo))};\n\nexport default programasCatalogo;\n` });
 
+  /* Apresentação do learn-tech (/conheca): reserva local da página quando a API não responde (issue #21). */
+  r.push({ site: "learn-tech", arquivo: "src/constants/conhecaData.js", texto: CABECALHO("content/learn-tech/paginas/conheca.json") + `const conhecaData = ${json(ler("learn-tech/paginas/conheca.json"))};\n\nexport default conhecaData;\n` });
+
   /* Categorias do learn-tech: ícones vão por nome ("FaCode"); o site hidrata com src/constants/icones.js. */
   const categorias = ler("learn-tech/paginas/categorias.json").itens;
   r.push({ site: "learn-tech", arquivo: "src/constants/categoriesData.js", texto: CABECALHO("content/learn-tech/paginas/categorias.json") + `const categoriesData = ${json(absolutizar(categorias))};\n\nexport default categoriesData;\n` });
