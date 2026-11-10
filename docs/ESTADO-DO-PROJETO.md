@@ -1,6 +1,6 @@
 # Estado do projeto: learntech-content (API)
 
-**Atualizado em 06/11/2026.** Este arquivo responde a três perguntas: onde o projeto está, o que já fizemos e o que queremos fazer. Para trazer arquivos novos ou mudar a estrutura, siga [`COMO-EVOLUIR.md`](COMO-EVOLUIR.md).
+**Atualizado em 10/11/2026.** A régua dos 12 critérios está em [`MVP.md`](MVP.md). Este arquivo responde a três perguntas: onde o projeto está, o que já fizemos e o que queremos fazer. Para trazer arquivos novos ou mudar a estrutura, siga [`COMO-EVOLUIR.md`](COMO-EVOLUIR.md).
 
 ## Onde está
 
@@ -8,11 +8,11 @@
 |---|---|
 | Produção | `https://learntech-content.douglasabnovato.workers.dev` (Cloudflare Workers + D1 + Static Assets). `GET /v1/saude` responde `ok` |
 | Repositório | `main` protegida (ruleset "main protegida": check `verificar` obrigatório, sem force push). Fluxo: `feature/tasks-DD-MM-AAAA` → `developer` → `main`, só fast-forward |
-| CI | `ci.yml` com typecheck, lint, 107 testes e build. `deploy.yml` só roda com a variável `DEPLOY_AUTOMATICO = sim` |
+| CI | `ci.yml` com typecheck, lint, 126 testes e build. `deploy.yml` só roda com a variável `DEPLOY_AUTOMATICO = sim` |
 | Deploy | Manual com `npm run deploy`, na máquina do autor, até os segredos da Cloudflare estarem no GitHub (#9) |
-| Conteúdo servido | 49 programas, 45 artigos, 27 eventos, 43 empresas, 24 vagas, 14 perfis, 91 ferramentas, 12 hospedagens |
-| Placar (`npm run progresso`) | 79/100, com Publicação em 100% |
-| e2e contra a produção | 19 de 19 (fluxos dos quatro sites e acessibilidade sem violação crítica) |
+| Conteúdo servido | 49 programas, 46 artigos, 27 eventos, 43 empresas, 24 vagas, 14 perfis, 97 ferramentas, 12 hospedagens (índice da API em 10/11) |
+| Placar (`npm run progresso`) | 79/100 em 10/11, logo depois de as cinco integrações irem para a `main` |
+| e2e contra a produção | 10/11: 52 de 55. Os 10 fluxos passam; o axe acusa contraste e nome acessível (corrigidos nas integrações, com axe local zerado); 3 capturas falham pela rolagem horizontal da home do learn-tech (learn-tech#139, corrigida na integração) |
 
 ## O que fizemos
 
@@ -26,6 +26,8 @@
 | 05/11, estabilidade | e2e contra a produção sem flutuação (visitante já identificado, iframes de terceiros fora do axe); deploy automático sem ficar vermelho a cada push; `COMO-EVOLUIR.md` nos cinco repositórios |
 | 06/11, fluxo de agentes | Fase 0: estados `extraido`, `triado`, `produzido` e `exibido` no acervo, com `triagem` e `etapas`; `docs/processo/agentes.md`; contratos dos quatro sites em `docs/contratos/`; `CLAUDE.md` nos cinco repositórios; 107 testes |
 | 06/11 | Este documento em cada repositório, README com o estado e issues novas para as lacunas (#10 e #11) |
+| 09/11 | Fase 1 do fluxo de agentes (`hd:extrair`, triador, A1 e gabarito); uso dos 502 documentos e das fotos do hd; destinos em formato único `projeto/recurso/id` (#18); galeria no programa e no artigo (ADR 12) |
+| 10/11 | Página `/conheca` (textos na API e contagem do blog no índice, #21); cinco integrações na `main` e deploy (versão `40e6d2df`); thumbs da career em WebP (career#31); e2e e Lighthouse contra a produção; `MVP.md` |
 
 Detalhes: `docs/engenharia/diagnostico-mvp-2026-11-03.md`, `docs/engenharia/mvp-2026-11-03.md` e `docs/processo/conversas/2026-11-03-mvp-cinco-projetos.md`.
 
@@ -40,8 +42,8 @@ Todas as issues têm o label `proximos-passos` e pelo menos três critérios de 
 | 3 | [#6](https://github.com/douglasabnovato/learntech-content/issues/6) | Testes e lint do SDK `identificacao.js` | testes |
 | 4 | [#7](https://github.com/douglasabnovato/learntech-content/issues/7) | Verificador de links agendado | qualidade |
 | 5 | [#11](https://github.com/douglasabnovato/learntech-content/issues/11) | Lighthouse 13 e auditoria sem vulnerabilidade alta | engenharia |
-| 6 | [#8](https://github.com/douglasabnovato/learntech-content/issues/8) | Mídia no R2 e orçamento de tamanho no build | performance |
-| 7 | [#5](https://github.com/douglasabnovato/learntech-content/issues/5) | Identificação opcional nos sites e medição de abandono | produto, decisão do autor |
+| 6 | [#8](https://github.com/douglasabnovato/learntech-content/issues/8) | Mídia no R2 (só se couber no plano gratuito) e orçamento de tamanho no build | performance |
+| - | [#5](https://github.com/douglasabnovato/learntech-content/issues/5) | Identificação opcional: **não autorizada** pelo autor em 10/11. A identificação obrigatória continua | decisão do autor |
 | 8 | [#4](https://github.com/douglasabnovato/learntech-content/issues/4) | Votação de temas nos cards de programa (ADR 9) | produto, decisão do autor |
 
 ### Próximas remessas de conteúdo
