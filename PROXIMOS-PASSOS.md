@@ -44,14 +44,13 @@ Formato: número, tarefa, projeto, **identificada em** (data em que surgiu) e co
 
 13. **Revisar o log de escolhas do lote de issues e responder às perguntas nas issues** (todos). Identificada em 2026-11-03.
    O log está em `docs/processo/lotes/2026-11-03-issues.md`, seção "Log de escolhas", com 21 itens. Corrija o que discordar. As 30 issues com perguntas (comentário "Perguntas para virar conteúdo") viram conteúdo assim que você responde. Depois do deploy, feche as 27 issues com comentário "Conteúdo produzido".
-14. **Levar para a `main` as integrações de 10/11/2026 (ciclo b), com a API primeiro** (todos). Identificada em 2026-11-10.
-   Acessibilidade, busca e filtros nos quatro sites, Prettier no bootcamps e thumbs em WebP. Ordem: `npm run deploy` da API antes de publicar a career, porque as cópias da career já apontam para `/media/career/handcom.webp` e `99freelas.webp`. Depois, `npm run e2e` no learntech-content para confirmar o axe na produção.
-15. **Conferir a lista dos 25 arquivos sem uso da career** (career). Identificada em 2026-11-10.
+14. **Conferir a lista dos 25 arquivos sem uso da career** (career). Identificada em 2026-11-10.
    Lista em `docs/claudeia/06-mvp-2026-11-03.md` da career (issue career#31). Com o seu ok, o Claude remove num commit só de limpeza.
-16. **Ligar os alertas do Dependabot nos cinco repositórios** (todos). Identificada em 2026-11-10.
+15. **Ligar os alertas do Dependabot nos cinco repositórios** (todos). Identificada em 2026-11-10.
    Settings → Code security → Dependabot alerts → Enable. É gratuito. Hoje a API do GitHub responde "Dependabot alerts are disabled" nos cinco, e o critério 9 da régua pede esses alertas.
 
 ## Concluídas
+- 2026-11-10: levar o ciclo b para a `main`, com a API primeiro (learntech-content#25 e deploy `8277f2a9`; learn-tech#140 e #141, bootcamps#78, career#37, tools#63). `npm run e2e` contra a produção: 55 de 55, e axe sem violações nas 9 páginas.
 - 2026-11-10: publicar a branch `feature/tasks-03-11-2026` nos cinco repositórios (conferido com `git merge-base --is-ancestor`: está na `main` dos cinco).
 - 2026-11-10: medir e ligar o monitor. `npm run e2e` contra a produção (52 de 55; as 3 falhas são a rolagem horizontal da home do learn-tech, issue learn-tech#139), `npm run ux:lighthouse` e o workflow `disponibilidade` rodando a cada 6 horas com sucesso.
 - 2026-11-10: conferir os quatro sites no ar. Os testes de fluxo do e2e passaram: programa 1104, artigo novo, área Marketing Tech e CRM, "Veja também no ecossistema" no bootcamps, detalhe e busca na career e no tools.
