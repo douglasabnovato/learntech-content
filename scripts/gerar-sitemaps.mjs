@@ -41,7 +41,7 @@ const comDetalhe = (arq) => lista(ler(arq)).filter((i) => i.slug && i.detalhe);
 
 const saidas = {
   "learn-tech/public": [
-    ...["/", "/programs", "/blogs", "/category", "/about", "/aprender", "/careers", "/softskills", "/mentorias", "/resources", "/falaae", "/privacy", "/terms"].map((r) => SITES["learn-tech"] + r),
+    ...["/", "/conheca", "/programs", "/blogs", "/category", "/about", "/aprender", "/careers", "/softskills", "/mentorias", "/resources", "/falaae", "/privacy", "/terms"].map((r) => SITES["learn-tech"] + r),
     ...programas.map((p) => `${SITES["learn-tech"]}/program/${p.categoryFilter}/${p.id}`),
     ...blog.map((b) => `${SITES["learn-tech"]}/blog/${b.id}`),
   ],

@@ -111,7 +111,7 @@ export type Area = z.infer<typeof areaSchema>;
 
 export const PAGINAS = [
   "sobre", "aprender", "carreira", "categorias", "blog", "faq",
-  "navegacao", "mentorias", "privacidade", "termos", "estatisticas",
+  "navegacao", "mentorias", "privacidade", "termos", "estatisticas", "conheca",
 ] as const;
 
 /* Fim de learn-tech.ts */

@@ -1,0 +1,108 @@
+{
+  "seo": {
+    "titulo": "Conheça o learnTECH",
+    "descricao": "Programas, eventos, carreira e ferramentas para entrar e crescer em tecnologia, com conteúdo tirado de experiência real."
+  },
+  "hero": {
+    "eyebrow": "Conheça o learnTECH",
+    "title": "Para entrar e crescer em tecnologia, com o caminho de quem já fez.",
+    "subtitle": "O learnTECH junta em quatro sites o que estudei, os projetos que construí e os eventos de que participei. Cada parte vira trilha, artigo ou referência para encurtar o caminho de quem está começando.",
+    "cta": { "label": "Explorar os programas", "to": "/programs" }
+  },
+  "numeros": {
+    "titulo": "O que já está publicado",
+    "nota": "Contagem ao vivo da API do learnTECH.",
+    "itens": [
+      { "chave": "learn-tech/programas", "rotulo": "programas de estudo" },
+      { "chave": "learn-tech/paginas/blog", "rotulo": "artigos" },
+      { "chave": "bootcamps/eventos", "rotulo": "eventos e formações" },
+      { "chave": "career/empresas", "rotulo": "empresas" },
+      { "chave": "career/vagas", "rotulo": "vagas" },
+      { "chave": "tools/ferramentas", "rotulo": "ferramentas" }
+    ]
+  },
+  "projetos": {
+    "titulo": "Quatro sites, uma só base",
+    "itens": [
+      {
+        "id": "learn-tech",
+        "nome": "learn-tech",
+        "papel": "Aprender",
+        "descricao": "Programas de estudo em ordem, com comentário, prática e quiz, além de artigos e das áreas da tecnologia explicadas.",
+        "chave": "learn-tech/programas",
+        "rotulo": "programas",
+        "url": "/programs",
+        "interno": true
+      },
+      {
+        "id": "bootcamps",
+        "nome": "bootcamps",
+        "papel": "Praticar",
+        "descricao": "Eventos, hackathons, comunidades e formações: o que foi feito, o que se aprendeu e as metas de estudo.",
+        "chave": "bootcamps/eventos",
+        "rotulo": "eventos",
+        "url": "https://bootcamps-dun.vercel.app/",
+        "interno": false
+      },
+      {
+        "id": "career",
+        "nome": "career",
+        "papel": "Trabalhar",
+        "descricao": "Empresas, vagas, perfis profissionais e modelos de currículo para a primeira vaga e para a próxima.",
+        "chave": "career/empresas",
+        "rotulo": "empresas",
+        "url": "https://douglasabnovato.github.io/career/",
+        "interno": false
+      },
+      {
+        "id": "tools",
+        "nome": "tools",
+        "papel": "Construir",
+        "descricao": "Catálogo das ferramentas e hospedagens do dia a dia, com para que serve cada uma e quando usar.",
+        "chave": "tools/ferramentas",
+        "rotulo": "ferramentas",
+        "url": "https://douglasabnovato.github.io/tools/",
+        "interno": false
+      }
+    ]
+  },
+  "origem": {
+    "titulo": "De onde vem o conteúdo",
+    "passos": [
+      {
+        "titulo": "Acervo próprio",
+        "descricao": "Anotações de estudo, projetos e fotos de eventos de comunidade, guardados e catalogados arquivo por arquivo."
+      },
+      {
+        "titulo": "Curadoria",
+        "descricao": "Cada material é lido e ganha um destino. Dados de terceiros e de antigos empregadores ficam de fora ou saem sem nomes."
+      },
+      {
+        "titulo": "Publicação",
+        "descricao": "O que serve vira programa, artigo, evento ou ficha, sempre com as fontes creditadas."
+      }
+    ],
+    "link": { "label": "Ver o método de curadoria", "to": "/about" }
+  },
+  "comoFeito": {
+    "titulo": "Como é feito",
+    "itens": [
+      { "titulo": "Uma API, quatro sites", "descricao": "Todo o conteúdo sai de uma API própria. Os quatro sites leem dela e guardam uma cópia de reserva." },
+      { "titulo": "Validado antes de publicar", "descricao": "Cada mudança passa por validação de conteúdo, testes e integração contínua antes de entrar no ar." },
+      { "titulo": "IA com aprovação humana", "descricao": "Agentes de IA leem o acervo e propõem onde cada material entra. Nada é publicado sem a aprovação do autor." }
+    ]
+  },
+  "autor": {
+    "titulo": "Quem faz",
+    "nome": "Douglas A. B. Novato",
+    "texto": "Desenvolvedor e criador do learnTECH. O projeto é construído em público, e o código dos cinco repositórios está aberto no GitHub.",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/douglasabnovato" },
+      { "label": "LinkedIn", "url": "https://www.linkedin.com/in/douglasabnovato/" }
+    ]
+  },
+  "fechamento": {
+    "titulo": "Comece por onde fizer mais sentido para você.",
+    "cta": { "label": "Explorar os programas", "to": "/programs" }
+  }
+}

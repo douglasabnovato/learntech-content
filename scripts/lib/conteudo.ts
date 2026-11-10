@@ -459,4 +459,11 @@ export function montarRecursos(conteudoBruto: Conteudo): Recurso[] {
   return r;
 }
 
+/* Itens de um recurso para o índice: lista direta ou objeto { itens: [] } (como o blog). */
+export function contarItens(dados: unknown): number | undefined {
+  if (Array.isArray(dados)) return dados.length;
+  const itens = (dados as { itens?: unknown } | null)?.itens;
+  return Array.isArray(itens) ? itens.length : undefined;
+}
+
 /* Fim de conteudo.ts */
