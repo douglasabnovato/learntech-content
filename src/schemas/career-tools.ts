@@ -106,6 +106,8 @@ export const ferramentaSchema = z.object({
   category: textoObrigatorio,
   pricing: textoObrigatorio,
   thumb: thumbSchema,
+  /* Versão de 320 px para o card (srcset no tools); a thumb continua sendo a de 640 px. */
+  thumbPequena: urlOuMidia.optional(),
   site_url: urlAbsoluta,
   thumbFit: z.enum(["cover", "contain"]).optional(),
   ...comDetalhe,

@@ -5,6 +5,7 @@
     "category": "Design",
     "pricing": "Freemium",
     "thumb": "/media/tools/figma.webp",
+    "thumbPequena": "/media/tools/320/figma.webp",
     "site_url": "https://www.figma.com/",
     "slug": "figma",
     "detalhe": {
@@ -73,6 +74,7 @@
     "category": "Design",
     "pricing": "Pago",
     "thumb": "/media/tools/balsamiq.webp",
+    "thumbPequena": "/media/tools/320/balsamiq.webp",
     "site_url": "https://balsamiq.cloud/",
     "slug": "balsamiq",
     "detalhe": {
@@ -150,6 +152,7 @@
     "category": "Design",
     "pricing": "Descontinuado",
     "thumb": "/media/tools/mockingbird.webp",
+    "thumbPequena": "/media/tools/320/mockingbird.webp",
     "site_url": "https://gomockingbird.com/home",
     "slug": "mockingbird",
     "detalhe": {
@@ -207,6 +210,7 @@
     "category": "Design",
     "pricing": "Freemium",
     "thumb": "/media/tools/whimsical.webp",
+    "thumbPequena": "/media/tools/320/whimsical.webp",
     "site_url": "https://whimsical.com/",
     "slug": "whimsical",
     "detalhe": {
@@ -280,6 +284,7 @@
     "category": "Design",
     "pricing": "Gratuito",
     "thumb": "/media/tools/diagrams.webp",
+    "thumbPequena": "/media/tools/320/diagrams.webp",
     "site_url": "https://app.diagrams.net/",
     "slug": "drawio",
     "detalhe": {
@@ -361,6 +366,7 @@
     "category": "Design",
     "pricing": "Gratuito",
     "thumb": "/media/tools/brmodeloweb.webp",
+    "thumbPequena": "/media/tools/320/brmodeloweb.webp",
     "site_url": "https://docs.brmodeloweb.com/",
     "slug": "brmodelo-web",
     "detalhe": {
@@ -422,6 +428,7 @@
     "category": "Código",
     "pricing": "Freemium",
     "thumb": "/media/tools/codepen.webp",
+    "thumbPequena": "/media/tools/320/codepen.webp",
     "site_url": "https://codepen.io/your-work",
     "slug": "codepen",
     "detalhe": {
@@ -491,6 +498,7 @@
     "category": "Código",
     "pricing": "Freemium",
     "thumb": "/media/tools/codesandbox.webp",
+    "thumbPequena": "/media/tools/320/codesandbox.webp",
     "site_url": "https://codesandbox.io/s/vanilla-vanilla",
     "slug": "codesandbox",
     "detalhe": {
@@ -556,6 +564,7 @@
     "category": "Código",
     "pricing": "Freemium",
     "thumb": "/media/tools/stackblitz.webp",
+    "thumbPequena": "/media/tools/320/stackblitz.webp",
     "site_url": "https://stackblitz.com/",
     "slug": "stackblitz",
     "detalhe": {
@@ -617,6 +626,7 @@
     "category": "Código",
     "pricing": "Gratuito",
     "thumb": "/media/tools/fronteditor.webp",
+    "thumbPequena": "/media/tools/320/fronteditor.webp",
     "site_url": "https://www.fronteditor.dev/",
     "slug": "fronteditor",
     "detalhe": {
@@ -682,6 +692,7 @@
     "category": "Versionamento",
     "pricing": "Freemium",
     "thumb": "/media/tools/github.webp",
+    "thumbPequena": "/media/tools/320/github.webp",
     "site_url": "https://github.com/",
     "slug": "github",
     "detalhe": {
@@ -746,6 +757,7 @@
     "category": "Versionamento",
     "pricing": "Freemium",
     "thumb": "/media/tools/gitlab.webp",
+    "thumbPequena": "/media/tools/320/gitlab.webp",
     "site_url": "https://about.gitlab.com/",
     "slug": "gitlab",
     "detalhe": {
@@ -819,6 +831,7 @@
     "category": "Versionamento",
     "pricing": "Freemium",
     "thumb": "/media/tools/bitbucket.webp",
+    "thumbPequena": "/media/tools/320/bitbucket.webp",
     "site_url": "https://bitbucket.org/",
     "slug": "bitbucket",
     "detalhe": {
@@ -892,6 +905,7 @@
     "category": "Back-end",
     "pricing": "Freemium",
     "thumb": "/media/tools/postman.webp",
+    "thumbPequena": "/media/tools/320/postman.webp",
     "site_url": "https://www.postman.com/",
     "slug": "postman",
     "detalhe": {
@@ -953,6 +967,7 @@
     "category": "Back-end",
     "pricing": "Freemium",
     "thumb": "/media/tools/mailtrap.webp",
+    "thumbPequena": "/media/tools/320/mailtrap.webp",
     "site_url": "https://mailtrap.io/",
     "slug": "mailtrap",
     "detalhe": {
@@ -1200,6 +1215,7 @@
     "category": "Produtividade",
     "pricing": "Freemium",
     "thumb": "/media/tools/notion.webp",
+    "thumbPequena": "/media/tools/320/notion.webp",
     "site_url": "https://www.notion.so/",
     "slug": "notion",
     "detalhe": {
@@ -1261,6 +1277,7 @@
     "category": "Produtividade",
     "pricing": "Freemium",
     "thumb": "/media/tools/trello.webp",
+    "thumbPequena": "/media/tools/320/trello.webp",
     "site_url": "https://trello.com/home",
     "slug": "trello",
     "detalhe": {
@@ -1323,6 +1340,7 @@
     "category": "Produtividade",
     "pricing": "Gratuito",
     "thumb": "/media/tools/dontpad.webp",
+    "thumbPequena": "/media/tools/320/dontpad.webp",
     "site_url": "https://dontpad.com/",
     "slug": "dontpad",
     "detalhe": {
@@ -1372,6 +1390,7 @@
     "category": "Produtividade",
     "pricing": "Freemium",
     "thumb": "/media/tools/pomodoro.webp",
+    "thumbPequena": "/media/tools/320/pomodoro.webp",
     "site_url": "https://pomofocus.io/",
     "slug": "pomofocus",
     "detalhe": {
@@ -1425,6 +1444,7 @@
     "category": "Comunidade",
     "pricing": "Gratuito",
     "thumb": "/media/tools/stackoverflow.webp",
+    "thumbPequena": "/media/tools/320/stackoverflow.webp",
     "site_url": "https://stackoverflow.com/",
     "slug": "stack-overflow",
     "detalhe": {
@@ -1479,6 +1499,7 @@
     "category": "Comunidade",
     "pricing": "Freemium",
     "thumb": "/media/tools/discord.webp",
+    "thumbPequena": "/media/tools/320/discord.webp",
     "site_url": "https://discord.com/",
     "slug": "discord",
     "detalhe": {
@@ -1549,6 +1570,7 @@
     "category": "Comunidade",
     "pricing": "Freemium",
     "thumb": "/media/tools/slack.webp",
+    "thumbPequena": "/media/tools/320/slack.webp",
     "site_url": "https://slack.com/intl/pt-br",
     "slug": "slack",
     "detalhe": {
@@ -1606,6 +1628,7 @@
     "category": "Comunidade",
     "pricing": "Freemium",
     "thumb": "/media/tools/hashnode.webp",
+    "thumbPequena": "/media/tools/320/hashnode.webp",
     "site_url": "https://hashnode.com/",
     "slug": "hashnode",
     "detalhe": {
@@ -1683,6 +1706,7 @@
     "category": "Comunidade",
     "pricing": "Freemium",
     "thumb": "/media/tools/behance.webp",
+    "thumbPequena": "/media/tools/320/behance.webp",
     "site_url": "https://www.behance.net/",
     "slug": "behance",
     "detalhe": {
@@ -1748,6 +1772,7 @@
     "category": "Comunidade",
     "pricing": "Freemium",
     "thumb": "/media/tools/dribbble.webp",
+    "thumbPequena": "/media/tools/320/dribbble.webp",
     "site_url": "https://dribbble.com/",
     "slug": "dribbble",
     "detalhe": {
@@ -1813,6 +1838,7 @@
     "category": "Comunidade",
     "pricing": "Gratuito",
     "thumb": "/media/tools/pinterest.webp",
+    "thumbPequena": "/media/tools/320/pinterest.webp",
     "site_url": "https://br.pinterest.com/",
     "slug": "pinterest",
     "detalhe": {
@@ -1879,6 +1905,7 @@
     "category": "Imagens",
     "pricing": "Gratuito",
     "thumb": "/media/tools/unsplash.webp",
+    "thumbPequena": "/media/tools/320/unsplash.webp",
     "site_url": "https://unsplash.com/",
     "slug": "unsplash",
     "detalhe": {
@@ -1944,6 +1971,7 @@
     "category": "Imagens",
     "pricing": "Gratuito",
     "thumb": "/media/tools/illlustrations.webp",
+    "thumbPequena": "/media/tools/320/illlustrations.webp",
     "site_url": "https://illlustrations.co/",
     "slug": "illlustrations",
     "detalhe": {
@@ -2001,6 +2029,7 @@
     "category": "Imagens",
     "pricing": "Freemium",
     "thumb": "/media/tools/freepik.webp",
+    "thumbPequena": "/media/tools/320/freepik.webp",
     "site_url": "https://www.magnific.com/",
     "slug": "freepik",
     "detalhe": {
@@ -2074,6 +2103,7 @@
     "category": "Imagens",
     "pricing": "Gratuito",
     "thumb": "/media/tools/photopea.webp",
+    "thumbPequena": "/media/tools/320/photopea.webp",
     "site_url": "https://www.photopea.com/",
     "slug": "photopea",
     "detalhe": {
@@ -2131,6 +2161,7 @@
     "category": "Imagens",
     "pricing": "Gratuito",
     "thumb": "/media/tools/imgsgratis.webp",
+    "thumbPequena": "/media/tools/320/imgsgratis.webp",
     "site_url": "https://blog.rocketseat.com.br/melhores-sites-para-baixar-imagens-gratuitas-e-outros-recursos/",
     "slug": "imagens-gratuitas",
     "detalhe": {
@@ -2225,6 +2256,7 @@
     "category": "Ícones",
     "pricing": "Gratuito",
     "thumb": "/media/tools/phosphoricons.webp",
+    "thumbPequena": "/media/tools/320/phosphoricons.webp",
     "site_url": "https://phosphoricons.com/",
     "slug": "phosphor-icons",
     "detalhe": {
@@ -2294,6 +2326,7 @@
     "category": "Ícones",
     "pricing": "Freemium",
     "thumb": "/media/tools/flaticon.webp",
+    "thumbPequena": "/media/tools/320/flaticon.webp",
     "site_url": "https://www.flaticon.com/",
     "slug": "flaticon",
     "detalhe": {
@@ -2351,6 +2384,7 @@
     "category": "Ícones",
     "pricing": "Freemium",
     "thumb": "/media/tools/icons8.webp",
+    "thumbPequena": "/media/tools/320/icons8.webp",
     "site_url": "https://icons8.com/",
     "slug": "icons8",
     "detalhe": {
@@ -2412,6 +2446,7 @@
     "category": "Design",
     "pricing": "Gratuito",
     "thumb": "/media/tools/fonts-google.webp",
+    "thumbPequena": "/media/tools/320/fonts-google.webp",
     "site_url": "https://fonts.google.com/",
     "slug": "google-fonts",
     "detalhe": {
@@ -2482,6 +2517,7 @@
     "category": "Cores",
     "pricing": "Gratuito",
     "thumb": "/media/tools/htmlcolorcodes.webp",
+    "thumbPequena": "/media/tools/320/htmlcolorcodes.webp",
     "site_url": "https://htmlcolorcodes.com/",
     "slug": "html-color-codes",
     "detalhe": {
@@ -2540,6 +2576,7 @@
     "category": "Cores",
     "pricing": "Gratuito",
     "thumb": "/media/tools/uigradients.webp",
+    "thumbPequena": "/media/tools/320/uigradients.webp",
     "site_url": "https://uigradients.com/",
     "slug": "uigradients",
     "detalhe": {
@@ -2602,6 +2639,7 @@
     "category": "Cores",
     "pricing": "Gratuito",
     "thumb": "/media/tools/convertingcolors.webp",
+    "thumbPequena": "/media/tools/320/convertingcolors.webp",
     "site_url": "https://convertingcolors.com/",
     "slug": "converting-colors",
     "detalhe": {
@@ -2651,6 +2689,7 @@
     "category": "Marca e Site",
     "pricing": "Freemium",
     "thumb": "/media/tools/canva.webp",
+    "thumbPequena": "/media/tools/320/canva.webp",
     "site_url": "https://www.canva.com/",
     "slug": "canva",
     "detalhe": {
@@ -2700,6 +2739,7 @@
     "category": "Marca e Site",
     "pricing": "Pago",
     "thumb": "/media/tools/tailorbrands.webp",
+    "thumbPequena": "/media/tools/320/tailorbrands.webp",
     "site_url": "https://studio.tailorbrands.com/",
     "slug": "tailor-brands",
     "detalhe": {
@@ -2745,6 +2785,7 @@
     "category": "Marca e Site",
     "pricing": "Freemium",
     "thumb": "/media/tools/nicepage.webp",
+    "thumbPequena": "/media/tools/320/nicepage.webp",
     "site_url": "https://nicepage.com/",
     "slug": "nicepage",
     "detalhe": {
@@ -2798,6 +2839,7 @@
     "category": "Marca e Site",
     "pricing": "Freemium",
     "thumb": "/media/tools/wordpress.webp",
+    "thumbPequena": "/media/tools/320/wordpress.webp",
     "site_url": "https://wordpress.com/",
     "slug": "wordpress",
     "detalhe": {
@@ -3642,6 +3684,7 @@
     "category": "Dados",
     "pricing": "Freemium",
     "thumb": "/media/tools/microsoft-excel.webp",
+    "thumbPequena": "/media/tools/320/microsoft-excel.webp",
     "site_url": "https://www.microsoft.com/pt-br/microsoft-365/excel",
     "slug": "microsoft-excel",
     "detalhe": {
@@ -3709,6 +3752,7 @@
     "category": "Dados",
     "pricing": "Gratuito",
     "thumb": "/media/tools/google-planilhas.webp",
+    "thumbPequena": "/media/tools/320/google-planilhas.webp",
     "site_url": "https://workspace.google.com/intl/pt-BR/products/sheets/for-work/",
     "slug": "google-planilhas",
     "detalhe": {
@@ -3764,6 +3808,7 @@
     "category": "Produtividade",
     "pricing": "Freemium",
     "thumb": "/media/tools/glpi.webp",
+    "thumbPequena": "/media/tools/320/glpi.webp",
     "site_url": "https://www.glpi-project.org/",
     "slug": "glpi",
     "detalhe": {
@@ -3827,6 +3872,7 @@
     "category": "Código",
     "pricing": "Gratuito",
     "thumb": "/media/tools/cryptojs.webp",
+    "thumbPequena": "/media/tools/320/cryptojs.webp",
     "site_url": "https://github.com/brix/crypto-js",
     "slug": "cryptojs",
     "detalhe": {
