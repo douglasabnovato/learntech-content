@@ -37,19 +37,24 @@ Formato: número, tarefa, projeto, **identificada em** (data em que surgiu) e co
    - CodeXperience: o evento foi gratuito? A página do Sympla de 2024 mostra pedidos pagos.
    - BQ Agenda Tech: o número do endereço é 113 ou 115?
 10. **Reler as cláusulas de confidencialidade do contrato com o ex-empregador** e confirmar ou ajustar a seção 7 de `docs/processo/regras-editoriais.md` (jurídico). Identificada em 2026-11-01.
-11. **Decidir o leia-me duplicado da career** (career). Identificada em 2026-11-03.
-   O Git guarda `README.md` e `Readme.md`, que diferem só pela maiúscula; no Windows aparece um só. Peça ao Claude a comparação dos dois e decida como juntar, sem perder texto.
-12. **Opcional: deploy automático da API** (learntech-content). Identificada em 2026-11-03.
+11. **Opcional: deploy automático da API** (learntech-content). Identificada em 2026-11-03.
    Cadastrar `CLOUDFLARE_API_TOKEN` e `CLOUDFLARE_ACCOUNT_ID` em Settings → Secrets and variables → Actions. Depois, crie a variável `DEPLOY_AUTOMATICO` = `sim` (aba Variables). Sem ela, o job Deploy aparece como pulado e o deploy continua manual (`npm run deploy`). Issue #9. O Claude não lê nem cadastra segredos.
 
-13. **Revisar o log de escolhas do lote de issues e responder às perguntas nas issues** (todos). Identificada em 2026-11-03.
+12. **Revisar o log de escolhas do lote de issues e responder às perguntas nas issues** (todos). Identificada em 2026-11-03.
    O log está em `docs/processo/lotes/2026-11-03-issues.md`, seção "Log de escolhas", com 21 itens. Corrija o que discordar. As 30 issues com perguntas (comentário "Perguntas para virar conteúdo") viram conteúdo assim que você responde. Depois do deploy, feche as 27 issues com comentário "Conteúdo produzido".
-14. **Conferir a lista dos 25 arquivos sem uso da career** (career). Identificada em 2026-11-10.
+13. **Conferir a lista dos 25 arquivos sem uso da career** (career). Identificada em 2026-11-10.
    Lista em `docs/claudeia/06-mvp-2026-11-03.md` da career (issue career#31). Com o seu ok, o Claude remove num commit só de limpeza.
-15. **Ligar os alertas do Dependabot nos cinco repositórios** (todos). Identificada em 2026-11-10.
-   Settings → Code security → Dependabot alerts → Enable. É gratuito. Hoje a API do GitHub responde "Dependabot alerts are disabled" nos cinco, e o critério 9 da régua pede esses alertas.
+14. **Ligar os alertas do Dependabot nos cinco repositórios** (todos). Identificada em 2026-11-10.
+   Settings → Code security → Dependabot alerts → Enable. É gratuito. Hoje a API do GitHub responde "Dependabot alerts are disabled" nos cinco, e o critério 9 da régua pede esses alertas. Issue [#27](https://github.com/douglasabnovato/learntech-content/issues/27).
+
+15. **Confirmar o nível N3 (produto) dos cinco MVPs** (todos). Identificada em 2026-11-10.
+   Issue [#26](https://github.com/douglasabnovato/learntech-content/issues/26). Responda nela com o nível; o Claude atualiza os `docs/MVP.md`.
+16. **Conferir o acesso rápido em 2 colunas entre 768 e 1023 px** (learn-tech). Identificada em 2026-11-10.
+   Issue [learn-tech#143](https://github.com/douglasabnovato/learn-tech/issues/143). Abra a home com a janela nessa largura e aprove ou peça o ajuste.
 
 ## Concluídas
+- 2026-11-11: leia-me duplicado da career. Conferido com `git ls-tree`: só existe o `Readme.md` na `main` e na integração; não há o que juntar.
+- 2026-11-11: levar a career#36 (CLS) para a `main`, com a sua autorização (PR career#38). Na produção: CLS 0,005 na home e 0 no detalhe.
 - 2026-11-10: levar o ciclo b para a `main`, com a API primeiro (learntech-content#25 e deploy `8277f2a9`; learn-tech#140 e #141, bootcamps#78, career#37, tools#63). `npm run e2e` contra a produção: 55 de 55, e axe sem violações nas 9 páginas.
 - 2026-11-10: publicar a branch `feature/tasks-03-11-2026` nos cinco repositórios (conferido com `git merge-base --is-ancestor`: está na `main` dos cinco).
 - 2026-11-10: medir e ligar o monitor. `npm run e2e` contra a produção (52 de 55; as 3 falhas são a rolagem horizontal da home do learn-tech, issue learn-tech#139), `npm run ux:lighthouse` e o workflow `disponibilidade` rodando a cada 6 horas com sucesso.
