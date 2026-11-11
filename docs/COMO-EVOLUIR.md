@@ -53,7 +53,7 @@ Regra de cobertura: o mesmo material deve aparecer no máximo de projetos que o 
 | Comando | Para quê |
 |---|---|
 | `npm run validar` | Só confere `content/` (rápido) |
-| `npm run verificar` | Typecheck, testes (102 em 05/11/2026) e build |
+| `npm run verificar` | Typecheck, testes (138 em 11/11/2026, com os do SDK de identificação) e build |
 | `npm run lint` | ESLint (obrigatório na CI) |
 | `npm run copias` / `copias:conferir` | Gera ou confere as cópias de reserva nos quatro sites (pastas irmãs) |
 | `npm run sitemaps` | Gera os sitemaps dos quatro sites |
