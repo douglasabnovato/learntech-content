@@ -14,5 +14,6 @@ export default defineConfig({
     { name: "fluxos", testMatch: /fluxos\.spec\.mjs/ },
     { name: "acessibilidade", testMatch: /acessibilidade\.spec\.mjs/ },
     { name: "capturas", testMatch: /capturas\.spec\.mjs/ },
+    { name: "estabilidade", testMatch: /estabilidade\.spec\.mjs/ },
   ],
 });
