@@ -1,0 +1,43 @@
+# e2e contra a produção: fluxos, acessibilidade (axe, WCAG 2.2 AA) e capturas dos quatro sites, toda segunda-feira.
+# Falha só com fluxo quebrado ou violação "critical" do axe, como na rodada manual (npm run e2e).
+# As demais violações (serious, moderate, minor) aparecem no resumo do job. Os relatórios ficam como artefato do run.
+# O grupo "estabilidade" (CLS com rede lenta) fica fora: o tempo de rede do runner varia e daria falso alarme.
+# Também pode ser disparado à mão na aba Actions (workflow_dispatch). Como ler o resultado: docs/COMO-EVOLUIR.md.
+name: e2e
+
+on:
+  schedule:
+    - cron: "23 9 * * 1"
+  workflow_dispatch:
+  # Roda também quando este arquivo muda, para validar a alteração antes de ela chegar à main.
+  push:
+    paths: [".github/workflows/e2e.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  producao:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - name: Chromium do Playwright
+        run: npx playwright install --with-deps chromium
+      - name: Fluxos, acessibilidade e capturas
+        run: npx playwright test -c e2e/playwright.config.mjs --project=fluxos --project=acessibilidade --project=capturas
+      - name: Resumo no job
+        if: always()
+        run: |
+          arquivo=$(npm run -s ux:resumo | sed -n 's/^Resumo: //p')
+          cat "$arquivo" >> "$GITHUB_STEP_SUMMARY"
+      - name: Relatórios como artefato
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: e2e-relatorios
+          path: e2e/relatorios/
+          retention-days: 30
