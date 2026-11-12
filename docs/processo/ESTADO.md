@@ -64,7 +64,7 @@ Pasta local: `C:\douglasabnovato-github\mundo-learn-tech\`. O acervo bruto fica 
   - rodar e2e e Lighthouse;
   - o primeiro Run workflow do monitor de disponibilidade.
 
-  Plano: `docs/engenharia/plano-estabilidade-2026-11-03.md`.
+  Plano: `docs/historico/engenharia/plano-estabilidade-2026-11-03.md`.
 - **Alerta novo:** `hd/7-abc-projetos/` tem cerca de 3.150 arquivos fora do inventário (material do ex-empregador). Será uma remessa própria, com a seção 7 das regras editoriais.
 
 ## Situação em 01/11/2026 (histórico)

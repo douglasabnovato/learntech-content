@@ -63,7 +63,7 @@ Depois de mudar `content/`, rode `npm run copias` (com os sites como pastas irm�
 - `detalhe.relacionados`: lista de `{ tipo, id }` que liga o item a programas, artigos, eventos, empresas, vagas, perfis, ferramentas e hospedagens. O build confere se o alvo existe e publica o título e a URL prontos.
 - `readingTime` dos artigos: o build confere o valor (palavras ÷ 200, arredondado para cima) e mostra o valor certo quando estiver diferente.
 - `npm run midia:externa`: baixa para `media/` as imagens que ainda vêm do Pixabay e troca os links. Rode na sua máquina, depois `npm run validar && npm run copias`.
-- As regras editoriais estão em `docs/ecossistema/16-regras-editoriais.md`.
+- As regras editoriais estão em [`docs/processo/regras-editoriais.md`](processo/regras-editoriais.md).
 
 ## Processo de levas do hd (30/10/2026)
 

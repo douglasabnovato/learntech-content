@@ -1,6 +1,6 @@
 # Regras editoriais
 
-Definidas pelo autor e válidas para todo conteúdo novo ou revisado. Substituem `docs/ecossistema/16-regras-editoriais.md`, que fica como histórico. Qualquer regra nova entra aqui. Claude não cria regra por conta própria.
+Definidas pelo autor e válidas para todo conteúdo novo ou revisado. Substituem `docs/historico/ecossistema/16-regras-editoriais.md`, que fica como histórico. Qualquer regra nova entra aqui. Claude não cria regra por conta própria.
 
 ## 1. O que preservar
 O objetivo é preservar o **treinamento, as matérias, as metodologias e as ferramentas**. Conteúdo estático antigo dos sites **não é excluído**: ele é trabalhado e aperfeiçoado até entrar na API com página completa.
