@@ -1,0 +1,47 @@
+{
+  "titulo": "Trilhas por objetivo",
+  "introducao": "Não sabe por onde começar? Escolha o seu objetivo. Cada trilha junta programas e artigos da learnTECH numa ordem que faz sentido, com o tempo estimado para chegar ao fim.",
+  "itens": [
+    {
+      "id": "primeira-vaga-front-end",
+      "titulo": "Primeira vaga em front-end",
+      "objetivo": "Sair do zero até se candidatar a uma vaga júnior de front-end, com projetos publicados para mostrar.",
+      "paraQuem": "Quem está começando a programar ou mudando de carreira.",
+      "passos": [
+        { "tipo": "programa", "id": 2, "porque": "HTML e CSS são a base de toda tela. Você termina com o currículo publicado." },
+        { "tipo": "programa", "id": 4, "porque": "JavaScript dá comportamento à página. É a linguagem que toda vaga de front-end pede." },
+        { "tipo": "programa", "id": 101, "porque": "React é o framework mais pedido nas vagas júnior. Aqui sai a primeira aplicação." },
+        { "tipo": "programa", "id": 604, "porque": "Git e GitHub mostram o seu código e o seu jeito de trabalhar em equipe." },
+        { "tipo": "programa", "id": 1005, "porque": "Rotina de estudo e portfólio pensados para chegar à primeira vaga." },
+        { "tipo": "artigo", "id": "processo-seletivo-como-se-preparar", "porque": "O que esperar de cada etapa do processo seletivo e como se preparar." }
+      ]
+    },
+    {
+      "id": "marketing-para-crm-tech",
+      "titulo": "Do marketing ao CRM tech",
+      "objetivo": "Levar a experiência de marketing para a operação de CRM: e-mail, landing page, jornadas e relatórios.",
+      "paraQuem": "Quem já trabalha com marketing ou comunicação e quer a parte técnica.",
+      "passos": [
+        { "tipo": "artigo", "id": "como-e-trabalhar-com-crm-no-varejo-de-franquias", "porque": "Como é o dia a dia de quem trabalha com CRM e o que o mercado procura." },
+        { "tipo": "programa", "id": 1107, "porque": "Conferir e-mail, WhatsApp e landing page antes do disparo é a porta de entrada da operação." },
+        { "tipo": "programa", "id": 1102, "porque": "E-mail em HTML e landing page integrada ao CRM, as peças mais comuns do trabalho." },
+        { "tipo": "programa", "id": 1101, "porque": "Jornadas, réguas de relacionamento e mensagens transacionais, a lógica por trás das peças." },
+        { "tipo": "artigo", "id": "lgpd-nas-comunicacoes-de-crm", "porque": "Base legal, descadastro e registro: o que a LGPD exige em cada canal." },
+        { "tipo": "programa", "id": 1104, "porque": "A rotina completa: planejamento, disparos, validação e relatórios." }
+      ]
+    },
+    {
+      "id": "primeiros-freelas",
+      "titulo": "Primeiros freelas",
+      "objetivo": "Entregar o primeiro site para um pequeno cliente, do briefing à proposta e à publicação.",
+      "paraQuem": "Quem já sabe um pouco de HTML e CSS e quer os primeiros trabalhos pagos.",
+      "passos": [
+        { "tipo": "programa", "id": 1, "porque": "Uma landing page moderna é o pedido mais comum de quem contrata um freela." },
+        { "tipo": "artigo", "id": "copy-e-ux-writing-para-devs", "porque": "Texto de botão, de erro e de landing page que vende sem enrolar." },
+        { "tipo": "artigo", "id": "levantamento-de-requisitos-site-institucional", "porque": "Como transformar a conversa com o cliente em requisitos claros." },
+        { "tipo": "artigo", "id": "proposta-freelancer-escopo-prazo-preco", "porque": "Escopo, prazo e preço numa proposta que protege você e o cliente." },
+        { "tipo": "programa", "id": 601, "porque": "Organizar o projeto do escopo à entrega, sem perder prazo." }
+      ]
+    }
+  ]
+}

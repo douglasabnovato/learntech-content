@@ -90,6 +90,18 @@ describe("regras de integridade", () => {
     expect(verificarIntegridade(c, path.join(RAIZ, "media")).join()).toMatch(/mídia ausente/);
   });
 
+  it("acusa trilha que aponta para programa ou artigo inexistente, ou passo repetido", () => {
+    const c = copia();
+    const trilha = (c.paginas.trilhas as { itens: { passos: { tipo: string; id: number | string }[] }[] }).itens[0]!;
+    trilha.passos[0] = { ...trilha.passos[0]!, tipo: "programa", id: 99999 };
+    trilha.passos[1] = { ...trilha.passos[1]!, tipo: "artigo", id: "artigo-que-nao-existe" };
+    trilha.passos[3] = { ...trilha.passos[2]! };
+    const msg = verificarIntegridade(c, path.join(RAIZ, "media")).join();
+    expect(msg).toMatch(/programa 99999 não existe/);
+    expect(msg).toMatch(/artigo artigo-que-nao-existe não existe/);
+    expect(msg).toMatch(/repetido/);
+  });
+
   it("acusa slug repetido numa lista", () => {
     const c = copia();
     c.ferramentas[0]!.slug = "mesmo-slug";

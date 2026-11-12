@@ -99,6 +99,12 @@ const CONTRATOS: Contrato[] = [
   { site: "learn-tech", caminho: "learn-tech/paginas/estatisticas.json", forma: "itens", campos: ["count", "description"] },
   {
     site: "learn-tech",
+    caminho: "learn-tech/paginas/trilhas.json",
+    forma: "itens",
+    campos: ["id", "titulo", "objetivo", "paraQuem", "passos[].tipo", "passos[].id", "passos[].porque"],
+  },
+  {
+    site: "learn-tech",
     caminho: "learn-tech/paginas/sobre.json",
     forma: "objeto",
     campos: ["heroContent.title", "processSteps[].title", "processSteps[].description", "philosophyQuote", "differentiators[].title"],

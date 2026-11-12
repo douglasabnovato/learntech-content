@@ -112,6 +112,28 @@ export type Area = z.infer<typeof areaSchema>;
 export const PAGINAS = [
   "sobre", "aprender", "carreira", "categorias", "blog", "faq",
   "navegacao", "mentorias", "privacidade", "termos", "estatisticas", "conheca",
+  "trilhas",
 ] as const;
+
+/* Trilhas por objetivo (learn-tech#132): curadoria de programas e artigos que já existem, em ordem.
+   Cada passo aponta por id; o build confere que o programa ou o artigo existe. O tempo estimado
+   é calculado pelo site a partir da duração dos programas e do tempo de leitura dos artigos. */
+export const trilhasSchema = z.object({
+  titulo: textoObrigatorio,
+  introducao: textoObrigatorio,
+  itens: z.array(z.object({
+    id: slug,
+    titulo: textoObrigatorio,
+    objetivo: textoObrigatorio,
+    paraQuem: textoObrigatorio,
+    passos: z.array(z.object({
+      tipo: z.enum(["programa", "artigo"]),
+      id: z.union([z.number().int().positive(), slug]),
+      porque: textoObrigatorio,
+    })).min(4).max(6),
+  })).min(1),
+});
+
+export type Trilhas = z.infer<typeof trilhasSchema>;
 
 /* Fim de learn-tech.ts */

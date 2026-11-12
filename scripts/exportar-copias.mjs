@@ -87,6 +87,12 @@ function saidas() {
   const categorias = ler("learn-tech/paginas/categorias.json").itens;
   r.push({ site: "learn-tech", arquivo: "src/constants/categoriesData.js", texto: CABECALHO("content/learn-tech/paginas/categorias.json") + `const categoriesData = ${json(absolutizar(categorias))};\n\nexport default categoriesData;\n` });
 
+  /* Trilhas por objetivo (learn-tech#132): reserva local da página /trilhas. */
+  r.push({ site: "learn-tech", arquivo: "src/constants/trilhasData.js", texto: CABECALHO("content/learn-tech/paginas/trilhas.json") + `const trilhasData = ${json(ler("learn-tech/paginas/trilhas.json"))};
+
+export default trilhasData;
+` });
+
   if (fs.existsSync(path.join(CONTENT, "learn-tech/areas.json"))) {
     r.push({ site: "learn-tech", arquivo: "src/constants/areasData.js", texto: CABECALHO("content/learn-tech/areas.json") + `const areasData = ${json(absolutizar(ler("learn-tech/areas.json")))};\n\nexport default areasData;\n` });
   }

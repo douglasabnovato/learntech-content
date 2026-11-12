@@ -2,7 +2,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import type { z } from "zod";
-import { programaSchema, paginaSchema, PAGINAS, CAMPOS_RESUMO, areaSchema, fotoGaleriaSchema, type Programa, type Area } from "../../src/schemas/learn-tech";
+import { programaSchema, paginaSchema, trilhasSchema, PAGINAS, CAMPOS_RESUMO, areaSchema, fotoGaleriaSchema, type Programa, type Area } from "../../src/schemas/learn-tech";
 import { eventoSchema, type Evento } from "../../src/schemas/bootcamps";
 import { empresaSchema, vagaOuPerfilSchema, destaquesSchema, ferramentaSchema, modeloCurriculoSchema } from "../../src/schemas/career-tools";
 import { coberturaSchema, type Cobertura } from "../../src/schemas/cobertura";
@@ -85,7 +85,7 @@ export function carregarConteudo(raiz: string): { conteudo: Conteudo; erros: str
   for (const nome of PAGINAS) {
     const arq = c(`learn-tech/paginas/${nome}.json`);
     if (!fs.existsSync(arq)) { erros.push(`learn-tech/paginas/${nome}.json: página obrigatória ausente`); continue; }
-    const p = conferir(paginaSchema, lerJson(arq, erros), `learn-tech/paginas/${nome}.json`, erros);
+    const p = conferir(nome === "trilhas" ? trilhasSchema : paginaSchema, lerJson(arq, erros), `learn-tech/paginas/${nome}.json`, erros);
     if (p) paginas[nome] = p;
   }
 
@@ -250,6 +250,19 @@ export function verificarIntegridade(c: Conteudo, pastaMidia: string): string[] 
   for (const a of c.areas) {
     for (const f of a.categorias) if (!filtros.has(f)) erros.push(`área ${a.id}: categoria "${f}" não é categoryFilter de nenhum programa`);
     for (const card of a.cards) if (card.categoria && !slugsCategorias.has(card.categoria)) erros.push(`área ${a.id}: card "${card.title}" aponta para a categoria "${card.categoria}", que não existe em paginas/categorias.json`);
+  }
+
+  /* Trilhas por objetivo: cada passo aponta para um programa ou artigo existente, sem repetir na trilha. */
+  const trilhas = (c.paginas.trilhas as { itens?: { id: string; passos: { tipo: string; id: number | string }[] }[] } | undefined)?.itens ?? [];
+  repetidos(trilhas.map((t) => t.id)).forEach((id) => erros.push(`trilha ${id}: id repetido`));
+  const idsProgramas = new Set(c.programas.map((p) => p.id));
+  const idsArtigos = new Set(itensBlog(c).map((a) => a.id));
+  for (const t of trilhas) {
+    repetidos(t.passos.map((p) => `${p.tipo}:${p.id}`)).forEach((p) => erros.push(`trilha ${t.id}: passo ${p} repetido`));
+    for (const p of t.passos) {
+      const existe = p.tipo === "programa" ? idsProgramas.has(p.id as number) : idsArtigos.has(String(p.id));
+      if (!existe) erros.push(`trilha ${t.id}: ${p.tipo} ${p.id} não existe`);
+    }
   }
 
   repetidos(c.eventos.map((e) => e.id)).forEach((id) => erros.push(`evento id ${id}: repetido`));
