@@ -1109,5 +1109,347 @@
       }
     ],
     "atualizadoEm": "2026-11-03"
+  },
+  {
+    "slug": "analista-qa-junior",
+    "nivel": "junior",
+    "paraQuem": "Para quem quer a primeira vaga ou já está como júnior em qualidade de software (QA). Mostra como contar testes manuais e automatizados pelo que mudou no produto, e não só pela lista de ferramentas.",
+    "ficticio": true,
+    "nome": "Bruno Modelo Teixeira",
+    "titulo": "Analista de Qualidade (QA) Júnior | Testes Manuais, Cypress e APIs",
+    "localizacao": "Juiz de Fora – MG",
+    "contato": {
+      "telefone": "(00) 00000-0000",
+      "email": "bruno.modelo@example.com",
+      "linkedin": "https://www.example.com/linkedin/bruno.modelo",
+      "github": "https://www.example.com/github/bruno.modelo",
+      "portfolio": "https://www.example.com/portfolio/bruno.modelo"
+    },
+    "objetivo": "Atuar como Analista de QA, com foco em testes funcionais, automação de testes web e testes de API.",
+    "resumo": "Analista de QA com um ano e meio de experiência entre estágio e emprego efetivo, testando produtos web e APIs em times ágeis. Escrevo casos de teste a partir dos critérios de aceite, registro defeitos com passos claros e automatizo os fluxos mais usados em Cypress, rodando na integração contínua.",
+    "competencias": [
+      {
+        "categoria": "Testes",
+        "itens": [
+          "Testes funcionais e exploratórios",
+          "Testes de regressão",
+          "Casos de teste a partir de critérios de aceite",
+          "Testes de API (Postman)",
+          "Noções de testes de acessibilidade"
+        ]
+      },
+      {
+        "categoria": "Automação",
+        "itens": [
+          "Cypress",
+          "JavaScript (básico)",
+          "Integração contínua (GitHub Actions)"
+        ]
+      },
+      {
+        "categoria": "Ferramentas",
+        "itens": [
+          "Jira",
+          "Git e GitHub",
+          "DevTools do navegador",
+          "SQL (básico) para conferir dados"
+        ]
+      },
+      {
+        "categoria": "Colaboração",
+        "itens": [
+          "Scrum",
+          "Refinamento de histórias",
+          "Comunicação de defeitos com desenvolvimento e produto"
+        ]
+      }
+    ],
+    "experiencias": [
+      {
+        "cargo": "Analista de QA Júnior",
+        "empresa": "Empresa Exemplo Pagamentos",
+        "descricaoEmpresa": "Empresa de tecnologia que oferece link de pagamento e maquininha para pequenos comércios, com aplicativo web e API pública. Empresa fictícia, usada como exemplo.",
+        "periodo": "Ago/2025 – atual",
+        "local": "Juiz de Fora – MG",
+        "modelo": "Híbrido",
+        "atividades": [
+          "Escrevi e mantive os casos de teste do fluxo de cobrança, a partir dos critérios de aceite das histórias, junto com produto.",
+          "Automatizei em Cypress os 12 fluxos mais usados do painel web, que passaram a rodar a cada pull request.",
+          "Testei a API de cobranças no Postman, cobrindo respostas de erro e limites de valor que ainda não tinham teste.",
+          "Registrei defeitos com passos para reproduzir, evidência e impacto, o que reduziu as idas e vindas com o time de desenvolvimento."
+        ],
+        "tecnologias": [
+          "Cypress",
+          "Postman",
+          "Jira",
+          "GitHub Actions",
+          "SQL"
+        ]
+      },
+      {
+        "cargo": "Estagiário de Qualidade de Software",
+        "empresa": "Software Exemplo de Gestão",
+        "descricaoEmpresa": "Empresa de software de gestão para escolas, com time pequeno de desenvolvimento e entregas a cada duas semanas. Empresa fictícia, usada como exemplo.",
+        "periodo": "Fev/2024 – Jul/2025",
+        "local": "Remoto",
+        "modelo": "Remoto",
+        "atividades": [
+          "Executei a regressão manual antes de cada entrega, seguindo e atualizando o roteiro de testes.",
+          "Organizei a planilha de casos de teste por módulo e removi casos repetidos, o que encurtou a regressão.",
+          "Fiz testes exploratórios nas telas novas e documentei os achados com capturas de tela e passos."
+        ],
+        "tecnologias": [
+          "Jira",
+          "Planilhas",
+          "DevTools do navegador"
+        ]
+      }
+    ],
+    "experienciaAnterior": [],
+    "projetos": [
+      {
+        "nome": "Automação de testes de uma loja de demonstração",
+        "descricao": "Testes em Cypress para cadastro, carrinho e finalização de compra de uma loja pública de demonstração, com relatório gerado na integração contínua.",
+        "tecnologias": [
+          "Cypress",
+          "JavaScript",
+          "GitHub Actions"
+        ]
+      },
+      {
+        "nome": "Coleção de testes de uma API pública",
+        "descricao": "Coleção no Postman com testes de status, formato da resposta e casos de erro para uma API pública de exemplo, com instruções de uso no repositório.",
+        "tecnologias": [
+          "Postman",
+          "JavaScript"
+        ]
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Tecnologia em Análise e Desenvolvimento de Sistemas",
+        "instituicao": "Faculdade Exemplo de Tecnologia",
+        "periodo": "Fev/2022 – Dez/2024",
+        "status": "Concluído"
+      }
+    ],
+    "certificados": [
+      "Fundamentos de Teste de Software (20 h) – Escola Exemplo Online, 2024",
+      "Automação de Testes Web com Cypress (16 h) – Escola Exemplo Online, 2025"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Intermediário — leitura de documentação técnica"
+      }
+    ],
+    "comunidade": [
+      "Participa de um grupo local de qualidade de software e ajudou a organizar um encontro sobre testes de API (2025)."
+    ],
+    "dicas": [
+      {
+        "secao": "Resumo profissional",
+        "texto": "Diga que tipo de teste você faz e em qual produto. \"Testes de API e automação web em produto de pagamentos\" informa mais do que \"apaixonado por qualidade\"."
+      },
+      {
+        "secao": "Atividades",
+        "texto": "Em QA, o resultado do trabalho é o que deixou de quebrar ou o que ficou mais rápido de testar. Conte o fluxo que você cobriu, a regressão que encurtou ou o tipo de defeito que passou a ser pego antes da entrega."
+      },
+      {
+        "secao": "Competências",
+        "texto": "Separe técnica de teste (exploratório, regressão, testes de API) de ferramenta (Cypress, Postman, Jira). Quem recruta procura as duas coisas."
+      },
+      {
+        "secao": "Projetos",
+        "texto": "Para a primeira vaga, um repositório com testes automatizados rodando na integração contínua vale mais do que uma lista de cursos. Use sites e APIs públicas de demonstração, nunca o sistema de uma empresa sem permissão."
+      },
+      {
+        "secao": "Vocabulário",
+        "texto": "Use os termos de teste no sentido certo: caso de teste, defeito, regressão, critério de aceite. O glossário do ISTQB ajuda a conferir o significado de cada um."
+      },
+      {
+        "secao": "Adaptação para a vaga",
+        "texto": "Vagas de QA variam muito: algumas são quase só testes manuais, outras pedem automação. Traga para cima a parte que a vaga pede, sem inventar experiência."
+      }
+    ],
+    "fontes": [
+      {
+        "label": "UNC Computer Science: Writing a Technical Resume",
+        "url": "https://cs.unc.edu/student-life/career/technical-resumes/"
+      },
+      {
+        "label": "MIT Career Advising & Professional Development: Career toolkit: Crafting an effective resume",
+        "url": "https://capd.mit.edu/resources/career-toolkit-crafting-an-effective-resume/"
+      },
+      {
+        "label": "ISTQB: Glossário de termos de teste de software",
+        "url": "https://glossary.istqb.org/"
+      },
+      {
+        "label": "Prefeitura de São Paulo (Secretaria de Desenvolvimento Econômico e Trabalho): Como preparar um currículo",
+        "url": "https://prefeitura.sp.gov.br/web/desenvolvimento/w/dicas/preparar_um_curriculo/619"
+      }
+    ],
+    "atualizadoEm": "2026-11-12"
+  },
+  {
+    "slug": "transicao-atendimento-para-suporte-de-ti",
+    "nivel": "transicao",
+    "paraQuem": "Para quem trabalha com atendimento ao cliente, no varejo ou em central de atendimento, e quer a primeira vaga em suporte técnico de TI. Mostra como contar o atendimento como base do suporte e como provar o conhecimento técnico que ainda não veio de um emprego na área.",
+    "ficticio": true,
+    "nome": "Diego Exemplo Martins",
+    "titulo": "Suporte Técnico de TI (N1) | Transição do Atendimento ao Cliente",
+    "localizacao": "Juiz de Fora – MG",
+    "contato": {
+      "telefone": "(00) 00000-0000",
+      "email": "diego.exemplo@example.com",
+      "linkedin": "https://www.example.com/linkedin/diego.exemplo",
+      "github": "https://www.example.com/github/diego.exemplo",
+      "portfolio": "https://www.example.com/portfolio/diego.exemplo"
+    },
+    "objetivo": "Primeira vaga em suporte técnico de TI (nível 1), em help desk ou service desk.",
+    "resumo": "Profissional com quatro anos de atendimento ao cliente, dois deles na central de uma operadora de internet, onde fazia a primeira triagem de problemas de conexão. Em transição para suporte de TI, com curso técnico em informática em andamento, laboratório próprio de redes e Windows e registro de chamados com passos claros.",
+    "competencias": [
+      {
+        "categoria": "Suporte técnico",
+        "itens": [
+          "Triagem e registro de chamados",
+          "Windows 10 e 11: instalação e configuração",
+          "Redes: IP, DNS e Wi-Fi (básico)",
+          "Montagem e manutenção de computadores",
+          "Pacote Office e contas de e-mail"
+        ]
+      },
+      {
+        "categoria": "Ferramentas",
+        "itens": [
+          "Sistema de chamados (GLPI)",
+          "Acesso remoto",
+          "Prompt de comando e PowerShell (básico)"
+        ]
+      },
+      {
+        "categoria": "Atendimento",
+        "itens": [
+          "Atendimento por telefone e chat",
+          "Explicar o técnico em linguagem simples",
+          "Prazos de atendimento (SLA)",
+          "Calma em situações de pressão"
+        ]
+      }
+    ],
+    "experiencias": [
+      {
+        "cargo": "Operador de Atendimento",
+        "empresa": "Operadora Exemplo de Internet",
+        "descricaoEmpresa": "Provedor regional de internet residencial, com central de atendimento própria por telefone e chat. Empresa fictícia, usada como exemplo.",
+        "periodo": "Mar/2024 – atual",
+        "local": "Juiz de Fora – MG",
+        "modelo": "Presencial",
+        "atividades": [
+          "Atendo cerca de 40 clientes por dia por telefone e chat, com triagem de problemas de conexão e de equipamento.",
+          "Resolvo no primeiro contato os casos de roteador e Wi-Fi que seguem o roteiro e encaminho os demais ao suporte técnico com o teste já feito.",
+          "Sugeri e escrevi um passo a passo de reinício do roteador para o chat, que a equipe adotou."
+        ],
+        "tecnologias": [
+          "Sistema de chamados",
+          "Roteadores e Wi-Fi",
+          "Chat de atendimento"
+        ]
+      }
+    ],
+    "experienciaAnterior": [
+      {
+        "empresa": "Loja Exemplo de Eletrônicos",
+        "cargo": "Vendedor",
+        "periodo": "2021 – 2024"
+      }
+    ],
+    "projetos": [
+      {
+        "nome": "Laboratório de suporte em casa",
+        "descricao": "Máquinas virtuais com Windows e Linux para praticar instalação, contas de usuário, compartilhamento de pastas e diagnóstico de rede, com o roteiro de cada exercício publicado.",
+        "tecnologias": [
+          "VirtualBox",
+          "Windows",
+          "Linux",
+          "Redes"
+        ]
+      },
+      {
+        "nome": "Base de conhecimento para o atendimento",
+        "descricao": "Dez artigos curtos de solução de problemas comuns (impressora, Wi-Fi, senha de e-mail), escritos para quem não é da área e com capturas de tela.",
+        "tecnologias": [
+          "Documentação",
+          "Windows"
+        ]
+      }
+    ],
+    "formacao": [
+      {
+        "curso": "Técnico em Informática",
+        "instituicao": "Escola Técnica Exemplo",
+        "periodo": "Fev/2025 – Dez/2026",
+        "status": "Em andamento"
+      },
+      {
+        "curso": "Ensino Médio",
+        "instituicao": "Escola Estadual Exemplo",
+        "periodo": "2018 – 2020",
+        "status": "Concluído"
+      }
+    ],
+    "certificados": [
+      "Introdução a Redes de Computadores (20 h) – Escola Exemplo Online, 2025",
+      "Fundamentos de ITIL para Service Desk (8 h) – Escola Exemplo Online, 2025"
+    ],
+    "idiomas": [
+      {
+        "idioma": "Inglês",
+        "nivel": "Básico — leitura de mensagens de erro e telas de configuração"
+      }
+    ],
+    "comunidade": [],
+    "dicas": [
+      {
+        "secao": "Resumo profissional",
+        "texto": "Abra com a experiência que você já tem e ligue-a à vaga: atendimento com triagem de problemas técnicos é suporte de nível 1 em outra cadeira. Depois diga o que já estudou da parte técnica."
+      },
+      {
+        "secao": "Competências transferíveis",
+        "texto": "Calma com cliente irritado, explicar sem jargão e cumprir prazo de atendimento são o dia a dia do help desk. Escreva essas competências com exemplos, não só como palavras soltas."
+      },
+      {
+        "secao": "Experiência profissional",
+        "texto": "Na experiência fora de TI, destaque as atividades mais próximas do suporte: triagem, roteiro de atendimento, registro de chamados. O resto pode ficar resumido em experiência anterior."
+      },
+      {
+        "secao": "Projetos",
+        "texto": "Sem emprego na área, um laboratório em máquina virtual e uma pequena base de conhecimento mostram que você sabe fazer e sabe explicar. Publique o roteiro dos exercícios."
+      },
+      {
+        "secao": "Formação",
+        "texto": "Curso em andamento entra com a previsão de conclusão. Isso mostra que a transição já começou, e não só a intenção."
+      }
+    ],
+    "fontes": [
+      {
+        "label": "USC Career Center: Transferable Skills",
+        "url": "https://careers.usc.edu/resources/transferable-skills/"
+      },
+      {
+        "label": "University of Northwestern – St. Paul: Career Change: A Guide to Resume Writing",
+        "url": "https://www.unwsp.edu/blog/career-change-a-guide-to-resume-writing/"
+      },
+      {
+        "label": "MIT Career Advising & Professional Development: Career toolkit: Crafting an effective resume",
+        "url": "https://capd.mit.edu/resources/career-toolkit-crafting-an-effective-resume/"
+      },
+      {
+        "label": "Prefeitura de São Paulo (Secretaria de Desenvolvimento Econômico e Trabalho): Como preparar um currículo",
+        "url": "https://prefeitura.sp.gov.br/web/desenvolvimento/w/dicas/preparar_um_curriculo/619"
+      }
+    ],
+    "atualizadoEm": "2026-11-12"
   }
 ]

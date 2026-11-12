@@ -34,6 +34,9 @@ describe("conteúdo publicado", () => {
   it("publica modelos de currículo fictícios", () => {
     expect(conteudo.modelosCurriculo.length).toBeGreaterThanOrEqual(3);
     for (const m of conteudo.modelosCurriculo) expect(m.ficticio).toBe(true);
+    /* career#29: além de desenvolvimento, há modelos de QA e de suporte de TI. */
+    const slugs = conteudo.modelosCurriculo.map((m) => m.slug);
+    expect(slugs).toEqual(expect.arrayContaining(["analista-qa-junior", "transicao-atendimento-para-suporte-de-ti"]));
   });
 
   it("publica as áreas de atuação com fontes", () => {
