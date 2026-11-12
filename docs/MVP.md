@@ -23,8 +23,8 @@ API de conteúdo do ecossistema learnTECH: um só lugar para os programas, event
 | 8 | Acessibilidade básica | Parcial | A API não tem tela própria. O modal do SDK aparece nos quatro sites: o teste do SDK confere `role="dialog"` (11/11/2026), mas o e2e entra já identificado e o axe não passa pelo modal. |
 | 9 | Segurança e conformidade | Parcial | `npm audit --omit=dev` em 10/11/2026: 0 vulnerabilidades. Alertas do Dependabot desligados (`gh api .../dependabot/alerts` responde 403 em 10/11/2026; ligar é do autor). Sem segredo no código. Limite de taxa nas escritas e `DELETE` com e-mail no corpo (ADR 10). |
 | 10 | Entrega confiável | Atende | `gh api repos/douglasabnovato/learntech-content/rulesets` em 10/11/2026: ruleset "main protegida" ativo (check `verificar` obrigatório, sem force push, sem apagar a `main`). CI em todo push e PR. |
-| 11 | Testes dos fluxos críticos | Atende | CI em 11/11/2026 (run 43089670951): 10 arquivos, 138 testes passando, nenhum pulado. |
-| 12 | Documentação honesta | Atende | `tests/documentacao.test.ts` roda em todo `npm test` da CI: todo link relativo dos `.md` existe e todo `npm run` citado no README, no `COMO-EVOLUIR.md` e no `CLAUDE.md` existe no `package.json`. Local em 12/11/2026: 2 de 2 passando; com um link e um comando falsos plantados, os 2 falham (#28). |
+| 11 | Testes dos fluxos críticos | Atende | CI em 12/11/2026 (run 43149778616): 12 arquivos, 166 testes passando, nenhum pulado, incluindo o contrato com os quatro sites (`tests/contratos-sites.test.ts`, #28). |
+| 12 | Documentação honesta | Atende | `tests/documentacao.test.ts` roda em todo `npm test` da CI: todo link relativo dos `.md` existe e todo `npm run` citado no README, no `COMO-EVOLUIR.md` e no `CLAUDE.md` existe no `package.json`. CI em 12/11/2026 (run 43149778616): 2 de 2 passando; com um link e um comando falsos plantados, os 2 falham (#28). |
 
 ## Fora do MVP
 - Domínio próprio e qualquer serviço pago: o ambiente fica gratuito (decisão do autor, 10/11/2026).
@@ -34,4 +34,4 @@ API de conteúdo do ecossistema learnTECH: um só lugar para os programas, event
 
 ## Histórico
 - 10/11/2026: primeira tabela, depois do ciclo de acessibilidade e busca nos quatro sites.
-- 12/11/2026: critérios 3 e 6 passam a Atende (e2e na CI, #10; testes do SDK, #6); 11 com 138 testes; 12 conferido por teste automático (#28).
+- 12/11/2026: critérios 3 e 6 passam a Atende (e2e na CI, #10; testes do SDK, #6); 11 com 166 testes e o contrato com os sites; 12 conferido por teste automático (#28).
