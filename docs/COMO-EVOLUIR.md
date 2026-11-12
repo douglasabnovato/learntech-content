@@ -46,6 +46,7 @@ Regra de cobertura: o mesmo material deve aparecer no máximo de projetos que o 
 3. **Teste:** `tests/conteudo.test.ts`, um caso que planta o erro e outro que confere o recurso gerado.
 4. **OpenAPI:** `scripts/lib/openapi.ts`, quando muda rota ou formato.
 5. **Decisão:** ADR em `DECISOES.md` quando muda contrato, privacidade ou arquitetura.
+   - **Regra do contrato (ADR 3):** campo novo entra como `optional()`. Remover ou renomear campo em `/v1` quebra os quatro sites ao mesmo tempo e exige `/v2`, com os sites migrando antes. `tests/contratos-sites.test.ts` lista o que cada site lê e falha se um desses campos sumir; campo novo que um site passar a ler entra nessa lista.
 6. **Cópias:** `npm run copias`. O gerador usa o mesmo `montarRecursos` do build, então a cópia sai igual à API.
 7. **Sites:** o código de cada site que exibe o campo novo, com o teste dele (veja o `docs/COMO-EVOLUIR.md` de cada site).
 
@@ -66,7 +67,7 @@ Regra de cobertura: o mesmo material deve aparecer no máximo de projetos que o 
 - [ ] `npm run copias:conferir` em dia e os testes de cada site verdes.
 - [ ] CI verde na branch, e `main` e developer iguais à feature (`processo/fluxo-git.md`).
 - [ ] `npm run deploy` feito e `GET /v1/saude` com `status: ok`.
-- [ ] `npm run e2e`: fluxos e acessibilidade sem violação crítica (19 de 19 em 05/11/2026).
+- [ ] `npm run e2e`: fluxos e acessibilidade sem violação crítica (55 de 55 na CI em 11/11/2026, run 43084149168).
 - [ ] Workflow `disponibilidade` verde no GitHub.
 - [ ] Workflow `e2e` verde no GitHub (roda toda segunda às 06h23 de Brasília; veja abaixo como ler).
 
@@ -83,4 +84,5 @@ Regra de cobertura: o mesmo material deve aparecer no máximo de projetos que o 
 - **Estado atual das conversas:** `processo/ESTADO.md`. **Pendências do autor:** `../PROXIMOS-PASSOS.md`.
 - **Arquitetura e decisões:** `ARQUITETURA.md`, `DECISOES.md`. **Conteúdo:** `CONTEUDO.md`. **Deploy:** `DEPLOY.md`. **Privacidade:** `PRIVACIDADE.md`.
 - **Processo:** `processo/` (levas, regras, modelos, pesquisa, fluxo Git, MVP por repositório).
-- **Engenharia:** `engenharia/` (backlog, diagnósticos, relatórios).
+- **Engenharia:** `engenharia/` (backlog, versionamento, design system e relatórios gerados pelos scripts).
+- **Histórico:** `historico/` guarda análises e diagnósticos com data. Não descrevem o estado atual; o estado está em `MVP.md`. Documento que deixou de valer vai para lá, com a mesma subpasta de origem.
