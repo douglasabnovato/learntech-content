@@ -39,7 +39,7 @@ Você é **proponente** (decisão do autor, 09/11/2026): a ficha só entra no ac
    - `descartar`: sem uso nenhum. O estado é `nao-publicavel`, e não há destino (D-11).
 
    Convenções do acervo, aprendidas no gabarito de 09/11:
-   - **ex-empregador (D-11, 16/11/2026):** todo material com conhecimento aproveitável é `sensivel-anonimizar`, com estado `referencia` e o destino onde o conhecimento é usado. Isso vale também para peça de marca, encarte, tabloide, assinatura de e-mail e material de fornecedor, quando mostram um método, um formato ou uma ferramenta. `descartar` só para o que não tem uso nenhum;
+   - **ex-empregador (D-11, 15/11/2026):** todo material com conhecimento aproveitável é `sensivel-anonimizar`, com estado `referencia` e o destino onde o conhecimento é usado. Isso vale também para peça de marca, encarte, tabloide, assinatura de e-mail e material de fornecedor, quando mostram um método, um formato ou uma ferramenta. `descartar` só para o que não tem uso nenhum;
    - **material do próprio autor** (anotações, fotos dele, material pessoal antigo) é `proprio`, mesmo quando não é de tecnologia;
    - **apostilas e folhas de um treinamento ou curso de terceiro** são `terceiro-citavel`, mesmo que o autor tenha preenchido. Webinar de fornecedor também é `terceiro-citavel`.
 2. **Estado:**

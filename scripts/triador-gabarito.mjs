@@ -39,7 +39,8 @@ const resumo = `${r.itens} itens · direitos ${pct(r.direitos)} · destinos ${pc
 console.log(resumo + "\n\n" + tabela);
 
 if (argv.includes("--relatorio")) {
-  const hoje = new Date().toISOString().slice(0, 10);
+  // Data local de Brasília, não a UTC: à noite a UTC já é o dia seguinte.
+  const hoje = new Date().toLocaleDateString("sv-SE", { timeZone: "America/Sao_Paulo" });
   const [a, m, d] = hoje.split("-");
   const md = `# Triador contra o gabarito (${d}/${m}/${a})\n\nGerado por \`npm run triador:gabarito -- --relatorio\`. O triador leu só o material extraído e as regras, sem o \`acervo.json\`. A proposta de cada item foi comparada com a ficha que o acervo já tem.\n\n**${resumo}**\n\n${tabela}\n\nRegras de acerto: \`scripts/lib/gabarito.mjs\`.\n`;
   const arq = path.join(RAIZ, "docs", "processo", "relatorios", `triador-gabarito-${hoje}.md`);

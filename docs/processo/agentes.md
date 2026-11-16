@@ -102,7 +102,7 @@ Cada produtor carrega só o contrato do seu projeto. Assim o tom de um site não
 | 4. Piloto | `6-tech_community/gdg_jf` de ponta a ponta | Itens `exibido`, métricas medidas, retrospectiva |
 | 5. Escala | Lotes por tipo, com mídia no R2 (issue #8) | Remessa com fotos sem estourar o Worker |
 
-## Níveis de autonomia (16/11/2026)
+## Níveis de autonomia (15/11/2026)
 
 Entrega 3 do método de produção a partir do hd, aprovado pelo autor em 15/11/2026 ("aprovo o plano"). O nível diz o que o Claude decide sozinho no A1. O A2 (PR e deploy) e o A3 (fechamento da leva) continuam sempre do autor, em qualquer nível. A base é o princípio P-03 de [`decisoes-do-autor.md`](decisoes-do-autor.md): autonomia se ganha com acerto medido.
 

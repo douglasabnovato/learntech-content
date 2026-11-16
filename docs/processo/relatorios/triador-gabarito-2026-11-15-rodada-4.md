@@ -1,4 +1,4 @@
-# Triador contra o gabarito (16/11/2026, rodada 4: com a ficha de análise e os princípios)
+# Triador contra o gabarito (15/11/2026, rodada 4: com a ficha de análise e os princípios)
 
 Gerado por `npm run triador:gabarito -- --relatorio`. O triador leu só o material extraído e as regras, sem o `acervo.json`. A proposta de cada item foi comparada com a ficha que o acervo já tem.
 
@@ -64,7 +64,7 @@ Meta para sair do AU0 ([`agentes.md`](../agentes.md)): 85% em direitos e destino
 - **Confirmar HD-0049 e HD-0054** no gabarito.
 - **O nível continua AU0.** A próxima rodada precisa de 20 itens ou mais. Como o hd tem só 55 itens com material extraído, a rodada seguinte deve vir de uma leva nova, depois da learntech-content#15 (D-07).
 
-## Nova medição com a convenção da D-11 (16/11/2026)
+## Nova medição com a convenção da D-11 (15/11/2026)
 
 O autor adotou a convenção proposta ("Sim, adote"): `sensivel-anonimizar` para material de ex-empregador com conhecimento aproveitável, e `descartar` só para o que não tem uso. Os 9 itens `descartar` do acervo eram todos de ex-empregador, com estado `referencia` e destino, e passaram a `sensivel-anonimizar`. A regra do `triador.md` foi ajustada.
 
