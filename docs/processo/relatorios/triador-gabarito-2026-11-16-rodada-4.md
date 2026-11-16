@@ -63,3 +63,19 @@ Meta para sair do AU0 ([`agentes.md`](../agentes.md)): 85% em direitos e destino
 - **Decidir a convenção de direitos do material de ex-empregador:** quando é `descartar` e quando é `sensivel-anonimizar`, se os dois podem ter estado `referencia`. Com a decisão, a regra do triador e os itens do acervo ficam iguais, e a medição volta a ser justa.
 - **Confirmar HD-0049 e HD-0054** no gabarito.
 - **O nível continua AU0.** A próxima rodada precisa de 20 itens ou mais. Como o hd tem só 55 itens com material extraído, a rodada seguinte deve vir de uma leva nova, depois da learntech-content#15 (D-07).
+
+## Nova medição com a convenção da D-11 (16/11/2026)
+
+O autor adotou a convenção proposta ("Sim, adote"): `sensivel-anonimizar` para material de ex-empregador com conhecimento aproveitável, e `descartar` só para o que não tem uso. Os 9 itens `descartar` do acervo eram todos de ex-empregador, com estado `referencia` e destino, e passaram a `sensivel-anonimizar`. A regra do `triador.md` foi ajustada.
+
+As mesmas 25 propostas, medidas de novo:
+
+| Grupo | Itens | Direitos | Destinos |
+|---|---|---|---|
+| Itens novos | 13 | 100% | 92% |
+| Itens da rodada 3 | 12 | 83% | 33% |
+| Total | 25 | 92% | 64% |
+
+- **Direitos passam a meta.** Os 2 erros que restam são os itens que parecem inconsistentes no gabarito (HD-0049 e HD-0054), à espera do autor.
+- **Destinos continuam abaixo da meta**, todos na trilha de CRM (1101 a 1107).
+- **Cuidado com o viés:** o gabarito mudou depois que as propostas foram vistas. A mudança seguiu uma regra decidida pelo autor e aplicada a todos os itens, e não item por item. Mesmo assim, esta medição sozinha não basta para sair do AU0. A próxima rodada, com itens novos, confirma ou não o resultado.

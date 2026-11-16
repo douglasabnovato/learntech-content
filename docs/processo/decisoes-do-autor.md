@@ -50,6 +50,7 @@ autor decide e explica ─▶ Claude registra (D) e propõe o princípio (P) ─
 | D-08 | 15/11/2026 | Plano do método de produção a partir do hd aprovado: ficha de análise, perfil do autor, níveis de autonomia, produtores e treino com gabarito. Palavras: "aprovo o plano" | "preciso treinar voce para ter autonomia de produzir conteúdos a partir desses arquivos" | chat do autor, 15/11 |
 | D-09 | 15/11/2026 | Toda decisão do autor vem com o porquê e vira contexto do Claude (este registro) | "para voce evoluir nas tomadas de decisao independente" | chat do autor, 15/11 |
 | D-10 | 16/11/2026 | A escala de autonomia do Claude se chama AU0, AU1 e AU2. Palavras: "Sim, AU0 a AU2" | Aceitou a proposta, cujo motivo era evitar a confusão com o nível do projeto (N1 a N3) e com as aprovações A1 a A3 (motivo da proposta, não palavras do autor) | chat do autor, 16/11 |
+| D-11 | 16/11/2026 | Direitos do material de ex-empregador: `sensivel-anonimizar` para todo material com conhecimento aproveitável, mesmo que vire só referência; `descartar` só para o que não tem uso nenhum (`nao-publicavel`, sem destino). Reaplicado aos 9 itens do acervo. Palavras: "Sim, adote" | não registrado. A proposta vinha da rodada 4 do gabarito: a regra escrita e o acervo diziam coisas diferentes | chat do autor, 16/11; [relatório da rodada 4](relatorios/triador-gabarito-2026-11-16-rodada-4.md) |
 
 ## Princípios
 
@@ -63,7 +64,9 @@ autor decide e explica ─▶ Claude registra (D) e propõe o princípio (P) ─
 | P-06 | Primeiro publicar o que está pronto, depois produzir mais | Planejamento do dia, conteúdo novo | D-07 | confirmado em 16/11/2026: "Confirmo P-01 a P-07" |
 | P-07 | Toda escolha do Claude é registrada com motivo, para o autor poder corrigir o raciocínio, e não só o resultado | Todas as tarefas | D-08, D-09 | confirmado em 16/11/2026: "Confirmo P-01 a P-07" |
 | P-08 | Um nome novo não pode repetir uma sigla que já existe no processo | Nomes de escalas, estados e etapas | D-10 | confirmado em 16/11/2026: "Confirmo o P-08" |
+| P-09 | O nome de uma categoria segue o sentido da palavra: o que tem uso não se chama descartado | Direitos, estados e usos do acervo | D-11 | a confirmar |
 
 ## Pendente do autor
 
+- Confirmar ou corrigir o princípio P-09 e, se quiser, dizer o motivo da D-11.
 - Completar o motivo das decisões D-01, D-02 e D-04 a D-07, se quiser. Sem o motivo, o princípio fica mais fraco.

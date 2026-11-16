@@ -5892,7 +5892,7 @@
       "lote": "2026-10-30",
       "origem": "hd/abc-projetos",
       "descricao": "Imagens internas de compliance do ex-empregador do varejo — 2 arquivo(s) (2 jpg).",
-      "direitos": "descartar",
+      "direitos": "sensivel-anonimizar",
       "estado": "referencia",
       "destinos": [
         "learn-tech/blog/lgpd-nas-comunicacoes-de-crm"
@@ -11508,7 +11508,7 @@
       "lote": "2026-10-30",
       "origem": "hd/abc-projetos",
       "descricao": "Imagem interna sobre proteção de dados do ex-empregador do varejo — 1 arquivo(s) (1 png).",
-      "direitos": "descartar",
+      "direitos": "sensivel-anonimizar",
       "estado": "referencia",
       "destinos": [
         "learn-tech/blog/lgpd-nas-comunicacoes-de-crm"
@@ -14255,7 +14255,7 @@
       "lote": "2026-10-30",
       "origem": "hd/abc-projetos",
       "descricao": "Imagens do menu do e-commerce do ex-empregador do varejo — 20 arquivo(s) (20 jpg).",
-      "direitos": "descartar",
+      "direitos": "sensivel-anonimizar",
       "estado": "referencia",
       "destinos": [
         "learn-tech/programas/105"
@@ -14389,7 +14389,7 @@
       "lote": "2026-10-30",
       "origem": "hd/abc-projetos",
       "descricao": "Encartes e tabloides de ofertas 2026 do ex-empregador do varejo — 26 arquivo(s) (23 pdf, 2 png, 1 docx).",
-      "direitos": "descartar",
+      "direitos": "sensivel-anonimizar",
       "estado": "referencia",
       "destinos": [
         "learn-tech/blog/encarte-digital-e-tabloide-por-praca",
@@ -14723,7 +14723,7 @@
       "lote": "2026-10-30",
       "origem": "hd/abc-projetos",
       "descricao": "Apresentações e manuais de um fornecedor do ex-empregador do varejo (terceiro) — 7 arquivo(s) (6 pdf, 1 docx).",
-      "direitos": "descartar",
+      "direitos": "sensivel-anonimizar",
       "estado": "referencia",
       "destinos": [
         "learn-tech/programas/1103"
@@ -14987,7 +14987,7 @@
       "lote": "2026-10-30",
       "origem": "hd/abc-projetos",
       "descricao": "Exportação de favoritos do navegador de trabalho — 2 arquivo(s) (1 html, 1 jpg).",
-      "direitos": "descartar",
+      "direitos": "sensivel-anonimizar",
       "estado": "referencia",
       "destinos": [
         "tools/ferramentas/miro",
@@ -15072,7 +15072,7 @@
       "lote": "2026-10-30",
       "origem": "hd/abc-projetos",
       "descricao": "Imagens de configuração de anúncios — 2 arquivo(s) (1 jpg, 1 png).",
-      "direitos": "descartar",
+      "direitos": "sensivel-anonimizar",
       "estado": "referencia",
       "destinos": [
         "learn-tech/programas/1101"
@@ -15128,7 +15128,7 @@
       "lote": "2026-10-30",
       "origem": "hd/abc-projetos",
       "descricao": "Peças e controles de marketing do ex-empregador do varejo — 108 arquivo(s) (65 png, 37 jpg, 4 pptx, 1 docx, 1 xlsx).",
-      "direitos": "descartar",
+      "direitos": "sensivel-anonimizar",
       "estado": "referencia",
       "destinos": [
         "learn-tech/blog/encarte-digital-e-tabloide-por-praca",
@@ -15813,7 +15813,7 @@
       "lote": "2026-10-30",
       "origem": "hd/abc-projetos",
       "descricao": "Assinatura de e-mail corporativa de um grupo do varejo — 4 arquivo(s) (2 pptx, 2 png).",
-      "direitos": "descartar",
+      "direitos": "sensivel-anonimizar",
       "estado": "referencia",
       "destinos": [
         "learn-tech/blog/assinatura-de-email-corporativa-em-html"
