@@ -157,6 +157,7 @@ hd ──(etapas 1-5)──► content/*.json ──(build: Zod + integridade)�
 
 ## Documentos
 - `analise-da-tarefa.md`: as 5 perguntas antes de produzir ou decidir (contexto, tema, objetivo, competências do autor e decisão justificada).
+- `perfil-do-autor.md`: as competências do autor em engenharia, produto e IA, com nível e evidência.
 - `decisoes-do-autor.md`: as decisões do autor com o motivo e os princípios que o Claude aplica nos casos parecidos.
 - `agentes.md`: o fluxo de agentes (triador, produtores, revisor e verificador), os estados do item no acervo, o formato do destino e as fases.
 - `../contratos/`: um contrato por site, com o que cada produtor gera e como o verificador confere.

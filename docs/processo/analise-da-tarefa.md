@@ -26,7 +26,7 @@ O objetivo é que o autor leia o porquê de cada escolha e corrija o raciocínio
 - Em que nível o autor domina o tema, e com que evidência no hd ou na API?
 - O que só o autor pode contar sobre isso (o relato, o erro, o bastidor)? Isso é o que diferencia o conteúdo.
 
-Até o perfil do autor (`perfil-do-autor.md`, entrega 2, ainda não escrito) ser confirmado, responda com a evidência encontrada e marque "perfil a confirmar".
+Use o [perfil do autor](perfil-do-autor.md). Até ele ser confirmado, responda com a evidência encontrada e marque "perfil a confirmar".
 
 ### 5. Decisão
 - **Uma de três:** produzir, usar só como referência ou perguntar ao autor.
