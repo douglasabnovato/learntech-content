@@ -106,13 +106,15 @@ Cada produtor carrega só o contrato do seu projeto. Assim o tom de um site não
 
 Entrega 3 do método de produção a partir do hd, aprovado pelo autor em 15/11/2026 ("aprovo o plano"). O nível diz o que o Claude decide sozinho no A1. O A2 (PR e deploy) e o A3 (fechamento da leva) continuam sempre do autor, em qualquer nível. A base é o princípio P-03 de [`decisoes-do-autor.md`](decisoes-do-autor.md): autonomia se ganha com acerto medido.
 
-**Nível em vigor: N0.** Subir de nível exige o ok explícito do autor, registrado como decisão. O Claude propõe a subida quando a meta for atingida, mas não sobe sozinho.
+A escala se chama AU (autonomia), para não se confundir com o nível do projeto (N1 a N3) nem com as aprovações A1 a A3. Decisão D-10.
+
+**Nível em vigor: AU0.** Subir de nível exige o ok explícito do autor, registrado como decisão. O Claude propõe a subida quando a meta for atingida, mas não sobe sozinho.
 
 | Nível | O Claude decide sozinho | Continua com o autor | Para subir ao próximo |
 |---|---|---|---|
-| **N0** (em vigor) | Nada. Propõe a ficha com a [análise](analise-da-tarefa.md) | Todas as fichas no A1 | Gabarito de pelo menos 85% em direitos e destinos numa rodada com 20 itens ou mais, e princípios P-01 a P-07 confirmados |
-| **N1** | Itens com direitos `proprio`, confiança de pelo menos 0,85, sem sinal de pessoa, cliente ou credencial, e com um princípio confirmado que cubra o caso | Todo o resto. Mais uma amostra de 1 em cada 5 itens decididos pelo Claude, revisada depois | 90% de concordância na amostra em dois lotes seguidos |
-| **N2** | Também itens `terceiro-citavel`, que entram como referência citada | Material de ex-empregador, dados de pessoas, `sensivel-anonimizar` e confiança abaixo de 0,85. Amostra de 1 em cada 10 | Não há N3. O que é sensível fica sempre com o autor |
+| **AU0** (em vigor) | Nada. Propõe a ficha com a [análise](analise-da-tarefa.md) | Todas as fichas no A1 | Gabarito de pelo menos 85% em direitos e destinos numa rodada com 20 itens ou mais, e princípios P-01 a P-07 confirmados |
+| **AU1** | Itens com direitos `proprio`, confiança de pelo menos 0,85, sem sinal de pessoa, cliente ou credencial, e com um princípio confirmado que cubra o caso | Todo o resto. Mais uma amostra de 1 em cada 5 itens decididos pelo Claude, revisada depois | 90% de concordância na amostra em dois lotes seguidos |
+| **AU2** | Também itens `terceiro-citavel`, que entram como referência citada | Material de ex-empregador, dados de pessoas, `sensivel-anonimizar` e confiança abaixo de 0,85. Amostra de 1 em cada 10 | Não há AU3. O que é sensível fica sempre com o autor |
 
 ### Regras dos níveis
 - **Sempre com o autor, em qualquer nível:**

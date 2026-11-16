@@ -49,6 +49,7 @@ autor decide e explica ─▶ Claude registra (D) e propõe o princípio (P) ─
 | D-07 | 14/11/2026 | A API só recebe conteúdo novo depois do deploy. O hd fica parado até a learntech-content#15. Palavras: "Aprovo as 4" | não registrado | plano de conteúdo do orquestrador, relatório de 14/11 |
 | D-08 | 15/11/2026 | Plano do método de produção a partir do hd aprovado: ficha de análise, perfil do autor, níveis de autonomia, produtores e treino com gabarito. Palavras: "aprovo o plano" | "preciso treinar voce para ter autonomia de produzir conteúdos a partir desses arquivos" | chat do autor, 15/11 |
 | D-09 | 15/11/2026 | Toda decisão do autor vem com o porquê e vira contexto do Claude (este registro) | "para voce evoluir nas tomadas de decisao independente" | chat do autor, 15/11 |
+| D-10 | 16/11/2026 | A escala de autonomia do Claude se chama AU0, AU1 e AU2. Palavras: "Sim, AU0 a AU2" | Aceitou a proposta, cujo motivo era evitar a confusão com o nível do projeto (N1 a N3) e com as aprovações A1 a A3 (motivo da proposta, não palavras do autor) | chat do autor, 16/11 |
 
 ## Princípios
 
@@ -61,8 +62,9 @@ autor decide e explica ─▶ Claude registra (D) e propõe o princípio (P) ─
 | P-05 | Regra de negócio recusada não volta como sugestão | Identificação, modelo de negócio | D-06 | a confirmar |
 | P-06 | Primeiro publicar o que está pronto, depois produzir mais | Planejamento do dia, conteúdo novo | D-07 | a confirmar |
 | P-07 | Toda escolha do Claude é registrada com motivo, para o autor poder corrigir o raciocínio, e não só o resultado | Todas as tarefas | D-08, D-09 | a confirmar |
+| P-08 | Um nome novo não pode repetir uma sigla que já existe no processo | Nomes de escalas, estados e etapas | D-10 | a confirmar |
 
 ## Pendente do autor
 
-- Confirmar ou corrigir os princípios P-01 a P-07.
+- Confirmar ou corrigir os princípios P-01 a P-08.
 - Completar o motivo das decisões D-01, D-02 e D-04 a D-07, se quiser. Sem o motivo, o princípio fica mais fraco.
