@@ -102,9 +102,33 @@ Cada produtor carrega só o contrato do seu projeto. Assim o tom de um site não
 | 4. Piloto | `6-tech_community/gdg_jf` de ponta a ponta | Itens `exibido`, métricas medidas, retrospectiva |
 | 5. Escala | Lotes por tipo, com mídia no R2 (issue #8) | Remessa com fotos sem estourar o Worker |
 
+## Níveis de autonomia (16/11/2026)
+
+Entrega 3 do método de produção a partir do hd, aprovado pelo autor em 15/11/2026 ("aprovo o plano"). O nível diz o que o Claude decide sozinho no A1. O A2 (PR e deploy) e o A3 (fechamento da leva) continuam sempre do autor, em qualquer nível. A base é o princípio P-03 de [`decisoes-do-autor.md`](decisoes-do-autor.md): autonomia se ganha com acerto medido.
+
+**Nível em vigor: N0.** Subir de nível exige o ok explícito do autor, registrado como decisão. O Claude propõe a subida quando a meta for atingida, mas não sobe sozinho.
+
+| Nível | O Claude decide sozinho | Continua com o autor | Para subir ao próximo |
+|---|---|---|---|
+| **N0** (em vigor) | Nada. Propõe a ficha com a [análise](analise-da-tarefa.md) | Todas as fichas no A1 | Gabarito de pelo menos 85% em direitos e destinos numa rodada com 20 itens ou mais, e princípios P-01 a P-07 confirmados |
+| **N1** | Itens com direitos `proprio`, confiança de pelo menos 0,85, sem sinal de pessoa, cliente ou credencial, e com um princípio confirmado que cubra o caso | Todo o resto. Mais uma amostra de 1 em cada 5 itens decididos pelo Claude, revisada depois | 90% de concordância na amostra em dois lotes seguidos |
+| **N2** | Também itens `terceiro-citavel`, que entram como referência citada | Material de ex-empregador, dados de pessoas, `sensivel-anonimizar` e confiança abaixo de 0,85. Amostra de 1 em cada 10 | Não há N3. O que é sensível fica sempre com o autor |
+
+### Regras dos níveis
+- **Sempre com o autor, em qualquer nível:**
+  - material de ex-empregador;
+  - fotos e dados de pessoas;
+  - credenciais;
+  - casos sem princípio confirmado;
+  - qualquer tema de principal, deploy, configuração, segredos, contas, custo ou modelo de negócio.
+- **Descida automática:** se a amostra de um lote ficar abaixo de 80% de concordância, o nível cai um degrau no lote seguinte. O Claude avisa o autor e registra o motivo.
+- **Toda decisão do Claude vai para o plano do lote**, com a ficha completa. O autor pode reverter qualquer uma no A2, antes do deploy.
+- **A medição usa o que já existe:** `npm run triador:gabarito` antes de subir, e a amostra revisada pelo autor depois. Cada discordância vira uma decisão nova em [`decisoes-do-autor.md`](decisoes-do-autor.md).
+
 ## Métricas por lote
 - Tempo do hd até `exibido` (pelas `etapas`).
 - Percentual aprovado no A2 sem edição.
 - Acerto do triador contra o gabarito.
 - Defeitos achados pelo verificador depois do deploy.
 - Minutos do autor por lote.
+- Nível de autonomia em vigor e concordância da amostra revisada pelo autor.

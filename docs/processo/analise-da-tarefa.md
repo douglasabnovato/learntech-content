@@ -32,7 +32,7 @@ Use o [perfil do autor](perfil-do-autor.md). Até ele ser confirmado, responda c
 - **Uma de três:** produzir, usar só como referência ou perguntar ao autor.
 - **Justificativa:** uma ou duas frases, citando os princípios aplicados de [`decisoes-do-autor.md`](decisoes-do-autor.md) (por exemplo, "aplica P-02").
 - **Confiança:** de 0 a 1.
-- **Quando perguntar:** confiança abaixo do nível de autonomia em vigor, princípio só `a confirmar`, caso sem princípio, ou qualquer item de [`decisoes-do-autor.md`](decisoes-do-autor.md) marcado como fora do alcance do Claude.
+- **Quando perguntar:** fora do [nível de autonomia](agentes.md) em vigor (hoje N0: tudo vai ao autor), princípio só `a confirmar`, caso sem princípio, ou qualquer item de [`decisoes-do-autor.md`](decisoes-do-autor.md) marcado como fora do alcance do Claude.
 
 ## Formato da ficha no plano do lote
 
