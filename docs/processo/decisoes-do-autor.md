@@ -55,16 +55,15 @@ autor decide e explica ─▶ Claude registra (D) e propõe o princípio (P) ─
 
 | P | Princípio | Alcance | Vem de | Força |
 |---|---|---|---|---|
-| P-01 | Entregue é o que está visível para o público, não o que está catalogado ou na integração | Levas, issues e relatórios | D-01 | a confirmar |
-| P-02 | Material de empregador vira conhecimento sem marca. A empresa real só aparece onde o tema é a própria empresa | Todo material de ex-empregador | D-02, D-04 | a confirmar |
-| P-03 | Autonomia se ganha com acerto medido, não com tempo de uso | Triador, produtores, níveis de autonomia | D-03 | a confirmar |
-| P-04 | Custo zero é restrição de projeto: a solução precisa caber num plano gratuito, ou não entra | Ferramentas, hospedagem, mídia, medição | D-05 | a confirmar |
-| P-05 | Regra de negócio recusada não volta como sugestão | Identificação, modelo de negócio | D-06 | a confirmar |
-| P-06 | Primeiro publicar o que está pronto, depois produzir mais | Planejamento do dia, conteúdo novo | D-07 | a confirmar |
-| P-07 | Toda escolha do Claude é registrada com motivo, para o autor poder corrigir o raciocínio, e não só o resultado | Todas as tarefas | D-08, D-09 | a confirmar |
+| P-01 | Entregue é o que está visível para o público, não o que está catalogado ou na integração | Levas, issues e relatórios | D-01 | confirmado em 16/11/2026: "Confirmo P-01 a P-07" |
+| P-02 | Material de empregador vira conhecimento sem marca. A empresa real só aparece onde o tema é a própria empresa | Todo material de ex-empregador | D-02, D-04 | confirmado em 16/11/2026: "Confirmo P-01 a P-07" |
+| P-03 | Autonomia se ganha com acerto medido, não com tempo de uso | Triador, produtores, níveis de autonomia | D-03 | confirmado em 16/11/2026: "Confirmo P-01 a P-07" |
+| P-04 | Custo zero é restrição de projeto: a solução precisa caber num plano gratuito, ou não entra | Ferramentas, hospedagem, mídia, medição | D-05 | confirmado em 16/11/2026: "Confirmo P-01 a P-07" |
+| P-05 | Regra de negócio recusada não volta como sugestão | Identificação, modelo de negócio | D-06 | confirmado em 16/11/2026: "Confirmo P-01 a P-07" |
+| P-06 | Primeiro publicar o que está pronto, depois produzir mais | Planejamento do dia, conteúdo novo | D-07 | confirmado em 16/11/2026: "Confirmo P-01 a P-07" |
+| P-07 | Toda escolha do Claude é registrada com motivo, para o autor poder corrigir o raciocínio, e não só o resultado | Todas as tarefas | D-08, D-09 | confirmado em 16/11/2026: "Confirmo P-01 a P-07" |
 | P-08 | Um nome novo não pode repetir uma sigla que já existe no processo | Nomes de escalas, estados e etapas | D-10 | confirmado em 16/11/2026: "Confirmo o P-08" |
 
 ## Pendente do autor
 
-- Confirmar ou corrigir os princípios P-01 a P-07.
 - Completar o motivo das decisões D-01, D-02 e D-04 a D-07, se quiser. Sem o motivo, o princípio fica mais fraco.
