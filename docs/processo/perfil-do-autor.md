@@ -27,7 +27,7 @@ Um tema pode ter mais de um nível. O nível vem da evidência, e não de uma au
 | Competência | Nível proposto | Evidência |
 |---|---|---|
 | Front-end web (HTML, CSS, JavaScript, React) | Aplicou, ensinou | Dev front-end em React (2020–2021) e na Jamboo (2022–2023). Programas 1 a 4 e 101 a 106 na API. Cursos da ByteClass (2025–2026) |
-| Back-end, APIs e dados | Aplicou | A API learntech-content: Cloudflare Workers, Hono, D1, Zod, 166 testes e o contrato com os 4 sites. SQL e SSJS no Marketing Cloud (2025–2026) |
+| Back-end, APIs e dados | Aplicou | A API learntech-content: Cloudflare Workers, Hono, D1, Zod, testes automatizados (171 em 17/11/2026) e o contrato com os 4 sites. SQL e SSJS no Marketing Cloud (2025–2026) |
 | Fundamentos (algoritmos e estrutura de dados) | Ensinou | Monitor de Estrutura de Dados em C na UFJF (2010–2011). Programa 901 |
 | Qualidade e entrega (CI, testes, ruleset) | Conduziu | Qualidade e ISO na CodeJr (2014–2016). Régua de 12 critérios, CI e `main` protegida nos 5 repositórios do learnTECH |
 | Integração e automação de CRM | Aplicou | Base integrada do ERP ao Salesforce Marketing Cloud e rotinas automatizadas (2025–2026). Programas 1101 a 1107 |
@@ -52,7 +52,7 @@ Um tema pode ter mais de um nível. O nível vem da evidência, e não de uma au
 |---|---|---|
 | Orquestração de agentes | Conduziu | Sessões com papéis (orquestrador, sessões de projeto e de apoio) e regras R1 a R17 (`engenharia/ia/orquestracao.md`, 13/11/2026) |
 | Agentes com papel único e contrato | Conduziu | Fluxo do hd até a tela: triador, produtores, revisor e verificador, com estados no schema ([`agentes.md`](agentes.md)) |
-| Avaliação de agentes | Conduziu | Gabarito do triador em três rodadas (42 itens) e a decisão de deixá-lo como proponente pelo acerto medido (D-03) |
+| Avaliação de agentes | Conduziu | Gabarito do triador em quatro rodadas (55 itens, 67 medições) e a decisão de deixá-lo como proponente pelo acerto medido (D-03) |
 | Governança e segurança de IA | Conduziu | Regras contra a lavagem de permissão, hook de comandos proibidos, revisor independente e evidência obrigatória ("Atende" com comando, data e resultado) |
 | Programar com IA, ensinando | Ensinou | Programa 801, "Programar com IA sem Perder o Aprendizado" |
 
@@ -62,6 +62,7 @@ Um tema pode ter mais de um nível. O nível vem da evidência, e não de uma au
 
 - **Inglês técnico (programas 701 a 704)** e **UX (201 a 204):** não achei evidência de que o autor aplicou ou conduziu esses temas. Proponho que esses programas não usem relato pessoal até o autor dizer o nível.
 - **Volta Express:** os números (13 versões, 3 pivotagens, 8 pessoas) vêm do currículo público. Antes de virar conteúdo, precisam da confirmação do autor.
+- **ByteClass:** os números (8 cursos, 3 trilhas, 20 atualizados, 6 turmas), a coordenação de equipe, o SQL e SSJS e os painéis no Looker Studio vêm só do currículo público. Precisam da confirmação do autor. Se a ByteClass for o vínculo atual, ela sai do perfil, pela regra da linha de fontes.
 - **Níveis:** foram propostos pelo Claude a partir da evidência. O autor confirma ou corrige cada linha.
 
 ## Pendente do autor

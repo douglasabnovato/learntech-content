@@ -70,3 +70,5 @@ autor decide e explica ─▶ Claude registra (D) e propõe o princípio (P) ─
 
 - Dizer o motivo da D-11, se quiser.
 - Completar o motivo das decisões D-01, D-02 e D-04 a D-07, se quiser. Sem o motivo, o princípio fica mais fraco.
+- **D-07, a confirmar:** quais são as "4" de "Aprovo as 4", e se o hd espera a learntech-content#15 (vídeos) ou o deploy. O relatório de 14/11 citado como fonte não está no repositório.
+- **D-11 × estado `nao-publicavel`, conflito achado na revisão de 17/11:** a D-11 diz que `descartar` fica `nao-publicavel` e sem destino. Já o `agentes.md` usa `nao-publicavel` para material sem uso público, o `README.md` conta `nao-publicavel` como aberto, e as regras editoriais dizem que nada se descarta. Até o autor decidir, vale o mais seguro: nenhum item vai para `descartar` sem perguntar.

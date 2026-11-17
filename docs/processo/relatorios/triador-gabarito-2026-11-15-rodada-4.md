@@ -2,7 +2,7 @@
 
 Gerado por `npm run triador:gabarito -- --relatorio`. O triador leu só o material extraído e as regras, sem o `acervo.json`. A proposta de cada item foi comparada com a ficha que o acervo já tem.
 
-**25 itens · direitos 68% · destinos 64% · uso por arquivo 45% · meta 80%: não atingida**
+**25 itens · direitos 68% · destinos 64% · uso por arquivo 45% · meta da fase 1 (80%): não atingida**
 
 | Item | Direitos | Destinos (comuns/propostos/certos) | Uso igual | Confiança |
 |---|---|---|---|---|
@@ -30,7 +30,7 @@ Gerado por `npm run triador:gabarito -- --relatorio`. O triador leu só o materi
 | HD-0049 | não | não (0/0/1) | 0/5 | 0.7 |
 | HD-0050 | sim | não (0/1/2) | 4/13 | 0.6 |
 | HD-0052 | sim | sim (1/1/4) | 0/4 | 0.85 |
-| HD-0054 | não | não (0/0/1) | – | 0.5 |
+| HD-0054 | não | não (0/0/1) | – (sem uso proposto) | 0.5 |
 
 Regras de acerto: `scripts/lib/gabarito.mjs`.
 
@@ -49,13 +49,13 @@ Regras de acerto: `scripts/lib/gabarito.mjs`.
 | Itens da rodada 3 (antes: 67% e 50%) | 12 | 50% | 33% |
 | Total | 25 | 68% | 64% |
 
-Meta para sair do AU0 ([`agentes.md`](../agentes.md)): 85% em direitos e destinos, numa rodada com 20 itens ou mais. **Não atingida.**
+Meta para sair do AU0 ([`agentes.md`](../agentes.md)): 85%, acima da meta da fase 1 (80%), em direitos e destinos, numa rodada com 20 itens ou mais. **Não atingida.**
 
 ## Leitura
-1. **Todos os 12 erros são de material de ex-empregador.** Nos itens do próprio autor e de terceiros, o acerto foi total. Esse material fica sempre com o autor em qualquer nível de autonomia, mas pesa na média.
+1. **12 itens tiveram erro: 11 de material de ex-empregador e o HD-0049, que está como `proprio`.** São 8 erros de direitos e 9 de destinos. Nos outros itens do próprio autor e nos de terceiros, o acerto foi total. Esse material fica sempre com o autor em qualquer nível de autonomia, mas pesa na média.
 2. **6 dos 8 erros de direitos são a mesma fronteira.** O triador propôs `sensivel-anonimizar`, e o acervo tem `descartar`, mas com estado `referencia` e destino. Pela regra do triador, `descartar` é "sem valor ou de risco". Ou seja, o acervo usa `descartar` para material que serve de referência, e a regra escrita não diz isso.
-3. **Dois casos parecem inconsistentes no próprio gabarito:** HD-0049 (peças de marca de evento corporativo) está como `proprio`, e HD-0054 (vídeos) como `sensivel-anonimizar`. Precisam da confirmação do autor antes de servirem de gabarito.
-4. **Os erros de destino estão na trilha de CRM (1101 a 1107).** Os programas são vizinhos, e o triador escolhe o programa ao lado do certo.
+3. **Dois casos parecem inconsistentes no próprio gabarito:** HD-0049 (fotos de um evento em São Paulo, da pasta do ex-empregador) está como `proprio`, e HD-0054 (vídeos) como `sensivel-anonimizar`. Precisam da confirmação do autor antes de servirem de gabarito.
+4. **6 dos 9 erros de destino estão na trilha de CRM (1101 a 1107).** Os outros 3 são HD-0026 (blog), HD-0037 (tools) e HD-0049 (career). Os programas são vizinhos, e o triador escolhe o programa ao lado do certo.
 5. **A confiança está calibrada.** Com confiança de pelo menos 0,75, 6 de 8 itens acertaram direitos e destinos. Com pelo menos 0,85, o patamar do AU1, os 3 itens acertaram tudo. A amostra é pequena, mas a direção é boa.
 6. **Os 12 itens da rodada 3 pioraram.** A ficha fez o triador tratar o material de ex-empregador com mais cuidado (P-02) e propor `sensivel-anonimizar`, o lado seguro. Já o acervo usa `descartar`.
 
@@ -76,6 +76,6 @@ As mesmas 25 propostas, medidas de novo:
 | Itens da rodada 3 | 12 | 83% | 33% |
 | Total | 25 | 92% | 64% |
 
-- **Direitos passam a meta.** Os 2 erros que restam são os itens que parecem inconsistentes no gabarito (HD-0049 e HD-0054), à espera do autor.
-- **Destinos continuam abaixo da meta**, todos na trilha de CRM (1101 a 1107).
+- **Direitos passam as duas metas (80% e 85%).** Os 2 erros que restam são os itens que parecem inconsistentes no gabarito (HD-0049 e HD-0054), à espera do autor.
+- **Destinos continuam abaixo da meta**, a maior parte na trilha de CRM (1101 a 1107).
 - **Cuidado com o viés:** o gabarito mudou depois que as propostas foram vistas. A mudança seguiu uma regra decidida pelo autor e aplicada a todos os itens, e não item por item. Mesmo assim, esta medição sozinha não basta para sair do AU0. A próxima rodada, com itens novos, confirma ou não o resultado.

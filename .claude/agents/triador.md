@@ -36,7 +36,7 @@ Você é **proponente** (decisão do autor, 09/11/2026): a ficha só entra no ac
    - `proprio`: o autor fez (anotações, planilhas, projetos, fotos dele em evento);
    - `terceiro-citavel`: material público de terceiro (apostila de curso, edital, palestra), que pode ser citado com fonte;
    - `sensivel-anonimizar`: tem dado pessoal, cliente ou ex-empregador. Só serve sem nomes;
-   - `descartar`: sem uso nenhum. O estado é `nao-publicavel`, e não há destino (D-11).
+   - `descartar`: sem uso nenhum. O estado é `nao-publicavel`, e não há destino (D-11). Não proponha `descartar` sem marcar a ficha como `perguntar`: o estado desse caso está em aberto com o autor (`docs/processo/decisoes-do-autor.md`, pendências).
 
    Convenções do acervo, aprendidas no gabarito de 09/11:
    - **ex-empregador (D-11, 15/11/2026):** todo material com conhecimento aproveitável é `sensivel-anonimizar`, com estado `referencia` e o destino onde o conhecimento é usado. Isso vale também para peça de marca, encarte, tabloide, assinatura de e-mail e material de fornecedor, quando mostram um método, um formato ou uma ferramenta. `descartar` só para o que não tem uso nenhum;
