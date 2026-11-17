@@ -3,6 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { hojeLocal } from "../lib/data-local.mjs";
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const REL = path.join(RAIZ, "e2e", "relatorios");
@@ -35,7 +36,7 @@ if (a11y) {
   }
   linhas.push("");
 }
-const hoje = new Date().toISOString().slice(0, 10);
+const hoje = hojeLocal();
 const destino = path.join(RAIZ, "docs", "engenharia", "relatorios", `e2e-${hoje}.md`);
 fs.mkdirSync(path.dirname(destino), { recursive: true });
 fs.writeFileSync(destino, `# Testes de ponta a ponta, acessibilidade e responsividade, ${hoje}\n\n${linhas.join("\n") || "Sem relatórios em e2e/relatorios/. Rode npm run e2e antes."}\nCapturas em e2e/relatorios/capturas/ (não versionadas).\n`);

@@ -16,6 +16,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { hojeLocal } from "./lib/data-local.mjs";
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const C = path.join(RAIZ, "content");
@@ -29,7 +30,7 @@ const SITES = {
 const ler = (p) => JSON.parse(fs.readFileSync(path.join(C, p), "utf8"));
 const lista = (v) => (Array.isArray(v) ? v : Object.values(v).find(Array.isArray) ?? []);
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
-const hoje = new Date().toISOString().slice(0, 10);
+const hoje = hojeLocal();
 const xml = (urls) =>
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${esc(u)}</loc><lastmod>${hoje}</lastmod></url>`).join("\n")}\n</urlset>\n`;
 const robots = (base) => `User-agent: *\nAllow: /\n\nSitemap: ${base}/sitemap.xml\n`;

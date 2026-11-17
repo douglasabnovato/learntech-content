@@ -20,6 +20,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { classificar, ORDEM, USADOS } from "./lib/uso-hd.mjs";
+import { hojeLocal } from "./lib/data-local.mjs";
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const CONTENT = path.join(RAIZ, "content");
@@ -75,7 +76,7 @@ for (const f of fs.readdirSync(DIR_EVENTOS).filter((n) => n.endsWith(".json"))) 
 const { linhas, gravados, semHash } = classificar(arquivos, acervo, imagens, { aplicar, pastas });
 
 if (aplicar && gravados) {
-  acervo.atualizadoEm = new Date().toISOString().slice(0, 10);
+  acervo.atualizadoEm = hojeLocal();
   fs.writeFileSync(ARQ_ACERVO, (JSON.stringify(acervo, null, 2) + "\n").replace(/\n/g, "\r\n"));
 }
 
@@ -159,7 +160,7 @@ if (vivo) {
 console.log(destinosQuebrados.length ? `\nDestinos que não existem no content/: ${destinosQuebrados.join(", ")}` : "\nTodos os destinos existem no content/.");
 
 if (relatorio) {
-  const hoje = new Date().toISOString().slice(0, 10);
+  const hoje = hojeLocal();
   const n = (v) => v.toLocaleString("pt-BR");
   const md = [
     `# Uso do hd (${hoje.split("-").reverse().join("/")})`, "",

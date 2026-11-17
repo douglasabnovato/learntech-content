@@ -10,6 +10,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { compararItem, resumir, META } from "./lib/gabarito.mjs";
+import { hojeLocal } from "./lib/data-local.mjs";
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const argv = process.argv.slice(2);
@@ -39,8 +40,7 @@ const resumo = `${r.itens} itens · direitos ${pct(r.direitos)} · destinos ${pc
 console.log(resumo + "\n\n" + tabela);
 
 if (argv.includes("--relatorio")) {
-  // Data local de Brasília, não a UTC: à noite a UTC já é o dia seguinte.
-  const hoje = new Date().toLocaleDateString("sv-SE", { timeZone: "America/Sao_Paulo" });
+  const hoje = hojeLocal();
   const [a, m, d] = hoje.split("-");
   const md = `# Triador contra o gabarito (${d}/${m}/${a})\n\nGerado por \`npm run triador:gabarito -- --relatorio\`. O triador leu só o material extraído e as regras, sem o \`acervo.json\`. A proposta de cada item foi comparada com a ficha que o acervo já tem.\n\n**${resumo}**\n\n${tabela}\n\nRegras de acerto: \`scripts/lib/gabarito.mjs\`.\n`;
   const arq = path.join(RAIZ, "docs", "processo", "relatorios", `triador-gabarito-${hoje}.md`);

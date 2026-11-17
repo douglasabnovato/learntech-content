@@ -6,6 +6,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
+import { hojeLocal } from "./lib/data-local.mjs";
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const REPOS = ["learntech-content", "learn-tech", "bootcamps", "career", "tools"];
@@ -29,7 +30,7 @@ for (const repo of REPOS) {
   }
 }
 
-const hoje = new Date().toISOString().slice(0, 10);
+const hoje = hojeLocal();
 const destino = path.join(RAIZ, "docs", "engenharia", "relatorios", `auditoria-${hoje}.md`);
 fs.mkdirSync(path.dirname(destino), { recursive: true });
 fs.writeFileSync(destino, `# Auditoria de dependências, ${hoje}\n\nMeta: zero vulnerabilidades altas ou críticas em produção. Situação: ${pior === 0 ? "meta atingida" : `${pior} alta(s) ou crítica(s) em produção`}.\n\n| Repositório | Escopo | Crítica | Alta | Moderada | Baixa | Altas e críticas |\n|---|---|---|---|---|---|---|\n${linhas.join("\n")}\n\nCorreção: \`npm audit fix\` (sem --force) no repositório; o que exigir troca de versão maior vira tarefa no backlog.\n`);

@@ -20,6 +20,7 @@ import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
 import { fileURLToPath } from "node:url";
+import { hojeLocal } from "./lib/data-local.mjs";
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const ARQ_ACERVO = path.join(RAIZ, "content", "acervo.json");
@@ -99,7 +100,7 @@ const mapaLocal = ler(path.join(HD, ".acervo-local.json"), {});
 for (const a of arquivos) { const it = porHash.get(a.sha256); if (!it) continue; const lista = (mapaLocal[it.id] ??= []); if (!lista.includes(a.rel)) lista.push(a.rel); }
 
 if (registrar && novos.size) {
-  const hoje = new Date().toISOString().slice(0, 10);
+  const hoje = hojeLocal();
   let n = Math.max(0, ...acervo.itens.filter((i) => i.id.startsWith("HD-")).map((i) => Number(i.id.slice(3))));
   for (const [g, lista] of [...novos].sort(([a], [b]) => a.localeCompare(b))) {
     const id = `HD-${String(++n).padStart(4, "0")}`;

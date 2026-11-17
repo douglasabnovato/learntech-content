@@ -8,6 +8,7 @@ import lighthouse from "lighthouse";
 import * as chromeLauncher from "chrome-launcher";
 import { chromium } from "@playwright/test";
 import { PAGINAS, url } from "../../e2e/sites.mjs";
+import { hojeLocal } from "../lib/data-local.mjs";
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SAIDA = path.join(RAIZ, "e2e", "relatorios", "lighthouse");
@@ -29,7 +30,7 @@ for (const p of PAGINAS) {
 }
 await chrome.kill();
 
-const hoje = new Date().toISOString().slice(0, 10);
+const hoje = hojeLocal();
 const resumo = path.join(RAIZ, "docs", "engenharia", "relatorios", `lighthouse-${hoje}.md`);
 fs.mkdirSync(path.dirname(resumo), { recursive: true });
 fs.writeFileSync(resumo, `# Lighthouse (mobile), ${hoje}\n\nMetas do MVP: performance ≥ 80, acessibilidade ≥ 90, boas práticas ≥ 90, SEO ≥ 90; LCP ≤ 2,5 s, CLS ≤ 0,1, TBT ≤ 200 ms.\n\n| Site | Página | Performance | Acessibilidade | Boas práticas | SEO | LCP | CLS | TBT |\n|---|---|---|---|---|---|---|---|---|\n${linhas.join("\n")}\n\nRelatórios completos em e2e/relatorios/lighthouse/.\n`);
