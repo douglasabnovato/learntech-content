@@ -28,7 +28,7 @@ const SITES = {
   tools: "https://douglasabnovato.github.io/tools",
 };
 const ler = (p) => JSON.parse(fs.readFileSync(path.join(C, p), "utf8"));
-const lista = (v) => (Array.isArray(v) ? v : Object.values(v).find(Array.isArray) ?? []);
+const lista = (v) => (Array.isArray(v) ? v : (Object.values(v).find(Array.isArray) ?? []));
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
 const hoje = hojeLocal();
 const xml = (urls) =>
@@ -42,27 +42,54 @@ const comDetalhe = (arq) => lista(ler(arq)).filter((i) => i.slug && i.detalhe);
 
 const saidas = {
   "learn-tech/public": [
-    ...["/", "/conheca", "/programs", "/blogs", "/category", "/about", "/aprender", "/careers", "/softskills", "/mentorias", "/resources", "/falaae", "/privacy", "/terms"].map((r) => SITES["learn-tech"] + r),
+    ...[
+      "/",
+      "/conheca",
+      "/programs",
+      "/blogs",
+      "/category",
+      "/about",
+      "/aprender",
+      "/careers",
+      "/softskills",
+      "/mentorias",
+      "/resources",
+      "/falaae",
+      "/privacy",
+      "/terms",
+    ].map((r) => SITES["learn-tech"] + r),
     ...programas.map((p) => `${SITES["learn-tech"]}/program/${p.categoryFilter}/${p.id}`),
     ...blog.map((b) => `${SITES["learn-tech"]}/blog/${b.id}`),
   ],
   "bootcamps/public": [SITES.bootcamps + "/", ...eventos.map((e) => `${SITES.bootcamps}/event/${e.slug}`)],
   career: [
     SITES.career + "/",
-    ...["empresas", "vagas", "perfis"].flatMap((t) => comDetalhe(`career/${t}.json`).map((i) => `${SITES.career}/detalhe.html?tipo=${t}&id=${i.slug}`)),
+    ...["empresas", "vagas", "perfis"].flatMap((t) =>
+      comDetalhe(`career/${t}.json`).map((i) => `${SITES.career}/detalhe.html?tipo=${t}&id=${i.slug}`),
+    ),
   ],
   /* Set: se uma ferramenta e uma hospedagem tiverem o mesmo slug, o detalhe.html abre a mesma página. */
-  tools: [...new Set([
-    SITES.tools + "/",
-    ...["ferramentas", "hospedagens"].flatMap((t) => comDetalhe(`tools/${t}.json`).map((i) => `${SITES.tools}/detalhe.html?id=${i.slug}`)),
-  ])],
+  tools: [
+    ...new Set([
+      SITES.tools + "/",
+      ...["ferramentas", "hospedagens"].flatMap((t) =>
+        comDetalhe(`tools/${t}.json`).map((i) => `${SITES.tools}/detalhe.html?id=${i.slug}`),
+      ),
+    ]),
+  ],
 };
 const SIMULAR = process.argv.includes("--simular");
 
 for (const [pasta, urls] of Object.entries(saidas)) {
   const destino = path.join(VIZINHOS, pasta);
-  if (SIMULAR) { console.log(`~ ${pasta}/sitemap.xml (${urls.length} URLs, não gravado)`); continue; }
-  if (!fs.existsSync(destino)) { console.warn(`- ${pasta} não encontrado, pulei`); continue; }
+  if (SIMULAR) {
+    console.log(`~ ${pasta}/sitemap.xml (${urls.length} URLs, não gravado)`);
+    continue;
+  }
+  if (!fs.existsSync(destino)) {
+    console.warn(`- ${pasta} não encontrado, pulei`);
+    continue;
+  }
   fs.writeFileSync(path.join(destino, "sitemap.xml"), xml(urls));
   if (pasta.endsWith("/public")) fs.writeFileSync(path.join(destino, "robots.txt"), robots(SITES[pasta.split("/")[0]]));
   console.log(`+ ${pasta}/sitemap.xml (${urls.length} URLs)`);

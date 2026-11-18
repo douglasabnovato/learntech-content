@@ -10,15 +10,32 @@ const TOKEN = "token-de-teste-com-mais-de-24-caracteres";
 const ORIGEM = "https://learn-tech-pied.vercel.app";
 
 /* Lê o wrangler.jsonc ignorando as linhas de comentário (as URLs dentro das strings mantêm o "//"). */
-function lerWrangler(): { assets: { run_worker_first: string[] }; ratelimits?: { name: string; simple: { limit: number; period: number } }[] } {
+function lerWrangler(): {
+  assets: { run_worker_first: string[] };
+  ratelimits?: { name: string; simple: { limit: number; period: number } }[];
+} {
   const texto = fs.readFileSync(path.resolve(import.meta.dirname, "..", "wrangler.jsonc"), "utf8");
-  return JSON.parse(texto.split(/\r?\n/).filter((l) => !/^\s*\/\//.test(l)).join("\n"));
+  return JSON.parse(
+    texto
+      .split(/\r?\n/)
+      .filter((l) => !/^\s*\/\//.test(l))
+      .join("\n"),
+  );
 }
 
 /* Contexto de execução mínimo: guarda as promessas do waitUntil para o teste aguardar. */
 function contexto() {
   const pendentes: Promise<unknown>[] = [];
-  return { pendentes, ctx: { waitUntil: (p: Promise<unknown>) => { pendentes.push(p); }, passThroughOnException: () => {}, props: {} } as unknown as ExecutionContext };
+  return {
+    pendentes,
+    ctx: {
+      waitUntil: (p: Promise<unknown>) => {
+        pendentes.push(p);
+      },
+      passThroughOnException: () => {},
+      props: {},
+    } as unknown as ExecutionContext,
+  };
 }
 
 let env: Parameters<typeof worker.fetch>[1];
@@ -28,7 +45,12 @@ beforeEach(() => {
   estaticos = [];
   env = {
     DB: d1EmMemoria().d1,
-    ASSETS: { fetch: async (r: Request) => { estaticos.push(new URL(r.url).pathname); return new Response("estático", { status: 200 }); } } as unknown as Fetcher,
+    ASSETS: {
+      fetch: async (r: Request) => {
+        estaticos.push(new URL(r.url).pathname);
+        return new Response("estático", { status: 200 });
+      },
+    } as unknown as Fetcher,
     ALLOWED_ORIGINS: ORIGEM,
     ADMIN_TOKEN: TOKEN,
     JANELA_DEDUPE_MIN: "30",
@@ -37,7 +59,8 @@ beforeEach(() => {
 });
 
 /* Chama o fetch do Worker com um caminho relativo. */
-const chamar = (caminho: string, init: RequestInit = {}) => worker.fetch(new Request(`https://api.exemplo${caminho}`, init), env, contexto().ctx);
+const chamar = (caminho: string, init: RequestInit = {}) =>
+  worker.fetch(new Request(`https://api.exemplo${caminho}`, init), env, contexto().ctx);
 
 describe("coerência com wrangler.jsonc", () => {
   const lista = lerWrangler().assets.run_worker_first;
@@ -86,13 +109,22 @@ describe("Worker com D1 (SQLite)", () => {
     const corpo = JSON.stringify({ nome: "Maria da Silva", email: "Maria@Exemplo.com", projeto: "career", pagina: "/vagas" });
     const r = await chamar("/v1/acessos", { method: "POST", headers: { "Content-Type": "application/json", Origin: ORIGEM }, body: corpo });
     expect(r.status).toBe(201);
-    const lista = (await (await chamar("/v1/acessos", { headers: { Authorization: `Bearer ${TOKEN}` } })).json()) as { total: number; acessos: { email: string; projeto: string }[] };
+    const lista = (await (await chamar("/v1/acessos", { headers: { Authorization: `Bearer ${TOKEN}` } })).json()) as {
+      total: number;
+      acessos: { email: string; projeto: string }[];
+    };
     expect(lista.total).toBe(1);
     expect(lista.acessos[0]).toMatchObject({ email: "maria@exemplo.com", projeto: "career" });
   });
 
   it("POST /v1/mensagens grava e o segundo envio idêntico não duplica", async () => {
-    const corpo = JSON.stringify({ nome: "Maria da Silva", email: "maria@exemplo.com", motivo: "outro", mensagem: "Olá!", projeto: "tools" });
+    const corpo = JSON.stringify({
+      nome: "Maria da Silva",
+      email: "maria@exemplo.com",
+      motivo: "outro",
+      mensagem: "Olá!",
+      projeto: "tools",
+    });
     const init = { method: "POST", headers: { "Content-Type": "application/json", Origin: ORIGEM }, body: corpo };
     expect((await chamar("/v1/mensagens", init)).status).toBe(201);
     expect((await chamar("/v1/mensagens", init)).status).toBe(200);
@@ -102,8 +134,14 @@ describe("Worker com D1 (SQLite)", () => {
 
   it("o cron de retenção apaga acessos e mensagens antigos", async () => {
     const db = env.DB;
-    await db.prepare("INSERT INTO acessos (nome, email, projeto, pagina, criado_em) VALUES (?, ?, ?, ?, ?)").bind("Maria da Silva", "m@e.com", "tools", null, "2000-01-01T00:00:00.000Z").run();
-    await db.prepare("INSERT INTO mensagens (criado_em, projeto, motivo, nome, email, mensagem, pagina) VALUES (?, ?, ?, ?, ?, ?, ?)").bind("2000-01-01T00:00:00.000Z", "tools", "outro", "Maria da Silva", "m@e.com", "antiga", null).run();
+    await db
+      .prepare("INSERT INTO acessos (nome, email, projeto, pagina, criado_em) VALUES (?, ?, ?, ?, ?)")
+      .bind("Maria da Silva", "m@e.com", "tools", null, "2000-01-01T00:00:00.000Z")
+      .run();
+    await db
+      .prepare("INSERT INTO mensagens (criado_em, projeto, motivo, nome, email, mensagem, pagina) VALUES (?, ?, ?, ?, ?, ?, ?)")
+      .bind("2000-01-01T00:00:00.000Z", "tools", "outro", "Maria da Silva", "m@e.com", "antiga", null)
+      .run();
     const { ctx, pendentes } = contexto();
     await worker.scheduled({} as ScheduledController, env, ctx);
     await Promise.all(pendentes);
@@ -114,7 +152,12 @@ describe("Worker com D1 (SQLite)", () => {
 
 describe("binding de limite de taxa (LIMITADOR_ESCRITA)", () => {
   const corpo = (email: string) => JSON.stringify({ nome: "Maria da Silva", email, projeto: "career" });
-  const postar = (email: string) => chamar("/v1/acessos", { method: "POST", headers: { "Content-Type": "application/json", Origin: ORIGEM, "CF-Connecting-IP": "203.0.113.7" }, body: corpo(email) });
+  const postar = (email: string) =>
+    chamar("/v1/acessos", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Origin: ORIGEM, "CF-Connecting-IP": "203.0.113.7" },
+      body: corpo(email),
+    });
 
   it("wrangler.jsonc declara o binding usado pelo Worker", () => {
     const cfg = lerWrangler();
@@ -123,14 +166,23 @@ describe("binding de limite de taxa (LIMITADOR_ESCRITA)", () => {
 
   it("com o binding recusando, o POST responde 429 e não grava", async () => {
     const chaves: string[] = [];
-    env.LIMITADOR_ESCRITA = { limit: async ({ key }: { key: string }) => { chaves.push(key); return { success: false }; } } as RateLimit;
+    env.LIMITADOR_ESCRITA = {
+      limit: async ({ key }: { key: string }) => {
+        chaves.push(key);
+        return { success: false };
+      },
+    } as RateLimit;
     expect((await postar("a@exemplo.com")).status).toBe(429);
     expect(chaves).toEqual(["203.0.113.7:acessos"]);
     expect(await env.DB.prepare("SELECT COUNT(*) AS n FROM acessos").first()).toEqual({ n: 0 });
   });
 
   it("se o binding falhar, deixa passar (o limite nunca derruba o registro)", async () => {
-    env.LIMITADOR_ESCRITA = { limit: async () => { throw new Error("fora do ar"); } } as RateLimit;
+    env.LIMITADOR_ESCRITA = {
+      limit: async () => {
+        throw new Error("fora do ar");
+      },
+    } as RateLimit;
     expect((await postar("a@exemplo.com")).status).toBe(201);
   });
 

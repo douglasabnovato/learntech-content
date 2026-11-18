@@ -2,7 +2,13 @@
 import { z } from "zod";
 import { programaSchema, questaoSchema, areaSchema } from "../../src/schemas/learn-tech";
 import { eventoSchema } from "../../src/schemas/bootcamps";
-import { empresaSchema, vagaOuPerfilSchema, ferramentaSchema, destaquesSchema, modeloCurriculoSchema } from "../../src/schemas/career-tools";
+import {
+  empresaSchema,
+  vagaOuPerfilSchema,
+  ferramentaSchema,
+  destaquesSchema,
+  modeloCurriculoSchema,
+} from "../../src/schemas/career-tools";
 import { coberturaSchema } from "../../src/schemas/cobertura";
 import { entradaAcessoSchema } from "../../src/acessos/schema";
 import { entradaMensagemSchema, motivos } from "../../src/mensagens/schema";
@@ -19,8 +25,21 @@ function leitura(descricao: string, ref: string, lista = false) {
 }
 
 /* Parâmetro ?email= legado dos DELETE: mantido por compatibilidade temporária, use o corpo JSON. */
-const emailLegado = { name: "email", in: "query", required: false, deprecated: true, description: "Obsoleto: e-mail em URL pode ir para logs. Use o corpo { \"email\": ... }. A resposta traz o cabeçalho Deprecation: true.", schema: { type: "string", format: "email" } };
-const corpoEmail = { required: false, description: "E-mail do titular (preferido em vez de ?email=)", content: { "application/json": { schema: { type: "object", required: ["email"], properties: { email: { type: "string", format: "email" } } } } } };
+const emailLegado = {
+  name: "email",
+  in: "query",
+  required: false,
+  deprecated: true,
+  description: 'Obsoleto: e-mail em URL pode ir para logs. Use o corpo { "email": ... }. A resposta traz o cabeçalho Deprecation: true.',
+  schema: { type: "string", format: "email" },
+};
+const corpoEmail = {
+  required: false,
+  description: "E-mail do titular (preferido em vez de ?email=)",
+  content: {
+    "application/json": { schema: { type: "object", required: ["email"], properties: { email: { type: "string", format: "email" } } } },
+  },
+};
 const limiteTaxa = { description: "Limite de taxa por IP excedido (30 por minuto por rota); cabeçalho Retry-After em segundos" };
 
 /* Monta o documento completo. */
@@ -31,18 +50,31 @@ export function gerarOpenApi(versao: string): Record<string, unknown> {
     info: {
       title: "LearnTECH Content API",
       version: versao,
-      description: "Conteúdo aberto e gratuito do ecossistema LearnTECH (learn-tech, bootcamps, career e tools). Leitura pública e sem autenticação; as únicas escritas são o registro de acesso e a mensagem do formulário \"Fala aê\".",
+      description:
+        'Conteúdo aberto e gratuito do ecossistema LearnTECH (learn-tech, bootcamps, career e tools). Leitura pública e sem autenticação; as únicas escritas são o registro de acesso e a mensagem do formulário "Fala aê".',
       license: { name: "Conteúdo de uso educacional e gratuito" },
     },
     servers: [{ url: "/" }],
     paths: {
       "/v1/index.json": { get: { summary: "Índice dos recursos publicados", responses: { "200": { description: "OK" } } } },
       "/v1/learn-tech/programas.json": leitura("Catálogo de programas (resumo)", "Programa", true),
-      "/v1/learn-tech/programas/{id}.json": { ...leitura("Programa completo", "Programa"), parameters: [{ name: "id", in: "path", required: true, schema: { type: "integer" } }] },
+      "/v1/learn-tech/programas/{id}.json": {
+        ...leitura("Programa completo", "Programa"),
+        parameters: [{ name: "id", in: "path", required: true, schema: { type: "integer" } }],
+      },
       "/v1/learn-tech/areas.json": leitura("Áreas de atuação em tecnologia", "Area", true),
-      "/v1/learn-tech/paginas/{nome}.json": { get: { summary: "Conteúdo de página do learn-tech", parameters: [{ name: "nome", in: "path", required: true, schema: { type: "string" } }], responses: { "200": { description: "OK" } } } },
+      "/v1/learn-tech/paginas/{nome}.json": {
+        get: {
+          summary: "Conteúdo de página do learn-tech",
+          parameters: [{ name: "nome", in: "path", required: true, schema: { type: "string" } }],
+          responses: { "200": { description: "OK" } },
+        },
+      },
       "/v1/bootcamps/eventos.json": leitura("Eventos", "Evento", true),
-      "/v1/bootcamps/eventos/{slug}.json": { ...leitura("Evento", "Evento"), parameters: [{ name: "slug", in: "path", required: true, schema: { type: "string" } }] },
+      "/v1/bootcamps/eventos/{slug}.json": {
+        ...leitura("Evento", "Evento"),
+        parameters: [{ name: "slug", in: "path", required: true, schema: { type: "string" } }],
+      },
       "/v1/career/empresas.json": leitura("Empresas", "Empresa", true),
       "/v1/career/vagas.json": leitura("Plataformas de vagas", "VagaOuPerfil", true),
       "/v1/career/perfis.json": leitura("Perfis de devs", "VagaOuPerfil", true),
@@ -65,7 +97,8 @@ export function gerarOpenApi(versao: string): Record<string, unknown> {
           },
         },
         get: {
-          summary: "Lista acessos (administração)", security: admin,
+          summary: "Lista acessos (administração)",
+          security: admin,
           parameters: [
             { name: "projeto", in: "query", schema: { type: "string" } },
             { name: "desde", in: "query", schema: { type: "string", format: "date" } },
@@ -75,15 +108,20 @@ export function gerarOpenApi(versao: string): Record<string, unknown> {
           responses: { "200": { description: "OK" }, "401": { description: "Token ausente ou inválido" } },
         },
         delete: {
-          summary: "Apaga todos os acessos e mensagens de um e-mail (pedido do titular, LGPD)", security: admin,
+          summary: "Apaga todos os acessos e mensagens de um e-mail (pedido do titular, LGPD)",
+          security: admin,
           parameters: [emailLegado],
           requestBody: corpoEmail,
-          responses: { "200": { description: "Quantidade apagada: { apagados (acessos), mensagens }" }, "400": { description: "E-mail ausente" }, "401": { description: "Token ausente ou inválido" } },
+          responses: {
+            "200": { description: "Quantidade apagada: { apagados (acessos), mensagens }" },
+            "400": { description: "E-mail ausente" },
+            "401": { description: "Token ausente ou inválido" },
+          },
         },
       },
       "/v1/mensagens": {
         post: {
-          summary: "Envia uma mensagem do formulário \"Fala aê\" (motivo, mensagem, nome completo, e-mail, projeto e página)",
+          summary: 'Envia uma mensagem do formulário "Fala aê" (motivo, mensagem, nome completo, e-mail, projeto e página)',
           requestBody: { required: true, content: { "application/json": { schema: { $ref: "#/components/schemas/EntradaMensagem" } } } },
           responses: {
             "201": { description: "Recebida: { registrado: true, id }" },
@@ -95,7 +133,8 @@ export function gerarOpenApi(versao: string): Record<string, unknown> {
           },
         },
         get: {
-          summary: "Lista mensagens (administração)", security: admin,
+          summary: "Lista mensagens (administração)",
+          security: admin,
           parameters: [
             { name: "projeto", in: "query", schema: { type: "string" } },
             { name: "motivo", in: "query", schema: { type: "string", enum: [...motivos] } },
@@ -107,13 +146,20 @@ export function gerarOpenApi(versao: string): Record<string, unknown> {
           responses: { "200": { description: "OK" }, "401": { description: "Token ausente ou inválido" } },
         },
         delete: {
-          summary: "Apaga todas as mensagens de um e-mail (pedido do titular, LGPD)", security: admin,
+          summary: "Apaga todas as mensagens de um e-mail (pedido do titular, LGPD)",
+          security: admin,
           parameters: [emailLegado],
           requestBody: corpoEmail,
-          responses: { "200": { description: "Quantidade apagada: { apagadas }" }, "400": { description: "E-mail ausente" }, "401": { description: "Token ausente ou inválido" } },
+          responses: {
+            "200": { description: "Quantidade apagada: { apagadas }" },
+            "400": { description: "E-mail ausente" },
+            "401": { description: "Token ausente ou inválido" },
+          },
         },
       },
-      "/v1/acessos/resumo": { get: { summary: "Totais por projeto e por dia (administração)", security: admin, responses: { "200": { description: "OK" } } } },
+      "/v1/acessos/resumo": {
+        get: { summary: "Totais por projeto e por dia (administração)", security: admin, responses: { "200": { description: "OK" } } },
+      },
     },
     components: {
       securitySchemes: { bearer: { type: "http", scheme: "bearer" } },

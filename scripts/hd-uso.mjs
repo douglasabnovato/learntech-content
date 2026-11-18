@@ -31,12 +31,25 @@ const relatorio = argv.includes("--relatorio");
 const vivo = argv.includes("--vivo");
 const iHd = argv.indexOf("--hd");
 const HD = path.resolve(iHd >= 0 ? argv[iHd + 1] : path.join(RAIZ, "..", "hd"));
-const IGNORAR = new Set([".acervo-local.json", ".hash-cache.json", ".imagens-publicadas.json", ".dhash-cache.json", "desktop.ini", "Thumbs.db", ".DS_Store"]);
-if (!fs.existsSync(HD)) { console.error(`hd não encontrado em ${HD}`); process.exit(1); }
+const IGNORAR = new Set([
+  ".acervo-local.json",
+  ".hash-cache.json",
+  ".imagens-publicadas.json",
+  ".dhash-cache.json",
+  "desktop.ini",
+  "Thumbs.db",
+  ".DS_Store",
+]);
+if (!fs.existsSync(HD)) {
+  console.error(`hd não encontrado em ${HD}`);
+  process.exit(1);
+}
 const ler = (p, padrao) => (fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, "utf8")) : padrao);
 const acervo = ler(ARQ_ACERVO, { itens: [] });
 const cache = ler(path.join(HD, ".hash-cache.json"), {});
-const imagens = Object.fromEntries(Object.entries(ler(path.join(HD, ".imagens-publicadas.json"), { hd: {} }).hd).map(([k, v]) => [k.normalize("NFC"), v]));
+const imagens = Object.fromEntries(
+  Object.entries(ler(path.join(HD, ".imagens-publicadas.json"), { hd: {} }).hd).map(([k, v]) => [k.normalize("NFC"), v]),
+);
 const temImagens = fs.existsSync(path.join(HD, ".imagens-publicadas.json"));
 
 function listar(pasta, base = pasta) {
@@ -49,21 +62,39 @@ function listar(pasta, base = pasta) {
 }
 
 /* Destino "projeto/recurso/id" existe no content/? */
-const listaDe = (arq) => { const j = ler(path.join(CONTENT, arq), []); return Array.isArray(j) ? j : Object.values(j).find(Array.isArray) ?? []; };
-const chaves = (arq) => new Set(listaDe(arq).flatMap((i) => [i.slug, i.id].filter((v) => v !== undefined).map(String)));
-const pasta = (p) => new Set(fs.existsSync(path.join(CONTENT, p)) ? fs.readdirSync(path.join(CONTENT, p)).map((f) => f.replace(/\.json$/, "")) : []);
-const RECURSOS = {
-  "learn-tech/programas": pasta("learn-tech/programas"), "learn-tech/blog": chaves("learn-tech/paginas/blog.json"),
-  "learn-tech/areas": chaves("learn-tech/areas.json"), "bootcamps/eventos": pasta("bootcamps/eventos"),
-  "career/empresas": chaves("career/empresas.json"), "career/vagas": chaves("career/vagas.json"),
-  "career/perfis": chaves("career/perfis.json"), "career/modelos-curriculo": chaves("career/modelos-curriculo.json"),
-  "tools/ferramentas": chaves("tools/ferramentas.json"), "tools/hospedagens": chaves("tools/hospedagens.json"),
+const listaDe = (arq) => {
+  const j = ler(path.join(CONTENT, arq), []);
+  return Array.isArray(j) ? j : (Object.values(j).find(Array.isArray) ?? []);
 };
-const existeDestino = (d) => { const p = d.split("/"); const rec = RECURSOS[`${p[0]}/${p[1]}`]; return rec ? rec.has(p.slice(2).join("/")) : null; };
+const chaves = (arq) => new Set(listaDe(arq).flatMap((i) => [i.slug, i.id].filter((v) => v !== undefined).map(String)));
+const pasta = (p) =>
+  new Set(fs.existsSync(path.join(CONTENT, p)) ? fs.readdirSync(path.join(CONTENT, p)).map((f) => f.replace(/\.json$/, "")) : []);
+const RECURSOS = {
+  "learn-tech/programas": pasta("learn-tech/programas"),
+  "learn-tech/blog": chaves("learn-tech/paginas/blog.json"),
+  "learn-tech/areas": chaves("learn-tech/areas.json"),
+  "bootcamps/eventos": pasta("bootcamps/eventos"),
+  "career/empresas": chaves("career/empresas.json"),
+  "career/vagas": chaves("career/vagas.json"),
+  "career/perfis": chaves("career/perfis.json"),
+  "career/modelos-curriculo": chaves("career/modelos-curriculo.json"),
+  "tools/ferramentas": chaves("tools/ferramentas.json"),
+  "tools/hospedagens": chaves("tools/hospedagens.json"),
+};
+const existeDestino = (d) => {
+  const p = d.split("/");
+  const rec = RECURSOS[`${p[0]}/${p[1]}`];
+  return rec ? rec.has(p.slice(2).join("/")) : null;
+};
 
 const arquivos = listar(HD).map((a) => {
   const st = fs.statSync(a.abs);
-  const ext = path.extname(a.rel).slice(1).toLowerCase().replace(/[^a-z0-9]/g, "") || "sem-extensao";
+  const ext =
+    path
+      .extname(a.rel)
+      .slice(1)
+      .toLowerCase()
+      .replace(/[^a-z0-9]/g, "") || "sem-extensao";
   return { rel: a.rel, ext, bytes: st.size, sha: cache[`${a.rel}|${st.size}|${Math.round(st.mtimeMs)}`] };
 });
 /* Pasta da galeria → slug do evento, lida das URLs de cada evento (ex.: tdc-innovation-2023 → tdc-innovation). */
@@ -93,23 +124,33 @@ const pct = (n) => (unicos.length ? ((100 * n) / unicos.length).toFixed(1).repla
 const porItem = new Map();
 for (const l of unicos) {
   const p = porItem.get(l.it.id) ?? { it: l.it, n: 0, usos: {}, provaveis: 0 };
-  p.n++; p.usos[l.uso] = (p.usos[l.uso] ?? 0) + 1; if (l.provavel) p.provaveis++;
+  p.n++;
+  p.usos[l.uso] = (p.usos[l.uso] ?? 0) + 1;
+  if (l.provavel) p.provaveis++;
   porItem.set(l.it.id, p);
 }
 const itens = [...porItem.values()].sort((a, b) => (b.usos.pendente ?? 0) - (a.usos.pendente ?? 0) || a.it.id.localeCompare(b.it.id));
 const destinosQuebrados = [...new Set(itens.flatMap((p) => p.it.destinos))].filter((d) => existeDestino(d) === false);
 
 const resumoUsos = ORDEM.map((u) => `${u} ${total[u]}`).join(" | ");
-console.log(`hd: ${arquivos.length} arquivos (${unicos.length} únicos, ${copias} cópias idênticas${semHash ? `, ${semHash} sem hash` : ""}${fora ? `, ${fora} fora do acervo` : ""})`);
+console.log(
+  `hd: ${arquivos.length} arquivos (${unicos.length} únicos, ${copias} cópias idênticas${semHash ? `, ${semHash} sem hash` : ""}${fora ? `, ${fora} fora do acervo` : ""})`,
+);
 console.log(`  ${resumoUsos}`);
-console.log(`  usados ${usados} (${pct(usados)}%) · pendentes ${total.pendente} (${pct(total.pendente)}%)${total.pendente ? "  <- precisa zerar" : ""}`);
+console.log(
+  `  usados ${usados} (${pct(usados)}%) · pendentes ${total.pendente} (${pct(total.pendente)}%)${total.pendente ? "  <- precisa zerar" : ""}`,
+);
 if (aplicar) console.log(`  --aplicar: ${gravados} arquivo(s) marcados no acervo`);
 if (!temImagens) console.log("  sem comparação de imagens: rode npm run hd:imagens");
 if (semHash || fora) console.log("  há arquivos sem inventário: rode npm run hd:inventariar -- --registrar");
 console.log("\nPor item (pendentes primeiro):");
 for (const p of itens) {
-  const usos = ORDEM.filter((u) => p.usos[u]).map((u) => `${u} ${p.usos[u]}`).join(" · ");
-  console.log(`  ${p.it.id} [${p.it.estado}] ${String(p.n).padStart(4)}  ${usos}${p.provaveis ? ` · imagem provável a conferir ${p.provaveis}` : ""}`);
+  const usos = ORDEM.filter((u) => p.usos[u])
+    .map((u) => `${u} ${p.usos[u]}`)
+    .join(" · ");
+  console.log(
+    `  ${p.it.id} [${p.it.estado}] ${String(p.n).padStart(4)}  ${usos}${p.provaveis ? ` · imagem provável a conferir ${p.provaveis}` : ""}`,
+  );
 }
 /* --vivo: o destino está na API publicada e na cópia de reserva do site? (contratos, "Verificação na tela") */
 const API = "https://learntech-content.douglasabnovato.workers.dev/v1/";
@@ -139,7 +180,11 @@ if (vivo) {
   const textos = {};
   for (const [rec, [url, copia]] of Object.entries(VIVO)) {
     let api = "";
-    try { api = await (await fetch(API + url)).text(); } catch { /* sem rede: conta como fora da API */ }
+    try {
+      api = await (await fetch(API + url)).text();
+    } catch {
+      /* sem rede: conta como fora da API */
+    }
     const arq = path.join(RAIZ, "..", copia);
     textos[rec] = { api, copia: fs.existsSync(arq) ? fs.readFileSync(arq, "utf8") : "" };
   }
@@ -155,28 +200,55 @@ if (vivo) {
     const naCopia = tem(textos[rec].copia);
     if (!naApi || !naCopia) foraDoAr.push(`${d}${naApi ? "" : " (fora da API publicada)"}${naCopia ? "" : " (fora da cópia do site)"}`);
   }
-  console.log(foraDoAr.length ? `\nDestinos fora do ar: ${foraDoAr.length}\n  ${foraDoAr.join("\n  ")}` : "\n--vivo: todos os destinos estão na API publicada e nas cópias dos sites.");
+  console.log(
+    foraDoAr.length
+      ? `\nDestinos fora do ar: ${foraDoAr.length}\n  ${foraDoAr.join("\n  ")}`
+      : "\n--vivo: todos os destinos estão na API publicada e nas cópias dos sites.",
+  );
 }
-console.log(destinosQuebrados.length ? `\nDestinos que não existem no content/: ${destinosQuebrados.join(", ")}` : "\nTodos os destinos existem no content/.");
+console.log(
+  destinosQuebrados.length
+    ? `\nDestinos que não existem no content/: ${destinosQuebrados.join(", ")}`
+    : "\nTodos os destinos existem no content/.",
+);
 
 if (relatorio) {
   const hoje = hojeLocal();
   const n = (v) => v.toLocaleString("pt-BR");
   const md = [
-    `# Uso do hd (${hoje.split("-").reverse().join("/")})`, "",
-    "Gerado por `npm run hd:uso -- --relatorio`. Regra: 100% usado = nenhum arquivo pendente. Usos em `src/schemas/acervo.ts`.", "",
-    "## Resumo", "",
-    "| Medida | Arquivos |", "|---|---|",
-    `| No hd | ${n(arquivos.length)} |`, `| Únicos (por hash) | ${n(unicos.length)} |`, `| Cópias idênticas (seguem o original) | ${n(copias)} |`,
+    `# Uso do hd (${hoje.split("-").reverse().join("/")})`,
+    "",
+    "Gerado por `npm run hd:uso -- --relatorio`. Regra: 100% usado = nenhum arquivo pendente. Usos em `src/schemas/acervo.ts`.",
+    "",
+    "## Resumo",
+    "",
+    "| Medida | Arquivos |",
+    "|---|---|",
+    `| No hd | ${n(arquivos.length)} |`,
+    `| Únicos (por hash) | ${n(unicos.length)} |`,
+    `| Cópias idênticas (seguem o original) | ${n(copias)} |`,
     ...(fora ? [`| Fora do acervo | ${n(fora)} |`] : []),
     ...ORDEM.map((u) => `| ${u} | ${n(total[u])} |`),
     `| **Usados** (exibido, fonte, similar, referência) | **${n(usados)} (${pct(usados)}%)** |`,
-    `| **Pendentes** | **${n(total.pendente)} (${pct(total.pendente)}%)** |`, "",
-    "## Por item", "",
-    "| Item | Estado | Origem | Arquivos | Usos | Imagem provável |", "|---|---|---|---|---|---|",
-    ...itens.map((p) => `| ${p.it.id} | ${p.it.estado} | \`${p.it.origem}\` | ${p.n} | ${ORDEM.filter((u) => p.usos[u]).map((u) => `${u} ${p.usos[u]}`).join(", ")} | ${p.provaveis || "–"} |`), "",
-    "## Destinos", "",
-    destinosQuebrados.length ? `Não existem no \`content/\`: ${destinosQuebrados.map((d) => `\`${d}\``).join(", ")}.` : "Todos os destinos dos itens existem no `content/`.", "",
+    `| **Pendentes** | **${n(total.pendente)} (${pct(total.pendente)}%)** |`,
+    "",
+    "## Por item",
+    "",
+    "| Item | Estado | Origem | Arquivos | Usos | Imagem provável |",
+    "|---|---|---|---|---|---|",
+    ...itens.map(
+      (p) =>
+        `| ${p.it.id} | ${p.it.estado} | \`${p.it.origem}\` | ${p.n} | ${ORDEM.filter((u) => p.usos[u])
+          .map((u) => `${u} ${p.usos[u]}`)
+          .join(", ")} | ${p.provaveis || "–"} |`,
+    ),
+    "",
+    "## Destinos",
+    "",
+    destinosQuebrados.length
+      ? `Não existem no \`content/\`: ${destinosQuebrados.map((d) => `\`${d}\``).join(", ")}.`
+      : "Todos os destinos dos itens existem no `content/`.",
+    "",
   ].join("\n");
   const saida = path.join(RAIZ, "docs", "processo", "relatorios", `uso-do-hd-${hoje}.md`);
   fs.mkdirSync(path.dirname(saida), { recursive: true });

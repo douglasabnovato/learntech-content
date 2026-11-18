@@ -75,7 +75,9 @@ describe("regras de integridade", () => {
     const c = copia();
     const e = c.eventos.find((x) => x.slug === "hackathon-inovacao-social-jf")!;
     e.content.relacionados = [{ tipo: "programas", id: "999999" }];
-    expect(verificarIntegridade(c, path.join(RAIZ, "media")).join()).toMatch(/evento hackathon-inovacao-social-jf: relaciona programas "999999"/);
+    expect(verificarIntegridade(c, path.join(RAIZ, "media")).join()).toMatch(
+      /evento hackathon-inovacao-social-jf: relaciona programas "999999"/,
+    );
     e.content.relacionados = [{ tipo: "programas", id: "901" }];
     const publicado = montarRecursos(c).find((r) => r.caminho === "bootcamps/eventos/hackathon-inovacao-social-jf.json")!.dados as typeof e;
     expect(publicado.content.relacionados![0]!.url).toMatch(/\/program\/.+\/901$/);
@@ -142,7 +144,12 @@ describe("regras de integridade", () => {
   it("acusa relacionado que não existe", () => {
     const c = copia();
     c.empresas[0]!.slug = "empresa-teste";
-    c.empresas[0]!.detalhe = { resumo: "r", paragrafos: ["p"], relacionados: [{ tipo: "programas", id: "99999" }], atualizadoEm: "2026-10-29" };
+    c.empresas[0]!.detalhe = {
+      resumo: "r",
+      paragrafos: ["p"],
+      relacionados: [{ tipo: "programas", id: "99999" }],
+      atualizadoEm: "2026-10-29",
+    };
     expect(verificarIntegridade(c, path.join(RAIZ, "media")).join()).toMatch(/relaciona programas "99999", que não existe/);
   });
 
@@ -163,7 +170,10 @@ describe("regras de integridade", () => {
   it("exige fontes de 2 domínios no detalhe, salvo página em revisão", () => {
     const c = copia();
     const f = c.ferramentas.find((x) => x.detalhe)!;
-    f.detalhe!.fontes = [{ label: "a", url: "https://exemplo.com/a" }, { label: "b", url: "https://www.exemplo.com/b" }];
+    f.detalhe!.fontes = [
+      { label: "a", url: "https://exemplo.com/a" },
+      { label: "b", url: "https://www.exemplo.com/b" },
+    ];
     expect(verificarIntegridade(c, path.join(RAIZ, "media")).join()).toMatch(/pelo menos 2 domínios/);
     f.detalhe!.paragrafos.push("Página em revisão: as informações acima são básicas e serão completadas em breve.");
     expect(verificarIntegridade(c, path.join(RAIZ, "media")).join()).not.toMatch(/pelo menos 2 domínios/);
@@ -173,8 +183,26 @@ describe("regras de integridade", () => {
     const c = copia();
     const arq = { sha256: "a".repeat(64), ext: "pdf", bytes: 1 };
     c.acervo.itens.push(
-      { id: "HD-9001", lote: "2026-10-30", origem: "hd/teste", descricao: "x", direitos: "a-triar", estado: "novo", destinos: [], arquivos: [arq] },
-      { id: "HD-9002", lote: "2026-10-30", origem: "hd/teste", descricao: "y", direitos: "a-triar", estado: "novo", destinos: [], arquivos: [arq] },
+      {
+        id: "HD-9001",
+        lote: "2026-10-30",
+        origem: "hd/teste",
+        descricao: "x",
+        direitos: "a-triar",
+        estado: "novo",
+        destinos: [],
+        arquivos: [arq],
+      },
+      {
+        id: "HD-9002",
+        lote: "2026-10-30",
+        origem: "hd/teste",
+        descricao: "y",
+        direitos: "a-triar",
+        estado: "novo",
+        destinos: [],
+        arquivos: [arq],
+      },
     );
     expect(verificarIntegridade(c, path.join(RAIZ, "media")).join()).toMatch(/mesmo arquivo .* HD-9001 e HD-9002/);
   });
@@ -222,7 +250,9 @@ describe("recursos gerados", () => {
 
   it("o OpenAPI é gerado com os caminhos principais", () => {
     const doc = gerarOpenApi("teste") as { paths: Record<string, unknown> };
-    expect(Object.keys(doc.paths)).toEqual(expect.arrayContaining(["/v1/acessos", "/v1/learn-tech/programas.json", "/v1/bootcamps/eventos.json"]));
+    expect(Object.keys(doc.paths)).toEqual(
+      expect.arrayContaining(["/v1/acessos", "/v1/learn-tech/programas.json", "/v1/bootcamps/eventos.json"]),
+    );
     expect(() => JSON.stringify(doc)).not.toThrow();
   });
 

@@ -5,8 +5,13 @@ import { itemAcervoSchema } from "../src/schemas/acervo";
 import { carregarConteudo, errosDestinos } from "../scripts/lib/conteudo";
 
 const base = {
-  id: "HD-9001", lote: "2026-11-06", origem: "hd/entrada/teste", descricao: "Item de teste",
-  direitos: "proprio", estado: "novo", destinos: [],
+  id: "HD-9001",
+  lote: "2026-11-06",
+  origem: "hd/entrada/teste",
+  descricao: "Item de teste",
+  direitos: "proprio",
+  estado: "novo",
+  destinos: [],
   arquivos: [{ sha256: "a".repeat(64), ext: "pdf", bytes: 10 }],
 };
 const valido = (extra: object) => itemAcervoSchema.safeParse({ ...base, ...extra }).success;
@@ -77,7 +82,10 @@ describe("acervo: uso de cada arquivo", () => {
 
 describe("acervo: destinos no formato projeto/recurso/id (#18)", () => {
   const { conteudo } = carregarConteudo(path.resolve(__dirname, "..", "content"));
-  const comDestinos = (destinos: string[]) => ({ ...conteudo, acervo: { ...conteudo.acervo, itens: [{ ...base, id: "HD-9002", destinos } as never] } });
+  const comDestinos = (destinos: string[]) => ({
+    ...conteudo,
+    acervo: { ...conteudo.acervo, itens: [{ ...base, id: "HD-9002", destinos } as never] },
+  });
 
   it("o acervo publicado não tem destino curto nem inexistente", () => {
     expect(errosDestinos(conteudo)).toEqual([]);
@@ -102,7 +110,9 @@ describe("galeria do programa e do artigo (ADR 12)", () => {
 
   it("o programa 1005 e o artigo do Hack Dev têm galeria", () => {
     const p = conteudo.programas.find((x) => x.id === 1005) as { galeria?: unknown[] } | undefined;
-    const b = (conteudo.paginas.blog as { itens: { id: string; galeria?: unknown[] }[] }).itens.find((x) => x.id === "hack-dev-rotina-e-trilha-para-a-primeira-vaga");
+    const b = (conteudo.paginas.blog as { itens: { id: string; galeria?: unknown[] }[] }).itens.find(
+      (x) => x.id === "hack-dev-rotina-e-trilha-para-a-primeira-vaga",
+    );
     expect(p?.galeria?.length).toBe(2);
     expect(b?.galeria?.length).toBe(1);
   });

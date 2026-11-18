@@ -5,7 +5,9 @@ export const textoObrigatorio = z.string().trim().min(1);
 
 export const urlAbsoluta = z.url({ protocol: /^https?$/ });
 
-export const caminhoMidia = z.string().regex(/^\/media\/[a-z0-9/_.-]+\.(webp|pdf|png|jpg|svg|mp4)$/, "caminho de mídia deve começar com /media/ e usar minúsculas");
+export const caminhoMidia = z
+  .string()
+  .regex(/^\/media\/[a-z0-9/_.-]+\.(webp|pdf|png|jpg|svg|mp4)$/, "caminho de mídia deve começar com /media/ e usar minúsculas");
 
 export const urlOuMidia = z.union([urlAbsoluta, caminhoMidia]);
 

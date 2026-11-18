@@ -69,7 +69,7 @@ describe("sdk/identificacao.js", () => {
     expect(p.erros).toEqual([]);
   });
 
-  it("modo obrigatório: não há botão \"Agora não\"", async () => {
+  it('modo obrigatório: não há botão "Agora não"', async () => {
     const p = carregar();
     await esperar();
     expect(p.raiz()!.querySelector(".depois")).toBeNull();
@@ -129,7 +129,7 @@ describe("sdk/identificacao.js", () => {
     expect(p.janela.sessionStorage.getItem(SESSAO)).toBeNull();
   });
 
-  it("modo opcional: tem \"Agora não\", que fecha o modal sem registrar", async () => {
+  it('modo opcional: tem "Agora não", que fecha o modal sem registrar', async () => {
     const p = carregar({ atributos: { "data-obrigatorio": "false" } });
     await esperar();
     const depois = p.raiz()!.querySelector<HTMLButtonElement>(".depois");

@@ -18,15 +18,22 @@ const iHd = argv.indexOf("--hd");
 const HD = path.resolve(iHd >= 0 ? argv[iHd + 1] : path.join(RAIZ, "..", "hd"));
 const iP = argv.indexOf("--propostas");
 const PASTA = iP >= 0 ? path.resolve(argv[iP + 1]) : path.join(HD, ".extraido", "propostas");
-if (!fs.existsSync(PASTA)) { console.error(`sem propostas em ${PASTA} (rode o agente triador no modo gabarito)`); process.exit(1); }
+if (!fs.existsSync(PASTA)) {
+  console.error(`sem propostas em ${PASTA} (rode o agente triador no modo gabarito)`);
+  process.exit(1);
+}
 
 const acervo = JSON.parse(fs.readFileSync(path.join(RAIZ, "content", "acervo.json"), "utf8"));
 const porId = new Map(acervo.itens.map((i) => [i.id, i]));
-const linhas = fs.readdirSync(PASTA).filter((f) => f.endsWith(".json")).flatMap((f) => {
-  const p = JSON.parse(fs.readFileSync(path.join(PASTA, f), "utf8"));
-  const item = porId.get(p.id);
-  return item ? [compararItem(p, item)] : [];
-}).sort((a, b) => a.id.localeCompare(b.id));
+const linhas = fs
+  .readdirSync(PASTA)
+  .filter((f) => f.endsWith(".json"))
+  .flatMap((f) => {
+    const p = JSON.parse(fs.readFileSync(path.join(PASTA, f), "utf8"));
+    const item = porId.get(p.id);
+    return item ? [compararItem(p, item)] : [];
+  })
+  .sort((a, b) => a.id.localeCompare(b.id));
 
 const r = resumir(linhas);
 const pct = (v) => (v === null ? "–" : `${Math.round(v * 100)}%`);
@@ -34,7 +41,10 @@ const sim = (b) => (b ? "sim" : "não");
 const tabela = [
   "| Item | Direitos | Destinos (comuns/propostos/certos) | Uso igual | Confiança |",
   "|---|---|---|---|---|",
-  ...linhas.map((l) => `| ${l.id} | ${sim(l.direitosOk)} | ${sim(l.destinosOk)} (${l.comuns}/${l.propostos}/${l.certos}) | ${l.uso.comparados ? `${l.uso.iguais}/${l.uso.comparados}` : "–"} | ${l.confianca ?? "–"} |`),
+  ...linhas.map(
+    (l) =>
+      `| ${l.id} | ${sim(l.direitosOk)} | ${sim(l.destinosOk)} (${l.comuns}/${l.propostos}/${l.certos}) | ${l.uso.comparados ? `${l.uso.iguais}/${l.uso.comparados}` : "–"} | ${l.confianca ?? "–"} |`,
+  ),
 ].join("\n");
 const resumo = `${r.itens} itens · direitos ${pct(r.direitos)} · destinos ${pct(r.destinos)} · uso por arquivo ${pct(r.uso)} · meta ${pct(META)}: ${r.aprovado ? "atingida" : "não atingida"}`;
 console.log(resumo + "\n\n" + tabela);

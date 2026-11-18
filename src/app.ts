@@ -55,7 +55,11 @@ function celulaCsv(valor: unknown): string {
    ou, por compatibilidade temporária, em ?email= (legado, marcado como obsoleto no OpenAPI). */
 async function emailDoTitular(c: Context<{ Bindings: Ambiente }>): Promise<{ email: string | null; legado: boolean }> {
   let corpo: unknown = null;
-  try { corpo = await c.req.json(); } catch { corpo = null; }
+  try {
+    corpo = await c.req.json();
+  } catch {
+    corpo = null;
+  }
   const doCorpo = corpo && typeof corpo === "object" && "email" in corpo && typeof corpo.email === "string" ? corpo.email : "";
   if (doCorpo.trim()) return { email: doCorpo.trim().toLowerCase(), legado: false };
   const daQuery = c.req.query("email")?.trim().toLowerCase();
@@ -124,14 +128,27 @@ export function criarApp(dep: Dependencias) {
     if (limitado) return limitado;
 
     let bruto: unknown;
-    try { bruto = await c.req.json(); } catch { return c.json({ erro: "JSON inválido" }, 400, h); }
+    try {
+      bruto = await c.req.json();
+    } catch {
+      return c.json({ erro: "JSON inválido" }, 400, h);
+    }
     const r = entradaAcessoSchema.safeParse(bruto);
     if (!r.success) {
-      return c.json({ erro: "dados inválidos", campos: r.error.issues.map((i) => ({ campo: i.path.join("."), mensagem: i.message })) }, 400, h);
+      return c.json(
+        { erro: "dados inválidos", campos: r.error.issues.map((i) => ({ campo: i.path.join("."), mensagem: i.message })) },
+        400,
+        h,
+      );
     }
 
     if (c.env.TURNSTILE_SECRET) {
-      const ok = await verificarTurnstile(c.env.TURNSTILE_SECRET, r.data.turnstileToken, c.req.header("CF-Connecting-IP") ?? null, dep.buscar);
+      const ok = await verificarTurnstile(
+        c.env.TURNSTILE_SECRET,
+        r.data.turnstileToken,
+        c.req.header("CF-Connecting-IP") ?? null,
+        dep.buscar,
+      );
       if (!ok) return c.json({ erro: "verificação anti-robô falhou" }, 403, h);
     }
 
@@ -141,7 +158,13 @@ export function criarApp(dep: Dependencias) {
     if (janela > 0 && (await repo.existeDesde(r.data.email, r.data.projeto, new Date(momento.getTime() - janela).toISOString()))) {
       return c.json({ registrado: false, motivo: "acesso já registrado recentemente" }, 200, h);
     }
-    const id = await repo.inserir({ nome: r.data.nome, email: r.data.email, projeto: r.data.projeto, pagina: r.data.pagina ?? null, criadoEm: momento.toISOString() });
+    const id = await repo.inserir({
+      nome: r.data.nome,
+      email: r.data.email,
+      projeto: r.data.projeto,
+      pagina: r.data.pagina ?? null,
+      criadoEm: momento.toISOString(),
+    });
     return c.json({ registrado: true, id }, 201, h);
   });
 
@@ -160,7 +183,10 @@ export function criarApp(dep: Dependencias) {
     if (desde && !/^\d{4}-\d{2}-\d{2}/.test(desde)) return c.json({ erro: "desde deve estar no formato AAAA-MM-DD" }, 400);
     const linhas = await dep.repositorio(c.env).listar({ projeto: c.req.query("projeto") || undefined, desde: desde || undefined, limite });
     if (c.req.query("formato") === "csv") {
-      const csv = ["id,nome,email,projeto,pagina,criado_em", ...linhas.map((l) => [l.id, l.nome, l.email, l.projeto, l.pagina, l.criadoEm].map(celulaCsv).join(","))].join("\r\n");
+      const csv = [
+        "id,nome,email,projeto,pagina,criado_em",
+        ...linhas.map((l) => [l.id, l.nome, l.email, l.projeto, l.pagina, l.criadoEm].map(celulaCsv).join(",")),
+      ].join("\r\n");
       return c.body(csv, 200, { "Content-Type": "text/csv; charset=utf-8", "Content-Disposition": 'attachment; filename="acessos.csv"' });
     }
     return c.json({ total: linhas.length, acessos: linhas });
@@ -192,14 +218,27 @@ export function criarApp(dep: Dependencias) {
     if (limitado) return limitado;
 
     let bruto: unknown;
-    try { bruto = await c.req.json(); } catch { return c.json({ erro: "JSON inválido" }, 400, h); }
+    try {
+      bruto = await c.req.json();
+    } catch {
+      return c.json({ erro: "JSON inválido" }, 400, h);
+    }
     const r = entradaMensagemSchema.safeParse(bruto);
     if (!r.success) {
-      return c.json({ erro: "dados inválidos", campos: r.error.issues.map((i) => ({ campo: i.path.join("."), mensagem: i.message })) }, 400, h);
+      return c.json(
+        { erro: "dados inválidos", campos: r.error.issues.map((i) => ({ campo: i.path.join("."), mensagem: i.message })) },
+        400,
+        h,
+      );
     }
 
     if (c.env.TURNSTILE_SECRET) {
-      const ok = await verificarTurnstile(c.env.TURNSTILE_SECRET, r.data.turnstileToken, c.req.header("CF-Connecting-IP") ?? null, dep.buscar);
+      const ok = await verificarTurnstile(
+        c.env.TURNSTILE_SECRET,
+        r.data.turnstileToken,
+        c.req.header("CF-Connecting-IP") ?? null,
+        dep.buscar,
+      );
       if (!ok) return c.json({ erro: "verificação anti-robô falhou" }, 403, h);
     }
 
@@ -209,8 +248,13 @@ export function criarApp(dep: Dependencias) {
       return c.json({ registrado: false, motivo: "mensagem idêntica já recebida" }, 200, h);
     }
     const id = await repo.inserir({
-      criadoEm: momento.toISOString(), projeto: r.data.projeto, motivo: r.data.motivo, nome: r.data.nome,
-      email: r.data.email, mensagem: r.data.mensagem, pagina: r.data.pagina ?? null,
+      criadoEm: momento.toISOString(),
+      projeto: r.data.projeto,
+      motivo: r.data.motivo,
+      nome: r.data.nome,
+      email: r.data.email,
+      mensagem: r.data.mensagem,
+      pagina: r.data.pagina ?? null,
     });
     return c.json({ registrado: true, id }, 201, h);
   });
@@ -230,7 +274,10 @@ export function criarApp(dep: Dependencias) {
       limite,
     });
     if (c.req.query("formato") === "csv") {
-      const csv = ["id,criado_em,projeto,motivo,nome,email,mensagem,pagina", ...linhas.map((l) => [l.id, l.criadoEm, l.projeto, l.motivo, l.nome, l.email, l.mensagem, l.pagina].map(celulaCsv).join(","))].join("\r\n");
+      const csv = [
+        "id,criado_em,projeto,motivo,nome,email,mensagem,pagina",
+        ...linhas.map((l) => [l.id, l.criadoEm, l.projeto, l.motivo, l.nome, l.email, l.mensagem, l.pagina].map(celulaCsv).join(",")),
+      ].join("\r\n");
       return c.body(csv, 200, { "Content-Type": "text/csv; charset=utf-8", "Content-Disposition": 'attachment; filename="mensagens.csv"' });
     }
     return c.json({ total: linhas.length, mensagens: linhas });
@@ -250,14 +297,16 @@ export function criarApp(dep: Dependencias) {
   app.notFound((c) => c.json({ erro: "não encontrado" }, 404));
   /* Log estruturado (uma linha JSON) para filtrar no painel de observabilidade da Cloudflare (Workers Logs). */
   app.onError((e, c) => {
-    console.error(JSON.stringify({
-      nivel: "erro",
-      mensagem: e instanceof Error ? e.message : String(e),
-      metodo: c.req.method,
-      caminho: new URL(c.req.url).pathname,
-      ray: c.req.header("cf-ray") ?? null,
-      pilha: e instanceof Error ? e.stack?.split("\n").slice(0, 5).join(" | ") : undefined,
-    }));
+    console.error(
+      JSON.stringify({
+        nivel: "erro",
+        mensagem: e instanceof Error ? e.message : String(e),
+        metodo: c.req.method,
+        caminho: new URL(c.req.url).pathname,
+        ray: c.req.header("cf-ray") ?? null,
+        pilha: e instanceof Error ? e.stack?.split("\n").slice(0, 5).join(" | ") : undefined,
+      }),
+    );
     return c.json({ erro: "erro interno" }, 500);
   });
 

@@ -19,7 +19,9 @@ async function limitarEscrita(env: Ambiente, chave: string): Promise<boolean> {
   try {
     return (await limitador.limit({ key: chave })).success;
   } catch (e) {
-    console.error(JSON.stringify({ nivel: "erro", mensagem: `limite de taxa indisponível: ${e instanceof Error ? e.message : String(e)}` }));
+    console.error(
+      JSON.stringify({ nivel: "erro", mensagem: `limite de taxa indisponível: ${e instanceof Error ? e.message : String(e)}` }),
+    );
     return true;
   }
 }
@@ -53,10 +55,12 @@ export default {
 
   /* Cron diário: remove acessos e mensagens mais antigos que a retenção configurada. */
   async scheduled(_evento: ScheduledController, env: Env, ctx: ExecutionContext): Promise<void> {
-    ctx.waitUntil(Promise.all([
-      aplicarRetencao(repositorioD1(env.DB), env).then((n) => console.log(`retenção: ${n} acesso(s) removido(s)`)),
-      aplicarRetencaoMensagens(repositorioMensagensD1(env.DB), env).then((n) => console.log(`retenção: ${n} mensagem(ns) removida(s)`)),
-    ]));
+    ctx.waitUntil(
+      Promise.all([
+        aplicarRetencao(repositorioD1(env.DB), env).then((n) => console.log(`retenção: ${n} acesso(s) removido(s)`)),
+        aplicarRetencaoMensagens(repositorioMensagensD1(env.DB), env).then((n) => console.log(`retenção: ${n} mensagem(ns) removida(s)`)),
+      ]),
+    );
   },
 } satisfies ExportedHandler<Env>;
 

@@ -6,7 +6,9 @@ import { textoObrigatorio, urlAbsoluta, urlOuMidia, slug } from "./comum";
 export const thumbSchema = z.union([urlOuMidia, z.string().regex(/^\.\/assets\/[\w./-]+$/)]);
 
 /* Vídeo incorporável do YouTube (formato /embed/ID ou youtube-nocookie). */
-export const videoYoutube = z.string().regex(/^https:\/\/www\.youtube(-nocookie)?\.com\/embed\/[\w-]{11}$/, "vídeo deve ser https://www.youtube.com/embed/<id>");
+export const videoYoutube = z
+  .string()
+  .regex(/^https:\/\/www\.youtube(-nocookie)?\.com\/embed\/[\w-]{11}$/, "vídeo deve ser https://www.youtube.com/embed/<id>");
 
 /* Ligação de um item a outro conteúdo do ecossistema (programa, artigo, evento, empresa, ferramenta...).
    No content/ basta { tipo, id }; o build confere se o alvo existe e publica também projeto, título e URL prontos. */
@@ -73,19 +75,23 @@ export const modeloCurriculoSchema = z.object({
     portfolio: linkExemplo,
   }),
   competencias: z.array(z.object({ categoria: textoObrigatorio, itens: z.array(textoObrigatorio) })),
-  experiencias: z.array(z.object({
-    cargo: textoObrigatorio,
-    empresa: textoObrigatorio,
-    descricaoEmpresa: z.string().optional(),
-    periodo: textoObrigatorio,
-    local: textoObrigatorio,
-    modelo: textoObrigatorio,
-    atividades: z.array(textoObrigatorio),
-    tecnologias: z.array(textoObrigatorio),
-  })),
+  experiencias: z.array(
+    z.object({
+      cargo: textoObrigatorio,
+      empresa: textoObrigatorio,
+      descricaoEmpresa: z.string().optional(),
+      periodo: textoObrigatorio,
+      local: textoObrigatorio,
+      modelo: textoObrigatorio,
+      atividades: z.array(textoObrigatorio),
+      tecnologias: z.array(textoObrigatorio),
+    }),
+  ),
   experienciaAnterior: z.array(z.object({ empresa: textoObrigatorio, cargo: textoObrigatorio, periodo: textoObrigatorio })),
   projetos: z.array(z.object({ nome: textoObrigatorio, descricao: textoObrigatorio, tecnologias: z.array(textoObrigatorio) })),
-  formacao: z.array(z.object({ curso: textoObrigatorio, instituicao: textoObrigatorio, periodo: textoObrigatorio, status: textoObrigatorio })),
+  formacao: z.array(
+    z.object({ curso: textoObrigatorio, instituicao: textoObrigatorio, periodo: textoObrigatorio, status: textoObrigatorio }),
+  ),
   certificados: z.array(textoObrigatorio),
   idiomas: z.array(z.object({ idioma: textoObrigatorio, nivel: textoObrigatorio })),
   comunidade: z.array(textoObrigatorio),

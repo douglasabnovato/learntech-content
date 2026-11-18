@@ -24,7 +24,8 @@ const API_PUBLICA = "https://learntech-content.douglasabnovato.workers.dev";
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const CONTENT = path.join(RAIZ, "content");
 const COPIA_PROGRAMAS = path.resolve(RAIZ, "..", "learn-tech", "src", "constants", "programsData.js");
-const URL_EXTERNA = /https:\/\/(?:cdn\.pixabay\.com\/photo\/[\w/.-]+|images\.lumacdn\.com\/cdn-cgi\/image\/[^/\s"]+\/[\w/.-]+)\.(?:jpe?g|png|webp)/g;
+const URL_EXTERNA =
+  /https:\/\/(?:cdn\.pixabay\.com\/photo\/[\w/.-]+|images\.lumacdn\.com\/cdn-cgi\/image\/[^/\s"]+\/[\w/.-]+)\.(?:jpe?g|png|webp)/g;
 const listar = process.argv.includes("--listar");
 
 /* Todos os .json de content/, recursivamente. */
@@ -38,7 +39,10 @@ function arquivosJson(pasta) {
 /* Pixabay: .../coding-924920_1280.jpg -> /media/learn-tech/imagens/pixabay-coding-924920_1280.jpg
    Luma:    .../event-covers/4h/b019eb7f-....png -> /media/bootcamps/eventos/luma/b019eb7f-....png */
 function destinoLocal(url) {
-  const nome = path.basename(new URL(url).pathname).toLowerCase().replace(/\.jpeg$/, ".jpg");
+  const nome = path
+    .basename(new URL(url).pathname)
+    .toLowerCase()
+    .replace(/\.jpeg$/, ".jpg");
   return url.includes("lumacdn.com") ? `/media/bootcamps/eventos/luma/${nome}` : `/media/learn-tech/imagens/pixabay-${nome}`;
 }
 
@@ -46,7 +50,10 @@ const arquivos = arquivosJson(CONTENT);
 if (fs.existsSync(COPIA_PROGRAMAS)) arquivos.push(COPIA_PROGRAMAS);
 const urls = new Set(arquivos.flatMap((a) => fs.readFileSync(a, "utf8").match(URL_EXTERNA) ?? []));
 console.log(`${urls.size} imagem(ns) externa(s) em ${arquivos.length} arquivo(s).`);
-if (listar) { for (const u of urls) console.log(` - ${u} -> ${destinoLocal(u)}`); process.exit(0); }
+if (listar) {
+  for (const u of urls) console.log(` - ${u} -> ${destinoLocal(u)}`);
+  process.exit(0);
+}
 
 const baixadas = new Map();
 for (const url of urls) {
@@ -57,7 +64,10 @@ for (const url of urls) {
   if (!fs.existsSync(alvo)) {
     /* Accept fixo: o Luma converte o formato pelo Accept (format=auto) e o arquivo precisa bater com a extensão. */
     const r = await fetch(url, { headers: { "User-Agent": "learntech-content/1.0", Accept: "image/png,image/jpeg;q=0.9" } });
-    if (!r.ok) { console.error(`x ${url}: HTTP ${r.status} (mantida a URL original)`); continue; }
+    if (!r.ok) {
+      console.error(`x ${url}: HTTP ${r.status} (mantida a URL original)`);
+      continue;
+    }
     fs.writeFileSync(alvo, Buffer.from(await r.arrayBuffer()));
     console.log(`+ ${nome}`);
   }
@@ -68,7 +78,10 @@ for (const arquivo of arquivos) {
   const ehCopia = arquivo === COPIA_PROGRAMAS;
   const original = fs.readFileSync(arquivo, "utf8");
   const novo = original.replace(URL_EXTERNA, (u) => (baixadas.has(u) ? (ehCopia ? API_PUBLICA : "") + baixadas.get(u) : u));
-  if (novo !== original) { fs.writeFileSync(arquivo, novo); console.log(`~ ${path.relative(path.resolve(RAIZ, ".."), arquivo)}`); }
+  if (novo !== original) {
+    fs.writeFileSync(arquivo, novo);
+    console.log(`~ ${path.relative(path.resolve(RAIZ, ".."), arquivo)}`);
+  }
 }
 console.log("Pronto. Rode: npm run validar && npm run copias");
 

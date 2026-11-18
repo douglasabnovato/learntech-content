@@ -69,7 +69,13 @@ describe("POST /v1/acessos", () => {
     expect(r.status).toBe(201);
     expect(r.headers.get("Access-Control-Allow-Origin")).toBe(ORIGEM);
     expect(repo.linhas).toHaveLength(1);
-    expect(repo.linhas[0]).toMatchObject({ nome: "Maria da Silva", email: "maria@exemplo.com", projeto: "learn-tech", pagina: "/programs", criadoEm: "2026-09-27T12:00:00.000Z" });
+    expect(repo.linhas[0]).toMatchObject({
+      nome: "Maria da Silva",
+      email: "maria@exemplo.com",
+      projeto: "learn-tech",
+      pagina: "/programs",
+      criadoEm: "2026-09-27T12:00:00.000Z",
+    });
   });
 
   it("não duplica o mesmo e-mail no mesmo projeto dentro de 30 minutos", async () => {
@@ -90,7 +96,11 @@ describe("POST /v1/acessos", () => {
   });
 
   it("rejeita nome sem sobrenome, e-mail inválido e projeto desconhecido", async () => {
-    for (const corpo of [{ ...valido, nome: "Maria" }, { ...valido, email: "maria@" }, { ...valido, projeto: "outro" }]) {
+    for (const corpo of [
+      { ...valido, nome: "Maria" },
+      { ...valido, email: "maria@" },
+      { ...valido, projeto: "outro" },
+    ]) {
       const r = await postar(corpo);
       expect(r.status).toBe(400);
     }
@@ -148,7 +158,9 @@ describe("administração", () => {
   it("exige token válido", async () => {
     expect((await app.request("/v1/acessos", {}, env)).status).toBe(401);
     expect((await admin("/v1/acessos", "GET", "errado")).status).toBe(401);
-    expect((await app.request("/v1/acessos", { headers: { Authorization: `Bearer ${TOKEN}` } }, { ...env, ADMIN_TOKEN: "curto" })).status).toBe(401);
+    expect(
+      (await app.request("/v1/acessos", { headers: { Authorization: `Bearer ${TOKEN}` } }, { ...env, ADMIN_TOKEN: "curto" })).status,
+    ).toBe(401);
   });
 
   it("lista com filtro por projeto", async () => {
@@ -209,7 +221,11 @@ describe("cors", () => {
 describe("DELETE /v1/acessos com e-mail no corpo", () => {
   /* DELETE de administração com corpo JSON. */
   const apagar = (corpo: unknown, caminho = "/v1/acessos") =>
-    app.request(caminho, { method: "DELETE", headers: { Authorization: `Bearer ${TOKEN}`, "Content-Type": "application/json" }, body: JSON.stringify(corpo) }, env);
+    app.request(
+      caminho,
+      { method: "DELETE", headers: { Authorization: `Bearer ${TOKEN}`, "Content-Type": "application/json" }, body: JSON.stringify(corpo) },
+      env,
+    );
 
   beforeEach(async () => {
     await postar(valido);
@@ -244,7 +260,11 @@ describe("DELETE /v1/acessos com e-mail no corpo", () => {
   });
 
   it("exige token também com corpo", async () => {
-    const r = await app.request("/v1/acessos", { method: "DELETE", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: "maria@exemplo.com" }) }, env);
+    const r = await app.request(
+      "/v1/acessos",
+      { method: "DELETE", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: "maria@exemplo.com" }) },
+      env,
+    );
     expect(r.status).toBe(401);
     expect(repo.linhas).toHaveLength(2);
   });
@@ -265,7 +285,15 @@ describe("limite de taxa no POST /v1/acessos", () => {
 
   /* POST com IP de origem informado pela Cloudflare. */
   const postarDoIp = (ip: string, corpo: unknown = valido) =>
-    app.request("/v1/acessos", { method: "POST", headers: { "Content-Type": "application/json", Origin: ORIGEM, "CF-Connecting-IP": ip }, body: JSON.stringify(corpo) }, env);
+    app.request(
+      "/v1/acessos",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Origin: ORIGEM, "CF-Connecting-IP": ip },
+        body: JSON.stringify(corpo),
+      },
+      env,
+    );
 
   it("responde 429 com Retry-After e CORS quando o IP passa do limite, sem gravar", async () => {
     const l = limitador(2);
@@ -290,7 +318,15 @@ describe("limite de taxa no POST /v1/acessos", () => {
   it("origem não permitida é recusada antes de consumir o limite", async () => {
     const l = limitador(1);
     app = criarApp({ repositorio: () => repo, agora: () => agora, limitar: l.limitar });
-    const r = await app.request("/v1/acessos", { method: "POST", headers: { "Content-Type": "application/json", Origin: "https://malicioso.exemplo" }, body: JSON.stringify(valido) }, env);
+    const r = await app.request(
+      "/v1/acessos",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Origin: "https://malicioso.exemplo" },
+        body: JSON.stringify(valido),
+      },
+      env,
+    );
     expect(r.status).toBe(403);
     expect(l.chaves).toEqual([]);
   });

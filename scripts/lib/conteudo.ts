@@ -2,9 +2,25 @@
 import fs from "node:fs";
 import path from "node:path";
 import type { z } from "zod";
-import { programaSchema, paginaSchema, trilhasSchema, PAGINAS, CAMPOS_RESUMO, areaSchema, fotoGaleriaSchema, type Programa, type Area } from "../../src/schemas/learn-tech";
+import {
+  programaSchema,
+  paginaSchema,
+  trilhasSchema,
+  PAGINAS,
+  CAMPOS_RESUMO,
+  areaSchema,
+  fotoGaleriaSchema,
+  type Programa,
+  type Area,
+} from "../../src/schemas/learn-tech";
 import { eventoSchema, type Evento } from "../../src/schemas/bootcamps";
-import { empresaSchema, vagaOuPerfilSchema, destaquesSchema, ferramentaSchema, modeloCurriculoSchema } from "../../src/schemas/career-tools";
+import {
+  empresaSchema,
+  vagaOuPerfilSchema,
+  destaquesSchema,
+  ferramentaSchema,
+  modeloCurriculoSchema,
+} from "../../src/schemas/career-tools";
 import { coberturaSchema, type Cobertura } from "../../src/schemas/cobertura";
 import { acervoSchema, type Acervo } from "../../src/schemas/acervo";
 
@@ -64,7 +80,11 @@ function conferir<T>(schema: z.ZodType<T>, valor: unknown, origem: string, erros
 /* Lê todos os arquivos de uma pasta de itens (um JSON por item), em ordem alfabética. */
 function lerPasta(pasta: string): string[] {
   if (!fs.existsSync(pasta)) return [];
-  return fs.readdirSync(pasta).filter((f) => f.endsWith(".json")).sort().map((f) => path.join(pasta, f));
+  return fs
+    .readdirSync(pasta)
+    .filter((f) => f.endsWith(".json"))
+    .sort()
+    .map((f) => path.join(pasta, f));
 }
 
 /* Carrega e valida o schema de todo o conteúdo; devolve o conteúdo tipado e os erros encontrados. */
@@ -76,7 +96,8 @@ export function carregarConteudo(raiz: string): { conteudo: Conteudo; erros: str
   for (const arq of lerPasta(c("learn-tech/programas"))) {
     const p = conferir(programaSchema, lerJson(arq, erros), path.relative(raiz, arq), erros);
     if (!p) continue;
-    if (path.basename(arq, ".json") !== String(p.id)) erros.push(`${path.relative(raiz, arq)}: nome do arquivo deve ser o id (${p.id}).json`);
+    if (path.basename(arq, ".json") !== String(p.id))
+      erros.push(`${path.relative(raiz, arq)}: nome do arquivo deve ser o id (${p.id}).json`);
     programas.push(p);
   }
   programas.sort((a, b) => a.id - b.id);
@@ -84,7 +105,10 @@ export function carregarConteudo(raiz: string): { conteudo: Conteudo; erros: str
   const paginas: Record<string, Record<string, unknown>> = {};
   for (const nome of PAGINAS) {
     const arq = c(`learn-tech/paginas/${nome}.json`);
-    if (!fs.existsSync(arq)) { erros.push(`learn-tech/paginas/${nome}.json: página obrigatória ausente`); continue; }
+    if (!fs.existsSync(arq)) {
+      erros.push(`learn-tech/paginas/${nome}.json: página obrigatória ausente`);
+      continue;
+    }
     const p = conferir(nome === "trilhas" ? trilhasSchema : paginaSchema, lerJson(arq, erros), `learn-tech/paginas/${nome}.json`, erros);
     if (p) paginas[nome] = p;
   }
@@ -100,7 +124,10 @@ export function carregarConteudo(raiz: string): { conteudo: Conteudo; erros: str
 
   const lista = <T>(rel: string, schema: z.ZodType<T>): T[] => {
     const bruto = lerJson(c(rel), erros);
-    if (!Array.isArray(bruto)) { erros.push(`${rel}: deve ser uma lista`); return []; }
+    if (!Array.isArray(bruto)) {
+      erros.push(`${rel}: deve ser uma lista`);
+      return [];
+    }
     return bruto.map((item, i) => conferir(schema, item, `${rel}[${i}]`, erros)).filter((x): x is T => x !== undefined);
   };
 
@@ -112,11 +139,19 @@ export function carregarConteudo(raiz: string): { conteudo: Conteudo; erros: str
     empresas: lista("career/empresas.json", empresaSchema),
     vagas: lista("career/vagas.json", vagaOuPerfilSchema),
     perfis: lista("career/perfis.json", vagaOuPerfilSchema),
-    destaques: conferir(destaquesSchema, lerJson(c("career/destaques.json"), erros), "career/destaques.json", erros) ?? { vaga: "", empresa: "", perfil: "" },
+    destaques: conferir(destaquesSchema, lerJson(c("career/destaques.json"), erros), "career/destaques.json", erros) ?? {
+      vaga: "",
+      empresa: "",
+      perfil: "",
+    },
     modelosCurriculo: lista("career/modelos-curriculo.json", modeloCurriculoSchema),
     ferramentas: lista("tools/ferramentas.json", ferramentaSchema),
     hospedagens: lista("tools/hospedagens.json", ferramentaSchema),
-    cobertura: conferir(coberturaSchema, lerJson(c("cobertura.json"), erros), "cobertura.json", erros) ?? { atualizadoEm: "", referencias: [], itens: [] },
+    cobertura: conferir(coberturaSchema, lerJson(c("cobertura.json"), erros), "cobertura.json", erros) ?? {
+      atualizadoEm: "",
+      referencias: [],
+      itens: [],
+    },
     acervo: conferir(acervoSchema, lerJson(c("acervo.json"), erros), "acervo.json", erros) ?? { atualizadoEm: "", itens: [] },
   };
   return { conteudo, erros };
@@ -141,33 +176,73 @@ function referenciasMidia(valor: unknown, achados: Set<string> = new Set()): Set
   return achados;
 }
 
-interface ItemBlog { id: string; title: string; blogURL?: string; tag?: string; readingTime?: string; lead?: string; body?: string[]; quote?: string; bodyContinued?: string[]; highlights?: { label?: string; description?: string }[]; galeria?: unknown[] }
+interface ItemBlog {
+  id: string;
+  title: string;
+  blogURL?: string;
+  tag?: string;
+  readingTime?: string;
+  lead?: string;
+  body?: string[];
+  quote?: string;
+  bodyContinued?: string[];
+  highlights?: { label?: string; description?: string }[];
+  galeria?: unknown[];
+}
 
 /* Itens do blog (paginas/blog.json). */
 export function itensBlog(c: Conteudo): ItemBlog[] {
-  return ((c.paginas.blog as { itens?: ItemBlog[] } | undefined)?.itens ?? []);
+  return (c.paginas.blog as { itens?: ItemBlog[] } | undefined)?.itens ?? [];
 }
 
 /* Tempo de leitura de um artigo: todas as palavras do texto ÷ PALAVRAS_POR_MINUTO, arredondado para cima. */
 export function tempoDeLeitura(post: ItemBlog): string {
-  const partes = [post.lead, post.quote, ...(post.body ?? []), ...(post.bodyContinued ?? []), ...(post.highlights ?? []).flatMap((h) => [h.label, h.description])];
-  const palavras = partes.filter((t): t is string => typeof t === "string").join(" ").split(/\s+/).filter(Boolean).length;
+  const partes = [
+    post.lead,
+    post.quote,
+    ...(post.body ?? []),
+    ...(post.bodyContinued ?? []),
+    ...(post.highlights ?? []).flatMap((h) => [h.label, h.description]),
+  ];
+  const palavras = partes
+    .filter((t): t is string => typeof t === "string")
+    .join(" ")
+    .split(/\s+/)
+    .filter(Boolean).length;
   return `${Math.max(1, Math.ceil(palavras / PALAVRAS_POR_MINUTO))} min`;
 }
 
-interface Alvo { projeto: string; titulo: string; url: string }
+interface Alvo {
+  projeto: string;
+  titulo: string;
+  url: string;
+}
 
 /* Índice "tipo:id" → projeto, título e URL pública de tudo que pode ser relacionado. */
 export function indiceDoEcossistema(c: Conteudo): Map<string, Alvo> {
   const m = new Map<string, Alvo>();
-  for (const p of c.programas) m.set(`programas:${p.id}`, { projeto: "learn-tech", titulo: p.title, url: `${SITES["learn-tech"]}/program/${p.categoryFilter}/${p.id}` });
-  for (const b of itensBlog(c)) m.set(`blog:${b.id}`, { projeto: "learn-tech", titulo: b.title, url: `${SITES["learn-tech"]}/blog/${b.id}` });
-  for (const e of c.eventos) m.set(`eventos:${e.slug}`, { projeto: "bootcamps", titulo: e.title, url: `${SITES.bootcamps}/event/${e.slug}` });
-  const listas = [["empresas", c.empresas, "career"], ["vagas", c.vagas, "career"], ["perfis", c.perfis, "career"], ["ferramentas", c.ferramentas, "tools"], ["hospedagens", c.hospedagens, "tools"]] as const;
+  for (const p of c.programas)
+    m.set(`programas:${p.id}`, {
+      projeto: "learn-tech",
+      titulo: p.title,
+      url: `${SITES["learn-tech"]}/program/${p.categoryFilter}/${p.id}`,
+    });
+  for (const b of itensBlog(c))
+    m.set(`blog:${b.id}`, { projeto: "learn-tech", titulo: b.title, url: `${SITES["learn-tech"]}/blog/${b.id}` });
+  for (const e of c.eventos)
+    m.set(`eventos:${e.slug}`, { projeto: "bootcamps", titulo: e.title, url: `${SITES.bootcamps}/event/${e.slug}` });
+  const listas = [
+    ["empresas", c.empresas, "career"],
+    ["vagas", c.vagas, "career"],
+    ["perfis", c.perfis, "career"],
+    ["ferramentas", c.ferramentas, "tools"],
+    ["hospedagens", c.hospedagens, "tools"],
+  ] as const;
   for (const [tipo, itens, projeto] of listas) {
     for (const i of itens as { title: string; slug?: string; site_url: string; detalhe?: unknown }[]) {
       if (!i.slug) continue;
-      const pagina = projeto === "career" ? `${SITES.career}/detalhe.html?tipo=${tipo}&id=${i.slug}` : `${SITES.tools}/detalhe.html?id=${i.slug}`;
+      const pagina =
+        projeto === "career" ? `${SITES.career}/detalhe.html?tipo=${tipo}&id=${i.slug}` : `${SITES.tools}/detalhe.html?id=${i.slug}`;
       m.set(`${tipo}:${i.slug}`, { projeto, titulo: i.title, url: i.detalhe ? pagina : i.site_url });
     }
   }
@@ -189,7 +264,8 @@ export const FRASES_PROIBIDAS: RegExp[] = [
 ];
 
 /* Nas páginas de detalhe, "card" é o card do próprio catálogo: falar dele é falar do processo. */
-export const FRASE_CARD = /\b(o|do|no) card (aponta|diz|classific|indica|informa|mostra)|\b(link|endereço|url|site_url|título|categoria|rótulo|página indicada) (do|no) card\b/i;
+export const FRASE_CARD =
+  /\b(o|do|no) card (aponta|diz|classific|indica|informa|mostra)|\b(link|endereço|url|site_url|título|categoria|rótulo|página indicada) (do|no) card\b/i;
 
 /* Aviso que libera uma página simples sem fontes (o autor completa depois). */
 export const MARCA_EM_REVISAO = "Página em revisão";
@@ -198,12 +274,19 @@ export const MARCA_EM_REVISAO = "Página em revisão";
 function textos(valor: unknown, caminho = "", saida: [string, string][] = []): [string, string][] {
   if (typeof valor === "string") saida.push([caminho, valor]);
   else if (Array.isArray(valor)) valor.forEach((v, i) => textos(v, `${caminho}[${i}]`, saida));
-  else if (valor && typeof valor === "object") for (const [k, v] of Object.entries(valor)) textos(v, caminho ? `${caminho}.${k}` : k, saida);
+  else if (valor && typeof valor === "object")
+    for (const [k, v] of Object.entries(valor)) textos(v, caminho ? `${caminho}.${k}` : k, saida);
   return saida;
 }
 
 /* Domínio sem "www.", para contar fontes independentes. */
-const dominio = (url: string) => { try { return new URL(url).hostname.replace(/^www\./, ""); } catch { return url; } };
+const dominio = (url: string) => {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return url;
+  }
+};
 
 /* Regras de integridade entre arquivos: ids, módulos, quiz, destaques, mídia e cobertura. */
 export function verificarIntegridade(c: Conteudo, pastaMidia: string): string[] {
@@ -213,7 +296,8 @@ export function verificarIntegridade(c: Conteudo, pastaMidia: string): string[] 
   const filtroPorCategoria = new Map<string, string>();
   for (const p of c.programas) {
     const f = filtroPorCategoria.get(p.category);
-    if (f && f !== p.categoryFilter) erros.push(`programa ${p.id}: categoria "${p.category}" usa filtros diferentes (${f} e ${p.categoryFilter})`);
+    if (f && f !== p.categoryFilter)
+      erros.push(`programa ${p.id}: categoria "${p.category}" usa filtros diferentes (${f} e ${p.categoryFilter})`);
     filtroPorCategoria.set(p.category, p.categoryFilter);
 
     const mods = p.modules ?? [];
@@ -221,11 +305,18 @@ export function verificarIntegridade(c: Conteudo, pastaMidia: string): string[] 
     if (conteudos.length > 0) {
       for (const m of mods) {
         const conteudo = conteudos.find((x) => x.id === m.id);
-        if (!conteudo) { erros.push(`programa ${p.id}, módulo ${m.id}: sem conteúdo`); continue; }
+        if (!conteudo) {
+          erros.push(`programa ${p.id}, módulo ${m.id}: sem conteúdo`);
+          continue;
+        }
         if (conteudo.title !== m.title) erros.push(`programa ${p.id}, módulo ${m.id}: título diverge entre modules e moduleContents`);
-        if (m.lessonsCount !== passosDe(conteudo)) erros.push(`programa ${p.id}, módulo ${m.id}: lessonsCount ${m.lessonsCount} ≠ ${passosDe(conteudo)} passos`);
-        const ementa = (p as { enrollDetails?: { moduleOverviews?: { moduleId: number; title: string }[] } }).enrollDetails?.moduleOverviews?.find((o) => o.moduleId === m.id);
-        if (ementa && !ementa.title.includes(m.title)) erros.push(`programa ${p.id}, módulo ${m.id}: título da ementa não contém "${m.title}"`);
+        if (m.lessonsCount !== passosDe(conteudo))
+          erros.push(`programa ${p.id}, módulo ${m.id}: lessonsCount ${m.lessonsCount} ≠ ${passosDe(conteudo)} passos`);
+        const ementa = (
+          p as { enrollDetails?: { moduleOverviews?: { moduleId: number; title: string }[] } }
+        ).enrollDetails?.moduleOverviews?.find((o) => o.moduleId === m.id);
+        if (ementa && !ementa.title.includes(m.title))
+          erros.push(`programa ${p.id}, módulo ${m.id}: título da ementa não contém "${m.title}"`);
       }
       for (const x of conteudos) {
         if (!mods.some((m) => m.id === x.id)) erros.push(`programa ${p.id}: conteúdo ${x.id} sem módulo na lista`);
@@ -237,7 +328,8 @@ export function verificarIntegridade(c: Conteudo, pastaMidia: string): string[] 
       repetidos(p.quiz.map((q) => q.id)).forEach((id) => erros.push(`programa ${p.id}: questão ${id} repetida`));
       for (const q of p.quiz) {
         if (!mods.some((m) => m.id === q.moduleId)) erros.push(`programa ${p.id}, questão ${q.id}: módulo ${q.moduleId} inexistente`);
-        if (q.options.filter((o) => o.isCorrect).length !== 1) erros.push(`programa ${p.id}, questão ${q.id}: precisa de exatamente uma alternativa correta`);
+        if (q.options.filter((o) => o.isCorrect).length !== 1)
+          erros.push(`programa ${p.id}, questão ${q.id}: precisa de exatamente uma alternativa correta`);
       }
     }
   }
@@ -249,11 +341,16 @@ export function verificarIntegridade(c: Conteudo, pastaMidia: string): string[] 
   const slugsCategorias = new Set(itensCategorias.map((i) => i.slug).filter((s): s is string => typeof s === "string"));
   for (const a of c.areas) {
     for (const f of a.categorias) if (!filtros.has(f)) erros.push(`área ${a.id}: categoria "${f}" não é categoryFilter de nenhum programa`);
-    for (const card of a.cards) if (card.categoria && !slugsCategorias.has(card.categoria)) erros.push(`área ${a.id}: card "${card.title}" aponta para a categoria "${card.categoria}", que não existe em paginas/categorias.json`);
+    for (const card of a.cards)
+      if (card.categoria && !slugsCategorias.has(card.categoria))
+        erros.push(
+          `área ${a.id}: card "${card.title}" aponta para a categoria "${card.categoria}", que não existe em paginas/categorias.json`,
+        );
   }
 
   /* Trilhas por objetivo: cada passo aponta para um programa ou artigo existente, sem repetir na trilha. */
-  const trilhas = (c.paginas.trilhas as { itens?: { id: string; passos: { tipo: string; id: number | string }[] }[] } | undefined)?.itens ?? [];
+  const trilhas =
+    (c.paginas.trilhas as { itens?: { id: string; passos: { tipo: string; id: number | string }[] }[] } | undefined)?.itens ?? [];
   repetidos(trilhas.map((t) => t.id)).forEach((id) => erros.push(`trilha ${id}: id repetido`));
   const idsProgramas = new Set(c.programas.map((p) => p.id));
   const idsArtigos = new Set(itensBlog(c).map((a) => a.id));
@@ -270,8 +367,11 @@ export function verificarIntegridade(c: Conteudo, pastaMidia: string): string[] 
   /* Edições: data dentro do ano informado, número único por formato e ordem cronológica. */
   for (const e of c.eventos) {
     const eds = e.content.editions ?? [];
-    for (const ed of eds) if (ed.data && !ed.data.startsWith(ed.year)) erros.push(`evento ${e.slug}: edição ${ed.data} fora do ano ${ed.year}`);
-    repetidos(eds.filter((ed) => ed.numero).map((ed) => `${ed.formato ?? ""}#${ed.numero}`)).forEach((n) => erros.push(`evento ${e.slug}: edição ${n} repetida`));
+    for (const ed of eds)
+      if (ed.data && !ed.data.startsWith(ed.year)) erros.push(`evento ${e.slug}: edição ${ed.data} fora do ano ${ed.year}`);
+    repetidos(eds.filter((ed) => ed.numero).map((ed) => `${ed.formato ?? ""}#${ed.numero}`)).forEach((n) =>
+      erros.push(`evento ${e.slug}: edição ${n} repetida`),
+    );
     const chaves = eds.map((ed) => ed.data ?? `${ed.year}-99-99`);
     if (chaves.some((k, i) => i > 0 && k < chaves[i - 1]!)) erros.push(`evento ${e.slug}: edições fora de ordem cronológica`);
   }
@@ -286,7 +386,8 @@ export function verificarIntegridade(c: Conteudo, pastaMidia: string): string[] 
   for (const [nome, itens] of Object.entries(listasComDetalhe(c))) {
     for (const i of itens) {
       for (const r of i.detalhe?.relacionados ?? []) {
-        if (!indice.has(`${r.tipo}:${r.id}`)) erros.push(`${nome}: "${i.title}" relaciona ${r.tipo} "${r.id}", que não existe (ou não tem slug)`);
+        if (!indice.has(`${r.tipo}:${r.id}`))
+          erros.push(`${nome}: "${i.title}" relaciona ${r.tipo} "${r.id}", que não existe (ou não tem slug)`);
         if (r.tipo === nome && r.id === i.slug) erros.push(`${nome}: "${i.title}" relaciona a si mesmo`);
       }
     }
@@ -299,7 +400,8 @@ export function verificarIntegridade(c: Conteudo, pastaMidia: string): string[] 
   }
   for (const b of itensBlog(c)) {
     const esperado = tempoDeLeitura(b);
-    if (b.readingTime !== esperado) erros.push(`blog ${b.id}: readingTime "${b.readingTime}" deveria ser "${esperado}" (${PALAVRAS_POR_MINUTO} palavras/min)`);
+    if (b.readingTime !== esperado)
+      erros.push(`blog ${b.id}: readingTime "${b.readingTime}" deveria ser "${esperado}" (${PALAVRAS_POR_MINUTO} palavras/min)`);
     /* Galeria do artigo (ADR 12): mesmo formato da do programa, com texto alternativo obrigatório. */
     (b.galeria ?? []).forEach((foto, i) => {
       if (!fotoGaleriaSchema.safeParse(foto).success) erros.push(`blog ${b.id}: foto ${i + 1} da galeria precisa de url e alt`);
@@ -315,9 +417,15 @@ export function verificarIntegridade(c: Conteudo, pastaMidia: string): string[] 
   ];
   for (const [origem, valor] of publicado) {
     for (const [campo, texto] of textos(valor)) {
-      const regras = origem.startsWith("programa") || origem.startsWith("evento") || origem.startsWith("página") ? FRASES_PROIBIDAS : [...FRASES_PROIBIDAS, FRASE_CARD];
+      const regras =
+        origem.startsWith("programa") || origem.startsWith("evento") || origem.startsWith("página")
+          ? FRASES_PROIBIDAS
+          : [...FRASES_PROIBIDAS, FRASE_CARD];
       const f = regras.find((r) => r.test(texto));
-      if (f) erros.push(`${origem} → ${campo}: frase sobre o processo de pesquisa ("${texto.match(f)![0]}"); isso vai só nas observações do lote`);
+      if (f)
+        erros.push(
+          `${origem} → ${campo}: frase sobre o processo de pesquisa ("${texto.match(f)![0]}"); isso vai só nas observações do lote`,
+        );
     }
   }
   for (const [nome, itens] of Object.entries(listasComDetalhe(c))) {
@@ -326,7 +434,10 @@ export function verificarIntegridade(c: Conteudo, pastaMidia: string): string[] 
       if (!d) continue;
       const emRevisao = d.paragrafos.some((p) => p.includes(MARCA_EM_REVISAO));
       const dominios = new Set((d.fontes ?? []).map((f) => dominio(f.url)));
-      if (!emRevisao && dominios.size < 2) erros.push(`${nome}: "${i.title}" precisa de fontes de pelo menos 2 domínios diferentes (tem ${dominios.size}) ou do aviso "${MARCA_EM_REVISAO}"`);
+      if (!emRevisao && dominios.size < 2)
+        erros.push(
+          `${nome}: "${i.title}" precisa de fontes de pelo menos 2 domínios diferentes (tem ${dominios.size}) ou do aviso "${MARCA_EM_REVISAO}"`,
+        );
     }
   }
 
@@ -344,7 +455,8 @@ export function verificarIntegridade(c: Conteudo, pastaMidia: string): string[] 
   const usoDoHash = new Map(c.acervo.itens.flatMap((it) => it.arquivos.map((f) => [f.sha256, f.uso] as const)));
   for (const it of c.acervo.itens) {
     for (const f of it.arquivos) {
-      if (f.similarA && usoDoHash.get(f.similarA) !== "exibido") erros.push(`acervo ${it.id}: arquivo ${f.sha256.slice(0, 12)}… é similar a um arquivo que não está exibido`);
+      if (f.similarA && usoDoHash.get(f.similarA) !== "exibido")
+        erros.push(`acervo ${it.id}: arquivo ${f.sha256.slice(0, 12)}… é similar a um arquivo que não está exibido`);
     }
   }
 
@@ -352,8 +464,10 @@ export function verificarIntegridade(c: Conteudo, pastaMidia: string): string[] 
   for (const e of errosDestinos(c)) erros.push(e);
 
   if (!c.vagas.some((v) => v.title === c.destaques.vaga)) erros.push(`destaques: vaga "${c.destaques.vaga}" não existe em vagas.json`);
-  if (!c.empresas.some((v) => v.title === c.destaques.empresa)) erros.push(`destaques: empresa "${c.destaques.empresa}" não existe em empresas.json`);
-  if (!c.perfis.some((v) => v.title === c.destaques.perfil)) erros.push(`destaques: perfil "${c.destaques.perfil}" não existe em perfis.json`);
+  if (!c.empresas.some((v) => v.title === c.destaques.empresa))
+    erros.push(`destaques: empresa "${c.destaques.empresa}" não existe em empresas.json`);
+  if (!c.perfis.some((v) => v.title === c.destaques.perfil))
+    erros.push(`destaques: perfil "${c.destaques.perfil}" não existe em perfis.json`);
 
   for (const ref of referenciasMidia(c)) {
     if (!fs.existsSync(path.join(pastaMidia, ref.replace(/^\/media\//, "")))) erros.push(`mídia ausente: ${ref}`);
@@ -372,7 +486,10 @@ export function verificarIntegridade(c: Conteudo, pastaMidia: string): string[] 
   for (const item of c.cobertura.itens) {
     for (const d of item.destinos) {
       const conhecidos = ids[d.recurso];
-      if (!conhecidos) { erros.push(`cobertura "${item.pasta}": recurso "${d.recurso}" desconhecido`); continue; }
+      if (!conhecidos) {
+        erros.push(`cobertura "${item.pasta}": recurso "${d.recurso}" desconhecido`);
+        continue;
+      }
       for (const id of d.ids ?? []) {
         if (!conhecidos.has(id)) erros.push(`cobertura "${item.pasta}": ${d.recurso} "${id}" não existe`);
       }
@@ -423,7 +540,10 @@ function resumoPrograma(p: Programa): Record<string, unknown> {
 }
 
 /* Copia a lista trocando cada relacionado { tipo, id } pelo alvo completo (projeto, título e URL). */
-function resolverRelacionados<T extends { detalhe?: { relacionados?: { tipo: string; id: string }[] } }>(itens: T[], indice: Map<string, Alvo>): T[] {
+function resolverRelacionados<T extends { detalhe?: { relacionados?: { tipo: string; id: string }[] } }>(
+  itens: T[],
+  indice: Map<string, Alvo>,
+): T[] {
   return itens.map((i) => {
     if (!i.detalhe?.relacionados?.length) return i;
     const relacionados = i.detalhe.relacionados.flatMap((r) => {
@@ -455,8 +575,16 @@ export function montarRecursos(conteudoBruto: Conteudo): Recurso[] {
   };
   const r: Recurso[] = [
     { caminho: "learn-tech/programas.json", descricao: "Catálogo de programas (campos de card)", dados: c.programas.map(resumoPrograma) },
-    ...c.programas.map((p) => ({ caminho: `learn-tech/programas/${p.id}.json`, descricao: `Programa ${p.id} completo (módulos e quiz)`, dados: p })),
-    ...Object.entries(c.paginas).map(([nome, dados]) => ({ caminho: `learn-tech/paginas/${nome}.json`, descricao: `Página ${nome}`, dados })),
+    ...c.programas.map((p) => ({
+      caminho: `learn-tech/programas/${p.id}.json`,
+      descricao: `Programa ${p.id} completo (módulos e quiz)`,
+      dados: p,
+    })),
+    ...Object.entries(c.paginas).map(([nome, dados]) => ({
+      caminho: `learn-tech/paginas/${nome}.json`,
+      descricao: `Página ${nome}`,
+      dados,
+    })),
     { caminho: "learn-tech/areas.json", descricao: "Áreas de atuação em tecnologia (com fontes)", dados: c.areas },
     { caminho: "bootcamps/eventos.json", descricao: "Eventos, bootcamps e formações", dados: c.eventos },
     ...c.eventos.map((e) => ({ caminho: `bootcamps/eventos/${e.slug}.json`, descricao: `Evento ${e.slug}`, dados: e })),
@@ -464,7 +592,11 @@ export function montarRecursos(conteudoBruto: Conteudo): Recurso[] {
     { caminho: "career/vagas.json", descricao: "Plataformas de vagas", dados: c.vagas },
     { caminho: "career/perfis.json", descricao: "Perfis de devs para seguir", dados: c.perfis },
     { caminho: "career/destaques.json", descricao: "Seleção do carrossel de destaques", dados: c.destaques },
-    { caminho: "career/modelos-curriculo.json", descricao: "Modelos de currículo fictícios, com dicas e fontes", dados: c.modelosCurriculo },
+    {
+      caminho: "career/modelos-curriculo.json",
+      descricao: "Modelos de currículo fictícios, com dicas e fontes",
+      dados: c.modelosCurriculo,
+    },
     { caminho: "tools/ferramentas.json", descricao: "Ferramentas", dados: c.ferramentas },
     { caminho: "tools/hospedagens.json", descricao: "Hospedagens", dados: c.hospedagens },
     { caminho: "cobertura.json", descricao: "Matriz de cobertura do acervo", dados: c.cobertura },

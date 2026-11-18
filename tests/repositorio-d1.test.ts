@@ -21,13 +21,24 @@ beforeEach(() => {
 
 /* Acesso com valores padrão, sobrescritos por campo. */
 const acesso = (c: Partial<Parameters<RepositorioAcessos["inserir"]>[0]> = {}) => ({
-  nome: "Maria da Silva", email: "maria@exemplo.com", projeto: "learn-tech", pagina: "/programs", criadoEm: "2026-09-27T12:00:00.000Z", ...c,
+  nome: "Maria da Silva",
+  email: "maria@exemplo.com",
+  projeto: "learn-tech",
+  pagina: "/programs",
+  criadoEm: "2026-09-27T12:00:00.000Z",
+  ...c,
 });
 
 /* Mensagem com valores padrão, sobrescritos por campo. */
 const mensagem = (c: Partial<Parameters<RepositorioMensagens["inserir"]>[0]> = {}) => ({
-  criadoEm: "2026-09-27T12:00:00.000Z", projeto: "learn-tech", motivo: "duvida-programa", nome: "Maria da Silva",
-  email: "maria@exemplo.com", mensagem: "Olá!", pagina: null, ...c,
+  criadoEm: "2026-09-27T12:00:00.000Z",
+  projeto: "learn-tech",
+  motivo: "duvida-programa",
+  nome: "Maria da Silva",
+  email: "maria@exemplo.com",
+  mensagem: "Olá!",
+  pagina: null,
+  ...c,
 });
 
 describe("repositório D1 de acessos", () => {
@@ -37,7 +48,14 @@ describe("repositório D1 de acessos", () => {
     expect(b).toBeGreaterThan(a);
     const linhas = await acessos.listar({ limite: 10 });
     expect(linhas.map((l) => l.id)).toEqual([b, a]);
-    expect(linhas[0]).toEqual({ id: b, nome: "Maria da Silva", email: "joao@exemplo.com", projeto: "learn-tech", pagina: null, criadoEm: "2026-09-28T08:00:00.000Z" });
+    expect(linhas[0]).toEqual({
+      id: b,
+      nome: "Maria da Silva",
+      email: "joao@exemplo.com",
+      projeto: "learn-tech",
+      pagina: null,
+      criadoEm: "2026-09-28T08:00:00.000Z",
+    });
   });
 
   it("existeDesde considera e-mail, projeto e horário", async () => {
@@ -65,7 +83,10 @@ describe("repositório D1 de acessos", () => {
     const r = await acessos.resumir("2026-09-01");
     expect(r.total).toBe(3);
     expect(r.pessoas).toBe(2);
-    expect(r.porProjeto).toEqual([{ projeto: "learn-tech", acessos: 2, pessoas: 1 }, { projeto: "tools", acessos: 1, pessoas: 1 }]);
+    expect(r.porProjeto).toEqual([
+      { projeto: "learn-tech", acessos: 2, pessoas: 1 },
+      { projeto: "tools", acessos: 1, pessoas: 1 },
+    ]);
     expect(r.porDia).toEqual([{ dia: "2026-09-27", acessos: 2 }]);
   });
 

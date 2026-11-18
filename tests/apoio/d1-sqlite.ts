@@ -14,7 +14,11 @@ const MIGRACOES = path.resolve(import.meta.dirname, "..", "..", "migrations");
 
 /* Instrução preparada com a mesma forma (parcial) da D1PreparedStatement. */
 class Instrucao {
-  constructor(private readonly db: DatabaseSync, private readonly sql: string, private readonly valores: SQLInputValue[] = []) {}
+  constructor(
+    private readonly db: DatabaseSync,
+    private readonly sql: string,
+    private readonly valores: SQLInputValue[] = [],
+  ) {}
 
   bind(...valores: unknown[]) {
     return new Instrucao(this.db, this.sql, valores.map((v) => (v === undefined ? null : v)) as SQLInputValue[]);
@@ -42,13 +46,19 @@ class Instrucao {
 /* Cria um banco em memória com todas as migrações de migrations/ aplicadas em ordem. */
 export function d1EmMemoria(): { d1: D1Database; sqlite: DatabaseSync } {
   const sqlite = new DatabaseSync(":memory:");
-  for (const arq of fs.readdirSync(MIGRACOES).filter((a) => a.endsWith(".sql")).sort()) {
+  for (const arq of fs
+    .readdirSync(MIGRACOES)
+    .filter((a) => a.endsWith(".sql"))
+    .sort()) {
     sqlite.exec(fs.readFileSync(path.join(MIGRACOES, arq), "utf8"));
   }
   const d1 = {
     prepare: (sql: string) => new Instrucao(sqlite, sql),
     batch: async (instrucoes: Instrucao[]) => Promise.all(instrucoes.map((i) => i.executar())),
-    exec: async (sql: string) => { sqlite.exec(sql); return { count: 0, duration: 0 }; },
+    exec: async (sql: string) => {
+      sqlite.exec(sql);
+      return { count: 0, duration: 0 };
+    },
   };
   return { d1: d1 as unknown as D1Database, sqlite };
 }

@@ -21,10 +21,13 @@ export function repositorioMensagensMemoria(iniciais: Mensagem[] = []): Reposito
     /* Lista da mais recente para a mais antiga, com filtros opcionais. */
     async listar(filtro) {
       return linhas
-        .filter((l) => (!filtro.projeto || l.projeto === filtro.projeto)
-          && (!filtro.motivo || l.motivo === filtro.motivo)
-          && (!filtro.email || l.email === filtro.email)
-          && (!filtro.desde || l.criadoEm >= filtro.desde))
+        .filter(
+          (l) =>
+            (!filtro.projeto || l.projeto === filtro.projeto) &&
+            (!filtro.motivo || l.motivo === filtro.motivo) &&
+            (!filtro.email || l.email === filtro.email) &&
+            (!filtro.desde || l.criadoEm >= filtro.desde),
+        )
         .sort((a, b) => (a.criadoEm === b.criadoEm ? b.id - a.id : a.criadoEm < b.criadoEm ? 1 : -1))
         .slice(0, filtro.limite);
     },

@@ -4,17 +4,21 @@ import { textoObrigatorio, projeto } from "./comum";
 
 export const STATUS_COBERTURA = ["publicado", "planejado", "referencia", "fora-do-escopo"] as const;
 
-export const itemCoberturaSchema = z.object({
-  pasta: textoObrigatorio,
-  descricao: textoObrigatorio,
-  status: z.enum(STATUS_COBERTURA),
-  destinos: z.array(z.object({
-    projeto,
-    recurso: textoObrigatorio,
-    ids: z.array(z.string()).optional(),
-  })),
-  observacao: z.string().optional(),
-}).refine((i) => i.status === "fora-do-escopo" || i.destinos.length > 0, "item dentro do escopo precisa de ao menos um destino");
+export const itemCoberturaSchema = z
+  .object({
+    pasta: textoObrigatorio,
+    descricao: textoObrigatorio,
+    status: z.enum(STATUS_COBERTURA),
+    destinos: z.array(
+      z.object({
+        projeto,
+        recurso: textoObrigatorio,
+        ids: z.array(z.string()).optional(),
+      }),
+    ),
+    observacao: z.string().optional(),
+  })
+  .refine((i) => i.status === "fora-do-escopo" || i.destinos.length > 0, "item dentro do escopo precisa de ao menos um destino");
 
 export const coberturaSchema = z.object({
   atualizadoEm: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),

@@ -3,7 +3,11 @@ import { z } from "zod";
 import { projeto } from "../schemas/comum";
 
 export const entradaAcessoSchema = z.object({
-  nome: z.string().trim().min(3, "informe o nome completo").max(120)
+  nome: z
+    .string()
+    .trim()
+    .min(3, "informe o nome completo")
+    .max(120)
     .refine((n) => n.split(/\s+/).filter(Boolean).length >= 2, "informe nome e sobrenome"),
   email: z.string().trim().toLowerCase().max(254).pipe(z.email("e-mail inválido")),
   projeto,
