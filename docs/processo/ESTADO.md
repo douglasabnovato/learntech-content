@@ -38,7 +38,13 @@ Pastas locais:
   - `/nao-existe` responde 404 no learn-tech e no bootcamps;
   - `/event/<slug>` traz o título do evento;
   - o `links.yml` roda na segunda.
-- **Próximo:** o LCP do modal de identificação no tools e na career (tools#58 e career#30), content#11 (Lighthouse 13 e `npm audit`) e content#8 (orçamento de mídia: as capas da API pesam no LCP).
+- **LCP do modal no tools e na career** (tools#58 e career#30):
+  - o CSS de fontes e ícones passou a carregar sem bloquear (`js/estilos-assincronos.js`, compatível com a CSP);
+  - o SDK de identificação está direto no HTML, com `defer`;
+  - o logo da career virou WebP (211 → 18 KB).
+  - Resultado na home, em celular: tools de 84–91 para 100 (LCP de 1,6 s); career de 75–83 para 96–98 (LCP mediano de 2,5 s).
+  - **Os outros dois sites que carregam o SDK (learn-tech e bootcamps) podem ganhar o mesmo `<script defer>` no HTML.**
+- **Próximo:** content#11 (Lighthouse 13 e `npm audit`), content#8 (orçamento de mídia: as capas da API pesam no LCP do bootcamps) e o LCP do detalhe do tools, que depende do `fetch`.
 
 ## Situação em 09/11/2026
 - **Uso por arquivo** (branch `feature/tasks-09-11-2026`): campo `uso` em cada arquivo do acervo (`exibido`, `fonte`, `similar`, `referencia`, `tecnico`, `descartado`, `pendente`), comandos `hd:imagens` e `hd:uso`, e `leva:status` exigindo zero pendentes. Primeira aplicação automática: 66 fotos `exibido` e 9 arquivos `tecnico`. Relatórios em `docs/processo/relatorios/` (06/11 e 09/11).
