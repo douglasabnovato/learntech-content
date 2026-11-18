@@ -32,8 +32,13 @@ Pastas locais:
   - **bootcamps#73:** JS inicial de 130 para 95,6 KB gzip, com `LazyMotion`, sem Helmet, fonte servida pelo próprio site, LCP priorizado e fachada do YouTube. Orçamento de 100 KB na CI. Lighthouse móvel entre 82 e 89, com acessibilidade 100. O que falta para chegar a 90 é a #71 (pré-renderização).
   - **learn-tech#131:** 404 real na Vercel. As reescritas cobrem só as rotas conhecidas e o build gera o `404.html` com `noindex`, conferido por teste.
   - **#7:** `npm run links`, workflow semanal `links.yml` e primeiro relatório (1.522 URLs, 35 quebradas, em `docs/engenharia/relatorios/links-2026-11-18.md`).
-- **Achado:** o `format:check` falha no learn-tech e aqui, porque o código está em 80 colunas e o `.prettierrc` pede 140. A CI desses dois repositórios não roda essa checagem.
-- **Próximo:** bootcamps#71 (pré-renderização), o LCP do modal de identificação no tools e na career (tools#58 e career#30) e content#11 (Lighthouse 13 e `npm audit`).
+  - **bootcamps#71:** uma página pré-renderizada por evento (27), com título, Open Graph, canonical e JSON-LD (`Event` por edição, `Course` por formação). O `vercel.json` só reescreve `/event/:slug`, e o resto responde 404.
+  - **Itens 8 e 9 de `orientacoes-ia.md`** (aprovados pelo autor): a CI do bootcamps escuta a `developer`. O learn-tech tem lockfile, `npm ci`, `format:check` e orçamento (#127). A API ganhou `format:check`, e as reformatações ficaram em commits só de estilo. **Renomear as branches de integração continua com o autor.**
+- **Conferir na produção depois da `main`:**
+  - `/nao-existe` responde 404 no learn-tech e no bootcamps;
+  - `/event/<slug>` traz o título do evento;
+  - o `links.yml` roda na segunda.
+- **Próximo:** o LCP do modal de identificação no tools e na career (tools#58 e career#30), content#11 (Lighthouse 13 e `npm audit`) e content#8 (orçamento de mídia: as capas da API pesam no LCP).
 
 ## Situação em 09/11/2026
 - **Uso por arquivo** (branch `feature/tasks-09-11-2026`): campo `uso` em cada arquivo do acervo (`exibido`, `fonte`, `similar`, `referencia`, `tecnico`, `descartado`, `pendente`), comandos `hd:imagens` e `hd:uso`, e `leva:status` exigindo zero pendentes. Primeira aplicação automática: 66 fotos `exibido` e 9 arquivos `tecnico`. Relatórios em `docs/processo/relatorios/` (06/11 e 09/11).
