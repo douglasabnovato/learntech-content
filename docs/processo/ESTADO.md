@@ -1,6 +1,6 @@
 # Estado do ecossistema: comece por aqui
 
-Ponto de entrada de toda conversa nova com o Claude. Atualizado ao fim de cada conversa. **Última atualização: 09/11/2026.**
+Ponto de entrada de toda conversa nova com o Claude. Atualizado ao fim de cada conversa. **Última atualização: 18/11/2026.**
 
 ## O que é
 O learnTECH treina pessoas para o ecossistema de tecnologia com o que o autor fez e com o que ele quer fazer. Uma API de conteúdo alimenta quatro sites:
@@ -13,7 +13,9 @@ O learnTECH treina pessoas para o ecossistema de tecnologia com o que o autor fe
 | `career` | Empresas, vagas, perfis e modelos de currículo | GitHub Pages (`douglasabnovato.github.io/career`) |
 | `tools` | Ferramentas e hospedagens | GitHub Pages (`douglasabnovato.github.io/tools`) |
 
-Pasta local: `C:\douglasabnovato-github\mundo-learn-tech\`. O acervo bruto fica em `hd/`.
+Pastas locais:
+- **Máquina do autor:** `C:\douglasabnovato-github\mundo-learn-tech\`, com o acervo bruto em `hd/`.
+- **Segunda máquina, desde 18/11/2026:** `C:\douglasabnovato-learntech\`, só com os 5 clones e **sem o `hd/`**. Nela, o trabalho é de engenharia e de qualidade sobre o que já está nos repositórios.
 
 ## Onde está cada coisa
 - **Colaboração:** `docs/processo/como-trabalhamos.md`.
@@ -22,6 +24,16 @@ Pasta local: `C:\douglasabnovato-github\mundo-learn-tech\`. O acervo bruto fica 
 - **Pendências do autor:** `PROXIMOS-PASSOS.md`.
 - **Histórico por lote:** `docs/processo/lotes/`. Histórico por conversa: `docs/processo/conversas/`.
 - **Medição:** `npm run progresso` (placar), `npm run cobertura`, `npm run leva:status`.
+
+## Situação em 18/11/2026
+- **Linha de base nos 5 repositórios:** a `developer` passa em testes, lint e build, e a CI está verde. A `developer` está à frente da `main`: são 32 commits aqui, 6 no learn-tech, 4 no tools, 5 na career e 1 no bootcamps. Cerca de 15 issues fecham quando o autor levar as `developer` para a `main`, com a API primeiro (a career depende do bb4ff0a).
+- **Triagem das issues abertas (129):** as issues de acervo #12, #13, #14, #16 e #18 já estão na `main` e podem fechar. Só a #15 (vídeos) precisa do `hd/`. As cerca de 90 issues antigas dos sites foram agrupadas em três destinos: fechar com evidência, perguntar ao autor ou mover (ver #29).
+- **Entregue na `developer` (branch `feature/tasks-18-11-2026`):**
+  - **bootcamps#73:** JS inicial de 130 para 95,6 KB gzip, com `LazyMotion`, sem Helmet, fonte servida pelo próprio site, LCP priorizado e fachada do YouTube. Orçamento de 100 KB na CI. Lighthouse móvel entre 82 e 89, com acessibilidade 100. O que falta para chegar a 90 é a #71 (pré-renderização).
+  - **learn-tech#131:** 404 real na Vercel. As reescritas cobrem só as rotas conhecidas e o build gera o `404.html` com `noindex`, conferido por teste.
+  - **#7:** `npm run links`, workflow semanal `links.yml` e primeiro relatório (1.522 URLs, 35 quebradas, em `docs/engenharia/relatorios/links-2026-11-18.md`).
+- **Achado:** o `format:check` falha no learn-tech e aqui, porque o código está em 80 colunas e o `.prettierrc` pede 140. A CI desses dois repositórios não roda essa checagem.
+- **Próximo:** bootcamps#71 (pré-renderização), o LCP do modal de identificação no tools e na career (tools#58 e career#30) e content#11 (Lighthouse 13 e `npm audit`).
 
 ## Situação em 09/11/2026
 - **Uso por arquivo** (branch `feature/tasks-09-11-2026`): campo `uso` em cada arquivo do acervo (`exibido`, `fonte`, `similar`, `referencia`, `tecnico`, `descartado`, `pendente`), comandos `hd:imagens` e `hd:uso`, e `leva:status` exigindo zero pendentes. Primeira aplicação automática: 66 fotos `exibido` e 9 arquivos `tecnico`. Relatórios em `docs/processo/relatorios/` (06/11 e 09/11).
