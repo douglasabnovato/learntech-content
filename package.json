@@ -36,7 +36,8 @@
     "auditar": "node scripts/auditar-dependencias.mjs",
     "hd:extrair": "python scripts/hd-extrair.py",
     "triador:gabarito": "node scripts/triador-gabarito.mjs",
-    "a1": "node scripts/a1-tabela.mjs"
+    "a1": "node scripts/a1-tabela.mjs",
+    "links": "node scripts/verificar-links.mjs"
   },
   "dependencies": {
     "hono": "^4.13.16",
