@@ -43,7 +43,10 @@ Pastas locais:
   - o SDK de identificação está direto no HTML, com `defer`;
   - o logo da career virou WebP (211 → 18 KB).
   - Resultado na home, em celular: tools de 84–91 para 100 (LCP de 1,6 s); career de 75–83 para 96–98 (LCP mediano de 2,5 s).
-  - **Os outros dois sites que carregam o SDK (learn-tech e bootcamps) podem ganhar o mesmo `<script defer>` no HTML.**
+  - **No learn-tech e no bootcamps, o SDK no HTML não ajudou.** Medi antes e depois, com `VITE_API_URL`, e desfiz: nesses dois sites, o LCP é uma imagem e não o modal.
+    - learn-tech: o que deu resultado foi trocar o Google Fonts pela Inter servida pelo próprio site (`a2393cb`). A performance foi de 71–76 para 78–79 e o FCP de 3,1 para 2,5 s. O LCP (4,9 s) é a imagem do topo, que espera o React renderizar.
+    - bootcamps: o preload da capa do primeiro card também não ajudou e foi desfeito. A capa só aparece depois do JS e dos dados.
+    - Nos dois, o próximo ganho exige que a imagem do LCP já venha no HTML, sem esperar o React.
 - **Próximo:** content#11 (Lighthouse 13 e `npm audit`), content#8 (orçamento de mídia: as capas da API pesam no LCP do bootcamps) e o LCP do detalhe do tools, que depende do `fetch`.
 
 ## Situação em 09/11/2026
