@@ -1,6 +1,6 @@
 # Estado do ecossistema: comece por aqui
 
-Ponto de entrada de toda conversa nova com o Claude. Atualizado ao fim de cada conversa. **Última atualização: 18/11/2026.**
+Ponto de entrada de toda conversa nova com o Claude. Atualizado ao fim de cada conversa. **Última atualização: 19/11/2026.**
 
 ## O que é
 O learnTECH treina pessoas para o ecossistema de tecnologia com o que o autor fez e com o que ele quer fazer. Uma API de conteúdo alimenta quatro sites:
@@ -24,6 +24,12 @@ Pastas locais:
 - **Pendências do autor:** `PROXIMOS-PASSOS.md`.
 - **Histórico por lote:** `docs/processo/lotes/`. Histórico por conversa: `docs/processo/conversas/`.
 - **Medição:** `npm run progresso` (placar), `npm run cobertura`, `npm run leva:status`.
+
+## Situação em 19/11/2026
+- **As cinco `developer` foram para a `main`,** com o ok do autor no chat: content#31 primeiro, depois career#40, learn-tech#145, bootcamps#80 e tools#65. O autor fez o `npm run deploy` da API (versão 07818600). Na produção, as páginas principais dão 200 e as rotas inexistentes dão 404 nos quatro sites.
+- **content#11:** Lighthouse 13, e o `npm audit` foi de 36 vulnerabilidades para 0 (`docs/engenharia/relatorios/audit-2026-11-19.md`).
+- **Lighthouse depois da main** (`docs/engenharia/relatorios/lighthouse-2026-11-19-pos-main.md`): career 98 e 99, tools home 97, learn-tech de 85 a 93 (o CLS de 0,4 sumiu), bootcamps 91 e 85. Fica abaixo da meta a página de ferramenta do tools (73, LCP 4,9 s).
+- **Nesta máquina,** o PowerShell bloqueia o `npm.ps1`. Use `npm.cmd` e `npx.cmd`. O Chromium do Playwright não abre pelo `chrome-launcher`; use `CHROME_PATH` com o Chrome instalado.
 
 ## Situação em 18/11/2026
 - **Linha de base nos 5 repositórios:** a `developer` passa em testes, lint e build, e a CI está verde. A `developer` está à frente da `main`: são 32 commits aqui, 6 no learn-tech, 4 no tools, 5 na career e 1 no bootcamps. Cerca de 15 issues fecham quando o autor levar as `developer` para a `main`, com a API primeiro (a career depende do bb4ff0a).
