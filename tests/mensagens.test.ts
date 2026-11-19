@@ -52,8 +52,13 @@ describe("POST /v1/mensagens", () => {
     expect(r.headers.get("Access-Control-Allow-Origin")).toBe(ORIGEM);
     expect(await r.json()).toEqual({ registrado: true, id: 1 });
     expect(repo.linhas[0]).toMatchObject({
-      nome: "Maria da Silva", email: "maria@exemplo.com", motivo: "duvida-programa",
-      mensagem: "Quando sai o próximo módulo de React?", projeto: "learn-tech", pagina: "/falaae", criadoEm: "2026-10-28T12:00:00.000Z",
+      nome: "Maria da Silva",
+      email: "maria@exemplo.com",
+      motivo: "duvida-programa",
+      mensagem: "Quando sai o próximo módulo de React?",
+      projeto: "learn-tech",
+      pagina: "/falaae",
+      criadoEm: "2026-10-28T12:00:00.000Z",
     });
   });
 
@@ -135,7 +140,13 @@ describe("administração de mensagens", () => {
     await postar(valida);
     agora = new Date("2026-10-28T13:00:00.000Z");
     await postar({ ...valida, motivo: "privacidade", mensagem: "Quero apagar meus dados" });
-    await postar({ nome: "João Souza", email: "joao@exemplo.com", motivo: "problema-tecnico", mensagem: "=1+1 quebrou a página", projeto: "learn-tech" });
+    await postar({
+      nome: "João Souza",
+      email: "joao@exemplo.com",
+      motivo: "problema-tecnico",
+      mensagem: "=1+1 quebrou a página",
+      projeto: "learn-tech",
+    });
   });
 
   it("exige token válido (401)", async () => {
@@ -172,7 +183,15 @@ describe("administração de mensagens", () => {
   });
 
   it("DELETE /v1/acessos?email= apaga também as mensagens do e-mail (pedido do titular)", async () => {
-    await app.request("/v1/acessos", { method: "POST", headers: { "Content-Type": "application/json", Origin: ORIGEM }, body: JSON.stringify({ nome: "Maria da Silva", email: "maria@exemplo.com", projeto: "learn-tech" }) }, env);
+    await app.request(
+      "/v1/acessos",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Origin: ORIGEM },
+        body: JSON.stringify({ nome: "Maria da Silva", email: "maria@exemplo.com", projeto: "learn-tech" }),
+      },
+      env,
+    );
     const r = await admin("/v1/acessos?email=maria@exemplo.com", "DELETE");
     expect(await r.json()).toEqual({ apagados: 1, mensagens: 2 });
     expect(acessos.linhas).toHaveLength(0);
@@ -197,14 +216,30 @@ describe("DELETE /v1/mensagens com e-mail no corpo e limite de taxa", () => {
   });
 
   it("DELETE com { email } no corpo apaga só as mensagens desse e-mail", async () => {
-    const r = await app.request("/v1/mensagens", { method: "DELETE", headers: { Authorization: `Bearer ${TOKEN}`, "Content-Type": "application/json" }, body: JSON.stringify({ email: "MARIA@exemplo.com" }) }, env);
+    const r = await app.request(
+      "/v1/mensagens",
+      {
+        method: "DELETE",
+        headers: { Authorization: `Bearer ${TOKEN}`, "Content-Type": "application/json" },
+        body: JSON.stringify({ email: "MARIA@exemplo.com" }),
+      },
+      env,
+    );
     expect(await r.json()).toEqual({ apagadas: 1 });
     expect(r.headers.get("Deprecation")).toBeNull();
     expect(repo.linhas.map((l) => l.email)).toEqual(["joao@exemplo.com"]);
   });
 
   it("DELETE /v1/acessos com corpo apaga também as mensagens", async () => {
-    const r = await app.request("/v1/acessos", { method: "DELETE", headers: { Authorization: `Bearer ${TOKEN}`, "Content-Type": "application/json" }, body: JSON.stringify({ email: "joao@exemplo.com" }) }, env);
+    const r = await app.request(
+      "/v1/acessos",
+      {
+        method: "DELETE",
+        headers: { Authorization: `Bearer ${TOKEN}`, "Content-Type": "application/json" },
+        body: JSON.stringify({ email: "joao@exemplo.com" }),
+      },
+      env,
+    );
     expect(await r.json()).toEqual({ apagados: 0, mensagens: 1 });
   });
 
@@ -215,8 +250,24 @@ describe("DELETE /v1/mensagens com e-mail no corpo e limite de taxa", () => {
 
   it("POST acima do limite responde 429 sem gravar; a chave separa a rota de mensagens", async () => {
     const chaves: string[] = [];
-    app = criarApp({ repositorio: () => acessos, mensagens: () => repo, agora: () => agora, limitar: async (_e, chave) => { chaves.push(chave); return false; } });
-    const r = await app.request("/v1/mensagens", { method: "POST", headers: { "Content-Type": "application/json", Origin: ORIGEM, "CF-Connecting-IP": "203.0.113.7" }, body: JSON.stringify({ ...valida, mensagem: "nova" }) }, env);
+    app = criarApp({
+      repositorio: () => acessos,
+      mensagens: () => repo,
+      agora: () => agora,
+      limitar: async (_e, chave) => {
+        chaves.push(chave);
+        return false;
+      },
+    });
+    const r = await app.request(
+      "/v1/mensagens",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Origin: ORIGEM, "CF-Connecting-IP": "203.0.113.7" },
+        body: JSON.stringify({ ...valida, mensagem: "nova" }),
+      },
+      env,
+    );
     expect(r.status).toBe(429);
     expect(r.headers.get("Retry-After")).toBe("60");
     expect(chaves).toEqual(["203.0.113.7:mensagens"]);

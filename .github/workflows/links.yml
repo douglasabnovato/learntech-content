@@ -1,0 +1,58 @@
+# Verificador de links do conteúdo (issue #7): toda segunda de manhã testa as URLs de content/.
+# Com erro (404, 410 ou domínio inexistente), abre uma issue "Links quebrados" ou comenta na que já está aberta.
+# Avisos (bloqueio de robô, 403, 429, 5xx) só aparecem no relatório anexado ao run, sem reprovar.
+# Também pode ser disparado à mão na aba Actions (workflow_dispatch).
+name: links
+
+on:
+  schedule:
+    - cron: "23 10 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Testar os links (npm run links)
+        id: links
+        run: |
+          node scripts/verificar-links.mjs --saida relatorio-links.md | tee saida.txt
+          echo "erros=$(grep -oE '[0-9]+ erros' saida.txt | grep -oE '[0-9]+' || echo 0)" >> "$GITHUB_OUTPUT"
+
+      - name: Guardar o relatório
+        uses: actions/upload-artifact@v4
+        with:
+          name: relatorio-links
+          path: relatorio-links.md
+
+      - name: Abrir ou atualizar a issue de links quebrados
+        if: steps.links.outputs.erros != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ERROS: ${{ steps.links.outputs.erros }}
+        run: |
+          titulo="Links quebrados no conteúdo"
+          {
+            echo "A verificação semanal achou **${ERROS} links quebrados**. Relatório completo (com os avisos): ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            echo
+            sed -n '/^## Erros/,/^## Avisos/p' relatorio-links.md | sed '$d'
+            echo
+            echo "<sub>por douglas ciborgue</sub>"
+          } > corpo.md
+          numero=$(gh issue list --state open --search "in:title \"$titulo\"" --json number --jq '.[0].number')
+          if [ -n "$numero" ]; then
+            gh issue comment "$numero" --body-file corpo.md
+          else
+            gh issue create --title "$titulo" --body-file corpo.md --label qualidade
+          fi

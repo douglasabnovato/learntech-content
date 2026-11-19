@@ -42,7 +42,11 @@ for (const lote of lotes) {
   }
   if (pendentes) console.log(`  falta   decidir o uso de ${pendentes} arquivo(s) (npm run hd:uso)`);
   if (!relatorios.length) console.log("  falta   relatório do lote em docs/processo/lotes/");
-  console.log(aprovacao ? `  aprovado pelo autor em ${aprovacao[1]}` : "  falta   aprovação do autor (linha \"Aprovado pelo autor em: AAAA-MM-DD\" no relatório)");
+  console.log(
+    aprovacao
+      ? `  aprovado pelo autor em ${aprovacao[1]}`
+      : '  falta   aprovação do autor (linha "Aprovado pelo autor em: AAAA-MM-DD" no relatório)',
+  );
   console.log(fechado ? "  => LEVA FECHADA: os arquivos deste lote podem sair do hd." : "  => LEVA ABERTA: não remover arquivos do hd.");
 }
 
@@ -56,7 +60,8 @@ if (fs.existsSync(mapaLocal) && fs.existsSync(cache)) {
   const todos = [];
   (function andar(dir) {
     for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
-      if ((dir === HD && e.name.startsWith(".")) || ["desktop.ini", ".ds_store", "thumbs.db"].includes(e.name.toLowerCase())) continue; /* arquivos de sistema */
+      if ((dir === HD && e.name.startsWith(".")) || ["desktop.ini", ".ds_store", "thumbs.db"].includes(e.name.toLowerCase()))
+        continue; /* arquivos de sistema */
       const p = path.join(dir, e.name);
       if (e.isDirectory()) andar(p);
       else todos.push(path.relative(HD, p).split(path.sep).join("/"));

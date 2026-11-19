@@ -47,4 +47,5 @@ Regra (03/11/2026): teste ou script que o Claude escreve sem conseguir rodar fic
 - [x] Cabeçalhos de segurança na API (`public/_headers` e middleware em `src/app.ts`, com teste)
 - [x] Auditoria de dependências (`npm audit`) com relatório nos projetos com Node: `npm audit --omit=dev` em 10/11/2026 com 0 vulnerabilidades na API, no bootcamps, na career e no tools (`docs/engenharia/relatorios/medicao-2026-11-10.md`). O learn-tech não tem lockfile (learn-tech#127, decisão do autor)
 - [x] Monitoramento de disponibilidade da API e dos sites (`.github/workflows/disponibilidade.yml`, a cada 6 horas)
+- [x] e2e e acessibilidade contra a produção, toda segunda (`.github/workflows/e2e.yml`, #10; como ler em `docs/COMO-EVOLUIR.md`, seção 6)
 - [x] Observabilidade: logs e erros da API (Workers Logs ligado em `wrangler.jsonc`, `onError` com log JSON estruturado, `/v1/saude`)

@@ -1,6 +1,6 @@
 # Estado do ecossistema: comece por aqui
 
-Ponto de entrada de toda conversa nova com o Claude. Atualizado ao fim de cada conversa. **Última atualização: 09/11/2026.**
+Ponto de entrada de toda conversa nova com o Claude. Atualizado ao fim de cada conversa. **Última atualização: 18/11/2026.**
 
 ## O que é
 O learnTECH treina pessoas para o ecossistema de tecnologia com o que o autor fez e com o que ele quer fazer. Uma API de conteúdo alimenta quatro sites:
@@ -13,7 +13,9 @@ O learnTECH treina pessoas para o ecossistema de tecnologia com o que o autor fe
 | `career` | Empresas, vagas, perfis e modelos de currículo | GitHub Pages (`douglasabnovato.github.io/career`) |
 | `tools` | Ferramentas e hospedagens | GitHub Pages (`douglasabnovato.github.io/tools`) |
 
-Pasta local: `C:\douglasabnovato-github\mundo-learn-tech\`. O acervo bruto fica em `hd/`.
+Pastas locais:
+- **Máquina do autor:** `C:\douglasabnovato-github\mundo-learn-tech\`, com o acervo bruto em `hd/`.
+- **Segunda máquina, desde 18/11/2026:** `C:\douglasabnovato-learntech\`, só com os 5 clones e **sem o `hd/`**. Nela, o trabalho é de engenharia e de qualidade sobre o que já está nos repositórios.
 
 ## Onde está cada coisa
 - **Colaboração:** `docs/processo/como-trabalhamos.md`.
@@ -22,6 +24,30 @@ Pasta local: `C:\douglasabnovato-github\mundo-learn-tech\`. O acervo bruto fica 
 - **Pendências do autor:** `PROXIMOS-PASSOS.md`.
 - **Histórico por lote:** `docs/processo/lotes/`. Histórico por conversa: `docs/processo/conversas/`.
 - **Medição:** `npm run progresso` (placar), `npm run cobertura`, `npm run leva:status`.
+
+## Situação em 18/11/2026
+- **Linha de base nos 5 repositórios:** a `developer` passa em testes, lint e build, e a CI está verde. A `developer` está à frente da `main`: são 32 commits aqui, 6 no learn-tech, 4 no tools, 5 na career e 1 no bootcamps. Cerca de 15 issues fecham quando o autor levar as `developer` para a `main`, com a API primeiro (a career depende do bb4ff0a).
+- **Triagem das issues abertas (129):** as issues de acervo #12, #13, #14, #16 e #18 já estão na `main` e podem fechar. Só a #15 (vídeos) precisa do `hd/`. As cerca de 90 issues antigas dos sites foram agrupadas em três destinos: fechar com evidência, perguntar ao autor ou mover (ver #29).
+- **Entregue na `developer` (branch `feature/tasks-18-11-2026`):**
+  - **bootcamps#73:** JS inicial de 130 para 95,6 KB gzip, com `LazyMotion`, sem Helmet, fonte servida pelo próprio site, LCP priorizado e fachada do YouTube. Orçamento de 100 KB na CI. Lighthouse móvel entre 82 e 89, com acessibilidade 100. O que falta para chegar a 90 é a #71 (pré-renderização).
+  - **learn-tech#131:** 404 real na Vercel. As reescritas cobrem só as rotas conhecidas e o build gera o `404.html` com `noindex`, conferido por teste.
+  - **#7:** `npm run links`, workflow semanal `links.yml` e primeiro relatório (1.522 URLs, 35 quebradas, em `docs/engenharia/relatorios/links-2026-11-18.md`).
+  - **bootcamps#71:** uma página pré-renderizada por evento (27), com título, Open Graph, canonical e JSON-LD (`Event` por edição, `Course` por formação). O `vercel.json` só reescreve `/event/:slug`, e o resto responde 404.
+  - **Itens 8 e 9 de `orientacoes-ia.md`** (aprovados pelo autor): a CI do bootcamps escuta a `developer`. O learn-tech tem lockfile, `npm ci`, `format:check` e orçamento (#127). A API ganhou `format:check`, e as reformatações ficaram em commits só de estilo. **Renomear as branches de integração continua com o autor.**
+- **Conferir na produção depois da `main`:**
+  - `/nao-existe` responde 404 no learn-tech e no bootcamps;
+  - `/event/<slug>` traz o título do evento;
+  - o `links.yml` roda na segunda.
+- **LCP do modal no tools e na career** (tools#58 e career#30):
+  - o CSS de fontes e ícones passou a carregar sem bloquear (`js/estilos-assincronos.js`, compatível com a CSP);
+  - o SDK de identificação está direto no HTML, com `defer`;
+  - o logo da career virou WebP (211 → 18 KB).
+  - Resultado na home, em celular: tools de 84–91 para 100 (LCP de 1,6 s); career de 75–83 para 96–98 (LCP mediano de 2,5 s).
+  - **No learn-tech e no bootcamps, o SDK no HTML não ajudou.** Medi antes e depois, com `VITE_API_URL`, e desfiz: nesses dois sites, o LCP é uma imagem e não o modal.
+    - learn-tech: o que deu resultado foi trocar o Google Fonts pela Inter servida pelo próprio site (`a2393cb`). A performance foi de 71–76 para 78–79 e o FCP de 3,1 para 2,5 s. O LCP (4,9 s) é a imagem do topo, que espera o React renderizar.
+    - bootcamps: o preload da capa do primeiro card também não ajudou e foi desfeito. A capa só aparece depois do JS e dos dados.
+    - Nos dois, o próximo ganho exige que a imagem do LCP já venha no HTML, sem esperar o React.
+- **Próximo:** content#11 (Lighthouse 13 e `npm audit`), content#8 (orçamento de mídia: as capas da API pesam no LCP do bootcamps) e o LCP do detalhe do tools, que depende do `fetch`.
 
 ## Situação em 09/11/2026
 - **Uso por arquivo** (branch `feature/tasks-09-11-2026`): campo `uso` em cada arquivo do acervo (`exibido`, `fonte`, `similar`, `referencia`, `tecnico`, `descartado`, `pendente`), comandos `hd:imagens` e `hd:uso`, e `leva:status` exigindo zero pendentes. Primeira aplicação automática: 66 fotos `exibido` e 9 arquivos `tecnico`. Relatórios em `docs/processo/relatorios/` (06/11 e 09/11).
@@ -64,7 +90,7 @@ Pasta local: `C:\douglasabnovato-github\mundo-learn-tech\`. O acervo bruto fica 
   - rodar e2e e Lighthouse;
   - o primeiro Run workflow do monitor de disponibilidade.
 
-  Plano: `docs/engenharia/plano-estabilidade-2026-11-03.md`.
+  Plano: `docs/historico/engenharia/plano-estabilidade-2026-11-03.md`.
 - **Alerta novo:** `hd/7-abc-projetos/` tem cerca de 3.150 arquivos fora do inventário (material do ex-empregador). Será uma remessa própria, com a seção 7 das regras editoriais.
 
 ## Situação em 01/11/2026 (histórico)

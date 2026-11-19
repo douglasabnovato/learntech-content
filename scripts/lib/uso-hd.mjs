@@ -39,17 +39,29 @@ export function classificar(arquivos, acervo, imagens = {}, { aplicar = false, p
   let semHash = 0;
   let gravados = 0;
   for (const a of arquivos) {
-    if (!a.sha) { semHash++; continue; }
+    if (!a.sha) {
+      semHash++;
+      continue;
+    }
     const reg = porHash.get(a.sha);
     const copia = vistos.has(a.sha);
     vistos.add(a.sha);
-    if (!reg) { linhas.push({ ...a, fora: true, copia }); continue; }
+    if (!reg) {
+      linhas.push({ ...a, fora: true, copia });
+      continue;
+    }
     const achada = IMAGEM.has(a.ext) ? imagens[a.rel] : null;
     const img = achada && !FALSO_POSITIVO.test(achada.publicada ?? "") ? achada : null;
     if (aplicar && !copia && pendente(reg.f)) {
       const dest = img && img.dist <= DIST_EXIBIDA ? destinoDaImagem(img.publicada, pastas) : null;
-      if (TECNICO.has(a.ext) || METADADO_MAC.test(a.rel)) { reg.f.uso = "tecnico"; gravados++; }
-      else if (dest && reg.it.destinos.includes(dest)) { reg.f.uso = "exibido"; reg.f.destino = dest; gravados++; }
+      if (TECNICO.has(a.ext) || METADADO_MAC.test(a.rel)) {
+        reg.f.uso = "tecnico";
+        gravados++;
+      } else if (dest && reg.it.destinos.includes(dest)) {
+        reg.f.uso = "exibido";
+        reg.f.destino = dest;
+        gravados++;
+      }
     }
     const provavel = !!img && img.dist <= DIST_PROVAVEL && pendente(reg.f);
     linhas.push({ ...a, it: reg.it, uso: reg.f.uso ?? "pendente", copia, provavel });

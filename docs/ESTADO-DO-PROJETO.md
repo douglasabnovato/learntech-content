@@ -1,6 +1,6 @@
 # Estado do projeto: learntech-content (API)
 
-**Atualizado em 10/11/2026.** A régua dos 12 critérios está em [`MVP.md`](MVP.md). Este arquivo responde a três perguntas: onde o projeto está, o que já fizemos e o que queremos fazer. Para trazer arquivos novos ou mudar a estrutura, siga [`COMO-EVOLUIR.md`](COMO-EVOLUIR.md).
+**Atualizado em 12/11/2026.** O estado oficial, com evidência, está em [`MVP.md`](MVP.md): este arquivo não repete números de testes nem a contagem dos critérios. Este arquivo responde a três perguntas: onde o projeto está, o que já fizemos e o que queremos fazer. Para trazer arquivos novos ou mudar a estrutura, siga [`COMO-EVOLUIR.md`](COMO-EVOLUIR.md).
 
 ## Onde está
 
@@ -8,7 +8,7 @@
 |---|---|
 | Produção | `https://learntech-content.douglasabnovato.workers.dev` (Cloudflare Workers + D1 + Static Assets). `GET /v1/saude` responde `ok` |
 | Repositório | `main` protegida (ruleset "main protegida": check `verificar` obrigatório, sem force push). Fluxo: `feature/tasks-DD-MM-AAAA` → `developer` → `main`, só fast-forward |
-| CI | `ci.yml` com typecheck, lint, 126 testes e build. `deploy.yml` só roda com a variável `DEPLOY_AUTOMATICO = sim` |
+| CI | `ci.yml` com typecheck, lint, testes e build (contagem e run em `MVP.md`, critério 11). `e2e.yml` contra a produção toda segunda, depois que chegar à `main`. `deploy.yml` só roda com a variável `DEPLOY_AUTOMATICO = sim` |
 | Deploy | Manual com `npm run deploy`, na máquina do autor, até os segredos da Cloudflare estarem no GitHub (#9) |
 | Conteúdo servido | 49 programas, 46 artigos, 27 eventos, 43 empresas, 24 vagas, 14 perfis, 97 ferramentas, 12 hospedagens (índice da API em 10/11) |
 | Placar (`npm run progresso`) | 79/100 em 10/11, logo depois de as cinco integrações irem para a `main` |
@@ -27,9 +27,11 @@
 | 06/11, fluxo de agentes | Fase 0: estados `extraido`, `triado`, `produzido` e `exibido` no acervo, com `triagem` e `etapas`; `docs/processo/agentes.md`; contratos dos quatro sites em `docs/contratos/`; `CLAUDE.md` nos cinco repositórios; 107 testes |
 | 06/11 | Este documento em cada repositório, README com o estado e issues novas para as lacunas (#10 e #11) |
 | 09/11 | Fase 1 do fluxo de agentes (`hd:extrair`, triador, A1 e gabarito); uso dos 502 documentos e das fotos do hd; destinos em formato único `projeto/recurso/id` (#18); galeria no programa e no artigo (ADR 12) |
+| 11/11 | Miniaturas de 320 px no tools (`thumbPequena`, tools#55); workflow `e2e` na CI (#10); testes do SDK de identificação e SDK no ESLint (#6) |
+| 12/11 | Documentação reorganizada: relatórios antigos em `docs/historico/`, README com a lista de documentos, teste de links e comandos e teste de contrato com os quatro sites (#28) |
 | 10/11 | Página `/conheca` (textos na API e contagem do blog no índice, #21); cinco integrações na `main` e deploy (versão `40e6d2df`); thumbs da career em WebP (career#31); e2e e Lighthouse contra a produção; `MVP.md` |
 
-Detalhes: `docs/engenharia/diagnostico-mvp-2026-11-03.md`, `docs/engenharia/mvp-2026-11-03.md` e `docs/processo/conversas/2026-11-03-mvp-cinco-projetos.md`.
+Detalhes: `docs/historico/engenharia/diagnostico-mvp-2026-11-03.md`, `docs/historico/engenharia/mvp-2026-11-03.md` e `docs/processo/conversas/2026-11-03-mvp-cinco-projetos.md`.
 
 ## O que queremos fazer
 
@@ -38,8 +40,7 @@ Todas as issues têm o label `proximos-passos` e pelo menos três critérios de 
 | Ordem | Issue | O quê | Tipo |
 |---|---|---|---|
 | 1 | [#9](https://github.com/douglasabnovato/learntech-content/issues/9) | Deploy automático com os segredos da Cloudflare | infra, decisão do autor |
-| 2 | [#10](https://github.com/douglasabnovato/learntech-content/issues/10) | e2e e acessibilidade agendados na CI | qualidade |
-| 3 | [#6](https://github.com/douglasabnovato/learntech-content/issues/6) | Testes e lint do SDK `identificacao.js` | testes |
+| 2 | [#28](https://github.com/douglasabnovato/learntech-content/issues/28) | Documentação organizada e contrato com os sites protegido por teste | qualidade |
 | 4 | [#7](https://github.com/douglasabnovato/learntech-content/issues/7) | Verificador de links agendado | qualidade |
 | 5 | [#11](https://github.com/douglasabnovato/learntech-content/issues/11) | Lighthouse 13 e auditoria sem vulnerabilidade alta | engenharia |
 | 6 | [#8](https://github.com/douglasabnovato/learntech-content/issues/8) | Mídia no R2 (só se couber no plano gratuito) e orçamento de tamanho no build | performance |
@@ -64,4 +65,4 @@ Os arquivos novos do `hd/` entram pelo fluxo de agentes de `docs/processo/agente
 | tools | [`docs/ESTADO-DO-PROJETO.md`](https://github.com/douglasabnovato/tools/blob/main/docs/ESTADO-DO-PROJETO.md) |
 
 ## Como manter este arquivo
-Ao fim de cada rodada: acrescente uma linha em "O que fizemos", atualize "Onde está" com os números de `npm run progresso` e `npm test`, e troque as issues fechadas por novas em "O que queremos fazer". O ponto de entrada das conversas continua sendo `docs/processo/ESTADO.md`.
+Ao fim de cada rodada: acrescente uma linha em "O que fizemos", atualize "Onde está" com o placar de `npm run progresso` (números de testes e critérios só no `MVP.md`), e troque as issues fechadas por novas em "O que queremos fazer". O ponto de entrada das conversas continua sendo `docs/processo/ESTADO.md`.

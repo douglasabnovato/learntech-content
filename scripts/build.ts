@@ -28,7 +28,9 @@ function main(): void {
     console.error(`✖ ${erros.length} problema(s) no conteúdo:\n  - ${erros.join("\n  - ")}`);
     process.exit(1);
   }
-  console.log(`✔ conteúdo válido: ${conteudo.programas.length} programas, ${conteudo.eventos.length} eventos, ${conteudo.ferramentas.length} ferramentas, ${conteudo.empresas.length} empresas`);
+  console.log(
+    `✔ conteúdo válido: ${conteudo.programas.length} programas, ${conteudo.eventos.length} eventos, ${conteudo.ferramentas.length} ferramentas, ${conteudo.empresas.length} empresas`,
+  );
   if (somenteValidar) return;
 
   fs.rmSync(DIST, { recursive: true, force: true });

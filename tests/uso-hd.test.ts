@@ -7,7 +7,8 @@ const h = (c: string) => c.repeat(64);
 const novoAcervo = () => ({
   itens: [
     {
-      id: "HD-9001", destinos: ["bootcamps/eventos/gdg-jf"],
+      id: "HD-9001",
+      destinos: ["bootcamps/eventos/gdg-jf"],
       arquivos: [
         { sha256: h("a"), ext: "jpg", bytes: 1 },
         { sha256: h("b"), ext: "ico", bytes: 1 },

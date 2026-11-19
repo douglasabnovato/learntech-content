@@ -16,6 +16,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { hojeLocal } from "./lib/data-local.mjs";
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const C = path.join(RAIZ, "content");
@@ -27,9 +28,9 @@ const SITES = {
   tools: "https://douglasabnovato.github.io/tools",
 };
 const ler = (p) => JSON.parse(fs.readFileSync(path.join(C, p), "utf8"));
-const lista = (v) => (Array.isArray(v) ? v : Object.values(v).find(Array.isArray) ?? []);
+const lista = (v) => (Array.isArray(v) ? v : (Object.values(v).find(Array.isArray) ?? []));
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
-const hoje = new Date().toISOString().slice(0, 10);
+const hoje = hojeLocal();
 const xml = (urls) =>
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${esc(u)}</loc><lastmod>${hoje}</lastmod></url>`).join("\n")}\n</urlset>\n`;
 const robots = (base) => `User-agent: *\nAllow: /\n\nSitemap: ${base}/sitemap.xml\n`;
@@ -41,27 +42,54 @@ const comDetalhe = (arq) => lista(ler(arq)).filter((i) => i.slug && i.detalhe);
 
 const saidas = {
   "learn-tech/public": [
-    ...["/", "/conheca", "/programs", "/blogs", "/category", "/about", "/aprender", "/careers", "/softskills", "/mentorias", "/resources", "/falaae", "/privacy", "/terms"].map((r) => SITES["learn-tech"] + r),
+    ...[
+      "/",
+      "/conheca",
+      "/programs",
+      "/blogs",
+      "/category",
+      "/about",
+      "/aprender",
+      "/careers",
+      "/softskills",
+      "/mentorias",
+      "/resources",
+      "/falaae",
+      "/privacy",
+      "/terms",
+    ].map((r) => SITES["learn-tech"] + r),
     ...programas.map((p) => `${SITES["learn-tech"]}/program/${p.categoryFilter}/${p.id}`),
     ...blog.map((b) => `${SITES["learn-tech"]}/blog/${b.id}`),
   ],
   "bootcamps/public": [SITES.bootcamps + "/", ...eventos.map((e) => `${SITES.bootcamps}/event/${e.slug}`)],
   career: [
     SITES.career + "/",
-    ...["empresas", "vagas", "perfis"].flatMap((t) => comDetalhe(`career/${t}.json`).map((i) => `${SITES.career}/detalhe.html?tipo=${t}&id=${i.slug}`)),
+    ...["empresas", "vagas", "perfis"].flatMap((t) =>
+      comDetalhe(`career/${t}.json`).map((i) => `${SITES.career}/detalhe.html?tipo=${t}&id=${i.slug}`),
+    ),
   ],
   /* Set: se uma ferramenta e uma hospedagem tiverem o mesmo slug, o detalhe.html abre a mesma página. */
-  tools: [...new Set([
-    SITES.tools + "/",
-    ...["ferramentas", "hospedagens"].flatMap((t) => comDetalhe(`tools/${t}.json`).map((i) => `${SITES.tools}/detalhe.html?id=${i.slug}`)),
-  ])],
+  tools: [
+    ...new Set([
+      SITES.tools + "/",
+      ...["ferramentas", "hospedagens"].flatMap((t) =>
+        comDetalhe(`tools/${t}.json`).map((i) => `${SITES.tools}/detalhe.html?id=${i.slug}`),
+      ),
+    ]),
+  ],
 };
 const SIMULAR = process.argv.includes("--simular");
 
 for (const [pasta, urls] of Object.entries(saidas)) {
   const destino = path.join(VIZINHOS, pasta);
-  if (SIMULAR) { console.log(`~ ${pasta}/sitemap.xml (${urls.length} URLs, não gravado)`); continue; }
-  if (!fs.existsSync(destino)) { console.warn(`- ${pasta} não encontrado, pulei`); continue; }
+  if (SIMULAR) {
+    console.log(`~ ${pasta}/sitemap.xml (${urls.length} URLs, não gravado)`);
+    continue;
+  }
+  if (!fs.existsSync(destino)) {
+    console.warn(`- ${pasta} não encontrado, pulei`);
+    continue;
+  }
   fs.writeFileSync(path.join(destino, "sitemap.xml"), xml(urls));
   if (pasta.endsWith("/public")) fs.writeFileSync(path.join(destino, "robots.txt"), robots(SITES[pasta.split("/")[0]]));
   console.log(`+ ${pasta}/sitemap.xml (${urls.length} URLs)`);

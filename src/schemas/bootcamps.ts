@@ -23,7 +23,10 @@ const edicaoSchema = z.object({
   numero: z.number().int().positive().optional(),
   year: z.string().regex(/^\d{4}$/),
   /* Data no formato AAAA-MM-DD; o build confere se bate com year. */
-  data: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+  data: z
+    .string()
+    .regex(/^\d{4}-\d{2}-\d{2}$/)
+    .optional(),
   horario: z.string().optional(),
   local: z.object({ nome: textoObrigatorio, cidade: textoObrigatorio }).optional(),
   tema: z.string().optional(),

@@ -4,18 +4,36 @@ import { describe, it, expect } from "vitest";
 import { compararItem, resumir } from "../scripts/lib/gabarito.mjs";
 
 const item = {
-  id: "HD-9001", direitos: "proprio", destinos: ["bootcamps/eventos/gdg-jf", "learn-tech/programas/1005"],
-  arquivos: [{ sha256: "a", uso: "exibido" }, { sha256: "b", uso: "descartado" }],
+  id: "HD-9001",
+  direitos: "proprio",
+  destinos: ["bootcamps/eventos/gdg-jf", "learn-tech/programas/1005"],
+  arquivos: [
+    { sha256: "a", uso: "exibido" },
+    { sha256: "b", uso: "descartado" },
+  ],
 };
 
 describe("gabarito do triador", () => {
   it("acerta direitos iguais e destinos com metade ou mais dos propostos certos", () => {
-    const r = compararItem({ direitos: "proprio", destinos: ["bootcamps/eventos/gdg-jf", "tools/ferramentas/figma"], arquivos: [{ sha256: "a", uso: "exibido" }, { sha256: "b", uso: "similar" }] }, item);
+    const r = compararItem(
+      {
+        direitos: "proprio",
+        destinos: ["bootcamps/eventos/gdg-jf", "tools/ferramentas/figma"],
+        arquivos: [
+          { sha256: "a", uso: "exibido" },
+          { sha256: "b", uso: "similar" },
+        ],
+      },
+      item,
+    );
     expect(r).toMatchObject({ direitosOk: true, destinosOk: true, comuns: 1, uso: { iguais: 1, comparados: 2 } });
   });
 
   it("erra destinos quando a maioria dos propostos está fora do acervo", () => {
-    const r = compararItem({ direitos: "terceiro-citavel", destinos: ["bootcamps/eventos/gdg-jf", "tools/ferramentas/figma", "career/empresas/x"] }, item);
+    const r = compararItem(
+      { direitos: "terceiro-citavel", destinos: ["bootcamps/eventos/gdg-jf", "tools/ferramentas/figma", "career/empresas/x"] },
+      item,
+    );
     expect(r).toMatchObject({ direitosOk: false, destinosOk: false });
   });
 

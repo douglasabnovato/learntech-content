@@ -1,8 +1,8 @@
 ﻿# verificar.ps1 - verificacao do learntech-content (revisao claudeia 27/10/2026).
 # Uso, na raiz do repositorio:
-#   powershell -ExecutionPolicy Bypass -File docs\claudeia\verificar.ps1
-#   powershell -ExecutionPolicy Bypass -File docs\claudeia\verificar.ps1 -SemNpm
-#   powershell -ExecutionPolicy Bypass -File docs\claudeia\verificar.ps1 -Api https://learntech-content.SEU-SUB.workers.dev
+#   powershell -ExecutionPolicy Bypass -File docs\historico\claudeia\verificar.ps1
+#   powershell -ExecutionPolicy Bypass -File docs\historico\claudeia\verificar.ps1 -SemNpm
+#   powershell -ExecutionPolicy Bypass -File docs\historico\claudeia\verificar.ps1 -Api https://learntech-content.SEU-SUB.workers.dev
 # So le arquivos e roda scripts que ja existem no package.json. Nao publica, nao grava no D1, nao apaga nada
 # (o "npm run build" recria a pasta dist/, como sempre fez).
 
@@ -12,7 +12,7 @@ param(
 )
 
 $ErrorActionPreference = "Continue"
-$Raiz = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
+$Raiz = (Resolve-Path (Join-Path $PSScriptRoot "..\..\..")).Path
 Set-Location $Raiz
 $Resultados = New-Object System.Collections.Generic.List[object]
 

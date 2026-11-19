@@ -3,9 +3,26 @@ import { z } from "zod";
 import { textoObrigatorio, urlOuMidia, urlAbsoluta, slug } from "./comum";
 
 export const ICONES_MODULO = [
-  "bolt", "clipboard", "comment", "folder", "gauge", "github", "globe",
-  "grid", "laptop", "list", "mobile", "palette", "rocket", "search",
-  "shield", "sitemap", "sync", "tags", "tasks", "tools",
+  "bolt",
+  "clipboard",
+  "comment",
+  "folder",
+  "gauge",
+  "github",
+  "globe",
+  "grid",
+  "laptop",
+  "list",
+  "mobile",
+  "palette",
+  "rocket",
+  "search",
+  "shield",
+  "sitemap",
+  "sync",
+  "tags",
+  "tasks",
+  "tools",
 ] as const;
 
 const icone = z.enum(ICONES_MODULO);
@@ -51,34 +68,48 @@ export const moduloSchema = z.object({
 /* Foto de galeria do programa ou do artigo do blog (ADR 12): a imagem, o texto alternativo e uma legenda opcional. */
 export const fotoGaleriaSchema = z.object({ url: urlOuMidia, alt: textoObrigatorio, legenda: z.string().optional() });
 
-export const programaSchema = z.looseObject({
-  id: z.number().int().positive(),
-  image: urlOuMidia.nullable().optional(),
-  galeria: z.array(fotoGaleriaSchema).optional(),
-  video: urlOuMidia.nullable().optional(),
-  videoPoster: urlOuMidia.nullable().optional(),
-  category: textoObrigatorio,
-  categoryFilter: z.string().regex(/^[a-z0-9-]+$/),
-  title: textoObrigatorio,
-  lessons: z.string().optional(),
-  duration: z.string().optional(),
-  access: z.string().optional(),
-  accessType: z.string().optional(),
-  level: z.string().nullable().optional(),
-  description: z.string().optional(),
-  /* Card do site: "lancado" (colorido, "Aprenda") ou "novidade" (preto e branco, "Em breve"). Sem o campo, o site decide pelos módulos. */
-  status: z.enum(["lancado", "novidade"]).optional(),
-  modules: z.array(moduloSchema).optional(),
-  moduleContents: z.array(conteudoModuloSchema).optional(),
-  quiz: z.array(questaoSchema).optional(),
-  sources: z.array(z.object({ label: textoObrigatorio, url: urlAbsoluta })).optional(),
-}).refine((p) => !("rating" in p) && !("students" in p), "programa não expõe rating nem students (números que a plataforma não mede)");
+export const programaSchema = z
+  .looseObject({
+    id: z.number().int().positive(),
+    image: urlOuMidia.nullable().optional(),
+    galeria: z.array(fotoGaleriaSchema).optional(),
+    video: urlOuMidia.nullable().optional(),
+    videoPoster: urlOuMidia.nullable().optional(),
+    category: textoObrigatorio,
+    categoryFilter: z.string().regex(/^[a-z0-9-]+$/),
+    title: textoObrigatorio,
+    lessons: z.string().optional(),
+    duration: z.string().optional(),
+    access: z.string().optional(),
+    accessType: z.string().optional(),
+    level: z.string().nullable().optional(),
+    description: z.string().optional(),
+    /* Card do site: "lancado" (colorido, "Aprenda") ou "novidade" (preto e branco, "Em breve"). Sem o campo, o site decide pelos módulos. */
+    status: z.enum(["lancado", "novidade"]).optional(),
+    modules: z.array(moduloSchema).optional(),
+    moduleContents: z.array(conteudoModuloSchema).optional(),
+    quiz: z.array(questaoSchema).optional(),
+    sources: z.array(z.object({ label: textoObrigatorio, url: urlAbsoluta })).optional(),
+  })
+  .refine((p) => !("rating" in p) && !("students" in p), "programa não expõe rating nem students (números que a plataforma não mede)");
 
 export type Programa = z.infer<typeof programaSchema>;
 
 export const CAMPOS_RESUMO = [
-  "id", "image", "video", "videoPoster", "category", "categoryFilter", "title",
-  "lessons", "duration", "access", "accessType", "level", "description", "status",
+  "id",
+  "image",
+  "video",
+  "videoPoster",
+  "category",
+  "categoryFilter",
+  "title",
+  "lessons",
+  "duration",
+  "access",
+  "accessType",
+  "level",
+  "description",
+  "status",
 ] as const;
 
 export const paginaSchema = z.record(z.string(), z.unknown());
@@ -94,13 +125,15 @@ export const areaSchema = z.object({
   competencias: z.array(textoObrigatorio).optional(),
   ferramentas: z.array(textoObrigatorio).optional(),
   comoComecar: z.array(textoObrigatorio).optional(),
-  cards: z.array(z.object({
-    categoria: slug.nullable(),
-    icon: textoObrigatorio,
-    title: textoObrigatorio,
-    description: textoObrigatorio,
-    color: textoObrigatorio,
-  })),
+  cards: z.array(
+    z.object({
+      categoria: slug.nullable(),
+      icon: textoObrigatorio,
+      title: textoObrigatorio,
+      description: textoObrigatorio,
+      color: textoObrigatorio,
+    }),
+  ),
   categorias: z.array(z.string().regex(/^[a-z0-9-]+$/)),
   closing: z.string().nullable(),
   sources: z.array(z.object({ label: textoObrigatorio, url: urlAbsoluta })).min(1),
@@ -110,8 +143,49 @@ export const areaSchema = z.object({
 export type Area = z.infer<typeof areaSchema>;
 
 export const PAGINAS = [
-  "sobre", "aprender", "carreira", "categorias", "blog", "faq",
-  "navegacao", "mentorias", "privacidade", "termos", "estatisticas", "conheca",
+  "sobre",
+  "aprender",
+  "carreira",
+  "categorias",
+  "blog",
+  "faq",
+  "navegacao",
+  "mentorias",
+  "privacidade",
+  "termos",
+  "estatisticas",
+  "conheca",
+  "trilhas",
 ] as const;
+
+/* Trilhas por objetivo (learn-tech#132): curadoria de programas e artigos que já existem, em ordem.
+   Cada passo aponta por id; o build confere que o programa ou o artigo existe. O tempo estimado
+   é calculado pelo site a partir da duração dos programas e do tempo de leitura dos artigos. */
+export const trilhasSchema = z.object({
+  titulo: textoObrigatorio,
+  introducao: textoObrigatorio,
+  itens: z
+    .array(
+      z.object({
+        id: slug,
+        titulo: textoObrigatorio,
+        objetivo: textoObrigatorio,
+        paraQuem: textoObrigatorio,
+        passos: z
+          .array(
+            z.object({
+              tipo: z.enum(["programa", "artigo"]),
+              id: z.union([z.number().int().positive(), slug]),
+              porque: textoObrigatorio,
+            }),
+          )
+          .min(4)
+          .max(6),
+      }),
+    )
+    .min(1),
+});
+
+export type Trilhas = z.infer<typeof trilhasSchema>;
 
 /* Fim de learn-tech.ts */

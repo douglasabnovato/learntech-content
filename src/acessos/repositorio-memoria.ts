@@ -31,14 +31,18 @@ export function repositorioMemoria(iniciais: Acesso[] = []): RepositorioAcessos 
       const porDia = new Map<string, number>();
       for (const l of linhas) {
         const p = porProjeto.get(l.projeto) ?? { acessos: 0, emails: new Set<string>() };
-        p.acessos++; p.emails.add(l.email); porProjeto.set(l.projeto, p);
+        p.acessos++;
+        p.emails.add(l.email);
+        porProjeto.set(l.projeto, p);
         const dia = l.criadoEm.slice(0, 10);
         if (l.criadoEm >= desdeDia) porDia.set(dia, (porDia.get(dia) ?? 0) + 1);
       }
       return {
         total: linhas.length,
         pessoas: new Set(linhas.map((l) => l.email)).size,
-        porProjeto: [...porProjeto].map(([projeto, v]) => ({ projeto, acessos: v.acessos, pessoas: v.emails.size })).sort((a, b) => b.acessos - a.acessos),
+        porProjeto: [...porProjeto]
+          .map(([projeto, v]) => ({ projeto, acessos: v.acessos, pessoas: v.emails.size }))
+          .sort((a, b) => b.acessos - a.acessos),
         porDia: [...porDia].map(([dia, acessos]) => ({ dia, acessos })).sort((a, b) => a.dia.localeCompare(b.dia)),
       };
     },

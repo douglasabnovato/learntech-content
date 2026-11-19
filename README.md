@@ -11,14 +11,24 @@ API de conteúdo do ecossistema **LearnTECH**: um só lugar para os programas, e
 | [career](https://douglasabnovato.github.io/career/) | empresas, vagas, perfis e destaques |
 | [tools](https://douglasabnovato.github.io/tools/) | ferramentas e hospedagens |
 
-## 📍 Estado do projeto (06/11/2026)
+## 📍 Estado do projeto
 
-- **Onde está:** Em produção na Cloudflare, servindo os quatro sites. CI verde, 107 testes, e2e contra a produção com 19 de 19 e placar de 79/100.
-- **O que fizemos na rodada de MVP (03 a 05/11):** Limite de taxa nas escritas, testes do Worker e do D1, dependências sem vulnerabilidade, cópias geradas a partir dos recursos, deploy só depois da CI verde e o lote 4 de conteúdo.
-- **O que queremos fazer:** [#9](https://github.com/douglasabnovato/learntech-content/issues/9), [#10](https://github.com/douglasabnovato/learntech-content/issues/10), [#6](https://github.com/douglasabnovato/learntech-content/issues/6), [#7](https://github.com/douglasabnovato/learntech-content/issues/7), [#11](https://github.com/douglasabnovato/learntech-content/issues/11), [#8](https://github.com/douglasabnovato/learntech-content/issues/8) (deploy automático, e2e agendado, testes do SDK, verificador de links, Lighthouse 13 e mídia no R2). Todas com o label `proximos-passos` e critérios de entrega.
-- **Conteúdo novo do hd:** fluxo de agentes (triador, um produtor por site, revisor e verificador) em [`docs/processo/agentes.md`](docs/processo/agentes.md), com os contratos dos sites em [`docs/contratos/`](docs/contratos/). Fase 0 pronta em 06/11/2026.
+Em produção na Cloudflare, servindo os quatro sites. O estado com evidência (critérios, comandos, datas e números de testes) fica num lugar só: [`docs/MVP.md`](docs/MVP.md). A linha do tempo e as próximas issues em ordem estão em [`docs/ESTADO-DO-PROJETO.md`](docs/ESTADO-DO-PROJETO.md).
 
-A linha do tempo completa, os números e a ordem sugerida estão em [`docs/ESTADO-DO-PROJETO.md`](docs/ESTADO-DO-PROJETO.md).
+> **Cuidado ao mudar a API:** ela alimenta os quatro sites ao mesmo tempo. Campo novo entra como opcional; remover ou renomear campo em `/v1` quebra os sites e exige `/v2` (ADR 3). O teste `tests/contratos-sites.test.ts` falha se um campo que algum site lê sumir.
+
+## Documentos
+
+| Documento | Para quê |
+|---|---|
+| [`docs/COMO-EVOLUIR.md`](docs/COMO-EVOLUIR.md) | Por onde começar: onde fica cada coisa, comandos e checklist antes de dar por pronto |
+| [`docs/ARQUITETURA.md`](docs/ARQUITETURA.md) | Como a API funciona por dentro (build, Worker, D1, SDK) |
+| [`docs/DECISOES.md`](docs/DECISOES.md) | ADRs: por que cada escolha foi feita |
+| [`docs/MVP.md`](docs/MVP.md) | Estado oficial: os 12 critérios com evidência |
+| [`docs/contratos/`](docs/contratos/) | O que cada site recebe e como o conteúdo novo é produzido |
+| [`docs/CONTEUDO.md`](docs/CONTEUDO.md), [`docs/DEPLOY.md`](docs/DEPLOY.md), [`docs/PRIVACIDADE.md`](docs/PRIVACIDADE.md) | Editar conteúdo, publicar e tratar dados pessoais |
+| [`docs/processo/`](docs/processo/), [`docs/engenharia/`](docs/engenharia/) | Processo das levas do hd e engenharia (backlog, versionamento, design system, relatórios) |
+| [`docs/historico/`](docs/historico/) | Análises e diagnósticos antigos, com data. Só consulta: não descrevem o estado atual |
 
 ## Como funciona
 

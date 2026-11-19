@@ -20,7 +20,7 @@ import { fileURLToPath } from "node:url";
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const C = path.join(RAIZ, "content");
 const ler = (p) => JSON.parse(fs.readFileSync(path.join(C, p), "utf8"));
-const lista = (v) => (Array.isArray(v) ? v : Object.values(v).find(Array.isArray) ?? []);
+const lista = (v) => (Array.isArray(v) ? v : (Object.values(v).find(Array.isArray) ?? []));
 const chaves = (itens) => new Set(itens.flatMap((i) => [i.slug, i.id, i.title].filter(Boolean).map(String)));
 const arquivos = (pasta) => new Set(fs.readdirSync(path.join(C, pasta)).map((f) => f.replace(/\.json$/, "")));
 
@@ -37,7 +37,18 @@ const existentes = {
   "tools/hospedagens": chaves(lista(ler("tools/hospedagens.json"))),
 };
 /* Destinos antigos (leva 1) às vezes omitem o projeto ("blog/x", "eventos/x"). */
-const PROJETO_DO_RECURSO = { programas: "learn-tech", blog: "learn-tech", areas: "learn-tech", eventos: "bootcamps", empresas: "career", vagas: "career", perfis: "career", "modelos-curriculo": "career", ferramentas: "tools", hospedagens: "tools" };
+const PROJETO_DO_RECURSO = {
+  programas: "learn-tech",
+  blog: "learn-tech",
+  areas: "learn-tech",
+  eventos: "bootcamps",
+  empresas: "career",
+  vagas: "career",
+  perfis: "career",
+  "modelos-curriculo": "career",
+  ferramentas: "tools",
+  hospedagens: "tools",
+};
 
 const lote = process.argv[2];
 const itens = ler("acervo.json").itens.filter((i) => !lote || i.lote === lote);
@@ -67,7 +78,10 @@ if (faixas[0].length) {
   console.log("\nSem destino:");
   for (const { it } of faixas[0]) console.log(`  ${it.id} [${it.estado}] ${it.descricao.slice(0, 80)}`);
 }
-if (quebrados.length) { console.log("\nDestinos inexistentes:"); quebrados.forEach((q) => console.log("  " + q)); }
+if (quebrados.length) {
+  console.log("\nDestinos inexistentes:");
+  quebrados.forEach((q) => console.log("  " + q));
+}
 process.exit(quebrados.length ? 1 : 0);
 
 /* Fim de cobertura-projetos.mjs */

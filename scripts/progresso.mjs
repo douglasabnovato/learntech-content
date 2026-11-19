@@ -23,7 +23,11 @@ const REPOS = ["learntech-content", "learn-tech", "bootcamps", "career", "tools"
 const acervo = JSON.parse(fs.readFileSync(path.join(RAIZ, "content", "acervo.json"), "utf8")).itens;
 const fechado = (i) => ["publicado", "exibido", "referencia"].includes(i.estado) && i.destinos.length > 0 && !i.pendencias?.length;
 const porLote = {};
-for (const i of acervo) { porLote[i.lote] ??= [0, 0]; porLote[i.lote][1]++; if (fechado(i)) porLote[i.lote][0]++; }
+for (const i of acervo) {
+  porLote[i.lote] ??= [0, 0];
+  porLote[i.lote][1]++;
+  if (fechado(i)) porLote[i.lote][0]++;
+}
 const conteudo = acervo.filter(fechado).length / acervo.length;
 
 const backlog = fs.readFileSync(path.join(RAIZ, "docs", "engenharia", "backlog.md"), "utf8");
@@ -37,7 +41,13 @@ const abertas = (aberto.match(/^\d+\. /gm) ?? []).length;
 const concluidas = (concluido.match(/^- /gm) ?? []).length;
 const autor = abertas + concluidas ? concluidas / (abertas + concluidas) : 1;
 
-const git = (repo, cmd) => { try { return execSync(`git -C "${path.resolve(RAIZ, "..", repo)}" ${cmd}`, { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim(); } catch { return null; } };
+const git = (repo, cmd) => {
+  try {
+    return execSync(`git -C "${path.resolve(RAIZ, "..", repo)}" ${cmd}`, { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim();
+  } catch {
+    return null;
+  }
+};
 /* Commits de branches locais (inclusive a main) que ainda não estão na main publicada (origin/main; sem remota, a main local). */
 const pendentesDePublicar = (r) => {
   const base = git(r, "rev-parse --verify --quiet origin/main") ? "origin/main" : "main";
@@ -45,23 +55,35 @@ const pendentesDePublicar = (r) => {
 };
 const estados = REPOS.map((r) => {
   const limpo = git(r, "status --porcelain") === "";
-  const main = git(r, "rev-parse main"), remota = git(r, "rev-parse origin/main");
+  const main = git(r, "rev-parse main"),
+    remota = git(r, "rev-parse origin/main");
   const foraDaMain = pendentesDePublicar(r);
-  return { r, limpo, foraDaMain, sincronizado: main !== null && main === remota, branch: git(r, "branch --show-current"), ultimo: git(r, 'log -1 --format="%h %s (%cr)" main') };
+  return {
+    r,
+    limpo,
+    foraDaMain,
+    sincronizado: main !== null && main === remota,
+    branch: git(r, "branch --show-current"),
+    ultimo: git(r, 'log -1 --format="%h %s (%cr)" main'),
+  };
 });
 const publicacao = estados.filter((e) => e.limpo && e.sincronizado && e.foraDaMain === 0).length / REPOS.length;
 
 const pct = (x) => `${Math.round(x * 100)}%`;
 const placar = Math.round(conteudo * PESOS.conteudo + engenharia * PESOS.engenharia + autor * PESOS.autor + publicacao * PESOS.publicacao);
 console.log(`PLACAR: ${placar}/100\n`);
-console.log(`Conteúdo do acervo   ${pct(conteudo).padStart(4)}  (peso ${PESOS.conteudo})  ${acervo.filter(fechado).length}/${acervo.length} itens fechados`);
+console.log(
+  `Conteúdo do acervo   ${pct(conteudo).padStart(4)}  (peso ${PESOS.conteudo})  ${acervo.filter(fechado).length}/${acervo.length} itens fechados`,
+);
 for (const [l, [f, t]] of Object.entries(porLote)) console.log(`   lote ${l}: ${f}/${t}`);
 console.log(`Engenharia do MVP    ${pct(engenharia).padStart(4)}  (peso ${PESOS.engenharia})  ${feitos}/${total} itens do backlog`);
 console.log(`Pendências do autor  ${pct(autor).padStart(4)}  (peso ${PESOS.autor})  ${concluidas} concluídas, ${abertas} em aberto`);
 console.log(`Publicação           ${pct(publicacao).padStart(4)}  (peso ${PESOS.publicacao})`);
 for (const e of estados) {
   const fora = e.foraDaMain ? `${e.foraDaMain} commit(s) fora da main` : "nada fora da main";
-  console.log(`   ${e.r.padEnd(18)} ${e.sincronizado ? "main = GitHub" : "main ≠ GitHub"} | ${e.limpo ? "limpo" : "com alterações"} | ${fora} | ${e.branch} | ${e.ultimo}`);
+  console.log(
+    `   ${e.r.padEnd(18)} ${e.sincronizado ? "main = GitHub" : "main ≠ GitHub"} | ${e.limpo ? "limpo" : "com alterações"} | ${fora} | ${e.branch} | ${e.ultimo}`,
+  );
 }
 
 /* Fim de progresso.mjs */

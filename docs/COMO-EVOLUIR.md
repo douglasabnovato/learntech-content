@@ -46,6 +46,7 @@ Regra de cobertura: o mesmo material deve aparecer no máximo de projetos que o 
 3. **Teste:** `tests/conteudo.test.ts`, um caso que planta o erro e outro que confere o recurso gerado.
 4. **OpenAPI:** `scripts/lib/openapi.ts`, quando muda rota ou formato.
 5. **Decisão:** ADR em `DECISOES.md` quando muda contrato, privacidade ou arquitetura.
+   - **Regra do contrato (ADR 3):** campo novo entra como `optional()`. Remover ou renomear campo em `/v1` quebra os quatro sites ao mesmo tempo e exige `/v2`, com os sites migrando antes. `tests/contratos-sites.test.ts` lista o que cada site lê e falha se um desses campos sumir; campo novo que um site passar a ler entra nessa lista.
 6. **Cópias:** `npm run copias`. O gerador usa o mesmo `montarRecursos` do build, então a cópia sai igual à API.
 7. **Sites:** o código de cada site que exibe o campo novo, com o teste dele (veja o `docs/COMO-EVOLUIR.md` de cada site).
 
@@ -53,7 +54,7 @@ Regra de cobertura: o mesmo material deve aparecer no máximo de projetos que o 
 | Comando | Para quê |
 |---|---|
 | `npm run validar` | Só confere `content/` (rápido) |
-| `npm run verificar` | Typecheck, testes (102 em 05/11/2026) e build |
+| `npm run verificar` | Typecheck, testes (166 em 12/11/2026, com o contrato dos quatro sites e o de links dos documentos) e build |
 | `npm run lint` | ESLint (obrigatório na CI) |
 | `npm run copias` / `copias:conferir` | Gera ou confere as cópias de reserva nos quatro sites (pastas irmãs) |
 | `npm run sitemaps` | Gera os sitemaps dos quatro sites |
@@ -66,13 +67,22 @@ Regra de cobertura: o mesmo material deve aparecer no máximo de projetos que o 
 - [ ] `npm run copias:conferir` em dia e os testes de cada site verdes.
 - [ ] CI verde na branch, e `main` e developer iguais à feature (`processo/fluxo-git.md`).
 - [ ] `npm run deploy` feito e `GET /v1/saude` com `status: ok`.
-- [ ] `npm run e2e`: fluxos e acessibilidade sem violação crítica (19 de 19 em 05/11/2026).
+- [ ] `npm run e2e`: fluxos e acessibilidade sem violação crítica (55 de 55 na CI em 11/11/2026, run 43084149168).
 - [ ] Workflow `disponibilidade` verde no GitHub.
+- [ ] Workflow `e2e` verde no GitHub (roda toda segunda às 06h23 de Brasília; veja abaixo como ler).
 
+### Como ler o workflow `e2e`
+- **Quando roda:** toda segunda-feira, à mão na aba Actions ("Run workflow") e quando `.github/workflows/e2e.yml` muda.
+- **O que roda:** os grupos `fluxos`, `acessibilidade` e `capturas` contra a produção dos quatro sites. O grupo `estabilidade` (CLS) fica de fora, porque a rede do runner varia; rode-o na máquina com `npx playwright test -c e2e/playwright.config.mjs --project=estabilidade`. Se uma página falhar, `node e2e/diagnosticar-cls.mjs <site>` mostra quais elementos se moveram (uso no cabeçalho do script).
+- **Vermelho:** um fluxo quebrou ou o axe achou violação `critical`. Abra o passo "Fluxos, acessibilidade e capturas" para ver o teste, e baixe o artefato `e2e-relatorios` para o trace (`artefatos/`) e o HTML do Playwright (`html/index.html`).
+- **Verde com pendência:** o resumo do job (aba Summary) tem a tabela por página com `critical`, `serious`, `moderate` e `minor`. Toda `serious` nova vira issue no site dela.
+- **Capturas:** ficam no artefato, em `capturas/`, por site, página e largura.
+- O artefato fica 30 dias no GitHub.
 ## 7. Onde está cada documento
 - **Fluxo de agentes e contratos:** `processo/agentes.md` e `contratos/`. **Instruções para o Claude:** `../CLAUDE.md`.
 - **Estado do projeto** (o que fizemos e o que queremos fazer, com as issues em ordem): `ESTADO-DO-PROJETO.md`.
 - **Estado atual das conversas:** `processo/ESTADO.md`. **Pendências do autor:** `../PROXIMOS-PASSOS.md`.
 - **Arquitetura e decisões:** `ARQUITETURA.md`, `DECISOES.md`. **Conteúdo:** `CONTEUDO.md`. **Deploy:** `DEPLOY.md`. **Privacidade:** `PRIVACIDADE.md`.
 - **Processo:** `processo/` (levas, regras, modelos, pesquisa, fluxo Git, MVP por repositório).
-- **Engenharia:** `engenharia/` (backlog, diagnósticos, relatórios).
+- **Engenharia:** `engenharia/` (backlog, versionamento, design system e relatórios gerados pelos scripts).
+- **Histórico:** `historico/` guarda análises e diagnósticos com data. Não descrevem o estado atual; o estado está em `MVP.md`. Documento que deixou de valer vai para lá, com a mesma subpasta de origem.
