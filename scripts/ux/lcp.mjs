@@ -28,7 +28,9 @@ for (const url of urls) {
     const r = await lighthouse(url, { port: chrome.port, logLevel: "error", formFactor: "mobile", onlyCategories: ["performance"] });
     const a = r.lhr.audits;
     const fases = Object.fromEntries((a["lcp-breakdown-insight"]?.details?.items?.[0]?.items ?? []).map((x) => [x.subpart, x.duration]));
-    const elemento = a["lcp-breakdown-insight"]?.details?.items?.find((x) => x.type === "node") ?? a["largest-contentful-paint-element"]?.details?.items?.[0]?.items?.[0]?.node;
+    const elemento =
+      a["lcp-breakdown-insight"]?.details?.items?.find((x) => x.type === "node") ??
+      a["largest-contentful-paint-element"]?.details?.items?.[0]?.items?.[0]?.node;
     rodadas.push({
       lcp: a["largest-contentful-paint"].numericValue,
       nota: Math.round(r.lhr.categories.performance.score * 100),
@@ -41,7 +43,13 @@ for (const url of urls) {
   console.log(`  LCP: ${lcps.map(s).join(" / ")} → mediana ${s(mediana(lcps))}; performance ${rodadas.map((x) => x.nota).join(" / ")}`);
   const m = rodadas.find((x) => x.lcp === mediana(lcps));
   console.log(`  elemento: ${String(m.elemento).slice(0, 160)}`);
-  console.log(`  fases: ${Object.entries(m.fases).map(([k, v]) => `${k} ${Math.round(v)} ms`).join(", ") || "?"}`);
+  console.log(
+    `  fases: ${
+      Object.entries(m.fases)
+        .map(([k, v]) => `${k} ${Math.round(v)} ms`)
+        .join(", ") || "?"
+    }`,
+  );
 }
 await chrome.kill();
 
