@@ -1,6 +1,6 @@
 # Estado do ecossistema: comece por aqui
 
-Ponto de entrada de toda conversa nova com o Claude. Atualizado ao fim de cada conversa. **Última atualização: 19/11/2026.**
+Ponto de entrada de toda conversa nova com o Claude. Atualizado ao fim de cada conversa. **Última atualização: 20/11/2026.**
 
 ## O que é
 O learnTECH treina pessoas para o ecossistema de tecnologia com o que o autor fez e com o que ele quer fazer. Uma API de conteúdo alimenta quatro sites:
@@ -21,9 +21,15 @@ Pastas locais:
 - **Colaboração:** `docs/processo/como-trabalhamos.md`.
 - **Processo de conteúdo** (10 etapas, fechamento de leva, cobertura): `docs/processo/README.md`. Regras: `regras-editoriais.md`, `seguranca-privacidade.md`.
 - **Engenharia:** `docs/engenharia/`, com arquitetura, diagnóstico, design system, backlog, guia das etapas manuais e relatórios.
+- **Estratégia de conteúdo** (proposta de 20/11/2026): `docs/estrategia/`, com visão, pedagogia, storytelling, marketing e curadoria.
 - **Pendências do autor:** `PROXIMOS-PASSOS.md`.
 - **Histórico por lote:** `docs/processo/lotes/`. Histórico por conversa: `docs/processo/conversas/`.
 - **Medição:** `npm run progresso` (placar), `npm run cobertura`, `npm run leva:status`.
+
+## Situação em 20/11/2026
+- **Delegação do autor (20/11):** as perguntas ao autor vão primeiro ao LIDER (sessão "Líder de TODOS"), que responde "Decisão LIDER Dnn". Ficam só com o autor: ação irreversível, merge na `main`, segredos, contas, custo, deploy, publicação em nome dele, regra editorial e A1, A2 e A3.
+- **Estratégia de conteúdo** em `docs/estrategia/`, como proposta (Decisão LIDER D16). Cada documento termina com o checklist do revisor, reunido em `docs/processo/checklists.md`. Vale como regra depois do ok do autor.
+- **Fila do autor:** as 3 tarefas que mais destravam são fechar as 28 issues com "Conteúdo produzido", o Dependabot com o nível N3 (content#26 e #27) e fechar a leva 1 com os fatos dos itens 6 e 9.
 
 ## Situação em 19/11/2026
 - **As cinco `developer` foram para a `main`,** com o ok do autor no chat: content#31 primeiro, depois career#40, learn-tech#145, bootcamps#80 e tools#65. O autor fez o `npm run deploy` da API (versão 07818600). Na produção, as páginas principais dão 200 e as rotas inexistentes dão 404 nos quatro sites.
