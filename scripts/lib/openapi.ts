@@ -82,6 +82,14 @@ export function gerarOpenApi(versao: string): Record<string, unknown> {
       "/v1/career/modelos-curriculo.json": leitura("Modelos de currículo fictícios", "ModeloCurriculo", true),
       "/v1/tools/ferramentas.json": leitura("Ferramentas", "Ferramenta", true),
       "/v1/tools/hospedagens.json": leitura("Hospedagens", "Ferramenta", true),
+      "/v1/tools/ferramentas/{slug}.json": {
+        ...leitura("Ferramenta", "Ferramenta"),
+        parameters: [{ name: "slug", in: "path", required: true, schema: { type: "string" } }],
+      },
+      "/v1/tools/hospedagens/{slug}.json": {
+        ...leitura("Hospedagem", "Ferramenta"),
+        parameters: [{ name: "slug", in: "path", required: true, schema: { type: "string" } }],
+      },
       "/v1/cobertura.json": leitura("Matriz de cobertura do acervo", "Cobertura"),
       "/v1/saude": { get: { summary: "Verificação de funcionamento", responses: { "200": { description: "OK" } } } },
       "/v1/acessos": {
