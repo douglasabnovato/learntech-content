@@ -29,6 +29,7 @@ Pastas locais:
 ## Situação em 20/11/2026
 - **Delegação do autor (20/11):** as perguntas ao autor vão primeiro ao LIDER (sessão "Líder de TODOS"), que responde "Decisão LIDER Dnn". Ficam só com o autor: ação irreversível, merge na `main`, segredos, contas, custo, deploy, publicação em nome dele, regra editorial e A1, A2 e A3.
 - **Estratégia de conteúdo** em `docs/estrategia/`, como proposta (Decisão LIDER D16). Cada documento termina com o checklist do revisor, reunido em `docs/processo/checklists.md`. Vale como regra depois do ok do autor.
+- **Entrega 3, parte de código (Decisão LIDER D18):** a hipótese de cada site em `docs/estrategia/hipoteses.md` e a recomendação da ferramenta de medição em `docs/estrategia/medicao.md` (Cloudflare Web Analytics), as duas para o autor decidir. Spec novo `e2e/estados.spec.mjs` (API lenta, API fora e busca vazia nos quatro sites). Na produção, o CLS de learn-tech, bootcamps e tools ficou abaixo de 0,1, e o axe deu 0 violações nas 9 páginas. Os `docs/MVP.md` dos sites passaram para 8 de 12 (career 9).
 - **Fila do autor:** as 3 tarefas que mais destravam são fechar as 28 issues com "Conteúdo produzido", o Dependabot com o nível N3 (content#26 e #27) e fechar a leva 1 com os fatos dos itens 6 e 9.
 
 ## Situação em 19/11/2026

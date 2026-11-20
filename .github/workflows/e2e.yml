@@ -28,7 +28,7 @@ jobs:
       - name: Chromium do Playwright
         run: npx playwright install --with-deps chromium
       - name: Fluxos, acessibilidade e capturas
-        run: npx playwright test -c e2e/playwright.config.mjs --project=fluxos --project=acessibilidade --project=capturas
+        run: npx playwright test -c e2e/playwright.config.mjs --project=fluxos --project=acessibilidade --project=capturas --project=estados
       - name: Resumo no job
         if: always()
         run: |

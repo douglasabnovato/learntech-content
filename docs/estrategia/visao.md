@@ -40,6 +40,8 @@ A trajetória do autor ([`trajetoria-do-autor.md`](../processo/trajetoria-do-aut
 | [`storytelling.md`](storytelling.md) | Como o conteúdo conta a história do autor? |
 | [`marketing.md`](marketing.md) | Como o conteúdo chega a quem precisa, e como sabemos que chegou? |
 | [`curadoria.md`](curadoria.md) | O que é do autor, o que é público, e como se cita? |
+| [`hipoteses.md`](hipoteses.md) | Que aposta cada site testa, e como saberemos? (#23) |
+| [`medicao.md`](medicao.md) | Com que ferramenta gratuita medimos as visitas? (#24) |
 
 Cada documento termina com os itens que o revisor confere. Esses itens estão reunidos em [`checklists.md`](../processo/checklists.md), na seção "Estratégia".
 
