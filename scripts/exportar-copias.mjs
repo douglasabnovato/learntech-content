@@ -81,12 +81,26 @@ function saidas() {
       `import type { BootcampEvent } from "../model/types";\n\nexport const events: BootcampEvent[] = ${json(absolutizar(eventos))};\n`,
   });
 
-  const blog = ler("learn-tech/paginas/blog.json").itens;
+  /* Blog do learn-tech dividido (Decisão LIDER D20, 20/11/2026): blogData.js leva só os campos de card e o lide,
+     que a home, a lista, as trilhas e o topo do artigo usam; o resto de cada artigo vai para blog/<id>.js, que o
+     site carrega sob demanda. Antes, os 46 artigos inteiros (94 kB gzip) entravam no JavaScript da home e do artigo. */
+  const blog = absolutizar(ler("learn-tech/paginas/blog.json").itens);
+  const CAMPOS_DE_CARD = ["id", "blogURL", "img", "title", "tag", "author", "publishedAt", "readingTime", "lead"];
+  const cards = blog.map((a) => Object.fromEntries(CAMPOS_DE_CARD.filter((c) => c in a).map((c) => [c, a[c]])));
   r.push({
     site: "learn-tech",
     arquivo: "src/constants/blogData.js",
-    texto: CABECALHO("content/learn-tech/paginas/blog.json") + `const blogData = ${json(absolutizar(blog))};\n\nexport default blogData;\n`,
+    texto: CABECALHO("content/learn-tech/paginas/blog.json") + `const blogData = ${json(cards)};\n\nexport default blogData;\n`,
   });
+  for (const a of blog) {
+    const resto = Object.fromEntries(Object.entries(a).filter(([c]) => !CAMPOS_DE_CARD.includes(c)));
+    r.push({
+      site: "learn-tech",
+      arquivo: `src/constants/blog/${a.id}.js`,
+      pasta: "src/constants/blog",
+      texto: CABECALHO(`content/learn-tech/paginas/blog.json (artigo ${a.id})`) + `const artigo = ${json(resto)};\n\nexport default artigo;\n`,
+    });
+  }
   /* Catálogo de programas do learn-tech (só os campos de card, como /v1/learn-tech/programas.json):
      completa a reserva manual programsData.js com os programas novos, para listas e cards funcionarem sem API. */
   const catalogo = [...recurso("learn-tech/programas.json")].sort((a, b) => a.id - b.id);
@@ -159,9 +173,30 @@ for (const s of saidas()) {
     divergentes++;
     continue;
   }
+  fs.mkdirSync(path.dirname(destino), { recursive: true });
   fs.writeFileSync(destino, texto);
   console.log(`+ ${s.site}/${s.arquivo}`);
 }
+/* Pastas geradas arquivo a arquivo (o blog do learn-tech): o que sobrou de um artigo que saiu da API também é cópia velha. */
+const geradas = new Map();
+for (const s of saidas().filter((x) => x.pasta)) {
+  const chave = path.join(SITES, s.site, s.pasta);
+  if (!geradas.has(chave)) geradas.set(chave, new Set());
+  geradas.get(chave).add(path.basename(s.arquivo));
+}
+for (const [pasta, esperados] of geradas) {
+  if (!fs.existsSync(pasta)) continue;
+  for (const nome of fs.readdirSync(pasta).filter((n) => !esperados.has(n))) {
+    if (conferir) {
+      console.log(`x ${path.relative(SITES, path.join(pasta, nome))} sobrando (artigo fora da API)`);
+      divergentes++;
+    } else {
+      fs.rmSync(path.join(pasta, nome));
+      console.log(`- ${path.relative(SITES, path.join(pasta, nome))} (artigo fora da API)`);
+    }
+  }
+}
+
 if (conferir && divergentes) {
   console.error(`${divergentes} cópia(s) desatualizada(s): rode npm run copias`);
   process.exit(1);
