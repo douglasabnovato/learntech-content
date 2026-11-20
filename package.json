@@ -31,6 +31,7 @@
     "lint": "eslint src scripts tests",
     "e2e": "playwright test -c e2e/playwright.config.mjs",
     "ux:lighthouse": "node scripts/ux/lighthouse.mjs",
+    "ux:lcp": "node scripts/ux/lcp.mjs",
     "ux:resumo": "node scripts/ux/resumir-e2e.mjs",
     "sitemaps": "node scripts/gerar-sitemaps.mjs",
     "auditar": "node scripts/auditar-dependencias.mjs",
