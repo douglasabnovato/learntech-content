@@ -39,7 +39,7 @@ O critério de entrada é uso real, não popularidade. A ferramenta já existe? 
 - [ ] `site_url` e links com https.
 
 ## Verificação na tela
-- **API:** `/v1/tools/ferramentas.json` e `/v1/tools/hospedagens.json`.
+- **API:** `/v1/tools/ferramentas.json` e `/v1/tools/hospedagens.json` (listas), e `/v1/tools/ferramentas/{slug}.json` e `/v1/tools/hospedagens/{slug}.json` (um item, para a página de detalhe; ADR 13).
 - **Cópias no site:** `data/tools.js` e `data/host.js`.
 - **Página:** `detalhe.html?id=<slug>`, com título, `canonical` com a mesma URL e miniatura carregada.
 - **Catálogo:** o card aparece na busca pelo nome e no filtro da categoria.

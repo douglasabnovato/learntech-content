@@ -76,3 +76,9 @@ Cada decisão tem contexto, escolha e consequência. Mudou de ideia? Acrescente 
 - **Contexto:** no learn-tech, o programa (`image`) e o artigo (`img`) só tinham uma imagem de capa. Fotos do hd que cabiam no tema não tinham onde aparecer e ficavam como `referencia` (issue learn-tech#136).
 - **Decisão:** campo opcional `galeria: [{ url, alt, legenda? }]` no programa (`fotoGaleriaSchema` em `src/schemas/learn-tech.ts`) e no item do blog (conferido em `scripts/lib/conteudo.ts`, porque o blog é página livre). O `alt` é obrigatório. A mídia segue a regra comum: `/media/...` precisa existir.
 - **Consequência:** a OpenAPI do programa ganha o campo, gerada do schema. O learn-tech mostra a galeria no detalhe do programa e no fim do artigo, com ampliação num diálogo nativo. A primeira galeria é a do Hack Dev (HD-0007): duas fotos no programa 1005 e uma no artigo.
+
+## ADR 13: Um recurso por item no tools (20/11/2026)
+
+- **Contexto:** a página de detalhe do tools baixava as listas inteiras (`ferramentas.json`, 118 kB, e `hospedagens.json`) para mostrar um item só, e só então pedia a miniatura, que é o LCP. No celular com cache frio, o LCP ficou em 3,2 s (meta de 2,5 s). O preconnect não mudou nada, e a URL da miniatura não segue o slug em todos os itens (36 de 97), então o site não consegue adivinhá-la. Decisão LIDER D20, opção C.
+- **Decisão:** `/v1/tools/ferramentas/{slug}.json` e `/v1/tools/hospedagens/{slug}.json`, um por item com slug, com o mesmo objeto da lista. O schema não muda: é o mesmo `ferramentaSchema`. Segue o padrão de `/v1/bootcamps/eventos/{slug}.json` e fica fora do `index.json`, como os eventos e os programas.
+- **Consequência:** a OpenAPI ganha as duas rotas. Depois do deploy da API (do autor), o `js/detalhe.js` do tools pode buscar só o item, nas duas pastas, e cair nas listas se o recurso não existir. Essa troca no tools é um passo à parte.
