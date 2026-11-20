@@ -98,7 +98,8 @@ function saidas() {
       site: "learn-tech",
       arquivo: `src/constants/blog/${a.id}.js`,
       pasta: "src/constants/blog",
-      texto: CABECALHO(`content/learn-tech/paginas/blog.json (artigo ${a.id})`) + `const artigo = ${json(resto)};\n\nexport default artigo;\n`,
+      texto:
+        CABECALHO(`content/learn-tech/paginas/blog.json (artigo ${a.id})`) + `const artigo = ${json(resto)};\n\nexport default artigo;\n`,
     });
   }
   /* Catálogo de programas do learn-tech (só os campos de card, como /v1/learn-tech/programas.json):
