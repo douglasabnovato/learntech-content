@@ -237,6 +237,18 @@ describe("recursos gerados", () => {
     for (const e of conteudo.eventos) expect(recursos.some((r) => r.caminho === `bootcamps/eventos/${e.slug}.json`)).toBe(true);
   });
 
+  it("cada ferramenta e cada hospedagem com slug tem recurso próprio, igual ao item da lista (ADR 13)", () => {
+    for (const pasta of ["ferramentas", "hospedagens"]) {
+      const lista = recursos.find((x) => x.caminho === `tools/${pasta}.json`)!.dados as { slug?: string }[];
+      const comSlug = lista.filter((i) => i.slug);
+      expect(comSlug.length).toBeGreaterThan(0);
+      for (const i of comSlug) {
+        const r = recursos.find((x) => x.caminho === `tools/${pasta}/${i.slug}.json`);
+        expect(r?.dados, i.slug).toEqual(i);
+      }
+    }
+  });
+
   it("publica relacionados com título e URL prontos", () => {
     const c = structuredClone(conteudo);
     const f = c.ferramentas.find((x) => x.slug && x.detalhe)!;

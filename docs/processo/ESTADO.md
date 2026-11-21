@@ -1,6 +1,6 @@
 # Estado do ecossistema: comece por aqui
 
-Ponto de entrada de toda conversa nova com o Claude. Atualizado ao fim de cada conversa. **Última atualização: 18/11/2026.**
+Ponto de entrada de toda conversa nova com o Claude. Atualizado ao fim de cada conversa. **Última atualização: 20/11/2026.**
 
 ## O que é
 O learnTECH treina pessoas para o ecossistema de tecnologia com o que o autor fez e com o que ele quer fazer. Uma API de conteúdo alimenta quatro sites:
@@ -21,9 +21,22 @@ Pastas locais:
 - **Colaboração:** `docs/processo/como-trabalhamos.md`.
 - **Processo de conteúdo** (10 etapas, fechamento de leva, cobertura): `docs/processo/README.md`. Regras: `regras-editoriais.md`, `seguranca-privacidade.md`.
 - **Engenharia:** `docs/engenharia/`, com arquitetura, diagnóstico, design system, backlog, guia das etapas manuais e relatórios.
+- **Estratégia de conteúdo** (proposta de 20/11/2026): `docs/estrategia/`, com visão, pedagogia, storytelling, marketing e curadoria.
 - **Pendências do autor:** `PROXIMOS-PASSOS.md`.
 - **Histórico por lote:** `docs/processo/lotes/`. Histórico por conversa: `docs/processo/conversas/`.
 - **Medição:** `npm run progresso` (placar), `npm run cobertura`, `npm run leva:status`.
+
+## Situação em 20/11/2026
+- **Delegação do autor (20/11):** as perguntas ao autor vão primeiro ao LIDER (sessão "Líder de TODOS"), que responde "Decisão LIDER Dnn". Ficam só com o autor: ação irreversível, merge na `main`, segredos, contas, custo, deploy, publicação em nome dele, regra editorial e A1, A2 e A3.
+- **Estratégia de conteúdo** em `docs/estrategia/`, como proposta (Decisão LIDER D16). Cada documento termina com o checklist do revisor, reunido em `docs/processo/checklists.md`. Vale como regra depois do ok do autor.
+- **Entrega 3, parte de código (Decisão LIDER D18):** a hipótese de cada site em `docs/estrategia/hipoteses.md` e a recomendação da ferramenta de medição em `docs/estrategia/medicao.md` (Cloudflare Web Analytics), as duas para o autor decidir. Spec novo `e2e/estados.spec.mjs` (API lenta, API fora e busca vazia nos quatro sites). Na produção, o CLS de learn-tech, bootcamps e tools ficou abaixo de 0,1, e o axe deu 0 violações nas 9 páginas. Os `docs/MVP.md` dos sites passaram para 8 de 12 (career 9).
+- **Fila do autor:** as 3 tarefas que mais destravam são fechar as 28 issues com "Conteúdo produzido", o Dependabot com o nível N3 (content#26 e #27) e fechar a leva 1 com os fatos dos itens 6 e 9.
+
+## Situação em 19/11/2026
+- **As cinco `developer` foram para a `main`,** com o ok do autor no chat: content#31 primeiro, depois career#40, learn-tech#145, bootcamps#80 e tools#65. O autor fez o `npm run deploy` da API (versão 07818600). Na produção, as páginas principais dão 200 e as rotas inexistentes dão 404 nos quatro sites.
+- **content#11:** Lighthouse 13, e o `npm audit` foi de 36 vulnerabilidades para 0 (`docs/engenharia/relatorios/audit-2026-11-19.md`).
+- **Lighthouse depois da main** (`docs/engenharia/relatorios/lighthouse-2026-11-19-pos-main.md`): career 98 e 99, tools home 97, learn-tech de 85 a 93 (o CLS de 0,4 sumiu), bootcamps 91 e 85. Fica abaixo da meta a página de ferramenta do tools (73, LCP 4,9 s).
+- **Nesta máquina,** o PowerShell bloqueia o `npm.ps1`. Use `npm.cmd` e `npx.cmd`. O Chromium do Playwright não abre pelo `chrome-launcher`; use `CHROME_PATH` com o Chrome instalado.
 
 ## Situação em 18/11/2026
 - **Linha de base nos 5 repositórios:** a `developer` passa em testes, lint e build, e a CI está verde. A `developer` está à frente da `main`: são 32 commits aqui, 6 no learn-tech, 4 no tools, 5 na career e 1 no bootcamps. Cerca de 15 issues fecham quando o autor levar as `developer` para a `main`, com a API primeiro (a career depende do bb4ff0a).

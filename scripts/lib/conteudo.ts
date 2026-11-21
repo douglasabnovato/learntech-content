@@ -599,6 +599,13 @@ export function montarRecursos(conteudoBruto: Conteudo): Recurso[] {
     },
     { caminho: "tools/ferramentas.json", descricao: "Ferramentas", dados: c.ferramentas },
     { caminho: "tools/hospedagens.json", descricao: "Hospedagens", dados: c.hospedagens },
+    /* Um recurso por item com slug (ADR 13): a página de detalhe do tools baixa só o item, e não a lista inteira. */
+    ...c.ferramentas
+      .filter((f) => f.slug)
+      .map((f) => ({ caminho: `tools/ferramentas/${f.slug}.json`, descricao: `Ferramenta ${f.slug}`, dados: f })),
+    ...c.hospedagens
+      .filter((h) => h.slug)
+      .map((h) => ({ caminho: `tools/hospedagens/${h.slug}.json`, descricao: `Hospedagem ${h.slug}`, dados: h })),
     { caminho: "cobertura.json", descricao: "Matriz de cobertura do acervo", dados: c.cobertura },
   ];
   return r;

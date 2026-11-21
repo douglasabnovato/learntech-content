@@ -22,3 +22,11 @@
 - [ ] `acervo.json` atualizado com estado e destinos.
 - [ ] Relatório do lote escrito em `lotes/AAAA-MM-DD.md`, com as pendências do autor.
 - [ ] Comandos de teste e de deploy listados para o autor.
+
+## Estratégia (proposta de 20/11/2026, vale depois do ok do autor)
+O revisor confere, por item, o checklist ao fim de cada documento de [`../estrategia/`](../estrategia/visao.md). Enquanto a estratégia é proposta, um item que falha vira observação no parecer, e não reprovação.
+- [ ] Visão: público, momento da trajetória e nada do que fica de fora ([`visao.md`](../estrategia/visao.md)).
+- [ ] Pedagogia: objetivos por verbo, níveis de Bloom, quiz que verifica e próximo passo ([`pedagogia.md`](../estrategia/pedagogia.md)).
+- [ ] Storytelling: arco da trajetória, história que fecha no leitor e a voz do produto ([`storytelling.md`](../estrategia/storytelling.md)).
+- [ ] Marketing: título sem promessa, ligação entre sites e rascunho do post do autor ([`marketing.md`](../estrategia/marketing.md)).
+- [ ] Curadoria: origem do item, fato e relato separados, fontes e perguntas ao autor ([`curadoria.md`](../estrategia/curadoria.md)).

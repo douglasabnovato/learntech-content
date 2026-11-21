@@ -43,6 +43,6 @@ Regras comuns, hierarquia das fontes e verificação geral: [`README.md`](README
 
 ## Verificação na tela
 - **API:** `/v1/learn-tech/programas/<id>.json`; o artigo em `/v1/learn-tech/paginas/blog.json`.
-- **Cópias no site:** `src/constants/programasCatalogo.js` (card de programa) e `src/constants/blogData.js` (artigo).
+- **Cópias no site:** `src/constants/programasCatalogo.js` (card de programa) e `src/constants/blogData.js` (card e lide do artigo), com o resto de cada artigo em `src/constants/blog/<id>.js` (Decisão LIDER D20, 20/11/2026: o site carrega o corpo sob demanda).
 - **Páginas:** `/program/<categoryFilter>/<id>` (título do programa, sem "Conteúdo indisponível" com a API no ar) e `/blog/<id>` (`document.title` igual ao título do artigo).
 - **Sitemap:** `learn-tech/public/sitemap.xml`.

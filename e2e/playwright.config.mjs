@@ -15,5 +15,6 @@ export default defineConfig({
     { name: "acessibilidade", testMatch: /acessibilidade\.spec\.mjs/ },
     { name: "capturas", testMatch: /capturas\.spec\.mjs/ },
     { name: "estabilidade", testMatch: /estabilidade\.spec\.mjs/ },
+    { name: "estados", testMatch: /estados\.spec\.mjs/ },
   ],
 });

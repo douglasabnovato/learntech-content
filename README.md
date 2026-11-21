@@ -51,7 +51,7 @@ Mais detalhes em [docs/ARQUITETURA.md](docs/ARQUITETURA.md) e [docs/DECISOES.md]
 | GET | `/v1/bootcamps/eventos.json` e `/v1/bootcamps/eventos/{slug}.json` | Eventos |
 | GET | `/v1/career/{empresas,vagas,perfis,destaques}.json` | Career |
 | GET | `/v1/career/modelos-curriculo.json` | Modelos de currículo fictícios |
-| GET | `/v1/tools/{ferramentas,hospedagens}.json` | Tools |
+| GET | `/v1/tools/{ferramentas,hospedagens}.json` e `/v1/tools/{ferramentas,hospedagens}/{slug}.json` | Tools (lista e um item; ADR 13) |
 | GET | `/v1/cobertura.json` | Matriz de cobertura do acervo |
 | GET | `/v1/saude` | Verificação de funcionamento |
 | POST | `/v1/acessos` | Registro de acesso (só a partir dos 4 domínios; 429 acima de 30 por minuto por IP) |

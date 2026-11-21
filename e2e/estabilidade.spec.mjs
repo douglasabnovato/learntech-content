@@ -8,16 +8,10 @@ import { PAGINAS, url } from "./sites.mjs";
 
 const LIMITE_CLS = 0.1;
 
-/* Páginas que ainda passam do limite na produção (11/11/2026), cada uma com a sua issue.
-   O teste fica marcado como falha esperada; quando a correção chegar, ele avisa, e a linha sai daqui. */
-const CONHECIDAS = {
-  "learn-tech home": "learn-tech#142",
-  "learn-tech programa-1104": "learn-tech#142",
-  "learn-tech artigo": "learn-tech#142",
-  "bootcamps home": "bootcamps#79",
-  "tools home": "tools#64",
-  "tools ferramenta": "tools#64",
-};
+/* Páginas que ainda passam do limite na produção, cada uma com a sua issue.
+   O teste fica marcado como falha esperada; quando a correção chegar, ele avisa, e a linha sai daqui.
+   Vazio desde 20/11/2026: learn-tech#142, bootcamps#79 e tools#64 passaram na produção. */
+const CONHECIDAS = {};
 
 test.use({ ...devices["Moto G4"] });
 test.setTimeout(75_000);
