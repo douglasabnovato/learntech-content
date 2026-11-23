@@ -72,8 +72,6 @@ Esta tabela usa a numeração do Líder de TODOS, e não a numeração D-NN dest
 
 **Fonte:** chat do autor com o Líder, em 22/11/2026. As palavras chegaram a esta sessão repassadas pelo Líder: "aprovo / 1 por curso / piloto pode ser a dcc013 / autorizo todos / tipo disciplina sim". Pela regra "só vale a palavra do autor", o autor confirma esta tabela no merge do PR ([#48](https://github.com/douglasabnovato/learntech-content/issues/48)).
 
-A decisão 115 não aparece nas especificações recebidas. Fica em aberto até o autor ou o Líder dizer qual é.
-
 | # | Decisão | Palavras do autor (repassadas) | Onde |
 |---|---|---|---|
 | 103 | Redes da postagem: YouTube, Shorts, Instagram, LinkedIn e TikTok | "a e b" | [`fluxo-ponta-a-ponta.md`](fluxo-ponta-a-ponta.md), etapa 9 |
@@ -88,6 +86,7 @@ A decisão 115 não aparece nas especificações recebidas. Fica em aberto até 
 | 112 | Criar as issues e o rótulo `conteudo-hd` | "aprovo" | [#49](https://github.com/douglasabnovato/learntech-content/issues/49) |
 | 113 | Na `000-catalogado`, espelhar o caminho e arrastar por pasta | "aprovo" | [`hd-codes.md`](hd-codes.md) |
 | 114 | `hd-inventariar.mjs` com `--saida` e `--ignorar`, num PR | "autorizo todos" | [#42](https://github.com/douglasabnovato/learntech-content/issues/42) |
+| 115 | Substituída pela 116: o autor definiu o padrão da `5-expertise` com as próprias palavras | — (Líder, 22/11) | [`padrao-disciplina.md`](padrao-disciplina.md) |
 | 116 | Padrão por disciplina da `5-expertise` | "aprovo" | [`padrao-disciplina.md`](padrao-disciplina.md) |
 | 117 | Repositórios: 1 por curso, com 1 pasta por disciplina | "1 por curso" | [`padrao-disciplina.md`](padrao-disciplina.md) |
 | 118 | Piloto: DCC013, Estrutura de Dados I | "piloto pode ser a dcc013" | [`lotes/2026-11-22-hd-codes-plano.md`](lotes/2026-11-22-hd-codes-plano.md) |
