@@ -33,7 +33,7 @@ Este documento é o roteiro de toda leva. Leia-o, junto com `regras-editoriais.m
 - **hd só de leitura, como a `hd-codes` (#42):**
   - `-- --saida .hd-local` grava o mapa e o cache em `.hd-local/`, na raiz do learntech-content (ignorada pelo git), e nada é escrito no hd. Uma saída dentro do hd é recusada.
   - `-- --ignorar 4-experiences` pula as pastas 🔴, que nem são abertas. Aceita vários caminhos relativos ao hd, separados por vírgula.
-  - Exemplo: `npm run hd:inventariar -- --hd D:\douglasabnovato\hd-codes --saida .hd-local --ignorar 4-experiences`.
+  - Exemplo: `npm run hd:inventariar -- --hd <pasta da hd-codes> --saida .hd-local --ignorar 4-experiences`.
 - A identificação é pelo SHA-256 do conteúdo, não pelo caminho. Por isso, um arquivo movido de pasta (por exemplo, para a `000-catalogado`) continua "já registrado" (`tests/hd-inventario.test.ts`).
 - `hd:uso`, `hd:extrair` e `leva:status` ainda leem o mapa e o cache na raiz do hd. Passar o `--saida` para eles é um passo seguinte.
 
