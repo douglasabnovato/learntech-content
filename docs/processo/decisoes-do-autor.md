@@ -66,6 +66,36 @@ autor decide e explica ─▶ Claude registra (D) e propõe o princípio (P) ─
 | P-08 | Um nome novo não pode repetir uma sigla que já existe no processo | Nomes de escalas, estados e etapas | D-10 | confirmado em 15/11/2026: "Confirmo o P-08" |
 | P-09 | O nome de uma categoria segue o sentido da palavra: o que tem uso não se chama descartado | Direitos, estados e usos do acervo | D-11 | confirmado em 15/11/2026: "Confirmo o P-09" |
 
+## Decisões do Desafio hd-codes (22/11/2026)
+
+Esta tabela usa a numeração do Líder de TODOS, e não a numeração D-NN deste registro. O plano é o do lote [`lotes/2026-11-22-hd-codes-plano.md`](lotes/2026-11-22-hd-codes-plano.md).
+
+**Fonte:** chat do autor com o Líder, em 22/11/2026. As palavras chegaram a esta sessão repassadas pelo Líder: "aprovo / 1 por curso / piloto pode ser a dcc013 / autorizo todos / tipo disciplina sim". Pela regra "só vale a palavra do autor", o autor confirma esta tabela no merge do PR ([#48](https://github.com/douglasabnovato/learntech-content/issues/48)).
+
+A decisão 115 não aparece nas especificações recebidas. Fica em aberto até o autor ou o Líder dizer qual é.
+
+| # | Decisão | Palavras do autor (repassadas) | Onde |
+|---|---|---|---|
+| 103 | Redes da postagem: YouTube, Shorts, Instagram, LinkedIn e TikTok | "a e b" | [`fluxo-ponta-a-ponta.md`](fluxo-ponta-a-ponta.md), etapa 9 |
+| 104 | Processo diário com os 6 projetos e nenhum repositório novo | "aprovo" | [`motor-2-por-dia.md`](motor-2-por-dia.md) |
+| 105 | Reunir o HD sem mover: o pipeline lê o disco com `--hd` | "aprovo" | [`hd-codes.md`](hd-codes.md) |
+| 106 | `000-catalogado` é o que já foi publicado, movido pelo autor | ideia do autor, 22/11 | [`hd-codes.md`](hd-codes.md) |
+| 107 | Fluxo de 9 etapas, do HD à postagem | "aprovo" | [`fluxo-ponta-a-ponta.md`](fluxo-ponta-a-ponta.md) |
+| 108 | Motor 2 por dia: turnos às 09h e às 15h, com fila e placar | "aprovo" | [`motor-2-por-dia.md`](motor-2-por-dia.md) |
+| 109 | Merge: o autor aprova cada PR agora; merge automático (AU2) só para 🟢, decidido na fase 3 | "aprovo" | [`fluxo-ponta-a-ponta.md`](fluxo-ponta-a-ponta.md) |
+| 110 | D-07: os textos 🟢 são liberados; só os vídeos esperam a #15 | "aprovo" | D-07, ajustada na [#46](https://github.com/douglasabnovato/learntech-content/issues/46) |
+| 111 | Repositório `onibus-horarios` só depois do piloto | "aprovo" | [`motor-2-por-dia.md`](motor-2-por-dia.md) |
+| 112 | Criar as issues e o rótulo `conteudo-hd` | "aprovo" | [#49](https://github.com/douglasabnovato/learntech-content/issues/49) |
+| 113 | Na `000-catalogado`, espelhar o caminho e arrastar por pasta | "aprovo" | [`hd-codes.md`](hd-codes.md) |
+| 114 | `hd-inventariar.mjs` com `--saida` e `--ignorar`, num PR | "autorizo todos" | [#42](https://github.com/douglasabnovato/learntech-content/issues/42) |
+| 116 | Padrão por disciplina da `5-expertise` | "aprovo" | [`padrao-disciplina.md`](padrao-disciplina.md) |
+| 117 | Repositórios: 1 por curso, com 1 pasta por disciplina | "1 por curso" | [`padrao-disciplina.md`](padrao-disciplina.md) |
+| 118 | Piloto: DCC013, Estrutura de Dados I | "piloto pode ser a dcc013" | [`lotes/2026-11-22-hd-codes-plano.md`](lotes/2026-11-22-hd-codes-plano.md) |
+| 119 | Abrir o conteúdo da `5-expertise`, uma disciplina por vez | "autorizo todos" | [`padrao-disciplina.md`](padrao-disciplina.md) |
+| 120 | Tipo `disciplina` na API | "tipo disciplina sim" | [#47](https://github.com/douglasabnovato/learntech-content/issues/47) |
+
+**Princípios:** esta rodada não propõe nenhum princípio novo. O que vale para o fluxo do hd está nos documentos citados.
+
 ## Pendente do autor
 
 - Dizer o motivo da D-11, se quiser.

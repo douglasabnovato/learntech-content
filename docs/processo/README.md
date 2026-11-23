@@ -9,7 +9,7 @@ Este documento é o roteiro de toda leva. Leia-o, junto com `regras-editoriais.m
 | Quem | Faz |
 |---|---|
 | **Autor (Douglas)** | Deposita a leva, aprova o plano do lote (A1), testa, faz commit, push, merge e deploy (A2), apaga o hd (A3) |
-| **Claude** | Executa as etapas 1 a 8 e a 10, sem commit e sem push. Avisa no início e no fim de cada etapa |
+| **Claude** | Executa as etapas 1 a 8 e a 10. Faz commit e push numa branch `feature/tasks-DD-MM-AAAA` e abre o PR; o merge é do autor (22/11/2026, #48). Avisa no início e no fim de cada etapa |
 
 ## Fluxo
 
@@ -23,7 +23,7 @@ Este documento é o roteiro de toda leva. Leia-o, junto com `regras-editoriais.m
 - Confere se a `main` local de cada repositório é igual à do GitHub (`git ls-remote`) e se há commits fora da `main`, como uma developer à frente.
 - **Regra de branches (01/11/2026):** cada dia de trabalho num repositório ganha uma branch nova, `feature/tasks-DD-MM-AAAA`, criada sempre a partir da `main`, que é a branch de produção e a mais atualizada. Antes, `git checkout main && git pull origin main`. As tarefas do dia ficam nessa branch. Se no mesmo dia já houve merge, a nova branch leva sufixo (`-b`, `-c`).
 - **Branch com pendência de um dia para o outro:** depende do contexto e do que for possível. Ou ela é terminada (commit, merge na `main`) antes de abrir a do dia novo, ou o dia novo começa numa branch nova a partir da `main` e a pendente é terminada depois, com merge próprio. Nunca se acumula trabalho de dias diferentes numa branch sem registrar no relatório do lote.
-- O Claude cria as branches localmente e não faz commit nem push. Quem envia é o autor.
+- **Commit, push e PR (22/11/2026, Desafio hd-codes, #48):** o Claude faz commit e push na branch do dia e abre o PR com o CI verde. **O merge continua com o autor**, assim como o deploy. A regra antiga ("o Claude não faz commit nem push") deixou de valer.
 - **Merge com a `main` protegida (03/11/2026):** os cinco repositórios têm o ruleset `main protegida`, que só aceita na `main` um commit que já passou no check `verificar`. Por isso o merge é `--ff-only`, que não cria commit novo: (1) commit na branch; (2) `git push -u origin feature/tasks-DD-MM-AAAA`; (3) esperar a CI verde em Actions; (4) `git checkout main && git pull origin main`; (5) `git merge --ff-only feature/tasks-DD-MM-AAAA`; (6) `git push origin main`. O `--no-ff` não é mais usado: o commit de merge nunca passou na CI e o push seria recusado. Commit direto na `main` também é recusado.
 
 ### 2. Inventário
@@ -33,7 +33,7 @@ Este documento é o roteiro de toda leva. Leia-o, junto com `regras-editoriais.m
 - **hd só de leitura, como a `hd-codes` (#42):**
   - `-- --saida .hd-local` grava o mapa e o cache em `.hd-local/`, na raiz do learntech-content (ignorada pelo git), e nada é escrito no hd. Uma saída dentro do hd é recusada.
   - `-- --ignorar 4-experiences` pula as pastas 🔴, que nem são abertas. Aceita vários caminhos relativos ao hd, separados por vírgula.
-  - Exemplo: `npm run hd:inventariar -- --hd D:\douglasabnovato\hd-codes --saida .hd-local --ignorar 4-experiences`.
+  - Exemplo: `npm run hd:inventariar -- --hd <pasta da hd-codes> --saida .hd-local --ignorar 4-experiences`.
 - A identificação é pelo SHA-256 do conteúdo, não pelo caminho. Por isso, um arquivo movido de pasta (por exemplo, para a `000-catalogado`) continua "já registrado" (`tests/hd-inventario.test.ts`).
 - `hd:uso`, `hd:extrair` e `leva:status` ainda leem o mapa e o cache na raiz do hd. Passar o `--saida` para eles é um passo seguinte.
 
@@ -122,6 +122,8 @@ O conteúdo de cada item deve aparecer no máximo de projetos que o tema permiti
 O Claude nunca diz que a leva está concluída sem mostrar a saída de `npm run leva:status`. Enquanto a checagem disser **LEVA ABERTA**, a resposta é "ainda não", com a lista do que falta.
 
 Se um arquivo voltar ao hd, o hash diz o que ele já é.
+
+**Na hd-codes não existe A3 (22/11/2026, #48).** A hd-codes é só de leitura: nada é apagado nem escrito lá. Quando um item está publicado, o Claude avisa ("pronto: HC-nnn") e **o próprio autor** arrasta a pasta para a `000-catalogado`, espelhando o caminho original. O A1 e o A2 continuam valendo. Detalhes em [`hd-codes.md`](hd-codes.md) e no fluxo completo em [`fluxo-ponta-a-ponta.md`](fluxo-ponta-a-ponta.md).
 
 ### 10. Retrospectiva
 - Registrar neste documento ou nas regras o que mudou: regra nova, checagem nova ou ajuste de modelo.
