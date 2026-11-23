@@ -29,7 +29,13 @@ Este documento é o roteiro de toda leva. Leia-o, junto com `regras-editoriais.m
 ### 2. Inventário
 - `npm run hd:inventariar` lista o que é **novo**, o que **já está registrado** e o que **já saiu do hd**.
 - `npm run hd:inventariar -- --registrar` cria um item `HD-0000` por pasta de até dois níveis. Cada arquivo entra com SHA-256, tipo e tamanho; cópias idênticas entram uma vez só.
-- O mapa local de ID para caminho (`hd/.acervo-local.json`) e o cache de hashes (`hd/.hash-cache.json`) ficam no hd, fora do git.
+- O mapa local de ID para caminho (`.acervo-local.json`) e o cache de hashes (`.hash-cache.json`) ficam fora do git. Sem opção, ficam na raiz do hd.
+- **hd só de leitura, como a `hd-codes` (#42):**
+  - `-- --saida .hd-local` grava o mapa e o cache em `.hd-local/`, na raiz do learntech-content (ignorada pelo git), e nada é escrito no hd. Uma saída dentro do hd é recusada.
+  - `-- --ignorar 4-experiences` pula as pastas 🔴, que nem são abertas. Aceita vários caminhos relativos ao hd, separados por vírgula.
+  - Exemplo: `npm run hd:inventariar -- --hd D:\douglasabnovato\hd-codes --saida .hd-local --ignorar 4-experiences`.
+- A identificação é pelo SHA-256 do conteúdo, não pelo caminho. Por isso, um arquivo movido de pasta (por exemplo, para a `000-catalogado`) continua "já registrado" (`tests/hd-inventario.test.ts`).
+- `hd:uso`, `hd:extrair` e `leva:status` ainda leem o mapa e o cache na raiz do hd. Passar o `--saida` para eles é um passo seguinte.
 
 ### 3. Triagem
 Uma ficha por item, preenchida no próprio `acervo.json`:

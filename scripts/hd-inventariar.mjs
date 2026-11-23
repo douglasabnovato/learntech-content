@@ -8,10 +8,14 @@
  *   node scripts/hd-inventariar.mjs                  # relatório: novos, já registrados, removidos
  *   node scripts/hd-inventariar.mjs --registrar      # cria itens HD-0000 (estado "novo") para os arquivos novos
  *   node scripts/hd-inventariar.mjs --hd <pasta>     # outra pasta de acervo
+ *   node scripts/hd-inventariar.mjs --saida <pasta>  # grava o mapa e o cache nessa pasta, e nada no hd (#42)
+ *   node scripts/hd-inventariar.mjs --ignorar a,b/c  # pastas do hd que nem são abertas (caminho relativo ao hd)
  *
  * Arquivos gerados fora do repositório (não vão para o git):
- *   <hd>/.acervo-local.json   mapa ID → caminhos locais, usado na triagem; some junto com o hd.
- *   <hd>/.hash-cache.json     cache de hash por caminho+tamanho+data, para não reler arquivos grandes.
+ *   .acervo-local.json   mapa ID → caminhos locais, usado na triagem.
+ *   .hash-cache.json     cache de hash por caminho+tamanho+data, para não reler arquivos grandes.
+ * Sem --saida, os dois ficam na raiz do hd e somem junto com ele. Para um hd só de leitura (hd-codes),
+ * use --saida .hd-local (pasta ignorada pelo git na raiz do learntech-content).
  *
  * Agrupamento: um item por pasta de até dois níveis (ex.: "6-tech_community/gdg_jf").
  * Sem dependências: só Node 20+.
@@ -21,6 +25,7 @@ import path from "node:path";
 import crypto from "node:crypto";
 import { fileURLToPath } from "node:url";
 import { hojeLocal } from "./lib/data-local.mjs";
+import { listar, classificar, pastasIgnoradas, arquivosLocais } from "./lib/hd-inventario.mjs";
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const ARQ_ACERVO = path.join(RAIZ, "content", "acervo.json");
@@ -28,30 +33,23 @@ const argv = process.argv.slice(2);
 const registrar = argv.includes("--registrar");
 const iHd = argv.indexOf("--hd");
 const HD = path.resolve(iHd >= 0 ? argv[iHd + 1] : path.join(RAIZ, "..", "hd"));
-const IGNORAR = new Set([
-  ".acervo-local.json",
-  ".hash-cache.json",
-  ".imagens-publicadas.json",
-  ".dhash-cache.json",
-  "desktop.ini",
-  "Thumbs.db",
-  ".DS_Store",
-]);
+const valorDe = (opcao) => {
+  const i = argv.indexOf(opcao);
+  return i >= 0 ? argv[i + 1] : undefined;
+};
+const IGNORAR = pastasIgnoradas(valorDe("--ignorar"));
+const LOCAL = arquivosLocais(HD, valorDe("--saida"));
 
 if (!fs.existsSync(HD)) {
   console.error(`hd não encontrado em ${HD}`);
   process.exit(1);
 }
-
-/* Lista todos os arquivos do hd, com caminho relativo em barras normais e NFC. */
-function listar(pasta, base = pasta) {
-  return fs.readdirSync(pasta, { withFileTypes: true }).flatMap((e) => {
-    const p = path.join(pasta, e.name);
-    if (e.isDirectory()) return e.name === ".extraido" ? [] : listar(p, base); /* .extraido: saída do hd:extrair */
-    if (IGNORAR.has(e.name)) return [];
-    return [{ abs: p, rel: path.relative(base, p).split(path.sep).join("/").normalize("NFC") }];
-  });
+const dentroDoHd = path.relative(HD, LOCAL.pasta);
+if (LOCAL.pasta !== HD && (dentroDoHd === "" || !dentroDoHd.startsWith(".."))) {
+  console.error(`--saida não pode ficar dentro do hd (${LOCAL.pasta}): com --saida, nada é escrito no hd.`);
+  process.exit(1);
 }
+fs.mkdirSync(LOCAL.pasta, { recursive: true });
 
 /* SHA-256 em streaming (vídeos de centenas de MB não vão para a memória). */
 function sha256(arquivo) {
@@ -66,11 +64,13 @@ function sha256(arquivo) {
 
 const ler = (p, padrao) => (fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, "utf8")) : padrao);
 const acervo = ler(ARQ_ACERVO, { atualizadoEm: "", itens: [] });
-const ARQ_CACHE = path.join(HD, ".hash-cache.json");
+const ARQ_CACHE = LOCAL.cache;
 const cache = ler(ARQ_CACHE, {});
 
-const arquivos = listar(HD);
+const arquivos = listar(HD, { ignorar: IGNORAR });
 console.log(`hd: ${arquivos.length} arquivo(s) em ${HD}`);
+if (IGNORAR.size) console.log(`  pastas não abertas (--ignorar): ${[...IGNORAR].join(", ")}`);
+if (LOCAL.pasta !== HD) console.log(`  mapa e cache em ${LOCAL.pasta} (--saida); nada é escrito no hd`);
 let calculados = 0;
 for (const a of arquivos) {
   const st = fs.statSync(a.abs);
@@ -90,32 +90,7 @@ for (const a of arquivos) {
 }
 fs.writeFileSync(ARQ_CACHE, JSON.stringify(cache));
 
-/* Hash → item do acervo que já o registrou. */
-const porHash = new Map();
-for (const it of acervo.itens) for (const f of it.arquivos ?? []) porHash.set(f.sha256, it);
-
-const grupo = (rel) => rel.split("/").slice(0, -1).slice(0, 2).join("/") || "(raiz)";
-const novos = new Map();
-const registrados = new Map();
-const vistos = new Map(); /* hash novo → primeiro caminho (cópias idênticas entram uma vez só) */
-let copias = 0;
-for (const a of arquivos) {
-  const it = porHash.get(a.sha256);
-  if (it) {
-    registrados.set(it.id, (registrados.get(it.id) ?? 0) + 1);
-    continue;
-  }
-  if (vistos.has(a.sha256)) {
-    copias++;
-    continue;
-  }
-  vistos.set(a.sha256, a.rel);
-  const g = grupo(a.rel);
-  if (!novos.has(g)) novos.set(g, []);
-  novos.get(g).push(a);
-}
-const noHd = new Set(arquivos.map((a) => a.sha256));
-const removidos = acervo.itens.filter((it) => it.arquivos?.length && it.arquivos.every((f) => !noHd.has(f.sha256)));
+const { porHash, registrados, novos, copias, removidos } = classificar(arquivos, acervo);
 
 console.log(
   `\nJá registrados no acervo: ${[...registrados.values()].reduce((a, b) => a + b, 0)} arquivo(s) em ${registrados.size} item(ns)`,
@@ -130,8 +105,8 @@ console.log(
 for (const [g, lista] of novos) console.log(`  + ${g}: ${lista.length}`);
 console.log(`\nItens do acervo cujos arquivos já saíram do hd (baixa concluída): ${removidos.length}`);
 
-/* Mapa local ID → caminhos (fica no hd, fora do git). */
-const mapaLocal = ler(path.join(HD, ".acervo-local.json"), {});
+/* Mapa local ID → caminhos (fora do git: no hd ou na pasta do --saida). */
+const mapaLocal = ler(LOCAL.mapa, {});
 for (const a of arquivos) {
   const it = porHash.get(a.sha256);
   if (!it) continue;
@@ -167,6 +142,6 @@ if (registrar && novos.size) {
 } else if (novos.size) {
   console.log(`\nRode com --registrar para criar os itens HD-0000 dos arquivos novos.`);
 }
-fs.writeFileSync(path.join(HD, ".acervo-local.json"), JSON.stringify(mapaLocal, null, 2));
+fs.writeFileSync(LOCAL.mapa, JSON.stringify(mapaLocal, null, 2));
 
 /* Fim de hd-inventariar.mjs */
