@@ -23,11 +23,13 @@ import {
 } from "../../src/schemas/career-tools";
 import { coberturaSchema, type Cobertura } from "../../src/schemas/cobertura";
 import { acervoSchema, type Acervo } from "../../src/schemas/acervo";
+import { disciplinaSchema, type Disciplina } from "../../src/schemas/disciplina";
 
 export interface Conteudo {
   programas: Programa[];
   paginas: Record<string, Record<string, unknown>>;
   areas: Area[];
+  disciplinas: Disciplina[];
   eventos: Evento[];
   empresas: z.infer<typeof empresaSchema>[];
   vagas: z.infer<typeof vagaOuPerfilSchema>[];
@@ -122,6 +124,15 @@ export function carregarConteudo(raiz: string): { conteudo: Conteudo; erros: str
   }
   eventos.sort((a, b) => Number(a.id) - Number(b.id));
 
+  /* Disciplinas da 5-expertise (#47): um JSON por disciplina, com o nome do arquivo igual ao id. */
+  const disciplinas: Disciplina[] = [];
+  for (const arq of lerPasta(c("learn-tech/disciplinas"))) {
+    const d = conferir(disciplinaSchema, lerJson(arq, erros), path.relative(raiz, arq), erros);
+    if (!d) continue;
+    if (path.basename(arq, ".json") !== d.id) erros.push(`${path.relative(raiz, arq)}: nome do arquivo deve ser o id (${d.id}).json`);
+    disciplinas.push(d);
+  }
+
   const lista = <T>(rel: string, schema: z.ZodType<T>): T[] => {
     const bruto = lerJson(c(rel), erros);
     if (!Array.isArray(bruto)) {
@@ -135,6 +146,7 @@ export function carregarConteudo(raiz: string): { conteudo: Conteudo; erros: str
     programas,
     paginas,
     areas: lista("learn-tech/areas.json", areaSchema),
+    disciplinas,
     eventos,
     empresas: lista("career/empresas.json", empresaSchema),
     vagas: lista("career/vagas.json", vagaOuPerfilSchema),
@@ -586,6 +598,9 @@ export function montarRecursos(conteudoBruto: Conteudo): Recurso[] {
       dados,
     })),
     { caminho: "learn-tech/areas.json", descricao: "Áreas de atuação em tecnologia (com fontes)", dados: c.areas },
+    /* Guia de cada disciplina dos cursos (ADR 14, #47): a lista e um recurso por disciplina. */
+    { caminho: "learn-tech/disciplinas.json", descricao: "Disciplinas dos cursos (guia por disciplina)", dados: c.disciplinas },
+    ...c.disciplinas.map((d) => ({ caminho: `learn-tech/disciplinas/${d.id}.json`, descricao: `Disciplina ${d.id}`, dados: d })),
     { caminho: "bootcamps/eventos.json", descricao: "Eventos, bootcamps e formações", dados: c.eventos },
     ...c.eventos.map((e) => ({ caminho: `bootcamps/eventos/${e.slug}.json`, descricao: `Evento ${e.slug}`, dados: e })),
     { caminho: "career/empresas.json", descricao: "Empresas para acompanhar", dados: c.empresas },

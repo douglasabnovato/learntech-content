@@ -82,3 +82,17 @@ Cada decisão tem contexto, escolha e consequência. Mudou de ideia? Acrescente 
 - **Contexto:** a página de detalhe do tools baixava as listas inteiras (`ferramentas.json`, 118 kB, e `hospedagens.json`) para mostrar um item só, e só então pedia a miniatura, que é o LCP. No celular com cache frio, o LCP ficou em 3,2 s (meta de 2,5 s). O preconnect não mudou nada, e a URL da miniatura não segue o slug em todos os itens (36 de 97), então o site não consegue adivinhá-la. Decisão LIDER D20, opção C.
 - **Decisão:** `/v1/tools/ferramentas/{slug}.json` e `/v1/tools/hospedagens/{slug}.json`, um por item com slug, com o mesmo objeto da lista. O schema não muda: é o mesmo `ferramentaSchema`. Segue o padrão de `/v1/bootcamps/eventos/{slug}.json` e fica fora do `index.json`, como os eventos e os programas.
 - **Consequência:** a OpenAPI ganha as duas rotas. Depois do deploy da API (do autor), o `js/detalhe.js` do tools pode buscar só o item, nas duas pastas, e cair nas listas se o recurso não existir. Essa troca no tools é um passo à parte.
+
+## ADR 14: Tipo "disciplina" no learn-tech (22/11/2026)
+
+- **Contexto:** o Desafio hd-codes (#49) transforma as disciplinas dos cursos da `5-expertise` em guias, uma por vez, com o padrão em `docs/processo/padrao-disciplina.md`. Nenhum tipo existente cabia: o programa tem módulos e quiz, e o artigo tem corpo livre. O autor aprovou o tipo novo em 22/11/2026 ("tipo disciplina sim", decisão 120, repassada pelo Líder).
+- **Decisão:** `src/schemas/disciplina.ts`, um JSON por disciplina em `content/learn-tech/disciplinas/<id>.json`, publicado em `/v1/learn-tech/disciplinas.json` e `/v1/learn-tech/disciplinas/{id}.json`. Campos:
+  - a referência é obrigatória e no formato fixo do autor, conferida contra os campos (`montarReferencia`);
+  - o `ano` aceita 4 dígitos ou "a confirmar", e nunca é inventado;
+  - os capítulos trazem os títulos originais, os subcapítulos, o resumo estratégico e os exercícios com a resolução passo a passo;
+  - são exatamente 3 usos práticos, cada um com fonte;
+  - os links do repositório e do visual são opcionais, porque o repositório pode ainda não existir.
+- **Consequência:**
+  - a OpenAPI ganha as duas rotas, e o recurso por item fica fora do `index.json`, como nos programas e eventos;
+  - o exemplo da DCC013 fica em `tests/apoio/disciplina-dcc013.json`, como teste de formato, e não em `content/`. Conteúdo de disciplina só entra depois do A1 dela;
+  - a página no learn-tech e a cópia (`npm run copias`) são um passo à parte.

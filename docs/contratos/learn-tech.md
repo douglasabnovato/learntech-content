@@ -34,6 +34,11 @@ Regras comuns, hierarquia das fontes e verificação geral: [`README.md`](README
 - **Schema:** `areaSchema`. **Exemplo:** `front`.
 - **Campos:** `paragraphs`, `diaADia`, `competencias`, `ferramentas`, como começar, cards ligados a categorias existentes e pelo menos 1 fonte.
 
+## Disciplina: `content/learn-tech/disciplinas/<id>.json`
+- **Schema:** `disciplinaSchema` (ADR 14). **Padrão:** `docs/processo/padrao-disciplina.md` (#48). **Exemplo de formato:** `tests/apoio/disciplina-dcc013.json`.
+- **Campos:** `id` (nome do arquivo), `codigo`, `nome`, `curso`, `grau`, `instituicao`, `ano` (4 dígitos ou "a confirmar"), `referencia` (formato fixo, conferido no build), `capitulos` (título, subcapítulos, resumo e exercícios com resolução), `usosPraticos` (exatamente 3, com fonte), `links` (repositório e visual) e `updatedAt`.
+- **Só depois do A1 da disciplina.**
+
 ## Checklist do produtor
 - [ ] `npm run validar`: `lessonsCount` igual aos passos, numeração, títulos iguais entre `modules` e `moduleContents`, quiz consistente.
 - [ ] Nenhum nome de escola, cliente ou pessoa dentro das aulas.

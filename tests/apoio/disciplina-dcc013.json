@@ -1,0 +1,48 @@
+{
+  "id": "dcc013-estrutura-de-dados-i",
+  "codigo": "DCC013",
+  "nome": "Estrutura de Dados I",
+  "curso": "Ciência da Computação",
+  "grau": "Bacharelado",
+  "instituicao": "UFJF",
+  "ano": "a confirmar",
+  "referencia": "Conteúdo criado a partir do trabalho da disciplina de Estrutura de Dados I (DCC013) do curso de Ciência da Computação do Bacharelado da UFJF em a confirmar.",
+  "capitulos": [
+    {
+      "titulo": "Exemplo de formato: pilha",
+      "subcapitulos": ["Operações de empilhar e desempilhar", "Pilha com vetor e com lista encadeada"],
+      "resumo": "Exemplo de formato, não é conteúdo publicado: o resumo estratégico do capítulo, com as palavras do Claude e exemplos próprios, entra aqui depois do A1 da disciplina.",
+      "exercicios": [
+        {
+          "enunciado": "Exemplo de formato: escreva uma função que diga se os parênteses de uma expressão estão balanceados.",
+          "resolucao": [
+            "Percorra a expressão da esquerda para a direita.",
+            "Empilhe cada '(' e desempilhe a cada ')'; se a pilha estiver vazia nesse momento, a expressão não está balanceada.",
+            "No fim, a expressão está balanceada se a pilha estiver vazia."
+          ],
+          "codigo": "int balanceada(const char *s) { int n = 0; for (; *s; s++) { if (*s == '(') n++; else if (*s == ')' && --n < 0) return 0; } return n == 0; }",
+          "linguagem": "c"
+        }
+      ]
+    }
+  ],
+  "usosPraticos": [
+    {
+      "titulo": "Desfazer em editores",
+      "texto": "Exemplo de formato: a pilha guarda as últimas ações para desfazer na ordem inversa.",
+      "fontes": [{ "label": "Wikipédia: Pilha (informática)", "url": "https://pt.wikipedia.org/wiki/Pilha_(inform%C3%A1tica)" }]
+    },
+    {
+      "titulo": "Pilha de chamadas",
+      "texto": "Exemplo de formato: cada chamada de função empilha o seu contexto.",
+      "fontes": [{ "label": "Wikipédia: Pilha de chamada", "url": "https://pt.wikipedia.org/wiki/Pilha_de_chamada" }]
+    },
+    {
+      "titulo": "Fila de impressão",
+      "texto": "Exemplo de formato: a fila atende os pedidos na ordem de chegada.",
+      "fontes": [{ "label": "Wikipédia: FIFO", "url": "https://pt.wikipedia.org/wiki/FIFO" }]
+    }
+  ],
+  "links": {},
+  "updatedAt": "2026-11-22"
+}
