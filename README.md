@@ -47,6 +47,7 @@ Mais detalhes em [docs/ARQUITETURA.md](docs/ARQUITETURA.md) e [docs/DECISOES.md]
 | GET | `/v1/learn-tech/programas.json` | Catálogo de programas (campos de card) |
 | GET | `/v1/learn-tech/programas/{id}.json` | Programa completo, com módulos e quiz |
 | GET | `/v1/learn-tech/areas.json` | Áreas de atuação em tecnologia |
+| GET | `/v1/learn-tech/disciplinas.json` e `/v1/learn-tech/disciplinas/{id}.json` | Guia por disciplina dos cursos (ADR 14) |
 | GET | `/v1/learn-tech/paginas/{nome}.json` | sobre, aprender, carreira, categorias, blog, faq, navegacao, mentorias, privacidade, termos, estatisticas |
 | GET | `/v1/bootcamps/eventos.json` e `/v1/bootcamps/eventos/{slug}.json` | Eventos |
 | GET | `/v1/career/{empresas,vagas,perfis,destaques}.json` | Career |

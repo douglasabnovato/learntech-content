@@ -45,7 +45,7 @@ function main(): void {
     geradoEm: new Date().toISOString(),
     documentacao: "/v1/openapi.json",
     recursos: recursos
-      .filter((r) => !/\/(programas|eventos|ferramentas|hospedagens)\/[^/]+\.json$/.test(r.caminho))
+      .filter((r) => !/\/(programas|eventos|ferramentas|hospedagens|disciplinas)\/[^/]+\.json$/.test(r.caminho))
       .map((r) => ({ caminho: `/v1/${r.caminho}`, descricao: r.descricao, itens: contarItens(r.dados) })),
   });
 

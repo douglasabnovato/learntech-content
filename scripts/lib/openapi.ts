@@ -10,6 +10,7 @@ import {
   modeloCurriculoSchema,
 } from "../../src/schemas/career-tools";
 import { coberturaSchema } from "../../src/schemas/cobertura";
+import { disciplinaSchema } from "../../src/schemas/disciplina";
 import { entradaAcessoSchema } from "../../src/acessos/schema";
 import { entradaMensagemSchema, motivos } from "../../src/mensagens/schema";
 
@@ -63,6 +64,11 @@ export function gerarOpenApi(versao: string): Record<string, unknown> {
         parameters: [{ name: "id", in: "path", required: true, schema: { type: "integer" } }],
       },
       "/v1/learn-tech/areas.json": leitura("Áreas de atuação em tecnologia", "Area", true),
+      "/v1/learn-tech/disciplinas.json": leitura("Disciplinas dos cursos (guia por disciplina)", "Disciplina", true),
+      "/v1/learn-tech/disciplinas/{id}.json": {
+        ...leitura("Disciplina", "Disciplina"),
+        parameters: [{ name: "id", in: "path", required: true, schema: { type: "string" } }],
+      },
       "/v1/learn-tech/paginas/{nome}.json": {
         get: {
           summary: "Conteúdo de página do learn-tech",
@@ -175,6 +181,7 @@ export function gerarOpenApi(versao: string): Record<string, unknown> {
         Programa: js(programaSchema),
         Questao: js(questaoSchema),
         Area: js(areaSchema),
+        Disciplina: js(disciplinaSchema),
         Evento: js(eventoSchema),
         Empresa: js(empresaSchema),
         VagaOuPerfil: js(vagaOuPerfilSchema),
