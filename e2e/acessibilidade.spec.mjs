@@ -62,3 +62,37 @@ test.describe("learn-tech — alvos de 44 px a 360 px", () => {
     }
   });
 });
+
+/* Alvos de toque de 44 px nos sites irmãos, a 360 px (bootcamps#85, career#44 e tools#70; padrão E8 do Esp UX/UI).
+   Mede todo alvo interativo visível. Ficam de fora: o link de pular para o conteúdo, que só aparece no foco
+   (1 x 1 px fora dele), e o link solto dentro de um parágrafo ou item de lista, que a WCAG 2.5.8 isenta.
+   Contra a produção, passa depois que a main de cada site receber o PR dele e o deploy chegar. */
+const SITES_44 = [
+  { site: "bootcamps", caminho: "/" },
+  { site: "career", caminho: "/" },
+  { site: "tools", caminho: "/" },
+];
+
+for (const s of SITES_44) {
+  test(`${s.site} — alvos de 44 px a 360 px`, async ({ page }) => {
+    await page.setViewportSize({ width: 360, height: 800 });
+    await page.goto(SITES[s.site].replace(/\/$/, "") + s.caminho);
+    await page.waitForLoadState("networkidle");
+    const pequenos = await page.evaluate(() => {
+      const seletor = 'a[href], button, input:not([type=hidden]), select, textarea, [role=button], [role=tab]';
+      const lista = [];
+      for (const e of globalThis.document.querySelectorAll(seletor)) {
+        const c = e.getBoundingClientRect();
+        const cs = globalThis.getComputedStyle(e);
+        if (c.width <= 1 || c.height <= 1 || cs.visibility === "hidden" || cs.display === "none") continue;
+        if (e.tagName === "A" && cs.display === "inline" && e.closest("p, li") && !e.closest("nav")) continue;
+        if (c.width < 44 || c.height < 44) {
+          const nome = (e.getAttribute("aria-label") || e.textContent || e.getAttribute("placeholder") || "").trim().slice(0, 30);
+          lista.push(`${e.tagName.toLowerCase()} "${nome}" ${c.width.toFixed(1)}x${c.height.toFixed(1)}`);
+        }
+      }
+      return lista;
+    });
+    expect(pequenos, pequenos.join(" | ")).toEqual([]);
+  });
+}
