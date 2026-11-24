@@ -17,8 +17,17 @@ async function api(page, modo) {
 }
 
 /* A contagem de /programs: "49 treinamentos" na produção até o deploy do learn-tech#175, e "49 programas" depois.
-   As duas valem, para o e2e não ficar vermelho no meio da troca. */
-const CONTAGEM_PROGRAMAS = /49 (treinamentos|programas)/i;
+   As duas valem, para o e2e não ficar vermelho no meio da troca. Com \b nas 2 pontas e sem o i (R19 do Esp QA do #72):
+   "149 programas" e "49 programasX" não passam. */
+const CONTAGEM_PROGRAMAS = /\b49 (treinamentos|programas)\b/;
+
+/* O teste negativo do padrão: ele não depende de página, e falha se alguém tirar as âncoras. */
+test("a contagem de /programs: o padrão aceita só 49 e a palavra inteira", () => {
+  for (const certo of ["49 treinamentos", "49 programas", "Programas 49 programas"])
+    expect(CONTAGEM_PROGRAMAS.test(certo), certo).toBe(true);
+  for (const errado of ["149 programas", "49 programasX", "490 treinamentos", "49 Programa"])
+    expect(CONTAGEM_PROGRAMAS.test(errado), errado).toBe(false);
+});
 
 /* Listas: com a API lenta ou fora, o conteúdo vem da cópia de reserva. */
 const LISTAS = [
