@@ -3,6 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { test, expect } from "./visitante.mjs";
+import { test as baseTest } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { PAGINAS, SITES, url } from "./sites.mjs";
 
@@ -19,9 +20,18 @@ for (const p of PAGINAS) {
     await page.waitForLoadState("networkidle");
     /* Os iframes (player do YouTube) são de terceiros: o site não controla o HTML de dentro deles. */
     const r = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"]).exclude("iframe").analyze();
-    const violacoes = r.violations.map((v) => ({ id: v.id, impacto: v.impact, descricao: v.help, ocorrencias: v.nodes.length, ajuda: v.helpUrl }));
+    const violacoes = r.violations.map((v) => ({
+      id: v.id,
+      impacto: v.impact,
+      descricao: v.help,
+      ocorrencias: v.nodes.length,
+      ajuda: v.helpUrl,
+    }));
     resultados.push({ site: p.site, pagina: p.nome, url: url(p), violacoes });
-    expect(violacoes.filter((v) => v.impacto === "critical"), JSON.stringify(violacoes, null, 2)).toEqual([]);
+    expect(
+      violacoes.filter((v) => v.impacto === "critical"),
+      JSON.stringify(violacoes, null, 2),
+    ).toEqual([]);
   });
 }
 
@@ -82,7 +92,7 @@ for (const s of SITES_44) {
     await page.goto(SITES[s.site].replace(/\/$/, "") + s.caminho);
     await page.waitForLoadState("networkidle");
     const { medidos, pequenos } = await page.evaluate(() => {
-      const seletor = 'a[href], button, input:not([type=hidden]), select, textarea, [role=button], [role=tab]';
+      const seletor = "a[href], button, input:not([type=hidden]), select, textarea, [role=button], [role=tab]";
       const lista = [];
       let total = 0;
       /* Inline numa frase: o link é inline e o bloco em volta (p ou li) tem texto além do texto do link. */
@@ -107,5 +117,108 @@ for (const s of SITES_44) {
     });
     expect(medidos, `só ${medidos} alvos medidos em ${s.site}: a página carregou?`).toBeGreaterThanOrEqual(10);
     expect(pequenos, pequenos.join(" | ")).toEqual([]);
+  });
+}
+
+/* O modal de identificação do SDK (/sdk/identificacao.js, shadow DOM aberto), na 1ª visita a 360 px (C8 do MVP do
+   learntech-content). O e2e dos outros testes entra já identificado; aqui o contexto é novo e sem identificação.
+   Roda nos 2 esquemas de cor (o erro no escuro tinha ~3,7:1, R19 do Esp UX/UI do #71). O axe percorre o shadow DOM
+   aberto: 0 violações critical ou serious. Campos e botões com 44 px; o link da política fica dentro de uma frase,
+   isento pela WCAG 2.5.8. A borda dos campos, o único limite visual deles, com 3:1 contra a caixa (WCAG 1.4.11; era
+   1,48:1), e o texto de erro com 4,5:1 (WCAG 1.4.3). Contra a produção, passa depois do deploy da API. */
+const contrastes = (form) => {
+  const cv = globalThis.document.createElement("canvas").getContext("2d", { willReadFrequently: true });
+  const rgb = (c) => {
+    cv.fillStyle = "#fff";
+    cv.fillRect(0, 0, 1, 1);
+    cv.fillStyle = c;
+    cv.fillRect(0, 0, 1, 1);
+    return [...cv.getImageData(0, 0, 1, 1).data].slice(0, 3);
+  };
+  const lum = ([r, g, b]) =>
+    [r, g, b]
+      .map((v) => {
+        v /= 255;
+        return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4;
+      })
+      .reduce((s, v, i) => s + v * [0.2126, 0.7152, 0.0722][i], 0);
+  const ct = (a, b) => {
+    const [x, y] = [lum(a), lum(b)].sort((m, n) => n - m);
+    return (x + 0.05) / (y + 0.05);
+  };
+  const cor = (e, prop) => rgb(globalThis.getComputedStyle(e)[prop]);
+  const fundo = cor(form.closest(".caixa") ?? form, "backgroundColor");
+  const bordas = [...form.querySelectorAll("input")].map((e) => ({
+    nome: `borda de ${e.name}`,
+    c: ct(cor(e, "borderBottomColor"), fundo),
+    minimo: 3,
+  }));
+  const erro = form.querySelector("[role=alert]");
+  return [...bordas, { nome: `erro "${erro.textContent}"`, c: ct(cor(erro, "color"), fundo), minimo: 4.5 }]
+    .filter((a) => a.c < a.minimo)
+    .map((a) => `${a.nome} ${a.c.toFixed(2)}:1`);
+};
+
+for (const esquema of ["light", "dark"]) {
+  baseTest(`learn-tech — modal de identificação: axe, 44 px e contraste a 360 px (${esquema})`, async ({ browser }) => {
+    const contexto = await browser.newContext({ viewport: { width: 360, height: 800 }, colorScheme: esquema });
+    const page = await contexto.newPage();
+    await page.goto(SITES["learn-tech"].replace(/\/$/, "") + "/");
+    const dialogo = page.getByRole("dialog");
+    await expect(dialogo).toBeVisible();
+    const r = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"]).analyze();
+    const graves = r.violations.filter((v) => ["critical", "serious"].includes(v.impact)).map((v) => `${v.id} x${v.nodes.length}`);
+    expect(graves, graves.join(" | ")).toEqual([]);
+    /* Guarda (R19 do Esp QA do #71, a lição do #68): o "0 violações" só vale se o axe entrou no shadow DOM do modal.
+       Em 24/11 eram 37 nós em 18 regras; o mínimo de 20 dá folga e pega o caso calado (versão ou configuração do axe). */
+    const naSombra = [...r.passes, ...r.violations, ...r.incomplete]
+      .flatMap((v) => v.nodes)
+      .filter((n) => Array.isArray(n.target[0]) && n.target[0][0] === "#learntech-identificacao").length;
+    expect(naSombra, "o axe não entrou no shadow DOM do modal").toBeGreaterThanOrEqual(20);
+    /* Guarda dos alvos e das bordas: com a marcação mudada e 0 elementos achados, as listas viriam vazias e passariam. */
+    await expect(dialogo.locator("input")).toHaveCount(2);
+    expect(await dialogo.locator("button").count(), "botões no modal").toBeGreaterThanOrEqual(1);
+    const pequenos = await dialogo.evaluate((form) =>
+      [...form.querySelectorAll("input, button")]
+        .map((e) => ({ nome: e.getAttribute("aria-label") || e.name || e.textContent.trim(), c: e.getBoundingClientRect() }))
+        .filter((a) => a.c.height < 44 || a.c.width < 44)
+        .map((a) => `${a.nome} ${a.c.width.toFixed(1)}x${a.c.height.toFixed(1)}`),
+    );
+    /* soft: na produção, a falha dos 44 px não esconde a do contraste, que vem a seguir. */
+    expect.soft(pequenos, pequenos.join(" | ")).toEqual([]);
+    /* "Continuar" com o formulário vazio mostra o erro, que entra na medida do contraste. */
+    await page.getByRole("button", { name: "Continuar" }).click();
+    await expect(dialogo.getByRole("alert")).not.toBeEmpty();
+    const fracos = await dialogo.evaluate(contrastes);
+    expect(fracos, fracos.join(" | ")).toEqual([]);
+    await contexto.close();
+  });
+}
+
+/* Com o celular deitado (800 x 360) ou com zoom de 200% (1280 x 800 vira 640 x 400), a caixa (~483 px) passa da
+   altura da tela. O fundo rola, e o topo e o fim da caixa são alcançáveis (WCAG 1.4.10; R19 do Esp UX/UI do #71).
+   Antes, o fundo não rolava e a caixa ficava cortada nas 2 pontas. */
+for (const viewport of [
+  { width: 800, height: 360 },
+  { width: 640, height: 400 },
+]) {
+  baseTest(`learn-tech — modal de identificação: topo e fim alcançáveis a ${viewport.width}x${viewport.height}`, async ({ browser }) => {
+    const contexto = await browser.newContext({ viewport });
+    const page = await contexto.newPage();
+    await page.goto(SITES["learn-tech"].replace(/\/$/, "") + "/");
+    const dialogo = page.getByRole("dialog");
+    await expect(dialogo).toBeVisible();
+    const r = await dialogo.evaluate((form) => {
+      const fundo = form.parentElement;
+      const altura = globalThis.innerHeight;
+      fundo.scrollTop = 0;
+      const topo = form.getBoundingClientRect().top;
+      fundo.scrollTop = 1e6;
+      const fim = form.getBoundingClientRect().bottom;
+      return { topo, fim, altura };
+    });
+    expect(r.topo, "o topo da caixa, com o fundo no início").toBeGreaterThanOrEqual(0);
+    expect(r.fim, "o fim da caixa, com o fundo rolado até o fim").toBeLessThanOrEqual(r.altura);
+    await contexto.close();
   });
 }
