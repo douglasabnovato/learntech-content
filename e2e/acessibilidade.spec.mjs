@@ -31,9 +31,12 @@ for (const p of PAGINAS) {
 test.describe("learn-tech — alvos de 44 px a 360 px", () => {
   test.use({ viewport: { width: 360, height: 800 } });
   const base = SITES["learn-tech"].replace(/\/$/, "");
+  /* Valor cru, sem arredondar: os alvos medem exatamente 44 px, e um arredondamento aprovaria 43,5 (R19 do Esp QA).
+     Espera o alvo aparecer antes de medir, para um boundingBox nulo não virar "Received: 0". */
   const medir = async (alvo) => {
+    await expect(alvo).toBeVisible();
     const caixa = await alvo.boundingBox();
-    return { largura: Math.round(caixa?.width ?? 0), altura: Math.round(caixa?.height ?? 0) };
+    return { largura: caixa?.width ?? 0, altura: caixa?.height ?? 0 };
   };
 
   test("Abrir menu e Fechar menu", async ({ page }) => {
