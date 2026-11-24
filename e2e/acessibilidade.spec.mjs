@@ -169,13 +169,23 @@ for (const esquema of ["light", "dark"]) {
     const r = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"]).analyze();
     const graves = r.violations.filter((v) => ["critical", "serious"].includes(v.impact)).map((v) => `${v.id} x${v.nodes.length}`);
     expect(graves, graves.join(" | ")).toEqual([]);
+    /* Guarda (R19 do Esp QA do #71, a lição do #68): o "0 violações" só vale se o axe entrou no shadow DOM do modal.
+       Em 24/11 eram 37 nós em 18 regras; o mínimo de 20 dá folga e pega o caso calado (versão ou configuração do axe). */
+    const naSombra = [...r.passes, ...r.violations, ...r.incomplete]
+      .flatMap((v) => v.nodes)
+      .filter((n) => Array.isArray(n.target[0]) && n.target[0][0] === "#learntech-identificacao").length;
+    expect(naSombra, "o axe não entrou no shadow DOM do modal").toBeGreaterThanOrEqual(20);
+    /* Guarda dos alvos e das bordas: com a marcação mudada e 0 elementos achados, as listas viriam vazias e passariam. */
+    await expect(dialogo.locator("input")).toHaveCount(2);
+    expect(await dialogo.locator("button").count(), "botões no modal").toBeGreaterThanOrEqual(1);
     const pequenos = await dialogo.evaluate((form) =>
       [...form.querySelectorAll("input, button")]
         .map((e) => ({ nome: e.getAttribute("aria-label") || e.name || e.textContent.trim(), c: e.getBoundingClientRect() }))
         .filter((a) => a.c.height < 44 || a.c.width < 44)
-        .map((a) => `${a.nome} ${a.c.width.toFixed(0)}x${a.c.height.toFixed(0)}`),
+        .map((a) => `${a.nome} ${a.c.width.toFixed(1)}x${a.c.height.toFixed(1)}`),
     );
-    expect(pequenos, pequenos.join(" | ")).toEqual([]);
+    /* soft: na produção, a falha dos 44 px não esconde a do contraste, que vem a seguir. */
+    expect.soft(pequenos, pequenos.join(" | ")).toEqual([]);
     /* "Continuar" com o formulário vazio mostra o erro, que entra na medida do contraste. */
     await page.getByRole("button", { name: "Continuar" }).click();
     await expect(dialogo.getByRole("alert")).not.toBeEmpty();
