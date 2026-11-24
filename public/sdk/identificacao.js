@@ -98,16 +98,17 @@
     "h2{margin:0 0 8px;font-size:20px;line-height:1.3}",
     "p{margin:0 0 16px;font-size:14px;line-height:1.55;color:var(--suave)}",
     "label{display:block;font-size:13px;font-weight:600;margin:0 0 6px}",
-    "input{width:100%;box-sizing:border-box;font:inherit;font-size:15px;padding:10px 12px;border-radius:10px;border:1px solid var(--borda);background:transparent;color:var(--texto);margin:0 0 14px}",
+    "input{width:100%;min-height:44px;box-sizing:border-box;font:inherit;font-size:15px;padding:10px 12px;border-radius:10px;border:1px solid var(--borda);background:transparent;color:var(--texto);margin:0 0 14px}",
     "input:focus{outline:2px solid var(--marca);outline-offset:1px}",
     ".erro{color:#dc2626;font-size:13px;min-height:18px;margin:-6px 0 10px}",
     ".acoes{display:flex;gap:8px;flex-wrap:wrap;align-items:center}",
-    "button{font:inherit;font-size:15px;font-weight:600;border:0;border-radius:10px;padding:10px 18px;cursor:pointer}",
+    "button{font:inherit;font-size:15px;font-weight:600;border:0;border-radius:10px;padding:10px 18px;min-height:44px;cursor:pointer}",
     ".enviar{background:var(--marca);color:#fff}",
     "@media (prefers-color-scheme:dark){.enviar{color:#0f172a}}",
     ".depois{background:transparent;color:var(--suave)}",
     ".nota{font-size:12px;margin:14px 0 0}",
     "a{color:var(--marca)}",
+    /* Alvos de 44 px (regra da casa; C8 do MVP): campos e botões. O link da política fica dentro de uma frase, isento pela WCAG 2.5.8. */
   ].join("");
 
   /* Monta o formulário em Shadow DOM (isolado do CSS do site) e resolve quando a pessoa se identifica. */

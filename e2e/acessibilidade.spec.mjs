@@ -3,6 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { test, expect } from "./visitante.mjs";
+import { test as baseTest } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { PAGINAS, SITES, url } from "./sites.mjs";
 
@@ -109,3 +110,26 @@ for (const s of SITES_44) {
     expect(pequenos, pequenos.join(" | ")).toEqual([]);
   });
 }
+
+/* O modal de identificação do SDK (/sdk/identificacao.js, shadow DOM aberto), na 1ª visita a 360 px (C8 do MVP do
+   learntech-content). O e2e dos outros testes entra já identificado; aqui o contexto é novo e sem identificação.
+   O axe percorre o shadow DOM aberto: 0 violações critical ou serious. Campos e botões com 44 px; o link da política
+   fica dentro de uma frase, isento pela WCAG 2.5.8. Contra a produção, os 44 px passam depois do deploy da API. */
+baseTest("learn-tech — modal de identificação: axe e alvos de 44 px a 360 px", async ({ browser }) => {
+  const contexto = await browser.newContext({ viewport: { width: 360, height: 800 } });
+  const page = await contexto.newPage();
+  await page.goto(SITES["learn-tech"].replace(/\/$/, "") + "/");
+  const dialogo = page.getByRole("dialog");
+  await expect(dialogo).toBeVisible();
+  const r = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"]).analyze();
+  const graves = r.violations.filter((v) => ["critical", "serious"].includes(v.impact)).map((v) => `${v.id} x${v.nodes.length}`);
+  expect(graves, graves.join(" | ")).toEqual([]);
+  const pequenos = await dialogo.evaluate((form) =>
+    [...form.querySelectorAll("input, button")]
+      .map((e) => ({ nome: e.getAttribute("aria-label") || e.name || e.textContent.trim(), c: e.getBoundingClientRect() }))
+      .filter((a) => a.c.height < 44 || a.c.width < 44)
+      .map((a) => `${a.nome} ${a.c.width.toFixed(0)}x${a.c.height.toFixed(0)}`),
+  );
+  expect(pequenos, pequenos.join(" | ")).toEqual([]);
+  await contexto.close();
+});
