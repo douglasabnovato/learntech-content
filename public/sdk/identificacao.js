@@ -93,8 +93,8 @@
   var ESTILO = [
     ":host{all:initial}",
     ".fundo{position:fixed;inset:0;z-index:2147483646;background:rgba(15,23,42,.55);display:flex;align-items:center;justify-content:center;padding:16px;font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}",
-    ".caixa{--fundo:#fff;--texto:#0f172a;--suave:#475569;--borda:#cbd5e1;--marca:#075985;background:var(--fundo);color:var(--texto);width:100%;max-width:440px;border-radius:16px;padding:24px;box-shadow:0 20px 50px rgba(0,0,0,.25);box-sizing:border-box}",
-    "@media (prefers-color-scheme:dark){.caixa{--fundo:#0f172a;--texto:#f1f5f9;--suave:#94a3b8;--borda:#334155;--marca:#38bdf8}}",
+    ".caixa{--fundo:#fff;--texto:#0f172a;--suave:#475569;--borda:#64748b;--marca:#075985;background:var(--fundo);color:var(--texto);width:100%;max-width:440px;border-radius:16px;padding:24px;box-shadow:0 20px 50px rgba(0,0,0,.25);box-sizing:border-box}",
+    "@media (prefers-color-scheme:dark){.caixa{--fundo:#0f172a;--texto:#f1f5f9;--suave:#94a3b8;--borda:#94a3b8;--marca:#38bdf8}}",
     "h2{margin:0 0 8px;font-size:20px;line-height:1.3}",
     "p{margin:0 0 16px;font-size:14px;line-height:1.55;color:var(--suave)}",
     "label{display:block;font-size:13px;font-weight:600;margin:0 0 6px}",

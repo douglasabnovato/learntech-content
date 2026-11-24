@@ -20,9 +20,18 @@ for (const p of PAGINAS) {
     await page.waitForLoadState("networkidle");
     /* Os iframes (player do YouTube) são de terceiros: o site não controla o HTML de dentro deles. */
     const r = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"]).exclude("iframe").analyze();
-    const violacoes = r.violations.map((v) => ({ id: v.id, impacto: v.impact, descricao: v.help, ocorrencias: v.nodes.length, ajuda: v.helpUrl }));
+    const violacoes = r.violations.map((v) => ({
+      id: v.id,
+      impacto: v.impact,
+      descricao: v.help,
+      ocorrencias: v.nodes.length,
+      ajuda: v.helpUrl,
+    }));
     resultados.push({ site: p.site, pagina: p.nome, url: url(p), violacoes });
-    expect(violacoes.filter((v) => v.impacto === "critical"), JSON.stringify(violacoes, null, 2)).toEqual([]);
+    expect(
+      violacoes.filter((v) => v.impacto === "critical"),
+      JSON.stringify(violacoes, null, 2),
+    ).toEqual([]);
   });
 }
 
@@ -83,7 +92,7 @@ for (const s of SITES_44) {
     await page.goto(SITES[s.site].replace(/\/$/, "") + s.caminho);
     await page.waitForLoadState("networkidle");
     const { medidos, pequenos } = await page.evaluate(() => {
-      const seletor = 'a[href], button, input:not([type=hidden]), select, textarea, [role=button], [role=tab]';
+      const seletor = "a[href], button, input:not([type=hidden]), select, textarea, [role=button], [role=tab]";
       const lista = [];
       let total = 0;
       /* Inline numa frase: o link é inline e o bloco em volta (p ou li) tem texto além do texto do link. */
@@ -131,5 +140,34 @@ baseTest("learn-tech — modal de identificação: axe e alvos de 44 px a 360 px
       .map((a) => `${a.nome} ${a.c.width.toFixed(0)}x${a.c.height.toFixed(0)}`),
   );
   expect(pequenos, pequenos.join(" | ")).toEqual([]);
+  /* A borda dos campos é o único limite visual deles (fundo transparente): 3:1 contra o fundo da caixa (WCAG 1.4.11).
+     Era #cbd5e1, com 1,48:1 (estudo das bordas, 24/11/2026). */
+  const bordasFracas = await dialogo.evaluate((form) => {
+    const cv = globalThis.document.createElement("canvas").getContext("2d", { willReadFrequently: true });
+    const rgb = (c) => {
+      cv.fillStyle = "#fff";
+      cv.fillRect(0, 0, 1, 1);
+      cv.fillStyle = c;
+      cv.fillRect(0, 0, 1, 1);
+      return [...cv.getImageData(0, 0, 1, 1).data].slice(0, 3);
+    };
+    const lum = ([r, g, b]) =>
+      [r, g, b]
+        .map((v) => {
+          v /= 255;
+          return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4;
+        })
+        .reduce((s, v, i) => s + v * [0.2126, 0.7152, 0.0722][i], 0);
+    const ct = (a, b) => {
+      const [x, y] = [lum(a), lum(b)].sort((m, n) => n - m);
+      return (x + 0.05) / (y + 0.05);
+    };
+    const fundo = rgb(globalThis.getComputedStyle(form.closest(".caixa") ?? form).backgroundColor);
+    return [...form.querySelectorAll("input")]
+      .map((e) => ({ nome: e.getAttribute("aria-label") || e.name, c: ct(rgb(globalThis.getComputedStyle(e).borderBottomColor), fundo) }))
+      .filter((a) => a.c < 3)
+      .map((a) => `${a.nome} ${a.c.toFixed(2)}:1`);
+  });
+  expect(bordasFracas, bordasFracas.join(" | ")).toEqual([]);
   await contexto.close();
 });
