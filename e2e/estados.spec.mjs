@@ -90,4 +90,33 @@ for (const b of BUSCAS) {
   });
 }
 
+/* Falha de carga de um pedaço no learn-tech (learn-tech#157-4, cenário B da revisão R19 do #156): o arquivo da Home
+   não chega (rede instável, ou uma aba aberta antes de um deploy). Em vez de tela branca, aparece "Algo não carregou"
+   com "Recarregar"; o menu continua funcionando, e navegar para outra página tira o erro.
+   O LimiteDeErro só existe a partir do learn-tech#156: enquanto ele não estiver no endereço testado (a produção vem da
+   main, que o autor atualiza), o teste é pulado com o motivo, e passa a rodar sozinho quando o deploy chegar. */
+test.describe("learn-tech — falha de carga de uma página", () => {
+  test.use({ viewport: { width: 1440, height: 900 } });
+
+  test("a página que não carrega mostra 'Recarregar', e o menu recupera a navegação", async ({ page, request }) => {
+    const html = await (await request.get(base("learn-tech") + "/")).text();
+    const entrada = html.match(/src="(\/assets\/index-[^"]+\.js)"/)?.[1];
+    const js = entrada ? await (await request.get(base("learn-tech") + entrada)).text() : "";
+    test.skip(!js.includes("Algo não carregou"), "o LimiteDeErro (learn-tech#156) ainda não está neste endereço");
+
+    await page.route(/\/assets\/Home-[^/]+\.js$/, (rota) => rota.abort());
+    await page.goto(base("learn-tech") + "/");
+    await expect(page.getByRole("heading", { name: "Algo não carregou" })).toBeVisible();
+    await expect(page.getByRole("alert")).toBeVisible();
+    const recarregar = page.getByRole("button", { name: "Recarregar" });
+    await expect(recarregar).toBeVisible();
+    expect((await recarregar.boundingBox())?.height ?? 0).toBeGreaterThanOrEqual(40);
+
+    await page.getByRole("link", { name: "Programas", exact: true }).first().click();
+    await expect(page).toHaveURL(/\/programs$/);
+    await expect(page.getByRole("heading", { name: "Algo não carregou" })).toHaveCount(0);
+    await expect(page.getByText(/49 treinamentos/i).first()).toBeVisible();
+  });
+});
+
 /* Fim de estados.spec.mjs */
