@@ -121,4 +121,19 @@ test.describe("learn-tech — falha de carga de uma página", () => {
   });
 });
 
+/* O pedaço do "Voltar ao topo" (ScrollToTop, sob demanda desde o learn-tech#170) não baixa: só o botão some, e a
+   página continua (sem LimiteDeErro em volta dele, o erro desmontava o app inteiro: R19 do #170, nota 3).
+   Antes do deploy do #170, a produção não tem esse pedaço: o bloqueio não acha nada e o teste confere só a página. */
+test("learn-tech — sem o pedaço do 'Voltar ao topo', a página continua", async ({ page }) => {
+  const erros = [];
+  page.on("pageerror", (e) => erros.push(e.message));
+  await page.route(/\/assets\/ScrollToTop-[^/]+\.js$/, (rota) => rota.abort());
+  await page.goto(base("learn-tech") + "/");
+  await expect(page.locator("h1").first()).toBeVisible();
+  await expect(page.locator("#navbar")).toBeVisible();
+  await page.mouse.wheel(0, 1500);
+  await expect(page.locator("h1").first()).toBeAttached();
+  expect(erros, erros.join(" | ")).toEqual([]);
+});
+
 /* Fim de estados.spec.mjs */
