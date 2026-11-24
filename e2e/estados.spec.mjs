@@ -16,9 +16,13 @@ async function api(page, modo) {
   });
 }
 
+/* A contagem de /programs: "49 treinamentos" na produção até o deploy do learn-tech#175, e "49 programas" depois.
+   As duas valem, para o e2e não ficar vermelho no meio da troca. */
+const CONTAGEM_PROGRAMAS = /49 (treinamentos|programas)/i;
+
 /* Listas: com a API lenta ou fora, o conteúdo vem da cópia de reserva. */
 const LISTAS = [
-  { site: "learn-tech", caminho: "/programs", texto: /49 treinamentos/i },
+  { site: "learn-tech", caminho: "/programs", texto: CONTAGEM_PROGRAMAS },
   { site: "bootcamps", caminho: "/", texto: /Concluídos/i },
   { site: "career", caminho: "/", texto: /Empresas Legais/i },
   { site: "tools", caminho: "/", texto: /Ferramentas que valeram o tempo/i },
@@ -117,7 +121,7 @@ test.describe("learn-tech — falha de carga de uma página", () => {
     await page.getByRole("link", { name: "Programas", exact: true }).first().click();
     await expect(page).toHaveURL(/\/programs$/);
     await expect(page.getByRole("heading", { name: "Algo não carregou" })).toHaveCount(0);
-    await expect(page.getByText(/49 treinamentos/i).first()).toBeVisible();
+    await expect(page.getByText(CONTAGEM_PROGRAMAS).first()).toBeVisible();
   });
 });
 
