@@ -123,17 +123,24 @@ test.describe("learn-tech — falha de carga de uma página", () => {
 
 /* O pedaço do "Voltar ao topo" (ScrollToTop, sob demanda desde o learn-tech#170) não baixa: só o botão some, e a
    página continua (sem LimiteDeErro em volta dele, o erro desmontava o app inteiro: R19 do #170, nota 3).
-   Antes do deploy do #170, a produção não tem esse pedaço: o bloqueio não acha nada e o teste confere só a página. */
+   O teste conta os bloqueios e FALHA se nenhum pedaço for bloqueado (R19 do Esp QA do #67): sem isso, passaria calado
+   num endereço sem o pedaço. Por isso ele só vale contra o learn-tech com o #170 (a developer-mvp-2026, ou a produção
+   depois do deploy de quinta); o e2e.yml roda segunda às 09h23 UTC, depois que a developer daqui chegar à main. */
 test("learn-tech — sem o pedaço do 'Voltar ao topo', a página continua", async ({ page }) => {
   const erros = [];
   page.on("pageerror", (e) => erros.push(e.message));
-  await page.route(/\/assets\/ScrollToTop-[^/]+\.js$/, (rota) => rota.abort());
+  let bloqueados = 0;
+  await page.route(/\/assets\/ScrollToTop-[^/]+\.js$/, (rota) => {
+    bloqueados += 1;
+    return rota.abort();
+  });
   await page.goto(base("learn-tech") + "/");
   await expect(page.locator("h1").first()).toBeVisible();
   await expect(page.locator("#navbar")).toBeVisible();
   await page.mouse.wheel(0, 1500);
   await expect(page.locator("h1").first()).toBeAttached();
   expect(erros, erros.join(" | ")).toEqual([]);
+  expect(bloqueados, "nenhum pedaço ScrollToTop-*.js foi bloqueado: o endereço testado não tem o learn-tech#170").toBeGreaterThan(0);
 });
 
 /* Fim de estados.spec.mjs */
