@@ -64,9 +64,12 @@ test.describe("learn-tech — alvos de 44 px a 360 px", () => {
 });
 
 /* Alvos de toque de 44 px nos sites irmãos, a 360 px (bootcamps#85, career#44 e tools#70; padrão E8 do Esp UX/UI).
-   Mede todo alvo interativo visível. Ficam de fora: o link de pular para o conteúdo, que só aparece no foco
-   (1 x 1 px fora dele), e o link solto dentro de um parágrafo ou item de lista, que a WCAG 2.5.8 isenta.
-   Contra a produção, passa depois que a main de cada site receber o PR dele e o deploy chegar. */
+   Mede todo alvo interativo visível. Ficam de fora o link de pular para o conteúdo, que só aparece no foco
+   (1 x 1 px fora dele), e só o link de fato inline numa frase (o parágrafo ou item tem texto além do link), que a
+   WCAG 2.5.8 isenta. Um link sozinho num parágrafo, como o "Conheça o learnTECH" do career, não é isento.
+   Guarda (R19 do Esp QA do #68): pelo menos 10 alvos medidos por site, senão o teste falha (com o JS bloqueado ou a
+   página vazia, ele passaria calado). Contra a produção, passa depois que a main de cada site receber o PR dele
+   (bootcamps#85, career#44 e o PR do "Conheça", tools#70) e o deploy chegar. */
 const SITES_44 = [
   { site: "bootcamps", caminho: "/" },
   { site: "career", caminho: "/" },
@@ -78,21 +81,31 @@ for (const s of SITES_44) {
     await page.setViewportSize({ width: 360, height: 800 });
     await page.goto(SITES[s.site].replace(/\/$/, "") + s.caminho);
     await page.waitForLoadState("networkidle");
-    const pequenos = await page.evaluate(() => {
+    const { medidos, pequenos } = await page.evaluate(() => {
       const seletor = 'a[href], button, input:not([type=hidden]), select, textarea, [role=button], [role=tab]';
       const lista = [];
+      let total = 0;
+      /* Inline numa frase: o link é inline e o bloco em volta (p ou li) tem texto além do texto do link. */
+      const inlineNumaFrase = (e, cs) => {
+        if (e.tagName !== "A" || cs.display !== "inline" || e.closest("nav")) return false;
+        const bloco = e.closest("p, li");
+        if (!bloco) return false;
+        return bloco.textContent.replace(e.textContent, "").trim().length > 0;
+      };
       for (const e of globalThis.document.querySelectorAll(seletor)) {
         const c = e.getBoundingClientRect();
         const cs = globalThis.getComputedStyle(e);
         if (c.width <= 1 || c.height <= 1 || cs.visibility === "hidden" || cs.display === "none") continue;
-        if (e.tagName === "A" && cs.display === "inline" && e.closest("p, li") && !e.closest("nav")) continue;
+        if (inlineNumaFrase(e, cs)) continue;
+        total += 1;
         if (c.width < 44 || c.height < 44) {
           const nome = (e.getAttribute("aria-label") || e.textContent || e.getAttribute("placeholder") || "").trim().slice(0, 30);
           lista.push(`${e.tagName.toLowerCase()} "${nome}" ${c.width.toFixed(1)}x${c.height.toFixed(1)}`);
         }
       }
-      return lista;
+      return { medidos: total, pequenos: lista };
     });
+    expect(medidos, `só ${medidos} alvos medidos em ${s.site}: a página carregou?`).toBeGreaterThanOrEqual(10);
     expect(pequenos, pequenos.join(" | ")).toEqual([]);
   });
 }
