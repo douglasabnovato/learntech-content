@@ -94,7 +94,9 @@ for (const b of BUSCAS) {
    não chega (rede instável, ou uma aba aberta antes de um deploy). Em vez de tela branca, aparece "Algo não carregou"
    com "Recarregar"; o menu continua funcionando, e navegar para outra página tira o erro.
    O LimiteDeErro só existe a partir do learn-tech#156: enquanto ele não estiver no endereço testado (a produção vem da
-   main, que o autor atualiza), o teste é pulado com o motivo, e passa a rodar sozinho quando o deploy chegar. */
+   main, que o autor atualiza), o teste é pulado com o motivo. Depois do deploy, ele passa a valer na próxima rodada
+   do e2e.yml (segundas, 09h23 UTC) ou num disparo manual (workflow_dispatch): o e2e não roda no deploy nem no PR.
+   Depois que a produção tiver o LimiteDeErro, o pulo vira um expect (revisão R19 do Esp QA, ressalva 2). */
 test.describe("learn-tech — falha de carga de uma página", () => {
   test.use({ viewport: { width: 1440, height: 900 } });
 
