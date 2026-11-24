@@ -143,4 +143,36 @@ test("learn-tech — sem o pedaço do 'Voltar ao topo', a página continua", asy
   expect(bloqueados, "nenhum pedaço ScrollToTop-*.js foi bloqueado: o endereço testado não tem o learn-tech#170").toBeGreaterThan(0);
 });
 
+/* Guarda do cabeçalho do tools com fonte grande (tools#71, reduzida pela medida de 24/11/2026): a 320 px, com o texto a
+   125% aplicado antes da 1ª pintura (como o navegador faz com a fonte do sistema, e não no DOMContentLoaded, que cria um
+   CLS falso), o CLS fica em 0,1 ou menos, e a marca, as abas e o tema mantêm 44 px. */
+test("tools — cabeçalho estável a 320 px com o texto a 125%", async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 800 });
+  await page.addInitScript(() => {
+    globalThis.__cls = 0;
+    new globalThis.PerformanceObserver((lista) => {
+      for (const e of lista.getEntries()) if (!e.hadRecentInput) globalThis.__cls += e.value;
+    }).observe({ type: "layout-shift", buffered: true });
+    try {
+      globalThis.document.documentElement.style.fontSize = "125%";
+    } catch {
+      /* sem documentElement ainda (about:blank): a página real aplica a escala */
+    }
+  });
+  await page.goto(base("tools") + "/");
+  await page.waitForLoadState("networkidle");
+  await page.waitForTimeout(1500);
+  const r = await page.evaluate(() => {
+    const alvos = [".brand", ".tab", "#alternar-tema"].flatMap((s) => [...globalThis.document.querySelectorAll(s)]);
+    const pequenos = alvos
+      .map((e) => ({ nome: e.getAttribute("aria-label") || e.textContent.trim(), c: e.getBoundingClientRect() }))
+      .filter((a) => a.c.width < 44 || a.c.height < 44)
+      .map((a) => `${a.nome} ${a.c.width.toFixed(1)}x${a.c.height.toFixed(1)}`);
+    return { cls: globalThis.__cls, alvos: alvos.length, pequenos };
+  });
+  expect(r.alvos, "a marca, as abas e o tema não foram achados").toBeGreaterThanOrEqual(4);
+  expect(r.cls, `CLS do tools a 320 px com 125%: ${r.cls.toFixed(3)}`).toBeLessThanOrEqual(0.1);
+  expect(r.pequenos, r.pequenos.join(" | ")).toEqual([]);
+});
+
 /* Fim de estados.spec.mjs */
