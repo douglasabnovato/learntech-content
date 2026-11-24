@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { test, expect } from "./visitante.mjs";
 import AxeBuilder from "@axe-core/playwright";
-import { PAGINAS, url } from "./sites.mjs";
+import { PAGINAS, SITES, url } from "./sites.mjs";
 
 const resultados = [];
 test.afterAll(() => {
@@ -24,3 +24,38 @@ for (const p of PAGINAS) {
     expect(violacoes.filter((v) => v.impacto === "critical"), JSON.stringify(violacoes, null, 2)).toEqual([]);
   });
 }
+
+/* Alvos de toque de 44 px, a regra da casa (learn-tech#162, #163 e #164). Medidos a 360 px: os botões do menu
+   no cabeçalho e as abas do Enroll do programa 1 (que tem cópia local, então roda também sem API). O axe confere só o mínimo do AA (24 px); este teste fixa os 44 px.
+   Contra a produção, passa depois que a main do learn-tech receber o #163 e o deploy chegar. */
+test.describe("learn-tech — alvos de 44 px a 360 px", () => {
+  test.use({ viewport: { width: 360, height: 800 } });
+  const base = SITES["learn-tech"].replace(/\/$/, "");
+  const medir = async (alvo) => {
+    const caixa = await alvo.boundingBox();
+    return { largura: Math.round(caixa?.width ?? 0), altura: Math.round(caixa?.height ?? 0) };
+  };
+
+  test("Abrir menu e Fechar menu", async ({ page }) => {
+    await page.goto(base + "/");
+    const abrir = page.getByRole("button", { name: "Abrir menu" });
+    const a = await medir(abrir);
+    expect(a.largura, "largura de Abrir menu").toBeGreaterThanOrEqual(44);
+    expect(a.altura, "altura de Abrir menu").toBeGreaterThanOrEqual(44);
+    await abrir.click();
+    const f = await medir(page.getByRole("button", { name: "Fechar menu" }));
+    expect(f.largura, "largura de Fechar menu").toBeGreaterThanOrEqual(44);
+    expect(f.altura, "altura de Fechar menu").toBeGreaterThanOrEqual(44);
+  });
+
+  test("abas do Enroll", async ({ page }) => {
+    await page.goto(base + "/program/web/1/enroll");
+    const abas = page.getByRole("tab");
+    await expect(abas.first()).toBeVisible({ timeout: 15_000 });
+    const n = await abas.count();
+    for (let i = 0; i < n; i++) {
+      const { altura } = await medir(abas.nth(i));
+      expect(altura, `altura da aba ${i + 1} de ${n}`).toBeGreaterThanOrEqual(44);
+    }
+  });
+});
