@@ -143,36 +143,46 @@ test("learn-tech — sem o pedaço do 'Voltar ao topo', a página continua", asy
   expect(bloqueados, "nenhum pedaço ScrollToTop-*.js foi bloqueado: o endereço testado não tem o learn-tech#170").toBeGreaterThan(0);
 });
 
-/* Guarda do cabeçalho do tools com fonte grande (tools#71, reduzida pela medida de 24/11/2026): a 320 px, com o texto a
-   125% aplicado antes da 1ª pintura (como o navegador faz com a fonte do sistema, e não no DOMContentLoaded, que cria um
-   CLS falso), o CLS fica em 0,1 ou menos, e a marca, as abas e o tema mantêm 44 px. */
-test("tools — cabeçalho estável a 320 px com o texto a 125%", async ({ page }) => {
-  await page.setViewportSize({ width: 320, height: 800 });
-  await page.addInitScript(() => {
-    globalThis.__cls = 0;
-    new globalThis.PerformanceObserver((lista) => {
-      for (const e of lista.getEntries()) if (!e.hadRecentInput) globalThis.__cls += e.value;
-    }).observe({ type: "layout-shift", buffered: true });
-    try {
-      globalThis.document.documentElement.style.fontSize = "125%";
-    } catch {
-      /* sem documentElement ainda (about:blank): a página real aplica a escala */
-    }
+/* Guarda do cabeçalho do tools com fonte grande (tools#71, reduzida pela medida de 24/11/2026, refeita com a escala de
+   verdade): a 320 e 360 px, com o texto a 125% aplicado antes da 1ª pintura por adoptedStyleSheets (o documentElement
+   ainda é null no init script; um style nele não pegava, R19 do Esp QA do #69), confere que a fonte raiz é 20 px, que
+   o CLS fica em 0,1 ou menos (medido: 0,007 a 320 px e 0,064 a 360 px) e que a marca, as abas e o tema do cabeçalho
+   têm 44 px. */
+for (const largura of [320, 360]) {
+  test(`tools — cabeçalho estável a ${largura} px com o texto a 125%`, async ({ page }) => {
+    await page.setViewportSize({ width: largura, height: 800 });
+    await page.addInitScript(() => {
+      globalThis.__cls = 0;
+      new globalThis.PerformanceObserver((lista) => {
+        for (const e of lista.getEntries()) if (!e.hadRecentInput) globalThis.__cls += e.value;
+      }).observe({ type: "layout-shift", buffered: true });
+      const folha = new globalThis.CSSStyleSheet();
+      folha.replaceSync("html { font-size: 125%; }");
+      globalThis.document.adoptedStyleSheets = [...globalThis.document.adoptedStyleSheets, folha];
+    });
+    await page.goto(base("tools") + "/");
+    await page.waitForLoadState("networkidle");
+    await page.waitForTimeout(1500);
+    const r = await page.evaluate(() => {
+      const doc = globalThis.document;
+      const cabecalho = doc.querySelector("header, .site-header");
+      const alvos = cabecalho ? [".brand", ".tab", "#alternar-tema"].flatMap((s) => [...cabecalho.querySelectorAll(s)]) : [];
+      const pequenos = alvos
+        .map((e) => ({ nome: e.getAttribute("aria-label") || e.textContent.trim(), c: e.getBoundingClientRect() }))
+        .filter((a) => a.c.width < 44 || a.c.height < 44)
+        .map((a) => `${a.nome} ${a.c.width.toFixed(1)}x${a.c.height.toFixed(1)}`);
+      return {
+        fonte: globalThis.getComputedStyle(doc.documentElement).fontSize,
+        cls: globalThis.__cls,
+        alvos: alvos.length,
+        pequenos,
+      };
+    });
+    expect(r.fonte, "a escala de 125% não foi aplicada").toBe("20px");
+    expect(r.alvos, "a marca, as abas e o tema do cabeçalho não foram achados").toBeGreaterThanOrEqual(4);
+    expect(r.cls, `CLS do tools a ${largura} px com 125%: ${r.cls.toFixed(3)}`).toBeLessThanOrEqual(0.1);
+    expect(r.pequenos, r.pequenos.join(" | ")).toEqual([]);
   });
-  await page.goto(base("tools") + "/");
-  await page.waitForLoadState("networkidle");
-  await page.waitForTimeout(1500);
-  const r = await page.evaluate(() => {
-    const alvos = [".brand", ".tab", "#alternar-tema"].flatMap((s) => [...globalThis.document.querySelectorAll(s)]);
-    const pequenos = alvos
-      .map((e) => ({ nome: e.getAttribute("aria-label") || e.textContent.trim(), c: e.getBoundingClientRect() }))
-      .filter((a) => a.c.width < 44 || a.c.height < 44)
-      .map((a) => `${a.nome} ${a.c.width.toFixed(1)}x${a.c.height.toFixed(1)}`);
-    return { cls: globalThis.__cls, alvos: alvos.length, pequenos };
-  });
-  expect(r.alvos, "a marca, as abas e o tema não foram achados").toBeGreaterThanOrEqual(4);
-  expect(r.cls, `CLS do tools a 320 px com 125%: ${r.cls.toFixed(3)}`).toBeLessThanOrEqual(0.1);
-  expect(r.pequenos, r.pequenos.join(" | ")).toEqual([]);
-});
+}
 
 /* Fim de estados.spec.mjs */
