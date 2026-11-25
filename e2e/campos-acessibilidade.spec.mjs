@@ -124,6 +124,25 @@ const medir = (busca) => {
 
 const igual = (a, b) => a.tipo === b.tipo && a.largura === b.largura && a.cor === b.cor;
 
+/* A guarda de N fora do test.fail (R19 do Esp QA do #78, severidade 2): o test.fail aceita qualquer falha, então
+   uma busca que sumisse da produção contaria como "a falha esperada" e o run seguiria verde. Este teste não tem
+   test.fail e roda também contra a produção: a busca e o filtro existem, e a busca recebe o foco do teclado. */
+for (const p of PAGINAS) {
+  test(`${p.site} — a busca${p.filtro ? " e o filtro existem, e a busca" : " existe e"} recebe o foco do teclado a 360 px`, async ({
+    page,
+  }) => {
+    await page.setViewportSize({ width: 360, height: 800 });
+    await page.goto(SITES[p.site].replace(/\/$/, "") + p.caminho);
+    const busca = page.locator(p.busca).first();
+    await expect(busca, `a busca (${p.busca}) não está na página`).toBeVisible();
+    if (p.filtro) await expect(page.locator(p.filtro).first(), `o filtro (${p.filtro}) não está na página`).toBeVisible();
+    await busca.focus();
+    await page.keyboard.press("Shift+Tab");
+    await page.keyboard.press("Tab");
+    await expect(busca, "a busca não recebe o foco do teclado").toBeFocused();
+  });
+}
+
 for (const esquema of ["light", "dark"]) {
   for (const p of PAGINAS) {
     test(`${p.site} — borda dos campos e foco da busca a 360 px (${esquema})`, async ({ page }) => {
@@ -160,7 +179,9 @@ for (const esquema of ["light", "dark"]) {
    sky-500/5, e o texto digitado e o texto de exemplo precisam de 4,5:1 contra ele; o rótulo "Buscar" fica na tela.
    Medido em 24/11/2026: digitado 4,30:1 e exemplo 1,89:1 com foco. A cor do texto é composta sobre a pilha real
    (a tela, os fundos dos ancestrais e o fundo do próprio campo), porque o exemplo do Tailwind 4 tem 50% de alfa.
-   Guarda de N: a busca existe, está focada e tem o texto digitado; sem ela, o teste falha em vez de passar calado. */
+   Guarda de N: a busca existe, está focada e tem o texto digitado; sem ela, o teste falha em vez de passar calado.
+   Contra a produção, este teste tem o test.fail; a busca que some fica vermelha no teste de guarda acima, sem test.fail.
+   O rótulo precisa de tamanho de texto (um sr-only de 1x1 passava no toBeVisible) e de 4,5:1 (R19 do Esp QA do #78). */
 const PENDENTE_TEXTO = "learn-tech#179";
 test("learn-tech — texto digitado e de exemplo da busca com 4,5:1 com foco, e o rótulo visível", async ({ page }) => {
   test.fail(contraProducao("learn-tech"), `deploy pendente: ${PENDENTE_TEXTO}`);
@@ -168,7 +189,10 @@ test("learn-tech — texto digitado e de exemplo da busca com 4,5:1 com foco, e 
   await page.goto(SITES["learn-tech"].replace(/\/$/, "") + "/programs");
   const busca = page.locator('input[aria-label^="Buscar"]').first();
   await expect(busca, "a busca de /programs não está na página").toBeVisible();
-  await expect(page.locator("label").filter({ has: busca }).getByText("Buscar", { exact: true })).toBeVisible();
+  const rotulo = page.locator("label").filter({ has: busca }).getByText("Buscar", { exact: true });
+  await expect(rotulo, 'o rótulo "Buscar" não está na página').toBeVisible();
+  const caixa = await rotulo.boundingBox();
+  expect(caixa && caixa.width >= 10 && caixa.height >= 10, `o rótulo "Buscar" não está na tela: ${JSON.stringify(caixa)}`).toBe(true);
   await page.addStyleTag({ content: "*, *::before, *::after { transition: none !important; animation: none !important; }" });
   const texto = (e) => {
     const cv = globalThis.document.createElement("canvas").getContext("2d", { willReadFrequently: true });
@@ -198,10 +222,13 @@ test("learn-tech — texto digitado e de exemplo da busca com 4,5:1 com foco, e 
     }
     camadas.unshift("#ffffff");
     const fundo = pintar(camadas);
-    const vazio = e.value === "";
+    /* O rótulo é texto comum; o campo vazio mede o texto de exemplo. */
+    const vazio = e.tagName === "INPUT" && e.value === "";
     const cor = globalThis.getComputedStyle(e, vazio ? "::placeholder" : undefined).color;
     return { focada: globalThis.document.activeElement === e, valor: e.value, c: ct(pintar([...camadas, cor]), fundo) };
   };
+  const doRotulo = await rotulo.evaluate(texto);
+  expect(doRotulo.c, `o rótulo "Buscar": ${doRotulo.c}:1`).toBeGreaterThanOrEqual(4.5);
   await busca.focus();
   const exemplo = await busca.evaluate(texto);
   await busca.fill("react");
