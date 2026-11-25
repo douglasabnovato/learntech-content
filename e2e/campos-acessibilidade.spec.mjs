@@ -1,22 +1,44 @@
 /* campos-acessibilidade.spec.mjs — a borda dos campos e o foco da busca nos quatro sites, a 360 px, nos 2 temas.
    Entra no projeto "acessibilidade" (o testMatch pega o fim do nome).
    - Borda (WCAG 1.4.11): o limite visual de cada campo (a borda, ou o fundo do campo) tem 3:1 contra o fundo de trás.
-     O estudo de 24/11/2026 achou 6 de 8 campos abaixo (1,23 a 1,48:1); as correções são o learn-tech#178, o
-     learntech-content#71 (o modal, já medido no acessibilidade.spec.mjs), o career#49 e o tools#72.
+     O estudo de 24/11/2026 achou 7 de 8 campos abaixo (1,23 a 1,91:1); as correções são o learn-tech#178, o
+     learntech-content#71 (o modal, já medido no acessibilidade.spec.mjs), o career#49, o tools#72 e o bootcamps#88.
    - Foco (WCAG 2.4.7): a busca, focada pelo teclado, mostra um indicador de 2 px ou mais (contorno ou anel de
-     box-shadow), com 3:1 contra o fundo de trás. Só a troca da cor da borda não basta: era 1,17:1 no career e
-     1,06:1 no tools (R19 do Esp UX/UI do career#49 e do tools#72, nota 3).
-   Guarda de N: cada página tem um mínimo de campos; com a marcação mudada e 0 campos, as listas viriam vazias e
-   passariam. Contra a produção, passa depois do deploy dos 3 sites (o do autor). */
+     box-shadow), com 3:1 contra o fundo de trás, e que NÃO existe sem o foco (um anel fixo não é indicador de foco).
+     Só a troca da cor da borda não basta: era 1,17:1 no career e 1,06:1 no tools (R19 do Esp UX/UI, nota 3).
+   - O fundo de trás é a pilha dos fundos dos ancestrais sobre a cor da tela: branca, ou #121212 quando a página
+     declara color-scheme escuro. Um ancestral com background-image não é medido: o teste falha e pede a medida à mão.
+   Guarda de N: cada página tem um mínimo de campos, e a busca e o filtro são achados pelo seletor deles; com a
+   marcação mudada e 0 campos, as listas viriam vazias e passariam.
+   Contra a produção, o vermelho é esperado até o deploy de cada site (o do autor): o test.fail por site, só contra a
+   produção, deixa o run verde com a anotação. Quando o deploy sair, o Playwright marca "passou, mas devia falhar" e
+   o run fica vermelho: aí é só tirar o site de PENDENTE (R19 do Esp QA do #74, severidade 3). */
 import { test, expect } from "./visitante.mjs";
 import { SITES } from "./sites.mjs";
 
 const PAGINAS = [
-  { site: "learn-tech", caminho: "/programs", campos: 2, busca: 'input[type="search"], input[placeholder*="Buscar"]' },
+  {
+    site: "learn-tech",
+    caminho: "/programs",
+    campos: 2,
+    busca: 'input[type="search"], input[placeholder*="Buscar"]',
+    filtro: "select",
+  },
   { site: "bootcamps", caminho: "/", campos: 1, busca: 'input[type="search"], input[placeholder*="Buscar"]' },
-  { site: "career", caminho: "/", campos: 2, busca: "#search-input" },
+  { site: "career", caminho: "/", campos: 2, busca: "#search-input", filtro: ".category-filter select" },
   { site: "tools", caminho: "/", campos: 1, busca: "#busca" },
 ];
+
+/* Vermelho esperado na produção até o deploy. Tire a linha quando o deploy do site sair. */
+const PENDENTE = {
+  "learn-tech": "learn-tech#178",
+  bootcamps: "bootcamps#88",
+  career: "career#49",
+  tools: "tools#72",
+};
+/* O sites.mjs testa a produção quando a variável do site não está definida. */
+const VARIAVEL = { "learn-tech": "E2E_LEARN_TECH", bootcamps: "E2E_BOOTCAMPS", career: "E2E_CAREER", tools: "E2E_TOOLS" };
+const contraProducao = (site) => !process.env[VARIAVEL[site]];
 
 /* Roda na página: as cores pintadas num canvas de 1 px (aceita oklch e alfa) e o contraste WCAG. */
 const medir = (busca) => {
@@ -41,16 +63,22 @@ const medir = (busca) => {
     const [x, y] = [lum(a), lum(b)].sort((m, n) => n - m);
     return (x + 0.05) / (y + 0.05);
   };
-  /* O fundo de trás: o branco e todos os fundos dos ancestrais, de fora para dentro. */
+  const nome = (e) => (e.getAttribute("aria-label") || e.placeholder || e.name || e.id || e.tagName).trim().slice(0, 30);
+  /* A cor da tela: o Chromium pinta #121212 quando a página declara color-scheme escuro e o tema pede escuro. */
+  const esquema = globalThis.getComputedStyle(doc.documentElement).colorScheme;
+  const escuro = /dark/.test(esquema) && (!/light/.test(esquema) || globalThis.matchMedia("(prefers-color-scheme: dark)").matches);
+  const tela = escuro ? "#121212" : "#ffffff";
+  /* O fundo de trás: a cor da tela e os fundos dos ancestrais, de fora para dentro. */
   const pilha = (e) => {
     const camadas = [];
+    let imagem = null;
     for (let q = e.parentElement; q; q = q.parentElement) {
-      const c = globalThis.getComputedStyle(q).backgroundColor;
-      if (c !== "rgba(0, 0, 0, 0)") camadas.unshift(c);
+      const st = globalThis.getComputedStyle(q);
+      if (st.backgroundImage !== "none" && !imagem) imagem = q.tagName.toLowerCase() + (q.id ? "#" + q.id : "");
+      if (st.backgroundColor !== "rgba(0, 0, 0, 0)") camadas.unshift(st.backgroundColor);
     }
-    return ["#ffffff", ...camadas];
+    return { camadas: [tela, ...camadas], imagem };
   };
-  const nome = (e) => (e.getAttribute("aria-label") || e.placeholder || e.name || e.id || e.tagName).trim().slice(0, 30);
 
   const campos = [...doc.querySelectorAll("input:not([type=hidden]):not([type=checkbox]):not([type=radio]), select, textarea")].filter(
     (e) => {
@@ -58,19 +86,18 @@ const medir = (busca) => {
       return c.width > 1 && c.height > 1 && globalThis.getComputedStyle(e).visibility !== "hidden";
     },
   );
-  const fracos = campos
-    .map((e) => {
-      const st = globalThis.getComputedStyle(e);
-      const atras = pilha(e);
-      const fora = pintar(atras);
-      const borda = parseFloat(st.borderBottomWidth) > 0 ? ct(pintar([...atras, st.borderBottomColor]), fora) : 0;
-      const fundo = ct(pintar([...atras, st.backgroundColor]), fora);
-      return { nome: nome(e), c: Math.max(borda, fundo) };
-    })
-    .filter((a) => a.c < 3)
-    .map((a) => `borda de "${a.nome}" ${a.c.toFixed(2)}:1`);
+  const fracos = campos.flatMap((e) => {
+    const st = globalThis.getComputedStyle(e);
+    const { camadas: atras, imagem } = pilha(e);
+    if (imagem) return [`fundo com imagem em ${imagem}, atrás de "${nome(e)}": medir à mão`];
+    const fora = pintar(atras);
+    const borda = parseFloat(st.borderBottomWidth) > 0 ? ct(pintar([...atras, st.borderBottomColor]), fora) : 0;
+    const fundo = ct(pintar([...atras, st.backgroundColor]), fora);
+    const c = Math.max(borda, fundo);
+    return c < 3 ? [`borda de "${nome(e)}" ${c.toFixed(2)}:1`] : [];
+  });
 
-  /* O foco: o contorno, ou o anel mais largo do box-shadow (o ring do Tailwind). */
+  /* O foco: o contorno, ou os anéis do box-shadow (o ring do Tailwind). */
   const e = doc.querySelector(busca);
   const st = e ? globalThis.getComputedStyle(e) : null;
   const indicadores = [];
@@ -85,7 +112,7 @@ const medir = (busca) => {
     aneis.sort((a, b) => a.spread - b.spread);
     aneis.forEach((a, i) => indicadores.push({ tipo: "anel", largura: a.spread - (i ? aneis[i - 1].spread : 0), cor: a.cor }));
   }
-  const atras = e ? pilha(e) : ["#ffffff"];
+  const { camadas: atras } = e ? pilha(e) : { camadas: [tela] };
   const fora = pintar(atras);
   const foco = indicadores.map((i) => ({ ...i, c: +ct(pintar([...atras, i.cor]), fora).toFixed(2) }));
   return {
@@ -95,28 +122,36 @@ const medir = (busca) => {
   };
 };
 
+const igual = (a, b) => a.tipo === b.tipo && a.largura === b.largura && a.cor === b.cor;
+
 for (const esquema of ["light", "dark"]) {
   for (const p of PAGINAS) {
     test(`${p.site} — borda dos campos e foco da busca a 360 px (${esquema})`, async ({ page }) => {
+      test.fail(contraProducao(p.site) && !!PENDENTE[p.site], `deploy pendente: ${PENDENTE[p.site]}`);
       await page.emulateMedia({ colorScheme: esquema });
       await page.setViewportSize({ width: 360, height: 800 });
       await page.goto(SITES[p.site].replace(/\/$/, "") + p.caminho);
-      await page.waitForLoadState("networkidle");
-      /* O foco pelo teclado: o Tab chega na busca vindo do elemento anterior, e o :focus-visible vale. */
       const busca = page.locator(p.busca).first();
       await expect(busca, `a busca (${p.busca}) não está na página`).toBeVisible();
+      if (p.filtro) await expect(page.locator(p.filtro).first(), `o filtro (${p.filtro}) não está na página`).toBeVisible();
+      /* Sem transições, o estado do foco é o final já na 1ª medida (sem espera fixa). */
+      await page.addStyleTag({ content: "*, *::before, *::after { transition: none !important; animation: none !important; }" });
+      /* A medida sem o foco: um indicador que já existe aqui não conta como foco. */
+      await page.evaluate(() => globalThis.document.activeElement?.blur?.());
+      const semFoco = await page.evaluate(medir, p.busca);
+      /* O foco pelo teclado: o Tab chega na busca vindo do elemento anterior, e o :focus-visible vale. */
       await busca.focus();
       await page.keyboard.press("Shift+Tab");
       await page.keyboard.press("Tab");
-      await page.waitForTimeout(400);
       const r = await page.evaluate(medir, p.busca);
       expect(r.medidos, `só ${r.medidos} campos medidos em ${p.site}: a página carregou?`).toBeGreaterThanOrEqual(p.campos);
       expect.soft(r.fracos, r.fracos.join(" | ")).toEqual([]);
       expect(r.busca.achada, `a busca (${p.busca}) não foi achada`).toBe(true);
       expect(r.busca.focada && r.busca.focoVisivel, "a busca não ficou com o foco do teclado").toBe(true);
-      const bons = r.busca.foco.filter((i) => i.largura >= 2 && i.c >= 3);
+      const bons = r.busca.foco.filter((i) => i.largura >= 2 && i.c >= 3 && !semFoco.busca.foco.some((s) => igual(s, i)));
       const visto = r.busca.foco.map((i) => `${i.tipo} ${i.largura}px ${i.c}:1`).join(" | ") || "nenhum contorno nem anel";
-      expect(bons.length, `o foco da busca em ${p.site}: ${visto}`).toBeGreaterThan(0);
+      const antes = semFoco.busca.foco.map((i) => `${i.tipo} ${i.largura}px`).join(" | ") || "nenhum";
+      expect(bons.length, `o foco da busca em ${p.site}: ${visto} (sem o foco: ${antes})`).toBeGreaterThan(0);
     });
   }
 }
