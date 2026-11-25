@@ -101,6 +101,40 @@ describe("sdk/identificacao.js", () => {
     expect(p.modal()).not.toBeNull();
   });
 
+  it("o campo com erro tem aria-invalid e aponta para a mensagem; o campo corrigido é limpo", async () => {
+    const p = carregar();
+    await esperar();
+    const raiz = p.raiz()!;
+    const campo = (id: string) => raiz.getElementById(id)!;
+    const marcas = (id: string) => [campo(id).getAttribute("aria-invalid"), campo(id).getAttribute("aria-describedby")];
+    expect(raiz.getElementById("lt-erro")!.getAttribute("role")).toBe("alert");
+    expect(marcas("lt-nome")).toEqual([null, null]);
+
+    enviar(raiz, "Visitante", "e2e@example.com");
+    expect(marcas("lt-nome")).toEqual(["true", "lt-erro"]);
+    expect(marcas("lt-email")).toEqual([null, null]);
+    expect(raiz.activeElement).toBe(campo("lt-nome"));
+
+    enviar(raiz, "Visitante de Teste", "sem-arroba");
+    expect(marcas("lt-nome")).toEqual([null, null]);
+    expect(marcas("lt-email")).toEqual(["true", "lt-erro"]);
+    expect(raiz.getElementById("lt-erro")!.textContent).toBe("Informe um e-mail válido.");
+  });
+
+  it("API responde 400 ao formulário: marca os 2 campos e mantém o modal", async () => {
+    const p = carregar({ fetch: () => Promise.resolve({ ok: false, status: 400 }) });
+    await esperar();
+    const raiz = p.raiz()!;
+    enviar(raiz, PESSOA.nome, PESSOA.email);
+    await esperar();
+    expect(raiz.getElementById("lt-erro")!.textContent).toBe("Confira nome e e-mail.");
+    for (const id of ["lt-nome", "lt-email"]) {
+      expect(raiz.getElementById(id)!.getAttribute("aria-invalid"), id).toBe("true");
+      expect(raiz.getElementById(id)!.getAttribute("aria-describedby"), id).toBe("lt-erro");
+    }
+    expect(p.modal()).not.toBeNull();
+  });
+
   it("já identificado no navegador: não mostra o modal e registra o acesso uma vez", async () => {
     const p = carregar({ local: { [CHAVE]: JSON.stringify(PESSOA) } });
     await esperar();

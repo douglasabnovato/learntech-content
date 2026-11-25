@@ -102,6 +102,7 @@
     "input{width:100%;min-height:44px;box-sizing:border-box;font:inherit;font-size:.9375rem;padding:10px 12px;border-radius:10px;border:1px solid var(--borda);background:transparent;color:var(--texto);margin:0 0 14px}",
     "input:focus{outline:2px solid var(--marca);outline-offset:1px}",
     "button:focus-visible{outline:2px solid var(--marca);outline-offset:2px}",
+    "input[aria-invalid=true]{border-color:var(--erro)}",
     ".erro{color:var(--erro);font-size:.8125rem;min-height:1.125rem;margin:-6px 0 10px}",
     ".acoes{display:flex;gap:8px;flex-wrap:wrap;align-items:center}",
     "button{font:inherit;font-size:.9375rem;font-weight:600;border:0;border-radius:10px;padding:10px 18px;min-height:44px;cursor:pointer}",
@@ -127,7 +128,7 @@
       '<p id="lt-texto">Todo o conteúdo é gratuito e não tem cadastro nem senha. Pedimos só seu nome e e-mail para saber quantas pessoas usam e quem são: essa identificação nos ajuda a aperfeiçoar o conteúdo.</p>' +
       '<label for="lt-nome">Nome completo</label><input id="lt-nome" name="nome" autocomplete="name" required maxlength="120">' +
       '<label for="lt-email">E-mail</label><input id="lt-email" name="email" type="email" autocomplete="email" required maxlength="254">' +
-      '<div class="erro" role="alert"></div>' +
+      '<div class="erro" id="lt-erro" role="alert"></div>' +
       '<div class="acoes"><button type="submit" class="enviar">Continuar</button>' +
       (obrigatorio ? "" : '<button type="button" class="depois">Agora não</button>') + "</div>" +
       '<p class="nota">Guardamos nome, e-mail, site, página e horário do acesso por até 12 meses. Não enviamos propaganda nem compartilhamos com terceiros. <a target="_blank" rel="noopener" href="' + escaparAtributo(privacidade) + '">Política de privacidade</a>.</p>' +
@@ -163,6 +164,21 @@
       else if (!ev.shiftKey && raiz.activeElement === ultimo) { ev.preventDefault(); primeiro.focus(); }
     });
 
+    /* Mostra o erro e marca o campo errado (WCAG 3.3.1 e 4.1.2, achado 5 do #71): aria-invalid e aria-describedby
+       apontando para a mensagem, para o leitor de tela dizer o erro ao voltar ao campo. Os outros campos são limpos. */
+    function marcarErro(campos, texto) {
+      [nome, email].forEach(function (c) {
+        if (campos.indexOf(c) >= 0) {
+          c.setAttribute("aria-invalid", "true");
+          c.setAttribute("aria-describedby", "lt-erro");
+        } else {
+          c.removeAttribute("aria-invalid");
+          c.removeAttribute("aria-describedby");
+        }
+      });
+      erro.textContent = texto;
+    }
+
     var depois = raiz.querySelector(".depois");
     if (depois) depois.addEventListener("click", fechar);
 
@@ -171,14 +187,14 @@
       ev.preventDefault();
       var n = nome.value.trim().replace(/\s+/g, " ");
       var e = email.value.trim().toLowerCase();
-      if (n.split(" ").length < 2) { erro.textContent = "Informe nome e sobrenome."; nome.focus(); return; }
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)) { erro.textContent = "Informe um e-mail válido."; email.focus(); return; }
-      erro.textContent = "";
+      if (n.split(" ").length < 2) { marcarErro([nome], "Informe nome e sobrenome."); nome.focus(); return; }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)) { marcarErro([email], "Informe um e-mail válido."); email.focus(); return; }
+      marcarErro([], "");
       enviar.disabled = true;
       var dados = { nome: n, email: e };
       registrar(dados).then(function (r) {
         enviar.disabled = false;
-        if (r && r.status === 400) { erro.textContent = "Confira nome e e-mail."; return; }
+        if (r && r.status === 400) { marcarErro([nome, email], "Confira nome e e-mail."); return; }
         gravar("localStorage", CHAVE, JSON.stringify(dados));
         fechar();
       });
