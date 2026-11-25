@@ -222,3 +222,41 @@ for (const viewport of [
     await contexto.close();
   });
 }
+
+/* O erro no nome, a 360 px (issue #80): a mensagem fica logo embaixo do nome, e não junto do e-mail (G1; antes, 89 px
+   do nome e 8 px do e-mail), e o campo inválido tem um 2º sinal além do matiz (o anel por dentro, de 1 px, na cor do
+   erro). Guarda de N: o nome ficou aria-invalid e a mensagem tem texto; sem isso, as distâncias não valem nada.
+   Como os outros testes do modal, fica vermelho contra a produção até o deploy da API. */
+baseTest("learn-tech — modal de identificação: o erro no nome fica junto do nome, com 2 sinais, a 360 px", async ({ browser }) => {
+  const contexto = await browser.newContext({ viewport: { width: 360, height: 800 } });
+  const page = await contexto.newPage();
+  await page.goto(SITES["learn-tech"].replace(/\/$/, "") + "/");
+  const dialogo = page.getByRole("dialog");
+  await expect(dialogo).toBeVisible();
+  await dialogo.getByLabel("Nome completo").fill("Visitante");
+  await dialogo.getByLabel("E-mail").fill("e2e@example.com");
+  await dialogo.getByRole("button", { name: "Continuar" }).click();
+  const r = await dialogo.evaluate((form) => {
+    const raiz = form.getRootNode();
+    const nome = raiz.getElementById("lt-nome");
+    const msg = raiz.getElementById("lt-erro");
+    const m = msg.getBoundingClientRect();
+    const n = nome.getBoundingClientRect();
+    const e = raiz.getElementById("lt-email").getBoundingClientRect();
+    const st = globalThis.getComputedStyle(nome);
+    return {
+      invalido: nome.getAttribute("aria-invalid"),
+      texto: msg.textContent,
+      doNome: Math.round(m.top - n.bottom),
+      doEmail: Math.round(Math.min(Math.abs(e.top - m.bottom), Math.abs(m.top - e.bottom))),
+      segundoSinal: st.boxShadow !== "none" || parseFloat(st.borderBottomWidth) >= 2,
+    };
+  });
+  expect(r.invalido, "o nome não ficou aria-invalid").toBe("true");
+  expect(r.texto, "a mensagem de erro está vazia").toBe("Informe nome e sobrenome.");
+  expect(r.doNome, `a mensagem fica a ${r.doNome} px embaixo do nome`).toBeGreaterThanOrEqual(0);
+  expect(r.doNome, `a mensagem fica a ${r.doNome} px do nome e a ${r.doEmail} px do e-mail`).toBeLessThanOrEqual(16);
+  expect(r.doNome, "a mensagem fica mais perto do e-mail que do nome").toBeLessThan(r.doEmail);
+  expect(r.segundoSinal, "o campo inválido só muda a cor da borda").toBe(true);
+  await contexto.close();
+});

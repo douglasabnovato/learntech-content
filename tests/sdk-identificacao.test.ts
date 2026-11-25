@@ -114,10 +114,14 @@ describe("sdk/identificacao.js", () => {
     expect(marcas("lt-nome")).toEqual(["true", "lt-erro"]);
     expect(marcas("lt-email")).toEqual([null, null]);
     expect(raiz.activeElement).toBe(campo("lt-nome"));
+    /* A mensagem fica logo depois do campo errado (issue #80). */
+    expect(campo("lt-nome").nextElementSibling?.id).toBe("lt-erro");
 
     enviar(raiz, "Visitante de Teste", "sem-arroba");
     expect(marcas("lt-nome")).toEqual([null, null]);
     expect(marcas("lt-email")).toEqual(["true", "lt-erro"]);
+    expect(campo("lt-email").nextElementSibling?.id).toBe("lt-erro");
+    expect(campo("lt-nome").nextElementSibling?.id).not.toBe("lt-erro");
     expect(raiz.getElementById("lt-erro")!.textContent).toBe("Informe um e-mail válido.");
   });
 
@@ -132,6 +136,8 @@ describe("sdk/identificacao.js", () => {
       expect(raiz.getElementById(id)!.getAttribute("aria-invalid"), id).toBe("true");
       expect(raiz.getElementById(id)!.getAttribute("aria-describedby"), id).toBe("lt-erro");
     }
+    /* Com os 2 campos, a mensagem fecha o bloco, depois do e-mail. */
+    expect(raiz.getElementById("lt-email")!.nextElementSibling?.id).toBe("lt-erro");
     expect(p.modal()).not.toBeNull();
   });
 

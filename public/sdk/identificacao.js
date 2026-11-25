@@ -102,7 +102,9 @@
     "input{width:100%;min-height:44px;box-sizing:border-box;font:inherit;font-size:.9375rem;padding:10px 12px;border-radius:10px;border:1px solid var(--borda);background:transparent;color:var(--texto);margin:0 0 14px}",
     "input:focus{outline:2px solid var(--marca);outline-offset:1px}",
     "button:focus-visible{outline:2px solid var(--marca);outline-offset:2px}",
-    "input[aria-invalid=true]{border-color:var(--erro)}",
+    /* O campo inválido: a borda na cor do erro e 2 px (o anel por dentro não mexe no layout), para não depender só do
+       matiz, que dava 1,01 e 1,08:1 contra a borda normal (issue #80, W-1.4.1). */
+    "input[aria-invalid=true]{border-color:var(--erro);box-shadow:inset 0 0 0 1px var(--erro)}",
     ".erro{color:var(--erro);font-size:.8125rem;min-height:1.125rem;margin:-6px 0 10px}",
     ".acoes{display:flex;gap:8px;flex-wrap:wrap;align-items:center}",
     "button{font:inherit;font-size:.9375rem;font-weight:600;border:0;border-radius:10px;padding:10px 18px;min-height:44px;cursor:pointer}",
@@ -176,6 +178,9 @@
           c.removeAttribute("aria-describedby");
         }
       });
+      /* A mensagem fica logo embaixo do campo errado (G1, issue #80): com o erro no nome, ela ficava a 89 px dele e a
+         8 px do e-mail, e parecia ser do e-mail. Com os 2 campos (o 400) ou sem erro, ela volta para o fim do bloco. */
+      (campos.length === 1 ? campos[0] : email).after(erro);
       erro.textContent = texto;
     }
 
