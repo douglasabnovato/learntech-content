@@ -31,7 +31,6 @@ const PAGINAS = [
 
 /* Vermelho esperado na produção até o deploy. Tire a linha quando o deploy do site sair. */
 const PENDENTE = {
-  "learn-tech": "learn-tech#178",
   bootcamps: "bootcamps#88",
   career: "career#49",
   tools: "tools#72",
@@ -182,9 +181,9 @@ for (const esquema of ["light", "dark"]) {
    Guarda de N: a busca existe, está focada e tem o texto digitado; sem ela, o teste falha em vez de passar calado.
    Contra a produção, este teste tem o test.fail; a busca que some fica vermelha no teste de guarda acima, sem test.fail.
    O rótulo precisa de tamanho de texto (um sr-only de 1x1 passava no toBeVisible) e de 4,5:1 (R19 do Esp QA do #78). */
-const PENDENTE_TEXTO = "learn-tech#179";
+const PENDENTE_TEXTO = null; /* O learn-tech#179 foi ao ar com o #182 (25/11/2026, 14h24). Volte a pôr o id da issue se outra correção ficar pendente de deploy. */
 test("learn-tech — texto digitado e de exemplo da busca com 4,5:1 com foco, e o rótulo visível", async ({ page }) => {
-  test.fail(contraProducao("learn-tech"), `deploy pendente: ${PENDENTE_TEXTO}`);
+  test.fail(contraProducao("learn-tech") && !!PENDENTE_TEXTO, `deploy pendente: ${PENDENTE_TEXTO}`);
   await page.setViewportSize({ width: 360, height: 800 });
   await page.goto(SITES["learn-tech"].replace(/\/$/, "") + "/programs");
   const busca = page.locator('input[aria-label^="Buscar"]').first();
