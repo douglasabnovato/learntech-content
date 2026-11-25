@@ -156,4 +156,60 @@ for (const esquema of ["light", "dark"]) {
   }
 }
 
+/* O texto da busca de /programs no learn-tech (learn-tech#179, WCAG 1.4.3): com o foco, o fundo do campo fica
+   sky-500/5, e o texto digitado e o texto de exemplo precisam de 4,5:1 contra ele; o rótulo "Buscar" fica na tela.
+   Medido em 24/11/2026: digitado 4,30:1 e exemplo 1,89:1 com foco. A cor do texto é composta sobre a pilha real
+   (a tela, os fundos dos ancestrais e o fundo do próprio campo), porque o exemplo do Tailwind 4 tem 50% de alfa.
+   Guarda de N: a busca existe, está focada e tem o texto digitado; sem ela, o teste falha em vez de passar calado. */
+const PENDENTE_TEXTO = "learn-tech#179";
+test("learn-tech — texto digitado e de exemplo da busca com 4,5:1 com foco, e o rótulo visível", async ({ page }) => {
+  test.fail(contraProducao("learn-tech"), `deploy pendente: ${PENDENTE_TEXTO}`);
+  await page.setViewportSize({ width: 360, height: 800 });
+  await page.goto(SITES["learn-tech"].replace(/\/$/, "") + "/programs");
+  const busca = page.locator('input[aria-label^="Buscar"]').first();
+  await expect(busca, "a busca de /programs não está na página").toBeVisible();
+  await expect(page.locator("label").filter({ has: busca }).getByText("Buscar", { exact: true })).toBeVisible();
+  await page.addStyleTag({ content: "*, *::before, *::after { transition: none !important; animation: none !important; }" });
+  const texto = (e) => {
+    const cv = globalThis.document.createElement("canvas").getContext("2d", { willReadFrequently: true });
+    const pintar = (cs) => {
+      cv.clearRect(0, 0, 1, 1);
+      for (const c of cs) {
+        cv.fillStyle = c;
+        cv.fillRect(0, 0, 1, 1);
+      }
+      return [...cv.getImageData(0, 0, 1, 1).data].slice(0, 3);
+    };
+    const lum = (a) =>
+      a
+        .map((v) => {
+          v /= 255;
+          return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4;
+        })
+        .reduce((s, v, i) => s + v * [0.2126, 0.7152, 0.0722][i], 0);
+    const ct = (a, b) => {
+      const [x, y] = [lum(a), lum(b)].sort((m, n) => n - m);
+      return +((x + 0.05) / (y + 0.05)).toFixed(2);
+    };
+    const camadas = [];
+    for (let q = e; q; q = q.parentElement) {
+      const c = globalThis.getComputedStyle(q).backgroundColor;
+      if (c !== "rgba(0, 0, 0, 0)") camadas.unshift(c);
+    }
+    camadas.unshift("#ffffff");
+    const fundo = pintar(camadas);
+    const vazio = e.value === "";
+    const cor = globalThis.getComputedStyle(e, vazio ? "::placeholder" : undefined).color;
+    return { focada: globalThis.document.activeElement === e, valor: e.value, c: ct(pintar([...camadas, cor]), fundo) };
+  };
+  await busca.focus();
+  const exemplo = await busca.evaluate(texto);
+  await busca.fill("react");
+  const digitado = await busca.evaluate(texto);
+  expect(exemplo.focada && digitado.focada, "a busca não ficou com o foco").toBe(true);
+  expect(digitado.valor, "o texto não foi digitado na busca").toBe("react");
+  expect(exemplo.c, `o texto de exemplo com foco: ${exemplo.c}:1`).toBeGreaterThanOrEqual(4.5);
+  expect(digitado.c, `o texto digitado com foco: ${digitado.c}:1`).toBeGreaterThanOrEqual(4.5);
+});
+
 /* Fim de campos-acessibilidade.spec.mjs */
