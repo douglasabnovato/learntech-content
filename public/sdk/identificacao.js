@@ -105,6 +105,9 @@
     /* O campo inválido: a borda na cor do erro e 2 px (o anel por dentro não mexe no layout), para não depender só do
        matiz, que dava 1,01 e 1,08:1 contra a borda normal (issue #80, W-1.4.1). */
     "input[aria-invalid=true]{border-color:var(--erro);box-shadow:inset 0 0 0 1px var(--erro)}",
+    /* No alto contraste, o navegador apaga o box-shadow e troca as cores: o 2º sinal vira a borda de 2 px, com 1 px a
+       menos de padding para o texto não pular (R19 do Esp UX/UI do #81). */
+    "@media (forced-colors:active){input[aria-invalid=true]{border-width:2px;padding:9px 11px}}",
     ".erro{color:var(--erro);font-size:.8125rem;min-height:1.125rem;margin:-6px 0 10px}",
     ".acoes{display:flex;gap:8px;flex-wrap:wrap;align-items:center}",
     "button{font:inherit;font-size:.9375rem;font-weight:600;border:0;border-radius:10px;padding:10px 18px;min-height:44px;cursor:pointer}",
