@@ -125,6 +125,11 @@ test.describe("learn-tech — cabeçalho a 360 px com o texto a 100% e a 200%", 
             message: "a 200%, o cabeçalho cobre mais de 12% da tela durante a leitura",
           })
           .toBeLessThanOrEqual(0.12);
+        /* "Durante a leitura", e não num instante (R19 do Esp QA do #88): 1 s depois, sem rolar, ele continua recolhido.
+           Um cabeçalho que se recolhe e volta sozinho fica vermelho aqui. */
+        await page.waitForTimeout(1000);
+        const depois = await medir();
+        expect(depois.visivel / topo.alto, "a 200%, o cabeçalho voltou sem o leitor subir").toBeLessThanOrEqual(0.12);
       }
     });
   }
