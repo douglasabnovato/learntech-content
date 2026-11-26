@@ -105,7 +105,14 @@ test.describe("learn-tech — menu do celular a 360 px", () => {
     await abrir(page).focus();
     await page.keyboard.press("Enter");
     await expect(abrir(page)).toHaveAttribute("aria-expanded", "true");
+    /* O Tab logo depois do Enter tem de entrar no menu aberto (R19 do Esp QA do #86): se a visibilidade atrasar ao
+       abrir, o foco pula o painel ainda escondido e o Escape seguinte não prova nada. */
     await page.keyboard.press("Tab");
+    const foco = await page.evaluate(() => {
+      const a = globalThis.document.activeElement;
+      return { noMenu: Boolean(a.closest("#menu-principal")), nome: a.textContent.trim().slice(0, 30) };
+    });
+    expect(foco.noMenu, `o Tab depois do Enter foi para "${foco.nome}", fora do menu aberto`).toBe(true);
     await page.keyboard.press("Escape");
     await expect(abrir(page)).toHaveAttribute("aria-expanded", "false");
     await expect(abrir(page)).toBeFocused();
@@ -117,6 +124,24 @@ test.describe("learn-tech — menu do celular a 360 px", () => {
     await page.getByRole("button", { name: "Fechar menu" }).click();
     await expect(abrir(page)).toHaveAttribute("aria-expanded", "false");
     await expect(abrir(page)).toBeFocused();
+  });
+
+  /* Seguir um link fecha o menu e muda a rota, e o foco fica com a navegação: não é puxado para o "Abrir menu",
+     que é só do Escape e do "Fechar menu". O learn-tech ainda não move o foco na troca de rota, então ele vai para
+     o início do documento, nunca para um item do menu escondido. */
+  test("seguir um link fecha o menu e mantém o foco na navegação", async ({ page }) => {
+    await page.goto(base + "/");
+    await abrir(page).click();
+    await page.locator("#menu-principal").getByRole("link", { name: "Programas", exact: true }).click();
+    await expect(page).toHaveURL(/\/programs$/);
+    await expect(abrir(page)).toHaveAttribute("aria-expanded", "false");
+    await expect(abrir(page)).not.toBeFocused();
+    /* O link clicado guarda o foco até o painel ficar invisível, no fim do deslize de 300 ms. */
+    await expect
+      .poll(() => page.evaluate(() => Boolean(globalThis.document.activeElement.closest("#menu-principal"))), {
+        message: "o foco ficou num item do menu fechado",
+      })
+      .toBe(false);
   });
 });
 
