@@ -198,4 +198,35 @@ for (const largura of [320, 360]) {
   });
 }
 
+/* O corpo de um artigo do learn-tech não chega (learn-tech#173): a API não responde e o pedaço local do corpo também
+   não baixa (rede instável, ou uma aba aberta antes de um deploy). No lugar do corpo aparece "Uma parte do artigo não
+   chegou" com "Recarregar"; o título continua, e "em preparação" fica só para o artigo que de fato não tem corpo.
+   Bloqueia as 2 fontes: só com a API fora, o pedaço local traz o corpo e o erro não aparece. Guarda (N): os 2 bloqueios
+   têm de acontecer, senão o teste passaria calado num endereço que mudou o nome do pedaço ou a rota da API. */
+test("learn-tech — artigo sem o corpo mostra 'Recarregar', não 'em preparação'", async ({ page }) => {
+  await page.setViewportSize({ width: 360, height: 800 });
+  const slug = "tecnicas-de-lideranca-e-equipes-produtivas";
+  const bloqueados = { api: 0, pedaco: 0 };
+  await page.route(
+    (u) => /\/v1\/learn-tech\/paginas\/blog\.json$/.test(u.pathname),
+    (rota) => {
+      bloqueados.api += 1;
+      return rota.abort();
+    },
+  );
+  await page.route(new RegExp(`/assets/${slug}-[^/]+\\.js$`), (rota) => {
+    bloqueados.pedaco += 1;
+    return rota.abort();
+  });
+  await page.goto(base("learn-tech") + "/blog/" + slug);
+  await expect(page.locator("h1")).toBeVisible();
+  const recarregar = page.getByRole("button", { name: "Recarregar" });
+  await expect(recarregar).toBeVisible({ timeout: 15_000 });
+  expect(bloqueados.api, "a API do blog não foi bloqueada (a rota mudou?)").toBeGreaterThan(0);
+  expect(bloqueados.pedaco, "o pedaço do corpo não foi bloqueado (o nome mudou?)").toBeGreaterThan(0);
+  await expect(page.getByText("Uma parte do artigo não chegou")).toBeVisible();
+  await expect(page.getByText(/em preparação/i)).toHaveCount(0);
+  expect((await recarregar.boundingBox())?.height ?? 0, "altura do Recarregar").toBeGreaterThanOrEqual(44);
+});
+
 /* Fim de estados.spec.mjs */
