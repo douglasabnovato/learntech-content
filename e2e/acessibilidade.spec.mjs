@@ -73,6 +73,63 @@ test.describe("learn-tech — alvos de 44 px a 360 px", () => {
   });
 });
 
+/* O cabeçalho fixo do learn-tech com o texto grande (learn-tech#168), a 360 × 800. A 100%, ele tem 80 px e fica no
+   lugar. A 200%, ele tem cerca de 161 px (20% da tela) e, durante a leitura (depois de rolar para baixo), cobre no
+   máximo 12% da tela: ele se recolhe. O texto a 200% é aplicado como a escala do navegador, no font-size do html.
+   Guarda: confere que a escala foi aplicada e que a página rolou, senão o teste passaria sem medir nada. */
+test.describe("learn-tech — cabeçalho a 360 px com o texto a 100% e a 200%", () => {
+  test.use({ viewport: { width: 360, height: 800 } });
+  const base = SITES["learn-tech"].replace(/\/$/, "");
+
+  for (const escala of [100, 200]) {
+    test(`texto a ${escala}%`, async ({ page }) => {
+      await page.addInitScript((e) => {
+        const folha = new globalThis.CSSStyleSheet();
+        folha.replaceSync(`html { font-size: ${e}%; }`);
+        globalThis.document.adoptedStyleSheets = [...globalThis.document.adoptedStyleSheets, folha];
+      }, escala);
+      await page.goto(base + "/");
+      await expect(page.getByRole("button", { name: "Abrir menu" })).toBeVisible();
+      const medir = () =>
+        page.evaluate(() => {
+          const n = globalThis.document.getElementById("navbar");
+          const r = n.getBoundingClientRect();
+          const alto = globalThis.innerHeight;
+          return {
+            fonte: globalThis.getComputedStyle(globalThis.document.documentElement).fontSize,
+            altura: r.height,
+            visivel: Math.max(0, Math.min(r.bottom, alto) - Math.max(r.top, 0)),
+            alto,
+            y: globalThis.scrollY,
+          };
+        });
+      const topo = await medir();
+      expect(topo.fonte, "a escala do texto não foi aplicada").toBe(`${(16 * escala) / 100}px`);
+      await expect(page.locator("h1").first()).toBeVisible();
+      await page.mouse.move(180, 400);
+      for (let i = 0; i < 6; i++) {
+        await page.mouse.wheel(0, 300);
+        await page.waitForTimeout(150);
+      }
+      await expect.poll(async () => (await medir()).y, { message: "a página não rolou" }).toBeGreaterThan(600);
+      if (escala === 100) {
+        /* 80,47 px: a altura vem em rem. Tolerância de 1 px. */
+        expect(Math.abs(topo.altura - 80), `altura do cabeçalho a 100%: ${topo.altura}`).toBeLessThan(1);
+        await expect
+          .poll(async () => (await medir()).visivel, { message: "a 100%, o cabeçalho fica no lugar" })
+          .toBeGreaterThanOrEqual(topo.altura - 1);
+      } else {
+        expect(topo.altura, "a 200%, o cabeçalho é maior que a 100%").toBeGreaterThan(80);
+        await expect
+          .poll(async () => (await medir()).visivel / topo.alto, {
+            message: "a 200%, o cabeçalho cobre mais de 12% da tela durante a leitura",
+          })
+          .toBeLessThanOrEqual(0.12);
+      }
+    });
+  }
+});
+
 /* Alvos de toque de 44 px nos sites irmãos, a 360 px (bootcamps#85, career#44 e tools#70; padrão E8 do Esp UX/UI).
    Mede todo alvo interativo visível. Ficam de fora o link de pular para o conteúdo, que só aparece no foco
    (1 x 1 px fora dele), e só o link de fato inline numa frase (o parágrafo ou item tem texto além do link), que a

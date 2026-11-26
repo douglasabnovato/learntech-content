@@ -10,13 +10,19 @@ const LIMITE_CLS = 0.1;
 
 /* Páginas que ainda passam do limite na produção, cada uma com a sua issue.
    O teste fica marcado como falha esperada; quando a correção chegar, ele avisa, e a linha sai daqui.
-   Vazio desde 20/11/2026: learn-tech#142, bootcamps#79 e tools#64 passaram na produção. */
-const CONHECIDAS = {};
+   Vazio de 20/11/2026 (learn-tech#142, bootcamps#79 e tools#64 passaram na produção) até 26/11/2026. */
+const CONHECIDAS = {
+  "learn-tech programa-url-antiga": "learn-tech#187 (a correção é o learn-tech#188, que ainda não está no ar)",
+};
+
+/* Páginas só deste teste. A URL com a categoria antiga redireciona para a canônica (learn-tech#187): o redirecionamento
+   não pode deixar a página vazia, senão o rodapé sobe ao topo da tela e o CLS vai a 1,0. */
+const SO_ESTABILIDADE = [{ site: "learn-tech", nome: "programa-url-antiga", caminho: "/program/web/1104" }];
 
 test.use({ ...devices["Moto G4"] });
 test.setTimeout(75_000);
 
-for (const p of PAGINAS) {
+for (const p of [...PAGINAS, ...SO_ESTABILIDADE]) {
   test(`${p.site} — ${p.nome} — CLS até ${LIMITE_CLS}`, async ({ page, context }) => {
     const issue = CONHECIDAS[`${p.site} ${p.nome}`];
     test.fail(Boolean(issue), `CLS acima do limite na produção: ${issue}`);
