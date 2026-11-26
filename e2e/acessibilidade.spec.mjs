@@ -73,6 +73,53 @@ test.describe("learn-tech — alvos de 44 px a 360 px", () => {
   });
 });
 
+/* O menu do celular do learn-tech, a 360 px (learn-tech#184 e a R19 dele). Fechado, o painel fica fora da tela e
+   não pode receber o foco: antes, o Tab passava por 8 elementos que não se viam. O Escape e o "Fechar menu" fecham o
+   painel e devolvem o foco ao "Abrir menu", que não pode cair no body. Contra a produção, passa depois que a main do
+   learn-tech receber o #184 e o deploy chegar. */
+test.describe("learn-tech — menu do celular a 360 px", () => {
+  test.use({ viewport: { width: 360, height: 800 } });
+  const base = SITES["learn-tech"].replace(/\/$/, "");
+  const abrir = (page) => page.getByRole("button", { name: "Abrir menu" });
+
+  test("fechado, o Tab sai do Abrir menu para um alvo dentro da tela", async ({ page }) => {
+    await page.goto(base + "/");
+    await abrir(page).focus();
+    await page.keyboard.press("Tab");
+    const foco = await page.evaluate(() => {
+      const a = globalThis.document.activeElement;
+      const r = a.getBoundingClientRect();
+      return {
+        noMenu: Boolean(a.closest("#menu-principal")),
+        x: r.x,
+        largura: globalThis.innerWidth,
+        nome: a.textContent.trim().slice(0, 30),
+      };
+    });
+    expect(foco.noMenu, `o Tab foi para "${foco.nome}", dentro do menu fechado`).toBe(false);
+    expect(foco.x, `"${foco.nome}" fora da tela`).toBeLessThan(foco.largura);
+  });
+
+  test("o Escape fecha o menu e o foco volta ao Abrir menu", async ({ page }) => {
+    await page.goto(base + "/");
+    await abrir(page).focus();
+    await page.keyboard.press("Enter");
+    await expect(abrir(page)).toHaveAttribute("aria-expanded", "true");
+    await page.keyboard.press("Tab");
+    await page.keyboard.press("Escape");
+    await expect(abrir(page)).toHaveAttribute("aria-expanded", "false");
+    await expect(abrir(page)).toBeFocused();
+  });
+
+  test("o Fechar menu devolve o foco ao Abrir menu", async ({ page }) => {
+    await page.goto(base + "/");
+    await abrir(page).click();
+    await page.getByRole("button", { name: "Fechar menu" }).click();
+    await expect(abrir(page)).toHaveAttribute("aria-expanded", "false");
+    await expect(abrir(page)).toBeFocused();
+  });
+});
+
 /* Alvos de toque de 44 px nos sites irmãos, a 360 px (bootcamps#85, career#44 e tools#70; padrão E8 do Esp UX/UI).
    Mede todo alvo interativo visível. Ficam de fora o link de pular para o conteúdo, que só aparece no foco
    (1 x 1 px fora dele), e só o link de fato inline numa frase (o parágrafo ou item tem texto além do link), que a
