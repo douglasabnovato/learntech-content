@@ -220,10 +220,15 @@ test("learn-tech — artigo sem o corpo mostra 'Recarregar', não 'em preparaç�
   });
   await page.goto(base("learn-tech") + "/blog/" + slug);
   await expect(page.locator("h1")).toBeVisible();
+  /* A guarda vem antes da espera longa e falha rápido com o motivo (R19 do Esp QA do #87): sem um dos bloqueios, o
+     corpo chega, e a espera pelo "Recarregar" só daria tempo limite sem dizer por quê. */
+  const guarda = { timeout: 5_000 };
+  await expect.poll(() => bloqueados.api, { ...guarda, message: "a API do blog não foi bloqueada (a rota mudou?)" }).toBeGreaterThan(0);
+  await expect
+    .poll(() => bloqueados.pedaco, { ...guarda, message: "o pedaço do corpo não foi bloqueado (o nome mudou?)" })
+    .toBeGreaterThan(0);
   const recarregar = page.getByRole("button", { name: "Recarregar" });
   await expect(recarregar).toBeVisible({ timeout: 15_000 });
-  expect(bloqueados.api, "a API do blog não foi bloqueada (a rota mudou?)").toBeGreaterThan(0);
-  expect(bloqueados.pedaco, "o pedaço do corpo não foi bloqueado (o nome mudou?)").toBeGreaterThan(0);
   await expect(page.getByText("Uma parte do artigo não chegou")).toBeVisible();
   await expect(page.getByText(/em preparação/i)).toHaveCount(0);
   expect((await recarregar.boundingBox())?.height ?? 0, "altura do Recarregar").toBeGreaterThanOrEqual(44);
