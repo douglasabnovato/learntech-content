@@ -73,6 +73,78 @@ test.describe("learn-tech — alvos de 44 px a 360 px", () => {
   });
 });
 
+/* O menu do celular do learn-tech, a 360 px (learn-tech#184 e a R19 dele). Fechado, o painel fica fora da tela e
+   não pode receber o foco: antes, o Tab passava por 8 elementos que não se viam. O Escape e o "Fechar menu" fecham o
+   painel e devolvem o foco ao "Abrir menu", que não pode cair no body. Contra a produção, passa depois que a main do
+   learn-tech receber o #184 e o deploy chegar. */
+test.describe("learn-tech — menu do celular a 360 px", () => {
+  test.use({ viewport: { width: 360, height: 800 } });
+  const base = SITES["learn-tech"].replace(/\/$/, "");
+  const abrir = (page) => page.getByRole("button", { name: "Abrir menu" });
+
+  test("fechado, o Tab sai do Abrir menu para um alvo dentro da tela", async ({ page }) => {
+    await page.goto(base + "/");
+    await abrir(page).focus();
+    await page.keyboard.press("Tab");
+    const foco = await page.evaluate(() => {
+      const a = globalThis.document.activeElement;
+      const r = a.getBoundingClientRect();
+      return {
+        noMenu: Boolean(a.closest("#menu-principal")),
+        x: r.x,
+        largura: globalThis.innerWidth,
+        nome: a.textContent.trim().slice(0, 30),
+      };
+    });
+    expect(foco.noMenu, `o Tab foi para "${foco.nome}", dentro do menu fechado`).toBe(false);
+    expect(foco.x, `"${foco.nome}" fora da tela`).toBeLessThan(foco.largura);
+  });
+
+  test("o Escape fecha o menu e o foco volta ao Abrir menu", async ({ page }) => {
+    await page.goto(base + "/");
+    await abrir(page).focus();
+    await page.keyboard.press("Enter");
+    await expect(abrir(page)).toHaveAttribute("aria-expanded", "true");
+    /* O Tab logo depois do Enter tem de entrar no menu aberto (R19 do Esp QA do #86): se a visibilidade atrasar ao
+       abrir, o foco pula o painel ainda escondido e o Escape seguinte não prova nada. */
+    await page.keyboard.press("Tab");
+    const foco = await page.evaluate(() => {
+      const a = globalThis.document.activeElement;
+      return { noMenu: Boolean(a.closest("#menu-principal")), nome: a.textContent.trim().slice(0, 30) };
+    });
+    expect(foco.noMenu, `o Tab depois do Enter foi para "${foco.nome}", fora do menu aberto`).toBe(true);
+    await page.keyboard.press("Escape");
+    await expect(abrir(page)).toHaveAttribute("aria-expanded", "false");
+    await expect(abrir(page)).toBeFocused();
+  });
+
+  test("o Fechar menu devolve o foco ao Abrir menu", async ({ page }) => {
+    await page.goto(base + "/");
+    await abrir(page).click();
+    await page.getByRole("button", { name: "Fechar menu" }).click();
+    await expect(abrir(page)).toHaveAttribute("aria-expanded", "false");
+    await expect(abrir(page)).toBeFocused();
+  });
+
+  /* Seguir um link fecha o menu e muda a rota, e o foco fica com a navegação: não é puxado para o "Abrir menu",
+     que é só do Escape e do "Fechar menu". Com o learn-tech#195, o foco vai para o h1 da nova página; sem ele, para
+     o início do documento. Nos dois casos, nunca para um item do menu escondido. */
+  test("seguir um link fecha o menu e mantém o foco na navegação", async ({ page }) => {
+    await page.goto(base + "/");
+    await abrir(page).click();
+    await page.locator("#menu-principal").getByRole("link", { name: "Programas", exact: true }).click();
+    await expect(page).toHaveURL(/\/programs$/);
+    await expect(abrir(page)).toHaveAttribute("aria-expanded", "false");
+    await expect(abrir(page)).not.toBeFocused();
+    /* O link clicado guarda o foco até o painel ficar invisível, no fim do deslize de 300 ms. */
+    await expect
+      .poll(() => page.evaluate(() => Boolean(globalThis.document.activeElement.closest("#menu-principal"))), {
+        message: "o foco ficou num item do menu fechado",
+      })
+      .toBe(false);
+  });
+});
+
 /* O cabeçalho fixo do learn-tech com o texto grande (learn-tech#168), a 360 × 800. A 100%, ele tem 80 px e fica no
    lugar. A 200%, ele tem cerca de 161 px (20% da tela) e, durante a leitura (depois de rolar para baixo), cobre no
    máximo 12% da tela: ele se recolhe. O texto a 200% é aplicado como a escala do navegador, no font-size do html.
