@@ -127,8 +127,8 @@ test.describe("learn-tech — menu do celular a 360 px", () => {
   });
 
   /* Seguir um link fecha o menu e muda a rota, e o foco fica com a navegação: não é puxado para o "Abrir menu",
-     que é só do Escape e do "Fechar menu". O learn-tech ainda não move o foco na troca de rota, então ele vai para
-     o início do documento, nunca para um item do menu escondido. */
+     que é só do Escape e do "Fechar menu". Com o learn-tech#195, o foco vai para o h1 da nova página; sem ele, para
+     o início do documento. Nos dois casos, nunca para um item do menu escondido. */
   test("seguir um link fecha o menu e mantém o foco na navegação", async ({ page }) => {
     await page.goto(base + "/");
     await abrir(page).click();
@@ -143,6 +143,68 @@ test.describe("learn-tech — menu do celular a 360 px", () => {
       })
       .toBe(false);
   });
+});
+
+/* O cabeçalho fixo do learn-tech com o texto grande (learn-tech#168), a 360 × 800. A 100%, ele tem 80 px e fica no
+   lugar. A 200%, ele tem cerca de 161 px (20% da tela) e, durante a leitura (depois de rolar para baixo), cobre no
+   máximo 12% da tela: ele se recolhe. O texto a 200% é aplicado como a escala do navegador, no font-size do html.
+   Guarda: confere que a escala foi aplicada e que a página rolou, senão o teste passaria sem medir nada. */
+test.describe("learn-tech — cabeçalho a 360 px com o texto a 100% e a 200%", () => {
+  test.use({ viewport: { width: 360, height: 800 } });
+  const base = SITES["learn-tech"].replace(/\/$/, "");
+
+  for (const escala of [100, 200]) {
+    test(`texto a ${escala}%`, async ({ page }) => {
+      await page.addInitScript((e) => {
+        const folha = new globalThis.CSSStyleSheet();
+        folha.replaceSync(`html { font-size: ${e}%; }`);
+        globalThis.document.adoptedStyleSheets = [...globalThis.document.adoptedStyleSheets, folha];
+      }, escala);
+      await page.goto(base + "/");
+      await expect(page.getByRole("button", { name: "Abrir menu" })).toBeVisible();
+      const medir = () =>
+        page.evaluate(() => {
+          const n = globalThis.document.getElementById("navbar");
+          const r = n.getBoundingClientRect();
+          const alto = globalThis.innerHeight;
+          return {
+            fonte: globalThis.getComputedStyle(globalThis.document.documentElement).fontSize,
+            altura: r.height,
+            visivel: Math.max(0, Math.min(r.bottom, alto) - Math.max(r.top, 0)),
+            alto,
+            y: globalThis.scrollY,
+          };
+        });
+      const topo = await medir();
+      expect(topo.fonte, "a escala do texto não foi aplicada").toBe(`${(16 * escala) / 100}px`);
+      await expect(page.locator("h1").first()).toBeVisible();
+      await page.mouse.move(180, 400);
+      for (let i = 0; i < 6; i++) {
+        await page.mouse.wheel(0, 300);
+        await page.waitForTimeout(150);
+      }
+      await expect.poll(async () => (await medir()).y, { message: "a página não rolou" }).toBeGreaterThan(600);
+      if (escala === 100) {
+        /* 80,47 px: a altura vem em rem. Tolerância de 1 px. */
+        expect(Math.abs(topo.altura - 80), `altura do cabeçalho a 100%: ${topo.altura}`).toBeLessThan(1);
+        await expect
+          .poll(async () => (await medir()).visivel, { message: "a 100%, o cabeçalho fica no lugar" })
+          .toBeGreaterThanOrEqual(topo.altura - 1);
+      } else {
+        expect(topo.altura, "a 200%, o cabeçalho é maior que a 100%").toBeGreaterThan(80);
+        await expect
+          .poll(async () => (await medir()).visivel / topo.alto, {
+            message: "a 200%, o cabeçalho cobre mais de 12% da tela durante a leitura",
+          })
+          .toBeLessThanOrEqual(0.12);
+        /* "Durante a leitura", e não num instante (R19 do Esp QA do #88): 1 s depois, sem rolar, ele continua recolhido.
+           Um cabeçalho que se recolhe e volta sozinho fica vermelho aqui. */
+        await page.waitForTimeout(1000);
+        const depois = await medir();
+        expect(depois.visivel / topo.alto, "a 200%, o cabeçalho voltou sem o leitor subir").toBeLessThanOrEqual(0.12);
+      }
+    });
+  }
 });
 
 /* Alvos de toque de 44 px nos sites irmãos, a 360 px (bootcamps#85, career#44 e tools#70; padrão E8 do Esp UX/UI).
